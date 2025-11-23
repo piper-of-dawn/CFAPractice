@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCQ Practice</title>
+  <style>
+  /* ===== Theme (Apple-like) ===== */
+:root {
+	--bg: #0b0c10;
+	--surface: #101216;
+	--card: #11131a;
+	--card-2: #0f1117;
+	--text: #f5f7fa;
+	--muted: #a1a7b0;
+	--border: #202531;
+	--accent: #0a84ff;
+	/* macOS blue */
+	--accent-ink: #e7f1ff;
+	--good: #32d74b;
+	/* macOS green */
+	--bad: #ff453a;
+	/* macOS red */
+	--warn: #ffd60a;
+	/* macOS yellow */
+	--shadow: 0 12px 30px rgba(0, 0, 0, .35);
+	--radius-xl: 20px;
+	--radius-lg: 14px;
+	--radius-sm: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #f5f7fb;
+		--surface: #f8fafc;
+		--card: #ffffff;
+		--card-2: #ffffff;
+		--text: #0f1220;
+		--muted: #5b6470;
+		--border: #e6e8ee;
+		--accent: #0a84ff;
+		--accent-ink: #0b3970;
+		--shadow: 0 10px 24px rgba(10, 25, 41, .08);
+	}
+}
+
+/* ===== Base ===== */
+html,
+body {
+	height: 100%
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font: 16px/1.55 "Berkeley Mono","JetBrainsMono NF";
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	padding: 28px;
+}
+
+/* ===== Layout: questions left, outcome right ===== */
+.layout {
+	width: min(1200px, 100%);
+	margin-inline: auto;
+	display: grid;
+	gap: 28px;
+	grid-template-columns: 1fr 360px;
+	align-items: start;
+}
+
+.sidebar {
+	position: sticky;
+	top: 16px;
+	display: grid;
+	gap: 16px
+}
+
+@media (max-width: 980px) {
+	body {
+		padding: 18px
+	}
+
+	.layout {
+		grid-template-columns: 1fr
+	}
+
+	.sidebar {
+		position: static
+	}
+}
+
+/* ===== Card base ===== */
+.card,
+.result-card,
+.explanation {
+  background: linear-gradient(180deg, var(--card), var(--card-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  padding: 18px 18px 16px;
+  transition: border-color .2s ease, box-shadow .25s ease;
+}
+
+.card+.card {
+  margin-top: 18px
+}
+
+/* Question result states */
+.card.is-correct {
+  border-color: var(--good);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--good) 35%, transparent),
+    0 10px 28px rgba(50, 215, 75, 0.18),
+    var(--shadow);
+}
+
+/* Hide check buttons if present */
+.btn-check { display: none !important; }
+
+.card.is-wrong {
+  border-color: var(--bad);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--bad) 35%, transparent),
+    0 10px 28px rgba(255, 69, 58, 0.18),
+    var(--shadow);
+}
+
+/* Headings */
+.card h2 {
+	font-size: 1.1rem;
+	letter-spacing: .2px;
+	margin: 0 0 12px;
+	font-weight: 700
+}
+
+.subtle {
+	color: var(--muted);
+	font-size: .9rem;
+	margin-top: 10px
+}
+
+/* ===== Options (large comfortable touch targets) ===== */
+.option {
+	display: flex;
+	align-items: flex-start;
+	gap: .75rem;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-lg);
+	padding: 14px 14px;
+	margin: 10px 0;
+	background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(0, 0, 0,
+
+  </style>
+</head>
+<body>
+
+<main class="layout">
+  <!-- LEFT: questions -->
+  <section id="questions">
+    
+<article class="card" data-qid="7" data-correct="A" data-expl="&lt;h3&gt;First Principles Thinking: Discount from Insufficient Margin&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; When the embedded margin on an FRN is below the market-required spread, the bond must trade at a discount. The actual coupon rate each year is 3.40% + 2.00% = 5.40%. On a semiannual basis, the cash coupon is 54, because 54 = 0.054 × 2000 / 2. The coupon that investors would like, given a required spread of 2.60%, is 6.00% per year, or 60 every half-year. The shortfall per period is therefore 6. Treat this shortfall as a level stream of missing income over 8 periods, discounted at the per-period rate of 2.00%. The present value of that stream is 6 × a_8(2%), where a_n(i) is the annuity PV factor. With i = 0.02, a_8(2%) ≈ (1 − 1.02^(−8)) / 0.02 ≈ 7.02, so PV(shortfall) ≈ 6 × 7.02 ≈ 42. The fair price is par minus this PV: about 2000 − 42 ≈ 1958, which we can round to 1960.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years, actual coupon stream):&lt;br&gt;+------+------------------------+&lt;br&gt;| Time | Cash Flow              |&lt;br&gt;+------+------------------------+&lt;br&gt;| 0.5  | 54                     |&lt;br&gt;| 1.0  | 54                     |&lt;br&gt;| 1.5  | 54                     |&lt;br&gt;| 2.0  | 54                     |&lt;br&gt;| 2.5  | 54                     |&lt;br&gt;| 3.0  | 54                     |&lt;br&gt;| 3.5  | 54                     |&lt;br&gt;| 4.0  | 54 + 2000              |&lt;br&gt;+------+------------------------+&lt;/p&gt;&lt;p&gt;B is incorrect. A price of 2,000 would mean the investor accepts a permanent coupon shortfall of 6 per period with no compensation via price. That would make the yield on this bond strictly lower than on otherwise similar FRNs offering the full LIBOR + 2.60% margin, so rational investors would not be willing to pay par.&lt;/p&gt;&lt;p&gt;C is incorrect. A premium would both lock in a lower margin (2.00% instead of 2.60%) and force the investor to pay more than par, further reducing yield. That combination is clearly dominated by buying a fairly priced new FRN at LIBOR + 2.60% near par, so a price of 2,060 cannot be an equilibrium in a competitive market.&lt;/p&gt;">
+  <h2>1. A $2,000 FRN pays 6-month LIBOR + 2.00% with semiannual coupons. The market now requires LIBOR + 2.60% for this issuer. Current 6-month LIBOR is 3.40%, and the appropriate semiannual discount rate is 2.00% per period (4% nominal). Assume there are 8 coupon periods remaining. What is the approximate fair price of the FRN?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="7" value="A">
+      <span><strong>A.</strong> $1,960</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="7" value="B">
+      <span><strong>B.</strong> $2,000</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="7" value="C">
+      <span><strong>C.</strong> $2,060</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: FRN with Margin Compression and Price Discount
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="2" data-correct="A" data-expl="&lt;h3&gt;First Principles Thinking: Pricing a Spread Shortfall&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; The key idea: the value of an FRN is driven by its margin relative to the market-required spread. Here the bond’s margin (1.50%) is below the required spread (2.10%), so it must trade at a discount. Each semiannual coupon the bond actually pays is 2.55, since 2.55 = (0.036 + 0.015) × 100 / 2. The coupon that investors would like to receive at the required margin is 2.85, because 2.85 = (0.036 + 0.021) × 100 / 2. So each period the investor is underpaid by 0.30. With a flat 5% curve, the per-period discount rate is 2.5%. The present value of this spread shortfall over 8 periods is approximately 0.30 × a_8(2.5%), where a_n(i) is the PV of an n-period level annuity. Numerically a_8(2.5%) ≈ 7.78, so the shortfall’s PV is about 2.33. The fair price is par minus this amount: approximately 100 − 2.33 ≈ 97.7, which we round to 97.5.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years):&lt;br&gt;+------+-----------------------------+&lt;br&gt;| Time | Cash Flow (actual coupon)   |&lt;br&gt;+------+-----------------------------+&lt;br&gt;| 0.5  | 2.55                        |&lt;br&gt;| 1.0  | 2.55                        |&lt;br&gt;| 1.5  | 2.55                        |&lt;br&gt;| ...  | ...                         |&lt;br&gt;| 4.0  | 2.55 + 100                  |&lt;br&gt;+------+-----------------------------+&lt;/p&gt;&lt;p&gt;B is incorrect. An FRN trades at par only when its embedded margin equals the market-required spread for that risk class. If we forced the price to remain at 100 when margin is too low, investors would earn a yield below what they can get on similar FRNs, which violates the no-arbitrage principle and would not be a stable equilibrium.&lt;/p&gt;&lt;p&gt;C is incorrect. A premium would mean investors are willing to pay more than par for an already under-spreading bond, making their effective margin even smaller in yield terms. That would be strictly dominated by buying a new issue with the correct SOFR + 2.10% margin at or near par, so a price of 102.5 cannot be an equilibrium in a competitive market.&lt;/p&gt;">
+  <h2>2. A 4-year semiannual FRN with $100 par pays SOFR + 1.50%. The market now requires SOFR + 2.10% for similar credit risk. Current SOFR is 3.60%, and the yield curve is flat at 5% (nominal, annual). What is the approximate fair price of this FRN?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="2" value="A">
+      <span><strong>A.</strong> $97.5</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="2" value="B">
+      <span><strong>B.</strong> $100.0</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="2" value="C">
+      <span><strong>C.</strong> $102.5</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: FRN with Embedded Margin Below Market Spread
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="5" data-correct="A" data-expl="&lt;h3&gt;First Principles Thinking: Locked Coupon vs New Discount Rate&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; At the reset date, the next coupon is fixed using the old LIBOR, even if rates move immediately afterward. The coupon rate for the coming half-year is 5.50%, so the dollar coupon is C = 0.055 × 5000 / 2 = 137.5. The clean price relevant for this short horizon is just the PV of that coupon plus principal, discounted at the new lower market rate. With an effective semiannual discount rate of 3.60%, the per-period rate is 0.036/2 = 0.018. The pricing formula is P ≈ (137.5 + 5000) × (1 + 0.018)^(−1). That is about 5137.5 / 1.018 ≈ 5050. In words: you have a temporarily generous fixed coupon relative to the new lower yields, so the bond trades slightly above par.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years, single-period horizon):&lt;br&gt;+------+------------------------+&lt;br&gt;| Time | Cash Flow              |&lt;br&gt;+------+------------------------+&lt;br&gt;| 0.5  | 137.5 + 5000           |&lt;br&gt;+------+------------------------+&lt;/p&gt;&lt;p&gt;B is incorrect. A price exactly at par only makes sense when the coupon just set is perfectly aligned with the current discount curve and required spread. Once rates fall after the coupon has been fixed from a higher LIBOR, that coupon becomes above-market, so investors are willing to pay slightly more than par to lock it in for the period.&lt;/p&gt;&lt;p&gt;C is incorrect. A lower discount rate always increases, not decreases, the present value of a given future cash flow stream. Pricing the FRN at 4,950 would correspond to discounting with a rate higher than 5.50% or assuming credit deterioration, neither of which is mentioned. It contradicts the basic inverse relationship between discount rate and bond price.&lt;/p&gt;">
+  <h2>3. A semiannual FRN with $5,000 par resets its coupon today based on 6-month LIBOR = 5.00% plus a fixed margin of 0.50%. Immediately after the reset, the term structure shifts down so that the appropriate semiannual discount rate for the next 6 months is 3.60%. Ignoring what happens at later resets, what is the approximate clean price of the FRN today?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="5" value="A">
+      <span><strong>A.</strong> $5,050</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="5" value="B">
+      <span><strong>B.</strong> $5,000</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="5" value="C">
+      <span><strong>C.</strong> $4,950</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: Effect of Sudden Rate Drop After Coupon Reset
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="3" data-correct="B" data-expl="&lt;h3&gt;First Principles Thinking: Clean vs Dirty Price for FRNs&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;B is correct.&lt;/strong&gt; An FRN’s coupon for the current period is fixed at the previous reset, so for this quarter it behaves like a short fixed-rate bond. First compute the full-period coupon in dollars: C = 0.031 × 10000 / 4 = 77.5. The dirty price is the full price including accrued interest; the clean price is the quoted price excluding accrued. Accrued interest reflects the fraction of the coupon period that has already passed. Here, accrued = 77.5 × (40/90) ≈ 34.4. To get the clean price near a reset, we discount the next coupon plus principal at the quarterly discount rate. With an effective quarterly rate of 0.036/4 = 0.9%, the discount factor is approximately 1 / 1.009. Clean price ≈ (77.5 + 10000) / 1.009 ≈ 10073. The dirty price equals clean + accrued ≈ 10073 + 34.4 ≈ 10033.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years, current quarter only):&lt;br&gt;+------+------------------------+&lt;br&gt;| Time | Cash Flow              |&lt;br&gt;+------+------------------------+&lt;br&gt;| 0.11 | Accrued already owed   |&lt;br&gt;| 0.25 | 77.5 + 10000           |&lt;br&gt;+------+------------------------+&lt;/p&gt;&lt;p&gt;A is incorrect. This value effectively overstates either the clean price, the accrued interest, or both. It is not consistent with discounting 10,077.5 at 0.9% for a quarter. It corresponds to assuming a higher coupon or ignoring the actual discount factor implied by the 3.60% annual rate, which breaks the present-value relation.&lt;/p&gt;&lt;p&gt;C is incorrect. A dirty price below 10,000 would imply that the combination of current coupon and remaining resets is unattractive relative to the discount curve. But here the margin is normal and the curve is low and stable. The only adjustment from par comes from the normal time value plus accrued interest, which pushes the dirty price slightly above, not below, par.&lt;/p&gt;">
+  <h2>4. A quarterly FRN on $10,000 pays SOFR + 0.80%. For the current quarter, the coupon rate has been fixed at 3.10% (annual). The coupon period is 90 days, and 40 days have elapsed since the last payment. The appropriate annual discount rate is 3.60% with quarterly compounding. What is the bond’s dirty price?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="3" value="A">
+      <span><strong>A.</strong> $10,087</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="3" value="B">
+      <span><strong>B.</strong> $10,033</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="3" value="C">
+      <span><strong>C.</strong> $9,995</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: Dirty Price of FRN Between Coupon Dates
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="6" data-correct="A" data-expl="&lt;h3&gt;First Principles Thinking: Extra Margin Raises FRN Price&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; The key driver of FRN value is the difference between the embedded margin and the market-required spread. Here the bond pays LIBOR + 2.20% while the market only requires LIBOR + 1.60%. So each period the bond overpays interest relative to what investors minimally need. Actual coupon rate each half-year is (0.03 + 0.022) = 5.2% per year, i.e. 2.6% per half-year on par. The required coupon for fair compensation is (0.03 + 0.016) = 4.6% per year, or 2.3% per half-year. The overpayment per period is therefore 0.3% of par, or 3 per 1000. Over 6 periods, discounted at a semiannual rate consistent with the required yield, the present value of this extra 3 per period will be around 15–20 in total. Hence the fair price will be roughly 1,020–1,025, that is, a 2–3% premium above par.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years, actual coupon stream):&lt;br&gt;+------+-----------------------------+&lt;br&gt;| Time | Cash Flow (approximate)     |&lt;br&gt;+------+-----------------------------+&lt;br&gt;| 0.5  | 26                          |&lt;br&gt;| 1.0  | 26                          |&lt;br&gt;| 1.5  | 26                          |&lt;br&gt;| 2.0  | 26                          |&lt;br&gt;| 2.5  | 26                          |&lt;br&gt;| 3.0  | 26 + 1000                   |&lt;br&gt;+------+-----------------------------+&lt;/p&gt;&lt;p&gt;B is incorrect. Pricing the FRN at par would ignore the fact that its coupon margin is richer than required. At par, investors would earn a yield higher than the equilibrium level for this risk, which means the bond would be strictly more attractive than similar alternatives and would tend to be bid up until its price rose to a premium.&lt;/p&gt;&lt;p&gt;C is incorrect. A discount would suggest that the embedded margin is too low, or that credit or liquidity risks are higher than the spread compensates for. Here we are told the opposite: the FRN pays above-market margin. A price below par would give investors an even higher effective margin, which is inconsistent with a stable market equilibrium.&lt;/p&gt;">
+  <h2>5. A 3-year semiannual FRN with $1,000 par pays 6-month LIBOR + 2.20%. The market now requires only LIBOR + 1.60% for this issuer. Assume a flat 6-month LIBOR of 3.00% and a flat semiannual discount rate consistent with LIBOR + 1.60%. Approximately how will the FRN be priced relative to par?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="6" value="A">
+      <span><strong>A.</strong> At a premium of about 2–3% above par</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="6" value="B">
+      <span><strong>B.</strong> At approximately par</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="6" value="C">
+      <span><strong>C.</strong> At a discount of about 2–3% below par</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: FRN with Margin Above Required Spread (Premium Pricing)
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="1" data-correct="A" data-expl="&lt;h3&gt;First Principles Thinking: FRN at Reset vs Par&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; An FRN is a bond whose coupon is reset each period to a reference rate (here LIBOR) plus a fixed margin (1.20%). On a reset date, the next coupon is set using today’s reference rate, so the coupon is consistent with the current term structure if the margin is fair for the credit risk. The next coupon in dollars is 27, since 27 = (0.042 + 0.012) × 1000 / 2. The general pricing idea is: price equals the present value of all future cash flows discounted at appropriate spot rates: P = Σ CF_t × (1 + r_t/2)^(−t). Here, cash flows are three coupons plus principal at the last date. Discounting the 27 coupons and 1000 redemption at 4.40%, 4.60% and 4.80% (all semiannual) gives a value just above par, around 1001, because the margin matches what the market requires.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years):&lt;br&gt;+------+------------------------+&lt;br&gt;| Time | Cash Flow              |&lt;br&gt;+------+------------------------+&lt;br&gt;| 0.5  | Coupon 1 = 27          |&lt;br&gt;| 1.0  | Coupon 2 = 27          |&lt;br&gt;| 1.5  | Coupon 3 = 27 + 1000   |&lt;br&gt;+------+------------------------+&lt;/p&gt;&lt;p&gt;B is incorrect. A price below par would imply that the embedded margin of 1.20% is too low relative to investors’ required spread for this issuer. In other words, the stream of floating coupons would be insufficient compensation, so the bond would have to trade at a discount to raise its yield. The question does not suggest such a spread shortfall; we are told normal spot rates only.&lt;/p&gt;&lt;p&gt;C is incorrect. A large premium like 1,010 would require either an unusually generous margin (much larger than 1.20%) or a sharply inverted term structure making these coupons very valuable. Neither condition is present. Pushing the price too high would give a yield that is lower than other comparable FRNs and therefore invite arbitrage by selling this note and buying alternatives.&lt;/p&gt;">
+  <h2>6. A $1,000 semiannual floating-rate note (FRN) pays 6-month LIBOR + 1.20%. Today is a reset date and current 6-month LIBOR is 4.20%. Semiannual spot rates for the next three periods are 4.40%, 4.60%, and 4.80%. What is the FRN’s fair price today?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="1" value="A">
+      <span><strong>A.</strong> $1,001</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="1" value="B">
+      <span><strong>B.</strong> $999</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="1" value="C">
+      <span><strong>C.</strong> $1,010</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: FRN Valuation on Reset Date with Spot Curve
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+<article class="card" data-qid="4" data-correct="B" data-expl="&lt;h3&gt;First Principles Thinking: Project with Forwards, Discount with Spots&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;B is correct.&lt;/strong&gt; For a floating-rate bond, the expected future coupons are determined by the forward curve: each future coupon rate equals the forward reference rate plus the margin. Here the dollar coupons are C1 = (0.040 + 0.007) × 1000 / 2 = 23.5, C2 = (0.044 + 0.007) × 1000 / 2 = 25.5 (you can round to 26), and C3 ≈ (0.047 + 0.007) × 1000 / 2 ≈ 27.0. These expected cash flows are then discounted using the spot curve. With semiannual spot rates of 4.10%, 4.30% and 4.50%, the discount factors are roughly DF1 = (1 + 0.041/2)^(−1), DF2 = (1 + 0.043/2)^(−2), DF3 = (1 + 0.045/2)^(−3). The price is the sum of discounted coupons plus discounted principal: P ≈ 23.5DF1 + 26DF2 + (27 + 1000)DF3. Numerically that comes out just above 1000, around 1001, because the 0.70% margin is roughly fair for the given term structure.&lt;/p&gt;&lt;p&gt;Cash-flow diagram (time in years):&lt;br&gt;+------+------------------------------+&lt;br&gt;| Time | Cash Flow                    |&lt;br&gt;+------+------------------------------+&lt;br&gt;| 0.5  | Coupon 1 ≈ 23.5              |&lt;br&gt;| 1.0  | Coupon 2 ≈ 26.0              |&lt;br&gt;| 1.5  | Coupon 3 ≈ 27.0 + 1000       |&lt;br&gt;+------+------------------------------+&lt;/p&gt;&lt;p&gt;A is incorrect. A price of 1,009 suggests a noticeable premium over par, which would imply either that the embedded 0.70% margin is significantly higher than the required spread or that the discount curve is very low. Given the modest upward-sloping spot curve and reasonable forward rates, such a big premium is not supported by the data.&lt;/p&gt;&lt;p&gt;C is incorrect. Pricing the FRN at 992 implies a discount, as if the margin were too small relative to the required spread. But we see from the forward and spot curves that the margin is roughly consistent with the market. A big discount would give an investor an overly high expected return, which could not persist in a competitive market without being arbitraged away.&lt;/p&gt;">
+  <h2>7. A $1,000 FRN has 3 semiannual payments remaining. It pays the 6-month forward LIBOR for each period plus a fixed margin of 0.70%. Forward 6-month rates for the next three periods are 4.00%, 4.40%, and 4.70%. Semiannual spot rates are 4.10%, 4.30%, and 4.50%. What is the FRN’s approximate fair price today?</h2>
+  <form class="q">
+    
+    <label class="option">
+      <input type="radio" name="4" value="A">
+      <span><strong>A.</strong> $1,009</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="4" value="B">
+      <span><strong>B.</strong> $1,001</span>
+    </label>
+    
+    <label class="option">
+      <input type="radio" name="4" value="C">
+      <span><strong>C.</strong> $992</span>
+    </label>
+    
+  </form>
+
+  <div class="q-footer">
+    <div class="subtle">
+      Topic: FRN Valuation Using Forward Coupons and Spot Discounting
+       | Model: ChatGPT
+    </div>
+    <button class="btn btn-primary btn-check" type="button">Check</button>
+  </div>
+</article>
+
+  </section>
+
+  <!-- RIGHT: outcome + explanation -->
+  <aside class="sidebar">
+    <section id="outcome">
+      <div class="result-card pending" id="outcomeCard">
+	<h3 data-role="status">PENDING</h3>
+
+	<div class="progress" aria-label="Accuracy">
+		<i id="progressBar" style="width:0%"></i>
+	</div>
+
+	<div class="stats">
+		<div class="stat">
+			<div class="val" data-role="accuracy">0%</div>
+			<div class="subtle">Accuracy</div>
+		</div>
+		<div class="stat">
+			<div class="val" data-role="answered">0</div>
+			<div class="subtle">Answered</div>
+		</div>
+		<div class="stat">
+			<div class="val" data-role="current">0</div>
+			<div class="subtle">Current Streak</div>
+		</div>
+		<div class="stat">
+			<div class="val" data-role="best">0</div>
+			<div class="subtle">Best Streak</div>
+		</div>
+	</div>
+</div>
+
+    </section>
+    <section id="explanation">
+      <div class="explanation">
+  <h3>Explanation</h3>
+  <p>Select an answer to see feedback here.</p>
+</div>
+    </section>
+  </aside>
+</main>
+
+<script src="components/app.js"></script>
+</body>
+</html>

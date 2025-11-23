@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Quiz</title>
+  <style>
+    :root {
+      --bg: #fbfbfd;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #6e6e73;
+      --border: #e5e5ea;
+      --primary: #0a84ff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.06), 0 4px 10px rgba(0,0,0,0.04);
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Berkeley Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
+    header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; }
+    header h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: .2px; }
+    header .sub { color: var(--muted); font-size: 14px; }
+
+    .grid { display: grid; grid-template-columns: 1fr 360px; gap: 24px; align-items: start; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .card .content { padding: 20px 22px; }
+
+    .question { border-bottom: 1px solid var(--border); padding: 14px 0 18px; margin-bottom: 8px; }
+    .question:last-child { border-bottom: 0; margin-bottom: 0; }
+    .question h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; letter-spacing: .2px; }
+    .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
+    .tag { background: #f2f2f7; border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 11px; color: #1d1d1f; }
+
+    ul.choices { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .choice { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; transition: border-color .2s, background .2s; }
+    .choice input { accent-color: var(--primary); }
+    .choice:hover { border-color: #d0d0d7; background: #fafafa; }
+
+    .actions { padding: 16px 22px 22px; display: flex; gap: 8px; }
+    button.primary { background: var(--text); color: white; border: none; padding: 10px 14px; border-radius: 12px; font-weight: 600; letter-spacing: .2px; cursor: pointer; }
+    button.secondary { background: transparent; border: 1px solid var(--border); padding: 10px 14px; border-radius: 12px; cursor: pointer; }
+    button.ghost { background: transparent; border: 1px solid var(--border); padding: 6px 10px; border-radius: 10px; cursor: pointer; font-size: 12px; }
+
+    .sidebar { position: sticky; top: 24px; }
+    .metric { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+    .metric .label { color: var(--muted); font-size: 12px; }
+    .metric .value { font-weight: 700; font-size: 20px; }
+    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #f2f2f7; color: #1d1d1f; font-size: 11px; }
+    .source { color: var(--muted); font-size: 11px; margin-top: 10px; word-break: break-all; }
+
+    @media (max-width: 920px) {
+      .grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>MCQ Quiz</h1>
+      <div class="sub">{{ total }} questions</div>
+    </header>
+
+    <div class="grid">
+      <form class="card" method="post" action="" id="quizForm" autocomplete="off">
+        <div class="content">
+          {% csrf_token %}
+          {% for q in questions %}
+            <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json="{{ q.json|escapejs }}">
+              <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
+              <h2>{{ q.text }}</h2>
+              <ul class="choices">
+                {% for idx, choice in q.choices %}
+                  <li class="choice">
+                    <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}" {% if q.selected == idx %}checked{% endif %}>
+                    <label for="q{{ q.index }}_{{ idx }}">{{ choice }}</label>
+                  </li>
+                {% endfor %}
+              </ul>
+              {% if q.extras %}
+              <div class="tags">
+                {% for k, v in q.extras.items %}
+                  <span class="tag">{{ k }}: {{ v }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+              <div style="margin-top:10px;">
+                <button type="button" class="ghost check-btn" data-target="q{{ q.index }}">Check</button>
+              </div>
+            </section>
+          {% endfor %}
+        </div>
+        <div class="actions">
+          <a href="{% url 'reset' %}"><button class="secondary" type="button">Reset</button></a>
+        </div>
+      </form>
+
+      <aside class="sidebar" id="sidebar">
+        <div class="card" style="margin-bottom:16px;">
+          <div class="content">
+            <div class="metric"><span class="label">Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
+            <div class="metric"><span class="label">Streak</span><span class="value" id="streakValue">0</span></div>
+            <span class="pill" id="longestPill">Longest: 0</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">—</span></div>
+            <div id="outcomeBox" style="margin-top:8px;">
+              <div class="pill" id="outcomePill">Awaiting check…</div>
+              <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
+              <div id="outcomeMeta" style="margin-top:12px;"></div>
+            </div>
+            <div class="source">Data: {{ data_source }}</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Per-question outcome panel
+    (function(){
+      const outcomeStatus = document.getElementById('outcomeStatus');
+      const outcomePill = document.getElementById('outcomePill');
+      const outcomeBody = document.getElementById('outcomeBody');
+      const outcomeMeta = document.getElementById('outcomeMeta');
+      const scoreEl = document.getElementById('scoreValue');
+      const streakEl = document.getElementById('streakValue');
+      const longestEl = document.getElementById('longestPill');
+      const questions = Array.from(document.querySelectorAll('section.question'));
+
+      function setOutcome({title, ok, body, meta}){
+        outcomeStatus.textContent = title;
+        outcomePill.textContent = ok ? 'Right Answer' : 'Incorrect';
+        outcomePill.style.background = ok ? '#e6f7ec' : '#fdeeee';
+        outcomePill.style.color = ok ? '#106a36' : '#8a1f1f';
+        outcomeBody.style.color = ok ? '#1d1d1f' : '#1d1d1f';
+        outcomeBody.innerHTML = body;
+        // Render attributes
+        if (meta) {
+          let html = '<div style="display:grid;gap:6px">';
+          for (const [k,v] of Object.entries(meta)) {
+            const val = typeof v === 'object' ? JSON.stringify(v) : String(v);
+            html += `<div style="display:flex;justify-content:space-between;gap:8px"><span class="label" style="color:var(--muted)">${k}</span><span>${val}</span></div>`;
+          }
+          html += '</div>';
+          outcomeMeta.innerHTML = html;
+        } else {
+          outcomeMeta.innerHTML = '';
+        }
+      }
+
+      function recomputeTotals(){
+        const answers = questions.map(sec => {
+          const correct = parseInt(sec.dataset.correct);
+          const qname = sec.dataset.qname;
+          const checked = document.querySelector(`input[name="${qname}"]:checked`);
+          const val = checked ? parseInt(checked.value) : null;
+          return (val !== null && val === correct);
+        });
+        const total = questions.length;
+        const score = answers.filter(Boolean).length;
+        let streak = 0; for (let i = answers.length - 1; i >= 0; i--) { if (answers[i]) streak++; else break; }
+        let longest = 0, cur = 0; for (const a of answers) { if (a) { cur++; if (cur > longest) longest = cur; } else { cur = 0; } }
+        scoreEl.textContent = `${score} / ${total}`;
+        streakEl.textContent = `${streak}`;
+        longestEl.textContent = `Longest: ${longest}`;
+      }
+
+      function onCheck(btn){
+        const target = btn.dataset.target;
+        const sec = document.querySelector(`section.question[data-qname="${target}"]`);
+        if (!sec) return;
+        const correct = parseInt(sec.dataset.correct);
+        const json = JSON.parse(sec.dataset.json || '{}');
+        const selected = document.querySelector(`input[name="${target}"]:checked`);
+        if (!selected) {
+          setOutcome({title: 'No selection', ok: false, body: 'Please choose an option, then press Check.', meta: null});
+          recomputeTotals();
+          return;
+        }
+        const chosenIdx = parseInt(selected.value);
+        const ok = chosenIdx === correct;
+        const choices = json.choices || [];
+        const chosenText = choices[chosenIdx] ?? `Option ${chosenIdx+1}`;
+        const correctText = choices[correct] ?? `Option ${correct+1}`;
+        const explanation = json.explanation || json.explanations || '';
+        const body = ok
+          ? `<div><strong>${chosenText}</strong> is correct.</div>`
+          : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
+        // Build attributes excluding heavy fields
+        const meta = {...json};
+        delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations;
+        setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
+        recomputeTotals();
+      }
+
+      document.querySelectorAll('.check-btn').forEach(btn => {
+        btn.addEventListener('click', () => onCheck(btn));
+      });
+      document.getElementById('quizForm').addEventListener('change', recomputeTotals);
+      recomputeTotals();
+    })();
+  </script>
+</body>
+</html>

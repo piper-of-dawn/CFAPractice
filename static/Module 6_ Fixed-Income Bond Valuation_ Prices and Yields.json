@@ -1,0 +1,379 @@
+[
+	{
+		"id": 1,
+		"model": "Grok",
+		"topic": "Pull-to-Par Effect",
+		"stem": "Assuming a constant yield-to-maturity, as a non-callable, fixed-coupon bond approaches maturity, its price will:",
+		"options": {
+			"A": "Increase if trading at a premium due to amortization of the premium.",
+			"B": "Decrease if trading at a discount due to amortization of the discount.",
+			"C": "Increase if trading at a discount due to the pull-to-par effect."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Pull-to-Par Effect</h3><p><strong>C is correct.</strong> A bond's price is the present value of its future cash flows (coupons + principal), discounted at YTM. At the moment of maturity, the price <strong>must equal its par value (principal)</strong>, as that is the only remaining cash flow. Therefore, a <strong>discount bond</strong> (Price &lt; Par) must have its price <strong>increase</strong> over time toward Par, assuming constant YTM. This necessary convergence is the <strong>Pull-to-Par Effect</strong>.</p>\n<p>A is incorrect because a premium bond (Price &gt; Par) must decrease toward par.</p>\n<p>B is incorrect because a discount bond increases toward par.</p>"
+	},
+	{
+		"id": 2,
+		"model": "Grok",
+		"topic": "Price Volatility and Duration",
+		"stem": "For two bonds with the same maturity and yield, the one with higher price volatility most likely has:",
+		"options": {
+			"A": "A higher coupon rate.",
+			"B": "A lower coupon rate.",
+			"C": "The same coupon rate but traded at a premium."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Duration and Volatility</h3><p><strong>B is correct.</strong> Price volatility (interest rate risk) is determined by a bond's <strong>duration</strong>. <strong>Duration</strong> is the weighted average time until all cash flows are received. A <strong>lower coupon</strong> means less cash flow is received early, and a larger portion of the bond\u2019s present value is concentrated in the final principal payment. This pushes the 'average time' (duration) further into the future, making the bond <strong>more sensitive</strong> to changes in the discount rate (YTM) and thus more volatile.</p>\n<p>A is incorrect; higher coupons shift the cash flow weight earlier, resulting in shorter duration and lower volatility.</p>\n<p>C is incorrect; for the same characteristics, premium pricing lowers effective duration compared to discount pricing.</p>"
+	},
+	{
+		"id": 3,
+		"model": "Grok",
+		"topic": "Yield Measures",
+		"stem": "For a bond trading at a premium, the relationship among its coupon rate (CR), current yield (CY), and yield-to-maturity (YTM) is:",
+		"options": {
+			"A": "YTM > CY > CR.",
+			"B": "CR > CY > YTM.",
+			"C": "CY > CR > YTM."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Premium Bond Yield Hierarchy</h3><p><strong>B is correct.</strong> A bond trades at a <strong>premium</strong> when its current coupon rate is <strong>higher</strong> than the market's required yield (YTM). This high CR drives its price above par. The relationship is:</p><ol><li>CR is the highest as it is fixed on par.</li><li>CY = Annual Coupon / Price. Since Price &gt; Par, CY is lower than CR.</li><li>YTM is the lowest because it accounts for the inevitable <strong>capital loss</strong> as the premium price declines to par at maturity.</li></ol><p>The full relationship is <strong>CR &gt; CY &gt; YTM</strong>.</p>\n<p>A is incorrect; this applies to a discount bond (YTM &gt; CY &gt; CR).</p>\n<p>C is incorrect; the coupon rate is always the highest of the three for a premium bond.</p>"
+	},
+	{
+		"id": 4,
+		"model": "Grok",
+		"topic": "Price-Yield Relationship",
+		"stem": "The price-yield curve for an option-free, fixed-coupon bond is:",
+		"options": {
+			"A": "Convex, with price increasing as yield increases.",
+			"B": "Concave, with price decreasing as yield increases.",
+			"C": "Convex, with price decreasing as yield increases."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Price-Yield Shape</h3><p><strong>C is correct.</strong> A bond's price is the <strong>present value (PV)</strong> of its fixed cash flows, and PV is calculated by discounting using the yield. The discount factor (1 + YTM) is in the denominator, so as yield increases, PV (Price) decreases, establishing an <strong>inverse relationship</strong>.</p>\n<p>The function is **exponential** with respect to the discount rate, which creates the **convex** (bowed upward) shape. This convexity causes the price increase from a yield drop to be greater than the price decrease from an equal yield rise.</p>\n<p>A is incorrect; the relationship is inverse.</p>\n<p>B is incorrect; the shape is convex, not concave.</p>"
+	},
+	{
+		"id": 5,
+		"model": "Grok",
+		"topic": "Yield Equality Conditions",
+		"stem": "A bond's current yield equals its yield-to-maturity only if:",
+		"options": {
+			"A": "The bond is a zero-coupon bond.",
+			"B": "The bond trades at par value.",
+			"C": "The bond has no reinvestment risk."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Yield Equality</h3><p><strong>B is correct.</strong> The **Current Yield (CY)** only captures coupon income ($\\text{CY} = \\text{Annual Coupon} / \\text{Price}$). The **Yield-to-Maturity (YTM)** captures coupon income *plus* any capital gain or loss at maturity. For CY to equal YTM, the capital gain or loss component must be zero. This only happens when the bond trades <strong>at par value</strong> (Price = Par). In this unique case, $\\text{CY} = \\text{Coupon Rate} = \\text{YTM}$.</p>\n<p>A is incorrect; a zero-coupon bond has $\\text{CY} = 0$, but $\\text{YTM} > 0$.</p>\n<p>C is incorrect; reinvestment risk is irrelevant to the relationship between CY and YTM at purchase.</p>"
+	},
+	{
+		"id": 6,
+		"model": "Grok",
+		"topic": "Factors Affecting Volatility",
+		"stem": "Holding other factors constant, the bond with the lowest interest rate risk is most likely a:",
+		"options": {
+			"A": "Long-term, low-coupon bond.",
+			"B": "Short-term, high-coupon bond.",
+			"C": "Long-term, high-coupon bond."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Minimizing Interest Rate Risk</h3><p><strong>B is correct.</strong> **Interest Rate Risk** is measured by **duration** (interest rate sensitivity). To minimize this risk, we need to minimize duration. **Duration** is minimized when cash flows are received as soon as possible. This is achieved by the combination of a **Short-term maturity** and a **High coupon rate**, as high coupons mean a larger portion of the present value is returned to the investor earlier.</p>\n<p>A is incorrect; this combination (long maturity, low coupon) maximizes duration and interest rate risk.</p>\n<p>C is incorrect; the long maturity increases duration significantly, despite the high coupon.</p>"
+	},
+	{
+		"id": 7,
+		"model": "Grok",
+		"topic": "Convexity and Maturity",
+		"stem": "As a non-callable, fixed-coupon bond approaches maturity, its convexity:",
+		"options": {
+			"A": "Increases due to higher sensitivity to yield changes.",
+			"B": "Remains constant if yield is unchanged.",
+			"C": "Decreases as the bond behaves more like a short-term instrument."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Convexity and Time</h3><p><strong>C is correct.</strong> **Convexity** measures the curvature (rate of change of duration) in the price-yield relationship. As a bond approaches maturity, the remaining time shortens, and the cash flows become fixed and known (especially the final principal). Since a near-term cash flow is less sensitive to changes in the discount rate (YTM) compared to a distant cash flow, the bond's price-yield curve must flatten. Therefore, convexity **decreases** over time, reaching zero at maturity.</p>\n<p>A is incorrect; sensitivity (duration) also decreases as maturity nears.</p>\n<p>B is incorrect; time to maturity is a fundamental input that causes convexity to change.</p>"
+	},
+	{
+		"id": 8,
+		"model": "Grok",
+		"topic": "Macaulay Duration",
+		"stem": "All else equal, a bond's Macaulay duration is highest when:",
+		"options": {
+			"A": "Coupon rate is high and maturity is short.",
+			"B": "Coupon rate is low and maturity is long.",
+			"C": "The bond is trading at a significant premium."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Maximizing Macaulay Duration</h3><p><strong>B is correct.</strong> **Macaulay duration** is the weighted average time to receipt of a bond's cash flows. To maximize this average time, the majority of the bond's present value must be tied to the latest possible payment (the principal). This is achieved by combining the **longest time to maturity** and the **lowest coupon rate**. The low coupon minimizes the early cash flows, shifting the weighted average time (duration) to the final payment.</p>\n<p>A is incorrect; this combination minimizes duration.</p>\n<p>C is incorrect; premium or discount status (which is related to YTM) is a secondary factor, but low coupons and long maturity dominate the determination of the highest duration.</p>"
+	},
+	{
+		"id": 9,
+		"model": "ChatGPT",
+		"topic": "Pull-to-Par Effect",
+		"stem": "With a constant market discount rate, as a non-callable, fixed-coupon bond approaches maturity:",
+		"options": {
+			"A": "The price\u2013yield relationship will become more convex.",
+			"B": "A low-coupon bond trading at a discount will increase in price.",
+			"C": "A high-coupon bond trading at a premium will increase in price."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Pull-to-Par Effect</h3><p><strong>B is correct.</strong> The **Pull-to-Par Effect** is a direct consequence of the core definition of a bond. As the remaining time shrinks to zero, the price's future value must be the par value. Therefore, a **discount bond** (Price &lt; Par) must **increase** in price toward Par over its life, assuming a constant market discount rate (YTM).</p>\n<p>A is incorrect because convexity decreases as the bond shortens in maturity.</p>\n<p>C is incorrect because a **premium bond** (Price &gt; Par) must decrease in price toward par.</p>"
+	},
+	{
+		"id": 10,
+		"model": "ChatGPT",
+		"topic": "Convexity and Maturity",
+		"stem": "As a bond approaches maturity, with yields and coupons unchanged, its convexity will most likely:",
+		"options": {
+			"A": "Increase, because cash flows are discounted over shorter periods.",
+			"B": "Decrease, because there is less curvature in the price\u2013yield relationship.",
+			"C": "Remain constant, since the yield curve is unchanged."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Convexity and Time</h3><p><strong>B is correct.</strong> **Convexity** measures the curvature of the price-yield relationship. As the time to maturity shortens, the remaining cash flows (especially the principal) are paid back soon. Since a near-term cash flow is less sensitive to changes in the discount rate (YTM) compared to a distant cash flow, the price-yield curve flattens. This reduced sensitivity means convexity **decreases** until it is zero at maturity.</p>\n<p>A is incorrect because the reduction in time to maturity reduces, rather than increases, the curve's sensitivity to yield changes.</p>\n<p>C is incorrect because time to maturity is a primary factor determining convexity.</p>"
+	},
+	{
+		"id": 11,
+		"model": "ChatGPT",
+		"topic": "Clean vs Dirty Price",
+		"stem": "A 5% annual coupon bond pays interest semiannually and has accrued interest of 1.25 per 100 par. If the quoted clean price is 98.75, the full (dirty) price is:",
+		"options": {
+			"A": "97.50",
+			"B": "98.75",
+			"C": "100.00"
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Bond Transaction Price</h3><p><strong>C is correct.</strong> The **Full Price (Dirty Price)** is the total cash amount exchanged between the buyer and seller. It must include both the **Clean Price** (the bond's market value, excluding interest) and the **Accrued Interest** (the portion of the next coupon the seller has earned since the last payment). $\\text{Full Price} = \\text{Clean Price} + \\text{Accrued Interest}$. $\\text{Calculation:} 98.75 + 1.25 = 100.00$.</p>\n<p>A is incorrect because accrued interest is added, not subtracted.</p>\n<p>B is incorrect because 98.75 is the clean price.</p>"
+	},
+	{
+		"id": 12,
+		"model": "ChatGPT",
+		"topic": "Price\u2013Yield Relationship",
+		"stem": "Which statement best describes the price\u2013yield relationship of a fixed-rate bond?",
+		"options": {
+			"A": "It is linear and symmetric around the coupon rate.",
+			"B": "It is convex and shows that price falls less when yields rise than it rises when yields fall.",
+			"C": "It is concave, reflecting the constant duration across all yields."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: The Exponential Discounting Model</h3><p><strong>B is correct.</strong> Since bond price is the present value of fixed cash flows, and the PV formula is **exponential** with respect to the discount rate (yield), the price-yield curve is **convex** (bowed upward). This convexity creates an **asymmetry** where the price gain from a yield drop is **greater** than the price loss from an equal yield rise. This is the advantageous property of positive convexity.</p>\n<p>A is incorrect because the relationship is curved (exponential/convex), not linear or symmetric.</p>\n<p>C is incorrect because the curve is convex, and duration is not constant but changes with the yield.</p>"
+	},
+	{
+		"id": 13,
+		"model": "ChatGPT",
+		"topic": "Yield to Maturity vs Coupon Rate",
+		"stem": "A 3-year bond with a 4% annual coupon is trading below par. Which statement best describes its yield to maturity (YTM)?",
+		"options": {
+			"A": "YTM is equal to 4%.",
+			"B": "YTM is less than 4%.",
+			"C": "YTM is greater than 4%."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Discount Bond Return</h3><p><strong>C is correct.</strong> $\\text{YTM}$ is the total annualized return. If a bond trades at a **discount** (Price &lt; Par), the investor earns the coupon income (4%) **plus** a guaranteed **capital gain** at maturity (the difference between the discounted purchase price and the par value). For the $\\text{YTM}$ to account for both sources of return, it **must be greater than** the coupon rate.</p>\n<p>A is incorrect; $\\text{YTM} = \\text{CR}$ only if $\\text{Price} = \\text{Par}$.</p>\n<p>B is incorrect; $\\text{YTM} < \\text{CR}$ only if $\\text{Price} > \\text{Par}$ (at a premium).</p>"
+	},
+	{
+		"id": 14,
+		"model": "ChatGPT",
+		"topic": "Reinvestment and Price Risk",
+		"stem": "Compared with a zero-coupon bond, a high-coupon bond of the same maturity has:",
+		"options": {
+			"A": "Higher reinvestment risk and lower price risk.",
+			"B": "Lower reinvestment risk and higher price risk.",
+			"C": "Equal reinvestment and price risk."
+		},
+		"correct_answer": "A",
+		"explanation": "<h3>First Principles Thinking: Risk Trade-offs in Bonds</h3><p><strong>A is correct.</strong> A bond's total risk is a trade-off: <ul><li><strong>Price Risk (Duration):</strong> A **high-coupon bond** has a shorter duration because cash flows are received sooner, making it **less sensitive** to interest rate changes (Lower Price Risk).</li><li><strong>Reinvestment Risk:</strong> A **high-coupon bond** generates larger, more frequent cash flows (coupons) that must be reinvested. The uncertainty of the future reinvestment rate creates **Higher Reinvestment Risk**.</li></ul></p>\n<p>A zero-coupon bond (the extreme low-coupon case) has no reinvestment risk but the highest price risk.</p>\n<p>B is incorrect as it reverses the relationship.</p>\n<p>C is incorrect since the coupon structure fundamentally determines the balance between the two risks.</p>"
+	},
+	{
+		"id": 15,
+		"model": "ChatGPT",
+		"topic": "Effect of Market Yield Change",
+		"stem": "If market yields suddenly rise, which bond will experience the largest percentage price decrease?",
+		"options": {
+			"A": "A 2-year 10% coupon bond.",
+			"B": "A 10-year 10% coupon bond.",
+			"C": "A 10-year 0% coupon bond."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Duration and Price Sensitivity</h3><p><strong>C is correct.</strong> Price volatility is determined by **duration**. The largest price decrease will be experienced by the bond with the longest duration. Duration is maximized by receiving cash flows as late as possible: **longest maturity** and **lowest coupon rate**.</p>\n<p>The **10-year 0% coupon bond** (a zero-coupon bond) has the longest duration among the options because its single cash flow (principal) is at the 10-year mark, making it the **most sensitive** to the rise in market yields.</p>\n<p>A is incorrect because the short maturity minimizes duration.</p>\n<p>B is incorrect because the high coupon and shorter maturity than the zero-coupon bond result in a significantly lower duration.</p>"
+	},
+	{
+		"id": 16,
+		"model": "Gemini",
+		"topic": "Callable Bonds and Convexity",
+		"stem": "As market yields fall, the price of a callable bond will:",
+		"options": {
+			"A": "Rise at an accelerating rate, exhibiting positive convexity.",
+			"B": "Rise at a decelerating rate, exhibiting negative convexity.",
+			"C": "Remain unchanged, as the price is capped at the par price."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Callable Bonds and Negative Convexity</h3><p><strong>B is correct.</strong> A <strong>callable bond</strong> gives the issuer the right to buy the bond back at a fixed 'call price' (usually par or slightly above). **First Principles:** When market yields fall, the bond's price (PV) rises. However, as the price approaches the call price, investors know the issuer will likely call the bond to refinance at the new, lower rates. This 'call risk' creates a price ceiling. Investors will not pay much more than the call price, causing the price appreciation to slow down and 'compress.' This flattening and bending over of the price-yield curve is known as <strong>'negative convexity'</strong>.</p>\n<p>A is incorrect; this describes an option-free (non-callable) bond.</p>\n<p>C is incorrect; the price does not remain unchanged, it just rises at a decelerating rate until it nears the call price, not necessarily the par price.</p>"
+	},
+	{
+		"id": 17,
+		"model": "Gemini",
+		"topic": "Puttable Bonds and Price Floor",
+		"stem": "A puttable bond provides the most value to the bondholder when:",
+		"options": {
+			"A": "Market interest rates rise significantly.",
+			"B": "Market interest rates fall significantly.",
+			"C": "The bond's coupon rate is equal to the market rate."
+		},
+		"correct_answer": "A",
+		"explanation": "<h3>First Principles Thinking: Puttable Bonds</h3><p><strong>A is correct.</strong> A <strong>puttable bond</strong> gives the *holder* the right to sell the bond back to the issuer at a fixed 'put price'. **First Principles:** The price of a bond is inversely related to interest rates. If market rates **rise significantly**, the bond's market price (PV) will fall. If the price falls below the put price, the holder can exercise their option, selling the bond at the higher, contractually fixed put price. This option creates a 'price floor' and protects the investor from the price loss associated with rising rates. The option is most valuable when it is needed most\u2014when rates are high.</p>\n<p>B is incorrect; if rates fall, the bond's price rises, and the put option is not needed (it is 'out-of-the-money').</p>\n<p>C is incorrect; if rates are equal, the bond trades at par, and the put option has little value.</p>"
+	},
+	{
+		"id": 18,
+		"model": "Gemini",
+		"topic": "Duration of Zero-Coupon Bonds",
+		"stem": "The Macaulay duration of a zero-coupon bond is:",
+		"options": {
+			"A": "Equal to its time to maturity.",
+			"B": "Less than its time to maturity.",
+			"C": "Equal to its modified duration."
+		},
+		"correct_answer": "A",
+		"explanation": "<h3>First Principles Thinking: Duration of a Zero</h3><p><strong>A is correct.</strong> **Macaulay duration** is the weighted average time until all cash flows are received, where the weights are the present value of each cash flow. **First Principles:** A zero-coupon bond has only <strong>one</strong> cash flow: the principal (par value) received at maturity. Since 100% of the cash flow (and thus 100% of the PV weight) is received at maturity, the weighted average time <strong>is</strong> its time to maturity.</p>\n<p>B is incorrect; this is true for a coupon-paying bond, as the coupons are received *before* maturity, pulling the weighted average time down.</p>\n<p>C is incorrect; $\\text{Modified Duration} = \\text{Macaulay Duration} / (1 + \\text{YTM/k})$. They are not equal.</p>"
+	},
+	{
+		"id": 19,
+		"model": "Gemini",
+		"topic": "Arbitrage-Free Valuation (Spot Rates)",
+		"stem": "Under the arbitrage-free valuation framework, the price of a 2-year fixed-coupon bond is best calculated by:",
+		"options": {
+			"A": "Discounting all cash flows using the 2-year yield-to-maturity (YTM).",
+			"B": "Discounting each cash flow using the corresponding Treasury spot rate for that cash flow's timing.",
+			"C": "Discounting the coupons at the 1-year rate and the principal at the 2-year forward rate."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Arbitrage-Free Valuation</h3><p><strong>B is correct.</strong> **First Principles:** The YTM is a single, 'average' rate that equates all cash flows to one price. However, the theoretically correct or *arbitrage-free* price assumes that a bond is a package of individual zero-coupon bonds. To prevent arbitrage (i.e., stripping the bond and selling the parts for more than the whole), each cash flow (Coupon 1, Coupon 2, Final Coupon + Principal) must be discounted by the unique <strong>spot rate</strong> (the zero-coupon rate) that corresponds exactly to its specific time of receipt.</p>\n<p>A is incorrect; this is the standard pricing model, but it is not the arbitrage-free model, as it uses one average rate instead of the specific rates from the spot curve.</p>\n<p>C is incorrect; forward rates are used to price future cash flows, but spot rates are used to discount known future cash flows to today (Time 0).</p>"
+	},
+	{
+		"id": 20,
+		"model": "Gemini",
+		"topic": "Limitations of Duration",
+		"stem": "Duration provides a good estimate of a bond's price change for small yield changes, but it is less accurate for large yield changes because it:",
+		"options": {
+			"A": "Fails to account for the bond's coupon rate.",
+			"B": "Assumes the price-yield relationship is linear.",
+			"C": "Only applies to zero-coupon bonds."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Duration as a Linear Estimate</h3><p><strong>B is correct.</strong> **First Principles:** In calculus terms, duration is the first derivative of the price-yield function. Geometrically, this means duration represents the <strong>slope of a tangent line</strong> at a specific point on the price-yield curve. This provides a <strong>linear approximation</strong> of price change. However, the *true* price-yield relationship is **convex** (curved). For small yield changes, the tangent line is a very good estimate. For large yield changes, the gap between the straight line (duration estimate) and the curved line (actual price) becomes significant. Convexity (the second derivative) is needed to measure this curvature and improve the estimate.</p>\n<p>A is incorrect; duration itself is highly dependent on the coupon rate.</p>\n<p>C is incorrect; duration applies to all bonds.</p>"
+	},
+	{
+		"id": 21,
+		"model": "Gemini",
+		"topic": "Floating-Rate Note (FRN) Duration",
+		"stem": "The interest rate risk (duration) of an option-free floating-rate note (FRN) is typically very low because:",
+		"options": {
+			"A": "Its coupon rate is zero, eliminating reinvestment risk.",
+			"B": "Its price is legally fixed at par until maturity.",
+			"C": "Its coupon payments are reset periodically to match current market rates."
+		},
+		"correct_answer": "C",
+		"explanation": "<h3>First Principles Thinking: Floating-Rate Note Risk</h3><p><strong>C is correct.</strong> **First Principles:** Interest rate risk (duration) measures a bond's price sensitivity to a change in market yields. An FRN's coupon is not fixed; it resets (e.g., every 3 or 6 months) to a benchmark market rate (like SOFR) plus a fixed spread. When market rates rise, the coupon *also* rises, keeping the bond's cash flows aligned with market demands. Because the bond's yield automatically adjusts to the market, its price (PV) is never far from par. This self-correcting mechanism means its price is highly insensitive to yield changes, resulting in a duration near zero (technically, its duration is the time until the next coupon reset date).</p>\n<p>A is incorrect; its coupon is not zero.</p>\n<p>B is incorrect; its price is not legally fixed, but *market forces* keep it near par.</p>"
+	},
+	{
+		"id": 22,
+		"model": "Gemini",
+		"topic": "Price Risk vs. Reinvestment Risk",
+		"stem": "An investor's realized return will be lower than the original YTM if interest rates fall, and their investment horizon is:",
+		"options": {
+			"A": "Shorter than the bond's Macaulay duration.",
+			"B": "Longer than the bond's Macaulay duration.",
+			"C": "Exactly equal to the bond's Macaulay duration."
+		},
+		"correct_answer": "B",
+		"explanation": "<h3>First Principles Thinking: Duration and Investment Horizon</h3><p><strong>B is correct.</strong> **First Principles:** When interest rates fall, two opposing forces affect the investor: 1. <strong>Price Risk:</strong> The price of the bond increases (a positive effect). 2. <strong>Reinvestment Risk:</strong> The coupons received must be reinvested at *lower* rates (a negative effect). If the investment horizon is **longer than the bond's duration**, the investor is a 'net re-investor' and relies more on the income from reinvested coupons than on the final sale price. Therefore, the negative effect of lower reinvestment rates will dominate the positive effect of the initial price gain, causing the final realized return to be *less* than the original YTM.</p>\n<p>A is incorrect; if the horizon is shorter, the investor is a 'net seller' and benefits more from the price increase, realizing a return *higher* than YTM.</p>\n<p>C is incorrect; at this point, the two risks exactly offset, 'immunizing' the return (realized return = YTM).</p>"
+	},
+	{
+		"id": 23,
+		"model": "ChatGPT",
+		"topic": "Clean vs Dirty Price; Accrued Interest (30/360)",
+		"stem": "A 6% annual coupon bond (paid semiannually) has a quoted clean price of 101.20 per 100 par. The last coupon was 60 days ago and the day-count is 30/360. What is the full (dirty) price per 100?",
+		"options": {
+			"A": "101.20",
+			"B": "102.20",
+			"C": "100.20"
+		},
+		"correct_answer": "B",
+		"explanation": "B is correct. A bond’s full price equals the present value of all promised cash flows **as of settlement date**, not the last coupon date. Since interest accrues continuously, the buyer must compensate the seller for the coupon portion already earned. Semiannual coupon = 3.00 per 100; accrued = 3.00 × (60/180) = 1.00; full (dirty) price = 101.20 + 1.00 = 102.20.\nA is incorrect; quoting conventions display only the clean price, which strips out accrued interest to prevent mechanical price drift between coupon dates.\nC is incorrect; subtracting accrued interest violates the cash-flow principle that value grows with time, not shrinks."
+	},
+	{
+		"id": 24,
+		"model": "ChatGPT",
+		"topic": "Current Yield",
+		"stem": "A bond with 8% annual coupon (paid annually) trades at 95.00 per 100 par. The current yield is closest to:",
+		"options": {
+			"A": "8.00%",
+			"B": "8.42%",
+			"C": "9.00%"
+		},
+		"correct_answer": "B",
+		"explanation": "B is correct. Current yield measures **cash income divided by capital invested**, isolating the income component of return. It ignores time value and redemption gain/loss but still follows the value principle: yield must rise when price falls. 8 ÷ 95 = 8.42%.\nA is incorrect; using the coupon rate assumes price equals par and ignores that investors here pay less than face value.\nC is incorrect; 9% exaggerates because the inverse relation between yield and price is not one-for-one—current yield scales linearly with price, not exponentially as YTM does."
+	},
+	{
+		"id": 25,
+		"model": "ChatGPT",
+		"topic": "Zero-Coupon Pricing (Annual Compounding)",
+		"stem": "What is the price per 100 of a 2-year zero-coupon bond if the annual yield is 5% with annual compounding?",
+		"options": {
+			"A": "95.24",
+			"B": "90.70",
+			"C": "110.25"
+		},
+		"correct_answer": "B",
+		"explanation": "B is correct. A zero-coupon bond has a single cash flow—its face value—so price must equal that payment discounted by the compound factor (1 + r)^T. Price = 100 / (1.05)^2 = 90.70. This directly expresses the first principle of valuation: **value today = future cash flow ÷ growth of a dollar.**\nA is incorrect; it discounts only one year of growth, ignoring compounding.\nC is incorrect; it represents the future value of 100, not the present value."
+	},
+	{
+		"id": 26,
+		"model": "ChatGPT",
+		"topic": "Duration-Based Price Change (Approximation)",
+		"stem": "An option-free bond has modified duration of 4.2. If yields rise by 50 bps (0.50%), the approximate percentage change in price is closest to:",
+		"options": {
+			"A": "−2.10%",
+			"B": "−4.20%",
+			"C": "−0.50%"
+		},
+		"correct_answer": "A",
+		"explanation": "A is correct. Duration is the **first derivative of price with respect to yield**, showing proportional sensitivity. The approximation ΔP/P ≈ −D_mod × Δy follows directly from differentiating the present-value formula. Substituting: −4.2 × 0.005 = −2.10%. The negative sign arises because a higher discount rate lowers the present value of future cash flows.\nB is incorrect; it ignores that yield change must be expressed as a decimal fraction.\nC is incorrect; it uses the yield change itself as the price change, confusing inputs with outcomes."
+	},
+	{
+		"id": 27,
+		"model": "ChatGPT",
+		"topic": "Yield Measure Hierarchy (Premium Bond)",
+		"stem": "A 3% annual-coupon, option-free bond trades at 102. Which ordering is most accurate?",
+		"options": {
+			"A": "YTM > Current Yield > Coupon Rate",
+			"B": "Coupon Rate > Current Yield > YTM",
+			"C": "Current Yield > Coupon Rate > YTM"
+		},
+		"correct_answer": "B",
+		"explanation": "B is correct. From first principles, a bond’s total return (YTM) must equate price to discounted cash flows. When price exceeds par, investors pay extra today for future cash flows that are fixed—implying the discount rate used (YTM) must be lower than the coupon rate that generated those flows. Current yield lies between the two because it considers only cash income, not the amortization of the premium. Thus CR > CY > YTM.\nA is incorrect; that ordering applies to a discount bond, where the market demands extra yield.\nC is incorrect; current yield cannot exceed the coupon rate because the denominator (price) is greater than par."
+	},
+	{
+		"id": 28,
+		"model": "ChatGPT",
+		"topic": "Accrued Interest Computation (30/360)",
+		"stem": "A 7% annual coupon bond pays semiannually. Using a 30/360 convention, the days since the last coupon are 45. What is the accrued interest per 100 par?",
+		"options": {
+			"A": "0.88",
+			"B": "1.75",
+			"C": "0.70"
+		},
+		"correct_answer": "A",
+		"explanation": "A is correct. Interest accrues linearly with time because each day represents an equal fraction of the coupon-earning period. Semiannual coupon = 3.50 per 100; accrued = 3.50 × (45/180) = 0.875. This reflects the fundamental time-value idea: value accumulates with the passage of time proportionally to the rate and period.\nB is incorrect; 1.75 assumes the entire semiannual coupon has accrued.\nC is incorrect; 0.70 corresponds to 20% of the period (36 days), not 25%."
+	},
+	{
+		"id": 29,
+		"model": "ChatGPT",
+		"topic": "Holding-Period Return (HPR)",
+		"stem": "An investor buys a bond at 99.00 (per 100) and holds it for one year. The bond pays a 6.00 coupon annually, and immediately after the coupon is paid the investor sells the bond for 100.00. What is the one-year holding-period return?",
+		"options": {
+			"A": "6.00%",
+			"B": "7.07%",
+			"C": "5.05%"
+		},
+		"correct_answer": "B",
+		"explanation": "B is correct. The holding-period return applies the core finance identity: **Return = (Income + Price Change) ÷ Initial Investment.** It reflects total wealth growth relative to cost. HPR = (6 + (100 − 99)) / 99 = 7.07%. This unites both the time-value (coupon) and price-reversion (capital gain) effects in a single realized measure.\nA is incorrect; it omits the capital appreciation.\nC is incorrect; it understates return by dividing by par instead of the actual purchase price."
+	}
+]

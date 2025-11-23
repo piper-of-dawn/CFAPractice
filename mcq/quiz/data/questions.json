@@ -1,0 +1,22 @@
+[
+  {
+    "text": "What is the capital of France?",
+    "choices": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": 2
+  },
+  {
+    "text": "Which language runs in a web browser?",
+    "choices": ["Java", "C", "Python", "JavaScript"],
+    "answer": 3
+  },
+  {
+    "text": "What does HTTP stand for?",
+    "choices": [
+      "HyperText Transfer Protocol",
+      "High Transfer Text Protocol",
+      "Hyperlink Transfer Tool Protocol",
+      "Hyper Tool Transfer Protocol"
+    ],
+    "answer": 0
+  }
+]

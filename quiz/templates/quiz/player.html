@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }}</title>
+  <style>
+  {{ css|safe }}
+  </style>
+  {% load static %}
+</head>
+<body>
+
+<main class="layout">
+  <section id="questions">
+    {% for q in questions %}
+    <article class="card" data-qid="{{ q.id }}" data-correct="{{ q.correct }}" data-expl="{{ q.explanation|escape }}">
+      <h2>{{ forloop.counter }}. {{ q.stem }}</h2>
+      <form class="q">
+        {% for item in q.items %}
+        {% with letter=item.0 text=item.1 %}
+        <label class="option">
+          <input type="radio" name="{{ q.id }}" value="{{ letter }}">
+          <span><strong>{{ letter }}.</strong> {{ text }}</span>
+        </label>
+        {% endwith %}
+        {% endfor %}
+      </form>
+      <div class="q-footer">
+        <div class="subtle">
+          {% if q.topic %}Topic: {{ q.topic }}{% endif %}
+          {% if q.model %}{% if q.topic %} | {% endif %}Model: {{ q.model }}{% endif %}
+        </div>
+        <button class="btn btn-primary btn-check" type="button">Check</button>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+
+  <aside class="sidebar">
+    <section id="outcome">
+      {{ outcome|safe }}
+    </section>
+    <section id="explanation">
+      <div class="explanation">
+        <h3>Explanation</h3>
+        <p>Select an answer to see feedback here.</p>
+      </div>
+    </section>
+  </aside>
+</main>
+
+<script src="{% static 'components/app.js' %}"></script>
+</body>
+</html>
