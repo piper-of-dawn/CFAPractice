@@ -90,97 +90,99 @@
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Loss Recognition</h3><p><strong>A is correct.</strong> A write-down reduces the carrying amount of inventory (assets). The loss is recognized in cost of sales (or a separate line), increasing expenses and reducing profit, which reduces retained earnings (equity). First principles: inventories represent future economic benefits; if these benefits shrink, the balance sheet and equity must reflect the loss. The PDF highlights these effects repeatedly, noting decreased profitability, liquidity, and solvency metrics :contentReference[oaicite:2]{index=2}.</p><p>B is wrong: write-downs never increase assets or equity.</p><p>C is wrong: cost of sales increases, not decreases.</p>"
   },
+  
   {
-    "id": 1,
+    "id": 8,
     "model": "ChatGPT",
-    "topic": "Lower of Cost and Net Realizable Value (NRV)",
-    "stem": "Under IFRS, when inventory’s net realizable value (NRV) falls below its cost, how must the inventory be measured at the reporting date?",
+    "topic": "IFRS vs US GAAP: Classification of Write-Downs",
+    "stem": "Under IFRS, where is an inventory write-down typically recorded in the financial statements?",
     "options": {
-      "A": "At the lower of cost and NRV, with any loss recognized in profit or loss.",
-      "B": "At NRV only, with losses deferred until sale of the inventory.",
-      "C": "At cost only, because write-downs are prohibited under IFRS."
+      "A": "As an increase to cost of sales or a separate line item in the income statement",
+      "B": "Directly in equity as an OCI adjustment",
+      "C": "As a financing expense because it reflects risk borne by creditors"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Inventory Measurement</h3><p><strong>A is correct.</strong> IFRS requires inventory to be carried at the lower of historical cost and net realizable value (NRV). Start from the definition: cost reflects resources already committed, while NRV reflects the economic benefit expected at sale (selling price minus costs to complete and sell). When NRV falls below cost, economic reality says the firm cannot recover cost; therefore, the carrying value must reflect recoverable amount. The write-down is recorded as an expense because it reflects a loss of economic value. This prevents asset overstatement and aligns with prudence.</p><p>B is wrong: IFRS does not allow deferring losses. Losses must be recognized immediately when NRV < cost.</p><p>C is wrong: IFRS does permit write-downs and explicitly requires them when NRV < cost. Cost-only measurement would overstate assets.</p>"
-  },
-  {
-    "id": 2,
-    "model": "ChatGPT",
-    "topic": "Reversal of Write-Downs (IFRS vs US GAAP)",
-    "stem": "Which statement correctly describes the reversal of inventory write-downs?",
-    "options": {
-      "A": "Both IFRS and US GAAP allow reversals, but only up to the amount of the original write-down.",
-      "B": "IFRS permits reversal of write-downs while US GAAP prohibits reversal.",
-      "C": "Neither IFRS nor US GAAP allows reversal of inventory write-downs."
+    "explanation": "<h3>First Principles Thinking: Expense Recognition</h3><p><strong>A is correct.</strong> A write-down reflects a loss of economic benefit. First principles: expenses capture outflows or decreases in economic resources. IFRS requires the loss from declining NRV to be recognized in profit or loss. The PDF shows this for Hatsumei, where the EUR9.3 million decline was recognized as an expense and reduced reported profit :contentReference[oaicite:1]{index=1}. Because this value reduction is operational (inventory impairment), it is included in cost of sales or disclosed separately as an inventory write-down line.</p><p>B is wrong: inventory revaluations do not bypass the income statement under IFRS; OCI treatment is not permitted.</p><p>C is wrong: financing expense relates to capital structure, not asset impairments.</p>"
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Conservatism and Recoverability</h3><p><strong>B is correct.</strong> Under IFRS, inventory is measured at the lower of cost and NRV each reporting period. If conditions change—e.g., selling price increases—NRV may rise. First principles: carrying amount should reflect recoverable economic benefit, no more and no less. Therefore, if NRV increases after a write-down, IFRS allows reversal, but only up to the original write-down amount so that inventory is never carried above cost. US GAAP, however, adopts a stricter conservatism-based approach: once written down, inventory cannot be written back up even if NRV increases. This avoids recognition of unrealized upward adjustments.</p><p>A is wrong: US GAAP prohibits reversals entirely.</p><p>C is wrong: IFRS allows reversals; GAAP does not.</p>"
-  },
   {
-    "id": 3,
+    "id": 9,
     "model": "ChatGPT",
-    "topic": "Impact of Write-Down on Financial Ratios",
-    "stem": "If a company records an inventory write-down, which ratio is most likely to increase immediately after the write-down, holding all else constant?",
+    "topic": "NRV vs Replacement Cost",
+    "stem": "Under US GAAP for non-LIFO and non-retail methods, which value is used in applying the lower of cost or market (LCM) rule?",
     "options": {
-      "A": "Inventory turnover ratio",
-      "B": "Gross profit margin",
-      "C": "Current ratio"
+      "A": "Replacement cost, constrained by a ceiling (NRV) and a floor (NRV minus normal profit margin)",
+      "B": "Net realizable value only",
+      "C": "Historical cost only, unless inventory is obsolete"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Ratio Mechanics</h3><p><strong>A is correct.</strong> Inventory turnover = Cost of sales ÷ Average inventory. A write-down directly reduces the carrying amount of inventory (denominator) while cost of sales either increases or remains stable. First principles: lowering the denominator increases the ratio. Therefore, firms appear to move inventory faster, even though the effect is mechanical. The PDF’s Volvo example shows this explicitly: turnover rises from 5.64 to 7.71 when adjusting for allowance differences :contentReference[oaicite:1]{index=1}.</p><p>B is wrong: write-downs are included in cost of sales, which increases cost and reduces gross profit margin immediately.</p><p>C is wrong: current assets decrease with the write-down, reducing—not increasing—the current ratio.</p>"
-  },
+    "explanation": "<h3>First Principles Thinking: Market Constraint Logic</h3><p><strong>A is correct.</strong> US GAAP defines “market” as replacement cost but restricts it between the ceiling (NRV) and floor (NRV − normal profit margin). First principles: replacement cost captures current input cost, but unconstrained replacement cost may overstate or understate recoverable value. The ceiling prevents overstated assets (RC > NRV), while the floor prevents excessive conservatism (RC < NRV − profit). The PDF explicitly references these NRV and NRV-minus-profit bounds for GAAP’s LCM rule :contentReference[oaicite:2]{index=2}.</p><p>B is wrong: NRV alone is an IFRS concept; GAAP uses a three-part constraint.</p><p>C is wrong: GAAP requires LCM testing even without obsolescence.</p>"
+    },
   {
-    "id": 4,
+    "id": 10,
     "model": "ChatGPT",
-    "topic": "NRV Numerical Application",
-    "stem": "A company holds inventory with a cost of EUR 30,000. Estimated selling price is EUR 35,000 and estimated costs to complete and sell are EUR 8,000. At what value should inventory be measured under IFRS?",
+    "topic": "Inventory Write-Down Effects on Profitability",
+    "stem": "Which profitability metric is directly reduced by an inventory write-down?",
     "options": {
-      "A": "EUR 30,000",
-      "B": "EUR 27,000",
-      "C": "EUR 35,000"
+      "A": "Gross profit margin",
+      "B": "Return on assets",
+      "C": "Interest coverage ratio"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Recoverable Value</h3><p><strong>A is correct.</strong> NRV = selling price − costs to complete/sell = 35,000 − 8,000 = 27,000. IFRS requires inventory at the lower of cost (30,000) and NRV (27,000). First principles: choose recoverable amount to avoid overstating assets. Since NRV < cost, carrying value becomes 27,000. However, the question asks: “At what value should inventory be measured?” The cost is 30,000, but the carrying amount must be reduced to 27,000. Thus the appropriate measurement is NRV = 27,000. Among the provided options, the correct interpretation is cost is not used; NRV becomes the carrying amount.</p><p>B is wrong because it is the NRV figure but the question asks which one should be used for measurement; NRV replaces cost because it is lower.</p><p>C is wrong: selling price cannot be used directly for valuation.</p>"
-  },
+    "explanation": "<h3>First Principles Thinking: Matching Principle and Cost Flows</h3><p><strong>A is correct.</strong> A write-down increases cost of sales because the loss is treated as an operating expense. Gross profit = Net sales − Cost of sales, so increasing cost mechanically reduces gross profit margin. First principles: gross margin reflects the core profitability of selling goods; if inventory value collapses, the cost attributed to those goods must be recognized immediately, reducing margin. The PDF shows this via Volvo’s write-down effects on margins :contentReference[oaicite:3]{index=3}.</p><p>B is wrong: ROA is affected but indirectly and later, not most directly.</p><p>C is wrong: write-downs do not directly affect financing costs or EBIT coverage unless operating profit changes significantly.</p>"
+    },
   {
-    "id": "5",
+    "id": 11,
     "model": "ChatGPT",
-    "topic": "Write-Down and Subsequent Recovery (Numerical)",
-    "stem": "Inventory cost is EUR 50,000. NRV at year-end falls to EUR 42,000, and next year NRV rises to EUR 48,000. Under IFRS, what is the carrying amount in Year 2?",
+    "topic": "Agricultural and Commodity Inventories",
+    "stem": "Under IFRS, why are inventories of agricultural products, forest products, and mineral products often measured at fair value less costs to sell?",
     "options": {
-      "A": "EUR 48,000",
-      "B": "EUR 42,000",
-      "C": "EUR 50,000"
+      "A": "Because active markets exist, making fair value the most relevant measurement basis",
+      "B": "Because historical cost information is required for regulatory filings",
+      "C": "Because these inventories cannot lose value"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Upper Bound = Original Cost</h3><p><strong>A is correct.</strong> Year 1: NRV 42,000 < cost 50,000 → write down to 42,000. Year 2: NRV rises to 48,000. IFRS allows reversal of write-downs up to the amount of the original reduction, but never above cost. The original write-down was 8,000 (50,000 − 42,000). NRV now exceeds the written-down value by 6,000 (48,000 − 42,000), which is within the allowable reversal. So the new carrying amount is 48,000.</p><p>B is wrong: this ignores the increase in NRV permitted for reversal.</p><p>C is wrong: reversal cannot take inventory above historical cost; cost is the ceiling, but here NRV does not exceed cost (48,000 < 50,000).</p>"
-  },
+    "explanation": "<h3>First Principles Thinking: Market-Determined Value</h3><p><strong>A is correct.</strong> Inventories whose prices are determined in active, liquid markets—like agricultural commodities—have readily observable fair values. First principles: when markets provide reliable, up-to-date valuation signals, fair value minus selling costs better reflects recoverable economic benefits than historical cost. IFRS allows these items to be measured at fair value less costs to sell, and changes in value are recognized in profit or loss. The PDF highlights this exception to IAS 2 for commodity broker-traders and producers :contentReference[oaicite:4]{index=4}.</p><p>B is wrong: regulatory cost reporting is irrelevant to IFRS valuation rules.</p><p>C is wrong: these inventories can lose value (e.g., agricultural price drops), which is exactly why valuation at fair value is used.</p>"
+    },
   {
-    "id": 6,
+    "id": 12,
     "model": "ChatGPT",
-    "topic": "LIFO vs FIFO Write-Down Probability",
-    "stem": "Which statement best explains why LIFO firms are less likely to record inventory write-downs than FIFO firms?",
+    "topic": "Numerical: Volvo Inventory Without Allowance",
+    "stem": "Using Exhibit 3 in the PDF, Volvo reported SEK 52,701 million of total inventories in 2017 with an allowance for inventory obsolescence of SEK 3,489 million. What would total inventories have been without the allowance?",
     "options": {
-      "A": "LIFO ending inventory reflects older costs, reducing the chance that current NRV falls below recorded cost.",
-      "B": "LIFO ending inventory always equals current replacement cost.",
-      "C": "LIFO prohibits applying NRV tests to inventory layers."
+      "A": "SEK 56,190 million",
+      "B": "SEK 49,212 million",
+      "C": "SEK 52,701 million"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Cost Layers and Obsolescence Risk</h3><p><strong>A is correct.</strong> Under LIFO, the most recent costs flow into cost of sales; the ending inventory consists of older, lower-cost layers. Because these older costs are less likely to exceed current NRV, the likelihood of NRV < cost is lower. First principles: write-downs occur only when recorded cost > recoverable value. Lower recorded cost makes that condition less probable.</p><p>B is wrong: LIFO does not produce replacement cost inventory values; it produces older cost layers.</p><p>C is wrong: LIFO inventories are still subject to lower-of-cost-or-market (US GAAP) or NRV testing.</p>"
-  },
+    "explanation": "<h3>First Principles Thinking: Allowance Mechanics</h3><p><strong>A is correct.</strong> Inventory allowances reduce the carrying amount of inventory to reflect estimated losses. First principles: the allowance is a contra-asset; adding it back yields the unadjusted gross inventory. From Exhibit 3 Panel A, 2017 total inventories = 52,701 and allowance = 3,489. Thus: 52,701 + 3,489 = 56,190. The PDF provides this exact computed figure :contentReference[oaicite:5]{index=5}.</p><p>B is wrong: this is unrelated to any combination in Exhibit 3.</p><p>C is wrong: this is the already reduced reported inventory, not the gross amount.</p>"
+    },
   {
-    "id": 7,
+    "id": 13,
     "model": "ChatGPT",
-    "topic": "Financial Statement Effects of Write-Downs",
-    "stem": "Which combination correctly describes the immediate effect of an inventory write-down?",
+    "topic": "Numerical: Effect on Cost of Sales",
+    "stem": "Exhibit 3 shows that the decrease in the allowance for obsolescence from 2016 to 2017 was SEK 194 million. If this decrease is fully reflected in cost of sales, what amount would cost of sales have been in 2017 without the allowance adjustment?",
     "options": {
-      "A": "Lower assets, higher cost of sales, lower equity",
-      "B": "Higher assets, lower cost of sales, higher equity",
-      "C": "Lower assets, lower cost of sales, higher equity"
+      "A": "SEK 254,775 million",
+      "B": "SEK 254,581 million",
+      "C": "SEK 255,389 million"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Loss Recognition</h3><p><strong>A is correct.</strong> A write-down reduces the carrying amount of inventory (assets). The loss is recognized in cost of sales (or a separate line), increasing expenses and reducing profit, which reduces retained earnings (equity). First principles: inventories represent future economic benefits; if these benefits shrink, the balance sheet and equity must reflect the loss. The PDF highlights these effects repeatedly, noting decreased profitability, liquidity, and solvency metrics :contentReference[oaicite:2]{index=2}.</p><p>B is wrong: write-downs never increase assets or equity.</p><p>C is wrong: cost of sales increases, not decreases.</p>"
-  },
+    "explanation": "<h3>First Principles Thinking: Reversing Allowance Effects</h3><p><strong>A is correct.</strong> Cost of sales reported for 2017 was SEK 254,581 million. A decrease in allowance means a reduction in expense; to compute cost of sales without this adjustment, the reduced expense must be added back. Therefore: 254,581 + 194 = 254,775. This calculation is directly shown in the solution table in the PDF :contentReference[oaicite:6]{index=6}.</p><p>B is wrong: this is the reported value, not the adjusted one.</p><p>C is wrong: no data support this number.</p>"
+    },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Inventory Turnover and Write-Downs",
+    "stem": "Why does inventory turnover often appear higher when a company records inventory write-downs?",
+    "options": {
+      "A": "Because average inventory decreases, mechanically increasing the turnover ratio",
+      "B": "Because net sales increase as a result of the write-down",
+      "C": "Because write-downs reduce cost of sales"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Ratio Denominator Effects</h3><p><strong>A is correct.</strong> Inventory turnover = Cost of sales ÷ Average inventory. When inventory is written down, the denominator falls immediately while the numerator typically increases (write-down is included in cost of sales). First principles: lowering the denominator mechanically increases any ratio where the numerator is unchanged or rising. The PDF demonstrates this with Volvo’s turnover rising from 5.64 to 7.71 when adjusted for the allowance differences :contentReference[oaicite:7]{index=7}.</p><p>B is wrong: write-downs do not increase sales.</p><p>C is wrong: write-downs increase cost of sales, not reduce it.</p>"
+    },
+
 
   {
     "id": 15,
