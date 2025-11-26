@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Order Instruction Categories",
+    "stem": "An instruction specifying the details for the final transfer of funds and security ownership is classified as a:",
+    "options": {
+      "A": "Execution instruction",
+      "B": "Validity instruction",
+      "C": "Clearing instruction"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Order Instruction Classification</h3><p><strong>C is correct.</strong> Orders include core parameters plus additional instructions grouped into three categories. Clearing instructions specifically indicate how the final settlement of the trade, including custody and transfer, should be arranged. The PDF defines clearing instructions as indicating 'how to arrange the final settlement of the trade'.</p><p>A is incorrect because execution instructions indicate how to fill the order (e.g., price and size constraints).</p><p>B is incorrect because validity instructions indicate when the order may be filled (i.e., its temporal life).</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Market Terminology",
+    "stem": "The price at which a dealer is willing to buy a security from a client is known as the:",
+    "options": {
+      "A": "Ask price",
+      "B": "Bid price",
+      "C": "Best offer"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dealer Quotes</h3><p><strong>B is correct.</strong> Dealers act as intermediaries, posting two-sided quotes. The price at which a dealer is willing to buy a security is the **bid price**. This is the highest price a seller can receive from that dealer. Conversely, the price at which they are willing to sell is the ask/offer price.</p><p>A is incorrect because the ask price is the price at which the dealer sells the security.</p><p>C is incorrect because 'best offer' refers to the lowest available ask price in the market.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Liquidity Provision",
+    "stem": "A limit order that executes immediately against a standing order on the book is considered:",
+    "options": {
+      "A": "Making a market (providing liquidity)",
+      "B": "Taking the market (consuming liquidity)",
+      "C": "Establishing the spread"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Order Aggressiveness</h3><p><strong>B is correct.</strong> Trading is divided into passive (liquidity providers) and aggressive (liquidity consumers). An order that executes immediately 'takes' liquidity by consuming existing resting orders on the book. This aggressive action is described as taking the market.</p><p>A is incorrect because a market-maker posts standing orders (limit orders that wait) to provide liquidity.</p><p>C is incorrect because the spread is established by the best passive quotes (best bid and best ask) that sit on the book.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Market Order Drawbacks",
+    "stem": "The main risk to a trader using a market order for a large size in an illiquid security is the risk of:",
+    "options": {
+      "A": "The order being cancelled due to a limit violation",
+      "B": "Non-execution due to the lack of a counterparty",
+      "C": "Price uncertainty and concessions (slippage)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Market Order Performance</h3><p><strong>C is correct.</strong> A market order guarantees immediacy but not price. For a large order in an illiquid stock, the order must 'walk the book', consuming available liquidity at successively worse prices to fill the full size. This results in an average execution price that is significantly worse than the initial quote, known as price concession or slippage, leading to price uncertainty.</p><p>A is incorrect because market orders do not have limit prices to violate.</p><p>B is incorrect because market orders are designed to execute fully and immediately, exhausting available liquidity; non-execution is the primary risk of limit orders.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Limit Order Pricing Logic",
+    "stem": "A limit sell order for $50 should fill at a price that is:",
+    "options": {
+      "A": "Exactly $50 or any price below $50",
+      "B": "Exactly $50 or any price above $50",
+      "C": "The price of the current best bid"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Limit Constraints</h3><p><strong>B is correct.</strong> A limit order sets a price boundary. For a sell order, the limit price of $50 acts as a minimum acceptable price (a price floor). The broker must aim for the best price, which is the highest possible. Therefore, the order can execute at $50 or any price higher (better for the seller), but never lower.</p><p>A is incorrect because selling below $50 violates the limit constraint and results in a worse price than the minimum acceptable.</p><p>C is incorrect because a marketable limit order may fill at the best bid, but it would only fill at the best bid <em>up to</em> the limit price; the general instruction allows for better (higher) prices.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Order Positioning",
+    "stem": "If the current market is $15.00 bid and $15.05 ask, a limit buy order placed at $14.95 is:",
+    "options": {
+      "A": "Marketable",
+      "B": "Making a new market",
+      "C": "Behind the market"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Price Priority Rule</h3><p><strong>C is correct.</strong> Price priority dictates that the highest bid gets filled first. The current best bid is $15.00. A buy order at $14.95 is below the current best bid, placing it further back in the queue, or 'behind the market'. It will only execute if all bids down to $14.95 are hit by sellers.</p><p>A is incorrect because marketable orders are priced to execute immediately (at or above the $15.05 ask).</p><p>B is incorrect because making a new market requires the price to improve the current best quote (i.e., a buy order between $15.00 and $15.05).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Execution Principle",
+    "stem": "If a marketable limit buy order is entered at $60, and the best available ask price is $59.50, the order should execute at:",
+    "options": {
+      "A": "$60.00",
+      "B": "$59.50",
+      "C": "The midpoint of $59.75"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Best Execution</h3><p><strong>B is correct.</strong> The principle of best execution mandates that the broker/exchange must obtain the most favorable terms for the client. The limit price ($60) is the maximum acceptable price. Since a seller is available at the lower price of $59.50, the order must execute at $59.50 to satisfy the best execution requirement.</p><p>A is incorrect because paying $60 when $59.50 is available violates the fiduciary duty of best execution.</p><p>C is incorrect because trades occur at discrete posted prices, not arbitrary midpoints, unless negotiated in a dark pool or similar venue.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Making a New Market",
+    "stem": "The best bid is $90.00 and the best ask is $90.50. A limit sell order is submitted at $90.25. This order:",
+    "options": {
+      "A": "Takes liquidity and executes immediately",
+      "B": "Improves the market spread and joins the queue",
+      "C": "Is behind the market's current best quote"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Spread Improvement</h3><p><strong>B is correct.</strong> The limit sell price ($90.25) is lower than the current best ask ($90.50) but higher than the best bid ($90.00). It cannot trade immediately, but it improves the market for buyers by lowering the lowest price available for sellers. It establishes a new best ask, thereby tightening the market spread (now $90.00 bid, $90.25 ask).</p><p>A is incorrect because to execute immediately, the sell order would need to be priced at or below the best bid ($90.00).</p><p>C is incorrect because it is an improvement on the best ask, not behind it.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Limit Order Costs",
+    "stem": "If a limit order is placed far from the current market price and is never filled, the primary cost incurred by the trader is:",
+    "options": {
+      "A": "An explicit commission cost",
+      "B": "An implicit market impact cost",
+      "C": "An opportunity cost"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Execution Risk and Opportunity Cost</h3><p><strong>C is correct.</strong> The risk of non-execution is inherent to passive limit orders. If the market moves away from the specified limit price, the trader misses the chance to execute at the desired price and misses potential profits from the subsequent price movement. This missed profit is defined as an opportunity cost.</p><p>A is incorrect because explicit commissions are generally charged only upon execution.</p><p>B is incorrect because market impact refers to the price concession caused by large-scale consumption of liquidity (taking the market), which does not happen with an unexecuted standing limit order.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Hidden Orders",
+    "stem": "A trader is instructed to execute a large order over the course of a day. To minimize negative price movement caused by revealing the full size, the most appropriate order is a:",
+    "options": {
+      "A": "Market order",
+      "B": "Good-till-cancelled order",
+      "C": "Hidden or Iceberg order"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Information Leakage and Market Impact</h3><p><strong>C is correct.</strong> Large orders, when displayed, signal aggressive trading intent, prompting other traders to trade ahead or change quotes unfavorably (strategic behavior). Hidden and Iceberg orders conceal the full size, minimizing information leakage and, consequently, reducing the negative price impact that is common with large orders.</p><p>A is incorrect because a large market order would execute immediately, likely causing maximum negative price impact (slippage).</p><p>B is incorrect because Good-till-cancelled (GTC) relates only to the order's validity period, not its visibility or size management.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Iceberg Order Mechanics",
+    "stem": "The main feature of an iceberg order is that it:",
+    "options": {
+      "A": "Must execute entirely or be cancelled immediately",
+      "B": "Allows the trader to display only a portion of the total order size",
+      "C": "Is active only during the opening auction"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Display Size Control</h3><p><strong>B is correct.</strong> An iceberg order is a type of hidden order where the trader specifies a small 'display size' that is public, while the majority of the order remains hidden. As the displayed size executes, the exchange replenishes it from the hidden reserve until the total size is filled. This is explicitly designed to conceal the true depth of the order.</p><p>A is incorrect because that describes a Fill-or-Kill (FOK) order.</p><p>C is incorrect because most orders are active during continuous trading and have no specific relation to the opening auction, unlike Market-on-Open (MOO) orders.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Liquidity Discovery",
+    "stem": "How can a trader successfully uncover the hidden size of an existing iceberg order resting at the best ask price?",
+    "options": {
+      "A": "By submitting an order that consumes the displayed size",
+      "B": "By placing an order on the bid side to entice the seller",
+      "C": "By using a clearing instruction to request the information"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Probing Mechanism</h3><p><strong>A is correct.</strong> Hidden size, by definition, is not published. To confirm its existence and depth, a trader must interact with the visible portion. Submitting a buy order that 'lifts' (consumes) the displayed size at the ask price will cause the exchange to reload the display size from the hidden reserve, revealing that more size exists at that price.</p><p>B is incorrect because trading on the bid side (selling) does not interact with hidden sell orders at the ask.</p><p>C is incorrect because clearing instructions relate to settlement; information disclosure is governed by execution/exchange rules, and hidden information is not publicly available upon request.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Size Conditions",
+    "stem": "Which execution instruction requires that the entire order quantity be filled or the order be immediately cancelled?",
+    "options": {
+      "A": "Immediate-or-Cancel (IOC)",
+      "B": "All-or-Nothing (AON)",
+      "C": "Fill-or-Kill (FOK)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Size and Time Constraints</h3><p><strong>C is correct.</strong> Fill-or-Kill (FOK) combines two constraints: the order must be filled in its **Entirety** (Fill-or-Kill part) and **Immediately** (Implied by Kill). The FOK instruction demands simultaneous execution of the full size or immediate cancellation. $\\text{FOK} = \\text{AON} \\cap \\text{IOC}$.</p><p>A is incorrect because Immediate-or-Cancel (IOC) allows for partial execution; the unfilled portion is cancelled immediately.</p><p>B is incorrect because All-or-Nothing (AON) requires full execution but does not mandate immediacy; the order can wait on the book until the full size is available.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Immediate-or-Cancel (IOC)",
+    "stem": "A trader submits an Immediate-or-Cancel (IOC) order for 1,000 shares. If only 300 shares are filled immediately, what happens to the remaining 700 shares?",
+    "options": {
+      "A": "They remain on the order book until the end of the day",
+      "B": "They are immediately cancelled",
+      "C": "They are converted to a market order"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IOC Mechanism</h3><p><strong>B is correct.</strong> Immediate-or-Cancel (IOC) is a validity instruction that allows for partial fills, but any quantity not executed immediately upon submission must be immediately cancelled. The core function is to capture available liquidity now. In this case, 300 shares filled and the remaining 700 are cancelled.</p><p>A is incorrect because that would violate the 'Immediate-or-Cancel' condition; Day orders or GTC orders can remain on the book.</p><p>C is incorrect because the order type cannot automatically change; the unexecuted portion is canceled entirely.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Validity Instructions",
+    "stem": "Which validity instruction allows an order to remain active until the client explicitly revokes it?",
+    "options": {
+      "A": "Good-till-cancelled (GTC)",
+      "B": "Good-for-day (GFD)",
+      "C": "All-or-nothing (AON)"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Temporal Constraints</h3><p><strong>A is correct.</strong> Good-till-cancelled (GTC) is a validity instruction that gives the order the longest lifespan, allowing it to remain active until the order is either filled or the trader decides to cancel it, often subject to a maximum time limit imposed by the exchange.</p><p>B is incorrect because Good-for-day (GFD) restricts the order's validity to the current trading day only.</p><p>C is incorrect because All-or-Nothing (AON) is an execution instruction governing size, not the order's lifespan.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "Market Spread Calculation",
+    "stem": "Broker A quotes $50.00 Bid, $50.15 Ask. Broker B quotes $50.05 Bid, $50.20 Ask. What is the market bid-ask spread?",
+    "options": {
+      "A": "$0.20",
+      "B": "$0.10",
+      "C": "$0.15"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15$. The market spread is $\\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid ($50.00) and the worst possible ask ($50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Price Concession",
+    "stem": "Which scenario is most likely to result in a significant price concession for a large buy order?",
+    "options": {
+      "A": "Submitting the order as a limit order below the best bid",
+      "B": "Submitting the order as a market order in a deep market",
+      "C": "Submitting the order as a market order in a shallow market"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Liquidity and Slippage</h3><p><strong>C is correct.</strong> Price concession (slippage) occurs when a large aggressive order 'walks the book' by consuming limited liquidity at successively worse prices. A market order in a shallow (illiquid) market means the order size vastly exceeds the available depth at the best quotes, forcing it to fill at much higher prices.</p><p>A is incorrect because a limit order below the best bid is passive and may not execute, thus avoiding immediate concession.</p><p>B is incorrect because a deep market has ample size at the best quotes, minimizing the need to trade at higher prices, thus reducing concession.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Order Book Terminology",
+    "stem": "The 'best bid' on the order book represents the:",
+    "options": {
+      "A": "Lowest price a seller is willing to accept",
+      "B": "Highest price a buyer is willing to pay",
+      "C": "Lowest price a buyer is willing to pay"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Competitive Quotes</h3><p><strong>B is correct.</strong> The 'bid' side represents buyers' interest (willingness to buy). The 'best' bid is the one with the highest price, as sellers will naturally prefer to sell to the buyer offering the most. This is the highest current buy price in the market.</p><p>A is incorrect because that describes the 'best ask' or 'best offer'.</p><p>C is incorrect because the lowest price a buyer is willing to pay is irrelevant for determining the best available quote.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Trading Trade-offs",
+    "stem": "The fundamental trade-off a trader faces when choosing between a market order and a limit order is between:",
+    "options": {
+      "A": "Visibility and commission cost",
+      "B": "Execution speed and price quality",
+      "C": "Clearing time and security type"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Execution Goals</h3><p><strong>B is correct.</strong> A **Market Order** prioritizes **Execution Speed** (immediacy) but sacrifices **Price Quality** (paying the spread/concessions). A **Limit Order** prioritizes **Price Quality** (obtaining a specific price or better) but sacrifices **Execution Speed** (risk of non-execution). This is the core trade-off in order selection.</p><p>A is incorrect because visibility and commission are secondary factors; the fundamental conflict is price versus execution certainty/speed.</p><p>C is incorrect because clearing time (e.g., T+2) and security type are fixed post-trade or instrument characteristics, not trade-offs inherent to order entry.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Strategic Execution",
+    "stem": "An analyst has strong proprietary information suggesting a stock is undervalued. To acquire a large position with minimal market impact, the buy-side trader should prioritize:",
+    "options": {
+      "A": "Using a marketable order to quickly secure the price",
+      "B": "Using a hidden or iceberg order to mask the full demand",
+      "C": "Using a Fill-or-Kill order to ensure the entire position is acquired at once"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Strategic Order Use</h3><p><strong>B is correct.</strong> The manager possesses 'alpha' (proprietary insight). Displaying a large buy order signals their confidence and will prompt sellers to raise prices, increasing the acquisition cost (market impact). Using a hidden or iceberg order allows the trader to place the order without revealing the total size, minimizing information leakage and allowing a slower, lower-impact execution.</p><p>A is incorrect because a marketable order instantly consumes liquidity, causing immediate price concessions and signaling aggressive buying.</p><p>C is incorrect because Fill-or-Kill requires immediate, full execution, which is highly unlikely for a large order and would result in massive price concession, undermining the goal of minimizing impact.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Execution Instructions",
+    "stem": "An instruction that mandates an order must be completely filled in a single transaction, otherwise it is cancelled, is known as a:",
+    "options": {
+      "A": "All-or-Nothing (AON) order",
+      "B": "Fill-or-Kill (FOK) order",
+      "C": "Good-till-cancelled (GTC) order"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Quantity Constraint</h3><p><strong>A is correct.</strong> An All-or-Nothing (AON) order is an execution instruction that places a constraint only on the quantity. It specifies that the trade must execute for the full size, or not at all. Unlike FOK, it can be a standing order (i.e., it doesn't need to be immediate).</p><p>B is incorrect because Fill-or-Kill (FOK) combines the AON constraint with an immediate time constraint (must be full and immediate).</p><p>C is incorrect because Good-till-cancelled (GTC) is a validity instruction defining the order's lifespan, not its size requirement.</p>"
+  }
+]
