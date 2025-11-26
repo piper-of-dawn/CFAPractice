@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MCQ Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #fbfbfd;
@@ -20,7 +23,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: "Berkeley Mono", "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-family: "JetBrains Mono", "JetBrainsMono NF", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -33,8 +36,9 @@
     .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
     .card .content { padding: 20px 22px; }
 
-    .question { border-bottom: 1px solid var(--border); padding: 14px 0 18px; margin-bottom: 8px; }
-    .question:last-child { border-bottom: 0; margin-bottom: 0; }
+    .question { border: 1px solid var(--border); border-radius: 10px; padding: 14px 14px 18px; margin-bottom: 12px; transition: border-color .2s, box-shadow .2s; }
+    .question.correct { border-color: #34c759; box-shadow: 0 0 0 3px rgba(52,199,89,0.15); }
+    .question.incorrect { border-color: #ff3b30; box-shadow: 0 0 0 3px rgba(255,59,48,0.12); }
     .question h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; letter-spacing: .2px; }
     .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
@@ -61,6 +65,22 @@
       .grid { grid-template-columns: 1fr; }
       .sidebar { position: static; }
     }
+
+    /* ===== Mobile explanation popup ===== */
+    .modal { position: fixed; inset: 0; display: none; z-index: 9999; }
+    .modal.show { display: block; }
+    .modal .backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+    .modal .dialog { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      width: min(92vw, 560px); max-height: 80vh; background: #fff; color: #111; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      display: flex; flex-direction: column; overflow: hidden; border: 1px solid #e5e5ea; }
+    .modal .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #f0f0f3; }
+    .modal .head .title { font-weight: 700; }
+    .modal .close { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; padding: 6px 10px; cursor: pointer; }
+    .modal .body { padding: 12px; overflow: auto; }
+    @media (prefers-color-scheme: dark) {
+      .modal .dialog { background: #11131a; color: #f5f7fa; border-color: #202531; }
+      .modal .head { border-bottom-color: #202531; }
+    }
   </style>
 </head>
 <body>
@@ -75,7 +95,7 @@
         <div class="content">
           {% csrf_token %}
           {% for q in questions %}
-            <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json="{{ q.json|escapejs }}">
+            <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
               <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
               <h2>{{ q.text }}</h2>
               <ul class="choices">
@@ -93,9 +113,12 @@
                 {% endfor %}
               </div>
               {% endif %}
-              <div style="margin-top:10px;">
-                <button type="button" class="ghost check-btn" data-target="q{{ q.index }}">Check</button>
+              {% if q.explanation %}
+              <div class="explanation" style="display:none; margin-top:10px;">
+                <div class="pill" style="margin-bottom:6px; background:#fdeeee; color:#8a1f1f;">Explanation</div>
+                <div>{{ q.explanation }}</div>
               </div>
+              {% endif %}
             </section>
           {% endfor %}
         </div>
@@ -114,9 +137,9 @@
         </div>
         <div class="card">
           <div class="content">
-            <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">—</span></div>
+            <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">â€”</span></div>
             <div id="outcomeBox" style="margin-top:8px;">
-              <div class="pill" id="outcomePill">Awaiting check…</div>
+              <div class="pill" id="outcomePill">Awaiting checkâ€¦</div>
               <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
               <div id="outcomeMeta" style="margin-top:12px;"></div>
             </div>
@@ -202,15 +225,71 @@
         const meta = {...json};
         delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
+        // Add visual state on the question card
+        sec.classList.toggle('correct', ok);
+        sec.classList.toggle('incorrect', !ok);
+        // On mobile, show explanation in a popup if incorrect
+        if (!ok && window.matchMedia('(max-width: 920px)').matches) {
+          showExplanationPopup(body);
+        }
         recomputeTotals();
       }
 
       document.querySelectorAll('.check-btn').forEach(btn => {
         btn.addEventListener('click', () => onCheck(btn));
       });
-      document.getElementById('quizForm').addEventListener('change', recomputeTotals);
+      // Auto-check current question on selection change
+      document.getElementById('quizForm').addEventListener('change', (e) => {
+        recomputeTotals();
+        const t = e.target;
+        if (t && t.type === 'radio') {
+          const sec = t.closest('section.question');
+          if (sec) onCheck({ dataset: { target: sec.dataset.qname } });
+        }
+      });
       recomputeTotals();
+
+      // ===== Lightweight popup implementation =====
+      function ensurePopup() {
+        if (document.getElementById('explainModal')) return document.getElementById('explainModal');
+        const host = document.createElement('div');
+        host.id = 'explainModal';
+        host.className = 'modal';
+        host.innerHTML = `
+          <div class="backdrop" data-close></div>
+          <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="explainTitle">
+            <div class="head">
+              <div class="title" id="explainTitle">Explanation</div>
+              <button class="close" type="button" aria-label="Close" data-close>&times;</button>
+            </div>
+            <div class="body" id="explainBody"></div>
+          </div>`;
+        document.body.appendChild(host);
+        host.addEventListener('click', (e) => {
+          if (e.target && e.target.hasAttribute('data-close')) hideExplanationPopup();
+        });
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') hideExplanationPopup();
+        });
+        return host;
+      }
+      function showExplanationPopup(html) {
+        const modal = ensurePopup();
+        const body = modal.querySelector('#explainBody');
+        body.innerHTML = html;
+        modal.classList.add('show');
+        // prevent background scroll
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+      }
+      function hideExplanationPopup() {
+        const modal = document.getElementById('explainModal');
+        if (modal) modal.classList.remove('show');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+      }
     })();
   </script>
 </body>
 </html>
+

@@ -1,87 +1,72 @@
 /* ===== Theme (Apple-like) ===== */
 :root {
-	--bg: #0b0c10;
-	--surface: #101216;
-	--card: #11131a;
-	--card-2: #0f1117;
-	--text: #f5f7fa;
-	--muted: #a1a7b0;
-	--border: #202531;
-	--accent: #0a84ff;
-	/* macOS blue */
-	--accent-ink: #e7f1ff;
-	--good: #32d74b;
-	/* macOS green */
-	--bad: #ff453a;
-	/* macOS red */
-	--warn: #ffd60a;
-	/* macOS yellow */
-	--shadow: 0 12px 30px rgba(0, 0, 0, .35);
-	--radius-xl: 20px;
-	--radius-lg: 14px;
-	--radius-sm: 10px;
+  --bg: #0b0c10;
+  --surface: #101216;
+  --card: #11131a;
+  --card-2: #0f1117;
+  --text: #f5f7fa;
+  --muted: #a1a7b0;
+  --border: #202531;
+  --accent: #0a84ff; /* macOS blue */
+  --accent-ink: #e7f1ff;
+  --good: #32d74b; /* macOS green */
+  --bad: #ff453a;  /* macOS red */
+  --warn: #ffd60a; /* macOS yellow */
+  --shadow: 0 12px 30px rgba(0, 0, 0, .35);
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-sm: 10px;
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		--bg: #f5f7fb;
-		--surface: #f8fafc;
-		--card: #ffffff;
-		--card-2: #ffffff;
-		--text: #0f1220;
-		--muted: #5b6470;
-		--border: #e6e8ee;
-		--accent: #0a84ff;
-		--accent-ink: #0b3970;
-		--shadow: 0 10px 24px rgba(10, 25, 41, .08);
-	}
+  :root {
+    --bg: #f5f7fb;
+    --surface: #f8fafc;
+    --card: #ffffff;
+    --card-2: #ffffff;
+    --text: #0f1220;
+    --muted: #5b6470;
+    --border: #e6e8ee;
+    --accent: #0a84ff;
+    --accent-ink: #0b3970;
+    --shadow: 0 10px 24px rgba(10, 25, 41, .08);
+  }
 }
 
 /* ===== Base ===== */
-html,
-body {
-	height: 100%
-}
+html, body { height: 100% }
 
 body {
-	margin: 0;
-	background: var(--bg);
-	color: var(--text);
-	font: 16px/1.55 "JetBrainsMono NF";
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	padding: 28px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 "JetBrains Mono","JetBrainsMono NF", ui-monospace, monospace;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding: 28px;
 }
 
 /* ===== Layout: questions left, outcome right ===== */
 .layout {
-	width: min(1200px, 100%);
-	margin-inline: auto;
-	display: grid;
-	gap: 28px;
-	grid-template-columns: 1fr 360px;
-	align-items: start;
+  width: min(1200px, 100%);
+  margin-inline: auto;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 360px;
+  align-items: start;
 }
 
 .sidebar {
-	position: sticky;
-	top: 16px;
-	display: grid;
-	gap: 16px
+  position: sticky;
+  top: 16px;
+  display: grid;
+  gap: 16px;
 }
 
 @media (max-width: 980px) {
-	body {
-		padding: 18px
-	}
-
-	.layout {
-		grid-template-columns: 1fr
-	}
-
-	.sidebar {
-		position: static
-	}
+  body { padding: 18px }
+  .layout { grid-template-columns: 1fr }
+  .sidebar { position: static }
 }
 
 /* ===== Card base ===== */
@@ -96,11 +81,9 @@ body {
   transition: border-color .2s ease, box-shadow .25s ease;
 }
 
-.card+.card {
-  margin-top: 18px
-}
+.card + .card { margin-top: 18px }
 
-/* Question result states */
+/* Question result states (border highlight on the card) */
 .card.is-correct {
   border-color: var(--good);
   box-shadow:
@@ -108,9 +91,6 @@ body {
     0 10px 28px rgba(50, 215, 75, 0.18),
     var(--shadow);
 }
-
-/* Hide check buttons if present */
-.btn-check { display: none !important; }
 
 .card.is-wrong {
   border-color: var(--bad);
@@ -120,27 +100,60 @@ body {
     var(--shadow);
 }
 
+/* Hide legacy "Check" button when present */
+.btn-check { display: none !important; }
+
 /* Headings */
 .card h2 {
-	font-size: 1.1rem;
-	letter-spacing: .2px;
-	margin: 0 0 12px;
-	font-weight: 700
+  font-size: 1.1rem;
+  letter-spacing: .2px;
+  margin: 0 0 12px;
+  font-weight: 700;
 }
 
-.subtle {
-	color: var(--muted);
-	font-size: .9rem;
-	margin-top: 10px
-}
+.subtle { color: var(--muted); font-size: .9rem; margin-top: 10px }
 
 /* ===== Options (large comfortable touch targets) ===== */
 .option {
-	display: flex;
-	align-items: flex-start;
-	gap: .75rem;
-	border: 1px solid var(--border);
-	border-radius: var(--radius-lg);
-	padding: 14px 14px;
-	margin: 10px 0;
-	background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(0, 0, 0,
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 14px;
+  margin: 10px 0;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.06));
+  transition: border-color .2s ease, box-shadow .25s ease, opacity .2s ease;
+}
+
+.option:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+.option input { accent-color: var(--accent); margin-top: .2rem }
+
+/* Per-option markings set by JS */
+.option.correct {
+  border-color: var(--good);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--good) 25%, transparent),
+    0 6px 20px rgba(50, 215, 75, 0.12);
+}
+.option.wrong {
+  border-color: var(--bad);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--bad) 25%, transparent),
+    0 6px 20px rgba(255, 69, 58, 0.12);
+}
+.option.dim { opacity: .6 }
+
+/* ===== Outcome card (right sidebar) ===== */
+.result-card h3 { margin: 0 0 12px; font-weight: 800; letter-spacing: .3px }
+.result-card.pending h3 { color: var(--muted) }
+.result-card.correct h3 { color: var(--good) }
+.result-card.wrong h3 { color: var(--bad) }
+
+.progress { position: relative; height: 8px; background: #12141b; border-radius: 999px; border: 1px solid var(--border); overflow: hidden; }
+.progress > i { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, #59d86d, #2fb34d); border-radius: inherit; transition: width .3s ease; }
+
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 14px }
+.stat { display: grid; gap: 2px }
+.stat .val { font-weight: 800; font-size: 20px }
+.stat .subtle { font-size: .8rem }

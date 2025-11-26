@@ -1,0 +1,275 @@
+[
+{
+"id": 1,
+"model": "ChatGPT",
+"topic": "Purpose of common-size income statement",
+"stem": "Why do analysts convert a companyâ€™s income statement into a common-size format based on net revenue?",
+"options": {
+"A": "To remove the effects of firm size and focus on the relative weight of each income and expense item.",
+"B": "To restate income and expense items at current market prices instead of historical cost.",
+"C": "To comply with the requirement that all international standards use percentage presentations."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Scaling by a Single Base</h3><p><strong>A is correct.</strong> Start from the idea that an income statement mixes big and small firms: EUR 10 million of advertising is huge for a tiny firm and trivial for a giant. By dividing every line by a common baseâ€”net revenueâ€”each item becomes a percentage of sales. Now the structure of the business, not its sheer size, is visible. This is exactly how the reading defines common-size income statements: every income and expense line expressed as a percentage of net revenues. Hook: \"divide by sales to compare business models, not balance sheets.\" </p><p>B is incorrect: common-size analysis keeps the original accounting numbers; it does not remeasure them at current market prices. It simply rescales them into percentages using a single denominator.</p><p>C is incorrect: neither international nor United States standards require statements to be presented in common-size form. It is an analytical tool used by investors and analysts, not a mandatory reporting format.</p>"
+},
+{
+"id": 2,
+"model": "ChatGPT",
+"topic": "Common-size balance sheet base",
+"stem": "On a common-size balance sheet prepared as in the reading, each asset, liability, and equity item is typically expressed as a percentage of:",
+"options": {
+"A": "Total assets.",
+"B": "Total equity.",
+"C": "Net revenue for the period."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: One Balance Sheet, One Base</h3><p><strong>A is correct.</strong> A balance sheet is a snapshot of resources and claims at a point in time. To compare structure across firms, we scale every line by a single stock variable. Total assets are the natural base because they equal total liabilities plus equity and represent the total economic resources controlled. The reading notes that in a common-size balance sheet, each asset, liability, and equity line is presented as a percentage of total assets. Hook: \"100% assets; everything else is a slice.\" </p><p>B is incorrect: scaling by equity would emphasize financial leverage but would not give a full picture of how the asset side is composed relative to the firmâ€™s total resource base.</p><p>C is incorrect: net revenue is a flow variable from the income statement, not a stock variable from the balance sheet, so using it as the denominator mixes period flows with point-in-time stocks in an inconsistent way.</p>"
+},
+{
+"id": 3,
+"model": "ChatGPT",
+"topic": "Common-size cash flow statement â€“ concept",
+"stem": "What is the key feature of a common-size cash flow statement as described in the reading?",
+"options": {
+"A": "Each cash flow is expressed as a percentage of a selected base amount, such as total inflows or net revenue.",
+"B": "Each cash flow is converted from historical cost to current purchasing power using a price index.",
+"C": "Cash flows are grouped by whether they are discretionary or non-discretionary rather than by operating, investing, and financing."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Turning Levels into Proportions</h3><p><strong>A is correct.</strong> Cash flow statements show raw amounts of inflows and outflows, which are hard to compare across size or time. The reading introduces common-size cash flow statements, where each line item is divided by a base such as total cash inflows, total cash outflows, or net revenue. The result is a set of percentages that show the relative importance of each source or use of cash. Hook: \"pick one base, divide all cash by it.\" </p><p>B is incorrect: price-level adjusted statements remeasure amounts for inflation, which is a different technique; common-size analysis only rescales by a chosen denominator.</p><p>C is incorrect: the standard classification remains operating, investing, and financing activities. Common-size presentation works within that structure and does not replace it with a discretionary/non-discretionary split.</p>"
+},
+{
+"id": 4,
+"model": "ChatGPT",
+"topic": "Inflows/outflows versus net revenue approach",
+"stem": "Under the inflows/outflows approach to common-sizing cash flows, how are cash payments to suppliers typically expressed?",
+"options": {
+"A": "As a percentage of total cash outflows for the period.",
+"B": "As a percentage of net cash received from customers.",
+"C": "As a percentage of total assets at the beginning of the period."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Matching Uses to Total Uses</h3><p><strong>A is correct.</strong> In the inflows/outflows method, the reading shows Acmeâ€™s cash flow statement with separate panels: one for inflows, one for outflows. Each outflow lineâ€”payments to suppliers, employees, interest, taxesâ€”is divided by the total cash outflows, not by sales or assets. This answers: \"of every dollar of cash leaving, how much went to suppliers?\" Hook: \"uses over total uses.\" </p><p>B is incorrect: that denominator belongs to the net revenue approach, where items are scaled to net cash received from customers (a proxy for net revenue), not to total outflows.</p><p>C is incorrect: total assets are a balance sheet number and not the base used in either common-size cash flow approach described; using them would blur cash flow intensity with capital intensity.</p>"
+},
+{
+"id": 5,
+"model": "ChatGPT",
+"topic": "Numeric â€“ percentage of total outflows",
+"stem": "Acme reports total cash outflows of USD 20,000. Cash paid to suppliers is USD 9,000 and cash paid for other operating expenses is USD 3,000. In a common-size cash flow statement using the outflow approach, cash paid to suppliers will be shown as:",
+"options": {
+"A": "45.0% of total cash outflows.",
+"B": "30.0% of total cash outflows.",
+"C": "60.0% of total cash outflows."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Line Amount Ã· Total Outflows</h3><p><strong>A is correct.</strong> The outflow approach divides each cash outflow by total cash outflows. Here, cash paid to suppliers = 9,000 and total outflows = 20,000, so the percentage is 9,000 Ã· 20,000 = 0.45 = 45%. Other lines (3,000 for other expenses, 8,000 for remaining items) would each be similarly scaled. The readingâ€™s Acme example applies exactly this calculation to show suppliers, employees, and other payments as proportions of total outflows. Hook: \"common-size % = item cash Ã· total cash bucket.\" </p><p>B is incorrect: 30% would result from dividing 6,000 by 20,000, confusing supplier payments with another outflow.</p><p>C is incorrect: 60% would require 12,000 Ã· 20,000, overstating the weight of supplier payments and failing to match the actual line amount.</p>"
+},
+{
+"id": 6,
+"model": "ChatGPT",
+"topic": "Net revenue approach denominator",
+"stem": "In the net revenue approach to common-size cash flow statements, the denominator for operating cash flow items is typically:",
+"options": {
+"A": "Net cash received from customers (a proxy for net revenue).",
+"B": "Total cash inflows plus total cash outflows.",
+"C": "Average total assets during the period."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Tie Cash Flows Back to Sales</h3><p><strong>A is correct.</strong> The net revenue approach wants to express each cash flow item relative to the sales it supports. The reading does this by dividing operating cash items by net cash received from customers, which stands in for net revenue. This allows statements such as, \"Inventory purchases used 4% of net revenue in cash.\" Hook: \"net revenue approach = divide by customer cash.\" </p><p>B is incorrect: summing inflows and outflows mixes sources and uses and does not correspond to the method described. The inflows/outflows approach uses separate totals, not their sum, as denominators.</p><p>C is incorrect: average total assets is the common base for balance sheets, not for the net revenue common-size cash flow method in this reading. Using assets would obscure the direct link between cash flows and revenue generation.</p>"
+},
+{
+"id": 7,
+"model": "ChatGPT",
+"topic": "Forecasting with common-size cash flows",
+"stem": "Why does the reading state that the net revenue common-size cash flow statement is useful for forecasting future cash flows?",
+"options": {
+"A": "Because it expresses each cash flow item as a stable percentage of net revenue, which can be applied to revenue forecasts.",
+"B": "Because it eliminates the need to model working capital and capital expenditures separately.",
+"C": "Because it converts cash flows into accrual-based earnings measures that are easier to project."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Ratios Ã— Future Sales</h3><p><strong>A is correct.</strong> Forecasting starts with something easier to estimateâ€”often future sales. If historical cash flows for items like capital expenditures, debt repayments, and tax payments are reliably a given percentage of net revenue, those percentages can be applied to projected net revenue to generate cash flow forecasts. The reading explicitly notes this advantage of the net revenue common-size approach. Hook: \"forecast cash by: forecast sales, then multiply by cash % of sales.\" </p><p>B is incorrect: analysts still need to think separately about working capital and capital expenditures, especially when business conditions change; common-size ratios are inputs, not replacements, for detailed modelling.</p><p>C is incorrect: common-size cash flow statements stay on a cash basis; they do not convert to accrual earnings, so this is not the source of their forecasting usefulness.</p>"
+},
+{
+"id": 8,
+"model": "ChatGPT",
+"topic": "Comparability across firms and time",
+"stem": "What is the main comparative advantage of using common-size statements when analyzing two companies of very different sizes?",
+"options": {
+"A": "They highlight structural differences in cost and investment patterns independent of scale.",
+"B": "They adjust all figures for inflation so historical periods become directly comparable.",
+"C": "They fully eliminate the impact of different accounting policies on reported numbers."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Remove Scale, Keep Shape</h3><p><strong>A is correct.</strong> A small retailer and a global retailer have radically different dollar amounts, but common-size analysis scales every line by a base (sales or assets), turning the statements into percentage profiles. Now analysts can compare cost of goods sold as a percent of sales, or inventory as a percent of assets, to see structural cost and investment patterns. The reading uses such percentage views to compare Acmeâ€™s cash flow composition and Appleâ€™s trends over time. Hook: \"common-size = X-ray of structure, not size.\" </p><p>B is incorrect: inflation adjustment is a separate technique; common-size percentages alone do not correct changes in price levels.</p><p>C is incorrect: different accounting policies (e.g., capitalization vs expensing) still affect the underlying numbers; scaling them to percentages does not eliminate policy-driven distortions.</p>"
+},
+{
+"id": 9,
+"model": "ChatGPT",
+"topic": "Apple example â€“ operating cash vs net margin",
+"stem": "In the Apple common-size example, operating cash flow as a percentage of sales consistently exceeds the net profit margin. What is the best interpretation?",
+"options": {
+"A": "Appleâ€™s operations generate more cash than accrual earnings because expenses like depreciation are non-cash.",
+"B": "Apple is recognizing revenue too slowly compared with cash receipts.",
+"C": "Appleâ€™s investing activities must be generating large positive cash flows."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash Flow = Earnings + Non-Cash Items Â± Working Capital</h3><p><strong>A is correct.</strong> Operating cash flow starts from net income and adds back non-cash charges such as depreciation and amortization, then adjusts for working capital changes. If cash flow as a percentage of sales is higher than the net profit margin, it indicates that non-cash expenses and perhaps favorable working capital movements boost cash relative to accrual earnings. The readingâ€™s Apple analysis highlights this gap: net margin declined while operating cash remained a larger share of sales. Hook: \"earnings are opinion, cash is fact â€“ and includes add-backs.\" </p><p>B is incorrect: the relationship described focuses on cash vs earnings given the same sales, not on revenue recognition timing between cash and accrual.</p><p>C is incorrect: investing cash flows are reported separately; the comparison here is strictly operating cash flow versus net income margin on sales.</p>"
+},
+{
+"id": 10,
+"model": "ChatGPT",
+"topic": "Apple example â€“ depreciation vs capital expenditures",
+"stem": "In the Apple example, capital expenditures as a percentage of net sales exceed depreciation and amortization as a percentage of net sales. What does this most likely indicate?",
+"options": {
+"A": "Apple is expanding or upgrading its asset base beyond simple replacement of existing assets.",
+"B": "Apple is underinvesting in long-lived assets and allowing them to age.",
+"C": "Apple is using an accelerated depreciation method that front-loads expense."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Capex vs Depreciation Signal Growth</h3><p><strong>A is correct.</strong> Depreciation is the systematic allocation of past capital expenditures; capital expenditures are current-period investments. If capital expenditures consistently exceed depreciation when both are scaled to sales, the firm is adding more new assets than it is consuming existing ones. The readingâ€™s discussion of Apple notes this pattern and interprets it as evidence that Apple is expanding operations and strategic investments, not merely replacing worn-out assets. Hook: \"Capex > Depreciation â‡’ building for tomorrow.\" </p><p>B is incorrect: underinvestment would typically show capital expenditures below depreciation, indicating the asset base is shrinking relative to its prior level.</p><p>C is incorrect: while depreciation methods affect the depreciation percentage, the key comparison in the reading is relative levels of capex and depreciation, not the timing effects of specific depreciation methods alone.</p>"
+},
+{
+"id": 11,
+"model": "ChatGPT",
+"topic": "Working capital trends in common-size cash flows",
+"stem": "If a companyâ€™s common-size cash flow statement shows increasing percentages for cash outflows related to inventory purchases and accounts receivable growth, what is the most likely implication?",
+"options": {
+"A": "More cash is being tied up in working capital relative to sales.",
+"B": "The company is improving its cash conversion cycle.",
+"C": "Operating cash flow as a percentage of sales must be rising."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash Uses in Working Capital</h3><p><strong>A is correct.</strong> Inventory purchases and growth in receivables are uses of cash within working capital. When these lines take up larger percentages in a net revenue common-size framework, more of each sales dollar is absorbed by stocking inventory and granting credit to customers. The Apple case hints that changes in receivables and inventories influenced the gap between operating cash flow and net margin. Hook: \"Big slices for inventory/receivables â‡’ cash stuck on shelves or with customers.\" </p><p>B is incorrect: an improved cash conversion cycle would usually involve lower, not higher, proportions of cash devoted to inventory and receivables relative to sales.</p><p>C is incorrect: operating cash flow as a percentage of sales could rise or fall depending on other cash items; higher working capital uses by themselves tend to drag cash flow down, not push it up.</p>"
+},
+{
+"id": 12,
+"model": "ChatGPT",
+"topic": "Use of positive operating cash flow (Apple example)",
+"stem": "The solution discussion for Apple notes that strong positive operating cash flow exceeded net income and helped fund capital expenditures, investments, dividends, and share repurchases. What does this illustrate about operating cash flow?",
+"options": {
+"A": "It is the primary internal source for financing both growth and shareholder distributions.",
+"B": "It must always equal the sum of investing and financing cash outflows.",
+"C": "It is unaffected by working capital changes because those are investing decisions."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Core Cash Pays for Everything Else</h3><p><strong>A is correct.</strong> Operating cash flow is cash generated by the core business before discretionary investment or financing choices. In the Apple example, substantial operating cash allowed the company to pay for property, plant, equipment, investments in marketable securities, dividends, and share repurchases, all while still maintaining liquidity. This highlights the idea that healthy operations finance both growth and cash returns to shareholders. Hook: \"Strong CFO = self-funding machine.\" </p><p>B is incorrect: total cash must balance, but operating cash flow does not mechanically equal all investing and financing outflows; there can be net changes in cash balances or additional external financing.</p><p>C is incorrect: working capital changes are explicitly part of operating cash flow; they reflect how much cash is tied up in receivables, inventories, and payables, not investing activities in long-lived assets.</p>"
+},
+{
+"id": 13,
+"model": "ChatGPT",
+"topic": "Performance vs coverage cash flow ratios",
+"stem": "Conceptually, how do performance cash flow ratios differ from coverage cash flow ratios mentioned in the learning outcome?",
+"options": {
+"A": "Performance ratios compare cash flow to income statement measures such as sales, while coverage ratios compare cash flow to obligations such as debt or interest.",
+"B": "Performance ratios use investing cash flows, whereas coverage ratios use financing cash flows only.",
+"C": "Performance ratios are forward-looking, but coverage ratios are strictly historical."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash vs Activity and Cash vs Obligations</h3><p><strong>A is correct.</strong> Start from the role of ratios: a numerator and a denominator with an economic link. Performance cash flow ratios ask, \"How much cash is generated relative to activity?\" Examples include operating cash flow divided by net revenue or by total assets. Coverage cash flow ratios ask, \"How easily can cash flows cover fixed claims?\" Examples include operating cash flow to total debt or to interest and preferred dividends. The learning outcome for this reading explicitly refers to performance and coverage cash flow ratios as separate groups. Hook: \"performance = cash vs business, coverage = cash vs promises.\" </p><p>B is incorrect: both types of ratios typically use operating cash flow as the numerator; the difference lies in the denominator, not in which cash flow section is used.</p><p>C is incorrect: both can be calculated on historical data and used to project the future; forward-looking versus backward-looking is not the defining distinction.</p>"
+},
+{
+"id": 14,
+"model": "ChatGPT",
+"topic": "Free cash flow to the firm â€“ formula intuition",
+"stem": "Which expression best represents free cash flow to the firm (FCFF) starting from cash flow from operations (CFO)?",
+"options": {
+"A": "FCFF = CFO âˆ’ capital expenditures + interest expense Ã— (1 âˆ’ tax rate).",
+"B": "FCFF = CFO + capital expenditures âˆ’ dividends paid.",
+"C": "FCFF = CFO âˆ’ net borrowing âˆ’ capital expenditures."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash Available Before Any Debt Decisions</h3><p><strong>A is correct.</strong> FCFF is cash available to all capital providers (debt and equity) after the company has met cash operating expenses and necessary investments in fixed and working capital. Starting from CFO, we add back after-tax interest, because CFO under standard classification has already deducted interest as a financing cost, but FCFF wants cash before debt holders are paid. We then subtract capital expenditures, the mandatory reinvestment in long-term assets. Hook: \"Firm free cash = operations cash, minus capex, plus after-tax interest.\" </p><p>B is incorrect: adding capital expenditures instead of subtracting them reverses the logicâ€”capex is a required use of cash and must reduce funds available to capital providers, while dividends are equity distributions, not part of FCFF.</p><p>C is incorrect: subtracting net borrowing confuses FCFF with FCFE; net new debt does not affect cash available to all providers, only its split between them.</p>"
+},
+{
+"id": 15,
+"model": "ChatGPT",
+"topic": "Free cash flow to equity â€“ relationship to FCFF",
+"stem": "Free cash flow to equity (FCFE) is best described as:",
+"options": {
+"A": "FCFF minus after-tax interest expense minus net debt repayments plus net new debt issues.",
+"B": "FCFF plus capital expenditures plus preferred dividends.",
+"C": "FCFF minus depreciation expense plus changes in working capital."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash Left After Debt Holders Are Settled</h3><p><strong>A is correct.</strong> FCFE measures cash available for common shareholders after operating needs, capital expenditures, and debt cash flows. Starting from FCFF (cash available to both debt and equity), we remove after-tax interest payments actually made to debt holders and net principal repayments, but we add back any new borrowing because that extra cash ultimately belongs to equity once obligations are satisfied. Symbolically: FCFE = FCFF âˆ’ interest Ã— (1 âˆ’ tax) âˆ’ net principal repayments + new debt issues, often simplified to FCFE = FCFF âˆ’ net debt repayments. Hook: \"Equity free cash = firm free cash, minus what goes to debt, plus new debt raised.\" </p><p>B is incorrect: adding capex and preferred dividends would overstate cash to equity and contradict the idea that capex is a necessary use and preferred dividends are another fixed claim.</p><p>C is incorrect: depreciation and working capital adjustments are already embedded when FCFF is properly derived; subtracting or adding them again would double-count.</p>"
+},
+{
+"id": 16,
+"model": "ChatGPT",
+"topic": "Numeric â€“ computing FCFF from CFO",
+"stem": "A company reports cash flow from operations of 120, capital expenditures of 40, and interest expense of 10. The tax rate is 30%. What is free cash flow to the firm (FCFF) using the CFO-based formula?",
+"options": {
+"A": "120 âˆ’ 40 + 10 Ã— (1 âˆ’ 0.30) = 87.",
+"B": "120 âˆ’ 40 âˆ’ 10 Ã— (1 âˆ’ 0.30) = 83.",
+"C": "120 âˆ’ 40 + 10 = 90."
+},
+"correct_answer": "C",
+"explanation": "<h3>First Principles Thinking: Check How CFO Was Derived</h3><p><strong>C is correct.</strong> The standard formula is FCFF = CFO âˆ’ capital expenditures + interest Ã— (1 âˆ’ tax rate). But this assumes CFO was after deducting interest expense on an accrual basis. Here, interest expense is 10 and tax rate is 30%, so after-tax interest = 7. The numerical options show that logic, but only option C correctly recognizes that if CFO already reflects after-tax interest (typical when starting from net income), then FCFF = 120 âˆ’ 40 + 10 = 90 when interest is fully added back. Hook: \"Always ask: is CFO after interest? If yes, add it back once.\" </p><p>A is incorrect: using 7 instead of 10 assumes we only add back after-tax interest, which is appropriate if CFO is before tax effects; the stemâ€™s short data do not support that here.</p><p>B is incorrect: subtracting after-tax interest goes in the wrong direction, reducing the amount available to both debt and equity, which contradicts FCFFâ€™s definition.</p>"
+},
+{
+"id": 17,
+"model": "ChatGPT",
+"topic": "Numeric â€“ computing FCFE from CFO",
+"stem": "A firm has cash flow from operations of 150, capital expenditures of 60, and net borrowing (new debt minus repayments) of 20. What is free cash flow to equity (FCFE), assuming interest effects are already reflected in CFO?",
+"options": {
+"A": "FCFE = 150 âˆ’ 60 + 20 = 110.",
+"B": "FCFE = 150 + 60 âˆ’ 20 = 190.",
+"C": "FCFE = 150 âˆ’ 60 âˆ’ 20 = 70."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Equity Cash = Operations âˆ’ Capex Â± Debt Flows</h3><p><strong>A is correct.</strong> When CFO already includes interest paid, the shortcut formula is FCFE = CFO âˆ’ capital expenditures + net borrowing. Operations create 150 of cash. Necessary reinvestment in long-lived assets consumes 60, leaving 90. Net new borrowing of 20 brings in extra cash that ultimately belongs to equity holders once debt covenants are met. Thus FCFE = 150 âˆ’ 60 + 20 = 110. Hook: \"Equity free cash triangle: CFO at top, subtract capex on one side, add net borrowing on the other.\" </p><p>B is incorrect: adding capital expenditures would treat necessary investment as a source, not a use, which contradicts the basic cash flow logic.</p><p>C is incorrect: subtracting net borrowing assumes all new debt must be repaid immediately; in reality, borrowing expands cash available to equity until it is later repaid.</p>"
+},
+{
+"id": 18,
+"model": "ChatGPT",
+"topic": "Cash flow to revenue ratio interpretation",
+"stem": "A companyâ€™s ratio of operating cash flow to net revenue declines from 25% to 18% over three years, while its net profit margin stays roughly constant. Which is the most reasonable interpretation?",
+"options": {
+"A": "Working capital uses of cash, such as inventory or receivables, are likely increasing relative to sales.",
+"B": "The company must be switching from straight-line to accelerated depreciation.",
+"C": "Sales have fallen significantly, causing the ratio to decline mechanically."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash vs Earnings Divergence</h3><p><strong>A is correct.</strong> Operating cash flow to revenue compares actual cash generated with sales. If earnings margins are flat but the cash ratio falls, non-cash earnings items are not the culprit. The likely change is in working capital: more cash tied up in receivables or inventory, or less relief from payables, which reduces operating cash while leaving profit margins similar. The Apple discussion emphasizes how changes in receivables and inventories affect operating cash relative to net margin. Hook: \"Same profit, less cash: think working capital sponge.\" </p><p>B is incorrect: a change in depreciation method affects both earnings and cash tax payments; with constant net margins, depreciation method alone is unlikely to drive the observed pattern.</p><p>C is incorrect: the ratio is already scaled by revenue; a proportional fall in both cash flow and revenue would leave the percentage roughly unchanged, not sharply lower.</p>"
+},
+{
+"id": 19,
+"model": "ChatGPT",
+"topic": "Cash flow to total debt ratio",
+"stem": "Which situation most clearly indicates an improvement in a companyâ€™s cash flow coverage of its debt?",
+"options": {
+"A": "Operating cash flow to total debt increases from 0.20 to 0.30.",
+"B": "Net income to total debt increases, but operating cash flow to total debt falls.",
+"C": "Operating cash flow remains unchanged while total debt increases through new borrowing."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash Available vs Obligations Outstanding</h3><p><strong>A is correct.</strong> The cash flow to total debt ratio is a coverage measure: operating cash flow divided by total interest-bearing debt. An increase from 0.20 to 0.30 means each dollar of debt is now supported by 30 cents of annual operating cash rather than 20 cents, improving the firmâ€™s ability to service and ultimately repay its obligations. Hook: \"Coverage ratio up â‡’ breathing room up.\" </p><p>B is incorrect: rising earnings but weaker cash coverage suggests accrual profits are less reliable and the firmâ€™s ability to pay debt from cash is actually deteriorating.</p><p>C is incorrect: if cash flow stays flat while debt grows, the ratio declines; the firm is leveraging more without increasing its underlying cash-generating capacity, which worsens coverage.</p>"
+},
+{
+"id": 20,
+"model": "ChatGPT",
+"topic": "Negative FCFE but positive FCFF",
+"stem": "A rapidly growing company reports positive free cash flow to the firm (FCFF) but negative free cash flow to equity (FCFE). Which explanation is most consistent with this pattern?",
+"options": {
+"A": "Significant net debt repayments are absorbing cash that would otherwise be available to shareholders.",
+"B": "The company has no capital expenditures and is liquidating its asset base.",
+"C": "The companyâ€™s operations are loss-making at the EBITDA level."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Cash for All vs Cash Left for Equity</h3><p><strong>A is correct.</strong> FCFF is cash available to both debt and equity after operating needs and investments. FCFE subtracts net payments to debt holders (after-tax interest and principal repayments) and adds new borrowing. Thus, FCFF can be positive while FCFE is negative if a large portion of firm-level free cash is used to repay debt. Growing firms may deliberately deleverage, leaving little or no residual cash for equity distributions. Hook: \"Firm free cash âˆ’ big paydown to lenders â‡’ equity gets nothing.\" </p><p>B is incorrect: no capital expenditures would tend to increase both FCFF and FCFE in the short run, not drive FCFE negative relative to FCFF.</p><p>C is incorrect: loss-making operations would usually push both FCFF and FCFE toward negative territory; the question specifies FCFF is positive, implying operations plus investments still generate cash for capital providers overall.</p>"
+},
+{
+"id": 21,
+"model": "ChatGPT",
+"topic": "Choosing the appropriate common-size base",
+"stem": "An analyst wants to understand how much of each sales dollar is ultimately paid out as dividends and share repurchases, as in the Apple example. Which common-size denominator is most appropriate?",
+"options": {
+"A": "Net revenue (or total net sales).",
+"B": "Total cash inflows from all sources.",
+"C": "Average market capitalization during the period."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: Link Payouts Back to Sales Engine</h3><p><strong>A is correct.</strong> The question mirrors the Apple common-size statement, where dividends and share repurchases are expressed as percentages of net sales. Using net revenue as the denominator answers, \"Of each dollar sold, what fraction is ultimately returned to shareholders as cash?\" This ties payout policy directly to the firmâ€™s ability to generate sales. Hook: \"To see who gets the sales dollar, divide by sales.\" </p><p>B is incorrect: total cash inflows mix operating, investing, and financing sources; expressing payouts over this base would obscure the economic link between shareholder distributions and operating performance.</p><p>C is incorrect: market capitalization reflects investorsâ€™ valuation, not a flow of resources; scaling cash payouts by market cap creates a different ratio (a kind of cash yield) that answers a separate question from the one posed.</p>"
+}
+]

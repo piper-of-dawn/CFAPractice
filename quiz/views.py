@@ -25,6 +25,18 @@ def _read_text(p: Path, default: str = "") -> str:
 
 def _normalize_questions(raw):
     """Accept list of question dicts and normalize to structure used by UI."""
+    def _fix_mojibake(val):
+        if not isinstance(val, str):
+            return val
+        if "â" in val or "�" in val:
+            try:
+                fixed = val.encode("latin1", errors="ignore").decode("utf-8", errors="ignore")
+                if fixed and fixed != val:
+                    return fixed
+            except Exception:
+                pass
+        return val
+
     data = raw
     norm = []
     letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -34,14 +46,14 @@ def _normalize_questions(raw):
         correct = q.get("correct_answer", q.get("answer", q.get("answerIndex", "")))
 
         if isinstance(opts, dict):
-            items = [(k, opts[k]) for k in sorted(opts.keys(), key=lambda x: str(x))]
+            items = [(k, _fix_mojibake(opts[k])) for k in sorted(opts.keys(), key=lambda x: str(x))]
             if isinstance(correct, int):
                 if 0 <= correct < len(items):
                     correct = items[correct][0]
                 else:
                     correct = ""
         else:
-            items = [(letters[i], v) for i, v in enumerate(list(opts))]
+            items = [(letters[i], _fix_mojibake(v)) for i, v in enumerate(list(opts))]
             if isinstance(correct, int):
                 if 0 <= correct < len(items):
                     correct = items[correct][0]
@@ -53,10 +65,10 @@ def _normalize_questions(raw):
             "model": q.get("model", ""),
             "topic": q.get("topic", ""),
             "difficulty": q.get("difficulty", ""),
-            "stem": q.get("stem", q.get("text", q.get("q", ""))),
+            "stem": _fix_mojibake(q.get("stem", q.get("text", q.get("q", "")))),
             "items": items,
             "correct": str(correct).strip(),
-            "explanation": q.get("explanation", ""),
+            "explanation": _fix_mojibake(q.get("explanation", "")),
         })
         # light shuffle to mimic original behavior
         item = norm.pop()

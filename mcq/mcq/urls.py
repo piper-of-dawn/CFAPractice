@@ -21,7 +21,8 @@ from quiz.views import home, play, mcq, reset
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('play/<str:fname>/', play, name='play'),
+    # Allow subfolders inside data/ via <path:fname>
+    path('play/<path:fname>/', play, name='play'),
     path('legacy/', mcq, name='mcq'),
     path('reset/', reset, name='reset'),
 ]

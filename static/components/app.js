@@ -1,6 +1,7 @@
 (() => {
-  const $ = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  // Safe query helpers: tolerate null roots
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
 
   // Outcome/dashboard references
   const outcomeCard = $("#outcomeCard");
@@ -10,7 +11,7 @@
     answered: $('[data-role="answered"]', outcomeCard),
     current: $('[data-role="current"]', outcomeCard),
     best: $('[data-role="best"]', outcomeCard),
-    pbar: $("#progressBar"),
+    pbar: $("#progressBar") || null,
   };
 
   // Explanation box
@@ -42,9 +43,11 @@
         : kind === "wrong"
           ? "INCORRECT"
           : "PENDING";
-    outcomeCard.classList.remove("correct", "wrong", "pending");
-    outcomeCard.classList.add(kind);
-    fields.status.textContent = word;
+    if (outcomeCard) {
+      outcomeCard.classList.remove("correct", "wrong", "pending");
+      outcomeCard.classList.add(kind);
+    }
+    if (fields.status) fields.status.textContent = word;
   }
 
   function renderStats() {
@@ -53,10 +56,10 @@
     const correct = vals.filter(Boolean).length;
     const acc = answered ? Math.round((100 * correct) / answered) : 0;
 
-    fields.accuracy.textContent = `${acc}%`;
-    fields.answered.textContent = String(answered);
-    fields.current.textContent = String(state.streak);
-    fields.best.textContent = String(state.best);
+    if (fields.accuracy) fields.accuracy.textContent = `${acc}%`;
+    if (fields.answered) fields.answered.textContent = String(answered);
+    if (fields.current) fields.current.textContent = String(state.streak);
+    if (fields.best) fields.best.textContent = String(state.best);
     if (fields.pbar) fields.pbar.style.width = `${acc}%`;
   }
 

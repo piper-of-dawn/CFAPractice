@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Question Set</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "JetBrains Mono", ui-monospace, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; background: #fbfbfd; color: #111; }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
+    h1 { font-size: 22px; margin: 0 0 14px; }
+    p.sub { color: #6e6e73; margin: 0 0 20px; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    li a { display: block; padding: 12px 14px; border: 1px solid #e5e5ea; border-radius: 12px; background: #fff; color: #111; text-decoration: none; }
+    li a:hover { background: #f9f9fb; }
+    .muted { color: #6e6e73; font-size: 12px; }
+    .footer { margin-top: 16px; }
+  </style>
+  {% load static %}
+  <link rel="icon" href="data:," />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta name="referrer" content="same-origin" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Select a Question Set</h1>
+    <p class="sub">Found {{ files|length }} JSON file(s) under data/</p>
+    <ul>
+      {% for f in files %}
+        <li>
+          <a href="{% url 'play' f.relpath %}">
+            {{ f.name }}
+            <div class="muted">{{ f.relpath }}</div>
+          </a>
+        </li>
+      {% empty %}
+        <li class="muted">No JSON files found.</li>
+      {% endfor %}
+    </ul>
+
+    <div class="footer">
+      <a class="muted" href="{% url 'mcq' %}">Open default quiz</a>
+    </div>
+  </div>
+</body>
+</html>
