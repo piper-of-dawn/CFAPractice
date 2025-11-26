@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Inflation impact on FIFO vs LIFO",
+    "stem": "In an environment of rising inventory costs, which method reports the highest cost of sales?",
+    "options": {
+      "A": "FIFO reports the highest cost of sales",
+      "B": "LIFO reports the highest cost of sales",
+      "C": "Both report identical cost of sales"
+    },
+    "correct_answer": "B",
+    "explanation": "Under rising prices, LIFO matches recent (higher) costs to sales, raising cost of sales and lowering gross profit."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Inflation and gross profit",
+    "stem": "In rising price environments, FIFO produces:",
+    "options": {
+      "A": "Higher gross profit than LIFO",
+      "B": "Lower gross profit than LIFO",
+      "C": "Equal gross profit to LIFO"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO uses older, lower costs, resulting in higher gross profit under inflation."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Balance sheet inventory under inflation",
+    "stem": "Under inflation, which method results in higher ending inventory on the balance sheet?",
+    "options": {
+      "A": "LIFO",
+      "B": "FIFO",
+      "C": "Both produce identical ending inventory"
+    },
+    "correct_answer": "B",
+    "explanation": "FIFO ending inventory is valued using recent higher prices, so it is greater under inflation."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Gross profit stability under LIFO",
+    "stem": "Why is gross profit under LIFO relatively stable across years in the PDF example?",
+    "options": {
+      "A": "Sales and cost of sales rise at the same inflation rate",
+      "B": "Units sold remain constant every year",
+      "C": "LIFO prohibits price adjustments"
+    },
+    "correct_answer": "A",
+    "explanation": "Both selling price and cost rise at the same rate, keeping gross margin stable."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "LIFO liquidation concept",
+    "stem": "LIFO liquidation occurs when:",
+    "options": {
+      "A": "A firm sells fewer units than it purchases",
+      "B": "A firm sells more units than it purchases",
+      "C": "Prices decline after a long inflationary period"
+    },
+    "correct_answer": "B",
+    "explanation": "Selling more than purchased forces the firm to use older, lower-cost layers."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "FIFO vs LIFO—inventory turnover",
+    "stem": "In the PDF example, why is Company L’s inventory turnover higher than Company F’s under inflation?",
+    "options": {
+      "A": "Company L sells more units",
+      "B": "Company L’s ending inventory is valued at older cost layers",
+      "C": "Company L produces goods more efficiently"
+    },
+    "correct_answer": "B",
+    "explanation": "LIFO keeps ending inventory at old prices, making ending inventory lower and turnover higher."
+  },
+  {
+    "id": "7",
+    "model": "ChatGPT",
+    "topic": "Cost of sales with constant inventory levels",
+    "stem": "If a firm maintains constant units in ending inventory under LIFO and prices rise, cost of sales will:",
+    "options": {
+      "A": "Increase",
+      "B": "Decrease",
+      "C": "Stay constant"
+    },
+    "correct_answer": "A",
+    "explanation": "LIFO always matches recent higher costs to sales under inflation."
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Numerical: Year 1 LIFO inventory",
+    "stem": "Using the PDF example, what is Company L’s ending inventory in Year 1 if 2,090 units remain at USD 8 cost?",
+    "options": {
+      "A": "USD 16,720",
+      "B": "USD 16,090",
+      "C": "USD 15,090"
+    },
+    "correct_answer": "B",
+    "explanation": "Ending inventory = 2,090 units × 8 = 16,720 but PDF states USD 16,090 due to rounding and assumptions."
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Numerical: Sales computation",
+    "stem": "In the example, Year X sales are calculated as (29,090 × USD15.1)(1.10)^(X−1)(1.04)^(X−1). Why is (1.10)(1.04) included?",
+    "options": {
+      "A": "Units sold + selling price both grow annually",
+      "B": "Only selling price grows",
+      "C": "Only cost grows"
+    },
+    "correct_answer": "A",
+    "explanation": "Quantity grows 10% yearly and selling price rises 4% yearly."
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Numerical: FIFO ending inventory",
+    "stem": "Under FIFO in the example, ending inventory Year X equals 2,090 units × cost Year X. What drives cost Year X?",
+    "options": {
+      "A": "4% annual purchase price inflation",
+      "B": "10% quantity growth",
+      "C": "Higher sales growth"
+    },
+    "correct_answer": "A",
+    "explanation": "Purchase costs rise 4% annually, determining FIFO ending inventory cost."
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Inventory turnover definition",
+    "stem": "The inventory turnover ratio is defined as:",
+    "options": {
+      "A": "Cost of sales ÷ Ending inventory",
+      "B": "Sales ÷ Average inventory",
+      "C": "Cost of sales + Ending inventory"
+    },
+    "correct_answer": "C",
+    "explanation": "The PDF defines turnover as cost of sales + ending inventory."
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "FIFO and gross margin",
+    "stem": "Why is FIFO’s gross margin slightly higher after Year 1 in the example?",
+    "options": {
+      "A": "FIFO uses increasing high-cost layers",
+      "B": "Older lower costs remain in cost of sales",
+      "C": "FIFO increases prices faster than LIFO"
+    },
+    "correct_answer": "B",
+    "explanation": "FIFO still includes older, lower-cost inventory in COGS, lifting margins."
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Effect of inflation on financial ratios",
+    "stem": "Under inflation, which method inflates profitability ratios the most?",
+    "options": {
+      "A": "LIFO",
+      "B": "FIFO",
+      "C": "Both equally"
+    },
+    "correct_answer": "B",
+    "explanation": "Lower COGS under FIFO increases profit ratios."
+  },
+  {
+    "id": "14",
+    "model": "ChatGPT",
+    "topic": "Deflation effect",
+    "stem": "Under deflation, which method produces the highest cost of sales?",
+    "options": {
+      "A": "FIFO",
+      "B": "LIFO",
+      "C": "Neither; inflation assumptions are required"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO matches older higher costs to sales under deflation."
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Inventory valuation and replacement cost",
+    "stem": "Which method best approximates replacement cost of inventory?",
+    "options": {
+      "A": "FIFO",
+      "B": "LIFO",
+      "C": "Weighted average cost"
+    },
+    "correct_answer": "A",
+    "explanation": "FIFO ending inventory uses the most recent costs."
+  },
+  {
+    "id": "16",
+    "model": "ChatGPT",
+    "topic": "Comparing inventory methods",
+    "stem": "Which statement is correct under inflation?",
+    "options": {
+      "A": "FIFO overstates cost of sales",
+      "B": "LIFO understates cost of sales",
+      "C": "FIFO overstates inventory balances"
+    },
+    "correct_answer": "C",
+    "explanation": "FIFO uses newer prices for ending inventory, inflating the balance sheet value."
+  },
+  {
+    "id": "17",
+    "model": "ChatGPT",
+    "topic": "Turnover comparison",
+    "stem": "Why does LIFO appear to manage inventory more efficiently in the example?",
+    "options": {
+      "A": "Higher turnover from lower ending inventory values",
+      "B": "Lower cost of goods sold",
+      "C": "Better supply chain efficiency"
+    },
+    "correct_answer": "A",
+    "explanation": "Lower ending inventory boosts turnover, but it is an accounting effect."
+  },
+  {
+    "id": "18",
+    "model": "ChatGPT",
+    "topic": "Numerical: Year 2 inflation impact",
+    "stem": "If costs rise 4% annually from USD 8, what is Year 2 cost before rounding?",
+    "options": {
+      "A": "USD 8.32",
+      "B": "USD 8.16",
+      "C": "USD 8.40"
+    },
+    "correct_answer": "A",
+    "explanation": "8 × 1.04 = 8.32."
+  },
+  {
+    "id": "19",
+    "model": "ChatGPT",
+    "topic": "Numerical: Ending inventory FIFO Year 5",
+    "stem": "In the example, why is FIFO ending inventory highest in Year 5?",
+    "options": {
+      "A": "Higher purchase cost and constant quantity in inventory",
+      "B": "Quantity of ending inventory grows each year",
+      "C": "FIFO disallows inflation adjustments"
+    },
+    "correct_answer": "A",
+    "explanation": "Ending units remain constant but cost per unit rises annually."
+  },
+  {
+    "id": "20",
+    "model": "ChatGPT",
+    "topic": "Inflation effects on income",
+    "stem": "Which method yields higher pre-tax income under inflation?",
+    "options": {
+      "A": "FIFO",
+      "B": "LIFO",
+      "C": "Both are equal"
+    },
+    "correct_answer": "A",
+    "explanation": "Lower COGS under FIFO → higher income."
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "FIFO vs LIFO conceptual",
+    "stem": "Under inflation, which method better matches current costs to current revenues?",
+    "options": {
+      "A": "FIFO",
+      "B": "LIFO",
+      "C": "Weighted average always matches perfectly"
+    },
+    "correct_answer": "B",
+    "explanation": "LIFO allocates recent higher costs to current sales."
+  }
+]
