@@ -240,7 +240,7 @@
     "id": 19,
     "model": "ChatGPT",
     "topic": "Numerical: Hatsumei Impairment",
-    "stem": "Hatsumei reported a EUR9.3 million reduction in inventories as a write-down. If reported net income was originally EUR52 million before the write-down, what would adjusted net income have been without the write-down?",
+    "stem": "Hatsumei reported a EUR9.3 million reduction in inventories as a write-down. If reported net income was originally EUR52 million after the write-down, what would adjusted net income have been without the write-down?",
     "options": {
       "A": "EUR61.3 million",
       "B": "EUR52.0 million",
