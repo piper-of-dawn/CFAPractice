@@ -1,7 +1,11 @@
 {
   "functions": {
     "api/index.py": {
-      "runtime": "python3.11"
+      "includeFiles": [
+        "mcq/**",
+        "quiz/**",
+        "static/**"
+      ]
     }
   },
   "routes": [
@@ -9,4 +13,3 @@
     { "src": "/(.*)", "dest": "api/index.py" }
   ]
 }
-
