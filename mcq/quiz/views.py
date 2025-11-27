@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect
+import json
+from pathlib import Path
+
+from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
-from pathlib import Path
-import json
 
 
 def _choose_data_path() -> Path:
@@ -36,9 +37,11 @@ def _fix_mojibake(val):
     """
     if not isinstance(val, str):
         return val
-    if "â" in val or "�" in val:
+    if "â" in val or "�" in val or "€" in val:
         try:
-            fixed = val.encode("latin1", errors="ignore").decode("utf-8", errors="ignore")
+            fixed = val.encode("latin1", errors="ignore").decode(
+                "utf-8", errors="ignore"
+            )
             if fixed and fixed != val:
                 return fixed
         except Exception:
@@ -63,7 +66,9 @@ def _normalize_questions(raw):
             else:
                 # Try map from letter if present
                 letter = (q.get("answer_letter") or "").strip().upper().rstrip(".")
-                if letter in choices and False:  # placeholder to keep branch structure readable
+                if (
+                    letter in choices and False
+                ):  # placeholder to keep branch structure readable
                     pass
         elif isinstance(q.get("options"), dict) and q.get("options"):
             opts = q["options"]
@@ -71,7 +76,11 @@ def _normalize_questions(raw):
             letters = [c for c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" if c in opts]
             choices = [_fix_mojibake(opts[k]) for k in letters]
             # Derive answer index from a letter-like field
-            ans_letter = (q.get("correct_answer") or q.get("answer_letter") or "").strip().upper()
+            ans_letter = (
+                (q.get("correct_answer") or q.get("answer_letter") or "")
+                .strip()
+                .upper()
+            )
             ans_letter = ans_letter.rstrip(".")
             if ans_letter in letters:
                 answer_idx = letters.index(ans_letter)
@@ -87,7 +96,9 @@ def _normalize_questions(raw):
             answer_idx = int(q.get("answer") or 0)
 
         # Explanation/rationale if present
-        explanation = _fix_mojibake(q.get("explanation") or q.get("explanations") or q.get("rationale"))
+        explanation = _fix_mojibake(
+            q.get("explanation") or q.get("explanations") or q.get("rationale")
+        )
 
         # Minimal extras to avoid dumping full JSON into UI
         keep = {"id", "topic", "model", "category", "difficulty"}
@@ -177,11 +188,13 @@ def mcq(request):
                 "explanation": explanation,
                 "extras": extras,
                 # Provide only the data used client-side
-                "json": json.dumps({
-                    "choices": choices,
-                    "answer": answer,
-                    "explanation": explanation,
-                }),
+                "json": json.dumps(
+                    {
+                        "choices": choices,
+                        "answer": answer,
+                        "explanation": explanation,
+                    }
+                ),
             }
         )
 
@@ -210,10 +223,12 @@ def home(request):
         except ValueError:
             # Shouldn't happen, but skip anything outside
             continue
-        files.append({
-            "name": rel.stem,
-            "relpath": str(rel).replace("\\", "/"),
-        })
+        files.append(
+            {
+                "name": rel.stem,
+                "relpath": str(rel).replace("\\", "/"),
+            }
+        )
     return render(request, "quiz/list.html", {"files": files})
 
 
@@ -222,7 +237,12 @@ def play(request, fname):
     base = DATA_DIR.resolve()
     # Normalize and prevent path traversal
     target = (base / fname).resolve()
-    if not str(target).lower().endswith('.json') or not target.exists() or not target.is_file() or not target.is_relative_to(base):
+    if (
+        not str(target).lower().endswith(".json")
+        or not target.exists()
+        or not target.is_file()
+        or not target.is_relative_to(base)
+    ):
         # Fallback to home listing if invalid
         return redirect("home")
 
@@ -268,11 +288,13 @@ def play(request, fname):
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
                 "extras": extras,
-                "json": json.dumps({
-                    "choices": choices,
-                    "answer": answer,
-                    "explanation": explanation,
-                }),
+                "json": json.dumps(
+                    {
+                        "choices": choices,
+                        "answer": answer,
+                        "explanation": explanation,
+                    }
+                ),
             }
         )
 
