@@ -1,0 +1,821 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Fixed Income Index Construction",
+    "stem": "The construction of fixed-income indexes is most likely complicated by which characteristic of the underlying securities?",
+    "options": {
+      "A": "They are traded primarily on centralized exchanges with visible order books.",
+      "B": "The number of fixed-income securities is significantly smaller than the number of equity securities.",
+      "C": "The universe is comprised of illiquid securities traded in dealer markets."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Market Microstructure</h3><p><strong>C is correct.</strong> Start with the definition of the fixed-income market mechanism. Unlike equities, bonds trade primarily in dealer markets (over-the-counter), where dealers hold inventory and make markets. Liquidity is often low for specific issues because many investors buy and hold to maturity. Consequently, index providers cannot rely on a continuous stream of exchange prices; they must solicit dealer quotes or use matrix pricing estimates. This illiquidity and lack of transparency create significant challenges for index construction and replication.</p><p>A is incorrect because fixed-income markets are predominantly dealer markets, not centralized exchanges. This is a key distinction from equity markets.</p><p>B is incorrect because the number of fixed-income securities is many times larger than the number of equity securities (issuers often have multiple bond tranches vs. one common stock class).</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Fixed Income Index Turnover",
+    "stem": "Turnover in a fixed-income index is most likely higher than in a broad equity index because:",
+    "options": {
+      "A": "Fixed-income securities have finite maturities and constantly exit the index.",
+      "B": "Bond prices are more volatile than stock prices, causing frequent rebalancing.",
+      "C": "Index providers frequently change the credit rating criteria for inclusion."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Lifecycle of a Security</h3><p><strong>A is correct.</strong> Consider the fundamental nature of the instrument. Equities are perpetual instruments; they remain in an index unless the company merges, goes bankrupt, or fails criteria. Bonds have a defined maturity date. As time passes, bonds mature and leave the index. Furthermore, issuers frequently issue new debt to refinance or fund operations. This constant stream of maturing bonds exiting and new issues entering creates structurally high turnover, independent of market volatility.</p><p>B is incorrect because bond prices are generally less volatile than equity prices, and volatility itself does not dictate the structural entry/exit of the instrument as maturity does.</p><p>C is incorrect because criteria for broad market indexes are generally stable; the turnover comes from the securities changing (maturing), not the rules changing.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Commodity Index Weighting",
+    "stem": "Unlike equity indexes that largely use market capitalization, commodity indexes are most likely to define weighting based on:",
+    "options": {
+      "A": "The total market value of the spot commodities in existence.",
+      "B": "Subjective committee decisions or production values.",
+      "C": "The dividend yield of the producers of the commodity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Index Weighting Constraints</h3><p><strong>B is correct.</strong> Start with the concept of market capitalization: Price × Quantity Outstanding. For commodities, 'quantity outstanding' is ambiguous (total reserves? annual production? stored inventory?). Because there is no universally accepted market cap equivalent for a physical good's futures contract, index providers must invent weighting rules. Common methods include equal weighting, global production values (e.g., S&P GSCI), or perceived importance determined by a committee. This leads to significant heterogeneity across different commodity indexes.</p><p>A is incorrect because accurately measuring the total market value of all physical commodities in existence is impossible and not relevant for futures contract trading volumes.</p><p>C is incorrect because commodities are physical assets (or futures thereon) and do not pay dividends; dividends are relevant to the equity of commodity <em>producers</em>, not the commodity itself.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Commodity Index Returns",
+    "stem": "The total return of a commodity index is calculated as the sum of the collateral yield, the spot price return, and the:",
+    "options": {
+      "A": "Roll yield.",
+      "B": "Dividend yield.",
+      "C": "Convenience yield."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Futures Return Decomposition</h3><p><strong>A is correct.</strong> Derive the return from the mechanism of maintaining a long futures position. You put up collateral (earning the collateral/risk-free yield). The spot price of the asset changes (spot return). Crucially, futures expire. To maintain exposure, you must sell the expiring contract and buy a longer-dated one. The price difference between these contracts generates the 'roll yield' (positive in backwardation, negative in contango). Therefore, Total Return = Collateral Yield + Spot Return + Roll Yield.</p><p>B is incorrect because commodities do not pay dividends.</p><p>C is incorrect because convenience yield is a theoretical component explaining the relationship between spot and futures prices, but the realized return component from the mechanics of trading is the roll yield.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Hedge Fund Index Biases",
+    "stem": "Which of the following biases most likely results in the historical performance of a hedge fund index appearing better than it actually was?",
+    "options": {
+      "A": "Value-weighting bias.",
+      "B": "Survivorship bias.",
+      "C": "Rebalancing bias."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Data Selection Mechanics</h3><p><strong>B is correct.</strong> Analyze the data collection process. Hedge fund databases are voluntary. Funds that perform poorly often liquidate or stop reporting to hide bad results. If an index is constructed using only the funds currently existing in the database, it excludes the historical returns of the 'dead' funds. Since 'dead' funds typically had poor returns, removing them artificially inflates the average history of the survivors. This is survivorship bias.</p><p>A is incorrect because value-weighting is a construction method, not a bias derived from data quality issues.</p><p>C is incorrect because rebalancing is a standard index maintenance activity; while it has transaction costs, it does not systematically inflate historical data in the manner of survivorship bias.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "REIT Index Construction",
+    "stem": "A distinguishing feature of Real Estate Investment Trust (REIT) indexes, compared to other real estate indexes, is that they:",
+    "options": {
+      "A": "Are updated infrequently due to the illiquidity of underlying properties.",
+      "B": "Rely on appraisal values rather than transaction prices.",
+      "C": "Provide continuous market pricing based on publicly traded shares."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Underlying Asset Liquidity</h3><p><strong>C is correct.</strong> Distinguish the underlying asset. Direct real estate (appraisal/repeat sales indexes) is illiquid and trades rarely. REITs, however, are securitized structures (stocks) trading on public exchanges. Because the shares trade continuously like any other equity, REIT indexes can be priced in real-time with high transparency and liquidity. They represent the securitized market, not the private market directly.</p><p>A is incorrect because this describes direct real estate indexes (appraisal or repeat sales), not REITs which trade daily.</p><p>B is incorrect because appraisal indexes rely on estimates; REIT indexes rely on actual equity market transaction prices.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Equity Style Indexes",
+    "stem": "Compared to a broad market equity index, a style index (e.g., Large-Cap Value) is most likely to experience:",
+    "options": {
+      "A": "Lower turnover due to the stability of value metrics.",
+      "B": "Higher turnover due to migration of stocks between categories.",
+      "C": "Identical turnover as the constituents are subsets of the broad market."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Classification Stability</h3><p><strong>B is correct.</strong> Consider the boundary conditions. A broad market index (e.g., Russell 3000) includes almost everything; a stock only leaves if it dies or becomes tiny. A style index has strict boundaries (e.g., P/E < 15). Stock prices and earnings are dynamic. A stock can easily drift from 'Value' to 'Growth' or 'Mid-Cap' to 'Large-Cap' as its price changes. This 'style drift' forces the index provider to sell the stock from one index and buy it for another, resulting in structurally higher turnover than a buy-and-hold broad market index.</p><p>A is incorrect because value metrics (price ratios) are highly sensitive to price changes, making them unstable, not stable.</p><p>C is incorrect because the broad market does not require rebalancing when a stock changes style, whereas the style index does.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Fundamental Weighting",
+    "stem": "The primary rationale for using Fundamental Weighting (e.g., GDP weighting) in a multi-market equity index instead of market-capitalization weighting is to:",
+    "options": {
+      "A": "Increase exposure to countries with rapidly rising stock prices.",
+      "B": "Avoid overweighting overvalued markets that have disconnected from economic fundamentals.",
+      "C": "Simplify the calculation by using fixed weights that never change."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Mean Reversion vs. Momentum</h3><p><strong>B is correct.</strong> Analyze the flaw of market-cap weighting. If a country's stock market enters a bubble (price rises faster than value), its market cap weight increases, forcing index funds to buy more just as it becomes most overvalued (e.g., Japan in the late 1980s). Fundamental weighting anchors the weight to a 'real' metric like GDP or earnings. If the price rises but GDP doesn't, the weight does not increase, thereby avoiding the 'momentum trap' of cap-weighted indexes.</p><p>A is incorrect because this describes the behavior of market-cap weighting (buying winners), which fundamental weighting seeks to avoid.</p><p>C is incorrect because GDP and other fundamentals change over time, requiring rebalancing; it is not a fixed weight system.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Fixed Income Matrix Pricing",
+    "stem": "In the absence of a recent trade price, a fixed-income index provider will most likely value a constituent bond using:",
+    "options": {
+      "A": "The last available trade price regardless of how old it is.",
+      "B": "Matrix pricing based on yields of traded bonds with similar characteristics.",
+      "C": "The par value of the bond adjusted for amortization."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Valuation by Analogy</h3><p><strong>B is correct.</strong> Address the liquidity problem. Many bonds do not trade for days or weeks. Using an old price (A) ignores recent market movements (interest rate changes). Using par (C) ignores market reality entirely. The solution is 'Matrix Pricing': estimate the yield based on liquid bonds with the same credit rating, maturity, and sector. If a liquid AA 10-year corporate bond yields 4%, the illiquid AA 10-year bond is priced to yield ~4%.</p><p>A is incorrect because 'stale' pricing leads to massive tracking errors when the market moves.</p><p>C is incorrect because bonds rarely trade at par or amortized cost in the secondary market; they trade at the PV of cash flows at the <em>current</em> market yield.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Sector vs. Style Indexes",
+    "stem": "Sector indexes are most useful for an investor who wants to:",
+    "options": {
+      "A": "Take a position based on their view of the business cycle.",
+      "B": "Invest specifically in companies with low Price-to-Book ratios.",
+      "C": "Minimize portfolio turnover compared to a broad market index."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Economic Sensitivity</h3><p><strong>A is correct.</strong> Link classification to economic drivers. Sectors (Energy, Tech, Utilities) have distinct sensitivities to the business cycle (early cycle vs. recession). An investor anticipating a recession might rotate into 'Defensive' sectors like Utilities. This is a macroeconomic view. Style indexes (Value/Growth) are based on financial ratios, not necessarily economic activity.</p><p>B is incorrect because low Price-to-Book is a 'Value' style characteristic, not a sector characteristic.</p><p>C is incorrect because sector rotation strategies often involve active trading and higher turnover than holding a broad market index.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Fixed Income Index Replication",
+    "stem": "Full replication of a broad fixed-income index is generally considered:",
+    "options": {
+      "A": "Easier than equity replication due to lower volatility.",
+      "B": "Impractical due to the large number of illiquid securities.",
+      "C": "Standard practice for most passive bond funds."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Transaction Costs and Access</h3><p><strong>B is correct.</strong> Consider the constraints. A broad bond index (like the Bloomberg Aggregate) contains thousands of CUSIPs. Many are small issues held by insurers that never trade. Buying all of them is impossible (can't find sellers) or prohibitively expensive (huge bid-ask spreads). Therefore, managers use 'stratified sampling'—buying a subset that matches the risk factors (duration, key rate duration, sector)—rather than full replication.</p><p>A is incorrect because difficulty is driven by liquidity and number of names, not price volatility.</p><p>C is incorrect because almost no one fully replicates broad bond indexes; sampling is the industry standard.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Hedge Fund Index Weighting",
+    "stem": "In contrast to the capitalization weighting common in equity indexes, hedge fund indexes typically use:",
+    "options": {
+      "A": "Equal weighting.",
+      "B": "Liquidity weighting.",
+      "C": "Momentum weighting."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Data Availability Constraints</h3><p><strong>A is correct.</strong> Analyze the information environment. Hedge funds are private; they do not have a live 'market cap' in the public sense, and they often keep AUM data private or report it with a lag. Consequently, index providers usually default to the simplest assumption: Equal Weighting. Every reporting fund gets the same weight in the index. This biases the index toward the performance of smaller funds relative to the actual industry assets.</p><p>B is incorrect because liquidity is hard to measure for private partnerships.</p><p>C is incorrect because while momentum is a strategy, it is not the standard construction methodology for the index itself.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Equity Index Classification",
+    "stem": "MSCI classifies countries into Developed, Emerging, and Frontier markets primarily based on:",
+    "options": {
+      "A": "Economic development and market accessibility/liquidity.",
+      "B": "Geographic location and population size.",
+      "C": "GDP growth rate and inflation stability."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Investability Requirements</h3><p><strong>A is correct.</strong> Start from the purpose of the index: to facilitate global investment. High GDP per capita (economic development) is necessary but not sufficient. The market must also be <em>accessible</em> to foreign investors (no capital controls) and have sufficient <em>liquidity</em> and size. A rich country with a closed stock market cannot be a 'Developed' market in an index context. Thus, the criteria are a blend of economic status and market microstructure.</p><p>B is incorrect because geography (location) does not determine market status; e.g., Singapore is Developed while neighbors are Emerging.</p><p>C is incorrect because high growth is often a characteristic of Emerging/Frontier markets, not the defining criterion for Developed status.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Commodity Roll Yield",
+    "stem": "A commodity index will generate a positive roll yield when the futures market is in:",
+    "options": {
+      "A": "Contango, where futures prices are higher than spot prices.",
+      "B": "Backwardation, where futures prices are lower than spot prices.",
+      "C": "Equilibrium, where futures prices equal spot prices."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Convergence to Spot</h3><p><strong>B is correct.</strong> Visualise the curve. In backwardation, the futures curve slopes downward (Future < Spot). As the contract approaches expiration, its price must converge up to the spot price (assuming spot is stable). The index holder is 'short' the expensive expiring contract (conceptually) and 'long' the cheaper next contract? No, actually they <em>sell</em> the expiring contract and <em>buy</em> the cheaper distant contract. Wait, simpler: You hold a contract priced at 90. Spot is 100. At expiration, the contract goes to 100. You made $10. This 'rolling up the curve' generates positive return.</p><p>A is incorrect because in Contango (Future > Spot), you buy high and the price converges down to spot, creating a negative roll yield.</p><p>C is incorrect because if prices are equal, there is no roll yield.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Hedge Fund Reporting Bias",
+    "stem": "The voluntary nature of hedge fund performance reporting leads to 'self-selection bias,' which implies that:",
+    "options": {
+      "A": "Funds with poor performance are less likely to report, inflating index returns.",
+      "B": "Funds with high leverage are excluded from the index.",
+      "C": "Only funds with long track records are included."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Incentives</h3><p><strong>A is correct.</strong> Analyze the manager's motivation. Reporting is marketing. If a manager has a terrible year, they have no incentive to publicize it to a database; they want to hide it. Conversely, managers with great returns rush to report to attract capital. Thus, the sample of reporting funds is non-random: it selects for winners. This makes the index performance appear better than the 'true' average of all hedge funds.</p><p>B is incorrect because leverage is a characteristic of the strategy, not a reporting criterion.</p><p>C is incorrect because new funds can and do report if they have good early numbers (instant history bias/backfill bias).</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "Bond Index Classification",
+    "stem": "Which of the following is a dimension commonly used to classify fixed-income indexes but not equity indexes?",
+    "options": {
+      "A": "Geographic region.",
+      "B": "Credit quality.",
+      "C": "Sector."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Asset Class Attributes</h3><p><strong>B is correct.</strong> Compare the primary risks. For equities, credit risk is binary (bankruptcy) and not a primary sorting mechanism; we sort by Size (Cap) or Style (Value/Growth). For bonds, credit risk (probability of default) is a fundamental pricing factor. Bonds are explicitly rated (AAA, BBB, Junk). Therefore, 'Investment Grade' vs. 'High Yield' is a primary taxonomy for bond indexes that has no direct equivalent in standard equity index construction.</p><p>A is incorrect because both asset classes are sliced by geography (e.g., MSCI EAFE vs. Global Aggregate).</p><p>C is incorrect because both are sliced by economic sector (e.g., Technology stocks vs. Corporate Industrial bonds).</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Market Capitalization Weighting",
+    "stem": "A criticism of market-capitalization-weighted equity indexes is that they:",
+    "options": {
+      "A": "Require frequent rebalancing leading to high transaction costs.",
+      "B": "Systematically underweight undervalued securities and overweight overvalued securities.",
+      "C": "Are biased toward small-cap stocks due to their higher growth potential."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Price vs. Value Feedback Loop</h3><p><strong>B is correct.</strong> Trace the mechanics of a bubble. If a stock's price doubles but its fundamental value (earnings/book) remains flat, it is 'overvalued.' In a cap-weighted index, this price increase automatically doubles its weight. The index 'chases' the price. Conversely, if a stock becomes cheap (undervalued), its weight drops. Thus, the index naturally loads up on expensive assets and dumps cheap ones, which is contrary to the 'buy low, sell high' value investing philosophy.</p><p>A is incorrect because cap-weighted indexes are 'buy and hold'; the weights adjust automatically as prices move, requiring very <em>little</em> rebalancing compared to other methods.</p><p>C is incorrect because they are biased toward <em>large-cap</em> stocks (Large Cap = High Weight).</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Commodity Index Diversification",
+    "stem": "Different commodity indexes (e.g., S&P GSCI vs. CRB) often show significantly different returns over the same period primarily because:",
+    "options": {
+      "A": "They trade on different exchanges.",
+      "B": "They use significantly different weighting schemes for sectors like Energy.",
+      "C": "One tracks spot prices while the other tracks futures."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Composition Variance</h3><p><strong>B is correct.</strong> Examine the index rules. The S&P GSCI is production-weighted, which heavily favors Energy (often >60% weight) because oil is the most valuable produced commodity. The CRB or others might use equal weighting or capped weighting, giving much more influence to Agriculture or Metals. If Oil crashes but Wheat rallies, GSCI crashes while CRB might be flat. This compositional heterogeneity is far higher than in equity indexes.</p><p>A is incorrect because arbitrage ensures prices are similar globally; the difference is the <em>basket</em>, not the venue.</p><p>C is incorrect because investable commodity indexes almost universally track futures; spot indexes are not investable.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Total Return Indexing",
+    "stem": "A 'Total Return' equity index differs from a 'Price Return' equity index because the Total Return index:",
+    "options": {
+      "A": "Adjusts for inflation.",
+      "B": "Includes the reinvestment of dividends in the index performance.",
+      "C": "Excludes the impact of currency fluctuations."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sources of Wealth</h3><p><strong>B is correct.</strong> Define the cash flows. An equity investor receives two things: capital appreciation (price change) and income (dividends). A Price Return index only tracks the stock prices (e.g., S&P 500 price level). A Total Return index assumes that every time a dividend is paid, it is immediately used to buy more shares of the index. Over long periods, the compounding of reinvested dividends causes the Total Return index to significantly outperform the Price Return index.</p><p>A is incorrect because inflation adjustment creates a 'Real' return index, not a Total return index.</p><p>C is incorrect because currency hedging is a separate dimension (Hedged vs. Unhedged).</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Fixed Income Sector Breakdown",
+    "stem": "In a broad aggregate bond index, securities issued by the World Bank or the IMF would most likely be classified under which sector?",
+    "options": {
+      "A": "Government-Related / Supranational.",
+      "B": "Corporate / Financial Institutions.",
+      "C": "Securitized / Asset-Backed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Issuer Classification</h3><p><strong>A is correct.</strong> Identify the legal nature of the issuer. The World Bank and IMF are not sovereign governments (like the US or Germany), nor are they private corporations. They are entities formed by multiple governments ('supra' = above, 'national' = nation). Fixed-income taxonomies explicitly categorize these as 'Supranational' agencies, usually grouped under the broader 'Government-Related' or 'Quasi-Government' bucket due to their implicit or explicit state backing.</p><p>B is incorrect because they are not private profit-seeking corporations.</p><p>C is incorrect because they issue debentures (general debt), not securities backed by pools of specific assets like mortgages.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Multi-Market Index Construction",
+    "stem": "When constructing a multi-market equity index, a 'GDP-weighted' approach is a form of:",
+    "options": {
+      "A": "Fundamental weighting.",
+      "B": "Market-capitalization weighting.",
+      "C": "Equal weighting."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Weighting Methodology</h3><p><strong>A is correct.</strong> Categorize the metric. Market-cap uses price data. Equal weighting uses a simple count (1/N). Fundamental weighting uses measures of economic size independent of stock price, such as Sales, Earnings, Book Value, or, in the case of countries, Gross Domestic Product (GDP). By weighing a country by its GDP, the index reflects the size of the real economy rather than the size of the financial market, decoupling index weight from market valuation bubbles.</p><p>B is incorrect because Market Cap is Price × Shares, not GDP.</p><p>C is incorrect because GDP weighting gives different weights to different countries (US > Luxembourg), whereas equal weighting would treat them the same.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Kimi",
+    "topic": "Broad Market Index Coverage",
+    "stem": "The Wilshire 5000 Total Market Index and Russell 3000 Index both represent approximately the same percentage of the US equity market, yet the Wilshire 5000 has no constraint on the number of securities it can include. This difference in construction methodology implies:",
+    "options": {
+      "A": "The Russell 3000 is more representative of the US market due to its fixed number of constituent stocks.",
+      "B": "The Wilshire 5000 must include more stocks than the Russell 3000 to achieve similar market coverage.",
+      "C": "Both indexes will have identical performance due to their similar market representation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Market Representation vs. Security Count</h3><p><strong>B is correct.</strong> Begin with definitions. The Russell 3000 is defined by exactly 3,000 largest stocks (fixed boundary). The Wilshire 5000 includes <em>all</em> stocks meeting liquidity criteria (no fixed boundary). Both cover ~98% of market cap. For the Wilshire to achieve this without limiting to 3,000 names, it must include smaller-cap names beyond the 3,000th position. These additional micro-cap stocks add minimal market value but bulk up the security count. The document explicitly states that despite its name, the Wilshire 5000 has no constraint on the number of securities included.</p><p>A is incorrect because 'representativeness' in indexing is typically measured by market capitalization coverage, not the number of constituents. Russell's fixed number is arbitrary; the fixed number itself doesn't make it more representative.</p><p>C is incorrect because the different composition (especially exposure to small-cap and micro-cap stocks) will create performance divergence, particularly in years when small-cap stocks outperform or underperform large-cap stocks.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Kimi",
+    "topic": "Fixed Income Index Pricing Challenges",
+    "stem": "When an illiquid fixed-income security has not traded for several days, an index provider is most likely to:",
+    "options": {
+      "A": "Hold the previous trade price in the index until the security trades again.",
+      "B": "Remove the security from the index and replace it with a liquid security.",
+      "C": "Estimate the security's price by assessing yields of comparable liquid securities."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Valuation in Illiquid Markets</h3><p><strong>C is correct.</strong> Derive the solution from core principles of bond valuation and market practice. When prices are unavailable, stale prices lead to tracking error when the market moves (e.g., Fed rate change). Removing illiquid securities (B) would systematically bias the index away from real issuers and would change the index's stated objective. Instead, index providers use <em>matrix pricing</em>: they identify liquid bonds with identical credit rating, maturity, sector, and other key risk factors, observe their market yields, and apply those yields to price the illiquid bond. This preserves the index's composition and reflects current market conditions.</p><p>A is incorrect because using stale prices causes the index to become 'disconnected' from market reality. When rates move 50 basis points, an old trade price may be worth 5-10% less or more.</p><p>B is incorrect because it changes what the index represents. If the index was designed to represent a market segment that includes illiquid securities, removing them distorts that objective.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Kimi",
+    "topic": "Investment Grade vs. High-Yield Classification",
+    "stem": "In fixed-income indexes, the primary distinction between investment-grade and high-yield segments is based on:",
+    "options": {
+      "A": "The time-to-maturity of the underlying bonds.",
+      "B": "The credit rating assigned by a rating agency.",
+      "C": "The yield spread relative to Treasury bonds."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Index Classification Criterion</h3><p><strong>B is correct.</strong> Identify the defining characteristic. Investment-grade is operationally defined as credit ratings of BBB- or higher (S&P nomenclature) or Baa3 or higher (Moody's). High-yield (or 'junk') is anything below this threshold. This credit rating is the structural line drawn by the index provider. It is objective, binary, and does not change based on market conditions. The document explicitly states: 'a common distinction reflected in indexes is between investment grade (e.g., those with a Standard &amp; Poor's credit rating of BBB- or better) and high-yield securities.'</p><p>A is incorrect because maturity is a <em>secondary</em> classification dimension within each segment. Investment-grade indexes are subdivided by maturity, but maturity itself is not the primary distinguishing factor between the two segments.</p><p>C is incorrect because yield spread is a market outcome that fluctuates daily. If it were the criterion, the index membership would change constantly. Rating agencies' classifications are fixed until changed by the rating action.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Kimi",
+    "topic": "MSCI Market Reclassification",
+    "stem": "MSCI periodically reconstitutes its market classification indexes to move countries from Frontier to Emerging or from Emerging to Developed status. The primary purpose of this reconstitution is:",
+    "options": {
+      "A": "To maintain the liquidity and accessibility requirements of each market tier.",
+      "B": "To ensure that index performance is equally distributed among countries.",
+      "C": "To reduce the number of countries in the Frontier Markets Index."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Dynamic Market Evolution</h3><p><strong>A is correct.</strong> Understand the rationale. Index classifications are not static labels; they reflect the market's actual development level and accessibility at a point in time. A country may move from Frontier to Emerging when its market becomes more liquid, transparent, or large enough to meet size and liquidity thresholds. These reclassifications ensure that each tier of the MSCI hierarchy contains markets with similar risk, liquidity, and accessibility characteristics. This supports the practical goal: investors can identify and access a cohesive universe of opportunities within each tier.</p><p>B is incorrect because equal performance distribution across countries is not an objective of MSCI or any serious index provider. Index objectives are to represent markets, not to equalize returns.</p><p>C is incorrect because reclassifications do not necessarily reduce the Frontier index size. Some Frontier markets might be reclassified up, but others might be added, or the index size might remain stable.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Kimi",
+    "topic": "Real Estate Index Construction Types",
+    "stem": "An appraisal-based real estate index differs from a REIT-based index primarily in that an appraisal index:",
+    "options": {
+      "A": "Includes only publicly traded properties and is updated continuously.",
+      "B": "Reflects underlying property values estimated periodically, rather than continuous market prices.",
+      "C": "Is more liquid because it allows daily trading of the underlying assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Illiquidity vs. Market Pricing</h3><p><strong>B is correct.</strong> Distinguish the underlying assets and pricing mechanisms. An appraisal index values <em>direct real estate holdings</em>, which are illiquid and rarely transact. Valuations are updated periodically (quarterly, annually) based on professional appraisal, comparable sales, or income capitalization approaches. REITs, by contrast, are <em>securitized vehicles</em> (equity shares in corporations) that trade on exchanges continuously like any stock. REIT index values are updated in real-time as shares trade. The document states: 'Because REIT indexes are based on publicly traded REITs with continuous market pricing, the value of REIT indexes is calculated continuously.'</p><p>A is incorrect because appraisal indexes typically include both direct properties (not all publicly traded) and they update periodically, not continuously.</p><p>C is incorrect because appraisal indexes have lower liquidity than REIT indexes, not higher. REITs are traded continuously on exchanges; direct property transactions are infrequent.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Kimi",
+    "topic": "Style Index Turnover",
+    "stem": "Style indexes (such as Large-Cap Value or Small-Cap Growth) typically have higher turnover than broad market indexes because:",
+    "options": {
+      "A": "Value stocks are more volatile than growth stocks, requiring frequent rebalancing.",
+      "B": "Stocks migrate between style categories as valuations and market capitalizations change.",
+      "C": "Index providers deliberately increase turnover to manage tracking error."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dynamic Classification Boundaries</h3><p><strong>B is correct.</strong> Analyze the mechanics. A broad market index (e.g., Russell 3000) has one boundary condition: is the stock in the largest 3,000? Stocks almost never exit unless the company fails or shrinks dramatically. A style index has two boundaries: (1) Market-cap tier (Large/Mid/Small) AND (2) Value/Growth designation (usually based on P/E ratio, P/B ratio, dividend yield, etc.). As stock prices fluctuate and earnings change, a stock can easily drift across these boundaries. A stock that was 'Large-Cap Value' can become 'Large-Cap Growth' if its P/E ratio rises. Index rebalancing on reconstitution dates forces mechanical buying and selling to reclassify. The document confirms: 'Because valuation ratios and market capitalizations change over time, stocks frequently migrate from one style index category to another on reconstitution dates. As a result, style indexes generally have much higher turnover than do broad market indexes.'</p><p>A is incorrect because turnover is driven by reclassification mechanics, not by inherent volatility differences between value and growth stocks.</p><p>C is incorrect because index providers don't deliberately increase turnover to manage tracking error; quite the opposite—they aim to minimize turnover to reduce tracking error.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Kimi",
+    "topic": "Commodity Index Weighting Heterogeneity",
+    "stem": "Why do the S&P GSCI and CRB commodity indexes often produce different returns despite tracking many of the same underlying commodities?",
+    "options": {
+      "A": "They trade on different exchanges and thus capture different price levels.",
+      "B": "The S&P GSCI and CRB use fundamentally different weighting methodologies.",
+      "C": "The CRB Index is equal-weighted while the S&P GSCI uses a momentum strategy."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Index Composition Divergence</h3><p><strong>B is correct.</strong> Recognize the root cause. The CRB Index uses equal weighting (each commodity gets ~1/n weight). The S&P GSCI uses a complex scheme combining world production values and liquidity measures, with a historical pro-cyclical tilt (commodity price rises increase weight). Consequently, in 2018, S&P GSCI weighted Energy ~50% higher and Agriculture ~40% lower than CRB. When Oil outperforms Wheat, GSCI vastly outperforms CRB. When Wheat rallies and Oil declines, the opposite occurs. The document states explicitly: 'The different weighting methods can also lead to large differences in exposure to specific commodities...These differences result in indexes with very different risk and return profiles.'</p><p>A is incorrect because arbitrage across exchanges ensures commodity prices are globally synchronized (modulo transportation). The difference is in the <em>basket composition</em>, not venue.</p><p>C is incorrect because while the S&P GSCI does have a mechanism that allocates more weight to commodities that have risen in price (momentum-like), the CRB is not purely equal-weighted in reality; it uses a fixed number of commodities, and the structural difference is the core cause of divergence.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Kimi",
+    "topic": "Bloomberg Barclays Aggregate Index Size",
+    "stem": "The Bloomberg Barclays US Aggregate Bond Index comprises approximately 8,000 securities. This large number of constituents is primarily due to:",
+    "options": {
+      "A": "The index provider deliberately includes small issuers to boost diversification benefits.",
+      "B": "Each issuer in the fixed-income market typically has only one outstanding security.",
+      "C": "The large number of distinct fixed-income securities reflecting diverse issuer types, maturities, and structures."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Universe Composition</h3><p><strong>C is correct.</strong> Examine the fixed-income universe. Governments, agencies, and corporations each issue many securities. A single corporation might issue 10+ tranches of debt with different maturities, covenants, or seniority. Mortgage-backed securities (MBS) are pools of thousands of mortgages, each with distinct characteristics. Asset-backed securities (ABS) are similarly diverse. A broad aggregate index is designed to represent this fragmented market, so it must include thousands of distinct instruments. The document states: 'As a result of the number of fixed-income securities is many times larger than the number of equity securities...To represent a specific fixed-income market or segment, indexes may include thousands of different securities.'</p><p>A is incorrect because index providers prioritize representativeness and market coverage over maximizing diversity per se. The large number is a consequence of the market's structure, not a deliberate diversification strategy.</p><p>B is incorrect because this is false. One issuer can have dozens of outstanding bonds; Apple might have 50+ tranches of debt, for example.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Kimi",
+    "topic": "Sector Index Role",
+    "stem": "Sector indexes are most valuable to performance analysts because they enable attribution analysis to determine whether a portfolio manager's excess returns come from:",
+    "options": {
+      "A": "Market timing ability or stock-picking ability.",
+      "B": "Stock selection or sector allocation decisions.",
+      "C": "Momentum strategies or mean-reversion strategies."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Performance Decomposition</h3><p><strong>B is correct.</strong> Define attribution analysis. A portfolio manager's outperformance can come from two sources: (1) Choosing the right <em>sectors</em> to overweight (sector allocation skill) and (2) Picking the right <em>stocks within</em> those sectors (stock selection skill). To isolate these, analysts compare the manager's sector weights to the benchmark sector weights and the manager's performance within each sector against the sector index performance. The document directly states: 'Sector indexes play an important role in performance analysis because they provide a means to determine whether a portfolio manager is more successful at stock selection or sector allocation.'</p><p>A is incorrect because market timing (getting into/out of equities altogether) and stock-picking are addressed by comparing to equity benchmarks generally, not sector indexes specifically.</p><p>C is incorrect because momentum and mean-reversion are trading strategies; sector indexes are not designed to measure these strategies.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Kimi",
+    "topic": "Fixed Income Dealer Market Implications",
+    "stem": "The fact that fixed-income markets are predominantly dealer markets (rather than exchange-based) has which consequence for index replication?",
+    "options": {
+      "A": "It lowers replication costs because all bonds trade at publicly quoted prices.",
+      "B": "It increases replication difficulty because many bonds are illiquid and lack continuous pricing.",
+      "C": "It has no meaningful impact on replication because dealer markets are as efficient as exchanges."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Market Microstructure Effects</h3><p><strong>B is correct.</strong> Trace the causal chain. In a dealer market, dealers hold inventory and facilitate trades. They have no obligation to make markets in every security continuously. Many bonds trade infrequently—some only once per quarter or less. When an index fund tries to replicate a bond index, it cannot simply place buy orders for all constituents; many bonds will have no sellers at any price. Even if available, bid-ask spreads (the cost of trading) can be huge because liquidity is low. The document states: 'The large number of fixed-income securities-combined with the lack of liquidity of some securities-has made it more costly and difficult, compared with equity indexes, for investors to replicate fixed-income indexes and duplicate their performance.'</p><p>A is incorrect because dealer markets actually have less transparent pricing than exchanges, and public quotes are often not available.</p><p>C is incorrect because dealer markets are typically less efficient and more costly to trade in than centralized exchanges.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Kimi",
+    "topic": "Hedge Fund Index Constituent Overlap",
+    "stem": "Different hedge fund indexes often show very different performance despite tracking the same industry. A primary reason for this discrepancy is:",
+    "options": {
+      "A": "Different indexes use different investment strategies that generate different risk-adjusted returns.",
+      "B": "There is little overlap between the hedge funds in different databases due to voluntary, selective reporting.",
+      "C": "Hedge fund performance is too volatile to be accurately captured by any index."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Data Selection Bias</h3><p><strong>B is correct.</strong> Understand the structure. Hedge funds are unregulated and not required to report performance to any database. A fund manager chooses where to report—or whether to report at all. Many funds report to only one database. As a result, there is minimal overlap between the constituents of different indexes. Index A might track 200 funds; Index B might also track 200 funds, but only 20 are the same. These are different universes. If funds in Database A perform well but funds in Database B perform poorly, the indexes show different returns. The document states: 'Frequently, a hedge fund reports its performance to only one database. The result is little overlap of funds covered by the different indexes...different global hedge fund indexes may reflect very different performance for the hedge fund industry over the same period of time.'</p><p>A is incorrect because while strategy differences exist, the core issue is that the <em>constituent funds</em> are different, not the strategies they employ.</p><p>C is incorrect because volatility alone doesn't explain why two indexes tracking the 'same industry' show different results; the issue is they're not tracking the same funds.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Kimi",
+    "topic": "Value vs. Growth Classification",
+    "stem": "Different index providers classify the same stock as either 'value' or 'growth' using different criteria. This inconsistency arises because:",
+    "options": {
+      "A": "There is no universally agreed-upon methodology for distinguishing value from growth equities.",
+      "B": "Index providers deliberately use different criteria to differentiate their product offerings.",
+      "C": "Value and growth are purely subjective designations that change daily based on market sentiment."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Classification Ambiguity</h3><p><strong>A is correct.</strong> Examine the classification problem. Index providers use different valuation ratios: P/E, P/B, Dividend Yield, PEG, FCF Yield, etc. A stock with high P/E but high growth might be 'Growth' to one provider and 'Value' to another. Without an industry standard, each provider devises its own approach. The document confirms: 'Different index providers use different factors and valuation ratios (low price-to-book ratios, low price-to-earnings ratios, high dividend yields, etc.) to distinguish between value and growth equities.'</p><p>B is incorrect because differentiation is a side effect, not the primary driver. If anything, different criteria create friction and confusion, not intentional differentiation.</p><p>C is incorrect because while styles do drift over time, they are not purely subjective or changing daily. Each provider's methodology is fixed and produces consistent classifications on reconstitution dates.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Kimi",
+    "topic": "GDP-Weighted Indexes",
+    "stem": "The creation of GDP-weighted multi-market indexes by MSCI in 1987 was motivated primarily by a problem with market-cap weighting, namely that:",
+    "options": {
+      "A": "Market-cap weighting excluded small countries from representation.",
+      "B": "Market-cap weighting can overweight a country's stock market when it has disconnected from economic fundamentals.",
+      "C": "Market-cap weighting produced lower returns than GDP-weighted alternatives."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Bubble Mechanics</h3><p><strong>B is correct.</strong> Understand the historical context. In 1987, Japanese stocks had surged, creating a massive bubble. The market-cap-weighted MSCI EAFE Index held 60% in Japanese equities—far exceeding Japan's share of global GDP (~15%). A bubble inflates market cap without inflating economic output. The index was overexposed to the most overvalued market. GDP-weighting anchors weights to the underlying economy size, not stock price movements. If a market is bubbling, its weight doesn't increase; when it crashes, the weight doesn't crash either. The document states: 'GDP-weighted indexes were some of the first fundamentally weighted indexes created. Introduced in 1987 by MSCI to address the 60 percent weight of Japanese equities in the market-capitalization-weighted MSCI EAFE Index at the time, GDP-weighted indexes reduced the allocation to Japanese equities by half.'</p><p>A is incorrect because market-cap weighting includes small countries; it just gives them smaller weights (appropriate to their market size).</p><p>C is incorrect because future returns cannot be guaranteed by a weighting scheme; this was a structural concern, not a return prediction.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Kimi",
+    "topic": "Commodities Roll Yield Mechanism",
+    "stem": "When a commodity futures index rolls an expiring contract into a longer-dated contract, a positive roll yield occurs when:",
+    "options": {
+      "A": "The spot price of the commodity rises.",
+      "B": "The longer-dated futures contract is trading at a lower price than the expiring contract.",
+      "C": "Interest rates rise, increasing the collateral yield."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Futures Curve Convergence</h3><p><strong>B is correct.</strong> Derive from first principles. At expiration, all futures contracts converge to the spot price. If a futures curve is in backwardation (longer-dated contracts cheaper than near-term), rolling is profitable. When you sell the expensive near-term contract at (say) 100 and buy the cheaper distant contract at 90, you lock in a $10 profit per unit. As time passes, the distant contract rises toward spot, and you capture that gain. The document states: 'Index returns are affected by factors other than changes in the prices of the underlying commodities because futures contracts must be continually rolled over...Commodity index returns reflect the risk-free interest rate, the changes in future prices, and the roll yield.'</p><p>A is incorrect because a rising spot price benefits any long holder, but the roll yield specifically refers to the curve structure (backwardation vs. contango).</p><p>C is incorrect because interest rates affect the collateral yield (the return on cash backing), not the roll yield per se.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Kimi",
+    "topic": "Sector Index Aggregation",
+    "stem": "In a sector index family, the sum of returns from all component sector indexes typically equals the return of the broad market index because:",
+    "options": {
+      "A": "Each sector has equal weight in the overall market.",
+      "B": "The aggregation of all sector indexes is designed to be mathematically equivalent to a broad market index.",
+      "C": "Sector indexes exclude companies that don't fit neatly into sectors."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Index Family Design</h3><p><strong>B is correct.</strong> Understand the construction principle. Index providers organize sector indexes into families such that the universe of all sectors covers the entire market. They adjust weights so that a portfolio holding all sectors in their index weights replicates the broad market. For example, if Technology is 25% of the broad market, the Tech sector index will have a 25% weight in the family. This is by design, not coincidence. The document states: 'Typically, the aggregation of a sector index family is equivalent to a broad market index.'</p><p>A is incorrect because sectors do not have equal weights; Tech is heavier than Utilities, for example.</p><p>C is incorrect because sector indexes typically include all companies by assigning each to one sector; there are no exclusions.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Kimi",
+    "topic": "Market Capitalization Ranges",
+    "stem": "Why do large-cap, mid-cap, and small-cap definitions vary across different index providers?",
+    "options": {
+      "A": "There is no universally agreed upon boundary for distinguishing market-cap categories.",
+      "B": "Small-cap stocks are too illiquid to have consistent definitions.",
+      "C": "Each provider is required by regulation to use different boundaries."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Arbitrary Classification Boundaries</h3><p><strong>A is correct.</strong> Recognize the fundamental issue. Market capitalization is continuous, not discrete. Is a $15 billion company 'mid-cap' or 'large-cap'? There's no natural boundary. One provider uses absolute thresholds (e.g., >$10B = Large-Cap), another uses percentile-based relative thresholds (e.g., top 500 = Large-Cap). The choice is arbitrary. The document confirms: 'With no universal definition of these categories, the indexes differ on the distinctions between large cap and midcap and between midcap and small cap, as well as the minimum market-capitalization size required to be included in a small-cap index. Classification into categories can be based on absolute market capitalization (e.g., below €100 million) or relative market capitalization (e.g., the smallest 2,500 stocks).'</p><p>B is incorrect because all size categories have adequate liquidity to be indexed; liquidity varies across stocks, but cap-weighted indexes handle this well.</p><p>C is incorrect because there is no regulatory requirement mandating different definitions; each provider simply chooses independently.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Kimi",
+    "topic": "Fixed Income Maturity Subdivisions",
+    "stem": "Investment-grade bond indexes are subdivided into short, intermediate, and long maturity buckets. This subdivision primarily serves to:",
+    "options": {
+      "A": "Equalize the number of bonds in each category.",
+      "B": "Allow investors to target specific interest rate risk profiles.",
+      "C": "Ensure that all bonds mature within predictable timeframes."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Duration and Rate Risk</h3><p><strong>B is correct.</strong> Understand bond risk drivers. A key risk in fixed-income is interest rate risk, measured by duration. A short-duration bond (e.g., 1-3 year maturity) has minimal rate sensitivity. A long-duration bond (e.g., 10+ years) has high rate sensitivity. Investors' liability structures and rate outlooks differ. A pension fund with short-term liabilities might want short-duration bonds; a life insurer with long-term liabilities wants long-duration bonds. By subdividing into maturity buckets, indexes allow investors to construct portfolios matching their specific duration needs. The document states: 'Investment-grade indexes are typically further subdivided by maturity (i.e., short, intermediate, or long).'</p><p>A is incorrect because equal numbers would be arbitrary and unhelpful; market-weighting within maturity buckets makes sense, but 'equal bond count' does not.</p><p>C is incorrect because bonds in long-dated indexes still mature; maturity certainty is the same (bonds mature on their stated date). The subdivision is about duration risk, not maturity certainty.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Kimi",
+    "topic": "Emerging Market Reclassification Effects",
+    "stem": "When a country is reclassified from Frontier Markets to Emerging Markets in the MSCI family, a likely consequence is:",
+    "options": {
+      "A": "Index funds tracking MSCI Frontier must sell the reclassified country's stocks.",
+      "B": "The reclassified country experiences lower equity returns due to reduced investor interest.",
+      "C": "Index funds tracking MSCI Emerging must buy the reclassified country's stocks."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Index Reconstitution Mechanics</h3><p><strong>A is correct.</strong> Trace the cash flows. If a country moves from Frontier to Emerging, it is removed from the Frontier index and added to the Emerging index. Funds tracking the Frontier index must sell (to exit their holdings); funds tracking the Emerging index must buy (to enter). From the perspective of the Frontier fund, yes, it must sell. The correct answer is A.</p><p>B is incorrect because reclassification reflects improved fundamentals; it typically precedes demand from investors seeking to upgrade exposure. The upgrade itself attracts more capital.</p><p>C is incorrect as stated. While Emerging index funds must buy, it's not the 'likely consequence' because it's symmetrical with the Frontier sell (not a net effect).</p>"
+  },
+  {
+    "id": 19,
+    "model": "Kimi",
+    "topic": "Collateralized and Securitized Bonds",
+    "stem": "In fixed-income index classification, 'collateralized' and 'securitized' categories differ in that securitized bonds are typically backed by:",
+    "options": {
+      "A": "Physical assets held in trust, such as pools of mortgages or other receivables.",
+      "B": "General corporate assets pledged as collateral.",
+      "C": "Government guarantees or agency support."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset-Backed Structure</h3><p><strong>A is correct.</strong> Distinguish the mechanism. Securitized instruments (MBS, ABS, CMBS) are created by pooling financial assets (mortgages, auto loans, credit card receivables) and issuing securities backed by the cash flows from those pools. The security is collateralized by a specific pool of receivables. General collateral (like 'corporate assets') would be for corporate bonds. Government guarantees would be for agency securities. The document categorizes indexes by: 'Collateralized, Securitized, Mortgage-backed, Government agency, Government.' The subcategories under 'Collateralized' (Mortgage-backed, Asset-backed, CMBS) are all securitized.</p><p>B is incorrect because general corporate asset pledges create traditional corporate bonds, not securitized instruments.</p><p>C is incorrect because government-backed bonds are a separate category (e.g., Treasuries, agency debt).</p>"
+  },
+  {
+    "id": 20,
+    "model": "Kimi",
+    "topic": "REIT Index vs. Direct Property Index",
+    "stem": "An investor comparing the FTSE EPRA/NAREIT REIT index to an appraisal-based direct real estate index would observe that the REIT index likely has:",
+    "options": {
+      "A": "Higher valuations due to the securitization premium added by the stock market.",
+      "B": "More frequent price updates and higher trading liquidity.",
+      "C": "Lower correlation to other equities because real estate is a separate asset class."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Liquidity vs. Valuation Method</h3><p><strong>B is correct.</strong> Compare the market structures. REIT shares are publicly traded equities, priced in real-time via continuous auctions on stock exchanges. Appraisal-based indexes update valuations quarterly or annually via non-market methods (income cap rate, comparable sales, professional appraisals). Therefore, REIT indexes have continuously updated prices and high trading liquidity; appraisal indexes do not. The document directly states: 'Because REIT indexes are based on publicly traded REITs with continuous market pricing, the value of REIT indexes is calculated continuously.'</p><p>A is incorrect because REIT valuations are driven by market-to-book ratios and earnings multiples, not a 'securitization premium.' REITs often trade below appraised values, not above.</p><p>C is incorrect because REITs, as equity securities, move in sync with equity markets. They are not insulated from equity risk. They may have lower equity beta than average stocks (diversification), but they are not decorrelated.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Kimi",
+    "topic": "Index Provider Overlap and Consistency",
+    "stem": "Why do broad equity and fixed-income indexes targeting the same market tend to have similar risk and return profiles across different index providers, whereas commodity indexes do not?",
+    "options": {
+      "A": "Equity and bond markets have higher liquidity, making it easier to standardize indexes.",
+      "B": "Equity and bond markets have an obvious weighting mechanism (market cap), while commodities do not.",
+      "C": "Equity and fixed-income indexes are subject to regulatory standards, while commodity indexes are not."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Weighting Methodology Standardization</h3><p><strong>B is correct.</strong> Derive from first principles. A US Treasury bond has a market price, market cap is Price × Shares Outstanding, market-cap weighting is obvious and universal. Similarly, Apple stock has a market price and well-defined market cap. All equity index providers weight by market cap (with minor variations); all broad bond providers weight by market value. Thus, the S&P 500 and Russell 1000 have similar composition. However, commodities have no obvious market cap. Oil's 'market cap' is ambiguous: is it global reserves? Annual production? Futures open interest? Index providers each invent their own answer, leading to heterogeneous indexes. The document confirms: 'Because commodity indexes do not have an obvious weighting mechanism, such as market capitalization, commodity index providers create their own weighting methods...Unlike commodity indexes, broad equity and fixed-income indexes that target the same markets share similar risk and return profiles.'</p><p>A is incorrect because while liquidity plays a role, the root cause is the availability of an objective weighting metric, not liquidity per se.</p><p>C is incorrect because regulatory standards don't mandate equity/bond index construction; market conventions do.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Claude",
+    "topic": "Fixed Income Embedded Options",
+    "stem": "A broad fixed-income aggregate index that includes bonds with embedded options (callable or putable bonds) introduces which additional complexity for index tracking?",
+    "options": {
+      "A": "These bonds cannot be valued using standard present value techniques.",
+      "B": "The effective duration and convexity of the index change dynamically with interest rate movements.",
+      "C": "Callable bonds are excluded from most aggregate indexes due to pricing uncertainty."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Embedded Optionality</h3><p><strong>B is correct.</strong> Start from the mechanics of embedded options. A callable bond gives the issuer the right to redeem early when rates fall. This creates negative convexity: as yields decline, price appreciation is capped because the bond will likely be called. Conversely, a putable bond gives the investor the right to sell back when rates rise, creating positive convexity (downside protection). The option's value—and hence the bond's effective duration and convexity—varies with the level of interest rates, volatility, and time to maturity. An index containing such bonds has dynamic risk characteristics that shift continuously, making it harder to replicate and hedge compared to an index of option-free bonds with stable duration profiles.</p><p>A is incorrect because bonds with embedded options can be valued using option-adjusted spread (OAS) models, which are standard techniques incorporating option pricing theory into present value calculations.</p><p>C is incorrect because the document explicitly states that broad aggregate indexes include bonds with embedded options: 'The wide variety of fixed-income securities, ranging from zero-coupon bonds to bonds with embedded options (i.e., callable or putable bonds)' are included in index construction.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude",
+    "topic": "Currency Classification Dimension",
+    "stem": "Fixed-income indexes can be classified by currency of payments. This classification dimension is most important for:",
+    "options": {
+      "A": "Determining the credit risk profile of the issuer.",
+      "B": "Assessing foreign exchange risk exposure for investors in different domiciles.",
+      "C": "Calculating the maturity profile of the index constituents."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash Flow Currency Risk</h3><p><strong>B is correct.</strong> Decompose the sources of return. A bond pays coupons and principal in a specific currency. An investor holding bonds denominated in foreign currencies faces two distinct risks: (1) interest rate risk in that currency's yield curve, and (2) foreign exchange (FX) risk from converting those cash flows back to the investor's home currency. For a US-based investor, a EUR-denominated German bond carries EUR interest rate risk plus USD/EUR exchange rate risk. Currency classification allows investors to identify and manage their FX exposures systematically. If an investor wants to isolate credit and interest rate risk without FX risk, they select bonds denominated in their home currency.</p><p>A is incorrect because currency of payment does not determine credit risk. A Brazilian company can issue USD-denominated bonds ('Yankee bonds'); the credit risk is still Brazilian corporate risk, but the currency is USD.</p><p>C is incorrect because maturity is independent of currency; a 10-year bond can be denominated in any currency, and the maturity profile is a separate classification dimension.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude",
+    "topic": "Inflation-Protected Securities",
+    "stem": "The presence or absence of inflation protection is a classification dimension for fixed-income indexes. Inflation-protected bonds (such as US TIPS) differ from nominal bonds in that their:",
+    "options": {
+      "A": "Coupon rate is fixed, but the principal adjusts with inflation.",
+      "B": "Coupon payments are tax-exempt to compensate for inflation risk.",
+      "C": "Yields are always lower than comparable nominal bonds due to the inflation hedge."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Real vs. Nominal Cash Flows</h3><p><strong>A is correct.</strong> Understand the inflation-indexing mechanism. Treasury Inflation-Protected Securities (TIPS) and similar instruments have a fixed real coupon rate applied to an inflation-adjusted principal. The principal amount is indexed to a measure of inflation (e.g., CPI). As inflation occurs, the principal grows; the fixed real coupon rate is applied to this growing base, so nominal coupon payments rise with inflation. At maturity, the investor receives the inflation-adjusted principal. This structure ensures that the real purchasing power of both interest and principal is preserved, unlike nominal bonds where inflation erodes real returns.</p><p>B is incorrect because TIPS coupons are not tax-exempt in the US; in fact, investors face 'phantom tax' issues because the principal accretion is taxable annually even though it's not received until maturity.</p><p>C is incorrect because the relationship between TIPS yields and nominal yields depends on inflation expectations. The breakeven inflation rate is Nominal Yield minus TIPS Yield. If inflation expectations are high, TIPS yields can be lower, but this is not always the case; deflationary expectations can invert this relationship.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude",
+    "topic": "MSCI WAEMU Regional Index",
+    "stem": "The MSCI WAEMU Index represents a subset of West African countries within the Frontier Markets classification. This index construction reflects MSCI's approach to:",
+    "options": {
+      "A": "Creating economic union-based indexes when individual country markets are too small to be viable standalone indexes.",
+      "B": "Excluding countries with insufficient market capitalization from all MSCI indexes.",
+      "C": "Combining countries with identical currency systems to eliminate foreign exchange risk."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Market Size and Investability Thresholds</h3><p><strong>A is correct.</strong> Recognize the constraint. Frontier markets often have extremely small stock markets—sometimes only a handful of listed companies with minimal liquidity. Creating separate indexes for each tiny market would produce uninvestable benchmarks with insufficient diversification and excessive transaction costs. The West African Economic and Monetary Union (WAEMU) comprises eight countries sharing a currency and economic framework. By aggregating these markets into a single index, MSCI creates a critical mass of securities that meets minimum size and liquidity thresholds. The document notes: 'Currently the MSCI WAEMU Indexes include securities classified in Senegal, Ivory Coast, and Burkina Faso'—indicating selective inclusion based on actual investable securities.</p><p>B is incorrect because MSCI does not exclude small countries entirely; it aggregates them into regional indexes (like WAEMU) or creates Standalone Market Indexes for those that don't fit standard classifications.</p><p>C is incorrect because while WAEMU countries do share the CFA franc, the primary motivation is market size/liquidity, not FX risk elimination. MSCI also creates multi-currency regional indexes where this wouldn't apply.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude",
+    "topic": "MSCI Standalone Market Indexes",
+    "stem": "MSCI Standalone Market Indexes differ from the main Emerging and Frontier Market Indexes in that Standalone indexes:",
+    "options": {
+      "A": "Are excluded from both the Emerging Markets and Frontier Markets indexes but follow similar methodological criteria.",
+      "B": "Represent developed markets that have been downgraded due to deteriorating economic conditions.",
+      "C": "Use fundamental weighting rather than market-cap weighting."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Index Hierarchy and Inclusion Rules</h3><p><strong>A is correct.</strong> Understand the taxonomy structure. MSCI's primary global indexes are hierarchical: Developed, Emerging, Frontier. Some markets don't fit cleanly into these categories—they may be too small, too illiquid, or have structural issues preventing inclusion, yet MSCI still wants to track them for interested investors. Standalone Market Indexes serve this purpose. The document explicitly states: 'The MSCI Standalone Market Indexes are not included in the MSCI Emerging Markets Index or MSCI Frontier Markets Index. However, these indexes use either the Emerging Markets or the Frontier Markets methodological criteria concerning size and liquidity.' This means Jamaica, Panama, Bosnia, etc., have dedicated indexes but don't aggregate into the broader benchmarks.</p><p>B is incorrect because Standalone indexes are not necessarily downgraded developed markets; they are typically small or restricted markets that never qualified for the main hierarchies.</p><p>C is incorrect because MSCI Standalone indexes use the same market-cap weighting methodology as the main MSCI family; fundamental weighting is a separate product line.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude",
+    "topic": "MSCI Two-Dimensional Classification",
+    "stem": "MSCI classifies countries along two independent dimensions: level of economic development and geographic region. The primary benefit of this two-dimensional approach is:",
+    "options": {
+      "A": "It allows investors to construct portfolios based on either development status or regional exposure.",
+      "B": "It ensures that all countries within a geographic region have identical economic development levels.",
+      "C": "It simplifies index construction by limiting the number of possible country classifications."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Portfolio Construction Flexibility</h3><p><strong>A is correct.</strong> Analyze investor needs. Different investors have different views and mandates. One investor might believe Emerging Markets will outperform regardless of region (development-focused strategy); another might believe Asia will outperform regardless of development status (region-focused strategy). The two-dimensional classification enables both. An investor can choose 'MSCI Emerging Markets' (all emerging, all regions) or 'MSCI Asia' (all development levels within Asia) or the intersection 'MSCI Emerging Markets Asia'. This flexibility is impossible with a single-dimension classification. The document describes how MSCI 'classifies countries and regions along two dimensions: level of economic development and geographic region,' creating multiple index families.</p><p>B is incorrect because the two dimensions are independent; a geographic region (e.g., Asia) explicitly contains Developed (Japan), Emerging (China), and Frontier (Bangladesh) markets simultaneously.</p><p>C is incorrect because two dimensions actually increase complexity (more possible combinations), not reduce it. The benefit is flexibility, not simplification.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude",
+    "topic": "Multi-Market Index Families",
+    "stem": "Multi-market equity index families, such as those offered by MSCI, are structured so that investors can:",
+    "options": {
+      "A": "Avoid currency risk by holding only domestic securities.",
+      "B": "Gain exposure to global equity markets while tailoring allocations by development level or region.",
+      "C": "Eliminate the need for active portfolio management decisions."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Hierarchical Index Architecture</h3><p><strong>B is correct.</strong> Examine the family structure. MSCI publishes a nested hierarchy: Global → Developed + Emerging + Frontier → Regional subsets (Americas, EMEA, Asia-Pacific) → Country-specific. This architecture allows granular customization. A pension fund might hold 60% MSCI World (Developed), 30% MSCI Emerging, 10% MSCI Frontier, implementing a strategic allocation across development tiers. Alternatively, a regional specialist might overweight MSCI Asia ex-Japan. The document states: 'MSCI provides country- and region-specific indexes for each of the developed and emerging markets within its multi-market indexes,' enabling precise exposure calibration across both dimensions.</p><p>A is incorrect because multi-market indexes explicitly introduce currency risk by including foreign securities denominated in multiple currencies; avoiding currency risk would require domestic-only indexes.</p><p>C is incorrect because index families provide building blocks for passive implementation, but investors still make active allocation decisions (how much to each index); the indexes themselves are passive representations of markets.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude",
+    "topic": "FTSE EPRA/NAREIT Structure",
+    "stem": "The FTSE EPRA/NAREIT global REIT index family includes representation from multiple real estate associations (European and US). This collaborative structure primarily serves to:",
+    "options": {
+      "A": "Ensure the index methodology reflects industry standards and best practices from major REIT markets.",
+      "B": "Allow the index to include only REITs that are members of these associations.",
+      "C": "Guarantee that European and US REITs have equal weights in the global index."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Industry Standards and Legitimacy</h3><p><strong>A is correct.</strong> Understand the governance rationale. Real estate markets have regional peculiarities—tax treatment, regulatory structures, property types, and accounting standards differ between Europe and the US. By involving both EPRA (European Public Real Estate Association) and NAREIT (National Association of Real Estate Investment Trusts), FTSE ensures that the index methodology is vetted by practitioners in the largest REIT markets. This collaboration lends credibility, ensures the index captures regional nuances appropriately, and aligns with industry definitions of what constitutes an investable REIT. The document indicates this is a 'global family' with multi-regional input, suggesting broad industry acceptance.</p><p>B is incorrect because association membership is not a prerequisite for index inclusion; the index includes publicly traded REITs that meet objective criteria (size, liquidity, free float), regardless of association membership.</p><p>C is incorrect because the index uses market-cap weighting; the actual weights depend on the market value of European vs. US REITs, which fluctuates and is not constrained to equality.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude",
+    "topic": "Hedge Fund Strategy-Level Indexes",
+    "stem": "In addition to broad hedge fund indexes, providers also publish strategy-level indexes (e.g., 'Long/Short Equity', 'Global Macro'). These strategy indexes are useful because:",
+    "options": {
+      "A": "They eliminate survivorship bias by tracking only funds that report consistently.",
+      "B": "They allow investors to assess performance and allocate capital to specific hedge fund strategies.",
+      "C": "They are more liquid than broad hedge fund indexes due to higher trading volumes."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Strategy Heterogeneity</h3><p><strong>B is correct.</strong> Recognize the diversity within hedge funds. A 'Global Macro' fund behaves completely differently from a 'Merger Arbitrage' fund—different risk factors, return drivers, leverage, liquidity, and correlations. Aggregating all hedge funds into one index obscures these differences. An institutional investor might believe that equity market-neutral strategies will outperform in a volatile environment, and thus wants to allocate specifically to that strategy. Strategy-level indexes enable this precision. The document states: 'These database indexes are designed to represent the performance of the hedge funds on a very broad global level (hedge funds in general) or the strategy level,' indicating both granularities serve investor needs.</p><p>A is incorrect because strategy-level indexes are still subject to survivorship bias (failed funds disappear from the database regardless of strategy); stratifying by strategy does not eliminate this data quality issue.</p><p>C is incorrect because hedge funds themselves are illiquid private vehicles; hedge fund indexes are informational benchmarks, not tradable instruments with trading volumes. The liquidity statement is nonsensical in this context.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude",
+    "topic": "Committee-Determined Commodity Weights",
+    "stem": "Some commodity indexes use committee-determined fixed weights for constituent commodities. A potential drawback of this approach is:",
+    "options": {
+      "A": "Weights do not adjust to reflect changes in global production or economic importance of commodities.",
+      "B": "Committee decisions are subject to regulatory approval, causing index rebalancing delays.",
+      "C": "Fixed weights eliminate the need for periodic rebalancing, reducing transaction costs to zero."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Static vs. Dynamic Weighting</h3><p><strong>A is correct.</strong> Contrast with market-responsive methods. If a committee sets Oil at 30% and Wheat at 10% in 2010, and by 2020 the global oil economy has shrunk due to renewable energy adoption while wheat production has surged, the fixed weights no longer reflect economic reality. Unlike market-cap weighting (which auto-adjusts as prices change) or production-value weighting (which adjusts as output changes), committee weights remain frozen until the committee explicitly reconvenes and votes to change them—an infrequent event. This creates a lag between the index composition and the underlying commodity economy. The document notes 'Other indexes have fixed weights that are determined by a committee,' implying these are set periodically rather than continuously updated.</p><p>B is incorrect because commodity indexes are generally not subject to regulatory approval processes; index providers are private entities that can change methodologies at will (though they publish rules for transparency).</p><p>C is incorrect because 'fixed weights' in value terms do not remain fixed in quantity terms. As commodity prices change, the index must rebalance to maintain the target percentage weights, generating transaction costs from rolling futures contracts.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude",
+    "topic": "S&P GSCI Momentum Characteristics",
+    "stem": "The S&P GSCI commodity index 'allocates more weight to commodities that have risen in price.' This design feature introduces a:",
+    "options": {
+      "A": "Momentum bias that increases exposure to commodities experiencing price appreciation.",
+      "B": "Contrarian bias that systematically buys commodities after price declines.",
+      "C": "Stabilization mechanism that reduces index volatility during market turbulence."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Price-Dependent Weighting Feedback</h3><p><strong>A is correct.</strong> Trace the mechanism. If Crude Oil prices double while Natural Gas remains flat, and the index methodology increases weights on rising-price commodities, the index will shift weight toward Oil. This is a positive feedback loop: rising prices → higher weight → more buying pressure → potentially higher prices. This is the essence of momentum investing—buying past winners. The result is that the index becomes concentrated in commodities that have recently performed well, amplifying their impact on future index returns. The document explicitly states: 'The S&P GSCI uses a combination of liquidity measures and world production values in its weighting scheme and allocates more weight to commodities that have risen in price,' confirming this momentum-like feature.</p><p>B is incorrect because momentum is the opposite of contrarian; a contrarian approach would increase weights on commodities that have declined (mean reversion), not those that have risen.</p><p>C is incorrect because momentum strategies typically increase volatility rather than reduce it, as they concentrate in trending assets and can experience sharp reversals when trends break.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude",
+    "topic": "Repeat Sales Real Estate Indexes",
+    "stem": "Repeat sales indexes track real estate values by observing properties that sell multiple times over a period. A limitation of this methodology is:",
+    "options": {
+      "A": "It relies on infrequent transactions, and the properties that sell repeatedly may not be representative of the broader market.",
+      "B": "It provides continuous real-time pricing like REIT indexes.",
+      "C": "It requires appraisals for every property in the index, increasing costs."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Sample Selection Bias</h3><p><strong>A is correct.</strong> Identify the data constraint. Repeat sales methodology requires observing the same property sold at two points in time to measure price appreciation. However, most properties transact infrequently—many only once in decades. The properties that do sell repeatedly are a non-random sample: they might be in more volatile neighborhoods, smaller/more liquid properties, or distressed sales. High-quality commercial properties held by institutions may never appear in repeat sales data. Furthermore, transaction volume is low, so index updates are infrequent and based on sparse data. This creates selection bias: the index may not represent the broader market's performance. The document categorizes real estate indexes as 'appraisal indexes, repeat sales indexes, and real estate investment trust (REIT) indexes,' noting that repeat sales is one approach to handling the 'highly illiquid market and asset class with infrequent transactions.'</p><p>B is incorrect because repeat sales indexes cannot provide real-time pricing; they require actual transactions, which are infrequent, resulting in lagged and sparse price observations.</p><p>C is incorrect because repeat sales indexes specifically avoid appraisals; they use actual transaction prices. The confusion is with appraisal indexes, which do rely on periodic professional valuations.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude",
+    "topic": "Fixed Income Multi-Dimensional Classification",
+    "stem": "A fixed-income index can simultaneously classify bonds by issuer type, maturity, and credit quality. This multi-dimensional approach allows investors to:",
+    "options": {
+      "A": "Select indexes targeting very specific risk exposures, such as 'Short-Term AAA Corporate' bonds.",
+      "B": "Eliminate interest rate risk by diversifying across multiple dimensions.",
+      "C": "Ensure that all bonds in the index have identical risk-return profiles."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Risk Factor Decomposition</h3><p><strong>A is correct.</strong> Understand the portfolio construction granularity. Each dimension captures a distinct risk factor: issuer type (government vs. corporate = credit risk tier), maturity (duration/interest rate sensitivity), credit quality (default probability). By combining dimensions, index providers create highly targeted slices of the bond universe. An investor seeking minimal credit and rate risk might choose 'Short-Term AAA Government' bonds. Another seeking yield enhancement might choose 'Long-Term BBB Corporate.' The document describes: 'Aggregate indexes can be subdivided by market sector (government, government agency, collateralized, corporate); style (maturity, credit quality)...Investment-grade indexes are typically further subdivided by maturity (i.e., short, intermediate, or long) and by credit rating,' demonstrating this multi-dimensional granularity.</p><p>B is incorrect because diversification across dimensions does not eliminate interest rate risk; all fixed-income securities (except floating-rate notes) have duration and thus interest rate sensitivity. Diversification can reduce unsystematic risk, not systematic market risk.</p><p>C is incorrect because even within a narrowly defined index, individual bonds have heterogeneous characteristics (different issuers, coupons, exact maturities, embedded options); 'identical risk-return profiles' is an impossible standard.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude",
+    "topic": "Sector Indexes as ETF Models",
+    "stem": "Sector indexes serve as model portfolios for sector-specific Exchange-Traded Funds (ETFs). This application requires that the sector index:",
+    "options": {
+      "A": "Contain only stocks that are easy to trade and have sufficient liquidity for replication.",
+      "B": "Outperform the broad market index on a risk-adjusted basis.",
+      "C": "Exclude companies with operations spanning multiple sectors."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: ETF Replicability Requirements</h3><p><strong>A is correct.</strong> Define the ETF constraint. An ETF must track its benchmark index by holding actual securities. If the index contains illiquid micro-cap stocks or thinly traded foreign shares, the ETF cannot efficiently buy and sell them without incurring massive transaction costs and tracking error. For sector ETFs to function, the underlying sector index must consist of liquid, tradable securities with tight bid-ask spreads. Major sector index providers (like MSCI, S&P) explicitly design their indexes with ETF replication in mind, setting minimum liquidity thresholds. The document notes: 'Sector indexes also serve as model portfolios for sector-specific ETFs and other investment products,' implying the indexes are constructed to be investable.</p><p>B is incorrect because outperformance is not a requirement for an index to serve as an ETF benchmark. ETFs are passive vehicles; the sector may underperform the market, but the ETF will still track the sector index faithfully.</p><p>C is incorrect because many companies operate across multiple sectors; sector classification assigns each company to its primary sector, but doesn't exclude diversified conglomerates. Forcing 'pure play' companies only would severely limit the index.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude",
+    "topic": "Performance Attribution Analysis",
+    "stem": "Sector indexes enable performance attribution analysis by allowing analysts to separate a portfolio manager's total excess return into components attributable to:",
+    "options": {
+      "A": "Market timing and leverage decisions.",
+      "B": "Sector allocation and security selection within sectors.",
+      "C": "Currency hedging and interest rate positioning."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Return Decomposition Algebra</h3><p><strong>B is correct.</strong> Derive the attribution formula. Total active return = Portfolio return – Benchmark return. This can be decomposed into: (1) Allocation effect = (Sector weight difference) × (Sector benchmark return) and (2) Selection effect = (Sector weight) × (Portfolio return within sector – Sector benchmark return). To compute the selection effect, you need sector benchmark returns—hence the necessity of sector indexes. If a manager overweights Technology (allocation) and picks the best Tech stocks (selection), attribution analysis quantifies each contribution separately. The document states: 'Sector indexes play an important role in performance analysis because they provide a means to determine whether a portfolio manager is more successful at stock selection or sector allocation,' precisely describing this decomposition.</p><p>A is incorrect because market timing (equity vs. cash allocation) and leverage are analyzed using the broad market index and balance sheet data, not sector indexes specifically.</p><p>C is incorrect because currency hedging and interest rate positioning are analyzed using currency forwards/futures and duration/convexity metrics, not equity sector indexes.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude",
+    "topic": "Six Style Category Combinations",
+    "stem": "Combining three market-cap categories (Large, Mid, Small) with two style categories (Value, Growth) creates six distinct style indexes. An investor holding all six in market-cap-weighted proportions would effectively replicate:",
+    "options": {
+      "A": "A broad market index covering the full size and style spectrum.",
+      "B": "An equal-weighted index with higher exposure to small-cap stocks.",
+      "C": "A sector-neutral portfolio with no style bias."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Partition Completeness</h3><p><strong>A is correct.</strong> Recognize the mutual exclusivity and collective exhaustiveness. Every stock is classified into exactly one size bucket (Large OR Mid OR Small) and one style bucket (Value OR Growth). Therefore, the six combinations (Large-Value, Large-Growth, Mid-Value, Mid-Growth, Small-Value, Small-Growth) partition the entire universe without overlap. If an investor holds all six in their natural market-cap weights, they own the entire market—equivalent to a broad market index like the Russell 3000. This is precisely the 'completeness property' used in style box analysis (Morningstar's 9-box grid is a visual representation). The document notes: 'Combining the three market-capitalization groups with value and growth classifications results in six basic style index categories,' and these collectively represent the full market.</p><p>B is incorrect because market-cap weighting the six style indexes does not create equal weighting; large-cap stocks still dominate due to their higher market values.</p><p>C is incorrect because the six style indexes do not represent sectors (Technology, Healthcare, etc.); they represent size and valuation characteristics. Sector exposure would mirror the broad market's sector composition, not be 'sector-neutral.'</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude",
+    "topic": "Global vs. Regional vs. Country Indexes",
+    "stem": "The relationship between global, regional, and country-specific indexes in a well-designed index family is that:",
+    "options": {
+      "A": "Regional indexes are standalone products with no mathematical connection to country or global indexes.",
+      "B": "The aggregation of country indexes within a region equals the regional index, and aggregating all regional indexes equals the global index.",
+      "C": "Country indexes have higher returns than regional indexes due to concentration effects."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Hierarchical Aggregation Consistency</h3><p><strong>B is correct.</strong> Understand the nesting structure. A well-constructed index family maintains mathematical consistency across hierarchy levels. For example, MSCI EAFE (regional) = sum of all developed country indexes in Europe, Australasia, and Far East. MSCI World (global developed) = MSCI North America + MSCI EAFE. This aggregation property allows investors to build custom portfolios by selecting country-level building blocks while remaining consistent with regional/global benchmarks. The weights are proportional to market capitalization, so bottom-up country weights automatically produce the top-down regional weights. This consistency is essential for portfolio construction and performance attribution.</p><p>A is incorrect because modern index families are explicitly designed with hierarchical consistency; standalone products would prevent coherent portfolio construction and attribution analysis.</p><p>C is incorrect because returns are stochastic outcomes dependent on market performance; there's no structural reason why country indexes would systematically outperform (or underperform) regional indexes. The concentration in country indexes increases volatility (risk), not expected return.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude",
+    "topic": "MSCI Longitudinal Geographic Divisions",
+    "stem": "MSCI divides the world into geographic regions 'largely by longitudinal lines of the globe: the Americas, Europe with Africa, and Asia with the Pacific.' This longitudinal approach (rather than purely continental) reflects:",
+    "options": {
+      "A": "Time zone alignment to facilitate trading during market hours in each region.",
+      "B": "Historical trading relationships and investment flows between North-South pairs.",
+      "C": "Equal distribution of market capitalization across the three regions."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Economic Geography and Capital Flows</h3><p><strong>B is correct.</strong> Examine the grouping logic. Pairing Europe with Africa and Asia with the Pacific (Australasia) reflects colonial history, trade patterns, and modern economic linkages. European investors have strong historical ties to African markets; Asian economies are deeply integrated with Australia/New Zealand through trade and investment. These North-South pairings along longitude (rather than latitude) capture economically meaningful regions. The Americas naturally form a longitudinal band from Canada to Chile. This structure aligns with how global investors conceptualize opportunity sets: an 'EMEA' (Europe, Middle East, Africa) investor or an 'Asia-Pacific' investor. The document states: 'The geographic regions are largely divided by longitudinal lines of the globe: the Americas, Europe with Africa, and Asia with the Pacific,' indicating this is a deliberate design choice.</p><p>A is incorrect because time zones run longitudinally (North-South), but the grouping here pairs different latitudes within each longitudinal band. If time zones were the driver, you'd expect East-West groupings (e.g., all European time zones together), which is not the structure.</p><p>C is incorrect because the three regions have vastly different market capitalizations; this is an empirical outcome, not a design constraint. The grouping is driven by economic coherence, not equal weighting.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude",
+    "topic": "Government Agency vs. Government Bonds",
+    "stem": "Within fixed-income indexes, 'government agency' bonds are classified separately from 'government' bonds. The key distinction is that agency bonds:",
+    "options": {
+      "A": "Are issued by government-sponsored entities that may have implicit rather than explicit government backing.",
+      "B": "Have longer maturities than direct government obligations.",
+      "C": "Are exempt from taxation at all levels (federal, state, local)."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Credit Risk Differentiation</h3><p><strong>A is correct.</strong> Define the issuer types. 'Government' bonds are direct obligations of the sovereign (e.g., US Treasuries issued by the US Treasury). The full faith and credit of the government backs them—zero credit risk (in nominal terms for countries that print their own currency). 'Government agency' bonds are issued by entities created by the government but operating semi-independently (e.g., Fannie Mae, Freddie Mac in the US; KfW in Germany). These agencies often have implicit government support (the market believes the government would bail them out) but lack explicit guarantees. Therefore, agency bonds carry slightly higher yields to compensate for this incremental credit risk. Index classification separates them to allow investors to target different points on the credit spectrum. The document lists 'government agency' and 'government' as distinct types in fixed-income index classifications.</p><p>B is incorrect because maturity ranges overlap; both governments and agencies issue across the full maturity spectrum from short-term bills to 30-year bonds.</p><p>C is incorrect because tax treatment varies by jurisdiction and specific agency; some agency bonds have tax advantages, others don't. This is not the defining distinction; credit backing is.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude",
+    "topic": "Asset-Backed vs. Mortgage-Backed Securities",
+    "stem": "Fixed-income indexes distinguish between 'mortgage-backed securities' (MBS) and 'asset-backed securities' (ABS). The primary difference is the type of collateral:",
+    "options": {
+      "A": "MBS are backed by pools of residential or commercial mortgages; ABS are backed by other consumer or commercial receivables.",
+      "B": "MBS are issued by government agencies; ABS are issued by private corporations.",
+      "C": "MBS have fixed interest rates; ABS have floating interest rates."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Collateral Pool Composition</h3><p><strong>A is correct.</strong> Identify the underlying assets. Mortgage-Backed Securities (MBS) are created by pooling mortgage loans (residential home loans or commercial property mortgages) and issuing securities backed by the cash flows from those mortgages. Asset-Backed Securities (ABS) use the same securitization structure but pool different asset types: auto loans, credit card receivables, student loans, equipment leases, etc. The key distinction is the collateral type, which determines prepayment behavior, default patterns, and cash flow characteristics. MBS have prepayment risk tied to refinancing incentives (interest rate path-dependent); ABS have different prepayment and default dynamics based on the asset type. The document lists 'Mortgage-backed' and 'Asset-backed' as separate securitized categories, confirming this distinction.</p><p>B is incorrect because both MBS and ABS can be issued by government agencies (e.g., Ginnie Mae MBS) or private entities (e.g., non-agency MBS, private-label ABS). Issuer type is orthogonal to the MBS/ABS distinction.</p><p>C is incorrect because both MBS and ABS come in fixed-rate and floating-rate varieties; the interest rate structure is a feature of the security design, not definitional to the MBS/ABS classification.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude",
+    "topic": "Index Provider Selection Importance",
+    "stem": "The reading emphasizes that 'Investors using security market indexes must be careful in their selection of the index or indexes most appropriate for their needs.' This caution is necessary because:",
+    "options": {
+      "A": "All indexes tracking the same market or asset class will have identical constituents and performance.",
+      "B": "Different indexes targeting the same market may use different methodologies, resulting in divergent composition and returns.",
+      "C": "Index providers charge significantly different fees that impact net returns."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Methodology Heterogeneity</h3><p><strong>B is correct.</strong> Synthesize the document's recurring theme. Throughout the material, examples demonstrate that indexes targeting the 'same' market can differ substantially: commodity indexes have wildly different sector weights (S&P GSCI vs. CRB); hedge fund indexes have minimal constituent overlap; style indexes use different Value/Growth definitions; market-cap thresholds vary. These methodological differences create performance divergence. An investor choosing the wrong benchmark might conclude they underperformed when in fact they tracked a different (but legitimate) representation of the same market. The document concludes: 'As indicated in this reading, the choice of indexes to meet the needs of investors is extensive. Investors using security market indexes must be careful in their selection of the index or indexes most appropriate for their needs,' directly supporting this answer.</p><p>A is incorrect because the entire reading demonstrates the opposite: indexes tracking 'the same market' often have very different constituents and performance due to methodological variations.</p><p>C is incorrect because index data fees exist but are not the focus of the reading's caution; the concern is fitness-for-purpose and methodological alignment with investment objectives, not fee levels.</p>"
+  }
+]
