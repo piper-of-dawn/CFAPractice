@@ -89,5 +89,190 @@
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Reverse the cost gradient</h3><p><strong>A is correct.</strong> Under deflation, recent purchases are cheaper. LIFO expends these low-cost recent purchases, which reduces COGS and raises gross margin. FIFO expends older, higher-cost layers first, depressing gross margin. Memory hook: <em>“In deflation, LIFO lifts margins.”</em></p><p>B is incorrect because FIFO keeps the cheapest layers in inventory, not in COGS.</p><p>C is incorrect because deflation directly changes which cost layers flow through COGS, affecting margins.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Replacement cost approximation",
+    "stem": "Which inventory valuation method best approximates the current replacement cost of inventory in an inflationary environment with stable quantities?",
+    "options": {
+      "A": "FIFO, because ending inventory consists of the most recently purchased, higher-cost units.",
+      "B": "LIFO, because ending inventory is carried at older low-cost layers that reflect historical price stability.",
+      "C": "Weighted-average cost, because it blends old and new layers into a smooth estimate close to replacement value."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Which layer stays on the shelf?</h3><p><strong>A is correct.</strong> Replacement cost is the cost the company would pay today to restock inventory. Under FIFO, ending inventory reflects the newest purchases—precisely the units acquired at current, higher inflation-adjusted prices. In the PDF, Company F consistently reports higher ending inventory values because its inventory is valued at current prices. This best approximates economic replacement value. Memory hook: <em>“FIFO ending inventory = what's on the shelf now.”</em></p><p>B is incorrect because LIFO leaves the oldest historical layers in inventory, which do not reflect current prices at all, especially during sustained inflation.</p><p>C is incorrect because weighted-average smooths costs backward in time; its inventory value lags true replacement cost unless inflation is minimal.</p>"
+    }
+  ,
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "LIFO base layer behavior",
+    "stem": "In the PDF’s five-year LIFO example, the company maintains a constant base inventory of 2,090 units purchased at USD 8 per unit. Assuming no LIFO liquidation, what happens to the dollar value of this base inventory over the five years?",
+    "options": {
+      "A": "It remains at USD 16,720 (2,090 × 8), unchanged in nominal terms despite inflation.",
+      "B": "It rises annually because newer, higher-cost units gradually replace older layers in ending inventory.",
+      "C": "It declines in real terms because LIFO revalues base layers at current costs whenever prices change."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: LIFO base layers are frozen</h3><p><strong>A is correct.</strong> LIFO assumes the latest units are sold first. As long as purchases each year equal or exceed sales, older units are never relieved from inventory. They remain on the balance sheet at their original acquisition cost. The PDF explicitly shows Company L’s ending inventory fixed at its historical nominal cost for all five years despite rising prices. Memory hook: <em>“LIFO base layer = frozen in time.”</em></p><p>B is incorrect because the newer, higher-cost layers are always consumed in COGS first and do not replace the base inventory.</p><p>C is incorrect because LIFO does not remeasure or revalue layers—it keeps the original acquisition cost unless an impairment or liquidation occurs.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Compounding quantity growth",
+    "stem": "The PDF example shows sales units increasing 10% annually, starting from 29,090 units in Year 1. Ignoring rounding, approximately how many units are sold in Year 3?",
+    "options": {
+      "A": "About 31,999 units, reflecting one year of 10% growth.",
+      "B": "About 35,299 units, reflecting two years of 10% compounded growth.",
+      "C": "About 38,999 units, reflecting three years of 10% compounded growth."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Growth compounds, it doesn't add</h3><p><strong>B is correct.</strong> Quantity in Year t = initial units × (1 + growth rate)^(t − 1). The PDF states a 10% annual increase. For Year 3, two compounding steps apply: 29,090 × 1.1² ≈ 29,090 × 1.21 ≈ 35,299. Memory hook: <em>“Two years later = (1.1)², not 1.1 × twice.”</em></p><p>A is incorrect because it uses only one period of growth, giving the Year 2 result.</p><p>C is incorrect because it applies three growth periods, producing the Year 4-level quantity, not Year 3.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Turnover formula",
+    "stem": "Which formula for inventory turnover is used in the PDF’s comparison of Company L (LIFO) and Company F (FIFO)?",
+    "options": {
+      "A": "Inventory turnover = Cost of sales ÷ Ending inventory",
+      "B": "Inventory turnover = Sales ÷ Average inventory",
+      "C": "Inventory turnover = Ending inventory ÷ Cost of sales"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Flow over stock</h3><p><strong>A is correct.</strong> Although various turnover formulas exist, the PDF defines turnover explicitly as cost of sales divided by ending inventory. This ratio highlights how aggressively the inventory balance is consumed relative to its carrying value. Memory hook: <em>“Turnover here = COGS / ending inventory.”</em></p><p>B is a valid general textbook definition but not used in the reading’s calculation.</p><p>C is the inverse and would measure something closer to an inventory holding period, not turnover.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Rising turnover trend",
+    "stem": "In the five-year example, why does inventory turnover increase over time for both the LIFO and FIFO companies, even though the number of units in ending inventory remains constant?",
+    "options": {
+      "A": "Because unit costs fall each year, reducing ending inventory values.",
+      "B": "Because units sold and cost per unit both rise each year, increasing COGS relative to the fixed ending inventory quantity.",
+      "C": "Because the companies gradually liquidate early inventory layers each year."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Numerator grows, denominator fixed</h3><p><strong>B is correct.</strong> Turnover = COGS ÷ ending inventory. In the PDF, sales quantities increase 10% annually and unit costs rise 4%, causing COGS to rise quickly. Meanwhile, the firms intentionally maintain a constant 2,090-unit base inventory. Because the numerator rises while the denominator stays stable, turnover increases steadily. Memory hook: <em>“Rising COGS + flat inventory = rising turnover.”</em></p><p>A is incorrect because inflation increases, not decreases, unit costs.</p><p>C is incorrect because no LIFO liquidation occurs; purchases always match units sold (after Year 1).</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Gross margin ranking under inflation",
+    "stem": "Which statement best describes the gross margin relationship between FIFO and LIFO in the PDF’s inflation example?",
+    "options": {
+      "A": "LIFO margins remain stable while FIFO margins are slightly higher after Year 1 because older, cheaper layers continue flowing through COGS.",
+      "B": "FIFO margins are stable while LIFO margins decline each year as inflation accelerates cost recognition.",
+      "C": "LIFO and FIFO margins converge over time because inventory quantities remain fixed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Which method keeps older layers in COGS?</h3><p><strong>A is correct.</strong> Under FIFO, older (cheaper) layers continue to flow into COGS even as selling prices rise, widening the spread and raising gross margins slightly. Under LIFO, current costs rise in parallel with current selling prices, keeping margins stable. The PDF’s gross margin table matches this behavior exactly. Memory hook: <em>“FIFO feeds margins with fossil (old) costs.”</em></p><p>B is incorrect because LIFO margins do not progressively shrink—they stay stable because cost and price rise in parallel.</p><p>C is incorrect because fixed quantities do not eliminate cost-layer differences; inventory valuation still diverges.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Interpreting higher turnover under LIFO",
+    "stem": "The PDF warns analysts not to overinterpret the higher inventory turnover under LIFO during inflation. Why?",
+    "options": {
+      "A": "Because the higher turnover is mainly an accounting effect from lower LIFO inventory values, not true operational superiority.",
+      "B": "Because LIFO firms always sell fewer physical units than FIFO firms.",
+      "C": "Because turnover becomes meaningless whenever inflation affects input prices."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Separate valuation from real activity</h3><p><strong>A is correct.</strong> Company L (LIFO) and Company F (FIFO) have identical physical flows in the PDF example. Their turnover difference arises entirely from valuation: LIFO uses lower-cost, older layers for inventory, shrinking the denominator. This makes turnover appear higher even though operational behavior is identical. Memory hook: <em>“Different valuations, same warehouse.”</em></p><p>B is incorrect because both companies sell the same units; inventory method does not change physical flow.</p><p>C is incorrect because turnover remains meaningful; analysts just need to adjust interpretation for cost-flow assumptions.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Inflation impact on FIFO ending inventory",
+    "stem": "A company using FIFO maintains 2,090 units in ending inventory each year. Purchase costs rise from USD 8 by 4% annually. Ignoring rounding, what happens to the dollar value of FIFO ending inventory over the five years?",
+    "options": {
+      "A": "It increases because the same physical units are valued at increasingly higher per-unit costs.",
+      "B": "It remains constant because the physical quantity of ending inventory is unchanged.",
+      "C": "It decreases because older, higher-cost layers are constantly being sold first under FIFO."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Quantity fixed, cost per unit rising</h3><p><strong>A is correct.</strong> FIFO ending inventory is valued at the most recent purchase prices. When per-unit costs rise each year, the same 2,090 units in ending inventory are assigned higher and higher costs. The PDF shows Company F’s ending inventory rising as inflation progresses. Memory hook: <em>“FIFO: Same units, pricier price tags.”</em></p><p>B is incorrect because it confuses physical quantity with valuation. Dollar value changes with cost per unit, not only with units.</p><p>C is incorrect because FIFO sells older, cheaper layers first—not older, higher-cost layers. This would describe deflation, not inflation.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Deflation and ending inventory ranking",
+    "stem": "If the five-year scenario is run under deflation (unit costs fall 4% annually), how would LIFO and FIFO ending inventory values compare?",
+    "options": {
+      "A": "FIFO ending inventory would exceed LIFO ending inventory, as in inflation.",
+      "B": "LIFO ending inventory would exceed FIFO ending inventory because LIFO keeps older, higher-cost layers in inventory.",
+      "C": "The ending inventory values would be identical because total cost of goods available for sale is unchanged."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Under deflation older layers = higher cost</h3><p><strong>B is correct.</strong> In deflation, earlier purchases carry higher costs than newer ones. LIFO sells the newest (lower-cost) units first and retains the older (higher-cost) units in inventory. FIFO does the opposite, pushing older, higher-cost units into COGS. Thus LIFO’s ending inventory exceeds FIFO’s in dollar terms. Memory hook: <em>“Deflation: LIFO keeps the antiques.”</em></p><p>A is incorrect because the inflation ranking reverses under deflation.</p><p>C is incorrect because cost-flow assumptions still change how total costs are split between COGS and inventory.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Operating profit under inflation",
+    "stem": "According to the reading, during inflation with identical operations, how does FIFO affect operating profit and income before taxes relative to LIFO?",
+    "options": {
+      "A": "FIFO increases both operating profit and income before taxes because COGS is lower.",
+      "B": "FIFO reduces operating profit because it recognizes inflationary costs more quickly.",
+      "C": "FIFO results in identical operating profit because total COGS over the long run is unchanged."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Profit = Revenue − COGS</h3><p><strong>A is correct.</strong> Under FIFO, older, cheaper layers flow to COGS, lowering current expense. With identical revenue and non-COGS expenses, lower COGS yields higher operating profit and pre-tax income. The PDF explicitly states that FIFO leads to lower cost of sales and higher income when prices rise. Memory hook: <em>“FIFO inflates profit when inflation inflates cost.”</em></p><p>B is incorrect because FIFO delays the recognition of inflationary costs, rather than accelerating them.</p><p>C is incorrect because the timing—not the total magnitude—of COGS drives period-specific profitability differences.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Numerical: Turnover computation",
+    "stem": "A company reports cost of sales of USD 500,000 and ending inventory of USD 25,000 using the turnover definition from the PDF. What is its inventory turnover?",
+    "options": {
+      "A": "20 times",
+      "B": "10 times",
+      "C": "5 times"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Flow divided by stock</h3><p><strong>A is correct.</strong> The PDF defines turnover as COGS ÷ ending inventory. Thus, 500,000 ÷ 25,000 = 20. This indicates that the equivalent of the entire ending inventory value cycles through COGS twenty times in the year. Memory hook: <em>“Turnover = COGS over what’s left on the shelf.”</em></p><p>B is incorrect because it halves the correct value.</p><p>C is incorrect because it understates turnover given the high COGS relative to inventory.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Numerical: Gross margin computation",
+    "stem": "A company has sales of USD 600,000 and cost of sales of USD 420,000. What is its gross profit margin?",
+    "options": {
+      "A": "30%",
+      "B": "40%",
+      "C": "25%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Margin = Gross Profit ÷ Sales</h3><p><strong>A is correct.</strong> Gross profit = 600,000 − 420,000 = 180,000. Margin = 180,000 ÷ 600,000 = 0.30, or 30%. This matches the structure of margins shown in the PDF’s tables. Memory hook: <em>“Margin is the slice of revenue left after COGS.”</em></p><p>B is incorrect; it would imply COGS of only 360,000.</p><p>C is incorrect; it implies gross profit of 150,000, inconsistent with the given numbers.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Analyst adjustments under inflation",
+    "stem": "When comparing a FIFO firm and a LIFO firm during sustained inflation, what is the most appropriate adjustment an analyst should mentally apply?",
+    "options": {
+      "A": "Recognize that FIFO’s higher income partly reflects holding gains from rising inventory costs, not superior operations.",
+      "B": "Assume the LIFO firm is less efficient because its lower income always reflects weaker performance.",
+      "C": "Ignore the inventory method because both firms face the same inflationary environment."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Distinguish economics from accounting</h3><p><strong>A is correct.</strong> FIFO defers the recognition of rising costs by keeping expensive layers in inventory. This inflates income relative to LIFO, which recognizes current higher costs immediately. The PDF warns analysts that FIFO profit partially includes holding gains created purely by inflation. Memory hook: <em>“FIFO profit lifts partly from stored inflation.”</em></p><p>B is incorrect because LIFO’s lower income reflects faster cost recognition, not poorer performance.</p><p>C is incorrect because ignoring the inventory method would obscure real comparability issues.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "LIFO preference under inflation",
+    "stem": "Why might a firm prefer LIFO during inflation, even though it reports lower gross and operating profit than FIFO?",
+    "options": {
+      "A": "LIFO better matches current costs with current revenues, producing a more realistic economic measure of profit.",
+      "B": "LIFO raises gross margins by expensing older, cheaper layers first.",
+      "C": "LIFO updates ending inventory to current prices, making the balance sheet more reflective of economic value."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Matching principle dominates</h3><p><strong>A is correct.</strong> LIFO uses the most recent, inflation-adjusted purchase costs in COGS. This matches current costs against current revenues, providing a more economically meaningful measure of profit during inflation. The PDF emphasizes that LIFO offers better cost–revenue matching even though it depresses reported profit. Memory hook: <em>“LIFO shows today’s cost against today’s sales.”</em></p><p>B is incorrect because LIFO expends newer, not older, layers; margins fall relative to FIFO.</p><p>C is incorrect because LIFO leaves older, cheaper layers in inventory, making the balance sheet <em>less</em> reflective of current replacement cost.</p>"
   }
 ]
+
+

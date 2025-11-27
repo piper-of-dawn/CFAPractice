@@ -273,20 +273,39 @@
         });
         return host;
       }
+      // Preserve scroll position across popup open/close (mobile Safari safe)
+      let __lockedScrollY = 0;
       function showExplanationPopup(html) {
         const modal = ensurePopup();
         const body = modal.querySelector('#explainBody');
         body.innerHTML = html;
         modal.classList.add('show');
-        // prevent background scroll
+        // Lock background scroll without losing position
+        // Capture current scroll position
+        __lockedScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        // Prevent background scroll on the root (helps Android/Chrome)
         document.documentElement.style.overflow = 'hidden';
-        document.body.style.overflow = 'hidden';
+        // Use fixed-position body lock (works reliably on iOS Safari)
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${__lockedScrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
       }
       function hideExplanationPopup() {
         const modal = document.getElementById('explainModal');
         if (modal) modal.classList.remove('show');
+        // Restore document flow and exact scroll position
         document.documentElement.style.overflow = '';
-        document.body.style.overflow = '';
+        const top = parseInt((document.body.style.top || '0').replace('px',''), 10) || 0;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+        // Scroll back to where the user was
+        const y = top ? -top : (__lockedScrollY || 0);
+        window.scrollTo(0, y);
       }
     })();
   </script>
