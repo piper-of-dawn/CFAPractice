@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessee)",
+    "stem": "According to IFRS 16, which of the following is a required disclosure for a lessee in its financial statements?",
+    "options": {
+      "A": "The carrying amount of right-of-use assets, aggregated for all classes of underlying assets.",
+      "B": "A maturity analysis of lease liabilities, presented separately from other financial liabilities.",
+      "C": "The fair value of the underlying leased assets at the end of the reporting period."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Transparency in Obligations</h3><p><strong>B is correct.</strong> The fundamental principle of financial reporting is to provide users with information to assess the amount, timing, and uncertainty of future cash flows. A maturity analysis of lease liabilities directly serves this purpose by breaking down the timing of future lease payments. IFRS 16 mandates this separation from other liabilities like bonds to prevent obscuring the unique nature and timing of lease obligations, thus enhancing transparency. This allows analysts to model the company's liquidity and solvency with greater precision.</p><p>A is incorrect because IFRS 16 requires the disclosure of the carrying amount of right-of-use assets *by class of underlying asset*, not aggregated. Aggregation would obscure important details about the nature of the company's leased assets (e.g., separating properties from vehicles), which is a key piece of information for analysis. This violates the principle of disaggregation for clarity.</p><p>C is incorrect. While the right-of-use asset is on the balance sheet, the lessee does not own the underlying asset and is not required to disclose its fair value. The focus for the lessee is on the liability and the right to use the asset, not the asset's market value, which is more relevant to the lessor. Requiring this would be an unnecessary and costly burden for the lessee.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessor)",
+    "stem": "For a lessor's finance lease disclosures under IFRS 16, which component is required to be disclosed?",
+    "options": {
+      "A": "A maturity analysis of lease payments receivable for the first three years only.",
+      "B": "The total cash outflow for all leasing activities during the period.",
+      "C": "Finance income on the net investment in the lease."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Lessor's Income Recognition</h3><p><strong>C is correct.</strong> A finance lease is economically equivalent to the lessor financing the purchase of an asset by the lessee. Therefore, the lessor's income statement should reflect the nature of this financing arrangement. The core components of earnings from a finance lease are the recovery of the asset's cost (or selling profit) and the interest earned on the financing provided. IFRS 16 requires the disclosure of 'finance income on the net investment in the lease' to make the interest revenue component of the lessor's earnings explicit, allowing for a clear analysis of its financing activities.</p><p>A is incorrect. IFRS 16 requires a maturity analysis for a minimum of each of the first *five* years, and a total for the remaining years. Limiting this to three years would provide an incomplete picture of the future cash inflows from the lease receivables, undermining the objective of assessing the timing and amount of future cash flows.</p><p>B is incorrect. This disclosure, total cash outflow for leases, is a requirement for the *lessee*, not the lessor. The lessor experiences cash *inflows* from lease payments. This distractor confuses the disclosure requirements of the two parties to the lease agreement.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Contribution)",
+    "stem": "Under IAS 19, what is the primary disclosure requirement for a company's defined contribution pension plan?",
+    "options": {
+      "A": "A sensitivity analysis of the plan's assets to market fluctuations.",
+      "B": "The amount of expense recognized on the income statement during the period.",
+      "C": "A reconciliation of the opening and closing balance of the plan's net asset or liability."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Risk and Obligation</h3><p><strong>B is correct.</strong> In a defined contribution plan, the employer's obligation is fixed and is discharged by making the agreed-upon contributions to a separate entity. The risk of investment performance is borne entirely by the employee. From first principles, the only impact on the employer's financial statements is the contribution it makes, which is recognized as an expense in the period it is due. Therefore, IAS 19 simply requires the disclosure of this expense, as there is no future obligation to measure or disclose.</p><p>A is incorrect. A sensitivity analysis is a required disclosure for a *defined benefit* plan, where the employer bears the investment risk. For a defined contribution plan, the employer has no exposure to the plan's asset performance, so a sensitivity analysis is irrelevant from the employer's perspective.</p><p>C is incorrect. A reconciliation of the net plan asset or liability is a hallmark of *defined benefit* plan accounting. Since a defined contribution plan does not create a long-term asset or liability on the employer's balance sheet (beyond short-term accruals), there is no opening or closing balance to reconcile.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Benefit)",
+    "stem": "Which of the following is a key disclosure objective for defined benefit pension plans under IAS 19?",
+    "options": {
+      "A": "To explain the characteristics of the plans and the risks associated with them.",
+      "B": "To provide a forecast of the expected returns on plan assets for the next five years.",
+      "C": "To disclose the names of the individual plan trustees."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Understanding Long-Term Risks</h3><p><strong>A is correct.</strong> Defined benefit plans create significant, long-term, and uncertain obligations for an employer. The primary objective of the disclosure requirements under IAS 19 is to help financial statement users understand the nature of these complex arrangements and the substantial risks they pose to the entity's future cash flows and financial position. This includes longevity risk, interest rate risk, and investment risk. Disclosing the plan's characteristics and associated risks is the first step in this process of enlightenment for the user.</p><p>B is incorrect. While assumptions about expected returns are used in calculating pension expense, IAS 19 does not require a multi-year forecast of these returns. Such a forecast would be highly speculative and could be misleading. Instead, the focus is on disclosing the assumptions used in the current period and a sensitivity analysis of how changes in these assumptions would affect the obligation.</p><p>C is incorrect. The governance structure of the plan must be described, but this does not extend to naming individual trustees. The focus of IFRS is on providing financially relevant information, and the names of individuals are not considered necessary for a user to assess the financial implications of the pension plan.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Share-Based Compensation",
+    "stem": "IFRS 2 requires several disclosures for share-based payment arrangements. Which of these details is specifically required for share options?",
+    "options": {
+      "A": "The number of options outstanding at the beginning of the period and exercisable at the end of the period.",
+      "B": "The names of key executives who received the largest option grants during the period.",
+      "C": "A projection of the company's stock price on the expected exercise date."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Tracking Potential Dilution</h3><p><strong>A is correct.</strong> Share options represent a potential dilution of ownership for existing shareholders and a future cash flow event for the company (upon exercise). To enable users to understand the extent of this potential dilution and the \"overhang\" of options, IFRS 2 requires a detailed reconciliation of the number of options from the beginning to the end of the period. This includes the number outstanding at the start and the number exercisable at the end, providing a clear picture of the current and potential future impact of the option plan.</p><p>B is incorrect. While some jurisdictions may require disclosure of executive compensation in separate reports, IFRS 2's focus is on the overall financial impact of the plan, not the compensation of specific individuals. This level of detail is not required in the financial statement notes under IFRS 2.</p><p>C is incorrect. Projecting a future stock price is highly speculative and not required. Instead of a price projection, IFRS 2 requires disclosure of the assumptions used to determine the *fair value* of the options at the grant date, which includes inputs like expected volatility and dividend yield, but not a specific future stock price target.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessee)",
+    "stem": "When a lessee's lease arrangements contain both lease and non-lease components, what accounting election can the company make to simplify reporting?",
+    "options": {
+      "A": "Ignore the non-lease components entirely.",
+      "B": "Account for the lease and non-lease components as a single lease component.",
+      "C": "Capitalize only the non-lease components."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Materiality and Cost-Benefit</h3><p><strong>B is correct.</strong> The principle of cost-benefit in accounting suggests that the cost of providing information should not outweigh its benefits. Separating lease and non-lease components (like maintenance services) can be complex and costly. IFRS 16 and US GAAP allow a practical expedient where a lessee can elect to combine these components and account for the entire payment as a single lease. This simplifies accounting without losing significant informational value, especially if the non-lease components are not material. This is a practical choice to reduce complexity.</p><p>A is incorrect. Ignoring non-lease components would understate the total obligation and expense related to the arrangement, violating the principle of full and fair disclosure. The payments for these services are real costs that must be accounted for.</p><p>C is incorrect. Capitalizing the non-lease components is fundamentally wrong. Capitalization is for the right-of-use asset. The non-lease components are typically services, which should be expensed as they are consumed, not capitalized as an asset. This would misrepresent both assets and expenses.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Benefit)",
+    "stem": "In the reconciliation of a defined benefit pension plan's net asset or liability, which of the following components would be included?",
+    "options": {
+      "A": "Dividends paid to the company's shareholders.",
+      "B": "Contributions made to the plan by the employer.",
+      "C": "The company's corporate income tax payments."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Funding the Obligation</h3><p><strong>B is correct.</strong> A defined benefit plan is a separate entity for accounting purposes, with its own assets and obligations. The reconciliation of the net pension asset or liability tracks all the events that change its value over a period. The employer's contributions are a direct cash inflow to the plan, which increases plan assets and therefore reduces the net liability (or increases the net asset) of the plan on the company's balance sheet. This is a fundamental transaction between the sponsoring employer and the pension plan that must be tracked in the reconciliation.</p><p>A is incorrect. Dividends paid to shareholders are a distribution of the company's profits and are completely unrelated to the funding or obligations of the separate pension plan. Including this would be a conceptual error, mixing corporate financing activities with pension accounting.</p><p>C is incorrect. Corporate income tax payments are an expense of the company and a cash flow between the company and the government. They have no direct bearing on the financial position of the pension plan. The plan itself may have its own tax status, but the sponsoring company's taxes are not part of the plan reconciliation.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Share-Based Compensation",
+    "stem": "What information is required to be disclosed for equity instruments other than share options (e.g., Restricted Stock Units) granted during the period?",
+    "options": {
+      "A": "The weighted-average exercise price.",
+      "B": "The number granted and their weighted-average fair value at the measurement date.",
+      "C": "The intrinsic value of the instruments at the end of the reporting period."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Valuing the Compensation Expense</h3><p><strong>B is correct.</strong> The fundamental principle of accounting for share-based compensation is to recognize an expense equal to the fair value of the equity instruments granted. To allow users to understand and verify this expense, IFRS 2 requires disclosure of the key inputs to its calculation. This includes the number of instruments granted (the volume) and their weighted-average fair value at the measurement date (the value per unit). This transparency allows an analyst to understand the magnitude of the compensation cost being recognized.</p><p>A is incorrect. Instruments like Restricted Stock Units (RSUs) do not have an exercise price. They are grants of shares, so the concept of an exercise price is not applicable. This term applies specifically to share options.</p><p>C is incorrect. While intrinsic value (market price less exercise price) is relevant for options, for instruments like RSUs, the value is simply the market price. The key disclosure is the fair value at the grant date, which is used to measure the expense over the vesting period, not the value at the end of the reporting period, which can be volatile and does not relate to the expense recognition principle.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (General)",
+    "stem": "On which financial statement would an analyst typically find the non-current portion of a lessee's right-of-use asset and lease liability?",
+    "options": {
+      "A": "The Income Statement.",
+      "B": "The Statement of Cash Flows.",
+      "C": "The Balance Sheet."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: The Accounting Equation</h3><p><strong>C is correct.</strong> The fundamental accounting equation is Assets = Liabilities + Equity. The balance sheet is the financial statement that presents a company's financial position by detailing its assets, liabilities, and equity at a specific point in time. A right-of-use asset is a resource controlled by the entity (an asset), and a lease liability is a future obligation (a liability). Therefore, their natural home is on the balance sheet, reflecting their nature as components of the company's financial position.</p><p>A is incorrect. The income statement reports a company's financial performance over a period, showing revenues and expenses. While lease-related *expenses* like depreciation of the ROU asset and interest on the lease liability appear on the income statement, the asset and liability balances themselves do not.</p><p>B is incorrect. The statement of cash flows reports the cash inflows and outflows over a period, categorized into operating, investing, and financing activities. Lease-related *cash payments* are reported here, but the non-cash asset and liability balances are not. The ROU asset is typically established in a non-cash transaction at lease inception.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Benefit)",
+    "stem": "For a defined benefit pension plan, IAS 19 requires a sensitivity analysis. What is the primary purpose of this disclosure?",
+    "options": {
+      "A": "To show how the defined benefit obligation would be affected by changes in significant actuarial assumptions.",
+      "B": "To predict the exact future value of the defined benefit obligation.",
+      "C": "To calculate the expected return on plan assets for the upcoming year."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Quantifying Uncertainty</h3><p><strong>A is correct.</strong> The calculation of a defined benefit obligation (DBO) relies on numerous long-term assumptions, such as the discount rate, inflation, and mortality rates. These are estimates, not certainties. The first principle of risk disclosure is to help users understand the magnitude of estimation uncertainty. A sensitivity analysis does exactly this by showing how the DBO would change if key assumptions were different. This allows analysts to stress-test the balance sheet and understand the potential volatility of the pension liability, which is a critical risk assessment tool.</p><p>B is incorrect. A sensitivity analysis is a tool for understanding risk and the impact of assumption changes, not for making a point forecast. Predicting the exact future value of the DBO is impossible due to the many variables involved. The purpose is to show a range of potential outcomes, not a single prediction.</p><p>C is incorrect. While the expected return on plan assets is a key assumption for determining pension expense, a sensitivity analysis on this assumption would inform the potential volatility of the expense, not the DBO itself. The sensitivity analysis for the DBO focuses on actuarial assumptions that impact the present value of the future obligation, with the discount rate being the most common subject of this analysis.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessee)",
+    "stem": "Which of the following is a qualitative disclosure a lessee must provide about its leasing activities?",
+    "options": {
+      "A": "The total cash outflow for leases.",
+      "B": "Information about the nature of the lessee's leasing activities.",
+      "C": "A maturity analysis of lease liabilities."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Context for the Numbers</h3><p><strong>B is correct.</strong> Financial statements should provide a complete picture, which includes both quantitative data (the numbers) and qualitative information (the context). Qualitative disclosures explain the 'why' and 'how' behind the numbers. Disclosing the nature of leasing activities—such as the types of assets leased (e.g., retail stores, data centers), the general terms of the leases, and how the company uses them—provides essential context for an analyst to understand the company's business model and operational dependencies that the raw numbers alone cannot convey.</p><p>A is incorrect. The total cash outflow for leases is a specific, numerical value. This is a quantitative disclosure, not a qualitative one. It answers 'how much', not 'what kind' or 'why'.</p><p>C is incorrect. A maturity analysis of lease liabilities is a table of numbers showing future payment obligations over time. This is a classic example of a quantitative disclosure, providing numerical data about the timing of future cash flows.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Lessor Disclosure (Operating Lease)",
+    "stem": "For an operating lease, a lessor is required to disclose a maturity analysis of lease payments. What does this analysis show?",
+    "options": {
+      "A": "The discounted present value of lease payments to be received.",
+      "B": "The undiscounted lease payments to be received on an annual basis for at least the first five years.",
+      "C": "The net investment in the lease, separated by current and non-current portions."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Future Revenue Visibility</h3><p><strong>B is correct.</strong> From a first principles perspective, investors and analysts need to understand the future revenue streams of a company. For a lessor with operating leases, the lease contracts represent a source of predictable future rental income. A maturity analysis of undiscounted lease payments provides a clear, year-by-year schedule of these expected cash inflows. This gives direct visibility into future revenues, which is crucial for forecasting and valuation. Showing them undiscounted is simpler and provides the raw contractual cash flow information.</p><p>A is incorrect. The requirement is for *undiscounted* lease payments. While the present value is important for valuation, the disclosure is designed to show the nominal contractual cash flows to provide a clear picture of future revenue, not their time-value-adjusted equivalent.</p><p>C is incorrect. The concept of a 'net investment in the lease' is specific to *finance leases*, where the lessor is essentially a lender. In an operating lease, the lessor retains the asset on its balance sheet and recognizes lease income, so there is no 'net investment' to disclose.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (General)",
+    "stem": "A company has a pension plan where it pays fixed contributions into a separate fund and has no further legal or constructive obligation. How is this plan classified under IFRS?",
+    "options": {
+      "A": "As a defined benefit plan.",
+      "B": "As a defined contribution plan.",
+      "C": "As a multi-employer plan."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Locus of Risk</h3><p><strong>B is correct.</strong> The fundamental principle for classifying pension plans is to determine who bears the investment and actuarial risk—the employer or the employee. The description states that the employer's obligation is *fixed* and ends once the contribution is paid. This means the employee bears all the risk of the fund's future performance. This is the defining characteristic of a defined contribution plan. The accounting and disclosure for the employer are therefore minimal, reflecting its limited obligation.</p><p>A is incorrect. A defined benefit plan is one where the employer has the obligation to provide a certain level of benefit to the employee in the future. In this case, the employer bears the investment and actuarial risk, which is the opposite of the situation described.</p><p>C is incorrect. While the plan could be a multi-employer plan, its classification as 'defined contribution' or 'defined benefit' is the primary distinction based on the nature of the obligation. 'Multi-employer' describes the structure of participation, not the nature of the promise to the employee.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Share-Based Compensation",
+    "stem": "Under IFRS 2, what is a required disclosure regarding a company's share-based payment arrangements?",
+    "options": {
+      "A": "A description of the general terms and conditions, such as vesting requirements.",
+      "B": "The personal contact information for the plan administrator.",
+      "C": "A list of all employees who exercised options during the period."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Understanding the Arrangement</h3><p><strong>A is correct.</strong> To understand the financial implications of a share-based compensation plan, an analyst must first understand its structure. The principle of transparency requires that companies disclose the key terms of the arrangement. Vesting requirements, for example, determine when the employee earns the right to the equity and therefore dictate the period over which the compensation expense is recognized. Disclosing these terms is a prerequisite for a user to comprehend the accounting treatment and the plan's potential economic impact.</p><p>B is incorrect. This is private, non-financial information that has no bearing on the analysis of the company's financial statements. Disclosure requirements are focused on information that is useful for economic decision-making.</p><p>C is incorrect. IFRS 2 requires aggregated data, such as the total number of options exercised during the period, not a list of individual employees. The focus is on the overall financial impact on the company, not on the personal transactions of its employees, which would also raise privacy concerns.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessor)",
+    "stem": "For which type of lease must a lessor provide a qualitative and quantitative explanation of the significant changes in the carrying amount of the net investment in the lease?",
+    "options": {
+      "A": "Operating leases.",
+      "B": "Finance leases.",
+      "C": "Both operating and finance leases."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Nature of the Asset</h3><p><strong>B is correct.</strong> In a finance lease, the lessor derecognizes the leased asset and recognizes a 'net investment in the lease,' which is essentially a receivable. From first principles, an analyst needs to understand the changes in a company's significant receivables. Therefore, the lessor must provide a reconciliation from the opening to the closing balance of this net investment, explaining the changes due to new leases, cash received, and finance income recognized. This is analogous to a roll-forward of any major financial asset.</p><p>A is incorrect. In an operating lease, the lessor keeps the asset on its balance sheet (as Property, Plant, and Equipment) and depreciates it. There is no 'net investment in the lease' to reconcile. The lessor would disclose information about the underlying asset itself, not a receivable.</p><p>C is incorrect because the disclosure requirement is specific to the accounting model for finance leases, where a net investment asset is recognized. It does not apply to operating leases.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Benefit)",
+    "stem": "When a company's defined benefit pension plan is unfunded, how are the benefits typically paid to retired employees?",
+    "options": {
+      "A": "From a separate trust fund established for this purpose.",
+      "B": "Directly from the company's own financial resources.",
+      "C": "By a third-party insurance company."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Funding vs. Obligation</h3><p><strong>B is correct.</strong> The term 'unfunded' means that the company has not set aside assets in a separate legal entity (like a trust) to meet the pension obligation. However, the obligation to pay the benefits still exists. Therefore, from a first principles cash flow perspective, when a retiree is due a pension payment, the only source for that payment is the company's own general corporate funds. The company pays the retiree directly, just as it would pay a salary or any other operating expense.</p><p>A is incorrect. If payments were made from a separate trust fund, the plan would be, by definition, 'funded' to the extent of the assets held in that trust. An unfunded plan is one that lacks such a trust.</p><p>C is incorrect. While a company could purchase annuities from an insurance company to settle a pension obligation (a 'buy-out'), this would transfer the obligation to the insurer. An 'unfunded' plan specifically refers to a situation where the obligation remains with the company and has not been funded or transferred.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (General)",
+    "stem": "Which of the following is a primary objective of lease disclosure requirements under both IFRS and US GAAP?",
+    "options": {
+      "A": "To provide users with information to assess the amount, timing, and uncertainty of cash flows associated with leases.",
+      "B": "To ensure that all leased assets are recorded at their fair market value on the balance sheet.",
+      "C": "To enable users to compare a company's leasing activities with its direct competitors."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Core Objective of Financial Reporting</h3><p><strong>A is correct.</strong> The overarching objective of all financial reporting, as laid out in the conceptual frameworks of both the IASB and FASB, is to provide information that is useful to users in making decisions about providing resources to the entity. This primarily involves assessing the prospects for future net cash inflows. The lease disclosure requirements are a direct application of this core principle, specifically tailored to the cash flows arising from lease contracts, which can be significant and long-term.</p><p>B is incorrect. Leased assets are recorded as 'right-of-use' assets, which are measured at the present value of lease payments (plus certain other costs), not at fair market value. The focus is on the cost of the right to use the asset, not the value of the underlying asset itself.</p><p>C is incorrect. While comparability is a desirable characteristic of financial information, it is an enhancing characteristic, not the primary objective. The primary objective is to provide relevant and faithfully represented information about the reporting entity's own cash flows. Enhanced comparability is a positive outcome of applying the standards, but not the foundational goal itself.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Share-Based Compensation",
+    "stem": "In the context of share-based compensation disclosures, what does the 'method of settlement' refer to?",
+    "options": {
+      "A": "The formula used to calculate the fair value of the options.",
+      "B": "Whether the award will be settled in cash or with the company's own equity.",
+      "C": "The vesting schedule of the share-based payment arrangement."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash vs. Equity Impact</h3><p><strong>B is correct.</strong> From a first principles standpoint, the most critical distinction for an analyst is whether an obligation will be settled with cash or by issuing more shares. A cash settlement impacts a company's liquidity and is a direct cash outflow. An equity settlement impacts the ownership structure by diluting existing shareholders but does not consume cash. Disclosing the method of settlement is fundamental because it informs the user about the ultimate economic impact of the arrangement: a drain on cash or a dilution of ownership.</p><p>A is incorrect. The formula and assumptions used to calculate fair value (e.g., Black-Scholes model) must be disclosed, but this is a separate disclosure from the method of settlement. Fair value calculation is about valuation; settlement method is about the form of payment.</p><p>C is incorrect. The vesting schedule determines *when* the expense is recognized and when the employee earns the award. While it is a critical disclosure, it does not describe *how* the award will ultimately be paid out once it is earned and exercised.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Postemployment Benefit Plans (Defined Benefit)",
+    "stem": "Which of the following is required to be disclosed regarding the composition of a defined benefit plan's assets?",
+    "options": {
+      "A": "The specific ticker symbols of all equity securities held.",
+      "B": "The composition of plan assets by category, such as equity securities and fixed-income securities.",
+      "C": "The annualized return of each asset category for the past 10 years."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Assessing Investment Risk</h3><p><strong>B is correct.</strong> In a defined benefit plan, the employer bears the investment risk. To enable financial statement users to assess this risk, they need to understand how the plan's assets are invested. Disclosing the composition of assets by major category (equities, debt, real estate, etc.) allows an analyst to evaluate the plan's asset allocation strategy and its exposure to different market risks. This provides insight into the potential volatility of plan assets and the likelihood of future funding requirements for the employer.</p><p>A is incorrect. This level of detail is excessive and not required. The focus is on the overall asset allocation and risk profile, not on the individual securities. Disclosing every holding would be impractical and would not necessarily provide more useful information for most users.</p><p>C is incorrect. While historical returns are informative, they are not a required disclosure under IAS 19. The standard focuses on providing a forward-looking assessment of risk through disclosure of the asset allocation and sensitivity analyses, rather than a detailed history of past performance.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Lease Disclosure (Lessee)",
+    "stem": "Which of the following is an example of a quantitative disclosure required for a lessee?",
+    "options": {
+      "A": "The significant judgments made to comply with lease accounting requirements.",
+      "B": "The nature of the lessee's leasing activities.",
+      "C": "The depreciation charge for right-of-use assets by class of underlying asset."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Quantitative vs. Qualitative</h3><p><strong>C is correct.</strong> Financial disclosures are divided into quantitative (numerical) and qualitative (descriptive) information. A quantitative disclosure is a specific numerical value. The depreciation charge for right-of-use assets is a number, expressed in a currency (e.g., dollars or euros), that appears in the financial statements. It quantifies the allocation of the right-of-use asset's cost over its useful life. This is a clear example of a quantitative disclosure.</p><p>A is incorrect. A description of significant judgments is narrative and explains the reasoning behind accounting choices (e.g., determining the lease term when options are available). This is a qualitative disclosure, providing context and insight into the numbers, not the numbers themselves.</p><p>B is incorrect. A description of the nature of leasing activities is qualitative. It provides a narrative explanation of what the company leases and why, which gives context to the quantitative data but is not numerical itself.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Share-Based Compensation",
+    "stem": "For share options, a company must disclose a reconciliation of the number of options. Which of the following is NOT a required component of this reconciliation?",
+    "options": {
+      "A": "Number of options granted during the period.",
+      "B": "Number of options exercised during the period.",
+      "C": "Average age of employees holding the options."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Tracking Equity Claims</h3><p><strong>C is correct.</strong> The purpose of the option reconciliation is to track the flow of potential claims on the company's equity. It allows analysts to model potential dilution. The number of options granted, exercised, forfeited, and expired are all activities that change the total number of options outstanding. The age of the employees holding these options, however, is a demographic detail that has no bearing on the number of options or their financial impact on the company. It is irrelevant to the accounting and disclosure principles of IFRS 2.</p><p>A is incorrect. The number of options granted is a fundamental component of the reconciliation, as it represents the new potential shares created during the period. It is a primary driver of the increase in options outstanding.</p><p>B is incorrect. The number of options exercised is also a fundamental component. It represents the conversion of options into actual shares, which is a key event for both cash flow (from the exercise price) and dilution. It is a primary driver of the decrease in options outstanding.</p>"
+  }
+]
