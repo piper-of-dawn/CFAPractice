@@ -1,0 +1,276 @@
+
+[
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Lease Disclosure Objective",
+    "stem": "The primary objective of lease disclosures under both IFRS and US GAAP is to enable users to assess:",
+    "options": {
+      "A": "The tax implications of lease arrangements.",
+      "B": "The amount, timing, and uncertainty of cash flows from leases.",
+      "C": "The legal enforceability of lease contracts."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Information Relevance</h3><p><strong>B is correct.</strong> From first principles of financial reporting, disclosures must provide decision-useful information about economic resources, claims, and cash flow characteristics. Leases represent significant off-balance-sheet financing historically, so standards require information on amount (magnitude), timing (when payments occur), and uncertainty (variable payments, renewal options). This allows analysts to assess liquidity risk, debt covenants, and comparability across firms. Both IFRS 16 and US GAAP ASC 842 emphasize this objective explicitly. Disclosures include maturity analyses, discount rates, and qualitative info on judgments, enabling reconstruction of lease cash flow profiles from balance sheet amounts.</p><p>A is incorrect: tax implications are secondary; primary focus is financial position, performance, cash flows. Taxes may be mentioned but not core objective.</p><p>C is incorrect: legal aspects are assumed valid; disclosures focus on economic substance, not enforceability which is audited separately.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Lease Balance Sheet Presentation",
+    "stem": "Lease-related items on a lessee's balance sheet typically appear as:",
+    "options": {
+      "A": "Right-of-use assets in non-current assets and lease liabilities split between current and non-current.",
+      "B": "Only lease liabilities in current liabilities regardless of maturity.",
+      "C": "Operating leases solely in footnotes with no balance sheet recognition."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset-Liability Matching</h3><p><strong>A is correct.</strong> Leases create a right to use an asset (ROU asset) matched by a payment obligation (lease liability). ROU assets appear in non-current assets (or other assets if immaterial). Lease liabilities are split: current portion (due within 12 months) in current liabilities, non-current remainder in long-term liabilities. This reflects control over future economic benefits (asset) and present obligation to sacrifice resources (liability). Immaterial amounts may aggregate into 'other assets/liabilities,' but discrete line items are common for material leases like Apple's operating leases in 'other non-current assets' and liabilities split.</p><p>B is incorrect: lease liabilities must be classified by maturity per current/non-current criteria, not all current.</p><p>C is incorrect: post-2019 standards require balance sheet recognition for operating leases; prior off-balance-sheet treatment is obsolete.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok",
+    "topic": "Lessee Quantitative Disclosures",
+    "stem": "Under IFRS 16, lessee disclosures for the current period must include all except:",
+    "options": {
+      "A": "Carrying amount of ROU assets by class.",
+      "B": "Total cash outflows for leases.",
+      "C": "Expected future contributions to lessors."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Comprehensive Expense Tracking</h3><p><strong>C is correct.</strong> IFRS 16 requires specific quantitative disclosures on recognized amounts: ROU asset carrying values by class (e.g., buildings, equipment), depreciation by class, interest on liabilities, additions to ROU assets, and total cash outflows. These trace P&L and cash flow impacts. Maturity analysis is also required separately from other liabilities. 'Contributions to lessors' confuses lessee obligations (disclosed via maturity) with employer pension contributions; lessees disclose payment obligations, not 'contributions.'</p><p>A is incorrect: required by IFRS 16 for period-end ROU assets by class.</p><p>B is incorrect: total cash outflows required to reconcile accrual to cash basis.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Lease Maturity Analysis",
+    "stem": "Lessee lease liability maturity analysis must be disclosed:",
+    "options": {
+      "A": "Combined with other financial liabilities like bonds.",
+      "B": "Separately from maturity of bonds and loans.",
+      "C": "Only for finance leases, not operating leases."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Disaggregated Cash Flow Visibility</h3><p><strong>B is correct.</strong> Maturity analysis shows undiscounted payments by period (e.g., annual for 5 years, thereafter total) separately from other liabilities to isolate lease cash flow profile. Leases often have unique terms (renewals, escalations), so aggregation obscures risks. Apple's disclosure shows operating/finance maturities distinctly: 2022 $1,733M total, building to thereafter $6,055M, less imputed interest. This enables covenant analysis and refinancing assessment.</p><p>A is incorrect: explicit requirement to separate from bonds/loans for clarity.</p><p>C is incorrect: both operating/finance liabilities require separate maturity under unified lessee model.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Apple Lease Disclosure Example",
+    "stem": "In Apple's 2021 lease note, right-of-use assets for operating leases are reported under:",
+    "options": {
+      "A": "Other non-current assets at $10,087 million.",
+      "B": "Property, plant, and equipment for operating leases.",
+      "C": "Current assets due to short-term lease terms."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Presentation Flexibility</h3><p><strong>A is correct.</strong> Standards allow ROU assets within relevant classes; Apple classifies operating lease ROU as 'Other non-current assets' ($10,087M), finance as PPE ($861M). This aggregates immaterial items while disclosing components in notes. Total ROU $10,948M matches liabilities $11,803M closely, reflecting consistent measurement (PV lease payments). Weighted-average term 10.8 years, discount 2.0% (incremental borrowing rate) disclosed for replicability.</p><p>B is incorrect: finance leases in PPE; operating in other assets.</p><p>C is incorrect: long-term nature (10+ years) warrants non-current classification.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok",
+    "topic": "Lessor Finance Lease Disclosures",
+    "stem": "Lessors with finance leases must disclose at minimum:",
+    "options": {
+      "A": "Selling profit/loss and finance income on net investment.",
+      "B": "Only maturity analysis for first five years.",
+      "C": "Depreciation on underlying assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Performance Measurement</h3><p><strong>A is correct.</strong> Finance lessors treat leases as sales/financing, so disclose selling profit/loss at inception (receivable minus carrying value) and finance income (interest on net investment). Variable payments not in measurement also disclosed. Explains changes in net investment carrying amount and maturity (undiscounted payments: 5 years annual + remainder). Enables assessment of profitability and liquidity from financing activities.</p><p>B is incorrect: maturity required but not minimum; profit/income primary.</p><p>C is incorrect: no depreciation post-derecognition in finance leases.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Lessor Operating Lease Disclosures",
+    "stem": "For operating leases, lessors disclose:",
+    "options": {
+      "A": "Disaggregated PPE classes and maturity analysis.",
+      "B": "Net investment in leases by category.",
+      "C": "Sensitivity to discount rate changes."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Retained Asset Risk</h3><p><strong>A is correct.</strong> Operating lessors retain assets/risks, so disclose PPE by class subject to leases (e.g., buildings, equipment) and maturity of undiscounted receipts (5 years + remainder). Also qualitative info on risk management (residuals, obsolescence). Separate variable lease income not index-based. Highlights ongoing rental economics and future inflows.</p><p>B is incorrect: net investment for finance leases only.</p><p>C is incorrect: sensitivity for DB pensions, not operating leases.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Grok",
+    "topic": "Defined Contribution Disclosures",
+    "stem": "Under IAS 19, disclosures for defined contribution plans require:",
+    "options": {
+      "A": "Amount recognized in income statement.",
+      "B": "Full actuarial sensitivity analysis.",
+      "C": "Plan asset composition by category."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Simplicity Matches Risk</h3><p><strong>A is correct.</strong> DC plans limit employer risk to fixed contributions; expense equals contributions. IAS 19 requires only period expense disclosure. SEC mandates Form 11-K with audited plan statements separately. No balance sheet impact beyond accruals/prepayments. Reflects low uncertainty—no ongoing obligation.</p><p>B is incorrect: sensitivity for DB plans with long-term obligations.</p><p>C is incorrect: assets not employer-controlled in DC; no composition needed.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Grok",
+    "topic": "Defined Benefit Disclosure Objectives",
+    "stem": "IAS 19 DB plan disclosure objectives include explaining all except:",
+    "options": {
+      "A": "Characteristics and risks of plans.",
+      "B": "Amounts in financial statements from plans.",
+      "C": "How plans affect future cash flow uncertainty."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Risk and Impact Transparency</h3><p><strong>C is correct.</strong> Objectives: (1) plan characteristics/risks (benefit formula, funding status), (2) explain net asset/liability reconciliation. Cash flow description required but not primary objective phrasing. Roche discloses funding status, expenses, contributions explicitly.</p><p>A is incorrect: core objective—nature, governance, risks.</p><p>B is incorrect: explain net position origins.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "DB Plan Reconciliation Disclosure",
+    "stem": "IAS 19 requires DB disclosures including:",
+    "options": {
+      "A": "Reconciliation of net asset/liability with service cost, interest, remeasurements.",
+      "B": "Only total employer contributions annually.",
+      "C": "Projected benefit obligation without assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Change Attribution</h3><p><strong>A is correct.</strong> Roll-forward from opening to closing net position: separate for assets (contributions, returns) and DBO (service, interest, remeasurements, benefits). Components: service cost (P&L), interest, past service, settlements. Roche shows funded/unfunded status, total liability CHF 4,710M. Traces volatility sources.</p><p>B is incorrect: contributions one line; full reconciliation required.</p><p>C is incorrect: both assets and DBO reconciled.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Grok",
+    "topic": "DB Sensitivity Analysis",
+    "stem": "DB disclosures must include sensitivity analysis for:",
+    "options": {
+      "A": "Changes in significant assumptions like discount rate.",
+      "B": "Future contribution rate changes.",
+      "C": "Plan participant demographics."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Assumption Impact Quantification</h3><p><strong>A is correct.</strong> Sensitivity shows DBO change from +/-1% discount rate, salary growth, etc. Highlights key driver sensitivity (discount rate most material). Enables stress-testing funded status. Principles-based but prescribed for major assumptions.</p><p>B is incorrect: contributions derived from funded status, not primary sensitivity.</p><p>C is incorrect: demographic risks qualitative; actuarial assumptions quantitative.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Grok",
+    "topic": "DB Plan Assets Composition",
+    "stem": "Disclosures for DB plan assets include breakdown by:",
+    "options": {
+      "A": "Equity, debt, real estate categories.",
+      "B": "Geographic regions only.",
+      "C": "Employer stock percentage."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Diversification Assessment</h3><p><strong>A is correct.</strong> Composition (equities, bonds, alternatives) shows risk profile, return potential. Major categories with concentrations >10%. Roche: CHF 18,817M assets vs. DBO 17,609M funded plans. Informs expected return assumption.</p><p>B is incorrect: geography supplementary.</p><p>C is incorrect: prohibited >10% single issuer typically.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Grok",
+    "topic": "Roche DB Funding Status",
+    "stem": "Roche's 2021 DB net liability primarily arises from:",
+    "options": {
+      "A": "Unfunded plans DBO CHF 5,582M.",
+      "B": "Funded plans overfunding CHF 1,208M.",
+      "C": "Asset limit recognition CHF 3M."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Funded Status Calculation</h3><p><strong>A is correct.</strong> Funded: assets 18,817M > DBO 17,609M (surplus 1,208M). Unfunded DBO 5,582M creates deficit. Net liability CHF 4,605M after reimbursement. Reflects pay-as-you-go German plans.</p><p>B is incorrect: overfunding reduces net liability.</p><p>C is incorrect: minor asset ceiling adjustment.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Grok",
+    "topic": "Share-Based Compensation Disclosures",
+    "stem": "IFRS 2 requires share-based disclosures including:",
+    "options": {
+      "A": "Description of arrangements, vesting terms, settlement method.",
+      "B": "Only total unrecognized compensation cost.",
+      "C": "Fair value at exercise date."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Arrangement Transparency</h3><p><strong>A is correct.</strong> Describe types (RSUs, options), terms (vesting 4 years, max term), settlement (equity/cash). Reconciles activity: granted, vested, forfeited, outstanding/exercisable with weighted exercise prices/fair values. Enables dilution, expense estimation.</p><p>B is incorrect: unrecognized cost additional; reconciliation primary.</p><p>C is incorrect: grant-date fair value; exercise post-vesting.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Grok",
+    "topic": "Apple RSU Activity Disclosure",
+    "stem": "Apple's 2021 RSU disclosure shows balance decreasing from 310M to 240M despite grants because:",
+    "options": {
+      "A": "Vesting exceeded grants (146M vested vs 89M granted).",
+      "B": "Fair value increased significantly.",
+      "C": "ESPP shares diluted RSUs."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Roll-Forward Mechanics</h3><p><strong>A is correct.</strong> Net change: +89M granted -146M vested -14M canceled = -71M. Aggregate fair value vested $19B. Weighted grant-date FV rose to $75.16 due stock appreciation. Unrecognized $13.6B over 2.5 years.</p><p>B is incorrect: FV change affects expense, not units.</p><p>C is incorrect: ESPP separate; RSUs standalone.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Grok",
+    "topic": "Lease Discount Rate Disclosure",
+    "stem": "Apple discloses lease discount rate as:",
+    "options": {
+      "A": "Incremental borrowing rate 2.0% since implicit not readily determinable.",
+      "B": "Implicit rate in leases.",
+      "C": "Weighted average cost of capital."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Rate Selection Hierarchy</h3><p><strong>A is correct.</strong> Hierarchy: implicit if known; else incremental borrowing rate (IBR). Apple uses IBR 2.0% as implicit unavailable. Consistent across years/terms. Allows PV recalculation for sensitivity.</p><p>B is incorrect: not readily determinable per note.</p><p>C is incorrect: WACC inappropriate; IBR reflects lease financing cost.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Grok",
+    "topic": "Future Lease Commitments",
+    "stem": "Apple discloses $1.1B future payments for leases not yet commenced because:",
+    "options": {
+      "A": "They represent off-balance-sheet commitments affecting future cash flows.",
+      "B": "They are signed executory contracts requiring recognition.",
+      "C": "They adjust current ROU assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Executory Contract Visibility</h3><p><strong>A is correct.</strong> Signed but non-commenced leases (corporate/retail, 2022-2023 start, 3-20 years) disclose future obligations. Not recognized yet (no ROU/ liability until commencement). Highlights pipeline risk.</p><p>B is incorrect: executory not recognized until control transfers.</p><p>C is incorrect: no current impact on BS.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Grok",
+    "topic": "Roche DC Plan Expense",
+    "stem": "Roche's DC expense CHF 419M reflects:",
+    "options": {
+      "A": "Contributions to third-party funds; no BS impact.",
+      "B": "Net of employee contributions.",
+      "C": "Defined benefit approximation."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Fixed Obligation Limit</h3><p><strong>A is correct.</strong> DC: employer pays fixed into separate funds (e.g., US 401(k)); expense = contributions. No further liability/asset. Roche CHF 419M (up from 409M). Simplicity matches no longevity/investment risk transfer.</p><p>B is incorrect: gross employer expense.</p><p>C is incorrect: separate from DB CHF 749M total.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Grok",
+    "topic": "DB Cash Flow Disclosures",
+    "stem": "Roche discloses expected 2022 DB contributions CHF 411M to show:",
+    "options": {
+      "A": "Future cash outflow impact on liquidity.",
+      "B": "Past settlement gains/losses.",
+      "C": "Remeasurement volatility."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Prospective Liquidity</h3><p><strong>A is correct.</strong> IAS 19 requires estimated future contributions/benefits. Roche: CHF 411M funded + 204M unfunded benefits = CHF 615M outflow. Informs dividend capacity, debt service.</p><p>B is incorrect: settlements historical.</p><p>C is incorrect: remeasurements OCI; cash flows separate.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Grok",
+    "topic": "Share Plan Vesting and Settlement",
+    "stem": "Apple RSUs under 2014 Plan vest over 4 years and settle in:",
+    "options": {
+      "A": "Common stock shares one-for-one with DERs.",
+      "B": "Cash equivalent to market value.",
+      "C": "Options exercisable post-vesting."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Equity Instrument Terms</h3><p><strong>A is correct.</strong> Service-conditioned RSUs vest 4 years continued employment; settle shares. DERs match dividends. Reduces shares available 2x. Net share settle taxes (53M shares withheld). 760M reserved.</p><p>B is incorrect: equity-settled per note.</p><p>C is incorrect: RSUs, not options.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Grok",
+    "topic": "Unrecognized Compensation Cost",
+    "stem": "Apple discloses $13.6B unrecognized RSU/stock option cost over 2.5 years weighted average because:",
+    "options": {
+      "A": "Remaining vesting period requires future expense recognition.",
+      "B": "Forfeitures realized post-grant.",
+      "C": "Tax withholdings deferred."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Matching Over Service Period</h3><p><strong>A is correct.</strong> Grant-date FV expensed ratably over requisite service (vesting). Unvested balance = total FV less cumulative expense. Weighted-average remaining 2.5 years. Vested $19B 2021 reflects service earned.</p><p>B is incorrect: expected forfeitures adjust upfront; actual true-up.</p><p>C is incorrect: taxes cash settled concurrent vesting.</p>"
+  }
+]
