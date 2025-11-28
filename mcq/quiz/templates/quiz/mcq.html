@@ -61,9 +61,20 @@
     .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #f2f2f7; color: #1d1d1f; font-size: 11px; }
     .source { color: var(--muted); font-size: 11px; margin-top: 10px; word-break: break-all; }
 
+    /* Outcome panel: constrain height and add a subtle scrollbar */
+    #outcomeBox { max-height: 280px; overflow: auto; padding-right: 4px; }
+    /* Firefox */
+    #outcomeBox { scrollbar-width: thin; scrollbar-color: #c3c3c9 transparent; }
+    /* WebKit */
+    #outcomeBox::-webkit-scrollbar { width: 8px; height: 8px; }
+    #outcomeBox::-webkit-scrollbar-track { background: transparent; border-radius: 8px; }
+    #outcomeBox::-webkit-scrollbar-thumb { background: #d9d9de; border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+    #outcomeBox:hover::-webkit-scrollbar-thumb { background: #c3c3c9; }
+
     @media (max-width: 920px) {
       .grid { grid-template-columns: 1fr; }
       .sidebar { position: static; }
+      #outcomeBox { max-height: 220px; }
     }
 
     /* ===== Mobile explanation popup ===== */
@@ -77,6 +88,12 @@
     .modal .head .title { font-weight: 700; }
     .modal .close { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; padding: 6px 10px; cursor: pointer; }
     .modal .body { padding: 12px; overflow: auto; }
+    /* Subtle scrollbar for modal body */
+    .modal .body { scrollbar-width: thin; scrollbar-color: #c3c3c9 transparent; }
+    .modal .body::-webkit-scrollbar { width: 8px; height: 8px; }
+    .modal .body::-webkit-scrollbar-track { background: transparent; border-radius: 8px; }
+    .modal .body::-webkit-scrollbar-thumb { background: #d9d9de; border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+    .modal .body:hover::-webkit-scrollbar-thumb { background: #c3c3c9; }
     @media (prefers-color-scheme: dark) {
       .modal .dialog { background: #11131a; color: #f5f7fa; border-color: #202531; }
       .modal .head { border-bottom-color: #202531; }
