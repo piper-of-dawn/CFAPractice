@@ -326,22 +326,38 @@ def reset(request):
 
 
 def home(request):
-    # List all available JSON files under data/ (including subfolders)
-    files = []
+    # Build hierarchical grouping by top-level folder under data/
+    # Example: Equity/Foo.json -> section "Equity" with item Foo.json
+    groups = {}
     for p in sorted(DATA_DIR.rglob("*.json")):
         try:
             rel = p.relative_to(DATA_DIR)
         except ValueError:
-            # Shouldn't happen, but skip anything outside
             continue
-        files.append(
+        parts = list(rel.parts)
+        if not parts:
+            continue
+        if len(parts) == 1:
+            section = "General"
+            fname = parts[0]
+        else:
+            section = parts[0]
+            fname = str(rel)
+        section_key = section
+        groups.setdefault(section_key, [])
+        groups[section_key].append(
             {
-                "name": rel.stem,
+                "name": Path(fname).stem,
                 "relpath": str(rel).replace("\\", "/"),
             }
         )
+    # Sort groups and items within
+    grouped = []
+    for sec in sorted(groups.keys(), key=lambda s: s.lower()):
+        items = sorted(groups[sec], key=lambda x: x["name"].lower())
+        grouped.append({"section": sec, "items": items})
     mistakes_count = _mistakes_count()
-    return render(request, "quiz/list.html", {"files": files, "mistakes_count": mistakes_count})
+    return render(request, "quiz/list.html", {"groups": grouped, "mistakes_count": mistakes_count})
 
 
 def play(request, fname):
