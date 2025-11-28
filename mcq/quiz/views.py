@@ -160,21 +160,20 @@ def _upstash_cfg():
     return None, None
 
 
-def _upstash_pipeline(commands):
-    url, token = _upstash_cfg()
-    if not url or not token:
+def _upstash_call(command: str, *args: str):
+    # Use simple REST form: /{command}/{arg1}/{arg2}/...
+    base, token = _upstash_cfg()
+    if not base or not token:
         return None
     try:
+        parts = [command] + [urllib.parse.quote(str(a), safe='') for a in args]
+        url = base.rstrip('/') + '/' + '/'.join(parts)
         req = urllib.request.Request(
-            url + "/pipeline",
-            data=json.dumps(commands).encode("utf-8"),
-            headers={
-                "Authorization": f"Bearer {token}",
-                "Content-Type": "application/json",
-            },
-            method="POST",
+            url,
+            headers={"Authorization": f"Bearer {token}"},
+            method="GET",
         )
-        with urllib.request.urlopen(req, timeout=4) as resp:
+        with urllib.request.urlopen(req, timeout=5) as resp:
             body = resp.read().decode("utf-8", "ignore")
             try:
                 return json.loads(body)
@@ -186,10 +185,10 @@ def _upstash_pipeline(commands):
 
 def _append_mistake(obj: dict):
     # Try Upstash first
-    payload = [{"command": "LPUSH", "args": ["mcq:m:mistakes", json.dumps(obj, ensure_ascii=False)]}]
-    res = _upstash_pipeline(payload)
-    if res is not None:
-        return
+    payload = json.dumps(obj, ensure_ascii=False)
+    res = _upstash_call("lpush", "mcq:m:mistakes", payload)
+    if isinstance(res, dict) and ("result" in res or "error" not in res):
+        return  # assume success if no explicit error
     # Fallback to local file (dev)
     try:
         DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -210,20 +209,9 @@ def _append_mistake(obj: dict):
 
 
 def _upstash_scalar(command: str, args: list[str]):
-    res = _upstash_pipeline([{"command": command, "args": args}])
-    if res is None:
-        return None
-    try:
-        # Upstash may return a list of objects with 'result' or a raw list
-        if isinstance(res, list):
-            first = res[0]
-            if isinstance(first, dict) and "result" in first:
-                return first["result"]
-            return first
-        if isinstance(res, dict) and "result" in res:
-            return res["result"]
-    except Exception:
-        pass
+    res = _upstash_call(command.lower(), *args)
+    if isinstance(res, dict) and "result" in res:
+        return res["result"]
     return None
 
 
@@ -244,29 +232,15 @@ def _mistakes_count() -> int:
 
 def _load_mistakes_list() -> list:
     # Try Upstash first (newest first since we LPUSH)
-    res = _upstash_pipeline(
-        [{"command": "LRANGE", "args": ["mcq:m:mistakes", "0", "-1"]}]
-    )
+    res = _upstash_call("lrange", "mcq:m:mistakes", "0", "-1")
     items: list = []
-    if res is not None:
-        try:
-            arr = None
-            if isinstance(res, list):
-                first = res[0]
-                if isinstance(first, dict) and "result" in first:
-                    arr = first["result"]
-                elif isinstance(first, list):
-                    arr = first
-            elif isinstance(res, dict) and "result" in res:
-                arr = res["result"]
-            if isinstance(arr, list):
-                for x in arr:
-                    try:
-                        items.append(json.loads(x) if isinstance(x, str) else x)
-                    except Exception:
-                        pass
-        except Exception:
-            items = []
+    if isinstance(res, dict) and isinstance(res.get("result"), list):
+        arr = res["result"]
+        for x in arr:
+            try:
+                items.append(json.loads(x) if isinstance(x, str) else x)
+            except Exception:
+                pass
     # Fallback to file (dev)
     if not items and MISTAKES_PATH.exists():
         try:
