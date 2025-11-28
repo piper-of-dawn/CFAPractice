@@ -37,19 +37,25 @@
 <body>
   <div class="wrap">
     <h1>Select a Question Set</h1>
-    <p class="sub">Found {{ files|length }} JSON file(s) under data/</p>
-    <ul>
-      {% for f in files %}
-        <li>
-          <a href="{% url 'play' f.relpath %}">
-            {{ f.name }}
-            <div class="muted">{{ f.relpath }}</div>
-          </a>
-        </li>
-      {% empty %}
-        <li class="muted">No JSON files found.</li>
+    {% if groups %}
+      {% for g in groups %}
+        <h2 style="font-size:16px; margin:18px 0 8px; color:#1d1d1f;">{{ g.section }}</h2>
+        <ul>
+          {% for f in g.items %}
+            <li>
+              <a href="{% url 'play' f.relpath %}">
+                {{ f.name }}
+                <div class="muted">{{ f.relpath }}</div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       {% endfor %}
-    </ul>
+    {% else %}
+      <ul>
+        <li class="muted">No JSON files found.</li>
+      </ul>
+    {% endif %}
 
     <div class="footer">
       <a class="muted" href="{% url 'mcq' %}">Open default quiz</a>
