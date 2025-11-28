@@ -209,6 +209,75 @@ def _append_mistake(obj: dict):
         pass
 
 
+def _upstash_scalar(command: str, args: list[str]):
+    res = _upstash_pipeline([{"command": command, "args": args}])
+    if res is None:
+        return None
+    try:
+        # Upstash may return a list of objects with 'result' or a raw list
+        if isinstance(res, list):
+            first = res[0]
+            if isinstance(first, dict) and "result" in first:
+                return first["result"]
+            return first
+        if isinstance(res, dict) and "result" in res:
+            return res["result"]
+    except Exception:
+        pass
+    return None
+
+
+def _mistakes_count() -> int:
+    n = _upstash_scalar("LLEN", ["mcq:m:mistakes"])  # type: ignore[arg-type]
+    if isinstance(n, int):
+        return n
+    # Fallback to file length in dev
+    try:
+        if MISTAKES_PATH.exists():
+            data = json.loads(MISTAKES_PATH.read_text(encoding="utf-8"))
+            if isinstance(data, list):
+                return len(data)
+    except Exception:
+        return 0
+    return 0
+
+
+def _load_mistakes_list() -> list:
+    # Try Upstash first (newest first since we LPUSH)
+    res = _upstash_pipeline(
+        [{"command": "LRANGE", "args": ["mcq:m:mistakes", "0", "-1"]}]
+    )
+    items: list = []
+    if res is not None:
+        try:
+            arr = None
+            if isinstance(res, list):
+                first = res[0]
+                if isinstance(first, dict) and "result" in first:
+                    arr = first["result"]
+                elif isinstance(first, list):
+                    arr = first
+            elif isinstance(res, dict) and "result" in res:
+                arr = res["result"]
+            if isinstance(arr, list):
+                for x in arr:
+                    try:
+                        items.append(json.loads(x) if isinstance(x, str) else x)
+                    except Exception:
+                        pass
+        except Exception:
+            items = []
+    # Fallback to file (dev)
+    if not items and MISTAKES_PATH.exists():
+        try:
+            data = json.loads(MISTAKES_PATH.read_text(encoding="utf-8"))
+            if isinstance(data, list):
+                items = data
+        except Exception:
+            items = []
+    return items
+
+
 @require_http_methods(["GET", "POST"])
 def mcq(request):
     total = len(QUESTIONS)
@@ -297,7 +366,8 @@ def home(request):
                 "relpath": str(rel).replace("\\", "/"),
             }
         )
-    return render(request, "quiz/list.html", {"files": files})
+    mistakes_count = _mistakes_count()
+    return render(request, "quiz/list.html", {"files": files, "mistakes_count": mistakes_count})
 
 
 def play(request, fname):
@@ -347,6 +417,79 @@ def play(request, fname):
     # Build enriched payload like legacy view
     enriched = []
     for i, q in enumerate(questions):
+        text = q.get("text", q.get("stem", ""))
+        choices = q.get("choices", [])
+        answer = q.get("answer", 0)
+        # Backward compatibility: support legacy shape with 'items' and 'correct' letter
+        if (not choices) and isinstance(q.get("items"), list):
+            try:
+                items = q.get("items") or []
+                choices = [v for _, v in items]
+                correct = str(q.get("correct", "")).strip()
+                letters = [k for k, _ in items]
+                if correct in letters:
+                    answer = letters.index(correct)
+            except Exception:
+                pass
+        explanation = q.get("explanation")
+        extras = q.get("extras", {})
+        enriched.append(
+            {
+                "index": i,
+                "text": text,
+                "choices": list(enumerate(choices)),
+                "answer": answer,
+                "selected": checked.get(f"q{i}"),
+                "explanation": explanation,
+                "extras": extras,
+                "json": json.dumps(
+                    {
+                        "choices": choices,
+                        "answer": answer,
+                        "explanation": explanation,
+                    }
+                ),
+            }
+        )
+
+    context = {
+        "questions": enriched,
+        "total": total,
+        "score": score,
+        "streak": streak,
+        "longest": longest,
+        "checked": checked,
+        "data_source": str(target),
+    }
+    return render(request, "quiz/mcq.html", context)
+
+
+@require_http_methods(["GET", "POST"])
+def mistakes(request):
+    # Load mistakes as normalized questions
+    questions = _load_mistakes_list()
+    total = len(questions)
+    checked = {}
+    score = 0
+    streak = 0
+    longest = 0
+
+    if request.method == "POST":
+        correctness = []
+        for i, q in enumerate(questions):
+            key = f"q{i}"
+            val = request.POST.get(key)
+            try:
+                selected_idx = int(val) if val is not None else None
+            except (TypeError, ValueError):
+                selected_idx = None
+            is_correct = selected_idx is not None and selected_idx == q.get("answer", 0)
+            correctness.append(is_correct)
+            checked[key] = selected_idx
+        score, streak, longest = _score_and_streak(correctness)
+
+    enriched = []
+    for i, q in enumerate(questions):
         text = q.get("text", "")
         choices = q.get("choices", [])
         answer = q.get("answer", 0)
@@ -378,7 +521,7 @@ def play(request, fname):
         "streak": streak,
         "longest": longest,
         "checked": checked,
-        "data_source": str(target),
+        "data_source": "mistakes",
     }
     return render(request, "quiz/mcq.html", context)
 
