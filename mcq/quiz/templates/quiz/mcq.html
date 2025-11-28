@@ -245,6 +245,28 @@
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
         sec.classList.toggle('incorrect', !ok);
+        // Report mistake once per question to server (Upstash-backed)
+        if (!ok && !sec.dataset.reported) {
+          try {
+            const titleEl = sec.querySelector('h2');
+            const labels = Array.from(sec.querySelectorAll('ul.choices label'));
+            const choicesDom = labels.map(l => l.textContent || '');
+            const explDom = (sec.querySelector('.explanation > div:last-child') || {}).innerHTML || explanation || '';
+            const payload = {
+              text: (titleEl ? titleEl.textContent : '') || '',
+              choices: choicesDom.length ? choicesDom : (json.choices || []),
+              answer: correct,
+              explanation: explDom,
+              extras: json.extras || {},
+            };
+            fetch('/api/mistake/', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            }).catch(() => {});
+            sec.dataset.reported = '1';
+          } catch(_) {}
+        }
         // On mobile, show explanation in a popup if incorrect
         if (!ok && window.matchMedia('(max-width: 920px)').matches) {
           showExplanationPopup(body);
