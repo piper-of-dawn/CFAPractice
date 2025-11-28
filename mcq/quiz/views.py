@@ -1,5 +1,6 @@
 import json
 import os
+import random
 import urllib.request
 import urllib.parse
 from pathlib import Path
@@ -450,6 +451,96 @@ def play(request, fname):
         "longest": longest,
         "checked": checked,
         "data_source": str(target),
+    }
+    return render(request, "quiz/mcq.html", context)
+
+
+@require_http_methods(["GET", "POST"])
+def master(request):
+    # Aggregate questions from all JSON under data/, sample 180, and render
+    all_questions = []
+    files_used = []
+    for p in sorted(DATA_DIR.rglob("*.json")):
+        # Skip mistakes store
+        if p.name.lower() == "mistakes.json":
+            continue
+        try:
+            with p.open("r", encoding="utf-8") as f:
+                raw = json.load(f)
+            qs = _normalize_questions(raw)
+            if qs:
+                all_questions.extend(qs)
+                files_used.append(str(p.relative_to(DATA_DIR)).replace("\\", "/"))
+        except Exception:
+            continue
+
+    if not all_questions:
+        return redirect("home")
+
+    sample_size = min(180, len(all_questions))
+    # random.sample ensures unique indices and random order
+    selection = random.sample(all_questions, sample_size)
+
+    total = len(selection)
+    checked = {}
+    score = 0
+    streak = 0
+    longest = 0
+
+    if request.method == "POST":
+        correctness = []
+        for i, q in enumerate(selection):
+            key = f"q{i}"
+            val = request.POST.get(key)
+            try:
+                selected_idx = int(val) if val is not None else None
+            except (TypeError, ValueError):
+                selected_idx = None
+            is_correct = selected_idx is not None and selected_idx == q.get("answer", 0)
+            correctness.append(is_correct)
+            checked[key] = selected_idx
+            if selected_idx is not None and not is_correct:
+                try:
+                    _append_mistake(q)
+                except Exception:
+                    pass
+        score, streak, longest = _score_and_streak(correctness)
+
+    enriched = []
+    for i, q in enumerate(selection):
+        text = q.get("text", "")
+        choices = q.get("choices", [])
+        answer = q.get("answer", 0)
+        explanation = q.get("explanation")
+        extras = q.get("extras", {})
+        enriched.append(
+            {
+                "index": i,
+                "text": text,
+                "choices": list(enumerate(choices)),
+                "answer": answer,
+                "selected": checked.get(f"q{i}"),
+                "explanation": explanation,
+                "extras": extras,
+                "json": json.dumps(
+                    {
+                        "choices": choices,
+                        "answer": answer,
+                        "explanation": explanation,
+                        "extras": extras,
+                    }
+                ),
+            }
+        )
+
+    context = {
+        "questions": enriched,
+        "total": total,
+        "score": score,
+        "streak": streak,
+        "longest": longest,
+        "checked": checked,
+        "data_source": f"master: {total} from {len(files_used)} files",
     }
     return render(request, "quiz/mcq.html", context)
 
