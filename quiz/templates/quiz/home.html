@@ -16,6 +16,9 @@
 </head>
 <body>
   <h1>Available JSON Sets</h1>
+  <div class="list" style="margin-bottom:24px;">
+    <a class="btn" href="/mistakes/">Mistakes {% if mistakes_count %}({{ mistakes_count }}){% endif %}</a>
+  </div>
   <div class="list">
     {% if files %}
       {% for f in files %}
