@@ -16,13 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from quiz.views import home, play, mcq, reset
+from quiz.views import home, play, mcq, reset, api_mistake
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     # Allow subfolders inside data/ via <path:fname>
     path('play/<path:fname>/', play, name='play'),
+    path('api/mistake/', api_mistake, name='api_mistake'),
     path('legacy/', mcq, name='mcq'),
     path('reset/', reset, name='reset'),
 ]
