@@ -53,6 +53,8 @@
 
     <div class="footer">
       <a class="muted" href="{% url 'mcq' %}">Open default quiz</a>
+      &nbsp;•&nbsp;
+      <a class="muted" href="{% url 'mistakes' %}">Mistakes {% if mistakes_count %}({{ mistakes_count }}){% endif %}</a>
     </div>
   </div>
 </body>
