@@ -37,6 +37,10 @@
 <body>
   <div class="wrap">
     <h1>Select a Question Set</h1>
+    <div style="margin: 10px 0 20px;">
+      <a href="{% url 'master' %}" style="display:inline-block; padding:10px 12px; border-radius:12px; border:1px solid #e5e5ea; background:#fff; text-decoration:none; color:#111; font-weight:600;">Start Master 180</a>
+      <span class="muted" style="margin-left:8px;">Random mix from all topics</span>
+    </div>
     {% if groups %}
       {% for g in groups %}
         <h2 style="font-size:16px; margin:18px 0 8px; color:#1d1d1f;">{{ g.section }}</h2>
