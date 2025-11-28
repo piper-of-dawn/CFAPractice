@@ -50,6 +50,14 @@
   </aside>
 </main>
 
+<script>
+  // Expose normalized questions by id for mistake capture
+  window.QUESTIONS = JSON.parse('{{ questions_json|escapejs }}');
+  window.MISTAKE_ENDPOINT = '/api/mistake/';
+  window.MISTAKES_PLAY_URL = '/mistakes/';
+  window.MISTAKES_ENABLED = true;
+  
+</script>
 <script src="{% static 'components/app.js' %}"></script>
 </body>
 </html>

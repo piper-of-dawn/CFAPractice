@@ -116,6 +116,7 @@
     }
 
     const isCorrect = chosen === correctLetter;
+    const prev = state.correctMap.get(qid);
     state.correctMap.set(qid, isCorrect);
 
     // Update per-card visual state
@@ -130,6 +131,21 @@
       state.streak = 0;
       setStatus("wrong");
       card.classList.add("is-wrong");
+
+      // Report mistake first time it occurs for this question
+      if (prev === undefined && window.MISTAKES_ENABLED && window.QUESTIONS) {
+        try {
+          const qdata = window.QUESTIONS[qid];
+          if (qdata && window.MISTAKE_ENDPOINT) {
+            fetch(window.MISTAKE_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(qdata),
+              credentials: 'same-origin',
+            }).catch(() => {});
+          }
+        } catch (_) {}
+      }
     }
     state.answered.add(qid);
 
