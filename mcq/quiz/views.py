@@ -1,9 +1,14 @@
 import json
+import os
+import urllib.request
+import urllib.parse
 from pathlib import Path
 
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
 
 
 def _choose_data_path() -> Path:
@@ -23,6 +28,7 @@ def _choose_data_path() -> Path:
 
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
+MISTAKES_PATH = DATA_DIR / "mistakes.json"
 DATA_PATH = _choose_data_path()
 
 
@@ -146,6 +152,63 @@ def _score_and_streak(answers):
     return score, streak, longest
 
 
+def _upstash_cfg():
+    url = os.environ.get("UPSTASH_REDIS_REST_URL")
+    token = os.environ.get("UPSTASH_REDIS_REST_TOKEN")
+    if url and token:
+        return url.rstrip("/"), token
+    return None, None
+
+
+def _upstash_pipeline(commands):
+    url, token = _upstash_cfg()
+    if not url or not token:
+        return None
+    try:
+        req = urllib.request.Request(
+            url + "/pipeline",
+            data=json.dumps(commands).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=4) as resp:
+            body = resp.read().decode("utf-8", "ignore")
+            try:
+                return json.loads(body)
+            except Exception:
+                return {"raw": body}
+    except Exception:
+        return None
+
+
+def _append_mistake(obj: dict):
+    # Try Upstash first
+    payload = [{"command": "LPUSH", "args": ["mcq:m:mistakes", json.dumps(obj, ensure_ascii=False)]}]
+    res = _upstash_pipeline(payload)
+    if res is not None:
+        return
+    # Fallback to local file (dev)
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        items = []
+        if MISTAKES_PATH.exists():
+            txt = MISTAKES_PATH.read_text(encoding="utf-8").strip()
+            if txt:
+                data = json.loads(txt)
+                if isinstance(data, list):
+                    items = data
+        items.append(obj)
+        MISTAKES_PATH.write_text(
+            json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    except Exception:
+        # Silently ignore in production to avoid 500s
+        pass
+
+
 @require_http_methods(["GET", "POST"])
 def mcq(request):
     total = len(QUESTIONS)
@@ -166,6 +229,11 @@ def mcq(request):
             is_correct = selected_idx is not None and selected_idx == q["answer"]
             correctness.append(is_correct)
             checked[key] = selected_idx
+            if selected_idx is not None and not is_correct:
+                try:
+                    _append_mistake(q)
+                except Exception:
+                    pass
         score, streak, longest = _score_and_streak(correctness)
 
     # Prepare enriched question payloads including explanation and minimal attributes
@@ -269,6 +337,11 @@ def play(request, fname):
             is_correct = selected_idx is not None and selected_idx == q["answer"]
             correctness.append(is_correct)
             checked[key] = selected_idx
+            if selected_idx is not None and not is_correct:
+                try:
+                    _append_mistake(q)
+                except Exception:
+                    pass
         score, streak, longest = _score_and_streak(correctness)
 
     # Build enriched payload like legacy view
@@ -308,3 +381,19 @@ def play(request, fname):
         "data_source": str(target),
     }
     return render(request, "quiz/mcq.html", context)
+
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def api_mistake(request):
+    try:
+        payload = json.loads(request.body.decode("utf-8"))
+    except Exception:
+        return JsonResponse({"ok": False, "error": "invalid json"}, status=400)
+    if not isinstance(payload, dict):
+        return JsonResponse({"ok": False, "error": "invalid payload"}, status=400)
+    try:
+        _append_mistake(payload)
+    except Exception:
+        pass
+    return JsonResponse({"ok": True})
