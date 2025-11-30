@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/index.py": {
-      "includeFiles": "{mcq/**,quiz/**,static/**}"
+      "includeFiles": "{mcq/**,quiz/**,static/**,flashcard_data/**}"
     }
   },
   "routes": [

@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Gross Profit Margin Drivers",
+    "stem": "A company's gross profit margin increased from 35% to 40% while its sales volume remained constant. Which scenario is the most likely driver?",
+    "options": {
+      "A": "The company successfully passed on higher input costs to customers through price increases greater than the cost rise.",
+      "B": "The company experienced an increase in administrative efficiency, reducing overhead costs.",
+      "C": "The company increased its investment in marketing, leading to higher brand awareness."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Components of Gross Profit</h3><p><strong>A is correct.</strong> Gross profit margin is calculated as (Revenue - Cost of Goods Sold) / Revenue. An increase in this margin implies either Revenue increased relative to COGS, or COGS decreased relative to Revenue. If sales volume is constant, revenue growth comes from price. If prices rose more than unit costs (or unit costs fell), the margin expands. Scenario A describes a price increase outpacing cost inflation, directly widening the spread between price and direct cost.</p><p>B is incorrect: Administrative expenses are operating expenses, deducted <em>after</em> gross profit to reach operating profit. They do not affect gross profit margin.</p><p>C is incorrect: Marketing expenses are selling expenses (part of SG&A), which are also deducted below the gross profit line. While successful marketing might support higher prices, the expense itself does not impact the calculation of gross profit.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Operating Profit Margin vs. Gross Margin",
+    "stem": "A firm reports a stable gross profit margin of 50% but a declining operating profit margin from 20% to 15%. What is the most plausible underlying cause?",
+    "options": {
+      "A": "The cost of raw materials has increased significantly.",
+      "B": "Selling, general, and administrative (SG&A) expenses have grown faster than revenue.",
+      "C": "Interest expenses have risen due to higher debt levels."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Income Statement Cascade</h3><p><strong>B is correct.</strong> Operating profit equals Gross Profit minus Operating Expenses (SG&A, R&D, etc.). If Gross Margin is stable, the ratio of Cost of Goods Sold to Sales is unchanged. A decline in Operating Margin therefore must stem from the \"wedge\" between Gross Profit and Operating Profit. This wedge is Operating Expenses. If these expenses rise as a percentage of sales (faster growth than revenue), the operating margin shrinks.</p><p>A is incorrect: Rising raw material costs would increase Cost of Goods Sold, thereby reducing the Gross Profit Margin, which is stated to be stable.</p><p>C is incorrect: Interest expense is a non-operating item deducted <em>after</em> operating income to reach Pretax Income. It affects Net Profit Margin but has no impact on Operating Profit Margin.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Pretax Margin vs. Net Profit Margin",
+    "stem": "Company X has a Pretax Margin of 15% and a Net Profit Margin of 12%. Company Y has a Pretax Margin of 15% and a Net Profit Margin of 10%. Which conclusion is strictly valid?",
+    "options": {
+      "A": "Company Y has less efficient operations than Company X.",
+      "B": "Company Y faces a higher effective tax rate than Company X.",
+      "C": "Company Y has a higher interest burden than Company X."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Tax Wedge</h3><p><strong>B is correct.</strong> Pretax Margin is EBT / Revenue. Net Profit Margin is Net Income / Revenue. The link between EBT and Net Income is taxes: Net Income = EBT * (1 - Tax Rate). Since both companies have the same Pretax Margin (15%) but Company Y retains less as Net Income (10% vs 12%), the only variable between these two lines is the tax expense. Company Y must be paying a higher percentage of its EBT in taxes.</p><p>A is incorrect: Operational efficiency is captured at the Operating Margin level (or Pretax Margin to some extent regarding interest). Since Pretax Margins are identical, there is no evidence of operational superiority.</p><p>C is incorrect: Interest burden is deducted <em>before</em> arriving at Pretax Margin. Since Pretax Margins are equal, the interest impact is already factored in and cannot explain the difference occurring <em>below</em> that line.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "ROA Denominator Calculation",
+    "stem": "When calculating Return on Assets (ROA), why is it conceptually superior to use average total assets rather than ending total assets, especially for a growing firm?",
+    "options": {
+      "A": "Average assets smooth out the effects of seasonal fluctuations in cash balances.",
+      "B": "Net income is a flow measure generated over a period, so it should be matched with the asset base available throughout that period.",
+      "C": "Using ending assets inflates the ratio because ending assets are typically higher than beginning assets in a growing firm."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Matching Flows to Stocks</h3><p><strong>B is correct.</strong> Net income is a flow variable (measured over a time duration, e.g., one year). Assets are a stock variable (measured at a specific point in time). To measure the efficiency of generating the flow, we must compare it to the resources available to generate it <em>during</em> that time. Using ending assets for a growing firm assumes the new assets added late in the year contributed to profit for the full year, which is false. The average approximates the resources actually deployed over the period.</p><p>A is incorrect: While averages do smooth seasonality, the primary conceptual reason is the flow-stock mismatch, not just seasonality smoothing.</p><p>C is incorrect: Using ending assets (which are higher for a growing firm) would actually <em>deflate</em> (lower) the ratio because the denominator would be larger. The logic in option C is mathematically backward.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Operating ROA Definition",
+    "stem": "An analyst calculates \"Operating ROA\" to assess business performance independent of financing decisions. The most appropriate formula is:",
+    "options": {
+      "A": "Net Income / Average Total Assets",
+      "B": "Operating Income / Average Total Assets",
+      "C": "Operating Income / Average Total Equity"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Isolating Operating Performance</h3><p><strong>B is correct.</strong> Return on Assets aims to measure the productivity of the firm's asset base. To remove the influence of financing decisions (leverage/interest) and tax jurisdictions, we use Operating Income (EBIT) in the numerator. This measures the return generated by the assets themselves, regardless of how those assets were funded (debt vs. equity).</p><p>A is incorrect: Net Income includes interest expense, so it conflates operating efficiency with financing structure (leverage).</p><p>C is incorrect: Dividing by Equity measures return on owner's capital, not return on the total asset base. It also mixes a pre-interest numerator with a post-interest denominator base (since equity is residual).</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Return on Total Capital (ROTC)",
+    "stem": "Return on Total Capital (ROTC) differs from ROA primarily because ROTC:",
+    "options": {
+      "A": "Includes short-term non-interest bearing liabilities in the denominator.",
+      "B": "Excludes short-term non-interest bearing liabilities from the denominator.",
+      "C": "Uses Net Income rather than EBIT in the numerator."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Invested Capital vs. Total Assets</h3><p><strong>B is correct.</strong> Total Assets includes everything on the left side of the balance sheet, funded by all liabilities and equity. Invested Capital (or Total Capital) usually refers to Long-Term Debt + Short-Term Debt + Equity. It represents the capital explicitly raised from investors. It excludes non-interest bearing current liabilities like Accounts Payable and Accrued Expenses, which are viewed as \"free\" financing arising from operations. Therefore, ROTC focuses on the return to the providers of capital, excluding operating liabilities.</p><p>A is incorrect: This describes ROA (Total Assets), which implicitly includes assets funded by payables. ROTC excludes the portion funded by payables.</p><p>C is incorrect: ROTC typically uses EBIT or Operating Profit (sometimes tax-adjusted) to be comparable to the capital base, similar to Operating ROA. The distinction is in the denominator.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "ROE and Financial Leverage",
+    "stem": "A company has an ROA of 10% and an ROE of 15%. If the company retires debt using equity, keeping total assets constant, what will likely happen to ROE (assuming ROA remains constant)?",
+    "options": {
+      "A": "ROE will increase toward 20%.",
+      "B": "ROE will decrease toward 10%.",
+      "C": "ROE will remain at 15%."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Leverage Effect</h3><p><strong>B is correct.</strong> ROE is functionally ROA * Financial Leverage. Here, ROE (15%) > ROA (10%), implying positive financial leverage (the return on assets exceeds the cost of debt). If the company retires debt and replaces it with equity (de-leveraging), the equity base increases while assets (and earnings, assuming constant ROA) remain constant. Mathematically, the leverage multiplier decreases. As leverage drops to 1.0 (all equity), ROE converges to ROA. Thus, ROE will fall from 15% toward 10%.</p><p>A is incorrect: Increasing equity (denominator) decreases ROE. Increasing leverage would be required to push ROE higher.</p><p>C is incorrect: Changing capital structure directly alters the relationship between ROA and ROE.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3",
+    "topic": "DuPont Analysis: Three-Component",
+    "stem": "According to the three-part DuPont decomposition, if a company maintains constant Net Profit Margin and Asset Turnover, but its Debt-to-Equity ratio rises, its ROE will:",
+    "options": {
+      "A": "Decrease.",
+      "B": "Stay the same.",
+      "C": "Increase."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: DuPont Mechanics</h3><p><strong>C is correct.</strong> The three-part DuPont formula is: ROE = (Net Profit Margin) * (Asset Turnover) * (Financial Leverage Multiplier). The Financial Leverage Multiplier is Assets / Equity. If Debt-to-Equity rises, Assets/Equity must also rise (since Assets = Debt + Equity). Therefore, if the first two terms (Margin and Turnover) are constant, an increase in the third term (Leverage) mathematically increases the product, ROE.</p><p>A is incorrect: Higher leverage amplifies ROE (assuming positive earnings), it does not reduce it.</p><p>B is incorrect: Leverage is a direct multiplier in the DuPont identity. It cannot change without affecting the result unless another factor offsets it.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3",
+    "topic": "DuPont Analysis: Five-Component",
+    "stem": "In the five-part DuPont analysis, a decrease in the \"Interest Burden\" ratio (EBT / EBIT) indicates:",
+    "options": {
+      "A": "The company is paying less interest relative to its operating income.",
+      "B": "The company is paying more interest relative to its operating income.",
+      "C": "The company's tax rate has increased."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Interpreting the Ratio</h3><p><strong>B is correct.</strong> The Interest Burden ratio is calculated as EBT / EBIT. Since EBIT is usually larger than EBT (because Interest is deducted), this ratio is typically < 1. If the ratio <em>decreases</em> (e.g., goes from 0.8 to 0.6), the numerator (EBT) has shrunk relative to the denominator (EBIT). The difference between EBIT and EBT is Interest Expense. A widening gap implies higher interest costs relative to operating income.</p><p>A is incorrect: This would result in a ratio closer to 1.0 (an increase), not a decrease.</p><p>C is incorrect: Taxes affect the Tax Burden ratio (Net Income / EBT), which is the next step in the chain, not the Interest Burden ratio.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini 3",
+    "topic": "Return on Common Equity",
+    "stem": "When calculating Return on Common Equity specifically, what adjustment must be made to the numerator (Net Income)?",
+    "options": {
+      "A": "Add back minority interest.",
+      "B": "Subtract preferred dividends.",
+      "C": "Add back after-tax interest expense."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Residual Claims</h3><p><strong>B is correct.</strong> Common Equity is the claim of common shareholders <em>after</em> all other claimants, including preferred shareholders. Net Income is the bottom line, but it includes earnings distributable to preferred stock. To isolate the return belonging strictly to common shareholders, Preferred Dividends must be subtracted from Net Income. The denominator is Average Common Equity.</p><p>A is incorrect: Minority interest is usually already deducted to arrive at Net Income attributable to the parent.</p><p>C is incorrect: Adding back interest is for ROA or ROIC (returns to all capital providers), not for ROE (returns to equity only).</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini 3",
+    "topic": "Numerical: Gross Margin Calculation",
+    "stem": "Revenue: $1,000; COGS: $600; SG&A: $150; Depreciation (included in COGS): $50. What is the Gross Profit Margin?",
+    "options": {
+      "A": "25%",
+      "B": "35%",
+      "C": "40%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Defining Gross Profit</h3><p><strong>C is correct.</strong> Gross Profit = Revenue - Cost of Goods Sold (COGS). The problem states Depreciation is <em>included</em> in COGS. This is a distractor or a clarification; if it's in COGS, it's already subtracted. Gross Profit = $1,000 - $600 = $400. Gross Margin = 400 / 1,000 = 40%. SG&A is an operating expense, not part of COGS, so it is ignored for Gross Margin.</p><p>A is incorrect: This likely subtracts SG&A as well ($1000 - 600 - 150 = 250/1000 = 25%), which is Operating Margin, not Gross Margin.</p><p>B is incorrect: This might attempt to add back depreciation ($600 - 50 = 550 adjusted COGS), but if depreciation is a production cost, it belongs in COGS.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini 3",
+    "topic": "Numerical: ROA Calculation",
+    "stem": "Net Income: $200; Interest Expense: $50; Tax Rate: 30%; Average Total Assets: $2,000. Calculate ROA adding back after-tax interest.",
+    "options": {
+      "A": "10.0%",
+      "B": "11.75%",
+      "C": "12.5%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Neutralizing Capital Structure</h3><p><strong>B is correct.</strong> The formula for ROA adjusted for financing is: (Net Income + Interest Expense * (1 - Tax Rate)) / Average Total Assets. \nNumerator = 200 + 50 * (1 - 0.30) = 200 + 35 = 235. \nROA = 235 / 2,000 = 11.75%.</p><p>A is incorrect: This is simple ROA (Net Income / Assets = 200/2000 = 10%), ignoring the interest adjustment.</p><p>C is incorrect: This adds back full interest without the tax shield adjustment (200 + 50 = 250 / 2000 = 12.5%).</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini 3",
+    "topic": "Numerical: ROE Derivation",
+    "stem": "ROA: 8%; Total Asset Turnover: 2.0; Financial Leverage Multiplier: 1.5. What is the Net Profit Margin?",
+    "options": {
+      "A": "4.0%",
+      "B": "6.0%",
+      "C": "12.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Deconstructing ROA</h3><p><strong>A is correct.</strong> We know that ROA = Net Profit Margin * Total Asset Turnover. \n8% = Net Profit Margin * 2.0. \nSolving for Margin: 8% / 2.0 = 4.0%. \nThe Financial Leverage Multiplier is extra information (used for ROE, not required to find Margin from ROA).</p><p>B is incorrect: Confuses the relationship or tries to use Leverage.</p><p>C is incorrect: Multiplies 8% * 1.5, calculating ROE instead of Margin.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini 3",
+    "topic": "Numerical: DuPont Solving",
+    "stem": "Tax Burden: 0.7; Interest Burden: 0.8; EBIT Margin: 15%; Asset Turnover: 1.2; Financial Leverage: 1.5. Calculate ROE.",
+    "options": {
+      "A": "10.08%",
+      "B": "15.12%",
+      "C": "18.50%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Five-Part Chain</h3><p><strong>B is correct.</strong> ROE = (Tax Burden) * (Interest Burden) * (EBIT Margin) * (Asset Turnover) * (Financial Leverage). \nCalculation: 0.7 * 0.8 * 0.15 * 1.2 * 1.5 \nStep 1: 0.7 * 0.8 = 0.56 (Net Income margin relative to EBIT) \nStep 2: 0.56 * 0.15 = 0.084 (Net Profit Margin) \nStep 3: 0.084 * 1.2 = 0.1008 (ROA) \nStep 4: 0.1008 * 1.5 = 0.1512 = 15.12%.</p><p>A is incorrect: This is the ROA calculation (stops before multiplying by Leverage).</p><p>C is incorrect: Likely a calculation error skipping a term.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini 3",
+    "topic": "Numerical: Operating Cycle",
+    "stem": "Days Sales Outstanding: 40 days; Days Inventory on Hand: 60 days; Days Payables Outstanding: 30 days. What is the Cash Conversion Cycle?",
+    "options": {
+      "A": "50 days",
+      "B": "70 days",
+      "C": "130 days"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash Timeline</h3><p><strong>B is correct.</strong> The Cash Conversion Cycle measures the time cash is tied up in operations. \nFormula: DOH (Inventory sits) + DSO (Waiting for customer cash) - DPO (Holding onto supplier cash). \nCalculation: 60 + 40 - 30 = 70 days.</p><p>A is incorrect: Likely subtracted DSO or misapplied signs.</p><p>C is incorrect: Added all days (60+40+30), failing to account for Payables as a source of funding (subtraction).</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini 3",
+    "topic": "Fixed Asset Turnover Interpretation",
+    "stem": "A company has a significantly higher Fixed Asset Turnover ratio than its peers. This could indicate all of the following EXCEPT:",
+    "options": {
+      "A": "The company has older, depreciated assets.",
+      "B": "The company outsources its manufacturing.",
+      "C": "The company has recently invested heavily in new modernization equipment."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Denominator Dynamics</h3><p><strong>C is correct.</strong> Fixed Asset Turnover = Revenue / Average Net Fixed Assets. A low denominator leads to a high ratio. \nOption C involves buying *new* equipment, which increases the denominator (Net Fixed Assets), thereby *lowering* the turnover ratio, not raising it. Thus, C is the exception.</p><p>A is incorrect: Older assets have high accumulated depreciation, lowering the Book Value (denominator), artificially inflating the ratio.</p><p>B is incorrect: Outsourcing removes assets from the balance sheet entirely, drastically lowering the denominator and inflating the ratio.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini 3",
+    "topic": "Working Capital Turnover",
+    "stem": "Which action would most immediately improve a company's Working Capital Turnover ratio?",
+    "options": {
+      "A": "Selling inventory for cash (at cost).",
+      "B": "Collecting accounts receivable.",
+      "C": "Delaying payments to suppliers (increasing Accounts Payable)."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Net Working Capital</h3><p><strong>C is correct.</strong> Working Capital Turnover = Revenue / Average Working Capital. Working Capital = Current Assets - Current Liabilities. To improve (increase) the ratio, we need to decrease the denominator. \nIncreasing Accounts Payable (a Current Liability) reduces Net Working Capital. Thus, the denominator shrinks, and the ratio rises.</p><p>A is incorrect: Swapping Inventory for Cash (both Current Assets) leaves Total Current Assets unchanged, so Working Capital is unchanged.</p><p>B is incorrect: Swapping AR for Cash (both Current Assets) leaves Working Capital unchanged.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini 3",
+    "topic": "Numerical: Retention Rate & Growth",
+    "stem": "ROE: 20%; Dividend Payout Ratio: 40%. What is the Sustainable Growth Rate (g)?",
+    "options": {
+      "A": "8%",
+      "B": "12%",
+      "C": "20%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Reinvestment Drive Growth</h3><p><strong>B is correct.</strong> Sustainable Growth Rate = Retention Rate (b) * ROE. \nRetention Rate = 1 - Dividend Payout Ratio = 1 - 0.40 = 0.60 (60%). \nGrowth = 0.60 * 20% = 12%. \nThis represents the growth equity can support internally via reinvested earnings.</p><p>A is incorrect: Uses the Payout Ratio (0.4 * 20%), calculating the dividend yield equivalent rather than growth.</p><p>C is incorrect: Assumes 100% retention.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini 3",
+    "topic": "Interpretating High Profitability",
+    "stem": "A company reports extremely high ROE compared to peers but has very low Net Profit Margins and low Asset Turnover. What is the likely driver?",
+    "options": {
+      "A": "High operating efficiency.",
+      "B": "Excessive financial leverage.",
+      "C": "Tax loss carryforwards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: DuPont Balance</h3><p><strong>B is correct.</strong> ROE = Margin * Turnover * Leverage. If Margin is low and Turnover is low, the first two terms of the equation are dragging ROE down. For the final ROE to be \"extremely high,\" the third term—Financial Leverage—must be massive to compensate. This indicates a highly risky capital structure.</p><p>A is incorrect: High efficiency would result in high Margins or Turnover.</p><p>C is incorrect: Tax issues affect the Margin, which is stated to be low.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini 3",
+    "topic": "Numerical: Tax Burden Calculation",
+    "stem": "EBIT: $1,000; Interest: $200; Tax Rate: 25%. What is the Tax Burden ratio?",
+    "options": {
+      "A": "0.60",
+      "B": "0.75",
+      "C": "0.80"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Tax Impact</h3><p><strong>B is correct.</strong> Tax Burden = Net Income / EBT. Alternatively, Tax Burden = (1 - Tax Rate). \nCheck: EBT = 1000 - 200 = 800. Tax = 800 * 0.25 = 200. Net Income = 600. \nRatio: 600 / 800 = 0.75. \nOr simply: 1 - 0.25 = 0.75.</p><p>A is incorrect: Calculates 600 / 1000 (Net Income / EBIT), conflating Interest and Tax burdens.</p><p>C is incorrect: This represents the Interest Burden (800 / 1000).</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini 3",
+    "topic": "Impact of Inventory Accounting on Ratios",
+    "stem": "In an inflationary environment, a company switches from LIFO to FIFO. What is the immediate impact on the Current Ratio and Net Profit Margin?",
+    "options": {
+      "A": "Both increase.",
+      "B": "Current Ratio increases, Net Profit Margin decreases.",
+      "C": "Current Ratio decreases, Net Profit Margin increases."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Flow of Costs</h3><p><strong>A is correct.</strong> \n1. <strong>Current Ratio (Current Assets / Liabilities):</strong> Under FIFO (inflationary), older, cheaper inventory is sold, leaving newer, more expensive inventory on the balance sheet. Inventory (asset) value rises. Thus, Current Ratio increases. \n2. <strong>Net Profit Margin (NI / Sales):</strong> Under FIFO, COGS is lower (using older, cheaper costs). Lower COGS = Higher Gross Profit = Higher Net Income. Thus, Margin increases.</p><p>B is incorrect: Margin increases because COGS falls.</p><p>C is incorrect: Current Ratio increases because ending inventory value is higher under FIFO.</p>"
+  }
+]

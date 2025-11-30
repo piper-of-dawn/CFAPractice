@@ -16,6 +16,7 @@ STATIC_DIR = REPO_ROOT / "static"
 COMP_DIR = STATIC_DIR / "components"
 DATA_DIR = REPO_ROOT / "mcq" / "quiz" / "data"
 MISTAKES_PATH = DATA_DIR / "mistakes.json"
+FLASHCARD_DIR = REPO_ROOT / "flashcard_data"
 
 
 # ---------- Helpers to support existing static UI ----------
@@ -283,3 +284,99 @@ def mistakes(request):
             "questions_json": json.dumps(qmap),
         },
     )
+
+
+# ---------- Flashcards (CSV -> printable A4) ----------
+import csv
+from typing import Iterable
+
+
+def _list_flashcard_csvs():
+    try:
+        FLASHCARD_DIR.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        pass
+    return sorted([p for p in FLASHCARD_DIR.glob("*.csv")])
+
+
+def flashcards_index(request):
+    files = _list_flashcard_csvs()
+    items = [{"name": f.name, "size": (f.stat().st_size if f.exists() else 0)} for f in files]
+    return render(request, "quiz/flashcards_list.html", {"files": items})
+
+
+def _safe_select_csv(name: str):
+    try:
+        base = Path(name).name
+    except Exception:
+        return None
+    if not base.lower().endswith(".csv"):
+        return None
+    path = FLASHCARD_DIR / base
+    if path.exists() and path.is_file():
+        return path
+    return None
+
+
+def _parse_flashcards_csv(path: Path) -> list[dict]:
+    cards: list[dict] = []
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as f:
+            reader = csv.DictReader(f)
+            field_map = {k.strip().lower(): k for k in (reader.fieldnames or [])}
+            f_key = field_map.get("front")
+            b_key = field_map.get("back")
+            if not f_key or not b_key:
+                f.seek(0)
+                rows = list(csv.reader(f))
+                for row in rows:
+                    if len(row) >= 2:
+                        cards.append({"front": (row[0] or "").strip(), "back": (row[1] or "").strip()})
+                return cards
+            for row in reader:
+                front = (row.get(f_key) or "").strip()
+                back = (row.get(b_key) or "").strip()
+                if front or back:
+                    cards.append({"front": front, "back": back})
+    except Exception:
+        pass
+    return cards
+
+
+def _chunk(it: Iterable, size: int):
+    lst = list(it)
+    for i in range(0, len(lst), size):
+        yield lst[i : i + size]
+
+
+def _backs_for_fronts(fronts: list[dict]) -> list[dict]:
+    padded = list(fronts) + [{"front": "", "back": ""} for _ in range(max(0, 12 - len(fronts)))]
+    backs: list[dict] = [{"front": "", "back": ""} for _ in range(12)]
+    for r in range(4):
+        for c in range(3):
+            src = r * 3 + (2 - c)
+            dst = r * 3 + c
+            backs[dst] = padded[src]
+    return backs
+
+
+def flashcards_render(request, name: str):
+    path = _safe_select_csv(name)
+    if not path:
+        return render(
+            request,
+            "quiz/flashcards_list.html",
+            {"files": [{"name": name, "size": 0}], "error": "CSV not found"},
+            status=404,
+        )
+    cards = _parse_flashcards_csv(path)
+    batches = []
+    for chunk in _chunk(cards, 12):
+        fronts = list(chunk)
+        if len(fronts) < 12:
+            fronts += [{"front": "", "back": ""} for _ in range(12 - len(fronts))]
+        backs = _backs_for_fronts(fronts)
+        batches.append({"fronts": fronts, "backs": backs})
+    if not batches:
+        batches = [{"fronts": [{"front": "", "back": ""} for _ in range(12)], "backs": [{"front": "", "back": ""} for _ in range(12)]}]
+    return render(request, "quiz/flashcards_print.html", {"name": path.name, "batches": batches})

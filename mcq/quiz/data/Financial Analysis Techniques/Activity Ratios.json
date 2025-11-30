@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Activity Ratios Definition",
+    "stem": "Activity ratios are also known by which alternative names and measure which aspect of company performance?",
+    "options": {
+      "A": "Asset utilization ratios; they measure how effectively a company uses its working capital and long-term assets.",
+      "B": "Leverage ratios; they measure how effectively a company uses debt to finance operations.",
+      "C": "Coverage ratios; they measure how effectively a company covers its fixed obligations."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Defining Activity Ratios</h3><p><strong>A is correct.</strong> Activity ratios, also known as asset utilization ratios or operating efficiency ratios, measure operational performance—specifically how effectively the company is using working capital and longer-term assets. The text explicitly states this definition. These ratios combine income statement data (flows) with balance sheet items (stocks) to assess efficiency of asset deployment. Examples include inventory turnover, receivables turnover, and asset turnover ratios.</p><p>B is incorrect because leverage ratios (such as debt-to-equity) are part of solvency analysis, not activity analysis. They measure the degree of financial leverage rather than operational efficiency in using assets.</p><p>C is incorrect because coverage ratios (such as interest coverage) measure a company's ability to meet fixed charges like interest payments, not the efficiency of asset utilization that activity ratios capture.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Inventory Turnover Formula",
+    "stem": "Which formula correctly calculates inventory turnover?",
+    "options": {
+      "A": "Revenue ÷ Average Inventory",
+      "B": "Cost of Goods Sold ÷ Average Inventory",
+      "C": "Average Inventory ÷ Cost of Goods Sold"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Matching Numerator and Denominator</h3><p><strong>B is correct.</strong> Inventory turnover equals Cost of Goods Sold (or Cost of Sales) divided by Average Inventory. The principle is to match the numerator and denominator: inventory is valued at cost, not at selling price, so the numerator must also be at cost. COGS represents the cost of inventory sold during the period, while average inventory represents the typical investment in inventory. The ratio measures how many times inventory is sold and replaced during the period.</p><p>A is incorrect because using Revenue in the numerator would create a mismatch—revenue includes markup/profit margin, while inventory is carried at cost. This would overstate the turnover ratio.</p><p>C is incorrect because it inverts the formula. This would give the inverse of turnover (essentially days of inventory as a fraction of a year) rather than the number of times inventory turns over.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Days of Inventory on Hand (DOH)",
+    "stem": "An analyst calculates that a company has inventory turnover of 12 times per year. How should the analyst interpret the Days of Inventory on Hand (DOH)?",
+    "options": {
+      "A": "The company holds approximately 12 days of inventory.",
+      "B": "The company holds approximately 30 days of inventory.",
+      "C": "The company holds approximately 365 days of inventory."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Converting Turnover to Days</h3><p><strong>B is correct.</strong> DOH equals Number of Days in Period divided by Inventory Turnover. With 12 times turnover: DOH = 365 ÷ 12 ≈ 30.4 days. This means the company holds approximately 30 days' worth of inventory on hand. Mechanically, if inventory turns over 12 times per year, each cycle lasts one-twelfth of a year, or about 30 days. DOH indicates the average number of days inventory sits before being sold.</p><p>A is incorrect because 12 days would result from dividing the turnover ratio by approximately 30, not dividing 365 by the turnover. This confuses the relationship between turnover and days.</p><p>C is incorrect because 365 days would imply inventory turnover of only 1.0 time per year (365 ÷ 365 = 1), not the stated 12 times. This reverses the calculation completely.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Receivables Turnover Formula",
+    "stem": "According to the text, what numerator is generally used in calculating receivables turnover, and why?",
+    "options": {
+      "A": "Credit sales only, because this represents sales for which receivables were created.",
+      "B": "Total revenue, because credit sales information is usually not available to external analysts.",
+      "C": "Cash collections, because this represents the actual cash received from customers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Practical Constraints in Ratio Calculation</h3><p><strong>B is correct.</strong> The text explicitly states: 'Although limiting the numerator to sales made on credit in the receivables turnover would be more appropriate, credit sales information is usually not available to analysts; therefore, revenue as reported in the income statement is generally used.' This represents a practical compromise—theoretically credit sales would be ideal, but data availability constrains analysts to use total revenue as reported.</p><p>A is incorrect because, while conceptually superior (receivables arise only from credit sales), this information is typically not disclosed in published financial statements, making it unavailable to external analysts.</p><p>C is incorrect because cash collections are not the numerator for receivables turnover. The ratio measures how many times receivables are generated and collected, using revenue (or ideally credit sales) in the numerator, not cash collections which would double-count the timing issue.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Interpreting High Inventory Turnover",
+    "stem": "A company has a high inventory turnover ratio relative to industry norms. Which interpretation requires additional investigation?",
+    "options": {
+      "A": "The company has highly effective inventory management resulting in minimal carrying costs.",
+      "B": "The company does not carry adequate inventory, potentially leading to stockouts and lost sales.",
+      "C": "The company has significant obsolete inventory that should be written down."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dual Interpretations of High Turnover</h3><p><strong>B is correct.</strong> The text states that high inventory turnover 'might indicate highly effective inventory management. Alternatively, a high inventory turnover ratio and commensurately low DOH could possibly indicate the company does not carry adequate inventory, so shortages could potentially hurt revenue.' To assess which is correct, the analyst should compare revenue growth with industry growth—slower growth combined with higher turnover could indicate inadequate inventory levels.</p><p>A is incorrect—while this is a possible positive interpretation of high turnover, it does not require additional investigation in the same way that option B does. High turnover generally suggests efficient management, but the analyst must rule out the negative scenario in B.</p><p>C is incorrect because obsolete inventory would typically result in LOW turnover (high DOH), not high turnover. Slow-moving obsolete items sit in inventory longer, reducing the turnover ratio.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Days Sales Outstanding (DSO) Interpretation",
+    "stem": "A company's Days Sales Outstanding (DSO) has increased from 30 days to 45 days while industry DSO remained at 30 days. Which conclusion is most appropriate?",
+    "options": {
+      "A": "The company is collecting cash from customers more quickly than before.",
+      "B": "The company may have loosened credit standards or is experiencing collection difficulties.",
+      "C": "The company's liquidity has improved due to better working capital management."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: DSO as a Collection Efficiency Metric</h3><p><strong>B is correct.</strong> DSO reflects how fast the company collects cash from credit customers. An increase in DSO means it takes longer to collect receivables. The text indicates that comparing with industry helps assess 'whether low turnover reflects credit management issues.' An increase from 30 to 45 days (versus stable industry levels) suggests the company may have relaxed credit policies, extended payment terms, or is experiencing collection problems. This deterioration warrants investigation of credit quality and receivables aging.</p><p>A is incorrect because higher DSO means slower collection (more days to collect), not faster. This choice reverses the interpretation.</p><p>C is incorrect because longer collection periods tie up more cash in receivables, which worsens liquidity rather than improving it. Working capital management has deteriorated, not improved.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Payables Turnover Interpretation",
+    "stem": "A company has a high payables turnover ratio (low days payable) relative to its industry. Which is the most likely explanation?",
+    "options": {
+      "A": "The company is experiencing difficulty paying suppliers on time.",
+      "B": "The company is taking advantage of early payment discounts or not fully utilizing available credit.",
+      "C": "The company has negotiated extended payment terms with suppliers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: High Turnover Means Quick Payment</h3><p><strong>B is correct.</strong> The text states: 'A payables turnover ratio that is high (low days payable) relative to the industry could indicate that the company is not making full use of available credit facilities; alternatively, it could result from a company taking advantage of early payment discounts.' High turnover means the company pays suppliers quickly (few days payable), suggesting either foregone credit terms or strategic use of discounts for early payment.</p><p>A is incorrect because payment difficulties would result in LOW payables turnover (HIGH days payable)—the company would stretch payments out over more days, not pay faster.</p><p>C is incorrect because extended payment terms would lead to LOW payables turnover (more days to pay), not high turnover. Longer terms mean slower payment, which is the opposite of what high turnover indicates.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Cash Conversion Cycle Formula",
+    "stem": "The cash conversion cycle (net operating cycle) is calculated as:",
+    "options": {
+      "A": "DOH + DSO + Number of Days of Payables",
+      "B": "DOH + DSO − Number of Days of Payables",
+      "C": "DSO − DOH − Number of Days of Payables"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Timeline of Cash Flows</h3><p><strong>B is correct.</strong> The cash conversion cycle equals DOH + DSO − Number of Days of Payables. This measures the time from when cash is invested in inventory until cash is collected from customers. DOH represents days inventory sits, DSO represents days to collect receivables—these are cash outflow/waiting periods that add together. Days payable is subtracted because it represents free financing from suppliers (cash the company hasn't yet paid out), which reduces the net time cash is tied up in operations.</p><p>A is incorrect because it adds payables instead of subtracting them. Payables represent a source of cash (delayed payment), not a use of cash, so they must be subtracted to find the net operating cycle.</p><p>C is incorrect because it subtracts DOH rather than adding it. Inventory holding time (DOH) ties up cash and should be added to the collection period (DSO) to find total cash tied up before subtracting the payables deferral.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Working Capital Turnover",
+    "stem": "A company has working capital turnover of 4.0. What does this indicate?",
+    "options": {
+      "A": "The company generates €4 of revenue for every €1 of working capital.",
+      "B": "The company generates €1 of revenue for every €4 of working capital.",
+      "C": "The company takes 4 days to convert working capital into revenue."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Interpreting the Turnover Ratio</h3><p><strong>A is correct.</strong> Working capital turnover equals Revenue ÷ Average Working Capital. A ratio of 4.0 means the company generates 4 monetary units of revenue for each 1 unit of working capital invested. The text explicitly provides this example: 'a working capital turnover ratio of 4.0 indicates that the company generates EUR4 of revenue for every EUR1 of working capital.' Higher turnover indicates greater efficiency in using working capital to generate sales.</p><p>B is incorrect because it inverts the interpretation. A ratio of 4.0 means revenue is 4 times working capital, not one-quarter of working capital.</p><p>C is incorrect because working capital turnover is not expressed in days—it's expressed as times per period. To convert to days would require dividing 365 by the turnover ratio (365 ÷ 4 ≈ 91 days), which would be a different metric altogether.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Fixed Asset Turnover Interpretation",
+    "stem": "A company with newer, less-depreciated assets would most likely have a fixed asset turnover ratio that is:",
+    "options": {
+      "A": "Higher than a company with older, more-depreciated assets, assuming similar revenue levels.",
+      "B": "Lower than a company with older, more-depreciated assets, assuming similar revenue levels.",
+      "C": "Unaffected by the age and depreciation status of assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Impact of Asset Age on Book Value</h3><p><strong>B is correct.</strong> The text states: 'The fixed asset turnover ratio would be lower for a company whose assets are newer and, therefore, less depreciated and so reflected in the financial statements at a higher carrying value than the ratio for a company with older assets that are thus more depreciated and so reflected at a lower carrying value.' Fixed asset turnover = Revenue ÷ Average Net Fixed Assets. Newer assets have higher book values (denominator), producing a lower ratio, even with identical revenue and operational efficiency.</p><p>A is incorrect because it reverses the relationship. Newer assets have higher book values, which increases the denominator and lowers the turnover ratio, not raises it.</p><p>C is incorrect because asset age and accumulated depreciation directly affect net fixed assets (the denominator), thereby affecting the ratio. This accounting effect can obscure true operational efficiency differences between companies.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "Total Asset Turnover",
+    "stem": "Total asset turnover measures a company's overall ability to generate revenues with a given level of assets. What does a ratio of 1.20 indicate?",
+    "options": {
+      "A": "The company generates €1.20 of assets for every €1 of revenue.",
+      "B": "The company generates €1.20 of revenue for every €1 of average assets.",
+      "C": "The company's assets turn over every 1.20 years."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Revenue Generation per Asset Unit</h3><p><strong>B is correct.</strong> The text explicitly states: 'A ratio of 1.20 would indicate that the company is generating EUR1.20 of revenues for every EUR1 of average assets.' Total asset turnover = Revenue ÷ Average Total Assets. A higher ratio indicates greater efficiency in using assets to generate revenue. This measure combines both working capital efficiency and fixed asset efficiency into one overall metric.</p><p>A is incorrect because it reverses the relationship. Assets are in the denominator, not the numerator, so the ratio measures revenue per unit of assets, not assets per unit of revenue.</p><p>C is incorrect because total asset turnover is not a time-based measure expressed in years. It's expressed as times per period (e.g., per year). To convert to a time cycle would require taking the reciprocal and multiplying by the period length.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Inventory Turnover",
+    "stem": "A company has Cost of Goods Sold of €600,000 for the year. Beginning inventory was €80,000 and ending inventory was €120,000. What is the inventory turnover ratio?",
+    "options": {
+      "A": "5.0 times",
+      "B": "6.0 times",
+      "C": "7.5 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Calculating Average Inventory</h3><p><strong>B is correct.</strong> Inventory turnover = COGS ÷ Average Inventory. Average inventory = (Beginning + Ending) ÷ 2 = (€80,000 + €120,000) ÷ 2 = €100,000. Turnover = €600,000 ÷ €100,000 = 6.0 times. The company sold and replaced its inventory 6 times during the year. Using average inventory (rather than beginning or ending) aligns the period-based flow (COGS) with the average stock level during that period.</p><p>A is incorrect. This would result from using ending inventory only (€600,000 ÷ €120,000 = 5.0), which doesn't represent the average inventory level throughout the year and violates the principle of matching flows to average stocks.</p><p>C is incorrect. This would result from using beginning inventory only (€600,000 ÷ €80,000 = 7.5), which also fails to represent the typical inventory level during the period when COGS was incurred.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - DSO Calculation",
+    "stem": "A company has annual revenue of €730 million and average receivables of €100 million. What is the Days Sales Outstanding (DSO)?",
+    "options": {
+      "A": "7.3 days",
+      "B": "50 days",
+      "C": "73 days"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Two-Step Calculation</h3><p><strong>B is correct.</strong> First calculate receivables turnover: Revenue ÷ Average Receivables = €730 million ÷ €100 million = 7.3 times. Then calculate DSO: 365 days ÷ 7.3 times = 50 days. This means the company takes an average of 50 days to collect its receivables. The turnover of 7.3 means receivables cycle through 7.3 times per year, so each cycle lasts 365 ÷ 7.3 = 50 days.</p><p>A is incorrect. This represents the receivables turnover (7.3 times) but not DSO in days. It confuses the turnover ratio with the days measure.</p><p>C is incorrect. This appears to multiply revenue percentage by days (10% × 730 = 73), which has no basis in the DSO formula. DSO requires first calculating turnover, then dividing days by turnover.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Cash Conversion Cycle",
+    "stem": "A company has DOH of 45 days, DSO of 35 days, and Days Payable of 50 days. What is the cash conversion cycle?",
+    "options": {
+      "A": "30 days",
+      "B": "80 days",
+      "C": "130 days"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Net Operating Cycle</h3><p><strong>A is correct.</strong> Cash conversion cycle = DOH + DSO − Days Payable = 45 + 35 − 50 = 30 days. The company's cash is tied up for a net 30 days. It takes 45 days to sell inventory and 35 more days to collect cash from customers (total 80 days), but it delays paying suppliers for 50 days, reducing the net cash cycle to 30 days. A shorter cash conversion cycle indicates the company needs less working capital financing.</p><p>B is incorrect. This adds DOH and DSO (45 + 35 = 80) but fails to subtract Days Payable. This would represent the gross time from inventory purchase to cash collection, ignoring the benefit of deferred payment to suppliers.</p><p>C is incorrect. This adds all three components (45 + 35 + 50 = 130), treating payables as an additional use of time rather than as a source of financing that reduces the net cycle. Days payable must be subtracted, not added.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Annualizing Quarterly Ratios",
+    "stem": "A company has quarterly (90-day) Cost of Goods Sold of €35,000 and average inventory of €11,000. What is the annualized inventory turnover?",
+    "options": {
+      "A": "3.18 times",
+      "B": "12.72 times",
+      "C": "28.30 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Converting Quarterly to Annual</h3><p><strong>B is correct.</strong> The text provides this exact example: Quarterly turnover = €35,000 ÷ €11,000 = 3.18 times per quarter. To annualize, multiply by 4 (quarters per year): 3.18 × 4 = 12.72 times per year. Alternatively, multiply by (365 ÷ 90) = 4.06 for 12.90 times. The principle is that a quarterly rate must be scaled to an annual rate for comparison with annual figures, using the number of quarters (or days) in a year.</p><p>A is incorrect. This is the quarterly turnover (3.18 times per 90 days), not the annualized rate. Comparing this directly to an annual turnover would be misleading because it's measured over different time periods.</p><p>C is incorrect. This represents days (90 ÷ 3.18 ≈ 28.3 days), not annualized turnover. While DOH of 28.3 days is a valid metric, the question asks for annualized turnover in times per year.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Activity Ratios and Balance Sheet Data",
+    "stem": "Why do activity ratios typically use average balance sheet figures rather than ending balances?",
+    "options": {
+      "A": "Average figures are easier to calculate than ending balances.",
+      "B": "Income statement data represents flows over a period, so they should be matched with average stocks during that period.",
+      "C": "Ending balances are often distorted by seasonal effects."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Matching Flows to Stocks</h3><p><strong>B is correct.</strong> The text states: 'Activity ratios generally combine information from the income statement in the numerator with balance sheet items in the denominator. Because the income statement measures what happened during a period, whereas the balance sheet shows the condition only at the end of the period, average balance sheet figures are normally used for consistency.' This fundamental principle ensures the denominator represents the average resources available during the period when the numerator (revenue or COGS) was generated.</p><p>A is incorrect. Averages actually require more calculation (beginning + ending ÷ 2) than simply using ending balance. Computational ease is not the conceptual reason for using averages.</p><p>C is incorrect. While seasonality can affect ratios, this is a secondary consideration. The primary reason is the flow-versus-stock matching principle. The text mentions seasonality as a refinement (using quarterly or monthly averages when appropriate), not as the main rationale.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Receivables Turnover",
+    "stem": "Trade receivables at the beginning of the year: $4,468,392; Trade receivables at year-end: $4,972,722; Revenue for the year: $45,349,943. Calculate receivables turnover.",
+    "options": {
+      "A": "9.11 times",
+      "B": "9.61 times",
+      "C": "10.14 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Lenovo Example from Text</h3><p><strong>B is correct.</strong> This is the exact example from the text (Lenovo Group, Example 6). Average receivables = ($4,468,392 + $4,972,722) ÷ 2 = $4,720,557. Receivables turnover = Revenue ÷ Average Receivables = $45,349,943 ÷ $4,720,557 = 9.6069, rounded to 9.6 times. The text shows this calculation demonstrates that on average, Lenovo's receivables turned over about 9.6 times during the fiscal year.</p><p>A is incorrect. This might result from calculation errors in averaging (e.g., using only ending receivables adjusted incorrectly), but does not match the proper average receivables calculation.</p><p>C is incorrect. This would result from using beginning receivables only ($45,349,943 ÷ $4,468,392 ≈ 10.15), which doesn't represent the average receivables level during the period and violates the flow-to-stock matching principle.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Receivables Aging Analysis",
+    "stem": "According to the text's Lenovo example, if accounts receivable are increasing faster than sales growth while the percentage of receivables over 30 days old is also increasing, what is the most likely interpretation?",
+    "options": {
+      "A": "The company has improved its collection efficiency.",
+      "B": "The company may be extending customer financing to drive sales growth or underestimating impairment.",
+      "C": "The company has tightened its credit standards to reduce credit risk."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Linking Multiple Signals</h3><p><strong>B is correct.</strong> The text's Example 7 states: 'total accounts receivable increased by 11 percent in FY2017 versus FY2016, while total sales increased by only 5.4 percent. Further, the percentage of receivables in all categories older than 30 days has increased over the three-year period, indicating that customers are indeed taking longer to pay... Considering all this information, the company may be increasing customer financing purposely to drive its sales growth. They also may be underestimating the impairment.' This pattern suggests looser credit to boost sales.</p><p>A is incorrect because improved collection efficiency would show faster growth in cash collections than receivables, and aging would shift toward newer receivables (0-30 days), not older categories—the opposite of what's described.</p><p>C is incorrect because tightening credit standards would reduce receivables growth and aging issues, not increase them. The pattern described indicates loosening, not tightening, of credit terms.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "Payables and Liquidity Assessment",
+    "stem": "A company has high days payable relative to the industry. To determine if this indicates payment difficulties or lenient supplier terms, an analyst should examine:",
+    "options": {
+      "A": "The company's revenue growth rate compared to industry.",
+      "B": "The company's liquidity ratios to assess availability of cash and short-term assets.",
+      "C": "The company's fixed asset turnover to determine capital intensity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Distinguishing Between Interpretations</h3><p><strong>B is correct.</strong> The text states: 'An excessively low turnover ratio (high days payable) could indicate trouble making payments on time, or alternatively, exploitation of lenient supplier terms. This is another example in which it is useful to look simultaneously at other ratios. If liquidity ratios indicate that the company has sufficient cash and other short-term assets to pay obligations and yet the days payable ratio is relatively high, the analyst would favor the lenient supplier credit and collection policies as an explanation.' Liquidity ratios distinguish between inability to pay versus strategic choice.</p><p>A is incorrect because revenue growth helps interpret inventory and receivables ratios (e.g., whether high inventory turnover indicates efficiency or stockouts), but it doesn't directly distinguish between payment difficulties and favorable supplier terms.</p><p>C is incorrect because fixed asset turnover measures efficiency of long-term asset utilization, which is unrelated to whether high payables stem from cash constraints or favorable credit terms from suppliers.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Working Capital Turnover Limitation",
+    "stem": "According to the text, when is working capital turnover incapable of being meaningfully interpreted?",
+    "options": {
+      "A": "When the company has negative net income.",
+      "B": "When working capital is near zero or negative.",
+      "C": "When the company operates in a capital-intensive industry."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Denominator Constraints</h3><p><strong>B is correct.</strong> The text explicitly states: 'For some companies, working capital can be near zero or negative, rendering this ratio incapable of being interpreted.' If working capital (current assets minus current liabilities) is zero, the ratio involves division by zero (undefined). If working capital is negative, the ratio becomes negative, which has no meaningful interpretation for a turnover metric. The text notes that fixed asset and total asset turnover are more useful in these circumstances.</p><p>A is incorrect because negative net income affects profitability ratios, not activity ratios like working capital turnover, which uses revenue in the numerator, not net income.</p><p>C is incorrect. Capital intensity affects the level and interpretation of fixed asset turnover and total asset turnover, but the text does not indicate it makes working capital turnover uninterpretable. The issue is the magnitude of working capital itself, not industry characteristics.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "Negative Cash Conversion Cycle",
+    "stem": "In the Apple example from the text, what explains the negative cash conversion cycle?",
+    "options": {
+      "A": "Apple's DOH is negative because it sells products before purchasing inventory.",
+      "B": "Apple's days payable (112 days) exceeds the sum of DOH (9 days) and DSO (27 days).",
+      "C": "Apple has a negative DSO because customers pay in advance."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Exceptional Working Capital Management</h3><p><strong>B is correct.</strong> The text's Example 9 shows Apple FY2017: DSO = 27, DOH = 9, Days Payable = 112. Cash conversion cycle = 27 + 9 − 112 = −76 days. The text explains: 'Apple takes advantage of the favorable credit terms granted by its suppliers. The overall effect is a negative cash cycle... Instead of requiring additional capital to fund working capital as is the case for most companies, Apple has excess cash to invest for over 50 days.' Days payable exceeding the sum of DOH and DSO creates the negative cycle.</p><p>A is incorrect because DOH cannot be negative—it measures how long inventory sits, which is always a positive number of days. Apple's DOH is positive (9 days), just very low due to outsourced manufacturing and lean inventory.</p><p>C is incorrect because DSO also cannot be negative in standard interpretation. It measures collection time, which is positive. Apple's DSO of 27 days is positive and normal; the negative cash cycle comes from extraordinarily long payment terms with suppliers (112 days).</p>"
+  }
+]
