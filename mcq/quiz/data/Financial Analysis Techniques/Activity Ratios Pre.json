@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Inventory Turnover and DOH Interpretation",
+    "stem": "A company’s inventory turnover rises from 3.2× to 4.0×, but its sales have grown only modestly. Based strictly on the PDF’s interpretation of activity ratios, what is the most likely explanation?",
+    "options": {
+      "A": "Inventory management has improved, or inventory levels have fallen relative to sales.",
+      "B": "Sales must have grown at least proportionally more than inventory, making the turnover rise unavoidable.",
+      "C": "The higher turnover necessarily means the company is overproducing relative to demand."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover = Cost Flow Efficiency</h3><p><strong>A is correct.</strong> Page 4–5 of the PDF explains that higher inventory turnover (and lower DOH) generally signals improved inventory management or lower inventory relative to sales. It does not require high sales growth. A firm may simply be holding less stock for the same sales level, improving efficiency. :contentReference[oaicite:0]{index=0}</p><p>B is wrong because turnover can rise even when sales growth is modest if inventory decreases.</p><p>C is wrong because overproduction typically increases inventory and reduces turnover, the opposite of the pattern observed.</p>"
+    },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Numerical Inventory Turnover (Quarterly vs Annual)",
+    "stem": "A company reports quarterly cost of goods sold of EUR 35,699 and ending inventory of EUR 11,869 (page 2 example). Using the PDF’s method for annualizing quarterly COGS (multiply by 4), what is the annualized inventory turnover?",
+    "options": {
+      "A": "12.0×",
+      "B": "4.0×",
+      "C": "3.0×"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover Requires Annual Cost Flow</h3><p><strong>A is correct.</strong> Page 2 shows that quarterly COGS should be annualized by ×4 before computing turnover. Annualized COGS = 35,699 × 4 = 142,796. Inventory = 11,869. Turnover = 142,796 ÷ 11,869 ≈ 12.0×. :contentReference[oaicite:1]{index=1}</p><p>B (4×) incorrectly uses quarterly COGS directly.</p><p>C (3×) roughly matches the quarterly turnover, not the required annualized turnover.</p>"
+    },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Receivables Turnover and DSO — Conceptual",
+    "stem": "The PDF emphasizes that DSO should be interpreted alongside revenue trends. If a firm’s DSO increases while revenue grows only slightly, what is the most defensible explanation?",
+    "options": {
+      "A": "Customers are taking longer to pay, potentially weakening credit quality.",
+      "B": "Receivables turnover has improved because sales increased.",
+      "C": "The firm has shortened credit terms, causing higher DSO temporarily."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: DSO Measures Cash Collection Speed</h3><p><strong>A is correct.</strong> Pages 5–7 state that rising DSO generally signals slower collections or deteriorating customer payment behavior unless explained by strong revenue growth. If revenue growth is modest, delayed payments are the primary cause. :contentReference[oaicite:2]{index=2}</p><p>B is wrong because higher DSO implies worse turnover, not improvement.</p><p>C reverses the relationship: shorter credit terms would normally reduce DSO.</p>"
+    },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Numerical DSO (Lenovo Example)",
+    "stem": "Using the Lenovo example on page 4, receivables turnover for FY2018 is approximately 9.66× and the year has 365 days. What is the DSO?",
+    "options": {
+      "A": "38 days",
+      "B": "28 days",
+      "C": "45 days"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: DSO = Days per Period ÷ Turnover</h3><p><strong>A is correct.</strong> Page 4 shows the computation: DSO = 365 ÷ 9.66 ≈ 37.8 → 38 days. :contentReference[oaicite:3]{index=3}</p><p>B (28 days) corresponds to a turnover of ~13×, which is inconsistent with the example.</p><p>C (45 days) implies significantly slower collections, not supported by the PDF calculation.</p>"
+    },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Working Capital Turnover Interpretation",
+    "stem": "The PDF states that a working capital turnover of 4.0 means the company generates EUR 4 of revenue per EUR 1 of working capital. If this ratio increases to 6.0, what is the cleanest interpretation consistent with the PDF?",
+    "options": {
+      "A": "The company is using working capital more efficiently to generate revenue.",
+      "B": "The firm must have increased its inventory and receivables significantly.",
+      "C": "This always implies a deterioration in liquidity despite higher turnover."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover = Output per Unit of Capital</h3><p><strong>A is correct.</strong> Page 8 explains that a higher working capital turnover indicates greater efficiency—more revenue generated per unit of working capital. It does not mechanically imply liquidity stress. :contentReference[oaicite:4]{index=4}</p><p>B is wrong because higher inventory/receivables would generally reduce the ratio.</p><p>C has no basis in the PDF; liquidity must be assessed using multiple ratios, not turnover alone.</p>"
+    },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Fixed Asset Turnover and Asset Age",
+    "stem": "The PDF states that fixed asset turnover may be lower for companies with newly acquired assets. Why?",
+    "options": {
+      "A": "Newer assets are carried at a higher book value, causing turnover to be mechanically lower until revenue grows.",
+      "B": "Newer assets reduce depreciation, which directly raises the denominator of the turnover ratio.",
+      "C": "Fixed asset turnover excludes depreciation entirely, making newer assets appear less productive."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Book Value Effects on Ratios</h3><p><strong>A is correct.</strong> Page 8–9 explains that new fixed assets appear at higher carrying value, meaning revenue must grow before turnover rises. High asset base → lower turnover, even if efficiency hasn't changed. :contentReference[oaicite:5]{index=5}</p><p>B is wrong because depreciation affects net book value but does not ‘raise’ the denominator; older assets typically have lower book value.</p><p>C is incorrect: depreciation indirectly affects carrying value, not the inclusion/exclusion of depreciation in the ratio.</p>"
+    },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Total Asset Turnover Interpretation",
+    "stem": "A company has a total asset turnover of 1.20×. Based strictly on the PDF, what does this indicate?",
+    "options": {
+      "A": "The company generates EUR 1.20 in revenue for every EUR 1 of assets, suggesting relatively efficient use of assets.",
+      "B": "The company’s asset base is too small and must be expanded to sustain operations.",
+      "C": "The company’s revenue must grow more slowly than assets for this ratio to occur."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset Productivity</h3><p><strong>A is correct.</strong> Page 9 explains that a total asset turnover of 1.20 means EUR 1.20 of revenue per EUR 1 of assets. Higher values indicate stronger operational efficiency. :contentReference[oaicite:6]{index=6}</p><p>B is unsupported; turnover does not prescribe optimal asset size.</p><p>C reverses causality: turnover is revenue ÷ assets; multiple revenue-to-asset paths can produce 1.20×.</p>"
+    }
+]
