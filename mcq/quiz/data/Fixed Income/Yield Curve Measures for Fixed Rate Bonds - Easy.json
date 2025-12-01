@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Yield to Maturity Calculation",
+    "stem": "A 5-year, annual-pay bond with a 7% coupon is trading at 102.078. What is the bond's yield to maturity?",
+    "options": {
+      "A": "5.50%",
+      "B": "6.50%",
+      "C": "7.50%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: YTM as IRR</h3><p><strong>B is correct.</strong> YTM is the discount rate that equates the present value of all future cash flows to the current bond price. For this annual-pay bond, we have 5 annual coupon payments of 7 plus a par value of 100 at maturity. Setting PV = -102.078, we solve: 102.078 = 7/(1+r) + 7/(1+r)² + 7/(1+r)³ + 7/(1+r)⁴ + 107/(1+r)⁵. Using a financial calculator: N=5, PMT=7, FV=100, PV=-102.078, CPT I/Y = 6.5%. The bond trades at a premium (price > 100), so YTM must be below the coupon rate of 7%, which confirms our answer.</p><p>A is incorrect: 5.50% would produce a bond price significantly higher than 102.078, as the discount rate would be too low. This misconception arises from underestimating the premium's impact on yield.</p><p>C is incorrect: 7.50% would result in a bond price below par (discount bond), not the premium price of 102.078. This error confuses the relationship between coupon rate, YTM, and price—when price exceeds par, YTM must be less than the coupon rate.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Semiannual Bond YTM",
+    "stem": "A 5-year, semiannual-pay 7% coupon bond is priced at 102.078. If the semiannual discount rate is 3.253%, what is the bond's quoted annual YTM?",
+    "options": {
+      "A": "3.253%",
+      "B": "6.506%",
+      "C": "6.607%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Bond Yield Quoting Convention</h3><p><strong>B is correct.</strong> By market convention, YTM for semiannual bonds is stated as twice the periodic (semiannual) rate. This is a bond equivalent yield (BEY) convention that enables comparability across bonds with different payment frequencies. The calculation is straightforward: YTM = 2 × 3.253% = 6.506%. This quoted rate represents simple annualization without compounding, not the effective annual rate. The convention arose historically to standardize yield comparisons in bond markets.</p><p>A is incorrect: 3.253% is the semiannual periodic rate, not the quoted annual YTM. This error stems from failing to annualize the periodic rate using the market convention of multiplying by 2.</p><p>C is incorrect: 6.607% appears to apply compounding [(1.03253)² - 1 = 6.607%], which would give the effective annual yield, not the quoted YTM. The standard quoting convention uses simple multiplication, not compound conversion.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Effective Annual Yield",
+    "stem": "A bond has a stated YTM of 10% with semiannual periodicity. What is its effective annual yield?",
+    "options": {
+      "A": "10.00%",
+      "B": "10.25%",
+      "C": "10.38%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Compounding Effects</h3><p><strong>B is correct.</strong> Effective annual yield (EAY) accounts for within-year compounding. A 10% YTM with semiannual periodicity means 5% per half-year. Starting with $1, after six months we have $1.05, which then earns 5% for the next six months: 1.05 × 1.05 = 1.1025. The gain is 10.25%. Formula: EAY = (1 + stated rate/n)ⁿ - 1 = (1 + 0.10/2)² - 1 = (1.05)² - 1 = 0.1025 or 10.25%. Higher periodicity increases EAY because earnings are reinvested more frequently.</p><p>A is incorrect: 10% is the stated YTM, which ignores compounding within the year. This misconception treats semiannual payments as if they produce no reinvestment benefit, equivalent to simple interest rather than compound interest.</p><p>C is incorrect: 10.38% would correspond to quarterly periodicity [EAY = (1.025)⁴ - 1 = 10.38%], not semiannual. This error applies the wrong compounding frequency, confusing the number of periods per year.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Current Yield Calculation",
+    "stem": "A 20-year, $1,000 par value, 6% semiannual-pay bond trades at $802.07. What is the current yield?",
+    "options": {
+      "A": "6.00%",
+      "B": "7.48%",
+      "C": "7.66%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Income-Only Return</h3><p><strong>B is correct.</strong> Current yield measures only the annual coupon income relative to price, ignoring capital gains and reinvestment. Annual coupon = par × coupon rate = $1,000 × 6% = $60. Current yield = annual coupon / price = $60 / $802.07 = 0.0748 or 7.48%. Because the bond trades at a discount (below par), current yield exceeds the coupon rate—you receive the same dollar coupon on a smaller investment. Current yield is the same for annual-pay and semiannual-pay bonds with identical coupon rates and prices, as it uses total annual coupon payments.</p><p>A is incorrect: 6% is the stated coupon rate, not the current yield. This error treats coupon rate and current yield as equivalent, ignoring that current yield must be calculated relative to the actual market price, not par value.</p><p>C is incorrect: 7.66% appears to miscalculate the coupon payment or price relationship. This may result from incorrectly using the semiannual coupon ($30) instead of the full annual amount, or a computational error in the division.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Simple Yield Calculation",
+    "stem": "A 3-year, 8% coupon, semiannual-pay bond is priced at 90.165. What is the bond's simple yield?",
+    "options": {
+      "A": "8.00%",
+      "B": "11.52%",
+      "C": "12.52%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Straight-Line Amortization</h3><p><strong>C is correct.</strong> Simple yield enhances current yield by including straight-line amortization of discount/premium. Discount from par: 100 - 90.165 = 9.835. Annual straight-line amortization: 9.835 / 3 = 3.278. Annual coupon: 8. Simple yield = (annual coupon + annual amortization) / flat price = (8 + 3.278) / 90.165 = 11.278 / 90.165 = 0.1251 or 12.51%, which rounds to 12.52%. The logic: each year you receive the 8 coupon plus gain 3.278 toward par, relative to your 90.165 investment. This is more accurate than current yield for discount/premium bonds but less precise than YTM.</p><p>A is incorrect: 8% is merely the stated coupon rate, not the simple yield. This overlooks both the discount amortization and the fact that the bond is purchased below par, which increases the investor's return.</p><p>B is incorrect: 11.52% might result from errors in calculating the amortization amount or incorrectly including only partial discount recovery. The calculation must add the full annual straight-line amortization to the coupon before dividing by price.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Yield to First Call",
+    "stem": "A 5-year, semiannual-pay 6% bond trades at 102 and is callable at 102 in 3 years. What is the yield to first call?",
+    "options": {
+      "A": "5.54%",
+      "B": "5.88%",
+      "C": "6.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Call Date IRR</h3><p><strong>B is correct.</strong> Yield to call calculates the IRR if the bond is called at the first call date and price. We have 3 years (6 semiannual periods) until call, semiannual coupon of 3 (6%/2 of par 100), call price of 102, and current price of 102. Calculator: N=6, PMT=3, FV=102, PV=-102, CPT I/Y = 2.941%. Quoted annual yield = 2 × 2.941% = 5.88%. The investor receives coupons for 6 periods plus the call price of 102, all discounted to present value of 102. Because price equals call price and the bond pays coupons, the yield exceeds zero even though there's no capital gain.</p><p>A is incorrect: 5.54% is the YTM (yield to maturity in 5 years at par 100), not the yield to call. This error uses the wrong terminal date and redemption value—maturity instead of first call date.</p><p>C is incorrect: 6% is the coupon rate. This misconception assumes yield to call equals coupon rate, but even when purchase price equals call price, coupons still generate return, producing a yield below the coupon rate for a premium/par situation.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Periodicity and Stated YTM",
+    "stem": "Holding the effective annual yield constant, if the periodicity of a bond increases, its stated YTM will:",
+    "options": {
+      "A": "Decrease",
+      "B": "Remain unchanged",
+      "C": "Increase"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Yield Quotation Mechanics</h3><p><strong>A is correct.</strong> Stated YTM equals the periodic rate multiplied by the number of periods per year (periodicity). For a fixed effective annual yield (EAY), as periodicity increases, the periodic rate must decrease because more frequent compounding achieves the same annual return with smaller per-period rates. Example: EAY of 5% requires stated YTM of 4.94% with semiannual periodicity [solve (1 + YTM/2)² = 1.05] but only 4.91% with quarterly periodicity [solve (1 + YTM/4)⁴ = 1.05]. Higher compounding frequency means smaller stated rates produce equivalent effective yields.</p><p>B is incorrect: Stated YTM cannot remain unchanged when periodicity changes if EAY is constant. This misconception ignores that compounding frequency affects how periodic rates translate to effective annual returns.</p><p>C is incorrect: Increasing periodicity increases EAY for a given stated YTM, so holding EAY constant requires stated YTM to decrease, not increase. This reverses the cause-and-effect relationship between periodicity and stated rates.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Current Yield Definition",
+    "stem": "Current yield measures which component of bond return?",
+    "options": {
+      "A": "Annual coupon income only",
+      "B": "Coupon income plus capital gains",
+      "C": "Total return including reinvestment income"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Return Components</h3><p><strong>A is correct.</strong> Current yield is defined as annual coupon payment divided by bond price, capturing only the income stream. It explicitly excludes two other return sources: capital gains/losses (from price changes as the bond moves toward maturity or market yields shift) and reinvestment income (from reinvesting coupons at prevailing rates). Formula: current yield = annual coupon / price. This simplicity makes current yield easy to calculate but incomplete for assessing total return. It's useful for quick income assessment but ignores the pull-to-par effect and time value considerations embedded in YTM.</p><p>B is incorrect: Current yield does not incorporate capital gains or losses. This misconception confuses current yield with measures like simple yield (which includes straight-line amortization) or YTM (which fully accounts for price convergence to par).</p><p>C is incorrect: Total return including reinvestment income is measured by holding period return or realized yield, not current yield. Current yield is a static snapshot of income relative to price, not a dynamic measure of compounded returns.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "G-Spread Calculation",
+    "stem": "A 3-year corporate bond has a YTM of 6.82%. The interpolated 3-year government bond yield is 4.33%. What is the G-spread in basis points?",
+    "options": {
+      "A": "149 basis points",
+      "B": "249 basis points",
+      "C": "349 basis points"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Yield Differential</h3><p><strong>B is correct.</strong> G-spread (government spread) is the simple difference between a bond's YTM and its government benchmark yield, expressed in basis points. Calculation: G-spread = corporate YTM - government yield = 6.82% - 4.33% = 2.49% = 249 basis points. One basis point = 0.01%, so 2.49% × 100 = 249 bp. This spread compensates investors for credit risk, liquidity risk, and other factors beyond the risk-free government rate. The G-spread uses a single discount rate (YTM) comparison, not the full term structure like Z-spread.</p><p>A is incorrect: 149 basis points results from calculation error, possibly computing 1.49% difference instead of 2.49%. This might stem from misaligning decimal places or subtracting in the wrong direction.</p><p>C is incorrect: 349 basis points suggests adding rather than subtracting the yields (6.82% + 4.33% = 11.15%), or miscalculating the percentage difference. The spread must be the corporate yield minus the government yield, not a sum.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Zero-Coupon Bond YTM",
+    "stem": "A 15-year, zero-coupon, $1,000 par value bond trades at $331.40. Based on semiannual compounding, what is its YTM?",
+    "options": {
+      "A": "3.75%",
+      "B": "5.15%",
+      "C": "7.50%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Single Cash Flow Discounting</h3><p><strong>C is correct.</strong> For a zero-coupon bond, only one cash flow exists—the par value at maturity. Price equals par discounted at the yield: 331.40 = 1000 / (1 + r/2)³⁰, where r is the stated annual YTM and we have 30 semiannual periods (15 years × 2). Calculator: N=30, FV=1000, PMT=0, PV=-331.40, CPT I/Y = 3.750% (semiannual). Quoted YTM = 2 × 3.750% = 7.50%. The large discount (price well below par) and long maturity combine to produce this yield. Boundary check: 331.40/1000 = 0.3314, and (1.0375)³⁰ ≈ 3.02, so 1/3.02 ≈ 0.331, confirming our solution.</p><p>A is incorrect: 3.75% is the semiannual periodic rate, not the quoted annual YTM. This error fails to apply the market convention of doubling the semiannual rate to get the stated annual yield.</p><p>B is incorrect: 5.15% appears to use incorrect compounding, possibly attempting to calculate an effective annual yield but making computational errors. The standard quotation for semiannual bonds requires simple multiplication of the periodic rate by 2.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "Yield to Call Calculation",
+    "stem": "A 4-year, semiannual-pay 7.125% bond trades at 102.347 and is callable at 101 in 2 years. What is the yield to call?",
+    "options": {
+      "A": "3.17%",
+      "B": "6.33%",
+      "C": "7.13%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Call Option IRR</h3><p><strong>B is correct.</strong> Yield to call assumes the bond is called at the earliest call date at the specified call price. We have 2 years (4 semiannual periods) to call, semiannual coupon of 3.5625 (7.125%/2 of par 100), call price 101, and current price 102.347. Calculator: N=4, PMT=3.5625, FV=101, PV=-102.347, CPT I/Y = 3.167%. Quoted yield to call = 2 × 3.167% = 6.33%. The investor pays 102.347, receives four coupons of 3.5625, and gets back 101 at call. The capital loss (102.347 to 101) and shorter time horizon reduce the yield below the coupon rate.</p><p>A is incorrect: 3.17% is the semiannual periodic rate, not the annualized yield to call. This error stops at the periodic calculation without doubling to get the bond basis quotation.</p><p>C is incorrect: 7.13% is approximately the coupon rate, which ignores the bond pricing dynamics. When a bond trades above the call price (102.347 > 101), yield to call must be below the coupon rate due to the capital loss at call.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Yield Interpolation",
+    "stem": "The 1-year Treasury yields 3% and the 4-year Treasury yields 5%. What is the interpolated 3-year Treasury yield?",
+    "options": {
+      "A": "4.00%",
+      "B": "4.33%",
+      "C": "4.67%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Linear Interpolation</h3><p><strong>B is correct.</strong> When a benchmark with exact maturity is unavailable, we interpolate linearly between adjacent maturities. The 3-year point is 2 years beyond the 1-year and 1 year before the 4-year. Fraction traveled: (3-1)/(4-1) = 2/3. Yield increment: 5% - 3% = 2%. Interpolated yield = starting yield + fraction × increment = 3% + (2/3) × 2% = 3% + 1.33% = 4.33%. This assumes a linear yield curve segment between the 1-year and 4-year points. While real yield curves are rarely linear, linear interpolation provides a reasonable approximation for spread calculations.</p><p>A is incorrect: 4% is the simple average of 3% and 5%, which ignores the maturity structure. This treats 3 years as equidistant from 1 and 4 years, but 3 years is actually 2/3 of the way from 1 to 4 years.</p><p>C is incorrect: 4.67% results from miscalculating the fraction—possibly using 2 years from 1-year or confusing the direction. The correct progression must place 3-year yield between 3% and 5%, closer to 5% since 3 years is 2/3 toward the 4-year maturity.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Yield Spread Analysis",
+    "stem": "If a corporate bond's yield increases from 6.25% to 6.50% while its spread remains constant, what factor most likely caused the yield increase?",
+    "options": {
+      "A": "Macroeconomic factors affecting all bonds",
+      "B": "Deteriorating credit quality of the issuer",
+      "C": "Decreased liquidity of the bond issue"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Spread Decomposition</h3><p><strong>A is correct.</strong> A bond's yield equals the benchmark rate plus a spread. If the spread remains constant but yield rises, the benchmark must have increased by the same amount (6.50% - 6.25% = 0.25%). Benchmark rates reflect macroeconomic factors like real risk-free rates and inflation expectations that affect all securities. Constant spread indicates no change in issuer-specific or bond-specific risk premiums. Therefore, broad market forces—such as central bank policy, inflation data, or economic growth expectations—drove the yield increase across the entire rate structure.</p><p>B is incorrect: Deteriorating credit quality would increase the spread over the benchmark, not keep it constant. This microeconomic, issuer-specific factor would show up as spread widening, reflecting heightened default risk.</p><p>C is incorrect: Decreased liquidity would also widen the spread as investors demand higher compensation for illiquidity. Like credit deterioration, liquidity changes are captured in the spread, not the benchmark rate.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Z-Spread Characteristics",
+    "stem": "Compared to the G-spread, the Z-spread accounts for:",
+    "options": {
+      "A": "The shape of the benchmark yield curve",
+      "B": "The value of embedded options",
+      "C": "Credit risk but not liquidity risk"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Term Structure Recognition</h3><p><strong>A is correct.</strong> The G-spread uses a single YTM benchmark point, implicitly assuming a flat yield curve. The Z-spread (zero-volatility spread) adds a constant spread to each spot rate along the benchmark curve, then values each cash flow at its specific maturity's adjusted spot rate. This respects the yield curve's shape—upward-sloping, flat, or inverted. By discounting each cash flow at the appropriate maturity-specific rate plus spread, Z-spread provides a more accurate measure when the yield curve is non-flat. The method finds the constant spread that, when added to all spot rates, produces the bond's market price.</p><p>B is incorrect: The Z-spread does not remove embedded options; that is the role of the option-adjusted spread (OAS). Z-spread includes the option impact, just like raw yield, but accounts for yield curve shape rather than option value.</p><p>C is incorrect: Both G-spread and Z-spread capture credit and liquidity risk premiums—they differ in how they handle the term structure, not in which risk factors they include. Neither explicitly isolates credit from liquidity risk.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Effective Annual Yield with Quarterly Periodicity",
+    "stem": "A bond has a stated YTM of 10% with quarterly periodicity. What is its effective annual yield?",
+    "options": {
+      "A": "10.00%",
+      "B": "10.25%",
+      "C": "10.38%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Quarterly Compounding</h3><p><strong>C is correct.</strong> With quarterly periodicity, a 10% stated YTM means 2.5% per quarter (10%/4). Effective annual yield compounds this quarterly rate over four quarters: EAY = (1 + 0.10/4)⁴ - 1 = (1.025)⁴ - 1. Calculating: 1.025 × 1.025 = 1.050625, then 1.050625 × 1.050625 ≈ 1.1038, so EAY ≈ 10.38%. The more frequent compounding (quarterly vs. semiannual) produces a higher effective yield for the same stated rate. Each quarter's earnings are reinvested to generate earnings in subsequent quarters, creating compounding beyond simple interest.</p><p>A is incorrect: 10% is merely the stated YTM, which ignores intra-year compounding. This treats quarterly payments as producing no reinvestment benefit, equivalent to simple rather than compound interest.</p><p>B is incorrect: 10.25% is the effective annual yield for semiannual periodicity [(1.05)² - 1], not quarterly. This error uses two compounding periods instead of four, confusing the payment frequency.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "OAS vs Z-Spread for Callable Bonds",
+    "stem": "For a callable bond, relative to its option-adjusted spread, its Z-spread is most likely:",
+    "options": {
+      "A": "Lower",
+      "B": "The same",
+      "C": "Higher"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Option Value Decomposition</h3><p><strong>C is correct.</strong> A callable bond's yield (and thus Z-spread) includes compensation for bearing call risk—the issuer's right to redeem the bond early when rates fall. The option-adjusted spread (OAS) removes this option component, isolating the spread due to credit, liquidity, and taxation. Relationship: Z-spread = OAS + option value (in basis points). Since option value is positive (the call option has value to the issuer, disadvantaging the investor), Z-spread exceeds OAS. Example: if Z-spread is 180 bp and call option value is 60 bp, then OAS = 180 - 60 = 120 bp. The Z-spread rewards all risks; OAS rewards only non-option risks.</p><p>A is incorrect: Z-spread cannot be lower than OAS for a callable bond because it includes the option value component. This reverses the relationship, incorrectly suggesting that removing the option increases the spread.</p><p>B is incorrect: Z-spread equals OAS only if the option has zero value, which occurs only for bonds with no embedded options or worthless embedded options. For typical callable bonds with valuable call options, the two measures differ.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Yield to Worst",
+    "stem": "Yield to worst for a callable bond is defined as:",
+    "options": {
+      "A": "The lowest of YTM and all yields to call",
+      "B": "The yield if the bond defaults",
+      "C": "The YTM minus the call option value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Worst-Case Return Scenario</h3><p><strong>A is correct.</strong> Yield to worst identifies the minimum yield an investor could realize across all possible redemption scenarios—maturity or any call date at its respective call price. For each possibility, calculate the yield: YTM (if held to maturity), yield to first call, yield to second call, etc. The lowest of these is the yield to worst. This conservative measure protects investors by revealing the worst plausible outcome if the issuer exercises the call option in its own interest. It assumes the issuer acts optimally from its perspective, which typically means calling when yields are low (disadvantaging the bondholder).</p><p>B is incorrect: Yield to worst does not consider default scenarios; it examines different redemption paths assuming the issuer honors its obligations. Default analysis involves recovery rates and credit spreads, not yield to worst calculations.</p><p>C is incorrect: YTM minus call option value conceptually describes the option-adjusted yield, not yield to worst. Yield to worst is a scenario-based minimum yield calculation, not an option-value adjustment.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Yield Periodicity Conversion",
+    "stem": "A bond has a YTM of 4% on a semiannual bond basis. What is the equivalent yield on a quarterly bond basis?",
+    "options": {
+      "A": "2.00%",
+      "B": "3.98%",
+      "C": "4.04%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Equivalent Periodic Rates</h3><p><strong>B is correct.</strong> A 4% yield on semiannual basis means 2% per 6-month period. To convert to quarterly basis, first find the effective quarterly rate equivalent to 2% semiannually: (1 + quarterly rate)² = 1.02, so quarterly rate = 1.02^(1/2) - 1 = 0.00995 or 0.995%. The quarterly-basis quotation multiplies by 4: 4 × 0.995% = 3.98%. This maintains the same effective annual yield (1.02² = 1.0404 from semiannual; 1.00995⁴ ≈ 1.0404 from quarterly) while adjusting the stated rate for different periodicity. Higher periodicity requires lower stated rates to achieve equivalent effective yields.</p><p>A is incorrect: 2% is the semiannual periodic rate, not the quarterly-basis quotation. This error fails to convert the periodicity, simply stating the semiannual rate rather than its quarterly equivalent.</p><p>C is incorrect: 4.04% is the effective annual yield, not the quarterly-basis stated yield. This uses the annual compounding result rather than converting to a quarterly quotation convention (4 times the quarterly periodic rate).</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "Street Convention vs True Yield",
+    "stem": "How does a bond's true yield typically compare to its street convention yield?",
+    "options": {
+      "A": "True yield is slightly lower due to payment delays from holidays and weekends",
+      "B": "True yield is slightly higher due to more accurate compounding",
+      "C": "True yield and street convention yield are always identical"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Payment Timing Effects</h3><p><strong>A is correct.</strong> Street convention calculates yield using stated coupon payment dates from the indenture. True yield uses actual payment dates, accounting for holidays and weekends when payments are deferred to the next business day. When payments are delayed, present value increases (cash flows come later), so the bond is worth slightly more than street convention suggests. To maintain price equality, true yield must be slightly lower—if PV is higher, the discount rate must decrease. The difference is typically only a few basis points. Street convention is standard for quotation; true yield provides technical precision.</p><p>B is incorrect: True yield is lower, not higher, and the difference stems from payment timing, not compounding accuracy. Both methods use proper compounding; they differ only in which dates they use for cash flows.</p><p>C is incorrect: True yield and street convention yield differ whenever coupon dates fall on non-business days, which occurs regularly. They're identical only if all coupon dates happen to fall on business days.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Yield to Second Call",
+    "stem": "A 5-year, semiannual-pay 6% bond trades at 102. It's callable at 101 in 4 years (8 periods). What is the yield to second call?",
+    "options": {
+      "A": "2.83%",
+      "B": "5.54%",
+      "C": "5.66%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Multiple Call Scenarios</h3><p><strong>C is correct.</strong> Yield to second call uses the second call date (4 years, or 8 semiannual periods) and second call price (101). Given: N=8, PMT=3 (6%/2 of par 100), FV=101, PV=-102. Calculator: CPT I/Y = 2.830% semiannual. Quoted yield to second call = 2 × 2.830% = 5.66%. The investor pays 102, receives eight coupons of 3, and gets back 101 at call. The capital loss is smaller than with the first call (same starting price, same call price, but longer time to amortize the loss), making this yield slightly higher than yield to first call but still below the coupon rate due to the premium paid.</p><p>A is incorrect: 2.83% is the semiannual periodic rate, not the annualized yield to second call. This forgets the market convention of doubling the periodic rate to get the bond basis quotation.</p><p>B is incorrect: 5.54% is the yield to maturity (assuming the bond is held for all 5 years to par 100), not yield to second call. This uses the wrong terminal date and redemption value.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "G-Spread Definition",
+    "stem": "A corporate bond is quoted at a spread of +235 basis points over an interpolated 12-year U.S. Treasury bond yield. This spread is a(n):",
+    "options": {
+      "A": "G-spread",
+      "B": "I-spread",
+      "C": "Z-spread"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Spread Type Taxonomy</h3><p><strong>A is correct.</strong> A G-spread (government spread) measures the difference between a bond's YTM and a government benchmark yield of equivalent maturity. The problem specifies the spread is over a U.S. Treasury yield, which is the classic government benchmark. Whether using an actual Treasury or interpolating between available maturities does not change the classification—it is still a G-spread because the reference is a government security. The letter G denotes the government benchmark nature. This is the most common spread measure in markets using liquid government bond benchmarks.</p><p>B is incorrect: I-spread (interpolated spread) refers to spreads over swap rates, not government yields. I-spreads are common in euro-denominated markets where swap rates serve as benchmarks, but the problem uses Treasury yields, not swap rates.</p><p>C is incorrect: Z-spread (zero-volatility spread) is calculated differently—it is the constant spread added to each spot rate on the benchmark curve such that the bond's discounted cash flows equal its price. The problem describes a simple YTM differential, not a Z-spread calculation involving the entire spot curve.</p>"
+  }
+]
