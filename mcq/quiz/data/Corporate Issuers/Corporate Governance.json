@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Kimi K2 Thinking",
+    "topic": "Principal-Agent Relationship Definition",
+    "stem": "Which statement best describes a principal-agent relationship in the context of corporate governance?",
+    "options": {
+      "A": "The principal hires an agent to perform tasks while the agent possesses no information advantage over the principal.",
+      "B": "The principal hires an agent to act in the principal's best interest, though the agent often has more information than the principal.",
+      "C": "The agent appoints the principal to oversee corporate operations with contractual obligations only."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Principal-Agent Structure</h3><p><strong>B is correct.</strong> Start from the definition: a principal-agent relationship is created when one party (principal) hires another party (agent) to perform a task or service. The agent is expected to act in the principal's best interest, which can be expressed with or without a formal contract. The critical information asymmetry: the agent typically possesses more information than the principal about company performance, risks, and investment opportunities. This information gap enables conflicts of interest to arise because the principal cannot directly verify that the agent is acting in the principal's best interest. In corporations: shareholders (principal) elect board directors (agent) to hire managers (another agent) to maximize shareholder value. Edge case: the information asymmetry is pronounced for firms with complex products, multiple geographic markets, and lower institutional ownership.</p><p>A is wrong because it asserts the agent has no information advantage. In reality, information asymmetry is the core problem creating agency costs: managers know more about company operations than shareholders, and boards know more than external shareholders. Eliminating this asymmetry contradicts the fundamental challenge principals face in monitoring agents.</p><p>C is wrong because it reverses the principal-agent relationship structure. The principal hires the agent, not vice versa. Moreover, in corporations, shareholders are principals (owners) who elect directors (agents), not the other way around. This fundamentally misrepresents the hierarchical relationship and accountability structure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Kimi K2 Thinking",
+    "topic": "Agency Costs",
+    "stem": "Which of the following best exemplifies a direct agency cost in a public corporation?",
+    "options": {
+      "A": "Foregone profits from a missed acquisition opportunity due to management risk aversion.",
+      "B": "Fees paid to independent external auditors to mitigate the risk of materially misstated financial reports.",
+      "C": "Increased stock price volatility resulting from excessive risk-taking by managers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Agency Cost Types</h3><p><strong>B is correct.</strong> Agency costs result from conflicts of interest between principal (shareholder) and agent (management) and can be classified as direct or indirect. Direct agency costs are explicit, out-of-pocket expenses incurred to monitor or align agent behavior. Hiring independent external auditors represents a direct cost: shareholders bear audit fees to mitigate the risk that financial reports are materially misstated or deviate from GAAP. This is a preventive/monitoring cost borne by shareholders (via reduced dividends) to protect their interests. The mechanism: the audit fee is a concrete expenditure reducing shareholder value to lower agency risk. Edge case: audit costs are justified if the reduction in information asymmetry exceeds the audit fee.</p><p>A is wrong because foregone profits from missed opportunities are an indirect agency cost. Indirect costs are opportunity costs or economic losses, not explicit expenditures. A missed acquisition due to management risk aversion reflects the cost of misaligned incentives (management too conservative), not a direct expense. This is an economic loss, not a billable service.</p><p>C is wrong because stock price volatility is a market consequence of management behavior, not an agency cost per se. Volatility reflects changed risk perception by investors but is not a direct cost paid by the corporation to mitigate agency problems. This confuses market impacts with actual agency expenditures.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Kimi K2 Thinking",
+    "topic": "Insufficient Effort Conflict",
+    "stem": "A CEO spends 40% of working time on personal political campaigns and charitable activities, reducing focus on company operations. This situation best exemplifies which management-shareholder conflict?",
+    "options": {
+      "A": "Entrenchment",
+      "B": "Insufficient effort",
+      "C": "Inappropriate risk appetite"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Manager Incentive Misalignment</h3><p><strong>B is correct.</strong> Insufficient effort arises when managers allocate too little time and resources to their corporate role due to competing commitments—personal investments, political activities, charitable work, or serving as directors/managers of other companies. In this case, the CEO diverts 40% of working time to external activities, reducing attention to company operations, strategic decisions, employee oversight, and risk management. The mechanism: shareholders pay the CEO to maximize firm value, but the CEO allocates limited human capital (time, focus, reputation) partly to non-firm activities. This reduces the quality and quantity of managerial effort directed at the company. The cost to shareholders: suboptimal operational decisions, inadequate monitoring of subordinates, missed strategic opportunities. Edge case: if the CEO's external activities enhance company reputation or relationships, the misalignment may be partial.</p><p>A is wrong because entrenchment involves managers retaining their jobs through defensive tactics (copying peers, avoiding risks, complex restructurings). The CEO's political and charitable activities do not directly serve job retention; they represent time misallocation, not entrenched behavior. Entrenchment is about preserving control, not distraction.</p><p>C is wrong because inappropriate risk appetite refers to compensation structures that either over-incentivize risk (stock options with unlimited upside) or under-incentivize it (all-cash pay). The CEO's divided attention is not a risk appetite issue; it's a resource allocation problem. The conflict is about effort allocation, not risk-return preferences.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Kimi K2 Thinking",
+    "topic": "Dual-Class Share Structure",
+    "stem": "In a dual-class share structure with Class A shares (1 vote each) and Class B shares (500 votes each), a founder owns 3% of total shares but holds 75% of voting rights. Which statement best describes the implication for minority shareholders?",
+    "options": {
+      "A": "Minority shareholders have proportional control matching their economic ownership.",
+      "B": "Minority shareholders face potential exploitation because founders control board elections and strategic decisions despite minimal economic stake.",
+      "C": "Dual-class structures are easily dismantled if minority shareholders object to governance."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Voting Control vs Economic Ownership</h3><p><strong>B is correct.</strong> A dual-class structure decouples voting rights from economic ownership. The founder owns only 3% of the company (economic stake) but controls 75% of votes through Class B shares (voting stake). This asymmetry creates governance risk for minority shareholders: the founder controls board elections, strategic decisions, acquisitions, and other significant matters without bearing proportional economic risk. Mechanism: Class B super-voting shares concentrate control in founders/insiders while allowing capital providers (minority shareholders) to own economic claims without governance voice. Consequences: minority shareholders cannot remove the founder-controlled board or override strategic decisions, even if value-destructive. Example from the curriculum: Magna International founder Frank Stronach held 3% of shares but 75% of votes, securing millions in consulting fees despite poor stock performance. Edge case: dual-class structures are difficult to dismantle because controlling shareholders own the super-voting shares and benefit from the arrangement.</p><p>A is wrong because it asserts minority shareholders have proportional control, which is false. In dual-class structures, voting rights deviate sharply from economic ownership. Minority shareholders have minimal voting power despite significant economic stakes, creating the central governance problem.</p><p>C is wrong because dual-class structures are NOT easily dismantled. Once adopted, controlling shareholders hold the super-voting shares and have little incentive to surrender control. Minority shareholders would need approval from controlling shareholders (who benefit from the structure), making change extremely difficult and expensive, as illustrated by the Magna International example requiring CAD870 million buyout.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Kimi K2 Thinking",
+    "topic": "Dispersed vs Concentrated Ownership",
+    "stem": "Which statement best characterizes the difference between dispersed and concentrated corporate ownership?",
+    "options": {
+      "A": "Dispersed ownership involves many shareholders with equal voting power; concentrated ownership involves one controlling shareholder with majority votes.",
+      "B": "Dispersed ownership means no shareholder can exercise control; concentrated ownership means an individual or group controls the corporation.",
+      "C": "Dispersed ownership eliminates agency costs; concentrated ownership creates agency problems."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Ownership Structure Classifications</h3><p><strong>B is correct.</strong> Corporate ownership structures are classified by control distribution. Dispersed ownership involves many shareholders, none of whom can exercise control over the corporation (e.g., public companies with millions of shares). Concentrated ownership reflects an individual shareholder or group (controlling shareholders—family, another company, government) with sufficient shares/votes to exercise control. The mechanism: in dispersed structures, no single shareholder has enough power to dictate board elections or strategic decisions, requiring coalition-building or proxy contests for change. In concentrated structures, controlling shareholders possess decision-making authority. Example: KLD Marine Ltd. with one large owner versus a public company with dispersed retail shareholders. Edge case: voting structures like dual-class shares can create concentrated control even with minority economic ownership.</p><p>A is wrong because it assumes dispersed ownership means equal voting power, which is inaccurate. Shareholders may have equal votes per share, but dispersed ownership is defined by the inability of any one shareholder to control the firm, not by equality of voting rights. Concentrated ownership doesn't require majority voting; controlling shareholders may have 30% with fragmented opposition.</p><p>C is wrong because it asserts dispersed ownership eliminates agency costs. In reality, dispersed ownership creates principal-agent conflicts between dispersed shareholders and management because shareholders lack sufficient individual power to monitor effectively. Concentrated ownership may reduce shareholder-management conflicts but creates controlling-minority shareholder conflicts. Both structures face agency costs, just different types.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Kimi K2 Thinking",
+    "topic": "Information Asymmetry Impact",
+    "stem": "Which stakeholder groups will most likely demand higher returns and risk premiums when facing greater information asymmetry?",
+    "options": {
+      "A": "Employees and suppliers, who face contractual information gaps.",
+      "B": "Shareholders and lenders, who make capital allocation decisions with incomplete information.",
+      "C": "Customers and competitors, who compete for company resources."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Information Asymmetry and Risk Premium</h3><p><strong>B is correct.</strong> Information asymmetry—when agents (managers, directors) possess more information than principals (shareholders, lenders)—creates agency risk. Shareholders and lenders, as capital providers making investment decisions, face uncertainty about management quality, investment opportunities, and financial risks due to information gaps. They cannot directly verify that management acts in their interest. To compensate for this risk, shareholders demand lower share prices (higher equity returns) and lenders demand higher yields on debt. The mechanism: greater asymmetry = greater potential for conflicts of interest = higher risk premium required. Directors and managers possess superior information, so they don't demand risk premiums; instead, they should use that information to serve principals. Edge case: highly dispersed ownership with institutional investors and complex products amplifies asymmetry concerns.</p><p>A is wrong because employees and suppliers have contractual relationships, not investment relationships dependent on information asymmetry for returns. While information gaps may exist, suppliers and employees aren't compensated through equity or yield adjustments based on firm information; their contracts specify fixed compensation. They face different risks (employment, payment certainty) but not the investment risk premium issue.</p><p>C is wrong because customers and competitors don't have principal-agent relationships with the firm requiring information-based risk premiums. Customers purchase products at market prices; competitors operate independent firms. Neither group makes capital allocation decisions dependent on information asymmetry about corporate management quality or conflicts of interest.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Kimi K2 Thinking",
+    "topic": "Empire Building Conflict",
+    "stem": "A manager's compensation is primarily tied to company revenue growth (number of employees, total assets). The company considers a large acquisition that diversifies the business but has marginal profitability. This situation best exemplifies which management conflict?",
+    "options": {
+      "A": "Self-dealing",
+      "B": "Empire building",
+      "C": "Entrenchment"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Incentive-Driven Growth</h3><p><strong>B is correct.</strong> Empire building arises when management compensation and status are tied to business size metrics (total revenues, employee count, asset base) rather than profitability or shareholder value. Managers are incentivized to pursue growth for growth's sake—including acquisitions that increase size but destroy shareholder value through poor returns or overpayment. The mechanism: manager's bonus/status increases if company reaches 10 billion revenue; they pursue marginal-return acquisitions to hit that target. Shareholders lose if the acquisition earns 3% return but costs of capital is 8%. The conflict: size-based compensation misaligns manager and shareholder interests (growth vs. value). Example: a CEO pursuing unprofitable acquisitions to expand the empire. Edge case: if acquisition synergies create genuine profitability gains, the conflict diminishes.</p><p>A is wrong because self-dealing involves managers exploiting firm resources for personal benefit (private jets, excessive perquisites, asset misappropriation). The marginal acquisition doesn't represent direct personal enrichment; it's a business decision that benefits managers through their compensation structure. Self-dealing is about personal consumption, not size-based compensation misalignment.</p><p>C is wrong because entrenchment means managers retain jobs through defensive tactics (copying competitors, avoiding risks, complex restructurings they're uniquely suited to manage). The marginal acquisition isn't inherently a defensive job-retention tactic; it's driven by compensation incentives tied to growth. While growth-focused managers may resist downsizing (entrenchment), the primary conflict here is size-based pay misalignment.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Kimi K2 Thinking",
+    "topic": "Shareholder Rights Mechanisms",
+    "stem": "Which of the following shareholder mechanisms is most likely to result in the replacement of board members?",
+    "options": {
+      "A": "Attending the annual general meeting (AGM) to discuss company performance.",
+      "B": "Initiating a proxy contest to persuade shareholders to vote for dissident candidates to board seats.",
+      "C": "Submitting a shareholder resolution requesting dividend increase."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Shareholder Control Mechanisms</h3><p><strong>B is correct.</strong> A proxy contest (proxy fight) is a shareholder activism mechanism where a group seeking controlling board positions attempts to persuade shareholders to vote for the group's director candidates. The mechanism: dissidents gain shareholder support through proxy voting (shareholders authorize them to vote on their behalf) and replace underperforming or entrenched directors. This is a direct control mechanism resulting in board turnover. Proxy contests require identifying qualified candidates, building shareholder support, and winning majority votes—resource-intensive but effective. Example: activist hedge funds using proxy contests to replace CEOs and boards. Edge case: success depends on shareholder base receptiveness and whether replacement candidates credibly offer value improvement.</p><p>A is wrong because AGM attendance enables shareholders to discuss and vote on matters, but discussion alone doesn't replace board members. While shareholders can vote on board elections at AGMs, the question asks which mechanism results in replacement, and attendance without a coordinated replacement campaign is insufficient. AGMs are venues for activism but not activism mechanisms themselves.</p><p>C is wrong because shareholder resolutions (non-binding or advisory votes) request specific actions but don't directly replace board members. A dividend resolution doesn't change the composition of the board. Resolutions can pressure management, but they're not control mechanisms for director replacement. Board elections are separate from operational resolutions.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Kimi K2 Thinking",
+    "topic": "Extraordinary General Meeting (EGM)",
+    "stem": "An extraordinary general meeting (EGM) would most likely be called to address which of the following corporate matters?",
+    "options": {
+      "A": "Annual approval of audited financial statements and director compensation.",
+      "B": "Merger, acquisition, or amendment to corporate bylaws requiring shareholder approval.",
+      "C": "Quarterly review of operating performance and dividend declaration."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: EGM Purpose and Timing</h3><p><strong>B is correct.</strong> Extraordinary general meetings (EGMs) are called to address significant corporate matters outside routine annual business or when requested by a minimum number of shareholders (per bylaws/charter). Common EGM matters include: mergers and acquisitions, takeovers, asset sales, amendments to bylaws/articles of association, capital increases, voluntary liquidation, and special board elections proposed by shareholders. These are extraordinary (non-routine) items requiring shareholder approval. The mechanism: routine matters (financial statement approval, auditor appointment, standard compensation) occur at the Annual General Meeting (AGM); extraordinary matters trigger an EGM. Edge case: EGMs can be called by shareholders (if threshold met) or management when extraordinary items arise between AGMs.</p><p>A is wrong because financial statement approval, director compensation approval, and auditor appointment are routine annual matters addressed at the AGM (annual general meeting), not the EGM. These occur once per year in a standardized process, not in extraordinary circumstances.</p><p>C is wrong because quarterly performance reviews and dividend declarations are operational matters, not shareholder votes. Dividend decisions are made by the board, and operational reviews don't require extraordinary shareholder meetings. These are management/board functions, not shareholder extraordinary matters.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Kimi K2 Thinking",
+    "topic": "Proxy Voting Process",
+    "stem": "Most shareholder participation in general meetings occurs through which mechanism?",
+    "options": {
+      "A": "Physical attendance at meetings with in-person voting.",
+      "B": "Proxy voting, where shareholders authorize another party to vote on their behalf.",
+      "C": "Direct submission of written voting ballots by mail or courier."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Shareholder Voting Participation</h3><p><strong>B is correct.</strong> Proxy voting is the most common form of investor participation in general meetings. Shareholders unable to attend meetings in person authorize another party (often a designated voting agent) to vote on their behalf, typically by submitting ballots electronically or by mail. The mechanism: shareholders complete proxy cards specifying how to vote on agenda items; the proxy holder (often company management or a voting agreement) votes the shareholder's shares at the meeting. This mechanism enables widespread participation from dispersed shareholders globally without requiring physical presence. Proxy voting is essential for corporations with millions of dispersed shareholders who cannot attend in person. Edge case: proxy contests involve dissidents competing for proxy authority, trying to persuade shareholders to vote shares for dissident-endorsed candidates.</p><p>A is wrong because physical attendance is impractical for dispersed shareholders, especially across geographies. While some institutional investors attend, most shareholders cannot attend, making in-person voting a small fraction of total participation. Physical meetings would exclude most shareholders from voting.</p><p>C is wrong because while mail/courier voting exists as an option, electronic proxy submission is the predominant modern method, not physical mail ballots. Moreover, electronic and mail submissions are forms of proxy voting (authorization), not separate from the proxy voting mechanism. The question asks about the mechanism (proxy voting), which encompasses electronic and mail submission methods.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Kimi K2 Thinking",
+    "topic": "Shareholder Activism Tactics",
+    "stem": "Hedge fund activists typically pursue financial success more aggressively than mutual funds in shareholder activism because hedge funds:",
+    "options": {
+      "A": "Face fewer investment restrictions and base majority of fees on returns, creating strong incentives for campaign success.",
+      "B": "Have access to better information about company operations than mutual funds.",
+      "C": "Are legally prohibited from discussing activism publicly, giving them competitive advantages."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Activist Incentive Structures</h3><p><strong>A is correct.</strong> Hedge funds and mutual funds differ in incentive structures, affecting activism intensity. Hedge funds (1) base majority of fees on investment returns (performance-based), so campaign success directly increases fund fees and profits; (2) face fewer investment restrictions than mutual funds (mutual funds have position size limits, leverage restrictions, and regulatory constraints). This creates dual incentives: financial upside from returns + operational flexibility. Mechanism: a hedge fund earning 2% AUM + 20% on gains is highly motivated to generate activism-driven returns; a mutual fund earning fixed 0.5% AUM has lower individual-campaign motivation. Mutual funds are regulated entities with fiduciary constraints that limit aggressive tactics. Edge case: large passive index funds are beginning activism (voting their massive positions) despite fee restrictions.</p><p>B is wrong because mutual funds and hedge funds typically access the same public information (SEC filings, earnings calls, research). Activist hedge funds may conduct additional due diligence, but the informational advantage isn't inherent to hedge funds as a category. Some mutual funds are equally informed.</p><p>C is wrong because hedge funds are not prohibited from public activism discussions; in fact, activism typically involves public campaigns to persuade shareholders. Publicizing the campaign is often part of the strategy. Neither hedge funds nor mutual funds face legal prohibitions on public activism discussions. This mischaracterizes regulatory constraints.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Kimi K2 Thinking",
+    "topic": "Audit Committee Composition",
+    "stem": "According to best practices, an audit committee should be composed of:",
+    "options": {
+      "A": "A mix of inside and outside directors, with majority independent members and one accounting expert.",
+      "B": "Solely independent directors, including at least one with accounting or financial management expertise.",
+      "C": "All outside directors with accounting credentials, excluding any board veterans."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Audit Committee Independence and Expertise</h3><p><strong>B is correct.</strong> Audit committees are the most widely required and established board committees. Best practices and regulations mandate: (1) composition solely of independent directors (no material relationships with company, no employment, no family ties); (2) inclusion of at least one director with accounting or financial management expertise. The rationale: independence ensures auditors and management cannot unduly influence oversight; financial expertise enables intelligent evaluation of accounting policies, internal controls, and audit quality. Mechanism: an independent, expert committee monitors financial reporting integrity, selects external auditors, reviews their work, and proposes remedial actions. This structure minimizes conflicts where management-friendly insiders might shield accounting issues. Edge case: some jurisdictions require audit committees in financial services (banks, insurers); others mandate them for all public companies.</p><p>A is wrong because best practices require exclusively independent directors, not a mix of inside and outside directors. Inside directors (current/former executives) have material relationships with management and cannot provide objective oversight of financial reporting by those same executives. This creates the conflict the independence requirement addresses.</p><p>C is wrong because it incorrectly asserts all committee members must have accounting credentials and excludes experienced directors. Best practices require at least one accounting expert, not all members. Experienced independent directors (without accounting backgrounds) add valuable governance perspective. Over-specializing to accountants only reduces board diversity and misses broader governance expertise.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Kimi K2 Thinking",
+    "topic": "Compensation Committee Role",
+    "stem": "A compensation committee's primary responsibility is to:",
+    "options": {
+      "A": "Enforce regulatory compliance with labor laws and minimum wage standards.",
+      "B": "Develop remuneration policies for directors and key executives, often with variable components tied to performance.",
+      "C": "Approve all employee bonuses and salary increases across the organization."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Compensation Committee Mandate</h3><p><strong>B is correct.</strong> The compensation (or remuneration) committee develops and proposes remuneration policies for board directors and key executives. Its functions include: (1) setting performance criteria for executive compensation; (2) designing incentive plans with variable components (profit sharing, stock, options) contingent on corporate/stock performance; (3) evaluating manager performance; (4) approving executive compensation packages. Best practices require all compensation committee members to be independent directors, preventing management from setting its own pay. The mechanism: aligning compensation with shareholder interests through equity-based compensation reduces agency conflicts. Edge case: committees must balance incentives to avoid excessive risk-taking (through vesting periods, long-term incentives) or unduly conservative behavior (through adequate risk participation).</p><p>A is wrong because labor law compliance (minimum wage, working hours, benefits) is an HR/legal department function, not the compensation committee's primary role. The committee focuses on executive and director compensation policy, not company-wide regulatory compliance with employment law.</p><p>C is wrong because the compensation committee approves director and executive compensation policy and structure, not individual bonuses for all employees across the organization. Approving every employee bonus would be impractical for a committee (hundreds or thousands of decisions) and would dilute focus on executive incentive alignment. Operating managers/HR handle individual employee bonuses.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Kimi K2 Thinking",
+    "topic": "Bond Indenture Purpose",
+    "stem": "A bond indenture serves which primary governance function for creditors?",
+    "options": {
+      "A": "It specifies the financial obligations of the issuer and the rights of bondholders, establishing contractual protections.",
+      "B": "It grants bondholders voting rights equivalent to shareholders in corporate decisions.",
+      "C": "It allows bondholders to replace management if the issuer misses an interest payment."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Debt Contract Protections</h3><p><strong>A is correct.</strong> A bond indenture is a legal contract describing: (1) the structure of the bond (term, coupon, maturity); (2) the obligations of the issuer (interest payments, principal repayment, covenant compliance); (3) the rights of bondholders (priority claims, asset pledges, financial covenants). The indenture establishes contractual protections for creditors to mitigate default risk. Mechanism: covenants restrict issuer actions (debt limits, dividend restrictions, asset sales) to preserve cash flow for debt service. Asset pledges secure claims. Financial ratios (leverage limits, interest coverage minimums) trigger default if violated. These mechanisms address creditor concerns: ensuring issuer capacity and willingness to repay. Edge case: indentures typically restrict shareholder-beneficial actions (growth investments, acquisitions) to protect creditor interests, creating potential shareholder-creditor conflicts.</p><p>B is wrong because bondholders are creditors, not owners, and have no voting rights on corporate matters like board elections or strategic decisions. Governance rights belong to equity holders; creditors have contractual rights, not voting rights. This confuses equity and debt claims.</p><p>C is wrong because bondholders typically have no unilateral power to replace management for missed payments. Instead, they can declare default and pursue remedies (restructuring, receivership, liquidation) through legal and contractual channels. Some indentures include acceleration clauses or trustee appointment rights, but replacing management requires court/bankruptcy processes, not unilateral bondholder action.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Kimi K2 Thinking",
+    "topic": "Debt Covenant Restrictions",
+    "stem": "Debt covenants typically restrict corporate actions such as increased leverage or shareholder dividends in order to:",
+    "options": {
+      "A": "Maximize shareholder returns by reducing issuer flexibility.",
+      "B": "Ensure the issuer maintains sufficient cash flow to repay principal and interest obligations.",
+      "C": "Transfer all control of the company to debtholders until debt is repaid."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Creditor Protections via Covenants</h3><p><strong>B is correct.</strong> Debt covenants are contractual restrictions limiting issuer actions to protect creditor interests by preserving cash flows for debt service and reducing default risk. Common covenants restrict: (1) additional debt (leverage limits); (2) shareholder distributions (dividend caps); (3) asset sales; (4) related-party transactions. Mechanism: high leverage reduces cash available for interest payments and increases default probability; large dividends drain equity cushion; asset sales reduce collateral. By restricting these actions, covenants ensure issuer retains capacity to repay debt. Covenants represent creditor preferences: conservative capital structure, stable operations, prioritized debt payments. Edge case: overly restrictive covenants may prevent profitable growth investments, creating shareholder-creditor conflicts. Long-term debt more likely has restrictive covenants because time horizon exposes creditors to more business risks.</p><p>A is wrong because covenants reduce issuer flexibility specifically to protect creditors, potentially at shareholders' expense. Preventing growth investments or leverage that could boost equity returns reflects creditor risk-aversion, not shareholder benefit. The statement contradicts the actual creditor objective.</p><p>C is wrong because covenants don't transfer control to debtholders. Bondholders remain passive investors (no voting rights) until default occurs. Covenants restrict actions but don't grant operational control to creditors. Upon default, creditors may force restructuring or liquidation, but day-to-day control remains with management/shareholders unless bankruptcy occurs.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Kimi K2 Thinking",
+    "topic": "Nominating/Governance Committee",
+    "stem": "A nominating or governance committee's responsibilities include:",
+    "options": {
+      "A": "Recommending external auditor appointment and audit fees.",
+      "B": "Selecting and nominating board candidates, overseeing governance policies, and ensuring board balance.",
+      "C": "Approving executive compensation plans and setting performance targets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Board Governance Functions</h3><p><strong>B is correct.</strong> The nominating/governance committee manages board composition and governance policies. Responsibilities include: (1) appraising and nominating director candidates with relevant skills/experience; (2) overseeing board election procedures; (3) establishing nomination criteria (independence, expertise, diversity); (4) ensuring board balance aligned with governance principles; (5) establishing corporate governance policies (board charter, ethics code, conflict-of-interest policy, board-level risk management). The committee ensures board structure serves governance objectives: adequate independence, relevant expertise, representation of shareholder interests, proper risk oversight. Composition: independent directors only, per best practices. Edge case: ensures diversity of backgrounds and competencies to cover evolving business needs.</p><p>A is wrong because auditor appointment and audit fees are the audit committee's responsibility, not the nominating/governance committee. This reflects distinct committee mandates: governance committee (board composition/policies), audit committee (financial reporting oversight), compensation committee (executive pay).</p><p>C is wrong because executive compensation approval and performance target-setting are the compensation committee's responsibilities. The governance committee doesn't set compensation policy; the compensation committee does. This reflects separate fiduciary duties and expertise requirements.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Kimi K2 Thinking",
+    "topic": "Staggered Board Elections",
+    "stem": "Why do staggered board elections potentially weaken shareholder governance?",
+    "options": {
+      "A": "They reduce the independence of board members by requiring multiple year confirmations.",
+      "B": "They prevent shareholders from replacing the entire board at a single election, diluting voting power and enabling entrenchment.",
+      "C": "They increase the cost of proxy contests by requiring multiple rounds of voting."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Board Election Mechanics and Shareholder Control</h3><p><strong>B is correct.</strong> Staggered (or classified) board elections divide directors into classes, with only a fraction (typically 1/3) elected each year. The mechanism: with 12-member board elected in classes of 4, it takes 3 years to replace the entire board, even if shareholders oppose current directors. This delays activist takeovers or governance changes. Consequence: a dissident shareholder or activist hedge fund must win elections for 3 consecutive years to gain board control, increasing resource costs and reducing activism likelihood. Staggered boards entrench management: incumbent directors have time to defend against replacement before their full board is vulnerable. CFA Institute has advocated against staggered boards as weakening shareholder rights. Edge case: staggered boards claim benefit of continuity (some experienced directors remain), but continuity ≠ accountability.</p><p>A is wrong because staggered boards don't reduce member independence; independence is determined by director relationships/conflicts, not election timing. A staggered board can have independent directors; a single-class board can have entrenched insiders. Election timing affects shareholder control, not director independence as a governance principle.</p><p>C is wrong because while staggered boards do require multiple election cycles (potentially increasing proxy contest costs), the primary governance weakness is diluted voting power and delayed accountability—not just increased costs. The central issue is loss of shareholder control/governance rights, not merely higher activism expenses.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Kimi K2 Thinking",
+    "topic": "Shareholder Rights Plan (Poison Pill)",
+    "stem": "A shareholder rights plan (poison pill) is designed to protect shareholders by:",
+    "options": {
+      "A": "Enabling shareholders to vote for higher dividends if acquisition bids are made.",
+      "B": "Increasing takeover costs to potential acquirers through dilution, making hostile takeovers less attractive.",
+      "C": "Guaranteeing minority shareholders control of the board if a takeover is attempted."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Anti-Takeover Mechanisms</h3><p><strong>B is correct.</strong> A shareholder rights plan (poison pill) is an anti-takeover defense that deters hostile takeovers by making acquisition economically unattractive. Mechanism: if an external shareholder purchases a certain threshold of shares (e.g., 15%), existing shareholders are granted the right to buy additional shares at a discount. This dilutes the acquirer's ownership stake and substantially increases acquisition cost. Example: if acquirer owns 20% of company and all other shareholders exercise discounted purchase rights, the acquirer's stake might dilute to 10%, requiring acquisition of additional shares at inflated prices to gain control. Purpose: protects shareholders from undervalued hostile bids by making takeover prohibitively expensive, forcing acquirers to negotiate with the board or abandon attempts. Edge case: poison pills can entrench management by preventing removal, especially if combined with staggered boards.</p><p>A is wrong because poison pills don't enable dividend votes or shareholder decisions on acquisitions. Pills automatically activate upon crossing an ownership threshold; shareholders don't vote to trigger them. The mechanism is automatic dilution/share purchase rights, not shareholder voting on dividends.</p><p>C is wrong because poison pills don't guarantee minority control of the board. Pills prevent hostile takeovers but don't ensure minority governance rights in the post-takeover scenario. A successful hostile takeover (if completed despite the pill) would typically result in acquirer-controlled board. Pills are prevention mechanisms, not control guarantees for minorities.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Kimi K2 Thinking",
+    "topic": "Benefits of Strong Governance",
+    "stem": "Which of the following is NOT typically a benefit of effective corporate governance and stakeholder management?",
+    "options": {
+      "A": "Reduced cost of debt through improved creditor confidence and lower default risk.",
+      "B": "Complete elimination of fraud and misconduct risks in the organization.",
+      "C": "Improved operational efficiency and competitive positioning through better decision-making."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Realistic Governance Benefits</h3><p><strong>B is correct.</strong> Effective governance mitigates fraud and misconduct risks, enabling early identification and control, but does NOT eliminate them entirely. The statement overstates governance benefits. Even with strong controls, independent audit committees, compliance departments, and risk management, fraud remains possible (humans circumvent controls, sophisticated schemes evade detection). Example: Theranos had a prestigious board but still engaged in fraudulent misrepresentation of technology performance. Governance reduces probability and impact but cannot guarantee zero misconduct. The realistic benefit: improved identification, control, and early stopping of issues, not prevention of all occurrences. Edge case: perfect governance is impossible because monitoring itself is costly and imperfect.</p><p>A is wrong because reduced debt costs is a genuine governance benefit. Strong governance improves creditor confidence (better oversight, compliance, financial reporting) and reduces default risk perception, lowering cost of debt capital. This is well-documented: governance improvements correlate with credit rating upgrades and lower yield spreads. This is a real, measurable benefit.</p><p>C is wrong because improved operational efficiency is a documented governance benefit. Strong boards provide strategic oversight, reduce managerial entrenchment, improve decision-making through diverse expertise, and create clear responsibility/reporting lines. Enhanced governance correlates with better operational outcomes and competitive positioning. This is a legitimate benefit of effective stakeholder management.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Kimi K2 Thinking",
+    "topic": "Financial Risks of Poor Governance",
+    "stem": "Poor corporate governance that creates creditor-shareholder conflicts most directly increases which financial risk?",
+    "options": {
+      "A": "Operational risk from inefficient supply chain management.",
+      "B": "Default risk as management prioritizes shareholder distributions over debt obligations.",
+      "C": "Market risk from volatility in equity prices."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Governance Failure and Credit Risk</h3><p><strong>B is correct.</strong> Poor governance that fails to manage shareholder-creditor conflicts increases default risk. Mechanism: without governance constraints (covenants, board oversight, creditor protections), management may: (1) increase leverage beyond prudent levels; (2) pay excessive dividends draining cash reserves; (3) pursue high-risk acquisitions; (4) neglect operational efficiency. These shareholder-friendly actions reduce cash available for debt service, increasing default probability. Creditors respond by demanding higher yield premiums to compensate for higher perceived default risk. Example: Kobe Steel scandal—poor governance enabled misconduct; when discovered, bond yields jumped to record levels and credit ratings downgraded, reflecting increased default risk perception. Governance failures that don't address creditor interests directly impair debt repayment capacity, raising default risk above fundamental business risk level. Edge case: governance failures affecting operational performance indirectly also impact default risk.</p><p>A is wrong because operational risk from supply chain issues is not directly caused by poor governance of creditor-shareholder conflicts. Supply chain risks reflect operational decisions and external vendor relationships, not management prioritization of shareholders over debtholders. This confuses operational failure with financial structure conflicts.</p><p>C is wrong because market risk (equity price volatility) is distinct from default risk and corporate governance. Equity volatility reflects investor sentiment, market conditions, and perceived business risk, not primarily governance conflicts between creditors and shareholders. While poor governance may affect volatility expectations, the direct link between creditor-shareholder conflict and market risk is weaker than the link to default risk.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Kimi K2 Thinking",
+    "topic": "Reputational Risk from Governance Failure",
+    "stem": "How does poor corporate governance and stakeholder management create reputational risk for publicly listed companies?",
+    "options": {
+      "A": "Reputational damage only affects employees and has minimal market impact on stock price or access to capital.",
+      "B": "Governance failures lead to regulatory investigations, legal proceedings, and public scrutiny, damaging reputation and reducing competitive advantages.",
+      "C": "Reputational risk is easily managed through corporate communications and does not affect long-term business relationships."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Governance Failure and Stakeholder Trust</h3><p><strong>B is correct.</strong> Poor governance creates reputational damage through multiple channels affecting business relationships. Mechanism: (1) regulatory investigations and legal proceedings from governance violations expose misconduct publicly (fraud, embezzlement, discrimination, environmental damage); (2) media coverage amplifies reputational harm; (3) stakeholder trust erodes (customers question product quality, employees question management integrity, suppliers question payment reliability); (4) competitive disadvantage as relationships deteriorate and access to talent/capital diminishes. Examples: Volkswagen Dieselgate (30%+ share price drop, EUR32 billion in costs, criminal charges); Theranos fraud (complete company collapse, criminal prosecution); Siemens bribery scandal (massive fines, leadership upheaval). Public companies face intense scrutiny, making governance failures visible and costly. Long-term relationships depend on trust; once damaged, rebuilding requires years and substantial resources. Edge case: private companies face less public scrutiny but still face creditor and customer relationship risks.</p><p>A is wrong because reputational damage affects far more than employees. It impacts customers (purchasing decisions), suppliers (payment concerns, contract risks), regulators (enforcement actions), competitors (relative market advantage), and capital providers (valuation/yield impacts). Public companies experience sharp stock price declines post-scandal (Volkswagen 1/3 drop). Reputational risk has material market consequences.</p><p>C is wrong because reputational damage is NOT easily managed through communications. Once governance failures become public (fraud, embezzlement, environmental disasters), denials or PR efforts cannot erase damage. Trust, once lost, takes years to rebuild. Long-term relationships are fundamentally affected: customers switch suppliers, talented employees leave, creditors demand higher rates. Communication management alone cannot restore damaged reputation from real misconduct.</p>"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "ROE with Financial Leverage",
+    "stem": "A firm has total assets of 200, revenue of 200, and operating expenses of 140. An all-equity firm has 200 in equity, while a leveraged firm has 160 in debt at 20% interest and 40 in equity. Ignoring taxes, what is the ROE for the leveraged firm?",
+    "options": {
+      "A": "30%",
+      "B": "70%",
+      "C": "90%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Financial Leverage Effect</h3><p><strong>B is correct.</strong> Start from the income statement identity: Net Income = Revenue - Operating Expenses - Interest Expense. For the leveraged firm: Revenue = 200, Operating Expenses = 140, Interest Expense = 160 × 0.20 = 32. Therefore, Net Income = 200 - 140 - 32 = 28. ROE is defined as Net Income / Total Equity. The leveraged firm has equity of 40, so ROE = 28 / 40 = 0.70 or 70%. The mechanism: debt magnifies returns to equity holders when the return on assets exceeds the cost of debt. Here, return on assets is 30% ((200-140)/200), while the interest rate is 20%. The 10% spread on 160 of debt accrues to equity holders who only invested 40, creating leverage that boosts ROE. Edge case: if operating income fell below interest expense, leverage would magnify losses.</p><p>A is wrong because 30% is the ROE of the all-equity firm (Net Income = 60, Equity = 200, ROE = 30%). This ignores the leverage effect entirely and treats both firms as if they had identical capital structures.</p><p>C is wrong because it likely results from calculation errors, possibly computing interest expense incorrectly or misapplying the ROE formula. No reasonable calculation from the given data yields 90%.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Leverage and ROE Variability",
+    "stem": "Using the same firms from the prior scenario (all-equity with 200 equity vs. leveraged with 160 debt and 40 equity, 20% interest, operating expenses 140), if revenue increases by 20% to 240, what is the ROE for the leveraged firm?",
+    "options": {
+      "A": "140%",
+      "B": "170%",
+      "C": "50%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Leverage Amplification</h3><p><strong>B is correct.</strong> Begin with the income statement for the leveraged firm after the revenue increase: Revenue = 240, Operating Expenses = 140 (unchanged), Interest Expense = 160 × 0.20 = 32 (fixed). Net Income = 240 - 140 - 32 = 68. ROE = Net Income / Equity = 68 / 40 = 1.70 or 170%. The causal chain: revenue rises 20% (from 200 to 240), adding 40 to operating income. Since interest is fixed at 32, all 40 flows to equity holders. With only 40 of equity base, a 40 increase in net income (from 28 to 68) represents a 100 percentage point jump in ROE (from 70% to 170%). Leverage magnifies the percentage impact of revenue changes on ROE because equity is a small residual claim. Boundary condition: the all-equity firm would see ROE rise only from 30% to 50% (Net Income 100, Equity 200), demonstrating that leverage amplifies both upside and downside volatility in ROE.</p><p>A is wrong because 140% understates the ROE by 30 percentage points, possibly from miscalculating net income as 56 instead of 68, perhaps by doubling interest expense or other arithmetic error.</p><p>C is wrong because 50% is the ROE for the all-equity firm under the revenue increase scenario, not the leveraged firm. This confuses the two capital structures and ignores the leverage effect.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Downside Leverage Effect",
+    "stem": "For the leveraged firm (160 debt at 20%, 40 equity, operating expenses 140), if revenue declines by 20% to 160, what is the ROE?",
+    "options": {
+      "A": "-30%",
+      "B": "10%",
+      "C": "20%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Leverage Downside Risk</h3><p><strong>A is correct.</strong> Construct the income statement: Revenue = 160, Operating Expenses = 140, Interest Expense = 160 × 0.20 = 32. Net Income = 160 - 140 - 32 = -12 (a loss). ROE = -12 / 40 = -0.30 or -30%. The mechanism: revenue falls 20% (by 40), reducing operating income from 60 to 20. However, interest expense remains fixed at 32, exceeding operating income by 12. This 12 loss falls entirely on the 40 equity base, yielding a -30% ROE. Leverage magnifies losses: the all-equity firm would have ROE = (160 - 140) / 200 = 10%, still positive. Edge case: if revenue fell further such that operating income could not cover interest, the firm risks insolvency and debtholders' claims would be imperiled. This demonstrates why leverage increases risk for both equity (higher ROE volatility) and debt (higher default probability) holders.</p><p>B is wrong because 10% is the ROE for the all-equity firm in the downside scenario (Net Income = 20, Equity = 200). This ignores the fixed interest burden that pushes the leveraged firm into negative net income.</p><p>C is wrong because it likely misapplies the formula, possibly calculating operating income / equity (20 / 40 = 50%) or making other errors. The correct ROE must reflect the net loss after fixed interest payments.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Financing with Debt vs. Equity",
+    "stem": "An all-equity firm has assets of 200 (equity 200). It needs 40 for a new investment yielding 30% return. Current revenue is 200, operating expenses 140. If it issues 40 in new shares, what is the post-investment ROE?",
+    "options": {
+      "A": "30%",
+      "B": "32%",
+      "C": "36%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Equity Dilution Effect</h3><p><strong>A is correct.</strong> Start with the baseline: pre-investment Net Income = 200 - 140 = 60, Equity = 200, ROE = 30%. The investment requires 40 in new equity, increasing total equity to 240. The investment generates 40 × 0.30 = 12 in additional income. Post-investment Net Income = 60 + 12 = 72. Post-investment ROE = 72 / 240 = 0.30 or 30%. The mechanism: when a firm finances an investment with equity and the investment's return equals the pre-existing ROE, the ROE remains unchanged. Algebraically, if ROE₀ = NI₀ / E₀ and the new investment earns ROE₀, then ROE₁ = (NI₀ + E_new × ROE₀) / (E₀ + E_new) = ROE₀. Dilution increases the equity base proportionally to the income increase, leaving the ratio constant. Boundary: if the investment's return differed from 30%, ROE would change accordingly.</p><p>B is wrong because 32% would be the ROE if the firm borrowed 40 at 20% interest instead of issuing equity (Net Income = 72 - 8 = 64, Equity = 200, ROE = 32%). This mixes up debt and equity financing methods.</p><p>C is wrong because 36% would be the ROE if the firm used 40 of existing cash rather than issuing new equity (Net Income = 72, Equity = 200, ROE = 36%). This confuses equity issuance with internal financing.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Financing with Debt",
+    "stem": "The same all-equity firm (assets 200, equity 200, revenue 200, operating expenses 140) needs 40 for an investment yielding 30%. If it borrows 40 at 20% interest, what is the post-investment ROE?",
+    "options": {
+      "A": "30%",
+      "B": "32%",
+      "C": "36%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Debt Financing Advantage</h3><p><strong>B is correct.</strong> Pre-investment: Net Income = 60, Equity = 200. The firm borrows 40 at 20%, so Interest Expense = 40 × 0.20 = 8. The investment generates 40 × 0.30 = 12 in additional income. Post-investment Net Income = 60 + 12 - 8 = 64. Equity remains 200 (no new shares issued). Post-investment ROE = 64 / 200 = 0.32 or 32%. The causal mechanism: debt financing avoids dilution. The investment earns 30% but debt costs only 20%, creating a 10% spread. This 10% × 40 = 4 spread accrues entirely to existing equity holders. Starting from ROE = 30%, the firm adds 4 of net income (= 12 from investment - 8 interest) to the 200 equity base, increasing ROE by 2 percentage points to 32%. Edge case: if the investment return equaled the interest rate (20%), ROE would remain 30%; if below 20%, ROE would decline. This demonstrates the risk-return trade-off of leverage.</p><p>A is wrong because 30% assumes no change in ROE, which would occur only if the firm issued equity (diluting the return) or if the investment's return equaled the debt cost. Debt at 20% for a 30% return investment increases ROE above 30%.</p><p>C is wrong because 36% would result from using 40 of cash on hand (no interest expense, no equity increase), yielding Net Income = 72 and ROE = 72 / 200 = 36%. This confuses debt financing with internal cash usage.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Financing with Cash on Hand",
+    "stem": "The all-equity firm (assets 200, equity 200, revenue 200, operating expenses 140, cash 60) uses 40 of cash for an investment yielding 30%. What is the post-investment ROE?",
+    "options": {
+      "A": "30%",
+      "B": "32%",
+      "C": "36%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Internal Financing Superiority</h3><p><strong>C is correct.</strong> Pre-investment: Net Income = 60, Equity = 200, ROE = 30%. Using internal cash avoids both new equity issuance (no dilution) and new debt (no additional interest expense). The investment generates 40 × 0.30 = 12 in additional income. Post-investment Net Income = 60 + 12 = 72. Equity remains 200. Post-investment ROE = 72 / 200 = 0.36 or 36%. The mechanism: internal financing captures the full investment return (12) without increasing the equity base or incurring interest costs. The 12 incremental income flows to the unchanged 200 equity base, raising ROE from 30% to 36%. This represents a 6 percentage point gain, the highest of the three financing methods. Boundary: this assumes the cash was previously earning zero return; if cash earned interest, the net gain would be slightly lower. The pecking order theory suggests firms prefer internal funds first because they avoid floatation costs and adverse signaling.</p><p>A is wrong because 30% is the ROE when issuing new equity for the investment. Internal cash avoids dilution, so ROE must increase above 30% when the investment earns 30% and no new equity is issued.</p><p>B is wrong because 32% is the ROE when borrowing 40 at 20% interest. Internal cash avoids the 8 interest expense, so ROE is higher than with debt financing (36% vs. 32%).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Interest Coverage Calculation",
+    "stem": "A firm has operating income of 30 and interest expense of 9. What is the firm's interest coverage ratio?",
+    "options": {
+      "A": "2.3",
+      "B": "3.3",
+      "C": "4.3"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Interest Coverage</h3><p><strong>B is correct.</strong> Interest coverage is defined from first principles as the firm's ability to meet interest obligations from operating income, calculated as: Interest Coverage = Operating Income / Interest Expense = 30 / 9 = 3.33, which rounds to 3.3. The mechanism: this ratio measures how many times the firm can pay its interest expense from current operating profits. A ratio of 3.3 means operating income is 3.3 times the interest obligation, providing a 230% cushion. Practically, operating income could decline by 70% (from 30 to 9) before the firm cannot cover interest from operations. Higher coverage indicates lower financial risk and greater ability to service debt. Boundary condition: coverage below 1.0 signals inability to pay interest from operations, indicating financial distress. Lenders typically require minimum coverage ratios in debt covenants to protect their claims.</p><p>A is wrong because 2.3 would result from miscalculating 21 / 9 = 2.3, possibly confusing operating income with net income or making arithmetic errors. The correct operating income is 30, not 21.</p><p>C is wrong because 4.3 suggests using incorrect numerator or denominator values, perhaps calculating 39 / 9 = 4.3. The stated operating income is 30, yielding coverage of 3.3, not 4.3.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Return on Assets vs Interest Rate",
+    "stem": "A firm financed with 75 in debt and 25 in equity has revenue of 100, operating expenses of 70, and interest expense of 15. What is the firm's return on assets (operating income / total assets)?",
+    "options": {
+      "A": "15%",
+      "B": "20%",
+      "C": "30%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Return on Assets</h3><p><strong>C is correct.</strong> Return on assets (ROA) measures the firm's operating profitability independent of capital structure, defined as Operating Income / Total Assets. Operating Income = Revenue - Operating Expenses = 100 - 70 = 30. Total Assets = Debt + Equity = 75 + 25 = 100 (by the balance sheet identity). ROA = 30 / 100 = 0.30 or 30%. The mechanism: ROA reflects the firm's efficiency in generating profits from its asset base before considering financing costs. It is independent of leverage. The firm's interest rate on debt is 15 / 75 = 20%. Since ROA (30%) exceeds the cost of debt (20%), the firm generates a positive spread of 10% on its 75 of debt, which accrues to equity holders and creates positive leverage. Edge case: if ROA fell below 20%, leverage would destroy shareholder value. This relationship between ROA and the cost of debt determines whether leverage is value-enhancing or value-destroying.</p><p>A is wrong because 15% likely confuses net income with operating income, calculating 15 / 100 = 15%. ROA uses operating income (30), not net income (15), to isolate operating performance from financing decisions.</p><p>B is wrong because 20% is the interest rate on debt (15 / 75 = 20%), not the return on assets. This confuses the cost of one financing source with the return on the entire asset base.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Debt Proportion Calculation",
+    "stem": "A firm has total assets of 150. It is financed with 90 in debt and 60 in equity. What is the debt-to-assets ratio?",
+    "options": {
+      "A": "40%",
+      "B": "60%",
+      "C": "67%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Capital Structure Ratios</h3><p><strong>B is correct.</strong> The debt-to-assets ratio measures the proportion of assets financed by debt, calculated as Debt / Total Assets. From the balance sheet identity: Assets = Liabilities + Equity, so Total Assets = 90 + 60 = 150. Debt-to-Assets = 90 / 150 = 0.60 or 60%. The mechanism: this ratio indicates financial leverage from a balance sheet perspective. A 60% debt ratio means creditors have financed 60% of assets, while equity holders financed 40%. Higher ratios indicate greater leverage, which amplifies ROE volatility and increases financial risk. Edge case: a 100% debt ratio is infeasible because equity must absorb losses; a 0% ratio means all-equity financing with no leverage. This ratio complements the debt-to-equity ratio (90 / 60 = 150%) but is bounded between 0 and 100%, making it easier to interpret.</p><p>A is wrong because 40% is the equity-to-assets ratio (60 / 150 = 40%), not the debt-to-assets ratio. This inverts the question by calculating the proportion financed by equity rather than debt.</p><p>C is wrong because 67% likely results from calculating debt-to-equity as a percentage of debt (90 / (90 + 60) viewed incorrectly), or 90 / 135 ≈ 67%, using wrong denominator. The correct denominator for debt-to-assets is total assets (150), yielding 60%.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Tax Shield Calculation",
+    "stem": "A firm has interest expense of 20 and a corporate tax rate of 25%. Assuming interest is tax-deductible, what is the firm's after-tax interest expense?",
+    "options": {
+      "A": "5",
+      "B": "15",
+      "C": "20"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Tax Shield Benefit</h3><p><strong>B is correct.</strong> The after-tax cost of debt incorporates the tax deductibility of interest expense. Start from the definition: taxable income is reduced by interest expense, lowering the tax bill. After-Tax Interest Expense = Interest Expense × (1 - Tax Rate) = 20 × (1 - 0.25) = 20 × 0.75 = 15. The mechanism: the firm pays 20 in interest but saves 20 × 0.25 = 5 in taxes, reducing the net cost to 15. This is the tax shield benefit of debt, which makes debt financing cheaper than equity (dividends are not tax-deductible). The 5 tax savings accrues to shareholders, increasing the value of the firm. Edge case: if the tax rate were 0%, after-tax interest would equal pre-tax (20); if the rate were 100%, after-tax cost would be zero. This tax shield is a key driver of capital structure decisions and explains why firms use debt despite its risks.</p><p>A is wrong because 5 is the tax shield (the tax savings), not the after-tax interest expense. This confuses the benefit of the deduction with the net cost, calculating Tax Rate × Interest (0.25 × 20 = 5) instead of (1 - Tax Rate) × Interest.</p><p>C is wrong because 20 is the pre-tax interest expense. This ignores the tax deductibility of interest entirely, treating it as if no tax benefit exists, which is incorrect when interest is tax-deductible.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "WACC Calculation",
+    "stem": "A firm has a capital structure of 40% debt and 60% equity. Its pre-tax cost of debt is 5%, cost of equity is 10%, and corporate tax rate is 20%. What is the firm's WACC?",
+    "options": {
+      "A": "7.2%",
+      "B": "7.6%",
+      "C": "8.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Weighted Average Cost of Capital</h3><p><strong>B is correct.</strong> WACC blends the after-tax costs of debt and equity, weighted by their proportions in the capital structure: WACC = [Weight_Debt × Cost_Debt × (1 - Tax Rate)] + [Weight_Equity × Cost_Equity]. First, calculate after-tax cost of debt: 5% × (1 - 0.20) = 5% × 0.80 = 4%. Then: WACC = (0.40 × 4%) + (0.60 × 10%) = 1.6% + 6.0% = 7.6%. The mechanism: WACC represents the firm's overall required return on invested capital, reflecting the blended cost of all financing sources. The tax shield lowers the effective debt cost from 5% to 4%, making the overall WACC lower than a simple weighted average of 5% and 10% (which would be 7%). Edge case: if debt were 0%, WACC = 10% (all-equity); if equity were 0%, WACC approaches the after-tax debt cost. WACC is the hurdle rate for capital investments: projects must earn returns exceeding WACC to create value.</p><p>A is wrong because 7.2% likely results from using an incorrect debt weight or miscalculating the after-tax debt cost. Possibly calculated 0.40 × 3% + 0.60 × 10% = 7.2%, implying after-tax debt cost of 3% (incorrect for a 20% tax rate).</p><p>C is wrong because 8.0% results from ignoring the tax shield, calculating WACC = 0.40 × 5% + 0.60 × 10% = 2% + 6% = 8%. This treats interest as non-deductible, overstating the true WACC by 40 basis points.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Equity-to-Debt Ratio",
+    "stem": "A firm has 120 in equity and 80 in debt. What is the equity-to-debt ratio?",
+    "options": {
+      "A": "0.67",
+      "B": "1.00",
+      "C": "1.50"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Leverage Ratios</h3><p><strong>C is correct.</strong> The equity-to-debt ratio measures the proportion of equity relative to debt, calculated as Equity / Debt = 120 / 80 = 1.50. The mechanism: a ratio of 1.50 means the firm has 1.50 units of equity for every 1 unit of debt, indicating a relatively conservative capital structure with equity exceeding debt. This is equivalent to a debt-to-equity ratio of 0.67 (the reciprocal). Higher equity-to-debt ratios indicate lower financial leverage and lower risk for both debt and equity holders. Edge case: a ratio of 1.0 means equal debt and equity; ratios below 1.0 indicate debt exceeds equity, signaling higher leverage. This ratio complements other leverage measures like debt-to-assets (80 / 200 = 40%) and provides insight into the cushion available to debtholders (equity absorbs losses first).</p><p>A is wrong because 0.67 is the debt-to-equity ratio (80 / 120 = 0.67), the reciprocal of the equity-to-debt ratio. This inverts the ratio by dividing debt by equity instead of equity by debt.</p><p>B is wrong because 1.00 would imply equal equity and debt (e.g., 100 equity and 100 debt). The firm has 120 equity and 80 debt, so the ratio is 120 / 80 = 1.50, not 1.00.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Net Income Calculation with Leverage",
+    "stem": "A leveraged firm has revenue of 150, operating expenses of 100, and interest expense of 18. Ignoring taxes, what is the firm's net income?",
+    "options": {
+      "A": "32",
+      "B": "50",
+      "C": "68"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Income Statement Structure</h3><p><strong>A is correct.</strong> Net income is the residual profit after all expenses, calculated as: Net Income = Revenue - Operating Expenses - Interest Expense = 150 - 100 - 18 = 32. The mechanism: the income statement cascades from revenue to operating income (150 - 100 = 50), then subtracts interest expense (a financing cost) to arrive at net income (50 - 18 = 32). Interest is a contractual, priority claim paid before any residual accrues to equity holders. Boundary: if interest exceeded operating income (18 > 50 in this case), net income would be negative, signaling potential insolvency. This 32 of net income is available for dividends or retained earnings and represents the return to equity holders. The example demonstrates how leverage (interest expense) reduces the profit available to shareholders from the firm's operating performance.</p><p>B is wrong because 50 is the firm's operating income (Revenue - Operating Expenses = 150 - 100 = 50), not net income. This omits the interest expense, which is a required deduction for leveraged firms to calculate the residual profit to equity.</p><p>C is wrong because 68 appears to add interest expense to operating income (50 + 18 = 68) instead of subtracting it. Interest is an expense that reduces net income, not a source of income.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Debt vs Equity Claims",
+    "stem": "Which statement best describes the fundamental difference between debt and equity claims on a corporation's cash flows?",
+    "options": {
+      "A": "Debt is a priority, fixed claim; equity is a residual, discretionary claim.",
+      "B": "Debt has voting rights; equity has no voting rights.",
+      "C": "Debt has unlimited return potential; equity has capped returns."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Capital Structure Claims</h3><p><strong>A is correct.</strong> Start from the balance sheet identity and the waterfall of cash flow claims. Debt is a contractual liability with specified interest and principal payments, paid before any distributions to equity. This priority is legally enforceable and gives debtholders a senior claim on cash flows and assets. Equity is the residual ownership: shareholders receive whatever remains after all operating expenses, taxes, and contractual payments (including debt service) are met. Dividends are discretionary (board's decision), not contractual. In liquidation, the same ordering holds: creditors are paid first, equity holders receive the residual (if any). This asymmetry defines the risk-return profiles: debt has lower risk (priority, fixed) and lower return (capped at interest and principal); equity has higher risk (residual, variable) and higher potential return (unlimited upside if firm value exceeds debt). Edge case: in insolvency (firm value < debt), equity holders receive nothing.</p><p>B is wrong because it reverses the voting rights: equity holders have voting rights (elect board, approve major decisions), while debtholders have no voting rights (but may have contractual protections like covenants). This is a fundamental misconception of corporate governance structure.</p><p>C is wrong because it inverts the return potential: equity has unlimited upside (as firm value grows beyond debt obligations, all gains accrue to shareholders), while debt has capped returns (limited to contractual interest and principal, regardless of firm performance). This misunderstands the payoff asymmetry between the two claims.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Tax Deductibility of Financing Costs",
+    "stem": "In most tax jurisdictions, which statement correctly describes the tax treatment of corporate financing costs?",
+    "options": {
+      "A": "Interest payments to debtholders are tax-deductible; dividends to shareholders are not.",
+      "B": "Dividends to shareholders are tax-deductible; interest payments to debtholders are not.",
+      "C": "Both interest payments and dividends are tax-deductible."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Tax Treatment of Capital Costs</h3><p><strong>A is correct.</strong> Start from the definition of taxable income: Revenue - Deductible Expenses = Taxable Income. Interest expense on debt is treated as a deductible business expense in most jurisdictions, reducing taxable income and thus the tax bill. The tax code rationale: interest is a cost of raising capital to generate business income. In contrast, dividends are distributions of after-tax profit to owners, not a business expense, so they are not deductible. Mechanism: if a firm pays 100 in interest at a 25% tax rate, taxable income falls by 100, reducing taxes by 25, so the net cost is 75. If it pays 100 in dividends, there is no tax reduction; the cost remains 100. This creates a tax shield for debt, making debt financing cheaper than equity on an after-tax basis. Edge case: in jurisdictions with no corporate income tax, this advantage disappears. This tax asymmetry is a key driver of capital structure decisions and explains why firms use debt despite its financial risk.</p><p>B is wrong because it reverses the tax treatment, claiming dividends are deductible and interest is not. This is the opposite of actual tax law in most jurisdictions and would eliminate the tax advantage of debt financing, contradicting observed corporate behavior and capital structure theory.</p><p>C is wrong because it asserts both interest and dividends are tax-deductible. While this would be neutral between debt and equity, in reality only interest is deductible. Treating dividends as deductible would fundamentally alter capital structure incentives and is not consistent with most tax codes.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Stakeholder Groups",
+    "stem": "Which of the following groups are considered corporate stakeholders in the stakeholder theory of corporate governance?",
+    "options": {
+      "A": "Only shareholders and debtholders.",
+      "B": "Shareholders, debtholders, employees, customers, suppliers, governments, and the broader community.",
+      "C": "Only shareholders, as they are the legal owners of the corporation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Stakeholder Definition</h3><p><strong>B is correct.</strong> Start from the definition: a stakeholder is any individual or group with a vested interest in a company's success or that is affected by its operations. The stakeholder theory broadens the focus beyond shareholders to include all parties with economic, social, or environmental interests in the firm. Primary stakeholder groups include: (1) shareholders and debtholders (capital providers), (2) board of directors (oversight), (3) managers (execute strategy), (4) employees (provide labor), (5) customers (demand products), (6) suppliers (provide inputs), (7) governments (regulate, tax, provide public goods), and (8) the broader community and environment (affected by externalities). Mechanism: each group has distinct interests that may conflict, and the stakeholder theory argues management should balance these interests, not maximize shareholder value exclusively. Edge case: the shareholder theory (narrower) argues management should focus solely on shareholders, considering other parties only insofar as they affect shareholder value. The stakeholder approach explicitly incorporates ESG considerations.</p><p>A is wrong because it limits stakeholders to only capital providers (shareholders and debtholders), ignoring employees, customers, suppliers, governments, and the community. This is closer to the shareholder theory, which is narrower than the stakeholder theory and does not explicitly consider the interests of non-investor groups.</p><p>C is wrong because it defines stakeholders as only shareholders, which is the most narrow perspective (pure shareholder theory) and completely excludes debtholders, employees, customers, suppliers, governments, and the community. This contradicts the stakeholder theory's explicit objective to broaden the focus of corporate decision-making beyond just owners.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Shareholder vs Stakeholder Theory",
+    "stem": "Which statement best characterizes the difference between the shareholder theory and the stakeholder theory of corporate governance?",
+    "options": {
+      "A": "The shareholder theory is narrower, focusing on maximizing shareholder value; the stakeholder theory is broader, balancing interests of all stakeholders.",
+      "B": "The shareholder theory considers all stakeholders; the stakeholder theory focuses only on shareholders.",
+      "C": "Both theories have identical objectives and differ only in implementation."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Governance Philosophies</h3><p><strong>A is correct.</strong> Start from the primitive: who are the intended beneficiaries of corporate decision-making? The shareholder theory (Milton Friedman's view) argues that in a typical corporation, shareholders elect the board, which hires managers to serve shareholder interests. Other parties' interests (creditors, employees, customers, society) are considered only to the extent they affect shareholder value. The objective is to maximize shareholder wealth. The stakeholder theory broadens the focus: management should explicitly balance the interests of shareholders, creditors, employees, customers, suppliers, governments, and the broader community/environment. ESG considerations are an explicit objective. Mechanism: the shareholder theory is narrower in scope (one primary beneficiary group), while the stakeholder theory is broader (multiple beneficiary groups with potentially conflicting interests). Edge case: the two can converge if long-term shareholder value is best served by considering stakeholder interests (as Friedman acknowledged). Challenges of the stakeholder approach include complexity of balancing multiple objectives and defining/measuring non-shareholder objectives.</p><p>B is wrong because it reverses the theories: the shareholder theory focuses on shareholders (narrower), while the stakeholder theory considers all stakeholders (broader). This inverts the fundamental definitions of the two governance philosophies and contradicts established corporate governance literature.</p><p>C is wrong because the two theories have materially different objectives: shareholder theory aims to maximize shareholder value, while stakeholder theory aims to balance multiple stakeholder interests. They differ in both philosophy and implementation, not just implementation. This understates the conceptual distinction between the two approaches.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "ESG Factor Materiality",
+    "stem": "In the context of corporate ESG analysis, a factor is considered 'material' when:",
+    "options": {
+      "A": "It has a significant impact on the company's financial results or business model.",
+      "B": "It is mentioned in the company's annual report, regardless of financial impact.",
+      "C": "It affects the company's employees but not its financial performance."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: ESG Materiality</h3><p><strong>A is correct.</strong> Start from the definition of materiality in financial analysis: information is material if its omission or misstatement would influence the economic decisions of users. For ESG factors, a factor is material when it has a significant impact on a company's financial results or business model—meaning it affects revenues, costs, cash flows, risk profile, or long-term viability. The mechanism: analysts must prioritize which ESG factors to evaluate given limited time and resources. Materiality varies by industry: climate change may be highly material for energy companies (transition risk, stranded assets) but less so for software firms. Data privacy may be material for internet companies but less so for manufacturers. The analyst's task is to identify material ESG factors, quantify their financial impact (on cash flows, discount rates, or both), and incorporate them into valuation and investment decisions. Boundary: non-material factors may be ethically important but do not significantly affect financial performance and thus receive lower analytical priority. This focus on materiality distinguishes financial analysis from pure ESG screening.</p><p>B is wrong because mere mention in the annual report does not establish materiality. Companies may disclose many factors to meet regulatory or stakeholder expectations without those factors having significant financial impact. Materiality requires a substantial effect on results or business model, not just disclosure.</p><p>C is wrong because a factor that affects employees but not financial performance is not financially material (though it may be ethically important). Financial materiality requires impact on results or business model. Employee welfare may be material if it affects turnover, productivity, or litigation risk, but the financial link must be established.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "Environmental Risks",
+    "stem": "In ESG analysis, 'transition risk' related to climate change refers to:",
+    "options": {
+      "A": "Losses from physical damage to assets due to extreme weather events.",
+      "B": "Losses related to the transition to a lower-carbon economy, such as stranded assets or regulatory changes.",
+      "C": "Risks from transitioning from private to public ownership."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Climate Risk Categories</h3><p><strong>B is correct.</strong> Climate change risks are categorized into physical risks and transition risks. Physical risks involve direct damage to or destruction of assets from severe weather (hurricanes, floods, wildfires), which is expected to increase in frequency and severity. Transition risks, in contrast, arise from the economy's shift to lower carbon emissions, affecting companies whose business models depend on high-emission activities. Sources of transition risk include: (1) regulations limiting emissions or taxing carbon, (2) technological change favoring low-emission alternatives, (3) shifting consumer preferences away from high-emission products, and (4) stranded assets—reserves or facilities that become uneconomical or legally restricted before their expected end of life. Example: a coal producer faces transition risk if utilities switch to renewables, reducing coal demand and potentially leaving reserves unextractable. Mechanism: transition risk is human-driven (policy, technology, preferences) rather than weather-driven. It is particularly material for fossil fuel, utilities, transportation, and heavy manufacturing sectors. Edge case: some transition risk can be hedged or managed through business model adaptation; stranded assets represent the extreme outcome.</p><p>A is wrong because it describes physical risk (asset damage from extreme weather), not transition risk. Physical risk is weather-driven and direct; transition risk is policy/market-driven and relates to the economic shift away from high-emission activities. This confuses the two categories of climate risk.</p><p>C is wrong because it conflates transition risk with ownership structure changes (private to public). Transition risk in ESG refers specifically to climate-related economic transition to lower carbon, not corporate ownership transitions. This misapplies the term entirely to an unrelated context.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Conflicts of Interest: Debt vs Equity",
+    "stem": "Which statement best describes a potential conflict of interest between shareholders and debtholders?",
+    "options": {
+      "A": "Shareholders prefer management pursue high-risk projects with high potential returns; debtholders prefer lower-risk projects that ensure timely repayment.",
+      "B": "Shareholders prefer lower financial leverage; debtholders prefer higher financial leverage.",
+      "C": "Shareholders and debtholders have identical preferences regarding project risk and leverage."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Debt-Equity Conflicts</h3><p><strong>A is correct.</strong> Start from the asymmetric payoff structures: shareholders have unlimited upside (as firm value exceeds debt, all gains accrue to them) but limited downside (lose only their investment if insolvent). Debtholders have capped upside (receive only promised interest and principal) but substantial downside (if firm defaults, they may not be repaid). This asymmetry creates conflicting risk preferences. Shareholders prefer high-risk, high-return projects because they capture all upside gains while losses beyond their investment fall on debtholders (who take control in insolvency). Debtholders prefer low-risk projects that maximize the probability of timely repayment, even if returns are lower. Mechanism: increasing project risk shifts value from debtholders to shareholders by increasing the option value of equity. Debtholders protect themselves through covenants (restrictions on risk-taking, leverage, dividends) and by charging higher interest rates for riskier firms. Edge case: if shareholders own both debt and equity, the conflict is internalized. This conflict is a classic agency problem in corporate finance.</p><p>B is wrong because it reverses the leverage preferences: shareholders often prefer higher leverage (magnifies ROE when ROA exceeds debt cost) while debtholders prefer lower leverage (reduces default risk, protects their claims). This inverts the actual conflict between the two groups.</p><p>C is wrong because it asserts no conflict exists, claiming identical preferences. This contradicts the fundamental asymmetry in payoff structures: shareholders benefit from risk-taking while debtholders do not, creating a material conflict of interest. This ignores the core agency problem between debt and equity holders.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "ESG Impact on Investors",
+    "stem": "How do adverse ESG-related events typically affect equity holders versus debtholders?",
+    "options": {
+      "A": "Equity holders are usually immediately and disproportionately affected due to their residual claim; debtholders are less affected unless the firm's ability to make payments is impaired.",
+      "B": "Debtholders are immediately and disproportionately affected; equity holders are unaffected.",
+      "C": "Both equity holders and debtholders are affected identically and proportionally."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: ESG Events and Capital Claims</h3><p><strong>A is correct.</strong> Start from the ordering of claims: equity is the residual claim, absorbing losses first. When an adverse ESG event occurs (e.g., environmental disaster, data breach, bribery scandal), it typically generates immediate costs (fines, cleanup, litigation) and longer-term impacts (reputational damage, lost customers, regulatory restrictions). These reduce expected future cash flows. Since equity value = PV of future cash flows minus debt, equity holders experience immediate share price declines. Examples: Vale (dam collapse), Equifax (data breach), Siemens (bribery) all saw sharp stock price drops. Debtholders hold finite, fixed claims and are insulated from value destruction until it threatens the firm's ability to make interest and principal payments. Their cost of debt may rise (credit spreads widen, ratings downgrade) and debt values may decline, but the impact is typically smaller in magnitude than equity's impact—unless the event pushes the firm toward insolvency. Edge case: for extremely severe events (Vale briefly downgraded to speculative grade), debt can be materially affected. Maturity matters: long-term debt is more exposed than short-term debt to long-horizon ESG risks like stranded assets.</p><p>B is wrong because it reverses the impact order: equity holders, not debtholders, typically experience disproportionate immediate impact because equity is the residual claim. Debtholders have priority and are affected mainly through increased risk of non-payment, which is often a second-order effect. This inverts the capital structure hierarchy.</p><p>C is wrong because it asserts identical, proportional impact on both groups. In reality, equity's residual status and unlimited loss potential mean it absorbs disproportionate impact. Debt's priority and capped downside (limited to principal and interest) provide relative insulation. This ignores the fundamental difference in claim structures and risk exposures between debt and equity.</p>"
+  }
+]
