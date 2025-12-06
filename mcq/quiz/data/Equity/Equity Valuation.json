@@ -1,0 +1,822 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Dividend Discount Model (Single Period)",
+    "stem": "An investor expects a stock to pay a dividend of $2.50 in one year and trade at $45.00 immediately after the dividend is paid. If the required rate of return is 10%, the intrinsic value of the stock today is closest to:",
+    "options": {
+      "A": "$43.18",
+      "B": "$45.00",
+      "C": "$47.50"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Present Value of Future Cash Flows</h3><p><strong>A is correct.</strong> The intrinsic value of an asset is the present value of its expected future cash flows. For a one-year holding period, the cash flows are the dividend expected at year-end ($D_1$) and the expected selling price at year-end ($P_1$). The formula is $V_0 = (D_1 + P_1) / (1 + r)$. Substituting the values: $V_0 = (2.50 + 45.00) / 1.10 = 47.50 / 1.10 = 43.1818...$. Rounded to two decimal places, the value is $43.18.</p><p>B is incorrect because it ignores the dividend and the time value of money, simply taking the future price as the current value. This violates the core principle of discounting future benefits.</p><p>C is incorrect because it sums the undiscounted cash flows ($2.50 + 45.00 = 47.50$). This fails to account for the time value of money (the required rate of return), which dictates that a dollar tomorrow is worth less than a dollar today.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Dividend Chronology",
+    "stem": "A company declares a dividend of $1.00 per share. Regarding the ex-dividend date, which of the following statements accurately describes the theoretical price adjustment?",
+    "options": {
+      "A": "The price drops by the amount of the dividend on the declaration date.",
+      "B": "The price drops by the amount of the dividend on the holder-of-record date.",
+      "C": "The price drops by the amount of the dividend on the ex-dividend date."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage and Entitlement</h3><p><strong>C is correct.</strong> Valuation is based on entitlement to cash flows. On the ex-dividend date, a buyer of the stock purchases it *without* the right to receive the upcoming dividend; that right remains with the seller. To prevent risk-free arbitrage (buying just before the cut-off to get the cash, then selling), the market price must adjust downward by exactly the amount of the cash leaving the firm (the dividend) as trading begins on the ex-date. Thus, $P_{ex} = P_{cum} - D$.</p><p>A is incorrect because the declaration date is merely the announcement. The economic value has not yet separated from the share, and ownership rights haven't shifted.</p><p>B is incorrect because the holder-of-record date is the administrative deadline for identifying shareholders. The effective cut-off for trading purposes is the ex-date, which occurs before the record date due to settlement cycles (e.g., T+2).</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Gordon Growth Model",
+    "stem": "A stock just paid an annual dividend of $2.00. Dividends are expected to grow indefinitely at a constant rate of 4%. If the required rate of return is 9%, the estimated value of the stock is closest to:",
+    "options": {
+      "A": "$40.00",
+      "B": "$41.60",
+      "C": "$52.00"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Constant Growth Valuation</h3><p><strong>B is correct.</strong> The Gordon Growth Model values a perpetuity of growing cash flows. The formula is $V_0 = D_1 / (r - g)$. First, derive $D_1$ (expected dividend) from $D_0$ (just paid dividend): $D_1 = D_0 \times (1 + g) = 2.00 \times 1.04 = 2.08$. Next, apply the valuation formula: $V_0 = 2.08 / (0.09 - 0.04) = 2.08 / 0.05 = 41.60$. The value reflects the present value of all future dividends growing at 4%.</p><p>A is incorrect because it uses $D_0$ ($2.00$) in the numerator instead of $D_1$. This fails to account for the growth that occurs before the first cash flow is received ($2.00 / 0.05 = 40$).</p><p>C is incorrect because it likely miscalculates the denominator or inputs, possibly subtracting growth from the dividend or using the wrong rate (e.g., $2.08 / 0.04 = 52$).</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Preferred Stock Valuation",
+    "stem": "A non-callable, non-convertible perpetual preferred stock pays an annual fixed dividend of $4.50. If the required rate of return is 6%, the intrinsic value of the share is closest to:",
+    "options": {
+      "A": "$27.00",
+      "B": "$75.00",
+      "C": "$133.33"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Perpetuity Valuation</h3><p><strong>B is correct.</strong> A perpetual preferred stock is a perpetuity—a stream of equal cash flows that never ends. The present value of a perpetuity is derived from the limit of the geometric series $\\sum D / (1+r)^t$ as $t \to \\infty$, which simplifies to $V_0 = D / r$. Here, $D = 4.50$ and $r = 0.06$. Calculation: $V_0 = 4.50 / 0.06 = 75.00$. The price represents the capital required to generate $4.50 annually at a 6% yield.</p><p>A is incorrect because it calculates $4.50 \times 6$, confusing the division operation with multiplication or applying a P/E-like multiple incorrectly.</p><p>C is incorrect because it likely inverts the operation or uses a wrong input (e.g., $1 / (0.06 \times 4.50)$ or similar irrelevant arithmetic).</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Enterprise Value Calculation",
+    "stem": "A company has a market capitalization of $500 million, total debt with a market value of $200 million, and cash and short-term investments of $50 million. Its Enterprise Value (EV) is closest to:",
+    "options": {
+      "A": "$650 million",
+      "B": "$700 million",
+      "C": "$750 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Takeover Cost</h3><p><strong>A is correct.</strong> Enterprise Value (EV) represents the theoretical takeover price of a firm. An acquirer must purchase the equity and assume the debt, but can use the target's own cash to pay down part of that debt. Therefore, the formula is $EV = \text{Market Value of Equity} + \text{Market Value of Debt} - \text{Cash \\& Investments}$. Calculation: $500 + 200 - 50 = 650$ million. This is the net cost to acquire the operating assets of the business.</p><p>B is incorrect because it ignores the cash deduction ($500 + 200 = 700$). This overestimates the net cost by failing to account for the liquid assets acquired.</p><p>C is incorrect because it adds cash instead of subtracting it ($500 + 200 + 50 = 750$), effectively double-counting the value of the cash as a cost rather than a benefit.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Implied Growth Rate",
+    "stem": "A stock trades at $50.00 and is expected to pay a dividend of $2.50 next year. If the required rate of return is 11%, the implied constant growth rate of dividends is closest to:",
+    "options": {
+      "A": "5.0%",
+      "B": "6.0%",
+      "C": "16.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Inverting Gordon Growth</h3><p><strong>B is correct.</strong> Start with the Gordon Growth Model: $V_0 = D_1 / (r - g)$. We assume the market is efficiently pricing the stock, so $V_0 = P_0$. Rearranging to solve for $g$: $P_0(r - g) = D_1 \rightarrow P_0 r - P_0 g = D_1 \rightarrow P_0 g = P_0 r - D_1 \rightarrow g = r - (D_1 / P_0)$. Effectively, total return ($r$) equals dividend yield ($D_1/P_0$) plus capital gains yield ($g$). $g = 0.11 - (2.50 / 50.00) = 0.11 - 0.05 = 0.06$ or $6.0\\%$.</p><p>A is incorrect because it is the dividend yield ($5\\%$), not the growth rate.</p><p>C is incorrect because it adds the dividend yield to the required return ($11\\% + 5\\% = 16\\%$), which implies a misunderstanding of the return components (Total Return = Yield + Growth).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Justified Forward P/E",
+    "stem": "A company has a dividend payout ratio of 40%, a required rate of return of 12%, and an expected constant growth rate of 7%. The justified forward P/E multiple is closest to:",
+    "options": {
+      "A": "3.3",
+      "B": "8.0",
+      "C": "12.0"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Linking DDM to P/E</h3><p><strong>B is correct.</strong> The justified forward P/E is derived from the Gordon Growth Model. $P_0 = D_1 / (r - g)$. Dividing both sides by expected earnings ($E_1$) gives $P_0 / E_1 = (D_1 / E_1) / (r - g)$. Since $D_1 / E_1$ is the payout ratio ($p$), the formula is $P/E = p / (r - g)$. Substituting inputs: $0.40 / (0.12 - 0.07) = 0.40 / 0.05 = 8.0$. This multiple reflects what an investor should pay per dollar of future earnings given the growth and risk profile.</p><p>A is incorrect because it uses the retention ratio (1 - 0.40 = 0.60) or miscalculates the denominator (e.g., 0.40 / 0.12).</p><p>C is incorrect because it might confuse the formula with $1 / (r-g)$ (1/0.05 = 20) or use just the required return ($1/0.12 \\approx 8.3$) without accounting for growth correctly.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3",
+    "topic": "Free Cash Flow to Equity (FCFE)",
+    "stem": "An analyst gathers the following data: Cash Flow from Operations (CFO) = $120 million, Net Borrowing = $15 million, and Fixed Capital Investment (FCInv) = $40 million. The Free Cash Flow to Equity (FCFE) is:",
+    "options": {
+      "A": "$65 million",
+      "B": "$95 million",
+      "C": "$175 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Residual Cash Flow</h3><p><strong>B is correct.</strong> FCFE represents the cash available to equity holders after the firm has met all operational needs and capital expenditures, adjusted for debt flows. The formula is $FCFE = CFO - FCInv + \text{Net Borrowing}$. Net borrowing increases cash available to equity (as debt holders provide capital). Calculation: $120 - 40 + 15 = 95$ million. This is the amount the firm could theoretically distribute as dividends.</p><p>A is incorrect because it subtracts net borrowing ($120 - 40 - 15 = 65$), treating debt issuance as a cash outflow rather than an inflow.</p><p>C is incorrect because it adds FCInv ($120 + 40 + 15 = 175$), treating capital expenditure as a source of cash rather than a use.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3",
+    "topic": "Valuation Conclusions",
+    "stem": "An analyst estimates the intrinsic value of a stock to be $32.00. The current market price is $28.00. The analyst should conclude that the stock is:",
+    "options": {
+      "A": "Fairly valued.",
+      "B": "Overvalued.",
+      "C": "Undervalued."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Value vs. Price</h3><p><strong>C is correct.</strong> The fundamental investing principle is to buy assets for less than they are worth. Here, Intrinsic Value ($V_0 = 32$) > Market Price ($P = 28$). This discrepancy implies the market is currently pricing the asset below its true worth, offering a 'margin of safety' or profit potential as price converges to value. Therefore, it is undervalued.</p><p>A is incorrect because fairly valued requires $V_0 \\approx P$. Here there is a significant positive difference.</p><p>B is incorrect because overvalued requires $P > V_0$ (e.g., price of 35 vs value of 32), implying the asset is too expensive.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini 3",
+    "topic": "Preferred Stock with Maturity",
+    "stem": "A preferred stock has a par value of $100, pays a 5% annual dividend, and matures in exactly 4 years. The required rate of return is 6%. Its value is closest to:",
+    "options": {
+      "A": "$96.53",
+      "B": "$100.00",
+      "C": "$103.55"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Discounted Cash Flow (Bond-like)</h3><p><strong>A is correct.</strong> Unlike perpetual preferreds, this stock has a maturity. It is valued like a bond: PV of coupons plus PV of face value. Annual dividend $D = 100 \times 0.05 = 5.00$. The cash flows are $5 (t=1), 5 (t=2), 5 (t=3), 105 (t=4)$. Discounting at 6%: $V_0 = 5/1.06 + 5/1.06^2 + 5/1.06^3 + 105/1.06^4$. Using a financial calculator (N=4, I/Y=6, PMT=5, FV=100), $PV = 96.53$. Since the coupon rate (5%) < discount rate (6%), it must trade at a discount to par.</p><p>B is incorrect because it assumes the price equals par, which only happens if coupon rate = required return.</p><p>C is incorrect because it implies a premium, which would require the coupon rate to exceed the required return.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini 3",
+    "topic": "Trailing P/E Calculation",
+    "stem": "A company has a current stock price of $60. Last year's EPS was $3.00, and EPS is expected to grow to $3.30 next year. The trailing P/E ratio is:",
+    "options": {
+      "A": "18.2",
+      "B": "20.0",
+      "C": "22.0"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Multiple Definitions</h3><p><strong>B is correct.</strong> The Price-to-Earnings (P/E) ratio relates price to earnings. The *trailing* P/E uses earnings from the past 12 months ($E_0$). Formula: $Trailing P/E = P_0 / E_0$. Calculation: $60.00 / 3.00 = 20.0$. This tells you how much the market pays for $1 of past earnings.</p><p>A is incorrect because it calculates the *forward* P/E ($60 / 3.30 = 18.18$), using expected future earnings.</p><p>C is incorrect because it likely uses an erroneous earnings figure or inverts growth logic incorrectly.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini 3",
+    "topic": "Asset-Based Valuation",
+    "stem": "An analyst is using an asset-based valuation model. The company has total assets with a fair market value of $1,200 million and total liabilities with a fair market value of $750 million. There are 20 million shares outstanding. The estimated value per share is:",
+    "options": {
+      "A": "$22.50",
+      "B": "$37.50",
+      "C": "$60.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Equity as Residual Claim</h3><p><strong>A is correct.</strong> Asset-based valuation treats the firm as a collection of assets and liabilities. The value of equity is the residual value of assets after subtracting liabilities (Net Asset Value). $Equity Value = \text{MV of Assets} - \text{MV of Liabilities} = 1,200 - 750 = 450$ million. To find value per share, divide by the number of shares: $450 \text{ million} / 20 \text{ million} = 22.50$.</p><p>B is incorrect because it likely uses the liabilities value divided by shares ($750/20 = 37.5$).</p><p>C is incorrect because it uses the total asset value divided by shares ($1,200/20 = 60$), ignoring the debt obligations that have a prior claim.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini 3",
+    "topic": "Present Value of Dividends (Two Period)",
+    "stem": "An investor expects dividends of $1.50 in Year 1 and $1.80 in Year 2. The investor plans to sell the stock at the end of Year 2 for an estimated $35.00. If the required return is 10%, the value today is closest to:",
+    "options": {
+      "A": "$31.78",
+      "B": "$33.45",
+      "C": "$38.30"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Multi-Period Discounting</h3><p><strong>A is correct.</strong> The value is the sum of the present values of all expected cash flows. Cash flows are $CF_1 = 1.50$ and $CF_2 = 1.80 + 35.00 = 36.80$ (dividend + sale price). Discount at 10%. $PV_1 = 1.50 / 1.10 = 1.3636$. $PV_2 = 36.80 / 1.10^2 = 36.80 / 1.21 = 30.4132$. Total Value $V_0 = 1.36 + 30.41 = 31.776...$, rounded to $31.78$.</p><p>B is incorrect because it might fail to discount the terminal value correctly or use a single period discount factor for the second year.</p><p>C is incorrect because it sums the undiscounted cash flows ($1.50 + 1.80 + 35.00 = 38.30$), ignoring the time value of money.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini 3",
+    "topic": "Appropriateness of Gordon Growth Model",
+    "stem": "The Gordon Growth (Constant Growth) Model is most appropriate for valuing companies that:",
+    "options": {
+      "A": "Are cyclical or in financial distress.",
+      "B": "Have high growth rates that will decline over time.",
+      "C": "Have stable growth rates and dividend payout policies."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Model Assumptions</h3><p><strong>C is correct.</strong> The derivation of $V_0 = D_1 / (r-g)$ relies on the mathematical convergence of a geometric series. This convergence only holds (and makes economic sense) if $g$ is constant forever and $r > g$. Therefore, the model is structurally designed for mature, stable companies with established dividend policies growing at a rate comparable to the nominal economy.</p><p>A is incorrect because cyclical or distressed firms have volatile cash flows, violating the 'constant growth' assumption.</p><p>B is incorrect because this scenario (high growth transitioning to low growth) describes a multi-stage pattern, requiring a Two-Stage or Three-Stage DDM, not the constant growth model.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini 3",
+    "topic": "Share Repurchases",
+    "stem": "A company uses cash to buy back its own shares from the open market. Assuming the tax treatment of dividends and capital gains is identical, the effect on shareholder wealth is:",
+    "options": {
+      "A": "Equivalent to a cash dividend of the same amount.",
+      "B": "Higher than a cash dividend due to the reduction in share count.",
+      "C": "Lower than a cash dividend due to the cash outflow."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cash Distribution Equivalence</h3><p><strong>A is correct.</strong> Whether a company pays a dividend or repurchases shares, cash leaves the firm and goes to shareholders. With a dividend, every shareholder receives cash. With a repurchase, the firm buys shares, concentrating ownership for remaining holders. In an efficient market with no tax differences, the wealth effect is identical: the share price drops by the dividend amount in the first case, while the share price remains constant (but held by fewer shares) in the second, balancing out to the same total wealth transfer.</p><p>B is incorrect because while EPS might rise, the total enterprise value decreases by the cash used, neutralizing the 'gain' in share count.</p><p>C is incorrect because dividends also involve a cash outflow; the method of distribution does not change the reduction in firm assets.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini 3",
+    "topic": "Price-to-Book Ratio",
+    "stem": "Which of the following industries is generally the best candidate for valuation using the Price-to-Book (P/B) ratio?",
+    "options": {
+      "A": "Technology and software firms with high intellectual property.",
+      "B": "Service companies with few tangible assets.",
+      "C": "Financial institutions with liquid assets and liabilities."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Reliability of Book Value</h3><p><strong>C is correct.</strong> The P/B ratio compares market price to accounting equity (Assets - Liabilities). This metric is most meaningful when 'Book Value' closely approximates 'Market Value'. Financial institutions hold liquid assets (loans, securities) that are often marked-to-market or hold values close to market. Thus, Book Value is a reliable proxy for intrinsic worth.</p><p>A is incorrect because accounting rules often exclude internally generated intangible assets (IP, brand), making Book Value significantly understate the firm's economic capital.</p><p>B is incorrect because service firms rely on human capital, which does not appear on the balance sheet, rendering P/B less relevant.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini 3",
+    "topic": "Enterprise Value Multiples",
+    "stem": "Analysts often prefer the EV/EBITDA multiple over the P/E ratio when comparing companies with:",
+    "options": {
+      "A": "Different capital structures (debt levels).",
+      "B": "Stable and similar depreciation policies.",
+      "C": "Negative Operating Income."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Capital Neutrality</h3><p><strong>A is correct.</strong> P/E is an equity multiple; Earnings (Net Income) are calculated *after* interest expense. Therefore, P/E is affected by leverage (debt). EV/EBITDA is a firm-wide multiple. Enterprise Value includes both debt and equity, and EBITDA is calculated *before* interest. This allows for an 'apples-to-apples' comparison of operating performance between firms regardless of whether they are financed by debt or equity.</p><p>B is incorrect because if depreciation policies are similar, P/E is less distorted, reducing the specific advantage of adding back D&A in EBITDA.</p><p>C is incorrect because if Operating Income (EBIT) is negative, EBITDA might also be negative or meaningless, making the multiple unusable.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini 3",
+    "topic": "Law of One Price",
+    "stem": "The economic rationale underlying the method of comparables (using price multiples) is based on:",
+    "options": {
+      "A": "The Law of One Price.",
+      "B": "The Theory of Rational Expectations.",
+      "C": "The Liquidity Preference Theory."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Arbitrage and Substitutes</h3><p><strong>A is correct.</strong> The Law of One Price states that two identical assets should sell for the same price. In valuation, if two companies have identical risk, growth, and cash flow profiles, they should trade at the same multiple (e.g., P/E). The method of comparables checks for deviations from this law to find mispriced assets.</p><p>B is incorrect because Rational Expectations deals with how agents forecast the future, not specifically with relative pricing of similar assets.</p><p>C is incorrect because Liquidity Preference explains the shape of the yield curve based on time horizons, not equity valuation multiples.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini 3",
+    "topic": "Two-Stage Dividend Discount Model",
+    "stem": "A Two-Stage DDM is most appropriate for a company that is:",
+    "options": {
+      "A": "Experiencing a temporary period of high growth before stabilizing.",
+      "B": "Growing at a constant rate lower than the economy.",
+      "C": "Generating negative free cash flows indefinitely."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Life Cycle Modeling</h3><p><strong>A is correct.</strong> Corporate life cycles often involve a growth phase (high investment, high return, high growth) followed by a mature phase (stable return, growth tracks GDP). The Two-Stage model explicitly captures this by modeling a high-growth period (Stage 1) and a terminal constant-growth period (Stage 2). This matches the economics of a firm transitioning from growth to maturity.</p><p>B is incorrect because a constant rate lower than the economy fits the single-stage Gordon Growth Model.</p><p>C is incorrect because DDM requires dividends (positive cash flow) to function; indefinite negative flows imply bankruptcy or a different valuation approach (like options), not a standard DDM.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini 3",
+    "topic": "Asset-Based Model Constraints",
+    "stem": "Asset-based valuation models are least likely to be effective for valuing:",
+    "options": {
+      "A": "Private companies.",
+      "B": "Companies with large intangible assets.",
+      "C": "Natural resource companies."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Market Value Visibility</h3><p><strong>B is correct.</strong> Asset-based valuation relies on summing the fair market values of individual assets. Intangible assets (brands, patents, human capital, synergy) are notoriously difficult to value individually and often do not appear on the balance sheet. Consequently, an asset-based approach will significantly undervalue a firm whose primary value drivers are intangible.</p><p>A is incorrect because private companies are often valued this way due to lack of market prices for shares.</p><p>C is incorrect because natural resources (oil, gold) have transparent commodity prices, making their asset values easier to estimate than intangibles.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini 3",
+    "topic": "Calculated Value of Preferred Stock",
+    "stem": "A preferred stock pays a semi-annual dividend of $2.50. The required annual rate of return is 8%. The value of the stock is:",
+    "options": {
+      "A": "$31.25",
+      "B": "$62.50",
+      "C": "$65.00"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Annualizing Cash Flows</h3><p><strong>B is correct.</strong> The valuation formula $V = D / r$ requires consistent time units. The total annual dividend is $2.50 \times 2 = 5.00$. The required annual return is 8% ($0.08$). $V_0 = 5.00 / 0.08 = 62.50$. Alternatively, using semi-annual periods: Dividend per period = $2.50$, Required rate per period = $8\\% / 2 = 4\\%$. $V_0 = 2.50 / 0.04 = 62.50$. Both methods yield the same result.</p><p>A is incorrect because it uses the semi-annual dividend with the annual rate ($2.50 / 0.08 = 31.25$), mismatching the period.</p><p>C is incorrect because it implies a value higher than the perpetuity formula allows, likely from arithmetic error.</p>"
+  },
+
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Gordon Growth Model Application",
+    "stem": "A stock's most recent annual dividend was €3.70. The dividend is expected to grow at 5.4% indefinitely. If the required rate of return is 7.5%, the estimated intrinsic value per share is closest to:",
+    "options": {
+      "A": "€49.33",
+      "B": "€130.00",
+      "C": "€185.70"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Gordon Growth Valuation</h3><p><strong>C is correct.</strong> The Gordon Growth Model values a perpetual stream of dividends growing at constant rate $g$. Starting from first principles: intrinsic value equals the present value of all future cash flows. For a perpetuity with constant growth, the infinite series $\\sum_{t=1}^{\\infty} D_0(1+g)^t/(1+r)^t$ converges (when $r > g$) to $V_0 = D_1/(r-g)$ where $D_1 = D_0(1+g)$. Applying the formula: $D_1 = 3.70 \\times 1.054 = 3.8998$. Then $V_0 = 3.8998/(0.075 - 0.054) = 3.8998/0.021 = 185.70$. The denominator $(r-g)$ represents the net discount rate after accounting for growth.</p><p>A is incorrect because it uses $D_0$ directly without growing it: $3.70/0.075 = 49.33$, violating the requirement that the numerator be next year's dividend.</p><p>B is incorrect because it fails to apply the growth factor to the dividend, calculating $3.70 \\times 1.054/0.04$ or uses an incorrect denominator.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Two-Stage DDM Calculation",
+    "stem": "A stock's current dividend is $5.00. Dividends are expected to grow at 10% for three years, then 5% thereafter. With a required return of 15%, the intrinsic value is closest to:",
+    "options": {
+      "A": "$51.20",
+      "B": "$59.68",
+      "C": "$69.88"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Multi-Stage Cash Flow Valuation</h3><p><strong>B is correct.</strong> Valuation requires discounting all future cash flows. In a two-stage model, we split the timeline: Stage 1 (high growth, finite) and Stage 2 (stable growth, perpetual). Calculate each dividend: $D_1 = 5.00(1.10) = 5.50$; $D_2 = 5.00(1.10)^2 = 6.05$; $D_3 = 5.00(1.10)^3 = 6.655$; $D_4 = 6.655(1.05) = 6.98775$. Terminal value at $t=3$ using Gordon: $V_3 = D_4/(r-g_L) = 6.98775/(0.15-0.05) = 69.8775$. Present value: $V_0 = 5.50/1.15 + 6.05/1.15^2 + 6.655/1.15^3 + 69.8775/1.15^3 = 4.783 + 4.577 + 4.376 + 45.944 = 59.68$.</p><p>A is incorrect because it likely discounts only the Stage 1 dividends without including the terminal value, severely underestimating total value.</p><p>C is incorrect because it may use incorrect discounting (e.g., simple average) or fail to properly compound the growth rates in Stage 1.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Preferred Stock Perpetuity",
+    "stem": "A non-callable, non-convertible perpetual preferred stock pays an annual dividend of $4.75. If the required rate of return for Ba1/BB rated preferreds is 7.5%, the intrinsic value is closest to:",
+    "options": {
+      "A": "$35.63",
+      "B": "$63.33",
+      "C": "$85.50"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Perpetuity Valuation</h3><p><strong>B is correct.</strong> A perpetual preferred stock with fixed dividends is a perpetuity—an infinite stream of equal payments. From first principles, $V_0 = \\sum_{t=1}^{\\infty} D/(1+r)^t$. This geometric series converges to $V_0 = D/r$ when payments are constant. The intuition: the price must generate the required yield on the fixed payment. Calculation: $V_0 = 4.75/0.075 = 63.33$. Verification: $63.33 \\times 0.075 = 4.75$ (the annual dividend required).</p><p>A is incorrect because it miscalculates, possibly using $4.75/0.133$ or inverting part of the formula.</p><p>C is incorrect because it might multiply rather than divide ($4.75 \\times 18$ or similar), fundamentally misunderstanding the perpetuity formula.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "FCFE Calculation",
+    "stem": "A company reports Cash Flow from Operations of $120 million, Fixed Capital Investment of $40 million, and Net Borrowing of $15 million. Free Cash Flow to Equity (FCFE) is:",
+    "options": {
+      "A": "$65 million",
+      "B": "$95 million",
+      "C": "$175 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Residual Cash Available to Equity</h3><p><strong>B is correct.</strong> FCFE represents cash available to equity holders after all operating needs, capital expenditures, and debt transactions. From first principles: start with operating cash (CFO), subtract capital needed to maintain the business (FCInv), add net debt financing (which provides cash to equity). Formula: $FCFE = CFO - FCInv + \\text{Net Borrowing} = 120 - 40 + 15 = 95$ million. Net borrowing increases equity's available cash because debt holders are providing capital.</p><p>A is incorrect because it subtracts net borrowing ($120 - 40 - 15 = 65$), treating debt issuance as a cash outflow to equity rather than an inflow.</p><p>C is incorrect because it adds FCInv ($120 + 40 + 15 = 175$), treating capital expenditure as a source rather than a use of cash.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Justified Forward P/E Ratio",
+    "stem": "A company has a 40% dividend payout ratio, 7% expected constant growth rate, and 12% required return. The justified forward P/E is closest to:",
+    "options": {
+      "A": "3.3",
+      "B": "5.7",
+      "C": "8.0"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Linking DDM to Multiples</h3><p><strong>C is correct.</strong> The justified P/E derives from fundamental valuation principles. Start with Gordon Model: $P_0 = D_1/(r-g)$. Divide both sides by forward earnings $E_1$: $P_0/E_1 = (D_1/E_1)/(r-g)$. Since $D_1/E_1$ is the payout ratio $p$, we get $P/E = p/(r-g)$. This shows P/E is fundamentally determined by payout policy, growth, and risk. Calculation: $P/E = 0.40/(0.12 - 0.07) = 0.40/0.05 = 8.0$. This means investors should pay $8 for each dollar of forward earnings given these fundamentals.</p><p>A is incorrect because it uses an inverted calculation or the retention ratio incorrectly.</p><p>B is incorrect because it may divide payout by required return alone ($0.40/0.07$), ignoring the growth component that reduces the effective discount rate.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Enterprise Value Calculation",
+    "stem": "A company has market capitalization of $500 million, market value of debt $200 million, and cash $50 million. Enterprise Value is:",
+    "options": {
+      "A": "$650 million",
+      "B": "$700 million",
+      "C": "$750 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Acquisition Cost Framework</h3><p><strong>A is correct.</strong> Enterprise Value (EV) represents the theoretical takeover cost of the firm's operations. An acquirer must purchase equity (market cap) and assume debt obligations, but can immediately use the target's cash to offset the purchase price. From this acquisition logic: $EV = \\text{Market Cap} + \\text{Debt} - \\text{Cash} = 500 + 200 - 50 = 650$ million. This is the net cost to acquire the operating business.</p><p>B is incorrect because it omits the cash deduction ($500 + 200 = 700$), overstating the net acquisition cost by not recognizing the liquid asset benefit.</p><p>C is incorrect because it adds cash instead of subtracting ($500 + 200 + 50 = 750$), treating cash as a cost rather than an offset to the purchase price.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Implied Growth Rate from Gordon Model",
+    "stem": "A stock trades at $50, expects a $2.50 dividend next year, and has an 11% required return. The implied constant growth rate is closest to:",
+    "options": {
+      "A": "5.0%",
+      "B": "6.0%",
+      "C": "11.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Reverse Engineering Valuation</h3><p><strong>B is correct.</strong> If the market is efficient, price equals intrinsic value. Starting from Gordon Model $P_0 = D_1/(r-g)$, solve for $g$: $P_0(r-g) = D_1 \\Rightarrow P_0 r - P_0 g = D_1 \\Rightarrow g = r - D_1/P_0$. This reveals that total return ($r$) equals dividend yield ($D_1/P_0$) plus capital gains yield ($g$). Calculation: $g = 0.11 - 2.50/50.00 = 0.11 - 0.05 = 0.06$ or $6.0\\%$. The market is pricing in $6\\%$ perpetual growth.</p><p>A is incorrect because it calculates only the dividend yield ($2.50/50 = 5\\%$), not the growth rate.</p><p>C is incorrect because it confuses the required return with the growth rate; if $g = r$, the denominator $(r-g)$ would be zero, making valuation undefined.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Trailing P/E Calculation",
+    "stem": "A stock's current price is $57.32, last year's EPS was $3.82, and next year's estimated EPS is $4.75. The trailing P/E is closest to:",
+    "options": {
+      "A": "12.07",
+      "B": "14.35",
+      "C": "15.01"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Historical Multiple Definition</h3><p><strong>C is correct.</strong> Price multiples compare current price to a fundamental metric. The *trailing* P/E uses historical (past 12 months) earnings as the denominator. This reflects what investors are paying for demonstrated earnings capacity. Formula: $\\text{Trailing P/E} = P_0/E_0$ where $E_0$ is last year's EPS. Calculation: $57.32/3.82 = 15.01$. This means the market values the stock at approximately 15 times last year's earnings.</p><p>A is incorrect because it calculates the *forward* P/E using next year's estimate: $57.32/4.75 = 12.07$.</p><p>B is incorrect, possibly from averaging the two EPS figures or miscalculating the division.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Asset-Based Valuation per Share",
+    "stem": "A company has total assets (fair market value) of $1,200 million, total liabilities (fair market value) of $750 million, and 20 million shares outstanding. Value per share is:",
+    "options": {
+      "A": "$22.50",
+      "B": "$37.50",
+      "C": "$60.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Equity as Residual Claim</h3><p><strong>A is correct.</strong> From accounting identity: Assets = Liabilities + Equity. Rearranging: Equity = Assets - Liabilities. This reflects that equity holders have the residual claim after all debt obligations are satisfied. Net Asset Value = $1,200 - 750 = 450$ million. Per share: $450/20 = 22.50$. This assumes fair market values accurately reflect economic worth.</p><p>B is incorrect because it divides liabilities by shares ($750/20 = 37.50$), which has no economic meaning in valuation.</p><p>C is incorrect because it divides total assets by shares ($1,200/20 = 60$), ignoring that liabilities have prior claims on those assets.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Present Value of Multi-Year Dividends",
+    "stem": "An investor expects dividends of $1.50 (Year 1) and $1.80 (Year 2), plus a sale price of $35.00 at Year 2. With a 10% required return, today's value is closest to:",
+    "options": {
+      "A": "$30.58",
+      "B": "$31.78",
+      "C": "$38.30"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Time Value of Money</h3><p><strong>B is correct.</strong> Intrinsic value equals the present value of all expected cash flows, discounted at the required rate. Cash flows: $CF_1 = 1.50$; $CF_2 = 1.80 + 35.00 = 36.80$. Discount each: $PV_1 = 1.50/1.10 = 1.3636$; $PV_2 = 36.80/1.10^2 = 36.80/1.21 = 30.4132$. Total: $V_0 = 1.36 + 30.41 = 31.77$ ≈ $31.78$. Each cash flow is worth less the further in the future it occurs.</p><p>A is incorrect, possibly from discounting the Year 2 dividend separately from the sale price or using incorrect discount factors.</p><p>C is incorrect because it sums undiscounted cash flows ($1.50 + 1.80 + 35.00 = 38.30$), ignoring the time value of money completely.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "EV/EBITDA to Equity Value",
+    "stem": "A company's EV/EBITDA multiple is 10.2, forecasted EBITDA is $22 million, market value of debt is $56 million, and cash is $1.5 million. Equity value is closest to:",
+    "options": {
+      "A": "$166.9 million",
+      "B": "$169.9 million",
+      "C": "$224.4 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Decomposing Enterprise Value</h3><p><strong>B is correct.</strong> Enterprise Value represents the value of operating assets, which belong to both debt and equity holders. First, calculate EV: $EV = \\text{Multiple} \\times EBITDA = 10.2 \\times 22 = 224.4$ million. To isolate equity value, subtract debt claims and add back cash: $\\text{Equity Value} = EV - \\text{Debt} + \\text{Cash} = 224.4 - 56 + 1.5 = 169.9$ million. Cash is added because it's available to equity after debt is accounted for in EV.</p><p>A is incorrect because it subtracts cash instead of adding it ($224.4 - 56 - 1.5 = 166.9$), misunderstanding that cash reduces net acquisition cost.</p><p>C is incorrect because it reports the Enterprise Value itself, not isolating the equity portion.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Sustainable Growth Rate",
+    "stem": "A company has a 49% retention rate and 17.3% ROE. The estimated sustainable growth rate using $g = b \\times ROE$ is closest to:",
+    "options": {
+      "A": "8.5%",
+      "B": "11.7%",
+      "C": "17.3%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Internal Growth Mechanics</h3><p><strong>A is correct.</strong> Sustainable growth derives from reinvested earnings. From accounting: $\\Delta \\text{Equity} = \\text{Net Income} - \\text{Dividends} = b \\times NI$. Growth rate: $g = \\Delta \\text{Equity}/\\text{Equity}_{beginning} = (b \\times NI)/\\text{Equity} = b \\times (NI/\\text{Equity}) = b \\times ROE$. This assumes constant capital structure and profitability. Calculation: $g = 0.49 \\times 0.173 = 0.08477 \\approx 8.5\\%$. Only retained earnings fuel growth without external financing.</p><p>B is incorrect, possibly from averaging retention and ROE: $(0.49 + 0.173)/2 \\times \\text{factor}$.</p><p>C is incorrect because it uses ROE alone, ignoring that only the retained portion ($b \\times ROE$) contributes to equity growth; distributed dividends don't compound.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Preferred Stock with Maturity",
+    "stem": "A preferred stock has $20 par value, $2.00 semiannual dividends, matures in 6 years (12 periods), and has 8.20% annual required return (4.10% semiannual). Its value is closest to:",
+    "options": {
+      "A": "$28.50",
+      "B": "$30.84",
+      "C": "$31.01"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Bond-Like Cash Flow Valuation</h3><p><strong>C is correct.</strong> A maturing preferred stock is valued like a coupon bond: PV of periodic dividends plus PV of par at maturity. With semiannual payments, use $n=12$, $PMT=2.00$, $FV=20$, $r=4.10\\%$ per period. Using financial calculator or formula: $V_0 = \\sum_{t=1}^{12} 2.00/(1.041)^t + 20/(1.041)^{12} = 31.01$. Precise period matching is critical for accuracy.</p><p>B is incorrect because it assumes annual payments ($n=6$, $PMT=4.00$, $r=8.20\\%$), which gives $30.84$—close but less accurate due to compounding frequency mismatch.</p><p>A is incorrect, possibly from using incorrect discount rate or payment assumptions.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Ex-Dividend Date Price Impact",
+    "stem": "On the ex-dividend date, all else equal, a stock's price theoretically:",
+    "options": {
+      "A": "Increases by the dividend amount due to shareholder entitlement.",
+      "B": "Decreases by the dividend amount due to cash leaving the firm.",
+      "C": "Remains unchanged as dividends don't affect market value."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage Condition</h3><p><strong>B is correct.</strong> On the ex-dividend date, buyers no longer receive the upcoming dividend. To prevent arbitrage (buying cum-dividend, immediately selling ex-dividend to capture cash), the price must adjust downward by the dividend amount. Mechanically: cash leaves the firm (reducing assets), and new buyers don't receive it, so fair value is $P_{ex} = P_{cum} - D$. This maintains no-arbitrage equilibrium.</p><p>A is incorrect because it reverses the logic; the price drops, not rises, as the entitlement transfers away from new buyers.</p><p>C is incorrect because dividends are cash distributions that reduce firm assets; the market price must reflect this reduction to prevent arbitrage opportunities.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Overvalued vs. Undervalued Assessment",
+    "stem": "An analyst estimates intrinsic value at $32, while the market price is $28. The stock appears:",
+    "options": {
+      "A": "Overvalued.",
+      "B": "Fairly valued.",
+      "C": "Undervalued."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Value-Price Comparison</h3><p><strong>C is correct.</strong> Investment principle: buy assets trading below intrinsic worth. If estimated value ($V_0 = 32$) exceeds market price ($P = 28$), the asset is undervalued—offering potential profit as price converges to value. The $4 gap represents a 'margin of safety.' This signals a buy opportunity if the analyst has confidence in the valuation.</p><p>A is incorrect; overvalued requires $P > V_0$ (e.g., price $35 vs. value $32$), meaning the asset is too expensive relative to fundamentals.</p><p>B is incorrect because fairly valued requires $P \\approx V_0$; the $4 difference (≈14% discount) is economically significant, not trivial rounding.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Gordon Growth Model Applicability",
+    "stem": "The Gordon Growth Model is most appropriate for valuing:",
+    "options": {
+      "A": "High-growth technology firms in expansion phase.",
+      "B": "Mature, stable companies with consistent dividend policies.",
+      "C": "Cyclical firms with volatile earnings and cash flows."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Model Assumptions vs. Reality</h3><p><strong>B is correct.</strong> The Gordon Model assumes perpetual constant growth: $V_0 = D_1/(r-g)$ derives from an infinite geometric series that only converges if $g$ is constant forever and $r > g$. These conditions match mature companies (e.g., utilities, consumer staples) with stable operations, established dividends, and growth rates tied to GDP. The model's mathematical structure dictates its appropriate use cases.</p><p>A is incorrect because high-growth firms have declining growth rates over time (as they mature), requiring multi-stage models to capture the transition.</p><p>C is incorrect because cyclical firms have fluctuating cash flows and growth rates, violating the 'constant growth' assumption central to the model's derivation.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Share Repurchases vs. Dividends",
+    "stem": "Assuming identical tax treatment, a share repurchase is:",
+    "options": {
+      "A": "More valuable than a dividend due to reduced share count.",
+      "B": "Equivalent to a cash dividend in shareholder wealth effect.",
+      "C": "Less valuable due to the cash outflow from the firm."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash Distribution Neutrality</h3><p><strong>B is correct.</strong> Both methods distribute cash: dividends send cash to all holders; repurchases concentrate ownership among remaining holders. In efficient markets (no taxes/frictions), wealth effects are identical. Example: firm worth $1,000, 100 shares ($10 each). $100 dividend: each holder gets $1, shares worth $9. $100 repurchase: firm buys 10 shares, 90 remain, still $9 each. Total wealth unchanged. The delivery mechanism differs, but economic impact is equivalent.</p><p>A is incorrect; while EPS rises (fewer shares), enterprise value falls by the cash used, so per-share value remains constant, yielding no net wealth gain.</p><p>C is incorrect because dividends also involve cash outflow; the distribution method doesn't change the reduction in firm assets or shareholder wealth.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Price-to-Book Ratio Suitability",
+    "stem": "The Price-to-Book (P/B) ratio is most useful for valuing:",
+    "options": {
+      "A": "Technology firms with significant intellectual property.",
+      "B": "Service companies with minimal tangible assets.",
+      "C": "Financial institutions with liquid, mark-to-market assets."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Book Value Reliability</h3><p><strong>C is correct.</strong> P/B compares market value to accounting equity (Assets - Liabilities). The ratio is meaningful when book value approximates market value. Financial institutions hold liquid assets (loans, securities) often marked-to-market or carried near fair value, making book value a reliable proxy for economic capital. This alignment makes P/B comparisons across banks valid and informative.</p><p>A is incorrect because accounting rules often exclude internally developed intangibles (R&D expensed, brands not capitalized), causing book value to vastly understate economic capital.</p><p>B is incorrect because service firms' primary asset is human capital, which doesn't appear on balance sheets, rendering book value largely irrelevant for valuation.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "EV/EBITDA vs. P/E Advantage",
+    "stem": "Analysts prefer EV/EBITDA over P/E when comparing companies with:",
+    "options": {
+      "A": "Different capital structures (leverage levels).",
+      "B": "Similar depreciation and amortization policies.",
+      "C": "Consistently positive net income."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Capital Structure Neutrality</h3><p><strong>A is correct.</strong> P/E uses Net Income (after interest expense), making it sensitive to leverage. EV/EBITDA is capital-structure-neutral: EV includes both debt and equity (total firm value), and EBITDA is pre-interest and pre-tax (operating performance). This allows comparing firms' operating efficiency regardless of financing choices. The formula structure eliminates leverage bias: $EV = \\text{Equity} + \\text{Debt} - \\text{Cash}$; EBITDA is unaffected by interest payments.</p><p>B is incorrect; if D&A policies are similar, the benefit of adding back depreciation/amortization (a key EV/EBITDA advantage) is reduced, not enhanced.</p><p>C is incorrect; if net income is consistently positive, P/E works fine. EV/EBITDA's advantage is when net income is negative but EBITDA is positive (due to interest/D&A).</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Two-Stage DDM Appropriateness",
+    "stem": "A Two-Stage Dividend Discount Model is most appropriate for:",
+    "options": {
+      "A": "Mature companies with perpetual stable growth rates.",
+      "B": "Companies transitioning from high growth to stable growth.",
+      "C": "Start-ups with no current or near-term dividends."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Modeling Life Cycle Transitions</h3><p><strong>B is correct.</strong> Corporate life cycles often involve growth phases (high returns, high investment) followed by maturity (stable, GDP-like growth). The Two-Stage model explicitly captures this: Stage 1 models finite high-growth period with higher $g_S$; Stage 2 models perpetual stable growth with lower $g_L$. The structure $V_0 = \\sum PV(\\text{Stage 1 dividends}) + PV(\\text{Terminal Value})$ aligns with this economic transition, making it ideal for companies moving from growth to maturity.</p><p>A is incorrect; mature companies with stable perpetual growth are best valued with the simpler single-stage Gordon Growth Model.</p><p>C is incorrect; start-ups with no near-term dividends create highly uncertain DDM inputs, making FCFE or other models more practical.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "Method of Comparables Rationale",
+    "stem": "The economic principle underlying the method of comparables (using price multiples) is:",
+    "options": {
+      "A": "The Law of One Price.",
+      "B": "The Efficient Market Hypothesis.",
+      "C": "The Capital Asset Pricing Model."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Arbitrage and Relative Pricing</h3><p><strong>A is correct.</strong> The Law of One Price states that identical assets must trade at identical prices in efficient markets; otherwise, arbitrage opportunities exist. In valuation, if two companies have similar risk, growth, and cash flow profiles (i.e., are economic substitutes), they should trade at similar multiples (e.g., same P/E). The comparables method identifies relative mispricings by finding deviations from this law. Mechanically: if Company A trades at P/E=15 and similar Company B at P/E=10, B may be undervalued (or A overvalued), creating potential arbitrage.</p><p>B is incorrect; EMH addresses information efficiency and price accuracy, not specifically the relative pricing of similar assets.</p><p>C is incorrect; CAPM estimates required returns based on systematic risk, not comparative valuation across similar firms.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Kimi K2",
+    "topic": "Gordon Growth Model Valuation",
+    "stem": "A stock's most recent annual dividend is €3.70. Dividends are expected to grow at 5.4% indefinitely. If the required rate of return is 7.5%, the estimated intrinsic value is closest to:",
+    "options": {
+      "A": "€49.33",
+      "B": "€130.00",
+      "C": "€185.70"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Perpetual Growth Valuation</h3><p><strong>C is correct.</strong> The intrinsic value of a stock equals the present value of all expected future dividends. For a perpetuity with constant growth, the infinite series converges to V0 = D1/(r-g) where D1 = D0(1+g). This formula derives from the sum of a geometric series when r > g. Calculation: D1 = 3.70 × 1.054 = 3.8998. Then V0 = 3.8998/(0.075 - 0.054) = 3.8998/0.021 = €185.70. The denominator reflects the net discount rate after accounting for growth.</p><p>A is incorrect because it uses D0 directly: 3.70/0.075 = €49.33, violating the principle that the numerator must be the next period's dividend.</p><p>B is incorrect because it fails to properly apply the growth factor or uses an incorrect denominator, misrepresenting the time value of money relationship.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Kimi K2",
+    "topic": "Preferred Stock Perpetuity",
+    "stem": "A non-callable, perpetual preferred stock pays an annual dividend of $4.75. If the required rate of return is 7.5%, the intrinsic value is closest to:",
+    "options": {
+      "A": "$35.63",
+      "B": "$63.33",
+      "C": "$85.50"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fixed Income Stream Valuation</h3><p><strong>B is correct.</strong> A perpetual preferred stock with constant dividends represents a perpetuity—an infinite series of equal payments. From present value principles, V0 = Σ D/(1+r)^t as t→∞ converges to V0 = D/r. This occurs because each subsequent payment is discounted by an increasingly larger factor. Calculation: V0 = 4.75/0.075 = $63.33. Verification: $63.33 × 0.075 = $4.75, confirming the required yield.</p><p>A is incorrect, likely from miscalculating 4.75/0.133 or using an inverted formula, violating the fundamental perpetuity relationship.</p><p>C is incorrect, probably from multiplying rather than dividing (4.75 × 18), which confuses the inverse relationship between price and yield.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Kimi K2",
+    "topic": "Preferred Stock with Maturity",
+    "stem": "A preferred stock has $20 par value, $2.00 semiannual dividends, matures in 6 years (12 periods), with 8.20% annual required return (4.10% per period). Its value is closest to:",
+    "options": {
+      "A": "$28.50",
+      "B": "$30.84",
+      "C": "$31.01"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Bond-Equivalent Cash Flow Valuation</h3><p><strong>C is correct.</strong> A maturing preferred stock is valued like a bond: present value of periodic dividends plus present value of par value at maturity. The formula is V0 = Σ(Dt/(1+r)^t) + F/(1+r)^n. Using semiannual periods: n=12, PMT=2.00, FV=20, r=4.10%. Calculation yields V0 = $31.01. Precise period matching is critical as compounding frequency affects discount factors.</p><p>B is incorrect because it assumes annual payments (n=6, PMT=4, r=8.20%), giving $30.84, which is less accurate due to ignoring intra-year compounding effects.</p><p>A is incorrect, likely from using wrong discount rate or payment assumptions, violating the time value of money principles for periodic cash flows.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Kimi K2",
+    "topic": "Free Cash Flow to Equity",
+    "stem": "A company reports Cash Flow from Operations of $120 million, Fixed Capital Investment of $40 million, and Net Borrowing of $15 million. FCFE is:",
+    "options": {
+      "A": "$65 million",
+      "B": "$95 million",
+      "C": "$175 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Residual Equity Cash Flow</h3><p><strong>B is correct.</strong> FCFE represents cash available to equity holders after operating needs, capital maintenance, and debt transactions. From the fundamental identity: FCFE = CFO - FCInv + Net Borrowing. CFO provides total operating cash, FCInv represents capital required to sustain operations (not distributable), and net borrowing increases cash available to equity. Calculation: 120 - 40 + 15 = $95 million. Debt financing provides capital that benefits equity holders.</p><p>A is incorrect because it subtracts net borrowing (120 - 40 - 15 = 65), treating debt issuance as a cash outflow rather than an equity inflow.</p><p>C is incorrect because it adds FCInv (120 + 40 + 15 = 175), incorrectly treating capital expenditure as a source of cash rather than a use.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Kimi K2",
+    "topic": "Enterprise Value Calculation",
+    "stem": "A company has market capitalization of $500 million, market value of debt $200 million, and cash $50 million. Enterprise Value is closest to:",
+    "options": {
+      "A": "$650 million",
+      "B": "$700 million",
+      "C": "$750 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Net Acquisition Cost</h3><p><strong>A is correct.</strong> Enterprise Value represents the theoretical takeover price for operating assets. An acquirer must purchase equity and assume debt, but can use the target's cash to reduce net cost. Formula: EV = Market Cap + Debt - Cash. Calculation: 500 + 200 - 50 = $650 million. This reflects the net investment required to acquire the business operations.</p><p>B is incorrect because it omits the cash deduction (500 + 200 = 700), overstating the net cost by ignoring liquid assets acquired.</p><p>C is incorrect because it adds cash (500 + 200 + 50 = 750), treating cash as a cost rather than a benefit that reduces net acquisition price.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Kimi K2",
+    "topic": "Justified Forward P/E Ratio",
+    "stem": "A company has 40% dividend payout ratio, 7% expected constant growth, and 12% required return. The justified forward P/E is closest to:",
+    "options": {
+      "A": "3.3",
+      "B": "5.7",
+      "C": "8.0"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Fundamental Multiple Derivation</h3><p><strong>C is correct.</strong> The justified P/E derives from the Gordon Model: P0 = D1/(r-g). Dividing by forward earnings E1 gives P0/E1 = (D1/E1)/(r-g). Since D1/E1 is the payout ratio p, we get P/E = p/(r-g). This shows the multiple is fundamentally determined by payout policy, growth, and risk. Calculation: 0.40/(0.12 - 0.07) = 0.40/0.05 = 8.0. This is the fair value multiple given these fundamentals.</p><p>A is incorrect, likely using retention ratio (0.60) or miscalculating the denominator, which misrepresents the growth-adjusted discount rate.</p><p>B is incorrect, possibly dividing payout by required return alone (0.40/0.07), ignoring the growth component that reduces the effective discount rate.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Kimi K2",
+    "topic": "Sustainable Growth Rate",
+    "stem": "A company has 49% retention rate and 17.3% ROE. The sustainable growth rate using g = b × ROE is closest to:",
+    "options": {
+      "A": "8.5%",
+      "B": "11.7%",
+      "C": "17.3%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Internal Equity Growth Mechanism</h3><p><strong>A is correct.</strong> Sustainable growth derives from reinvested earnings. From fundamental accounting: ΔEquity = Net Income - Dividends = b × NI. The growth rate g = ΔEquity/Equity = b × (NI/Equity) = b × ROE. This assumes constant capital structure and profitability. Calculation: 0.49 × 0.173 = 0.08477 ≈ 8.5%. Only retained earnings compound without external financing.</p><p>B is incorrect, likely averaging retention and ROE (0.49 + 0.173)/2 or similar miscalculation, violating the multiplicative relationship.</p><p>C is incorrect because it uses ROE alone, ignoring that only the retained portion (b × ROE) contributes to equity growth; distributed dividends don't compound.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Kimi K2",
+    "topic": "Multi-Year Dividend Present Value",
+    "stem": "An investor expects dividends of $1.50 (Year 1) and $1.80 (Year 2), plus a sale price of $35.00 at Year 2. With 10% required return, today's value is closest to:",
+    "options": {
+      "A": "$30.58",
+      "B": "$31.78",
+      "C": "$38.30"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Time-Weighted Cash Flow Discounting</h3><p><strong>B is correct.</strong> Value equals the sum of present values of all expected cash flows. Cash flows: CF1 = 1.50; CF2 = 1.80 + 35.00 = 36.80. Discounting: PV1 = 1.50/1.10 = 1.3636; PV2 = 36.80/1.10² = 36.80/1.21 = 30.4132. Total V0 = 1.36 + 30.41 = $31.77 ≈ $31.78. Each future cash flow is worth less the further out it occurs due to time value of money.</p><p>A is incorrect, likely from discounting Year 2 dividend separately from sale price or using incorrect discount factors, breaking the proper timeline.</p><p>C is incorrect because it sums undiscounted cash flows (1.50 + 1.80 + 35.00 = 38.30), completely ignoring the time value of money principle.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Kimi K2",
+    "topic": "Asset-Based Valuation per Share",
+    "stem": "A company has total assets (fair market value) of $1,200 million, total liabilities (fair market value) of $750 million, and 20 million shares outstanding. Value per share is closest to:",
+    "options": {
+      "A": "$22.50",
+      "B": "$37.50",
+      "C": "$60.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Net Asset Value per Share</h3><p><strong>A is correct.</strong> From the fundamental accounting equation: Assets = Liabilities + Equity. Rearranged: Equity = Assets - Liabilities. This represents the residual claim of equity holders after satisfying all debt obligations. Net Asset Value = 1,200 - 750 = $450 million. Per share: 450/20 = $22.50. This assumes fair market values accurately reflect economic worth of assets and liabilities.</p><p>B is incorrect because it divides liabilities by shares (750/20 = 37.50), which has no economic meaning as liabilities represent obligations, not equity value.</p><p>C is incorrect because it divides total assets by shares (1,200/20 = 60), ignoring that debt holders have prior claims on those assets that must be subtracted.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Kimi K2",
+    "topic": "Trailing Price-to-Earnings Ratio",
+    "stem": "A stock's current price is $57.32, last year's EPS was $3.82, and next year's estimated EPS is $4.75. The trailing P/E ratio is closest to:",
+    "options": {
+      "A": "12.07",
+      "B": "14.35",
+      "C": "15.01"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Historical Earnings Multiple</h3><p><strong>C is correct.</strong> The trailing P/E ratio uses historical earnings (past 12 months) as the denominator, reflecting what investors pay for demonstrated earnings capacity. Formula: Trailing P/E = P0/E0 where E0 is last year's EPS. Calculation: 57.32/3.82 = 15.01. This multiple indicates the market values the stock at approximately 15 times last year's earnings, providing a baseline for comparison.</p><p>A is incorrect because it calculates the forward P/E using next year's estimate: 57.32/4.75 = 12.07, which reflects future expectations rather than historical performance.</p><p>B is incorrect, possibly from averaging the two EPS figures or miscalculating the division, violating the clear definition of trailing versus forward P/E.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Kimi K2",
+    "topic": "Enterprise Value to Equity Value",
+    "stem": "A company's EV/EBITDA multiple is 10.2, forecasted EBITDA is $22 million, market value of debt is $56 million, and cash is $1.5 million. Equity value is closest to:",
+    "options": {
+      "A": "$166.9 million",
+      "B": "$169.9 million",
+      "C": "$224.4 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Decomposing Firm Value</h3><p><strong>B is correct.</strong> Enterprise Value represents the value of operating assets belonging to all capital providers. First calculate EV: EV = Multiple × EBITDA = 10.2 × 22 = $224.4 million. To isolate equity value, subtract debt claims and add back cash (available to equity): Equity Value = EV - Debt + Cash = 224.4 - 56 + 1.5 = $169.9 million. The cash addition reflects that cash reduces net acquisition cost and is available for equity after debt obligations.</p><p>A is incorrect because it subtracts cash instead of adding it (224.4 - 56 - 1.5 = 166.9), misunderstanding that cash is a benefit, not a cost, to the acquirer.</p><p>C is incorrect because it reports the Enterprise Value itself, failing to isolate the equity portion by removing debt and adding cash.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Kimi K2",
+    "topic": "Implied Growth Rate",
+    "stem": "A stock trades at $50, expects a $2.50 dividend next year, and has an 11% required return. The implied constant growth rate is closest to:",
+    "options": {
+      "A": "5.0%",
+      "B": "6.0%",
+      "C": "11.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Reverse Engineering the Gordon Model</h3><p><strong>B is correct.</strong> In efficient markets, price equals intrinsic value. From Gordon Model P0 = D1/(r-g), solving for g yields: g = r - D1/P0. This shows total return r equals dividend yield (D1/P0) plus capital gains yield (g). Calculation: g = 0.11 - (2.50/50.00) = 0.11 - 0.05 = 0.06 or 6.0%. The market is pricing in 6% perpetual growth embedded in the stock price.</p><p>A is incorrect because it calculates only the dividend yield (2.50/50 = 5%), not the growth rate component of total return.</p><p>C is incorrect because it confuses the required return with the growth rate; if g = r, the denominator (r-g) would be zero, making valuation undefined.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Kimi K2",
+    "topic": "Two-Stage DDM Valuation",
+    "stem": "A stock's current dividend is $0.58. Dividends will grow 20% in Year 1, 15% in Year 2, then 5.6% indefinitely. With 8.3% required return, intrinsic value is closest to:",
+    "options": {
+      "A": "$26.00",
+      "B": "$27.00",
+      "C": "$28.00"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Multi-Stage Growth Valuation</h3><p><strong>C is correct.</strong> The two-stage DDM values high-growth phase plus terminal value. Calculate dividends: D1 = 0.58 × 1.20 = 0.696; D2 = 0.696 × 1.15 = 0.8004; D3 = 0.8004 × 1.056 = 0.8452. Terminal value at t=2: V2 = D3/(r-gL) = 0.8452/(0.083 - 0.056) = 0.8452/0.027 = 31.30. Present value: V0 = 0.696/1.083 + (0.8004 + 31.30)/1.083² = 0.643 + 27.25 = $27.89 ≈ $28.00. This captures both growth phases properly.</p><p>A is incorrect, likely from miscalculating terminal value or discounting incorrectly, undervaluing the stable growth phase.</p><p>B is incorrect, possibly from arithmetic errors in compounding growth rates or present value factors, misrepresenting the two-stage mechanics.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Kimi K2",
+    "topic": "Gordon Growth Model Applicability",
+    "stem": "The Gordon Growth Model is most appropriate for valuing companies that are:",
+    "options": {
+      "A": "Expected to grow very fast with high investment opportunities.",
+      "B": "In a mature phase of growth with stable dividend policies.",
+      "C": "Very sensitive to the business cycle with volatile earnings."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Model Assumptions and Firm Life Cycle</h3><p><strong>B is correct.</strong> The Gordon Model assumes perpetual constant growth: V0 = D1/(r-g). This mathematical structure requires that g is constant forever and r > g for convergence. These conditions align with mature companies (e.g., utilities, staples) that have stable operations, established dividend policies, and growth rates that track nominal GDP. The model's derivation from an infinite geometric series dictates its appropriate use cases.</p><p>A is incorrect because high-growth firms have declining growth rates over time as they mature, requiring multi-stage models to capture the transition from high to stable growth.</p><p>C is incorrect because cyclical firms have fluctuating cash flows and growth rates, violating the 'constant growth' assumption that is fundamental to the model's mathematical validity.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Kimi K2",
+    "topic": "Ex-Dividend Date Price Adjustment",
+    "stem": "On the ex-dividend date, all else equal, a stock's price theoretically:",
+    "options": {
+      "A": "Increases by the dividend amount due to shareholder entitlement.",
+      "B": "Decreases by the dividend amount due to cash leaving the firm.",
+      "C": "Remains unchanged as dividends don't affect market value."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage Price Adjustment</h3><p><strong>B is correct.</strong> On the ex-dividend date, new buyers purchase shares without entitlement to the upcoming dividend. To prevent arbitrage (buying cum-dividend and selling ex-dividend to capture free cash), the price must adjust downward by exactly the dividend amount. Mechanically: cash leaves the firm (reducing assets), and this value transfer to existing shareholders must be reflected in the share price as Pex = Pcum - D. This maintains market equilibrium and prevents risk-free profits.</p><p>A is incorrect because it reverses the logic; the price drops, not rises, as the dividend entitlement separates from the share.</p><p>C is incorrect because dividends are cash distributions that reduce firm assets; ignoring this would create arbitrage opportunities and violate efficient market principles.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Kimi K2",
+    "topic": "Valuation Conclusion Assessment",
+    "stem": "An analyst estimates intrinsic value at $32, while the market price is $28. The stock appears:",
+    "options": {
+      "A": "Overvalued, requiring a sell recommendation.",
+      "B": "Fairly valued within the analyst's confidence interval.",
+      "C": "Undervalued, offering a potential buying opportunity."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Value-Price Arbitrage Principle</h3><p><strong>C is correct.</strong> The fundamental principle of value investing is to buy assets trading below intrinsic worth. When estimated value ($V0 = 32$) exceeds market price ($P = 28$), the asset is undervalued. The $4 difference represents a margin of safety and potential profit as price converges to value. This signals a buying opportunity if the analyst has confidence in the valuation model and inputs. The magnitude of the discount justifies further investigation but suggests market mispricing.</p><p>A is incorrect; overvalued requires $P > V0$ (e.g., price $35 vs. value $32$), which is the opposite situation.</p><p>B is incorrect because fairly valued requires $P ≈ V0$; a 12.5% discount is economically significant, not a minor rounding difference within confidence bands.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Kimi K2",
+    "topic": "FCFE vs DDM Focus",
+    "stem": "An equity valuation model that focuses on expected dividends rather than the capacity to pay dividends is the:",
+    "options": {
+      "A": "Dividend discount model.",
+      "B": "Free cash flow to equity model.",
+      "C": "Asset-based valuation model."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cash Flow Specification Differences</h3><p><strong>A is correct.</strong> The Dividend Discount Model (DDM) values equity based on the present value of expected future dividends actually paid to shareholders. It directly models the cash flows shareholders receive. In contrast, FCFE models value based on cash flow available to be paid (capacity) but may not be paid. The key distinction: DDM uses actual dividend policy, while FCFE uses theoretical dividend-paying capacity, making DDM more direct but potentially less reflective of true economic value if dividends are artificially constrained.</p><p>B is incorrect because FCFE specifically focuses on capacity to pay dividends (free cash flow available), not necessarily actual dividends paid.</p><p>C is incorrect because asset-based models value equity as assets minus liabilities, unrelated to dividend cash flows.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Kimi K2",
+    "topic": "EV/EBITDA Advantage",
+    "stem": "Analysts prefer EV/EBITDA over P/E when comparing companies with:",
+    "options": {
+      "A": "Different capital structures (debt levels).",
+      "B": "Similar depreciation and amortization policies.",
+      "C": "Consistently positive net income and stable earnings."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Capital Structure Neutrality</h3><p><strong>A is correct.</strong> EV/EBITDA is preferred when comparing companies with different leverage because it's capital-structure-neutral. Enterprise Value includes both debt and equity (total firm value), and EBITDA is calculated before interest expense. This eliminates the distortion caused by different financing choices. P/E uses net income (after interest), making it sensitive to debt levels. The EV/EBITDA multiple isolates operating performance, allowing 'apples-to-apples' comparisons regardless of financing mix.</p><p>B is incorrect; similar D&A policies reduce the advantage of EV/EBITDA since the add-back benefit is comparable across firms, making P/E more viable.</p><p>C is incorrect; if net income is consistently positive and stable, P/E works well. EV/EBITDA's main advantage is when net income is negative but EBITDA is positive (due to high interest/D&A).</p>"
+  },
+  {
+    "id": 19,
+    "model": "Kimi K2",
+    "topic": "Price-to-Book Suitability",
+    "stem": "The Price-to-Book (P/B) ratio is most useful for valuing:",
+    "options": {
+      "A": "Technology firms with significant intellectual property.",
+      "B": "Service companies with few tangible assets.",
+      "C": "Financial institutions with liquid, mark-to-market assets."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Book Value Reliability</h3><p><strong>C is correct.</strong> P/B is most meaningful when book value approximates market value. Financial institutions hold liquid assets (loans, securities) often marked-to-market or carried near fair value, making book value a reliable proxy for economic capital. The accounting for financial assets creates alignment between book and market values, making P/B comparisons across banks valid and informative for relative valuation.</p><p>A is incorrect because internally developed intangibles (IP, R&D) are often expensed, not capitalized, causing book value to significantly understate economic capital.</p><p>B is incorrect because service firms' primary value driver is human capital, which doesn't appear on the balance sheet, rendering book value largely irrelevant.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Kimi K2",
+    "topic": "Method of Comparables Rationale",
+    "stem": "The economic principle underlying the method of comparables (using price multiples) is:",
+    "options": {
+      "A": "The Law of One Price.",
+      "B": "The Efficient Market Hypothesis.",
+      "C": "The Capital Asset Pricing Model."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Relative Valuation Principle</h3><p><strong>A is correct.</strong> The Law of One Price states that identical assets should sell for identical prices in efficient markets. The method of comparables applies this by comparing similar companies' multiples. If two firms have similar risk, growth, and profitability profiles, they should trade at similar P/E, EV/EBITDA, etc. Deviations suggest mispricing. This principle creates the foundation for relative valuation without requiring explicit cash flow forecasts.</p><p>B is incorrect; EMH addresses information efficiency and whether prices reflect all available information, not specifically the relative pricing of similar assets.</p><p>C is incorrect; CAPM estimates required returns based on systematic risk (beta), not comparative valuation across firms with similar characteristics.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Kimi K2",
+    "topic": "Two-Stage DDM Appropriateness",
+    "stem": "A Two-Stage Dividend Discount Model is most appropriate for:",
+    "options": {
+      "A": "Mature companies with perpetual stable growth rates.",
+      "B": "Companies transitioning from high growth to stable growth.",
+      "C": "Start-ups with no current or near-term dividends."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Modeling Growth Transitions</h3><p><strong>B is correct.</strong> The Two-Stage DDM captures firms transitioning from an initial high-growth phase to a mature stable-growth phase. Stage 1 models finite high growth (gS), Stage 2 models perpetual sustainable growth (gL) using the Gordon model for terminal value. This structure aligns with corporate life cycles where growth rates naturally decline as markets mature, competition increases, and investment opportunities diminish, making it ideal for growth-to-maturity transitions.</p><p>A is incorrect; mature companies with stable perpetual growth are better valued with the simpler single-stage Gordon Growth Model, which is a special case of the two-stage model with no high-growth period.</p><p>C is incorrect; start-ups with no near-term dividends require FCFE models or multi-stage DDMs with long no-dividend periods, making DDM inputs highly uncertain and unreliable.</p>"
+  }
+]
