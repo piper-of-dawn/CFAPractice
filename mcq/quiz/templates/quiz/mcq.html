@@ -7,6 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <script>
+    // Apply saved or system theme early to avoid flash
+    (function(){
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (_) {}
+    })();
+  </script>
   <style>
     :root {
       --bg: #fbfbfd;
@@ -17,6 +28,22 @@
       --primary: #0a84ff;
       --radius: 14px;
       --shadow: 0 10px 30px rgba(0,0,0,0.06), 0 4px 10px rgba(0,0,0,0.04);
+      --tag-bg: #f2f2f7;
+      --tag-text: #1d1d1f;
+      --hover: #fafafa;
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b0b10;
+      --card: #111218;
+      --text: #e9e9ee;
+      --muted: #9a9aa3;
+      --border: #2a2a32;
+      --primary: #64b5ff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35), 0 4px 10px rgba(0,0,0,0.25);
+      --tag-bg: #1b1c23;
+      --tag-text: #e9e9ee;
+      --hover: #14151c;
     }
     html, body { height: 100%; }
     body {
@@ -42,12 +69,12 @@
     .question h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; letter-spacing: .2px; }
     .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
-    .tag { background: #f2f2f7; border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 11px; color: #1d1d1f; }
+    .tag { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 11px; color: var(--tag-text); }
 
     ul.choices { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
     .choice { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; transition: border-color .2s, background .2s; }
     .choice input { accent-color: var(--primary); }
-    .choice:hover { border-color: #d0d0d7; background: #fafafa; }
+    .choice:hover { border-color: #d0d0d7; background: var(--hover); }
 
     .actions { padding: 16px 22px 22px; display: flex; gap: 8px; }
     button.primary { background: var(--text); color: white; border: none; padding: 10px 14px; border-radius: 12px; font-weight: 600; letter-spacing: .2px; cursor: pointer; }
@@ -58,7 +85,7 @@
     .metric { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
     .metric .label { color: var(--muted); font-size: 12px; }
     .metric .value { font-weight: 700; font-size: 20px; }
-    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #f2f2f7; color: #1d1d1f; font-size: 11px; }
+    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-text); font-size: 11px; }
     .source { color: var(--muted); font-size: 11px; margin-top: 10px; word-break: break-all; }
 
     /* Outcome panel: constrain height and add a subtle scrollbar */
@@ -71,6 +98,30 @@
     #outcomeBox::-webkit-scrollbar-thumb { background: #d9d9de; border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
     #outcomeBox:hover::-webkit-scrollbar-thumb { background: #c3c3c9; }
 
+    /* Floating theme toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 14px;
+      right: 14px;
+      z-index: 10000;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 10px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .theme-toggle:focus { outline: 2px solid var(--primary); outline-offset: 2px; }
+    @media (max-width: 480px) {
+      .theme-toggle { padding: 8px; gap: 6px; }
+      .theme-toggle .label { display: none; }
+    }
+
     @media (max-width: 920px) {
       .grid { grid-template-columns: 1fr; }
       .sidebar { position: static; }
@@ -82,8 +133,8 @@
     .modal.show { display: block; }
     .modal .backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.45); }
     .modal .dialog { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-      width: min(92vw, 560px); max-height: 80vh; background: #fff; color: #111; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
-      display: flex; flex-direction: column; overflow: hidden; border: 1px solid #e5e5ea; }
+      width: min(92vw, 560px); max-height: 80vh; background: var(--card); color: var(--text); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border); }
     .modal .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #f0f0f3; }
     .modal .head .title { font-weight: 700; }
     .modal .close { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; padding: 6px 10px; cursor: pointer; }
@@ -101,6 +152,10 @@
   </style>
 </head>
 <body>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+    <span class="icon" aria-hidden="true">🌙</span>
+    <span class="label">Dark</span>
+  </button>
   <div class="wrap">
     <header>
       <h1>MCQ Quiz</h1>
@@ -168,6 +223,37 @@
   </div>
 
   <script>
+    // Theme toggle behavior
+    (function(){
+      const btn = document.getElementById('themeToggle');
+      if (btn) {
+        const root = document.documentElement;
+        const current = () => (root.getAttribute('data-theme') === 'dark') ? 'dark' : 'light';
+        const updateButton = (theme) => {
+          const icon = btn.querySelector('.icon');
+          const label = btn.querySelector('.label');
+          if (theme === 'dark') {
+            if (icon) icon.textContent = '☀️';
+            if (label) label.textContent = 'Light';
+            btn.setAttribute('aria-label', 'Switch to light mode');
+            btn.title = 'Switch to light mode';
+          } else {
+            if (icon) icon.textContent = '🌙';
+            if (label) label.textContent = 'Dark';
+            btn.setAttribute('aria-label', 'Switch to dark mode');
+            btn.title = 'Switch to dark mode';
+          }
+        };
+        const setTheme = (theme) => {
+          root.setAttribute('data-theme', theme);
+          try { localStorage.setItem('theme', theme); } catch(_) {}
+          updateButton(theme);
+        };
+        updateButton(current());
+        btn.addEventListener('click', () => setTheme(current()==='dark' ? 'light' : 'dark'));
+      }
+    })();
+
     // Per-question outcome panel
     (function(){
       const outcomeStatus = document.getElementById('outcomeStatus');
