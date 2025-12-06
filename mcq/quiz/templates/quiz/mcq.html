@@ -8,6 +8,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <script>
+    // Helper to typeset MathJax in dynamic regions
+    function __typesetMath(el){
+      try {
+        if (window.MathJax && MathJax.typesetPromise) {
+          return MathJax.typesetPromise(el ? [el] : undefined).catch(function(){});
+        }
+      } catch(_) {}
+      return Promise.resolve();
+    }
+    // MathJax configuration for LaTeX rendering
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process'
+      },
+      svg: { fontCache: 'global' },
+      startup: { typeset: true }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script>
     // Apply saved or system theme early to avoid flash
     (function(){
       try {
@@ -272,6 +300,7 @@
         outcomePill.style.color = ok ? '#106a36' : '#8a1f1f';
         outcomeBody.style.color = ok ? '#1d1d1f' : '#1d1d1f';
         outcomeBody.innerHTML = body;
+        __typesetMath(outcomeBody);
         // Render attributes
         if (meta) {
           let html = '<div style="display:grid;gap:6px">';
@@ -404,6 +433,7 @@
         const modal = ensurePopup();
         const body = modal.querySelector('#explainBody');
         body.innerHTML = html;
+        __typesetMath(body);
         modal.classList.add('show');
         // Lock background scroll without losing position
         // Capture current scroll position
