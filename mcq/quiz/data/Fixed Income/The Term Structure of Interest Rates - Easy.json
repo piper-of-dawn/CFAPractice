@@ -1,0 +1,549 @@
+[
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Spot Rate Definition",
+    "stem": "A spot rate is best described as the:",
+    "options": {
+      "A": "Yield-to-maturity on a zero-coupon bond",
+      "B": "Current yield on a coupon-paying bond",
+      "C": "Forward rate starting today"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Defining Spot Rates</h3><p><strong>A is correct.</strong> Starting from the definition of discount rates, a spot rate is the market discount rate for default-risk-free zero-coupon bonds, also called zero rates or strip rates. These rates represent the pure time value of money for a given maturity with no coupon reinvestment risk. The spot curve is built from yields on zero-coupon bonds or derived from recently issued government bonds. By definition, since zero-coupon bonds have no interim cash flows, their yield-to-maturity equals the spot rate for that maturity. The formula is \\( PV = FV/(1+Z_N)^N \\), where \\( Z_N \\) is the spot rate. This fundamental relationship makes spot rates the building blocks for all term structure analysis and ensures no-arbitrage pricing.</p><p>B is incorrect because current yield is simply the annual coupon payment divided by the bond's current price (\\( CY = Annual\\,Coupon/Price \\)), ignoring time value of money and maturity considerations. This is not a spot rate, which specifically applies to zero-coupon bonds and represents the discount rate for a single future cash flow at a specific maturity.</p><p>C is incorrect because forward rates are rates for periods beginning in the future, not today. While a spot rate does start today, it represents immediate investment, whereas forward rates represent future reinvestment rates. The 1-year spot rate could be called the 0y1y forward rate, but this terminology conflates two distinct concepts.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Zero-Coupon Bond Pricing",
+    "stem": "Given a 2-year spot rate of 4%, the price of a 2-year zero-coupon bond with face value of 100 is closest to:",
+    "options": {
+      "A": "92.46",
+      "B": "96.00",
+      "C": "98.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Valuation</h3><p><strong>A is correct.</strong> From the fundamental present value formula, the price of a zero-coupon bond equals the face value discounted at the spot rate for its maturity: \\( PV = FV/(1+Z_N)^N \\). For a 2-year bond with \\( Z_2 = 4\\% \\) and \\( FV = 100 \\), we calculate \\( PV = 100/(1.04)^2 = 100/1.0816 = 92.46 \\). This can be verified mentally: \\( (1.04)^2 \\) is slightly more than 1.08, so the price should be slightly less than 100/1.08 ≈ 92.6. The calculation uses only the maturity-matching spot rate because there are no interim cash flows. This illustrates the no-arbitrage principle: spot rates ensure consistent pricing across maturities without creating profit opportunities.</p><p>B is incorrect because 96.00 would result from using approximately a 2% discount rate for 2 years (\\( 100/(1.02)^2 ≈ 96.12 \\)), which is half the correct 4% rate. This reflects a misconception of using simple rather than compound interest, or dividing the annual rate by the maturity period, neither of which is correct for spot rate discounting.</p><p>C is incorrect because 98.00 results from discounting at approximately 1% annually (\\( 100/(1.01)^2 ≈ 98.03 \\)), which is far too low. This might reflect using a single-period 2% simple discount (\\( 100 × 0.98 \\)) rather than proper compound discounting over two periods at 4% per period.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Spot Curve Terminology",
+    "stem": "An upward-sloping spot curve indicates that:",
+    "options": {
+      "A": "Longer-maturity spot rates exceed shorter-maturity spot rates",
+      "B": "Shorter-maturity spot rates exceed longer-maturity spot rates",
+      "C": "All spot rates are equal across maturities"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Yield Curve Shape</h3><p><strong>A is correct.</strong> Starting from the definition of a curve's slope in coordinate geometry, an upward-sloping curve has increasing y-values as x-values increase. In the spot curve context, the y-axis represents interest rates (spot rates \\( Z_N \\)) and the x-axis represents time-to-maturity (N). Therefore, an upward-sloping spot curve means \\( Z_2 > Z_1 \\), \\( Z_3 > Z_2 \\), etc. This is the normal or typical yield curve shape under standard economic conditions, reflecting expectations of higher rates in the future, inflation risk premiums, or liquidity premiums for bearing longer-maturity risk. The upward slope compensates investors for tying up funds for extended periods and facing greater uncertainty.</p><p>B is incorrect because this describes a downward-sloping or inverted yield curve, where \\( Z_1 > Z_2 > Z_3 \\). An inverted curve is less common and often associated with expectations of economic slowdown, central bank tightening followed by easing, or declining future inflation. It represents the opposite slope from an upward-sloping curve.</p><p>C is incorrect because equal spot rates across all maturities (\\( Z_1 = Z_2 = Z_3 = ... \\)) describe a flat yield curve with zero slope, not an upward-sloping one. A flat curve suggests no term premium and that investors expect stable interest rates, making forward rates equal current spot rates at all horizons.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Coupon Bond Pricing with Spot Rates",
+    "stem": "Given spot rates of 2% (1-year), 3% (2-year), and 4% (3-year), the price of a 3-year bond with 5% annual coupons and face value 100 is closest to:",
+    "options": {
+      "A": "102.78",
+      "B": "100.00",
+      "C": "97.45"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Multi-Period Cash Flow Valuation</h3><p><strong>A is correct.</strong> From the fundamental present value principle, each cash flow must be discounted at the spot rate corresponding to its timing: \\( PV = \\sum PMT_i/(1+Z_i)^i + FV/(1+Z_N)^N \\). Applying: Year 1: \\( 5/1.02 = 4.90 \\); Year 2: \\( 5/(1.03)^2 = 5/1.0609 = 4.71 \\); Year 3: \\( 105/(1.04)^3 = 105/1.1249 = 93.35 \\). Summing: \\( 4.90 + 4.71 + 93.35 = 102.96 \\), closest to 102.78. The bond trades at a premium because the 5% coupon exceeds all spot rates (2%, 3%, 4%), providing excess cash flows. This no-arbitrage pricing prevents profitable arbitrage: you cannot replicate this bond more cheaply using zero-coupon bonds.</p><p>B is incorrect because 100.00 (par) would only occur if the coupon rate equaled the yield-to-maturity, which would require the weighted average discount effect of the spot rates to equal 5%. Since all given spot rates (2%, 3%, 4%) are below the 5% coupon, the bond must trade at a premium above par to compensate for the superior cash flows.</p><p>C is incorrect because 97.45 represents a discount price, which occurs only when discount rates exceed the coupon rate. Since all spot rates (2-4%) are below the 5% coupon, the bond must trade above par. A discount price would require spot rates substantially above 5%, creating deficient coupons relative to market requirements.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Par Rate Definition",
+    "stem": "A par rate is best defined as the coupon rate that:",
+    "options": {
+      "A": "Makes a bond's price equal to its par value",
+      "B": "Equals the longest-maturity spot rate",
+      "C": "Represents the average of all spot rates"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Par Rate Concept</h3><p><strong>A is correct.</strong> Starting from bond pricing fundamentals, a bond is priced at par (PV = 100) when the present value of all cash flows discounted at spot rates equals the face value. The par rate is the coupon rate (and yield-to-maturity) that satisfies: \\( 100 = \\sum_{i=1}^{N} c/(1+Z_i)^i + 100/(1+Z_N)^N \\), where c is the par coupon. Solving for c yields the par rate. This represents the coupon required for a new bond issuance to trade exactly at par given the current spot curve. Par rates are fundamental to constructing benchmark yield curves because they eliminate price distortions from premium/discount bonds. Government bond par curves are key references for pricing corporate and other bonds.</p><p>B is incorrect because the par rate is not simply the longest-maturity spot rate \\( Z_N \\). While related, the par rate incorporates all spot rates up to maturity through the present value formula, creating a weighted calculation. Only when the spot curve is perfectly flat does the par rate equal the spot rate at all maturities.</p><p>C is incorrect because par rates are not arithmetic averages of spot rates. They are derived from solving the bond pricing equation where PV = par, incorporating present value mechanics with proper compounding and time-weighting. Simple averaging would ignore the exponential discounting and unequal contributions of different maturity cash flows to total price.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Par Rate Calculation",
+    "stem": "Given 1-year and 2-year spot rates of 2% and 4% respectively, the 2-year par rate is closest to:",
+    "options": {
+      "A": "3.00%",
+      "B": "3.96%",
+      "C": "4.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Par Rate Computation</h3><p><strong>B is correct.</strong> From the par rate formula \\( 100 = c/1.02 + (c+100)/(1.04)^2 \\), we solve for the par coupon c. Calculate: \\( 100/(1.04)^2 = 100/1.0816 = 92.46 \\). Thus \\( 100 - 92.46 = 7.54 = c(1/1.02 + 1/1.0816) = c(0.9804 + 0.9246) = c(1.905) \\). Solving: \\( c = 7.54/1.905 = 3.96\\% \\). The par rate is below the 4% 2-year spot rate because the lower 2% 1-year rate reduces the required coupon. Intuitively, receiving one coupon discounted at only 2% instead of 4% means less total coupon is needed to reach par value. This demonstrates how par rates reflect the entire spot curve structure, not just the final maturity.</p><p>A is incorrect because 3.00% is the simple arithmetic average of 2% and 4%, which ignores present value mechanics. Par rates are not simple averages but solutions to the bond pricing equation at par. Using 3% would yield \\( PV = 3/1.02 + 103/(1.04)^2 = 2.94 + 95.33 = 98.27 \\), well below par, proving this is not the correct par rate.</p><p>C is incorrect because 4.00% would be the par rate only if both spot rates equaled 4%. Since \\( Z_1 = 2\\% < 4\\% \\), the par rate must be below 4%. Using 4% yields \\( PV = 4/1.02 + 104/(1.04)^2 = 3.92 + 96.38 = 100.30 \\), slightly above par, confirming the par rate is slightly below 4%.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Forward Rate Definition",
+    "stem": "An implied forward rate is best described as a:",
+    "options": {
+      "A": "Breakeven reinvestment rate linking two spot rates",
+      "B": "Historical interest rate from a prior period",
+      "C": "Current spot rate adjusted for inflation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Forward Rate Concept</h3><p><strong>A is correct.</strong> Starting from the no-arbitrage principle, an investor must be indifferent between two strategies: (1) investing for B periods at spot rate \\( Z_B \\), or (2) investing for A periods at \\( Z_A \\) then reinvesting for (B-A) periods at the forward rate \\( IFR_{A,B} \\). Equilibrium requires: \\( (1+Z_A)^A \\times (1+IFR_{A,B})^{B-A} = (1+Z_B)^B \\). Solving for \\( IFR_{A,B} \\) gives the breakeven reinvestment rate. If the realized future rate exceeds this forward rate, the roll-over strategy outperforms; if below, buy-and-hold wins. Forward rates thus represent market expectations embedded in the current spot curve and prevent arbitrage opportunities between different maturity strategies.</p><p>B is incorrect because forward rates are derived from current spot rates and represent future expected rates, not historical realized rates. While ex-post realized rates can be compared to previously implied forward rates to assess forecast accuracy (testing the expectations hypothesis), forward rates themselves are forward-looking constructs calculated from today's term structure, not backward-looking historical data.</p><p>C is incorrect because spot rates already incorporate inflation expectations through the Fisher equation relationship, and forward rates are derived from spot rates, not by adjusting them further. Forward rates represent future real plus inflation expectations for specific future periods, but they are not calculated by applying an inflation adjustment to current spot rates.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Forward Rate Calculation",
+    "stem": "Given a 1-year spot rate of 2% and a 2-year spot rate of 4%, the 1-year forward rate starting in 1 year (1y1y) is closest to:",
+    "options": {
+      "A": "3.00%",
+      "B": "6.00%",
+      "C": "6.04%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Forward Rate Derivation</h3><p><strong>C is correct.</strong> From the no-arbitrage relationship \\( (1+Z_A)^A \\times (1+IFR_{A,B})^{B-A} = (1+Z_B)^B \\), we solve for the forward rate. Here, A=1, B=2, \\( Z_1 = 2\\% \\), \\( Z_2 = 4\\% \\). Substituting: \\( (1.02)^1 \\times (1+IFR_{1,1})^1 = (1.04)^2 \\). Calculate: \\( (1.04)^2 = 1.0816 \\), so \\( 1.02 \\times (1+IFR_{1,1}) = 1.0816 \\). Solving: \\( 1+IFR_{1,1} = 1.0816/1.02 = 1.0604 \\), thus \\( IFR_{1,1} = 6.04\\% \\). This high forward rate reflects the steep upward slope from 2% to 4%: the implied year-2 rate must be much higher to compensate for the low year-1 rate. This demonstrates how forward rates amplify yield curve slopes and extract marginal rates.</p><p>B is incorrect because 6.00% results from computational rounding errors or approximation. The precise calculation yields 6.04%. More importantly, using exactly 6.00% fails to satisfy the no-arbitrage condition: \\( 1.02 \\times 1.06 = 1.0812 \\neq (1.04)^2 = 1.0816 \\). This small difference would create arbitrage opportunities in frictionless markets.</p><p>A is incorrect because 3.00% is the simple arithmetic average of 2% and 4%, which ignores compounding mechanics. Forward rates are not linear averages but geometric relationships derived from compound interest. Using 3% violates no-arbitrage: \\( 1.02 \\times 1.03 = 1.0506 \\) versus \\( (1.04)^2 = 1.0816 \\), a massive discrepancy that would permit riskless profits through maturity arbitrage strategies.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Forward Rates and Curve Slope",
+    "stem": "If the spot curve is upward sloping, implied forward rates will most likely be:",
+    "options": {
+      "A": "Lower than corresponding spot rates",
+      "B": "Equal to corresponding spot rates",
+      "C": "Higher than corresponding spot rates"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Yield Curve Relationships</h3><p><strong>C is correct.</strong> From the forward rate formula \\( IFR_{A,B} = [(1+Z_B)^B / (1+Z_A)^A]^{1/(B-A)} - 1 \\), when \\( Z_B > Z_A \\) (upward slope), the numerator compounds a higher rate over more periods than the denominator, creating a ratio > (1+Z_B), thus \\( IFR_{A,B} > Z_B > Z_A \\). Intuitively, forward rates represent the marginal or incremental rate for extending maturity one more period. In an upward-sloping curve, this marginal rate exceeds the average (spot rate). For example, if \\( Z_1=2\\% \\) and \\( Z_2=4\\% \\), the 1y1y forward is 6.04%, well above both spot rates. This fundamental relationship explains why forward curves lie above upward-sloping spot curves and reflects rising future rate expectations.</p><p>A is incorrect because forward rates below spot rates characterize downward-sloping (inverted) yield curves where \\( Z_B < Z_A \\). In that scenario, extending maturity lowers expected return, so the marginal rate (forward) falls below the average (spot). For instance, if \\( Z_1=4\\% \\) and \\( Z_2=2\\% \\), the forward rate would be approximately 0%, below both spot rates.</p><p>B is incorrect because forward rates equal spot rates only when the spot curve is perfectly flat (\\( Z_A = Z_B \\) for all maturities). In this special case, \\( IFR_{A,B} = Z_A = Z_B \\), meaning no term premium exists and rates are expected to remain constant. This contradicts the premise of an upward-sloping curve.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Spot Rate from Zero-Coupon Price",
+    "stem": "A 3-year zero-coupon bond is priced at 90 per 100 face value. The 3-year spot rate is closest to:",
+    "options": {
+      "A": "3.33%",
+      "B": "3.57%",
+      "C": "10.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Extracting Spot Rates</h3><p><strong>B is correct.</strong> From the zero-coupon bond pricing formula \\( PV = FV/(1+Z_N)^N \\), we solve for the spot rate: \\( Z_N = (FV/PV)^{1/N} - 1 \\). Substituting \\( FV=100, PV=90, N=3 \\): \\( Z_3 = (100/90)^{1/3} - 1 = (1.1111)^{0.3333} - 1 \\). Mental calculation: \\( 1.11^{1/3} \\approx 1.0357 \\), so \\( Z_3 \\approx 3.57\\% \\). Verification: \\( 90 \\times (1.0357)^3 \\approx 90 \\times 1.111 \\approx 100 \\). This demonstrates how spot rates are observable directly from zero-coupon bond prices, making them fundamental building blocks. The discount of 10 over 3 years translates to approximately 3.57% annual compounding, accounting for the geometric nature of compound interest.</p><p>A is incorrect because 3.33% results from using simple interest rather than compound interest: \\( (100-90)/(3 \\times 90) = 10/270 = 3.70\\% \\) or \\( 10/(3 \\times 100) = 3.33\\% \\). Both approaches ignore compounding over multiple periods. Using 3.33% yields \\( 90 \\times (1.0333)^3 \\approx 99.1 \\), below the 100 face value, proving this rate is too low.</p><p>C is incorrect because 10.00% confuses the total percentage discount (10%) with the annualized spot rate. The bond is priced at 90% of par, representing a 10% total discount, but this must be annualized over 3 years with compounding. Using 10% yields \\( 90 \\times (1.10)^3 = 90 \\times 1.331 = 119.8 \\), far exceeding par, showing this rate is grossly too high.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "Two-Period Spot Rates",
+    "stem": "If a 1-year zero-coupon bond trades at 98 and a 2-year zero-coupon bond trades at 94, the 2-year spot rate is closest to:",
+    "options": {
+      "A": "2.04%",
+      "B": "3.00%",
+      "C": "3.19%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Multi-Period Spot Rate</h3><p><strong>C is correct.</strong> Using the formula \\( Z_N = (FV/PV)^{1/N} - 1 \\) with \\( PV=94, FV=100, N=2 \\): \\( Z_2 = (100/94)^{1/2} - 1 = (1.0638)^{0.5} - 1 \\). Mental calculation: \\( \\sqrt{1.064} \\approx 1.0319 \\), so \\( Z_2 \\approx 3.19\\% \\). Verification: \\( 94 \\times (1.0319)^2 \\approx 94 \\times 1.0648 \\approx 100.09 \\approx 100 \\). Note the 1-year bond price of 98 is given but not needed for this calculation—each zero-coupon bond's spot rate depends only on its own price and maturity. This illustrates that spot rates at different maturities are independent observations from the term structure, though they collectively form the spot curve.</p><p>B is incorrect because 3.00% is an approximation using simple interest: \\( (100-94)/(2 \\times 94) = 6/188 \\approx 3.19\\% \\) or \\( 6/(2 \\times 100) = 3.00\\% \\). The latter uses the face value as the base, which understates the true yield. Using 3.00% yields \\( 94 \\times (1.03)^2 = 94 \\times 1.0609 \\approx 99.7 \\), slightly below par, indicating the rate is too low.</p><p>A is incorrect because 2.04% appears to be the 1-year spot rate derived from the 1-year bond (\\( (100/98)^{1/1} - 1 \\approx 2.04\\% \\)), not the 2-year rate. This confuses different maturities. Using 2.04% for the 2-year bond yields \\( 94 \\times (1.0204)^2 \\approx 94 \\times 1.0412 \\approx 97.9 \\), well below par, proving this is the wrong maturity rate.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Simple Forward Rate",
+    "stem": "Given a 1-year spot rate of 3% and a 2-year spot rate of 5%, the 1-year forward rate one year from now (1y1y) is closest to:",
+    "options": {
+      "A": "4.00%",
+      "B": "5.00%",
+      "C": "7.04%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Forward Rate Mechanics</h3><p><strong>C is correct.</strong> Using \\( (1+Z_1)^1 \\times (1+IFR_{1,1})^1 = (1+Z_2)^2 \\), we solve: \\( 1.03 \\times (1+IFR_{1,1}) = (1.05)^2 = 1.1025 \\). Thus \\( 1+IFR_{1,1} = 1.1025/1.03 = 1.0704 \\), yielding \\( IFR_{1,1} = 7.04\\% \\). Mental check: The spot rate rises from 3% to 5% (200 bp increase), so the forward rate must significantly exceed 5% to create this upward slope. The 7.04% forward rate means an investor locking in 5% for 2 years achieves the same result as earning 3% in year 1 and 7.04% in year 2, demonstrating the breakeven concept. This large forward rate amplifies the curve's slope and extracts the marginal year-2 rate.</p><p>B is incorrect because 5.00% is simply the 2-year spot rate, not the forward rate. The forward rate must exceed the longer spot rate when the curve slopes upward. Using 5% would imply \\( 1.03 \\times 1.05 = 1.0815 \\), but \\( (1.05)^2 = 1.1025 \\), showing 5% is too low and violates the no-arbitrage condition by a significant margin.</p><p>A is incorrect because 4.00% is the simple average of 3% and 5%, ignoring compound interest. Forward rates are geometric, not arithmetic. Using 4% yields \\( 1.03 \\times 1.04 = 1.0712 \\), versus the required \\( (1.05)^2 = 1.1025 \\). This massive gap (1.0712 vs 1.1025) would create substantial arbitrage profits, demonstrating that averaging fails to capture compounding dynamics.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Flat Yield Curve Forward",
+    "stem": "If all spot rates equal 5% regardless of maturity, all implied forward rates will be:",
+    "options": {
+      "A": "Less than 5%",
+      "B": "Equal to 5%",
+      "C": "Greater than 5%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Flat Curve Properties</h3><p><strong>B is correct.</strong> When the spot curve is flat at rate r (\\( Z_A = Z_B = r \\) for all maturities), the forward rate formula becomes \\( (1+r)^A \\times (1+IFR_{A,B})^{B-A} = (1+r)^B \\). Simplifying: \\( (1+IFR_{A,B})^{B-A} = (1+r)^{B-A} \\), therefore \\( IFR_{A,B} = r = 5\\% \\). Intuitively, a flat curve means no term premium and no expectations of rate changes—investors are indifferent between all maturity strategies. The breakeven reinvestment rate must equal the current rate. This is the only curve shape where spot rates, par rates, and forward rates are all identical at every maturity. It represents pure time value of money without risk or expectation premiums, a theoretical benchmark rarely observed in practice.</p><p>A is incorrect because forward rates below the flat spot rate would imply a downward-sloping curve where longer spot rates decrease. But we're told all spot rates equal 5%, which is definitionally flat. If forwards were below 5%, then extending maturity would lower returns, contradicting the flat curve premise where all returns are identical regardless of investment horizon.</p><p>C is incorrect because forward rates above 5% would imply an upward-sloping curve where longer spot rates exceed shorter ones. The forward rate represents the marginal rate for extending maturity; if it exceeded 5%, the spot curve would slope upward, not remain flat at 5%. This would violate the stated condition of constant 5% spot rates across all maturities.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Par vs Spot Relationship",
+    "stem": "In an upward-sloping yield curve environment, the par rate will most likely be:",
+    "options": {
+      "A": "Lower than the corresponding spot rate at the same maturity",
+      "B": "Equal to the corresponding spot rate at the same maturity",
+      "C": "Higher than the corresponding spot rate at the same maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Par-Spot Relationship</h3><p><strong>A is correct.</strong> In an upward-sloping curve, earlier spot rates are lower than later ones (\\( Z_1 < Z_2 < Z_3 \\)). The par rate is calculated such that \\( 100 = \\sum c/(1+Z_i)^i + 100/(1+Z_N)^N \\). Since early coupons are discounted at lower rates than the final spot rate \\( Z_N \\), they contribute more present value per unit of coupon. Therefore, the par coupon c can be less than \\( Z_N \\) and still achieve par pricing. For example, with \\( Z_1=2\\%, Z_2=4\\% \\), the 2-year par rate is approximately 3.96%, below the 4% spot rate. This relationship is fundamental: in upward-sloping curves, Par < Spot < Forward at each maturity, reflecting the averaging effect of par rates versus marginal (forward) and terminal (spot) rates.</p><p>B is incorrect because par rates equal spot rates only when the curve is flat. In that special case, all discounting occurs at the same rate, so the par coupon exactly equals the constant spot rate. With an upward slope, the differential discounting of early versus late cash flows breaks this equality, making the par rate a weighted average below the terminal spot rate.</p><p>C is incorrect because par rates above spot rates characterize downward-sloping (inverted) curves where \\( Z_1 > Z_N \\). Early coupons discounted at high rates contribute less PV, requiring higher par coupons to reach par pricing. The upward-sloping premise guarantees the reverse: par rates fall below spot rates as early low-rate discounting boosts coupon PV contributions.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Bond Price with Two Spot Rates",
+    "stem": "Given 1-year and 2-year spot rates of 4% and 5%, a 2-year bond with 6% annual coupons will trade at approximately:",
+    "options": {
+      "A": "Par",
+      "B": "A premium",
+      "C": "A discount"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Premium/Discount Determination</h3><p><strong>B is correct.</strong> Price equals \\( PV = 6/1.04 + 106/(1.05)^2 = 5.77 + 96.15 = 101.92 \\), which exceeds 100 (par). The bond trades at a premium because the 6% coupon exceeds both relevant spot rates (4% and 5%). From first principles, when cash flows exceed what the market requires (spot rates), investors pay a premium to obtain those superior flows. The premium of 1.92 represents the excess present value of receiving 6% coupons when the market only requires 4-5% returns. This no-arbitrage pricing ensures investors cannot construct a cheaper synthetic equivalent using zero-coupon bonds, maintaining market efficiency.</p><p>A is incorrect because par pricing (PV = 100) occurs when the coupon rate equals the yield-to-maturity, which would require the weighted average discount rate to equal 6%. Since both spot rates (4%, 5%) are substantially below 6%, the bond must trade above par. The par rate for this spot curve would be approximately 4.98%, well below the 6% coupon, confirming premium pricing.</p><p>C is incorrect because discount pricing (PV < 100) requires the coupon to fall below the discount rates. Here, the 6% coupon exceeds both the 4% and 5% spot rates, creating excess cash flows that command a premium. Discount pricing would require spot rates above 6%, making the bond's coupons deficient relative to market requirements, which contradicts the given rates.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Spot Curve Construction",
+    "stem": "The ideal dataset for constructing a government bond spot curve consists of:",
+    "options": {
+      "A": "Zero-coupon bonds across various maturities",
+      "B": "High-coupon bonds priced at a premium",
+      "C": "Corporate bonds with similar ratings"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Spot Curve Data Requirements</h3><p><strong>A is correct.</strong> From the definition of spot rates as yields on zero-coupon bonds, the ideal dataset is yields-to-maturity on default-risk-free zero-coupon government bonds across a full range of maturities. Zero-coupon bonds eliminate coupon reinvestment risk and provide pure single-period rates. The formula \\( Z_N = (FV/PV)^{1/N} - 1 \\) directly extracts the spot rate from each bond's price without requiring bootstrapping or matrix pricing. These bonds satisfy the \"other things equal\" requirement: same currency, credit risk, liquidity, and tax status, differing only in maturity. This ensures the spot curve isolates the pure term structure effect without confounding factors. In practice, government zero-coupon bonds (strips) serve this purpose, though their limited availability often necessitates deriving spot curves from coupon bonds using bootstrapping.</p><p>B is incorrect because high-coupon premium bonds introduce coupon reinvestment risk and tax complexities that obscure pure spot rates. Premium pricing also indicates the bonds were issued when rates were lower, making them less liquid and potentially creating tax differentials between capital losses and interest income in some jurisdictions. These factors violate the \"other things equal\" assumption necessary for term structure isolation.</p><p>C is incorrect because corporate bonds contain credit risk premiums that vary by issuer, maturity, and market conditions, contaminating the term structure signal. The government bond spot curve represents default-risk-free rates, the fundamental benchmark. Corporate bonds require credit spreads added to government spot rates, making them inappropriate for constructing the base spot curve used in all fixed-income valuation.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Forward Rate Interpretation",
+    "stem": "A 2-year forward rate starting in 1 year (1y2y) of 6% can be interpreted as the rate that makes an investor indifferent between:",
+    "options": {
+      "A": "Investing for 3 years versus investing for 1 year then reinvesting for 2 years",
+      "B": "Investing for 2 years versus investing for 1 year then reinvesting for 1 year",
+      "C": "Investing for 1 year versus investing for 2 years"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Forward Rate Breakeven</h3><p><strong>A is correct.</strong> The forward rate notation 1y2y means a 2-year rate beginning 1 year from now, ending 3 years from now (1+2=3). From the no-arbitrage relationship \\( (1+Z_1)^1 \\times (1+IFR_{1,2})^2 = (1+Z_3)^3 \\), the forward rate makes the terminal wealth equal whether investing for 3 years at \\( Z_3 \\) or for 1 year at \\( Z_1 \\) then reinvesting for 2 years at \\( IFR_{1,2} = 6\\% \\). This is the breakeven reinvestment rate—if the realized 1-year rate in year 2-3 averages 6%, both strategies yield identical returns. If realized rates exceed 6%, the roll-over strategy wins; if below, the buy-and-hold strategy is superior. This relationship prevents arbitrage between maturity strategies.</p><p>B is incorrect because this describes the 1y1y forward rate (1-year rate beginning in 1 year), which ends at year 2, not year 3. The 1y1y forward creates indifference between investing for 2 years versus 1 year + 1 year reinvestment. The question specifies a 1y2y forward, which is a 2-year reinvestment period starting in year 1, totaling 3 years, not 2.</p><p>C is incorrect because this describes a simple spot rate comparison between \\( Z_1 \\) and \\( Z_2 \\), not a forward rate. No reinvestment is involved—it's simply choosing between two buy-and-hold strategies of different maturities. Forward rates specifically address the reinvestment decision after an initial investment period, which this option does not capture.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Spot Rate Bootstrap",
+    "stem": "If a 1-year zero-coupon bond trades at 96, the 1-year spot rate is closest to:",
+    "options": {
+      "A": "4.00%",
+      "B": "4.17%",
+      "C": "96.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Single-Period Spot Rate</h3><p><strong>B is correct.</strong> Using \\( Z_N = (FV/PV)^{1/N} - 1 \\) with \\( PV=96, FV=100, N=1 \\): \\( Z_1 = (100/96)^1 - 1 = 1.0417 - 1 = 0.0417 = 4.17\\% \\). Mental calculation: \\( 100/96 = 1.0417 \\), so the return is 4.17%. Verification: \\( 96 \\times 1.0417 = 100 \\). This demonstrates the fundamental relationship between price and yield for zero-coupon bonds. The bond trades at 96 (a 4-point discount from par), which over 1 year translates to a 4.17% return on the 96 investment. For single-period instruments, the spot rate formula simplifies to the basic return calculation: (FV - PV)/PV = (100-96)/96 = 4/96 = 4.17%, eliminating the need for exponents.</p><p>A is incorrect because 4.00% results from using the face value as the denominator: (100-96)/100 = 4%. This calculates the discount as a percentage of face value rather than the invested amount (price), understating the true yield. Using 4% yields \\( 96 \\times 1.04 = 99.84 \\), below the 100 face value, proving this rate is too low to explain the pricing.</p><p>C is incorrect because 96.00% confuses the price (96) with the spot rate, representing a fundamental misunderstanding. Spot rates are percentage yields, not prices. A 96% spot rate would imply \\( PV = 100/1.96 = 51.02 \\), meaning the bond would trade around 51, not 96, showing this confuses two entirely different concepts.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "No-Arbitrage Pricing",
+    "stem": "Pricing bonds using spot rates establishes no-arbitrage prices because:",
+    "options": {
+      "A": "The bond cannot be replicated more cheaply using zero-coupon bonds",
+      "B": "All bonds must trade at par value",
+      "C": "Forward rates are guaranteed to be realized"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage Principle</h3><p><strong>A is correct.</strong> Starting from the law of one price, assets with identical cash flows must have identical prices, or arbitrage opportunities exist. A coupon bond can be replicated by purchasing zero-coupon bonds matching each cash flow. If the coupon bond price differs from the cost of this replicating portfolio, arbitrageurs can buy the cheaper and sell the more expensive, earning riskless profit. Pricing using spot rates ensures \\( PV_{bond} = \\sum PMT_i/(1+Z_i)^i = \\sum PV_{zero,i} \\), where each term equals the price of a zero-coupon bond. This equality prevents replication arbitrage. Any deviation would be immediately exploited in efficient markets, driving prices back to the no-arbitrage relationship. This is why spot rates are fundamental to all fixed-income valuation.</p><p>B is incorrect because no-arbitrage pricing does not require bonds to trade at par. Bonds can trade at premium, par, or discount depending on the relationship between coupon rates and spot rates, all while satisfying no-arbitrage conditions. Par pricing is a special case when the coupon equals the par rate, not a general requirement for arbitrage-free markets.</p><p>C is incorrect because forward rates represent breakeven expectations, not guaranteed realized rates. Forward rates are derived from current spot rates and can differ from subsequently realized rates. No-arbitrage applies to current pricing relationships, not future rate realizations. Realized rates may exceed or fall short of forward rates, but this doesn't create arbitrage opportunities at the time of pricing using current spot rates.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Inverted Curve Forward Rates",
+    "stem": "In a downward-sloping (inverted) yield curve, forward rates will most likely be:",
+    "options": {
+      "A": "Lower than spot rates",
+      "B": "Equal to spot rates",
+      "C": "Higher than spot rates"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Inverted Curve Dynamics</h3><p><strong>A is correct.</strong> In a downward-sloping curve, \\( Z_A > Z_B \\) for \\( A < B \\). From \\( IFR_{A,B} = [(1+Z_B)^B / (1+Z_A)^A]^{1/(B-A)} - 1 \\), when \\( Z_B < Z_A \\), the numerator compounds a lower rate, making the ratio < (1+Z_A), thus \\( IFR_{A,B} < Z_A \\). For example, if \\( Z_1=6\\% \\) and \\( Z_2=4\\% \\), then \\( 1.06 \\times (1+IFR_{1,1}) = (1.04)^2 = 1.0816 \\), yielding \\( IFR_{1,1} = 1.0816/1.06 - 1 = 2.04\\% \\), well below both spot rates. Intuitively, the forward rate is the marginal rate for extending maturity; in an inverted curve, this marginal rate must be very low (or even negative) to drag down the average from the high short rate to the low long rate. This relationship often signals expectations of economic slowdown or central bank easing.</p><p>B is incorrect because forward rates equal spot rates only when the curve is flat (\\( Z_A = Z_B \\) at all maturities). An inverted curve, by definition, has different spot rates at different maturities, breaking the equality between spot and forward rates. The marginal (forward) rate must differ from the average (spot) rate when the curve has slope.</p><p>C is incorrect because forward rates higher than spot rates characterize upward-sloping curves, not inverted ones. In an upward curve, the marginal rate for extending maturity exceeds the average, pulling spot rates higher. An inverted curve represents the opposite: declining rates where forwards fall below spots, reflecting expectations of future rate decreases or economic contraction that reverses the normal upward-sloping relationship.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "Term Structure Application",
+    "stem": "The primary advantage of using spot rates rather than a single yield-to-maturity for bond pricing is that spot rates:",
+    "options": {
+      "A": "Eliminate the assumption of constant reinvestment rates across all cash flows",
+      "B": "Always result in higher bond prices",
+      "C": "Require less calculation than yield-to-maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Spot Rate Advantages</h3><p><strong>A is correct.</strong> When pricing using a single YTM, the implicit assumption is that all cash flows are discounted at the same rate (\\( PV = \\sum PMT/(1+r)^i \\)), regardless of timing. This assumes the term structure is flat and that reinvestment opportunities are constant. Spot rate pricing recognizes that rates vary by maturity (\\( PV = \\sum PMT/(1+Z_i)^i \\)), using the appropriate rate for each cash flow's timing. This eliminates the unrealistic constant-reinvestment assumption embedded in YTM. For example, in an upward-sloping curve, early cash flows should be discounted at lower rates and later flows at higher rates, which spot rates capture but YTM does not. Spot rate pricing thus provides more accurate, no-arbitrage valuations that reflect actual market term structure, especially important when the curve is not flat. YTM remains useful as a summary statistic but is inferior for precise valuation.</p><p>B is incorrect because spot rates do not systematically result in higher prices than YTM. The price relationship depends on curve shape: in upward-sloping curves, spot rate pricing often yields lower prices for premium bonds and higher prices for discount bonds compared to using a single YTM. The advantage is accuracy and no-arbitrage consistency, not directional price bias. Both methods can produce identical prices if YTM happens to equal the par rate.</p><p>C is incorrect because spot rate pricing requires more calculation, not less. You must apply different discount rates (\\( Z_1, Z_2, ... Z_N \\)) to each cash flow rather than a single YTM (r). The computational burden increases with the number of cash flows. However, this additional complexity is worthwhile because it produces arbitrage-free prices reflecting actual market conditions rather than the simplification of assuming a flat term structure implicit in single-YTM pricing.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Spot Rate Definition",
+    "stem": "A spot rate is best described as the discount rate applicable to:",
+    "options": {
+      "A": "A single cash flow to be received in the future.",
+      "B": "A series of equal coupon payments.",
+      "C": "The yield-to-maturity of a coupon-paying bond."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Spot Rates</h3><p><strong>A is correct.</strong> A spot rate (or zero-coupon rate) is the yield on a pure discount bond with a specific maturity. It represents the time value of money for a distinct point in time, free from reinvestment risk associated with intermediate coupons. Therefore, it is the appropriate discount rate for a single, distinct cash flow occurring at that specific maturity.</p><p>B is incorrect: A rate applicable to a series of payments is typically a Yield to Maturity (YTM) or a par rate, which is a weighted average of spot rates.</p><p>C is incorrect: The YTM is a single uniform discount rate that equates the present value of all of a bond's diverse cash flows (coupons and principal) to its price, essentially averaging the term structure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Bond Pricing with Spot Rates",
+    "stem": "A risk-free bond has a single payment of $105 due in one year. If the 1-year spot rate is 5%, the price of the bond is:",
+    "options": {
+      "A": "$100.00",
+      "B": "$105.00",
+      "C": "$99.50"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: PV Calculation</h3><p><strong>A is correct.</strong> The price of a bond is the present value of its future cash flows. Here, there is one cash flow ($105) at time $t=1$. The discount rate is the 1-year spot rate ($5\\%$). The calculation is $PV = \\frac{CF}{(1+r)^t} = \\frac{105}{1.05} = 100$.</p><p>B is incorrect: This ignores the time value of money entirely, assuming the present value equals the future value.</p><p>C is incorrect: This likely results from a estimation error or applying the discount incorrectly (e.g., $105 \\times 0.95$).</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Forward Rate Notation",
+    "stem": "The forward rate notation '2y1y' refers to a rate for a:",
+    "options": {
+      "A": "1-year loan beginning 2 years from today.",
+      "B": "2-year loan beginning 1 year from today.",
+      "C": "1-year loan beginning 1 year from today."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Forward Notation</h3><p><strong>A is correct.</strong> In standard CFA notation (AyBy), 'A' represents the start time of the loan measured from today, and 'B' represents the tenor (length) of the loan. Therefore, '2y1y' indicates a loan that starts in 2 years and lasts for 1 year.</p><p>B is incorrect: This would be denoted as '1y2y' (starts in 1 year, lasts 2 years).</p><p>C is incorrect: This would be denoted as '1y1y' (starts in 1 year, lasts 1 year).</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Spot-Forward Relationship (Calculation)",
+    "stem": "The 1-year spot rate is 4% and the 1-year forward rate one year from now (1y1y) is 6%. The approximate 2-year spot rate is closest to:",
+    "options": {
+      "A": "5%",
+      "B": "10%",
+      "C": "2%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Arithmetic Average Approximation</h3><p><strong>A is correct.</strong> The relationship between spot and forward rates implies that investing for 2 years at the 2-year spot rate should yield roughly the same as investing for 1 year at the 1-year spot rate and rolling it over at the forward rate. The 2-year spot rate is approximately the arithmetic average of the periodic rates: $(4\\% + 6\\%) / 2 = 5\\%$. (The geometric mean would be $\\sqrt{1.04 \\times 1.06} - 1 \\approx 4.995\\%$, extremely close to 5%).</p><p>B is incorrect: This sums the rates ($4+6=10$) without averaging them over the 2-year period.</p><p>C is incorrect: This is a subtraction error or random guess unrelated to the averaging principle.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Zero-Coupon Bond Pricing",
+    "stem": "A zero-coupon bond pays $121 in two years. If the 2-year spot rate is 10%, the current price of the bond is:",
+    "options": {
+      "A": "$110.00",
+      "B": "$100.00",
+      "C": "$105.00"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Discounting</h3><p><strong>B is correct.</strong> The price of a zero-coupon bond is calculated as $Price = \\frac{Face Value}{(1+S_2)^2}$. Substituting the simple numbers: $Price = \\frac{121}{(1.10)^2}$. Since $1.10 \\times 1.10 = 1.21$, the calculation becomes $121 / 1.21 = 100$.</p><p>A is incorrect: This discounts for only one year ($121/1.1 = 110$).</p><p>C is incorrect: This approximates the discount or assumes simple interest subtraction ($121 - 2 \\times 10 = 101$).</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Forward Rate Calculation (Approx)",
+    "stem": "The 1-year spot rate is 3% and the 2-year spot rate is 5%. The implied 1-year forward rate one year from now (1y1y) is closest to:",
+    "options": {
+      "A": "7%",
+      "B": "4%",
+      "C": "2%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Bootstrapping Forwards</h3><p><strong>A is correct.</strong> Using the linear approximation rule (which is sufficient for 'closest to' estimates with low rates): $2 \\times S_2 \\approx S_1 + 1y1y$. Rearranging for the forward rate: $1y1y \\approx (2 \\times 5\\%) - 3\\% = 10\\% - 3\\% = 7\\%$. The investor needs a higher 2nd-year return to justify locking in 5% for two years versus just 3% for the first year.</p><p>B is incorrect: This is the simple average of the two spot rates, not the forward rate.</p><p>C is incorrect: This subtracts the rates ($5-3=2$) without accounting for the fact that the 5% spot rate applies to two years, not one.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Yield Curve Shape",
+    "stem": "If the spot rate curve is upward sloping (normal), which of the following relationships is true?",
+    "options": {
+      "A": "Forward Rate > Spot Rate > Par Rate",
+      "B": "Spot Rate > Forward Rate > Par Rate",
+      "C": "Par Rate > Spot Rate > Forward Rate"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Marginal Rates</h3><p><strong>A is correct.</strong> When the yield curve slopes upward, the marginal cost of borrowing for an additional year (the forward rate) must be higher than the average cost (the spot rate). Think of a GPA: to raise your average (spot) from 3.0 to 3.5, your next semester grade (forward) must be higher than 3.5. Par rates are weighted averages of spot rates, so they lag behind the spot curve. Thus, Forward > Spot > Par.</p><p>B is incorrect: This describes an inverted curve relationship where future rates are dragging the average down.</p><p>C is incorrect: This is the order for an inverted yield curve.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3",
+    "topic": "Par Rate Definition",
+    "stem": "The par rate for a specific maturity is best defined as the:",
+    "options": {
+      "A": "Coupon rate that causes the bond's price to equal its face value.",
+      "B": "Yield to maturity of a zero-coupon bond.",
+      "C": "Forward rate for the final year of the bond's life."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Definition of Par</h3><p><strong>A is correct.</strong> By definition, a 'par bond' is one that trades at 100% of its face value. The par rate is the specific coupon rate required to set the present value of the bond's cash flows (discounted at the respective spot rates) equal to its par value.</p><p>B is incorrect: The YTM of a zero-coupon bond is the spot rate, not the par rate (unless the curve is flat).</p><p>C is incorrect: The forward rate is a component of the spot rate, not the coupon rate that equates price to par.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3",
+    "topic": "Bond Pricing (Sum of PVs)",
+    "stem": "A 2-year bond with a $100 par value pays an annual coupon of $5. The 1-year spot rate is 5% and the 2-year spot rate is 6%. To calculate the price, you sum:",
+    "options": {
+      "A": "PV of $5 at 5% and PV of $105 at 6%.",
+      "B": "PV of $5 at 5% and PV of $105 at 5%.",
+      "C": "PV of $5 at 6% and PV of $105 at 6%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage Valuation</h3><p><strong>A is correct.</strong> Under no-arbitrage valuation, each individual cash flow is viewed as a separate zero-coupon bond and discounted at the spot rate specific to its timing. The Year 1 cash flow ($5) is discounted at $S_1$ (5%). The Year 2 cash flow ($5 coupon + $100 principal = $105) is discounted at $S_2$ (6%).</p><p>B is incorrect: This discounts all flows at $S_1$, ignoring the term structure.</p><p>C is incorrect: This discounts all flows at $S_2$, effectively treating the spot rate as a flat YTM.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini 3",
+    "topic": "No-Arbitrage Principle",
+    "stem": "If a bond is trading at $98 in the market, but its value calculated using spot rates is $99, an arbitrageur would profit by:",
+    "options": {
+      "A": "Buying the bond and stripping it (selling the individual cash flows).",
+      "B": "Selling the bond and buying the individual strips.",
+      "C": "Doing nothing; the difference is transaction costs."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Buy Low, Sell High</h3><p><strong>A is correct.</strong> The 'Law of One Price' states that a bundle of goods (the bond) must sell for the sum of the prices of its parts (the strips valued at spot rates). Here, the bundle is cheap ($98) compared to the sum of the parts ($99). An arbitrageur buys the undervalued asset (the bond at 98) and sells the overvalued components (strips at 99) to lock in a risk-free profit of $1.</p><p>B is incorrect: This would involve selling the cheap asset and buying the expensive one, guaranteeing a loss.</p><p>C is incorrect: While transaction costs exist, in a theoretical context, a price discrepancy implies an arbitrage opportunity.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini 3",
+    "topic": "Discount Factor Calculation",
+    "stem": "If the 1-year spot rate is 25%, the 1-year discount factor is:",
+    "options": {
+      "A": "0.80",
+      "B": "1.25",
+      "C": "0.75"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Discount Factors</h3><p><strong>A is correct.</strong> The discount factor ($DF$) is the present value of $1 to be received in the future. The formula is $DF = \\frac{1}{1+r}$. With $r = 0.25$, $DF = \\frac{1}{1.25}$. Multiplying numerator and denominator by 4 gives $4/5$, which is $0.80$.</p><p>B is incorrect: This is $(1+r)$, the future value factor, not the discount factor.</p><p>C is incorrect: This calculates $1 - r$ ($1 - 0.25$), which is a linear approximation valid only for very small rates, not 25%.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini 3",
+    "topic": "Basic Forward Equation",
+    "stem": "Which equation correctly links the 2-year spot rate ($S_2$), the 1-year spot rate ($S_1$), and the 1-year forward rate one year from now ($1y1y$)?",
+    "options": {
+      "A": "$(1+S_2)^2 = (1+S_1) \\times (1+1y1y)$",
+      "B": "$(1+S_2) = (1+S_1) + (1+1y1y)$",
+      "C": "$2 \\times S_2 = S_1 + 1y1y$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Geometric Compounding</h3><p><strong>A is correct.</strong> The no-arbitrage condition requires that the total return from investing for 2 years (geometric compounding of the 2-year spot rate) must equal the return from investing for 1 year and then reinvesting for a second year (compounding $S_1$ and then the forward rate). Therefore, the compound factors must multiply.</p><p>B is incorrect: Returns compound multiplicatively, not additively (though logs would add).</p><p>C is incorrect: This is a linear approximation, not the exact relationship.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini 3",
+    "topic": "Flat Yield Curve",
+    "stem": "In a flat yield curve environment where all spot rates are 6%, the par rate for a 3-year bond is:",
+    "options": {
+      "A": "6%",
+      "B": "Less than 6%",
+      "C": "More than 6%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Flat Curve Equality</h3><p><strong>A is correct.</strong> If the yield curve is flat, the discount rate for every cash flow is identical (6%). Mathematically, if you discount every coupon and the principal at the same rate $r$, the bond will trade at par only if the coupon rate equals $r$. Thus, Spot Rate = YTM = Par Rate = Forward Rate in a flat environment.</p><p>B is incorrect: Par rates differ from spot rates only when the curve slopes.</p><p>C is incorrect: Same as above; with a constant discount rate, the coupon must match that rate to price at par.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini 3",
+    "topic": "Price to Spot Rate (Mental Math)",
+    "stem": "A zero-coupon bond matures in 1 year and is currently trading at $90 with a face value of $100. The 1-year spot rate is closest to:",
+    "options": {
+      "A": "11.1%",
+      "B": "10.0%",
+      "C": "9.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Yield Calculation</h3><p><strong>A is correct.</strong> The spot rate is the percentage return required to grow the price to the face value. Formula: $r = \\frac{FV}{PV} - 1$. Here, $r = \\frac{100}{90} - 1 = \\frac{10}{90} = \\frac{1}{9}$. Since $1/9$ is approximately $0.1111$, the rate is $11.1\\%$.</p><p>B is incorrect: This calculates yield as a percentage of Face Value (discount yield), i.e., $10/100$.</p><p>C is incorrect: This assumes the $10 discount is the yield directly.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini 3",
+    "topic": "Forward Rate Period Identification",
+    "stem": "For a forward rate denoted as '3y2y', the loan period ends:",
+    "options": {
+      "A": "5 years from today.",
+      "B": "3 years from today.",
+      "C": "2 years from today."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Timeline Addition</h3><p><strong>A is correct.</strong> The notation 'AyBy' means the loan <em>starts</em> at year A and <em>lasts</em> for B years. Therefore, the maturity date (end of the loan) is $Start + Duration = A + B$. Here, $3 + 2 = 5$ years from today.</p><p>B is incorrect: This is when the loan begins.</p><p>C is incorrect: This is the duration of the loan, not the end date.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini 3",
+    "topic": "Approximation of Forward Rate",
+    "stem": "The 2-year spot rate is 4% and the 3-year spot rate is 5%. The approximate 1-year forward rate two years from now ($2y1y$) is:",
+    "options": {
+      "A": "7%",
+      "B": "1%",
+      "C": "4.5%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Weighted Averages</h3><p><strong>A is correct.</strong> Using the approximation formula: $Total Return (3yr) \\approx Total Return (2yr) + Forward Rate$. In annual terms: $3 \\times S_3 \\approx 2 \\times S_2 + 1 \\times (2y1y)$. Rearranging: $(3 \\times 5\\%) - (2 \\times 4\\%) = 15\\% - 8\\% = 7\\%$. The rate must jump significantly to pull the 2-year average of 4% up to a 3-year average of 5%.</p><p>B is incorrect: This is the simple difference ($5-4$), which ignores the duration weighting.</p><p>C is incorrect: This is the simple average, which is conceptually unrelated to bootstrapping.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini 3",
+    "topic": "Implied Forward Rate Logic",
+    "stem": "If you can earn 3% for one year or 5% annually for two years, the market is effectively implying that rates next year will be:",
+    "options": {
+      "A": "Higher than 5%.",
+      "B": "Exactly 5%.",
+      "C": "Lower than 3%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Break-Even Rates</h3><p><strong>A is correct.</strong> To be indifferent between investing for 1 year at 3% or locking in 5% for two years, the rate in the second year must compensate for the low starting rate. Since the average return over 2 years (5%) is higher than the first year (3%), the second year must be significantly higher than the average to pull it up. Specifically, roughly $2 \\times 5 - 3 = 7\\%$. Thus, it must be higher than 5%.</p><p>B is incorrect: If the future rate were 5%, the average of 3% and 5% would be 4%, not the 5% required.</p><p>C is incorrect: Lower rates would pull the 2-year average down below 3%, not up to 5%.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini 3",
+    "topic": "Spot Rate vs YTM (Zero Coupon)",
+    "stem": "For a zero-coupon bond, the Yield to Maturity (YTM) is always equal to:",
+    "options": {
+      "A": "The spot rate for that maturity.",
+      "B": "The par rate for that maturity.",
+      "C": "The coupon rate."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Single Cash Flow Discounting</h3><p><strong>A is correct.</strong> A zero-coupon bond has only one cash flow at maturity. The spot rate is defined as the discount rate for a single cash flow at a specific maturity. The YTM is the single rate that equates price to PV. Since there is only one term in the equation ($P = FV/(1+r)^t$), the YTM ($r$) and the spot rate ($S_t$) are mathematically identical.</p><p>B is incorrect: Par rate applies to coupon bonds trading at par, not zeros (which trade at a discount).</p><p>C is incorrect: A zero-coupon bond has a coupon rate of 0%, which is not its yield (unless interest rates are zero).</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini 3",
+    "topic": "Bond Price & Spot Rates (Inverse)",
+    "stem": "If all spot rates in the economy increase by 1%, the price of a standard fixed-coupon bond will:",
+    "options": {
+      "A": "Decrease.",
+      "B": "Increase.",
+      "C": "Remain unchanged."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Denominator Effect</h3><p><strong>A is correct.</strong> Bond pricing formula: $Price = \\Sigma [CF_t / (1+S_t)^t]$. Spot rates ($S_t$) appear in the denominator. If the denominator increases (rates go up), the fraction (Present Value) decreases. This is the fundamental inverse relationship between interest rates and bond prices.</p><p>B is incorrect: Prices move inversely to yields.</p><p>C is incorrect: Prices are only unchanged if the cash flows adjust (like a floating rate note), but this is a fixed-coupon bond.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini 3",
+    "topic": "Simple Forward Calculation",
+    "stem": "Given $(1+S_3)^3 = 1.331$ and $(1+S_2)^2 = 1.21$, the 1-year forward rate two years from now ($1+2y1y$) is:",
+    "options": {
+      "A": "1.10",
+      "B": "1.121",
+      "C": "0.121"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Division of Growth Factors</h3><p><strong>A is correct.</strong> The relationship is $(1+S_3)^3 = (1+S_2)^2 \\times (1+2y1y)$. To isolate the forward component, divide the 3-year growth factor by the 2-year growth factor: $\\frac{1.331}{1.21}$. Recognizing powers of 11: $1.331 = 1.1^3$ and $1.21 = 1.1^2$. Therefore, $1.1^3 / 1.1^2 = 1.1^1 = 1.10$. The forward rate is 10%.</p><p>B is incorrect: Calculation error.</p><p>C is incorrect: This is the difference ($1.331 - 1.21$), not the ratio.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini 3",
+    "topic": "Reinvestment Assumption",
+    "stem": "Calculating the realized return of a bond to match its calculated YTM requires that all coupons are reinvested at:",
+    "options": {
+      "A": "The Yield to Maturity (YTM).",
+      "B": "The spot rate corresponding to each coupon date.",
+      "C": "The risk-free rate."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Internal Rate of Return</h3><p><strong>A is correct.</strong> The YTM is mathematically an Internal Rate of Return (IRR). A fundamental property of the IRR calculation is the implicit assumption that intermediate cash flows (coupons) are reinvested at the IRR (the YTM) itself until maturity. If reinvested at a different rate, the actual realized return will differ from the YTM.</p><p>B is incorrect: Reinvesting at spot rates is a more realistic assumption for total return analysis, but strictly speaking, YTM assumes a single constant reinvestment rate.</p><p>C is incorrect: The risk-free rate is usually lower than the YTM of a corporate bond.</p>"
+  }
+]
+
