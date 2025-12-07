@@ -177,6 +177,22 @@
       .modal .dialog { background: #11131a; color: #f5f7fa; border-color: #202531; }
       .modal .head { border-bottom-color: #202531; }
     }
+
+    /* Dedicated mini-scroll area for wide LaTeX */
+    .math-scroll {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      margin: 6px 0;
+      padding-bottom: 4px; /* room for thin scrollbar */
+    }
+    .math-scroll { scrollbar-width: thin; scrollbar-color: #c3c3c9 transparent; }
+    .math-scroll::-webkit-scrollbar { height: 8px; }
+    .math-scroll::-webkit-scrollbar-track { background: transparent; border-radius: 8px; }
+    .math-scroll::-webkit-scrollbar-thumb { background: #d9d9de; border-radius: 8px; border: 2px solid transparent; background-clip: content-box; }
+    .math-scroll:hover::-webkit-scrollbar-thumb { background: #c3c3c9; }
   </style>
 </head>
 <body>
@@ -293,6 +309,30 @@
       const longestEl = document.getElementById('longestPill');
       const questions = Array.from(document.querySelectorAll('section.question'));
 
+      // Wrap wide MathJax outputs in a mini horizontal scroller
+      function __wrapWideMath(scopeEl){
+        try {
+          const root = scopeEl || document;
+          const blocks = root.querySelectorAll('mjx-container');
+          blocks.forEach((mjx) => {
+            // Skip if already handled
+            if (mjx.closest('.math-scroll')) return;
+            const parent = mjx.parentElement;
+            if (!parent) return;
+            const mjxRect = mjx.getBoundingClientRect();
+            // Choose bounds as the nearest scrolling ancestor or provided scope
+            const boundsEl = scopeEl || parent;
+            const boundsRect = boundsEl.getBoundingClientRect();
+            if (mjxRect.width > Math.max(0, boundsRect.width - 8)) {
+              const wrap = document.createElement('div');
+              wrap.className = 'math-scroll';
+              parent.insertBefore(wrap, mjx);
+              wrap.appendChild(mjx);
+            }
+          });
+        } catch(_) {}
+      }
+
       function setOutcome({title, ok, body, meta}){
         outcomeStatus.textContent = title;
         outcomePill.textContent = ok ? 'Right Answer' : 'Incorrect';
@@ -300,7 +340,7 @@
         outcomePill.style.color = ok ? '#106a36' : '#8a1f1f';
         outcomeBody.style.color = ok ? '#1d1d1f' : '#1d1d1f';
         outcomeBody.innerHTML = body;
-        __typesetMath(outcomeBody);
+        __typesetMath(outcomeBody).then(function(){ __wrapWideMath(outcomeBody); });
         // Render attributes
         if (meta) {
           let html = '<div style="display:grid;gap:6px">';
@@ -433,7 +473,7 @@
         const modal = ensurePopup();
         const body = modal.querySelector('#explainBody');
         body.innerHTML = html;
-        __typesetMath(body);
+        __typesetMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.add('show');
         // Lock background scroll without losing position
         // Capture current scroll position
@@ -466,4 +506,3 @@
   </script>
 </body>
 </html>
-
