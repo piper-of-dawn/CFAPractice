@@ -381,6 +381,11 @@ def play(request, fname):
     with target.open("r", encoding="utf-8") as f:
         raw = json.load(f)
     questions = _normalize_questions(raw)
+    # Randomize question order before rendering
+    try:
+        random.shuffle(questions)
+    except Exception:
+        pass
 
     total = len(questions)
     checked = {}
