@@ -15,7 +15,7 @@
   <section id="questions">
     {% for q in questions %}
     <article class="card" data-qid="{{ q.id }}" data-correct="{{ q.correct }}" data-expl="{{ q.explanation|escape }}">
-      <h2>{{ forloop.counter }}. {{ q.stem }}</h2>
+      <h2>{{ forloop.counter }}. {{ q.stem|linebreaksbr }}</h2>
       <form class="q">
         {% for item in q.items %}
         {% with letter=item.0 text=item.1 %}
