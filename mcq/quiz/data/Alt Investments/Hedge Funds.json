@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "GPT 5.2",
+    "topic": "Hedge funds vs traditional funds",
+    "stem": "Statements about hedge funds:\n(1) Hedge funds typically have more flexible investment mandates than mutual funds.\n(2) Hedge funds commonly use derivatives, leverage, and short selling.\n(3) Hedge funds are generally designed to closely track a market index.\n(4) Hedge funds often target absolute return rather than relative-to-benchmark return.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Start from purpose. Traditional long-only funds are usually constrained (eligible assets, leverage limits, benchmark-relative framing). Hedge funds are structured to pursue a return objective using a wider toolkit, so flexibility (1) and tools like shorting, derivatives, and leverage (2) are common. Now tie objective to behavior: “absolute return” means the manager is trying to make money in many environments, not just beat an index in up markets, so (4) fits. Statement (3) contradicts first principles: if your goal is to track an index, you reduce active bets and complexity; hedge funds exist largely to do the opposite—take targeted risks (often hedged) and monetize them, not replicate an index."
+  },
+  {
+    "id": 2,
+    "model": "GPT 5.2",
+    "topic": "Fee structure and incentive alignment",
+    "stem": "Statements about hedge fund fees:\n(1) Management fees are typically charged as a percentage of assets under management.\n(2) Performance fees are typically charged as a percentage of investment profits.\n(3) A performance fee always guarantees investors a positive net return.\n(4) Fee structures are designed to align manager incentives with investor outcomes.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Build from definitions. A management fee is “pay for managing the pool,” so it scales with AUM (1). A performance fee is “share in value created,” so it scales with gains/profits (2). The economic intent is incentive alignment: the manager earns more when investors earn more, so (4) is true. But incentive alignment is not a guarantee of outcomes: investors can still lose money if the strategy loses, and fees can worsen that, which makes (3) false. The key distinction is mechanism vs guarantee: fees shape behavior by rewarding success, but they cannot override market risk, strategy risk, or drawdowns."
+  },
+  {
+    "id": 3,
+    "model": "GPT 5.2",
+    "topic": "High-water mark logic",
+    "stem": "Statements about high-water marks:\n(1) A high-water mark prevents charging performance fees on the same losses twice.\n(2) With a high-water mark, performance fees are typically charged only on gains above the prior peak NAV.\n(3) A high-water mark eliminates the possibility of investor losses.\n(4) High-water marks strengthen the link between manager compensation and long-run wealth creation.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Start from the problem: without constraints, a manager could earn incentive fees in good years, lose money in bad years, then earn incentive fees again just for recovering back to where investors previously were—investors would effectively pay twice for the same wealth level. A high-water mark fixes this by setting a reference point: the investor must be made whole back to the prior peak before incentives restart, so (1) and (2) are true. This also improves intertemporal alignment: it rewards net new wealth creation, not mere bounce-backs, supporting (4). Statement (3) confuses fee mechanics with investment outcomes: high-water marks change when fees are paid; they do not remove market risk or prevent drawdowns."
+  },
+  {
+    "id": 4,
+    "model": "GPT 5.2",
+    "topic": "Liquidity terms: lockups and gates",
+    "stem": "Statements about hedge fund liquidity terms:\n(1) Lockup periods restrict when investors can redeem.\n(2) Gates allow managers to limit the amount redeemed in a period.\n(3) These terms exist partly to reduce the risk of forced asset sales.\n(4) Lockups and gates are features that increase daily liquidity for investors.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Begin with a simple balance-sheet view: a fund holds assets; investors hold claims on the fund; redemptions are cash outflows. If many investors redeem quickly, the fund may be forced to sell assets at bad prices (fire sales), harming remaining investors and potentially destabilizing the strategy. Lockups (1) and gates (2) are contractual tools that slow outflows, giving the manager time to unwind positions more orderly and protect the strategy’s economics—this is exactly the forced-sale logic in (3). Statement (4) reverses the meaning: these terms reduce liquidity (investor flexibility) in exchange for better asset-liability matching and protection against runs."
+  },
+  {
+    "id": 5,
+    "model": "GPT 5.2",
+    "topic": "Strategy families: relative value vs directional",
+    "stem": "Statements about hedge fund strategy families:\n(1) Relative value strategies often seek to profit from price discrepancies between related instruments.\n(2) Global macro strategies often express views on broad economic themes across asset classes.\n(3) Event-driven strategies generally attempt to eliminate all exposure to idiosyncratic risk.\n(4) Different hedge fund strategies can have very different risk drivers and correlations.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Reason from what produces returns. Relative value starts with “two things should be priced consistently”; the trade is to buy the cheap leg and sell the rich leg, monetizing convergence (1). Global macro starts with “macro forces move many markets”; the trade expresses directional themes across rates, FX, commodities, equities, etc. (2). Because strategies are built on different economic engines—convergence, carry, volatility, directional macro, corporate events—their sensitivities (rates, spreads, volatility, liquidity) and correlations can vary widely (4). Statement (3) is too strong: event-driven strategies often embrace idiosyncratic event risk (mergers, restructurings, distress); they may hedge some market risk, but “eliminate all idiosyncratic risk” contradicts the core idea."
+  },
+  {
+    "id": 6,
+    "model": "GPT 5.2",
+    "topic": "Use of leverage and derivatives",
+    "stem": "Statements about hedge fund leverage and derivatives:\n(1) Leverage can amplify both gains and losses.\n(2) Derivatives can be used to obtain exposure with less upfront capital.\n(3) Using derivatives guarantees lower risk than holding cash instruments.\n(4) Many hedge fund strategies rely on risk management to control leverage-related tail risk.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Start from mechanics. Leverage is “more exposure per dollar of equity,” so any return shock is scaled up—good or bad—making (1) true. Derivatives often require only margin/premium, so they can deliver meaningful exposure with less initial cash than buying the underlying (2). Because leverage and derivatives can create nonlinear payoffs and large losses in stressed markets, hedge funds emphasize risk controls (limits, VAR/stress tests, liquidity management, hedges) to avoid blowups, supporting (4). Statement (3) is the classic trap: derivatives are tools; risk depends on the position’s sensitivity and structure, not the instrument label. A derivative can reduce risk (hedge) or increase it (levered bet)."
+  },
+  {
+    "id": 7,
+    "model": "GPT 5.2",
+    "topic": "Hedge fund index biases",
+    "stem": "Statements about hedge fund index data:\n(1) Survivorship bias can overstate index returns if failed funds drop out.\n(2) Backfill (instant history) bias can overstate returns if only successful funds choose to report prior good performance.\n(3) Because hedge funds are exchange-traded, their indexes have no reporting biases.\n(4) Differences in constituent coverage can cause different hedge fund indexes to show different performance.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Start from sampling: an index is only as good as the dataset feeding it. If losing funds stop reporting or disappear, the remaining sample is biased upward—survivorship bias (1). If a fund starts reporting after strong early performance and the database “backfills” that history, the sample again becomes upward biased—backfill bias (2). Coverage matters too: many funds report voluntarily to some databases and not others, so different indexes can represent different slices of the hedge fund universe, producing different reported results (4). Statement (3) is false because hedge funds are not generally exchange-traded like stocks; reporting is often voluntary and uneven, which is exactly why these biases exist."
+  },
+  {
+    "id": 8,
+    "model": "GPT 5.2",
+    "topic": "Absolute return objective",
+    "stem": "Assertion (A): Hedge funds are often described as pursuing absolute returns.\nReason (R): Many hedge funds aim to generate positive performance across a range of market environments rather than simply beat a benchmark in rising markets.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "“Absolute return” means the target is a positive return level (or positive performance) rather than “index + alpha.” The reason explains the behavioral implication: managers use flexible tools (hedging, shorting, derivatives, dynamic exposures) to try to perform in different regimes. This doesn’t guarantee profits, but it explains why the label is used and how it differs from benchmark-relative management."
+  },
+  {
+    "id": 9,
+    "model": "GPT 5.2",
+    "topic": "Why high-water marks exist",
+    "stem": "Assertion (A): High-water marks reduce the chance that investors pay incentive fees for recovering from prior losses.\nReason (R): Under a high-water mark, incentive fees are charged only when the fund’s value exceeds its previous peak.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "The core principle is fairness over time: investors should pay performance fees on net wealth creation, not on a round trip back to an earlier level. The reason is the mechanism: “previous peak” is the hurdle, so fees restart only after the investor is made whole and then earns additional gains. This improves long-run alignment because it ties incentive pay to cumulative progress, not just annual fluctuations."
+  },
+  {
+    "id": 10,
+    "model": "GPT 5.2",
+    "topic": "Lockups and run risk",
+    "stem": "Assertion (A): Lockups and gates can protect remaining investors during market stress.\nReason (R): By limiting rapid redemptions, the manager can avoid forced sales that would depress prices and harm the portfolio.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "Funds are exposed to liquidity mismatch: assets may be hard to sell quickly, but investors may want cash quickly. The reason describes the run-prevention logic: slowing withdrawals reduces fire-sale pressure and the negative spillover to investors who stay. The trade-off is straightforward: investors give up some liquidity in exchange for better protection of asset value under stress."
+  },
+  {
+    "id": 11,
+    "model": "GPT 5.2",
+    "topic": "Leverage and tail risk",
+    "stem": "Assertion (A): Leverage increases the potential for extreme losses in hedge fund portfolios.\nReason (R): Increasing exposure relative to equity magnifies the impact of adverse price moves and can trigger forced deleveraging.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "Leverage is a multiplier: it scales portfolio sensitivities, so losses accelerate when markets move against you. The reason adds the second-order mechanism: when equity falls, lenders/margin requirements can force position reductions at bad times, which can deepen losses. This is why hedge funds emphasize risk controls around leverage, liquidity, and stress scenarios rather than treating leverage as a free return booster."
+  },
+  {
+    "id": 12,
+    "model": "GPT 5.2",
+    "topic": "Index bias: survivorship",
+    "stem": "Assertion (A): Hedge fund index returns can be overstated by survivorship bias.\nReason (R): If poorly performing funds stop reporting or cease to exist, the index sample tilts toward surviving funds with better performance.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "An average is only unbiased if the sample represents the full population. When losers disappear from the dataset, you mechanically remove negative observations, so the computed average rises even if true population performance did not. The reason is exactly that sampling mechanism, which is why hedge fund index interpretation requires caution and an understanding of database construction."
+  },
+  {
+    "id": 13,
+    "model": "GPT 5.2",
+    "topic": "Which-correct: equity long/short intuition",
+    "stem": "Statements about equity long/short hedge funds:\n(1) They can hold both long and short equity positions.\n(2) Their net market exposure can be managed independently of their gross exposure.\n(3) Short positions can serve as hedges against broad market declines.\n(4) They necessarily eliminate all market risk.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Start with exposures. Long/short means you own some stocks and short others (1). Gross exposure is the sum of absolute longs and shorts; net exposure is longs minus shorts—so you can have high gross (many bets) while keeping net moderate (market-neutral-ish), making (2) true. Shorts can reduce sensitivity to market moves and protect in downturns (3). But hedging is not the same as eliminating risk: residual market risk, factor risk, short-squeeze risk, and idiosyncratic risk remain, so (4) is false."
+  },
+  {
+    "id": 14,
+    "model": "GPT 5.2",
+    "topic": "Reason-Based: backfill bias mechanism",
+    "stem": "Assertion (A): Backfill bias can inflate reported hedge fund index returns.\nReason (R): Funds may begin reporting after strong early performance and then add their prior returns to the database history.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "This is selection bias in time. If only funds with good early results choose to start reporting, and the database includes their earlier “good” months retroactively, the dataset becomes skewed toward successes. The reason is the causal mechanism: it explains why the sample of “observed histories” is not random, which mechanically pushes average returns upward compared with what investors could have earned in real time."
+  },
+  {
+    "id": 15,
+    "model": "GPT 5.2",
+    "topic": "UPSC-style: management fee vs performance fee",
+    "stem": "Assertion (A): A hedge fund’s management fee is typically based on assets under management.\nReason (R): A management fee is designed to cover operating costs and provide stable revenue independent of short-term performance.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "A management fee is a “service fee” for running the investment operation, so AUM is the natural base: it measures the size of the pool being managed. The reason explains why it is not profit-based: operating costs (research, trading, infrastructure) exist regardless of returns, and stable fee revenue supports the organization. Performance fees then sit on top as an incentive layer tied to gains."
+  },
+  {
+    "id": 16,
+    "model": "GPT 5.2",
+    "topic": "Which-correct: relative value risk",
+    "stem": "Statements about relative value hedge fund strategies:\n(1) They often seek convergence between related prices (spreads).\n(2) They are always market-neutral and cannot lose money in a crisis.\n(3) They may use leverage because spread returns can be small.\n(4) Liquidity and funding stress can cause spreads to widen before converging.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 3 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Relative value starts with a pricing relationship and bets on normalization (1). Because the mispricing may be small in percentage terms, managers often scale the trade with leverage to make the return meaningful (3). But convergence is not guaranteed in the short run: funding shocks and illiquidity can push spreads wider, producing losses and margin pressure before any convergence occurs (4). Statement (2) is the dangerous misconception: “market-neutral” does not mean “risk-free,” especially when liquidity and leverage interact."
+  },
+  {
+    "id": 17,
+    "model": "GPT 5.2",
+    "topic": "Reason-Based: why hedge fund indexes differ",
+    "stem": "Assertion (A): Different hedge fund indexes can report meaningfully different performance for the same period.\nReason (R): Many hedge funds report voluntarily to specific databases, so indexes can have different constituent coverage and weighting rules.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "An index is a function of two things: which funds are included and how they’re aggregated (equal-weight, asset-weight, strategy buckets). If databases overlap imperfectly and reporting is voluntary, each index can represent a different slice of the hedge fund universe, so reported returns can diverge even without “errors.” The reason directly explains the assertion by pointing to constituent selection and construction rules as the drivers of dispersion."
+  },
+  {
+    "id": 18,
+    "model": "GPT 5.2",
+    "topic": "UPSC-style: gates vs investor liquidity",
+    "stem": "Assertion (A): Gates reduce an investor’s ability to redeem capital immediately.\nReason (R): Gates limit the amount that can be redeemed in a given period to manage liquidity and protect the portfolio.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "Gates are explicitly designed to slow the pace of withdrawals; that mechanically reduces immediate redemption ability. The reason explains the economic purpose: when the fund holds less liquid positions, forcing large quick sales can destroy value, so gates act like a circuit breaker. This is asset–liability management: match redemption speed to the speed at which assets can be liquidated without fire-sale losses."
+  },
+  {
+    "id": 19,
+    "model": "GPT 5.2",
+    "topic": "Which-correct: event-driven intuition",
+    "stem": "Statements about event-driven hedge fund strategies:\n(1) They seek returns linked to corporate events such as mergers, restructurings, or distress.\n(2) They often have idiosyncratic risk tied to specific deals or issuers.\n(3) They are purely macro strategies based only on GDP and inflation forecasts.\n(4) Deal breaks and legal/regulatory outcomes can be major sources of risk.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1 and 4 only",
+      "C": "2, 3 and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Event-driven returns come from catalysts: a merger closing, a restructuring plan, a liquidation recovery—so (1) is true. Because outcomes hinge on specific transactions and counterparties, risk is idiosyncratic and not fully diversified away by market hedges (2). Legal/regulatory approval, financing, shareholder votes, and court decisions can determine whether the event occurs and at what terms, so (4) is true. Statement (3) is false: that describes global macro; event-driven is micro/catalyst-driven."
+  },
+  {
+    "id": 20,
+    "model": "GPT 5.2",
+    "topic": "Reason-Based: why short selling is used",
+    "stem": "Assertion (A): Hedge funds use short selling both to express negative views and to manage portfolio risk.\nReason (R): Short positions can offset some systematic market exposure from long positions.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "Short selling has two first-principles roles: (i) directional—profit if a security falls, and (ii) hedging—reduce sensitivity to broad market moves. The reason explains the hedging channel: a short book can partially neutralize beta/factor exposure from longs, making returns depend more on security selection than market direction. This is why long/short portfolios can target a chosen net exposure rather than being forced to be fully long the market."
+  },
+  {
+    "id": 21,
+    "model": "GPT 5.2",
+    "topic": "UPSC-style: fees and net performance",
+    "stem": "Assertion (A): Even when a hedge fund has positive gross performance, investor net returns may be substantially lower.\nReason (R): Management and performance fees transfer part of the gross gains from investors to the manager.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false"
+    },
+    "correct_answer": "A",
+    "explanation": "Net return is what remains after all claims on the portfolio’s gains are paid. Hedge funds commonly charge a management fee (AUM-based) plus a performance fee (gain-based), so a portion of gross gains is contractually reallocated to the manager. The reason is the direct arithmetic mechanism: gross gains minus fees equals investor net gains, so high fees can meaningfully compress what investors keep even in good years."
+  }
+]
