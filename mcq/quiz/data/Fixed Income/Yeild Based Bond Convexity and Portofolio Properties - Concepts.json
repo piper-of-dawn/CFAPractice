@@ -1,331 +1,298 @@
 [
   {
     "id": 1,
-    "format": "Which statements are correct",
-    "stem": "A bond’s yield-based convexity is best interpreted as:",
-    "statements": {
-      "1": "A measure of how duration changes as yield changes.",
-      "2": "Always negative for plain-vanilla, option-free bonds.",
-      "3": "A curvature measure of the price–yield relationship (second-order effect).",
-      "4": "A reason the duration-only price estimate has symmetric errors for yield rises and falls."
-    },
+    "model": "ChatGPT",
+    "topic": "Definition of Yield-Based Convexity",
+    "stem": "Consider the following statements regarding yield-based bond convexity:\n1. Convexity measures the curvature of the bond price–yield relationship.\n2. Convexity reflects how duration itself changes as yield changes.\n3. Convexity is negative for all option-free bonds.\n4. Convexity explains why duration-only price estimates become inaccurate for larger yield moves.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Start from first principles: price is PV of cash flows discounted by yield; the first derivative gives duration (slope), the second derivative gives convexity (curvature). (1) is true because convexity captures how the slope (duration) itself changes with yield; (4) is true because convexity creates an asymmetric (curved) price response, making duration-only errors differ for up vs. down moves. (2) is false for option-free bonds (typically positive convexity), and (3) is true but option (4) grouping makes only (b) correct."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Curvature</h3><p><strong>B is correct.</strong> Bond price is the present value of cash flows discounted by yield. Duration is the first derivative (slope), while convexity is the second derivative (curvature). Convexity captures how duration changes as yield moves and explains why linear (duration-only) approximations fail for larger yield changes. Option-free bonds typically have positive, not negative, convexity.</p>"
   },
   {
     "id": 2,
-    "format": "Which statements are correct",
-    "stem": "For two option-free bonds with the same yield and maturity, the bond with higher convexity will:",
-    "statements": {
-      "1": "Gain more in price when yields fall by a given amount.",
-      "2": "Lose less in price when yields rise by a given amount.",
-      "3": "Always have a higher coupon rate.",
-      "4": "Have a more curved (less linear) price–yield relationship."
-    },
+    "model": "ChatGPT",
+    "topic": "Convexity and Price Asymmetry",
+    "stem": "Consider the following statements about an option-free bond with positive convexity:\n1. The bond gains more in price when yields fall than it loses when yields rise by the same amount.\n2. The price–yield relationship is curved rather than linear.\n3. Positive convexity guarantees higher total return.\n4. Duration-only estimates treat price changes as symmetric.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "First principle: convexity is curvature; higher curvature means price bends upward more for yield declines and bends downward less for yield increases, relative to a straight-line (duration) approximation. That makes (1) true and (4) true. (3) is not a rule: convexity depends on cash-flow timing/distribution, not “always higher coupon,” so the only listed combination that avoids (3) is (b)."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Asymmetry</h3><p><strong>B is correct.</strong> Positive convexity means the price–yield curve bends outward, creating asymmetric price responses: gains from falling yields exceed losses from rising yields of equal size. Duration-only models assume a straight line, hence symmetry. Convexity improves risk characteristics but does not guarantee higher realized returns.</p>"
   },
   {
     "id": 3,
-    "format": "Which statements are correct",
-    "stem": "Yield-based convexity is most directly useful when you want to:",
-    "statements": {
-      "1": "Improve a duration-only estimate of price change for moderate yield moves.",
-      "2": "Compare interest-rate sensitivity across bonds quoted by yield to maturity.",
-      "3": "Accurately price bonds under a non-parallel yield-curve twist without any additional inputs.",
-      "4": "Understand why option-free bond prices tend to fall less for rate rises than they rise for rate falls (same size move)."
-    },
+    "model": "ChatGPT",
+    "topic": "Convexity vs Duration",
+    "stem": "Consider the following statements comparing duration and convexity:\n1. Duration measures first-order sensitivity of price to yield.\n2. Convexity measures second-order sensitivity of price to yield.\n3. Convexity replaces the need to use duration.\n4. Convexity becomes more important as yield changes become larger.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Building blocks: duration is first-order (linear) sensitivity to yield; convexity is second-order (curvature) that corrects the linear approximation. So (1) is true and (4) is true because curvature creates asymmetry between up/down moves. (3) is false: non-parallel curve shifts require key-rate/curve-based measures, not a single yield-based convexity number."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Taylor Approximation</h3><p><strong>B is correct.</strong> Duration is the slope of the price–yield curve; convexity is the curvature. Convexity supplements duration rather than replacing it and becomes increasingly important as yield moves grow, because second-order effects scale faster than first-order effects.</p>"
   },
   {
     "id": 4,
-    "format": "Which statements are correct",
-    "stem": "Regarding callable bonds and yield-based convexity:",
-    "statements": {
-      "1": "Callable bonds can exhibit negative convexity over some yield ranges.",
-      "2": "Negative convexity arises because price appreciation is capped when yields fall.",
-      "3": "Callable bonds must always have lower duration than comparable option-free bonds.",
-      "4": "A duration-only estimate is generally more reliable for negatively convex instruments during yield declines."
-    },
+    "model": "ChatGPT",
+    "topic": "Negative Convexity",
+    "stem": "Consider the following statements regarding negative convexity:\n1. Negative convexity can arise due to embedded call options.\n2. Negative convexity implies price gains are limited when yields fall.\n3. All callable bonds exhibit negative convexity at all yield levels.\n4. Negative convexity causes duration to change unfavorably during rallies.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: the embedded call is an issuer option exercised when refinancing is attractive; that truncates upside price when yields fall, creating negative curvature (1,2 true). (3) is not “must”: relative duration depends on where you are vs. the call region. (4) is false: negative convexity makes duration-only worse in rallies because the price–yield curve bends the “wrong way.”"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Embedded Options</h3><p><strong>B is correct.</strong> Callable bonds embed an issuer option that caps upside when yields fall, bending the price–yield curve inward. This creates negative convexity and unfavorable duration behavior in rallies. However, callable bonds are not negatively convex across all yield levels.</p>"
   },
   {
     "id": 5,
-    "format": "Which statements are correct",
-    "stem": "For an option-free bond portfolio, yield-based duration and convexity behave as:",
-    "statements": {
-      "1": "Portfolio duration is approximately the market-value-weighted average of constituent durations.",
-      "2": "Portfolio convexity is approximately the market-value-weighted average of constituent convexities (on a consistent basis).",
-      "3": "You can average durations using face-value weights without changing the result.",
-      "4": "If all constituents have positive convexity, the portfolio must have positive convexity."
-    },
+    "model": "ChatGPT",
+    "topic": "Convexity and Yield Move Size",
+    "stem": "Consider the following statements about convexity and yield changes:\n1. Convexity effects grow with the square of the yield change.\n2. Duration error increases linearly with yield changes.\n3. Convexity matters only for very small yield changes.\n4. Convexity improves approximation accuracy for large yield moves.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Core building block: portfolio price is the sum of bond prices; differentiating a sum gives the sum of derivatives, which implies market-value weighting for yield sensitivities. That supports (1) and, for sign, (4) since a weighted average of positive numbers stays positive. (3) is wrong because face value ignores price/market value; (2) can fail if you mix inconsistent convexity definitions/scales, so only (b) is safe."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Error Growth</h3><p><strong>B is correct.</strong> Duration is a linear approximation, while convexity captures curvature, whose contribution scales with the square of yield changes. Hence convexity becomes more important—not less—for larger yield movements.</p>"
   },
   {
     "id": 6,
-    "format": "Which statements are correct",
-    "stem": "Why does convexity matter more as yield changes get larger?",
-    "statements": {
-      "1": "Because convexity is a second-order term that grows with the square of the yield change.",
-      "2": "Because convexity replaces the need to model duration.",
-      "3": "Because duration alone assumes the price–yield curve is a straight line locally.",
-      "4": "Because convexity is only relevant for bonds with embedded options."
-    },
+    "model": "ChatGPT",
+    "topic": "Portfolio Convexity Aggregation",
+    "stem": "Consider the following statements regarding portfolio convexity:\n1. Portfolio convexity is approximately a market-value-weighted average of constituent convexities.\n2. Portfolio convexity can be negative even if all bonds have positive convexity.\n3. Convexity aggregation relies on market value rather than face value.\n4. Convexity aggregation follows from price additivity.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: a Taylor expansion approximates price changes as linear (duration) plus curvature (convexity); the curvature contribution scales with the square of the yield move. That makes (1) and (3) true; (2) is false because convexity supplements rather than replaces duration. (4) is false: option-free bonds also have convexity (typically positive)."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Additivity</h3><p><strong>B is correct.</strong> Portfolio price is the sum of individual prices, so derivatives aggregate linearly using market-value weights. A weighted average of positive convexities cannot become negative under long-only constraints.</p>"
   },
   {
     "id": 7,
-    "format": "Which statements are correct",
-    "stem": "Comparing two option-free bonds with identical duration today, higher convexity implies:",
-    "statements": {
-      "1": "Less model error if you use a duration-only approximation for a given yield shock.",
-      "2": "Greater benefit from curvature (better protection) across both yield rises and falls.",
-      "3": "A guarantee of higher expected return.",
-      "4": "A higher sensitivity of duration to changes in yield (duration changes more as yields move)."
-    },
+    "model": "ChatGPT",
+    "topic": "Barbell vs Bullet Convexity",
+    "stem": "Consider the following statements about barbell and bullet portfolios:\n1. A barbell portfolio can have higher convexity than a bullet portfolio with the same duration.\n2. Matching duration ensures matching convexity.\n3. Concentrating weight at maturity extremes increases curvature.\n4. Convexity differences affect performance for large yield moves.\n\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Building blocks: convexity is literally “how the slope changes,” so (4) is the definition-level intuition; higher convexity means duration changes more with yield. (1) is true because adding curvature reduces linear-approximation error. (2) is overclaimed as stated (the benefit depends on sign and context), and (3) is false because convexity is an interest-rate risk shape property, not a return guarantee."
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Shape Control</h3><p><strong>B is correct.</strong> Duration controls slope, not curvature. Barbell portfolios place cash flows at maturity extremes, increasing curvature while preserving the same slope. This convexity difference matters when yields move significantly.</p>"
   },
+
   {
     "id": 8,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): For an option-free bond, the duration-only estimate tends to understate the price gain when yields fall.",
-    "reason": "Reason (R): The bond’s price–yield relationship is convex, so curvature adds extra upside beyond the tangent-line estimate.",
+    "model": "ChatGPT",
+    "topic": "Duration-Only Bias",
+    "stem": "Assertion (A): For option-free bonds, duration-only estimates understate price gains when yields fall.\nReason (R): The price–yield relationship is convex, placing the true price above the tangent line during yield declines.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: duration is the slope of the price–yield curve at a point; using only slope assumes the curve is locally a straight line. For option-free bonds the curve is typically convex, so the true curve sits above the tangent line for yield declines—creating extra price gain. That’s exactly why A is true and R correctly explains it."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Tangent Approximation</h3><p><strong>A is correct.</strong> Duration captures the slope at a point, assuming linearity. Because the true curve is convex, prices rise more than the linear estimate when yields fall.</p>"
   },
   {
     "id": 9,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): A bond can have negative convexity over some yield ranges.",
-    "reason": "Reason (R): Embedded call options can cap price appreciation when yields fall, bending the price–yield curve inward.",
+    "model": "ChatGPT",
+    "topic": "Callable Bonds and Convexity",
+    "stem": "Assertion (A): Callable bonds may display negative convexity.\nReason (R): As yields fall, the probability of the bond being called increases, limiting further price appreciation.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start with payoffs: a callable bond is a straight bond minus an issuer call option. When yields fall, the issuer is more likely to call, which truncates further upside in bond price—so the curve can bend the “wrong way,” i.e., negative convexity. Thus A is true and R is the causal mechanism."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Option Exercise</h3><p><strong>A is correct.</strong> The issuer’s call option truncates upside when refinancing becomes attractive, bending the price–yield curve inward and generating negative convexity.</p>"
   },
   {
     "id": 10,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): For small yield changes, duration explains most of the price change for a plain-vanilla bond.",
-    "reason": "Reason (R): Over a very small neighborhood, a smooth curve is well-approximated by its tangent line.",
+    "model": "ChatGPT",
+    "topic": "Convexity Desirability",
+    "stem": "Assertion (A): Holding convexity constant, higher positive convexity is desirable for risk management.\nReason (R): Positive convexity improves outcomes for both yield increases and yield decreases relative to a linear exposure.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: duration is the first derivative of price with respect to yield, i.e., the local slope. Any smooth function can be approximated locally by a line using its first derivative; curvature matters less as the step size shrinks. So A is true and R explains why the linear term dominates for small moves."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Risk Asymmetry</h3><p><strong>A is correct.</strong> With equal slope (duration), positive curvature improves downside protection and upside participation, making convexity structurally attractive.</p>"
   },
+
   {
     "id": 11,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): Convexity is generally desirable in risk management, holding duration constant.",
-    "reason": "Reason (R): Positive convexity means you lose less when yields rise and gain more when yields fall, compared to a linear (duration-only) exposure.",
+    "model": "ChatGPT",
+    "topic": "Local Approximation Nature",
+    "stem": "Assertion (A): Duration and convexity provide a local approximation of bond price behavior.\nReason (R): They rely on derivatives evaluated at the current yield rather than full revaluation of cash flows.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Building blocks: duration fixes the first-order exposure (slope), convexity shapes the second-order exposure (curvature). With positive convexity, the price–yield curve bows outward so the downside for yield increases is softened while the upside for yield decreases is amplified relative to the tangent line. That asymmetry is precisely why convexity is valuable, making both A and R true with R explaining A."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Derivatives</h3><p><strong>A is correct.</strong> Duration and convexity summarize local slope and curvature. Full repricing requires discounting each cash flow at new yields, which these measures approximate only nearby.</p>"
   },
   {
     "id": 12,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): Yield-based convexity alone is insufficient to fully explain a bond’s price change under a yield-curve twist.",
-    "reason": "Reason (R): A single YTM change compresses many spot rates into one number, but different cash flows are exposed to different points on the curve.",
+    "model": "ChatGPT",
+    "topic": "Convexity and Cash-Flow Timing",
+    "stem": "Assertion (A): Bonds with more back-loaded cash flows generally exhibit higher convexity.\nReason (R): Longer-dated cash flows introduce greater nonlinearity in present value as yields change.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principle: bond price is the sum of PVs discounted at term-specific rates; different maturities are driven by different parts of the curve. YTM is a summary statistic that matches the bond’s price today but does not uniquely pin down how each cash flow should reprice under non-parallel shifts. Therefore A is true, and R is the key building-block explanation."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Time Amplification</h3><p><strong>A is correct.</strong> Discount factors compound over time, so distant cash flows contribute disproportionately to curvature, increasing convexity.</p>"
   },
   {
     "id": 13,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): A portfolio’s yield-based duration is approximately the market-value-weighted average of constituent durations.",
-    "reason": "Reason (R): The portfolio price is the sum of bond prices, and differentiating a sum gives the sum of the derivatives.",
+    "model": "ChatGPT",
+    "topic": "Convexity Independence",
+    "stem": "Assertion (A): Two bonds can have the same duration but different convexities.\nReason (R): Duration and convexity represent different derivatives of the price–yield function.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start from identity: portfolio value equals Σ bond values. Duration is a scaled first derivative of value with respect to yield; linearity of differentiation means the portfolio’s first derivative is the sum of constituents’ first derivatives, which turns into market-value weights once you normalize by total value. Hence A is true and R is the foundational reason."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Shape Degrees of Freedom</h3><p><strong>A is correct.</strong> Matching slope does not constrain curvature; multiple curves can share the same slope at a point but differ in shape.</p>"
   },
   {
     "id": 14,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): A negatively convex bond can become more interest-rate sensitive (higher effective duration) when yields fall.",
-    "reason": "Reason (R): As yields fall, the embedded call option moves closer to being exercised, shortening expected cash-flow life and flattening price appreciation.",
+    "model": "ChatGPT",
+    "topic": "Portfolio Duration Bounds",
+    "stem": "Assertion (A): A long-only bond portfolio’s duration can lie outside the range of its constituent durations.\nReason (R): Portfolio duration is a market-value-weighted average of constituent durations.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "d",
-    "explanation": "First principles: for callable bonds, when yields fall and call likelihood rises, expected maturity shortens, which typically reduces duration (slope) rather than increases it. The reason statement correctly describes the mechanism (shortening and capped upside), but the assertion flips the direction of interest-rate sensitivity. So A is false, R is true."
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Weighted Averages</h3><p><strong>D is correct.</strong> A weighted average with nonnegative weights must lie between the minimum and maximum values. Hence the assertion is false while the reason is true.</p>"
   },
   {
     "id": 15,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): If two option-free bonds have the same price and the same yield today, the one with more back-loaded cash flows will generally have higher convexity.",
-    "reason": "Reason (R): Cash flows received further in the future are discounted more heavily and their PVs respond more nonlinearly to yield changes.",
+    "model": "ChatGPT",
+    "topic": "Convexity Preservation",
+    "stem": "Assertion (A): Option-free bond prices are generally convex in yield.\nReason (R): Each discounted cash flow is a convex function of yield, and convexity is preserved under addition.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Building blocks: yield sensitivity comes from discount factors; the further out the cash flow, the greater the curvature in its PV as yield changes because compounding/discounting acts repeatedly. A bond with more weight in later cash flows therefore exhibits stronger curvature (higher convexity), holding other conditions comparable. Hence A is true and R correctly explains it."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Mathematical Structure</h3><p><strong>A is correct.</strong> Bond price is a sum of present values; since convexity survives addition, the overall price–yield function remains convex.</p>"
   },
   {
     "id": 16,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): Positive convexity implies that for equal-sized yield moves up and down, the bond’s price increase from the yield decrease will exceed its price decrease from the yield increase.",
-    "reason": "Reason (R): Positive convexity means the price–yield curve is bowed outward, so the curve lies above its tangent line for both directions, but more so on the rally side in percentage terms.",
+    "model": "ChatGPT",
+    "topic": "Immunization Limits",
+    "stem": "Assertion (A): Duration matching alone fully immunizes a portfolio against interest rate risk.\nReason (R): Convexity differences cause asset and liability values to diverge for non-infinitesimal yield changes.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: convexity describes outward curvature of price vs. yield; curvature creates asymmetry relative to a linear slope-only estimate. With positive convexity, the gain from a yield drop exceeds the loss from an equal yield rise (same magnitude), because the curve bends in your favor. So A is true and R captures the curvature-based explanation."
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Higher-Order Risk</h3><p><strong>D is correct.</strong> Duration matching controls only first-order sensitivity. Convexity mismatch introduces second-order risk, so the assertion is false while the reason is true.</p>"
   },
   {
     "id": 17,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): A portfolio can have lower duration than each individual bond in the portfolio if you combine them properly.",
-    "reason": "Reason (R): Duration is additive, so weighted averaging can produce a portfolio duration that lies between the minimum and maximum constituent durations.",
+    "model": "ChatGPT",
+    "topic": "Yield-Based Limitation",
+    "stem": "Assertion (A): Yield-based convexity fully captures bond sensitivity under yield-curve twists.\nReason (R): Different cash flows are exposed to different points on the yield curve.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "d",
-    "explanation": "Building block: a market-value-weighted average cannot be below the minimum of the numbers being averaged (with nonnegative weights). So a long-only bond portfolio’s duration must lie between the shortest and longest constituent durations, not below all of them. A is false; R is true and is exactly the reason A is false."
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Curve Structure</h3><p><strong>D is correct.</strong> Yield-based measures collapse the curve into one number, missing non-parallel effects. The assertion is false; the reason correctly explains why.</p>"
   },
   {
     "id": 18,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): Yield-based convexity is a purely mathematical concept and does not depend on the bond’s cash-flow structure.",
-    "reason": "Reason (R): Convexity arises from compounding in discount factors applied to the timing and size of cash flows.",
+    "model": "ChatGPT",
+    "topic": "Duration Behavior Under Negative Convexity",
+    "stem": "Assertion (A): Under negative convexity, duration may increase as yields rise.\nReason (R): Extension risk causes expected cash-flow timing to lengthen when yields increase.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "d",
-    "explanation": "First principles: convexity is computed mathematically, but its value is driven by cash-flow timing/weights because discount factors act on each cash flow at its time point. Change the structure (coupon level, amortization, embedded options) and you change the curvature. Therefore A is false, while R correctly states the foundational dependency."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Extension Risk</h3><p><strong>A is correct.</strong> Rising yields reduce call/prepayment likelihood, extending effective maturity and increasing duration. This is the defining mechanism of negative convexity.</p>"
   },
   {
     "id": 19,
-    "format": "Assertion-Reason (UPSC style)",
-    "assertion": "Assertion (A): For an option-free bond, yield-based convexity is typically positive because price is the sum of discounted cash flows.",
-    "reason": "Reason (R): Each discounted cash flow is a convex function of yield, and sums of convex functions remain convex.",
+    "model": "ChatGPT",
+    "topic": "Convexity vs Return",
+    "stem": "Assertion (A): Higher convexity guarantees higher realized returns.\nReason (R): Convexity affects the shape of price responses but does not determine the direction of yield movements.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Building blocks: PV of a fixed cash flow as a function of yield has curvature because discounting involves powers of (1+y); that creates convexity. Since bond price is the sum of those PVs, and convexity is preserved under addition, the aggregate is convex (positive convexity) for plain-vanilla bonds. Hence A is true and R provides the correct first-principles proof idea."
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Risk vs Outcome</h3><p><strong>D is correct.</strong> Convexity improves payoff asymmetry but does not predict yield direction. Returns depend on realized rate movements, not convexity alone.</p>"
   },
   {
     "id": 20,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): If you match only duration between an asset and a liability, you can still be exposed to large yield shocks.",
-    "reason": "Reason (R): Duration matching controls first-order sensitivity, but convexity differences drive second-order residual risk when yields move materially.",
+    "model": "ChatGPT",
+    "topic": "Convexity Scaling",
+    "stem": "Assertion (A): Convexity effects dominate duration effects for infinitesimally small yield changes.\nReason (R): Convexity is a second-order effect, while duration is first-order.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: immunization by duration is a local (linear) hedge—like matching slopes at a point. For bigger moves, curvature matters; if asset and liability convexities differ, their values diverge as the yield change grows. Therefore A is true, and R states the exact building-block reason."
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Order of Effects</h3><p><strong>D is correct.</strong> For very small changes, first-order (duration) terms dominate. Convexity matters more as changes grow, making the assertion false and the reason true.</p>"
   },
   {
     "id": 21,
-    "format": "Reason-Based (R explains A)",
-    "assertion": "Assertion (A): When a bond has negative convexity, using a standard duration+convexity (positive convexity) intuition can mislead you during rate declines.",
-    "reason": "Reason (R): Negative convexity means the curvature term works against you; the price–yield curve flattens on rallies, so models assuming outward bowing overstate gains.",
+    "model": "ChatGPT",
+    "topic": "Convexity as Risk Property",
+    "stem": "Assertion (A): Convexity is fundamentally a risk-shaping property rather than a valuation input.\nReason (R): Convexity describes how price sensitivity itself changes as yields move.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start from payoffs: with embedded issuer callability, the bond’s upside is truncated when yields fall, so curvature can turn negative. That flips the second-order effect: instead of adding upside relative to the linear estimate, curvature removes it, making “positive convexity” intuition wrong-way. Hence A is true and R is the causal mechanism."
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Sensitivity of Sensitivity</h3><p><strong>A is correct.</strong> Convexity governs second-order risk behavior—how exposure evolves as conditions change—making it a core risk-shaping concept rather than a standalone pricing driver.</p>"
   }
 ]
