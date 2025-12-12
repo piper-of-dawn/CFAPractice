@@ -109,6 +109,7 @@ body {
   letter-spacing: .2px;
   margin: 0 0 12px;
   font-weight: 700;
+  white-space: pre-line; /* Honor embedded \n in stems */
 }
 
 .subtle { color: var(--muted); font-size: .9rem; margin-top: 10px }
