@@ -2,414 +2,296 @@
   {
     "id": 1,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "Private vs public securities: definition, eligibility, liquidity",
-    "question": {
-      "statements": {
-        "1": "Public securities are registered to trade in public markets and issuers must typically meet reporting and governance standards.",
-        "2": "Private securities are all other securities and are often limited to specially qualified investors.",
-        "3": "Private equity securities generally have active secondary markets with market-quoted prices.",
-        "4": "Private securities are generally illiquid relative to many public securities."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Private equity characteristics",
+    "stem": "Statements about private equity investments:\n(1) Private equity involves ownership interests in companies that are not publicly traded.\n(2) Private equity investors typically seek active involvement in management.\n(3) Private equity investments are generally liquid due to active secondary markets.\n(4) Private equity returns are primarily realized through exit events.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Start from definitions: a security is “public” if it is registered to trade in public markets and therefore must typically satisfy minimum regulatory standards such as reporting and governance; that makes statement 1 true. A security is “private” if it is not registered for public trading; the reading emphasizes that private securities are generally illiquid and often restricted to specially qualified investors, so statement 4 is true. Statement 2 sounds plausible but is too absolute: the reading says “often” only specially qualified investors can purchase private securities, not “always.” Statement 3 is the opposite of the core point: because private equity is not listed, there is no active secondary market and prices are not continuously market-quoted. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}"
+    "correct_answer": "A",
+    "explanation": "Private equity by definition targets non-public companies and relies on control or influence to create value. Because there is no active secondary market, liquidity is low and returns are typically realized only at exit, such as a sale or IPO."
   },
   {
     "id": 2,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "Why issuers choose private markets",
-    "question": {
-      "statements": {
-        "1": "Issuers may issue private securities when public reporting standards are too burdensome.",
-        "2": "Issuers may issue private securities to avoid conforming to regulatory standards associated with public equity.",
-        "3": "Private equity issuers are typically required by regulators to publish the same information as public issuers.",
-        "4": "Information needed to value private equity may be harder to obtain than for public equity."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Value creation in private equity",
+    "stem": "Statements about how private equity firms create value:\n(1) Improving operational efficiency of portfolio companies.\n(2) Using financial leverage to amplify equity returns.\n(3) Relying primarily on short-term trading gains.\n(4) Strategic repositioning and governance changes.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "First-principles chain: disclosure is a cost—preparing audited statements, ongoing filings, governance compliance, investor relations—so firms may choose private issuance when those public-market obligations are too costly or constraining; that supports statement 1. Private equity is illiquid and not exchange-traded, so valuation relies on negotiated trades and information that may not be routinely published; that makes statement 4 true. Statement 2 is also aligned with the reading’s idea of avoiding public-market standards, but the question’s option structure forces a single best set; the decisive falsity is statement 3: the text explicitly notes private issuers are typically not required to publish the same information, making valuation information harder to obtain. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}"
+    "correct_answer": "A",
+    "explanation": "Private equity value creation focuses on improving the underlying business and capital structure over time. Short-term trading gains are inconsistent with the illiquid, long-horizon nature of private equity investing."
   },
   {
     "id": 3,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "Private equity: venture capital, LBO/MBO, PIPE",
-    "question": {
-      "statements": {
-        "1": "Venture capital is private equity supplied to companies when or shortly after they are founded.",
-        "2": "A leveraged buyout uses a large amount of debt to acquire a company’s outstanding common shares and take the company private.",
-        "3": "A management buyout is an LBO in which the acquiring group is primarily the company’s existing management.",
-        "4": "A PIPE is a private investment in a private company’s equity to prepare for an IPO."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Private equity exits",
+    "stem": "Statements about exit strategies in private equity:\n(1) Initial public offerings are a common exit route.\n(2) Trade sales involve selling the company to another firm.\n(3) Exits typically occur immediately after acquisition.\n(4) Exit timing significantly affects realized returns.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "a",
-    "explanation": "Build from category definitions. Venture capital is defined as private equity capital provided at founding or shortly after; that is statement 1. An LBO is defined as acquiring a public company using substantial debt; after purchase, shares stop trading and the company is taken private—statement 2. An MBO is just the special case where the buyer group is primarily existing management—statement 3. Statement 4 mis-defines PIPE: the reading describes PIPE as “private investment in public equity,” meaning a public company sells a sizeable stake privately, often quickly and possibly at a discount to the quoted market price; it is not “investment in a private company.” :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}"
+    "correct_answer": "A",
+    "explanation": "Exits are the primary mechanism through which private equity investors realize gains. Because capital is locked in for years, both the method and timing of exit materially influence final returns."
   },
   {
     "id": 4,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "Liquidity and pricing of private equity securities",
-    "question": {
-      "statements": {
-        "1": "Because private equity securities are not listed on public exchanges, there is generally no active secondary market for them.",
-        "2": "Private equity securities typically have market-determined quoted prices observable continuously.",
-        "3": "Trading private equity securities often requires negotiation between investors.",
-        "4": "Private equity securities are generally highly liquid because they are institutional-grade instruments."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Leveraged buyouts",
+    "stem": "Statements about leveraged buyouts (LBOs):\n(1) LBOs use borrowed funds to acquire equity.\n(2) Stable cash flows support higher leverage.\n(3) LBOs eliminate all operational risk.\n(4) Equity returns are sensitive to leverage levels.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Start from the mechanism that creates liquidity and quotes: exchange listing + active secondary market trading generates continuous, market-determined prices. Private equity lacks that listing, so the reading stresses there is no active secondary market and securities are highly illiquid—statement 1 is true and statement 4 is false. When there is no centralized market, trades happen via bilateral negotiation; that is statement 3 (true). But the option sets force you to pick a combination; statement 2 is clearly false because the text explicitly says private equity does not have market-determined quoted prices. With the given option structure, the only answer that keeps the key true statement (1) while excluding the obviously false “quoted prices” statement is (b). :contentReference[oaicite:6]{index=6}"
+    "correct_answer": "A",
+    "explanation": "Leverage magnifies equity returns but also increases risk, making predictable cash flows essential. Operational risk remains and can be amplified by high debt levels."
   },
   {
     "id": 5,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "Venture capital horizon and exit mechanics",
-    "question": {
-      "statements": {
-        "1": "Because venture capital securities are not publicly traded, investors typically commit funds for a long period.",
-        "2": "A typical venture capital exit is within about 3 to 10 years from the initial start-up investment.",
-        "3": "Venture capital exit returns are commonly realized when the company goes public (IPO) or is sold to other investors.",
-        "4": "Venture capital investments are generally intended to be traded daily on an exchange once issued."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Private equity holding periods",
+    "stem": "Statements about holding periods in private equity:\n(1) Holding periods are typically long.\n(2) Longer holding periods allow deeper operational changes.\n(3) Short holding periods reduce illiquidity risk.\n(4) Holding period length influences exit strategy.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "a",
-    "explanation": "Reason from the liquidity constraint: if an instrument is not publicly traded, you cannot easily sell it at will; that forces a longer holding period, making statement 1 true. The reading gives a concrete time window (typically 3–10 years) for VC exits, so statement 2 is true. How do you “cash out” when there is no liquid market? You need a liquidity event: the company lists shares in an IPO or the stake is sold to other investors; that’s statement 3. Statement 4 contradicts the definition of VC/private equity as not exchange-traded and illiquid. :contentReference[oaicite:7]{index=7} :contentReference[oaicite:8]{index=8}"
+    "correct_answer": "A",
+    "explanation": "Illiquidity is inherent in private equity, so investors plan for long horizons. Longer holding periods enable operational improvements and shape when and how exits occur."
   },
   {
     "id": 6,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "LBO candidate characteristics and objective",
-    "question": {
-      "statements": {
-        "1": "LBO candidates often have undervalued assets that can be sold to reduce debt.",
-        "2": "LBO candidates often generate high cash flows used to service interest and principal payments.",
-        "3": "The objective of an LBO is typically to restructure the company and later take it public again.",
-        "4": "After an LBO, the company’s shares continue to trade on the exchange as before."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Private equity risk",
+    "stem": "Statements about risks in private equity:\n(1) Illiquidity risk is significant.\n(2) Business risk depends on company operations.\n(3) Market risk is completely eliminated.\n(4) Leverage increases financial risk.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "a",
-    "explanation": "First-principles: leverage creates a fixed obligation (debt service). Therefore, good LBO targets need cash flows that can reliably pay interest and repay principal—statement 2. Debt also needs a “backstop”; if assets are undervalued or saleable, they can be monetized to pay down debt—statement 1. The reading states the ultimate objective is restructuring and later re-listing (taking it public again) to realize value—statement 3. Statement 4 is false because once the investor group purchases all outstanding shares, the shares cease trading and the company is taken private. :contentReference[oaicite:9]{index=9} :contentReference[oaicite:10]{index=10}"
+    "correct_answer": "A",
+    "explanation": "Private equity investors bear illiquidity and operational risk, often intensified by leverage. Market risk is reduced by lack of daily pricing but not eliminated."
   },
   {
     "id": 7,
     "model": "GPT 5.2",
-    "format": "Which of the following is/are correct?",
-    "topic": "PIPE: motivation and pricing",
-    "question": {
-      "statements": {
-        "1": "A PIPE is used by a public company that needs additional capital quickly.",
-        "2": "In a PIPE, private investors may obtain shares at a discount to the publicly quoted market price.",
-        "3": "PIPE investors typically purchase in tiny sizes to avoid disclosure thresholds.",
-        "4": "PIPE is described as a private investment in public equity."
-      },
-      "prompt": "Which of the statements given above are correct?"
-    },
+    "topic": "Private equity fees",
+    "stem": "Statements about private equity fee structures:\n(1) Management fees are charged regardless of performance.\n(2) Performance fees align manager incentives with investors.\n(3) Fees are typically lower than public mutual funds.\n(4) Carried interest depends on investment success.\nWhich of the statements given above are correct?",
     "options": {
-      "a": "1, 2 and 3 only",
-      "b": "1 and 4 only",
-      "c": "2, 3 and 4 only",
-      "d": "1, 2, 3 and 4"
+      "A": "1, 2 and 4 only",
+      "B": "1 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1, 2, 3 and 4"
     },
-    "correct_answer": "b",
-    "explanation": "Go from “what problem does PIPE solve?” If a public company needs capital quickly (expansion opportunities, high indebtedness, operational deterioration), it may raise equity privately because private placement can be faster; that supports statement 1. The reading explicitly defines PIPE as “private investment in public equity,” so statement 4 is true. Statement 2 can be true in practice, but the question’s option structure forces a single best set; the reading frames discounting as “may be able” depending on urgency and size, not as an always-on rule. Statement 3 is opposite of the reading: PIPE is described as selling a sizeable ownership position to a private investor group, not “tiny sizes.” :contentReference[oaicite:11]{index=11} :contentReference[oaicite:12]{index=12}"
+    "correct_answer": "A",
+    "explanation": "Management fees cover operating costs, while carried interest rewards successful exits. Private equity fees are generally higher, not lower, than public fund fees."
   },
+
   {
     "id": 8,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "Illiquidity and lack of market quotes",
-    "question": {
-      "assertion": "Private equity securities typically do not have market-determined quoted prices.",
-      "reason": "Private equity securities are not listed on public exchanges and generally lack an active secondary market."
-    },
+    "topic": "Active ownership",
+    "stem": "Assertion (A): Private equity investors often take an active role in portfolio companies.\nReason (R): Active involvement allows investors to influence operations and strategy.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start from the price-formation mechanism: quoted prices come from frequent secondary-market trades where many buyers and sellers interact. If a security is not exchange-listed and there is no active secondary market, trades are infrequent and bilateral, so you cannot observe a continuous, market-determined quote. That is exactly why private equity is described as illiquid and requiring negotiation rather than having quoted prices. :contentReference[oaicite:13]{index=13}"
+    "correct_answer": "A",
+    "explanation": "Private equity relies on control and influence to create value. Active governance and strategic input explain why involvement is central to the model."
   },
   {
     "id": 9,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "Information availability for valuation",
-    "question": {
-      "assertion": "Valuing private equity securities can be more difficult than valuing public equity securities.",
-      "reason": "Private companies are typically not required by regulators to publish financial statements and other key information needed for fair value estimation."
-    },
+    "topic": "Illiquidity",
+    "stem": "Assertion (A): Private equity investments are illiquid.\nReason (R): There is no organized secondary market for private equity stakes.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "First principles: valuation needs inputs—financial statements, forecasts, risk information, comparable pricing. Public firms must generally disclose, so analysts can observe and update valuation inputs frequently. Private firms often do not have the same publication requirements, so inputs are missing or costly to obtain, making fair value estimates harder and more uncertain. :contentReference[oaicite:14]{index=14}"
+    "correct_answer": "A",
+    "explanation": "Liquidity requires frequent trading and many buyers. The absence of an active secondary market directly causes illiquidity in private equity."
   },
   {
     "id": 10,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "Venture capital holding period",
-    "question": {
-      "assertion": "Venture capital investors typically face a long investment horizon before exiting.",
-      "reason": "Venture capital investments involve privately issued equity that is not publicly traded, so investors generally cannot exit via liquid secondary markets."
-    },
+    "topic": "Exit dependence",
+    "stem": "Assertion (A): Private equity returns depend heavily on exit conditions.\nReason (R): Returns are typically realized only when investments are sold or listed.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Liquidity determines horizon: if you can sell easily, you can exit quickly; if you cannot, you must wait for a liquidity event. The reading connects VC to private, non-publicly traded equity and notes exits typically occur years later (e.g., IPO or sale), which is the practical consequence of illiquidity. :contentReference[oaicite:15]{index=15}"
+    "correct_answer": "A",
+    "explanation": "Without periodic cash flows, value realization occurs mainly at exit. Market conditions at that time directly determine investor returns."
   },
   {
     "id": 11,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "LBO debt capacity and target selection",
-    "question": {
-      "assertion": "Companies with strong and stable cash flows are often better candidates for leveraged buyouts.",
-      "reason": "LBO structures rely on significant debt, and cash flows are needed to make interest and principal payments."
-    },
+    "topic": "Leverage impact",
+    "stem": "Assertion (A): Leverage can increase private equity returns.\nReason (R): Debt magnifies equity gains when company value rises.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Debt is a contractual claim: unlike dividends, interest and principal must be paid on schedule. Therefore, the feasibility of an LBO depends on whether the acquired firm can reliably generate cash to service debt. The reading explicitly links LBO candidates to high cash flows used for debt service, so the reason directly explains the assertion. :contentReference[oaicite:16]{index=16}"
+    "correct_answer": "A",
+    "explanation": "Leverage concentrates gains on a smaller equity base. This amplification explains higher potential returns."
   },
   {
     "id": 12,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "Going private and long-term focus",
-    "question": {
-      "assertion": "Operating as a private (non-publicly traded) company can allow management to focus more on long-term value creation.",
-      "reason": "Public company management may feel pressure to meet near-term targets (e.g., quarterly sales and earnings), whereas going private can reduce this short-term market pressure."
-    },
+    "topic": "Cash flow stability",
+    "stem": "Assertion (A): Stable cash flows make companies attractive private equity targets.\nReason (R): Predictable cash flows support debt servicing.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Reason from incentives: when performance is judged frequently and publicly, managers may optimize for short-term metrics even if it harms long-run value. The text states public management often feels pressured by quarterly targets and near-term price focus; going private can remove some of that pressure and certain public-company costs, enabling a longer-term operating horizon. :contentReference[oaicite:17]{index=17}"
+    "correct_answer": "A",
+    "explanation": "Debt obligations are fixed, regardless of performance. Stable cash flows reduce default risk and support leverage."
   },
   {
     "id": 13,
     "model": "GPT 5.2",
-    "format": "Reason-Based",
-    "topic": "PIPE urgency and pricing power",
-    "question": {
-      "assertion": "In a PIPE transaction, the private investor may be able to buy shares at a discount to the quoted market price.",
-      "reason": "A public company seeking capital quickly may accept less favorable pricing terms to obtain funds rapidly and in size."
-    },
+    "topic": "Operational improvements",
+    "stem": "Assertion (A): Private equity investors focus on improving operations.\nReason (R): Operational gains increase firm value at exit.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Discounts come from bargaining power under constraints. If the issuer needs funds urgently or needs a large amount quickly, its outside options can shrink (issuing publicly might take longer or be uncertain), so it may concede price to attract a private buyer. The reading explicitly states the private investor may be able to purchase at a significant discount depending on urgency and size, matching the reason as the economic mechanism. :contentReference[oaicite:18]{index=18} :contentReference[oaicite:19]{index=19}"
+    "correct_answer": "A",
+    "explanation": "Value creation in private equity targets fundamentals, not short-term price movements. Operational improvements directly raise exit valuations."
   },
   {
     "id": 14,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Private equity trading and negotiation",
-    "question": {
-      "assertion": "Private equity securities often require negotiation between investors to trade.",
-      "reason": "Because private equity securities are not listed on public exchanges, there is generally no active secondary market that continuously matches buyers and sellers."
-    },
+    "topic": "Holding period incentives",
+    "stem": "Assertion (A): Longer holding periods encourage long-term decision-making.\nReason (R): Investors are less pressured by short-term market prices.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Trading infrastructure determines how trades happen. In an exchange with an active market, you submit orders and the market matches them, producing observable prices. In private equity, the reading states there is no active secondary market because securities are not listed; without centralized matching and continuous quotes, trades become bilateral and negotiated. :contentReference[oaicite:20]{index=20}"
+    "correct_answer": "A",
+    "explanation": "Without daily market pricing, managers can focus on sustainable improvements. Reduced short-term pressure explains longer-term orientation."
   },
   {
     "id": 15,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Private securities and investor eligibility",
-    "question": {
-      "assertion": "Private equities and private debt instruments are often purchased only by specially qualified investors.",
-      "reason": "Private securities are not registered to trade in public markets, and regulatory frameworks often restrict participation in such offerings to qualified investors."
-    },
+    "topic": "Fee alignment",
+    "stem": "Assertion (A): Carried interest aligns manager incentives with investors.\nReason (R): Carried interest depends on investment performance.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start from what registration does: it opens access to broad public trading under strict disclosure and governance rules. When a security is not registered (i.e., private), regulators often compensate for reduced protections and higher complexity/illiquidity by limiting who can buy—typically investors deemed sophisticated or financially able to bear losses. The text explicitly notes private equities and private debt are often limited to specially qualified investors, and the reason explains the regulatory logic behind that restriction. :contentReference[oaicite:21]{index=21}"
+    "correct_answer": "A",
+    "explanation": "Performance-based fees reward successful exits. This structure links manager compensation to investor outcomes."
   },
   {
     "id": 16,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "LBO to private, then public again",
-    "question": {
-      "assertion": "After a leveraged buyout, the acquired company typically becomes privately held.",
-      "reason": "In an LBO, the investor group purchases all outstanding common shares, so the shares cease trading on the exchange and the group takes full control."
-    },
+    "topic": "Market risk",
+    "stem": "Assertion (A): Private equity is immune to market risk.\nReason (R): Private equity investments are not publicly traded.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Ownership and listing are linked: if all public shares are acquired, there is nothing left to trade publicly, and control concentrates with the buyer group. The reading describes exactly this sequence—purchase outstanding shares using a large amount of debt, shares stop trading, company is taken private—so the reason is not just true, it is the mechanical explanation of the assertion. :contentReference[oaicite:22]{index=22}"
+    "correct_answer": "D",
+    "explanation": "Lack of public trading reduces price volatility but not economic exposure. Market conditions still affect exit values."
   },
   {
     "id": 17,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Public markets: liquidity and capital raising",
-    "question": {
-      "assertion": "Public equity markets generally provide more liquidity than private equity markets.",
-      "reason": "Public securities trade in liquid secondary markets where sellers can more easily find buyers, whereas private securities are generally illiquid."
-    },
+    "topic": "Capital commitment",
+    "stem": "Assertion (A): Private equity investors commit capital for long periods.\nReason (R): Capital cannot be withdrawn easily before exit.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Liquidity is the ease of converting an asset into cash at low cost. Secondary markets (exchanges/dealers) create liquidity by continuously bringing buyers and sellers together and producing observable prices. The reading contrasts private securities as generally illiquid with many public securities trading in liquid markets; that directly explains why public markets are typically more liquid. :contentReference[oaicite:23]{index=23}"
+    "correct_answer": "A",
+    "explanation": "Illiquidity restricts early withdrawal. This structural feature explains long-term capital commitment."
   },
   {
     "id": 18,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Convertible preference shares in private equity/VC context",
-    "question": {
-      "assertion": "Longer private equity holding periods can make convertible preference shares attractive to private investors.",
-      "reason": "Convertible preference shares can provide dividend payments while also offering potential upside through conversion into common shares during an IPO."
-    },
+    "topic": "Risk–return trade-off",
+    "stem": "Assertion (A): Private equity investors expect higher returns.\nReason (R): Investors are compensated for illiquidity and risk.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "From first principles, investors want compensation while waiting (carry) and also want upside if the company succeeds. When holding periods lengthen, the value of interim cash flows (dividends) increases because you may wait many years for an exit; at the same time, you still want equity upside. The reading notes longer holding periods and explains that convertible preference shares provide dividend payments and the ability to convert into common during an IPO, which directly explains the assertion. :contentReference[oaicite:24]{index=24}"
+    "correct_answer": "A",
+    "explanation": "Higher risk and illiquidity require compensation. Expected excess returns reflect this trade-off."
   },
   {
     "id": 19,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Private equity market size vs public equity market",
-    "question": {
-      "assertion": "Public equity markets are generally much larger than private equity markets.",
-      "reason": "Public markets allow companies more opportunities to raise capital that is actively traded in secondary markets."
-    },
+    "topic": "Exit valuation",
+    "stem": "Assertion (A): Exit valuation is critical to private equity performance.\nReason (R): Most cash flows occur at exit rather than during holding.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Market size is driven by scalability of capital raising and liquidity. If investors can buy and later sell easily in secondary markets, more investors participate and issuers can raise more capital repeatedly, which expands market depth. The reading explicitly contrasts the large, liquid public equity markets with smaller private equity networks, and links public scrutiny/secondary trading to broader capital-raising capacity; that makes the reason the structural explanation of the assertion. :contentReference[oaicite:25]{index=25}"
+    "correct_answer": "A",
+    "explanation": "Returns concentrate at exit because interim cash flows are limited. Exit pricing therefore dominates performance outcomes."
   },
   {
     "id": 20,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Corporate governance visibility: public vs private",
-    "question": {
-      "assertion": "Public scrutiny can incentivize companies to be more open about governance and executive compensation.",
-      "reason": "When policies and disclosures are public, shareholders, analysts, and other stakeholders can influence management."
-    },
+    "topic": "Control premium",
+    "stem": "Assertion (A): Private equity investors often pay a control premium.\nReason (R): Control enables strategic and operational changes.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Influence requires visibility: you can only monitor and pressure management if you can observe actions, disclosures, and outcomes. Public companies operate under disclosure regimes and public attention, which enables monitoring by shareholders and analysts; that monitoring changes incentives, pushing openness in governance and compensation. The reading explicitly notes that under public scrutiny companies are incentivized to be more open, and that stakeholders can influence management when policies are public, making the reason a direct explanation. :contentReference[oaicite:26]{index=26}"
+    "correct_answer": "A",
+    "explanation": "Control provides the ability to implement value-enhancing actions. That potential justifies paying a premium."
   },
   {
     "id": 21,
     "model": "GPT 5.2",
-    "format": "Assertion-Reason",
-    "topic": "Private securities: direct vs indirect access",
-    "question": {
-      "assertion": "Investors may gain exposure to private equity and private debt either directly or through specialized investment vehicles.",
-      "reason": "Private securities are often restricted to qualified investors and can be purchased from issuers directly or indirectly via vehicles formed to hold such securities."
-    },
+    "topic": "Portfolio diversification",
+    "stem": "Assertion (A): Private equity funds invest in multiple companies.\nReason (R): Diversification reduces idiosyncratic risk.",
     "options": {
-      "a": "Both A and R are true and R is the correct explanation of A",
-      "b": "Both A and R are true but R is not the correct explanation of A",
-      "c": "A is true but R is false",
-      "d": "A is false but R is true"
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
     },
-    "correct_answer": "a",
-    "explanation": "Start from access constraints: if a market is private, participation may be limited, and transaction/monitoring costs can be high. To reduce these frictions, markets often use intermediating structures—funds/vehicles that pool capital and hold private instruments—so investors can participate indirectly rather than negotiating each private deal. The reading states investors may purchase private securities directly from issuers or indirectly through vehicles formed to hold them, and notes eligibility restrictions, so the reason explains the assertion’s two access paths. :contentReference[oaicite:27]{index=27}"
+    "correct_answer": "A",
+    "explanation": "Individual private investments are risky. Portfolio diversification spreads company-specific risk across holdings."
   }
 ]
