@@ -6,7 +6,10 @@
   <title>MCQ Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+
+
   <script>
     // Helper to typeset MathJax in dynamic regions
     function __typesetMath(el){
@@ -78,10 +81,11 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: "JetBrains Mono", "JetBrainsMono NF", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-family: "Geist", Arial, Helvetica, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+    .stem {line-height: 1.7; font-weight: 500;}
     .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
     header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; }
     header h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: .2px; }
@@ -213,7 +217,7 @@
           {% for q in questions %}
             <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
               <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
-              <h2>{{ q.text }}</h2>
+              <p class="stem">{{ q.text|linebreaksbr }}</p>
               <ul class="choices">
                 {% for idx, choice in q.choices %}
                   <li class="choice">
