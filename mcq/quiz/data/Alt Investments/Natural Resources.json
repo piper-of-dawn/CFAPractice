@@ -3,7 +3,7 @@
     "id": 1,
     "model": "Gemini 3 Pro",
     "topic": "Timberland Characteristics",
-    "stem": "Consider the following statements regarding Timberland investments:\n1. The 'factory' characteristic refers to the biological growth of trees, which increases harvestable volume over time independent of markets.\n2. The 'warehouse' characteristic allows owners to delay harvesting during low-price periods without halting biological growth.\n3. Timberland returns have historically shown a high positive correlation (above 0.8) with public global equity markets.\n4. Approximately half of the world's private investable timberland is located in the United States.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding Timberland investments: \n 1. The 'factory' characteristic refers to the biological growth of trees, which increases harvestable volume over time independent of markets. \n 2. The 'warehouse' characteristic allows owners to delay harvesting during low-price periods without halting biological growth. \n 3. Timberland returns have historically shown a high positive correlation (above 0.8) with public global equity markets. \n 4. Approximately half of the world's private investable timberland is located in the United States. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1, 2, and 4 only",
@@ -18,7 +18,7 @@
     "id": 2,
     "model": "Gemini 3 Pro",
     "topic": "Commodity Futures Pricing",
-    "stem": "Consider the following statements regarding Commodity Futures pricing mechanics:\n1. In a Contango market, the forward price is higher than the spot price ($F > S$).\n2. A negative roll yield is experienced by a long investor in a Contango market.\n3. The convenience yield is added to the risk-free rate when calculating the theoretical forward price.\n4. High inventory levels generally decrease the convenience yield, increasing the likelihood of Contango.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding Commodity Futures pricing mechanics: \n 1. In a Contango market, the forward price is higher than the spot price ($F > S$). \n 2. A negative roll yield is experienced by a long investor in a Contango market. \n 3. The convenience yield is added to the risk-free rate when calculating the theoretical forward price. \n 4. High inventory levels generally decrease the convenience yield, increasing the likelihood of Contango. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1, 2, and 4 only",
@@ -33,7 +33,7 @@
     "id": 3,
     "model": "Gemini 3 Pro",
     "topic": "Farmland Investment Features",
-    "stem": "Consider the following statements regarding Farmland investments:\n1. Row crops (e.g., corn, soy) provide an 'annual real option' to switch outputs based on market prices.\n2. Permanent crops (e.g., orchards) exhibit a J-curve cash flow profile, requiring years before generating positive income.\n3. A crop-share lease transfers most of the price and weather risk from the landowner to the tenant (farmer).\n4. Farmland generally exhibits lower volatility than broad commodity indexes.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding Farmland investments: \n 1. Row crops (e.g., corn, soy) provide an 'annual real option' to switch outputs based on market prices. \n 2. Permanent crops (e.g., orchards) exhibit a J-curve cash flow profile, requiring years before generating positive income. \n 3. A crop-share lease transfers most of the price and weather risk from the landowner to the tenant (farmer). \n 4. Farmland generally exhibits lower volatility than broad commodity indexes. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1, 2, and 4 only",
@@ -48,7 +48,7 @@
     "id": 4,
     "model": "Gemini 3 Pro",
     "topic": "Natural Resources Risks",
-    "stem": "Consider the following statements regarding risk factors in Natural Resources:\n1. Commodities typically exhibit higher standard deviation of returns than private Timberland or Farmland.\n2. Timberland is uniquely exposed to idiosyncratic biological risks such as fire and pest infestation.\n3. Geopolitical risk is a primary pricing factor for globally concentrated assets like Crude Oil.\n4. Farmland values are insensitive to interest rate changes because food demand is inelastic.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding risk factors in Natural Resources: \n 1. Commodities typically exhibit higher standard deviation of returns than private Timberland or Farmland. \n 2. Timberland is uniquely exposed to idiosyncratic biological risks such as fire and pest infestation. \n 3. Geopolitical risk is a primary pricing factor for globally concentrated assets like Crude Oil. \n 4. Farmland values are insensitive to interest rate changes because food demand is inelastic. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1 and 4 only",
@@ -63,7 +63,7 @@
     "id": 5,
     "model": "Gemini 3 Pro",
     "topic": "Investment Vehicles",
-    "stem": "Consider the following statements regarding Natural Resource investment vehicles:\n1. TIMOs (Timberland Investment Management Organizations) allow institutional investors to own timberland without managing the operations themselves.\n2. ETFs can utilize commodity futures to provide indirect exposure to retail investors.\n3. Master Limited Partnerships (MLPs) are the preferred structure for owning raw Farmland in the United States.\n4. Publicly traded Timber REITs generally exhibit higher liquidity than direct timberland ownership.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding Natural Resource investment vehicles: \n 1. TIMOs (Timberland Investment Management Organizations) allow institutional investors to own timberland without managing the operations themselves. \n 2. ETFs can utilize commodity futures to provide indirect exposure to retail investors. \n 3. Master Limited Partnerships (MLPs) are the preferred structure for owning raw Farmland in the United States. \n 4. Publicly traded Timber REITs generally exhibit higher liquidity than direct timberland ownership. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1, 2, and 4 only",
@@ -78,7 +78,7 @@
     "id": 6,
     "model": "Gemini 3 Pro",
     "topic": "Return Decomposition",
-    "stem": "Consider the following statements regarding return components:\n1. The Total Return of a commodity futures position = Collateral Return + Spot Return + Roll Return.\n2. Biological growth is a major component of Timberland returns but is negligible for Farmland returns.\n3. Roll return is dependent on the slope of the futures term structure (Contango vs. Backwardation).\n4. In a Backwardated market, the roll return is positive for a long-only investor.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding return components: \n 1. The Total Return of a commodity futures position = Collateral Return + Spot Return + Roll Return. \n 2. Biological growth is a major component of Timberland returns but is negligible for Farmland returns. \n 3. Roll return is dependent on the slope of the futures term structure (Contango vs. Backwardation). \n 4. In a Backwardated market, the roll return is positive for a long-only investor. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1 and 4 only",
@@ -93,7 +93,7 @@
     "id": 7,
     "model": "Gemini 3 Pro",
     "topic": "Diversification & ESG",
-    "stem": "Consider the following statements regarding portfolio roles:\n1. Natural Resources typically improve a portfolio's Sharpe ratio due to low correlation with traditional stocks and bonds.\n2. Commodities historically exhibit a higher correlation with unexpected inflation than Timberland or Farmland.\n3. Timberland offers a 'negative carbon' profile via biological sequestration, aligning with ESG goals.\n4. Farmland returns are perfectly negatively correlated with inflation, providing a poor hedge.\n\nWhich of the statements given above are correct?",
+    "stem": "Consider the following statements regarding portfolio roles: \n 1. Natural Resources typically improve a portfolio's Sharpe ratio due to low correlation with traditional stocks and bonds. \n 2. Commodities historically exhibit a higher correlation with unexpected inflation than Timberland or Farmland. \n 3. Timberland offers a 'negative carbon' profile via biological sequestration, aligning with ESG goals. \n 4. Farmland returns are perfectly negatively correlated with inflation, providing a poor hedge. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1 and 4 only",
@@ -108,7 +108,7 @@
     "id": 8,
     "model": "Gemini 3 Pro",
     "topic": "Backwardation Mechanics",
-    "stem": "Assertion (A): In a commodity market characterized by Backwardation, the roll yield for a long futures position is positive.\nReason (R): In Backwardation, the futures price is lower than the spot price ($F < S$), requiring the futures contract to converge upward toward the spot price as it approaches maturity.",
+    "stem": "Assertion (A): In a commodity market characterized by Backwardation, the roll yield for a long futures position is positive. \n Reason (R): In Backwardation, the futures price is lower than the spot price ($F < S$), requiring the futures contract to converge upward toward the spot price as it approaches maturity.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -123,7 +123,7 @@
     "id": 9,
     "model": "Gemini 3 Pro",
     "topic": "Timberland Volatility",
-    "stem": "Assertion (A): Reported volatility for appraisal-based Timberland indices (like NCREIF) is significantly lower than that of publicly traded Timber REITs.\nReason (R): Appraisers typically anchor valuations to historical data and adjust slowly, which smoothes out the high-frequency price fluctuations observed in public markets.",
+    "stem": "Assertion (A): Reported volatility for appraisal-based Timberland indices (like NCREIF) is significantly lower than that of publicly traded Timber REITs. \n Reason (R): Appraisers typically anchor valuations to historical data and adjust slowly, which smoothes out the high-frequency price fluctuations observed in public markets.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -138,7 +138,7 @@
     "id": 10,
     "model": "Gemini 3 Pro",
     "topic": "Farmland Liquidity",
-    "stem": "Assertion (A): Farmland is considered a highly liquid asset class suitable for short-term tactical trading strategies.\nReason (R): Farmland transactions involve large capital outlays, specialized due diligence regarding soil/water rights, and long illiquid closing periods.",
+    "stem": "Assertion (A): Farmland is considered a highly liquid asset class suitable for short-term tactical trading strategies. \n Reason (R): Farmland transactions involve large capital outlays, specialized due diligence regarding soil/water rights, and long illiquid closing periods.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -153,7 +153,7 @@
     "id": 11,
     "model": "Gemini 3 Pro",
     "topic": "Commodity Indexes",
-    "stem": "Assertion (A): A production-weighted commodity index (such as the S&P GSCI) is typically dominated by the Energy sector.\nReason (R): The global economic value of Energy production (Price × Quantity) is significantly higher than that of Metals or Agriculture.",
+    "stem": "Assertion (A): A production-weighted commodity index (such as the S&P GSCI) is typically dominated by the Energy sector. \n Reason (R): The global economic value of Energy production (Price × Quantity) is significantly higher than that of Metals or Agriculture.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -168,7 +168,7 @@
     "id": 12,
     "model": "Gemini 3 Pro",
     "topic": "Convenience Yield",
-    "stem": "Assertion (A): The convenience yield for Gold is typically much higher than the convenience yield for Crude Oil.\nReason (R): Crude Oil is a consumption asset required for immediate industrial processes, whereas Gold is an investment asset with a high stock-to-flow ratio.",
+    "stem": "Assertion (A): The convenience yield for Gold is typically much higher than the convenience yield for Crude Oil. \n Reason (R): Crude Oil is a consumption asset required for immediate industrial processes, whereas Gold is an investment asset with a high stock-to-flow ratio.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -183,7 +183,7 @@
     "id": 13,
     "model": "Gemini 3 Pro",
     "topic": "TIMO Structure",
-    "stem": "Assertion (A): Institutional investors utilize Timberland Investment Management Organizations (TIMOs) to gain exposure to the asset class.\nReason (R): TIMO structures allow the investor to completely eliminate the biological risks (e.g., fire, pests) associated with forest ownership.",
+    "stem": "Assertion (A): Institutional investors utilize Timberland Investment Management Organizations (TIMOs) to gain exposure to the asset class. \n Reason (R): TIMO structures allow the investor to completely eliminate the biological risks (e.g., fire, pests) associated with forest ownership.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -198,7 +198,7 @@
     "id": 14,
     "model": "Gemini 3 Pro",
     "topic": "Inflation Hedging",
-    "stem": "Assertion (A): Natural resources are widely considered to be effective hedges against unexpected inflation.\nReason (R): The prices of commodities (energy, food, metals) are the primary input components that drive changes in the Consumer Price Index (CPI).",
+    "stem": "Assertion (A): Natural resources are widely considered to be effective hedges against unexpected inflation. \n Reason (R): The prices of commodities (energy, food, metals) are the primary input components that drive changes in the Consumer Price Index (CPI).",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -213,7 +213,7 @@
     "id": 15,
     "model": "Gemini 3 Pro",
     "topic": "Timberland Flexibility",
-    "stem": "Assertion (A): Timberland investments offer a unique 'real option' to the owner known as the 'warehouse' function.\nReason (R): Trees continue to grow in volume and value even when not harvested, allowing owners to delay harvest during periods of low lumber prices.",
+    "stem": "Assertion (A): Timberland investments offer a unique 'real option' to the owner known as the 'warehouse' function. \n Reason (R): Trees continue to grow in volume and value even when not harvested, allowing owners to delay harvest during periods of low lumber prices.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -228,7 +228,7 @@
     "id": 16,
     "model": "Gemini 3 Pro",
     "topic": "Contango and Storage",
-    "stem": "Assertion (A): A commodity market is likely to be in Contango ($F > S$) when inventory levels are high and storage costs are significant.\nReason (R): To induce arbitrageurs to hold physical inventory, the future price must exceed the spot price by a premium sufficient to cover the costs of storage and financing.",
+    "stem": "Assertion (A): A commodity market is likely to be in Contango ($F > S$) when inventory levels are high and storage costs are significant. \n Reason (R): To induce arbitrageurs to hold physical inventory, the future price must exceed the spot price by a premium sufficient to cover the costs of storage and financing.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -243,7 +243,7 @@
     "id": 17,
     "model": "Gemini 3 Pro",
     "topic": "Farmland vs Timberland Correlations",
-    "stem": "Assertion (A): Farmland and Timberland returns are perfectly correlated (Correlation = 1.0) with each other.\nReason (R): Both asset classes are driven by similar underlying macroeconomic factors, such as interest rates and land appreciation.",
+    "stem": "Assertion (A): Farmland and Timberland returns are perfectly correlated (Correlation = 1.0) with each other. \n Reason (R): Both asset classes are driven by similar underlying macroeconomic factors, such as interest rates and land appreciation.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -258,7 +258,7 @@
     "id": 18,
     "model": "Gemini 3 Pro",
     "topic": "ESG Sequestration",
-    "stem": "Assertion (A): Timberland is increasingly attractive to ESG-focused investors due to its carbon profile.\nReason (R): Young, fast-growing forests sequester carbon dioxide at a higher rate than mature, decaying forests, rewarding active management.",
+    "stem": "Assertion (A): Timberland is increasingly attractive to ESG-focused investors due to its carbon profile. \n Reason (R): Young, fast-growing forests sequester carbon dioxide at a higher rate than mature, decaying forests, rewarding active management.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -273,7 +273,7 @@
     "id": 19,
     "model": "Gemini 3 Pro",
     "topic": "Row Crops vs Permanent Crops",
-    "stem": "Assertion (A): Investing in permanent crops (like almonds or wine grapes) generally carries lower specific risk than investing in row crops.\nReason (R): Permanent crops do not require annual replanting costs, improving margins.",
+    "stem": "Assertion (A): Investing in permanent crops (like almonds or wine grapes) generally carries lower specific risk than investing in row crops. \n Reason (R): Permanent crops do not require annual replanting costs, improving margins.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -288,7 +288,7 @@
     "id": 20,
     "model": "Gemini 3 Pro",
     "topic": "Commodity Supply Elasticity",
-    "stem": "Assertion (A): The supply of commodities is highly elastic (responsive) in the short run.\nReason (R): Producers can rapidly ramp up extraction or farming output in response to small price increases.",
+    "stem": "Assertion (A): The supply of commodities is highly elastic (responsive) in the short run. \n Reason (R): Developing new mines or growing crops requires significant lead time and biological cycles.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -296,14 +296,14 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "D",
-    "explanation": "<h3>First Principles Thinking: Physical Constraints</h3><p><strong>D is correct (Wait, actually both are False, but standard format implies if A is False, answer is D? No, typically standard Assertion-Reason has an option E for 'Both False' or forces one to be true. However, based on the provided options (a-d), if A is clearly false, we usually select D if R is true, or if R is also false, the question is flawed in this format. Let's re-read carefully).</strong></p><p>Correction: Actually, both statements are False. Supply is *inelastic* (A is False). Producers *cannot* ramp up quickly (R is False). In standard MCQ formats like this, usually one statement is true. Let me check the source. Ah, the text says supply adjusts *slowly*. So A is False. R says they *can* ramp up. That is also False. However, for the sake of the exercise, if I must fit the format: A is False. I will assume the options provided imply valid logic. But wait, if R is false, then D (A is false but R is true) is not selectable. I will adjust the question to make R true so D is the valid answer.</p><p><strong>Revised R for JSON:</strong> 'Reason (R): Developing new mines or growing crops requires significant lead time and biological cycles.' -> This makes R True. Then D is the correct answer.</p><p><strong>Explanation for Revised Question:</strong> A is False because supply is inelastic. R is True because lead times are long. Thus D is correct.</p>",
+    "explanation": "<h3>First Principles Thinking: Physical Constraints</h3><p><strong>D is correct.</strong> Assertion (A) is False: Short-run supply for commodities is notoriously *inelastic*. You cannot speed up a biological harvest or build a mine overnight. Reason (R) is True: It accurately describes the physical reality (lead times, growth cycles) that causes the inelasticity. Because A is False and R is True, D is the correct choice.</p><p>A, B, and C are incorrect because the premise in A is false.</p>",
     "topic_id": "natural_resources_20"
   },
   {
     "id": 21,
     "model": "Gemini 3 Pro",
     "topic": "Roll Return in Contango",
-    "stem": "Assertion (A): An investor holding a long position in a Contango market suffers a negative roll return.\nReason (R): To maintain the position, the investor must sell expiring lower-priced contracts and buy more expensive longer-dated contracts.",
+    "stem": "Assertion (A): An investor holding a long position in a Contango market suffers a negative roll return. \n Reason (R): To maintain the position, the investor must sell expiring lower-priced contracts and buy more expensive longer-dated contracts.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
