@@ -448,6 +448,17 @@
       });
       recomputeTotals();
 
+      // Run MathJax over stems/options once loaded, then wrap wide formulas
+      const quizForm = document.getElementById('quizForm');
+      const runTypeset = () => {
+        __typesetMath(quizForm || document).then(function(){ __wrapWideMath(quizForm || document); });
+      };
+      runTypeset();
+      const mjxScript = document.getElementById('MathJax-script');
+      if (mjxScript) {
+        mjxScript.addEventListener('load', runTypeset);
+      }
+
       // ===== Lightweight popup implementation =====
       function ensurePopup() {
         if (document.getElementById('explainModal')) return document.getElementById('explainModal');
