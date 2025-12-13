@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 2-year floating-rate note (FRN) pays a semi-annual coupon composed of the 6-month Market Reference Rate (MRR) plus a quoted margin of 80 basis points. The current 6-month MRR is 3.00% and is assumed to remain constant. If the required discount margin (DM) is 120 basis points, what is the value of the note per 100 of par?",
+    "options": {
+      "A": "99.23",
+      "B": "99.60",
+      "C": "100.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Floating-Rate Note Valuation</h3><p><strong>A is correct.</strong> The value of a floating-rate note is the present value of its future coupons and principal, discounted at the reference rate plus the discount margin (DM). Since the MRR is constant, we can model this as a fixed-rate bond with a coupon rate equal to MRR + Quoted Margin (QM) and a discount rate equal to MRR + Discount Margin (DM).</p><p>$$ \\text{Coupon Rate} = 3.00\\% + 0.80\\% = 3.80\\% $$</p><p>$$ \\text{Discount Rate (Yield)} = 3.00\\% + 1.20\\% = 4.20\\% $$</p><p>Since the discount rate (4.20%) is higher than the coupon rate (3.80%), the bond must trade at a discount (below 100).</p><p>Calculation using $N=4$ periods (2 years $\\times$ 2):</p><p>$$ PMT = \\frac{3.80\\% \\times 100}{2} = 1.90 $$</p><p>$$ r = \\frac{4.20\\%}{2} = 2.10\\% = 0.021 $$</p><p>$$ PV = \\sum_{t=1}^{4} \\frac{1.90}{(1.021)^t} + \\frac{100}{(1.021)^4} $$</p><p>$$ PV = 1.90 \\times \\left[ \\frac{1 - (1.021)^{-4}}{0.021} \\right] + \\frac{100}{(1.021)^4} $$</p><p>$$ PV \\approx 7.30 + 92.02 = 99.32 $$</p><p>Wait, let me re-calculate precisely: $1.90/1.021 + 1.90/1.021^2 + 1.90/1.021^3 + 101.90/1.021^4 = 99.23$.</p><p>B is incorrect because it approximates the price change linearly (approx 40bps difference) without discounting correctly.</p><p>C is incorrect because it ignores the difference between QM and DM.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "An investor considers a 3-year quarterly-pay floating-rate note. The Reference Rate (MRR) is 2.50%, the Quoted Margin (QM) is 1.00%, and the note is trading at par (100.00). What is the Discount Margin (DM)?",
+    "options": {
+      "A": "0.50%",
+      "B": "1.00%",
+      "C": "3.50%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: Price-Yield Relationship for FRNs</h3><p><strong>B is correct.</strong> For a floating-rate note, if the price equals the par value, the coupon rate must equal the required yield (assuming a reset date). This implies that the Quoted Margin (QM) equals the Discount Margin (DM).</p><p>$$ \\text{Price} = \\text{Par} \\iff QM = DM $$</p><p>Since the note trades at 100.00 and the QM is 1.00% (100 bps), the DM must also be 1.00%.</p><p>A is incorrect because a DM lower than the QM (0.50% vs 1.00%) would result in the bond trading at a premium (Price > 100).</p><p>C is incorrect because it confuses the total yield (MRR + DM) with the margin itself.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 90-day T-bill is quoted at a discount rate of 3.20% based on a 360-day year. The face value is 1,000,000. What is the purchase price of the T-bill?",
+    "options": {
+      "A": "968,000",
+      "B": "992,000",
+      "C": "992,080"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: Money Market Discount Pricing</h3><p><strong>B is correct.</strong> Money market instruments quoted on a discount rate basis use the formula:</p><p>$$ PV = FV \\times \\left( 1 - \\frac{\\text{Days}}{\\text{Year}} \\times DR \\right) $$</p><p>$$ PV = 1,000,000 \\times \\left( 1 - \\frac{90}{360} \\times 0.0320 \\right) $$</p><p>$$ PV = 1,000,000 \\times (1 - 0.25 \\times 0.0320) $$</p><p>$$ PV = 1,000,000 \\times (1 - 0.008) = 1,000,000 \\times 0.992 = 992,000 $$</p><p>A is incorrect because it uses the full annual discount rate without adjusting for the 90-day period ($1,000,000 \\times (1-0.032)$).</p><p>C is incorrect because it uses a 365-day year for the time fraction ($90/365$), whereas the convention for discount rates (like US T-bills) is typically 360 days, and the question specifies a 360-day year.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A bank Certificate of Deposit (CD) has a maturity of 180 days and is quoted with an add-on rate of 4.50% using a 365-day year. If an investor invests 5,000,000, what is the redemption amount at maturity?",
+    "options": {
+      "A": "5,110,959",
+      "B": "5,112,500",
+      "C": "5,225,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Add-on Rate Interest</h3><p><strong>A is correct.</strong> Instruments quoted with an add-on rate pay interest calculated on the principal (PV) at the end of the period. The redemption amount (FV) is:</p><p>$$ FV = PV \\times \\left( 1 + \\frac{\\text{Days}}{\\text{Year}} \\times AOR \\right) $$</p><p>$$ FV = 5,000,000 \\times \\left( 1 + \\frac{180}{365} \\times 0.0450 \\right) $$</p><p>$$ FV = 5,000,000 \\times (1 + 0.49315 \\times 0.0450) $$</p><p>$$ FV = 5,000,000 \\times (1 + 0.02219178) = 5,110,958.90 $$</p><p>B is incorrect because it uses a 360-day year ($180/360 = 0.5$; $5m \\times 1.0225 = 5,112,500$).</p><p>C is incorrect because it applies the full annual rate without adjusting for the fraction of the year.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A money market instrument with 91 days to maturity is quoted at a discount rate of 2.80% based on a 360-day year. What is the Bond Equivalent Yield (BEY)?",
+    "options": {
+      "A": "2.80%",
+      "B": "2.84%",
+      "C": "2.86%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles: Bond Equivalent Yield Conversion</h3><p><strong>C is correct.</strong> The Bond Equivalent Yield (BEY) converts a 360-day discount rate to a 365-day add-on yield. The formula is:</p><p>$$ BEY = \\frac{365 \\times DR}{360 - (\\text{Days} \\times DR)} $$</p><p>Alternatively, first calculate price per 1 unit of face value:</p><p>$$ P = 1 - \\left(\\frac{91}{360} \\times 0.028\\right) = 1 - (0.252778 \\times 0.028) = 1 - 0.007078 = 0.992922 $$</p><p>Then calculate the annualized add-on yield (365-day basis):</p><p>$$ BEY = \\frac{1 - P}{P} \\times \\frac{365}{91} $$</p><p>$$ BEY = \\frac{0.007078}{0.992922} \\times 4.01099 = 0.007128 \\times 4.01099 \\approx 0.02859 $$</p><p>Converting to percentage: $2.86\\%$.</p><p>A is incorrect because it is the raw discount rate.</p><p>B is incorrect because it likely only adjusts for the 365/360 day count ratio ($2.80 \\times 365/360 = 2.838\\%$) without accounting for the price discount in the denominator.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 5-year semi-annual floating-rate note pays MRR + 1.20%. The MRR is currently 4.00%. The note is priced at 101.50. Which of the following statements about the Discount Margin (DM) is true?",
+    "options": {
+      "A": "DM < 1.20%",
+      "B": "DM = 1.20%",
+      "C": "DM > 1.20%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Price-Spread Relationship</h3><p><strong>A is correct.</strong> The relationship between the Quoted Margin (QM) and the Discount Margin (DM) determines the trading price relative to par.</p><p>$$ \\text{Price} > \\text{Par (Premium)} \\implies QM > DM $$</p><p>$$ \\text{Price} < \\text{Par (Discount)} \\implies QM < DM $$</p><p>Here, the note is trading at a premium (101.50 > 100). Therefore, the coupon investors receive (QM = 1.20%) is higher than the return they require (DM). Thus, DM must be less than 1.20%.</p><p>B is incorrect because if DM = QM, the price would be Par (100).</p><p>C is incorrect because if DM > QM, the price would be at a discount (< 100).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Calculate the price of a 180-day money market instrument with a face value of 10,000,000 quoted at an add-on rate of 3.65% based on a 365-day year.",
+    "options": {
+      "A": "9,635,000",
+      "B": "9,823,182",
+      "C": "10,000,000"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: PV of Add-on Rate Instrument</h3><p><strong>B is correct.</strong> When an instrument is quoted as an add-on rate (AOR), the 'Face Value' usually refers to the principal amount if we are calculating redemption, but here the question asks for the price of an instrument with a Face Value (future redemption value) of 10,000,000? Wait. Standard convention: For T-bills (Discount), FV is maturity value. For Add-on instruments (CDs), 'Face Value' is usually the Principal (PV). However, if the stem implies a tradable instrument where 'Face Value' is the Redemption Amount (like a CP quoted on yield), we use the PV formula.</p><p>Let's assume the standard text convention for 'Price of an instrument': The instrument pays Face Value at maturity. The quoted AOR is the yield to maturity. The Price (PV) is:</p><p>$$ PV = \\frac{FV}{1 + \\left( \\frac{\\text{Days}}{\\text{Year}} \\times AOR \\right)} $$</p><p>$$ PV = \\frac{10,000,000}{1 + \\left( \\frac{180}{365} \\times 0.0365 \\right)} $$</p><p>$$ PV = \\frac{10,000,000}{1 + (0.49315 \\times 0.0365)} $$</p><p>$$ PV = \\frac{10,000,000}{1 + 0.018} = \\frac{10,000,000}{1.018} \\approx 9,823,182.71 $$</p><p>A is incorrect because it treats the AOR as a discount rate ($10m \\times (1 - 180/365 \\times 0.0365)$).</p><p>C is incorrect because it ignores the time value of money.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 1-year quarterly-pay floating-rate note has a Quoted Margin (QM) of 75 bps and the current MRR is 2.25%. The note is priced at 99.50. The Discount Margin (DM) is closest to:",
+    "options": {
+      "A": "0.75%",
+      "B": "1.00%",
+      "C": "1.26%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles: DM Calculation</h3><p><strong>C is correct.</strong> The note trades at a discount (99.50 < 100), so DM must be greater than QM (75 bps). We can solve for the periodic discount rate $r$ that equates the PV of cash flows to 99.50, then find DM.</p><p>Parameters: $FV=100$, $N=4$ (quarterly), $m=4$.</p><p>Coupon PMT = $(MRR + QM) \\times 100 / 4 = (0.0225 + 0.0075) \\times 100 / 4 = 3.00\\% / 4 = 0.75$.</p><p>We need to solve for $r_{qt}$ in:</p><p>$$ 99.50 = \\sum_{t=1}^{4} \\frac{0.75}{(1+r_{qt})^t} + \\frac{100}{(1+r_{qt})^4} $$</p><p>Using a financial calculator or approximation: A price of 99.50 (0.50 discount) for a 1-year bond implies the yield is roughly 50bps higher than the coupon. Yield $\\approx 3.00\\% + 0.50\\% = 3.50\\%$.</p><p>Precise check with Option C (DM=1.26%): Yield = $MRR + DM = 2.25\\% + 1.26\\% = 3.51\\%$. Periodic $r_{qt} = 3.51\\% / 4 = 0.8775\\%$.</p><p>$$ PV = \\frac{0.75}{1.008775} + \\dots + \\frac{100.75}{(1.008775)^4} $$</p><p>Using $N=4, I/Y=0.8775, PMT=0.75, FV=100 \\rightarrow PV = 99.501$. This matches.</p><p>A is incorrect (DM=QM implies Price=100).</p><p>B is incorrect (DM=1.00% implies Yield=3.25%. Price would be $\\approx 99.75$).</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "An analyst converts a 180-day commercial paper discount rate of 4.20% (360-day year) to a Bond Equivalent Yield (BEY). The result is closest to:",
+    "options": {
+      "A": "4.26%",
+      "B": "4.35%",
+      "C": "4.45%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: BEY Formula</h3><p><strong>B is correct.</strong> The BEY adjusts for both the 365-day year and the fact that yield is earned on the discounted price, not the face value.</p><p>$$ P = 1 - \\frac{180}{360} \\times 0.0420 = 1 - 0.5 \\times 0.0420 = 1 - 0.021 = 0.979 $$</p><p>$$ BEY = \\frac{1 - P}{P} \\times \\frac{365}{180} $$</p><p>$$ BEY = \\frac{0.021}{0.979} \\times 2.02778 $$</p><p>$$ BEY = 0.02145 \\times 2.02778 \\approx 0.043499 $$</p><p>Closest is 4.35%.</p><p>A is incorrect because it is merely $4.20 \\times 365/360$ (4.258%), ignoring the price discount effect.</p><p>C is incorrect because it overestimates the compounding effect or uses wrong days.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A semi-annual floating-rate note has a current coupon rate of 4.00% (annualized). The note has 1.5 years to maturity (3 periods). The MRR is assumed constant. The Discount Margin is 50 bps and the Quoted Margin is 50 bps. What is the value of the note?",
+    "options": {
+      "A": "99.50",
+      "B": "100.00",
+      "C": "100.50"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: DM vs QM Parity</h3><p><strong>B is correct.</strong> This problem can be solved conceptually without calculation. For a Floating-Rate Note on a reset date, if the Quoted Margin (QM) equals the Discount Margin (DM), the note must be priced at par.</p><p>$$ QM = 50 \\text{ bps} $$</p><p>$$ DM = 50 \\text{ bps} $$</p><p>Since $QM = DM$, the coupon rate generated by the bond exactly compensates the investor for the required risk (MRR + DM). Therefore, the Price is 100.00.</p><p>A and C are incorrect because they imply a mismatch between the margin paid and the margin required.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "An instrument is quoted at a discount rate of 2.00% for a 90-day period (360-day year). If the investor wants to convert this to a 365-day add-on rate (AOR), which formula is correct?",
+    "options": {
+      "A": "$$ AOR = \\frac{365 \\times DR}{360 - (90 \\times DR)} $$",
+      "B": "$$ AOR = DR \\times \\frac{365}{360} $$",
+      "C": "$$ AOR = \\frac{360 \\times DR}{365 + (90 \\times DR)} $$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Discount to Add-on Conversion</h3><p><strong>A is correct.</strong> This is the definition of the Bond Equivalent Yield (BEY), which is an add-on rate. Derivation:</p><p>Price $P = F \\times (1 - \\frac{90}{360} DR)$.</p><p>Interest Earned = $F - P = F \\times \\frac{90}{360} DR$.</p><p>Add-on Rate $AOR = \\frac{\\text{Interest}}{P} \\times \\frac{\\text{Days in Year}}{\\text{Days}}$.</p><p>$$ AOR = \\frac{F \\frac{90}{360} DR}{F (1 - \\frac{90}{360} DR)} \\times \\frac{365}{90} $$</p><p>$$ AOR = \\frac{DR}{1 - \\frac{90}{360} DR} \\times \\frac{365}{360} $$</p><p>Multiply numerator and denominator by 360:</p><p>$$ AOR = \\frac{365 \\times DR}{360 - 90 \\times DR} $$</p><p>B is incorrect as it only adjusts the day count.</p><p>C is incorrect algebra.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 4-year FRN pays quarterly coupons of MRR + 100 bps. The MRR is 3.00%. The Discount Margin is 150 bps. The periodicity is $m=4$. Calculate the coupon payment amount for the first period per 100 of par.",
+    "options": {
+      "A": "0.75",
+      "B": "1.00",
+      "C": "1.125"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: FRN Coupon Calculation</h3><p><strong>B is correct.</strong> The coupon payment is determined by the Quoted Margin (QM) and the Market Reference Rate (MRR). The Discount Margin (DM) affects valuation, not the cash flow.</p><p>$$ \\text{Annual Coupon Rate} = MRR + QM = 3.00\\% + 1.00\\% = 4.00\\% $$</p><p>$$ \\text{Periodic Payment} = \\frac{\\text{Annual Rate}}{m} \\times \\text{Par} $$</p><p>$$ \\text{Periodic Payment} = \\frac{4.00\\%}{4} \\times 100 = 1.00\\% \\times 100 = 1.00 $$</p><p>A is incorrect because it uses just the MRR ($3\\%/4$).</p><p>C is incorrect because it uses the DM ($MRR+DM = 4.5\\% / 4 = 1.125$).</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 90-day Bankers' Acceptance is quoted at a discount rate of 5.00% (360-day year). A 90-day CD is quoted at an add-on rate of 5.10% (365-day year). Which instrument offers the higher yield to the investor?",
+    "options": {
+      "A": "The Bankers' Acceptance",
+      "B": "The CD",
+      "C": "They offer the same yield"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Comparable Yields</h3><p><strong>A is correct.</strong> To compare, convert the discount rate to a Bond Equivalent Yield (BEY) (365-day add-on).</p><p>For the BA (Discount 5.00%):</p><p>$$ BEY_{BA} = \\frac{365 \\times 0.05}{360 - (90 \\times 0.05)} = \\frac{18.25}{360 - 4.5} = \\frac{18.25}{355.5} \\approx 5.13\\% $$</p><p>The CD is quoted at an add-on rate (AOR) of 5.10% (365-day basis), so its BEY is 5.10%.</p><p>Since $5.13\\% > 5.10\\%$, the Bankers' Acceptance offers the higher yield.</p><p>B is incorrect because it takes the face value rates without converting for the price discount effect of the BA.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "An FRN has a Quoted Margin of 140 bps. The current price is 101.20. Which of the following is most likely the Discount Margin?",
+    "options": {
+      "A": "110 bps",
+      "B": "140 bps",
+      "C": "170 bps"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Margin Relationships</h3><p><strong>A is correct.</strong> The FRN is trading at a premium (101.20 > 100). This occurs when the coupon rate (driven by QM) is higher than the investor's required return (driven by DM).</p><p>$$ \\text{Price} > 100 \\implies QM > DM $$</p><p>$$ 140 \\text{ bps} > DM $$</p><p>Among the options, only 110 bps is less than 140 bps.</p><p>B is incorrect (implies Price = 100).</p><p>C is incorrect (implies Price < 100).</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Calculate the Discount Margin (DM) for a 2-year semi-annual FRN trading at 99.00. The MRR is 2.00% and the Quoted Margin is 50 bps. (Use simple approximation or logical deduction).",
+    "options": {
+      "A": "50 bps",
+      "B": "102 bps",
+      "C": "45 bps"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: DM Calculation</h3><p><strong>B is correct.</strong> The bond is at a discount (99.00), so $DM > QM$ (50 bps). This eliminates A and C immediately.</p><p>To verify B numerically: Coupon = 2.50%. Yield $\\approx$ Coupon + (Discount / Duration). Price discount is 1.00 spread over 2 years $\\approx$ 50 bps per year. Total Yield $\\approx$ 2.50% + 0.50% = 3.00%. Since MRR is 2.00%, DM $\\approx$ 100 bps.</p><p>Let's check 102 bps exactness. $r = (2.00 + 1.02) / 2 = 1.51\\%$. Coupon = 1.25%.</p><p>$$ PV = \\sum \\frac{1.25}{1.0151^t} + \\frac{100}{1.0151^4} \\approx 99.00 $$</p><p>This fits.</p><p>A is incorrect (DM=QM implies Price=100).</p><p>C is incorrect (DM < QM implies Price > 100).</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 180-day US T-bill is priced at 98.00 per 100 face value. The year is 360 days. What is the quoted Discount Rate?",
+    "options": {
+      "A": "2.00%",
+      "B": "4.00%",
+      "C": "4.08%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: Discount Rate Derivation</h3><p><strong>B is correct.</strong> The discount rate formula is:</p><p>$$ PV = FV \\times \\left( 1 - \\frac{\\text{Days}}{\\text{Year}} \\times DR \\right) $$</p><p>$$ 98 = 100 \\times \\left( 1 - \\frac{180}{360} \\times DR \\right) $$</p><p>$$ 0.98 = 1 - 0.5 \\times DR $$</p><p>$$ 0.5 \\times DR = 1 - 0.98 = 0.02 $$</p><p>$$ DR = \\frac{0.02}{0.5} = 0.04 = 4.00\\% $$</p><p>A is incorrect because it ignores the semi-annual period (180/360) adjustment.</p><p>C is incorrect because it represents the add-on yield ($2/98 \\times 2 = 4.08\\%$), not the discount rate.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A corporate FRN pays quarterly interest. The current coupon rate is 5.00%. The bond is priced at 100.00. The current 3-month MRR is 3.50%. What is the Quoted Margin (QM)?",
+    "options": {
+      "A": "150 bps",
+      "B": "350 bps",
+      "C": "500 bps"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles: Coupon Decomposition</h3><p><strong>A is correct.</strong> The coupon rate on a Floating-Rate Note is defined as:</p><p>$$ \\text{Coupon Rate} = MRR + QM $$</p><p>$$ 5.00\\% = 3.50\\% + QM $$</p><p>$$ QM = 5.00\\% - 3.50\\% = 1.50\\% = 150 \\text{ bps} $$</p><p>The price being 100.00 implies that DM is also 150 bps, but the definition of QM relies only on the coupon formula.</p><p>B is incorrect because it uses the MRR.</p><p>C is incorrect because it uses the total coupon.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "An investor purchases a 90-day instrument for 9,900 that pays 10,000 at maturity. Calculate the Add-on Rate (AOR) assuming a 365-day year.",
+    "options": {
+      "A": "4.00%",
+      "B": "4.04%",
+      "C": "4.10%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles: Add-on Rate Calculation</h3><p><strong>C is correct.</strong> The add-on rate (or holding period yield annualized) is calculated as:</p><p>$$ AOR = \\frac{\\text{Interest}}{\\text{Principal}} \\times \\frac{\\text{Year}}{\\text{Days}} $$</p><p>$$ \\text{Interest} = 10,000 - 9,900 = 100 $$</p><p>$$ AOR = \\frac{100}{9,900} \\times \\frac{365}{90} $$</p><p>$$ AOR = 0.010101... \\times 4.0555... \\approx 0.04096 $$</p><p>Rounding to 4.10%.</p><p>A is incorrect because it uses the Discount Rate formula ($100/10000 \\times 360/90 = 4.00\\%$).</p><p>B is incorrect because it uses a 360-day year ($1.01\\% \\times 4 = 4.04\\%$).</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A 3-year FRN has a Quoted Margin of 1.00%. The Discount Margin required by the market increases from 1.00% to 1.50% immediately after issuance. What happens to the price of the FRN?",
+    "options": {
+      "A": "It remains at 100.",
+      "B": "It increases above 100.",
+      "C": "It decreases below 100."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles: Yield-Price Inverse Relationship</h3><p><strong>C is correct.</strong> The discount margin (DM) represents the discount rate (yield) spread required by investors. If the required DM (1.50%) rises above the fixed Quoted Margin (1.00%), the cash flows (based on QM) are insufficient to meet the required return. To compensate, the price of the bond must fall below par (trade at a discount) to increase the effective yield to the investor.</p><p>$$ QM < DM \\implies \\text{Price} < \\text{Par} $$</p><p>B is incorrect because a price increase corresponds to a decrease in required yield (DM < QM).</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "If a floating-rate note pays coupons based on the 3-month MRR, how many times per year is the coupon reset?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles: Periodicity</h3><p><strong>C is correct.</strong> The periodicity $m$ corresponds to the frequency of the reference rate tenor. A 3-month MRR implies quarterly resets.</p><p>$$ \\text{Frequency} = \\frac{12 \\text{ months}}{3 \\text{ months}} = 4 \\text{ times per year} $$</p><p>A is annual.</p><p>B is semi-annual.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Calculate the Discount Margin (DM) for an FRN if the price is 100.00, the Quoted Margin is 220 bps, and the MRR is 1.50%.",
+    "options": {
+      "A": "150 bps",
+      "B": "220 bps",
+      "C": "370 bps"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles: Par Valuation</h3><p><strong>B is correct.</strong> When the price of a floating-rate note is exactly equal to its par value (100.00) on a reset date, the return required by the market (Discount Margin) must exactly equal the spread offered by the issuer (Quoted Margin).</p><p>$$ \\text{Price} = \\text{Par} \\implies DM = QM $$</p><p>$$ DM = 220 \\text{ bps} $$</p><p>A and C are incorrect because they imply a premium or discount price.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about floating-rate instruments and margins:\n(1) A floating-rate instrument pays interest based on an observed market reference rate (MRR) plus or minus a quoted margin. \n(2) The quoted margin is the spread required by investors for the instrument to be priced at par on a reset date, and it is also known as the discount margin. \n(3) The required margin reflects issuer- and security-specific risks and is analogous to a yield spread for a fixed-rate bond. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct because floating-rate instruments determine interest as the MRR plus a specified quoted margin (or minus, if negative). \nStatement (2) is incorrect because the spread required by investors for par pricing on a reset date is the required margin, also called the discount margin, whereas the quoted margin is specified in the instrument terms. \nStatement (3) is correct because the required (discount) margin reflects issuer- and security-specific risks and is described as analogous to the yield spread concept used for fixed-rate bonds. \nTherefore, only statements (1) and (3) are correct, so option C is correct. \nOption A fails because statement (2) misidentifies which margin is market-determined and uses the discount margin label incorrectly. \nOption B fails because it includes statement (2), which is incorrect, even though statement (3) is correct. "
+  },
+  {
+    "id": 2,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about a floating-rate note (FRN) on a reset date:\n(1) If the required margin is greater than the quoted margin, the FRN will be priced at a discount to par. \n(2) If the required margin is equal to the quoted margin, the FRN will be priced at par. \n(3) If the required margin is less than the quoted margin, the FRN will be priced at a discount to par. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because when the required (discount) margin exceeds the quoted margin on a reset date, the FRN’s quoted margin is deficient relative to what investors require, so the FRN is priced below par. \nStatement (2) is correct because the required margin is defined as the spread such that the FRN is priced at par on a reset date, which occurs when it equals the quoted margin. \nStatement (3) is incorrect because when the required margin is less than the quoted margin, the FRN provides excess spread relative to what investors require and is priced at a premium, not a discount. \nTherefore, statements (1) and (2) are correct, so option A is correct. \nOption B fails because it includes statement (3), which contradicts the premium/discount relationship described for required versus quoted margin. \nOption C fails because statement (3) is incorrect even though statement (1) is correct. "
+  },
+  {
+    "id": 3,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about changes in required margin (discount margin) and FRN pricing:\n(1) Changes in the required margin usually come from changes in the issuer’s credit risk, and they may also arise from changes in liquidity or tax status. \n(2) If the required margin rises above the quoted margin on a reset date, the FRN will be priced at a premium because investors require more spread. \n(3) When an FRN is priced at a discount on a reset date because the quoted margin is below the required margin, the discount reflects the present value of deficient future interest payments. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct because the required margin is described as being driven primarily by issuer credit risk, with liquidity and tax status also cited as factors that can affect it. \nStatement (2) is incorrect because if the required margin rises above the quoted margin, the FRN offers insufficient spread relative to what investors require, so it is priced at a discount, not a premium. \nStatement (3) is correct because the text explains that the discount amount is the present value of the deficient future cash flows arising from the gap between required and quoted margin. \nTherefore, statements (1) and (3) are correct, so option C is correct. \nOption A fails because statement (2) reverses the discount/premium implication of an increased required margin. \nOption B fails because it includes statement (2), which is incorrect, even though statement (3) is correct. "
+  },
+  {
+    "id": 4,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about coupon reset frequency and interest rate/price volatility for floaters:\n(1) Floaters with longer reset periods may be more exposed to interest rate and price volatility. \n(2) The longer the reset period, the more a floater will behave similarly to a short-dated fixed-rate security. \n(3) The shorter the reset period, the more the floater’s price will potentially fluctuate. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because longer reset periods are explicitly associated with greater exposure to interest rate and price volatility. \nStatement (2) is correct because the material states that as the reset period lengthens, the floater behaves more like a short-dated fixed-rate security. \nStatement (3) is incorrect because the material links greater potential price fluctuation to longer (not shorter) reset periods. \nTherefore, statements (1) and (2) are correct, so option A is correct. \nOption B fails because statement (3) reverses the direction of the reset-period effect on price fluctuation. \nOption C fails because statement (3) is incorrect even though statement (1) is correct. "
+  },
+  {
+    "id": 5,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about reference rates, payment timing, and day-count conventions for floaters:\n(1) For many floaters, the reference rate is set at the beginning of the interest period and the interest payment is made at the end of the period (in arrears). \n(2) A floater with quarterly reset dates must use a 30/360 day-count convention. \n(3) The most common day-count conventions for calculating accrued interest on floaters are actual/360 and actual/365. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct because the reading describes that the reference rate is typically observed at the beginning of the period and paid at the end, and it labels this structure as in arrears. \nStatement (2) is incorrect because the reading identifies actual/360 and actual/365 as common day-count conventions for floaters and does not state that quarterly resets require 30/360. \nStatement (3) is correct because it explicitly lists actual/360 and actual/365 as the most common day-count conventions for floaters. \nTherefore, statements (1) and (3) are correct, so option C is correct. \nOption A fails because statement (2) is incorrect. \nOption B fails because it includes statement (2), which is incorrect, even though statement (3) is correct. "
+  },
+  {
+    "id": 6,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about the required margin (discount margin) versus the quoted margin:\n(1) The required margin is specified in the instrument’s term sheet at issuance and remains fixed for the life of the floater. \n(2) If the quoted margin equals the required margin on a reset date, the floater will be priced at par. \n(3) The required margin is also known as the discount margin and is determined by the market. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect because the reading distinguishes the quoted margin as the specified spread, whereas the required margin (discount margin) is market-determined and can change with factors such as credit risk. \nStatement (2) is correct because the required margin is defined as the spread that results in par pricing on a reset date, which occurs when it equals the quoted margin. \nStatement (3) is correct because the reading explicitly states that the required margin is also known as the discount margin and that it is determined by the market. \nTherefore, statements (2) and (3) are correct, so option B is correct. \nOption A fails because statement (1) incorrectly assigns “specified and fixed” characteristics to the required margin rather than to the quoted margin. \nOption C fails because statement (1) is incorrect even though statement (3) is correct. "
+  },
+  {
+    "id": 7,
+    "model": "Kimi k2",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "Consider the following statements about par pricing and margin relationships for floaters:\n(1) If a floater trades at par, the quoted margin and the required margin are equal. \n(2) If a floater is issued at par and there is no change in the issuer’s credit risk, the required margin remains equal to the quoted margin and the floater is priced at par on each reset date. \n(3) The required margin is the spread that is added to the MRR to determine the coupon cash flow each period. \nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because the reading states that when a floater trades at par, the quoted and required margins are equal. \nStatement (2) is correct because it explains that if there is no change in issuer credit risk (and thus the required margin stays equal to the quoted margin), the floater will be priced at par on each reset date. \nStatement (3) is incorrect because the coupon cash flow each period is determined by MRR plus the quoted margin, whereas the required (discount) margin is used as the market-required spread for pricing/discounting rather than being the contractual coupon spread. \nTherefore, statements (1) and (2) are correct, so option A is correct. \nOption B fails because statement (3) incorrectly substitutes required margin for quoted margin in the coupon-setting relationship. \nOption C fails because statement (3) is incorrect even though statement (1) is correct. "
+  }
+]
