@@ -362,5 +362,68 @@
     },
     "correct_answer": "A",
     "explanation": "Statement (1) is correct because the reading states that when a floater trades at par, the quoted and required margins are equal. \nStatement (2) is correct because it explains that if there is no change in issuer credit risk (and thus the required margin stays equal to the quoted margin), the floater will be priced at par on each reset date. \nStatement (3) is incorrect because the coupon cash flow each period is determined by MRR plus the quoted margin, whereas the required (discount) margin is used as the market-required spread for pricing/discounting rather than being the contractual coupon spread. \nTherefore, statements (1) and (2) are correct, so option A is correct. \nOption B fails because statement (3) incorrectly substitutes required margin for quoted margin in the coupon-setting relationship. \nOption C fails because statement (3) is incorrect even though statement (1) is correct. "
+  },
+  {
+    "id": 1,
+    "model": "Kimi k2",
+    "topic": "Discount margin pricing mechanism",
+    "stem": "Assertion (A): A floating-rate note will trade at a discount when its quoted margin is below the required margin. Reason (R): The discount reflects the present value of deficient future interest payments resulting from the margin shortfall.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "A",
+    "explanation": "When quoted margin < required margin, the FRN pays less than market requires, creating a discount. The reason correctly explains this mechanism: the discount equals PV of the annuity shortfall (required - quoted margin) across remaining periods. This is the core pricing relationship for FRNs."
+  },
+  {
+    "id": 2,
+    "model": "Kimi k2",
+    "topic": "Reset frequency and price volatility",
+    "stem": "Assertion (A): Floating-rate notes with longer reset periods exhibit greater price volatility between coupon dates. Reason (R): The required margin on an FRN is inversely related to the time remaining until the next reset date.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "B",
+    "explanation": "A is true because longer reset periods expose investors to more interest rate risk between adjustments. However, R is true but does not explain A—required margin reflects credit risk, not time to reset. The price volatility stems from discounting mismatch between fixed coupon periods and changing MRR, not from required margin's time relationship."
+  },
+  {
+    "id": 3,
+    "model": "Kimi k2",
+    "topic": "Money market discount rate interpretation",
+    "stem": "Assertion (A): A money market discount rate understates the investor's true rate of return when the instrument trades below face value. Reason (R): Discount rates are calculated using the investment amount (PV) as the denominator, which always exceeds the face value (FV) when the discount rate is positive.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "C",
+    "explanation": "A is true: discount rates understate returns because they divide interest by FV rather than PV. However, R is false—discount rates use FV as denominator, and PV < FV when discount rate > 0. The understatement occurs because the denominator (FV) is larger than the actual investment amount (PV), not because PV exceeds FV."
+  },
+  {
+    "id": 4,
+    "model": "Kimi k2",
+    "topic": "FRN price convergence at reset dates",
+    "stem": "Assertion (A): On a reset date, a floating-rate note's price always converges to par regardless of the relationship between quoted and required margins. Reason (R): At reset dates, the coupon is adjusted to reflect the current MRR plus the quoted margin.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "D",
+    "explanation": "A is false—price converges to par only when quoted margin equals required margin. If required margin has changed due to credit risk, the FRN will trade at premium or discount even on reset date. R is true: coupons are mechanically reset to MRR + quoted margin, but this does not guarantee par pricing unless the market-required spread matches the quoted margin."
+  },
+  {
+    "id": 5,
+    "model": "Kimi k2",
+    "topic": "Discount margin calculation methodology",
+    "stem": "Assertion (A): The discount margin on an FRN can be estimated by solving for the spread that equates the present value of its cash flows to its market price. Reason (R): The FRN pricing model discounts all future cash flows using a constant rate composed of MRR plus the discount margin.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "A",
+    "explanation": "A correctly describes the IRR-style calculation for discount margin. R accurately explains the mechanism: the simplified FRN model uses a constant discount rate (MRR + DM) for all cash flows, making DM the yield spread that prices the FRN. This is the exact methodology used to solve for DM using goal-seek or financial calculators."
+  },
+  {
+    "id": 6,
+    "model": "Kimi k2",
+    "topic": "Money market yield comparability",
+    "stem": "Assertion (A): Converting money market yields to bond equivalent yield facilitates comparison with longer-term bond yields. Reason (R): Bond equivalent yield uses simple interest without compounding, identical to money market conventions.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
+    "correctanswer": "B",
+    "explanation": "Both statements are true, but R does not explain A. Bond equivalent yield converts money market rates to a 365-day add-on rate basis for comparability, not because of simple vs compound interest. The key is standardizing the day-count basis (365 days) and rate type (add-on), not the simple interest feature. Long-term bonds typically use compounded rates, making the comparison still an approximation."
+  },
+  {
+    "id": 7,
+    "model": "Kimi k2",
+    "topic": "Interest rate risk drivers for floaters",
+    "stem": "Assertion (A): A floating-rate instrument's price sensitivity to benchmark rate changes is primarily determined by its coupon reset frequency. Reason (R): The required margin automatically adjusts at each reset date to compensate for changes in the issuer's credit risk.",
+    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A false but R is true",
+    "correctanswer": "C",
+    "explanation": "A is true—reset frequency is the key driver of FRN duration and price volatility. However, R is false: required margin changes reflect market perception of credit risk but do not automatically adjust at reset dates. The quoted margin is fixed; required margin is a market-driven yield spread that can change continuously, not a mechanical reset feature."
   }
 ]
