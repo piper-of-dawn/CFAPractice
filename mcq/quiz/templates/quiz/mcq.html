@@ -343,7 +343,13 @@
         outcomePill.textContent = ok ? 'Right Answer' : 'Incorrect';
         outcomePill.style.background = ok ? '#e6f7ec' : '#fdeeee';
         outcomePill.style.color = ok ? '#106a36' : '#8a1f1f';
-        outcomeBody.style.color = ok ? '#1d1d1f' : '#1d1d1f';
+        // Use current theme text color for readability in light/dark modes
+        try {
+          const themeText = getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
+          outcomeBody.style.color = themeText || '';
+        } catch(_) {
+          outcomeBody.style.color = '';
+        }
         outcomeBody.innerHTML = body;
         __typesetMath(outcomeBody).then(function(){ __wrapWideMath(outcomeBody); });
         // Render attributes
