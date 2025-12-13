@@ -369,6 +369,174 @@
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: Order of Operations</h3><p><strong>C is correct.</strong> Assertion (A) is true: The standard industry practice (and the method used in CFA curriculum) is to calculate management fees first, deduct them, and then calculate incentive fees on the remaining profit. However, Reason (R) is false regarding the <em>justification</em>. Management fees are operating expenses. While deducting them first does lower the incentive fee base, the primary reason they are deducted is that they are a guaranteed liability regardless of performance, not specifically to safeguard the investor's net attribution. Furthermore, incentive fees are often charged on gross profits in some jurisdictions or specific LPAs; the 'net' argument is a consequence, not the universal governing rule.</p>"
+  },
+  {
+    "id": 1,
+    "model": "GPT",
+    "topic": "Hedge Funds – Fees, Hurdle Rate, High-Water Mark",
+    "stem": "A hedge fund begins the year with NAV of 500 million. Its current high-water mark (HWM) is 520 million. The end-of-year NAV before any fees is 560 million. The fund charges a management fee of 2% of end-of-year NAV (before fees). It also charges an incentive fee of 20% of gains above the HWM grown by a 5% hurdle, where the incentive fee is calculated on end-of-year NAV net of the management fee.\n\nWhat is the investor's net return for the year (in %), closest to?",
+    "options": {
+      "A": "8.61%",
+      "B": "9.20%",
+      "C": "9.65%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Fees Apply to Specific Bases</h3><p><strong>C is correct.</strong> A hedge fund’s net return equals the change in NAV after subtracting (1) the management fee and (2) any incentive fee that is earned only after meeting the high-water mark and hurdle requirement.</p><p><strong>Governing relationships.</strong> Let $$P_1$$ be beginning NAV and $$P_2$$ be end-of-year NAV before fees. Management fee: $$\\text{MF}=m\\,P_2$$. Incentive fee base (given it is net of management fee and above the hurdle applied to the HWM): $$\\text{Base}=\\left(P_2-\\text{MF}\\right)-\\left(P_{\\text{HWM}}(1+h)\\right)$$. Incentive fee: $$\\text{IF}=p\\,\\max(0,\\text{Base})$$. Net NAV: $$P_{2,\\text{net}}=P_2-\\text{MF}-\\text{IF}$$. Net return: $$r_{\\text{net}}=\\frac{P_{2,\\text{net}}}{P_1}-1$$.</p><p><strong>Numeric application.</strong> $$\\text{MF}=0.02\\times 560=11.2$$. NAV net of management fee $$=560-11.2=548.8$$. Hurdle-adjusted HWM $$=520\\times 1.05=546.0$$. Excess $$=548.8-546.0=2.8$$. $$\\text{IF}=0.20\\times 2.8=0.56$$. Net NAV $$=560-11.2-0.56=548.24$$. Net return $$=548.24/500-1=0.09648\\approx 9.65\\%$$.</p><p><strong>A is incorrect</strong> because it ignores the hurdle rate and charges the incentive fee simply on gains above the HWM (net of management fee), overstating the incentive fee and understating the investor’s net return.</p><p><strong>B is incorrect</strong> because it calculates the incentive fee on gains above the hurdle-adjusted HWM using the gross end-of-year NAV (before subtracting the management fee from the incentive base), violating the stated “net of management fee” convention.</p>"
+  },
+  {
+    "id": 2,
+    "model": "GPT",
+    "topic": "Hedge Funds – High-Water Mark and Total Fees",
+    "stem": "A hedge fund starts the year with AUM of 300 million and earns a gross return of 30% before fees. The fund charges:\n- A management fee of 2% of year-end AUM (before fees).\n- An incentive fee of 20% of profits above the high-water mark (HWM), calculated on year-end AUM net of the management fee.\n\nThe current HWM is 385 million.\n\nWhat is the total fee (management + incentive) earned by the manager for the year, closest to?",
+    "options": {
+      "A": "7.80 million",
+      "B": "8.80 million",
+      "C": "25.80 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The HWM Can Eliminate Incentive Fees</h3><p><strong>A is correct.</strong> If the year-end value net of management fee does not exceed the high-water mark, the incentive fee is zero and the manager earns only the management fee.</p><p><strong>Governing relationships.</strong> End-of-year AUM before fees: $$P_2=P_1(1+r)$$. Management fee: $$\\text{MF}=mP_2$$. Incentive fee: $$\\text{IF}=p\\max\\left(0, (P_2-\\text{MF})-P_{\\text{HWM}}\\right)$$. Total fee $$=\\text{MF}+\\text{IF}$$.</p><p><strong>Numeric application.</strong> $$P_2=300\\times 1.30=390$$. $$\\text{MF}=0.02\\times 390=7.8$$. NAV net of management fee $$=390-7.8=382.2$$, which is below the HWM of 385, so $$\\text{IF}=0$$. Total fee $$=7.8$$ million.</p><p><strong>B is incorrect</strong> because it applies the HWM test to the gross year-end AUM (390 &gt; 385) instead of to the year-end AUM net of management fee as stated, incorrectly triggering an incentive fee.</p><p><strong>C is incorrect</strong> because it charges the 20% incentive fee on total profits (or on a much broader base) rather than only on profits above the HWM, which contradicts how high-water mark provisions restrict incentive fees.</p>"
+  },
+  {
+    "id": 3,
+    "model": "GPT",
+    "topic": "Hedge Funds – Leverage and Borrowing Cost",
+    "stem": "A hedge fund has net capital (equity) of 500 million and borrows 200 million at an annual interest rate of 4%. It invests the full 700 million in a portfolio that earns an unleveraged return of r over the year.\n\nAfter paying the interest on the borrowing, the fund's leveraged return to equity is 14%.\n\nUsing the convention $$r_L=\\frac{(V_b+V_c)r - V_br_b}{V_c}$$, what is the unleveraged portfolio return r, closest to?",
+    "options": {
+      "A": "10.00%",
+      "B": "11.14%",
+      "C": "12.40%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Leverage Boosts Equity Returns Only After Interest</h3><p><strong>B is correct.</strong> The leveraged return to equity equals the asset return on total invested capital minus the borrowing cost, all scaled by equity capital.</p><p><strong>Governing relationship.</strong> With equity $$V_c$$ and borrowing $$V_b$$ at cost $$r_b$$, and asset return $$r$$ on total assets $$V_b+V_c$$, the equity (leveraged) return is $$r_L=\\frac{(V_b+V_c)r - V_br_b}{V_c}$$. Rearranging to solve for $$r$$ gives $$r=\\frac{V_c r_L + V_b r_b}{V_b+V_c}$$.</p><p><strong>Numeric application.</strong> $$r=\\frac{500\\times 0.14 + 200\\times 0.04}{700}=\\frac{70+8}{700}=0.1114286\\approx 11.14\\%$$.</p><p><strong>A is incorrect</strong> because it ignores the borrowing cost term $$V_b r_b$$, effectively treating the borrowing as “free,” which understates the required unleveraged return consistent with a 14% equity return.</p><p><strong>C is incorrect</strong> because it applies the borrowing cost adjustment with the wrong scaling (a common mistake is to subtract a borrowing-cost adjustment from 14% without properly converting between return-on-equity and return-on-assets), overstating $$r$$.</p>"
+  },
+  {
+    "id": 4,
+    "model": "GPT",
+    "topic": "Hedge Funds – Fund of Funds Fee Layering",
+    "stem": "A fund of hedge funds (FoF) invests 120 million in Alpha Hedge Fund and 80 million in Beta Hedge Fund. After one year, net of all underlying hedge fund fees, the FoF's investments are valued at 150 million (Alpha) and 90 million (Beta).\n\nAt the FoF level, fees are:\n- 1% management fee on end-of-year capital.\n- 10% incentive fee on profits, calculated independently at year end (i.e., the incentive fee is computed before subtracting the FoF management fee).\n\nWhat is the investor's net return in the FoF for the year, closest to?",
+    "options": {
+      "A": "16.80%",
+      "B": "16.92%",
+      "C": "20.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Fee Layering Reduces the End Investor’s Return</h3><p><strong>A is correct.</strong> The investor earns the underlying net performance of the two hedge funds and then pays an additional management and incentive fee at the fund-of-funds level.</p><p><strong>Governing relationships.</strong> Start capital $$P_1$$ equals total invested (here, 200). End capital before FoF fees $$P_2$$ equals the sum of end values (here, 240). FoF management fee: $$\\text{MF}=mP_2$$. Because the incentive fee is calculated independently of the management fee, FoF incentive fee: $$\\text{IF}=p(P_2-P_1)$$. Net return: $$r_{\\text{net}}=\\frac{P_2-\\text{MF}-\\text{IF}}{P_1}-1$$.</p><p><strong>Numeric application.</strong> $$P_1=120+80=200$$ and $$P_2=150+90=240$$. $$\\text{MF}=0.01\\times 240=2.4$$. $$\\text{IF}=0.10\\times (240-200)=4.0$$. Net return $$=\\frac{240-2.4-4.0}{200}-1=\\frac{233.6}{200}-1=0.168=16.80\\%$$.</p><p><strong>B is incorrect</strong> because it calculates the incentive fee after deducting the FoF management fee (i.e., on $$P_2-P_1-\\text{MF}$$), but the problem states the incentive fee is calculated independently.</p><p><strong>C is incorrect</strong> because it ignores FoF-level fees entirely, reporting only the gross FoF performance $$240/200-1=20\\%$$.</p>"
+  },
+  {
+    "id": 5,
+    "model": "GPT",
+    "topic": "Hedge Funds – Hurdle Rate and Incentive Fee Base",
+    "stem": "A hedge fund starts the year with 100 million and ends the year with 118 million before fees. The fund charges:\n- A management fee of 2% of end-of-year value (before fees).\n- A performance fee of 20% on gross profits in excess of a 6% hurdle, where the excess profit subject to the performance fee is calculated after subtracting both (i) the hurdle dollar amount and (ii) the management fee.\n\nUsing $$\\text{Excess}=\\left(P_2-P_1\\right)-\\left(hP_1\\right)-\\text{MF}$$ and $$\\text{PF}=p\\max(0,\\text{Excess})$$, what is the investor's net return for the year, closest to?",
+    "options": {
+      "A": "13.24%",
+      "B": "13.71%",
+      "C": "13.93%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Performance Fees Apply Only to Profit Above the Hurdle, After Certain Fees</h3><p><strong>B is correct.</strong> The investor’s net profit equals gross profit minus the management fee and minus the performance fee computed on the stated “excess” profit definition.</p><p><strong>Governing relationships.</strong> Gross profit $$=P_2-P_1$$. Management fee $$\\text{MF}=mP_2$$. Excess profit for performance fee (as specified): $$\\text{Excess}=(P_2-P_1)-(hP_1)-\\text{MF}$$. Performance fee $$\\text{PF}=p\\max(0,\\text{Excess})$$. Net return $$r_{\\text{net}}=\\frac{(P_2-P_1)-\\text{MF}-\\text{PF}}{P_1}$$.</p><p><strong>Numeric application.</strong> Gross profit $$=118-100=18$$. $$\\text{MF}=0.02\\times 118=2.36$$. Hurdle dollars $$=0.06\\times 100=6$$. Excess $$=18-6-2.36=9.64$$. $$\\text{PF}=0.20\\times 9.64=1.928$$. Net profit $$=18-2.36-1.928=13.712$$, so net return $$=13.712/100=13.71\\%$$ (rounded).</p><p><strong>A is incorrect</strong> because it computes the performance fee on profit above the hurdle but does not subtract the management fee when determining the performance-fee base, contradicting the problem’s “excess” definition.</p><p><strong>C is incorrect</strong> because it applies the hurdle to the end-of-year value (or otherwise mis-defines the hurdle dollar amount) rather than applying $$h$$ to the beginning capital $$P_1$$ as stated.</p>"
+  },
+  {
+    "id": 6,
+    "model": "GPT",
+    "topic": "Hedge Funds – Survivorship Bias (Numerical Illustration)",
+    "stem": "Five hedge funds have the following annual returns: 10%, 8%, 6%, -4%, and -20%. The fund with -20% liquidates and is excluded from a hedge fund index.\n\nThe index reports the simple average return of the remaining (surviving) funds.\n\nBy how many percentage points is the index average return overstated relative to the true simple average across all five funds?",
+    "options": {
+      "A": "5.00 percentage points",
+      "B": "4.00 percentage points",
+      "C": "1.00 percentage points"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Survivorship Bias Removes Poor Outcomes</h3><p><strong>A is correct.</strong> Survivorship bias mechanically raises reported index performance by excluding failed funds, which often have poor returns.</p><p><strong>Governing relationship.</strong> Simple average return $$\\bar r=\\frac{1}{N}\\sum_{i=1}^N r_i$$. The overstatement (bias) equals $$\\bar r_{\\text{survivors}}-\\bar r_{\\text{all}}$$.</p><p><strong>Numeric application.</strong> Survivors’ average $$=\\frac{10+8+6-4}{4}=\\frac{20}{4}=5\\%$$. True average including all funds $$=\\frac{10+8+6-4-20}{5}=\\frac{0}{5}=0\\%$$. Overstatement $$=5\\%-0\\%=5.00$$ percentage points.</p><p><strong>B is incorrect</strong> because it typically comes from mis-averaging (for example, dividing the survivor sum by 5 instead of 4), which would not reflect how the index is constructed when a fund is removed.</p><p><strong>C is incorrect</strong> because it understates the effect of excluding a large negative return; the removal of a -20% outcome has a material impact on a simple average.</p>"
+  },
+  {
+    "id": 7,
+    "model": "GPT",
+    "topic": "Hedge Funds – Backfill Bias (Numerical Illustration)",
+    "stem": "A hedge fund has the following annual returns:\n- Year 1: -5%\n- Year 2: 15%\n- Year 3: 10%\n\nThe fund begins reporting to a hedge fund index after Year 2, and the index backfills only Years 2 and 3 returns (Year 1 is not included).\n\nWhat is the fund’s simple average annual return as shown in the index, closest to?",
+    "options": {
+      "A": "6.67%",
+      "B": "10.00%",
+      "C": "12.50%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Backfill Bias Selectively Includes Good History</h3><p><strong>C is correct.</strong> Backfill bias occurs when a fund’s earlier performance history is included selectively; here, only Years 2 and 3 are included, omitting a bad Year 1.</p><p><strong>Governing relationship.</strong> The simple average over the returns included in the index is $$\\bar r_{\\text{index}}=\\frac{r_2+r_3}{2}$$.</p><p><strong>Numeric application.</strong> $$\\bar r_{\\text{index}}=\\frac{15\\%+10\\%}{2}=12.50\\%$$.</p><p><strong>A is incorrect</strong> because it computes the simple average over all three years $$(-5\\%+15\\%+10\\%)/3=6.67\\%$$, but Year 1 is explicitly excluded from the backfilled index history.</p><p><strong>B is incorrect</strong> because it treats the Year 1 loss as if it were not negative (or otherwise mishandles the sign), which is a common arithmetic error rather than the stated index methodology.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding equity hedge strategies:\n(1) Market neutral strategies seek to maintain a portfolio beta relative to the market that is close to zero.\n(2) Fundamental growth strategies typically maintain a net short exposure to equity markets.\n(3) Short biased strategies typically possess limited or no long-side exposures.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct because market neutral strategies use quantitative or fundamental analysis to profit from individual security movements while hedging out market risk, ideally achieving a beta of zero. Statement (2) is incorrect because fundamental growth strategies generally identify companies with high growth expectations (longs) versus those with negative growth (shorts), but most of these portfolios tend to end up long biased, not net short. Statement (3) is correct because short biased strategies focus on shorting overvalued securities and maintain limited or no long positions. Therefore, only statements (1) and (3) are correct. Option A fails because it includes the incorrect assertion about fundamental growth bias. Option C fails for the same reason."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding event-driven strategies:\n(1) Merger arbitrage strategies typically involve buying the stock of the acquiring company and shorting the stock of the target company.\n(2) Distressed/restructuring strategies focus on the securities of companies that are in or perceived to be near bankruptcy.\n(3) Activist hedge funds differ from private equity funds because they operate primarily in the public equity market.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect because merger arbitrage strategies typically involve going long (buying) the stock of the target company and going short (selling) the stock of the acquiring company to capture the deal spread. Statement (2) is correct as distressed strategies explicitly target securities of companies facing bankruptcy or restructuring to capture value from recovery. Statement (3) is correct because activist hedge funds seek to influence company direction through public equity stakes, whereas private equity typically takes companies private. Therefore, only statements (2) and (3) are correct. Option A and Option C fail because they include the reversed mechanics of merger arbitrage."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding hedge fund fees:\n(1) A high-water mark provision ensures a manager receives a performance fee only when the fund's value exceeds its previous highest value.\n(2) In a fund of funds, fee layering typically results in lower total costs for the investor due to economies of scale.\n(3) Under a '1 or 30' fee structure, the manager receives the greater of a 1% management fee or a 30% incentive fee on the fund's alpha.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct because a high-water mark prevents managers from earning performance fees on the recovery of past losses; fees are paid only on net new profits. Statement (2) is incorrect because fee layering in funds of funds (paying fees to the fund-of-funds manager on top of fees to underlying managers) raises the cost for investors. Statement (3) is correct as the '1 or 30' structure is designed to reward alpha generation, paying the greater of the base fee or the alpha-based incentive. Therefore, only statements (1) and (3) are correct. Options A and C fail because they incorrectly claim fee layering lowers costs."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding hedge fund investment forms:\n(1) In a master-feeder structure, the master fund is the entity where the portfolio's assets are held and traded.\n(2) Side letters are used to grant specific rights to an investor that may supersede the terms of the fund's standard documents.\n(3) Separately Managed Accounts (SMAs) typically offer less transparency to the investor compared to commingled hedge funds.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because the master-feeder structure pools assets into a master fund where all investment activity occurs, while feeder funds simply channel capital into it. Statement (2) is correct because side letters are side agreements that address specific investor requirements (e.g., reporting, fees) and can override standard terms. Statement (3) is incorrect because SMAs actually offer better transparency (and control) since the assets are held in the investor's own name or a dedicated account, unlike commingled funds. Therefore, only statements (1) and (2) are correct. Options B and C fail because they mischaracterize the transparency of SMAs."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding alternative investment performance appraisal:\n(1) The J-curve effect describes the initial negative returns in the capital commitment phase followed by accelerated returns in the capital deployment phase.\n(2) The Multiple of Invested Capital (MOIC) is a preferred metric over IRR because it explicitly accounts for the timing of cash flows.\n(3) Level 3 valuation inputs rely on unobservable inputs and models rather than quoted market prices.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct because the J-curve effect illustrates the dip in returns due to early fees and costs before investments generate value. Statement (2) is incorrect because MOIC (money multiple) ignores the timing of cash flows, which is why IRR is often preferred for performance appraisal despite its complexity. Statement (3) is correct because Level 3 inputs are defined as unobservable inputs used when market activity is limited, requiring mark-to-model valuation. Therefore, only statements (1) and (3) are correct. Options A and B fail because they incorrectly attribute time-weighting capabilities to MOIC."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Hedge Funds",
+    "stem": "Consider the following statements regarding leverage in hedge funds:\n(1) A margin call is initiated when a hedge fund's equity in a position declines below a required level.\n(2) The use of borrowed funds allows investors to take a market position smaller than their capital commitment to reduce risk.\n(3) In a typical margin financing arrangement, the prime broker lends shares or cash to the hedge fund.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; a margin call demands additional collateral when the account value falls below a maintenance threshold. Statement (2) is incorrect because leverage allows investors to take a position *larger* than their capital commitment, which magnifies both gains and losses rather than reducing risk. Statement (3) is correct as prime brokers facilitate leverage by lending cash for purchases or securities for short selling. Therefore, only statements (1) and (3) are correct. Options A and C fail because they misstate the purpose and effect of leverage."
   }
-
 ]
