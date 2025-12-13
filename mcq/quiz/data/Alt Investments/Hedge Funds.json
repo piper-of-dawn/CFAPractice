@@ -271,5 +271,104 @@
     },
     "correct_answer": "A",
     "explanation": "Net return is what remains after all claims on the portfolio’s gains are paid. Hedge funds commonly charge a management fee (AUM-based) plus a performance fee (gain-based), so a portion of gross gains is contractually reallocated to the manager. The reason is the direct arithmetic mechanism: gross gains minus fees equals investor net gains, so high fees can meaningfully compress what investors keep even in good years."
+  },
+  {
+    "id": 1,
+    "model": "Grok 4.1",
+    "topic": "Hurdle Rate Mechanics",
+    "stem": "Assertion (A): A 'soft' hurdle rate is generally more advantageous to the General Partner (GP) than a 'hard' hurdle rate of the same percentage.\nReason (R): Under a soft hurdle with a catch-up clause, the GP is entitled to charge performance fees on the entire profit once the return threshold is exceeded, rather than just on the excess return.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Fee Thresholds</h3><p><strong>A is correct.</strong> A hard hurdle acts as a deductible: the manager only gets paid on (Return - Hurdle). A soft hurdle acts as a trigger: once Return > Hurdle, the manager gets paid on the total Return (often facilitated by a catch-up clause). Therefore, for any return above the hurdle, the Soft Hurdle yields a higher fee than the Hard Hurdle, making it more advantageous to the GP. Reason (R) correctly describes the mechanical difference (taxing the entire profit vs. the excess) that causes this advantage.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok 4.1",
+    "topic": "Fund of Funds Performance",
+    "stem": "Assertion (A): Investors in a Fund of Funds (FoF) typically realize lower net returns than they would by investing directly in the underlying hedge funds, assuming identical gross performance.\nReason (R): Fund of Funds managers provide investors with due diligence expertise, access to closed funds, and diversification benefits that single-manager funds cannot offer.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fee Layering vs. Value Proposition</h3><p><strong>B is correct.</strong> Assertion (A) is true: FoFs charge an additional layer of fees (e.g., 1% & 10%) on top of the underlying funds' fees, which mathematically reduces net returns. Reason (R) is also true: these are the valid value propositions for why investors choose FoFs despite the cost. However, R is <em>not</em> the explanation for A. The diversification and access (R) explain the <em>utility</em> of the FoF, not the <em>cause</em> of the lower returns. The cause of lower returns is the double-fee structure, not the due diligence process itself.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok 4.1",
+    "topic": "Hedge Fund Fee Basis",
+    "stem": "Assertion (A): Hedge fund management fees create an incentive for the manager to grow assets under management (AUM) rather than strictly maximizing return on capital.\nReason (R): Unlike private equity funds which typically charge management fees on committed capital, hedge funds typically charge management fees based on the market value of assets under management.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Incentive Structures</h3><p><strong>A is correct.</strong> Reason (R) identifies the structural fact: HF fees are tied to AUM (Net Asset Value), whereas PE fees are (during the investment period) tied to committed capital. Because HF fees scale linearly with AUM, a manager can increase risk-free revenue simply by gathering more assets, even if returns dilute. Thus, the AUM-based fee structure described in R is the direct cause of the 'asset gathering' incentive described in A.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok 4.1",
+    "topic": "High-Water Marks vs. Clawbacks",
+    "stem": "Assertion (A): Hedge funds generally utilize clawback provisions to reclaim incentive fees distributed in previous years if the fund subsequently suffers a significant drawdown.\nReason (R): A high-water mark ensures that a manager does not receive incentive fees on profits that merely recover losses from a prior peak Net Asset Value (NAV).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Retrospective vs. Prospective Protections</h3><p><strong>D is correct.</strong> Assertion (A) is false. According to the source text, while clawbacks are common in Private Equity (to fix deal-by-deal waterfall errors), they are rare in Hedge Funds. In HFs, once a fee is paid, it is rarely returned. Reason (R) is true: The high-water mark is the standard HF mechanism for this issue, but it is <em>prospective</em> (stops future fees) rather than <em>retrospective</em> (reclaiming past fees).</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok 4.1",
+    "topic": "Liquidity Gates",
+    "stem": "Assertion (A): A 'gate' provision in a hedge fund's redemption terms forces the manager to immediately liquidate a portion of the portfolio to meet all pending redemption requests.\nReason (R): Gates are risk-management tools designed to protect remaining investors from the price impact of forced asset sales during periods of market stress.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Liquidity Mismatch</h3><p><strong>D is correct.</strong> Assertion (A) is false. A gate does the exact opposite: it <em>limits</em> the amount of capital that can be redeemed (e.g., restricting withdrawals to 10% of the fund). It does not force liquidation; it prevents the need for immediate forced liquidation. Reason (R) is true: By slowing down outflows, the manager avoids selling illiquid assets at fire-sale prices, which protects the NAV for the investors who remain.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok 4.1",
+    "topic": "Incentive Fee Asymmetry",
+    "stem": "Assertion (A): The incentive fee structure of a hedge fund resembles a short position in a put option on the fund's assets.\nReason (R): The manager shares in the upside gains of the portfolio but does not directly share in the downside losses beyond the value of their own co-investment.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Option Payoffs</h3><p><strong>D is correct.</strong> Reason (R) is true: The manager has limited liability (floor at zero fees) but unlimited upside participation. This payoff profile—flat on the downside, linear on the upside—is characteristic of a <em>Call</em> option, not a Put option. Therefore, Assertion (A) is false; the structure resembles a Long Call option held by the manager, not a Short Put.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok 4.1",
+    "topic": "Management Fee Calculation",
+    "stem": "Assertion (A): When calculating investor net returns, management fees are typically deducted from the fund's Gross Asset Value (GAV) before the calculation of the incentive fee.\nReason (R): Deducting management fees first ensures that the incentive fee is charged only on the net profit actually attributable to the investor's account growth.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Order of Operations</h3><p><strong>C is correct.</strong> Assertion (A) is true: The standard industry practice (and the method used in CFA curriculum) is to calculate management fees first, deduct them, and then calculate incentive fees on the remaining profit. However, Reason (R) is false regarding the <em>justification</em>. Management fees are operating expenses. While deducting them first does lower the incentive fee base, the primary reason they are deducted is that they are a guaranteed liability regardless of performance, not specifically to safeguard the investor's net attribution. Furthermore, incentive fees are often charged on gross profits in some jurisdictions or specific LPAs; the 'net' argument is a consequence, not the universal governing rule.</p>"
   }
+
 ]
