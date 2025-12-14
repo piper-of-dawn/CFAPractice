@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Portfolio approach mechanics",
+    "stem": "Assertion (A): For a fixed set of risky assets, changing portfolio weights can materially change portfolio volatility even when the expected return changes only modestly.\nReason (R): Expected return is a linear (weighted-average) function of asset weights, whereas portfolio variance depends on both individual variances and cross-asset covariances.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Expected return moves proportionally with weights because it aggregates expected returns by simple averaging. Risk does not aggregate that way: the covariance terms can either reinforce or offset each other depending on co-movements, so a weight change can meaningfully alter diversification effects. That asymmetry is why portfolios tend to affect risk more than they affect expected return."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Diversification under stress",
+    "stem": "Assertion (A): Diversification benefits can become much smaller during severe market turmoil.\nReason (R): A common way to summarize diversification benefit is the diversification ratio, defined as portfolio standard deviation divided by the standard deviation of a representative single-asset choice.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "The assertion is true because correlations (and sometimes volatilities) can shift upward in crises, making assets move together and reducing risk reduction from mixing. The reason is also true as a descriptive metric, but it does not explain *why* the benefit shrinks; it only describes one way to measure the benefit. The causal driver is changing co-movement structure, not the existence of a particular ratio."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Portfolio management process",
+    "stem": "Assertion (A): In the portfolio management process, asset allocation is primarily part of the execution step rather than the planning step.\nReason (R): Asset allocation is mainly determined by bottom-up security analysts’ company valuations, so macroeconomic views are largely irrelevant at this stage.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "The assertion is true: planning focuses on identifying objectives/constraints and producing an IPS, while execution includes setting target asset-class weights and implementing security selection and portfolio construction. The reason is false because asset allocation is commonly driven by top-down capital market expectations and the client’s IPS constraints; bottom-up work is more central to security selection within asset classes. In practice, top-down and bottom-up inputs can interact, but dismissing macro considerations is incorrect."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "DC vs DB pensions",
+    "stem": "Assertion (A): In a defined contribution (DC) plan, the sponsor bears the investment risk and guarantees a predefined retirement benefit.\nReason (R): In a defined benefit (DB) plan, the sponsor is responsible for ensuring that the plan is adequately funded to meet promised retirement payments.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false because DC plans typically place investment (and often inflation) risk on the individual participant; the benefit is not promised in advance. The reason is true because DB plans define the benefit and therefore require the sponsor to manage contributions and investment strategy to meet that liability. The contrast is a core boundary: DC defines contributions, DB defines benefits."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Passive investing economics",
+    "stem": "Assertion (A): Passive index funds typically have lower operating costs than actively managed funds.\nReason (R): Passive funds are designed to track an index using rules-based holdings, reducing the need for intensive security valuation and frequent discretionary trading decisions.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "The cost advantage arises from the production function of passive management: the strategy is replication rather than continuous price discovery and selection. With fewer research-intensive activities and generally more predictable turnover rules, resources devoted to analyst coverage and active trading are typically lower. That directly explains why passive fees and operating costs tend to be lower."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "ETF vs mutual fund structure",
+    "stem": "Assertion (A): Exchange-traded funds (ETFs) generally allow investors to trade fund shares intraday on an exchange, unlike open-end mutual funds that transact at end-of-day net asset value.\nReason (R): ETFs and open-end mutual funds can both be organized as open-end investment companies.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "The assertion is true: the defining investor experience of an ETF is exchange trading with market prices throughout the day, while open-end mutual fund subscriptions/redemptions are processed using NAV calculated after markets close. The reason is also true—both may share an open-end legal structure in many jurisdictions—but that fact does not explain the intraday trading feature. Intraday tradability comes from the exchange listing and secondary-market trading mechanism, not merely from being open-end."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Industry revenue vs AUM",
+    "stem": "Assertion (A): Passive management can represent a sizable portion of assets under management (AUM) while contributing a comparatively small portion of industry revenue.\nReason (R): Passive strategies typically charge higher management fees than active strategies because they require more intensive research and trading.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "The assertion is true because revenue is driven by fee rates as well as AUM, and passive products commonly compete on low fees. The reason is false: the typical economic rationale is the opposite—active management is usually priced higher because it funds research, portfolio discretion, and the attempt to generate alpha. Hence, passive can be large in AUM but small in revenue precisely because its fee rates are usually lower."
+  }
+]
