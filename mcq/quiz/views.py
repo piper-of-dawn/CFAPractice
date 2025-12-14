@@ -15,7 +15,16 @@ from django.http import JsonResponse
 
 def _choose_data_path() -> Path:
     base = Path(__file__).resolve().parent / "data"
-    # Try Windows-safe underscore version first, then original with colons, then a generic fallback.
+
+    env_rel = os.environ.get("MCQ_DEFAULT_JSON")
+    if env_rel:
+        candidate = (base / env_rel).resolve()
+        try:
+            if candidate.is_file() and candidate.is_relative_to(base):
+                return candidate
+        except Exception:
+            pass
+
     candidates = [
         base / "Module 6_ Fixed-Income Bond Valuation_ Prices and Yields.json",
         base / "Module 6: Fixed-Income Bond Valuation: Prices and Yields.json",
@@ -24,8 +33,17 @@ def _choose_data_path() -> Path:
     for p in candidates:
         if p.exists():
             return p
-    # If nothing found, raise a clear error with the directory listing to aid debugging.
-    available = ", ".join(sorted(str(p) for p in base.glob("*.json")))
+
+    for p in sorted(base.rglob("*.json")):
+        if p.name.lower() == "mistakes.json":
+            continue
+        try:
+            if p.is_file() and p.is_relative_to(base):
+                return p
+        except Exception:
+            continue
+
+    available = ", ".join(sorted(str(p.relative_to(base)) for p in base.rglob("*.json")))
     raise FileNotFoundError(f"No quiz JSON found in {base}. Available: {available}")
 
 
