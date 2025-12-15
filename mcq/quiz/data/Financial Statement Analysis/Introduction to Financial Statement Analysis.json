@@ -1,0 +1,648 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Financial Statement Analysis Framework",
+    "stem": "In the financial statement analysis framework, which phase involves computing ratios and preparing common-size financial statements?",
+    "options": {
+      "A": "Collect data phase, where financial information is gathered from various sources.",
+      "B": "Process data phase, where analytical tools are applied to transform raw data.",
+      "C": "Analyze/interpret data phase, where processed output is evaluated to draw conclusions."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Framework Phases</h3><p><strong>B is correct.</strong> Start with the fundamental definition of the six-phase framework: articulate purpose → collect data → process data → analyze/interpret → communicate conclusions → follow-up. The process data phase is where raw inputs are transformed using analytical tools. Computing ratios involves mathematical operations on financial statement elements (e.g., current assets / current liabilities), and common-size statements scale each line item as a percentage of a base figure (revenue for income statement, total assets for balance sheet). These are mechanical transformations of collected data into comparable metrics. The governing principle is data transformation: raw numbers become standardized measures that facilitate comparison. The process phase outputs (ratios, common-size statements, graphs) then become inputs for the subsequent analyze/interpret phase where meaning is extracted.</p><p>A is incorrect: the collect data phase involves obtaining raw financial statements, industry data, and other information sources—not transforming them. The misconception here is conflating data gathering with data manipulation. First principles show these are sequential: you must first possess data before you can compute with it.</p><p>C is incorrect: the analyze/interpret phase uses the processed data (ratios, common-size statements) as inputs to draw conclusions and make forecasts. The flaw in this choice is reversing the sequence—interpretation requires completed computations as its starting point, not the other way around.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Role of Financial Statement Analysis",
+    "stem": "The primary role of financial statement analysis is best described as:",
+    "options": {
+      "A": "Providing historical information about a company's past financial performance and position.",
+      "B": "Forming expectations about future performance and financial position for making economic decisions.",
+      "C": "Ensuring compliance with regulatory requirements and accounting standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Purpose of Analysis</h3><p><strong>B is correct.</strong> Begin with the fundamental purpose of any analysis: to inform decisions. Financial statement analysis examines past and current data as inputs, but its output is forward-looking—forming expectations about future performance, financial position, and risk factors. The causal chain is: historical data → analytical techniques → insights about drivers of performance → extrapolation and forecasting → decision support. Examples from the curriculum include equity analysts forecasting earnings for valuation, credit analysts projecting future cash flows for creditworthiness assessment, and M&A analysts estimating future synergies. The decision-making applications (whether to invest, at what price, what credit terms to offer) require future-oriented expectations, not merely historical descriptions. Edge case: even when analyzing historical trends, the ultimate goal is to inform predictions about whether those trends will continue, reverse, or accelerate.</p><p>A is incorrect: while analysis does involve examining historical performance, describing the past is a means to an end, not the primary role. The first-principles flaw is mistaking the input (historical data) for the output (forward-looking expectations). Historical analysis without forward implications provides no decision value.</p><p>C is incorrect: ensuring regulatory compliance is the role of auditors, management, and regulatory bodies—not the role of financial statement analysis. The misconception confuses the purpose of creating financial statements (regulatory compliance) with the purpose of analyzing them (investment decisions).</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "IOSCO Core Objectives",
+    "stem": "Which of the following is one of the three core objectives of the International Organization of Securities Commissions (IOSCO)?",
+    "options": {
+      "A": "Eliminating all forms of systemic risk from global financial markets.",
+      "B": "Ensuring markets are fair, efficient, and transparent.",
+      "C": "Requiring all member jurisdictions to adopt identical accounting standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Regulatory Objectives</h3><p><strong>B is correct.</strong> Start with the fundamental purpose of securities regulation: to facilitate well-functioning capital markets that serve the economy. IOSCO's three core objectives are: (1) protecting investors, (2) ensuring markets are fair, efficient, and transparent, and (3) reducing systemic risk. The second objective recognizes that market participants need: fairness (no manipulation or fraud), efficiency (prices reflect information, resources allocated optimally), and transparency (disclosure enables informed decisions). These qualities emerge from first principles of market design—without them, markets fail to allocate capital effectively. The principle is facilitation, not elimination of all risk, and coordination, not mandating uniformity. IOSCO members (95%+ of world's financial markets across 115+ jurisdictions) share these objectives while retaining jurisdictional autonomy in implementation.</p><p>A is incorrect: IOSCO's objective is reducing systemic risk, not eliminating it entirely. The first-principles flaw is confusing risk mitigation with risk elimination. Complete elimination of systemic risk is impossible in any economic system—risk is inherent to capital allocation. Regulation aims to contain, not eliminate, systemic threats.</p><p>C is incorrect: while IOSCO principles state accounting standards should be \"of high and internationally acceptable quality,\" it does not require identical standards across jurisdictions. The misconception is conflating convergence/harmonization with uniformity. Member countries retain sovereignty; IOSCO facilitates cooperation but does not impose mandatory standards.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "SEC Periodic Filings",
+    "stem": "A U.S.-registered company is required to file Form 10-Q to report:",
+    "options": {
+      "A": "Annual financial results including audited financial statements and management discussion and analysis.",
+      "B": "Quarterly financial information including unaudited financial statements and interim period commentary.",
+      "C": "Material corporate events such as acquisitions, management changes, or significant litigation on a current basis."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Reporting Frequency and Content</h3><p><strong>B is correct.</strong> Start from the regulatory requirement structure: periodic reports (scheduled, recurring) vs. event-driven reports (as-needed). Form 10-Q is a periodic quarterly filing required for interim periods. The fundamental content requirements are: unaudited financial statements (since full annual audits occur only once per year for cost-benefit reasons) and management discussion and analysis (MD&A) for the interim period. The \"unaudited\" status reflects the trade-off between timeliness (investors want frequent updates) and assurance (full audits are time-consuming and expensive). Quarterly filings provide more frequent updates than annual reports while maintaining reasonable reporting burden. Form 10-Q must be filed within 40-45 days after quarter-end (timeframe varies by company size), creating a systematic reporting cadence: Q1, Q2, Q3 on 10-Q, Q4 consolidated into annual 10-K.</p><p>A is incorrect: annual results with audited financial statements are reported on Form 10-K, not Form 10-Q. The first-principles error is confusing annual (once per fiscal year) with quarterly (three times per fiscal year, excluding the fourth quarter which rolls into the annual report) reporting cycles. Audited statements require independent auditor examination which occurs annually.</p><p>C is incorrect: material corporate events are reported on Form 8-K (current report) on an as-needed basis, not on the quarterly 10-Q schedule. The misconception is mixing event-driven (triggered by specific occurrences) with time-driven (scheduled periodic) reporting. The boundary condition: if a material event occurs during a quarter, it may appear in both an 8-K (immediately) and the next 10-Q (at quarter-end).</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Audit Opinions",
+    "stem": "An independent auditor determines that a company's financial statements are fairly presented in accordance with applicable accounting standards except for the inventory valuation method used. This exception is most likely to result in:",
+    "options": {
+      "A": "An adverse opinion indicating the financial statements are not fairly presented overall.",
+      "B": "A qualified opinion noting the specific exception while affirming the rest of the statements.",
+      "C": "An unqualified opinion since inventory is only one component of the financial statements."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Audit Opinion Hierarchy</h3><p><strong>B is correct.</strong> Start with the auditor's fundamental role: expressing an opinion on whether financial statements are fairly presented in accordance with specified accounting standards. The opinion hierarchy reflects the severity and pervasiveness of any issues: unqualified/unmodified (clean, no exceptions), qualified (\"except for\" specific issues), adverse (not fairly presented overall), or disclaimer (unable to form opinion). A qualified opinion uses \"except for\" language—the statements are fairly presented except for identified, material but not pervasive issues. The governing principle is materiality and pervasiveness: if the issue is material (affects user decisions) but isolated to specific accounts/disclosures rather than pervasive throughout the statements, a qualified opinion is appropriate. Inventory valuation is one area among many (cash, receivables, PP&E, liabilities, equity, etc.), so a single method exception is material but not pervasive. The auditor can isolate the issue: \"fairly presented except for inventory valuation.\"</p><p>A is incorrect: an adverse opinion states the financial statements are not fairly presented overall—reserved for pervasive issues that fundamentally undermine the statements' reliability. The first-principles flaw is misunderstanding the threshold: adverse opinions require pervasive problems, not isolated exceptions. A single inventory method issue, while material, doesn't render the entire financial position and performance presentation misleading.</p><p>C is incorrect: an unqualified opinion requires the financial statements to be fairly presented without material exceptions. The misconception is that being \"only one component\" makes it immaterial. From first principles, materiality depends on significance to users' decisions, not the number of affected accounts—inventory is often one of the largest assets for many companies, making valuation methods highly material. Any material exception prevents an unqualified opinion.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Management Commentary and MD&A",
+    "stem": "Management commentary or Management's Discussion and Analysis (MD&A) is most valuable to analysts because it provides:",
+    "options": {
+      "A": "An independent third-party assessment of the company's financial condition and operating results.",
+      "B": "Forward-looking information about management's strategies, planned expenditures, and anticipated trends.",
+      "C": "Audited financial data that has been verified for compliance with accounting standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Information Sources and Bias</h3><p><strong>B is correct.</strong> Start with information theory: different sources provide different types of information with different reliability characteristics. Management commentary/MD&A is required unaudited narrative disclosure from management. Its fundamental value lies in providing forward-looking information that cannot be captured in historical financial statements: management's objectives and strategies, planned capital expenditures, new store openings/divestitures, anticipated effects of trends, and management's interpretation of results. The governing principle is informational advantage: management has superior knowledge about company plans, strategy, and internal forecasts compared to external parties. While subject to management bias (acknowledged limitation), the MD&A fills a unique role—historical financial statements are backward-looking, audit opinions address compliance not strategy, and outside analysts lack management's internal perspective. The framework specifies five content elements: nature of business, objectives/strategies, resources/risks/relationships, results of operations, and critical performance measures.</p><p>A is incorrect: management commentary/MD&A is prepared by management, not an independent third party. The first-principles error is conflating management's perspective with auditor's perspective. Independent assessment comes from audit reports (auditor) and analyst reports (external analysts), not MD&A. The inherent limitation of MD&A is management bias—analysts must read it critically as one input alongside more objective sources.</p><p>C is incorrect: the MD&A is unaudited narrative discussion, not audited financial data. The misconception reverses the roles: audited financial data appears in the financial statements themselves (balance sheet, income statement, cash flow statement, and notes), while MD&A is management's unaudited commentary on those numbers. The boundary: while auditors review MD&A for consistency with financial statements, they don't audit it in the same manner as financial statements.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Financial Statement Notes Disclosure",
+    "stem": "Financial statement notes are essential for analysts primarily because they:",
+    "options": {
+      "A": "Provide standardized metrics that ensure perfect comparability across all companies regardless of accounting policies.",
+      "B": "Disclose accounting policies, methods, and estimates used, enabling analysts to understand and adjust for differences.",
+      "C": "Guarantee the accuracy and reliability of the financial statement figures through independent verification."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Disclosure and Comparability</h3><p><strong>B is correct.</strong> Begin with the fundamental challenge in financial analysis: accounting standards permit flexibility in policies, methods, and estimates to reflect diverse economic circumstances. Two companies with identical economic activities could report different numbers based on choices in depreciation methods (straight-line vs. accelerated), inventory costing (FIFO vs. weighted average), revenue recognition timing, or estimates (useful lives, salvage values, uncollectible accounts). Notes disclosure addresses this by revealing: basis of preparation, significant accounting policies, detailed breakdowns of line items, and key estimates/judgments. The causal mechanism: disclosure enables analysts to (1) understand what policies each company uses, (2) assess comparability, and (3) make adjustments where possible to achieve like-for-like comparison. Notes often account for large portions of annual report pages (e.g., Sea Ltd. had 60+ pages of notes). The principle is transparency: without notes, financial statement line items are opaque—notes make them interpretable by revealing the underlying accounting choices and assumptions.</p><p>A is incorrect: notes disclose differences in accounting policies but don't eliminate them or ensure perfect comparability. The first-principles flaw is assuming disclosure equals standardization. Notes reveal heterogeneity in methods, which analysts must then address through adjustments—the notes don't automatically standardize the figures. Perfect comparability is aspirational; even with full disclosure, some differences are difficult to adjust for given available information.</p><p>C is incorrect: notes are prepared by management (part of the financial statements subject to audit), but they don't themselves guarantee accuracy—that's the auditor's role through the audit opinion. The misconception confuses disclosure with verification. Notes explain what was done; auditors verify it was done in accordance with standards. Both are necessary: notes provide transparency, audits provide assurance, but neither guarantees perfection given the role of estimates, judgments, and sampling in the audit process.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Financial Statement Analysis Framework - Process Data Phase",
+    "stem": "Assertion (A): Computing financial ratios is classified under the 'Process Data' phase of the financial statement analysis framework.\nReason (R): The 'Process Data' phase transforms collected raw data into analytical tools such as ratios, common-size statements, and graphs that can be interpreted in subsequent phases.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "The framework explicitly places ratio computation in the 'Process Data' phase, not the 'Analyze/Interpret' phase. The reason correctly explains that this phase involves transforming raw financial statement data into analytical formats (ratios, common-size statements, charts) that will be interpreted in the next phase. The reason directly explains why ratios belong in 'Process Data'—they are outputs of data processing that become inputs for analysis. This tests understanding of the framework's logical flow: collection → transformation → interpretation."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Role of Financial Statement Analysis - Forward vs Backward Looking",
+    "stem": "Assertion (A): The primary role of financial statement analysis is to evaluate a company's past and current performance.\nReason (R): Analysts examine historical and current financial position primarily to form expectations about future performance and financial position for decision-making purposes.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false because it stops at evaluating past/current performance. According to the CFA curriculum, the primary role extends beyond evaluation to forming expectations about future performance for investment, credit, and economic decisions. The reason is true and correctly captures the forward-looking purpose: historical analysis is a means to the end of forecasting and decision-making, not an end in itself. This tests whether candidates understand that financial statement analysis is fundamentally predictive and decision-oriented, not merely descriptive."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "IOSCO Core Objectives - Systemic Risk",
+    "stem": "Assertion (A): A core objective of the International Organization of Securities Commissions (IOSCO) is to eliminate systemic risk in financial markets.\nReason (R): IOSCO's principles aim to protect investors, ensure markets are fair, efficient, and transparent, and reduce systemic risk across member jurisdictions.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion uses the absolute term 'eliminate' which is false—IOSCO's objective is to reduce, not eliminate, systemic risk. Complete elimination of systemic risk is neither feasible nor claimed. The reason correctly states IOSCO's three core objectives: investor protection, market fairness/efficiency/transparency, and systemic risk reduction. This tests precision in understanding regulatory objectives and whether candidates can distinguish between risk reduction (realistic) and risk elimination (unrealistic). The trap is that 'reduce' and 'eliminate' may seem similar but reflect fundamentally different policy goals."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Audit Reports - Reasonable vs Absolute Assurance",
+    "stem": "Assertion (A): An unqualified audit opinion provides absolute assurance that financial statements are free from material misstatement.\nReason (R): Audits use sampling techniques and financial statements contain estimates, so auditors can only provide reasonable assurance rather than guarantee precision.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false because audits provide reasonable assurance, not absolute assurance. The distinction is fundamental to audit methodology and is explicitly stated in auditing standards. The reason is true and explains why absolute assurance is unattainable: sampling creates uncertainty, estimates involve judgment, and testing every transaction is impractical. This tests understanding of audit limitations and whether candidates grasp that 'unqualified' refers to the absence of reservations, not to the level of certainty provided. Many confuse a clean opinion with a guarantee of accuracy."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Financial Notes and Comparability Across Companies",
+    "stem": "Assertion (A): Financial statement notes are essential because they enable direct comparability of reported amounts across companies using different accounting policies.\nReason (R): Notes disclose the accounting policies, methods, and estimates companies use, allowing analysts to understand the basis of preparation and make qualitative assessments of comparability.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false because notes disclose differences but do not automatically enable direct comparability—analysts must make adjustments or qualitative assessments. The curriculum explicitly states that flexibility in accounting reduces comparability, and notes help analysts understand differences, not eliminate them. The reason is true: notes provide transparency about policies, methods, and estimates that affect reported figures. This tests whether candidates understand that disclosure improves transparency but does not solve the comparability problem created by accounting choice. The trap is assuming disclosure equals comparability."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Management Commentary - Objectivity and Bias",
+    "stem": "Assertion (A): Management commentary (MD&A) provides analysts with forward-looking information about planned capital expenditures and strategic initiatives.\nReason (R): Because management commentary is prepared by independent auditors, it offers an unbiased perspective on the company's future prospects and risks.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "The assertion is true—management commentary (MD&A) does provide forward-looking disclosures such as planned capital expenditures, new initiatives, and strategic direction, which the curriculum identifies as useful for projecting future performance. The reason is false because management commentary is prepared by management, not independent auditors. Auditors provide opinions on financial statements; management provides the commentary. This tests understanding of information sources and their inherent biases. The curriculum warns that commentary, while useful, reflects management's perspective and should be considered alongside other, more objective information."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Monitoring Financial Reporting Standards - New Products Recognition Timing",
+    "stem": "Assertion (A): Analysts should monitor actions of standard setters to identify new financial products and structured transactions before they become widespread.\nReason (R): Regulatory and standard-setting responses typically lag behind new product development, so monitoring business journals and capital markets is more effective for early identification.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false because the curriculum explicitly states that standard setters' actions are unlikely to be helpful for identifying new products and transactions due to the lag between product development and regulatory action. Analysts cannot rely on standard setters for early identification. The reason is true and explains why the assertion is false: there is a time lag, making business journals, capital markets monitoring, and industry analysis more effective for early detection. This tests understanding of the practical timing of regulatory response versus market innovation and whether candidates recognize that monitoring standard setters serves a different purpose—assessing regulatory changes' impact on financial reporting, not identifying new products."
+  },
+  
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding the financial statement analysis framework:\n(1) Processing data involves computing ratios and preparing common-size financial statements.\n(2) Articulating the purpose of the analysis should occur after collecting the necessary data.\n(3) Follow-up involves periodically repeating previous steps to determine whether changes to holdings are necessary.\n(4) The analysis phase requires interpreting output rather than simply reporting numerical results.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 3, and 4 only",
+      "B": "1, 2, and 4 only",
+      "C": "2, 3, and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because the process data phase specifically involves computing ratios, preparing common-size financial statements, creating charts, and performing statistical analyses. Statement (2) is incorrect because articulating the purpose and context of the analysis is the first phase of the framework, occurring before collecting data. Understanding the purpose is essential before undertaking any analysis to avoid unnecessary or pointless efforts. Statement (3) is correct because the follow-up phase involves information gathered by periodically repeating the previous steps as necessary to determine whether changes to holdings or recommendations are necessary, including comparing actual to expected results and updating reports. Statement (4) is correct because the analyze/interpret phase emphasizes that the answer to a specific question is seldom the numerical answer alone but relies on the analyst's interpretation of the output to support a conclusion or recommendation. Therefore, statements (1), (3), and (4) are correct. Option B fails because it includes statement (2), which incorrectly sequences the framework phases. Option C fails because it excludes statement (1) while incorrectly including statement (2)."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding the International Organization of Securities Commissions (IOSCO):\n(1) IOSCO members regulate more than 95 percent of the world's financial capital markets.\n(2) IOSCO's core objectives include eliminating systemic risk from financial markets.\n(3) IOSCO principles require full, accurate, and timely disclosure of financial results and material information to investors.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "2 and 3 only",
+      "C": "1 and 2 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because IOSCO's members regulate more than 95 percent of the world's financial capital markets in more than 115 jurisdictions, with securities regulators in emerging markets accounting for 75 percent of its ordinary membership. Statement (2) is incorrect because IOSCO's three core objectives are protecting investors, ensuring that markets are fair, efficient, and transparent, and reducing systemic risk—not eliminating it. The objective is to reduce, not eliminate, systemic risk, which is an important distinction as complete elimination of systemic risk is not feasible. Statement (3) is correct because within the category 'Principles for Issuers,' IOSCO specifically states there should be full, accurate, and timely disclosure of financial results, risk, and other information that is material to investors' decisions. Therefore, statements (1) and (3) are correct. Option B fails because it incorrectly includes statement (2), which misstates the objective regarding systemic risk. Option C fails because it includes the incorrect statement (2) while excluding the correct statement (3)."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding SEC filing requirements:\n(1) Form 10-K requires audited financial statements and management discussion and analysis.\n(2) Form 8-K is filed quarterly to report interim financial results.\n(3) Form DEF-14A contains information on executive compensation and director biographical information.\n(4) Forms 3, 4, and 5 are used to report beneficial ownership of securities by directors and officers.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 3, and 4 only",
+      "B": "1, 2, and 3 only",
+      "C": "2, 3, and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because Form 10-K is the annual filing that requires a comprehensive overview including audited financial statements and notes, management discussion and analysis of the company's financial condition and results of operations, and auditors' reports. Statement (2) is incorrect because Form 8-K is the current report that companies must file with the SEC to announce major events such as acquisitions, disposals of corporate assets, changes in securities and trading markets, and matters related to accountants and financial statements—it is not a quarterly filing. Quarterly interim financial results are reported on Form 10-Q for US companies, not Form 8-K. Statement (3) is correct because the proxy statement filed as Form DEF-14A typically contains proposals that require a shareholder vote, details of security ownership by management and principal owners, biographical information on directors, and disclosure of executive compensation. Statement (4) is correct because Forms 3, 4, and 5 are required to report beneficial ownership of securities for any director or officer of a registered company as well as beneficial owners of greater than 10 percent of a class of registered equity securities, with Form 3 being the initial statement, Form 4 reporting changes, and Form 5 being the annual report. Therefore, statements (1), (3), and (4) are correct. Option B fails because it includes the incorrect statement (2) regarding Form 8-K's purpose. Option C fails because it excludes the correct statement (1) while including the incorrect statement (2)."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding the role of financial statement analysis:\n(1) The central focus is evaluating a company's ability to earn a return on capital at least equal to the cost of that capital.\n(2) Debt investors are primarily concerned about a company's profitability and per-share value.\n(3) Financial analysis uses information from financial reports to form expectations about future performance and financial position.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "2 and 3 only",
+      "C": "1 and 2 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because a central focus of financial analysis is evaluating the company's ability to earn a return on its capital that is at least equal to the cost of that capital, to profitably grow its operations, and to generate enough cash to meet obligations and pursue opportunities. Statement (2) is incorrect because it reverses the concerns of debt and equity investors. A debt investor is concerned about a company's ability to pay interest and to repay the principal lent, while an equity investor is interested in a company's profitability and per-share value. Debt investors focus on creditworthiness and cash generation capability, not primarily on profitability and per-share value. Statement (3) is correct because the role of financial statement analysis is to use financial reports prepared by companies, combined with other information, to evaluate the past, current, and potential performance and financial position of a company for the purpose of making investment, credit, and other economic decisions. This explicitly includes forming expectations about future performance and financial position. Therefore, statements (1) and (3) are correct. Option B fails because it includes statement (2), which incorrectly attributes equity investor concerns to debt investors. Option C fails because it includes the incorrect statement (2) while excluding the correct statement (3)."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding auditors' reports:\n(1) An unqualified audit opinion indicates that financial statements fairly present the company's financial position in accordance with specified accounting standards.\n(2) A qualified opinion is issued when the auditor believes the financial statements are free from material misstatements.\n(3) An adverse opinion indicates that the financial statements do not present fairly the company's financial position.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because in an audit report, an independent auditor expresses an opinion on whether the information in the audited financial statements fairly presents the financial position, performance, and cash flows of the company in accordance with a specified set of accounting standards. An unqualified opinion, also known as a clean opinion, means the auditor concludes that the financial statements present fairly the company's performance, financial position, and cash flows in accordance with a specified set of accounting standards. Statement (2) is incorrect because a qualified opinion, not an unqualified opinion, is issued when the auditor believes the financial statements could be materially misstated. A qualified opinion means that with the exception of the matter to which the qualification relates, the financial statements present fairly the company's performance, financial position, and cash flows. An unqualified opinion indicates the auditor believes the statements are free from material misstatements. Statement (3) is correct because an adverse opinion is issued when the auditor concludes that the financial statements do not present fairly the company's performance, financial position, or cash flows or that they are not prepared in accordance with the applicable accounting standards. Therefore, statements (1) and (3) are correct. Option B fails because it includes statement (2), which incorrectly describes when a qualified opinion is issued. Option C fails because it excludes the correct statement (1) while including the incorrect statement (2)."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding information sources used in financial statement analysis:\n(1) Analysts are limited to using only information from annual and interim financial reports filed with regulatory authorities.\n(2) Earnings calls provide analysts the opportunity to ask probing questions to understand past results and sharpen their estimates.\n(3) Management commentary provides unaudited information that accompanies financial statements.\n(4) Third-party sources available to analysts include industry whitepapers and economic information from governments.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "2, 3, and 4 only",
+      "B": "1, 2, and 4 only",
+      "C": "1, 3, and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is incorrect because analysts use a variety of information sources for financial analysis beyond just regulated annual and interim reports. These sources are grouped by origin as issuer sources, public third-party sources, proprietary third-party sources, and proprietary primary research. Sources include earnings calls, presentations and events, press releases, industry whitepapers, analyst reports, economic information from governments, news outlets, and electronic data platforms. Statement (2) is correct because earnings calls are webcast or teleconferenced presentations and question-and-answer sessions hosted by issuers' management to discuss financial results, and analysts ask probing questions to gain further color from management to understand past results and actions to sharpen their estimates. Statement (3) is correct because financial reports include audited financial statements, additional disclosures required by regulatory authorities, and any accompanying unaudited commentary by management. Management commentary or management's discussion and analysis provides context and explanation that is not part of the audited financial statements. Statement (4) is correct because third-party sources for additional information explicitly include industry whitepapers, analyst reports, economic information from governments, general and industry-specific news outlets, and electronic data platforms. Therefore, statements (2), (3), and (4) are correct. Option B fails because it includes the incorrect statement (1), which wrongly limits analysts to only regulated reports. Option C fails because it includes the incorrect statement (1) while excluding the correct statement (2)."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Introduction to Financial Statement Analysis",
+    "stem": "Consider the following statements regarding differences between IFRS and US GAAP:\n(1) IFRS is principles-based while US GAAP is rules-based.\n(2) Under IFRS, interest paid can be classified as either cash flows from operating activities or cash flows from financing activities.\n(3) Both IFRS and US GAAP permit the use of the LIFO inventory valuation method.\n(4) Development costs are treated as an expense under US GAAP but may be capitalized under certain conditions under IFRS.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 4 only",
+      "B": "1, 2, and 3 only",
+      "C": "2, 3, and 4 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because a major difference outlined in the curriculum is that IFRS is based on principles while US GAAP is based on rules. This fundamental distinction affects how the standards are structured and applied. Statement (2) is correct because under US GAAP, interest paid is classified as cash flows from operating activities, whereas under IFRS, interest paid can be classified as either cash flows from financing activities or cash flows from operating activities, providing more flexibility. Statement (3) is incorrect because regarding inventory valuation, US GAAP permits FIFO, LIFO, and weighted average methods, but IFRS permits only FIFO and weighted average methods. LIFO is not permitted under IFRS, making this a significant difference between the two standards. Statement (4) is correct because development costs are treated as an expense under US GAAP, but under IFRS, development costs can be capitalized as an intangible asset under certain conditions when specific criteria are met. Therefore, statements (1), (2), and (4) are correct. Option B fails because it includes statement (3), which incorrectly states that both standards permit LIFO. Option C fails because it excludes the correct statement (1) while including the incorrect statement (3)."
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Financial Statement Analysis Framework",
+    "stem": "Which step in the financial statement analysis framework explicitly requires defining the analyst’s objectives and constraints?",
+    "options": {
+      "A": "Analyze and interpret the processed data",
+      "B": "Articulate the purpose and context of the analysis",
+      "C": "Collect data from financial statements and notes"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Purpose-Driven Analysis</h3><p><strong>B is correct.</strong> Financial statement analysis begins with intent. From first principles, analysis exists to support a decision, so the analyst must first define the decision context—investment, credit, valuation, or monitoring—and the constraints such as time horizon, risk tolerance, and information needs. This framing governs what data are relevant and how results are interpreted. In the CFA framework, this is explicitly the step where objectives and context are articulated before any data work begins.</p><p>A is incorrect because analysis and interpretation occur only after data have been collected and processed; objectives are already assumed.</p><p>C is incorrect because data collection is mechanical and dependent on having already defined what information is relevant to the purpose.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Role of Financial Statement Analysis",
+    "stem": "The primary role of financial statement analysis for an equity investor is to:",
+    "options": {
+      "A": "Assess compliance with accounting standards",
+      "B": "Form expectations about future profitability and value",
+      "C": "Verify the accuracy of audited financial statements"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Decision Usefulness</h3><p><strong>B is correct.</strong> From first principles, equity value depends on future cash flows and risk. Financial statement analysis helps the analyst form expectations about a company’s future performance, financial position, and risk profile. These expectations feed directly into valuation and investment decisions, which is the central purpose for equity investors.</p><p>A is incorrect because compliance assessment is primarily the role of auditors and regulators, not analysts.</p><p>C is incorrect because auditors, not analysts, are responsible for verifying accuracy; analysts maintain skepticism but use the statements as inputs.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Scope of Financial Statement Analysis",
+    "stem": "Which of the following best describes the scope of financial statement analysis?",
+    "options": {
+      "A": "Limited to quantitative ratio calculations",
+      "B": "Focused only on historical financial performance",
+      "C": "Integrates financial data with economic, industry, and company context"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Contextual Interpretation</h3><p><strong>C is correct.</strong> Numbers have meaning only in context. Financial statement analysis combines reported financial data with knowledge of the company’s business model, industry conditions, and economic environment. This integration allows the analyst to interpret why results occurred and whether they are sustainable.</p><p>A is incorrect because ratios are tools, not the objective; interpretation is essential.</p><p>B is incorrect because the ultimate goal is to assess future performance, not merely describe the past.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Regulated Sources of Information",
+    "stem": "Which organization primarily establishes International Financial Reporting Standards (IFRS)?",
+    "options": {
+      "A": "Financial Accounting Standards Board (FASB)",
+      "B": "International Accounting Standards Board (IASB)",
+      "C": "International Organization of Securities Commissions (IOSCO)"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Standard Setting vs Enforcement</h3><p><strong>B is correct.</strong> From first principles, financial reporting requires a body that defines measurement and recognition rules. The IASB fulfills this role by issuing IFRS, which are adopted by many jurisdictions worldwide.</p><p>A is incorrect because the FASB sets US GAAP, not IFRS.</p><p>C is incorrect because IOSCO facilitates cooperation among securities regulators but does not set accounting standards.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Financial Statement Notes and Disclosures",
+    "stem": "Why are financial statement notes critical to financial statement analysis?",
+    "options": {
+      "A": "They replace the need to analyze primary financial statements",
+      "B": "They provide detail on accounting policies, estimates, and risks",
+      "C": "They ensure financial statements are free from error"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Transparency Beyond Aggregates</h3><p><strong>B is correct.</strong> Primary statements aggregate information. Notes disaggregate and explain how numbers were produced, including accounting choices, significant judgments, estimates, and risk exposures. This detail is essential for assessing comparability and quality of earnings.</p><p>A is incorrect because notes supplement, not replace, the primary statements.</p><p>C is incorrect because notes enhance understanding but do not guarantee error-free reporting.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Management Commentary (MD&A)",
+    "stem": "Management’s commentary is most useful to an analyst because it:",
+    "options": {
+      "A": "Provides audited verification of financial results",
+      "B": "Explains management’s perspective on performance and risks",
+      "C": "Eliminates the need for independent analysis"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Inside vs Outside View</h3><p><strong>B is correct.</strong> Management commentary offers insight into strategy, drivers of performance, and key risks from those running the business. From first principles, this helps analysts understand causality behind the numbers, while maintaining skepticism.</p><p>A is incorrect because management commentary is typically unaudited.</p><p>C is incorrect because analysts must independently evaluate management’s claims.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Alternative Financial Reporting Systems",
+    "stem": "When comparing companies reporting under IFRS and US GAAP, an analyst should primarily:",
+    "options": {
+      "A": "Assume full comparability due to convergence efforts",
+      "B": "Adjust all reported numbers to a single standard",
+      "C": "Exercise caution due to remaining differences in standards"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Comparability Constraints</h3><p><strong>C is correct.</strong> Although convergence has reduced differences, IFRS and US GAAP still diverge in areas such as inventory methods and development cost treatment. From first principles, comparability requires consistent measurement; when adjustments are not feasible due to limited disclosure, analysts must interpret results cautiously.</p><p>A is incorrect because convergence is incomplete.</p><p>B is incorrect because analysts often lack sufficient information to fully restate numbers across standards.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Financial Statement Analysis Framework",
+    "stem": "In the financial statement analysis framework, the specific task of computing financial ratios and creating common-size statements occurs during which phase?",
+    "options": {
+      "A": "Analyze and interpret the data",
+      "B": "Process data",
+      "C": "Collect input data"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Analysis Process</h3><p><strong>B is correct.</strong> The analysis framework follows a logical progression from raw material to finished insight. The 'Process data' phase is the bridge between raw inputs and analytical thought. Its function is to transform collected data (financial statements) into a format that facilitates comparison and evaluation. Computing ratios, adjusting for accounting differences, and generating common-size statements are mechanical manipulations that structure the data[cite: 43]. These outputs are the <em>inputs</em> for the subsequent analysis phase.</p><p>A is wrong because analyzing and interpreting data happens <em>after</em> the data has been processed. This phase involves answering specific questions (e.g., 'Is the liquidity trend dangerous?') using the ratios computed in the previous step [cite: 44].</p><p>C is wrong because collecting input data involves gathering the raw materials—annual reports, macro data, and discussions with management—before any computation or adjustment takes place[cite: 43].</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Auditor's Reports",
+    "stem": "An independent auditor issues a report stating that the financial statements are fairly presented except for the valuation of inventory, which departs from the applicable accounting standards. This type of audit opinion is best described as:",
+    "options": {
+      "A": "Adverse",
+      "B": "Qualified",
+      "C": "Unqualified"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Audit Assurance Levels</h3><p><strong>B is correct.</strong> Audit opinions reflect the degree of reliance users can place on financial statements. A 'Qualified' opinion represents a specific, contained exception to an otherwise clean report. It is issued when the auditor concludes that misstatements are material but not pervasive, or when there is a specific scope limitation. The key linguistic marker is the phrase 'except for,' which isolates the non-compliant area (inventory in this case) while validating the rest of the statements[cite: 59].</p><p>A is wrong because an Adverse opinion is reserved for pervasive and material departures from GAAP that render the financial statements <em>as a whole</em> misleading. A single issue with inventory typically does not invalidate the entire reporting set [cite: 59].</p><p>C is wrong because an Unqualified (clean) opinion asserts that the statements are presented fairly in all material respects, without exceptions[cite: 59].</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Regulation vs. Standard Setting",
+    "stem": "Which of the following entities typically possesses the legal authority to enforce financial reporting requirements within its jurisdiction?",
+    "options": {
+      "A": "Standard-setting bodies",
+      "B": "Regulatory authorities",
+      "C": "International non-profit consortiums"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sovereignty and Enforcement</h3><p><strong>B is correct.</strong> Enforcement power derives from government sovereignty and law. Regulatory authorities (such as the SEC in the US or the FSA in Japan) are established by national laws to oversee capital markets. Consequently, they have the legal power to register securities, mandate disclosure filings, and punish non-compliance[cite: 50]. While they may recognize private standards, the power to <em>enforce</em> those standards resides with the regulator.</p><p>A is wrong because standard-setting bodies (like the IASB or FASB) are typically private sector, self-regulatory organizations. They define the 'code' (IFRS/US GAAP) but rely on regulators to mandate and enforce the adoption of that code [cite: 50].</p><p>C is wrong because international consortiums (like IOSCO) facilitate cooperation and set global principles, but they lack direct legal jurisdiction or enforcement mechanisms within individual member countries[cite: 49].</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Financial Statement Notes",
+    "stem": "To determine the specific revenue recognition policy and depreciation methods chosen by a company, an analyst should primarily review the:",
+    "options": {
+      "A": "Auditor's report",
+      "B": "Management's discussion and analysis",
+      "C": "Notes to the financial statements"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Disclosure Hierarchy</h3><p><strong>C is correct.</strong> Financial statements provide the quantitative outcomes of economic activity. However, because accounting standards (like US GAAP and IFRS) allow for choices (e.g., straight-line vs. accelerated depreciation), the numbers are ambiguous without context. The 'Notes' (footnotes) are designed specifically to provide this basis of preparation. They detail the accounting policies, methods, and estimates used to generate the line items, ensuring comparability and transparency [cite: 54].</p><p>A is wrong because the Auditor's report provides an opinion on compliance and fairness, but it does not detail the specific accounting choices made by management unless they are critical audit matters, and even then, the policy detail is in the notes[cite: 58].</p><p>B is wrong because Management's discussion and analysis (MD&A) focuses on trends, future outlook, and liquidity. While it discusses critical estimates, the systematic listing of accounting policies resides in the notes[cite: 57].</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Scope of Financial Statement Analysis",
+    "stem": "The primary role of financial statement analysis is to:",
+    "options": {
+      "A": "Use financial reports to make economic decisions.",
+      "B": "Ensure companies comply with tax laws.",
+      "C": "Determine the exact intrinsic value of a company."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Analyst's Function</h3><p><strong>A is correct.</strong> Financial statement analysis acts as a translation layer between reported data and action. Reporting provides history; analysis provides foresight. The core objective is to evaluate a company's past, current, and potential performance to form expectations that support specific economic decisions, such as investing equity, extending credit, or assigning a debt rating[cite: 45]. The analysis is a means to an allocative end.</p><p>B is wrong because compliance is the domain of auditors and regulators. Analysts use the output of compliance but do not enforce it[cite: 58].</p><p>C is wrong because intrinsic value is an estimate/range derived from analysis, not a singular fact the analysis 'determines' with precision. Furthermore, the role is broader than just valuation (e.g., credit analysis)[cite: 45].</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "SEC Filings",
+    "stem": "A US-based public company acquires a major competitor. To disclose this material corporate event immediately to the public, the company must file which form with the SEC?",
+    "options": {
+      "A": "Form 10-Q",
+      "B": "Form 8-K",
+      "C": "Form 10-K"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Continuous vs. Periodic Disclosure</h3><p><strong>B is correct.</strong> Capital markets require timely information to price securities efficiently. Periodic reports (annual/quarterly) create information lags. To bridge these gaps, the SEC requires the 'current report,' Form 8-K, for significant material events that occur <em>between</em> scheduled filings. Acquisitions, disposals, and management changes trigger this immediate filing requirement to ensure market transparency [cite: 52].</p><p>A is wrong because Form 10-Q is the quarterly report for interim financial statements, filed on a fixed schedule, not ad-hoc for specific events [cite: 52].</p><p>C is wrong because Form 10-K is the comprehensive annual report, providing a historical look-back rather than immediate disclosure of breaking news[cite: 51].</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Management Commentary",
+    "stem": "Under the IFRS practice statement framework, management commentary should primarily provide context on the company's:",
+    "options": {
+      "A": "Auditor's opinion and basis for qualification.",
+      "B": "Detailed detailed ledger transactions for the period.",
+      "C": "Nature of business, objectives, and risks."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Narrative Reporting</h3><p><strong>C is correct.</strong> Financial statements provide the 'what' (the numbers). Management commentary provides the 'why' and 'how.' The IFRS framework for this commentary aims to give users context to interpret the financials. It focuses on five key elements: the nature of the business, management's objectives and strategies, the company's resources/risks/relationships, results of operations, and critical performance measures[cite: 57]. This qualitative overlay is essential for assessing sustainability.</p><p>A is wrong because the auditor's opinion is a separate report issued by the independent auditor, not part of management's commentary on the business[cite: 58].</p><p>B is wrong because detailed ledger transactions are the raw data of the accounting system, summarized in the financial statements, not the strategic context provided in management commentary.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Financial Statement Analysis Framework",
+    "stem": "In the financial statement analysis framework, the specific task of computing financial ratios and creating common-size statements occurs during which phase?",
+    "options": {
+      "A": "Analyze and interpret the data",
+      "B": "Process data",
+      "C": "Collect input data"
+    },
+    "correct_answer": "B",
+   "explanation": "<h3>First Principles Thinking: The Analysis Process</h3><p><strong>B is correct.</strong> The analysis framework follows a logical progression from raw material to finished insight. The 'Process data' phase is the bridge between raw inputs and analytical thought. Its function is to transform collected data (financial statements) into a format that facilitates comparison and evaluation. Computing ratios, adjusting for accounting differences, and generating common-size statements are mechanical manipulations that structure the data[cite: 43]. These outputs are the <em>inputs</em> for the subsequent analysis phase.</p><p>A is wrong because analyzing and interpreting data happens <em>after</em> the data has been processed.This phase involves answering specific questions (e.g., 'Is the liquidity trend dangerous?') using the ratios computed in the previous step [cite: 44][cite_start].</p><p>C is wrong because collecting input data involves gathering the raw materials—annual reports, macro data, and discussions with management—before any computation or adjustment takes place[cite: 43].</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Auditor's Reports",
+    "stem": "An independent auditor issues a report stating that the financial statements are fairly presented except for the valuation of inventory, which departs from the applicable accounting standards. This type of audit opinion is best described as:",
+    "options": {
+      "A": "Adverse",
+      "B": "Qualified",
+      "C": "Unqualified"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Audit Assurance Levels</h3><p><strong>B is correct.</strong> Audit opinions reflect the degree of reliance users can place on financial statements. A 'Qualified' opinion represents a specific, contained exception to an otherwise clean report. It is issued when the auditor concludes that misstatements are material but not pervasive, or when there is a specific scope limitation.The key linguistic marker is the phrase 'except for,' which isolates the non-compliant area (inventory in this case) while validating the rest of the statements[cite: 59].</p><p>A is wrong because an Adverse opinion is reserved for pervasive and material departures from GAAP that render the financial statements <em>as a whole</em> misleading.A single issue with inventory typically does not invalidate the entire reporting set [cite: 59][cite_start].</p><p>C is wrong because an Unqualified (clean) opinion asserts that the statements are presented fairly in all material respects, without exceptions[cite: 59].</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Regulation vs. Standard Setting",
+    "stem": "Which of the following entities typically possesses the legal authority to enforce financial reporting requirements within its jurisdiction?",
+    "options": {
+      "A": "Standard-setting bodies",
+      "B": "Regulatory authorities",
+      "C": "International non-profit consortiums"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sovereignty and Enforcement</h3><p><strong>B is correct.</strong> Enforcement power derives from government sovereignty and law. Regulatory authorities (such as the SEC in the US or the FSA in Japan) are established by national laws to oversee capital markets.Consequently, they have the legal power to register securities, mandate disclosure filings, and punish non-compliance[cite: 50]. While they may recognize private standards, the power to <em>enforce</em> those standards resides with the regulator.</p><p>A is wrong because standard-setting bodies (like the IASB or FASB) are typically private sector, self-regulatory organizations.They define the 'code' (IFRS/US GAAP) but rely on regulators to mandate and enforce the adoption of that code [cite: 50][cite_start].</p><p>C is wrong because international consortiums (like IOSCO) facilitate cooperation and set global principles, but they lack direct legal jurisdiction or enforcement mechanisms within individual member countries[cite: 49].</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Financial Statement Notes",
+    "stem": "To determine the specific revenue recognition policy and depreciation methods chosen by a company, an analyst should primarily review the:",
+    "options": {
+      "A": "Auditor's report",
+      "B": "Management's discussion and analysis",
+      "C": "Notes to the financial statements"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Disclosure Hierarchy</h3><p><strong>C is correct.</strong> Financial statements provide the quantitative outcomes of economic activity. However, because accounting standards (like US GAAP and IFRS) allow for choices (e.g., straight-line vs. accelerated depreciation), the numbers are ambiguous without context. The 'Notes' (footnotes) are designed specifically to provide this basis of preparation.They detail the accounting policies, methods, and estimates used to generate the line items, ensuring comparability and transparency [cite: 54][cite_start].</p><p>A is wrong because the Auditor's report provides an opinion on compliance and fairness, but it does not detail the specific accounting choices made by management unless they are critical audit matters, and even then, the policy detail is in the notes[cite: 58].</p><p>B is wrong because Management's discussion and analysis (MD&A) focuses on trends, future outlook, and liquidity.While it discusses critical estimates, the systematic listing of accounting policies resides in the notes[cite: 57].</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Scope of Financial Statement Analysis",
+    "stem": "The primary role of financial statement analysis is to:",
+    "options": {
+      "A": "Use financial reports to make economic decisions.",
+      "B": "Ensure companies comply with tax laws.",
+      "C": "Determine the exact intrinsic value of a company."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Analyst's Function</h3><p><strong>A is correct.</strong> Financial statement analysis acts as a translation layer between reported data and action. Reporting provides history; analysis provides foresight.The core objective is to evaluate a company's past, current, and potential performance to form expectations that support specific economic decisions, such as investing equity, extending credit, or assigning a debt rating[cite: 45]. The analysis is a means to an allocative end.</p><p>B is wrong because compliance is the domain of auditors and regulators.Analysts use the output of compliance but do not enforce it[cite: 58].</p><p>C is wrong because intrinsic value is an estimate/range derived from analysis, not a singular fact the analysis 'determines' with precision.Furthermore, the role is broader than just valuation (e.g., credit analysis)[cite: 45].</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "SEC Filings",
+    "stem": "A US-based public company acquires a major competitor. To disclose this material corporate event immediately to the public, the company must file which form with the SEC?",
+    "options": {
+      "A": "Form 10-Q",
+      "B": "Form 8-K",
+      "C": "Form 10-K"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Continuous vs. Periodic Disclosure</h3><p><strong>B is correct.</strong> Capital markets require timely information to price securities efficiently. Periodic reports (annual/quarterly) create information lags. To bridge these gaps, the SEC requires the 'current report,' Form 8-K, for significant material events that occur <em>between</em> scheduled filings.Acquisitions, disposals, and management changes trigger this immediate filing requirement to ensure market transparency [cite: 52][cite_start].</p><p>A is wrong because Form 10-Q is the quarterly report for interim financial statements, filed on a fixed schedule, not ad-hoc for specific events [cite: 52][cite_start].</p><p>C is wrong because Form 10-K is the comprehensive annual report, providing a historical look-back rather than immediate disclosure of breaking news[cite: 51].</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Management Commentary",
+    "stem": "Under the IFRS practice statement framework, management commentary should primarily provide context on the company's:",
+    "options": {
+      "A": "Auditor's opinion and basis for qualification.",
+      "B": "Detailed detailed ledger transactions for the period.",
+      "C": "Nature of business, objectives, and risks."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Narrative Reporting</h3><p><strong>C is correct.</strong> Financial statements provide the 'what' (the numbers). Management commentary provides the 'why' and 'how.' The IFRS framework for this commentary aims to give users context to interpret the financials.It focuses on five key elements: the nature of the business, management's objectives and strategies, the company's resources/risks/relationships, results of operations, and critical performance measures[cite: 57].This qualitative overlay is essential for assessing sustainability.</p><p>A is wrong because the auditor's opinion is a separate report issued by the independent auditor, not part of management's commentary on the business[cite: 58].</p><p>B is wrong because detailed ledger transactions are the raw data of the accounting system, summarized in the financial statements, not the strategic context provided in management commentary.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Financial Statement Analysis Framework",
+    "stem": "In the financial statement analysis framework, which step immediately follows the collection of data?",
+    "options": {
+      "A": "Articulate the purpose and context of the analysis.",
+      "B": "Process the data.",
+      "C": "Develop and communicate conclusions and recommendations."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sequential Analysis Process</h3><p><strong>B is correct.</strong> Begin with the foundational definition of financial statement analysis as a structured process to evaluate a company's financial health and performance. The framework breaks down into six primitive steps: (1) articulate purpose and context, establishing objectives like credit assessment or equity valuation; (2) collect data from sources such as financial statements and regulatory filings; (3) process data by adjusting for comparability, computing ratios, and preparing common-size statements; (4) analyze/interpret to draw insights; (5) develop/communicate conclusions; (6) follow-up. The mechanism is sequential: data must be processed before interpretation to ensure accuracy. Boundary cases include incomplete data leading to flawed processing. Applying to the stem, after collection, processing refines raw data for subsequent analysis.</p><p>A is incorrect: this is the first step, confusing the sequence by placing initiation after data gathering, which ignores the need to define scope before collection.</p><p>C is incorrect: this step occurs later, skipping processing and analysis, misapplying the framework's logical progression.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Scope of Financial Statement Analysis",
+    "stem": "What is the primary focus of financial statement analysis when evaluating a company's creditworthiness?",
+    "options": {
+      "A": "Assessing the company's ability to generate future cash flows for dividend payments.",
+      "B": "Evaluating the company's capacity to meet its debt obligations.",
+      "C": "Determining the intrinsic value of the company's equity shares."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Credit Analysis Objectives</h3><p><strong>B is correct.</strong> Start from the core definition: financial statement analysis examines statements to inform decisions like credit, equity, or management evaluation. For creditworthiness, primitive assumptions are that creditors prioritize repayment of principal and interest. Governing relationships include liquidity ratios (current assets/liabilities) and solvency metrics (debt/equity). The causal chain: analyze balance sheet for asset liquidity, income statement for earnings stability, cash flows for operating sufficiency. Edge cases: high leverage in downturns risks default. In the stem, focus on debt service capacity derives from these, using metrics like interest coverage (EBIT/interest expense ≈ solvency threshold >1.5).</p><p>A is incorrect: this targets equity investors, misconstruing creditor focus on survival over growth distributions.</p><p>C is incorrect: intrinsic value pertains to equity valuation, not creditor concerns with recovery in bankruptcy.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok",
+    "topic": "Regulated Sources of Information",
+    "stem": "Under IOSCO principles, what is the primary objective of securities market regulation?",
+    "options": {
+      "A": "To maximize returns for investors through standardized reporting.",
+      "B": "To protect investors and ensure fair, efficient, and transparent markets.",
+      "C": "To enforce uniform accounting standards across all jurisdictions."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Regulatory Objectives</h3><p><strong>B is correct.</strong> Define regulation as rules to govern market behavior. IOSCO's primitive assumptions: markets function best with trust, achieved via investor protection from fraud, fair dealings, efficiency in pricing, and transparency in disclosures. Relationships: link disclosure requirements to reduced information asymmetry. Mechanism: regulators mandate filings, audits to reveal true financial position. Boundary cases: emerging markets with weak enforcement lead to volatility. For the stem, IOSCO's three objectives—protection, fairness/efficiency/transparency—directly ensure market integrity, as seen in principles adopted by bodies like SEC.</p><p>A is incorrect: regulation aims at protection, not return maximization, which confuses oversight with investment advice.</p><p>C is incorrect: IOSCO promotes principles, not enforcement of uniform standards, overlooking jurisdictional differences.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "US Securities and Exchange Commission",
+    "stem": "Which SEC form is used by US public companies to report quarterly financial results?",
+    "options": {
+      "A": "Form 10-K.",
+      "B": "Form 8-K.",
+      "C": "Form 10-Q."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Periodic Reporting Requirements</h3><p><strong>C is correct.</strong> From definitions: SEC mandates disclosures for transparency. Assumptions: investors need timely updates—annual for overview, quarterly for interim. Relationships: 1934 Act requires Forms 10-K (annual), 10-Q (quarterly), 8-K (events). Causal chain: quarterly filing includes unaudited statements, MD&A for trends. Edge cases: extensions for delays, but core is 45-day filing post-quarter. Stem applies as 10-Q provides condensed financials for ongoing analysis.</p><p>A is incorrect: 10-K is annual, misapplying frequency by overlooking interim needs.</p><p>B is incorrect: 8-K reports material events, not routine quarters.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Auditor's Reports",
+    "stem": "An unqualified audit opinion indicates that the financial statements:",
+    "options": {
+      "A": "Contain material misstatements that affect economic decisions.",
+      "B": "Are presented fairly in all material respects according to the applicable framework.",
+      "C": "Require adjustments due to departures from accounting standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Audit Assurance Levels</h3><p><strong>B is correct.</strong> Audit is independent verification. Assumptions: statements reflect economic reality per GAAP/IFRS. Relationships: auditors test controls, transactions for accuracy. Mechanism: gather evidence, assess risks; unqualified means no material issues. Boundaries: materiality threshold (e.g., 5% of income); pervasive issues lead to adverse opinions. Stem: unqualified confirms fair presentation, boosting reliability.</p><p>A is incorrect: this describes adverse opinion, reversing assurance meaning.</p><p>C is incorrect: suggests qualified opinion, ignoring clean bill condition.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok",
+    "topic": "Management Commentary or MD&A",
+    "stem": "In the MD&A section, management is required to discuss:",
+    "options": {
+      "A": "Only the positive aspects of the company's performance to attract investors.",
+      "B": "The company's financial condition, changes, and results of operations.",
+      "C": "Detailed personal information about executives' compensation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Narrative Disclosure Purpose</h3><p><strong>B is correct.</strong> MD&A defines as management's perspective on financials. Assumptions: users need context beyond numbers. Relationships: link to statements via explanations of variances. Mechanism: discuss liquidity, capital resources, operations results; forward-looking. Edges: critical accounting estimates, risks. Stem: requires balanced view of condition/changes/operations.</p><p>A is incorrect: mandates full disclosure, not selective positivity, violating transparency.</p><p>C is incorrect: compensation in proxy, not MD&A focus.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Monitoring Developments in Financial Reporting Standards",
+    "stem": "When monitoring evolving financial reporting standards, an analyst should primarily focus on:",
+    "options": {
+      "A": "New products or transactions that may require updated disclosures.",
+      "B": "Historical standards that have remained unchanged for decades.",
+      "C": "Only standards issued by local regulatory bodies, ignoring international ones."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Standards Evolution</h3><p><strong>A is correct.</strong> Standards as rules adapting to economy. Assumptions: innovation creates gaps. Relationships: bodies like IASB/FASB update for relevance. Mechanism: identify new items (e.g., crypto), assess impact on recognition/measurement. Boundaries: complex transactions like derivatives; CFA Institute advocates improvements. Stem: focus on emerging areas ensures analysis accuracy.</p><p>B is incorrect: ignores dynamism, misapplying static view to evolving field.</p><p>C is incorrect: global markets require international awareness, narrowing scope unduly.</p>"
+  }
+]
+
