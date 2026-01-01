@@ -444,10 +444,7 @@
     "stem": "Assertion (A): The \"true yield\" of a fixed-rate bond is generally lower than its \"street convention yield.\"\nReason (R): Calculating the true yield is computationally more complex because it requires referencing a calendar to identify weekends and holidays.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "B",
-    "explanation": "Assertion A is true: The true yield accounts for the delay in payments due to weekends and holidays, which lowers the internal rate of return (yield) compared to the street convention, which assumes timely payment. Reason R is also true: True yield calculation is indeed more complex due to the need for a holiday calendar. However, R is not the explanation for A. The reason the yield is lower is the *time value of money* impact of the delayed cash flows, not the computational difficulty.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is true: The true yield accounts for the delay in payments due to weekends and holidays, which lowers the internal rate of return (yield) compared to the street convention, which assumes timely payment. Reason R is also true: True yield calculation is indeed more complex due to the need for a holiday calendar. However, R is not the explanation for A. The reason the yield is lower is the *time value of money* impact of the delayed cash flows, not the computational difficulty."
   },
   {
     "id": 2,
@@ -456,10 +453,7 @@
     "stem": "Assertion (A): For a callable corporate bond, the Option-Adjusted Spread (OAS) will typically be higher than the bond's Z-spread.\nReason (R): The Z-spread includes compensation for both the issuer's credit risk and the risk that the issuer will exercise the call option against the investor.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "D",
-    "explanation": "Assertion A is false. The OAS removes the value of the embedded call option (which is a cost to the investor/benefit to the issuer) from the spread. Therefore, the OAS is *lower* than the Z-spread (OAS = Z-spread - Option Cost in bps). Reason R is true: The Z-spread indeed reflects the total spread required by the market, which includes compensation for the call risk.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is false. The OAS removes the value of the embedded call option (which is a cost to the investor/benefit to the issuer) from the spread. Therefore, the OAS is *lower* than the Z-spread (OAS = Z-spread - Option Cost in bps). Reason R is true: The Z-spread indeed reflects the total spread required by the market, which includes compensation for the call risk."
   },
   {
     "id": 3,
@@ -468,10 +462,7 @@
     "stem": "Assertion (A): For a callable bond trading at a significant premium to par value in USD, the Yield-to-Worst (YTW) is most likely the Yield-to-First-Call rather than the Yield-to-Maturity.\nReason (R): The amortization of the bond's premium is effectively accelerated if the bond is called early, which reduces the investor's annualized rate of return.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "A",
-    "explanation": "When a bond trades at a premium, the investor loses that premium over the life of the bond. If the bond is called early (at the call price, which is usually lower than the market price), this loss happens faster, dragging down the return. Thus, the yield-to-call is the lowest potential yield (YTW). The reason correctly identifies this accelerated amortization mechanism.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "When a bond trades at a premium, the investor loses that premium over the life of the bond. If the bond is called early (at the call price, which is usually lower than the market price), this loss happens faster, dragging down the return. Thus, the yield-to-call is the lowest potential yield (YTW). The reason correctly identifies this accelerated amortization mechanism."
   },
   {
     "id": 4,
@@ -480,10 +471,7 @@
     "stem": "Assertion (A): To provide the same Effective Annual Rate (EAR) to an investor, a bond paying quarterly coupons must typically carry a higher stated annual yield than a comparable bond paying semiannual coupons.\nReason (R): Increasing the frequency of coupon compounding allows a lower nominal stated rate to produce the same effective yield due to the interest-on-interest effect.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "D",
-    "explanation": "Assertion A is false. Because quarterly compounding happens more frequently than semiannual compounding, the interest-on-interest effect is stronger. Therefore, the stated nominal rate can be *lower*, not higher, to achieve the same EAR. Reason R is true and correctly describes the principle of compounding frequency.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is false. Because quarterly compounding happens more frequently than semiannual compounding, the interest-on-interest effect is stronger. Therefore, the stated nominal rate can be *lower*, not higher, to achieve the same EAR. Reason R is true and correctly describes the principle of compounding frequency."
   },
   {
     "id": 5,
@@ -492,10 +480,7 @@
     "stem": "Assertion (A): The Z-spread is theoretically superior to the G-spread for analyzing bonds with principal amortization scheduled prior to maturity.\nReason (R): It is mathematically impossible to calculate a G-spread for a bond that amortizes principal, as there is no single maturity date to reference.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "C",
-    "explanation": "Assertion A is true: Z-spread uses the spot curve to discount each specific cash flow, making it accurate for amortizing structures where cash flows vary over time. G-spread uses a single YTM point, which assumes a flat curve and is ill-suited for amortizing bonds. Reason R is false: It is not *impossible* to calculate a G-spread (one could use the Weighted Average Life or final maturity), but it is simply a flawed/inaccurate metric.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is true: Z-spread uses the spot curve to discount each specific cash flow, making it accurate for amortizing structures where cash flows vary over time. G-spread uses a single YTM point, which assumes a flat curve and is ill-suited for amortizing bonds. Reason R is false: It is not *impossible* to calculate a G-spread (one could use the Weighted Average Life or final maturity), but it is simply a flawed/inaccurate metric."
   },
   {
     "id": 6,
@@ -504,10 +489,7 @@
     "stem": "Assertion (A): The Interpolated Spread (I-spread) is often preferred over the G-spread for analyzing Euro-denominated corporate bonds.\nReason (R): The I-spread measures the yield spread of a bond over the standard interest rate swap rate in the same currency and tenor.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "B",
-    "explanation": "Assertion A is true: The I-spread is the standard for Euro bonds (often due to the lack of a single risk-free sovereign benchmark in the Eurozone). Reason R is true: It correctly defines the I-spread. However, R does not explain *why* it is preferred over G-spread; the preference is driven by the specific market structure of the Eurozone (fragmented sovereign debt), not just the definition of the spread.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is true: The I-spread is the standard for Euro bonds (often due to the lack of a single risk-free sovereign benchmark in the Eurozone). Reason R is true: It correctly defines the I-spread. However, R does not explain *why* it is preferred over G-spread; the preference is driven by the specific market structure of the Eurozone (fragmented sovereign debt), not just the definition of the spread."
   },
   {
     "id": 7,
@@ -516,10 +498,7 @@
     "stem": "Assertion (A): On-the-run government bonds typically trade at lower yields-to-maturity than off-the-run bonds of similar maturity.\nReason (R): On-the-run bonds possess higher liquidity and often command a scarcity premium in the repo market, lowering their financing costs.",
     "options": "(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
     "correctanswer": "A",
-    "explanation": "Assertion A is true: The most recently issued (on-the-run) bonds trade at a premium price (lower yield). Reason R is true and explains the phenomenon: High demand for liquidity and specialness in the repo market (lower financing rates) drives the price up and the yield down relative to seasoned (off-the-run) issues.",
-    "citations": [
-      "file:1"
-    ]
+    "explanation": "Assertion A is true: The most recently issued (on-the-run) bonds trade at a premium price (lower yield). Reason R is true and explains the phenomenon: High demand for liquidity and specialness in the repo market (lower financing rates) drives the price up and the yield down relative to seasoned (off-the-run) issues."
   },
   {
     "id": 1,
