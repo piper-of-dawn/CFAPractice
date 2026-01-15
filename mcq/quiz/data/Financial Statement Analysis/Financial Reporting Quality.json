@@ -1,0 +1,563 @@
+[
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Financial Reporting vs. Earnings Quality",
+    "stem": "An analyst observes that a company's financial reports are fully compliant with GAAP and decision-useful, but the earnings are generated from one-off asset sales that are unlikely to recur. This situation best describes:",
+    "options": {
+      "A": "High financial reporting quality and high earnings quality.",
+      "B": "High financial reporting quality and low earnings quality.",
+      "C": "Low financial reporting quality and low earnings quality."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Reporting vs. Results</h3><p><strong>B is correct.</strong> Start with definitions: Financial Reporting Quality refers to the precision, completeness, and faithfulness of the information (does it reveal the truth?). Earnings Quality refers to the sustainability and adequacy of the economic return (is the truth good?). Here, the reporting is compliant and useful, so reporting quality is high. However, the earnings come from non-recurring sources (one-off sales), meaning they are not sustainable and have low predictive value for future cash flows. Thus, earnings quality is low.</p><p>A is incorrect: High earnings quality requires sustainability; one-off gains are the definition of low-quality, unsustainable earnings.</p><p>C is incorrect: The reporting is described as GAAP-compliant and decision-useful, which is the definition of high reporting quality, regardless of the underlying economic reality.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Conservative Accounting Mechanisms",
+    "stem": "A management team chooses to expense a cost immediately rather than capitalizing it, even though accounting standards allow for capitalization. The immediate effect of this choice is to:",
+    "options": {
+      "A": "Decrease current period earnings and increase future period potential earnings.",
+      "B": "Increase current period earnings and decrease future period potential earnings.",
+      "C": "Decrease current period cash flow from operations and increase investing cash flow."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Accounting Conservatism</h3><p><strong>A is correct.</strong> Start with the accounting equation. Expensing a cost immediately reduces Net Income in the current period (Revenue - Expenses = Income) compared to capitalizing it (which puts it on the Balance Sheet). Lower Net Income reduces Retained Earnings. In future periods, because the asset is not on the balance sheet, there is no depreciation or amortization expense associated with it. Therefore, future expenses are lower, mechanically increasing future earnings potential. This shift from current to future is the hallmark of conservative accounting.</p><p>B is incorrect: This describes aggressive accounting (capitalizing costs to boost current income).</p><p>C is incorrect: The decision to expense vs. capitalize is an accounting classification choice; the actual cash outflow occurs regardless. If expensed, it hits CFO; if capitalized, it typically hits CFI. Thus, expensing <em>decreases</em> CFO relative to capitalizing, but the stem asks for the effect of the choice itself on <em>earnings</em> dynamics, and C mixes cash flow classification with earnings impacts confusingly.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Aggressive Revenue Recognition",
+    "stem": "Which of the following practices is most consistent with aggressive revenue recognition?",
+    "options": {
+      "A": "Recognizing revenue only after the customer has accepted delivery.",
+      "B": "Utilizing bill-and-hold arrangements with minimal business justification.",
+      "C": "Establishing a high allowance for sales returns based on historical data."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Revenue Realization</h3><p><strong>B is correct.</strong> Revenue should be recognized when the performance obligation is satisfied and control transfers. Aggressive accounting seeks to accelerate this recognition. A 'bill-and-hold' arrangement allows a firm to bill a customer and recognize revenue while keeping the inventory. While valid in specific cases, using it without justification is a classic mechanism to pull future revenue into the current period (channel stuffing), falsely inflating current performance.</p><p>A is incorrect: Recognizing revenue upon delivery/acceptance is conservative or neutral (standard GAAP), as it ensures control has fully transferred.</p><p>C is incorrect: A high allowance for returns reduces Net Revenue (Gross Sales - Returns). Overestimating this allowance reduces reported revenue, which is a conservative, not aggressive, action.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Cash Flow Manipulation",
+    "stem": "A company extends its days payable outstanding (DPO) significantly at year-end without a change in credit terms from suppliers. This action will most likely:",
+    "options": {
+      "A": "Increase cash flow from operations (CFO) and decrease operating cycle.",
+      "B": "Increase cash flow from operations (CFO) and leave net income unchanged.",
+      "C": "Decrease cash flow from investing (CFI) and increase net income."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Working Capital Mechanics</h3><p><strong>B is correct.</strong> CFO is calculated (indirect method) as Net Income + Non-cash charges - Change in Working Capital (Current Assets - Current Liabilities). Accounts Payable (AP) is a current liability. Delaying payment increases the ending AP balance. An increase in a liability is a source of cash (positive adjustment to CFO). Since the expense was already recorded when incurred (accrual basis), Net Income is unaffected by the timing of the cash payment. Thus, CFO rises while NI stays flat.</p><p>A is incorrect: Extending DPO increases the Cash Conversion Cycle (CCC = DSO + DIO - DPO). Wait, DPO is subtracted, so CCC decreases? No, the Operating Cycle is DIO + DSO. DPO affects the Cash Conversion Cycle, not the Operating Cycle.</p><p>C is incorrect: Payment of trade payables is an operating activity, not investing. It does not affect NI or CFI.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Motivations for Low Quality Reporting",
+    "stem": "A manager is most likely to employ aggressive accounting choices that increase current period earnings when:",
+    "options": {
+      "A": "The company is close to violating a debt covenant based on a minimum interest coverage ratio.",
+      "B": "The company has already exceeded all analyst targets and wishes to create a cookie jar reserve.",
+      "C": "Tax rates are expected to decrease significantly in the next fiscal year."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Agency Theory & Incentives</h3><p><strong>A is correct.</strong> Debt covenants often restrict borrowers using financial ratios (e.g., EBITDA/Interest). If a company is near the breach threshold, the cost of default (accelerated repayment, penalties) is high. The manager has a strong incentive to aggressively recognize revenue or delay expenses to boost the numerator (Earnings/EBITDA) to satisfy the covenant. This is a survival motivation.</p><p>B is incorrect: If targets are already beaten, the incentive is to be <em>conservative</em> (defer earnings) to 'smooth' results or build a 'cookie jar' for lean years, not to be aggressive.</p><p>C is incorrect: If tax rates will drop next year, the rational move is to defer income to the low-tax future (conservative now) and accelerate expenses to the high-tax present (to maximize deductions), not to increase current earnings.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Warning Signs: Depreciation",
+    "stem": "An analyst notices that a company has extended the useful lives of its proprietary manufacturing equipment compared to industry peers. This change will most likely:",
+    "options": {
+      "A": "Increase depreciation expense and decrease operating margins.",
+      "B": "Decrease depreciation expense and increase fixed asset turnover.",
+      "C": "Decrease depreciation expense and increase net income."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Depreciation Mechanics</h3><p><strong>C is correct.</strong> Depreciation expense = (Cost - Salvage Value) / Useful Life. Increasing the denominator (Useful Life) mathematically decreases the annual Depreciation Expense. Since Depreciation is an expense in the Income Statement, reducing it increases Operating Income and Net Income (assuming tax effects don't fully offset). This is a common aggressive accounting lever.</p><p>A is incorrect: Extending life <em>decreases</em> expense, which <em>increases</em> margins.</p><p>B is incorrect: While depreciation expense drops, the Net Book Value (NBV) of the asset remains higher for longer because accumulated depreciation grows slower. Fixed Asset Turnover = Sales / Average Net Fixed Assets. A higher denominator (higher NBV) leads to a <em>lower</em>, not higher, turnover ratio.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Deferred Tax Asset Valuation",
+    "stem": "A company reduces the valuation allowance against its deferred tax assets (DTAs). This adjustment results in:",
+    "options": {
+      "A": "A decrease in income tax expense and an increase in net income.",
+      "B": "An increase in income tax expense and a decrease in net income.",
+      "C": "No change to net income, but an increase in total assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: DTA Valuation</h3><p><strong>A is correct.</strong> A Deferred Tax Asset (DTA) represents future tax savings. It must be reduced by a 'Valuation Allowance' (contra-asset) if it is more likely than not that the asset won't be realized (i.e., no future profits to offset). Reducing this allowance implies management expects higher future profits. Mechanically, the entry is Debit Valuation Allowance (increasing Net DTA), Credit Income Tax Expense. Reducing an expense increases Net Income.</p><p>B is incorrect: This describes the effect of <em>increasing</em> the valuation allowance (pessimism).</p><p>C is incorrect: The adjustment flows through the income statement as a component of tax expense, directly affecting Net Income. It is not an equity-only or OCI adjustment.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Inventory Warning Signs",
+    "stem": "In a period of rising prices, a LIFO firm experiencing a decline in inventory quantities will most likely report:",
+    "options": {
+      "A": "Lower gross margins due to the LIFO conformity rule.",
+      "B": "Higher gross margins due to LIFO liquidation.",
+      "C": "Sustainable earnings growth driven by efficiency."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: LIFO Mechanics</h3><p><strong>B is correct.</strong> Under LIFO (Last-In, First-Out), the most recent (high cost) inventory is sold first (COGS). Older (low cost) inventory sits on the balance sheet. If inventory quantities decline, the firm dips into these older layers ('LIFO liquidation'). It matches current high sales prices with old, low historical costs in COGS. This mismatch artificially deflates COGS and inflates Gross Margin. This boost is one-time and not sustainable.</p><p>A is incorrect: Margins will be higher, not lower, because the COGS is abnormally low.</p><p>C is incorrect: The earnings growth is driven by an accounting artifact (liquidating old layers), not operational efficiency, and is explicitly non-sustainable.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Detection: Ratio Analysis",
+    "stem": "Which of the following relationships between Net Income (NI) and Cash Flow from Operations (CFO) is the strongest red flag for potential earnings manipulation?",
+    "options": {
+      "A": "NI is consistently greater than CFO over time.",
+      "B": "NI and CFO are both growing at the same rate.",
+      "C": "CFO is consistently greater than NI over time."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Accruals vs. Cash</h3><p><strong>A is correct.</strong> Earnings are Accruals + Cash Flow. Over the long term, NI should converge with CFO (accruals reverse). If NI is persistently > CFO, it implies the company is recording profits that are never converting to cash. This suggests aggressive accruals (e.g., booking revenue but accounts receivable just grows forever, or capitalizing expenses). This divergence is a classic warning sign of low-quality earnings.</p><p>B is incorrect: Correlation between NI and CFO suggests high-quality, cash-backed earnings.</p><p>C is incorrect: CFO > NI is generally a sign of conservative accounting (e.g., high depreciation charges lowering NI but not cash) or a healthy mature firm.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "Non-GAAP Measures",
+    "stem": "A company emphasizes a Non-GAAP earnings measure that excludes 'restructuring costs'. An analyst should view this exclusion with skepticism if:",
+    "options": {
+      "A": "The restructuring costs are non-cash in nature.",
+      "B": "The restructuring costs occur every year.",
+      "C": "The company provides a reconciliation to the nearest GAAP measure."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Persistence and Classification</h3><p><strong>B is correct.</strong> Non-GAAP measures aim to show 'core' performance by excluding non-recurring items. If an item like 'restructuring' happens every year, it is part of the normal operating cost of that business (continuous realignment). Excluding recurring expenses creates a misleadingly positive view of 'core' profitability. This is a primary abuse of Non-GAAP reporting.</p><p>A is incorrect: Non-cash charges (like amortization) are frequently and validly excluded in measures like EBITDA to approximate cash generation.</p><p>C is incorrect: Providing a reconciliation is a regulatory requirement (SEC Reg G) and a sign of transparency, not a red flag in itself.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Revenue Warning Signs: DSO",
+    "stem": "A company reports a 20% increase in revenue, but its Days Sales Outstanding (DSO) has increased from 45 days to 75 days. This most likely suggests:",
+    "options": {
+      "A": "Improved credit terms leading to higher quality sales.",
+      "B": "Channel stuffing or poor credit quality of customers.",
+      "C": "Greater efficiency in collections relative to sales growth."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Receivables Dynamics</h3><p><strong>B is correct.</strong> Revenue is recorded when booked, but DSO measures how long it takes to get paid. A massive jump in DSO (collections slowing down) while revenue zooms up suggests the revenue might be 'pulled forward' by offering customers excessively loose payment terms to induce them to buy inventory they don't need yet (channel stuffing). Alternatively, it means selling to customers who can't pay. In either case, the quality of the reported revenue is suspect.</p><p>A is incorrect: 'Improved' terms usually means beneficial to the customer (longer time to pay), which might drive sales, but it lowers the <em>quality</em> of those sales due to financing risk and time value of money.</p><p>C is incorrect: Increasing DSO means collections are getting <em>slower</em> (worse), not more efficient.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Balance Sheet Manipulation: Goodwill",
+    "stem": "Management avoids an impairment charge on Goodwill by using aggressive assumptions in their fair value testing. This action results in:",
+    "options": {
+      "A": "Overstated assets and overstated current period earnings.",
+      "B": "Understated assets and overstated current period earnings.",
+      "C": "Overstated assets and understated future expenses."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Impairment Mechanics</h3><p><strong>A is correct.</strong> Goodwill is an asset. If it is impaired (Fair Value < Book Value), it must be written down. The entry is Debit Impairment Loss (Expense), Credit Goodwill (Asset). Avoiding this charge means the Expense is missing (Earnings are too high/overstated) and the Asset reduction is missing (Assets are too high/overstated). It preserves the balance sheet at the cost of truth.</p><p>B is incorrect: Assets would be overstated, not understated.</p><p>C is incorrect: Future expenses aren't necessarily understated; Goodwill is not amortized, so keeping it on the books doesn't create a future drag on earnings (unlike keeping a depreciable asset). The distortion is in the current period.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Grok",
+    "topic": "Conditions for Low Quality",
+    "stem": "Which of the following is considered an 'Opportunity' risk factor in the fraud triangle that could lead to low-quality financial reporting?",
+    "options": {
+      "A": "A board of directors dominated by insiders.",
+      "B": "A significant portion of management compensation tied to earnings per share.",
+      "C": "A need to secure external financing to avoid bankruptcy."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Fraud Triangle</h3><p><strong>A is correct.</strong> The Fraud Triangle consists of Incentive/Pressure, Opportunity, and Rationalization. 'Opportunity' refers to the ability to commit the act without being caught. A board dominated by insiders lacks independence and oversight, weakening internal controls. This poor governance structure creates the <em>opportunity</em> for management to manipulate reporting unchecked.</p><p>B is incorrect: Compensation ties create an <em>Incentive</em> or Motivation, not an opportunity.</p><p>C is incorrect: The need for financing creates <em>Pressure</em> (Incentive), not an opportunity.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Cash Flow Classification",
+    "stem": "A company classifies interest paid as a financing cash flow (CFF) rather than an operating cash flow (CFO), as permitted under IFRS. Compared to a US GAAP firm (which requires CFO classification), this choice:",
+    "options": {
+      "A": "Increases CFO and decreases CFF.",
+      "B": "Decreases CFO and increases CFF.",
+      "C": "Has no effect on free cash flow to the firm (FCFF)."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cash Flow Classification</h3><p><strong>A is correct.</strong> Interest paid is a cash outflow. Under US GAAP, it is mandatory CFO. If a firm moves this outflow to CFF (financing), it removes a negative number from CFO. Mathematically, CFO becomes higher (less outflow subtracted). CFF becomes lower (more outflow subtracted). This is often done to make the operating business look more cash-generative.</p><p>B is incorrect: This reverses the logic.</p><p>C is incorrect: While FCFF theoretically shouldn't change based on accounting geography, analysts often calculate FCFF starting from CFO (CFO + Int(1-t) - CapEx). If the analyst blindly uses the reported CFO without adjusting for the interest location, the metric will be distorted. However, purely as a classification question, A is the direct mechanical effect.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Cash Flow Classification - Capitalization",
+    "stem": "Assertion (A): Capitalizing interest costs on a self-constructed asset results in higher reported Cash Flow from Operations (CFO) in the current period compared to expensing the same interest costs.\nReason (R): When interest is capitalized, the cash outflow is classified as an investing activity (part of the asset's cost), whereas interest treated as an expense is typically classified as an operating cash outflow (under US GAAP).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests the cash flow impact of accounting choices. \n1. **Assertion:** True. If you expense interest, CFO drops. If you capitalize it, CFI drops, but CFO is spared. Thus, CFO is higher under capitalization. \n2. **Reason:** True. It correctly describes the classification mechanism (Expense = Operating, Capitalized = Investing) that drives the difference."
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Deferred Tax Asset Valuation Allowance",
+    "stem": "Assertion (A): A decrease in the valuation allowance for deferred tax assets results in an immediate increase in reported Net Income.\nReason (R): A reduction in the valuation allowance implies a higher probability of realizing future tax benefits, which is recorded as a reduction in income tax expense on the income statement.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests earnings management via tax accounts.\n1. **Assertion:** True. Reducing the allowance (a contra-asset) increases the Net DTA. The balancing entry is a credit to Tax Expense (benefit), boosting Net Income.\n2. **Reason:** True. It explains the mechanics: Lower Allowance -> Lower Tax Expense -> Higher Net Income."
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Revenue Recognition - Bill and Hold",
+    "stem": "Assertion (A): 'Bill and hold' transactions are often scrutinized as a potential indicator of aggressive revenue recognition.\nReason (R): In a bill and hold arrangement, the seller does not recognize revenue until the goods are physically delivered to the customer's location.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests knowledge of revenue recognition rules and warning signs.\n1. **Assertion:** True. It is a classic red flag for channel stuffing or premature recognition.\n2. **Reason:** False. Revenue *can* be recognized before delivery in valid bill and hold cases if specific criteria (customer request, fixed schedule, segregated goods) are met. The manipulation occurs when these criteria aren't met but revenue is booked anyway. The statement that revenue is *never* recognized until delivery contradicts the definition of bill and hold accounting."
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Earnings Management - 'Big Bath'",
+    "stem": "Assertion (A): A 'Big Bath' strategy involves recognizing unusually large restructuring charges or write-downs in a period where the company is already reporting poor results.\nReason (R): By taking all possible losses in one bad year, management resets the balance sheet and lowers future depreciation and amortization expenses, facilitating higher reported earnings in future periods.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This defines a specific earnings management technique.\n1. **Assertion:** True. This is the definition of a Big Bath.\n2. **Reason:** True. It explains the motivation: 'cleaning up' accounts to make future comparisons easier and future expenses lower."
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Warning Signs - Days Sales Outstanding (DSO)",
+    "stem": "Assertion (A): A significant increase in Days Sales Outstanding (DSO) relative to recent history is a positive signal indicating strong customer demand and trust.\nReason (R): A rising DSO means customers are taking longer to pay, which increases the Accounts Receivable balance on the balance sheet.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is false but R is true",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests the interpretation of activity ratios as warning signs.\n1. **Assertion:** False. Rising DSO is usually a negative signal (collection issues or channel stuffing/lenient terms to force sales). \n2. **Reason:** True. This describes the mechanics correctly. Slower payment = Higher AR = Higher DSO."
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Real vs. Accounting Earnings Management",
+    "stem": "Assertion (A): Deferring necessary equipment maintenance to a future period is an example of 'real' earnings management.\nReason (R): Unlike accounting earnings management which involves estimates and accruals, real earnings management involves altering actual operational business decisions to achieve a financial reporting target.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This distinguishes types of manipulation.\n1. **Assertion:** True. Cutting maintenance, R&D, or advertising is an operational change ('real' action) to save cash/expense in the current period.\n2. **Reason:** True. It correctly differentiates 'real' (changing the business) from 'accounting' (changing the books)."
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Cash Flow Manipulation - Stretching Payables",
+    "stem": "Assertion (A): Stretching accounts payable (delaying payments to suppliers) temporarily increases a company's Operating Cash Flow (CFO).\nReason (R): An increase in Accounts Payable is an operating liability, and increases in operating liabilities are added back to Net Income (or treated as inflows) in the indirect method of calculating CFO.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests the mechanics of working capital management.\n1. **Assertion:** True. If you don't pay cash, you keep cash. CFO is higher.\n2. **Reason:** True. It explains the accounting mechanism: $\\Delta AP > 0$ is a source of cash."
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Inventory Accounting - LIFO Liquidation",
+    "stem": "Assertion (A): For a company using LIFO, a reduction in inventory quantities (LIFO liquidation) can result in an unsustainable increase in gross profit margin.\nReason (R): LIFO liquidation matches older, typically lower, historical costs against current, higher selling prices, creating a one-time boost to earnings that does not reflect current operating margins.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests inventory quality issues.\n1. **Assertion:** True. Selling old, cheap inventory at today's high prices boosts margins artificially.\n2. **Reason:** True. It accurately explains the 'paper profit' nature of LIFO liquidation."
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality vs. Earnings Quality",
+    "stem": "Assertion (A): It is possible for a company to have high financial reporting quality but low earnings quality.\nReason (R): Financial reporting quality refers to the accuracy and compliance of the disclosures with standards, whereas earnings quality refers to the sustainability and cash-backing of the actual performance.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests the conceptual framework.\n1. **Assertion:** True. A company can perfectly document (high reporting quality) that it is losing money or has volatile, non-cash earnings (low earnings quality).\n2. **Reason:** True. It correctly distinguishes the two concepts."
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Revenue Recognition - Gross vs. Net",
+    "stem": "Assertion (A): A company that acts as an agent but reports revenue on a gross basis (as a principal) will show a lower Net Profit Margin than if it reported on a net basis.\nReason (R): Reporting on a gross basis inflates the Revenue figure (denominator) without changing the Net Income (numerator), mathematically reducing the profit margin percentage.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This tests the ratio impact of revenue recognition choices.\n1. **Assertion:** True. Gross revenue is huge, Net Income is the commission. Net revenue is small (just the commission), Net Income is the commission. $\\text{Small} / \\text{Huge} < \\text{Small} / \\text{Small}$.\n2. **Reason:** True. It explains the denominator effect."
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Expense Recognition - Warranty Reserves",
+    "stem": "Assertion (A): Underestimating warranty provisions is an aggressive accounting technique that increases current period liabilities.\nReason (R): By underestimating the provision, the company records a lower warranty expense in the current period, which directly increases reported net income.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is false but R is true",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests the balance sheet vs income statement impact.\n1. **Assertion:** False. Underestimating the provision *decreases* the liability (or prevents it from growing to the correct level). It does not increase it.\n2. **Reason:** True. Lower provision = Lower Expense = Higher Income. This part is correct."
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Cash Flow - Securitization of Receivables",
+    "stem": "Assertion (A): The sale of accounts receivable (securitization) is often used to artificially boost Operating Cash Flow (CFO).\nReason (R): The proceeds from the sale are typically classified as a financing inflow, reflecting the collateralized nature of the borrowing arrangement.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests the nuance of off-balance sheet financing/operating cash flow.\n1. **Assertion:** True. Selling AR brings cash in now (Operating) that would have come later. It accelerates CFO.\n2. **Reason:** False. If it is structured as a *sale* (which boosts CFO), it is *not* classified as financing. If it were classified as borrowing (financing), it wouldn't boost CFO. The manipulation works specifically *because* it is treated as a sale (Operating) rather than borrowing."
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Non-GAAP Measures - EBITDA",
+    "stem": "Assertion (A): Analysts should generally prefer 'Adjusted EBITDA' over GAAP Net Income because it provides a more standardized view of a company's liquidity.\nReason (R): Adjusted EBITDA excludes non-cash charges like depreciation and stock-based compensation, as well as interest and taxes, offering a proxy for operating cash flow.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is false but R is true",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests skepticism of non-GAAP measures.\n1. **Assertion:** False. 'Adjusted EBITDA' is non-standardized (management defines the adjustments) and often ignores real costs (like stock comp). GAAP NI is the standard. Analysts should *scrutinize* it, not blindly prefer it.\n2. **Reason:** True. This is the definition of how Adjusted EBITDA is calculated (excluding those items)."
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Inventory - Write-down Reversals",
+    "stem": "Assertion (A): Under US GAAP, a company can reverse a previous inventory write-down if the value of the inventory subsequently recovers, thereby boosting current earnings.\nReason (R): Inventory write-downs establish a new cost basis for the asset, and accounting standards prohibit the upward revaluation of inventory above its historical cost.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is false but R is true",
+      "D": "A is true but R is false"
+    },
+    "correct_answer": "C",
+    "explanation": "This tests IFRS vs US GAAP differences.\n1. **Assertion:** False. US GAAP prohibits the reversal of inventory write-downs. (IFRS allows it).\n2. **Reason:** True. This explains *why* it's prohibited in US GAAP—the write-down creates a new permanent cost basis."
+  },
+
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding the spectrum of financial reporting and earnings quality:\n(1) It is possible for a firm to have high financial reporting quality but low earnings quality.\n(2) Sustainable earnings and adequate returns on capital are characteristics of high financial reporting quality, regardless of the accounting standards used.\n(3) Earnings quality is considered low if the reported earnings are not useful for predicting the firm's future performance.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; a firm can adhere strictly to GAAP (high reporting quality) while having underlying economic earnings that are poor or unsustainable (low earnings quality). Statement (2) is incorrect; sustainability and adequate returns are characteristics of high *earnings* quality, not reporting quality (which refers to accuracy and compliance). Statement (3) is correct; one dimension of earnings quality is predictive value; earnings that are one-time or non-recurring lack high quality in this context. Therefore, option B is correct."
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding aggressive versus conservative accounting policies:\n(1) Conservative accounting recognizes losses as they occur but delays the recognition of gains until they are realized.\n(2) Aggressive accounting generally results in higher reported earnings and higher book value of assets in the current period.\n(3) Over the entire life of a firm, the total earnings reported are significantly higher under aggressive accounting than under conservative accounting.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; this is the definition of conservative accounting (recognize bad news early, good news late). Statement (2) is correct; aggressive accounting aims to inflate current period performance and asset values. Statement (3) is incorrect; accounting choices affect the *timing* of recognition, but over the entire life of the firm, total cash flows and total earnings must converge regardless of whether aggressive or conservative methods are used. Therefore, option A is correct."
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding revenue recognition manipulation:\n(1) Channel stuffing involves shipping excess inventory to distributors to boost current period revenues, typically leading to higher sales returns in subsequent periods.\n(2) 'Bill-and-hold' transactions are always prohibited under US GAAP and IFRS due to the high risk of fraud.\n(3) Recognizing revenue on a 'layaway' sale before the customer takes possession is an aggressive revenue recognition practice.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; channel stuffing borrows demand from future periods. Statement (2) is incorrect; bill-and-hold transactions are permitted if specific strict criteria are met (e.g., goods are segregated, customer requested it, fixed schedule). They are not 'always' prohibited. Statement (3) is correct; under layaway plans, revenue should generally be recognized only when goods are delivered, so recognizing it earlier is aggressive. Therefore, option B is correct."
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding expense recognition and capitalization:\n(1) Capitalizing an expenditure that should be expensed increases Cash Flow from Operations (CFO) in the current period.\n(2) Capitalizing an expenditure lowers the variability of net income compared to expensing it immediately.\n(3) Expensing a cost that produces future benefits is considered an aggressive accounting treatment.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; capitalizing moves the cash outflow to Investing Activities (CFI), leaving CFO higher. Statement (2) is correct; expensing creates a large one-time hit to income, while capitalizing spreads the cost over time via depreciation/amortization, smoothing income. Statement (3) is incorrect; expensing a cost that has future benefits is *conservative* (lowers current income), not aggressive. Therefore, option A is correct."
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding inventory accounting and reporting quality:\n(1) A write-down of inventory to net realizable value reduces current period net income and the carrying value of inventory.\n(2) Reversing a previous inventory write-down is prohibited under both IFRS and US GAAP to prevent income manipulation.\n(3) During a period of rising prices, a firm using LIFO liquidation will report artificially inflated gross profit margins.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; the write-down is an expense (COGS increase). Statement (2) is incorrect; IFRS allows reversal of write-downs, whereas US GAAP does not. Statement (3) is correct; LIFO liquidation matches older, lower costs against current higher prices, boosting margins temporarily (low quality earnings). Therefore, option B is correct."
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding provisions and reserves ('Cookie Jar' accounting):\n(1) Overestimating a restructuring provision in a profitable year allows a firm to shift income from the current period to future periods.\n(2) Reducing the valuation allowance on a deferred tax asset decreases reported net income.\n(3) Underestimating warranty expenses in the current year increases current net income and is a form of aggressive accounting.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; creating the large provision hurts current income but creates a reserve ('cookie jar') that can be reversed or absorbed in future years to boost future income. Statement (2) is incorrect; reducing the allowance implies more of the asset is recoverable, which *increases* net income (tax benefit). Statement (3) is correct; under-provisioning expenses is aggressive. Therefore, option B is correct."
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding cash flow manipulation:\n(1) Stretching accounts payable is a technique to temporarily increase Cash Flow from Operations (CFO).\n(2) Under IFRS, classifying interest paid as a financing cash flow rather than an operating cash flow results in higher reported CFO.\n(3) Misclassifying the sale of trading securities as an investing cash flow rather than an operating cash flow decreases CFO.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; delaying payment keeps cash in the firm, boosting CFO (though unsustainably). Statement (2) is correct; moving the outflow to CFF leaves CFO higher. Statement (3) is correct; trading securities are operating assets; selling them is an operating inflow. Moving this inflow to investing (CFI) would *decrease* CFO. Therefore, option A is correct."
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding non-GAAP financial measures:\n(1) Firms use non-GAAP measures such as 'Core Earnings' or 'Adjusted EBITDA' to exclude items they deem non-recurring or non-cash.\n(2) Under SEC Regulation G, firms are prohibited from presenting non-GAAP measures in their official filings.\n(3) Requiring a reconciliation between the non-GAAP measure and the most comparable GAAP measure is a key regulatory safeguard.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; this is the primary motivation. Statement (2) is incorrect; Regulation G allows them but requires reconciliation and equal prominence for GAAP measures; they are not prohibited. Statement (3) is correct; this reconciliation helps users understand the adjustments made. Therefore, option B is correct."
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding warning signs in financial statements related to revenue:\n(1) If Accounts Receivable grows at a significantly faster rate than Sales, it may indicate channel stuffing or credit quality deterioration.\n(2) A sudden decrease in the Days Sales Outstanding (DSO) ratio is a typical warning sign of fictitious revenue recognition.\n(3) A significant increase in unbilled receivables (contract assets) relative to revenue is a potential sign of aggressive revenue recognition.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; receivables ballooning implies sales are booked but cash isn't coming in. Statement (2) is incorrect; fictitious revenue or channel stuffing usually *increases* DSO (collection slows). A decrease is generally positive or neutral. Statement (3) is correct; unbilled receivables rely on management estimates of progress, which can be manipulated. Therefore, option B is correct."
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding warning signs related to inventories and margins:\n(1) An increase in the inventory turnover ratio coupled with decreasing sales is a strong indicator of inventory obsolescence.\n(2) If a firm reports increasing gross margins while the industry experiences declining margins, it may indicate accounting manipulation.\n(3) LIFO liquidation can result in a one-time boost to net income that is not sustainable.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; obsolescence usually leads to *lower* turnover (inventory piles up). Higher turnover with lower sales might indicate efficient destocking. Statement (2) is correct; bucking a negative industry trend is a red flag for manipulation (e.g., capitalizing costs, burying COGS). Statement (3) is correct; as explained in previous questions, LIFO liquidation boosts income unsustainably. Therefore, option B is correct."
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding depreciation and amortization choices:\n(1) Increasing the estimated useful life of a depreciable asset is an aggressive accounting change that increases current period earnings.\n(2) Reducing the estimated salvage value of an asset decreases depreciation expense and increases net income.\n(3) A company whose ratio of depreciation to gross fixed assets is significantly lower than its peers may be understating expenses.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; longer life means lower annual depreciation expense. Statement (2) is incorrect; reducing salvage value implies more depreciable base, which *increases* depreciation expense and *lowers* income. Statement (3) is correct; a lower ratio suggests they are depreciating assets too slowly compared to peers. Therefore, option B is correct."
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding classification shifting:\n(1) Shifting operating expenses to 'non-recurring' or 'special' items does not change net income but inflates 'Core Earnings'.\n(2) Classification shifting of operating cash outflows to investing cash outflows improves reported Free Cash Flow (if defined as CFO minus CAPEX) when CAPEX is already high.\n(3) Reporting a gain on the sale of an asset as a reduction in operating expenses rather than as 'Other Income' effectively increases reported Operating Profit.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; analysts often focus on core earnings, so this misleads them even if the bottom line is same. Statement (2) is incorrect logic; FCF = CFO - CapEx. If I move an OpEx (lowering CFO) to CapEx (lowering CFI), CFO goes up, but CapEx goes up by the same amount. FCF stays the same. The manipulation specifically targets *CFO*. Statement (3) is correct; operating profit excludes 'Other Income', so burying the gain in OpEx reduces expenses and boosts Operating Profit. Therefore, option B is correct."
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding the 'Big Bath' accounting technique:\n(1) Big Bath accounting involves recognizing large write-downs or expenses in a period of already poor performance.\n(2) The objective of Big Bath accounting is to depress current earnings to ensure higher reported earnings in future periods.\n(3) Big Bath accounting is an example of an income smoothing technique designed to reduce earnings volatility.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; companies 'clear the decks' when bad news is already out. Statement (2) is correct; by taking the hit now, future expenses are lower (e.g., less depreciation), making future targets easier to hit. Statement (3) is incorrect; income smoothing tries to keep earnings steady. Big Bath intentionally *increases* volatility in the current year (making it much worse) to smooth/boost the future. Therefore, option A is correct."
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Financial Reporting Quality",
+    "stem": "Consider the following statements regarding real earnings management versus accrual earnings management:\n(1) Deferring necessary maintenance expenditure to the next fiscal year is an example of accrual earnings management.\n(2) Offering deep discounts near year-end to accelerate sales is an example of real earnings management.\n(3) Accrual earnings management involves making accounting choices or estimates without changing the underlying business transactions.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; deferring maintenance is *real* action (the maintenance didn't happen), not just accounting. Statement (2) is correct; this changes the actual business transaction (price/timing). Statement (3) is correct; this is the definition (e.g., changing bad debt allowances). Therefore, option B is correct."
+  }
+]
