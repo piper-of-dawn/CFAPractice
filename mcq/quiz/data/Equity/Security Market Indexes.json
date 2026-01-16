@@ -1,0 +1,389 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider a price-weighted index consisting of two securities, Stock A and Stock B. Stock A is priced at USD 100 and Stock B is priced at USD 20. The divisor is currently 2.0. Which of the following statements regarding this index are correct?\n(1) A 10% increase in the price of Stock A will have a greater impact on the index value than a 10% increase in the price of Stock B.\n(2) If Stock A undergoes a 2-for-1 stock split, the divisor must be adjusted upwards to maintain the index value.\n(3) The weight of Stock A in the index is approximately 83%.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. In a price-weighted index, the weight of each constituent is determined by its price. Stock A (USD 100) has a much higher weight than Stock B (USD 20). Therefore, a percentage change in the higher-priced stock (Stock A) contributes more to the index return than the same percentage change in the lower-priced stock. Statement (2) is incorrect. A stock split reduces the price of the stock (e.g., from USD 100 to USD 50). To keep the index value constant despite the drop in the sum of constituent prices, the divisor must be decreased, not increased. Statement (3) is correct. The weight of Stock A is calculated as Price A / (Price A + Price B) = 100 / (100 + 20) = 100/120 = 0.833 or 83.3%. Therefore, Option B is the correct answer. Option A is incorrect because it includes the false statement regarding the divisor adjustment direction. Option C is incorrect for the same reason."
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "An analyst is comparing a market-capitalization-weighted index and an equal-weighted index, both composed of the same three stocks: LargeCap (Market Cap USD 100 billion), MidCap (Market Cap USD 20 billion), and SmallCap (Market Cap USD 1 billion). Which of the following statements are correct?\n(1) The equal-weighted index will require more frequent rebalancing than the market-capitalization-weighted index.\n(2) If SmallCap doubles in price while others remain flat, the equal-weighted index will outperform the market-capitalization-weighted index.\n(3) At inception, the equal-weighted index allocates approximately 82% of the portfolio weight to LargeCap.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Equal-weighted indexes require rebalancing whenever prices change to restore equal weights (selling winners, buying losers). Market-capitalization indexes largely rebalance themselves as weights naturally adjust with price changes. Statement (2) is correct. In an equal-weighted index, SmallCap has a 33.3% weight. In the market-cap index, SmallCap has a weight of roughly 0.8% (1/121). A doubling of the SmallCap stock drives the equal-weighted index significantly higher, whereas it has a negligible impact on the market-cap index. Thus, the equal-weighted index outperforms. Statement (3) is incorrect. An equal-weighted index allocates weight equally: 1/N. With 3 stocks, LargeCap receives 33.3% weight, not 82%. The 82% figure approximates its weight in the market-cap index (100/121). Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider a Fundamental Weighted Index that uses Total Earnings as the weighting metric. Stock X has a Market Capitalization of USD 500 million and Earnings of USD 25 million. Stock Y has a Market Capitalization of USD 100 million and Earnings of USD 10 million. Which of the following statements are correct?\n(1) Stock Y will have a higher weight in the Fundamental Index than in a comparable Market-Capitalization-Weighted Index.\n(2) The fundamental weighting method generally results in a value tilt compared to market-capitalization weighting.\n(3) If Stock X's price increases by 20% while its earnings remain unchanged, its weight in the Fundamental Index will increase.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Stock Y's Market Cap weight is 100/(500+100) = 16.7%. Its Fundamental weight (based on earnings) is 10/(25+10) = 28.6%. Since 28.6% > 16.7%, it has a higher weight in the Fundamental Index. Statement (2) is correct. Fundamental weighting often weights stocks by metrics like book value or earnings. Stocks with lower prices relative to these metrics (value stocks) get higher weights than in market-cap indexes, creating a value tilt. Statement (3) is incorrect. The fundamental weight depends on the fundamental metric (Earnings). If earnings are unchanged, the numerator (Stock X Earnings) and denominator (Total Earnings) remain constant, so the weight remains constant. A price increase affects market-cap weight, not fundamental weight (unless price is the fundamental metric, which it is not). Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "An index has an initial value of 1,000. In Period 1, the portfolio of securities produces a price appreciation of 4% and income yield (dividends) of 2%. Which of the following statements regarding the Price Return Index and Total Return Index are correct?\n(1) The value of the Price Return Index at the end of Period 1 is 1,060.\n(2) The value of the Total Return Index at the end of Period 1 is 1,060.\n(3) Over long periods, the Total Return Index will exceed the Price Return Index by an increasing amount due to the compounding of reinvested income.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. The Price Return Index reflects only price appreciation. 1,000 * (1 + 0.04) = 1,040, not 1,060. Statement (2) is correct. The Total Return Index includes both price appreciation and income. Total return = 4% + 2% = 6%. Value = 1,000 * (1 + 0.06) = 1,060. Statement (3) is correct. The Total Return Index assumes reinvestment of dividends, which compounds over time, causing the gap between it and the Price Return Index to widen geometrically. Therefore, Option B is the correct answer."
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Regarding the construction and management of Fixed-Income Indexes, which of the following statements are correct?\n(1) Fixed-income indexes typically experience higher turnover than equity indexes due to the maturity of constituent securities.\n(2) The large number of fixed-income securities and varying liquidity make full replication of these indexes difficult and costly.\n(3) Fixed-income markets are primarily order-driven markets, facilitating precise index pricing based on continuous trade data.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Fixed-income securities have finite maturities. As bonds mature, they exit the index, and new issuances enter, causing structural turnover that equity indexes (with perpetual securities) do not face. Statement (2) is correct. The fixed-income universe is vast (thousands of issues) and many issues trade infrequently (illiquid). This makes buying every security in the index (full replication) prohibitively expensive and difficult. Statement (3) is incorrect. Fixed-income markets are predominantly dealer markets (quote-driven), not order-driven. Pricing often relies on dealer estimates or matrix pricing rather than continuous transaction data. Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider the following statements regarding float-adjusted market-capitalization weighting:\n(1) This method calculates weights based on the total number of shares outstanding multiplied by the share price.\n(2) It excludes shares held by controlling shareholders and often those held by other corporations or governments.\n(3) Most major global equity indexes currently use float-adjusted market capitalization rather than total market capitalization.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. That definition applies to *total* market-capitalization weighting. Float-adjusted weighting uses only the shares available for public trading (the float), not the total shares outstanding. Statement (2) is correct. Float adjustment explicitly removes closely held shares (controlling stakes) and strategic holdings (governments, corporations) to reflect the investable universe. Statement (3) is correct. The industry standard (e.g., S&P 500, MSCI World) has shifted to float-adjusted market capitalization to better represent the liquidity actually available to investors. Therefore, Option B is the correct answer."
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Which of the following statements regarding Commodity and Hedge Fund indexes are correct?\n(1) Commodity index returns are primarily driven by the spot prices of the underlying physical commodities.\n(2) The roll yield in commodity indexes arises from the process of replacing expiring futures contracts with new ones.\n(3) Hedge fund indexes are subject to upward bias because constituents often report performance voluntarily.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. Commodity indexes are typically constructed using futures contracts, not physical spot assets. Therefore, returns are driven by futures price changes, the risk-free rate, and roll yield, which can differ significantly from spot price returns. Statement (2) is correct. Roll yield (positive or negative) is generated when an expiring futures contract is closed and a new one is opened at a different price (contango or backwardation). Statement (3) is correct. Many hedge fund databases rely on voluntary reporting. Poorly performing funds may stop reporting or not report at all, causing the index to reflect only the 'survivors' or better performers (survivorship and backfill bias). Therefore, Option B is the correct answer."
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Price-Weighted Index Bias",
+    "stem": "Assertion (A): In a price-weighted index, a 10% price increase in a stock trading at $100 has a greater impact on the index value than a 10% price increase in a stock trading at $10.\nReason (R): Price-weighted indexes allocate weight to constituent securities based on their market capitalization.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Start from the definition of the index. A price-weighted index calculates its value based on the arithmetic sum of the prices of its constituents. A 10% move in a $100 stock is a $10 change in the numerator, while a 10% move in a $10 stock is only a $1 change. Therefore, the high-priced stock drives the index more, making Assertion (A) true. However, Reason (R) is false because price-weighted indexes weigh securities by their absolute price per share, not their market capitalization (price × shares outstanding)."
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Equal-Weighted Index Performance",
+    "stem": "Assertion (A): An equal-weighted equity index will typically underperform a comparable market-capitalization-weighted index during periods where large-cap stocks significantly outperform small-cap stocks.\nReason (R): An equal-weighted index mathematically assigns a proportionately larger weight to large-capitalization stocks than a market-capitalization-weighted index does.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Analyze the weighting bias. An equal-weighted index invests the same dollar amount in each stock. Compared to a market-cap weighted index (which is heavily concentrated in the largest companies), an equal-weighted index has a 'small-cap tilt'—it underweights the giants and overweights the smaller firms. Therefore, if large caps are rallying (outperforming), the equal-weighted index will lag, making Assertion (A) true. Reason (R) is false because equal weighting actually reduces the weight of large-cap stocks compared to their natural market-cap weight."
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Index Return Calculation",
+    "stem": "Assertion (A): For a price-weighted index consisting of only two stocks, if Stock A returns +10% and Stock B returns -10%, the index return for the period will always be 0%.\nReason (R): The return of a price-weighted index is calculated as the percentage change in the sum of the constituent prices.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Test the math with examples. If Stock A is $100 and Stock B is $10, the sum is $110. A +10% move in A is +$10; a -10% move in B is -$1. The new sum is $119. The index return is 9/110 ≈ 8.18%, not 0%. The return depends on the price levels of the stocks. Thus, Assertion (A) is false. Reason (R) is true: the index value is Sum/Divisor, so the index return is indeed the percentage change in that sum (assuming the divisor is constant)."
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Float-Adjusted Weighting",
+    "stem": "Assertion (A): In a float-adjusted market-capitalization-weighted index, a company with significant insider holdings will have a lower weight than it would in a pure market-capitalization-weighted index.\nReason (R): Float adjustment involves excluding shares held by controlling shareholders, governments, or other strategic partners from the calculation of the market value used for weighting.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Connect definition to impact. Market capitalization is Total Shares × Price. Float-adjusted capitalization is (Total Shares − Locked Shares) × Price. If a company has large insider holdings (locked shares), its float is smaller than its total shares. Therefore, its weight in a float-adjusted index will be reduced compared to a pure cap-weighted index. Both statements are true, and the definition of float adjustment in (R) directly explains the reduction in weight described in (A)."
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Total Return vs Price Return",
+    "stem": "Assertion (A): The value of a total return equity index can never fall below its value at inception.\nReason (R): Total return indexes account for the reinvestment of all dividends and interest distributions in addition to price changes.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Reason from first principles of loss. While Reason (R) is true—total return includes income which provides a cushion—it does not prevent losses. If the market prices of the constituent stocks drop by 20% and the dividend yield is only 2%, the total return index will decline by roughly 18%. If this happens immediately after inception, the index value will drop below its starting base (e.g., from 100 to 82). Therefore, Assertion (A) is false."
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Fundamental Weighting Bias",
+    "stem": "Assertion (A): Fundamentally weighted indexes generally exhibit a 'value' tilt.\nReason (R): Market-capitalization-weighted indexes tend to overweight securities that have become overvalued relative to their earnings or book value.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Analyze the two strategies independently. Assertion (A) is true: fundamental indexes weight by metrics like book value or cash flow. A stock with a low price relative to these metrics (a value stock) gets a higher weight than it would under price-based weighting. Reason (R) is also true: cap-weighting gives more weight to stocks as their price rises, potentially overweighting overvalued 'momentum' stocks. However, R describes the bias of the *alternative* (cap weighting), which supports the case for using fundamental weighting but is not the internal definition of why fundamental weighting creates a value tilt. The explanation for A is the metric usage itself, not the flaw in cap weighting."
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Fixed Income Index Turnover",
+    "stem": "Assertion (A): Fixed-income market indexes typically experience higher annual turnover than equity market indexes.\nReason (R): Fixed-income securities have finite maturities and must be removed from the index when they mature or fall below a minimum time-to-maturity threshold.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Consider the asset lifecycle. Equities are perpetual; they stay in an index unless the company is acquired, goes bankrupt, or fails criteria. Bonds expire. As bonds approach maturity, they often drop out of indexes (which usually require a minimum maturity, e.g., >1 year). New bonds are constantly issued. This continuous expiration and replacement drives high turnover. R correctly explains the mechanism behind the high turnover described in A."
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3",
+    "topic": "Uses of Security Market Indexes",
+    "stem": "Assertion (A): Security market indexes are frequently used as proxies for specific asset classes in asset allocation models.\nReason (R): Properly constructed indexes represent the performance and systematic risk characteristics of a specific target market or market segment.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Link utility to construction. Asset allocation models (like mean-variance optimization) require data inputs for 'US Equity,' 'Emerging Markets,' etc. Since one cannot invest in 'the market' abstractly, one uses an index. Assertion (A) is true. Reason (R) explains *why* this is valid: because the index is designed to statistically represent the behavior (return/risk) of that target segment. If R were false, A would be bad practice."
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3",
+    "topic": "Index Management: Reconstitution vs Rebalancing",
+    "stem": "Assertion (A): Index reconstitution creates a 'turnover cost' for portfolio managers tracking the index.\nReason (R): Index rebalancing involves adjusting the weights of existing securities to restore them to their target methodology (e.g., equal weights).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Distinguish the terms. Assertion (A) is true: Reconstitution is the process of adding and deleting securities. When a stock is deleted, tracking funds must sell it; when added, they must buy it. This trading incurs transaction costs (turnover cost). Reason (R) is also true: Rebalancing is the adjustment of weights (e.g., selling winners in an equal-weight index). However, R defines rebalancing, which is a different process from reconstitution. While both cause turnover, R does not explain why *reconstitution* specifically creates costs; it just defines a parallel concept."
+  },
+  {
+    "id": 10,
+    "model": "Gemini 3",
+    "topic": "Price-Weighted Index Examples",
+    "stem": "Assertion (A): The Dow Jones Industrial Average (DJIA) is a prominent example of a price-weighted index.\nReason (R): The Nikkei 225 index is constructed using a price-weighting methodology.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Verify facts. Assertion (A) is true; the DJIA is the most famous price-weighted index. Reason (R) is also true; the Nikkei 225 is also price-weighted. However, the fact that the Nikkei is price-weighted (R) is not the *explanation* for why the DJIA is price-weighted (A). They are independent facts about two different major indices that share a methodology."
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes – Price-Weighted Index Divisor",
+    "stem": "A price-weighted index consists of three stocks: Stock A ($100), Stock B ($50), and Stock C ($30). The divisor is currently 3.0. Stock A undergoes a 2-for-1 stock split. The price of Stock A immediately adjusts to $50. What is the new divisor required to maintain the index value?",
+    "options": {
+      "A": "2.17",
+      "B": "2.50",
+      "C": "3.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Index Continuity</h3><p><strong>A is correct.</strong> A stock split is a non-economic event for the index; it should not change the index level. In a price-weighted index, the value is calculated as $$ \\\text{Index} = \\\frac{\\sum \\\text{Prices}}{\\\text{Divisor}} $$.<br><strong>Step 1: Calculate Pre-Split Index Value.</strong><br>Sum of prices = $100 + $50 + $30 = $180.<br>Index Value = $180 / 3.0 = 60.00$.<br><strong>Step 2: Calculate Post-Split Sum of Prices.</strong><br>Stock A splits 2-for-1, so its price becomes $100 / 2 = $50. The other prices remain unchanged.<br>New Sum = $50 + $50 + $30 = $130.<br><strong>Step 3: Solve for New Divisor.</strong><br>To maintain the index value of 60.00:<br>$$ 60.00 = \\\frac{130}{\\\text{New Divisor}} $$<br>$$ \\\text{New Divisor} = \\\frac{130}{60} \\approx 2.1667 $$.</p><p>B is incorrect because it likely averages the split ratio or attempts an arithmetic adjustment without solving for the constant index value.</p><p>C is incorrect because it fails to adjust the divisor, which would cause the index value to drop artificially from 60 to 43.33 ($130/3$), falsely signaling a market decline.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes – Float-Adjusted Market Capitalization",
+    "stem": "An index provider uses float-adjusted market capitalization weighting. Consider Stock XYZ:<br>- Total Shares Outstanding: 10,000,000<br>- Shares held by controlling insiders: 4,000,000<br>- Current Share Price: $20.00<br>If the total float-adjusted market capitalization of the entire index is $2,000,000,000, what is the weight of Stock XYZ?",
+    "options": {
+      "A": "3.0%",
+      "B": "6.0%",
+      "C": "10.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Investable Weight</h3><p><strong>B is correct.</strong> Float-adjusted weighting bases the index weight on the value of shares available to public investors, not the total company value.<br><strong>Step 1: Determine Free Float Shares.</strong><br>Free Float = Total Shares − Locked-in Shares<br>$$ 10,000,000 - 4,000,000 = 6,000,000 \\\text{ shares} $$<br><strong>Step 2: Calculate Float-Adjusted Market Cap.</strong><br>$$ \\\text{Float Cap} = \\\text{Float Shares} \\\times \\\text{Price} $$<br>$$ 6,000,000 \\\times 20.00 = 120,000,000 $$<br><strong>Step 3: Calculate Weight.</strong><br>$$ \\\text{Weight} = \\\frac{\\\text{Security Float Cap}}{\\\text{Index Total Float Cap}} $$<br>$$ \\\text{Weight} = \\\frac{120,000,000}{2,000,000,000} = 0.06 = 6.0\\% $$</p><p>A is incorrect because it miscalculates the float or applies an arbitrary discount.</p><p>C is incorrect because it uses Total Market Capitalization ($10M \\times $20 = $200M) instead of Float-Adjusted Capitalization ($120M), ignoring the restriction on insider shares.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Index Weighting Adjustments",
+    "stem": "A price-weighted index consists of three stocks: Stock A (USD 100), Stock B (USD 50), and Stock C (USD 30). The divisor is currently 3. Stock A undergoes a 2-for-1 stock split. Immediately after the split, the new divisor required to maintain the index value is closest to:",
+    "options": {
+      "A": "2.17",
+      "B": "2.50",
+      "C": "2.83"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Index Continuity</h3><p><strong>A is correct.</strong> A price-weighted index value is calculated as the sum of constituent prices divided by a divisor (\\(V = \\sum P_i / D\\)). A stock split (e.g., 2-for-1) halves the price of the stock but should not change the index value, as no economic wealth has been created or destroyed. Therefore, the divisor must be adjusted downward to offset the drop in the numerator (sum of prices).</p><p><strong>Step-by-Step Derivation:</strong><br>1. **Calculate Pre-Split Index Value:**<br>Sum of prices = \\(100 + 50 + 30 = 180\\).<br>Index Value = \\(180 / 3 = 60\\).<br>2. **Calculate Post-Split Sum of Prices:**<br>Stock A splits 2-for-1, so its new price is \\(100 / 2 = 50\\).<br>New Sum of Prices = \\(50 + 50 + 30 = 130\\).<br>3. **Solve for New Divisor (\\(D_{new}\\)):**<br>We require the Index Value to remain 60.<br>\\(60 = 130 / D_{new}\\)<br>\\(D_{new} = 130 / 60 = 2.1666...\\)</p><p>B and C are incorrect because they likely result from miscalculating the post-split sum or failing to equate the pre- and post-split index values correctly.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Total Return Index Calculation",
+    "stem": "An index has a value of 1,250.00 at the beginning of the period. Over the period, the price return of the index is 4.50%. The income return (from dividends) is 1.20%. The value of the Total Return Index at the end of the period is closest to:",
+    "options": {
+      "A": "1,306.25",
+      "B": "1,321.25",
+      "C": "1,323.38"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Total Return Components</h3><p><strong>B is correct.</strong> A Total Return Index reflects both price appreciation and the reinvestment of income (dividends/interest). The total return (\\(TR\\)) is the sum of the price return (\\(PR\\)) and the income return (\\(IR\\)) when expressed as percentages of the beginning value. \\(TR = PR + IR\\).</p><p><strong>Calculation:</strong><br>1. Total Return % = \\(4.50\\% + 1.20\\% = 5.70\\%\\).<br>2. End Value = Beginning Value \\(\\times (1 + TR)\\)<br>End Value = \\(1,250.00 \\times (1 + 0.0570)\\)<br>End Value = \\(1,250.00 \\times 1.057 = 1,321.25\\).</p><p>Alternatively, calculate dollar amounts:<br>Price gain = \\(1,250 \\times 0.045 = 56.25\\).<br>Income = \\(1,250 \\times 0.012 = 15.00\\).<br>Total Ending Value = \\(1,250 + 56.25 + 15.00 = 1,321.25\\).</p><p>A is incorrect because it only includes the price return (\\(1,250 \\times 1.045 = 1,306.25\\)).<br>C is incorrect because it geometrically links the returns (\\(1.045 \\times 1.012 = 1.05754\\)), which assumes the income is earned on top of the price appreciation rather than additively as a component of total return.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Float-Adjusted Market Cap Weighting",
+    "stem": "Security X has 10 million shares outstanding and a price of USD 20. 40% of the shares are held by a controlling family and are not available for public trading. Security Y has 5 million shares outstanding, a price of USD 50, and 100% free float. In a float-adjusted market-capitalization-weighted index consisting of only these two securities, the weight of Security X is closest to:",
+    "options": {
+      "A": "32.4%",
+      "B": "37.5%",
+      "C": "44.4%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Float Adjustment</h3><p><strong>A is correct.</strong> Float-adjusted weighting calculates weights based on the value of shares available to public investors, not total shares outstanding. Controlling blocks are excluded.</p><p><strong>Step-by-Step Calculation:</strong><br>1. **Calculate Float for X:**<br>Total Shares = 10 million.<br>Float % = \\(100\\% - 40\\% = 60\\%\\).<br>Float Shares = \\(10 \\times 0.60 = 6\\) million.<br>Float Market Cap (X) = \\(6 \\text{ million} \\times \\text{USD } 20 = \\text{USD } 120\\) million.<br>2. **Calculate Float for Y:**<br>Float Market Cap (Y) = \\(5 \\text{ million} \\times \\text{USD } 50 = \\text{USD } 250\\) million.<br>3. **Calculate Total Index Float Cap:**<br>Total = \\(\\text{USD } 120 + \\text{USD } 250 = \\text{USD } 370\\) million.<br>4. **Calculate Weight of X:**<br>Weight = \\(\\text{USD } 120 / \\text{USD } 370 = 0.3243\\) or \\(32.4\\%\\).</p><p>B is incorrect because it uses total market cap (X = 200, Y = 250; Total = 450; 200/450 = 44.4%).<br>C is incorrect; this is the total market cap weight calculation (200/450).</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Equal Weighted Index Return",
+    "stem": "An equal-weighted index comprises three stocks. Over a single period, Stock A (price USD 10) returns +20%, Stock B (price USD 50) returns +5%, and Stock C (price USD 100) returns -10%. The price return of the index is closest to:",
+    "options": {
+      "A": "1.8%",
+      "B": "5.0%",
+      "C": "15.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Average of Returns</h3><p><strong>B is correct.</strong> An equal-weighted index assumes an equal dollar investment in each constituent at the beginning of the period. This implies the index return is simply the arithmetic mean of the individual security returns.</p><p><strong>Calculation:</strong><br>Index Return = \\((R_A + R_B + R_C) / N\\)<br>\\(R_A = +20\\%\\)<br>\\(R_B = +5\\%\\)<br>\\(R_C = -10\\%\\)<br>Index Return = \\((20 + 5 - 10) / 3 = 15 / 3 = 5.0\\%\\).</p><p>A is incorrect because it might be a price-weighted return calculation.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Fundamental Weighting",
+    "stem": "A fundamental index weights securities based on earnings. Stock P has a market cap of USD 500 million and earnings of USD 25 million. Stock Q has a market cap of USD 200 million and earnings of USD 20 million. Compared to a market-capitalization-weighted index, the fundamental index will:",
+    "options": {
+      "A": "Overweight Stock P.",
+      "B": "Overweight Stock Q.",
+      "C": "Weight both equally."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Relative Metrics</h3><p><strong>B is correct.</strong> To determine overweighting/underweighting, compare the \"fundamental weight\" to the \"market-cap weight\".<br><strong>Market Cap Weights:</strong><br>Total Cap = \\(500 + 200 = 700\\).<br>Stock P Weight = \\(500/700 = 71.4\\%\\).<br>Stock Q Weight = \\(200/700 = 28.6\\%\\).<br><strong>Fundamental (Earnings) Weights:</strong><br>Total Earnings = \\(25 + 20 = 45\\).<br>Stock P Weight = \\(25/45 = 55.6\\%\\).<br>Stock Q Weight = \\(20/45 = 44.4\\%\\).<br><strong>Comparison:</strong><br>Stock Q's fundamental weight (\\(44.4\\%\\)) > Market cap weight (\\(28.6\\%\\)). Therefore, the fundamental index overweights Stock Q. This is consistent with fundamental indexes tilting towards \"value\" (high earnings yield). Q's yield (\\(20/200 = 10\\%\\)) is higher than P's (\\(25/500 = 5\\%\\)).</p><p>A is incorrect because P is underweighted (\\(55.6\\% < 71.4\\%\\)).<br>C is incorrect because the weights differ.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Rebalancing Impact",
+    "stem": "In an equal-weighted index consisting of Stock A and Stock B, Stock A doubles in price while Stock B's price remains unchanged over a period. To maintain equal weighting, the index provider must:",
+    "options": {
+      "A": "Sell Stock A and buy Stock B.",
+      "B": "Buy Stock A and sell Stock B.",
+      "C": "Do nothing as equal weighting is self-adjusting."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Portfolio Rebalancing</h3><p><strong>A is correct.</strong> In an equal-weighted index, every stock must represent the same percentage of the portfolio value (e.g., 50/50).<br>Start: Invest USD 100 in A and USD 100 in B. Portfolio = USD 200. Weights: 50% A, 50% B.<br>Movement: A doubles to USD 200. B stays at USD 100. Portfolio = USD 300.<br>Current Weights: A = USD 200 / USD 300 = 66.7%; B = USD 100 / USD 300 = 33.3%.<br>Action: To return to 50/50, you must reduce A and increase B. Target value per stock = USD 300 / 2 = USD 150. You must sell USD 50 of A and buy USD 50 of B.</p><p>B is incorrect because it would further increase the weight of the outperforming stock (momentum strategy), contrary to equal weighting.<br>C is incorrect because equal-weighted indexes are not self-adjusting; price movements distort the weights away from equality. (Market-cap weighted indexes are largely self-adjusting).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Index Value Calculation (Multiple Periods)",
+    "stem": "An index has a value of 100.00 on Day 0. It has daily price returns of +10% on Day 1 and -10% on Day 2. The index value at the end of Day 2 is:",
+    "options": {
+      "A": "99.00",
+      "B": "100.00",
+      "C": "101.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Geometric Compounding</h3><p><strong>A is correct.</strong> Index values are calculated by geometrically linking returns. You cannot simply sum the percentages (\\(+10 - 10 = 0\\)).<br>Formula: \\(V_t = V_0 \\times (1 + R_1) \\times (1 + R_2)\\)<br>Calculation:<br>End of Day 1: \\(100.00 \\times 1.10 = 110.00\\).<br>End of Day 2: \\(110.00 \\times (1 - 0.10) = 110.00 \\times 0.90 = 99.00\\).</p><p>B is incorrect because it assumes arithmetic addition of returns (\\(+10\\% - 10\\% = 0\\%\\)).<br>C is incorrect; it implies a gain, which is mathematically impossible when gaining and losing the same percentage (volatility drag).</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3",
+    "topic": "Fixed-Income Index Construction",
+    "stem": "Which of the following characteristics best explains why fixed-income indexes are more difficult to replicate than equity indexes?",
+    "options": {
+      "A": "Fixed-income markets are predominantly exchange-traded with transparent pricing.",
+      "B": "The number of fixed-income securities is much larger, and many are illiquid.",
+      "C": "Fixed-income securities have lower turnover than equity securities."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Market Structure</h3><p><strong>B is correct.</strong> Fixed-income markets differ from equity markets in two key ways relevant to indexing:<br>1. **Breadth:** Issuers (like a single government or company) often have multiple bond issues outstanding with different maturities and coupons, whereas they typically have only one class of common stock. This results in a universe with many times more securities.<br>2. **Liquidity:** Most bonds trade over-the-counter (dealer markets) rather than on exchanges. Many issues trade infrequently, making price discovery difficult and replication costly or impossible for an index fund.</p><p>A is incorrect because fixed-income markets are predominantly *dealer* markets (OTC), not exchange-traded.<br>C is incorrect because fixed-income indexes often have *higher* turnover due to bonds maturing and new issuances, unlike perpetual equity.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3",
+    "topic": "Commodity Index Returns",
+    "stem": "An investor observes that the spot price of crude oil has increased by 10% over the year, but the return on a broad commodity index tracking crude oil is only 2%. The most likely cause of this discrepancy is:",
+    "options": {
+      "A": "A positive roll yield in a backwardated market.",
+      "B": "A negative roll yield in a contango market.",
+      "C": "The risk-free interest rate component of the index return."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Futures vs. Spot</h3><p><strong>B is correct.</strong> Commodity indexes are constructed using futures contracts, not physical commodities. The return on a commodity index consists of:<br>1. Spot Price Change<br>2. Roll Yield<br>3. Collateral Yield (Risk-free rate)<br>If the Index Return (2%) is significantly lower than the Spot Price Increase (10%), the *Roll Yield* must be negative. A negative roll yield occurs when the futures market is in **contango** (Futures Price > Spot Price). To maintain exposure, the fund must sell expiring contracts at a lower spot price and buy more expensive future contracts, incurring a loss.</p><p>A is incorrect because a positive roll yield (backwardation) would make the index return *higher* than the spot return.<br>C is incorrect because the collateral yield is positive (interest earned on cash), which would add to the return, not subtract from it to cause this specific underperformance relative to spot.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini 3",
+    "topic": "Security Market Index Uses",
+    "stem": "An active portfolio manager claims to have generated positive alpha. To verify this claim accurately, the chosen benchmark index must:",
+    "options": {
+      "A": "Be a broad market index like the S&P 500 regardless of the fund's style.",
+      "B": "Reflect the manager's investment universe and style (e.g., Small-Cap Value).",
+      "C": "Have a beta of 1.0 relative to the risk-free rate."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Performance Attribution</h3><p><strong>B is correct.</strong> Alpha is the excess return adjusted for systematic risk. To measure it correctly, the benchmark must represent the opportunity set and systematic risk factors of the manager. If a Small-Cap Value manager is compared to a Large-Cap Growth index (S&P 500), \"outperformance\" might simply be due to small-cap stocks doing well generally (beta), not manager skill (alpha). A mismatch leads to incorrect conclusions.</p><p>A is incorrect because using a mismatched benchmark (broad market vs. specific style) fails to isolate the manager's specific contribution (alpha) from the style factor returns.<br>C is incorrect because the benchmark beta varies; it doesn't need to be 1.0, it needs to represent the market risk of the specific asset class.</p>"
+  }
+]
