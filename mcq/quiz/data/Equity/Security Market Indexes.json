@@ -385,5 +385,97 @@
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Performance Attribution</h3><p><strong>B is correct.</strong> Alpha is the excess return adjusted for systematic risk. To measure it correctly, the benchmark must represent the opportunity set and systematic risk factors of the manager. If a Small-Cap Value manager is compared to a Large-Cap Growth index (S&P 500), \"outperformance\" might simply be due to small-cap stocks doing well generally (beta), not manager skill (alpha). A mismatch leads to incorrect conclusions.</p><p>A is incorrect because using a mismatched benchmark (broad market vs. specific style) fails to isolate the manager's specific contribution (alpha) from the style factor returns.<br>C is incorrect because the benchmark beta varies; it doesn't need to be 1.0, it needs to represent the market risk of the specific asset class.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider a price-weighted index consisting of two securities, Stock A and Stock B. Stock A is priced at USD 100 and Stock B is priced at USD 20. The divisor is currently 2.0. Which of the following statements regarding this index are correct?\n(1) A 10% increase in the price of Stock A will have a greater impact on the index value than a 10% increase in the price of Stock B.\n(2) If Stock A undergoes a 2-for-1 stock split, the divisor must be adjusted upwards to maintain the index value.\n(3) The weight of Stock A in the index is approximately 83%.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. In a price-weighted index, the weight of each constituent is determined by its price. Stock A (USD 100) has a much higher weight than Stock B (USD 20). Therefore, a percentage change in the higher-priced stock (Stock A) contributes more to the index return than the same percentage change in the lower-priced stock. Statement (2) is incorrect. A stock split reduces the price of the stock (e.g., from USD 100 to USD 50). To keep the index value constant despite the drop in the sum of constituent prices, the divisor must be decreased, not increased. Statement (3) is correct. The weight of Stock A is calculated as Price A / (Price A + Price B) = 100 / (100 + 20) = 100/120 = 0.833 or 83.3%. Therefore, Option B is the correct answer. Option A is incorrect because it includes the false statement regarding the divisor adjustment direction. Option C is incorrect for the same reason."
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "An analyst is comparing a market-capitalization-weighted index and an equal-weighted index, both composed of the same three stocks: LargeCap (Market Cap USD 100 billion), MidCap (Market Cap USD 20 billion), and SmallCap (Market Cap USD 1 billion). Which of the following statements are correct?\n(1) The equal-weighted index will require more frequent rebalancing than the market-capitalization-weighted index.\n(2) If SmallCap doubles in price while others remain flat, the equal-weighted index will outperform the market-capitalization-weighted index.\n(3) At inception, the equal-weighted index allocates approximately 82% of the portfolio weight to LargeCap.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Equal-weighted indexes require rebalancing whenever prices change to restore equal weights (selling winners, buying losers). Market-capitalization-weighted indexes largely rebalance themselves as weights naturally adjust with price changes. Statement (2) is correct. In an equal-weighted index, SmallCap has a 33.3% weight. In the market-cap index, SmallCap has a weight of roughly 0.8% (1/121). A doubling of the SmallCap stock drives the equal-weighted index significantly higher, whereas it has a negligible impact on the market-cap index. Thus, the equal-weighted index outperforms. Statement (3) is incorrect. An equal-weighted index allocates weight equally: 1/N. With 3 stocks, LargeCap receives 33.3% weight, not 82%. The 82% figure approximates its weight in the market-cap index (100/121). Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider a Fundamental Weighted Index that uses Total Earnings as the weighting metric. Stock X has a Market Capitalization of USD 500 million and Earnings of USD 25 million. Stock Y has a Market Capitalization of USD 100 million and Earnings of USD 10 million. Which of the following statements are correct?\n(1) Stock Y will have a higher weight in the Fundamental Index than in a comparable Market-Capitalization-Weighted Index.\n(2) The fundamental weighting method generally results in a value tilt compared to market-capitalization weighting.\n(3) If Stock X's price increases by 20% while its earnings remain unchanged, its weight in the Fundamental Index will increase.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Stock Y's Market Cap weight is 100/(500+100) = 16.7%. Its Fundamental weight (based on earnings) is 10/(25+10) = 28.6%. Since 28.6% > 16.7%, it has a higher weight in the Fundamental Index. Statement (2) is correct. Fundamental weighting often weights stocks by metrics like book value or earnings. Stocks with lower prices relative to these metrics (value stocks) get higher weights than in market-cap indexes, creating a value tilt. Statement (3) is incorrect. The fundamental weight depends on the fundamental metric (Earnings). If earnings are unchanged, the numerator (Stock X Earnings) and denominator (Total Earnings) remain constant, so the weight remains constant. A price increase affects market-cap weight, not fundamental weight (unless price is the fundamental metric, which it is not). Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "An index has an initial value of 1,000. In Period 1, the portfolio of securities produces a price appreciation of 4% and income yield (dividends) of 2%. Which of the following statements regarding the Price Return Index and Total Return Index are correct?\n(1) The value of the Price Return Index at the end of Period 1 is 1,060.\n(2) The value of the Total Return Index at the end of Period 1 is 1,060.\n(3) Over long periods, the Total Return Index will exceed the Price Return Index by an increasing amount due to the compounding of reinvested income.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. The Price Return Index reflects only price appreciation. 1,000 * (1 + 0.04) = 1,040, not 1,060. Statement (2) is correct. The Total Return Index includes both price appreciation and income. Total return = 4% + 2% = 6%. Value = 1,000 * (1 + 0.06) = 1,060. Statement (3) is correct. The Total Return Index assumes reinvestment of dividends, which compounds over time, causing the gap between it and the Price Return Index to widen geometrically. Therefore, Option B is the correct answer."
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Regarding the construction and management of Fixed-Income Indexes, which of the following statements are correct?\n(1) Fixed-income indexes typically experience higher turnover than equity indexes due to the maturity of constituent securities.\n(2) The large number of fixed-income securities and varying liquidity make full replication of these indexes difficult and costly.\n(3) Fixed-income markets are primarily order-driven markets, facilitating precise index pricing based on continuous trade data.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Fixed-income securities have finite maturities. As bonds mature, they exit the index, and new issuances enter, causing structural turnover that equity indexes (with perpetual securities) do not face. Statement (2) is correct. The fixed-income universe is vast (thousands of issues) and many issues trade infrequently (illiquid). This makes buying every security in the index (full replication) prohibitively expensive and difficult. Statement (3) is incorrect. Fixed-income markets are predominantly dealer markets (quote-driven), not order-driven. Pricing often relies on dealer estimates or matrix pricing rather than continuous transaction data. Therefore, Option A is the correct answer."
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Consider the following statements regarding float-adjusted market-capitalization weighting:\n(1) This method calculates weights based on the total number of shares outstanding multiplied by the share price.\n(2) It excludes shares held by controlling shareholders and often those held by other corporations or governments.\n(3) Most major global equity indexes currently use float-adjusted market capitalization rather than total market capitalization.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. That definition applies to total market-capitalization weighting. Float-adjusted weighting uses only the shares available for public trading (the float), not the total shares outstanding. Statement (2) is correct. Float adjustment explicitly removes closely held shares (controlling stakes) and strategic holdings (governments, corporations) to reflect the investable universe. Statement (3) is correct. Most major global equity indexes use float-adjusted market capitalization to better represent the shares actually available to investors. Therefore, Option B is the correct answer."
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3",
+    "topic": "Security Market Indexes",
+    "stem": "Which of the following statements regarding Commodity and Hedge Fund indexes are correct?\n(1) Commodity index returns are primarily driven by the spot prices of the underlying physical commodities.\n(2) The roll yield in commodity indexes arises from the process of replacing expiring futures contracts with new ones.\n(3) Hedge fund indexes are subject to upward bias because constituents often report performance voluntarily.",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. Commodity indexes are typically constructed using futures contracts, not physical spot assets. Therefore, returns are driven by futures price changes, the risk-free rate, and roll yield, which can differ significantly from spot price returns. Statement (2) is correct. Roll yield (positive or negative) is generated when an expiring futures contract is closed and a new one is opened at a different price (contango or backwardation). Statement (3) is correct. Many hedge fund databases rely on voluntary reporting. Poorly performing funds may stop reporting or not report at all, causing survivorship and related biases. Therefore, Option B is the correct answer."
   }
 ]
+
