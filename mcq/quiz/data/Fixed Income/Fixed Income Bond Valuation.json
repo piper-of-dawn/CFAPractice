@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Consider the following statements regarding bond pricing conventions and accrued interest:\n(1) The flat price of a bond is the price quoted by dealers to avoid misleading investors about market price trends due to the accrual of interest.\n(2) The full price, also known as the invoice price, is equal to the flat price minus accrued interest.\n(3) Accrued interest is calculated based on the fraction of the coupon period that has passed, and this calculation is unaffected by the bond's yield-to-maturity.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. The flat price (or clean price) is the quoted price. It excludes accrued interest so that the price does not appear to drop significantly solely because a coupon payment was made. Statement (2) is incorrect because the full price (invoice or dirty price) is the flat price *plus* accrued interest, not minus. The buyer pays the full price. Statement (3) is correct. Accrued interest is determined by the coupon rate and the day count convention (time passed); it does not depend on the market discount rate (yield-to-maturity). Calculation logic: On a calculator like the TI BA2 Plus, bond functions (2nd BOND) separate these values. One inputs the settlement date (SDT) and coupon rate (CPN), and the calculator computes AI (Accrued Interest) and PRI (Flat Price) separately from the yield inputs. Therefore, Option B is the correct set."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Which of the following statements accurately describe the relationship between bond prices and yields?\n(1) The relationship between price and yield is linear, meaning price changes are proportional to yield changes regardless of the yield level.\n(2) The convexity effect implies that for the same absolute change in yield, the percentage price increase when yields fall is greater than the percentage price decrease when yields rise.\n(3) The inverse effect states that a higher market discount rate results in a lower present value for future cash flows.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect. The price-yield relationship is convex, not linear. The slope changes as the yield changes. Statement (2) is correct. Convexity means the price-yield curve becomes steeper at lower yields and flatter at higher yields. Thus, the price gain from a yield drop exceeds the price loss from an equal yield rise. Statement (3) is correct. This is the fundamental inverse relationship: as the discount rate (I/Y on a TI BA2 Plus) increases, the Present Value (PV) decreases because future cash flows are discounted more heavily. Therefore, Option B is the correct set."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Consider the following statements regarding the 'Maturity Effect' and 'Coupon Effect' on bond price volatility:\n(1) Generally, for the same change in market discount rates, a longer-term bond will experience a greater percentage price change than a shorter-term bond.\n(2) A lower-coupon bond will typically have a smaller percentage price change than a higher-coupon bond when market discount rates change by the same amount.\n(3) The maturity effect holds for all option-free bonds, including zero-coupon bonds and those trading at a premium.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. This is the 'Maturity Effect.' Longer maturity (higher N on the TI BA2 Plus) increases sensitivity to interest rate changes. Statement (2) is incorrect. This contradicts the 'Coupon Effect.' A *lower* coupon bond has *higher* interest rate risk (greater percentage price change) because a larger proportion of its value comes from the final principal payment, which is more sensitive to discounting. A higher coupon bond returns cash sooner, reducing duration. Statement (3) is correct. The maturity effect generally holds, with rare exceptions for deep-discount long-term bonds, but it always holds for zero-coupon and premium bonds. Therefore, Option B is the correct set."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "When valuing fixed-rate bonds using a market discount rate, which of the following statements are correct?\n(1) A bond trades at a premium when its coupon rate is higher than the market discount rate.\n(2) If a bond's market discount rate remains constant over time, the price of a discount bond will decrease as it approaches maturity.\n(3) The 'constant-yield price trajectory' illustrates how a bond's price moves toward par value as time passes, assuming the issuer does not default.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. If the Coupon Rate (PMT) > Market Yield (I/Y), the bond offers excessive interest relative to the market, so it trades at a Premium (Price > Par). Statement (2) is incorrect. A discount bond (Price < Par) must *increase* in price (pull to par) as it approaches maturity to eventually equal the face value, assuming the yield is constant. Statement (3) is correct. This is the 'pull-to-par' effect or constant-yield trajectory. On a calculator, if you reduce N (time to maturity) while keeping I/Y and PMT constant, the computed PV moves closer to FV. Therefore, Option B is the correct set."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "With respect to 'Matrix Pricing' for valuing illiquid bonds, consider the following statements:\n(1) Matrix pricing uses the yields of actively traded bonds with similar credit quality, coupon rates, and maturities to estimate the yield of an illiquid bond.\n(2) The process relies on linear interpolation to estimate the yield-to-maturity for the target bond's specific maturity date.\n(3) Matrix pricing is primarily used to determine the flat price of a bond but cannot be used to estimate the required yield spread over a benchmark.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Matrix pricing estimates the I/Y (Yield) for a bond without an observable market price by referencing 'comparables.' Statement (2) is correct. If comparables exist for e.g., 3-year and 5-year maturities, but the target is a 4-year bond, linear interpolation is used to estimate the 4-year yield. Statement (3) is incorrect. Matrix pricing is explicitly used to estimate the required yield spread (the difference between the estimated yield of the bond and the yield of a benchmark government bond). Therefore, Option A is the correct set."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Regarding the assumptions underlying the Yield-to-Maturity (YTM) calculation, consider the following statements:\n(1) The YTM calculation assumes the investor holds the bond until maturity.\n(2) It assumes the issuer makes all coupon and principal payments as scheduled without default.\n(3) It assumes all coupon payments are reinvested at the coupon rate.\n(4) It assumes all coupon payments are reinvested at the calculated Yield-to-Maturity.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "1, 2, and 4 only",
+      "C": "2, 3, and 4 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct. YTM is an Internal Rate of Return (IRR) calculation that spans the full life of the bond (N periods). Statement (2) is correct. It is a 'promised' yield, assuming no default. Statement (3) is incorrect. Statement (4) is correct. This is a critical assumption of the standard YTM formula. The derivation of the standard bond pricing formula implies that intermediate cash flows (coupons) are reinvested at the discount rate itself (the YTM), not the coupon rate. On a TI BA2 Plus, calculating I/Y implies this reinvestment rate for the resulting return to be realized. Therefore, Option B is the correct set."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Consider the following statements about day-count conventions used in calculating accrued interest:\n(1) The Actual/Actual day count convention is typically used for government bonds and uses the actual number of days in the coupon period.\n(2) The 30/360 day count convention assumes each month has 30 days and the year has 360 days, and is often used for corporate bonds.\n(3) When calculating accrued interest using the Actual/Actual method, weekends and holidays are excluded from the day count.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct. Government bonds typically use Actual/Actual to be precise. Statement (2) is correct. Corporate bonds often use 30/360 to simplify calculations. On a TI BA2 Plus, this is set in the '2nd BOND' settings as '360' or 'ACT'. Statement (3) is incorrect. The Actual/Actual method counts *actual* calendar days, which includes weekends, holidays, and leap days; it does not exclude them. Therefore, Option A is the correct set."
+  }
+]
