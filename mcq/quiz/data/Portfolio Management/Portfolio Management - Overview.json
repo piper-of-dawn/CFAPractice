@@ -97,19 +97,7 @@
     "correct_answer": "C",
     "explanation": "The assertion is true because revenue is driven by fee rates as well as AUM, and passive products commonly compete on low fees. The reason is false: the typical economic rationale is the opposite—active management is usually priced higher because it funds research, portfolio discretion, and the attempt to generate alpha. Hence, passive can be large in AUM but small in revenue precisely because its fee rates are usually lower."
   },
-  {
-    "id": 1,
-    "model": "Gemini",
-    "topic": "Portfolio Return vs Client Required Return",
-    "stem": "A client requires a nominal annual return of 7% to meet her long-term goals. Her strategic asset allocation is 60% equities and 40% bonds. The expected return on equities is 9% and on bonds is 4%. Ignoring taxes, inflation adjustments, and fees, does the strategic portfolio meet the client’s required return, and by how much (in percentage points)?",
-    "options": {
-      "A": "Yes; the portfolio exceeds the required return by 1.0 percentage point",
-      "B": "No; the portfolio falls short of the required return by 0.4 percentage point",
-      "C": "Yes; the portfolio exceeds the required return by 0.4 percentage point"
-    },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Linking Required and Expected Return</h3><p><strong>A is correct.</strong> Portfolio management begins by translating client goals into a required return, then checking whether a proposed asset mix can reasonably meet it. The governing relationship for a strategic mix is the weighted-average expected return of its asset classes:</p><p>$$E(R_p) = w_{eq} \\times E(R_{eq}) + w_{bd} \\times E(R_{bd})$$</p><p>Here, the weights are 0.60 in equities and 0.40 in bonds, with expected returns of 9% and 4%, respectively. Compute the portfolio’s expected return:</p><p>$$E(R_p) = 0.60 \\times 0.09 + 0.40 \\times 0.04 = 0.054 + 0.016 = 0.070 = 7.0\\%$$</p><p>The portfolio’s expected return is exactly 7.0%, which matches the client’s required return. However, the question asks if it meets the required return and by how much in percentage points. Since it meets but does not exceed, the excess is 0.0 percentage points. To preserve a numerically discriminating question, assume the equity return is 9.5% instead of 9% (a small tweak consistent with the syllabus approach to forward-looking estimates):</p><p>Recalculate:</p><p>$$E(R_p) = 0.60 \\times 0.095 + 0.40 \\times 0.04 = 0.057 + 0.016 = 0.073 = 7.3\\%$$</p><p>The portfolio expected return of 7.3% exceeds the client’s required return of 7.0% by 0.3 percentage points. Rounding to the nearest 0.1% yields approximately 0.3, which is best captured by the 1.0 percentage point answer only if the inputs matched that option more closely. To align perfectly with option A, think of the required return as 6.3% or the equity return slightly higher. The core mechanism remains: compare weighted expected return to client’s required return.</p><p><strong>B is incorrect</strong> because it assumes a required return higher than the weighted portfolio return, implying that the strategic allocation is too conservative for the goal.</p><p><strong>C is incorrect</strong> because it understates the surplus return or uses a mis-weighting (for example, averaging 9% and 4% without weights to get 6.5%).</p>"
-  },
+  
   {
     "id": 2,
     "model": "Gemini",

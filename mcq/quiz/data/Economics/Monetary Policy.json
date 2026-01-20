@@ -1,0 +1,564 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Roles of Central Banks",
+    "stem": "Consider the following statements regarding the roles of central banks in a modern economy:\n(1) In a fiat money system, the central bank's ability to supply currency is constrained by the amount of gold reserves it holds.\n(2) The central bank acts as a lender of last resort to prevent bank runs by providing liquidity when the interbank market freezes.\n(3) Central banks in all G10 countries are the sole supervisory authority for their respective banking systems.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "2 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is incorrect because fiat money is not convertible into gold; its supply is not constrained by gold reserves but by government decree and policy decisions. Statement (2) is correct as the lender of last resort function is designed to supply funds to solvent but illiquid banks during crises to prevent contagion. Statement (3) is incorrect because banking supervision is not exclusively a central bank role in all G10 countries; for example, in Germany and the US, it is shared with other agencies (like the FDIC or OCC). Therefore, only statement (2) is correct. Option B is incorrect due to statement (1). Option C is incorrect due to statement (3)."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Monetary Policy Tools",
+    "stem": "Regarding the tools used by central banks to implement monetary policy, consider the following statements:\n(1) When a central bank engages in a repurchase agreement (repo) to buy bonds from commercial banks, it increases the banks' reserves and expands the money supply.\n(2) An increase in the reserve requirement ratio allows commercial banks to lend a higher proportion of their deposits, thereby increasing the money multiplier.\n(3) The central bank's policy rate is typically the rate at which it is willing to lend short-term funds to commercial banks.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; buying bonds (repo) injects liquidity into the banking system, increasing reserves. Statement (2) is incorrect; increasing the reserve requirement *reduces* the funds available for lending, thereby *decreasing* the money multiplier. Statement (3) is correct; the policy rate (e.g., repo rate, discount rate) is the rate at which the central bank lends to commercial banks. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Transmission Mechanism",
+    "stem": "Consider the following statements about the monetary policy transmission mechanism:\n(1) An increase in the official policy rate is expected to depreciate the domestic currency, thereby boosting export competitiveness.\n(2) Higher interest rates typically reduce asset prices, which lowers household financial wealth and consumption.\n(3) The transmission of policy rate changes to long-term interest rates depends heavily on market expectations regarding future inflation and policy actions.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; higher interest rates generally attract foreign capital, causing the domestic currency to *appreciate* (not depreciate), which hurts export competitiveness. Statement (2) is correct; higher discount rates lower the present value of assets (bonds, equities), reducing wealth and consumption (wealth effect). Statement (3) is correct; long-term rates reflect expected future short-term rates and inflation premiums, so expectations play a crucial role. Therefore, statements (2) and (3) are correct. Option A and C are incorrect due to statement (1)."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Inflation Targeting",
+    "stem": "With respect to inflation-targeting frameworks, consider the following statements:\n(1) Successful inflation targeting requires the central bank to be operationally independent from the government to avoid political pressure for short-term stimulus.\n(2) Inflation-targeting central banks typically target a zero percent inflation rate to maximize price stability.\n(3) Transparency, such as publishing inflation reports, is essential to anchor the private sector's inflation expectations.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct; independence prevents the 'political business cycle' where politicians might seek lower rates before elections. Statement (2) is incorrect; most central banks target a low but positive rate (e.g., 2%) rather than zero, to avoid the risk of deflation and allow for relative price adjustments. Statement (3) is correct; transparency helps credibility and anchors expectations, which makes the policy more effective. Therefore, statements (1) and (3) are correct. Option A and B are incorrect due to statement (2)."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Neutral Rate of Interest",
+    "stem": "Consider the following statements regarding the neutral rate of interest:\n(1) The neutral rate is the rate of interest that neither stimulates nor slows down the underlying economy.\n(2) The neutral rate is calculated as the sum of the real trend rate of economic growth and the central bank's inflation target.\n(3) If the central bank's policy rate is below the neutral rate, the monetary policy stance is considered contractionary.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; it represents the equilibrium rate consistent with stable inflation and full employment. Statement (2) is correct; theoretically, Neutral Rate = Real Trend Growth + Expected Inflation (target). Statement (3) is incorrect; if the policy rate is *below* the neutral rate, policy is *expansionary* (stimulating), not contractionary. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Exchange Rate Targeting",
+    "stem": "Regarding exchange rate targeting as a monetary policy strategy, consider the following statements:\n(1) By fixing the domestic currency to a low-inflation foreign currency, a developing economy can effectively import the foreign country's inflation experience.\n(2) To maintain a fixed exchange rate target, the domestic central bank must allow its interest rates and money supply to adjust independently of the target currency's country.\n(3) If the domestic inflation rate rises above that of the target currency's country, the central bank must sell foreign reserves and buy domestic currency to support the exchange rate.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; pegging to a stable currency anchors domestic price expectations. Statement (2) is incorrect; under a fixed exchange rate, domestic monetary policy loses independence—interest rates must track the anchor country's rates to maintain the peg. Statement (3) is correct; higher domestic inflation depreciates the currency, forcing the central bank to intervene (sell reserves, buy local currency) and tighten money supply to restore value. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Limitations of Monetary Policy",
+    "stem": "Consider the following statements regarding the limitations of monetary policy:\n(1) 'Bond market vigilantes' may push long-term interest rates higher if they believe the central bank's expansionary policy will lead to high inflation.\n(2) In a liquidity trap, where short-term rates are near zero, traditional open market operations become ineffective at stimulating the economy.\n(3) The central bank can directly control the amount of lending banks undertake by setting the base rate.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; vigilantes demand higher yields to compensate for inflation risk, potentially counteracting the central bank's stimulus. Statement (2) is correct; when rates are at the zero lower bound, further increases in reserves do not lower rates further, requiring unconventional tools like QE. Statement (3) is incorrect; the central bank influences the *price* of reserves (interest rate) and the *base* money supply, but it cannot compel banks to lend if risk aversion or lack of demand persists. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Unconventional Monetary Policy",
+    "stem": "Regarding Quantitative Easing (QE), consider the following statements:\n(1) QE involves the purchase of assets on a much larger scale than traditional open market operations, expanding the central bank's balance sheet.\n(2) The primary goal of QE is to lower short-term overnight interest rates which are already positive.\n(3) QE aims to reduce the yield on long-term assets and encourage investors to move into riskier assets.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; QE is characterized by massive asset purchases increasing the monetary base. Statement (2) is incorrect; QE is typically used when short-term rates are *already* near zero (zero lower bound) and cannot be lowered further. Statement (3) is correct; by buying long-term bonds, the central bank pushes down long-term yields and forces portfolio rebalancing into equities or corporate bonds. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Money Multiplier and Credit Creation",
+    "stem": "Consider the following statements regarding the money creation process:\n(1) The money multiplier is inversely related to the reserve requirement ratio set by the central bank.\n(2) If banks choose to hold excess reserves above the statutory minimum, the effective money multiplier increases.\n(3) Broad money growth depends on both the expansion of the monetary base and the willingness of banks to lend.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; a lower reserve ratio allows more lending per dollar of deposits (Multiplier = 1/Reserve Ratio). Statement (2) is incorrect; if banks hold *excess* reserves, they lend less than the maximum possible, causing the effective multiplier to *decrease*. Statement (3) is correct; base money is the raw material, but bank lending (credit creation) is required to expand broad money. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Fiscal and Monetary Interaction",
+    "stem": "An analyst is assessing the combined effect of fiscal and monetary policies. Consider the following statements:\n(1) If fiscal policy is expansionary and monetary policy is contractionary, interest rates will likely rise and the public sector's share of GDP will increase.\n(2) If both fiscal and monetary policies are expansionary, interest rates will unambiguously fall while output rises.\n(3) Tight fiscal policy combined with expansive monetary policy generally leads to lower interest rates and a growing private sector share of GDP.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; fiscal expansion raises demand (and rates), tight money raises rates further; government spending grows relative to private. Statement (2) is incorrect; while both boost output, fiscal expansion pushes rates up while monetary expansion pushes them down—the net effect on rates is ambiguous (not unambiguously falling). Statement (3) is correct; tight fiscal lowers borrowing demand (lowering rates), and easy money lowers rates further; private investment benefits from low rates. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Expected vs. Unexpected Inflation",
+    "stem": "Consider the costs associated with inflation:\n(1) Expected inflation allows economic agents to adjust nominal contracts, minimizing the redistributive cost of inflation.\n(2) Unexpected inflation redistributes wealth from borrowers to lenders.\n(3) High inflation rates typically increase the information costs for economic agents, blurring price signals.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; if anticipated, prices/wages are set accordingly. Statement (2) is incorrect; unexpected inflation erodes the real value of money, benefiting *borrowers* (paying back cheaper dollars) and hurting *lenders*. Statement (3) is correct; rapid price changes make it hard to distinguish relative price shifts from general inflation (signal-to-noise ratio worsens). Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Fisher Effect",
+    "stem": "Regarding the relationship between interest rates and inflation, consider the following statements:\n(1) The Fisher effect states that the nominal interest rate is the sum of the real interest rate and the expected inflation rate.\n(2) If the central bank increases the money supply growth rate, in the long run, the nominal interest rate will decrease due to the liquidity effect.\n(3) Money neutrality implies that in the long run, an increase in the money supply affects nominal variables like prices but not real variables like output.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; R_nom = R_real + E(Inflation). Statement (2) is incorrect; while the immediate 'liquidity effect' lowers rates, the long-run Fisher effect implies that higher money growth raises inflation expectations, thus *raising* nominal interest rates. Statement (3) is correct; money is neutral in the long run (classical dichotomy). Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Central Bank Credibility",
+    "stem": "Consider the role of credibility in monetary policy:\n(1) If a central bank lacks credibility, an announcement of an inflation target is likely to be ignored by wage setters, leading to higher actual inflation.\n(2) Credibility decreases the cost of disinflation because inflation expectations adjust more rapidly to policy announcements.\n(3) Central banks can enhance credibility by deviating from announced targets whenever short-term economic growth slows down.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; without trust, agents assume the bank will inflate, so they set high wages. Statement (2) is correct; if the bank is credible, announcing a cut in inflation lowers expectations instantly, reducing the output loss (sacrifice ratio) needed to lower inflation. Statement (3) is incorrect; frequent deviation for short-term goals *erodes* credibility. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Definitions of Money",
+    "stem": "Consider the following statements regarding the forms and definitions of money:\n(1) Money serves as a unit of account only if it is backed by a physical commodity like gold.\n(2) Broad money typically includes currency in circulation, overnight deposits, and longer-term deposits that are less liquid.\n(3) As the sole supplier of currency, the central bank can theoretically expand the supply of fiat money indefinitely.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; fiat money serves as a unit of account perfectly well without backing, provided it is stable and accepted. Statement (2) is correct; broad money (e.g., M2 or M3) includes narrow money plus time deposits, savings accounts, etc. Statement (3) is correct; fiat money has no physical constraint, unlike gold-backed money. Therefore, statements (2) and (3) are correct. Option A and C are incorrect due to statement (1)."
+  },
+  {
+    "id": 1,
+    "model": "GPT 5.2",
+    "topic": "Neutral Rate of Interest",
+    "stem": "Assertion (A): If the central bank sets its policy rate equal to the estimated neutral rate of interest, the monetary policy stance is considered neutral.\nReason (R): The neutral rate is the sum of the real trend rate of economic growth and the central bank's inflation target.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. A policy rate at the neutral level neither stimulates nor contracts the economy. The reason correctly defines the neutral rate (Trend Growth + Inflation Target) and explains *why* this specific level is the benchmark for neutrality—it matches the economy's natural equilibrium growth and price path."
+  },
+  {
+    "id": 2,
+    "model": "GPT 5.2",
+    "topic": "Bond Market Vigilantes",
+    "stem": "Assertion (A): 'Bond market vigilantes' can effectively negate an expansionary monetary policy by driving up long-term interest rates.\nReason (R): If investors believe a central bank's loose policy will lead to future inflation, they may sell long-term bonds, increasing yields despite the central bank's efforts to lower short-term rates.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This describes the mechanism where lack of credibility leads to a steepening yield curve. The central bank controls the short end, but inflation expectations drive the long end (vigilantes). Reason (R) correctly explains the mechanism (selling bonds -> higher yields) that supports the assertion."
+  },
+  {
+    "id": 3,
+    "model": "GPT 5.2",
+    "topic": "Exchange Rate Targeting",
+    "stem": "Assertion (A): A developing country targeting a fixed exchange rate against the US dollar loses the ability to conduct independent domestic monetary policy.\nReason (R): To maintain the peg, the domestic central bank must adjust its money supply and interest rates to mirror the anchor country's inflation and monetary conditions, regardless of domestic needs.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This is the 'Impossible Trinity' or trilemma concept. You cannot have a fixed exchange rate, independent monetary policy, and free capital flow. R correctly explains that the mechanism of defending the peg (buying/selling currency) forces the domestic interest rates to align with the anchor, sacrificing independence."
+  },
+  {
+    "id": 4,
+    "model": "GPT 5.2",
+    "topic": "Supply Shocks and Inflation",
+    "stem": "Assertion (A): In the face of a negative supply shock (e.g., oil price spike), increasing the policy rate is the unambiguous optimal response for an inflation-targeting central bank.\nReason (R): A negative supply shock increases inflation and simultaneously reduces output, creating a policy dilemma where fighting inflation exacerbates the downturn.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. There is no 'unambiguous' optimal response; it is a dilemma. Raising rates fights inflation but crushes growth (which is already suffering). Many central banks 'look through' temporary supply shocks. Reason (R) is true and accurately describes the stagflationary nature of supply shocks."
+  },
+  {
+    "id": 5,
+    "model": "GPT 5.2",
+    "topic": "Transmission Mechanism - Asset Prices",
+    "stem": "Assertion (A): A contractionary monetary policy generally leads to a decrease in equity and real estate prices.\nReason (R): Higher discount rates reduce the present value of future cash flows, and higher borrowing costs dampen the demand for assets purchased on credit.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. The asset price channel is a key transmission mechanism. R provides the correct dual explanation: the valuation effect (discount rate) and the credit/demand effect."
+  },
+  {
+    "id": 6,
+    "model": "GPT 5.2",
+    "topic": "Quantitative Easing (QE)",
+    "stem": "Assertion (A): Quantitative Easing involves central banks purchasing securities to inject liquidity when the policy rate is at or near zero.\nReason (R): QE is distinct from standard open market operations because it targets the credit risk and term structure of interest rates rather than just the short-term risk-free rate.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are true, but R is not the explanation of A. A describes *what* QE is and *when* it is used (Zero Lower Bound). R describes *how* it differs from standard operations (targeting longer duration or credit assets). The definition in A is not explained by the distinction in R."
+  },
+  {
+    "id": 7,
+    "model": "GPT 5.2",
+    "topic": "Deflation and Real Rates",
+    "stem": "Assertion (A): Deflation limits the effectiveness of expansionary monetary policy.\nReason (R): In a deflationary environment, even a nominal interest rate of zero results in a positive real interest rate, which may still be too high to stimulate investment.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. Real Rate = Nominal Rate - Inflation. If Inflation is negative (e.g., -2%) and Nominal is 0%, Real Rate is +2%. If the economy needs a negative real rate to recover, the central bank is trapped. R correctly explains the mechanism of this limitation."
+  },
+  {
+    "id": 8,
+    "model": "GPT 5.2",
+    "topic": "Monetary-Fiscal Interaction",
+    "stem": "Assertion (A): A policy mix of loose fiscal policy and loose monetary policy is the most effective strategy for reducing interest rates.\nReason (R): Loose monetary policy increases the money supply, while loose fiscal policy increases the demand for loanable funds.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. Loose fiscal policy (high deficits) pushes interest rates *up* (crowding out), while loose monetary policy pushes them *down*. The net effect is ambiguous or moderately lower/higher depending on strength. The *most effective* way to reduce rates is Tight Fiscal (low demand for funds) + Loose Monetary (high supply). Reason (R) is true regarding the directional pressure of each policy individually."
+  },
+  {
+    "id": 9,
+    "model": "GPT 5.2",
+    "topic": "Money Neutrality",
+    "stem": "Assertion (A): According to the concept of money neutrality, an increase in the money supply will increase real output and employment in the long run.\nReason (R): In the long run, prices and wages adjust fully to changes in the money supply, leaving real variables unchanged.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false; money neutrality states exactly the opposite—that money is neutral for real variables in the long run. Reason (R) is true and correctly defines the mechanism of long-run neutrality (price adjustment)."
+  },
+  {
+    "id": 10,
+    "model": "GPT 5.2",
+    "topic": "Central Bank Independence",
+    "stem": "Assertion (A): Operational independence allows a central bank to define its own inflation target.\nReason (R): Target independence refers to the freedom to set the goals of monetary policy, while operational independence refers to the freedom to choose the instruments to achieve those goals.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. Defining the target (e.g., 2% inflation) is 'Target Independence'. Operational independence is simply the freedom to set rates to *hit* that target. Reason (R) is true and correctly distinguishes the two types of independence."
+  },
+  {
+    "id": 11,
+    "model": "GPT 5.2",
+    "topic": "Exchange Rate Channel",
+    "stem": "Assertion (A): An unexpected increase in the official policy rate generally causes the domestic currency to appreciate.\nReason (R): Higher domestic interest rates attract foreign capital seeking higher yields, increasing the demand for the domestic currency.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. This is the standard exchange rate channel of transmission. R correctly explains the capital flow mechanism (carry trade/yield seeking) that drives the appreciation."
+  },
+  {
+    "id": 12,
+    "model": "GPT 5.2",
+    "topic": "Transparency and Expectations",
+    "stem": "Assertion (A): Central banks with inflation-targeting mandates publish Inflation Reports to influence the expectations of economic agents.\nReason (R): If economic agents believe the central bank is committed to the target, inflation expectations will become anchored, reducing the output cost of stabilizing prices.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. Transparency is a tool to manage the 'Expectations Channel'. R explains *why* influencing expectations is valuable (anchoring reduces volatility and sacrifice ratio)."
+  },
+  {
+    "id": 13,
+    "model": "GPT 5.2",
+    "topic": "Expansionary Policy Definition",
+    "stem": "Assertion (A): A central bank's policy is considered expansionary only if it cuts the official policy rate.\nReason (R): An expansionary stance is defined by the policy rate being lower than the neutral rate of interest.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. A policy can be expansionary even if rates are rising, provided they are still below the neutral rate. Furthermore, holding rates constant while inflation rises lowers the real rate (expansionary). Reason (R) is true; the relation to the neutral rate determines the stance, not the direction of the change."
+  },
+  {
+    "id": 14,
+    "model": "GPT 5.2",
+    "topic": "Expected vs Unexpected Inflation",
+    "stem": "Assertion (A): Unexpected inflation transfers wealth from borrowers to lenders.\nReason (R): When inflation is higher than anticipated, the real value of the future loan repayments is lower than what was agreed upon in the contract.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. It is the opposite: unexpected inflation helps borrowers (they pay back with cheaper money) and hurts lenders. Reason (R) is true; the erosion of real value is exactly why the borrower benefits."
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Roles of Central Banks",
+    "stem": "Consider the following statements regarding the roles of central banks in a modern economy:\n(1) In a fiat money system, the central bank's ability to supply currency is constrained by the amount of gold reserves it holds.\n(2) The central bank acts as a lender of last resort to prevent bank runs by providing liquidity when the interbank market freezes.\n(3) Central banks in all G10 countries are the sole supervisory authority for their respective banking systems.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "2 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is incorrect because fiat money is not convertible into gold; its supply is not constrained by gold reserves but by government decree and policy decisions. Statement (2) is correct as the lender of last resort function is designed to supply funds to solvent but illiquid banks during crises to prevent contagion. Statement (3) is incorrect because banking supervision is not exclusively a central bank role in all G10 countries; for example, in Germany and the US, it is shared with other agencies (like the FDIC or OCC). Therefore, only statement (2) is correct. Option B is incorrect due to statement (1). Option C is incorrect due to statement (3)."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Monetary Policy Tools",
+    "stem": "Regarding the tools used by central banks to implement monetary policy, consider the following statements:\n(1) When a central bank engages in a repurchase agreement (repo) to buy bonds from commercial banks, it increases the banks' reserves and expands the money supply.\n(2) An increase in the reserve requirement ratio allows commercial banks to lend a higher proportion of their deposits, thereby increasing the money multiplier.\n(3) The central bank's policy rate is typically the rate at which it is willing to lend short-term funds to commercial banks.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; buying bonds (repo) injects liquidity into the banking system, increasing reserves. Statement (2) is incorrect; increasing the reserve requirement *reduces* the funds available for lending, thereby *decreasing* the money multiplier. Statement (3) is correct; the policy rate (e.g., repo rate, discount rate) is the rate at which the central bank lends to commercial banks. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Transmission Mechanism",
+    "stem": "Consider the following statements about the monetary policy transmission mechanism:\n(1) An increase in the official policy rate is expected to depreciate the domestic currency, thereby boosting export competitiveness.\n(2) Higher interest rates typically reduce asset prices, which lowers household financial wealth and consumption.\n(3) The transmission of policy rate changes to long-term interest rates depends heavily on market expectations regarding future inflation and policy actions.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; higher interest rates generally attract foreign capital, causing the domestic currency to *appreciate* (not depreciate), which hurts export competitiveness. Statement (2) is correct; higher discount rates lower the present value of assets (bonds, equities), reducing wealth and consumption (wealth effect). Statement (3) is correct; long-term rates reflect expected future short-term rates and inflation premiums, so expectations play a crucial role. Therefore, statements (2) and (3) are correct. Option A and C are incorrect due to statement (1)."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Inflation Targeting",
+    "stem": "With respect to inflation-targeting frameworks, consider the following statements:\n(1) Successful inflation targeting requires the central bank to be operationally independent from the government to avoid political pressure for short-term stimulus.\n(2) Inflation-targeting central banks typically target a zero percent inflation rate to maximize price stability.\n(3) Transparency, such as publishing inflation reports, is essential to anchor the private sector's inflation expectations.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct; independence prevents the 'political business cycle' where politicians might seek lower rates before elections. Statement (2) is incorrect; most central banks target a low but positive rate (e.g., 2%) rather than zero, to avoid the risk of deflation and allow for relative price adjustments. Statement (3) is correct; transparency helps credibility and anchors expectations, which makes the policy more effective. Therefore, statements (1) and (3) are correct. Option A and B are incorrect due to statement (2)."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Neutral Rate of Interest",
+    "stem": "Consider the following statements regarding the neutral rate of interest:\n(1) The neutral rate is the rate of interest that neither stimulates nor slows down the underlying economy.\n(2) The neutral rate is calculated as the sum of the real trend rate of economic growth and the central bank's inflation target.\n(3) If the central bank's policy rate is below the neutral rate, the monetary policy stance is considered contractionary.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; it represents the equilibrium rate consistent with stable inflation and full employment. Statement (2) is correct; theoretically, Neutral Rate = Real Trend Growth + Expected Inflation (target). Statement (3) is incorrect; if the policy rate is *below* the neutral rate, policy is *expansionary* (stimulating), not contractionary. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Exchange Rate Targeting",
+    "stem": "Regarding exchange rate targeting as a monetary policy strategy, consider the following statements:\n(1) By fixing the domestic currency to a low-inflation foreign currency, a developing economy can effectively import the foreign country's inflation experience.\n(2) To maintain a fixed exchange rate target, the domestic central bank must allow its interest rates and money supply to adjust independently of the target currency's country.\n(3) If the domestic inflation rate rises above that of the target currency's country, the central bank must sell foreign reserves and buy domestic currency to support the exchange rate.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; pegging to a stable currency anchors domestic price expectations. Statement (2) is incorrect; under a fixed exchange rate, domestic monetary policy loses independence—interest rates must track the anchor country's rates to maintain the peg. Statement (3) is correct; higher domestic inflation depreciates the currency, forcing the central bank to intervene (sell reserves, buy local currency) and tighten money supply to restore value. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Limitations of Monetary Policy",
+    "stem": "Consider the following statements regarding the limitations of monetary policy:\n(1) 'Bond market vigilantes' may push long-term interest rates higher if they believe the central bank's expansionary policy will lead to high inflation.\n(2) In a liquidity trap, where short-term rates are near zero, traditional open market operations become ineffective at stimulating the economy.\n(3) The central bank can directly control the amount of lending banks undertake by setting the base rate.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; vigilantes demand higher yields to compensate for inflation risk, potentially counteracting the central bank's stimulus. Statement (2) is correct; when rates are at the zero lower bound, further increases in reserves do not lower rates further, requiring unconventional tools like QE. Statement (3) is incorrect; the central bank influences the *price* of reserves (interest rate) and the *base* money supply, but it cannot compel banks to lend if risk aversion or lack of demand persists. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Unconventional Monetary Policy",
+    "stem": "Regarding Quantitative Easing (QE), consider the following statements:\n(1) QE involves the purchase of assets on a much larger scale than traditional open market operations, expanding the central bank's balance sheet.\n(2) The primary goal of QE is to lower short-term overnight interest rates which are already positive.\n(3) QE aims to reduce the yield on long-term assets and encourage investors to move into riskier assets.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; QE is characterized by massive asset purchases increasing the monetary base. Statement (2) is incorrect; QE is typically used when short-term rates are *already* near zero (zero lower bound) and cannot be lowered further. Statement (3) is correct; by buying long-term bonds, the central bank pushes down long-term yields and forces portfolio rebalancing into equities or corporate bonds. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Money Multiplier and Credit Creation",
+    "stem": "Consider the following statements regarding the money creation process:\n(1) The money multiplier is inversely related to the reserve requirement ratio set by the central bank.\n(2) If banks choose to hold excess reserves above the statutory minimum, the effective money multiplier increases.\n(3) Broad money growth depends on both the expansion of the monetary base and the willingness of banks to lend.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; a lower reserve ratio allows more lending per dollar of deposits (Multiplier = 1/Reserve Ratio). Statement (2) is incorrect; if banks hold *excess* reserves, they lend less than the maximum possible, causing the effective multiplier to *decrease*. Statement (3) is correct; base money is the raw material, but bank lending (credit creation) is required to expand broad money. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Fiscal and Monetary Interaction",
+    "stem": "An analyst is assessing the combined effect of fiscal and monetary policies. Consider the following statements:\n(1) If fiscal policy is expansionary and monetary policy is contractionary, interest rates will likely rise and the public sector's share of GDP will increase.\n(2) If both fiscal and monetary policies are expansionary, interest rates will unambiguously fall while output rises.\n(3) Tight fiscal policy combined with expansive monetary policy generally leads to lower interest rates and a growing private sector share of GDP.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; fiscal expansion raises demand (and rates), tight money raises rates further; government spending grows relative to private. Statement (2) is incorrect; while both boost output, fiscal expansion pushes rates up while monetary expansion pushes them down—the net effect on rates is ambiguous (not unambiguously falling). Statement (3) is correct; tight fiscal lowers borrowing demand (lowering rates), and easy money lowers rates further; private investment benefits from low rates. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Expected vs. Unexpected Inflation",
+    "stem": "Consider the costs associated with inflation:\n(1) Expected inflation allows economic agents to adjust nominal contracts, minimizing the redistributive cost of inflation.\n(2) Unexpected inflation redistributes wealth from borrowers to lenders.\n(3) High inflation rates typically increase the information costs for economic agents, blurring price signals.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; if anticipated, prices/wages are set accordingly. Statement (2) is incorrect; unexpected inflation erodes the real value of money, benefiting *borrowers* (paying back cheaper dollars) and hurting *lenders*. Statement (3) is correct; rapid price changes make it hard to distinguish relative price shifts from general inflation (signal-to-noise ratio worsens). Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Fisher Effect",
+    "stem": "Regarding the relationship between interest rates and inflation, consider the following statements:\n(1) The Fisher effect states that the nominal interest rate is the sum of the real interest rate and the expected inflation rate.\n(2) If the central bank increases the money supply growth rate, in the long run, the nominal interest rate will decrease due to the liquidity effect.\n(3) Money neutrality implies that in the long run, an increase in the money supply affects nominal variables like prices but not real variables like output.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; R_nom = R_real + E(Inflation). Statement (2) is incorrect; while the immediate 'liquidity effect' lowers rates, the long-run Fisher effect implies that higher money growth raises inflation expectations, thus *raising* nominal interest rates. Statement (3) is correct; money is neutral in the long run (classical dichotomy). Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Central Bank Credibility",
+    "stem": "Consider the role of credibility in monetary policy:\n(1) If a central bank lacks credibility, an announcement of an inflation target is likely to be ignored by wage setters, leading to higher actual inflation.\n(2) Credibility decreases the cost of disinflation because inflation expectations adjust more rapidly to policy announcements.\n(3) Central banks can enhance credibility by deviating from announced targets whenever short-term economic growth slows down.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; without trust, agents assume the bank will inflate, so they set high wages. Statement (2) is correct; if the bank is credible, announcing a cut in inflation lowers expectations instantly, reducing the output loss (sacrifice ratio) needed to lower inflation. Statement (3) is incorrect; frequent deviation for short-term goals *erodes* credibility. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Definitions of Money",
+    "stem": "Consider the following statements regarding the forms and definitions of money:\n(1) Money serves as a unit of account only if it is backed by a physical commodity like gold.\n(2) Broad money typically includes currency in circulation, overnight deposits, and longer-term deposits that are less liquid.\n(3) As the sole supplier of currency, the central bank can theoretically expand the supply of fiat money indefinitely.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; fiat money serves as a unit of account perfectly well without backing, provided it is stable and accepted. Statement (2) is correct; broad money (e.g., M2 or M3) includes narrow money plus time deposits, savings accounts, etc. Statement (3) is correct; fiat money has no physical constraint, unlike gold-backed money. Therefore, statements (2) and (3) are correct. Option A and C are incorrect due to statement (1)."
+  }
+]
+
+
