@@ -1,0 +1,838 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Order Instruction Categories",
+    "stem": "An instruction specifying the details for the final transfer of funds and security ownership is classified as a:",
+    "options": {
+      "A": "Execution instruction",
+      "B": "Validity instruction",
+      "C": "Clearing instruction"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Order Instruction Classification</h3><p><strong>C is correct.</strong> Orders include core parameters plus additional instructions grouped into three categories. Clearing instructions specifically indicate how the final settlement of the trade, including custody and transfer, should be arranged. The PDF defines clearing instructions as indicating 'how to arrange the final settlement of the trade'.</p><p>A is incorrect because execution instructions indicate how to fill the order (e.g., price and size constraints).</p><p>B is incorrect because validity instructions indicate when the order may be filled (i.e., its temporal life).</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Market Terminology",
+    "stem": "The price at which a dealer is willing to buy a security from a client is known as the:",
+    "options": {
+      "A": "Ask price",
+      "B": "Bid price",
+      "C": "Best offer"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dealer Quotes</h3><p><strong>B is correct.</strong> Dealers act as intermediaries, posting two-sided quotes. The price at which a dealer is willing to buy a security is the **bid price**. This is the highest price a seller can receive from that dealer. Conversely, the price at which they are willing to sell is the ask/offer price.</p><p>A is incorrect because the ask price is the price at which the dealer sells the security.</p><p>C is incorrect because 'best offer' refers to the lowest available ask price in the market.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Liquidity Provision",
+    "stem": "A limit order that executes immediately against a standing order on the book is considered:",
+    "options": {
+      "A": "Making a market (providing liquidity)",
+      "B": "Taking the market (consuming liquidity)",
+      "C": "Establishing the spread"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Order Aggressiveness</h3><p><strong>B is correct.</strong> Trading is divided into passive (liquidity providers) and aggressive (liquidity consumers). An order that executes immediately 'takes' liquidity by consuming existing resting orders on the book. This aggressive action is described as taking the market.</p><p>A is incorrect because a market-maker posts standing orders (limit orders that wait) to provide liquidity.</p><p>C is incorrect because the spread is established by the best passive quotes (best bid and best ask) that sit on the book.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Market Order Drawbacks",
+    "stem": "The main risk to a trader using a market order for a large size in an illiquid security is the risk of:",
+    "options": {
+      "A": "The order being cancelled due to a limit violation",
+      "B": "Non-execution due to the lack of a counterparty",
+      "C": "Price uncertainty and concessions (slippage)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Market Order Performance</h3><p><strong>C is correct.</strong> A market order guarantees immediacy but not price. For a large order in an illiquid stock, the order must 'walk the book', consuming available liquidity at successively worse prices to fill the full size. This results in an average execution price that is significantly worse than the initial quote, known as price concession or slippage, leading to price uncertainty.</p><p>A is incorrect because market orders do not have limit prices to violate.</p><p>B is incorrect because market orders are designed to execute fully and immediately, exhausting available liquidity; non-execution is the primary risk of limit orders.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Limit Order Pricing Logic",
+    "stem": "A limit sell order for $50 should fill at a price that is:",
+    "options": {
+      "A": "Exactly $50 or any price below $50",
+      "B": "Exactly $50 or any price above $50",
+      "C": "The price of the current best bid"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Limit Constraints</h3><p><strong>B is correct.</strong> A limit order sets a price boundary. For a sell order, the limit price of $50 acts as a minimum acceptable price (a price floor). The broker must aim for the best price, which is the highest possible. Therefore, the order can execute at $50 or any price higher (better for the seller), but never lower.</p><p>A is incorrect because selling below $50 violates the limit constraint and results in a worse price than the minimum acceptable.</p><p>C is incorrect because a marketable limit order may fill at the best bid, but it would only fill at the best bid <em>up to</em> the limit price; the general instruction allows for better (higher) prices.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Order Positioning",
+    "stem": "If the current market is $15.00 bid and $15.05 ask, a limit buy order placed at $14.95 is:",
+    "options": {
+      "A": "Marketable",
+      "B": "Making a new market",
+      "C": "Behind the market"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Price Priority Rule</h3><p><strong>C is correct.</strong> Price priority dictates that the highest bid gets filled first. The current best bid is $15.00. A buy order at $14.95 is below the current best bid, placing it further back in the queue, or 'behind the market'. It will only execute if all bids down to $14.95 are hit by sellers.</p><p>A is incorrect because marketable orders are priced to execute immediately (at or above the $15.05 ask).</p><p>B is incorrect because making a new market requires the price to improve the current best quote (i.e., a buy order between $15.00 and $15.05).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Execution Principle",
+    "stem": "If a marketable limit buy order is entered at $60, and the best available ask price is $59.50, the order should execute at:",
+    "options": {
+      "A": "$60.00",
+      "B": "$59.50",
+      "C": "The midpoint of $59.75"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Best Execution</h3><p><strong>B is correct.</strong> The principle of best execution mandates that the broker/exchange must obtain the most favorable terms for the client. The limit price ($60) is the maximum acceptable price. Since a seller is available at the lower price of $59.50, the order must execute at $59.50 to satisfy the best execution requirement.</p><p>A is incorrect because paying $60 when $59.50 is available violates the fiduciary duty of best execution.</p><p>C is incorrect because trades occur at discrete posted prices, not arbitrary midpoints, unless negotiated in a dark pool or similar venue.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Making a New Market",
+    "stem": "The best bid is $90.00 and the best ask is $90.50. A limit sell order is submitted at $90.25. This order:",
+    "options": {
+      "A": "Takes liquidity and executes immediately",
+      "B": "Improves the market spread and joins the queue",
+      "C": "Is behind the market's current best quote"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Spread Improvement</h3><p><strong>B is correct.</strong> The limit sell price ($90.25) is lower than the current best ask ($90.50) but higher than the best bid ($90.00). It cannot trade immediately, but it improves the market for buyers by lowering the lowest price available for sellers. It establishes a new best ask, thereby tightening the market spread (now $90.00 bid, $90.25 ask).</p><p>A is incorrect because to execute immediately, the sell order would need to be priced at or below the best bid ($90.00).</p><p>C is incorrect because it is an improvement on the best ask, not behind it.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Limit Order Costs",
+    "stem": "If a limit order is placed far from the current market price and is never filled, the primary cost incurred by the trader is:",
+    "options": {
+      "A": "An explicit commission cost",
+      "B": "An implicit market impact cost",
+      "C": "An opportunity cost"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Execution Risk and Opportunity Cost</h3><p><strong>C is correct.</strong> The risk of non-execution is inherent to passive limit orders. If the market moves away from the specified limit price, the trader misses the chance to execute at the desired price and misses potential profits from the subsequent price movement. This missed profit is defined as an opportunity cost.</p><p>A is incorrect because explicit commissions are generally charged only upon execution.</p><p>B is incorrect because market impact refers to the price concession caused by large-scale consumption of liquidity (taking the market), which does not happen with an unexecuted standing limit order.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Hidden Orders",
+    "stem": "A trader is instructed to execute a large order over the course of a day. To minimize negative price movement caused by revealing the full size, the most appropriate order is a:",
+    "options": {
+      "A": "Market order",
+      "B": "Good-till-cancelled order",
+      "C": "Hidden or Iceberg order"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Information Leakage and Market Impact</h3><p><strong>C is correct.</strong> Large orders, when displayed, signal aggressive trading intent, prompting other traders to trade ahead or change quotes unfavorably (strategic behavior). Hidden and Iceberg orders conceal the full size, minimizing information leakage and, consequently, reducing the negative price impact that is common with large orders.</p><p>A is incorrect because a large market order would execute immediately, likely causing maximum negative price impact (slippage).</p><p>B is incorrect because Good-till-cancelled (GTC) relates only to the order's validity period, not its visibility or size management.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Iceberg Order Mechanics",
+    "stem": "The main feature of an iceberg order is that it:",
+    "options": {
+      "A": "Must execute entirely or be cancelled immediately",
+      "B": "Allows the trader to display only a portion of the total order size",
+      "C": "Is active only during the opening auction"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Display Size Control</h3><p><strong>B is correct.</strong> An iceberg order is a type of hidden order where the trader specifies a small 'display size' that is public, while the majority of the order remains hidden. As the displayed size executes, the exchange replenishes it from the hidden reserve until the total size is filled. This is explicitly designed to conceal the true depth of the order.</p><p>A is incorrect because that describes a Fill-or-Kill (FOK) order.</p><p>C is incorrect because most orders are active during continuous trading and have no specific relation to the opening auction, unlike Market-on-Open (MOO) orders.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Liquidity Discovery",
+    "stem": "How can a trader successfully uncover the hidden size of an existing iceberg order resting at the best ask price?",
+    "options": {
+      "A": "By submitting an order that consumes the displayed size",
+      "B": "By placing an order on the bid side to entice the seller",
+      "C": "By using a clearing instruction to request the information"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Probing Mechanism</h3><p><strong>A is correct.</strong> Hidden size, by definition, is not published. To confirm its existence and depth, a trader must interact with the visible portion. Submitting a buy order that 'lifts' (consumes) the displayed size at the ask price will cause the exchange to reload the display size from the hidden reserve, revealing that more size exists at that price.</p><p>B is incorrect because trading on the bid side (selling) does not interact with hidden sell orders at the ask.</p><p>C is incorrect because clearing instructions relate to settlement; information disclosure is governed by execution/exchange rules, and hidden information is not publicly available upon request.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Size Conditions",
+    "stem": "Which execution instruction requires that the entire order quantity be filled or the order be immediately cancelled?",
+    "options": {
+      "A": "Immediate-or-Cancel (IOC)",
+      "B": "All-or-Nothing (AON)",
+      "C": "Fill-or-Kill (FOK)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Size and Time Constraints</h3><p><strong>C is correct.</strong> Fill-or-Kill (FOK) combines two constraints: the order must be filled in its **Entirety** (Fill-or-Kill part) and **Immediately** (Implied by Kill). The FOK instruction demands simultaneous execution of the full size or immediate cancellation. $\\text{FOK} = \\text{AON} \\cap \\text{IOC}$.</p><p>A is incorrect because Immediate-or-Cancel (IOC) allows for partial execution; the unfilled portion is cancelled immediately.</p><p>B is incorrect because All-or-Nothing (AON) requires full execution but does not mandate immediacy; the order can wait on the book until the full size is available.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Immediate-or-Cancel (IOC)",
+    "stem": "A trader submits an Immediate-or-Cancel (IOC) order for 1,000 shares. If only 300 shares are filled immediately, what happens to the remaining 700 shares?",
+    "options": {
+      "A": "They remain on the order book until the end of the day",
+      "B": "They are immediately cancelled",
+      "C": "They are converted to a market order"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IOC Mechanism</h3><p><strong>B is correct.</strong> Immediate-or-Cancel (IOC) is a validity instruction that allows for partial fills, but any quantity not executed immediately upon submission must be immediately cancelled. The core function is to capture available liquidity now. In this case, 300 shares filled and the remaining 700 are cancelled.</p><p>A is incorrect because that would violate the 'Immediate-or-Cancel' condition; Day orders or GTC orders can remain on the book.</p><p>C is incorrect because the order type cannot automatically change; the unexecuted portion is canceled entirely.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Validity Instructions",
+    "stem": "Which validity instruction allows an order to remain active until the client explicitly revokes it?",
+    "options": {
+      "A": "Good-till-cancelled (GTC)",
+      "B": "Good-for-day (GFD)",
+      "C": "All-or-nothing (AON)"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Temporal Constraints</h3><p><strong>A is correct.</strong> Good-till-cancelled (GTC) is a validity instruction that gives the order the longest lifespan, allowing it to remain active until the order is either filled or the trader decides to cancel it, often subject to a maximum time limit imposed by the exchange.</p><p>B is incorrect because Good-for-day (GFD) restricts the order's validity to the current trading day only.</p><p>C is incorrect because All-or-Nothing (AON) is an execution instruction governing size, not the order's lifespan.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "Market Spread Calculation",
+    "stem": "Broker A quotes $50.00 Bid, $50.15 Ask. Broker B quotes $50.05 Bid, $50.20 Ask. What is the market bid-ask spread?",
+    "options": {
+      "A": "$0.20",
+      "B": "$0.10",
+      "C": "$0.15"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15$. The market spread is $\\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid ($50.00) and the worst possible ask ($50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Price Concession",
+    "stem": "Which scenario is most likely to result in a significant price concession for a large buy order?",
+    "options": {
+      "A": "Submitting the order as a limit order below the best bid",
+      "B": "Submitting the order as a market order in a deep market",
+      "C": "Submitting the order as a market order in a shallow market"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Liquidity and Slippage</h3><p><strong>C is correct.</strong> Price concession (slippage) occurs when a large aggressive order 'walks the book' by consuming limited liquidity at successively worse prices. A market order in a shallow (illiquid) market means the order size vastly exceeds the available depth at the best quotes, forcing it to fill at much higher prices.</p><p>A is incorrect because a limit order below the best bid is passive and may not execute, thus avoiding immediate concession.</p><p>B is incorrect because a deep market has ample size at the best quotes, minimizing the need to trade at higher prices, thus reducing concession.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Order Book Terminology",
+    "stem": "The 'best bid' on the order book represents the:",
+    "options": {
+      "A": "Lowest price a seller is willing to accept",
+      "B": "Highest price a buyer is willing to pay",
+      "C": "Lowest price a buyer is willing to pay"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Competitive Quotes</h3><p><strong>B is correct.</strong> The 'bid' side represents buyers' interest (willingness to buy). The 'best' bid is the one with the highest price, as sellers will naturally prefer to sell to the buyer offering the most. This is the highest current buy price in the market.</p><p>A is incorrect because that describes the 'best ask' or 'best offer'.</p><p>C is incorrect because the lowest price a buyer is willing to pay is irrelevant for determining the best available quote.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Trading Trade-offs",
+    "stem": "The fundamental trade-off a trader faces when choosing between a market order and a limit order is between:",
+    "options": {
+      "A": "Visibility and commission cost",
+      "B": "Execution speed and price quality",
+      "C": "Clearing time and security type"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Execution Goals</h3><p><strong>B is correct.</strong> A **Market Order** prioritizes **Execution Speed** (immediacy) but sacrifices **Price Quality** (paying the spread/concessions). A **Limit Order** prioritizes **Price Quality** (obtaining a specific price or better) but sacrifices **Execution Speed** (risk of non-execution). This is the core trade-off in order selection.</p><p>A is incorrect because visibility and commission are secondary factors; the fundamental conflict is price versus execution certainty/speed.</p><p>C is incorrect because clearing time (e.g., T+2) and security type are fixed post-trade or instrument characteristics, not trade-offs inherent to order entry.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Strategic Execution",
+    "stem": "An analyst has strong proprietary information suggesting a stock is undervalued. To acquire a large position with minimal market impact, the buy-side trader should prioritize:",
+    "options": {
+      "A": "Using a marketable order to quickly secure the price",
+      "B": "Using a hidden or iceberg order to mask the full demand",
+      "C": "Using a Fill-or-Kill order to ensure the entire position is acquired at once"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Strategic Order Use</h3><p><strong>B is correct.</strong> The manager possesses 'alpha' (proprietary insight). Displaying a large buy order signals their confidence and will prompt sellers to raise prices, increasing the acquisition cost (market impact). Using a hidden or iceberg order allows the trader to place the order without revealing the total size, minimizing information leakage and allowing a slower, lower-impact execution.</p><p>A is incorrect because a marketable order instantly consumes liquidity, causing immediate price concessions and signaling aggressive buying.</p><p>C is incorrect because Fill-or-Kill requires immediate, full execution, which is highly unlikely for a large order and would result in massive price concession, undermining the goal of minimizing impact.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Execution Instructions",
+    "stem": "An instruction that mandates an order must be completely filled in a single transaction, otherwise it is cancelled, is known as a:",
+    "options": {
+      "A": "All-or-Nothing (AON) order",
+      "B": "Fill-or-Kill (FOK) order",
+      "C": "Good-till-cancelled (GTC) order"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Quantity Constraint</h3><p><strong>A is correct.</strong> An All-or-Nothing (AON) order is an execution instruction that places a constraint only on the quantity. It specifies that the trade must execute for the full size, or not at all. Unlike FOK, it can be a standing order (i.e., it doesn't need to be immediate).</p><p>B is incorrect because Fill-or-Kill (FOK) combines the AON constraint with an immediate time constraint (must be full and immediate).</p><p>C is incorrect because Good-till-cancelled (GTC) is a validity instruction defining the order's lifespan, not its size requirement.</p>"
+  },
+  {
+    "id": 1,
+    "model": "GPT 5.2",
+    "topic": "Market orders vs limit orders execution",
+    "stem": "Assertion (A): Market orders generally fill at worse prices than limit orders on average.\nReason (R): Market orders demand immediate execution and must accept the current best available price, while limit orders specify price boundaries and wait for counterparties.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Start from the trade-off between speed and price. Market orders prioritize execution certainty over price—traders accept whatever the market offers now. Limit orders flip that: traders set a threshold and wait, trading only when favorable counterparties arrive. The reason mechanically explains the assertion: immediate execution means taking the spread (buying at the offer, selling at the bid), which is costlier than potentially trading at or inside those levels. However, limit orders bear non-execution risk—when prices move away, the opportunity cost can exceed the saved spread. The key insight is that average realized prices favor limit orders because the sample of filled limit orders excludes the unfavorable scenarios where execution was denied."
+  },
+  {
+    "id": 2,
+    "model": "GPT 5.2",
+    "topic": "Primary vs secondary markets linkage",
+    "stem": "Assertion (A): Corporations can raise capital at lower cost in primary markets when their securities trade in liquid secondary markets.\nReason (R): Investors pay more for securities they can easily sell later, translating into higher proceeds for issuers.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Reason from investor valuation. A security's value embeds not just its cash flows but also the option to exit the position at low cost. If secondary market liquidity is high (narrow spreads, deep order books, continuous trading), investors face minimal transaction costs and price impact when divesting. This reduces the liquidity discount they require, so they're willing to pay more at issuance—which mechanically means the issuer receives more funds per share or pays a lower yield per bond. The reason directly explains the cost-of-capital channel: secondary market liquidity raises primary market proceeds by lowering the liquidity risk premium investors demand."
+  },
+  {
+    "id": 3,
+    "model": "GPT 5.2",
+    "topic": "Information-motivated trading and informationally efficient prices",
+    "stem": "Assertion (A): Information-motivated traders make prices more informationally efficient.\nReason (R): When informed traders act on superior analysis, their buy and sell decisions push prices toward fundamental values.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Informationally efficient prices reflect all available information. Information-motivated traders invest in research and analysis to identify mispricings—securities whose market prices diverge from intrinsic values based on their information. When they buy undervalued assets, demand increases and prices rise; when they sell overvalued assets, supply increases and prices fall. This trading activity incorporates their information into prices. The reason is the causal mechanism: informed trading is the bridge between private information and public prices. Without informed traders, prices would drift from fundamentals. But the process requires liquid markets—if transaction costs are high, traders won't deploy capital to correct small mispricings, so efficiency depends on both information and liquidity."
+  },
+  {
+    "id": 4,
+    "model": "GPT 5.2",
+    "topic": "Call markets vs continuous markets liquidity",
+    "stem": "Assertion (A): Call markets are more liquid than continuous markets at the moment they are called.\nReason (R): Call markets concentrate all buyers and sellers at the same time and place, reducing search costs and facilitating price discovery.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Liquidity depends on the ease of finding counterparties at low cost. In a call market, orders accumulate during a pre-opening period and execute simultaneously at a single clearing price determined by crossing the aggregate supply and demand curves. This temporal and spatial concentration maximizes the probability that any given order finds a match, so liquidity is high when the call occurs. The reason explains the mechanism: gathering all interest eliminates the coordination problem that plagues continuous markets where buyers and sellers may arrive at different times. However, call markets are completely illiquid between sessions—traders cannot execute outside the call window—so the trade-off is high point-in-time liquidity versus zero inter-session liquidity."
+  },
+  {
+    "id": 5,
+    "model": "GPT 5.2",
+    "topic": "Stop-loss orders and price momentum",
+    "stem": "Assertion (A): Stop-loss orders contribute to market momentum and may result in poor execution prices.\nReason (R): Stop-sell orders activate when prices fall, adding selling pressure, while stop-buy orders activate when prices rise, adding buying pressure.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Stop orders are conditional: a stop-sell becomes valid after the market trades at or below the stop price; a stop-buy becomes valid at or above the stop price. The reason describes the procyclical timing: these orders enter the market during directional moves, amplifying those moves. When prices drop and stop-sells trigger, additional selling supply pushes prices lower; when prices rise and stop-buys trigger, additional buying demand pushes prices higher. This feedback loop creates momentum and often leads to execution away from the stop price, especially in fast-moving or illiquid markets. The key is causality: stop orders mechanically convert price moves into order flow in the same direction, reinforcing trends and degrading execution quality for the stop-order user."
+  },
+  {
+    "id": 6,
+    "model": "GPT 5.2",
+    "topic": "Hedgers and risk transfer",
+    "stem": "Assertion (A): Hedgers trade to transfer unwanted risk to others more willing to bear it.\nReason (R): By entering derivative contracts or forward agreements, hedgers lock in prices and eliminate exposure to adverse price movements.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Hedging is risk redistribution, not risk elimination from the system. A farmer worried about grain price declines can sell futures; a food processor worried about price increases can buy futures. Each transfers their exposure to a counterparty—potentially a speculator or an entity with opposite exposure. The reason explains the mechanism: fixing the future transaction price converts uncertain outcomes into certain ones for the hedger. This works because the financial system facilitates finding counterparties through liquid, standardized contracts. Without such markets, hedgers would face costly bilateral search and credit risk. The key principle is comparative risk-bearing capacity: those less willing or able to bear a specific risk transfer it to those more willing."
+  },
+  {
+    "id": 7,
+    "model": "GPT 5.2",
+    "topic": "Equilibrium interest rate determination",
+    "stem": "Assertion (A): The equilibrium interest rate balances the aggregate supply of savings with aggregate demand for funds.\nReason (R): If the rate is too low, borrowers demand more funds than savers supply, forcing the rate upward.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "The interest rate is the price of moving money through time. Savers supply funds; borrowers and equity issuers demand funds. If the rate is high, savers want to move more to the future (save more) while borrowers want less (borrow less)—excess supply. If the rate is low, savers want to move less forward while borrowers want more—excess demand. The reason describes the adjustment mechanism: excess demand for funds bids the rate up until supply equals demand. This is fundamental supply-demand equilibrium logic applied to the intertemporal market. The equilibrium rate would be unique and stable if all securities were equally risky and liquid; in reality, observed rates vary by credit risk, maturity, and liquidity, but all are anchored to this common baseline."
+  },
+  {
+    "id": 8,
+    "model": "GPT 5.2",
+    "topic": "Margin calls and leverage risk",
+    "stem": "Assertion (A): A margin call occurs when adverse price movements reduce the equity in a leveraged position below the maintenance margin requirement.\nReason (R): Brokers demand additional funds to protect themselves against credit losses if the position continues to deteriorate.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Leverage amplifies returns and losses. When you borrow to buy securities (long margin) or borrow securities to sell (short), the lender faces credit risk: if prices move against you and your equity falls to zero or negative, the lender may not be repaid. To prevent this, brokers require minimum equity cushions—maintenance margin. If your equity falls below that threshold, the broker issues a margin call demanding more cash or liquidates the position. The reason explains the lender's motive: the cushion must be restored to ensure the broker's loan remains overcollateralized. This is credit risk management: the broker's claim is not subordinated to market risk beyond a controlled buffer."
+  },
+  {
+    "id": 9,
+    "model": "GPT 5.2",
+    "topic": "Well-informed traders and market quality",
+    "stem": "Assertion (A): Well-informed traders can profit from their information only if markets are sufficiently liquid.\nReason (R): High transaction costs or poor liquidity prevent informed traders from establishing positions large enough to justify their research expenses.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Information is costly to acquire and analyze. Informed traders will invest in research only if they can trade on their insights at low cost and capture sufficient profits. If spreads are wide, price impact is large, or depth is shallow, the transaction costs can exceed the edge the information provides, making the strategy unprofitable. The reason explains the economic constraint: research is a fixed cost; trading capacity and net profitability determine whether it's worth incurring. This creates a feedback loop: liquid markets attract informed traders, whose activity improves price efficiency; illiquid markets discourage informed trading, reducing efficiency. Regulators and exchanges thus care about liquidity not just for investor convenience but for fundamental price quality."
+  },
+  {
+    "id": 10,
+    "model": "GPT 5.2",
+    "topic": "Underwritten IPOs and underpricing",
+    "stem": "Assertion (A): Initial public offerings are often underpriced, with secondary market prices rising immediately after issuance.\nReason (R): Investment banks in underwritten offerings have incentives to set offering prices conservatively to minimize their underwriting risk and benefit preferred clients.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "IPO underpricing is the empirical regularity that offering prices are often below the price at which shares trade shortly after issuance. The reason explains the agency conflict: investment banks acting as underwriters guarantee the sale at a fixed price. If the offering price is too high, the bank must buy unsold shares, creating direct losses. If the price is too low, the issuer raises less capital, but the bank suffers no direct cost and may benefit by allocating undervalued shares to favored clients. This asymmetry biases the negotiated price downward. Issuers tolerate some underpricing because they fear that an undersubscribed IPO signals weak demand and harms their reputation for future fundraising. The key is conflicting incentives: the bank's risk management and client relationship goals may not align with maximizing issuer proceeds."
+  },
+  {
+    "id": 11,
+    "model": "GPT 5.2",
+    "topic": "Quote-driven vs order-driven market liquidity provision",
+    "stem": "Assertion (A): In order-driven markets, liquidity is provided both by dealers and by public limit orders from traders.\nReason (R): Standing limit orders in an order-driven market function as passive liquidity supply, similar to dealer quotes.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Liquidity is the ability to trade quickly at low cost. In quote-driven markets, designated dealers post bid and ask quotes and are obligated to trade at those prices—liquidity is centralized. In order-driven markets, no central dealer exists; instead, traders submit limit orders that rest in the order book, creating a decentralized liquidity pool. The reason explains the functional equivalence: a standing limit buy order is an offer to buy at a specified price, just like a dealer bid; a standing limit sell order is an offer to sell, just like a dealer ask. Both are consumed by marketable orders (market or aggressive limit orders). The key distinction is that in order-driven markets, liquidity provision is distributed across many participants—some may be market-makers, but many are public traders with no special status."
+  },
+  {
+    "id": 12,
+    "model": "GPT 5.2",
+    "topic": "Capital allocation efficiency and information",
+    "stem": "Assertion (A): Efficient capital allocation requires that investors have accurate information about project values.\nReason (R): Projects should be funded if and only if their value exceeds their cost; inaccurate information can lead to funding wealth-destroying projects or rejecting wealth-creating ones.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Capital allocation is about directing scarce savings to the most productive uses. The decision rule is simple: fund projects with positive net present value (value > cost). But valuation depends on information about cash flows, risks, and discount rates. If investors overestimate value, they may fund negative-NPV projects, destroying wealth. If they underestimate value, they may reject positive-NPV projects, forgoing wealth creation. The reason is the error mechanism: information quality determines the accuracy of the investment decision. This is why financial reporting standards, disclosure requirements, and analyst research matter—they reduce information asymmetry and improve the signal-to-noise ratio, helping capital flow to genuinely productive opportunities rather than mirages or overlooked gems."
+  },
+  {
+    "id": 13,
+    "model": "GPT 5.2",
+    "topic": "Hidden orders and information leakage",
+    "stem": "Assertion (A): Traders use hidden orders to prevent others from learning about their trading intentions and adjusting prices adversely.\nReason (R): Displaying a large order can signal information or create strategic trading by others, increasing the cost of completing the trade.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Order display is an information disclosure problem. A visible large buy order signals demand, which may cause others to raise their offer prices (front-running) or attract other buyers (crowding). A visible large sell order signals supply or negative information, depressing prices. Both raise transaction costs for the original trader. The reason explains the strategic response: if the market sees your size, it can extract rent by stepping ahead of you or waiting for more favorable terms. Hidden orders solve this by revealing only execution (after commitment), not intent (before commitment). The trade-off is that hidden orders sacrifice the signaling benefit—sometimes displaying size attracts natural counterparties who want to trade the opposite side. The choice depends on whether information leakage risk exceeds the cost of reduced visibility."
+  },
+  {
+    "id": 14,
+    "model": "GPT 5.2",
+    "topic": "Short selling and market efficiency",
+    "stem": "Assertion (A): Short selling is essential for achieving informationally efficient prices when some investors have negative information about a security.\nReason (R): Without the ability to short sell, negative information cannot be reflected in prices through trading, causing overvaluation persistence.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Price efficiency requires that all information—positive and negative—be incorporated. Investors with positive information can buy, pushing prices up. But investors with negative information face a constraint if they don't already own the asset: they can only refrain from buying, which is passive and doesn't directly move the price downward. Short selling removes this asymmetry by allowing traders to sell shares they don't own, creating active selling pressure that lowers prices. The reason is the mechanism: without short selling, negative information remains latent—it can't be monetized through trade, so prices don't adjust downward until the information becomes public or a holder sells. This creates a systematic upward bias and delays price discovery, especially for overvalued or fraudulent firms. Restrictions on short selling thus reduce market quality, not improve it."
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Functions of the Financial System",
+    "stem": "Consider the following statements regarding the distinction between investors and information-motivated traders:\n(1) Investors rationally expect to earn returns that exceed the fair rate of return in exchange for providing capital.\n(2) Information-motivated traders trade to profit from superior information about future values, seeking conditional returns.\n(3) Accounting standards that produce meaningful financial disclosures necessarily ensure that information-motivated traders can profit from their analysis.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect because investors rationally expect to receive only fair returns (not excess returns) for the risks they bear and the time they provide capital; they transfer wealth through time rather than seeking alpha. Statement (2) is correct because information-motivated traders specifically seek returns in excess of the fair rate (conditional returns) based on their expectation that prices will correct to their informational advantage. Statement (3) is incorrect because while disclosure reduces the cost of being informed, it does not guarantee profit; if information is widely available, it becomes harder for any single trader to have 'superior' information to exploit. Therefore, only statement (2) is correct. Option A is incorrect because it includes statement (1). Option C is incorrect because it includes statement (3)."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Assets and Contracts",
+    "stem": "Consider the following statements regarding the classification of assets and markets:\n(1) A contract is classified as a financial asset only if its value depends on the price of a financial security.\n(2) Commodities and real assets are classified as physical assets rather than financial assets.\n(3) Equities in pooled investment vehicles like exchange-traded funds (ETFs) are generally classified as debt instruments because they hold underlying securities.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect because contracts (like derivatives) are generally classified as financial assets regardless of whether the underlying is a financial security or a physical commodity; the contract itself is a financial instrument. Statement (2) is correct as commodities and real assets are tangible and classified as physical assets, distinct from securities, currencies, and contracts which are financial assets. Statement (3) is incorrect because pooled investment vehicles (including ETFs) are classified as equities (ownership interests), not debt, even if they hold debt securities. Therefore, only statement (2) is correct. Option A is incorrect because statement (1) is false. Option C is incorrect because both statements (1) and (3) are false."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Market Classification",
+    "stem": "Consider the following statements regarding money markets and capital markets:\n(1) Money markets exclusively trade debt instruments with maturities of one year or less.\n(2) Capital markets trade instruments where the investment duration is longer than one year, including both equities and fixed-income securities.\n(3) A corporation issuing commercial paper to finance operations is participating in the capital market.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct because money markets are defined by the trading of short-term debt instruments (one year or less), such as repos and CDs. Statement (2) is correct because capital markets are for raising long-term capital, involving longer-duration debt and equities. Statement (3) is incorrect because commercial paper is a short-term instrument (less than one year), so it trades in the money market, not the capital market, even if issued by a corporation. Therefore, statements (1) and (2) are correct. Option B fails because statement (3) is false. Option C fails because statement (3) is false."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Securities (Equities)",
+    "stem": "Consider the following statements regarding equity securities:\n(1) Cumulative preferred shares require the issuer to pay any omitted dividends to preferred shareholders before paying dividends to common shareholders.\n(2) Common shareholders typically have higher priority claims to assets than preferred shareholders in the event of liquidation.\n(3) Warrants are classified as fixed-income securities because they have an expiration date and an exercise price.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; the defining feature of 'cumulative' preferred stock is that missed dividends accumulate and must be paid before common dividends. Statement (2) is incorrect because preferred shareholders have priority over common shareholders in liquidation (though they are junior to debt holders). Statement (3) is incorrect because warrants allow the holder to buy ownership (equity) in the firm; they are classified as equities, not fixed-income. Therefore, only statement (1) is correct. Option B is incorrect because statement (2) is false. Option C is incorrect because statement (3) is false."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Pooled Investment Vehicles",
+    "stem": "Consider the following statements regarding open-end and closed-end funds:\n(1) Open-end funds redeem existing shares on demand at a price based on the fund’s net asset value (NAV).\n(2) Closed-end funds trade in the secondary market, and their prices may deviate significantly from their net asset value.\n(3) Exchange-traded funds (ETFs) are exclusively closed-end funds because they trade on exchanges.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; open-end funds issue and redeem shares directly with investors at NAV. Statement (2) is correct; closed-end funds issue a fixed number of shares that trade on secondary markets, often at discounts or premiums to NAV. Statement (3) is incorrect because ETFs are technically open-ended funds (or unit investment trusts) that have a creation/redemption mechanism with authorized participants, which keeps their price close to NAV, unlike traditional closed-end funds. Therefore, statements (1) and (2) are correct. Option B and C fail because statement (3) is false."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Order Types (Limit Orders)",
+    "stem": "Consider the following statements regarding limit orders and market terminology:\n(1) A limit buy order placed above the best bid but below the best offer is said to 'make a new market'.\n(2) A limit sell order placed below the best bid is a marketable limit order.\n(3) A limit buy order placed at the best bid price is said to be 'behind the market'.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; placing a buy order higher than the current best bid (but not high enough to trade immediately) establishes a new best bid, thus 'making a new market.' Statement (2) is correct; a sell order priced below the best bid is aggressively priced and will execute immediately against the bid, making it a marketable limit order. Statement (3) is incorrect; an order at the best bid 'makes the market' (joins the best price), whereas an order 'behind the market' would be at a lower price than the best bid. Therefore, statements (1) and (2) are correct. Option B and C fail because statement (3) is incorrect."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Order Types (Stop Orders)",
+    "stem": "Consider the following statements regarding stop orders:\n(1) A stop-sell order becomes valid for execution only after a trade occurs at or below the stop price.\n(2) Stop orders guarantee execution at the stop price or better.\n(3) Traders using stop orders generally contribute to market momentum because their orders validate in the direction of the price trend.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; a stop-sell acts as a trigger that activates only when the market drops to the stop price. Statement (2) is incorrect; once triggered, a stop order becomes a market order (usually), which executes at the best available price, which could be significantly worse than the stop price in a fast-moving market. Statement (3) is correct; stop-sells trigger as prices fall (adding sell pressure) and stop-buys trigger as prices rise (adding buy pressure), thus reinforcing momentum. Therefore, statements (1) and (3) are correct. Option A is incorrect because statement (2) is false. Option C is incorrect because statement (2) is false."
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Order Validity and Clearing",
+    "stem": "Consider the following statements regarding validity and clearing instructions:\n(1) An 'Immediate or Cancel' (IOC) order that cannot be filled immediately is placed on the order book as a standing limit order.\n(2) A 'Good-on-Close' order can only be filled at the close of trading, often used by funds valuing portfolios at closing prices.\n(3) For a short sale, the broker must confirm that the security can be borrowed before the order can be executed.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; the definition of IOC is that any portion not filled immediately is cancelled, not booked. Statement (2) is correct; these execute at the market close. Statement (3) is correct; clearing instructions for short sales require the broker to locate the borrow (the 'locate' requirement) to ensure delivery. Therefore, statements (2) and (3) are correct. Option A is incorrect because statement (1) is false. Option C is incorrect because statement (1) is false."
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Primary Market Mechanisms",
+    "stem": "Consider the following statements regarding primary market offerings:\n(1) In a shelf registration, a corporation sells shares directly into the secondary market over time rather than in a single large transaction.\n(2) A rights offering grants existing shareholders the option to buy new shares, usually at a price above the current market price.\n(3) Private placements generally require higher yields (lower prices) than public offerings due to their lack of liquidity.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; shelf registrations allow issuers to sell seasoned securities piecemeal, providing flexibility. Statement (2) is incorrect; rights offerings are priced *below* the current market price to incentivize exercise and compensate for dilution. Statement (3) is correct; investors in private placements demand a liquidity premium (higher return/lower price) because the securities cannot be easily traded in secondary markets. Therefore, statements (1) and (3) are correct. Option A fails because statement (2) is false. Option C fails because statement (2) is false."
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Underwriting vs. Best Efforts",
+    "stem": "Consider the following statements regarding investment banking services in primary markets:\n(1) In a best efforts offering, the investment bank guarantees the sale of the issue by promising to buy any unsold securities.\n(2) In an underwritten offering, the investment bank bears the risk that the issue will be undersubscribed.\n(3) Underwriters often face a conflict of interest leading them to underprice IPOs to benefit their buy-side clients.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; in a 'best efforts' offering, the bank acts only as a broker and does *not* guarantee the sale or buy unsold shares. Statement (2) is correct; in an underwritten deal, the bank buys the issue and resells it, absorbing the risk of unsold inventory. Statement (3) is correct; underwriters have an incentive to set a low price to ensure the issue clears and to allocate 'hot' shares to favored clients, creating a conflict with the issuer who wants the highest price. Therefore, statements (2) and (3) are correct. Option A and C fail because statement (1) is false."
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Market Structures (Call vs. Continuous)",
+    "stem": "Consider the following statements regarding market structures:\n(1) Call markets execute trades continuously throughout the day as orders arrive.\n(2) Call markets facilitate liquidity by gathering all traders to the same place at the same time.\n(3) Continuous trading markets generally use a single price auction to match all buy and sell orders once a day.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "2 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is incorrect; call markets trade only at specific times (the 'call'), not continuously. Statement (2) is correct; the primary advantage of call markets is consolidating liquidity in time and place. Statement (3) is incorrect; continuous markets allow trading at any time and do not typically use a single price auction for the main session (though they might for the open/close); single price auctions are characteristic of call markets. Therefore, only statement (2) is correct. Option B and C are incorrect because they include false statements (1) and (3)."
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Execution Mechanisms",
+    "stem": "Consider the following statements regarding execution mechanisms:\n(1) In a quote-driven market, customers trade primarily with dealers who post bid and ask prices.\n(2) Order-driven markets rely on order matching rules established by exchanges rather than dealers to arrange trades.\n(3) Brokered markets are most common for highly liquid, standardized instruments like large-cap stocks.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; quote-driven markets (dealer markets) operate by customers trading against dealer inventory prices. Statement (2) is correct; order-driven markets match buyers and sellers directly based on rules (price priority, etc.) without dealer intermediation. Statement (3) is incorrect; brokered markets are for *unique* or *illiquid* assets (like real estate or large blocks), not standardized liquid instruments. Therefore, statements (1) and (2) are correct. Option B and C fail because statement (3) is false."
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Market Efficiency",
+    "stem": "Consider the following statements regarding the efficiency of the financial system:\n(1) A market is operationally efficient if the costs of arranging trades are low.\n(2) Allocational efficiency refers to the ability of the market to direct capital to its most productive uses.\n(3) Informational efficiency is achieved when market prices reflect all available information about fundamental values.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1, 2, and 3"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct; operational efficiency relates to transaction costs and friction. Statement (2) is correct; allocational efficiency means scarce capital goes to the highest-value projects. Statement (3) is correct; informational efficiency means prices accurately reflect value based on information. All three definitions are standard and correct according to the CFA curriculum. Therefore, all three statements are correct. Options A and B are incomplete."
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Financial Intermediaries",
+    "stem": "Consider the following statements regarding financial intermediaries:\n(1) Financial intermediaries facilitate the transfer of risk by creating contracts that allow entities to hedge specific risks.\n(2) Intermediaries such as banks transform short-term liabilities (deposits) into long-term assets (loans), a process known as maturity transformation.\n(3) Arbitrageurs are intermediaries who trade to move wealth from the present to the future without seeking profit from price discrepancies.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; intermediaries create instruments (like insurance or derivatives) to manage risk. Statement (2) is correct; maturity transformation is a core function of banking intermediaries. Statement (3) is incorrect; arbitrageurs specifically trade to profit from price discrepancies (mispricing) between markets/instruments, not merely to transfer wealth through time (which is the role of savers/investors). Therefore, statements (1) and (2) are correct. Option B and C fail because statement (3) is false."
+  },
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Functions of the Financial System",
+    "stem": "An asset manager analyzes satellite imagery of retail parking lots to predict quarterly earnings before they are released. If this manager trades based on this data to earn a return exceeding the risk-adjusted fair rate, this activity is best classified as:",
+    "options": {
+      "A": "Information-motivated trading, which contributes to market efficiency by moving prices toward fundamental value.",
+      "B": "Pure investing, as the manager is allocating capital from the present to the future to smooth consumption.",
+      "C": "Hedging, as the manager is mitigating the risk of holding a diversified portfolio against earnings surprises."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Information-Motivated Trading</h3><p><strong>A is correct.</strong> Start with the definition of trading motives. Investors trade to move wealth across time (intertemporal substitution). Hedgers trade to reduce risk exposure. Information-motivated traders trade because they believe they possess superior information about an asset's future value that is not yet reflected in the price. The manager here uses unique data (satellite imagery) to identify mispricing (under/overvaluation relative to actual earnings). By trading on this, they force prices to adjust to the new information, thereby enhancing informational efficiency. The expectation of a return <em>in excess</em> of the fair risk-adjusted return (alpha) is the defining characteristic.</p><p>B is incorrect: Investors accept a fair market return for deferring consumption and bearing risk. They do not seek alpha through superior information analysis.</p><p>C is incorrect: Hedgers start with an existing risk and trade to neutralize it. This manager is voluntarily taking on new risk to exploit an informational edge.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Order Execution Instructions",
+    "stem": "A trader submits a limit order to buy 1,000 shares with a display size of 200 shares (an iceberg order). If the order book uses a strict price-display-time priority rule, how does the hidden portion of this order rank relative to a fully visible limit order subsequently entered at the same price?",
+    "options": {
+      "A": "The hidden portion has lower priority than the visible order, even though the hidden order arrived first.",
+      "B": "The hidden portion retains time priority over the visible order because the original order arrived first.",
+      "C": "The hidden portion executes simultaneously with the visible order to maintain fairness."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Order Precedence Hierarchies</h3><p><strong>A is correct.</strong> Order execution rules generally follow a hierarchy: Price > Display > Time. First, orders are ranked by price (buy high, sell low). Within the same price, <em>displayed</em> quantities are given precedence over <em>hidden</em> quantities to reward transparency, which aids price discovery. Therefore, the hidden portion of an iceberg order falls to the bottom of the queue at that specific price level, behind all currently displayed liquidity, including new orders that arrive later but are fully displayed. The displayed portion (200 shares) keeps its time priority, but the hidden reserve (800 shares) yields to the new visible order.</p><p>B is incorrect: This ignores the standard 'Display precedence' rule. If hidden orders kept time priority, there would be no incentive to show liquidity, hurting market transparency.</p><p>C is incorrect: Pro-rata or simultaneous execution is rare in standard limit order books; strict serial priority is the norm to encourage aggressive pricing and display.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok",
+    "topic": "Margin and Leverage",
+    "stem": "An investor buys a stock at $50 using 40% initial margin. If the maintenance margin is 25%, at what price will a margin call first occur?",
+    "options": {
+      "A": "$30.00",
+      "B": "$40.00",
+      "C": "$33.33"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = $50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = $50 \times 0.60 = $30. <br>Equity at any price $P$ is $P - \text{Loan}$. <br>The critical condition is: $\frac{P - \text{Loan}}{P} = \text{Maintenance Margin}$. <br>Substitute values: $\frac{P - 30}{P} = 0.25$. <br>Solve for $P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to $40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Market Structure and Pricing",
+    "stem": "In a call market (batch auction), the single trade price is determined by the intersection of the aggregate supply and demand curves. In contrast, a continuous order-driven market typically relies on:",
+    "options": {
+      "A": "Discriminatory pricing rules, where the limit price of the standing order determines the execution price.",
+      "B": "Uniform pricing rules, where all trades in a given window execute at the volume-weighted average price.",
+      "C": "Derivative pricing rules, where execution prices are indexed to an external consolidated feed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Execution Pricing Rules</h3><p><strong>A is correct.</strong> Differentiate between call and continuous markets. A call market accumulates orders to find one equilibrium price (Uniform Pricing Rule) that maximizes volume. A continuous market processes orders serially. When an aggressive incoming order (market or marketable limit) hits the book, it trades against the best available standing limit orders. The trade price is the limit price of the <em>standing</em> order (the maker), not the incoming order (the taker). Because different trades occur at different limit prices as the order book is swept, this is the Discriminatory Pricing Rule—different traders pay different prices for the same asset at nearly the same time.</p><p>B is incorrect: Uniform pricing is the hallmark of call markets (auctions), not continuous trading.</p><p>C is incorrect: This describes a 'crossing network' or dark pool referencing a primary exchange, not the standard pricing mechanism of a continuous order-driven exchange.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Validity vs. Execution Instructions",
+    "stem": "Which of the following order instructions specifically acts as a validity instruction rather than an execution instruction?",
+    "options": {
+      "A": "Good-till-Cancelled (GTC)",
+      "B": "All-or-Nothing (AON)",
+      "C": "Hidden (Iceberg)"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Order Instruction Classification</h3><p><strong>A is correct.</strong> Classify instructions by their function. <em>Validity</em> instructions dictate <em>when</em> an order is active and for how long (Time in Force). GTC specifies the order remains valid indefinitely until filled or cancelled. <br><em>Execution</em> instructions dictate <em>how</em> the order should be filled regarding size or visibility. <br>AON is an execution instruction (condition on size). Hidden is an execution instruction (condition on exposure). GTC is purely about the temporal validity of the order.</p><p>B is incorrect: All-or-Nothing restricts the size/partial fill mechanics, making it an execution instruction.</p><p>C is incorrect: Hidden instructions control the display of the order to the market, which is a method of execution/exposure, not a validity timeframe.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok",
+    "topic": "Primary Market Mechanisms",
+    "stem": "In an underwritten IPO, the investment bank acts as a price stabilizer in the secondary market immediately after trading begins. This function often creates a conflict of interest that results in:",
+    "options": {
+      "A": "Underpricing the IPO to ensure the issue is oversubscribed and secondary market prices rise.",
+      "B": "Overpricing the IPO to maximize issuer proceeds and underwriting fees.",
+      "C": "Eliminating the 'Green Shoe' option to prevent dilution of the new shareholders."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Underwriting Incentives</h3><p><strong>A is correct.</strong> Analyze the agents' incentives. The underwriter guarantees the sale. If the price is too high, the issue fails (remains on their books) or drops in the aftermarket, forcing them to buy it back to stabilize the price (costly). If the price is too low, the issue sells out easily (oversubscribed) and pops in the secondary market, pleasing buy-side clients. While the issuer wants a high price (more capital), the underwriter's risk aversion and desire to allocate 'hot' shares to clients drive them to <em>underprice</em> the IPO. This minimizes their risk of holding unsold inventory and price support costs.</p><p>B is incorrect: Overpricing increases the risk that the underwriter is stuck with unsold stock or must spend capital stabilizing a falling price.</p><p>C is incorrect: The Green Shoe (overallotment) option helps the underwriter manage stabilization; eliminating it would increase their risk, not explain the pricing conflict.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Short Selling Mechanics",
+    "stem": "An investor short sells a stock at $100 and deposits an initial margin of 50%. If the stock price rises to $110, what is the investor's return on equity (ignoring interest and commissions)?",
+    "options": {
+      "A": "-20%",
+      "B": "-10%",
+      "C": "-25%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = $100 \times 0.50 = $50$. <br>Price change = $110 - $100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return $\times$ Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Grok",
+    "topic": "Stop Order Physics",
+    "stem": "A trader holding a long position at $45 wants to protect against a significant drop but is worried about selling during a temporary flash crash. To limit the loss while controlling the execution price, the trader should submit a:",
+    "options": {
+      "A": "Stop-limit sell order: Stop $40, Limit $38.",
+      "B": "Stop-loss market order: Stop $40.",
+      "C": "Market-if-touched sell order: Stop $45."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Stop vs. Stop-Limit</h3><p><strong>A is correct.</strong> Analyze the objective: 1) Trigger a sale if price drops (Stop mechanism). 2) Control the execution price (Limit mechanism). <br>A Stop-loss market order triggers at $40 and becomes a market order, which guarantees execution but <em>not price</em>—risky in a flash crash where price could gap to $20. <br>A Stop-limit order triggers when the price hits $40, but then becomes a limit order to sell at $38 (or better). This prevents selling below $38, solving the 'flash crash' price concern, though it introduces the risk of non-execution if the price gaps below $38 instantly.</p><p>B is incorrect: A stop market order accepts any price once triggered, failing the user's constraint to control execution price.</p><p>C is incorrect: Market-if-touched is typically used to take profits (sell when price rises), not stop losses, and becoming a market order fails the price control requirement.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Grok",
+    "topic": "Private Placements",
+    "stem": "Which of the following features most accurately distinguishes a private placement from a public offering in the primary market?",
+    "options": {
+      "A": "Private placements typically require a higher yield or discounted price to compensate investors for illiquidity.",
+      "B": "Private placements are registered with the regulator to ensure they can be freely traded in the secondary market immediately.",
+      "C": "Private placements use a 'best efforts' underwriting basis while public offerings must be 'firm commitment'."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Liquidity Premia</h3><p><strong>A is correct.</strong> Reason from the properties of the asset. Private placements are sold to a select group of qualified investors and are not registered for public trading. This makes them <em>illiquid</em>; the investor cannot easily exit the position. Rational investors demand compensation for bearing this liquidity risk. Therefore, issuers must offer the securities at a lower price (higher yield) compared to an identical liquid public security. This is the liquidity premium.</p><p>B is incorrect: The defining feature of private placements is the <em>lack</em> of public registration, which restricts resale (creating the illiquidity).</p><p>C is incorrect: Both public and private offerings can use best efforts or firm commitment; this is a contract term, not a structural distinction between the two market types.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "Market Microstructure",
+    "stem": "In a quote-driven market, a dealer quotes a bid of $20.00 and an ask of $20.10. If an investor immediately buys from the dealer and then sells back to the dealer, the investor's immediate loss (ignoring commissions) represents:",
+    "options": {
+      "A": "The dealer's bid-ask spread, which is the compensation for providing immediacy and bearing inventory risk.",
+      "B": "The market impact cost, which reflects the movement of the quote due to the information content of the trade.",
+      "C": "The opportunity cost, representing the price improvement missed by not using a limit order."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Bid-Ask Spread</h3><p><strong>A is correct.</strong> Trace the cash flows. The investor buys at the Ask ($20.10) and sells at the Bid ($20.00). The loss is $0.10. This amount stays with the dealer. Why? The dealer stands ready to trade at any time (offering immediacy). The spread compensates the dealer for 1) Inventory risk (holding the asset), 2) Order processing costs, and 3) Adverse selection risk (trading against informed traders). The 'round-trip' cost to the liquidity taker is exactly the bid-ask spread.</p><p>B is incorrect: Market impact refers to the price <em>moving</em> against you (e.g., Ask moves to 20.15) due to trade size. This example assumes fixed quotes.</p><p>C is incorrect: Opportunity cost usually refers to unfilled orders or missed trades, not the explicit cost of crossing the spread.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Grok",
+    "topic": "Rights Offerings",
+    "stem": "A company issues rights to existing shareholders to purchase new shares at a discount to the current market price. Regarding the wealth of a shareholder who exercises these rights, assuming no other friction:",
+    "options": {
+      "A": "Their total wealth remains unchanged because the cash paid effectively offsets the value gained from the discounted shares.",
+      "B": "Their total wealth increases because they purchased shares below the market price.",
+      "C": "Their total wealth decreases due to the dilution of the ownership percentage."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Conservation of Value</h3><p><strong>A is correct.</strong> View the shareholder's position before and after. Before: Owns Stock (Value $V$). After: Owns Stock + New Stock - Cash Paid. The company's total equity value increases by exactly the Cash Paid. The number of shares increases. The new share price adjusts downward (dilutes) to specific weighted average of the old price and the subscription price. Because the subscription price is paid <em>into</em> the company (which the shareholder owns), the shareholder is essentially transferring cash from their right pocket (bank) to their left pocket (company equity). The value of the rights exactly offsets the drop in share price. Wealth is conserved.</p><p>B is incorrect: This is the 'free lunch' fallacy. The market price of the stock drops mechanically ex-rights, offsetting the 'gain' from the discount.</p><p>C is incorrect: While ownership <em>percentage</em> might be diluted if they <em>didn't</em> exercise, exercising protects their percentage, and even non-exercise preserves wealth if they sell the rights (which have value).</p>"
+  },
+  {
+    "id": 12,
+    "model": "Grok",
+    "topic": "Financial System Functions",
+    "stem": "Which of the following instruments best enables a defined benefit pension fund to satisfy its core function of transferring capital from the present to the future to meet long-term liabilities?",
+    "options": {
+      "A": "Equities, as they represent a long-term claim on the residual cash flows of productive economy.",
+      "B": "Commercial Paper, as it provides a secure, low-risk store of value for liquidity management.",
+      "C": "Commodity Futures, as they hedge against the risk of inflation eroding purchasing power."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Investment Horizons</h3><p><strong>A is correct.</strong> Match the liability duration with the asset duration. A pension fund has long-term liabilities (decades). Its goal is 'investing'—deferring consumption to the distant future. Equities are perpetual instruments that capture the growth of the real economy, making them suitable for long-term wealth compounding. They move large amounts of purchasing power forward in time.</p><p>B is incorrect: Commercial paper is a money market instrument (maturity < 1 year). It is for liquidity management (short-term), not for moving capital decades into the future.</p><p>C is incorrect: Commodity futures are zero-sum derivatives used for hedging or short-term speculation. They do not generate internal cash flows (dividends/coupons) needed to fund long-term liabilities.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Grok",
+    "topic": "Leverage Ratios",
+    "stem": "A trader uses a margin loan to buy securities. The position value is $100,000 and the equity provided is $40,000. If the asset price increases by 5%, the return on the trader's equity is:",
+    "options": {
+      "A": "12.5%",
+      "B": "5.0%",
+      "C": "20.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5$. <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>$\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}$. <br>$ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = $5,000. Equity = $40,000. $5,000/$40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Grok",
+    "topic": "Market Efficiency",
+    "stem": "If a market has low transaction costs and high transparency, information-motivated traders will be more active. The net effect of their activity on market efficiency is:",
+    "options": {
+      "A": "Prices become more informationally efficient as they converge faster to intrinsic value.",
+      "B": "Prices become less efficient due to increased volatility from speculative trading.",
+      "C": "Liquidity decreases as informed traders widen spreads to protect against other informed traders."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Mechanism of Efficiency</h3><p><strong>A is correct.</strong> Information-motivated traders identify gaps between price and value. By buying undervalued assets and selling overvalued ones, their <em>trading pressure</em> pushes prices toward fundamental value. Low transaction costs make it profitable to trade on smaller pieces of information. Thus, the aggregate effect of their competition is to incorporate information into prices quickly, making the market <em>more</em> informationally efficient.</p><p>B is incorrect: While volatility might persist, 'efficiency' is defined as price reflecting value. Informed trading corrects errors, it doesn't create random noise (unlike noise trading).</p><p>C is incorrect: While dealers might widen spreads against informed traders (adverse selection), the <em>presence</em> of active traders generally adds depth. More importantly, the question asks about <em>efficiency</em> (price accuracy), not just liquidity costs.</p>"
+  }
+]
+
+
+
