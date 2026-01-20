@@ -1,0 +1,564 @@
+[
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Comparative Advantage Models",
+    "stem": "In contrast to the Ricardian model, the Heckscher-Ohlin model attributes the source of comparative advantage primarily to differences in:",
+    "options": {
+      "A": "Labor productivity arising from technological differences.",
+      "B": "Relative abundance of factor endowments like capital and labor.",
+      "C": "Economies of scale in production processes."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sources of Comparative Advantage</h3><p><strong>B is correct.</strong> The Ricardian model is a single-factor model (labor) that assumes technology differences (labor productivity) drive trade. The Heckscher-Ohlin (H-O) model expands this to two factors (capital and labor) and assumes technology is identical across countries. In H-O, comparative advantage arises because countries differ in their relative endowment of factors (e.g., one is capital-rich, one is labor-rich). A country will export the good that intensively uses its abundant factor. Thus, H-O is an endowment-driven model.</p><p>A is incorrect: This is the definition of the Ricardian model, which focuses on labor productivity (technology) as the sole driver.</p><p>C is incorrect: Economies of scale are the basis for New Trade Theory (Intra-industry trade), not the traditional H-O model which assumes constant returns to scale.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Intra-Industry Trade",
+    "stem": "Intra-industry trade, where a country simultaneously imports and exports goods within the same industry (e.g., automobiles), is best explained by:",
+    "options": {
+      "A": "Differences in labor productivity between trading partners.",
+      "B": "Product differentiation and increasing returns to scale.",
+      "C": "Significant differences in factor endowments."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Monopolistic Competition in Trade</h3><p><strong>B is correct.</strong> Traditional models (Ricardo, H-O) explain inter-industry trade (wheat for cars) based on differences between countries. Intra-industry trade (Fords for BMWs) occurs between similar countries. The driver is <em>economies of scale</em> (producing more reduces average cost) and <em>product differentiation</em> (consumers value variety). Firms specialize in specific varieties to maximize scale, and countries trade these varieties so consumers can access the full range. This fits the Monopolistic Competition model.</p><p>A is incorrect: Labor productivity differences explain Ricardian inter-industry trade (trading unlike goods).</p><p>C is incorrect: Factor endowments explain H-O inter-industry trade. Intra-industry trade is most common between developed countries with <em>similar</em> endowments.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Tariff Effects (Small Country)",
+    "stem": "If a 'small' country imposes a tariff on an imported good, the net impact on national welfare is calculated as:",
+    "options": {
+      "A": "A net loss equal to the production distortion loss plus the consumption distortion loss.",
+      "B": "A net gain equal to the tariff revenue minus the loss in consumer surplus.",
+      "C": "A net loss equal to the loss in consumer surplus minus the gain in producer surplus."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Deadweight Loss Components</h3><p><strong>A is correct.</strong> Decompose the welfare changes. A tariff raises the domestic price. <br>1. Consumer Surplus falls (large loss). <br>2. Producer Surplus rises (gain). <br>3. Government Revenue rises (gain). <br>For a small country (price taker), the Terms of Trade do not improve (foreign price is fixed). The loss in CS exceeds the gains in PS and Revenue. The difference is the \"Deadweight Loss,\" which consists of two triangles: the <em>production distortion</em> (producing at higher marginal cost than the world) and the <em>consumption distortion</em> (consuming less due to artificially high price). Thus, the net impact is a pure loss equal to these two triangles.</p><p>B is incorrect: A small country cannot gain from a tariff; it always suffers a net loss because it cannot lower the world import price.</p><p>C is incorrect: This formula misses the Government Revenue component. Net Welfare = Change in CS + Change in PS + Change in Gov Revenue.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Tariff Effects (Large Country)",
+    "stem": "A 'large' country can theoretically increase its national welfare by imposing a tariff if:",
+    "options": {
+      "A": "The gain from the terms of trade improvement exceeds the deadweight loss from efficiency distortions.",
+      "B": "The tariff revenue collected is strictly greater than the loss in consumer surplus.",
+      "C": "The protection allows domestic infant industries to achieve economies of scale immediately."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Terms of Trade Gain</h3><p><strong>A is correct.</strong> A large country has market power. When it imposes a tariff, it reduces its demand for the import significantly enough to force the world price down (exporters lower prices to maintain share). This price reduction is a <em>Terms of Trade (ToT) gain</em> (getting imports cheaper). This gain is a transfer from the foreign exporter to the domestic government. If this ToT gain (rectangle) is larger than the efficiency loss (the two deadweight loss triangles from production and consumption distortion), the country experiences a net welfare gain.</p><p>B is incorrect: Tariff revenue is part of the calculation, but the condition is specifically about the <em>net</em> effect overcoming the efficiency drag. The revenue itself isn't the sole source of the 'extra' gain; the foreign price drop is.</p><p>C is incorrect: The infant industry argument is dynamic and distinct from the static welfare analysis of a large country tariff.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Quotas vs. Tariffs",
+    "stem": "A government is choosing between an import tariff and an import quota that restricts imports to the same quantity. The quota will result in a larger welfare loss to the domestic economy than the tariff if:",
+    "options": {
+      "A": "The quota rents are captured by foreign exporters.",
+      "B": "The domestic industry has increasing returns to scale.",
+      "C": "The demand for the imported good is perfectly inelastic."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Quota Rents</h3><p><strong>A is correct.</strong> Compare the revenue flows. With a tariff, the price difference (Domestic Price - World Price) is collected by the government as tax revenue (a transfer within the domestic economy). With a quota, this price difference becomes \"quota rent\" (excess profit per unit). If the government auctions the quota rights, it captures the rent (equivalent to tariff). However, if the government simply gives the rights to foreign governments or exporters (e.g., Voluntary Export Restraint), the rent leaves the domestic economy. This loss of rent makes the quota more costly than a tariff by the amount of the rent rectangle.</p><p>B is incorrect: Increasing returns would affect both policies similarly regarding the protection effect.</p><p>C is incorrect: Inelastic demand affects the magnitude of price shifts but doesn't change the structural difference between tariff revenue (domestic) and foreign-captured rents.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Voluntary Export Restraints (VER)",
+    "stem": "From the perspective of the importing country, a Voluntary Export Restraint (VER) is generally considered the most damaging trade restriction because:",
+    "options": {
+      "A": "It creates the largest deadweight loss by prohibiting all imports above a certain threshold.",
+      "B": "It results in the loss of tariff revenue and the transfer of quota rents to the exporting country.",
+      "C": "It triggers an automatic retaliation from the World Trade Organization."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: VER Mechanics</h3><p><strong>B is correct.</strong> A VER is essentially a quota administered by the <em>exporter</em> at the request of the importer. Because the exporter controls the supply, the exporter acts like a monopolist for that limited quantity and raises the price to the clearing level in the importing market. The \"markup\" (quota rent) is thus collected by the foreign exporter, not the domestic government. The importing country suffers the standard deadweight loss (triangles) <em>plus</em> the loss of the revenue rectangle (which would have been tariff revenue). This makes it strictly worse than an equivalent tariff or a domestically administered quota.</p><p>A is incorrect: A VER does not prohibit all imports; it sets a limit. The deadweight loss triangles are the same as an equivalent quota; the extra damage is the rent transfer.</p><p>C is incorrect: VERs are often used specifically to <em>bypass</em> WTO rules against raising tariffs, though they are discouraged.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Export Subsidies (Small Country)",
+    "stem": "If a small country implements an export subsidy, the immediate impact on the domestic price of the subsidized good and domestic welfare is:",
+    "options": {
+      "A": "Domestic price rises; Domestic welfare falls.",
+      "B": "Domestic price falls; Domestic welfare rises.",
+      "C": "Domestic price rises; Domestic welfare rises."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Export Subsidy Mechanics</h3><p><strong>A is correct.</strong> Analyze the arbitrage. If the government pays producers a subsidy \\( s \\) for exporting, the revenue per unit exported becomes \\( P_{world} + s \\). Producers will not sell domestically for less than they can get abroad. Therefore, the domestic price rises to \\( P_{world} + s \\). <br>Welfare analysis: <br>1. Consumer Surplus falls (due to higher price). <br>2. Producer Surplus rises (due to higher price). <br>3. Government loses revenue (paying the subsidy). <br>The loss in CS plus the cost of the subsidy exceeds the gain in PS. The country suffers a net deadweight loss (production distortion + consumption distortion). Thus, price rises and welfare falls.</p><p>B is incorrect: Prices rise, they don't fall. Consumers are hurt.</p><p>C is incorrect: While producers gain, the government cost and consumer loss outweigh the producer gain, resulting in a net welfare decline.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Levels of Economic Integration",
+    "stem": "The primary distinction between a Customs Union and a Free Trade Area (FTA) is that in a Customs Union:",
+    "options": {
+      "A": "Member countries adopt a common external trade policy against non-members.",
+      "B": "Factors of production like labor and capital can move freely between members.",
+      "C": "Member countries harmonize all fiscal and monetary policies."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Integration Hierarchy</h3><p><strong>A is correct.</strong> Build the hierarchy step-by-step. <br>1. <strong>FTA</strong>: Members remove barriers among themselves but keep their own separate tariffs against non-members (requires Rules of Origin to prevent transshipment). <br>2. <strong>Customs Union</strong>: Adds a <em>Common External Tariff</em> (CET) to the FTA. All members treat non-members identically. <br>3. <strong>Common Market</strong>: Adds free movement of factors (labor/capital) to the CU. <br>4. <strong>Economic Union</strong>: Adds harmonized economic institutions/policies.</p><p>B is incorrect: This is the defining feature of a Common Market.</p><p>C is incorrect: This is the defining feature of an Economic Union.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Trade Creation vs. Trade Diversion",
+    "stem": "Regional integration is most likely to result in a net welfare loss (Trade Diversion) when:",
+    "options": {
+      "A": "The lowest-cost domestic producer is replaced by a higher-cost producer from a member country.",
+      "B": "A low-cost non-member producer is replaced by a higher-cost member producer due to preferential tariff treatment.",
+      "C": "A high-cost domestic producer is replaced by a lower-cost member producer."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Efficiency Flows</h3><p><strong>B is correct.</strong> Trade Diversion is the shift of imports from a more efficient (low cost) global source to a less efficient (higher cost) regional partner because the partner is exempt from tariffs. <br>Example: World price = 10. Partner price = 12. Tariff = 5. <br>Initial state: Import from World at 10 (cost to consumer 15). Tariff rev = 5. <br>Post-Union state: Import from Partner at 12 (0 tariff). Cost to consumer 12. <br>Result: Consumer gains, but the Government loses 5 in revenue. The country pays 12 to buy something that used to cost the nation 10. If the loss in tariff revenue exceeds the gain in consumer surplus (efficiency loss of 2 per unit), national welfare falls.</p><p>A is incorrect: Domestic producers are usually protected; replacing them with imports is generally efficiency-enhancing (Trade Creation), not diversion.</p><p>C is incorrect: This is the definition of Trade Creation (replacing inefficient domestic production with efficient partner production), which is welfare-positive.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "Export Subsidy (Large Country)",
+    "stem": "When a large country implements an export subsidy, it experiences a deterioration in its terms of trade because:",
+    "options": {
+      "A": "The increase in domestic production floods the world market, driving down the world price of its exports.",
+      "B": "Domestic consumers demand higher wages to compensate for the higher domestic price of the good.",
+      "C": "Trading partners automatically retaliate with countervailing duties."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Large Country Market Power</h3><p><strong>A is correct.</strong> A subsidy encourages domestic producers to export more. If the country is 'large', this surge in supply on the global market significantly shifts the world supply curve outward. Basic supply/demand logic dictates that an increase in supply (with stable demand) lowers the equilibrium price. The 'Terms of Trade' is the ratio of Export Prices to Import Prices. Since the world price of the country's export falls, its Terms of Trade worsen. The country is effectively subsidizing foreign consumption at its own expense.</p><p>B is incorrect: While domestic consequences occur, this is not the mechanism for the <em>Terms of Trade</em> deterioration.</p><p>C is incorrect: Retaliation is a political risk, but the ToT deterioration happens via market mechanics (price suppression) even without retaliation.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Capital Restrictions",
+    "stem": "Which of the following best distinguishes a capital restriction from a trade restriction?",
+    "options": {
+      "A": "Capital restrictions limit the flow of financial assets, whereas trade restrictions limit the flow of goods and services.",
+      "B": "Capital restrictions are prohibited by the WTO, whereas trade restrictions are allowed under certain conditions.",
+      "C": "Capital restrictions affect the current account, whereas trade restrictions affect the capital account."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Balance of Payments Accounts</h3><p><strong>A is correct.</strong> The Balance of Payments has two main sides: the Current Account (Trade in Goods/Services) and the Capital/Financial Account (Trade in Assets/Ownership). Trade restrictions (tariffs, quotas) target the Current Account (real goods). Capital restrictions (controls on foreign ownership, repatriation limits) target the Financial Account (ownership of stocks, bonds, factories). The distinction is purely based on the <em>type</em> of item crossing the border: a car (trade) vs. a claim on a car factory (capital).</p><p>B is incorrect: The IMF monitors capital restrictions, but they are not strictly 'prohibited' in the same treaty sense as WTO rules, and many trade restrictions are also prohibited.</p><p>C is incorrect: It reverses the relationship. Trade restrictions hit the Current Account; Capital restrictions hit the Capital Account.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Trading Blocs (Economic Union)",
+    "stem": "Which feature is required for a regional trading bloc to be classified as an Economic Union but is NOT required for a Common Market?",
+    "options": {
+      "A": "Free movement of labor and capital.",
+      "B": "Coordination of economic institutions and harmonization of economic policies.",
+      "C": "A common external tariff against non-members."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Integration Depth</h3><p><strong>B is correct.</strong> Review the layers: <br>1. Customs Union = Common Tariff. <br>2. Common Market = Customs Union + Free Factors (Labor/Capital). <br>3. Economic Union = Common Market + <em>Harmonized Policy</em>. <br>In a Common Market, workers can move, but countries might still have vastly different tax rates or regulations. In an Economic Union, members set up supranational institutions (like the EU Commission) to coordinate economic policy, regulations, and fiscal rules to ensure the single market functions smoothly.</p><p>A is incorrect: Free movement of factors is the defining upgrade from Customs Union to Common Market.</p><p>C is incorrect: Common external tariff is the defining upgrade from FTA to Customs Union.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Grok",
+    "topic": "Comparative Advantage (Opportunity Cost)",
+    "stem": "Country A requires 10 hours to produce wheat and 20 hours to produce cloth. Country B requires 20 hours to produce wheat and 10 hours to produce cloth. According to the Ricardian model:",
+    "options": {
+      "A": "Country A has a comparative advantage in wheat.",
+      "B": "Country B has an absolute advantage in both goods.",
+      "C": "Trade will not occur because the labor costs are reciprocal."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Relative Opportunity Cost</h3><p><strong>A is correct.</strong> Calculate Opportunity Costs. <br>Country A: 1 Wheat = 0.5 Cloth (10/20). <br>Country B: 1 Wheat = 2 Cloth (20/10). <br>Since 0.5 < 2, Country A has the lower opportunity cost (gives up less cloth) to produce wheat. Therefore, A has the comparative advantage in wheat. <br>Conversely, for Cloth: <br>A: 1 Cloth = 2 Wheat. <br>B: 1 Cloth = 0.5 Wheat. <br>B has comparative advantage in Cloth. <br>Trade is mutually beneficial because they differ in relative costs.</p><p>B is incorrect: A is more efficient at Wheat (10 < 20), B is more efficient at Cloth (10 < 20). Neither has absolute advantage in <em>both</em>.</p><p>C is incorrect: Differences in relative costs are exactly <em>why</em> trade occurs.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Infant Industry Argument",
+    "stem": "The 'Infant Industry' argument for temporary trade protection is primarily based on the existence of:",
+    "options": {
+      "A": "Static economies of scale that require a large initial market share to lower average costs.",
+      "B": "Dynamic learning-by-doing effects where costs fall over time with cumulative production experience.",
+      "C": "Monopolistic competition in the global market preventing entry."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dynamic Comparative Advantage</h3><p><strong>B is correct.</strong> The classic Infant Industry argument posits that a country <em>could</em> have a comparative advantage in a sector, but currently lacks the know-how or scale. If exposed to mature foreign competition immediately, the industry would be crushed before it learns. Protection gives the industry a 'walled garden' to accumulate production experience. As cumulative output grows, workers learn, processes improve, and costs fall (Learning Curve). This is a <em>dynamic</em> argument—comparative advantage is acquired over time, not static.</p><p>A is incorrect: While economies of scale are relevant, the core of the <em>infant</em> argument is the <em>time-dependent</em> acquisition of efficiency (maturation), not just volume today.</p><p>C is incorrect: While barriers to entry matter, the justification relies on the internal cost evolution of the domestic firm, not just foreign market structure.</p>"
+  },
+  {
+    "id": 1,
+    "model": "GPT 5.2",
+    "topic": "Comparative Advantage vs. Absolute Advantage",
+    "stem": "Assertion (A): A country with an absolute advantage in producing all goods can still benefit from trade by specializing in goods where it has a comparative advantage.\nReason (R): Comparative advantage is determined by the opportunity cost of production, not the absolute resource cost.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Even if a country is more efficient at everything (absolute advantage), it gains by producing what it is *relatively* best at (lowest opportunity cost) and trading for the rest. Reason (R) correctly explains the mechanism: trade gains arise from differences in opportunity costs, not absolute efficiency."
+  },
+  {
+    "id": 2,
+    "model": "GPT 5.2",
+    "topic": "Tariffs in a Large Country",
+    "stem": "Assertion (A): A large country can theoretically increase its national welfare by imposing a tariff on imports, provided the trading partner does not retaliate.\nReason (R): By imposing a tariff, a large country forces foreign exporters to lower their prices to maintain market share, thereby improving the large country's terms of trade.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This is the 'optimal tariff' argument. For a large country, a tariff reduces world demand enough to lower the world price (terms of trade gain). If this gain exceeds the deadweight loss from distorted consumption/production, welfare rises. R correctly explains the mechanism (forcing exporters to absorb part of the tariff)."
+  },
+  {
+    "id": 3,
+    "model": "GPT 5.2",
+    "topic": "Voluntary Export Restraints (VERs)",
+    "stem": "Assertion (A): From the perspective of the importing country, a Voluntary Export Restraint (VER) is generally more costly than an equivalent tariff.\nReason (R): Under a VER, the 'quota rents' (the difference between the domestic price and world price) are captured by the foreign exporters rather than collected as government revenue by the importing country.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. With a tariff, the government gets revenue. With a VER, the foreign producers restrict supply, raising the price in the importing country, and they keep the extra profit (rent). This loss of revenue makes VERs welfare-inferior to tariffs for the importer. R correctly identifies the capture of rents as the reason."
+  },
+  {
+    "id": 4,
+    "model": "GPT 5.2",
+    "topic": "Trade Diversion in Customs Unions",
+    "stem": "Assertion (A): The formation of a customs union always increases the welfare of member countries.\nReason (R): A customs union eliminates tariffs between members, leading to trade creation where high-cost domestic production is replaced by lower-cost member imports.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false because customs unions can cause 'trade diversion'—replacing low-cost non-member imports with higher-cost member imports (due to the external tariff). If diversion > creation, welfare falls. Reason (R) is true; it correctly describes the 'trade creation' aspect, but this is not sufficient to make A true."
+  },
+  {
+    "id": 5,
+    "model": "GPT 5.2",
+    "topic": "Quota Rents",
+    "stem": "Assertion (A): An import quota and an equivalent tariff will always have the exact same effect on national welfare.\nReason (R): Both policy instruments restrict imports to the same quantity and raise the domestic price to the same level.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. While price/quantity effects are similar (R is true), the *welfare* effect differs depending on who gets the quota rents. If foreigners get the licenses, the home country loses the revenue it would have gained from a tariff. Thus, they are not welfare-equivalent."
+  },
+  {
+    "id": 6,
+    "model": "GPT 5.2",
+    "topic": "Current Account and Savings",
+    "stem": "Assertion (A): A country running a current account deficit must be investing more than it is saving.\nReason (R): The national income identity states that the Current Account equals National Savings minus Domestic Investment (CA = S - I).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. If CA is negative (deficit), then S - I must be negative, meaning I > S (Investment > Savings). R provides the fundamental accounting identity that explains this relationship."
+  },
+  {
+    "id": 7,
+    "model": "GPT 5.2",
+    "topic": "Infant Industry Argument",
+    "stem": "Assertion (A): The infant industry argument suggests that temporary trade protection can be beneficial for developing countries.\nReason (R): New industries in developing countries may lack the economies of scale and experience ('learning by doing') required to compete with established foreign firms initially.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. This is the standard economic justification for temporary protectionism. R correctly explains the mechanism: without protection, the industry cannot survive long enough to lower its costs and become competitive."
+  },
+  {
+    "id": 8,
+    "model": "GPT 5.2",
+    "topic": "Heckscher-Ohlin Model",
+    "stem": "Assertion (A): According to the Heckscher-Ohlin model, a capital-abundant country will export labor-intensive goods.\nReason (R): Countries have a comparative advantage in producing goods that intensively use their relatively abundant factors of production.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false; the model predicts a capital-abundant country will export *capital-intensive* goods, not labor-intensive ones. Reason (R) is true; it is the core theorem of the Heckscher-Ohlin model."
+  },
+  {
+    "id": 9,
+    "model": "GPT 5.2",
+    "topic": "Currency Depreciation and Trade Balance",
+    "stem": "Assertion (A): A currency depreciation will immediately improve a country's trade balance.\nReason (R): The Marshall-Lerner condition states that depreciation improves the trade balance only if the sum of the price elasticities of demand for exports and imports is greater than one.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false due to the 'J-curve effect'. Initially, the trade balance often worsens because volumes don't adjust immediately while import prices rise. It takes time. Reason (R) is true; it states the condition required for long-term improvement, but does not support the 'immediate' claim in A."
+  },
+  {
+    "id": 10,
+    "model": "GPT 5.2",
+    "topic": "Export Subsidies",
+    "stem": "Assertion (A): An export subsidy imposed by a large country increases the welfare of the exporting country.\nReason (R): Export subsidies increase the price received by domestic producers, encouraging higher production and export volumes.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. For a large country, an export subsidy worsens the terms of trade (lowers world price of exports) and causes deadweight loss from overproduction/consumption distortion. The net welfare effect is negative. Reason (R) is true regarding the mechanism on producers, but this does not lead to increased national welfare."
+  },
+  {
+    "id": 11,
+    "model": "GPT 5.2",
+    "topic": "WTO and Most Favored Nation",
+    "stem": "Assertion (A): Under the WTO's 'Most Favored Nation' (MFN) principle, a country must apply the same tariff rates to all WTO members.\nReason (R): Regional Trading Agreements (RTAs) like the EU or USMCA are permitted exceptions to the MFN principle.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are true. A defines the MFN rule. R describes a major exception (Article XXIV of GATT). However, R does not *explain* A. The existence of exceptions does not explain the rule itself."
+  },
+  {
+    "id": 12,
+    "model": "GPT 5.2",
+    "topic": "Capital Restrictions",
+    "stem": "Assertion (A): Capital restrictions are generally effective at permanently maintaining an overvalued exchange rate.\nReason (R): Capital controls limit the ability of domestic residents to sell domestic currency and buy foreign assets, reducing selling pressure on the currency.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. While they can provide temporary relief, capital restrictions are notoriously porous and difficult to enforce long-term against fundamental misalignments. They eventually fail or create massive distortions. Reason (R) is true regarding the short-term mechanism."
+  },
+  {
+    "id": 13,
+    "model": "GPT 5.2",
+    "topic": "Balance of Payments Identity",
+    "stem": "Assertion (A): A country with a Current Account surplus must have a Capital and Financial Account deficit (excluding official reserve changes).\nReason (R): The Balance of Payments must sum to zero; therefore, a net inflow of money from trade (exports > imports) must be matched by a net outflow of money for investment (purchasing foreign assets).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both are true. BOP = CA + FA + Capital Account = 0. If CA is positive, the rest must be negative. R correctly explains the logic: you can't accumulate claims on foreigners (surplus) without actually buying those claims (financial outflow)."
+  },
+  {
+    "id": 14,
+    "model": "GPT 5.2",
+    "topic": "Offshoring and Labor",
+    "stem": "Assertion (A): Offshoring of production to low-wage countries necessarily reduces the average real wage in the domestic economy.\nReason (R): Offshoring functions similarly to technological progress, allowing the domestic economy to specialize in higher-value tasks, which can increase overall productivity and average wages.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion (A) is false. While it may hurt *specific* groups of workers (distributional effect), standard trade theory suggests it raises aggregate productivity and thus can raise *average* real wages. Reason (R) is true and explains why A is false (the productivity gain argument)."
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Theories of International Trade",
+    "stem": "Consider the following statements regarding the sources of comparative advantage and gains from trade:\n(1) The Ricardian model posits that comparative advantage arises primarily from differences in labor productivity and technology between countries.\n(2) The Heckscher-Ohlin model attributes comparative advantage to differences in consumer preferences rather than factor endowments.\n(3) Newer trade models suggest that countries may trade similar goods (intra-industry trade) to exploit economies of scale and provide greater product variety.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; the Ricardian model focuses on technological differences (labor productivity) as the source of comparative advantage. Statement (2) is incorrect; the Heckscher-Ohlin model attributes comparative advantage to differences in factor endowments (capital and labor abundance), not consumer preferences. Statement (3) is correct; modern trade theories (like Krugman's) explain intra-industry trade through increasing returns to scale (economies of scale) and consumer demand for variety, even between similar economies. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Tariffs in a Small Country",
+    "stem": "A small country imposes a tariff on an imported good. Consider the following statements regarding the welfare effects:\n(1) The domestic price of the good increases by the full amount of the tariff, leading to an increase in domestic production.\n(2) Consumer surplus decreases by an amount equal to the gain in producer surplus plus the government revenue collected.\n(3) The net welfare loss (deadweight loss) arises because the tariff causes both production inefficiencies and consumption inefficiencies.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "C",
+    "explanation": "Statement (1) is correct; for a small country (price taker), the domestic price rises by the full tariff amount, incentivizing higher domestic supply. Statement (2) is incorrect; consumer surplus decreases by *more* than the sum of producer surplus gain and government revenue; the difference is the deadweight loss. Statement (3) is correct; the deadweight loss consists of two triangles: one representing production distortion (producing at higher marginal cost) and one representing consumption distortion (consumers priced out of the market). Therefore, statements (1) and (3) are correct. Option A and B are incorrect due to statement (2)."
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Tariffs in a Large Country",
+    "stem": "Consider the economic implications when a large country imposes a tariff on imports:\n(1) A large country can force foreign exporters to lower their prices to maintain market share, effectively improving the large country's terms of trade.\n(2) It is theoretically possible for a large country to experience a net increase in national welfare if the terms of trade gain exceeds the deadweight loss from reduced trade volume.\n(3) Unlike a small country, a large country's tariff does not distort domestic consumption or production decisions.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; because the country is a large importer, its reduced demand forces world prices down, improving its terms of trade. Statement (2) is correct; this is the 'optimal tariff' argument where the gain from lower import prices outweighs the efficiency loss. Statement (3) is incorrect; the tariff still raises the domestic price (even if by less than the full tariff) relative to the free trade price, distorting domestic production and consumption decisions. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Quotas vs. Tariffs",
+    "stem": "An analyst is comparing import quotas and tariffs. Consider the following statements:\n(1) If a government auctions import licenses for a fee, the welfare effect of a quota can be identical to that of an equivalent tariff.\n(2) Quota rents represent the profit that accrues to the government regardless of how the quota is administered.\n(3) If the domestic demand for the import rises, a quota results in a higher domestic price and no increase in imports, whereas a tariff results in higher imports at a constant domestic price.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; if the government captures the quota rents via auction, the revenue matches tariff revenue, making the welfare analysis identical (assuming perfect competition). Statement (2) is incorrect; quota rents often accrue to foreign exporters (if given licenses) or domestic importers, not necessarily the government. Statement (3) is correct; under a quota, supply is fixed, so demand shifts raise prices; under a tariff, the price is fixed (world price + tariff), so demand shifts increase quantity imported. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Export Subsidies",
+    "stem": "Regarding the effects of government export subsidies, consider the following statements:\n(1) An export subsidy increases the price of the subsidized good in the domestic market of the exporting country.\n(2) For a large country, an export subsidy leads to an increase in the world price of the exported good.\n(3) The net welfare of the exporting country generally declines because the cost of the subsidy and the associated deadweight losses exceed the gain in producer surplus.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; producers prefer to export for the higher subsidized price, reducing domestic supply and driving up the domestic price. Statement (2) is incorrect; for a large country, increasing supply to the world market drives the *world* price down (worsening terms of trade). Statement (3) is correct; the government pays for the subsidy (cost) and consumers lose surplus (higher prices), which together outweigh the producer surplus gain, leading to a net welfare loss. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Regional Trading Blocs",
+    "stem": "Consider the hierarchy and characteristics of regional trading agreements:\n(1) In a Free Trade Area (FTA), member countries remove trade barriers among themselves but maintain independent trade policies toward non-members.\n(2) A Customs Union extends an FTA by adopting a common external trade policy against non-members.\n(3) A Common Market is distinguished from a Customs Union by the adoption of a common currency among all member states.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; this is the definition of an FTA (e.g., USMCA). Statement (2) is correct; a Customs Union adds a common external tariff to the FTA structure. Statement (3) is incorrect; a Common Market allows free movement of factors of production (labor, capital) but does not necessarily require a common currency; a common currency is a feature of a Monetary Union. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Trade Creation and Diversion",
+    "stem": "Regarding the static effects of regional integration, consider the following statements:\n(1) Trade creation occurs when high-cost domestic production is replaced by lower-cost imports from a member country within the trading bloc.\n(2) Trade diversion occurs when lower-cost imports from a non-member country are replaced by higher-cost imports from a member country due to preferential tariff treatment.\n(3) Regional integration always increases national welfare because trade creation effects are guaranteed to exceed trade diversion effects.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; this improves efficiency and welfare. Statement (2) is correct; this reduces efficiency because the country is sourcing from a less efficient producer just to save on tariffs. Statement (3) is incorrect; the net welfare effect is ambiguous and depends on whether trade creation outweighs trade diversion. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "International Trade Organizations",
+    "stem": "Consider the functions of major international organizations:\n(1) The World Trade Organization (WTO) is primarily responsible for providing long-term development loans to low-income countries.\n(2) The International Monetary Fund (IMF) focuses on ensuring the stability of the international monetary system and providing temporary balance of payments support.\n(3) The World Bank's main objective is to reduce poverty and promote economic development, often through funding infrastructure and institutional reform.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is incorrect; the WTO regulates trade rules and settles disputes; providing development loans is the function of the World Bank. Statement (2) is correct; the IMF monitors exchange rates and lends to countries in financial crises (balance of payments problems). Statement (3) is correct; the World Bank targets development and poverty reduction. Therefore, statements (2) and (3) are correct. Option A and C are incorrect due to statement (1)."
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Voluntary Export Restraints (VERs)",
+    "stem": "Consider the economic impact of a Voluntary Export Restraint (VER):\n(1) A VER is a quota on trade imposed by the exporting country, typically at the request of the importing country's government.\n(2) Unlike a tariff, a VER generates government revenue for the importing country.\n(3) The 'rents' generated by the supply restriction in a VER are typically captured by the foreign exporters, resulting in a welfare loss for the importing country.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; the exporter 'voluntarily' limits shipments to avoid harsher measures like tariffs. Statement (2) is incorrect; the importing government collects no revenue; the price rise benefits the seller. Statement (3) is correct; because the foreign exporters sell a limited quantity at a higher price, they capture the quota rents, making VERs more damaging to the importing country's welfare than an equivalent tariff. Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Balance of Payments",
+    "stem": "Regarding the balance of payments accounts, consider the following statements:\n(1) A current account deficit implies that a country's domestic savings are insufficient to finance its domestic investment.\n(2) The capital account records payments for goods and services, as well as income from foreign investments.\n(3) To finance a current account deficit, a country must generate a surplus in its capital and financial accounts (net borrowing or asset sales).\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "B",
+    "explanation": "Statement (1) is correct; the accounting identity is (S - I) + (T - G) = CA. If CA is negative, investment exceeds national savings. Statement (2) is incorrect; goods/services and income are in the *current* account. The capital account (financial account) tracks asset transfers. Statement (3) is correct; inflows of capital (borrowing) are needed to pay for the excess imports (current account deficit). Therefore, statements (1) and (3) are correct. Option A and C are incorrect due to statement (2)."
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Capital Restrictions",
+    "stem": "Consider the nature and purpose of capital restrictions:\n(1) Capital restrictions limit the ability of domestic residents to own foreign assets or foreigners to own domestic assets.\n(2) In the long run, restricting capital outflows generally increases the cost of capital for domestic firms by limiting access to foreign funding.\n(3) Capital restrictions are synonymous with trade protectionism, such as tariffs on imported machinery.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; this is the definition of capital controls (financial openness). Statement (2) is correct; by isolating the domestic market, risk premiums rise and the pool of capital shrinks, raising costs. Statement (3) is incorrect; trade protectionism applies to *goods and services* (current account), whereas capital restrictions apply to *financial assets* (capital account). Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Economic Union vs. Common Market",
+    "stem": "An analyst is distinguishing between different stages of regional integration. Consider the following statements:\n(1) A Common Market allows for the free movement of labor and capital among member countries, whereas a Customs Union does not.\n(2) An Economic Union requires members to harmonize economic policies and establish common economic institutions.\n(3) Members of an Economic Union must necessarily adopt a single common currency.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; factor mobility (labor/capital) is the key addition moving from Customs Union to Common Market. Statement (2) is correct; Economic Unions involve coordinating fiscal/monetary policies and institutions (e.g., EU). Statement (3) is incorrect; a common currency is a feature of a *Monetary Union*. An Economic Union can exist without a single currency (though many do adopt one). Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Costs of International Trade",
+    "stem": "While trade provides net benefits, it also generates costs. Consider the following statements:\n(1) International trade tends to equalize factor prices, which can lead to lower wages for scarce factors of production in import-competing industries.\n(2) The 'infant industry' argument suggests that new industries require temporary protection from foreign competition to develop economies of scale.\n(3) Trade liberalization typically results in immediate and costless reallocation of resources from declining to expanding sectors.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; Stolper-Samuelson theorem suggests trade hurts the scarce factor (e.g., unskilled labor in developed countries). Statement (2) is correct; this is a standard argument for temporary protection (though debated in practice). Statement (3) is incorrect; resource reallocation is often painful (unemployment) and slow (frictional unemployment), not immediate or costless. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Geopolitics and Globalization",
+    "stem": "Consider the relationship between geopolitics and global economic integration:\n(1) Globalization is characterized by the integration of goods, capital, and information markets, often driven by private sector actors.\n(2) Geopolitical risk tends to increase when countries prioritize national self-determination and security over economic cooperation (nationalism).\n(3) 'Reshoring' supply chains is a strategy used by multinational corporations to increase their exposure to global efficiency gains and reduce domestic production costs.\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only"
+    },
+    "correct_answer": "A",
+    "explanation": "Statement (1) is correct; globalization involves cross-border integration. Statement (2) is correct; nationalism and non-cooperation heighten geopolitical risk. Statement (3) is incorrect; 'Reshoring' is the *reversal* of globalization—bringing production back home to reduce supply chain risk, usually at the cost of *higher* production costs and *reduced* global efficiency exposure. Therefore, statements (1) and (2) are correct. Option B and C are incorrect due to statement (3)."
+  }
+]
+
+
