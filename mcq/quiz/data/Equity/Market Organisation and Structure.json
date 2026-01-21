@@ -55,53 +55,53 @@
     "id": 5,
     "model": "Gemini",
     "topic": "Limit Order Pricing Logic",
-    "stem": "A limit sell order for $50 should fill at a price that is:",
+    "stem": "A limit sell order for USD 50 should fill at a price that is:",
     "options": {
-      "A": "Exactly $50 or any price below $50",
-      "B": "Exactly $50 or any price above $50",
+      "A": "Exactly USD 50 or any price below USD 50",
+      "B": "Exactly USD 50 or any price above USD 50",
       "C": "The price of the current best bid"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Limit Constraints</h3><p><strong>B is correct.</strong> A limit order sets a price boundary. For a sell order, the limit price of $50 acts as a minimum acceptable price (a price floor). The broker must aim for the best price, which is the highest possible. Therefore, the order can execute at $50 or any price higher (better for the seller), but never lower.</p><p>A is incorrect because selling below $50 violates the limit constraint and results in a worse price than the minimum acceptable.</p><p>C is incorrect because a marketable limit order may fill at the best bid, but it would only fill at the best bid <em>up to</em> the limit price; the general instruction allows for better (higher) prices.</p>"
+    "explanation": "<h3>First Principles Thinking: Limit Constraints</h3><p><strong>B is correct.</strong> A limit order sets a price boundary. For a sell order, the limit price of USD 50 acts as a minimum acceptable price (a price floor). The broker must aim for the best price, which is the highest possible. Therefore, the order can execute at USD 50 or any price higher (better for the seller), but never lower.</p><p>A is incorrect because selling below USD 50 violates the limit constraint and results in a worse price than the minimum acceptable.</p><p>C is incorrect because a marketable limit order may fill at the best bid, but it would only fill at the best bid <em>up to</em> the limit price; the general instruction allows for better (higher) prices.</p>"
   },
   {
     "id": 6,
     "model": "Gemini",
     "topic": "Order Positioning",
-    "stem": "If the current market is $15.00 bid and $15.05 ask, a limit buy order placed at $14.95 is:",
+    "stem": "If the current market is USD 15.00 bid and USD 15.05 ask, a limit buy order placed at USD 14.95 is:",
     "options": {
       "A": "Marketable",
       "B": "Making a new market",
       "C": "Behind the market"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Price Priority Rule</h3><p><strong>C is correct.</strong> Price priority dictates that the highest bid gets filled first. The current best bid is $15.00. A buy order at $14.95 is below the current best bid, placing it further back in the queue, or 'behind the market'. It will only execute if all bids down to $14.95 are hit by sellers.</p><p>A is incorrect because marketable orders are priced to execute immediately (at or above the $15.05 ask).</p><p>B is incorrect because making a new market requires the price to improve the current best quote (i.e., a buy order between $15.00 and $15.05).</p>"
+    "explanation": "<h3>First Principles Thinking: Price Priority Rule</h3><p><strong>C is correct.</strong> Price priority dictates that the highest bid gets filled first. The current best bid is USD 15.00. A buy order at USD 14.95 is below the current best bid, placing it further back in the queue, or 'behind the market'. It will only execute if all bids down to USD 14.95 are hit by sellers.</p><p>A is incorrect because marketable orders are priced to execute immediately (at or above the USD 15.05 ask).</p><p>B is incorrect because making a new market requires the price to improve the current best quote (i.e., a buy order between USD 15.00 and USD 15.05).</p>"
   },
   {
     "id": 7,
     "model": "Gemini",
     "topic": "Execution Principle",
-    "stem": "If a marketable limit buy order is entered at $60, and the best available ask price is $59.50, the order should execute at:",
+    "stem": "If a marketable limit buy order is entered at USD 60, and the best available ask price is USD 59.50, the order should execute at:",
     "options": {
-      "A": "$60.00",
-      "B": "$59.50",
-      "C": "The midpoint of $59.75"
+      "A": "USD 60.00",
+      "B": "USD 59.50",
+      "C": "The midpoint of USD 59.75"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Best Execution</h3><p><strong>B is correct.</strong> The principle of best execution mandates that the broker/exchange must obtain the most favorable terms for the client. The limit price ($60) is the maximum acceptable price. Since a seller is available at the lower price of $59.50, the order must execute at $59.50 to satisfy the best execution requirement.</p><p>A is incorrect because paying $60 when $59.50 is available violates the fiduciary duty of best execution.</p><p>C is incorrect because trades occur at discrete posted prices, not arbitrary midpoints, unless negotiated in a dark pool or similar venue.</p>"
+    "explanation": "<h3>First Principles Thinking: Best Execution</h3><p><strong>B is correct.</strong> The principle of best execution mandates that the broker/exchange must obtain the most favorable terms for the client. The limit price (USD 60) is the maximum acceptable price. Since a seller is available at the lower price of USD 59.50, the order must execute at USD 59.50 to satisfy the best execution requirement.</p><p>A is incorrect because paying USD 60 when USD 59.50 is available violates the fiduciary duty of best execution.</p><p>C is incorrect because trades occur at discrete posted prices, not arbitrary midpoints, unless negotiated in a dark pool or similar venue.</p>"
   },
   {
     "id": 8,
     "model": "Gemini",
     "topic": "Making a New Market",
-    "stem": "The best bid is $90.00 and the best ask is $90.50. A limit sell order is submitted at $90.25. This order:",
+    "stem": "The best bid is USD 90.00 and the best ask is USD 90.50. A limit sell order is submitted at USD 90.25. This order:",
     "options": {
       "A": "Takes liquidity and executes immediately",
       "B": "Improves the market spread and joins the queue",
       "C": "Is behind the market's current best quote"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Spread Improvement</h3><p><strong>B is correct.</strong> The limit sell price ($90.25) is lower than the current best ask ($90.50) but higher than the best bid ($90.00). It cannot trade immediately, but it improves the market for buyers by lowering the lowest price available for sellers. It establishes a new best ask, thereby tightening the market spread (now $90.00 bid, $90.25 ask).</p><p>A is incorrect because to execute immediately, the sell order would need to be priced at or below the best bid ($90.00).</p><p>C is incorrect because it is an improvement on the best ask, not behind it.</p>"
+    "explanation": "<h3>First Principles Thinking: Spread Improvement</h3><p><strong>B is correct.</strong> The limit sell price (USD 90.25) is lower than the current best ask (USD 90.50) but higher than the best bid (USD 90.00). It cannot trade immediately, but it improves the market for buyers by lowering the lowest price available for sellers. It establishes a new best ask, thereby tightening the market spread (now USD 90.00 bid, USD 90.25 ask).</p><p>A is incorrect because to execute immediately, the sell order would need to be priced at or below the best bid (USD 90.00).</p><p>C is incorrect because it is an improvement on the best ask, not behind it.</p>"
   },
   {
     "id": 9,
@@ -198,14 +198,14 @@
     "id": 16,
     "model": "Gemini",
     "topic": "Market Spread Calculation",
-    "stem": "Broker A quotes $50.00 Bid, $50.15 Ask. Broker B quotes $50.05 Bid, $50.20 Ask. What is the market bid-ask spread?",
+    "stem": "Broker A quotes USD 50.00 Bid, USD 50.15 Ask. Broker B quotes USD 50.05 Bid, USD 50.20 Ask. What is the market bid-ask spread?",
     "options": {
-      "A": "$0.20",
-      "B": "$0.10",
-      "C": "$0.15"
+      "A": "USD 0.20",
+      "B": "USD 0.10",
+      "C": "USD 0.15"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15$. The market spread is $\\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid ($50.00) and the worst possible ask ($50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
+    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15$. The market spread is $\\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid (USD 50.00) and the worst possible ask (USD 50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
   },
   {
     "id": 17,
@@ -680,14 +680,14 @@
     "id": 3,
     "model": "Grok",
     "topic": "Margin and Leverage",
-    "stem": "An investor buys a stock at $50 using 40% initial margin. If the maintenance margin is 25%, at what price will a margin call first occur?",
+    "stem": "An investor buys a stock at USD 50 using 40% initial margin. If the maintenance margin is 25%, at what price will a margin call first occur?",
     "options": {
-      "A": "$30.00",
-      "B": "$40.00",
-      "C": "$33.33"
+      "A": "USD 30.00",
+      "B": "USD 40.00",
+      "C": "USD 33.33"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = $50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = $50 \times 0.60 = $30. <br>Equity at any price $P$ is $P - \text{Loan}$. <br>The critical condition is: $\frac{P - \text{Loan}}{P} = \text{Maintenance Margin}$. <br>Substitute values: $\frac{P - 30}{P} = 0.25$. <br>Solve for $P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to $40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
+    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = USD 50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = USD 50 \times 0.60 = USD 30. <br>Equity at any price $P$ is $P - \text{Loan}$. <br>The critical condition is: $\frac{P - \text{Loan}}{P} = \text{Maintenance Margin}$. <br>Substitute values: $\frac{P - 30}{P} = 0.25$. <br>Solve for $P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to USD 40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
   },
   {
     "id": 4,
@@ -732,27 +732,27 @@
     "id": 7,
     "model": "Grok",
     "topic": "Short Selling Mechanics",
-    "stem": "An investor short sells a stock at $100 and deposits an initial margin of 50%. If the stock price rises to $110, what is the investor's return on equity (ignoring interest and commissions)?",
+    "stem": "An investor short sells a stock at USD 100 and deposits an initial margin of 50%. If the stock price rises to USD 110, what is the investor's return on equity (ignoring interest and commissions)?",
     "options": {
       "A": "-20%",
       "B": "-10%",
       "C": "-25%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = $100 \times 0.50 = $50$. <br>Price change = $110 - $100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return $\times$ Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
+    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = USD 100 \times 0.50 = $50$. <br>Price change = USD 110 - USD 100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return $\times$ Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
   },
   {
     "id": 8,
     "model": "Grok",
     "topic": "Stop Order Physics",
-    "stem": "A trader holding a long position at $45 wants to protect against a significant drop but is worried about selling during a temporary flash crash. To limit the loss while controlling the execution price, the trader should submit a:",
+    "stem": "A trader holding a long position at USD 45 wants to protect against a significant drop but is worried about selling during a temporary flash crash. To limit the loss while controlling the execution price, the trader should submit a:",
     "options": {
-      "A": "Stop-limit sell order: Stop $40, Limit $38.",
-      "B": "Stop-loss market order: Stop $40.",
-      "C": "Market-if-touched sell order: Stop $45."
+      "A": "Stop-limit sell order: Stop USD 40, Limit USD 38.",
+      "B": "Stop-loss market order: Stop USD 40.",
+      "C": "Market-if-touched sell order: Stop USD 45."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Stop vs. Stop-Limit</h3><p><strong>A is correct.</strong> Analyze the objective: 1) Trigger a sale if price drops (Stop mechanism). 2) Control the execution price (Limit mechanism). <br>A Stop-loss market order triggers at $40 and becomes a market order, which guarantees execution but <em>not price</em>—risky in a flash crash where price could gap to $20. <br>A Stop-limit order triggers when the price hits $40, but then becomes a limit order to sell at $38 (or better). This prevents selling below $38, solving the 'flash crash' price concern, though it introduces the risk of non-execution if the price gaps below $38 instantly.</p><p>B is incorrect: A stop market order accepts any price once triggered, failing the user's constraint to control execution price.</p><p>C is incorrect: Market-if-touched is typically used to take profits (sell when price rises), not stop losses, and becoming a market order fails the price control requirement.</p>"
+    "explanation": "<h3>First Principles Thinking: Stop vs. Stop-Limit</h3><p><strong>A is correct.</strong> Analyze the objective: 1) Trigger a sale if price drops (Stop mechanism). 2) Control the execution price (Limit mechanism). <br>A Stop-loss market order triggers at USD 40 and becomes a market order, which guarantees execution but <em>not price</em>—risky in a flash crash where price could gap to USD 20. <br>A Stop-limit order triggers when the price hits USD 40, but then becomes a limit order to sell at USD 38 (or better). This prevents selling below USD 38, solving the 'flash crash' price concern, though it introduces the risk of non-execution if the price gaps below USD 38 instantly.</p><p>B is incorrect: A stop market order accepts any price once triggered, failing the user's constraint to control execution price.</p><p>C is incorrect: Market-if-touched is typically used to take profits (sell when price rises), not stop losses, and becoming a market order fails the price control requirement.</p>"
   },
   {
     "id": 9,
@@ -771,14 +771,14 @@
     "id": 10,
     "model": "Grok",
     "topic": "Market Microstructure",
-    "stem": "In a quote-driven market, a dealer quotes a bid of $20.00 and an ask of $20.10. If an investor immediately buys from the dealer and then sells back to the dealer, the investor's immediate loss (ignoring commissions) represents:",
+    "stem": "In a quote-driven market, a dealer quotes a bid of USD 20.00 and an ask of USD 20.10. If an investor immediately buys from the dealer and then sells back to the dealer, the investor's immediate loss (ignoring commissions) represents:",
     "options": {
       "A": "The dealer's bid-ask spread, which is the compensation for providing immediacy and bearing inventory risk.",
       "B": "The market impact cost, which reflects the movement of the quote due to the information content of the trade.",
       "C": "The opportunity cost, representing the price improvement missed by not using a limit order."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Bid-Ask Spread</h3><p><strong>A is correct.</strong> Trace the cash flows. The investor buys at the Ask ($20.10) and sells at the Bid ($20.00). The loss is $0.10. This amount stays with the dealer. Why? The dealer stands ready to trade at any time (offering immediacy). The spread compensates the dealer for 1) Inventory risk (holding the asset), 2) Order processing costs, and 3) Adverse selection risk (trading against informed traders). The 'round-trip' cost to the liquidity taker is exactly the bid-ask spread.</p><p>B is incorrect: Market impact refers to the price <em>moving</em> against you (e.g., Ask moves to 20.15) due to trade size. This example assumes fixed quotes.</p><p>C is incorrect: Opportunity cost usually refers to unfilled orders or missed trades, not the explicit cost of crossing the spread.</p>"
+    "explanation": "<h3>First Principles Thinking: Bid-Ask Spread</h3><p><strong>A is correct.</strong> Trace the cash flows. The investor buys at the Ask (USD 20.10) and sells at the Bid (USD 20.00). The loss is USD 0.10. This amount stays with the dealer. Why? The dealer stands ready to trade at any time (offering immediacy). The spread compensates the dealer for 1) Inventory risk (holding the asset), 2) Order processing costs, and 3) Adverse selection risk (trading against informed traders). The 'round-trip' cost to the liquidity taker is exactly the bid-ask spread.</p><p>B is incorrect: Market impact refers to the price <em>moving</em> against you (e.g., Ask moves to 20.15) due to trade size. This example assumes fixed quotes.</p><p>C is incorrect: Opportunity cost usually refers to unfilled orders or missed trades, not the explicit cost of crossing the spread.</p>"
   },
   {
     "id": 11,
@@ -810,14 +810,14 @@
     "id": 13,
     "model": "Grok",
     "topic": "Leverage Ratios",
-    "stem": "A trader uses a margin loan to buy securities. The position value is $100,000 and the equity provided is $40,000. If the asset price increases by 5%, the return on the trader's equity is:",
+    "stem": "A trader uses a margin loan to buy securities. The position value is USD 100,000 and the equity provided is USD 40,000. If the asset price increases by 5%, the return on the trader's equity is:",
     "options": {
       "A": "12.5%",
       "B": "5.0%",
       "C": "20.0%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5$. <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>$\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}$. <br>$ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = $5,000. Equity = $40,000. $5,000/$40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
+    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5$. <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>$\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}$. <br>$ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = USD 5,000. Equity = USD 40,000. USD 5,000/USD 40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
   },
   {
     "id": 14,
