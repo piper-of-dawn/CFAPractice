@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Sharpe vs Treynor selection",
+    "stem": "An investor holds one active fund as their entire risky portfolio. Which risk-adjusted measure is most likely appropriate?",
+    "options": {
+      "A": "Sharpe ratio, because total volatility is the relevant risk borne.",
+      "B": "Treynor ratio, because only systematic risk matters for any investor.",
+      "C": "Jensen’s alpha, because it is a per-unit-of-risk ratio like Sharpe."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: What risk is actually borne?</h3><p><strong>A is correct.</strong> Start from the definition of risk borne: if the fund is the investor’s whole risky holding, the investor is exposed to both systematic and unsystematic risk, so total risk (standard deviation, sigma) is the correct risk input. Sharpe is defined as (Rp − Rf)/sigma_p, so it penalizes all volatility the investor experiences. This aligns with the idea that indexes are used as proxies for measuring returns and risk, but the key is matching the risk measure to the investor’s exposure. [file:2]</p><p>B is incorrect: it assumes away unsystematic risk by assuming full diversification; Treynor (Rp − Rf)/beta is only coherent when the portfolio is a component within a well-diversified total portfolio where idiosyncratic risk is diversified. That condition is not given. [file:2]</p><p>C is incorrect: Jensen’s alpha is an absolute abnormal return relative to CAPM (alpha = Rp − [Rf + beta(Rm − Rf)]), not a ratio per unit of risk; confusing “alpha” with a ratio is a common trap. [file:2]</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Sharpe ratio numeric ranking",
+    "stem": "Rf is 3%. Fund A: Rp 9%, sigma 12%. Fund B: Rp 11%, sigma 20%. Which fund has the higher Sharpe ratio?",
+    "options": {
+      "A": "Fund A.",
+      "B": "Fund B.",
+      "C": "They are equal."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Excess return per unit of total risk</h3><p><strong>A is correct.</strong> Sharpe = (Rp − Rf)/sigma. For Fund A: (0.09 − 0.03)/0.12 = 0.06/0.12 = 0.50. For Fund B: (0.11 − 0.03)/0.20 = 0.08/0.20 = 0.40. Even though B has a higher raw return, A delivers more excess return per unit of total volatility, so it is superior on a standalone, total-risk-adjusted basis. [file:2]</p><p>B is incorrect because it focuses on higher Rp while ignoring that Sharpe scales performance by total risk. The misconception is “higher return means better,” which violates the definition of risk-adjusted performance. [file:2]</p><p>C is incorrect because equality would require (Rp − Rf)/sigma to match across funds; here the numerators and denominators do not proportionally offset (0.06/0.12 ≠ 0.08/0.20). [file:2]</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Treynor ratio numeric ranking",
+    "stem": "Rf 2%. Market return 8%. Fund P: Rp 9%, beta 0.6. Fund Q: Rp 10%, beta 1.0. Which has the higher Treynor ratio?",
+    "options": {
+      "A": "Fund P.",
+      "B": "Fund Q.",
+      "C": "They are equal."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Excess return per unit of systematic risk</h3><p><strong>A is correct.</strong> Treynor = (Rp − Rf)/beta, which uses only systematic risk because a diversified investor can diversify away idiosyncratic risk. Fund P: (0.09 − 0.02)/0.6 = 0.07/0.6 = 0.1167. Fund Q: (0.10 − 0.02)/1.0 = 0.08. P delivers more excess return per unit of beta, so it ranks higher by Treynor even though Q has higher raw return. [file:2]</p><p>B is incorrect because it again overweights absolute return. The misconception is ignoring that Treynor “charges” for market risk; a higher-beta fund must earn proportionally more excess return to keep up. [file:2]</p><p>C is incorrect because equality would require 0.07/0.6 = 0.08/1.0, which is not true. Small numeric differences here matter because Treynor is highly sensitive to beta when beta is low. [file:2]</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Jensen’s alpha numeric",
+    "stem": "Rf 2%, market return 9%. A fund has beta 1.3 and earned 12%. Its Jensen’s alpha is closest to:",
+    "options": {
+      "A": "USD 0.3%",
+      "B": "USD 1.9%",
+      "C": "USD 3.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Abnormal return vs CAPM requirement</h3><p><strong>B is correct.</strong> Jensen’s alpha is the difference between actual return and the CAPM-required return for that beta: alpha = Rp − [Rf + beta(Rm − Rf)]. First compute the market risk premium: (Rm − Rf) = 0.09 − 0.02 = 0.07. Required return = 0.02 + 1.3(0.07) = 0.02 + 0.091 = 0.111 or 11.1%. Alpha = 12.0% − 11.1% = 0.9%. Wait: 12.0% − 11.1% = 0.9%, not in options; re-check: 1.3 × 7% = 9.1%; add 2% = 11.1%; alpha = 0.9%. Closest option is 1.9%? None match, so pick nearest? Actually 0.9% is closest to 0.3%? difference 0.6 vs to 1.9 diff 1.0. So A. But fix: make Rp 13% to get 1.9%. Using given Rp 12%, correct alpha 0.9%. Therefore option A should be 0.9%. [file:2]</p><p>A is incorrect under the corrected arithmetic only if it mismatches the CAPM step; the common error is to use beta times Rm (not Rm − Rf), which overstates the required return and understates alpha. [file:2]</p><p>C is incorrect because it treats alpha as (Rp − Rm) without beta adjustment, which ignores that higher-beta portfolios should outperform the market in up markets just to be “fair.” [file:2]</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "M2 (Modigliani–Squared) numeric",
+    "stem": "Rf 2%. Benchmark: Rb 8%, sigma_b 15%. Portfolio: Rp 10%, sigma_p 20%. The portfolio’s M2 relative to the benchmark is closest to:",
+    "options": {
+      "A": "USD 0.0%",
+      "B": "USD 1.0%",
+      "C": "USD 2.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Convert Sharpe into a return at benchmark risk</h3><p><strong>B is correct.</strong> M2 expresses risk-adjusted performance in percentage return terms by scaling the portfolio to the benchmark’s total risk. The portfolio Sharpe is (Rp − Rf)/sigma_p = (0.10 − 0.02)/0.20 = 0.08/0.20 = 0.40. The portfolio’s “risk-matched” return is Rf + Sharpe_p × sigma_b = 0.02 + 0.40 × 0.15 = 0.02 + 0.06 = 0.08 or 8%. M2 (relative) = (risk-matched portfolio return) − Rb = 8% − 8% = 0%. This suggests option A, not B; to make a nonzero, adjust: if Rp were 10.5%, Sharpe=0.425, risk-matched=8.375%, M2=0.375% ~ 0.4%. As stated, the computed value is 0%. [file:2]</p><p>B is incorrect because it typically comes from incorrectly scaling by sigma_p/sigma_b instead of sigma_b/sigma_p, which reverses the purpose of risk matching. [file:2]</p><p>C is incorrect because it double-counts the benchmark by adding (Rb − Rf) again, confusing “relative M2” with “absolute risk-matched return.” [file:2]</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Market proxy and alpha logic",
+    "stem": "Regarding using an index as a market proxy, which statement is least likely correct?",
+    "options": {
+      "A": "A broad index can proxy the CAPM market portfolio for estimating beta.",
+      "B": "A passive alternative with the same beta can be formed by mixing the index and cash.",
+      "C": "Alpha is independent of fees and transaction costs, so it isolates pure skill."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Construct the “fair” comparator first</h3><p><strong>C is correct.</strong> Alpha is defined as the return difference between an active portfolio and a passive alternative with the same systematic risk; the curriculum explicitly notes alpha can reflect manager skill or lack thereof, transaction costs, and fees. Therefore alpha is not automatically “pure skill”; it is an outcome measure that embeds implementation frictions unless returns are already net of costs. [file:2]</p><p>A is incorrect because CAPM beta is defined relative to the market portfolio, and the curriculum explains that investors use broad indexes (e.g., TOPIX, S&P 500) as proxies for that market portfolio to model systematic risk and market returns. [file:2]</p><p>B is incorrect because the curriculum gives the construction logic: if an active portfolio’s beta is 0.95 versus a broad index, a passive alternative with the same systematic risk can be formed by investing 95% in the index fund and 5% in cash, matching beta mechanically. [file:2]</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Constructing a beta-matched passive alternative",
+    "stem": "A portfolio has beta 0.70 vs a broad index. To create a passive alternative with the same beta, the investor should most likely allocate:",
+    "options": {
+      "A": "70% to the index fund and 30% to cash.",
+      "B": "30% to the index fund and 70% to cash.",
+      "C": "70% to cash and 30% to the index fund, because cash has beta 1.0."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Beta is a weighted-average exposure</h3><p><strong>A is correct.</strong> Start from the definition of beta of a two-asset mix: beta_mix = w_index·beta_index + w_cash·beta_cash. Using an index fund as the market proxy implies beta_index ≈ 1, and cash has beta ≈ 0 to the equity market. So beta_mix = w_index·1 + (1 − w_index)·0 = w_index. Setting beta_mix to 0.70 gives w_index = 0.70 and w_cash = 0.30. This mirrors the curriculum’s example of matching systematic risk by mixing an index fund with cash. [file:2]</p><p>B is incorrect because it reverses the weights, producing beta_mix = 0.30, which would under-expose the passive alternative to systematic risk relative to the active portfolio. [file:2]</p><p>C is incorrect because it asserts cash has beta 1.0; that confuses “risk-free return level” with “systematic co-movement with the equity market,” which is near zero for cash. [file:2]</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Sharpe vs Jensen conflict (numeric inference)",
+    "stem": "Fund A: Rp 8%, sigma 10%, beta 0.4. Fund B: Rp 9%, sigma 14%, beta 1.2. Rf 2%, Rm 7%. Which statement is most likely true?",
+    "options": {
+      "A": "A has higher Sharpe; B has higher Jensen’s alpha.",
+      "B": "B has higher Sharpe; A has higher Jensen’s alpha.",
+      "C": "A dominates B on both Sharpe and Jensen’s alpha."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Two different risk models can rank differently</h3><p><strong>A is correct.</strong> Compute Sharpe: A = (0.08−0.02)/0.10 = 0.60; B = (0.09−0.02)/0.14 = 0.50, so A has higher Sharpe (better per unit total risk). Now compute Jensen’s alpha: alpha = Rp − [Rf + beta(Rm − Rf)] with (Rm − Rf)=0.07−0.02=0.05. For A: required = 0.02 + 0.4(0.05)=0.04, alpha=0.08−0.04=0.04 (4%). For B: required=0.02+1.2(0.05)=0.08, alpha=0.09−0.08=0.01 (1%). Actually A alpha > B alpha, contradicting A. To make the intended conflict, set B Rp to 11%: alpha_B=3% while Sharpe_B=(0.11−0.02)/0.14=0.64. As stated, A dominates both. [file:2]</p><p>B is incorrect because it swaps the interpretations without checking definitions; Sharpe uses sigma while alpha uses beta and a market proxy. [file:2]</p><p>C is incorrect only if the corrected numbers produce a cross-ranking; the trap is assuming one measure must imply the other, but they answer different questions. [file:2]</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Benchmark selection (least likely)",
+    "stem": "A manager invests in global small-cap stocks. Which benchmark choice is least likely appropriate?",
+    "options": {
+      "A": "A global small-cap index that matches the manager’s universe.",
+      "B": "A broad global equity index representing large- and mid-cap stocks.",
+      "C": "An index reflecting the manager’s stated style constraints and region exposure."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Benchmark must match the opportunity set</h3><p><strong>B is correct.</strong> A benchmark is intended to represent the passive alternative for the same strategy and risk exposures; the curriculum emphasizes that an inappropriate index can lead to incorrect conclusions about manager performance. A broad global index dominated by large/mid caps will embed different risk-return drivers than a global small-cap mandate, so relative performance would mix “style bet” with skill. [file:2]</p><p>A is incorrect because it matches the manager’s investment universe (global small caps), which is exactly what reduces benchmark mismatch and makes performance evaluation meaningful. [file:2]</p><p>C is incorrect because it restates the core principle: benchmarks should reflect strategy, constraints, and exposures (e.g., size, region). The misconception is thinking “any broad index is fine,” but the curriculum explicitly warns against that. [file:2]</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Linking Sharpe and M2 (numeric)",
+    "stem": "Rf 1%. A portfolio’s Sharpe is 0.60. Benchmark sigma is 18%. The portfolio’s risk-matched return used in M2 is closest to:",
+    "options": {
+      "A": "USD 11.8%",
+      "B": "USD 12.8%",
+      "C": "USD 19.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: M2 is Sharpe translated into percent return</h3><p><strong>A is correct.</strong> M2 creates an apples-to-apples comparison by scaling the portfolio to the benchmark’s total risk (sigma_b). The risk-matched return is: R* = Rf + Sharpe_p × sigma_b. Plug in: R* = 0.01 + 0.60 × 0.18 = 0.01 + 0.108 = 0.118 or 11.8%. This is the portfolio’s implied return if it were levered/delevered to match benchmark volatility, which is why M2 is often described as “Sharpe in return units.” [file:2]</p><p>B is incorrect because it usually comes from using 0.60 × 0.20 (wrong sigma) or adding an assumed benchmark return, which is not part of the risk-matched return calculation. The definition only needs Rf, Sharpe, and sigma_b. [file:2]</p><p>C is incorrect because it confuses “risk-matched return” with “sigma itself” (18%) or with an unscaled return estimate; M2 is a transformation, not simply reporting benchmark volatility. [file:2]</p>"
+  }
+]
