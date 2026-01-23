@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Profitability, Leverage, Coverage Links",
+    "stem": "Two non-financial corporates, A and B, operate in the same stable, non-cyclical industry.\n\nCorporate A\n- EBIT margin: 22%\n- EBITDA margin: 28%\n- Debt/EBITDA: 1.0x\n- EBIT/Interest expense: 9.0x\n- RCF/Net debt: 45%\n\nCorporate B\n- EBIT margin: 14%\n- EBITDA margin: 20%\n- Debt/EBITDA: 2.5x\n- EBIT/Interest expense: 3.5x\n- RCF/Net debt: 18%\n\nAssume both companies have similar business models and industry positions. Based strictly on these metrics, which statement best describes the relative credit risk of A and B?",
+    "options": {
+      "A": "A has lower probability of default and lower loss given default than B.",
+      "B": "A has lower probability of default, but similar loss given default to B.",
+      "C": "A has similar probability of default, but lower loss given default than B."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Capacity vs. Capital Structure</h3><p><strong>B is correct.</strong> Credit risk for corporates decomposes into probability of default (POD: can the firm service its debt?) and loss given default (LGD: what do lenders lose if default happens?).[file:1] Higher profitability (EBIT margin), stronger coverage (EBIT/interest), and stronger cash-flow-based leverage (RCF/net debt) all directly improve the firm's <em>capacity</em> to meet fixed obligations, i.e., lower POD.[file:1] Here, A has materially stronger EBIT margin (22% vs 14%), higher coverage (9.0x vs 3.5x), and higher RCF/net debt (45% vs 18%), so its POD is clearly lower than B's.[file:1] However, LGD depends primarily on capital structure seniority, secured vs unsecured mix, and collateral quality (tangible vs intangible), not on these aggregate ratio levels by themselves.[file:1] Because the question gives no information on seniority structure or collateralization, LGD cannot be inferred as lower for A.</p><p>A is incorrect because it assumes that better profitability and coverage automatically reduce LGD. LGD is driven by structural features (seniority ranking, secured vs unsecured, asset quality), which are not specified here.[file:1]</p><p>C is incorrect because the ratios given are classic POD indicators (profitability, leverage, coverage, cash flow), and A is strictly stronger on all of them, implying lower—not similar—POD.[file:1]</p>"
+  },
+  {
+    "id": 2,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Cyclicality and Ratio Interpretation",
+    "stem": "Two firms, CycleCo and StableCo, are identical today in size and capital structure and operate in different industries.\n\nCurrent year data (both firms):\n- EBIT margin: 18%\n- Debt/EBITDA: 2.0x\n- EBIT/Interest expense: 5.0x\n- RCF/Net debt: 30%\n\nQualitative information:\n- CycleCo operates in a highly cyclical, economically sensitive capital goods industry with high operating leverage.\n- StableCo operates in a non-cyclical, essential consumer staples industry with low operating leverage.\n\nAssume a moderate recession is expected in the next 2 years. Which statement best describes relative <em>forward-looking</em> credit risk?",
+    "options": {
+      "A": "CycleCo has higher forward-looking probability of default than StableCo despite identical current ratios.",
+      "B": "Both firms have similar forward-looking probability of default because current ratios are identical.",
+      "C": "CycleCo has lower forward-looking probability of default because operating leverage magnifies profits in recoveries."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Volatility of Cash Flows Drives POD</h3><p><strong>A is correct.</strong> From first principles, default is a cash-flow event: firms default when operating cash cannot cover fixed obligations.[file:1] For identical current ratios, the firm with more volatile cash flows has higher <em>future</em> POD, because downturns push coverage and leverage into stressed territory more often.[file:1] High cyclicality plus high operating leverage means CycleCo's EBIT and EBITDA will contract more sharply in a recession than StableCo's, so its future Debt/EBITDA will spike and EBIT/interest will fall more, raising its POD.[file:1]</p><p>B is incorrect because credit analysis is explicitly forward-looking: same current ratios do not imply same POD when business risk and cyclicality differ.[file:1]</p><p>C is incorrect because while high operating leverage magnifies upside in expansions, it also magnifies downside in recessions; with a recession expected in the near term, this feature increases, not decreases, near-term POD.[file:1]</p>"
+  },
+  {
+    "id": 3,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Liquidity vs Solvency",
+    "stem": "Consider two non-financial issuers with the following simplified data (all amounts in the same currency):\n\nIssuer L (\"Liquid\")\n- Total assets: 1,000\n- Net debt (Debt – Cash): 450\n- Current ratio: 1.8x\n- Unused committed revolver maturing in 3 years: 150\n- Next 12-month debt maturities: 200\n- EBITDA/Interest: 4.0x\n\nIssuer S (\"Solvent but Illiquid\")\n- Total assets: 1,200\n- Net debt: 300\n- Current ratio: 0.7x\n- No revolvers or committed lines\n- Next 12-month debt maturities: 250\n- EBITDA/Interest: 5.0x\n\nAssume asset values are realistic and markets are stressed, making new external financing uncertain. Which statement best describes their <em>relative near-term default risk</em> over the next 12 months?",
+    "options": {
+      "A": "Issuer L has lower near-term default risk because it has stronger liquidity and committed bank facilities, despite higher net leverage.",
+      "B": "Issuer S has lower near-term default risk because lower net debt always dominates liquidity considerations.",
+      "C": "Both issuers have similar near-term default risk because both have EBITDA/Interest above 3x."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Default as a Liquidity Event</h3><p><strong>A is correct.</strong> Default in the short horizon is primarily a <em>liquidity</em> problem, not a book-solvency problem.[file:1] Even with acceptable leverage and coverage, an issuer can default if it cannot refinance or pay maturing obligations from liquid resources.[file:1] Issuer L has a high current ratio (1.8x) and a 3-year committed revolver of 150, which rating practice treats as part of available liquidity.[file:1] That gives L multiple pre-arranged sources to cover the 200 of near-term maturities. Issuer S has lower net debt (better long-term solvency) and good coverage, but weak liquidity (current ratio 0.7x and no committed lines) against 250 of upcoming maturities, so near-term POD is higher.[file:1]</p><p>B is incorrect because lower net debt improves solvency but does not ensure the firm can meet <em>timing</em> of payments without liquid resources or committed backup lines.[file:1]</p><p>C is incorrect because coverage above 3x at the last reporting date does not ensure the firm can refinance maturing principal; principal payments are not in the EBIT/interest metric and are the main near-term constraint here.[file:1]</p>"
+  },
+  {
+    "id": 4,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Interpreting Leverage and Coverage Together",
+    "stem": "Two issuers, M and N, have the following key ratios and are otherwise similar in business risk and size.\n\nIssuer M\n- Debt/EBITDA: 3.0x\n- EBIT/Interest expense: 7.0x\n- EBITDA margin: 25%\n\nIssuer N\n- Debt/EBITDA: 1.8x\n- EBIT/Interest expense: 2.5x\n- EBITDA margin: 12%\n\nAssume similar debt maturity profiles and liquidity. Which statement best reflects their relative credit profiles?",
+    "options": {
+      "A": "M has weaker credit quality because its leverage (Debt/EBITDA) is higher than N's, despite stronger coverage.",
+      "B": "N has weaker credit quality because low profitability and weak coverage offset its lower leverage.",
+      "C": "They have similar credit quality because higher leverage at M is exactly offset by its higher coverage."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Sustainable Debt Capacity</h3><p><strong>B is correct.</strong> From first principles, sustainable debt capacity depends on the stability and <em>size</em> of operating cash flows relative to fixed charges.[file:1] Issuer M carries more leverage (3.0x vs 1.8x), but its high profitability and robust coverage (7.0x) indicate strong ability to service that debt. Issuer N looks relatively under-levered but has low profitability (12% margin) and thin coverage (2.5x), which leaves little cushion against shocks and thus a higher POD.[file:1]</p><p>A is incorrect because leverage must be judged in the context of earnings power and coverage; slightly higher leverage with very strong coverage is usually more sustainable than low leverage with marginal coverage.[file:1]</p><p>C is incorrect because the trade-off is not mechanical. Given standard practice, coverage and profitability are weighted heavily in credit analysis; M’s much stronger interest coverage more than offsets moderately higher leverage.[file:1]</p>"
+  },
+  {
+    "id": 5,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Cash-Flow-Based Leverage Metrics",
+    "stem": "You are given the following simplified data for Issuer Q (all in the same currency):\n\n- Net income from continuing operations: 220\n- Depreciation & amortization: 40\n- Deferred income taxes: 20\n- Other non-cash items: 20\n- Increase in working capital: 60\n- Dividends paid: 80\n- Capital expenditure: 120\n- Gross debt: 1,000\n- Cash and marketable securities: 150\n\nWhich of the following leverage metrics best reflects the issuer’s ability to de-lever from internal cash generation, and what is its value?",
+    "options": {
+      "A": "FFO / Debt = 30%",
+      "B": "RCF / Net Debt = 26%",
+      "C": "Debt / EBITDA = 4.0x"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash Available to Reduce Debt</h3><p><strong>B is correct.</strong> First, define the cash-flow measures as used in corporate credit analysis.[file:1]\n- Funds from operations (FFO) ≈ net income + non-cash items (depreciation, amortization, deferred taxes, other non-cash), before working-capital changes.[file:1]\n- Retained cash flow (RCF) ≈ FFO – dividends paid (cash that remains to service or repay debt, after shareholder distributions).[file:1]\n- Net debt = Gross debt – cash and marketable securities.[file:1]\n\nStep 1: Compute FFO.\nFFO = 220 + 40 + 20 + 20 = 300.\n\nStep 2: Compute RCF.\nRCF = FFO – dividends = 300 – 80 = 220.\n\nStep 3: Compute net debt.\nNet debt = 1,000 – 150 = 850.\n\nStep 4: Compute RCF / Net debt.\nRCF / Net debt = 220 / 850 ≈ 25.9% ≈ 26%.\n\nThis ratio directly measures the firm’s capacity to pay down its net debt from internally retained cash flows.[file:1]</p><p>A is incorrect because FFO / Debt = 300 / 1,000 = 30%, but it ignores the outflow to dividends, overstating the cash realistically available to creditors in a stressed scenario.[file:1]</p><p>C is incorrect because Debt / EBITDA is not computable from the data (EBITDA not given). Even if estimated, it reflects stock leverage, not the firm’s actual annual capacity to de-lever from retained cash.[file:1]</p>"
+  },
+  {
+    "id": 6,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Tangible vs Intangible Collateral",
+    "stem": "Two BB-rated issuers, Tanco and Insoft, have the same size, industry, and leverage ratios. Each has issued a large secured term loan.\n\nDifferences in collateral backing the secured loans:\n- Tanco’s term loan is secured by modern manufacturing plants, equipment, and inventories that together are reliably valued above the loan amount in going-concern and liquidation scenarios.\n- Insoft’s term loan is secured mainly by trademarks, brand names, and internally developed software, whose recovery values are highly uncertain and difficult to realize in liquidation.\n\nAssume similar POD. Which statement best describes the likely difference in <em>LGD</em> and issue ratings for the secured loans?",
+    "options": {
+      "A": "Tanco’s secured loan should have lower LGD and may be notched above the issuer rating.",
+      "B": "Both secured loans should have similar LGD because all secured debt ranks above unsecured debt.",
+      "C": "Insoft’s secured loan should have lower LGD because intangible assets are easier to move across borders."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Collateral Quality, Not Just Rank</h3><p><strong>A is correct.</strong> Secured vs unsecured status tells you who is paid first, but LGD also depends on <em>how much</em> value the collateral will actually realize in default.[file:1] Tangible, liquid, and easily saleable assets (plants, equipment, inventory) generally support higher recovery rates than soft, difficult-to-value intangibles.[file:1] Rating methodologies explicitly recognize that high-quality collateral can justify notching secured issues above the senior unsecured issuer rating, reflecting lower LGD at similar POD.[file:1]</p><p>B is incorrect because legal seniority alone does not equalize LGD; poor or hard-to-realize collateral can lead to low recoveries even for secured creditors.[file:1]</p><p>C is incorrect because cross-border mobility is not the core driver here; the key is uncertainty and marketability of intangibles, which tends to <em>increase</em> LGD relative to good hard collateral.[file:1]</p>"
+  },
+  {
+    "id": 7,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Covenant Protection and Behavior",
+    "stem": "A B-rated issuer, LeverCo, has the following features:\n\n- High but stable EBIT margin: 20%\n- Debt/EBITDA: 4.0x\n- EBIT/Interest: 2.8x\n- RCF/Net debt: 10%\n- All existing bonds are senior unsecured and covenant-lite (only basic affirmative covenants).\n\nManagement is considering issuing a large, secured term loan to fund a special dividend and share buyback. The new secured term loan would be first-lien on key assets, ranking ahead of existing senior unsecured bonds.\n\nWhich statement best describes how this transaction affects existing unsecured bondholders’ credit risk?",
+    "options": {
+      "A": "POD and LGD both increase for existing unsecured bondholders because leverage rises and their structural position in the capital structure weakens.",
+      "B": "POD increases but LGD improves because the new secured debt adds more assets to the collateral pool.",
+      "C": "POD is unchanged because operating performance is stable; only equity distribution is affected."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Subordination by Design</h3><p><strong>A is correct.</strong> First, paying a special dividend with new debt increases financial leverage without adding operating earnings, raising POD (more fixed obligations, same cash flow).[file:1] Second, issuing first-lien secured debt ahead of existing unsecured bonds subordinates those bonds economically: in default, secured creditors are paid from collateral first, leaving a smaller residual pool for unsecured holders, so their LGD rises.[file:1] With weak covenant protection, unsecured bondholders had little ability to block this value transfer from creditors to shareholders.[file:1]</p><p>B is incorrect because the new secured borrowing does not add new assets; it just pledges existing key assets to the new creditors while cash is upstreamed to equity, worsening unsecured bondholders’ recovery expectations.[file:1]</p><p>C is incorrect because capital-structure changes alone can materially alter both POD and LGD, even if short-term operating performance appears stable.[file:1]</p>"
+  },
+  {
+    "id": 8,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Structural Subordination",
+    "stem": "HoldCo Group has the following simplified structure:\n\n- Parent (HoldCo) is a pure holding company with no operations; it owns 100% of OpCo.\n- OpCo is the only operating subsidiary and generates virtually all cash flows and owns all operating assets.\n\nOutstanding debt:\n- OpCo: 300 of senior unsecured bonds.\n- HoldCo: 300 of senior unsecured bonds.\n\nThere are no guarantees between HoldCo and OpCo. Assume that in a stress case OpCo’s enterprise value at default is 360 and that liquidation costs and other senior claims are negligible. Which statement best describes expected relative recovery for HoldCo vs OpCo bondholders?",
+    "options": {
+      "A": "OpCo senior unsecured bonds will have higher recovery because HoldCo is structurally subordinated to OpCo creditors.",
+      "B": "HoldCo senior unsecured bonds will have higher recovery because they are closer to shareholders in the structure.",
+      "C": "Both sets of bonds will have the same recovery because they are senior unsecured in the same group."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Where the Cash Actually Sits</h3><p><strong>A is correct.</strong> Structural subordination arises because creditors lend to different legal entities in a group.[file:1] OpCo creditors have direct claims on OpCo’s assets and cash flows. HoldCo creditors can only be paid from dividends or upstreamed distributions <em>after</em> OpCo creditors are satisfied.[file:1] Here, OpCo value at default is 360, and OpCo has 300 of senior unsecured debt. OpCo bonds can be paid in full from that value (100% recovery), leaving at most 60 of value that might be upstreamed to HoldCo—if allowed—versus 300 of HoldCo bonds (20% recovery hypothetical). Thus OpCo unsecured bonds clearly have higher expected recovery.[file:1]</p><p>B is incorrect because proximity to shareholders in the legal chain actually <em>worsens</em> creditor position; equity must be wiped out before any creditor receives residual value.[file:1]</p><p>C is incorrect because \"senior unsecured\" describes instrument rank at each entity, not across entities; entity location determines structural subordination and therefore recovery.[file:1]</p>"
+  },
+  {
+    "id": 9,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Notching by Seniority",
+    "stem": "RatingCo assigns Issuer X a corporate (issuer) rating of BB, which by convention applies to its senior unsecured debt. Issuer X has the following additional instruments:\n\n- First-lien senior secured term loan\n- Subordinated unsecured notes\n\nRatingCo follows a typical methodology where:\n- Issuer rating reflects POD on senior unsecured debt.\n- Individual issue ratings incorporate LGD via notching around the issuer rating.\n\nAssume a typical capital structure where secured lenders have materially higher expected recovery and subordinated lenders have materially lower recovery than senior unsecured. Which of the following most likely reflects the pattern of issue ratings?",
+    "options": {
+      "A": "First-lien secured: BB+; Senior unsecured: BB; Subordinated unsecured: B+ or B.",
+      "B": "First-lien secured: BB; Senior unsecured: BB; Subordinated unsecured: BB.",
+      "C": "First-lien secured: B+; Senior unsecured: BB; Subordinated unsecured: BB+."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Same POD, Different LGD → Notching</h3><p><strong>A is correct.</strong> Cross-default provisions typically make POD similar across an issuer’s instruments, but LGD varies with seniority and collateral.[file:1] Rating agencies reflect this by \"notching\" issue ratings around the issuer’s senior unsecured level: secured debt with higher expected recovery is often notched <em>above</em> the issuer rating, while subordinated debt with lower recovery is notched <em>below</em> it.[file:1] Thus, a plausible pattern for a BB issuer is BB+ on first-lien secured and B+/B on subordinated unsecured.[file:1]</p><p>B is incorrect because it ignores differences in LGD despite clear ranking differences; this would contradict standard notching practice for speculative-grade issuers.[file:1]</p><p>C is incorrect because it reverses the economic logic, giving a <em>higher</em> rating to subordinated debt (worse recovery) and a <em>lower</em> rating to secured debt (better recovery).[file:1]</p>"
+  },
+  {
+    "id": 10,
+    "model": "TI BA II Plus",
+    "topic": "Credit Analysis – Industry Structure and Debt Capacity",
+    "stem": "You are comparing two industries for their ability to support higher corporate leverage over a full cycle, all else equal.\n\nIndustry H (High Capacity):\n- High barriers to entry (large capital requirements, regulation).\n- Low threat of substitutes.\n- Fragmented customer base with low bargaining power.\n- Moderate supplier bargaining power.\n- Stable long-term demand and limited price competition.\n\nIndustry L (Low Capacity):\n- Low barriers to entry.\n- High threat of substitutes (commoditized product).\n- Highly concentrated customers with strong bargaining power.\n- Intense industry rivalry, frequent price wars.\n\nBoth industries currently have similar macro conditions. Which statement best reflects the link between industry structure and sustainable leverage for a typical issuer?",
+    "options": {
+      "A": "Issuers in Industry H can sustainably carry higher leverage because more stable, defensible cash flows support lower POD at a given leverage level.",
+      "B": "Issuers in both industries can carry similar leverage because leverage depends only on firm-specific management decisions, not industry structure.",
+      "C": "Issuers in Industry L can sustainably carry higher leverage because competition forces efficiency gains that offset cash-flow volatility."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Structural Cash-Flow Resilience</h3><p><strong>A is correct.</strong> Industry structure shapes how stable and predictable firms’ cash flows are over time.[file:1] High barriers to entry, low substitute risk, and weak customer bargaining power typically lead to more durable margins and volumes, which allow firms in Industry H to support higher sustainable leverage at the same default risk.[file:1] In Industry L, thin margins, price wars, and strong buyer power make cash flows more volatile and vulnerable, so the same leverage would imply a higher POD.[file:1]</p><p>B is incorrect because quantitative credit analysis explicitly incorporates industry risk and competitive dynamics when assessing capacity to support debt; it is not just firm-specific.[file:1]</p><p>C is incorrect because while competition may force efficiency, it usually compresses margins and increases volatility, reducing, not increasing, sustainable leverage.[file:1]</p>"
+  },
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Business risk across maturities",
+    "stem": "A non-financial corporate issuer plans to fund a major strategic shift into a new technology platform over the next 10–15 years. It has outstanding 180-day commercial paper, 5-year unsecured notes, and 15-year unsecured notes. Assuming the project risk is primarily long term, which instrument’s credit risk is most sensitive to execution risk of the new strategy?",
+    "options": {
+      "A": "The 180-day commercial paper, because all instruments share the same probability of default over any horizon.",
+      "B": "The 5-year notes, because they are medium term and therefore always bear the highest business risk exposure.",
+      "C": "The 15-year notes, because later cash flows used for repayment depend most on the success of the new strategy."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Horizon of Cash Flows</h3><p><strong>C is correct.</strong> Start from the idea that credit risk is about whether promised cash flows can be met when due. For a given issuer, different maturities rely on cash flows from different future periods. Short-dated instruments depend mainly on current business conditions and existing product lines, while long-dated bonds depend on more distant, uncertain cash flows. When a firm undertakes a strategic shift whose payoffs and risks materialize over a decade or more, the cash flows relevant for servicing very long-maturity debt are most exposed to execution, competitive, and technology risk. Even if probability of default is measured at the issuer level, the mechanism driving that default is most likely tied to failure of long-horizon strategies. Hence the 15-year notes, whose principal and late coupons are funded by the post-transition business model, bear the greatest sensitivity to execution risk.</p><p>A is incorrect: while cross-default provisions can equalize default events across issues, they do not equalize exposure to the underlying business risk over different horizons. Commercial paper mainly depends on near-term liquidity from existing operations.</p><p>B is incorrect: 5-year notes sit between short and long horizon. They are exposed to some transition risk but still rely significantly on current business lines, so they are less sensitive than 15-year notes to a strategy playing out over 10–15 years.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Collateral quality and LGD",
+    "stem": "A BB-rated manufacturer with rising probability of default plans a secured bond issue to reduce funding costs. It can pledge either (1) specialized production patents and goodwill, or (2) finished inventory and plant and equipment. From a credit analyst’s perspective, which collateral mix most likely leads to the lowest expected loss for bondholders?",
+    "options": {
+      "A": "Patents and goodwill, because intangible assets can have very high franchise value in liquidation.",
+      "B": "Inventory and plant and equipment, because they are tangible assets that can be sold more predictably to offset losses.",
+      "C": "A mix of patents, goodwill, and no tangible assets, because diversification of collateral types always minimizes LGD."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Tangible vs. Intangible Collateral</h3><p><strong>B is correct.</strong> Begin with expected loss EL = probability of default × loss given default. When default probability is already elevated, collateral choice mainly affects LGD. Secured lenders prefer collateral that can be readily identified, valued, and liquidated at reasonably stable prices. Tangible or “hard” assets (inventory, plant, equipment) fit this definition: they are physical, often fungible within an industry, and can be sold for cash to repay debt if the firm fails. Intangible or “soft” assets (patents, goodwill) are harder to value, often highly firm- or management-specific, and can become nearly worthless if the business model collapses. Therefore, pledging inventory and PP&E gives a clearer secondary repayment source, reducing LGD and thus expected loss.</p><p>A is incorrect: although some patents have high theoretical value, their liquidation value is uncertain and highly sensitive to market interest and legal enforceability. Goodwill is purely accounting residual and typically has negligible recovery in distress, so relying on it overstates true collateral value.</p><p>C is incorrect: merely mixing collateral types does not guarantee lower LGD. If the mix excludes meaningful tangible assets, diversification just spreads weak-quality collateral and does not create a reliable secondary repayment source.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Aggressive accounting as a credit red flag",
+    "stem": "A credit analyst reviews a fast-growing issuer that frequently changes auditors, capitalizes many expenses that peers expense immediately, and reports large revenues routed through opaque third-party partners with cash held in offshore escrow accounts. From a debtholder’s perspective, which conclusion is most appropriate?",
+    "options": {
+      "A": "These policies mainly affect equity valuation and have limited relevance to credit risk if reported leverage appears moderate.",
+      "B": "These are material governance and accounting red flags that undermine the reliability of reported profitability and cash flow.",
+      "C": "Capitalizing expenses systematically improves true economic performance, reducing default risk relative to peers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Information Reliability and POD</h3><p><strong>B is correct.</strong> Credit analysis starts from the assumption that financial statements approximate economic reality, because probability of default is assessed through profitability, leverage, coverage, and liquidity ratios. Aggressive accounting policies break this link. Frequent auditor turnover suggests disputes or discomfort over recognition policies. Capitalizing items that should be expensed inflates assets and earnings, masking underlying business risk and overstating debt-servicing capacity. Routing large revenues through opaque third parties with cash in offshore escrows creates uncertainty about whether cash is truly available to meet obligations. When the mapping from reported numbers to real cash is unreliable, the analyst must assume higher risk: default may materialize long before reported metrics deteriorate, because actual cash flows are weaker than stated.</p><p>A is incorrect: equity and credit investors share dependence on trustworthy numbers. If earnings and cash flows are overstated, leverage and coverage are understated, directly affecting credit risk assessment and potentially leading to sudden downgrades or distress once misstatements surface.</p><p>C is incorrect: capitalization does not improve economic performance; it only changes timing of expense recognition. Overuse of capitalization can delay recognition of costs, inflating current performance and hiding unsustainable trends.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Industry structure and capacity to support debt",
+    "stem": "A corporate borrower operates in an industry with high threat of new entrants, strong bargaining power of suppliers, strong bargaining power of buyers, and intense industry rivalry. All else equal, how does this structure affect the industry’s capacity to support financial leverage over the cycle?",
+    "options": {
+      "A": "Capacity to support debt is low, because sustained margin pressure and volatility weaken stable cash generation.",
+      "B": "Capacity to support debt is high, because competitive intensity ensures continuous efficiency gains and pricing power.",
+      "C": "Capacity to support debt is neutral, because industry structure affects equity risk only, not debt-servicing ability."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Competitive Forces and Cash Flow Stability</h3><p><strong>A is correct.</strong> From first principles, leverage is sustainable when a firm can generate reasonably stable and predictable cash flows to meet fixed obligations. Industry structure—threat of entry, supplier and buyer power, rivalry—shapes long-run margins and volatility. High rivalry and strong counterpart bargaining power compress margins and increase earnings variability. High threat of entrants caps pricing and returns. Together, these forces reduce the ability of typical firms in the industry to maintain consistent operating income, weakening coverage ratios and making distress more likely when conditions turn adverse. Therefore, the aggregate capacity of such an industry to support high leverage is low.</p><p>B is incorrect: while competition can induce efficiency, strong suppliers and powerful customers simultaneously erode pricing power. Efficiency gains rarely fully offset structural margin pressure and volatility, so assuming higher debt capacity is inconsistent with the underlying cash-flow economics.</p><p>C is incorrect: industry structure directly impacts operating cash flows, not just equity volatility. Since debt is serviced from these same cash flows, ignoring industry forces would break the causal link between business risk and credit risk.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Leverage, coverage, and liquidity trade-offs",
+    "stem": "Two firms in the same industry have identical EBITDA margins and business risk. Firm A has lower Debt/EBITDA, lower EBITDA/interest coverage, and a much weaker liquidity position than Firm B. From a credit perspective, which statement best characterizes their relative credit risk?",
+    "options": {
+      "A": "Firm A is clearly safer because lower leverage always dominates coverage and liquidity considerations.",
+      "B": "Firm B may be safer overall, because stronger coverage and liquidity can offset moderately higher leverage.",
+      "C": "They must have identical credit risk because leverage is the primary driver of default probability in corporate analysis."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Multiple Dimensions of Default Risk</h3><p><strong>B is correct.</strong> Ability to avoid default depends on having enough cash (or convertible assets) when obligations fall due. Three quantitative dimensions matter: leverage (stock of debt), coverage (income vs. interest), and liquidity (near-term cash and committed facilities). Lower leverage reduces required deleveraging in stress, but if coverage is weak and liquidity thin, the firm can still be unable to make upcoming payments. Conversely, moderately higher leverage combined with robust interest coverage and ample liquidity can provide stronger short- and medium-term protection against default. Credit analysis is holistic; the question asks which is safer overall, not on a single metric. On that basis, Firm B’s stronger capacity to meet debt service and near-term obligations often outweighs a modest leverage disadvantage.</p><p>A is incorrect: leverage is important but not absolute. A lightly levered company with poor liquidity and thin coverage may be forced into default during a cash-flow shock even though its balance sheet appears strong.</p><p>C is incorrect: default is a flow and timing problem, not just a stock problem. Focusing solely on leverage ignores income generation and cash-access constraints that can precipitate failure even at moderate debt levels.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Choice of ratio for leverage assessment",
+    "stem": "A credit analyst wants to compare leverage of two issuers with very different cash balances and dividend policies. Which metric most directly captures their ability to reduce net indebtedness from internally generated cash while holding business risk constant?",
+    "options": {
+      "A": "Debt/EBITDA, because it links total debt to a broad measure of operating performance before non-cash charges.",
+      "B": "Retained cash flow (RCF)/net debt, because it compares post-dividend operating cash to debt net of cash and marketable securities.",
+      "C": "EBIT/interest expense, because it measures how many times operating profit covers interest payments."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash-Based Deleveraging Capacity</h3><p><strong>B is correct.</strong> From first principles, deleveraging capacity is about how much internally generated cash is available to pay down net obligations after maintaining the business and paying shareholders. Retained cash flow is operating cash flow after dividends; comparing it to net debt (gross debt minus cash and marketable securities) answers: “How large is the cushion of recurring cash relative to what we owe net of immediately available cash?” A higher RCF/net debt ratio means the firm could, in principle, pay down net debt more quickly, implying lower effective leverage and default risk, all else equal.</p><p>A is incorrect: Debt/EBITDA is useful but mixes a stock of obligations with a pre-dividend, pre-working-capital proxy for cash flow. It ignores cash on hand and cash distributions to equity, so it does not isolate net deleveraging capacity.</p><p>C is incorrect: EBIT/interest is a coverage, not leverage, measure. It speaks to the immediate ability to service interest, not the balance sheet’s long-run capacity to shrink debt using internally generated cash.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Secured vs. unsecured recovery in default",
+    "stem": "A defaulted issuer has USD 50 of senior secured bank loans fully collateralized by cash, USD 100 of senior unsecured bonds, USD 20 of subordinated bonds, and USD 60 of equity. An impairment of USD 80 hits non-cash assets. Assuming strict priority of claims and pari passu treatment within each class, which statement is most accurate about recoveries?",
+    "options": {
+      "A": "Secured loans recover in full; subordinated bonds are wiped out; unsecured bonds suffer a partial but non-zero loss.",
+      "B": "Unsecured and subordinated bonds suffer identical percentage losses, because they are both unsecured obligations.",
+      "C": "Equity absorbs all losses first; no bondholder suffers any loss unless total impairment exceeds equity."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Priority of Claims Waterfall</h3><p><strong>A is correct.</strong> In liquidation, cash-collateralized secured loans are repaid first from the pledged cash. Because the collateral equals or exceeds their claim (USD 50), secured lenders recover 100%. Losses from impaired non-cash assets are absorbed starting with the most junior claims. Equity (USD 60) is written down first. An USD 80 impairment removes all equity and still leaves a USD 20 shortfall, which then hits the next junior class, subordinated bonds (USD 20). They are fully wiped out. Only if impairment exceeded equity plus subordinated bonds would unsecured bonds begin to incur losses. Here, unsecured bonds lose none of principal from the impairment itself but are still structurally behind secured lenders. In a more severe impairment, they would experience partial recovery.</p><p>B is incorrect: subordinated bonds rank below senior unsecured. They absorb losses after equity but before any impairment reaches senior unsecured, so their percentage loss can be substantially higher, even 100%, while seniors still recover partially or fully.</p><p>C is incorrect: while equity is the first loss piece, its capacity is finite. Once equity is exhausted, impairment propagates upward to subordinated then senior unsecured debt. Equity alone cannot shield bondholders from sufficiently large asset losses.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Structurally subordinated holding-company debt",
+    "stem": "A corporate group has a holding company and a single major operating subsidiary that generates 90% of consolidated cash flows and assets. Both entities have outstanding senior unsecured bonds, and there are no cross-guarantees. In a group-wide default, which unsecured bonds most likely have the higher recovery rate?",
+    "options": {
+      "A": "Holding-company unsecured bonds, because they sit at the top of the corporate structure.",
+      "B": "Operating-subsidiary unsecured bonds, because they are serviced directly from operating assets before upstreaming cash.",
+      "C": "Both have identical recovery, because they share the same senior unsecured label in legal documentation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Structural Subordination</h3><p><strong>B is correct.</strong> Recovery depends on who has first legal claim on the cash flows and assets that remain in default. Operating-company creditors have direct claims on the subsidiary’s assets and cash before any distributions to the parent. Holding-company creditors can only be paid from residual cash upstreamed via dividends or intercompany payments after operating creditors are satisfied. This creates structural subordination: even if legal seniority labels (senior unsecured) look similar, the practical priority of access to value differs. Because the operating subsidiary holds most of the group’s cash flow and assets, its unsecured bonds usually enjoy higher recovery.</p><p>A is incorrect: being higher in the organizational chart does not imply earlier access to asset value. Without guarantees, holding-company creditors are economically subordinated to the operating company’s direct creditors.</p><p>C is incorrect: sharing a “senior unsecured” label does not neutralize structural differences. Pari passu applies within the same legal entity and seniority class; it does not equalize claims across different entities in a group structure.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Issuer vs. issue ratings and notching",
+    "stem": "A company’s senior unsecured bonds carry an issuer credit rating of B from a major rating agency. The same agency rates the company’s subordinated bond issue two notches lower. Assuming standard practice, which rating is most consistent with this notching approach?",
+    "options": {
+      "A": "BB for the subordinated bond, because subordinated debt should compensate investors with a higher rating.",
+      "B": "B for the subordinated bond, because issue ratings for all unsubordinated and subordinated bonds must match the issuer rating.",
+      "C": "B– for the subordinated bond, reflecting higher expected loss from lower priority in the capital structure."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Probability of Default vs. Loss Severity</h3><p><strong>C is correct.</strong> Start by splitting credit risk into probability of default (POD) and loss given default (LGD). Issuer ratings generally reflect the POD (and for some agencies, expected loss) of senior unsecured debt. Subordinated debt shares the same default event, because cross-default provisions mean a default on one major obligation typically triggers default across others. However, subordinated creditors stand in line behind senior unsecured creditors in liquidation, so their LGD is higher. Rating agencies incorporate this higher expected loss by ‘notching’ subordinated issue ratings below the issuer rating. A move from B to B– is consistent with two notches of downward adjustment reflecting higher loss severity.</p><p>A is incorrect: if subordinated debt had lower loss severity than senior unsecured, it might be notched up, but subordination implies the opposite. A higher rating would contradict the expected loss hierarchy.</p><p>B is incorrect: aligning all issue ratings with the issuer rating ignores structural and seniority differences. Agencies explicitly differentiate issues to signal different expected losses within the same capital structure.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "Choosing cash-flow metrics in credit analysis",
+    "stem": "A credit analyst is deciding whether to use EBIT, EBITDA, funds from operations (FFO), or retained cash flow (RCF) in assessing a corporate borrower’s ability to service debt. Which metric most conservatively reflects the ongoing cash that remains available to reduce debt after maintaining operations and paying dividends?",
+    "options": {
+      "A": "EBIT, because it excludes interest and taxes and therefore best measures operating performance.",
+      "B": "EBITDA, because adding back non-cash charges always yields the most conservative view of cash available for debt service.",
+      "C": "RCF, because it starts from operating cash flow and subtracts dividends, reflecting cash truly retained in the business."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Cash Available for Creditors</h3><p><strong>C is correct.</strong> Debt is repaid with cash, not accounting earnings. A conservative credit metric should approximate the recurring cash left after mandatory business needs and equity distributions. Funds from operations adjust net income for non-cash items, but still precede dividends. Retained cash flow goes further: it begins with cash from operating activities (after working capital and other operating uses) and subtracts dividends paid. What remains is the cash that is actually retained in the firm and thus potentially available to reduce net debt or absorb shocks. Using RCF aligns the metric with creditors’ true residual claim on operating cash after shareholders have taken their distribution.</p><p>A is incorrect: EBIT is a pre-tax, pre-interest accounting profit. It does not incorporate working capital changes, capital spending, or cash taxes, so it can significantly overstate actual cash available to service debt.</p><p>B is incorrect: EBITDA adds back depreciation and amortization, which may approximate maintenance capex only roughly. Treating all depreciation as free cash ignores the need to reinvest to sustain operations, so EBITDA is often less, not more, conservative than FFO or RCF.</p>"
+  }
+] 
