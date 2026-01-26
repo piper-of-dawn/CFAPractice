@@ -544,6 +544,279 @@
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Internal Rate of Return</h3><p><strong>A is correct.</strong> The YTM is mathematically an Internal Rate of Return (IRR). A fundamental property of the IRR calculation is the implicit assumption that intermediate cash flows (coupons) are reinvested at the IRR (the YTM) itself until maturity. If reinvested at a different rate, the actual realized return will differ from the YTM.</p><p>B is incorrect: Reinvesting at spot rates is a more realistic assumption for total return analysis, but strictly speaking, YTM assumes a single constant reinvestment rate.</p><p>C is incorrect: The risk-free rate is usually lower than the YTM of a corporate bond.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Macaulay Duration Definition",
+    "stem": "For a zero-coupon bond, Macaulay duration is equal to:",
+    "options": {
+      "A": "Its time-to-maturity",
+      "B": "Half its time-to-maturity",
+      "C": "Zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Duration</h3><p><strong>A is correct.</strong> Starting from the definition of Macaulay duration as the weighted average time to receipt of cash flows, a zero-coupon bond has only one cash flow at maturity. Since all weight (100%) is concentrated at the maturity date, the weighted average time equals the time-to-maturity. Mathematically, \\( MacDur = \\sum (t \\times w_t) \\), where \\( w_t \\) is the weight of each cash flow. For a zero-coupon bond, \\( w_{maturity} = 1.0 \\) and all other weights are zero, so \\( MacDur = maturity \\times 1.0 = maturity \\). This fundamental property makes zero-coupon bonds unique: their duration always equals their maturity unless measured between coupon dates. This relationship serves as a benchmark for understanding that coupon-paying bonds always have duration less than maturity due to interim cash flows.</p><p>B is incorrect because half the time-to-maturity would apply only if cash flows were evenly split between mid-life and maturity, which is not the case for zero-coupon bonds. This might reflect confusion with the average life concept for amortizing securities or a misapplication of the midpoint formula, neither of which applies to duration calculations.</p><p>C is incorrect because zero duration would imply immediate receipt of all cash flows (cash has zero duration). A zero-coupon bond delivers its single payment at maturity, not immediately, so its duration must be positive and equal to the time remaining until that payment. Zero duration would only apply to cash or instruments with no time value component.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Modified Duration Calculation",
+    "stem": "A bond has Macaulay duration of 5 years and yield-to-maturity of 4%. Its modified duration is closest to:",
+    "options": {
+      "A": "4.81",
+      "B": "5.00",
+      "C": "5.20"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Modified Duration Formula</h3><p><strong>A is correct.</strong> From the fundamental relationship between Macaulay and modified duration, \\( ModDur = MacDur / (1 + r) \\), where r is the periodic yield. For annual compounding, \\( ModDur = 5 / 1.04 = 4.808 \\approx 4.81 \\). This can be verified mentally: dividing 5 by 1.04 is slightly less than 5/1.0 = 5, and since 4% of 5 is 0.20, the result should be approximately 5 - 0.19 = 4.81. Modified duration converts Macaulay duration into a direct measure of price sensitivity: a 1% yield change causes approximately a 4.81% price change. The adjustment factor \\( 1/(1+r) \\) accounts for the present value discounting mechanism and ensures modified duration properly estimates first-order price changes.</p><p>B is incorrect because 5.00 is the Macaulay duration, not the modified duration. While related, these are distinct measures: Macaulay duration is a time measure (weighted average years), while modified duration is a price sensitivity measure (percentage price change per yield change). The conversion formula must be applied to obtain modified duration from Macaulay duration.</p><p>C is incorrect because 5.20 results from multiplying rather than dividing by (1 + r): \\( 5 \\times 1.04 = 5.20 \\). This reverses the correct formula direction. Modified duration must be less than Macaulay duration for positive yields, since we divide by a number greater than 1. Using 5.20 would overestimate price sensitivity and violate the mathematical relationship between these duration measures.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Duration and Price Change",
+    "stem": "A bond has modified duration of 6 and yield-to-maturity of 5%. If yields increase to 6%, the bond's approximate percentage price change is:",
+    "options": {
+      "A": "+6%",
+      "B": "-6%",
+      "C": "-12%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Duration Price Sensitivity</h3><p><strong>B is correct.</strong> From the duration approximation formula \\( \\Delta P/P \\approx -ModDur \\times \\Delta y \\), where \\( \\Delta y = 0.06 - 0.05 = 0.01 = 1\\% \\). Substituting: \\( \\Delta P/P \\approx -6 \\times 0.01 = -0.06 = -6\\% \\). The negative sign reflects the inverse relationship between bond prices and yields: when yields rise, prices fall. The magnitude of 6% equals the modified duration multiplied by the 1% (100 bp) yield change, demonstrating duration's role as a linear price sensitivity measure. This can be verified intuitively: duration of 6 means approximately 6% price change per 1% yield change. Since yields increased by 1%, price falls by approximately 6%.</p><p>A is incorrect because it shows a positive price change (+6%), which violates the fundamental inverse relationship between bond prices and yields. When yields increase, bond prices must decrease to maintain market equilibrium—new bonds offer higher yields, making existing lower-yielding bonds less valuable. The sign error likely stems from forgetting the negative sign in the duration formula.</p><p>C is incorrect because -12% would result from a 2% (200 bp) yield change, not a 1% change: \\( -6 \\times 0.02 = -12\\% \\). This error doubles the actual yield change, possibly confusing the 6% yield level with a 6% yield change, or misinterpreting the calculation. The yield change is specifically 1% (from 5% to 6%), not 2%.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Reinvestment vs Price Risk",
+    "stem": "An investor with an investment horizon longer than a bond's Macaulay duration is most concerned about:",
+    "options": {
+      "A": "Reinvestment risk",
+      "B": "Price risk",
+      "C": "Neither risk"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Duration Gap and Risk Exposure</h3><p><strong>A is correct.</strong> From the duration gap concept, \\( Duration\\,Gap = MacDur - Investment\\,Horizon \\). When the horizon exceeds duration (Duration Gap < 0), the investor will hold the bond beyond the duration point where reinvestment and price risks offset. With a long horizon, many coupon payments must be reinvested over extended periods, making their future value highly sensitive to reinvestment rates. Price risk at sale diminishes because the sale occurs far in the future (or at maturity), while compound interest on reinvested coupons dominates total return. For example, a 30-year buy-and-hold investor in a 10-year duration bond faces 20+ years of reinvestment, making falling rates the primary threat. This relationship is fundamental: long horizons shift risk from price to reinvestment.</p><p>B is incorrect because price risk dominates when the investment horizon is shorter than Macaulay duration (Duration Gap > 0), not longer. Short-horizon investors sell bonds before maturity, exposing them to market price fluctuations from yield changes. They have less time to reinvest coupons, so reinvestment risk is minimal. The question specifies a longer horizon, reversing this relationship.</p><p>C is incorrect because interest rate risk always exists through either reinvestment or price channels (or both). Only at exactly the Macaulay duration point do these risks approximately offset, creating a \"duration-matched\" position. Longer or shorter horizons create exposure to one dominant risk type, never eliminating risk entirely unless the bond is held to maturity and the investor is indifferent to reinvestment rates.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Duration Gap Calculation",
+    "stem": "A bond has Macaulay duration of 8 years. An investor with a 5-year investment horizon has a duration gap of:",
+    "options": {
+      "A": "-3 years",
+      "B": "+3 years",
+      "C": "+13 years"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Duration Gap Formula</h3><p><strong>B is correct.</strong> From the definition \\( Duration\\,Gap = Macaulay\\,Duration - Investment\\,Horizon = 8 - 5 = +3\\,years \\). The positive gap indicates the bond's duration exceeds the investor's horizon, meaning the investor faces price risk from rising rates. The bond will be sold 3 years \"early\" relative to its duration point, exposing the investor to price fluctuations. If yields rise during the holding period, the sale price will be below the constant-yield trajectory, creating a capital loss. The sign of the gap is critical: positive gaps signal price risk dominance, negative gaps signal reinvestment risk dominance, and zero gap indicates approximate hedging where the two risks offset.</p><p>A is incorrect because -3 years reverses the subtraction order, calculating \\( Horizon - Duration = 5 - 8 = -3 \\). This inverts the duration gap formula. While mathematically producing a negative result, it misidentifies the risk exposure: the investor actually has a positive gap and faces price risk (rising rates hurt), not the reinvestment risk that a true negative gap would indicate (falling rates hurt).</p><p>C is incorrect because 13 years adds duration and horizon (\\( 8 + 5 = 13 \\)) rather than subtracting them. Duration gap is specifically the difference between these quantities, not their sum. Adding them has no meaningful interpretation in interest rate risk analysis and would vastly overstate the risk mismatch. The gap measures the directional and magnitude mismatch, requiring subtraction.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Sources of Bond Return",
+    "stem": "The three sources of return from investing in a fixed-rate bond are:",
+    "options": {
+      "A": "Coupon income, reinvestment income, capital gain/loss",
+      "B": "Coupon income, price appreciation, credit spread",
+      "C": "Interest income, dividend income, capital gain/loss"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Bond Return Components</h3><p><strong>A is correct.</strong> From the fundamental decomposition of bond returns, investors receive: (1) scheduled coupon payments (coupon income), (2) interest earned on reinvested coupons (reinvestment income), and (3) price change if sold before maturity or pull-to-par effect (capital gain/loss). The total return formula is \\( Total\\,Return = (Coupon\\,Income + Reinvestment\\,Income + Price\\,Change) / Initial\\,Price \\). These three components fully account for all cash flows and value changes. Coupon income is contractual and certain (absent default). Reinvestment income depends on future rates. Capital gain/loss depends on yield changes and holding period. This tripartite decomposition is essential for analyzing interest rate risk: rising rates boost reinvestment but create capital losses; falling rates reduce reinvestment but create capital gains.</p><p>B is incorrect because \"price appreciation\" is too narrow—it only captures gains, not losses, and \"credit spread\" is not a source of return but rather a component of yield that affects pricing. Credit spreads influence returns indirectly through price changes, but they are not a direct return source like coupon payments. This option confuses risk factors (spreads) with return components.</p><p>C is incorrect because bonds do not pay dividends—that's an equity feature. Bonds pay coupons (interest income), not dividends. While \"interest income\" broadly covers coupons and reinvestment, the phrasing \"dividend income\" reveals a fundamental confusion between debt and equity securities. This option mixes asset class terminology inappropriately.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Horizon Yield Calculation",
+    "stem": "An investor buys a 5-year bond at par (100) with 6% annual coupons. If the bond is sold after 2 years at 102, and coupons are reinvested at 6%, the investor's horizon yield is closest to:",
+    "options": {
+      "A": "6%",
+      "B": "7%",
+      "C": "8%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Horizon Yield Computation</h3><p><strong>B is correct.</strong> Horizon yield is the IRR: \\( r = [(FV\\,of\\,coupons + Sale\\,Price) / Purchase\\,Price]^{1/horizon} - 1 \\). Future value of coupons at 6%: \\( FV = 6 \\times 1.06 + 6 = 6.36 + 6 = 12.36 \\). Total proceeds: \\( 12.36 + 102 = 114.36 \\). Horizon yield: \\( r = (114.36/100)^{1/2} - 1 = (1.1436)^{0.5} - 1 \\approx 1.069 - 1 = 6.9\\% \\approx 7\\% \\). Mental check: 7% for 2 years gives \\( 100 \\times 1.07^2 = 100 \\times 1.1449 = 114.49 \\approx 114.36 \\). The 2-point capital gain (102 vs 100) boosts return above the 6% coupon/reinvestment rate. This demonstrates how capital gains enhance realized returns beyond yield-to-maturity when bonds are sold above purchase price.</p><p>A is incorrect because 6% would only be achieved if the bond were sold at par (100) with 6% reinvestment, matching the constant-yield trajectory. The actual sale price of 102 creates a 2-point capital gain (2% of initial investment over 2 years, adding approximately 1% annually), boosting the horizon yield above 6%. This answer ignores the capital gain component of total return.</p><p>C is incorrect because 8% significantly overstates the horizon yield. This might result from adding the 2% total capital gain (102-100 = 2) directly to the 6% coupon rate, yielding \\( 6\\% + 2\\% = 8\\% \\), which fails to account for: (1) the 2% gain is over 2 years (≈1% annually), and (2) proper compounding through the IRR formula is required. Simple addition violates time value of money principles.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Interest Rate Change Impact",
+    "stem": "A buy-and-hold investor purchases a bond at par. If interest rates immediately rise and remain elevated, the investor's horizon yield will most likely be:",
+    "options": {
+      "A": "Lower than the original YTM",
+      "B": "Equal to the original YTM",
+      "C": "Higher than the original YTM"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Buy-and-Hold Return Dynamics</h3><p><strong>C is correct.</strong> For a buy-and-hold investor (holding to maturity), there is no price risk—the bond redeems at par regardless of rate changes. The only effect is reinvestment risk. When rates rise, all coupon payments are reinvested at higher rates, increasing the future value of reinvested coupons: \\( FV_{coupons} = \\sum c \\times (1+r_{new})^{remaining\\,periods} \\). Since \\( r_{new} > r_{original} \\), \\( FV_{coupons} \\) increases, boosting horizon yield above the original YTM. For example, if YTM was 6% and rates rise to 7%, coupons compound at 7%, not 6%, enhancing total return. This fundamental relationship shows buy-and-hold investors benefit from rising rates through superior reinvestment opportunities, a counterintuitive result that reverses the typical \"rising rates hurt bonds\" narrative.</p><p>B is incorrect because equal YTM requires constant reinvestment rates matching the original yield. The question specifies rates \"rise and remain elevated,\" breaking this assumption. Horizon yield equals original YTM only under three conditions: (1) hold to maturity, (2) no default, and (3) reinvest at original YTM. Condition 3 is violated, so realized yield must differ from original YTM.</p><p>A is incorrect because lower horizon yield occurs when reinvestment rates fall, not rise. Buy-and-hold investors suffer when rates decline because coupons are reinvested at below-original rates, reducing \\( FV_{coupons} \\). The question specifies rising rates, which benefits reinvestment. This answer confuses the direction of interest rate impact for buy-and-hold versus mark-to-market investors.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Money Duration Definition",
+    "stem": "A bond with modified duration of 5, priced at 98 per 100 face value, and a position size of $10 million face value has money duration closest to:",
+    "options": {
+      "A": "$490,000",
+      "B": "$500,000",
+      "C": "$5,000,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Money Duration Formula</h3><p><strong>A is correct.</strong> Money duration measures dollar price change per 1% yield change: \\( MoneyDur = ModDur \\times Market\\,Value \\). Market value = \\( 10,000,000 \\times 0.98 = 9,800,000 \\). Thus \\( MoneyDur = 5 \\times 9,800,000 = 49,000,000 \\) per 100% yield change. Per 1% (0.01) yield change: \\( 49,000,000 \\times 0.01 = 490,000 \\). Alternatively, \\( MoneyDur = 5 \\times 9,800,000 = \\$490,000 \\) directly (modified duration already incorporates the \"per unit yield change\" scaling). Mental check: 5% of $9.8M ≈ $490k. Money duration converts percentage sensitivity into dollar terms, enabling position-level risk management and is essential for hedging calculations where absolute dollar exposure matters more than percentage changes.</p><p>B is incorrect because $500,000 uses par value ($10M) instead of market value ($9.8M): \\( 5 \\times 10,000,000 \\times 0.01 = 500,000 \\). Bond risk metrics must use current market value, not face value, because price changes occur from current levels, not par. A bond trading at 98 has less dollar value at risk than one at 100, so using par overstates money duration by approximately 2%.</p><p>C is incorrect because $5,000,000 results from forgetting to scale by the yield change magnitude or misunderstanding money duration units. This equals 50% of the market value, which would only occur for a 10% (1,000 bp) yield change: \\( 5 \\times 0.10 = 0.50 = 50\\% \\). Money duration should reflect a standard 1% yield change, not 10%, making this answer 10x too large.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Convexity Definition",
+    "stem": "Convexity measures the:",
+    "options": {
+      "A": "First-order linear price change from yield changes",
+      "B": "Second-order non-linear price change from yield changes",
+      "C": "Average maturity of bond cash flows"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Convexity Concept</h3><p><strong>B is correct.</strong> From calculus-based bond pricing, the first derivative of price with respect to yield gives duration (linear approximation), while the second derivative gives convexity (curvature). Convexity captures how duration itself changes as yields change—the rate of change of the rate of change. The price-yield relationship is curved (convex), not linear. Duration approximates this curve with a tangent line (first-order), but for large yield changes, the approximation error grows. Convexity (second-order) corrects this error: \\( \\Delta P/P \\approx -Duration \\times \\Delta y + \\frac{1}{2} Convexity \\times (\\Delta y)^2 \\). The convexity term is always positive for option-free bonds, creating beneficial asymmetry: prices rise more when yields fall and fall less when yields rise than duration alone predicts. This mathematical property makes convexity inherently valuable.</p><p>A is incorrect because first-order linear price change is measured by duration, not convexity. Duration provides the slope of the price-yield curve at a point (the tangent line), which is a linear approximation. Convexity addresses the limitation of this linear approximation by measuring how the curve deviates from the tangent line—the curvature or second-order effect.</p><p>C is incorrect because average maturity of cash flows describes Macaulay duration, not convexity. Macaulay duration is a weighted-average time measure (in years), while convexity measures curvature (dimensionless or years-squared depending on formulation). These are distinct concepts: duration is about timing, convexity is about price behavior non-linearity.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "Convexity Effect",
+    "stem": "For an option-free bond, the convexity adjustment to the duration-based price estimate is always:",
+    "options": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Convexity Sign Property</h3><p><strong>A is correct.</strong> From the convexity adjustment formula \\( \\frac{1}{2} \\times Convexity \\times (\\Delta y)^2 \\), the term \\( (\\Delta y)^2 \\) is always positive (squaring eliminates sign), and convexity for option-free bonds is always positive (second derivative \\( d^2P/dy^2 > 0 \\) due to the exponential discounting function). Therefore, \\( \\frac{1}{2} \\times (+) \\times (+) = (+) \\) regardless of whether yields rise or fall. This creates the beneficial asymmetry: when yields fall, convexity adds to the price increase beyond duration's estimate; when yields rise, convexity reduces the price decrease below duration's estimate. The bond price is always higher than the linear (duration-only) approximation would suggest. This property makes convexity unambiguously valuable to investors.</p><p>B is incorrect because negative convexity adjustments only occur for bonds with embedded options (like callable bonds) under certain conditions, specifically when the option is near-the-money and likely to be exercised. For option-free bonds, the mathematical structure ensures positive convexity. Negative convexity would imply prices fall more than duration predicts when yields rise and rise less when yields fall—an unfavorable asymmetry not present in option-free bonds.</p><p>C is incorrect because zero convexity would require either zero curvature (impossible for exponential discount functions) or zero yield change. Even for small yield changes, convexity is non-zero; it's just that its contribution to total price change is small (since it scales with \\( (\\Delta y)^2 \\)). Only in the theoretical limit of infinitesimal yield changes does the convexity term become negligible, but it's never exactly zero.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Duration-Convexity Price Estimate",
+    "stem": "A bond has modified duration of 4 and convexity of 20. If yields fall by 2%, the estimated percentage price change is closest to:",
+    "options": {
+      "A": "+8.0%",
+      "B": "+8.4%",
+      "C": "+7.6%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Combined Duration-Convexity Formula</h3><p><strong>B is correct.</strong> Using \\( \\Delta P/P \\approx -Duration \\times \\Delta y + \\frac{1}{2} \\times Convexity \\times (\\Delta y)^2 \\). With \\( \\Delta y = -0.02 \\) (2% decline): Duration effect = \\( -4 \\times (-0.02) = +0.08 = +8.0\\% \\). Convexity effect = \\( 0.5 \\times 20 \\times (-0.02)^2 = 10 \\times 0.0004 = 0.004 = +0.4\\% \\). Total = \\( 8.0\\% + 0.4\\% = 8.4\\% \\). Mental calculation: duration gives 8%, convexity adds \\( 10 \\times 4\\,bps^2 = 40\\,bps = 0.4\\% \\). The positive convexity boosts the price increase beyond what duration alone predicts, demonstrating the beneficial asymmetry. This example shows why investors value convexity—it enhances gains in favorable rate environments.</p><p>A is incorrect because +8.0% is the duration-only estimate, ignoring convexity. While duration provides a good first-order approximation, for a 2% (200 bp) yield change—a relatively large move—the convexity adjustment becomes material (+0.4%). Omitting convexity underestimates the actual price change for option-free bonds, leading to conservative price estimates and suboptimal risk management.</p><p>C is incorrect because +7.6% would result from subtracting rather than adding the convexity adjustment: \\( 8.0\\% - 0.4\\% = 7.6\\% \\). This error stems from misunderstanding convexity's always-positive contribution for option-free bonds. Whether yields rise or fall, convexity improves outcomes relative to the duration-only estimate. Subtracting it inverts this beneficial property and would only apply to bonds with negative convexity (e.g., callable bonds under certain conditions).</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Portfolio Duration",
+    "stem": "A portfolio consists of 50% Bond A (duration 3) and 50% Bond B (duration 7). The portfolio duration is:",
+    "options": {
+      "A": "3.5",
+      "B": "5.0",
+      "C": "10.0"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Weighted-Average Duration</h3><p><strong>B is correct.</strong> Portfolio duration is the weighted average of individual bond durations: \\( Port\\,Dur = w_A \\times Dur_A + w_B \\times Dur_B = 0.5 \\times 3 + 0.5 \\times 7 = 1.5 + 3.5 = 5.0 \\). Mental calculation: average of 3 and 7 = (3+7)/2 = 5. This assumes equal weighting (50/50). The portfolio duration of 5 means a 1% yield change across both bonds would cause approximately a 5% portfolio value change. This weighted-average approach is practical and widely used, though it assumes parallel yield curve shifts. The simplicity of this calculation makes portfolio duration an essential tool for managing interest rate risk at the portfolio level, allowing managers to quickly assess aggregate exposure.</p><p>A is incorrect because 3.5 would be the weighted average if weights were 75% Bond A and 25% Bond B: \\( 0.75 \\times 3 + 0.25 \\times 7 = 2.25 + 1.75 = 4.0 \\), which doesn't match 3.5 either, or if calculated as half of the lower duration: \\( 7/2 = 3.5 \\). This doesn't properly weight both positions and misapplies the weighted-average formula.</p><p>C is incorrect because 10.0 sums the two durations (\\( 3 + 7 = 10 \\)) rather than calculating the weighted average. Portfolio duration is not additive—it requires weighting by portfolio proportions. Simply adding durations ignores that each bond represents only part of the portfolio. This error would overstate portfolio interest rate risk by a factor of 2 in this equal-weighted case.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Duration Properties",
+    "stem": "Which bond characteristic will increase a bond's duration, all else equal?",
+    "options": {
+      "A": "Higher coupon rate",
+      "B": "Higher yield-to-maturity",
+      "C": "Longer time-to-maturity"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Duration Determinants</h3><p><strong>C is correct.</strong> Duration is a weighted average of time to cash flows. Longer maturity pushes cash flows further into the future, increasing the weighted average time and thus duration. From the duration formula \\( MacDur = \\sum (t \\times w_t) \\), extending maturity adds distant cash flows with large t values, pulling the average upward. For example, extending maturity from 5 to 10 years adds 5 years of coupon payments and delays principal by 5 years, substantially increasing duration. This relationship is monotonic but nonlinear—duration increases with maturity but at a decreasing rate, approaching a limit for perpetual bonds. Longer maturity means greater price sensitivity to yield changes because distant cash flows have larger present value volatility.</p><p>A is incorrect because higher coupon rates decrease duration, not increase it. Higher coupons shift cash flow weighting toward earlier periods (larger near-term coupons) and away from principal (which is relatively smaller), reducing the weighted-average time. For example, a zero-coupon bond has duration equal to maturity, while a high-coupon bond has duration well below maturity. Higher coupons provide more \"ballast\" in early periods, reducing sensitivity to yield changes.</p><p>B is incorrect because higher yields decrease duration, not increase it. Higher discount rates reduce the present value of distant cash flows more than near-term cash flows (exponential discounting), shifting weight toward earlier periods and lowering the weighted average. Mathematically, \\( PV_t = CF_t / (1+y)^t \\), so higher y disproportionately reduces weight on large-t cash flows. This makes high-yield bonds less rate-sensitive than low-yield bonds of similar maturity.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Price Risk vs Reinvestment Risk",
+    "stem": "If an investor's horizon equals the bond's Macaulay duration, the investor is most hedged against:",
+    "options": {
+      "A": "Interest rate risk",
+      "B": "Credit risk",
+      "C": "Liquidity risk"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Duration Matching</h3><p><strong>A is correct.</strong> When investment horizon equals Macaulay duration (duration gap = 0), reinvestment risk and price risk approximately offset each other for parallel yield shifts. If rates rise, the loss from selling the bond below its original trajectory is roughly offset by gains from reinvesting coupons at higher rates. If rates fall, the gain from selling at a premium offsets the loss from reinvesting at lower rates. This is the fundamental insight of immunization: matching duration to horizon creates a hedge against interest rate risk. The offsetting occurs because duration represents the holding period where these two countervailing forces balance. This principle is used in liability-driven investing and pension fund management to lock in returns regardless of rate changes.</p><p>B is incorrect because credit risk (default risk) is unrelated to duration matching. Duration hedges against interest rate movements, not issuer creditworthiness deterioration. Credit risk depends on the issuer's financial health, business prospects, and economic conditions affecting default probability. Duration matching provides no protection if the issuer defaults or is downgraded—that requires credit analysis, diversification, or credit derivatives.</p><p>C is incorrect because liquidity risk (inability to sell quickly without price concessions) is independent of duration matching. Liquidity depends on market depth, bid-ask spreads, and trading volume, not the relationship between duration and holding period. Duration matching addresses interest rate risk through the reinvestment/price risk offset mechanism, but it cannot protect against illiquid markets where forced selling creates transaction costs and price impacts unrelated to fundamental value.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Simple Duration Calculation",
+    "stem": "A bond priced at 100 falls to 96 when yields rise by 100 bps. Its approximate modified duration is:",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "8"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Duration from Price Change</h3><p><strong>B is correct.</strong> Rearranging the duration formula \\( \\Delta P/P \\approx -ModDur \\times \\Delta y \\) to solve for duration: \\( ModDur \\approx -(\\Delta P/P) / \\Delta y \\). Here \\( \\Delta P = 96 - 100 = -4 \\), so \\( \\Delta P/P = -4/100 = -0.04 = -4\\% \\), and \\( \\Delta y = 0.01 \\). Thus \\( ModDur \\approx -(-0.04) / 0.01 = 0.04 / 0.01 = 4 \\). Mental check: 4% price drop for 1% yield rise implies duration of 4. This reverse-engineering of duration from observed price changes is commonly used by traders and risk managers to calibrate models and estimate real-world sensitivities, validating theoretical duration calculations against market behavior.</p><p>A is incorrect because duration of 2 would imply only a 2% price change for a 1% yield change: \\( 2 \\times 1\\% = 2\\% \\), but the observed change is 4%. This answer halves the actual sensitivity, possibly confusing the magnitude of the price change (4 points) with the percentage change (4%) or miscalculating the ratio. Using duration of 2 would underestimate risk by 50%.</p><p>C is incorrect because duration of 8 would imply an 8% price change for a 1% yield change, double the observed 4% change. This might result from using the absolute price change (4 points) without converting to a percentage, or doubling the calculation somewhere: \\( 8 = 2 \\times 4 \\). This overstates interest rate sensitivity by a factor of 2, leading to excessive hedging or risk aversion.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Convexity Benefit",
+    "stem": "Positive convexity is most beneficial to bond investors when:",
+    "options": {
+      "A": "Yields are stable",
+      "B": "Yields are volatile",
+      "C": "Credit spreads widen"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Convexity Value</h3><p><strong>B is correct.</strong> Convexity's value arises from its asymmetric payoff: prices rise more than duration predicts when yields fall, and fall less than duration predicts when yields rise. This asymmetry is most valuable when yields move significantly and frequently (high volatility). The convexity adjustment \\( \\frac{1}{2} \\times Convexity \\times (\\Delta y)^2 \\) scales with the square of yield changes, so larger moves generate disproportionately larger benefits. With volatile yields, investors repeatedly capture the convexity gain on both upward and downward moves, creating a \"gamma\" profit similar to options trading. Low-volatility environments minimize \\( (\\Delta y)^2 \\), reducing convexity's contribution. This principle explains why investors pay premiums for high-convexity bonds in uncertain rate environments.</p><p>A is incorrect because stable yields (low volatility) minimize convexity's benefit. When \\( \\Delta y \\approx 0 \\), the convexity term \\( \\frac{1}{2} \\times Convexity \\times (\\Delta y)^2 \\approx 0 \\) contributes negligibly to returns. Duration provides adequate price estimates for small changes, making convexity's second-order correction irrelevant. Investors shouldn't pay much for convexity in stable environments—it's \"insurance\" that's rarely needed, making it expensive relative to benefit.</p><p>C is incorrect because credit spread widening relates to credit risk, not interest rate risk or convexity benefits. Convexity measures sensitivity to benchmark yield changes, not credit spread changes. Wider spreads reduce bond prices through higher discount rates but don't interact with convexity's mathematical properties regarding benchmark rate volatility. Credit spread changes are typically modeled separately from duration/convexity frameworks, requiring different risk measures like credit duration or DTS (duration times spread).</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Money Duration Application",
+    "stem": "A portfolio manager wants to reduce interest rate risk by $500,000 per 1% yield change. This requires adjusting:",
+    "options": {
+      "A": "Modified duration by 5",
+      "B": "Money duration by $500,000",
+      "C": "Macaulay duration by 500,000 years"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Money Duration Application</h3><p><strong>B is correct.</strong> Money duration directly measures dollar price change per 1% yield change, so reducing it by $500,000 directly achieves the goal. If current \\( MoneyDur = \\$10M \\) and target is \\( \\$9.5M \\), the manager reduces money duration by \\( \\$500k \\). This can be accomplished by selling bonds, adding short-duration bonds, or using derivatives. Money duration is the appropriate metric for position-level risk management because it translates percentage sensitivities into dollar terms, enabling direct comparison with risk limits, P&L targets, and hedge requirements. This is essential for practical risk management where absolute dollar exposures matter more than percentage sensitivities.</p><p>A is incorrect because modified duration is a percentage measure, not a dollar measure. Reducing modified duration by 5 (from, say, 6 to 1) doesn't directly specify the dollar risk reduction—the outcome depends on portfolio value. If the portfolio is $10M at MD=6, money duration is $600k (\\( 6 \\times 10M \\times 0.01 \\)). Reducing MD to 1 gives \\( 1 \\times 10M \\times 0.01 = 100k \\), a $500k reduction. But without knowing portfolio value, adjusting \"modified duration by 5\" doesn't precisely target a $500k money duration reduction.</p><p>C is incorrect because Macaulay duration measures weighted-average time (in years), not dollar risk. \"500,000 years\" is a nonsensical unit for duration. Even if this meant reducing Macaulay duration by 5 years (interpreting \"500,000\" as a typo), it still doesn't directly translate to dollar risk without knowing portfolio value and yield levels. Macaulay duration is primarily a theoretical construct; for risk management, modified or money duration is appropriate.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "Rising Rates Impact",
+    "stem": "An investor sells a bond before maturity. If interest rates rise after purchase, the investor will most likely experience:",
+    "options": {
+      "A": "A capital gain",
+      "B": "A capital loss",
+      "C": "No capital gain or loss"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Price-Yield Relationship</h3><p><strong>B is correct.</strong> From the fundamental inverse relationship between bond prices and yields, when yields rise, prices fall: \\( P = \\sum CF_t / (1+y)^t \\). Higher y (discount rate) reduces present value of all cash flows. If the investor sells at the new lower price, they realize a capital loss relative to the purchase price. For example, buying at par (100) when yields are 5%, then selling after yields rise to 6%, the bond trades below par—say 95—creating a 5-point capital loss. This is pure price risk: the mark-to-market loss from adverse rate movements. This principle is fundamental to understanding bond investing: holding period shorter than maturity exposes investors to price risk from yield changes.</p><p>A is incorrect because capital gains occur when prices rise, which happens when yields fall, not rise. The question specifies rising rates, which causes falling prices. A capital gain would require selling at a price above purchase price, impossible when rates have risen and pushed prices down. This answer reverses the price-yield relationship.</p><p>C is incorrect because \"no capital gain or loss\" only occurs if: (1) the bond is held to maturity (redemption at par eliminates price risk), or (2) yields remain unchanged so the sale price equals the constant-yield trajectory. The question specifies rising rates and sale before maturity, guaranteeing a price change. Even if the bond was bought at a discount, rising rates push the price further below the trajectory, creating a mark-to-market loss relative to the expected path.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Duration and Maturity",
+    "stem": "For coupon-paying bonds, Macaulay duration is always:",
+    "options": {
+      "A": "Equal to time-to-maturity",
+      "B": "Greater than time-to-maturity",
+      "C": "Less than time-to-maturity"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Duration-Maturity Relationship</h3><p><strong>C is correct.</strong> Macaulay duration is the weighted-average time to cash flows: \\( MacDur = \\sum (t \\times w_t) \\), where \\( w_t = PV_t / Price \\). For coupon bonds, cash flows arrive before maturity (periodic coupons), so some weight is placed on times less than maturity. This pulls the weighted average below the final maturity date. For example, a 10-year bond paying annual coupons has cash flows at years 1, 2, ...10. Since weight is distributed across all years (not just year 10), the weighted average must be less than 10. Only zero-coupon bonds have all weight at maturity, making duration equal maturity. This relationship is fundamental: coupons act as \"ballast,\" anchoring duration below maturity and reducing interest rate sensitivity.</p><p>B is incorrect because having duration exceed maturity would require negative cash flows or negative weights, which don't exist for standard bonds. Duration is a weighted average of times when positive cash flows arrive; it cannot exceed the latest cash flow time (maturity). This would violate the mathematical properties of weighted averages, which must fall between the minimum and maximum values being averaged.</p><p>A is incorrect because duration equals maturity only for zero-coupon bonds (no interim cash flows) or perpetual bonds in a special limiting case. For any coupon-paying bond with finite maturity, some cash arrives before the maturity date, making the weighted-average time less than maturity. This answer ignores the fundamental impact of coupon payments on the duration calculation.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "Falling Rates Scenario",
+    "stem": "A bond is purchased at par and held to maturity. If interest rates fall immediately after purchase, the investor's realized return will most likely be:",
+    "options": {
+      "A": "Lower than the original YTM",
+      "B": "Equal to the original YTM",
+      "C": "Higher than the original YTM"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Reinvestment Risk for Buy-and-Hold</h3><p><strong>A is correct.</strong> Buy-and-hold investors (to maturity) face only reinvestment risk, not price risk, since bonds redeem at par. When rates fall, coupons are reinvested at lower rates than the original YTM, reducing the future value of reinvested coupons: \\( FV_{coupons} = \\sum c \\times (1+r_{new})^{remaining} \\), where \\( r_{new} < r_{original} \\). Since total return includes both coupon and reinvestment income, lower reinvestment rates drag realized return below the original YTM. For example, buying at 6% YTM but reinvesting coupons at 4% produces \\( Horizon\\,Yield < 6\\% \\). This fundamental relationship shows that YTM equals realized return only if reinvestment occurs at the same YTM—a restrictive assumption rarely met in practice.</p><p>B is incorrect because equal returns require reinvesting coupons at exactly the original YTM. The question specifies falling rates, violating this assumption. The YTM at purchase is a promised yield contingent on specific reinvestment assumptions. When those assumptions fail (rates change), realized yield diverges from promised yield. This answer misunderstands YTM as a guaranteed return rather than a scenario-dependent expectation.</p><p>C is incorrect because higher returns occur when rates rise, not fall. Rising rates boost reinvestment income for buy-and-hold investors, increasing total return above the original YTM. Falling rates have the opposite effect, reducing reinvestment income. This answer confuses the direction of reinvestment risk impact—it correctly identifies that rate changes affect returns but reverses which direction benefits buy-and-hold investors.</p>"
   }
-]
+] 
 
