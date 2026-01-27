@@ -94,7 +94,7 @@
     "id": 1,
     "model": "Gemini 3",
     "topic": "Price-Weighted Index Bias",
-    "stem": "Assertion (A): In a price-weighted index, a 10% price increase in a stock trading at $100 has a greater impact on the index value than a 10% price increase in a stock trading at $10.\nReason (R): Price-weighted indexes allocate weight to constituent securities based on their market capitalization.",
+    "stem": "Assertion (A): In a price-weighted index, a 10% price increase in a stock trading at USD 100 has a greater impact on the index value than a 10% price increase in a stock trading at USD 10.\nReason (R): Price-weighted indexes allocate weight to constituent securities based on their market capitalization.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -102,7 +102,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "C",
-    "explanation": "Start from the definition of the index. A price-weighted index calculates its value based on the arithmetic sum of the prices of its constituents. A 10% move in a $100 stock is a $10 change in the numerator, while a 10% move in a $10 stock is only a $1 change. Therefore, the high-priced stock drives the index more, making Assertion (A) true. However, Reason (R) is false because price-weighted indexes weigh securities by their absolute price per share, not their market capitalization (price × shares outstanding)."
+    "explanation": "Start from the definition of the index. A price-weighted index calculates its value based on the arithmetic sum of the prices of its constituents. A 10% move in a USD 100 stock is a USD 10 change in the numerator, while a 10% move in a USD 10 stock is only a USD 1 change. Therefore, the high-priced stock drives the index more, making Assertion (A) true. However, Reason (R) is false because price-weighted indexes weigh securities by their absolute price per share, not their market capitalization (price × shares outstanding)."
   },
   {
     "id": 2,
@@ -130,7 +130,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "D",
-    "explanation": "Test the math with examples. If Stock A is $100 and Stock B is $10, the sum is $110. A +10% move in A is +$10; a -10% move in B is -$1. The new sum is $119. The index return is 9/110 ≈ 8.18%, not 0%. The return depends on the price levels of the stocks. Thus, Assertion (A) is false. Reason (R) is true: the index value is Sum/Divisor, so the index return is indeed the percentage change in that sum (assuming the divisor is constant)."
+    "explanation": "Test the math with examples. If Stock A is USD 100 and Stock B is USD 10, the sum is USD 110. A +10% move in A is +USD 10; a -10% move in B is -USD 1. The new sum is USD 119. The index return is 9/110 ≈ 8.18%, not 0%. The return depends on the price levels of the stocks. Thus, Assertion (A) is false. Reason (R) is true: the index value is Sum/Divisor, so the index return is indeed the percentage change in that sum (assuming the divisor is constant)."
   },
   {
     "id": 4,
@@ -234,14 +234,14 @@
     "id": 1,
     "model": "Gemini 3",
     "topic": "Security Market Indexes – Price-Weighted Index Divisor",
-    "stem": "A price-weighted index consists of three stocks: Stock A ($100), Stock B ($50), and Stock C ($30). The divisor is currently 3.0. Stock A undergoes a 2-for-1 stock split. The price of Stock A immediately adjusts to $50. What is the new divisor required to maintain the index value?",
+    "stem": "A price-weighted index consists of three stocks: Stock A (USD 100), Stock B (USD 50), and Stock C (USD 30). The divisor is currently 3.0. Stock A undergoes a 2-for-1 stock split. The price of Stock A immediately adjusts to USD 50. What is the new divisor required to maintain the index value?",
     "options": {
       "A": "2.17",
       "B": "2.50",
       "C": "3.00"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Index Continuity</h3><p><strong>A is correct.</strong> A stock split is a non-economic event for the index; it should not change the index level. In a price-weighted index, the value is calculated as $$ \\\text{Index} = \\\frac{\\sum \\\text{Prices}}{\\\text{Divisor}} $$.<br><strong>Step 1: Calculate Pre-Split Index Value.</strong><br>Sum of prices = $100 + $50 + $30 = $180.<br>Index Value = $180 / 3.0 = 60.00$.<br><strong>Step 2: Calculate Post-Split Sum of Prices.</strong><br>Stock A splits 2-for-1, so its price becomes $100 / 2 = $50. The other prices remain unchanged.<br>New Sum = $50 + $50 + $30 = $130.<br><strong>Step 3: Solve for New Divisor.</strong><br>To maintain the index value of 60.00:<br>$$ 60.00 = \\\frac{130}{\\\text{New Divisor}} $$<br>$$ \\\text{New Divisor} = \\\frac{130}{60} \\approx 2.1667 $$.</p><p>B is incorrect because it likely averages the split ratio or attempts an arithmetic adjustment without solving for the constant index value.</p><p>C is incorrect because it fails to adjust the divisor, which would cause the index value to drop artificially from 60 to 43.33 ($130/3$), falsely signaling a market decline.</p>"
+    "explanation": "<h3>First Principles Thinking: Index Continuity</h3><p><strong>A is correct.</strong> A stock split is a non-economic event for the index; it should not change the index level. In a price-weighted index, the value is calculated as $$ \\\text{Index} = \\\frac{\\sum \\\text{Prices}}{\\\text{Divisor}} $$.<br><strong>Step 1: Calculate Pre-Split Index Value.</strong><br>Sum of prices = USD 100 + USD 50 + USD 30 = USD 180.<br>Index Value = $180 / 3.0 = 60.00$.<br><strong>Step 2: Calculate Post-Split Sum of Prices.</strong><br>Stock A splits 2-for-1, so its price becomes USD 100 / 2 = USD 50. The other prices remain unchanged.<br>New Sum = USD 50 + USD 50 + USD 30 = USD 130.<br><strong>Step 3: Solve for New Divisor.</strong><br>To maintain the index value of 60.00:<br>$$ 60.00 = \\\frac{130}{\\\text{New Divisor}} $$<br>$$ \\\text{New Divisor} = \\\frac{130}{60} \\approx 2.1667 $$.</p><p>B is incorrect because it likely averages the split ratio or attempts an arithmetic adjustment without solving for the constant index value.</p><p>C is incorrect because it fails to adjust the divisor, which would cause the index value to drop artificially from 60 to 43.33 ($130/3$), falsely signaling a market decline.</p>"
   },
   {
     "id": 2,
@@ -254,7 +254,7 @@
       "C": "10.0%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Investable Weight</h3><p><strong>B is correct.</strong> Float-adjusted weighting bases the index weight on the value of shares available to public investors, not the total company value.<br><strong>Step 1: Determine Free Float Shares.</strong><br>Free Float = Total Shares − Locked-in Shares<br>$$ 10,000,000 - 4,000,000 = 6,000,000 \\\text{ shares} $$<br><strong>Step 2: Calculate Float-Adjusted Market Cap.</strong><br>$$ \\\text{Float Cap} = \\\text{Float Shares} \\\times \\\text{Price} $$<br>$$ 6,000,000 \\\times 20.00 = 120,000,000 $$<br><strong>Step 3: Calculate Weight.</strong><br>$$ \\\text{Weight} = \\\frac{\\\text{Security Float Cap}}{\\\text{Index Total Float Cap}} $$<br>$$ \\\text{Weight} = \\\frac{120,000,000}{2,000,000,000} = 0.06 = 6.0\\% $$</p><p>A is incorrect because it miscalculates the float or applies an arbitrary discount.</p><p>C is incorrect because it uses Total Market Capitalization ($10M \\times $20 = $200M) instead of Float-Adjusted Capitalization ($120M), ignoring the restriction on insider shares.</p>"
+    "explanation": "<h3>First Principles Thinking: Investable Weight</h3><p><strong>B is correct.</strong> Float-adjusted weighting bases the index weight on the value of shares available to public investors, not the total company value.<br><strong>Step 1: Determine Free Float Shares.</strong><br>Free Float = Total Shares − Locked-in Shares<br>$$ 10,000,000 - 4,000,000 = 6,000,000 \\\text{ shares} $$<br><strong>Step 2: Calculate Float-Adjusted Market Cap.</strong><br>$$ \\\text{Float Cap} = \\\text{Float Shares} \\\times \\\text{Price} $$<br>$$ 6,000,000 \\\times 20.00 = 120,000,000 $$<br><strong>Step 3: Calculate Weight.</strong><br>$$ \\\text{Weight} = \\\frac{\\\text{Security Float Cap}}{\\\text{Index Total Float Cap}} $$<br>$$ \\\text{Weight} = \\\frac{120,000,000}{2,000,000,000} = 0.06 = 6.0\\% $$</p><p>A is incorrect because it miscalculates the float or applies an arbitrary discount.</p><p>C is incorrect because it uses Total Market Capitalization (USD 10M \\\times USD 20 = USD 200M) instead of Float-Adjusted Capitalization (USD 120M), ignoring the restriction on insider shares.</p>"
   },
   {
     "id": 1,
@@ -478,4 +478,3 @@
     "explanation": "Statement (1) is incorrect. Commodity indexes are typically constructed using futures contracts, not physical spot assets. Therefore, returns are driven by futures price changes, the risk-free rate, and roll yield, which can differ significantly from spot price returns. Statement (2) is correct. Roll yield (positive or negative) is generated when an expiring futures contract is closed and a new one is opened at a different price (contango or backwardation). Statement (3) is correct. Many hedge fund databases rely on voluntary reporting. Poorly performing funds may stop reporting or not report at all, causing survivorship and related biases. Therefore, Option B is the correct answer."
   }
 ]
-
