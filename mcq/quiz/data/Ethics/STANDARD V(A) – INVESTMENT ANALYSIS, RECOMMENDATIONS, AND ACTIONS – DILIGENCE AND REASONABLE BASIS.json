@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Sufficient Due Diligence (IPO Pricing)",
+    "stem": "Hawke, a corporate finance manager, rushes to price several IPOs to beat a tax loophole deadline. Lacking resources to research each company fully, she prices them based solely on their relative size compared to peers, intending to justify the valuation later. Has Hawke violated Standard V(A)?",
+    "options": {
+      "A": "No, because the time constraint was an external factor beyond her control.",
+      "B": "Yes, because she failed to exercise diligence and thoroughness in analyzing the specific investments.",
+      "C": "No, because relative valuation is a widely accepted industry standard for pricing new issues."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Foundation of Advice</h3><p><strong>B is correct.</strong> Start with the definition of 'Reasonable Basis': it requires investigation supported by appropriate research <em>before</em> acting. The governing principle: Professional judgment cannot be bypassed for speed. The mechanism of violation: Hawke substituted a heuristic (size = price) for actual analysis (fundamentals, risk, etc.). By explicitly deciding to 'justify later', she admitted the decision had no basis <em>at the time it was made</em>. The boundary condition: External pressure (deadlines) never excuses the lack of diligence. If you can't do the work, you can't give the advice.</p><p>A is incorrect: Time pressure is a business constraint, not an ethical exemption. The flaw is prioritizing the deal schedule over the integrity of the valuation.</p><p>C is incorrect: Relative valuation requires comparable metrics (margins, growth), not just 'size'. The misconception is that using a valid <em>method</em> (relative value) poorly counts as diligence.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Timely Client Updates",
+    "stem": "Chandler selects five US equity managers for a pension client based on a rigorous database screen. Before delivering the report, she learns that one manager's entire investment team has quit. She delivers the original report without the update, reasoning the database was accurate at the time of screening. Has Chandler violated Standard V(A)?",
+    "options": {
+      "A": "Yes, because she failed to exercise diligence by ignoring material new information known before delivery.",
+      "B": "No, because her recommendation was based on a thorough and objective process at the time of analysis.",
+      "C": "No, because the client can be informed of the team departure during the next quarterly review."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Currency of Information</h3><p><strong>A is correct.</strong> From first principles, a recommendation is a 'live' instruction to act. The governing relationship: The validity of a recommendation relies on the current reality of the investment. The mechanism of violation: The departure of the team destroys the 'reasonable basis' for the recommendation (the skill is gone). By delivering the report <em>knowing</em> it was obsolete, Chandler knowingly provided baseless advice. The boundary condition: Diligence doesn't stop when the spreadsheet is closed; it stops when the client acts. If facts change before delivery, the advice must change.</p><p>B is incorrect: The 'time of analysis' defense fails if the timeline is short and the change is catastrophic. The flaw is treating the research process as a static snapshot rather than a dynamic duty.</p><p>C is incorrect: The client might hire the empty shell firm <em>now</em> based on the report. Waiting for a quarterly review exposes the client to immediate harm.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Group Research Opinions",
+    "stem": "Mastakis, a junior analyst, writes a report predicting stable interest rates. The firm's investment committee reviews it and, based on their collective expertise, revises the conclusion to predict rising rates. Mastakis disagrees with the change but acknowledges the committee's view has a reasonable basis. Must she dissociate from the report?",
+    "options": {
+      "A": "Yes, because an analyst must never sign a report that contradicts their personal opinion.",
+      "B": "No, because the group consensus has a reasonable basis, even if she disagrees with the conclusion.",
+      "C": "Yes, because the committee's intervention compromises her independence and objectivity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Consensus vs. Coercion</h3><p><strong>B is correct.</strong> Start with the nature of institutional research: it is often a collective product. The governing principle: A 'reasonable basis' can exist for multiple conflicting viewpoints. The mechanism: If the committee's view is grounded in fact and logic (reasonable), Mastakis can associate with it as a 'firm' product, even if her personal view differs. The boundary condition: She would only need to dissociate if the committee's view had <em>no</em> reasonable basis (e.g., was forced by banking pressure) or was factually false. Disagreement on judgment calls does not require dissociation.</p><p>A is incorrect: Professional disagreement is normal. The misconception is that 'my name' means 'my sole unadulterated thought'. It often means 'I participated in the rigorous process'.</p><p>C is incorrect: Peer review enhances quality; it doesn't automatically ruin independence. The flaw is viewing all oversight as 'pressure' rather than 'quality control'.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Subadviser Selection Diligence",
+    "stem": "Ostrowski searches for a subadviser to handle international investments. He receives seven proposals but feels unqualified to judge their investment merit. He selects the firm with the lowest fees to minimize impact on his firm's bottom line. Has Ostrowski violated Standard V(A)?",
+    "options": {
+      "A": "No, because minimizing costs is a fiduciary duty to the client.",
+      "B": "Yes, because he failed to investigate the qualifications and strategy of the subadviser.",
+      "C": "No, because he used a standardized Request for Proposal (RFP) process."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Delegation is Not Abdication</h3><p><strong>B is correct.</strong> From first principles, selecting a subadviser is an investment decision. The governing rule: You must have a reasonable basis for the <em>selection</em>. The mechanism of violation: Ostrowski admitted he couldn't judge quality ('felt unqualified') and substituted a non-investment factor (fees) as the sole decision criteria. This ignores risk, performance, and process. The boundary condition: If you are unqualified to judge the diligence, you are unqualified to hire the manager. You cannot outsource the duty of care.</p><p>A is incorrect: Cost is one factor, not the only factor. Cheap incompetence is not a fiduciary win. The flaw is equating 'low cost' with 'best interest'.</p><p>C is incorrect: The tool (RFP) is irrelevant if the evaluation of it is flawed. The misconception is that <em>collecting</em> data counts as <em>analyzing</em> data.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Scenario Testing Limitations",
+    "stem": "Thompson runs a stress test on mortgage securities. He insists on including a 'negative housing price' scenario, even though historical data shows prices have never fallen. His manager argues it's too dire. Thompson runs the test, finds high risk, and recommends against purchase. Has Thompson acted appropriately?",
+    "options": {
+      "A": "No, because he based his analysis on a scenario that contradicts all available historical data.",
+      "B": "Yes, because diligence requires testing assumptions outside of historical norms (stress testing).",
+      "C": "No, because his model inputs were subjective and not grounded in empirical evidence."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Inductive Fallacy</h3><p><strong>B is correct.</strong> Start with the purpose of risk management: to anticipate the future, not just record the past. The governing principle: 'Reasonable basis' includes considering what <em>could</em> happen, not just what <em>has</em> happened. The mechanism: Historical data (prices always rise) had a blind spot. Thompson applied first-principles reasoning (prices <em>can</em> fall) to stress-test the asset. The boundary condition: Ignoring a plausible economic risk just because it hasn't happened yet (the 'turkey problem') is a failure of diligence. Thompson's skepticism saved the firm.</p><p>A is incorrect: History is a guide, not a jail. The flaw is assuming the future must look exactly like the past.</p><p>C is incorrect: All forward-looking scenarios are subjective. The misconception is that 'subjective' means 'invalid'. If the economic logic holds, the scenario is valid.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Model Integration Risk",
+    "stem": "Liakos rushes to create a volatility strategy for a client. She outsources components to trusted third parties. Each component is validated individually, but Liakos never tests how they interact as a whole system. The strategy collapses when the components work at cross-purposes during market stress. Has Liakos violated Standard V(A)?",
+    "options": {
+      "A": "Yes, because she failed to understand and test the interaction of the model's components.",
+      "B": "No, because she exercised due diligence by validating each individual component.",
+      "C": "No, because she relied on trusted third parties which is permitted under the Standards."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Systemic Validity</h3><p><strong>A is correct.</strong> From first principles, a machine is more than a pile of parts. The governing relationship: The validity of a complex strategy depends on the <em>correlation</em> and <em>interaction</em> of its pieces. The mechanism of violation: Testing parts A, B, and C in isolation tells you nothing about A+B+C. Liakos skipped the 'integration test' due to haste. The boundary condition: When assembling a product, the 'reasonable basis' applies to the <em>final assembly</em>. Failing to test the whole is a diligence failure.</p><p>A is incorrect: The Fallacy of Composition—assuming what is true of the part is true of the whole. The flaw is ignoring the interaction effects.</p><p>C is incorrect: Reliance is allowed, but blind assembly is not. The misconception is that outsourcing the parts outsources the responsibility for the whole.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Quantitative Model Diligence (Blog inputs)",
+    "stem": "Cannon, a quant analyst, reads a blog post about a new market factor. Under pressure to improve performance, he immediately incorporates this factor into the firm's live trading models without testing it on the firm's specific data or history. Has Cannon violated Standard V(A)?",
+    "options": {
+      "A": "No, because the blog was written by a reputable CFA charterholder.",
+      "B": "Yes, because he failed to establish a reasonable basis for the new factor through his own testing.",
+      "C": "No, because continuous improvement of models is required by the Competence standard."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Verification of Inputs</h3><p><strong>B is correct.</strong> Start with the scientific method: Hypothesis -> Test -> Implementation. The governing principle: You cannot adopt external ideas without internal validation. The mechanism of violation: Cannon skipped the 'Test' phase. A factor that works in a blog (generic context) might fail in his specific model (specific context). The boundary condition: 'Reasonable basis' requires that <em>you</em> know it works for <em>you</em>. Relying on an outside authority without verification is negligence.</p><p>A is incorrect: Argument from Authority. Even experts can be wrong, or their advice might not apply to your specific situation.</p><p>C is incorrect: Improvement requires diligence. The flaw is confusing 'change' with 'improvement'. Change without testing is just gambling.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3 Pro",
+    "topic": "Selecting a Service Provider (Software)",
+    "stem": "Stefansson recommends a complex performance attribution system solely because the sales presentation was impressive. She does not review the other four candidates or test if the calculation methodology aligns with her firm's specific investment strategy. Has Stefansson violated Standard V(A)?",
+    "options": {
+      "A": "Yes, because she lacked a reasonable basis for the recommendation and failed to investigate alternatives.",
+      "B": "No, because software selection is an operational decision, not an investment recommendation.",
+      "C": "No, because relying on vendor representations is standard industry practice."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Tools are Investment Decisions</h3><p><strong>A is correct.</strong> From first principles, the tools we use determine the answers we give clients. The governing rule: Diligence applies to the <em>infrastructure</em> of advice, not just stock picking. The mechanism of violation: Stefansson bought the 'sizzle' (sales pitch) without checking the 'steak' (methodology). She failed to check fit (does it handle our currency needs?) or quality (is the math right?). The boundary condition: Recommending a system that reports client performance is a fiduciary act. It demands the same comparison and testing as buying a stock.</p><p>B is incorrect: If the tool measures performance/risk, it is part of the investment process. The flaw is thinking 'back office' means 'no ethics'.</p><p>C is incorrect: Vendor presentations are marketing, not research. The misconception is that a brochure constitutes due diligence.</p>"
+  }
+]

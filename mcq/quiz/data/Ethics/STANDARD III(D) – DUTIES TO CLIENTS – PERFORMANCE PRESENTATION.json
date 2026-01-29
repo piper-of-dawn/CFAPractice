@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Misrepresentation - Time Period",
+    "stem": "Taylor of Taylor Trust Company distributes a brochure to potential clients stating that the firm consistently achieves 25% annual growth of assets. The firm's common trust fund did increase 25% for the previous year, but never had an annual growth rate of 25% prior to last year, and the average rate of growth of all Taylor Trust accounts for five years is 5% per year. Has Taylor violated Standard III(D)?",
+    "options": {
+      "A": "No, because the 25% growth rate actually occurred for one of the firm's accounts.",
+      "B": "Yes, because the brochure misrepresents the firm's overall performance by generalizing one year's results.",
+      "C": "No, because Taylor can choose to highlight the best-performing period to attract clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fair and Complete Performance Disclosure</h3><p><strong>B is correct.</strong> From first principles, performance presentation must reflect a fair, accurate, and complete representation of investment results. Start with the duty to clients: members must not mislead about historical performance capabilities. The governing relationship is that claims of 'consistent achievement' imply repeatability across time and accounts. The mechanism of violation occurs when a single data point (25% in one year for one fund) is extrapolated to represent firm-wide, ongoing capability. The boundary condition is that general claims of firm performance must account for all categories of accounts across relevant time periods. Applying this to Taylor's brochure: stating 'consistent 25% growth' when only one fund achieved this once, while the firm-wide average is 5%, creates a material misrepresentation of capability and expected outcomes.</p><p>A is incorrect: while the 25% return did occur, this fact alone does not permit misrepresentation. The misconception is that truthfulness of a single data point excuses misleading contextualization—first principles require that isolated facts must be framed within their complete context to avoid deception.</p><p>C is incorrect: selective disclosure that creates false expectations violates the duty of fair presentation. The flaw is assuming marketing freedom overrides accuracy obligations—members cannot cherry-pick data in ways that misrepresent overall capabilities, regardless of competitive incentives.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "GIPS Compliance Misrepresentation",
+    "stem": "Judd, a senior partner at Alexander Capital Management, circulates a performance report for capital appreciation accounts for the years 2008-2022, claiming compliance with the GIPS standards. However, composite returns are not calculated by asset weighting portfolio returns as required by GIPS. Has Judd violated Standard III(D)?",
+    "options": {
+      "A": "No, because the underlying performance data is accurate regardless of calculation methodology.",
+      "B": "No, because GIPS compliance is voluntary and discrepancies are immaterial.",
+      "C": "Yes, because claiming GIPS compliance without meeting all requirements is a misrepresentation."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Integrity of Performance Standards Claims</h3><p><strong>C is correct.</strong> From foundational concepts: GIPS standards define a specific, comprehensive framework for performance calculation and presentation. The governing principle is that claiming compliance with an established standard creates an expectation that all requirements are met. The causal mechanism of the violation: when a firm states GIPS compliance, clients and prospects rely on that claim to interpret reported performance as calculated per GIPS methodology. The boundary condition: partial compliance is not compliance—GIPS requires asset-weighted returns for composites; using any other method while claiming adherence breaks the trust relationship. Applying to Judd's situation: by publishing returns calculated differently than GIPS requires while claiming compliance, he misrepresents the nature of the performance calculation, misleading readers about both methodology and rigor.</p><p>A is incorrect: accuracy of raw data does not excuse methodological misrepresentation. The first-principles flaw is conflating data truth with process integrity—GIPS compliance speaks to calculation and presentation standards, not merely data veracity.</p><p>B is incorrect: while GIPS adoption is voluntary, claiming compliance when not actually compliant is prohibited. The misconception is that voluntary frameworks permit loose interpretation—once a claim of compliance is made, full adherence is mandatory to avoid misrepresentation.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Prior Firm Performance Attribution",
+    "stem": "McCoy, vice president at Mastermind Financial Advisers (a new firm), prepares an advertisement that includes equity investment performance he achieved at his prior employer, GP Financial. The advertisement does not identify that the performance was earned at GP Financial and is distributed to existing and prospective clients of Mastermind. Has McCoy violated Standard III(D)?",
+    "options": {
+      "A": "No, because McCoy personally achieved the performance and can claim it as his track record.",
+      "B": "Yes, because the advertisement misrepresents Mastermind's performance history by omitting the source.",
+      "C": "No, because past performance is always indicative of future results regardless of firm affiliation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Attribution and Context of Performance History</h3><p><strong>B is correct.</strong> Starting from basics: performance results are a function of both individual skill and firm infrastructure (research, trading, compliance, resources). The core principle is that performance presentations must be fair, accurate, and complete—completeness requires disclosing the context in which results were generated. The mechanism: when prior-firm performance is presented without attribution, recipients reasonably assume it represents the current firm's capabilities and resources. The boundary condition: showing prior performance is permissible only when accompanied by full disclosure of where and when it occurred. Applied here: McCoy's advertisement creates the false impression that Mastermind has a track record it does not possess, materially misleading clients about the firm's demonstrated capabilities.</p><p>A is incorrect: personal achievement does not eliminate disclosure obligations. The misconception is that individual contribution alone determines ownership of a track record—first principles show performance emerges from a system, requiring context about that system to avoid misleading claims.</p><p>C is incorrect: this statement itself is false (past performance is not necessarily indicative of future results) and misses the core issue. The flaw is ignoring the disclosure requirement—even if McCoy's skill is portable, clients must know the performance was generated in a different organizational context.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Simulated Performance Disclosure",
+    "stem": "Davis developed a mutual fund selection product based on historical data from 2000-2015 and tested it retroactively on data from 2016-2022, producing simulated results. In January 2023, advertisements for the product include the 2016-2022 performance results but do not indicate they were simulated. Has Davis violated Standard III(D)?",
+    "options": {
+      "A": "No, because the simulated results are based on actual historical market data.",
+      "B": "Yes, because failing to identify simulated results as such misrepresents the nature of the performance.",
+      "C": "No, because backtested strategies using historical data represent genuine investment performance."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Simulated vs. Actual Performance</h3><p><strong>B is correct.</strong> From foundational logic: actual performance reflects real-world execution with all attendant frictions—transaction costs, slippage, market impact, timing constraints, and real-time decision-making under uncertainty. Simulated performance applies a model to historical data without these frictions. The governing relationship: Standard III(D) requires fair, accurate, and complete presentation, which necessitates distinguishing hypothetical from actual results. The mechanism of deception: when simulated results are presented as if they were real trading outcomes, viewers overestimate likely future performance because they miss the lookback bias and execution ideal ization. The boundary condition: any use of backtested or model-generated results must include full disclosure of their simulated nature and the period to which the model was applied retroactively. Applied to Davis: by omitting that 2016-2022 results are simulated, he creates a material misimpression about the product's real-world track record.</p><p>A is incorrect: using actual market data for simulation does not make the results equivalent to live trading. The misconception is equating data source with performance reality—first principles show execution and model application differ fundamentally from real portfolio management.</p><p>C is incorrect: backtests are not genuine investment performance. The flaw is treating hypothetical construction as equivalent to actual results—without disclosure, this conflates possibility with demonstrated achievement.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Selective Account Inclusion in Composites",
+    "stem": "Kilmer prepares a presentation showing rates of return for a composite of his firm's discretionary balanced accounts over five years. The composite consists of only a few accounts meeting the balanced criterion, excludes accounts under a certain asset level without disclosure, includes non-balanced accounts to improve results, and Kilmer changes the accounts in the composite over time to achieve better results. Has Kilmer violated Standard III(D)?",
+    "options": {
+      "A": "No, because Kilmer has discretion to define composites in the manner most beneficial to the firm.",
+      "B": "Yes, because selective and shifting account inclusion misrepresents the firm's actual performance.",
+      "C": "No, because small accounts can reasonably be excluded from performance presentations."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Composite Integrity and Representativeness</h3><p><strong>B is correct.</strong> From first principles: a composite should represent the performance of all accounts managed to a similar strategy, providing a fair picture of how that strategy performed. The foundational requirement is that performance presentations must be fair, accurate, and complete. The governing mechanism: selective inclusion (cherry-picking winners) and dynamic composition (changing members to boost returns) introduce survivorship bias and manipulation, overstating true capability. The boundary condition: accounts meeting stated criteria must be included unless exclusions are disclosed and justified; changing composition over time to improve results violates integrity. Applied to Kilmer: by excluding qualifying accounts, including non-qualifying accounts, and shifting composition opportunistically—all without disclosure—he fundamentally distorts the performance record and misleads prospects about expected results.</p><p>A is incorrect: discretion to define composites does not permit manipulation for marketing advantage. The first-principles flaw is assuming procedural freedom overrides accuracy obligations—composites must fairly represent the strategy, not be engineered to maximize appeal.</p><p>C is incorrect: while minimum size thresholds can be reasonable, they must be disclosed. The misconception is that common practices (small-account exclusion) excuse non-disclosure—any exclusion criteria that affect representativeness must be revealed to ensure completeness.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Attribution Methodology Changes",
+    "stem": "Purell, a performance analyst, is reviewing quarterly attribution reports. His firm uses a bottom-up, fundamentals-driven, stock-selection process. The current attribution (comparing stocks to sectors) shows that value came from asset allocation and stock selection was negative. Purell discovers that changing attribution to compare stocks to industries (then rolling to sectors) makes stock selection appear positive. He recommends changing the methodology for client reports without disclosure. Has Purell violated Standard III(D)?",
+    "options": {
+      "A": "No, because the firm can choose any valid attribution methodology that aligns with its strategy.",
+      "B": "Yes, because changing methodology to improve perceived results without disclosure is misleading.",
+      "C": "No, because the new methodology better reflects the firm's stock-selection focus."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Methodological Consistency and Transparency</h3><p><strong>B is correct.</strong> From core concepts: attribution methodology decomposes sources of return; different methods can yield different attributions from the same underlying trades. The governing principle: Standard III(D) requires fair and accurate presentation, which demands consistency and disclosure of methodology. The causal mechanism of violation: changing attribution methods solely to improve how results appear, without disclosing the change, manipulates client perception of skill. The boundary condition: methodology changes are permissible if driven by genuine improvement in accuracy or relevance and accompanied by full disclosure and explanation. Applied to Purell: the motivation is cosmetic (making stock selection look better), not substantive, and lacking disclosure means clients cannot assess continuity or validity of reported skill attribution over time.</p><p>A is incorrect: while firms may choose among valid methods, changing methods to manipulate perceived performance violates the standard. The first-principles error is separating methodological validity from intent and disclosure—validity alone does not justify undisclosed, result-driven changes.</p><p>C is incorrect: even if the new method has merit, the absence of disclosure and the motivation (improving appearance) constitute a violation. The flaw is assuming a better-aligned method excuses non-disclosure—completeness and fairness require clients be informed of changes that affect interpretation of historical performance.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Calculation Return-Type Labeling",
+    "stem": "Singh, a performance analyst, discovers her company's new system calculates both time-weighted and money-weighted returns. The head of client services instructs Singh not to label the return types so the firm can show whichever calculation provides the higher return for each period. If Singh follows this instruction, has she violated Standard III(D)?",
+    "options": {
+      "A": "Yes, because reporting inconsistent return types without labeling misrepresents performance completeness.",
+      "B": "No, because both calculation methods are valid and the firm can choose the most favorable.",
+      "C": "No, because clients are unlikely to understand the distinction between return types."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Consistency and Disclosure of Calculation Methods</h3><p><strong>A is correct.</strong> From basics: time-weighted returns (TWR) measure manager skill independent of cash flows; money-weighted returns (MWR) reflect the dollar-weighted experience of an investor including timing of contributions and withdrawals. The foundational requirement: performance must be presented fairly, accurately, and completely—complete information enables clients to judge performance quality. The mechanism of deception: selectively using whichever method yields higher reported returns, period by period, without disclosure, creates an artificially favorable and non-comparable track record. The boundary condition: methodology must be disclosed and consistently applied; changes require clear communication. Applied to Singh: following the instruction to omit labels and cherry-pick methods prevents clients from understanding what is being measured, violating the completeness requirement of Standard III(D).</p><p>B is incorrect: validity of methods does not permit undisclosed selective application. The first-principles flaw is conflating technical correctness with ethical presentation—choosing methods opportunistically to maximize reported returns without disclosure misleads clients about both performance and methodology.</p><p>C is incorrect: client sophistication does not reduce disclosure obligations. The misconception is that complexity justifies omission—members must provide sufficient information for clients to make informed judgments, regardless of assumed understanding levels.</p>"
+  }
+]
