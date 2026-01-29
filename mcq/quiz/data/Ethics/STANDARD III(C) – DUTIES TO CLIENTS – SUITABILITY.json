@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Suitability and Risk Profiles",
+    "stem": "Smith, an investment adviser, has two clients: Robertson (60, wealthy, high risk tolerance) and Lanai (40, modest income, low risk tolerance). Smith recommends that both clients invest 20% of their portfolios in zero-yield, small-cap, high-technology equity issues. Has Smith violated Standard III(C)?",
+    "options": {
+      "A": "No, because the allocation is only 20% and provides diversification for both portfolios.",
+      "B": "Yes, because he applied the same strategy to clients with materially different risk profiles and needs.",
+      "C": "No, because small-cap equities are suitable for long-term investors regardless of current income needs."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Individualized Suitability</h3><p><strong>B is correct.</strong> Start with the definition of suitability: investment advice must match the specific financial situation, objectives, and constraints of <em>each</em> client. The governing principle is that 'one size fits all' advice is inherently unsuitable when client profiles differ. The mechanism of violation: Smith recommended a high-risk, zero-income asset class to Lanai, whose objective is low volatility and steady returns (income/safety). While the investment might fit Robertson (high risk tolerance), applying the same advice to Lanai ignores her specific constraints. The boundary condition: A 20% allocation is significant; for a risk-averse client, this creates unacceptable exposure to volatility and loss, violating the duty to judge suitability for <em>that specific client</em>.</p><p>A is incorrect: Diversification does not justify including unsuitable asset classes. The misconception is that 'some exposure to everything' is always good—asset classes must first pass the suitability filter for the client's specific risk tolerance.</p><p>C is incorrect: Suitability is not just about time horizon; it includes liquidity needs and risk tolerance. The flaw is ignoring the client's stated need for 'steady returns and low volatility'.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Suitability in Portfolio Context (Derivatives)",
+    "stem": "McDowell suggests to Crosby, a risk-averse client, that he use covered call options in his equity portfolio to enhance income and provide partial downside protection. McDowell explains the risks, including tax liabilities and capped upside. Has McDowell violated Standard III(C)?",
+    "options": {
+      "A": "Yes, because derivatives like options are inherently too risky for risk-averse clients.",
+      "B": "No, because he judged the suitability of the strategy in the context of the entire portfolio.",
+      "C": "Yes, because covered calls limit the upside potential, which violates the duty to maximize returns."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Portfolio Context vs. Instrument Risk</h3><p><strong>B is correct.</strong> From first principles, risk is measured at the portfolio level, not the instrument level. The governing relationship: a 'risky' instrument (like an option) can <em>reduce</em> total portfolio risk when used for hedging or income generation (covered calls). The mechanism: covered calls exchange upside potential for immediate income (premium), which buffers the portfolio against small price drops. For a risk-averse client needing income, this structure specifically addresses their needs. The boundary condition: McDowell explained the risks and mechanics, ensuring the client understands the trade-off. By focusing on the <em>net effect</em> on the portfolio (income + protection), McDowell correctly applied the suitability standard.</p><p>A is incorrect: Instruments are tools; their suitability depends on <em>how</em> they are used. The misconception is labeling specific assets as 'bad' without considering their role in the portfolio architecture.</p><p>C is incorrect: The duty is to match the client's mandate, not 'maximize returns' at all costs. Risk-averse clients explicitly trade upside for safety/income; the strategy aligns with this preference.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Updating the Investment Policy Statement",
+    "stem": "Evans, a portfolio manager, learns that his client Jones has received an inheritance that quadruples his net worth to $1 million. Jones's previous IPS was based on a much smaller asset base and strict income needs. What is Evans's immediate obligation under Standard III(C)?",
+    "options": {
+      "A": "Immediately invest the new cash according to the existing asset allocation weights.",
+      "B": "Reassess and update the IPS to reflect the significant change in Jones's financial circumstances.",
+      "C": "Wait for the annual review meeting to discuss the changes with Jones."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dynamic Nature of Suitability</h3><p><strong>B is correct.</strong> Start with the purpose of an IPS: it maps client circumstances (constraints) to investment strategy. The governing principle: when the inputs (circumstances) change materially, the output (strategy) must be re-evaluated. The mechanism: a 4x increase in wealth fundamentally alters risk capacity, tax constraints, and liquidity needs. The old IPS is now obsolete. The boundary condition: material changes trigger an immediate review requirement; acting on old instructions (or waiting a year) exposes the client to a strategy that no longer fits their reality.</p><p>A is incorrect: The existing weights were built for a different financial reality (poor Jones). Applying them to rich Jones is a suitability violation. The flaw is assuming static strategy despite dynamic inputs.</p><p>C is incorrect: Suitability is a continuous duty. The misconception is that it is a 'compliance box' checked once a year—major events demand real-time responsiveness.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Mandate Compliance",
+    "stem": "Perkowski manages a high-income mutual fund. He purchases a zero-dividend stock because he believes it is undervalued and the company is in a growth industry. The fund's prospectus emphasizes high current income. Has Perkowski violated Standard III(C)?",
+    "options": {
+      "A": "No, because the stock offers capital appreciation potential which benefits investors.",
+      "B": "Yes, because a zero-dividend stock is inconsistent with the fund's 'high income' mandate.",
+      "C": "No, provided the stock represents a small percentage of the total portfolio."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Adherence to Mandate</h3><p><strong>B is correct.</strong> From first principles, a fund's mandate (prospectus) is the contract with the investor. Investors buy the fund specifically to receive the promised characteristic (high income). The governing rule: the manager must stick to the stated style/strategy. The mechanism of violation: buying a zero-dividend stock fundamentally contradicts the 'income' objective. Even if the stock goes up (growth), it fails to deliver the specific utility (cash flow) the client purchased. The boundary condition: unless the mandate explicitly allows for non-income growth plays (which 'high income' usually does not), the purchase is unsuitable for the <em>fund itself</em>.</p><p>A is incorrect: 'Making money' is not the only goal; 'making money <em>how</em> the client asked' is the standard. The flaw is substituting the manager's preference (growth) for the client's instruction (income).</p><p>C is incorrect: While minor deviations are sometimes tolerated, buying an asset with <em>zero</em> attribute of the mandate (no income) is a clear breach of the style promise.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Liquidity Constraints vs. Return Potential",
+    "stem": "Gubler is CIO of an insurance subsidiary with an IPS requiring liquid investments (high-grade bonds, large-cap equity) and a max maturity of 5 years. He invests 4% of the portfolio in a venture capital seed fund with a 3-year lockup and laddered exit, because the return potential is very attractive. Has Gubler violated Standard III(C)?",
+    "options": {
+      "A": "Yes, because the investment violates the specific liquidity and asset class constraints of the IPS.",
+      "B": "No, because 4% is a de minimis amount and does not impair the overall portfolio liquidity.",
+      "C": "No, because as CIO he has the discretion to deviate from the IPS for superior opportunities."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Hard Constraints in IPS</h3><p><strong>A is correct.</strong> Start with the nature of institutional constraints: insurance companies have liabilities that require specific liquidity profiles. The IPS constraints (liquid, max 5 years) are risk controls derived from these liability needs. The mechanism of violation: Gubler bought an illiquid asset (VC fund with lockup) that explicitly fails the 'liquid investments' test. The boundary condition: 'Attractive returns' do not justify violating risk constraints. Suitability is a binary filter—if it doesn't fit the constraints, the return potential is irrelevant.</p><p>B is incorrect: A constraint is a rule, not a guideline. The misconception is that small violations are acceptable—if the IPS prohibits illiquid assets, 4% is 4% too much.</p><p>C is incorrect: The CIO executes the mandate; they do not rewrite it on the fly. The flaw is assuming authority overrides governance—the IPS is the superior authority until formally changed.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Strategic Drift and Self-Interest",
+    "stem": "Snead manages pension funds with long-term objectives. To boost her quarterly performance bonus, she shifts the portfolios into high-beta (high risk) stocks without client approval. The clients ask why their portfolios are suddenly so volatile. Has Snead violated Standard III(C)?",
+    "options": {
+      "A": "No, because high-beta stocks act as a proxy for high returns, which benefits the pension funds.",
+      "B": "Yes, because she altered the risk profile contrary to the IPS to benefit her own compensation.",
+      "C": "No, because she did not change the asset allocation percentages, only the security selection."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Alignment of Interest and Consistency</h3><p><strong>B is correct.</strong> From first principles, the IPS defines the risk budget (long-term, likely moderate risk). The governing principle: investment actions must serve the client's long-term interest, not the manager's short-term wallet. The mechanism of violation: Snead increased risk (high beta) to gamble for a short-term payout (bonus). This creates a mismatch between the client's horizon (years) and the manager's horizon (quarterly). The boundary condition: Unauthorized strategic drift—changing the character of the portfolio without changing the IPS—is a fundamental breach of suitability and loyalty.</p><p>A is incorrect: High risk (beta) does not guarantee high returns, it guarantees high volatility. The flaw is assuming risk is always beneficial—for a pension fund, uncompensated volatility is a liability.</p><p>C is incorrect: Risk is not just asset class (stocks vs. bonds); it is also style (low vol vs. high beta). The misconception is that 'staying in stocks' is enough compliance—the <em>type</em> of stock must also be suitable.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "ESG Constraints and Manager Duty",
+    "stem": "The trustee of the MPG pension fund amends the IPS to restrict investments in products negatively affecting consumer health (ESG constraint). Van Cleef, an external manager, buys tobacco stock for the fund, arguing that the high dividend yield is his primary priority. Has Van Cleef violated Standard III(C)?",
+    "options": {
+      "A": "No, because a manager's primary fiduciary duty is to maximize financial returns.",
+      "B": "Yes, because he failed to follow the specific mandate and constraints of the client's IPS.",
+      "C": "No, because the ESG restriction was politically motivated and not financially grounded."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Client Sovereignty and Negative Screens</h3><p><strong>B is correct.</strong> Start with the definition of the client-manager relationship: the client sets the rules (IPS), and the manager executes within them. The governing principle: Clients have the right to impose constraints (negative screens) on their capital. The mechanism of violation: The IPS explicitly forbade 'negative health impact' products (tobacco). Van Cleef ignored this constraint to pursue a secondary goal (yield). The boundary condition: A manager cannot substitute their judgment ('yield is better') for the client's direct instruction ('no tobacco'). Violating a negative screen is a direct breach of the mandate.</p><p>A is incorrect: 'Maximize returns' is not an absolute; it is 'maximize returns <em>subject to constraints</em>'. The flaw is ignoring the constraint side of the optimization equation.</p><p>C is incorrect: The motivation for the constraint (ethical, political, financial) is the client's prerogative. The manager's job is to obey it, not judge its validity.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3 Pro",
+    "topic": "ESG Integration in Suitability Analysis",
+    "stem": "Kim, a portfolio manager for a family office with a capital preservation objective, chooses to invest in Dong Inc. over Park Inc. Although Park has better short-term financials, Dong has superior ESG scores, which Kim believes indicate better management quality and lower tail risk (accidents/fines). Has Kim violated Standard III(C)?",
+    "options": {
+      "A": "No, because considering ESG factors as part of risk/return analysis is consistent with suitability.",
+      "B": "Yes, because he prioritized non-financial factors over financial metrics.",
+      "C": "Yes, because ESG investing is inherently speculative and violates the capital preservation mandate."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Materiality of Non-Financial Factors</h3><p><strong>A is correct.</strong> From first principles, suitability requires analyzing all factors that affect the risk and return of an investment. The governing relationship: ESG factors (management quality, safety record) are leading indicators of financial performance and risk. The mechanism: Kim used ESG data not to 'save the world', but to assess <em>investment quality</em> (lower risk of fines, better management). This aligns perfectly with the client's 'capital preservation' and 'downside risk mitigation' objectives. The boundary condition: If the analysis grounds the decision in financial outcomes (risk reduction), using ESG data is a valid—even superior—suitability process.</p><p>B is incorrect: ESG factors <em>are</em> financial factors when they impact cash flows (fines) or cost of capital (risk). The misconception is treating ESG as purely 'social' rather than 'material'.</p><p>C is incorrect: Analyzing risk factors (like safety records) is the opposite of speculative; it is prudent diligence. The flaw is assuming ESG integration equals 'taking a flyer' rather than 'doing homework'.</p>"
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Selective Disclosure of Recommendations",
+    "stem": "Ames, a computer industry analyst, prepares a buy recommendation for a small OTC company after confirming a major contract. While the report is under factual review, he attends a luncheon with top clients and mentions the upcoming recommendation scheduled for distribution next week. Has Ames violated Standard III(B)?",
+    "options": {
+      "A": "No, because the recommendation was already decided and only waiting for distribution.",
+      "B": "Yes, because he disseminated the recommendation to a select group prior to general distribution.",
+      "C": "No, because the luncheon discussion was informal and not a written report."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fair Dealing in Information Dissemination</h3><p><strong>B is correct.</strong> Start with the definition of fair dealing: all clients must have a fair opportunity to act on investment recommendations. The governing principle is that 'fair' does not mean 'equal' (simultaneous delivery isn't always possible), but it strictly prohibits prioritizing one group over another. The mechanism of the violation here is selective disclosure: providing actionable information (the buy rating) to a subset of clients (luncheon attendees) before the general client base allows the privileged group to front-run the others. The boundary condition is that even if the report is 'finished' and just waiting for review, the information cannot be shared until it is released to all eligible clients. By tipping off the lunch guests a week early, Ames destroyed the fairness of the opportunity.</p><p>A is incorrect: the status of the report (decided vs. undecided) is irrelevant; the timing of the dissemination is what matters. The misconception is that a 'finished' idea is public property—it remains confidential until fair distribution occurs.</p><p>C is incorrect: the mode of communication (verbal vs. written) does not alter the material nature of the investment advice. The flaw is assuming informality exempts one from professional standards—selective oral disclosure is just as damaging as selective written disclosure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Priority of Transactions (Funds vs. Accounts)",
+    "stem": "Jackson, a portfolio manager, follows a policy where new security recommendations are first purchased for the bank's commingled growth fund, and then executed on a pro-rata basis for individual pension fund accounts. Discretionary accounts also receive priority over non-discretionary ones. Has Jackson violated Standard III(B)?",
+    "options": {
+      "A": "Yes, because she failed to treat all clients fairly by systematically prioritizing specific funds and account types.",
+      "B": "No, because commingled funds require different liquidity management than individual accounts.",
+      "C": "No, provided the policy was disclosed to the pension fund clients in their investment management agreement."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Systematic Fairness in Trade Allocation</h3><p><strong>A is correct.</strong> From first principles, the duty of fair dealing requires that no client or group of clients be disadvantaged by the firm's allocation procedures. The governing relationship is that the manager acts as an agent for <em>all</em> clients simultaneously. The mechanism of violation is the systematic prioritization of the commingled fund and discretionary accounts, which ensures they get the best execution (or exclusively get scarce shares) while others get stale prices or leftovers. The boundary condition: while different service levels are allowed, they cannot extend to the fundamental fairness of trade execution priority. Jackson's policy mechanically disadvantages the second-tier clients, violating the core tenet of fairness.</p><p>B is incorrect: liquidity needs might dictate <em>how</em> a trade is executed, but not <em>who</em> gets priority access to the investment opportunity. The misconception is that operational differences justify ethical breaches in allocation priority.</p><p>C is incorrect: disclosure does not cure a fundamental breach of fair dealing. The flaw is assuming that 'informed consent' allows a fiduciary to act unfairly—Standard III(B) obligations cannot be waived by client agreement to patently unfair procedures.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "IPO Allocation and Personal Trading",
+    "stem": "Morris, an investment banker, secures a hot IPO for a pickleball franchise. The issue is oversubscribed by institutional buyers. Morris fills all client orders, including his own personal allocation, but reduces the institutional blocks to balance the oversubscription. Has Morris violated Standard III(B)?",
+    "options": {
+      "A": "No, because he reduced the institutional blocks to ensure his personal account received shares.",
+      "B": "Yes, because he failed to prorate the issue to all subscribers and prioritized his own interest.",
+      "C": "No, because he ensured all clients received at least some shares."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Oversubscription and Conflict of Interest</h3><p><strong>B is correct.</strong> Start with the definition of fair dealing in oversubscribed issues: when demand exceeds supply, the limited asset must be distributed pro-rata (or via another fair, disclosed method) to all suitable clients. The governing principle is that client interests must come before the member's interests. The mechanism of violation: Morris filled his own order while cutting back clients, effectively stealing opportunity from them. The boundary condition: in an oversubscribed deal, the manager should forgo <em>any</em> personal allocation unless all client demand is satisfied, or at minimum, participate on the same pro-rata basis as clients (if family accounts are treated as regular clients). Prioritizing himself violates both fair dealing and the duty of loyalty.</p><p>A is incorrect: this describes the violation itself. The misconception is that the manager has a right to 'participate' that overrides the clients' rights to the full allocation they ordered.</p><p>C is incorrect: 'getting some shares' is not the standard; 'getting a fair share' is. The flaw is setting a low bar for fairness—arbitrarily cutting back client orders to feed one's own account is inherently unfair, regardless of whether clients got zero or partial fills.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Trade Allocation Timing (Cherry-Picking)",
+    "stem": "Preston executes block trades for mortgage-backed securities during a busy day but fails to write trade tickets immediately. Later, seeing some securities rose and others fell, she allocates the winners to her largest client, Colby Company, to prevent them from leaving the firm, and spreads the losers among other accounts. Has Preston violated Standard III(B)?",
+    "options": {
+      "A": "Yes, because she allocated trades ex-post based on performance to favor a specific client.",
+      "B": "No, because retaining a large client benefits the firm and indirectly benefits all clients.",
+      "C": "No, because she is allowed to use her discretion in allocating trades among suitable accounts."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Ex-Ante vs. Ex-Post Allocation</h3><p><strong>A is correct.</strong> From first principles, fairness requires that the decision of who gets a trade must be made <em>before</em> the outcome of that trade is known. The governing rule is that allocation must be determined prior to or at the time of execution. The mechanism of violation: 'cherry-picking'—waiting to see price movement and then assigning gains to a favored client and losses to others. This transfers value directly from the disfavored clients to the favored one. The boundary condition: delaying allocation tickets is an administrative error, but using that delay to game the returns is an ethical violation of fair dealing. Clients are entitled to the random distribution of execution results, not a rigged distribution.</p><p>B is incorrect: the firm's business interest (keeping a client) cannot override the fiduciary duty to treat other clients fairly. The misconception is that 'firm survival' justifies 'robbing Peter to pay Paul'.</p><p>C is incorrect: discretion applies to <em>investment selection</em> (what to buy), not <em>allocation fairness</em> (who gets the winner). The flaw is confusing investment judgment with administrative manipulation of results.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Differential Service Levels vs. Material Information",
+    "stem": "Weng issues a new recommendation via email to all clients. Immediately afterward, he calls his three largest institutional clients to discuss the recommendation in detail. These clients pay higher fees for premium service. Has Weng violated Standard III(B)?",
+    "options": {
+      "A": "Yes, because discussing the report with select clients gives them an unfair advantage.",
+      "B": "No, because the recommendation was already disseminated to all clients before the calls.",
+      "C": "Yes, because all clients must receive the exact same level of service regardless of fees."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Premium Services vs. Fair Access</h3><p><strong>B is correct.</strong> Start with the distinction between 'information access' and 'service level'. The governing principle is that all clients must have fair opportunity to act on the <em>recommendation</em> itself. The mechanism: Weng disseminated the critical information (the email report) to everyone simultaneously. The boundary condition: once the information is public/shared, the manager can provide value-added services (like detailed discussions) to premium clients, provided this service level is disclosed and available to anyone willing to pay. There is no violation because the 'alpha' (the new idea) was not withheld from the standard clients.</p><p>A is incorrect: the advantage would be unfair only if they got the <em>news</em> first. Since everyone got the email, the call is just analysis/context, which is a valid premium service.</p><p>C is incorrect: 'Fair' does not mean 'Equal'. The misconception is that every client gets identical treatment—standard III(B) explicitly allows for different service levels (e.g., more frequent contact) as long as they don't disadvantage others regarding the core investment action.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Minimum Lot Size Allocations",
+    "stem": "Hampton's firm has a policy of avoiding odd-lot allocations below $5,000 to preserve liquidity. A bond issue is oversubscribed. She receives only $55,000 total. Instead of a strict pro-rata reduction that would create odd lots, she allocates $5,000 to three small accounts (who asked for $10,000) and $20,000 to two large accounts (who asked for $50,000). Has Hampton violated Standard III(B)?",
+    "options": {
+      "A": "Yes, because she deviated from a strict pro-rata calculation.",
+      "B": "No, because the allocation ensured all clients received at least a functional minimum lot size.",
+      "C": "Yes, because the smaller clients received a higher percentage of their request than the larger clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Practicality and Fairness</h3><p><strong>B is correct.</strong> From first principles, 'fairness' includes acting in the clients' best interests regarding the <em>utility</em> of the asset. The governing constraint: bond markets often penalize 'odd lots' (amounts too small to trade efficiently). The mechanism: strict pro-rata might result in allocations (e.g., $1,200) that are illiquid or suffer high transaction costs. The boundary condition: departing from strict pro-rata is permissible if the alternative method is fair, objective, and designed to avoid harming clients (e.g., via illiquidity). Hampton's method ensures everyone participates at a viable level ($5,000 min), which is a reasonable application of fair dealing.</p><p>A is incorrect: pro-rata is the standard, but not a straightjacket when it harms client interests (illiquidity). The flaw is valuing mathematical precision over economic reality.</p><p>C is incorrect: percentage variation is acceptable if it serves a valid portfolio purpose (liquidity). The misconception is that identical percentages are the only metric of fairness.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Churning for Soft Dollars (Cross-Subsidization)",
+    "stem": "Chan manages a pension plan for his father's company and several other unrelated plans. To minimize costs for his father's plan, he intentionally trades more frequently in the unrelated accounts to generate enough commissions to pay for research services that benefit all the plans. Has Chan violated Standard III(B)?",
+    "options": {
+      "A": "No, because all clients benefit from the research obtained.",
+      "B": "Yes, because he is disadvantaging some clients to subsidize the costs for a preferred client.",
+      "C": "No, provided the total commissions paid are within industry standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cross-Subsidization and Cost Fairness</h3><p><strong>B is correct.</strong> From first principles, each client account should bear its own costs and receive its own benefits. The governing principle: agents cannot use the assets of Client A to pay for benefits for Client B. The mechanism of violation: Chan is generating excess commissions (churning) in the unrelated accounts. This lowers the net return for those clients, while the 'free' research generated is shared with the father's account. This is a direct transfer of wealth (via transaction costs) from the unrelated clients to the father's plan. The boundary condition: 'Soft dollars' (research paid by commissions) must be commensurate with the trading activity required by the strategy, not inflated to subsidize others.</p><p>A is incorrect: the destination of the benefit (shared research) doesn't justify the source of the funding (excessive trading). The flaw is a utilitarian 'greater good' argument that ignores the specific harm to the over-traded accounts.</p><p>C is incorrect: complying with industry standards on <em>rates</em> doesn't excuse excessive <em>volume</em> driven by ulterior motives. The violation is the intent and the unequal burden of costs.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3 Pro",
+    "topic": "Social Media Dissemination",
+    "stem": "Burdette, a junior analyst, finishes her first research report with a buy recommendation for Sun Drive Auto. Excited about the finding, she posts a summary of her buy recommendation on her LinkedIn profile before the report is distributed to the firm's clients. Has Burdette violated Standard III(B)?",
+    "options": {
+      "A": "No, because LinkedIn is a public forum and ensures broad dissemination.",
+      "B": "Yes, because she released the recommendation to her social network before the firm's clients.",
+      "C": "No, because she is encouraged to expand the firm's social media presence."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Control of Information Release</h3><p><strong>B is correct.</strong> From first principles, the firm's clients pay for and have the primary claim on the firm's intellectual property (research). The governing relationship: the analyst owes a duty to the firm's clients first. The mechanism of violation: posting to LinkedIn releases the information to the general public (and her specific network) before the paying clients have received it. This disadvantages the clients who may be front-run by the public market. The boundary condition: social media is a valid distribution tool, but it must be synchronized with or follow the official release to clients, not precede it.</p><p>A is incorrect: 'Public' does not mean 'Fair' if the clients haven't been served yet. The misconception is that making something public absolves the duty to the specific client base who is owed the first look.</p><p>C is incorrect: broad instructions (expand presence) do not override specific ethical standards (fair dealing). The flaw is using a general marketing goal to excuse a specific breach of process.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini 3 Pro",
+    "topic": "Compliance Procedures for Fair Dealing",
+    "stem": "Rove, a performance analyst, proposes a new internal report to the CIO that details securities owned across client accounts to identify outliers and compares performance of similar portfolios. The goal is to detect if any client is receiving preferential treatment. Does this proposal align with Standard III(B)?",
+    "options": {
+      "A": "No, because performance analysis should focus on external reporting, not internal policing.",
+      "B": "Yes, because systematic review of accounts is a recommended compliance procedure to ensure fair dealing.",
+      "C": "No, because comparing different portfolios violates client confidentiality."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Verification of Fairness</h3><p><strong>B is correct.</strong> From first principles, 'fairness' is an abstract goal that requires concrete measurement to ensure it's being achieved. The governing principle: firms should have procedures to detect and correct unfair practices. The mechanism: Rove's reports (dispersion analysis, outlier checks) provide the data necessary to see if a specific client is consistently winning (preferential allocation) or losing (neglect). The boundary condition: this is a 'best practice' or compliance recommendation. It proactively builds the infrastructure to support Standard III(B), moving from intent to verification.</p><p>A is incorrect: internal policing is exactly what compliance requires. The misconception is that performance analysis is only for marketing; its first role is risk management and control.</p><p>C is incorrect: internal review by firm employees does not violate confidentiality; it is necessary for supervision. The flaw is applying confidentiality rules to authorized internal personnel.</p>"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Fee Arrangement Disclosure",
+    "stem": "ABC Capital's private equity fund charges fees to portfolio companies for structuring advice. The firm remits these fees to the fund if the investment value falls, but retains them if the value rises. This arrangement is not disclosed in the private placement memorandum because the CEO considers it common industry practice and beneficial to investors. Has the CEO violated Standard V(B)?",
+    "options": {
+      "A": "No, because the arrangement provides a net benefit to investors by aligning incentives.",
+      "B": "Yes, because all compensation arrangements and costs must be disclosed to clients, regardless of industry norms.",
+      "C": "No, because sophisticated private equity investors are presumed to understand standard fee structures."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Transparency of Costs and Conflicts</h3><p><strong>B is correct.</strong> Start with the core duty: clients must know the true cost of their investment and any conflicts of interest to make informed decisions. The governing principle is 'Full and Fair Disclosure'. The mechanism of violation: Retaining fees from portfolio companies is a form of compensation that reduces the net value or potential return to the fund investor (or creates a conflict). Hiding this 'retainer' prevents the client from assessing the true fee load and the manager's incentives. The boundary condition: 'Industry practice' or 'client sophistication' are never valid excuses for non-disclosure of compensation. If the client pays it (directly or indirectly via portfolio companies), they must know about it.</p><p>A is incorrect: Benefit to the client does not absolve the duty of disclosure. The flaw is assuming that 'good outcomes' justify 'hidden processes'.</p><p>C is incorrect: Sophistication is not a license to withhold material facts. The misconception is that experts don't need the fine print—standard V(B) applies to all client types.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Investment Process Change Notification",
+    "stem": "RJZ Capital replaces its simple price-to-earnings model with a new complex dividend discount model based on projected inflation and earnings growth. The new model backtests well. The president decides not to notify clients because the firm remains a 'value' manager. Has the president violated Standard V(B)?",
+    "options": {
+      "A": "Yes, because the shift from hard data to forecasting represents a material change in the investment process.",
+      "B": "No, because the underlying philosophy (value investing) remains unchanged.",
+      "C": "No, because the new model is an internal proprietary tool and does not change the mandate."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Materiality of Process Changes</h3><p><strong>A is correct.</strong> From first principles, clients hire managers for a specific <em>process</em>, not just an outcome. The governing relationship is the 'expectation of consistency'. The mechanism: Moving from a 'hard data' model (P/E) to a 'forecast-based' model (DDM with projections) fundamentally changes the source of risk (from valuation risk to estimation risk). This is a material change in <em>how</em> the sausage is made. The boundary condition: Any change that alters the risk characteristics or decision engine of the strategy must be disclosed. Clients bought a P/E strategy; they are now in a DDM strategy—they have a right to know and decide if they want to stay.</p><p>B is incorrect: Style labels (Value) are too broad. The misconception is that as long as the label fits, the machinery doesn't matter. Standard V(B) requires disclosure of the <em>process</em>, not just the style.</p><p>C is incorrect: Proprietary tools are not exempt if they constitute the core investment process. The flaw is confusing 'trade secrets' with 'process disclosure'.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Fact vs. Opinion in Reports",
+    "stem": "Dox, a mining analyst, calculates that a company has 500,000 ounces of gold based on core samples. He writes in his report: 'Based on the fact that the company has 500,000 ounces of gold to be mined, I recommend a strong buy.' Has Dox violated Standard V(B)?",
+    "options": {
+      "A": "No, because his calculation is based on physical core samples, making it objective data.",
+      "B": "Yes, because he presented a quantitative estimate as a fact.",
+      "C": "No, provided he includes the drill results in the appendix."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Epistemology of Investment Claims</h3><p><strong>B is correct.</strong> Start with the distinction between 'what has happened' (fact) and 'what we think exists' (opinion/estimate). The governing rule: Analysts must distinguish between facts and opinions. The mechanism of violation: A reserve calculation, no matter how rigorous, is an <em>estimate</em> based on geological probability. Labeling it a 'fact' implies 100% certainty, which misleads the client about the risk of the asset (the gold might not be there). The boundary condition: Any forward-looking statement or derived calculation is an opinion. Dox turned a probability into a certainty, violating the truth-in-labeling requirement of V(B).</p><p>A is incorrect: The input (samples) is fact; the output (total reserve calculation) is an inference/opinion. The flaw is conflating the data with the conclusion drawn from it.</p><p>C is incorrect: Disclosure elsewhere doesn't cure a false statement in the main text. The misconception is that appendices excuse misleading headlines.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Disclosure of Risks and Limitations (Capacity)",
+    "stem": "Quantitative analyst Yakovlev develops a small-cap strategy that works well but has a capacity limit of $3 billion, after which returns will degrade. The marketing director tells him to omit this limitation from offering materials because the fund currently has only $100 million. Yakovlev agrees. Has Yakovlev violated Standard V(B)?",
+    "options": {
+      "A": "No, because the capacity limit is not a material risk at the current asset level.",
+      "B": "Yes, because the liquidity/capacity constraint is a significant limitation of the investment process.",
+      "C": "No, because marketing materials should focus on track record, while the prospectus handles risks."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Material Limitations of Strategy</h3><p><strong>B is correct.</strong> From first principles, a product's structural flaws are material facts. The governing principle: Clients must be informed of significant limitations and risks. The mechanism: The strategy has a 'kill switch' (capacity limit). Even if distant, this structural feature defines the investment's lifespan and scalability. Omitting it paints a false picture of an infinite-growth opportunity. The boundary condition: Limitations inherent to the process (illiquidity, capacity) must be disclosed <em>ex-ante</em>, not just when they become problems. Investors need to know they are buying a product with a built-in ceiling.</p><p>A is incorrect: Materiality includes structural characteristics, not just immediate threats. The flaw is short-termism—ignoring a long-term structural risk because it doesn't hurt <em>today</em>.</p><p>C is incorrect: Marketing materials cannot omit material risks found in the prospectus. The misconception is that marketing can be 'all good news' while legal docs hide the bad news—consistency is required.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Fee Calculation Methodology Change",
+    "stem": "Maalouf's firm changes its fee calculation from 'average daily balance' to 'month-end market value' and begins including cash equivalents in the fee base. This results in lower fees for most clients. The firm does not notify clients of the change. Has Maalouf violated Standard V(B)?",
+    "options": {
+      "A": "No, because the change resulted in lower fees, benefiting the clients.",
+      "B": "Yes, because any change in fee methodology must be disclosed, regardless of the impact.",
+      "C": "No, because the method of calculation is an administrative detail, not a material investment process."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Contractual Clarity</h3><p><strong>B is correct.</strong> Start with the client contract: Fees are the price paid for services. The governing rule: Price terms must be clear and agreed upon. The mechanism of violation: Changing <em>how</em> the price is calculated (methodology) without telling the payer is a breach of transparency. Even if the price goes down <em>now</em>, the new method might cost more <em>later</em> (e.g., if month-end values spike). The boundary condition: All changes to cost structures are material. The client's wallet is being accessed differently; they have an absolute right to know the new rules of engagement.</p><p>A is incorrect: Outcome bias. The ethical requirement is transparency of <em>process</em>, not just favorability of <em>result</em>. A benevolent breach is still a breach.</p><p>C is incorrect: Fees are not administrative minutiae; they are the core economic term of the relationship. The flaw is devaluing the importance of cost transparency.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Description of Structured Products",
+    "stem": "Thomas writes a report on a complex structured product designed to profit from falling interest rates. He mentions 'high returns' are possible but, citing proprietary reasons, does not explain the specific scenarios, the implied risks, or what happens if interest rates rise. Has Thomas violated Standard V(B)?",
+    "options": {
+      "A": "No, because proprietary trading strategies are protected intellectual property.",
+      "B": "Yes, because he failed to adequately describe the basic characteristics and risks of the investment.",
+      "C": "No, provided the product is only sold to institutional clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Understanding the 'Black Box'</h3><p><strong>B is correct.</strong> From first principles, an investor cannot consent to risk they cannot see. The governing principle: Communication must enable the client to understand the nature of the investment. The mechanism of violation: Thomas sold the 'sizzle' (high returns) but hid the 'steak' (the mechanism and risk profile). By invoking 'proprietary' status to hide the downside scenario (rates rising), he deprives the client of the ability to assess the wager. The boundary condition: You can hide the <em>code</em> (IP), but you cannot hide the <em>payoff function</em> (what happens if I'm wrong?). Failing to describe the 'lose' scenario is a critical failure of communication.</p><p>A is incorrect: IP protection stops at the border of client understanding. The misconception is that 'proprietary' is a shield against risk disclosure.</p><p>C is incorrect: Complexity demands <em>more</em> disclosure, not less, regardless of client type. Institutional clients also need to know the payoff profile to manage their risk.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Disclosure of VaR Limitations",
+    "stem": "Ramon tells clients that his firm's Value at Risk (VaR) model is 'extremely effective' and that the firm has never suffered losses exceeding the model's predictions. He does not explain the inputs or the limitations of the Monte Carlo simulation used. Has Ramon violated Standard V(B)?",
+    "options": {
+      "A": "Yes, because he failed to disclose the limitations and assumptions inherent in the VaR model.",
+      "B": "No, because the historical track record supports his claim of effectiveness.",
+      "C": "No, because explaining Monte Carlo simulations would be too technical for most clients."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Model Risk and False Certainty</h3><p><strong>A is correct.</strong> Start with the nature of models: All models are simplifications of reality based on assumptions (inputs). The governing principle: Clients must understand the <em>limits</em> of the tools used. The mechanism of violation: Ramon presented the model as a crystal ball ('extremely effective', 'never failed') rather than a probabilistic tool. He omitted the critical context: garbage in, garbage out (inputs) and tail risk (what the model misses). The boundary condition: When using complex risk metrics, you must explicitly state what they <em>cannot</em> do. Failing to disclose the model's blind spots creates a false sense of security.</p><p>B is incorrect: Past performance (never failed) does not prove future infallibility. The flaw is inductivism—assuming the black swan doesn't exist because it hasn't been seen yet.</p><p>C is incorrect: You don't need to teach the math, but you must teach the <em>implication</em>. The misconception is that complexity excuses the duty to explain risk.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3 Pro",
+    "topic": "Style Drift Notification (Small Cap to Mid Cap)",
+    "stem": "May Associates, a small-cap manager, raises its market-cap ceiling from $2 billion to $8 billion to accommodate asset growth. The CIO updates marketing literature for <em>prospective</em> clients but does not notify <em>existing</em> clients. Has the CIO violated Standard V(B)?",
+    "options": {
+      "A": "No, because existing clients will see the change in their next quarterly report holdings.",
+      "B": "Yes, because this is a material change in the investment process that affects existing client allocations.",
+      "C": "No, because the change was necessary to maintain liquidity, which benefits all clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Integrity of the Mandate</h3><p><strong>B is correct.</strong> From first principles, clients construct portfolios using managers as 'building blocks' (e.g., a small-cap block). The governing rule: If the block changes shape (becomes mid-cap), the builder (client) must know. The mechanism of violation: By changing the definition of 'small cap' to include much larger companies ($8B), the firm has engaged in style drift. Existing clients who hired them specifically for small-cap exposure now hold a different asset class. The boundary condition: Notification must be proactive. Relying on clients to spot the drift later is negligence. The manager broke the implied covenant of the specific mandate.</p><p>A is incorrect: Passive disclosure (reporting holdings) is insufficient for active process changes. The flaw is placing the burden of discovery on the client.</p><p>C is incorrect: Operational necessity (liquidity) explains <em>why</em> the change happened, but it doesn't excuse hiding it. The explanation for the change is exactly what must be communicated.</p>"
+  }
+]
