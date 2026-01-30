@@ -414,12 +414,13 @@
         // Report mistake once per question to server (Upstash-backed)
         if (!ok && !sec.dataset.reported) {
           try {
-            const titleEl = sec.querySelector('h2');
+            // Capture the actual stem text for mistake payloads
+            const stemEl = sec.querySelector('.stem');
             const labels = Array.from(sec.querySelectorAll('ul.choices label'));
             const choicesDom = labels.map(l => l.textContent || '');
             const explDom = (sec.querySelector('.explanation > div:last-child') || {}).innerHTML || explanation || '';
             const payload = {
-              text: (titleEl ? titleEl.textContent : '') || '',
+              text: (stemEl ? (stemEl.textContent || '').trim() : (json.text || '')) || '',
               choices: choicesDom.length ? choicesDom : (json.choices || []),
               answer: correct,
               explanation: explDom,
