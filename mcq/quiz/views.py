@@ -322,6 +322,7 @@ def mcq(request):
                 # Provide only the data used client-side
                 "json": json.dumps(
                     {
+                        "text": text,
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
@@ -460,6 +461,7 @@ def play(request, fname):
                 "extras": extras,
                 "json": json.dumps(
                     {
+                        "text": text,
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
@@ -549,6 +551,7 @@ def master(request):
                 "extras": extras,
                 "json": json.dumps(
                     {
+                        "text": text,
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
@@ -618,6 +621,7 @@ def mistakes(request):
                 "extras": extras,
                 "json": json.dumps(
                     {
+                        "text": text,
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
