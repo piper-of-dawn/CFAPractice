@@ -572,8 +572,14 @@ def master(request):
 
 @require_http_methods(["GET", "POST"])
 def mistakes(request):
-    # Load mistakes as normalized questions
-    questions = _load_mistakes_list()
+    # Load mistakes and normalize to ensure consistent shape
+    raw_items = _load_mistakes_list()
+    try:
+        # _normalize_questions handles various schemas (text/stem/question, options/choices, etc.)
+        questions = _normalize_questions(raw_items)
+    except Exception:
+        # Fallback: keep raw items if normalization fails
+        questions = list(raw_items) if isinstance(raw_items, list) else []
     total = len(questions)
     checked = {}
     score = 0
