@@ -99,11 +99,18 @@
     .question.correct { border-color: #34c759; box-shadow: 0 0 0 3px rgba(52,199,89,0.15); }
     .question.incorrect { border-color: #ff3b30; box-shadow: 0 0 0 3px rgba(255,59,48,0.12); }
     /* Subtle one-shot green glow when a correct answer is checked */
-    .question.correct.glow-correct { animation: correctGlow 1.5s ease-out; }
+    .question.correct.glow-correct { animation: correctGlow 4s ease-out; }
     @keyframes correctGlow {
       0% { box-shadow: 0 0 0 3px rgba(52,199,89,0.15), 0 0 0 0 rgba(52,199,89,0); }
       35% { box-shadow: 0 0 0 3px rgba(52,199,89,0.18), 0 0 16px 6px rgba(52,199,89,0.22); }
       100% { box-shadow: 0 0 0 3px rgba(52,199,89,0.15), 0 0 0 0 rgba(52,199,89,0); }
+    }
+    /* Subtle one-shot red glow when an incorrect answer is checked */
+    .question.incorrect.glow-incorrect { animation: incorrectGlow 4s ease-out; }
+    @keyframes incorrectGlow {
+      0% { box-shadow: 0 0 0 3px rgba(255,59,48,0.12), 0 0 0 0 rgba(255,59,48,0); }
+      35% { box-shadow: 0 0 0 3px rgba(255,59,48,0.16), 0 0 16px 6px rgba(255,59,48,0.22); }
+      100% { box-shadow: 0 0 0 3px rgba(255,59,48,0.12), 0 0 0 0 rgba(255,59,48,0); }
     }
     .question h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; letter-spacing: .2px; }
     .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
@@ -420,13 +427,19 @@
         sec.classList.toggle('incorrect', !ok);
         // Trigger a brief green glow (1.5s) when correct
         if (ok) {
-          // Retrigger animation by removing then re-adding the class
+          // Retrigger correct animation by removing then re-adding the class
+          sec.classList.remove('glow-incorrect');
           sec.classList.remove('glow-correct');
           void sec.offsetWidth; // force reflow to restart animation
           sec.classList.add('glow-correct');
-          setTimeout(() => sec.classList.remove('glow-correct'), 1600);
+          setTimeout(() => sec.classList.remove('glow-correct'), 4100);
         } else {
+          // Retrigger incorrect animation similarly
           sec.classList.remove('glow-correct');
+          sec.classList.remove('glow-incorrect');
+          void sec.offsetWidth;
+          sec.classList.add('glow-incorrect');
+          setTimeout(() => sec.classList.remove('glow-incorrect'), 4100);
         }
         // Report mistake once per question to server (Upstash-backed)
         if (!ok && !sec.dataset.reported) {
