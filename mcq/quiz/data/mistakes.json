@@ -1,0 +1,43 @@
+[
+  {
+    "text": "Under rising input prices, how does FIFO typically affect reported income relative to LIFO, assuming identical operations?",
+    "choices": [
+      "FIFO reports higher income because older, cheaper layers flow into COGS more slowly.",
+      "FIFO reports lower income because it accelerates recognition of inflationary cost increases.",
+      "FIFO and LIFO report the same income because total cost of goods available does not differ."
+    ],
+    "answer": 0,
+    "explanation": "&lt;h3&gt;First Principles Thinking: Timing of cost recognition&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; FIFO expends the oldest inventory costs first. In inflation, those older costs are cheaper than current ones. By keeping expensive layers in ending inventory, FIFO defers inflationary cost recognition and reports a lower COGS figure. Because profit = sales − COGS, lower COGS yields higher income. As shown in the PDF's Company F (FIFO) example, income and gross margins exceed those of Company L (LIFO) when prices rise. Memory hook: &lt;em&gt;“FIFO floats profits upward in inflation.”&lt;/em&gt;&lt;/p&gt;&lt;p&gt;B is incorrect because FIFO delays the recognition of newer, higher costs.&lt;/p&gt;&lt;p&gt;C is incorrect because income is affected by &lt;em&gt;timing&lt;/em&gt; of COGS recognition, even though the total pool of cost is identical across methods.&lt;/p&gt;",
+    "extras": {}
+  },
+  {
+    "text": "Which inventory-related disclosure is required under IFRS?",
+    "choices": [
+      "Carrying amount of inventories by classification and details of write-downs or reversals",
+      "Only total inventory cost with no breakdown",
+      "Only the method used (FIFO or weighted average) but no quantitative disclosures"
+    ],
+    "answer": 0,
+    "explanation": "&lt;h3&gt;First Principles Thinking: Transparency of Recoverability&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; IFRS requires firms to disclose inventory carrying amounts by category, the amount of write-downs, the amount of reversals, and the circumstances that led to them. First principles: because inventory value reflects future economic benefit, users need information on valuation uncertainty, obsolescence, and NRV recoverability. The PDF outlines that entities must disclose detailed changes in inventory allowances, including reversals, cost formulas used, and carrying amounts across work-in-progress, raw materials, and finished goods :contentReference[oaicite:1]{index=1}.&lt;/p&gt;&lt;p&gt;B is wrong: IFRS does not permit such limited disclosure; users need category-level visibility.&lt;/p&gt;&lt;p&gt;C is wrong: valuation method alone is insufficient; IFRS mandates both method and quantitative detail.&lt;/p&gt;",
+    "extras": {
+      "id": 15,
+      "model": "ChatGPT",
+      "topic": "Disclosure Requirements"
+    }
+  },
+  {
+    "text": "Using Exhibit 3 in the PDF, Volvo reported SEK 52,701 million of total inventories in 2017 with an allowance for inventory obsolescence of SEK 3,489 million. What would total inventories have been without the allowance?",
+    "choices": [
+      "SEK 56,190 million",
+      "SEK 49,212 million",
+      "SEK 52,701 million"
+    ],
+    "answer": 0,
+    "explanation": "&lt;h3&gt;First Principles Thinking: Allowance Mechanics&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A is correct.&lt;/strong&gt; Inventory allowances reduce the carrying amount of inventory to reflect estimated losses. First principles: the allowance is a contra-asset; adding it back yields the unadjusted gross inventory. From Exhibit 3 Panel A, 2017 total inventories = 52,701 and allowance = 3,489. Thus: 52,701 + 3,489 = 56,190. The PDF provides this exact computed figure :contentReference[oaicite:5]{index=5}.&lt;/p&gt;&lt;p&gt;B is wrong: this is unrelated to any combination in Exhibit 3.&lt;/p&gt;&lt;p&gt;C is wrong: this is the already reduced reported inventory, not the gross amount.&lt;/p&gt;",
+    "extras": {
+      "id": 12,
+      "model": "ChatGPT",
+      "topic": "Numerical: Volvo Inventory Without Allowance"
+    }
+  }
+]

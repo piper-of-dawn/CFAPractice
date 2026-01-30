@@ -127,9 +127,14 @@ def _normalize_questions(raw):
             q.get("explanation") or q.get("explanations") or q.get("rationale")
         )
 
-        # Minimal extras to avoid dumping full JSON into UI
+        # Minimal extras: include common fields and merge nested extras
         keep = {"id", "topic", "model", "category", "difficulty"}
         extras = {k: v for k, v in q.items() if k in keep}
+        nested_extras = q.get("extras")
+        if isinstance(nested_extras, dict):
+            for k, v in nested_extras.items():
+                if k in keep and k not in extras:
+                    extras[k] = v
 
         return {
             "text": text,
@@ -149,6 +154,13 @@ def _normalize_questions(raw):
 
 
 QUESTIONS = _normalize_questions(load_questions())
+# Derive a default topic from the default data path for the MCQ view
+try:
+    _rel = DATA_PATH.resolve().relative_to(DATA_DIR.resolve())
+    _parts = list(_rel.parts)
+    TOPIC_DEFAULT = _parts[0] if len(_parts) > 1 else "General"
+except Exception:
+    TOPIC_DEFAULT = "General"
 
 
 def _score_and_streak(answers):
@@ -308,8 +320,10 @@ def mcq(request):
         choices = q.get("choices", [])
         answer = q.get("answer", 0)
         explanation = q.get("explanation")
-        # Minimal extras already computed during normalization
-        extras = q.get("extras", {})
+        # Minimal extras already computed during normalization; ensure topic present
+        extras = dict(q.get("extras", {}))
+        if not (extras.get("topic") or extras.get("category")):
+            extras["topic"] = TOPIC_DEFAULT
         enriched.append(
             {
                 "index": i,
@@ -326,6 +340,7 @@ def mcq(request):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "extras": extras,
                     }
                 ),
             }
@@ -400,6 +415,21 @@ def play(request, fname):
     with target.open("r", encoding="utf-8") as f:
         raw = json.load(f)
     questions = _normalize_questions(raw)
+    # Derive topic for this file and inject into extras if missing
+    try:
+        rel = target.resolve().relative_to(DATA_DIR.resolve())
+        parts = list(rel.parts)
+        topic_for_file = parts[0] if len(parts) > 1 else "General"
+    except Exception:
+        topic_for_file = "General"
+    for _q in questions:
+        try:
+            _ex = dict(_q.get("extras") or {})
+            if not (_ex.get("topic") or _ex.get("category")):
+                _ex["topic"] = topic_for_file
+                _q["extras"] = _ex
+        except Exception:
+            pass
     # Randomize question order before rendering
     try:
         random.shuffle(questions)
@@ -449,7 +479,7 @@ def play(request, fname):
             except Exception:
                 pass
         explanation = q.get("explanation")
-        extras = q.get("extras", {})
+        extras = dict(q.get("extras", {}))
         enriched.append(
             {
                 "index": i,
@@ -465,6 +495,7 @@ def play(request, fname):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "extras": extras,
                     }
                 ),
             }
@@ -496,6 +527,21 @@ def master(request):
                 raw = json.load(f)
             qs = _normalize_questions(raw)
             if qs:
+                # Inject topic derived from path into extras when missing
+                try:
+                    rel = p.resolve().relative_to(DATA_DIR.resolve())
+                    parts = list(rel.parts)
+                    topic_here = parts[0] if len(parts) > 1 else "General"
+                except Exception:
+                    topic_here = "General"
+                for _q in qs:
+                    try:
+                        _ex = dict(_q.get("extras") or {})
+                        if not (_ex.get("topic") or _ex.get("category")):
+                            _ex["topic"] = topic_here
+                            _q["extras"] = _ex
+                    except Exception:
+                        pass
                 all_questions.extend(qs)
                 files_used.append(str(p.relative_to(DATA_DIR)).replace("\\", "/"))
         except Exception:
@@ -642,6 +688,68 @@ def mistakes(request):
     return render(request, "quiz/mcq.html", context)
 
 
+@require_http_methods(["GET", "POST"])
+def mistakes_grouped(request):
+    # Load mistakes, normalize, then group by topic
+    raw_items = _load_mistakes_list()
+    try:
+        questions = _normalize_questions(raw_items)
+    except Exception:
+        questions = list(raw_items) if isinstance(raw_items, list) else []
+
+    # Derive topic from extras or mark as Unknown
+    def topic_of(q):
+        extras = q.get("extras") or {}
+        t = (extras.get("topic") or extras.get("category") or "").strip()
+        return t or "Unknown"
+
+    groups = {}
+    for q in questions:
+        t = topic_of(q)
+        groups.setdefault(t, []).append(q)
+
+    # Enrich per group
+    enriched_groups = []
+    global_index = 0
+    for t in sorted(groups.keys(), key=lambda s: s.lower()):
+        enriched = []
+        checked = {}
+        for q in groups[t]:
+            text = q.get("text", "")
+            choices = q.get("choices", [])
+            answer = q.get("answer", 0)
+            explanation = q.get("explanation")
+            extras = q.get("extras", {})
+            enriched.append(
+                {
+                    "index": global_index,
+                    "text": text,
+                    "choices": list(enumerate(choices)),
+                    "answer": answer,
+                    "selected": checked.get(f"q{global_index}"),
+                    "explanation": explanation,
+                    "extras": extras,
+                    "json": json.dumps(
+                        {
+                            "text": text,
+                            "choices": choices,
+                            "answer": answer,
+                            "explanation": explanation,
+                        }
+                    ),
+                }
+            )
+            global_index += 1
+        enriched_groups.append({"topic": t, "items": enriched, "count": len(enriched)})
+
+    context = {
+        "groups": enriched_groups,
+        "total": sum(g["count"] for g in enriched_groups),
+        "data_source": "mistakes_grouped",
+    }
+    return render(request, "quiz/mistakes_grouped.html", context)
+
+
 @csrf_exempt
 @require_http_methods(["POST"])
 def api_mistake(request):
@@ -656,6 +764,51 @@ def api_mistake(request):
     except Exception:
         pass
     return JsonResponse({"ok": True})
+
+
+@require_http_methods(["GET"])
+def api_mistakes_count(request):
+    # Simple health endpoint to verify Upstash/local mistakes store is reachable
+    try:
+        count = _mistakes_count()
+        base, token = _upstash_cfg()
+        source = "upstash" if (base and token) else "local"
+        return JsonResponse({"ok": True, "count": count, "source": source})
+    except Exception as e:
+        return JsonResponse({"ok": False, "error": str(e)}, status=500)
+
+
+@require_http_methods(["GET"])
+def api_mistakes_dump(request):
+    limit = 5
+    try:
+        qs = request.GET.get("limit")
+        if qs:
+            limit = max(1, min(50, int(qs)))
+    except Exception:
+        limit = 5
+    res = _upstash_call("lrange", "mcq:m:mistakes", "0", str(limit - 1))
+    items = []
+    if isinstance(res, dict) and isinstance(res.get("result"), list):
+        arr = res["result"]
+        for x in arr:
+            try:
+                obj = json.loads(x) if isinstance(x, str) else x
+            except Exception:
+                obj = {"raw": x}
+            if isinstance(obj, dict):
+                items.append({
+                    "has_text": bool(obj.get("text")),
+                    "keys": sorted(list(obj.keys())),
+                    "sample_text": (obj.get("text") or "")[:120],
+                    "choices_len": len(obj.get("choices") or []),
+                    "answer": obj.get("answer"),
+                })
+            else:
+                items.append({"raw_type": str(type(obj))})
+    base, token = _upstash_cfg()
+    source = "upstash" if (base and token) else "local"
+    return JsonResponse({"ok": True, "items": items, "source": source})
 
 
 # -------------------- Flashcards --------------------

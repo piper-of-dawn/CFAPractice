@@ -527,5 +527,24 @@
       }
     })();
   </script>
+  <script>
+    // Debug: log Upstash/local mistakes info when viewing the Mistakes page
+    (function(){
+      try {
+        var dataSource = ("{{ data_source|default:'' }}" || '').toLowerCase();
+        if (dataSource === 'mistakes') {
+          console.log('[mistakes] data_source:', dataSource);
+          fetch('/api/mistakes_count/')
+            .then(r => r.json())
+            .then(j => console.log('[mistakes] /api/mistakes_count ->', j))
+            .catch(e => console.warn('[mistakes] count fetch error', e));
+          fetch('/api/mistakes_dump/?limit=5')
+            .then(r => r.json())
+            .then(j => console.log('[mistakes] /api/mistakes_dump ->', j))
+            .catch(e => console.warn('[mistakes] dump fetch error', e));
+        }
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>
