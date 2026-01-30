@@ -65,6 +65,8 @@
       <a class="muted" href="{% url 'mcq' %}">Open default quiz</a>
       &nbsp;•&nbsp;
       <a class="muted" href="{% url 'mistakes' %}">Mistakes {% if mistakes_count %}({{ mistakes_count }}){% endif %}</a>
+      &nbsp;•&nbsp;
+      <a class="muted" href="{% url 'mistakes_grouped' %}">Mistakes by Topic</a>
     </div>
   </div>
 </body>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mistakes by Topic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; background:#fbfbfd; color:#111; font-family:"Geist", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
+    h1 { font-size: 22px; font-weight: 600; margin: 0 0 10px; }
+    .sub { color:#6e6e73; font-size: 14px; }
+    .group { margin-top: 24px; }
+    .ghead { display:flex; align-items:baseline; justify-content:space-between; margin-bottom: 10px; }
+    .ghead h2 { font-size: 18px; margin: 0; }
+    .pill { display:inline-block; padding:2px 8px; border-radius:999px; background:#f2f2f7; color:#1d1d1f; font-size:11px; }
+    .card { background:#fff; border:1px solid #e5e5ea; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.06), 0 4px 10px rgba(0,0,0,0.04); }
+    .content { padding: 20px 22px; }
+    .question { border: 1px solid #e5e5ea; border-radius: 10px; padding: 14px 14px 18px; margin-bottom: 12px; }
+    .qmeta { color:#6e6e73; font-size:12px; margin-bottom: 8px; }
+    .stem { line-height:1.7; font-weight:500; }
+    ul.choices { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .choice { display:flex; gap:10px; align-items:center; padding:10px 12px; border:1px solid #e5e5ea; border-radius:10px; }
+    .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .tag { background:#f2f2f7; border:1px solid #e5e5ea; border-radius:999px; padding:2px 8px; font-size:11px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mistakes by Topic</h1>
+      <div class="sub">Total mistakes: {{ total }}</div>
+    </header>
+
+    {% if groups %}
+      {% for g in groups %}
+        <section class="group">
+          <div class="ghead">
+            <h2>{{ g.topic }}</h2>
+            <span class="pill">{{ g.count }}</span>
+          </div>
+          <div class="card">
+            <div class="content">
+              {% for q in g.items %}
+                <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
+                  <div class="qmeta">Question {{ forloop.counter }} in {{ g.topic }}</div>
+                  <p class="stem">{{ q.text|linebreaksbr }}</p>
+                  <ul class="choices">
+                    {% for idx, choice in q.choices %}
+                      <li class="choice">
+                        <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}">
+                        <label for="q{{ q.index }}_{{ idx }}">{{ choice }}</label>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  {% if q.extras %}
+                    <div class="tags">
+                      {% for k, v in q.extras.items %}
+                        <span class="tag">{{ k }}: {{ v }}</span>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+      {% endfor %}
+    {% else %}
+      <div class="card"><div class="content">No mistakes found.</div></div>
+    {% endif %}
+  </div>
+
+  <script>
+    // Log Upstash/local source for debugging
+    (function(){
+      try {
+        fetch('/api/mistakes_count/').then(r=>r.json()).then(j=>console.log('[mistakes_grouped] count ->', j));
+        fetch('/api/mistakes_dump/?limit=5').then(r=>r.json()).then(j=>console.log('[mistakes_grouped] dump ->', j));
+      } catch(_) {}
+    })();
+  </script>
+</body>
+</html>
+
