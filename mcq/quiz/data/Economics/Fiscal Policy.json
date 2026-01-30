@@ -472,14 +472,14 @@
     "id": 8,
     "model": "Gemini",
     "topic": "Fiscal Policy Tools and Aggregate Demand",
-    "stem": "Comparing a $10 billion increase in direct government spending on infrastructure versus a $10 billion increase in transfer payments, the immediate impact on aggregate demand is likely to be:",
+    "stem": "Comparing a USD10 billion increase in direct government spending on infrastructure versus a USD10 billion increase in transfer payments, the immediate impact on aggregate demand is likely to be:",
     "options": {
       "A": "Greater for the transfer payments because they target low-income households.",
       "B": "Greater for the infrastructure spending because the entire amount is injected into the circular flow.",
       "C": "Equal, as the dollar amount of the fiscal injection is identical."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: The Spending vs. Transfer Multiplier</h3><p><strong>B is correct.</strong> Trace the first round of impacts. Infrastructure spending (G) is a direct component of Aggregate Demand (AD = C + I + G + NX). A $10b increase in G adds $10b to AD immediately. Transfer payments are <em>not</em> part of G; they increase Disposable Income (Yd). Households then spend a portion of this income based on their Marginal Propensity to Consume (MPC). If MPC < 1 (e.g., 0.9), only $9b is spent in the first round. Therefore, the government spending multiplier \\( \\frac{1}{1-c} \\) is mathematically larger than the transfer multiplier \\( \\frac{c}{1-c} \\).</p><p>A is incorrect: While targeting low-income households might raise the <em>MPC</em> of the recipients, the structural difference (direct injection vs. indirect injection via income) generally makes direct spending more potent per dollar.</p><p>C is incorrect: It ignores the savings leakage that occurs immediately with transfers before the money enters the spending stream.</p>"
+    "explanation": "<h3>First Principles Thinking: The Spending vs. Transfer Multiplier</h3><p><strong>B is correct.</strong> Trace the first round of impacts. Infrastructure spending (G) is a direct component of Aggregate Demand (AD = C + I + G + NX). A USD10b increase in G adds USD10b to AD immediately. Transfer payments are <em>not</em> part of G; they increase Disposable Income (Yd). Households then spend a portion of this income based on their Marginal Propensity to Consume (MPC). If MPC < 1 (e.g., 0.9), only USD9b is spent in the first round. Therefore, the government spending multiplier \\( \\frac{1}{1-c} \\) is mathematically larger than the transfer multiplier \\( \\frac{c}{1-c} \\).</p><p>A is incorrect: While targeting low-income households might raise the <em>MPC</em> of the recipients, the structural difference (direct injection vs. indirect injection via income) generally makes direct spending more potent per dollar.</p><p>C is incorrect: It ignores the savings leakage that occurs immediately with transfers before the money enters the spending stream.</p>"
   },
   {
     "id": 9,
@@ -560,6 +560,5 @@
     "explanation": "<h3>First Principles Thinking: Structural vs. Cyclical</h3><p><strong>C is correct.</strong> The fiscal stance refers to the government's deliberate policy setting (tight or loose). The headline (actual) deficit includes two components: the structural deficit (policy-driven) and the cyclical deficit (economy-driven). In a recession, the headline deficit balloons due to automatic stabilizers (lower tax, higher transfers) even if the government did not change any laws (discretionary stance). Therefore, looking only at the headline number might suggest the government is stimulating the economy when it is actually just passively accepting the cycle. To judge the stance, one must look at the <em>cyclically adjusted</em> (structural) deficit.</p><p>A is incorrect: While true that inflation distorts the real debt burden (measurement error), the primary conceptual failure regarding <em>stance</em> is the cyclicality.</p><p>B is incorrect: Lags affect the <em>timing</em> of the impact, not the <em>measurement</em> of the deficit itself.</p>"
   }
 ]
-
 
 

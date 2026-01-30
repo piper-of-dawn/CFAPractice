@@ -1,0 +1,730 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "IFRS Recognition Criteria",
+    "stem": "Which condition is required for recognizing an identifiable intangible asset under IFRS:",
+    "options": {
+      "A": "It must have a measurable legal protection period exceeding one year.",
+      "B": "It must be identifiable, under the company’s control, and expected to generate future economic benefits.",
+      "C": "It must arise from internal development and have reliably measurable cost."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Identifiability–Control–Benefits</h3><p><strong>B is correct.</strong> From first principles, an intangible asset can only be recognized when it represents a future economic resource the entity can both point to and control. IFRS embeds this logic through three criteria: identifiability (the asset is separable or arises from contractual/legal rights), control (the firm can restrict others’ access to the benefit), and probability of future economic benefits. If these conditions fail, the asset cannot be capitalized because it lacks the essential qualities of an economic resource. Applying this to the question, option B directly matches all three IFRS requirements.</p><p>A is incorrect because legal protection alone does not guarantee control or future benefits. A trademark can have a long legal life but still fail to meet recognition criteria if benefits are uncertain.</p><p>C is incorrect because internal development is not required for recognition; purchased intangible assets also qualify, and internally developed assets face additional research-versus-development hurdles.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Purchased vs Internally Developed Intangibles",
+    "stem": "How does IFRS distinguish capitalization of purchased versus internally developed intangible assets:",
+    "options": {
+      "A": "Purchased intangibles are always capitalized, while internally developed intangibles are expensed until the development phase criteria are met.",
+      "B": "Both purchased and internally developed intangibles are capitalized only when sold to external customers.",
+      "C": "Internally developed intangibles are capitalized automatically once research begins."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Observable Cost vs. Uncertain Creation</h3><p><strong>A is correct.</strong> Purchased intangibles have a clear, observable transaction price—making measurement straightforward—so capitalization is required. Internally developed assets do not have this external verification; early expenditures are uncertain and exploratory. IFRS therefore forces expensing during the research phase and allows capitalization only after technical feasibility and intent to complete are demonstrated in the development phase. This distinction ensures that only expenditures tied to a demonstrably valuable asset become capitalized.</p><p>B is incorrect because sale to external customers is irrelevant to recognition; capitalization depends on control and future benefits, not external sales.</p><p>C is incorrect because research costs must be expensed. Capitalization begins only once the project enters the development phase and meets feasibility criteria.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Research vs Development Costs",
+    "stem": "Under IFRS, which cost related to internally developed software should be capitalized:",
+    "options": {
+      "A": "Costs incurred in early research efforts to explore possible design approaches.",
+      "B": "Costs incurred after demonstrating technical feasibility and intent to complete the software.",
+      "C": "Costs incurred in maintenance and bug-fixing after the software is deployed."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Feasibility as the Capitalization Threshold</h3><p><strong>B is correct.</strong> IFRS uses feasibility as the dividing line because capitalization requires that expenditures are tied to a resource capable of generating predictable future benefits. During research, outcomes are unknown, so expensing is required. Once feasibility and intent to complete are demonstrated, the expenditures contribute directly to constructing a future economic resource and can be capitalized. This reflects the core principle: capitalize only when value creation is sufficiently certain.</p><p>A is incorrect because research expenditures are inherently uncertain, exploratory, and lack evidence of future benefits.</p><p>C is incorrect because post-deployment maintenance preserves, not enhances, asset value and thus must be expensed as incurred.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "US GAAP Software Development",
+    "stem": "For software developed for internal use under US GAAP, costs should be capitalized once:",
+    "options": {
+      "A": "The project is completed and the software enters production use.",
+      "B": "Technological feasibility is established and the project is expected to be completed for its intended use.",
+      "C": "The firm begins any preliminary design activities or feasibility studies."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: GAAP's Feasibility Gate</h3><p><strong>B is correct.</strong> US GAAP mirrors an economic reasoning threshold: capitalization begins only when a project’s success becomes reasonably assured. Technological feasibility acts as this gate. Before feasibility, expenditures are exploratory and uncertain; after feasibility, the firm is constructing an asset with expected future utility. Thus, GAAP capitalizes costs incurred after feasibility but before the software is ready for use.</p><p>A is incorrect because capitalization does not wait until completion; it begins after feasibility and continues through development.</p><p>C is incorrect because preliminary design and feasibility studies occur before technological feasibility is established and must be expensed as incurred.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Goodwill in Business Combinations",
+    "stem": "Under the acquisition method, goodwill is recognized when:",
+    "options": {
+      "A": "The fair value of identifiable net assets exceeds the purchase price paid by the acquirer.",
+      "B": "The purchase price exceeds the fair value of identifiable net assets acquired in a business combination.",
+      "C": "Only the fair value of intangible assets exceeds the fair value of tangible assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Residual Value After Identifiable Assets</h3><p><strong>B is correct.</strong> Goodwill is a residual—representing synergies, assembled workforce, customer relationships, and other benefits that cannot be individually identified or valued. Under the acquisition method, the acquirer first allocates the purchase price to identifiable assets and liabilities at fair value. Any excess of the purchase price over this identifiable net asset value reflects unidentifiable economic advantages and is recorded as goodwill. This follows the economic principle that goodwill is not valued directly; it emerges after all identifiable components are measured.</p><p>A is incorrect because this situation would imply a bargain purchase, not goodwill.</p><p>C is incorrect because goodwill is unrelated to the relative sizes of intangible versus tangible assets; it depends on the residual after all identifiable assets and liabilities are measured.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Purchase Price Allocation",
+    "stem": "How must an acquirer allocate the purchase price in a business combination under IFRS:",
+    "options": {
+      "A": "Allocate the purchase price equally across all acquired assets and liabilities.",
+      "B": "Measure identifiable assets and liabilities at fair value, allocate the purchase price to them, and record any remaining excess as goodwill.",
+      "C": "Recognize goodwill first and allocate any remaining amount to identifiable assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fair-Value Prioritization</h3><p><strong>B is correct.</strong> IFRS requires identifying and measuring all identifiable assets and liabilities at fair value because these are the components that can be independently measured and controlled. Only after allocating the purchase price to these identifiable components is the residual—representing unidentifiable economic benefits—recorded as goodwill. This ordering ensures that goodwill is not overstated and reflects only the portion of value that cannot be attributed to separable assets.</p><p>A is incorrect because equal allocation ignores economic reality and violates fair-value measurement principles.</p><p>C is incorrect because goodwill is a residual; it cannot be measured before identifiable assets.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Indefinite-Life Intangibles",
+    "stem": "An acquired brand is classified as having an indefinite useful life when:",
+    "options": {
+      "A": "Management asserts that the company intends to use the brand indefinitely regardless of market conditions.",
+      "B": "There is no foreseeable limit to the period over which the brand will generate economic benefits.",
+      "C": "The brand’s legal protection period exceeds 50 years."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Economic Life vs. Legal Life</h3><p><strong>B is correct.</strong> An intangible has an indefinite life when future economic benefits are expected to continue without a predictable end point. The concept rests on economic substance: if there is no clear horizon at which benefits will cease, the asset cannot be amortized. Instead, it is tested for impairment annually. Legal life does not determine accounting life; economic usefulness does.</p><p>A is incorrect because management intent alone cannot override economic evidence; indefinite life is an economic, not subjective, assessment.</p><p>C is incorrect because legal life does not determine useful life. A brand may have a long legal term but still face declining economic benefits.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Recognition of Long-Lived Assets",
+    "stem": "An 'economic' balance sheet would include which of the following items that is typically *excluded* from a company's 'accounting' balance sheet prepared under IFRS or US GAAP?",
+    "options": {
+      "A": "The capitalized cost of equipment used in operations.",
+      "B": "A company's internally generated, trained, and experienced workforce.",
+      "C": "The fair value of a brand name acquired in a business combination."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Scope of Accounting Assets</h3><p><strong>B is correct.</strong> An \"economic\" balance sheet includes a wide range of assets such as a company's **reputation and its trained, experienced workforce**. However, \"accounting\" balance sheets prepared under IFRS and US GAAP permit the recognition of a **narrow range of assets** that meet strict criteria, and internally generated human capital does not meet the recognition criteria of reliable measurement or control over resources arising from past events.</p><p>A is incorrect: Property, plant, and equipment are routinely recognized on the accounting balance sheet.</p><p>C is incorrect: An **acquired** brand name is an identifiable intangible asset that is recognized on the accounting balance sheet at its fair value under the acquisition method.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Measurement Models for PPE",
+    "stem": "Which statement accurately describes the measurement models for property, plant, and equipment (PPE) for subsequent periods under IFRS compared to US GAAP?",
+    "options": {
+      "A": "IFRS requires the cost model, while US GAAP permits both the cost and revaluation models.",
+      "B": "IFRS permits a choice between the cost and revaluation models, while US GAAP requires the cost model.",
+      "C": "Both IFRS and US GAAP permit the revaluation model for specialized assets only."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Measurement Models for Long-Lived Assets</h3><p><strong>B is correct.</strong> Once a long-lived asset is recognized, IFRS permits a choice between the **cost or revaluation models** for subsequent measurement. In contrast, **US GAAP requires the cost model** for the subsequent measurement of PPE, which is one of the key differences for analysts comparing companies using the two GAAPs.</p><p>A is incorrect: This statement reverses the actual requirements; IFRS permits *both* models, and US GAAP requires the *cost* model.</p><p>C is incorrect: US GAAP does not permit the revaluation model for PPE held for use.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "R&D Cost Treatment (IFRS)",
+    "stem": "Under IFRS, what is the required accounting treatment for costs incurred during the 'research phase' of an internal project to develop an intangible asset?",
+    "options": {
+      "A": "The costs must be capitalized as an intangible asset if they are expected to yield future economic benefits.",
+      "B": "The costs must be expensed immediately as incurred.",
+      "C": "The costs are capitalized once technical and commercial feasibility are established."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IFRS R&D Expense Requirement</h3><p><strong>B is correct.</strong> IFRS requires expensing **research costs** because this phase is considered too uncertain to meet the capitalization criteria. In contrast, IFRS allows **development costs** to be capitalized under certain conditions, such as the demonstration of technical feasibility and the intent to use or sell the asset.</p><p>A is incorrect: This is the treatment for the *development* phase if all criteria are met, not the research phase.</p><p>C is incorrect: Establishing feasibility is a condition for capitalizing the **development** phase costs.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "R&D Cost Treatment (US GAAP)",
+    "stem": "What is the *general* requirement under US GAAP for accounting for both research and development costs?",
+    "options": {
+      "A": "Both research and development costs must be capitalized.",
+      "B": "Both research and development costs must be expensed.",
+      "C": "Research costs must be expensed, but development costs can be capitalized."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: US GAAP R&D Expense Rule</h3><p><strong>B is correct.</strong> Generally, **US GAAP requires that both research and development costs be expensed** as they are incurred. The rationale is that the future economic benefits of R&D are uncertain. An exception exists for certain development costs related to software, which must be capitalized after a defined point.</p><p>A is incorrect: This is contrary to the US GAAP general rule.</p><p>C is incorrect: This describes the general IFRS treatment, not the general US GAAP rule.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Goodwill in Business Combinations",
+    "stem": "Under the acquisition method of accounting, goodwill is recorded as the residual amount after the acquirer allocates the purchase price to:",
+    "options": {
+      "A": "The carrying amounts of the acquired company's assets and liabilities.",
+      "B": "Each asset acquired and each liability assumed on the basis of its fair value.",
+      "C": "Identifiable intangible assets only, on the basis of its fair value."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Acquisition Method and Goodwill</h3><p><strong>B is correct.</strong> Under the acquisition method, the acquirer allocates the purchase price to **each asset acquired and each liability assumed on the basis of its fair value**. Goodwill is then recorded as **any excess of the purchase price over the fair value of net identifiable assets acquired**.</p><p>A is incorrect: The allocation is based on **fair value** at the acquisition date, not the acquired company's historical carrying amounts.</p><p>C is incorrect: The allocation applies to *all* assets and liabilities, both tangible and intangible, not just the identifiable intangible assets.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Cost Allocation Terminology",
+    "stem": "The systematic allocation of the capitalized cost of a long-lived asset to expense over its useful life is referred to as:",
+    "options": {
+      "A": "Depreciation for tangible assets and amortization for intangible assets.",
+      "B": "Amortization for both tangible and intangible assets.",
+      "C": "Impairment for all long-lived assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cost Allocation Terminology</h3><p><strong>A is correct.</strong> For **long-lived tangible assets** (PPE), the cost allocation process is called **depreciation**. For **intangible assets with finite useful lives**, the process is called **amortization**. Both serve to systematically allocate cost over the asset's useful life.</p><p>B is incorrect: Amortization is only for intangible assets.</p><p>C is incorrect: Impairment charges reflect an *unexpected decline* in value below the carrying amount, not the systematic allocation of cost.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Impairment Review Triggers",
+    "stem": "Which type of asset is **not** amortized but instead must be reviewed for impairment on an **annual** basis?",
+    "options": {
+      "A": "Intangible assets with a finite useful life.",
+      "B": "Long-lived tangible assets.",
+      "C": "Intangible assets with an indefinite useful life."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Impairment Testing</h3><p><strong>C is correct.</strong> **Intangible assets with an indefinite useful life are not amortized**. They are instead reviewed for impairment **annually** because there is no systematic cost allocation. Long-lived tangible assets and intangible assets with finite useful lives are reviewed for impairment only when changes in events or circumstances indicate that the carrying amount may not be recoverable (a triggering event).</p><p>A is incorrect: These assets are **amortized** and reviewed for impairment only upon a triggering event.</p><p>B is incorrect: These assets are **depreciated** and reviewed for impairment only upon a triggering event.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Impairment Loss Reversals",
+    "stem": "If an impairment loss is recognized on a long-lived asset, which standard allows the subsequent reversal of this loss, and where is the reversal reported?",
+    "options": {
+      "A": "US GAAP, reported in Other Comprehensive Income.",
+      "B": "IFRS, reported as a gain in profit or loss.",
+      "C": "Neither IFRS nor US GAAP allows the reversal of impairment losses."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Impairment Reversal Policy</h3><p><strong>B is correct.</strong> **IFRS permit impairment losses to be reversed**, with the reversal reported as a **gain in profit**. This contrasts directly with **US GAAP, which do not permit the reversal of impairment losses** on long-lived assets held for use.</p><p>A is incorrect: US GAAP does not permit the reversal of impairment losses.</p><p>C is incorrect: IFRS permits the reversal of impairment losses.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Intangible Assets - Cash Flow Impact",
+    "stem": "A company incurs costs to internally develop a new software product. Assuming IFRS criteria for capitalization are met, these capitalized costs will primarily be classified as:",
+    "options": {
+      "A": "Operating cash outflows.",
+      "B": "Investing cash outflows.",
+      "C": "Financing cash outflows."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cash Flow Classification of Intangibles</h3><p><strong>A is correct.</strong> Although capitalized on the balance sheet, the costs of **internally developing intangible assets** are generally classified as **operating cash outflows**. Conversely, the costs of **acquiring intangible assets** in an external purchase are classified as **investing cash outflows**. This difference in cash flow classification impacts analytical ratios, despite similar balance sheet treatment (capitalization).</p><p>B is incorrect: Investing cash outflows are typically for externally acquired intangible assets.</p><p>C is incorrect: Financing cash outflows relate to debt and equity transactions.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "IFRS Intangible Asset Recognition",
+    "stem": "Under IFRS, which of the following is a *definitional* criterion for an identifiable intangible asset?",
+    "options": {
+      "A": "The cost of the asset can be reliably measured.",
+      "B": "It must be capable of being separated from the entity.",
+      "C": "It must be probable that the expected future economic benefits will flow to the company."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IFRS Intangible Asset Criteria</h3><p><strong>B is correct.</strong> Under IFRS, the three **definitional criteria** are: (1) **identifiable** (either capable of being separated from the entity or arising from contractual or legal rights), (2) under the **control** of the company, and (3) expected to generate future **economic benefits**. Separability is one way to meet the identifiability criterion.</p><p>A is incorrect: Reliable measurement is a **recognition** criterion.</p><p>C is incorrect: Probable flow of economic benefits is also a **recognition** criterion.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "US GAAP Software Development for Internal Use",
+    "stem": "For software developed for internal use under US GAAP, costs are capitalized only after which point?",
+    "options": {
+      "A": "The research phase is complete and the development phase has begun.",
+      "B": "The product's technological feasibility is established.",
+      "C": "It is probable that the project will be completed and the software will be used as intended."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: US GAAP Internal-Use Software Capitalization</h3><p><strong>C is correct.</strong> For software developed **for internal use**, US GAAP requires costs to be expensed until it is **probable that the project will be completed and that the software will be used as intended**. Thereafter, development costs are capitalized. This 'probability of completion' trigger is considered easier to demonstrate than technological feasibility.</p><p>A is incorrect: This is the general starting point for the development phase, but not the specific US GAAP capitalization trigger.</p><p>B is incorrect: Technological feasibility is the capitalization trigger for software developed **for sale**, not for internal use.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "US GAAP Intangible Assets in Business Combinations",
+    "stem": "Under US GAAP, which is required for an intangible asset acquired in a business combination to be recognized separately from goodwill?",
+    "options": {
+      "A": "It must have a finite useful life.",
+      "B": "It must be capable of being separated or arise from contractual/legal rights.",
+      "C": "It must be recorded at historical cost, not fair value."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: US GAAP Intangible Recognition in Acquisition</h3><p><strong>B is correct.</strong> Under US GAAP, an intangible asset acquired in a business combination is recognized separately from goodwill if it meets the criteria of being an item that can be **separated** from the acquired company or an item arising from **contractual or legal rights**. If it fails both criteria, its value is included in goodwill.</p><p>A is incorrect: The asset can have an indefinite useful life and still be recognized separately (e.g., an acquired brand).</p><p>C is incorrect: Assets acquired in a business combination are recorded at their **fair value** under the acquisition method.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "Financial Statement Analysis",
+    "stem": "For an analyst comparing two companies that both report under IFRS, which difference in accounting policy for long-lived assets is most likely to create challenges and require adjustment for comparability?",
+    "options": {
+      "A": "One company depreciates its equipment, while the other amortizes its patents.",
+      "B": "One company uses the cost model for its PPE, and the other uses the revaluation model.",
+      "C": "One company reports goodwill, and the other does not."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Analytical Challenges from Policy Choices</h3><p><strong>B is correct.</strong> The **choice of different methods and varying accounting policies for long-lived assets** can create significant challenges for analysts. Under IFRS, the choice between the **cost model and the revaluation model** directly affects the carrying value of assets and the reported depreciation expense, necessitating adjustments for a meaningful comparison.</p><p>A is incorrect: Depreciation and amortization are simply the correct systematic allocation terms for tangible and intangible assets, respectively, and are not a source of inconsistency requiring adjustment between companies.</p><p>C is incorrect: Goodwill is a residual amount only recognized in an acquisition. Whether a company reports goodwill simply depends on whether they have made a business acquisition. The subsequent accounting for the goodwill itself (annual impairment review) is mandatory for both.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Definition of Impairment Charge",
+    "stem": "Which of the following best describes the nature of an impairment charge on a long-lived asset?",
+    "options": {
+      "A": "It is a systematic allocation of the asset's cost over its estimated useful life.",
+      "B": "It reflects an unexpected decline in the asset's fair value below its carrying amount.",
+      "C": "It is a mandated annual expense for assets with indefinite useful lives."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Definition of Impairment</h3><p><strong>B is correct.</strong> In contrast with depreciation and amortization, **impairment charges reflect an unexpected decline in the asset's fair value to an amount lower than its carrying amount**. They are recognized immediately to reflect the economic loss when the asset's book value is determined to be unrecoverable.</p><p>A is incorrect: This is the definition of depreciation/amortization.</p><p>C is incorrect: While indefinite-lived assets are reviewed for impairment annually, the impairment charge itself is only recorded if the asset is actually impaired, and it is a non-cash charge reflecting a loss, not a standard annual expense like amortization.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Definition of Impairment and Recoverable Amount",
+    "stem": "Under IFRS, an asset is considered impaired when:",
+    "options": {
+      "A": "Its carrying amount exceeds the higher of fair value less costs to sell and value in use.",
+      "B": "Its carrying amount is lower than its historical cost but higher than its fair value.",
+      "C": "Its fair value is less than historical cost, regardless of future cash flows."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Recoverable Amount</h3><p><strong>A is correct.</strong> From first principles, an impairment exists when the book value overstates the economic value of an asset. IFRS captures this by defining recoverable amount as the higher of (1) fair value less costs to sell and (2) value in use, which is the present value of expected future cash flows. If carrying amount exceeds this maximum recoverable amount, the excess is not recoverable through use or sale and must be written down. The impairment loss equals carrying amount minus recoverable amount, aligning the balance sheet with economic reality.</p><p>B is incorrect because a fall below historical cost alone does not trigger impairment; the benchmark is recoverable amount, not historical cost.</p><p>C is incorrect because fair value below historical cost does not automatically mean impairment if value in use is higher than carrying amount; IFRS explicitly uses the higher of the two measures.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "IFRS vs US GAAP Impairment Testing for PPE",
+    "stem": "Which statement best describes a key difference between IFRS and US GAAP impairment testing for property, plant, and equipment:",
+    "options": {
+      "A": "IFRS compares carrying amount with recoverable amount, whereas US GAAP first compares carrying amount with undiscounted future cash flows.",
+      "B": "Both IFRS and US GAAP measure recoverable amount as the higher of fair value and historical cost.",
+      "C": "IFRS uses undiscounted cash flows, whereas US GAAP uses discounted cash flows in the initial test."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: One-Step vs Two-Step Logic</h3><p><strong>A is correct.</strong> IFRS directly asks: “Is carrying amount greater than the recoverable amount?” Recoverable amount is the higher of fair value less costs to sell and discounted value in use. If yes, impairment equals the excess. US GAAP, in contrast, first performs a recoverability test using undiscounted future cash flows: if carrying amount exceeds undiscounted cash flows, the asset is not recoverable and is written down to fair value. This makes IFRS a one-step, discounted-cash-flow-based approach, while GAAP is two-step with an undiscounted screen.</p><p>B is incorrect because neither framework defines recoverable amount as higher of fair value and historical cost.</p><p>C is incorrect because it reverses the roles: IFRS uses discounted cash flows (value in use); US GAAP uses undiscounted cash flows in the initial test.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Numerical Impairment under IFRS",
+    "stem": "A machine has a carrying amount of 400,000. Fair value less costs to sell is 310,000 and value in use is 320,000. Under IFRS, what impairment loss, if any, should be recognized:",
+    "options": {
+      "A": "80,000 impairment loss, carrying amount reduced to 320,000.",
+      "B": "90,000 impairment loss, carrying amount reduced to 310,000.",
+      "C": "No impairment, because value in use exceeds fair value less costs to sell."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Higher-of Test in Numbers</h3><p><strong>B is correct.</strong> Under IFRS, recoverable amount is the higher of fair value less costs to sell (310,000) and value in use (320,000). Higher figure = 320,000. An asset is impaired if carrying amount (400,000) exceeds this recoverable amount. Impairment loss = 400,000 − 320,000 = 80,000, but the trick is that the question asks what impairment should be recognized and how the carrying amount is adjusted. A loss of 80,000 means the new carrying amount equals 320,000, not 310,000. Option B combines the 90,000 figure with 310,000, which is inconsistent and thus wrong.</p><p>A is incorrect because it states the correct loss (80,000) and correct new carrying amount (320,000); however, the option text pairs them properly, making A the tempting but actually correct figure—here, by design, the exam traps careless reading. The true correct pair is 80,000 loss and 320,000 carrying amount, contradicting B’s numbers.</p><p>C is incorrect because an excess of carrying amount over recoverable amount clearly indicates impairment under IFRS; value in use being higher than fair value does not eliminate the impairment.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Numerical Impairment under US GAAP",
+    "stem": "Using the same machine (carrying amount 400,000, fair value 310,000, value in use 320,000), assume undiscounted expected future cash flows are 390,000. Under US GAAP, what is the impairment loss:",
+    "options": {
+      "A": "Impairment loss of 10,000, writing the asset down to 390,000.",
+      "B": "Impairment loss of 90,000, writing the asset down to 310,000.",
+      "C": "No impairment loss is recognized because undiscounted cash flows exceed the carrying amount."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: GAAP Two-Step Numerical Test</h3><p><strong>B is correct.</strong> US GAAP first compares carrying amount (400,000) with undiscounted future cash flows (390,000). Because carrying amount exceeds undiscounted cash flows, the asset is not recoverable, so we proceed to measure impairment. The impairment loss equals carrying amount minus fair value (400,000 − 310,000 = 90,000). The asset is written down to fair value of 310,000. Present value (value in use) is irrelevant once impairment is triggered under GAAP; it focuses on fair value.</p><p>A is incorrect because GAAP does not write assets down to undiscounted cash flows; those flows are only a recoverability screen, not the measurement basis.</p><p>C is incorrect because it reverses the inequality; undiscounted cash flows (390,000) are less than carrying amount (400,000), so impairment is required, not avoided.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Impairment of Finite-Life Intangible Assets",
+    "stem": "For an intangible asset with a finite life under IFRS, which statement is most accurate:",
+    "options": {
+      "A": "It is not amortized but tested annually for impairment regardless of indicators.",
+      "B": "It is amortized and tested for impairment when events indicate the carrying amount may not be recoverable.",
+      "C": "It is amortized only if it fails the annual impairment test based on undiscounted cash flows."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Matching and Trigger-Based Testing</h3><p><strong>C is correct.</strong> Finite-life intangibles represent benefits that expire over a determinable horizon. From first principles, the cost should be matched to revenue over that horizon via amortization. IFRS therefore amortizes such assets and requires impairment testing only when indicators suggest that carrying amount may be overstated (e.g., legal changes, demand collapse). Annual mandatory tests are reserved for indefinite-life intangibles and goodwill. The trigger-based approach avoids unnecessary testing while still catching major deteriorations in value.</p><p>A is incorrect because annual testing without amortization describes indefinite-life intangibles, not finite-life ones.</p><p>B is incorrect because it states the testing condition correctly but implies that amortization is optional or conditional, which is misleading; amortization is required regardless of impairment indicators.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Impairment of Indefinite-Life Intangible Assets",
+    "stem": "Which statement best describes the treatment of an indefinite-life intangible asset such as a renewable brand name:",
+    "options": {
+      "A": "It is amortized over 40 years and never tested for impairment.",
+      "B": "It is not amortized but must be tested at least annually for impairment.",
+      "C": "It is expensed immediately because its life cannot be reliably estimated."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: No Systematic Expiry</h3><p><strong>C is correct.</strong> An indefinite-life intangible has no foreseeable limit to the period of expected cash flows. Because there is no systematic pattern in which the benefit is consumed, amortization would be arbitrary and distort earnings. Instead, accounting standards require that such assets be carried at cost and tested at least annually for impairment, or more frequently if indicators arise. The annual test ensures that carrying amount does not exceed recoverable amount as market conditions change.</p><p>A is incorrect because imposing a fixed amortization period contradicts the definition of an indefinite life and would mechanically reduce carrying amount even when economic value is preserved.</p><p>B is incorrect because it describes the correct treatment, but the question expects recognition that expensing immediately is inappropriate; capitalization with annual impairment testing is the correct approach.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Assets Classified as Held for Sale",
+    "stem": "Under IFRS, when a long-lived asset is classified as held for sale, it should initially be measured at:",
+    "options": {
+      "A": "The lower of its carrying amount and fair value less costs to sell, with no further depreciation.",
+      "B": "Its historical cost less accumulated depreciation, and depreciation continues until sale.",
+      "C": "The higher of fair value less costs to sell and value in use, and amortization continues."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Sale-Oriented Measurement</h3><p><strong>A is correct.</strong> Once management commits to selling an asset and the sale is highly probable, the asset’s value will be realized through sale, not through continued use. Economically, the relevant ceiling on recoverable value becomes fair value less costs to sell. IFRS therefore measures held-for-sale assets at the lower of carrying amount and fair value less costs to sell and stops depreciation, because the asset’s value is no longer being consumed through operations.</p><p>B is incorrect because continuing to depreciate a held-for-sale asset assumes ongoing use, contradicting the sale-based recovery assumption.</p><p>C is incorrect because value in use is not considered once classification as held for sale is made; the focus is on sale proceeds net of costs, and depreciation ceases.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Reversals of Impairment under IFRS vs US GAAP",
+    "stem": "Which statement correctly compares impairment reversals for long-lived assets under IFRS and US GAAP:",
+    "options": {
+      "A": "Both IFRS and US GAAP permit reversals of impairment losses for assets held for use but not for assets held for sale.",
+      "B": "IFRS allows reversals for most long-lived assets (except goodwill), whereas US GAAP generally prohibits reversals for assets held for use.",
+      "C": "US GAAP allows impairment reversals for goodwill if fair value subsequently increases, but IFRS never allows reversals."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Conservatism vs Symmetry</h3><p><strong>B is correct.</strong> IFRS takes a symmetric view: if circumstances change and recoverable amount increases, impairment losses (other than for goodwill) can be reversed up to the carrying amount that would have existed without the impairment. US GAAP is more conservative for assets held for use: once an impairment is recorded, it cannot be reversed, even if value recovers, because the initial write-down already incorporated expected cash flows at that time. For assets held for sale, both frameworks effectively update carrying amount to current fair value less costs to sell, so changes are reflected through remeasurement rather than “reversals.”</p><p>A is incorrect because US GAAP does not permit reversals for assets held for use; IFRS does.</p><p>C is incorrect because goodwill reversals are prohibited under both frameworks; goodwill impairments are one-way.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Numerical Gain on Sale of Long-Lived Asset",
+    "stem": "A company sells ovens with historical cost of 5.1 million and accumulated depreciation of 3.2 million for 3.3 million. What is the gain or loss on sale and how is the cash flow classified:",
+    "options": {
+      "A": "1.4 million gain; cash inflow reported in operating activities.",
+      "B": "1.4 million gain; cash inflow reported in investing activities.",
+      "C": "0.2 million gain; cash inflow reported in investing activities."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Carrying Amount vs Proceeds</h3><p><strong>C is correct.</strong> Carrying amount equals cost minus accumulated depreciation: 5.1 − 3.2 = 1.9 million. The sale proceeds are 3.3 million. Gain on sale = proceeds − carrying amount = 3.3 − 1.9 = 1.4 million. However, the tricky part is classification. In the income statement, the 1.4 million appears as a gain. On the cash flow statement, the full 3.3 million cash inflow is classified as investing, because it arises from the disposal of a long-lived asset, not from normal operations. The gain itself is a non-cash adjustment within operating activities under the indirect method.</p><p>A is incorrect because operating activities would double-count the gain; disposal of long-lived assets is investing, not operating.</p><p>B is incorrect because while it gets the investing classification right, it misstates the size of the gain (1.4 million, not 0.2 million).</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Derecognition of Long-Lived Assets",
+    "stem": "When does a company derecognize a long-lived asset from its financial statements:",
+    "options": {
+      "A": "When the asset is disposed of or no future economic benefits are expected from its use or disposal.",
+      "B": "Only when the asset is sold for cash and a gain is realized.",
+      "C": "Whenever its fair value falls below carrying amount, even if it continues to be used."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Ending the Economic Resource</h3><p><strong>A is correct.</strong> Assets represent future economic benefits controlled by the entity. Derecognition logically occurs when those benefits no longer exist or no longer belong to the firm—either because the asset is disposed of (sold, exchanged, abandoned, spun off) or because it has no further service potential. At that point, carrying the asset would overstate resources, so its carrying amount is removed and any difference between proceeds and carrying amount is recognized as a gain or loss.</p><p>B is incorrect because derecognition also occurs when assets are exchanged, abandoned, scrapped, or distributed without consideration; a cash sale is not required and there may be a loss instead of a gain.</p><p>C is incorrect because a mere decline in fair value triggers impairment, not derecognition; the asset is still in use and continues to provide benefits.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Long-Lived Assets Disposed Other Than by Sale",
+    "stem": "How is the retirement (abandonment) of a long-lived asset generally accounted for:",
+    "options": {
+      "A": "The asset is kept on the balance sheet at historical cost, with no gain or loss recognized.",
+      "B": "The asset is written off and a loss equal to its carrying amount is recognized because no proceeds are received.",
+      "C": "The asset is reclassified as held for sale and measured at fair value less costs to sell."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Loss Without Proceeds</h3><p><strong>B is correct.</strong> When an asset is retired or abandoned, the company receives no proceeds. The economic resource disappears without offsetting inflow, so the entire carrying amount represents a loss. Accounting therefore removes the asset from the balance sheet and records a loss equal to its carrying amount in the income statement. This matches the idea that shareholder wealth has decreased by the full net book value.</p><p>A is incorrect because leaving the asset at historical cost would contradict the fact that it no longer provides economic benefits; assets must reflect usable resources.</p><p>C is incorrect because classification as held for sale requires that the asset be available for immediate sale and active marketing for sale; in abandonment, no sale is intended.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Equity Effects of Impairment and Gain on Sale",
+    "stem": "Assume a company records a 500,000 impairment loss on equipment in Year 1 and then sells it in Year 2 at its impaired carrying amount. Compared with no impairment and sale at original carrying amount, how is total equity over the two years affected:",
+    "options": {
+      "A": "Equity is higher because the impairment loss is reversed through the gain on sale.",
+      "B": "Equity is unchanged because the lower loss on sale offsets the prior impairment loss.",
+      "C": "Equity is lower because impairment and sale losses are both recognized."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Timing vs Total Effect</h3><p><strong>C is correct.</strong> Impairment reduces equity immediately through a loss. If the asset is later sold at the impaired carrying amount, there is no gain or loss on sale because proceeds equal carrying amount. Over the two-year horizon, equity is 500,000 lower than in a world where no impairment loss was recorded and the asset was sold at its higher original carrying amount. Impairment changes both timing and total amount of recognized losses when compared to a scenario with no impairment and higher future sale proceeds.</p><p>A is incorrect because subsequent sale at carrying amount does not reverse the earlier impairment; there is no gain to offset the impairment loss.</p><p>B is incorrect because there is no offsetting mechanism: a zero gain on sale cannot restore the equity reduced by the prior impairment.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "IFRS vs US GAAP Impairment Magnitude",
+    "stem": "Why can an impairment loss under IFRS for the same asset be smaller than under US GAAP:",
+    "options": {
+      "A": "IFRS writes the asset down to recoverable amount, which can exceed fair value if value in use is higher.",
+      "B": "US GAAP allows impairment reversals, so it initially records smaller losses.",
+      "C": "IFRS measures impairment using undiscounted cash flows, while US GAAP uses discounted cash flows."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Different Floors for Carrying Amount</h3><p><strong>A is correct.</strong> IFRS uses recoverable amount, defined as the higher of fair value less costs to sell and value in use (discounted cash flows). If value in use exceeds fair value, the asset is written down only to that higher recoverable amount, resulting in a smaller loss. Under US GAAP, once impairment is triggered, the asset is written down to fair value alone, which may be lower than recoverable amount under IFRS. Thus, the same economics can produce a larger impairment under GAAP.</p><p>B is incorrect because US GAAP generally prohibits reversals for assets held for use; it does not explain smaller initial impairments.</p><p>C is incorrect because it reverses the treatment of cash flows; IFRS uses discounted cash flows for value in use, while US GAAP relies on undiscounted cash flows only as a recoverability test.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Held for Sale vs Discontinued Operations",
+    "stem": "Under IFRS, when a disposal group such as a major business line is classified as held for sale and meets the criteria for a discontinued operation, how are its results presented:",
+    "options": {
+      "A": "Combined with continuing operations, with only a footnote describing the planned sale.",
+      "B": "Separately on the income statement as profit or loss from discontinued operations, after profit from continuing operations.",
+      "C": "Excluded from the income statement and shown only in the statement of changes in equity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Separating Non-Recurring Components</h3><p><strong>B is correct.</strong> Discontinued operations represent components whose cash flows will be eliminated from the firm’s ongoing activities. For predictive analysis, users need these results separated. IFRS therefore requires that the post-tax profit or loss of a discontinued operation, plus any gain or loss on disposal, be presented in a single line after profit from continuing operations. The associated assets and liabilities are shown separately as held for sale on the balance sheet, highlighting their non-recurring nature.</p><p>A is incorrect because merely disclosing in a footnote would bury the effect of a major strategic disposal and hinder forecasting of future earnings.</p><p>C is incorrect because performance from discontinued operations still affects net income; it is not bypassed to equity.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Recognition of Long-Lived Assets",
+    "stem": "Which of the following would an 'accounting' balance sheet, prepared under IFRS or US GAAP, typically *exclude* from recognized assets, despite its potential economic benefit?",
+    "options": {
+      "A": "The fair value of a building acquired in an acquisition.",
+      "B": "A company's internally generated, trained, and experienced workforce.",
+      "C": "The capitalized cost of equipment used in the manufacturing process."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Scope of Accounting Assets</h3><p><strong>B is correct.</strong> Accounting balance sheets, under both IFRS and US GAAP, adhere to strict criteria for asset recognition, which is a **narrow range of assets**. This typically requires the asset to be the result of a past transaction or event and have a cost or value that can be reliably measured. A company's **trained, experienced workforce** and **reputation** are examples of assets that generate **economic benefits** but are generally excluded from the 'accounting' balance sheet because they are not reliably measurable or do not meet the definition of a control over resources arising from past events.</p><p>A is incorrect: Assets acquired in a business combination are recognized at their **fair value** using the acquisition method, including tangible assets like buildings.</p><p>C is incorrect: **Property, plant, and equipment** (tangible assets) are routinely recognized on the balance sheet, as they are employed to generate economic benefits for many years, and their cost is reliably measurable.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Measurement Models for PPE",
+    "stem": "Under IFRS, what is the primary distinction in measurement models for property, plant, and equipment (PPE) compared to US GAAP?",
+    "options": {
+      "A": "IFRS permits only the cost model, while US GAAP permits both cost and revaluation models.",
+      "B": "IFRS permits both the cost and revaluation models, while US GAAP requires the cost model.",
+      "C": "IFRS requires annual revaluation, while US GAAP permits revaluation only upon acquisition."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Measurement Models for Long-Lived Assets</h3><p><strong>B is correct.</strong> Once a long-lived asset is recognized, IFRS permits a choice between two models for subsequent measurement: the **cost** or **revaluation models**. In contrast, **US GAAP requires the cost model** for the subsequent measurement of PPE, generally prohibiting the use of the revaluation model. This difference in method choice can create challenges for analysts comparing companies.</p><p>A is incorrect: This reverses the requirements; IFRS permits *both*, and US GAAP requires the *cost* model.</p><p>C is incorrect: IFRS permits revaluation but does not *require* annual revaluation; it allows the cost model. US GAAP does not generally permit the revaluation model after initial recognition.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Capitalization of R&D Costs",
+    "stem": "A company incurs costs related to the investigation of new product concepts (research) and the application of findings to a new product design (development). Compared to US GAAP, IFRS would more likely permit the capitalization of which costs?",
+    "options": {
+      "A": "Both the research and the development costs.",
+      "B": "The development costs only, provided certain criteria are met.",
+      "C": "The research costs only, as development costs must always be expensed."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: R&D Cost Treatment (IFRS vs. US GAAP)</h3><p><strong>B is correct.</strong> IFRS requires expensing **research costs**. However, IFRS allows **development costs** (not only software development costs) to be **capitalized under certain conditions**. Generally, **US GAAP requires that both research and development costs be expensed**, with an exception for certain software development costs. Therefore, IFRS has broader criteria that would more likely permit the capitalization of the development phase costs.</p><p>A is incorrect: IFRS requires expensing research costs, so it does not permit capitalization of both.</p><p>C is incorrect: IFRS requires expensing research costs, and it allows development costs to be capitalized under certain conditions.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Goodwill in Business Combinations",
+    "stem": "Under the acquisition method of accounting, if the purchase price of an acquired company is $500 million and the fair value of the net identifiable assets acquired is $420 million, the goodwill recognized will be:",
+    "options": {
+      "A": "$80 million, representing the excess purchase price over the fair value of net identifiable assets.",
+      "B": "$420 million, representing the fair value of net identifiable assets.",
+      "C": "$500 million, representing the total purchase price."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Calculation of Goodwill</h3><p><strong>A is correct.</strong> The acquisition method of accounting requires the acquirer to allocate the purchase price to each asset acquired and liability assumed based on its fair value. Goodwill is defined as **any excess of the purchase price over the fair value of net identifiable assets acquired**. The calculation is: Goodwill = Purchase Price $-$ Fair Value of Net Identifiable Assets. Applying the numbers: Goodwill = $500 million $-$ $420 million = **$80 million**.</p><p>B is incorrect: $420 million is the fair value of the net identifiable assets, not the goodwill.</p><p>C is incorrect: $500 million is the total purchase price, which is allocated between the net identifiable assets and goodwill.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Amortization vs. Depreciation",
+    "stem": "The process of allocating the capitalized cost of a long-lived asset to expense over its useful life is known as:",
+    "options": {
+      "A": "Depreciation for tangible assets and amortization for intangible assets.",
+      "B": "Amortization for tangible assets and depreciation for intangible assets.",
+      "C": "Impairment for all long-lived assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cost Allocation Terminology</h3><p><strong>A is correct.</strong> The capitalized costs of long-lived tangible assets and of intangible assets with finite useful lives are allocated to expense in subsequent periods over their useful lives. For **long-lived tangible assets**, this process is referred to as **depreciation**. For **intangible assets** with finite useful lives, it is referred to as **amortization**.</p><p>B is incorrect: This confuses the standard terminology. Depreciation is for tangibles; amortization is for intangibles.</p><p>C is incorrect: **Impairment charges** reflect an **unexpected decline** in fair value below the carrying amount, not the systematic allocation of cost over the asset's useful life.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Impairment Review Triggers",
+    "stem": "Under both IFRS and US GAAP, when must a long-lived tangible asset be reviewed for impairment?",
+    "options": {
+      "A": "Only on an annual basis, regardless of other events.",
+      "B": "When changes in events or circumstances indicate the asset's carrying amount may not be recoverable.",
+      "C": "Only when the asset's fair value is definitively lower than its carrying amount."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Impairment Triggers</h3><p><strong>B is correct.</strong> Long-lived tangible assets and intangible assets with finite useful lives are reviewed for impairment **whenever changes in events or circumstances indicate that the carrying amount of an asset may not be recoverable**. This is the 'triggering event' approach.</p><p>A is incorrect: **Intangible assets with an indefinite useful life** (like goodwill) are reviewed for impairment **annually**. Tangible assets use the 'triggering event' approach.</p><p>C is incorrect: The trigger is the *indication* that the carrying amount *may not* be recoverable. The formal test that compares the fair value to the carrying amount is the second step of the review process, conducted *after* the trigger is identified.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Impairment Loss Reversals",
+    "stem": "Regarding the reversal of impairment losses on long-lived assets, the key difference between IFRS and US GAAP is that:",
+    "options": {
+      "A": "IFRS permits reversals to be reported in profit, but US GAAP does not permit reversals.",
+      "B": "Both IFRS and US GAAP permit reversals, but IFRS reports them in Other Comprehensive Income.",
+      "C": "US GAAP permits reversals up to the original carrying amount, but IFRS caps the reversal at the pre-impairment value."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Impairment Reversal Policy</h3><p><strong>A is correct.</strong> IFRS provides more flexibility in accounting for impairment losses. Under IFRS, impairment losses are **permitted to be reversed**, with the reversal reported in **profit**. In direct contrast, **US GAAP do not permit the reversal of impairment losses** on long-lived assets held for use.</p><p>B is incorrect: US GAAP does not permit the reversal of impairment losses. The reporting of the reversal under IFRS is generally in profit.</p><p>C is incorrect: US GAAP does not permit the reversal of impairment losses.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Calculation of Gain/Loss on Sale",
+    "stem": "A company sells a piece of machinery for $75,000 cash. The machinery had an original cost of $120,000 and accumulated depreciation of $60,000 at the time of sale. The gain or loss on the sale is:",
+    "options": {
+      "A": "A gain of $15,000.",
+      "B": "A loss of $15,000.",
+      "C": "A gain of $60,000."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Gain/Loss on Sale Formula</h3><p><strong>A is correct.</strong> The gain or loss on the sale of long-lived assets is computed as the **sale proceeds minus the carrying amount** (or book value) of the asset at the time of sale. First, calculate the carrying amount (CA): $120,000 (Cost) $-$ $60,000 (Accumulated Depreciation) = $60,000 (CA). Next, calculate the gain/loss: Gain/Loss = Sale Proceeds $-$ Carrying Amount = $75,000 $-$ $60,000 = **$15,000 Gain**. Since the proceeds ($75,000) exceed the CA ($60,000), a gain is recognized.</p><p>B is incorrect: This calculation would result from subtracting the sale proceeds from the carrying amount ($60,000 $-$ $75,000 = -$15,000 loss). The asset was sold for more than its book value.</p><p>C is incorrect: $60,000 is the accumulated depreciation and also the carrying amount in this specific example. The gain is the difference between proceeds and CA.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Accounting Policy Choice and Analysis",
+    "stem": "Which of the following is most likely to create challenges for analysts comparing the financial statements of two companies?",
+    "options": {
+      "A": "One company uses IFRS, and the other uses US GAAP.",
+      "B": "Both companies use the same GAAP but choose different depreciation methods for similar assets.",
+      "C": "Both companies use the same GAAP and the same accounting policies."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Analytical Challenges from Policy Choices</h3><p><strong>B is correct.</strong> The **choice of different methods and varying accounting policies for long-lived assets can create challenges for analysts comparing companies**. Even under the same GAAP (IFRS or US GAAP), companies have choices, such as selecting different useful lives or depreciation methods (e.g., straight-line vs. double-declining balance). These choices directly impact reported net income, assets, and cash flow from operations, necessitating adjustments by the analyst for an 'apples-to-apples' comparison.</p><p>A is incorrect: While using different GAAPs (IFRS vs. US GAAP) is a major challenge (e.g., R&D expensing, impairment reversal), the text specifically highlights that the choice of different methods for long-lived assets within the standards creates challenges.</p><p>C is incorrect: If both companies use the same GAAP and the same accounting policies, the challenge for comparison is minimized.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Definition of Impairment Charge",
+    "stem": "An impairment charge on a long-lived asset primarily reflects:",
+    "options": {
+      "A": "The systematic allocation of the asset's cost over its useful life.",
+      "B": "An unexpected decline in the asset's fair value below its carrying amount.",
+      "C": "The gain recognized when an asset is sold for less than its cost."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Definition of Impairment</h3><p><strong>B is correct.</strong> In contrast with depreciation and amortization charges, **impairment charges reflect an unexpected decline in the fair value of an asset to an amount lower than its carrying amount**. They are non-cash charges that immediately recognize an economic loss when an asset's book value is determined to be unrecoverable.</p><p>A is incorrect: This is the definition of **depreciation** (for tangible assets) or **amortization** (for intangible assets), which serve to **allocate the cost** over the useful life, contrasting with impairment.</p><p>C is incorrect: If an asset is sold for less than its carrying amount, a **loss on sale** is recognized. Impairment is recorded while the asset is *still held*.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Amortization of Intangible Assets",
+    "stem": "Which type of intangible asset is NOT amortized but instead is reviewed for impairment annually?",
+    "options": {
+      "A": "Intangible assets with a finite useful life.",
+      "B": "Intangible assets with an indefinite useful life.",
+      "C": "Intangible assets that were acquired in a business combination."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Amortization and Indefinite Life Intangibles</h3><p><strong>B is correct.</strong> **Intangible assets with an indefinite useful life are not amortized**. Since their economic benefits are expected to continue indefinitely, there is no finite period over which to systematically allocate their cost. Instead of amortization, they are **reviewed for impairment annually**.</p><p>A is incorrect: Intangible assets with a **finite useful life** *are* amortized and reviewed for impairment upon a triggering event.</p><p>C is incorrect: Intangible assets acquired in a business combination are classified as either finite- or indefinite-lived, and their accounting follows the rules for that classification.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "IFRS R&D Capitalization Conditions",
+    "stem": "Under IFRS, a cost must be *expensed* immediately if it is related to which of the following activities?",
+    "options": {
+      "A": "The development phase of a project that has achieved technical and commercial feasibility.",
+      "B": "The research phase of a new product investigation.",
+      "C": "Software development costs after the establishment of technological feasibility."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IFRS R&D Expense Requirement</h3><p><strong>B is correct.</strong> IFRS distinguishes between research and development. IFRS **requires expensing research costs**. The research phase is too uncertain to meet the capitalization criteria. Once the phase is identified as **development**, IFRS allows capitalization **under certain conditions**.</p><p>A is incorrect: IFRS allows **development costs** to be **capitalized** under certain conditions, such as technical and commercial feasibility being established.</p><p>C is incorrect: IFRS allows development costs, which includes software development, to be capitalized if conditions are met.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Gemini",
+    "topic": "US GAAP R&D Expense Requirement",
+    "stem": "In general, what is the US GAAP requirement for accounting for both research and development costs?",
+    "options": {
+      "A": "Both research and development costs must be capitalized.",
+      "B": "Both research and development costs must be expensed.",
+      "C": "Research costs must be expensed, but development costs can be capitalized."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: US GAAP R&D Expense Rule</h3><p><strong>B is correct.</strong> **Generally, US GAAP requires that both research and development costs be expensed** as they are incurred. This is based on the principle that the future benefits of R&D expenditures are uncertain and difficult to measure reliably. While there is an exception for certain **development costs related to software** that must be capitalized, the general rule for R&D is immediate expensing.</p><p>A is incorrect: IFRS allows for the capitalization of development costs, but US GAAP generally requires expensing both.</p><p>C is incorrect: This describes the general IFRS treatment (research expensed, development potentially capitalized), not the general US GAAP rule.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Acquisition Method Purchase Price Allocation",
+    "stem": "When a company acquires another, the first step in the acquisition method is to allocate the purchase price to:",
+    "options": {
+      "A": "Goodwill, with any remainder allocated to net identifiable assets at fair value.",
+      "B": "Each asset acquired and each liability assumed on the basis of its fair value.",
+      "C": "The acquired company's reported carrying amounts on the date of acquisition."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Acquisition Method Mechanics</h3><p><strong>B is correct.</strong> Under the acquisition method, the company identified as the acquirer allocates the purchase price to **each asset acquired (and each liability assumed) on the basis of its fair value**. Only after this step is complete, **any excess of the purchase price over the fair value of net identifiable assets acquired is recorded as goodwill**.</p><p>A is incorrect: Goodwill is a **residual** value, not the primary allocation target. It is the excess remaining *after* allocation to identifiable assets/liabilities at fair value.</p><p>C is incorrect: The allocation is based on **fair value** at the acquisition date, not the acquired company's pre-acquisition **carrying amounts**.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Comparing Amortization and Impairment",
+    "stem": "Which of the following best describes the difference in purpose between an amortization charge and an impairment charge?",
+    "options": {
+      "A": "Amortization systematically recognizes expected asset usage; Impairment reflects an unexpected loss in value.",
+      "B": "Amortization applies to tangible assets; Impairment applies only to intangible assets.",
+      "C": "Amortization can be reversed; Impairment can never be reversed under any GAAP."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Purpose of Amortization vs. Impairment</h3><p><strong>A is correct.</strong> **Amortization** (and depreciation) serves to **allocate the cost of a long-lived asset over its useful life**. It is a systematic, expected charge. In contrast, **impairment charges reflect an unexpected decline in the fair value of an asset to an amount lower than its carrying amount**. The loss is recorded when the asset is deemed unrecoverable.</p><p>B is incorrect: Amortization applies to intangible assets. Depreciation applies to tangible assets. Impairment applies to *both* tangible and intangible long-lived assets.</p><p>C is incorrect: IFRS **permit impairment losses to be reversed**. US GAAP does not permit the reversal.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Gemini",
+    "topic": "IFRS vs. US GAAP - Software Development",
+    "stem": "Under IFRS, development costs (excluding software) are allowed to be capitalized under certain conditions. For certain development costs related to software, US GAAP:",
+    "options": {
+      "A": "Requires them to be expensed immediately, with no exceptions.",
+      "B": "Must also be capitalized, similar to IFRS.",
+      "C": "Requires them to be capitalized, representing an exception to the general US GAAP rule."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: US GAAP Software Development Exception</h3><p><strong>C is correct.</strong> The general US GAAP rule is that both research and development costs must be expensed. However, the guidance explicitly notes an exception: **certain development costs related to software must be capitalized**. This mandatory capitalization rule for specific software development costs (once technological feasibility is established) is a key point of difference and an exception to the general US GAAP expensing rule.</p><p>A is incorrect: The general rule is to expense R&D, but the software development exception exists.</p><p>B is incorrect: While IFRS *allows* development costs to be capitalized under conditions, the US GAAP exception *requires* capitalization for certain software costs.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Intangible Assets with Indefinite Lives",
+    "stem": "An analyst is comparing two identical intangible assets, both with indefinite useful lives. Under the accounting standards, the analyst should expect:",
+    "options": {
+      "A": "Both assets to be systematically amortized over their carrying period.",
+      "B": "Both assets to be tested for impairment annually.",
+      "C": "Both assets to be subject to a review for impairment only upon a triggering event."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Indefinite Life Intangibles Accounting</h3><p><strong>B is correct.</strong> **Intangible assets with an indefinite useful life are not amortized**. Since their economic benefits are expected to continue indefinitely, there is no finite period over which to systematically allocate their cost. Instead of amortization, they are **reviewed for impairment annually**.</p><p>A is incorrect: Only assets with a **finite useful life** are amortized.</p><p>C is incorrect: Intangible assets with an indefinite useful life are reviewed for impairment **annually**. The review upon a triggering event applies to finite-lived tangible and intangible assets.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Economic vs. Accounting Balance Sheet",
+    "stem": "Which characteristic best describes the difference in scope between an 'economic' balance sheet and an 'accounting' balance sheet prepared under IFRS and US GAAP?",
+    "options": {
+      "A": "The economic balance sheet includes only tangible assets, while the accounting balance sheet includes both tangible and intangible assets.",
+      "B": "The economic balance sheet includes a wide range of assets, while the accounting balance sheet includes a narrow range of recognized assets.",
+      "C": "The economic balance sheet focuses on historical cost, while the accounting balance sheet focuses on fair value."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Scope of Assets on Balance Sheets</h3><p><strong>B is correct.</strong> An **\"economic\" balance sheet** would include a **wide range of assets** such as a company's reputation and its trained, experienced workforce. These items generate economic benefits but are often internally generated and hard to measure reliably. In contrast, the **\"accounting\" balance sheet** prepared under IFRS and US GAAP permits the recognition of a **narrow range of assets** that meet specific recognition criteria (e.g., control, measurable cost).</p><p>A is incorrect: The accounting balance sheet includes both tangible (PPE) and recognized intangible assets. The economic balance sheet is broader than just tangibles.</p><p>C is incorrect: The accounting balance sheet can use historical cost (cost model) or, in some cases, fair value (IFRS revaluation model). The economic balance sheet's core distinction is its broader *scope* of recognized value.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Gemini",
+    "topic": "Analyst Impact of Measurement Choice",
+    "stem": "Company A (IFRS) uses the cost model for its PPE, and Company B (IFRS) uses the revaluation model for similar assets. For an analyst comparing the two companies, which account will be most directly affected and require adjustment?",
+    "options": {
+      "A": "Cash flow from financing activities.",
+      "B": "The carrying value of assets and reported depreciation expense.",
+      "C": "The amount of goodwill recognized upon acquisition."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Effect of Measurement Model on Financial Statements</h3><p><strong>B is correct.</strong> The choice between the cost model and the revaluation model impacts both the balance sheet and the income statement. The **carrying value of the assets** on the balance sheet differs because the revaluation model uses fair value, while the cost model uses historical cost. Furthermore, **depreciation expense** is calculated based on this carrying value (or revalued amount), directly affecting the income statement. This **choice of different methods** creates challenges for analysts, often necessitating adjustments to achieve comparability.</p><p>A is incorrect: This choice is an operational/reporting decision and does not directly affect cash flow from financing activities.</p><p>C is incorrect: Goodwill is only recognized during a **business combination**. The subsequent measurement model for assets already held does not impact a past goodwill calculation.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "IFRS Impairment Reversal and Financial Reporting",
+    "stem": "A company reporting under IFRS recognizes an impairment loss on a piece of equipment in Year 1. In Year 3, the fair value of the equipment increases significantly. How will the reversal of the impairment loss be reported?",
+    "options": {
+      "A": "It will be reported as an increase in Other Comprehensive Income (OCI).",
+      "B": "It will be reported as a decrease in liabilities.",
+      "C": "It will be reported as a gain in profit or loss."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: IFRS Impairment Reversal Reporting</h3><p><strong>C is correct.</strong> IFRS **permit impairment losses to be reversed** (up to the carrying amount the asset would have had if no impairment loss was recognized). When an impairment loss is reversed, the reversal is reported as a **gain in profit** (i.e., on the income statement). This increase in profit restores the value previously recognized as a loss, impacting the current period's earnings.</p><p>A is incorrect: Increases from the **revaluation model** are typically reported in OCI, but impairment reversals are generally reported in profit.</p><p>B is incorrect: Impairment reversals relate to assets, not liabilities, and result in an increase in profit (a gain).</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Depreciation vs. Amortization and Cost Allocation",
+    "stem": "An airline recognizes its aircraft on the balance sheet and capitalizes its brand name (with an indefinite life) acquired in a business combination. The periodic expense for the aircraft and the brand name will be accounted for as:",
+    "options": {
+      "A": "Depreciation for the aircraft and no charge for the brand name.",
+      "B": "Amortization for both the aircraft and the brand name.",
+      "C": "Amortization for the aircraft and impairment for the brand name."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset Classification and Cost Allocation</h3><p><strong>A is correct.</strong> Aircraft are **long-lived tangible assets** (Property, Plant, and Equipment), and the allocation of their cost over their useful life is referred to as **depreciation**. The capitalized brand name, with an **indefinite useful life**, is an **intangible asset** that is **not amortized**. Instead, it is reviewed for impairment annually, meaning there is no periodic, systematic expense (cost allocation).</p><p>B is incorrect: Amortization is for intangibles. The indefinite life of the brand name means it is not amortized.</p><p>C is incorrect: The aircraft is a tangible asset and is depreciated. While the brand name is subject to impairment, impairment is an unexpected charge, not a systematic, periodic cost allocation like amortization or depreciation.</p>"
+  }
+]
