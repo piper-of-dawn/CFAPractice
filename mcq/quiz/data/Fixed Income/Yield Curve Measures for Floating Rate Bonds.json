@@ -365,65 +365,156 @@
   },
   {
     "id": 1,
-    "model": "Kimi k2",
-    "topic": "Discount margin pricing mechanism",
-    "stem": "Assertion (A): A floating-rate note will trade at a discount when its quoted margin is below the required margin. Reason (R): The discount reflects the present value of deficient future interest payments resulting from the margin shortfall.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "A",
-    "explanation": "When quoted margin < required margin, the FRN pays less than market requires, creating a discount. The reason correctly explains this mechanism: the discount equals PV of the annuity shortfall (required - quoted margin) across remaining periods. This is the core pricing relationship for FRNs."
+    "model": "Perplexity",
+    "topic": "FRN Pricing and Margin Relationships",
+    "stem": "Assertion (A): A floating-rate note (FRN) will trade at a premium to par value on a reset date if the quoted margin is greater than the required margin (discount margin).\nReason (R): The quoted margin is fixed at issuance, whereas the required margin changes with market conditions; a lower required margin implies the fixed cash flows are more valuable than the market requires.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "If the Quoted Margin (QM) > Discount Margin (DM), the bond pays more spread than the market currently demands for that risk level. This excess spread makes the bond more valuable, pushing the price above par (premium). The reason correctly explains the mechanism: the QM is contractually fixed, while the DM fluctuates. When the market demands less (lower DM) than what is being paid (higher QM), the price rises."
   },
   {
     "id": 2,
-    "model": "Kimi k2",
-    "topic": "Reset frequency and price volatility",
-    "stem": "Assertion (A): Floating-rate notes with longer reset periods exhibit greater price volatility between coupon dates. Reason (R): The required margin on an FRN is inversely related to the time remaining until the next reset date.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "B",
-    "explanation": "A is true because longer reset periods expose investors to more interest rate risk between adjustments. However, R is true but does not explain A—required margin reflects credit risk, not time to reset. The price volatility stems from discounting mismatch between fixed coupon periods and changing MRR, not from required margin's time relationship."
+    "model": "Perplexity",
+    "topic": "Interest Rate Sensitivity of FRNs",
+    "stem": "Assertion (A): Floating-rate notes generally have very low duration and price sensitivity to changes in benchmark market reference rates (MRR).\nReason (R): The coupon payments on an FRN reset periodically to match current market rates, preventing the price from diverging significantly from par due to MRR movements.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "FRNs have low interest rate risk (duration) because their coupons adjust. If rates rise, the coupon rises, so the price doesn't need to fall much to align the yield. The price usually resets to near par at each reset date. The primary risk is spread risk (credit/liquidity), not benchmark rate risk."
   },
   {
     "id": 3,
-    "model": "Kimi k2",
-    "topic": "Money market discount rate interpretation",
-    "stem": "Assertion (A): A money market discount rate understates the investor's true rate of return when the instrument trades below face value. Reason (R): Discount rates are calculated using the investment amount (PV) as the denominator, which always exceeds the face value (FV) when the discount rate is positive.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "C",
-    "explanation": "A is true: discount rates understate returns because they divide interest by FV rather than PV. However, R is false—discount rates use FV as denominator, and PV < FV when discount rate > 0. The understatement occurs because the denominator (FV) is larger than the actual investment amount (PV), not because PV exceeds FV."
+    "model": "Perplexity",
+    "topic": "Discount Margin (DM) Interpretation",
+    "stem": "Assertion (A): The discount margin (DM) estimated using a simplified FRN pricing model assumes that the reference rate (MRR) will remain constant at its current level for the life of the note.\nReason (R): The simplified pricing model discounts all future cash flows using a single average discount rate rather than a term structure of forward rates.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are technically true but distinct. Assertion A is true: the standard simplified model typically fixes the future MRR at the current spot rate for all future periods to calculate cash flows. Reason R is also true: the model solves for a single spread (DM) added to that reference rate. However, R explains why we get a single spread number, not necessarily why we assume the *MRR* is constant. The assumption of constant MRR is a simplification for calculating the numerator (cash flows), while the single discount rate is a simplification for the denominator. R is not the *direct* explanation for A's assumption about the cash flows."
   },
   {
     "id": 4,
-    "model": "Kimi k2",
-    "topic": "FRN price convergence at reset dates",
-    "stem": "Assertion (A): On a reset date, a floating-rate note's price always converges to par regardless of the relationship between quoted and required margins. Reason (R): At reset dates, the coupon is adjusted to reflect the current MRR plus the quoted margin.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "D",
-    "explanation": "A is false—price converges to par only when quoted margin equals required margin. If required margin has changed due to credit risk, the FRN will trade at premium or discount even on reset date. R is true: coupons are mechanically reset to MRR + quoted margin, but this does not guarantee par pricing unless the market-required spread matches the quoted margin."
+    "model": "Perplexity",
+    "topic": "Money Market Discount Rates",
+    "stem": "Assertion (A): A money market instrument quoted on a discount rate basis will always have a lower quoted yield than its Bond Equivalent Yield (BEY).\nReason (R): The discount rate is calculated by dividing the interest income by the face value, whereas the BEY is based on the lower purchase price (investment amount).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "The discount rate formula is (Discount / Face Value) * (Year/Days). The BEY effectively uses (Discount / Price) * (365/Days). Since Price < Face Value (for a discount instrument), the denominator in BEY is smaller, making the BEY higher. Also, BEY uses a 365-day year (usually) vs 360 for discount, further increasing it. Thus, discount rate understates the true return."
   },
   {
     "id": 5,
-    "model": "Kimi k2",
-    "topic": "Discount margin calculation methodology",
-    "stem": "Assertion (A): The discount margin on an FRN can be estimated by solving for the spread that equates the present value of its cash flows to its market price. Reason (R): The FRN pricing model discounts all future cash flows using a constant rate composed of MRR plus the discount margin.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "A",
-    "explanation": "A correctly describes the IRR-style calculation for discount margin. R accurately explains the mechanism: the simplified FRN model uses a constant discount rate (MRR + DM) for all cash flows, making DM the yield spread that prices the FRN. This is the exact methodology used to solve for DM using goal-seek or financial calculators."
+    "model": "Perplexity",
+    "topic": "Add-on Rate vs Discount Rate",
+    "stem": "Assertion (A): An add-on rate of 4% on a 180-day instrument implies a higher total interest payment than a discount rate of 4% on a 180-day instrument with the same face value.\nReason (R): An add-on rate is applied to the principal to determine interest, whereas a discount rate is applied to the face value to determine the discount amount.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Assertion A is False. If you have a Face Value of 100. For Discount Rate of 4% (360 days), Discount = 100 * 0.04 * (180/360) = 2. You pay 98, receive 100. Interest = 2. For Add-on Rate, usually 'Face Value' implies the principal (PV). If PV=100, Interest = 2. But if the comparison is 'same Face Value at maturity', the math changes. However, conventionally, a 4% discount rate is applied to the *higher* future number (FV), while a 4% add-on yield would be applied to a *lower* present number (Price). 4% of a bigger number (FV) is larger than 4% of a smaller number (Price). Thus, for the *same implied return*, the discount rate number must be lower. Conversely, 4% Discount Rate results in *more* interest dollars (calculated on FV) than a 4% Add-on Rate (calculated on PV). Therefore A is False. Reason R is True: This is the definition of the rates."
   },
   {
     "id": 6,
-    "model": "Kimi k2",
-    "topic": "Money market yield comparability",
-    "stem": "Assertion (A): Converting money market yields to bond equivalent yield facilitates comparison with longer-term bond yields. Reason (R): Bond equivalent yield uses simple interest without compounding, identical to money market conventions.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A is false but R is true",
-    "correctanswer": "B",
-    "explanation": "Both statements are true, but R does not explain A. Bond equivalent yield converts money market rates to a 365-day add-on rate basis for comparability, not because of simple vs compound interest. The key is standardizing the day-count basis (365 days) and rate type (add-on), not the simple interest feature. Long-term bonds typically use compounded rates, making the comparison still an approximation."
+    "model": "Perplexity",
+    "topic": "Bond Equivalent Yield (BEY) Conversion",
+    "stem": "Assertion (A): The Bond Equivalent Yield (BEY) converts a money market discount rate into an annualized add-on yield based on a 365-day year.\nReason (R): This conversion is necessary to directly compare money market instruments with fixed-income bonds that typically quote yields on a 365-day add-on basis.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "BEY serves exactly this purpose. Money market rates (discount, 360-day) are not comparable to standard bond yields (add-on, 365-day). The BEY standardizes the return metric to the bond market convention (Investment-based return, 365 days)."
   },
   {
     "id": 7,
-    "model": "Kimi k2",
-    "topic": "Interest rate risk drivers for floaters",
-    "stem": "Assertion (A): A floating-rate instrument's price sensitivity to benchmark rate changes is primarily determined by its coupon reset frequency. Reason (R): The required margin automatically adjusts at each reset date to compensate for changes in the issuer's credit risk.",
-    "options": "(A) Both A and R are true and R is the correct explanation of A (B) Both A and R are true but R is not the correct explanation of A (C) A is true but R is false (D) A false but R is true",
-    "correctanswer": "C",
-    "explanation": "A is true—reset frequency is the key driver of FRN duration and price volatility. However, R is false: required margin changes reflect market perception of credit risk but do not automatically adjust at reset dates. The quoted margin is fixed; required margin is a market-driven yield spread that can change continuously, not a mechanical reset feature."
+    "model": "Perplexity",
+    "topic": "Periodicity in Money Markets",
+    "stem": "Assertion (A): Money market instruments with different times-to-maturity have different periodicities, unlike standard bonds.\nReason (R): Money market rates are quoted as annualized simple interest, meaning the effective periodicity is determined by how many times the instrument's term fits into a year (e.g., 365/Days).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Standard bonds usually have a fixed periodicity (e.g., semiannual = 2) regardless of remaining life. Money market rates are simple interest. A 90-day rate has a periodicity of ~4. A 60-day rate has a periodicity of ~6. This varying periodicity makes direct comparison difficult without conversion."
+  },
+  {
+    "id": 8,
+    "model": "Perplexity",
+    "topic": "Price Volatility and Reset Frequency",
+    "stem": "Assertion (A): An FRN with a semiannual reset will generally exhibit higher price volatility than an otherwise identical FRN with a quarterly reset.\nReason (R): A longer time between resets allows for greater divergence between the quoted margin and the changing market discount margin within the period.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "Assertion A is true: longer reset periods mean the bond acts like a fixed-rate bond for longer, increasing duration/sensitivity. Reason R is False: The divergence is primarily between the *Reference Rate (MRR)* and the coupon. The *Quoted Margin* is fixed, and the *Discount Margin* is market-driven. The price volatility in between resets is mainly due to the MRR moving away from the locked-in coupon rate for that period, not necessarily the spread (DM) diverging (though DM volatility matters too, it applies to both). The *primary* driver of the reset-frequency difference is interest rate risk (MRR movement), not margin risk."
+  },
+  {
+    "id": 9,
+    "model": "Perplexity",
+    "topic": "Spread Duration in FRNs",
+    "stem": "Assertion (A): While FRNs have low interest rate duration, they can still have significant spread duration.\nReason (R): The FRN's cash flows adjust to changes in the benchmark rate (MRR), but the quoted margin is fixed and does not adjust to changes in the issuer's credit quality.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "This is a key distinction. The coupon reset protects against risk-free rate moves (MRR). It does *not* protect against credit spread widening. If the issuer gets riskier (DM rises), the fixed Quoted Margin becomes insufficient, and the price falls. This sensitivity is 'spread duration'."
+  },
+  {
+    "id": 10,
+    "model": "Perplexity",
+    "topic": "FRN Valuation at Reset",
+    "stem": "Assertion (A): On a reset date, an FRN will always trade at par value if the Quoted Margin equals the Discount Margin.\nReason (R): At reset, the coupon is updated to the current MRR plus Quoted Margin, which exactly matches the market's required yield (MRR plus Discount Margin).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "If QM = DM, the cash flow (MRR + QM) is exactly what the market requires (MRR + DM). The present value of a stream of cash flows discounted at the same rate as the coupon rate is par."
+  },
+  {
+    "id": 11,
+    "model": "Perplexity",
+    "topic": "MMI Pricing: Discount vs Add-on",
+    "stem": "Assertion (A): For a given quoted rate and maturity, the price of a money market instrument calculated using a discount rate will be higher than if calculated using an add-on rate.\nReason (R): The discount rate formula subtracts interest from the face value, whereas the add-on rate formula adds interest to the principal (which implies a lower starting principal for the same terminal value).",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "Let's check the math. FV = 100, Rate = 10%, 1 year. Discount Price = 100 * (1 - 0.10) = 90. Add-on Price: 100 / (1 + 0.10) = 90.90. The Add-on price is HIGHER. Assertion A says Discount Price is Higher. So A is False. Reason R is True: Discount subtracts from FV (linear reduction). Add-on divides FV (hyperbolic reduction). Dividing by 1.10 removes 'less' than subtracting 10% of the total. Wait, subtracting 10% of 100 is 10. Dividing 100/1.1 is 90.90 (discount of 9.1). So the discount price (90) is LOWER than the add-on price (90.90). Thus A is False."
   }
 ]
