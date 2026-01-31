@@ -102,5 +102,71 @@
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Tools are Investment Decisions</h3><p><strong>A is correct.</strong> From first principles, the tools we use determine the answers we give clients. The governing rule: Diligence applies to the <em>infrastructure</em> of advice, not just stock picking. The mechanism of violation: Stefansson bought the 'sizzle' (sales pitch) without checking the 'steak' (methodology). She failed to check fit (does it handle our currency needs?) or quality (is the math right?). The boundary condition: Recommending a system that reports client performance is a fiduciary act. It demands the same comparison and testing as buying a stock.</p><p>B is incorrect: If the tool measures performance/risk, it is part of the investment process. The flaw is thinking 'back office' means 'no ethics'.</p><p>C is incorrect: Vendor presentations are marketing, not research. The misconception is that a brochure constitutes due diligence.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Reporting - Gross vs. Net & Benchmarks",
+    "stem": "Young, a portfolio manager, presents performance data for his firm's managed portfolios in marketing materials. He displays gross-of-fee returns with a footnote disclosing that advisory fees must be deducted to obtain actual performance. He also compares these returns (which include reinvested dividends) against the price appreciation of the S&P 500 Index. Regarding his presentation of performance, Young most likely:",
+    "options": {
+      "A": "Violated the Standards by presenting gross-of-fee returns, as net-of-fee returns are mandatory for all retail communications.",
+      "B": "Violated the Standards by using a benchmark that is not comparable to the portfolio's return methodology.",
+      "C": "Did not violate the Standards because he included a footnote regarding fees and the S&P 500 is a widely recognized standard."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fair, Accurate, and Complete Presentation</h3><p><strong>B is correct.</strong> The core principle of Standard III(D) is that performance information must be fair, accurate, and complete. To be fair, a comparison must be &quot;apples-to-apples.&quot; Young's portfolio returns include reinvested dividends (total return), whereas the S&P 500 price appreciation ignores dividends (price return). Comparing total return to price return artificially inflates the manager's relative performance, creating a misleading impression of skill. Therefore, the benchmark selection violates the duty to not misstate performance.</p><p>A is incorrect: Presenting gross-of-fee returns is permitted under the Standards as long as there is prominent disclosure (like the footnote described) that fees must be deducted to determine the actual return to the client.</p><p>C is incorrect: While the S&P 500 is a recognized index, using its price-only return against a total-return portfolio is inherently misleading, regardless of the index's popularity.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Reporting - Expense Allocation",
+    "stem": "Smith manages two funds: a mature fund entering its harvesting period and a new fund in its investment period. To improve the reported performance of the new fund and attract investors, Smith's supervisor directs her to reallocate expenses from the new fund to the mature fund. This reallocation does not affect the firm's consolidated results. Smith complies. Smith's action is most likely:",
+    "options": {
+      "A": "Acceptable because the firm's overall consolidated performance remains accurate.",
+      "B": "Acceptable if the reallocation is disclosed in the footnotes of the annual report.",
+      "C": "Unacceptable because it misrepresents the specific performance of the individual funds."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Integrity of Performance Data</h3><p><strong>C is correct.</strong> Standard III(D) requires performance presentation to be fair and accurate. Shifting expenses arbitrarily between entities distorts the economic reality of each specific fund. The new fund appears more profitable than it is, and the mature fund appears less so. Investors rely on track records of specific vehicles to assess risk and return. By manipulating these inputs, Smith is actively participating in a misrepresentation (Standard I(C)) and failing to act with integrity, regardless of the firm-wide net neutral effect.</p><p>A is incorrect: Investors do not buy the &quot;firm's consolidated results&quot;; they buy specific funds. Accuracy at the aggregate level does not excuse fraud at the product level.</p><p>B is incorrect: Disclosure does not cure a fundamental breach of integrity. Deliberately manipulating accounting entries to smooth or boost returns is fraudulent behavior that cannot be rectified simply by noting it occurred.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Reporting - Portability of Records",
+    "stem": "Jergens manages a registered collective investment scheme (CIS) established in 2017. In marketing materials, he presents a continuous performance history from 2010 to 2018. The data from 2010–2016 is accurate but was generated by a composite of separate accounts managed with a similar strategy before the CIS was formed. Jergens does not disclose that the 2010–2016 data represents a different legal entity. Jergens has most likely:",
+    "options": {
+      "A": "Violated the Standards by failing to disclose the change in entity status for the historical period.",
+      "B": "Violated the Standards because performance records from separate accounts can never be linked to a pooled fund.",
+      "C": "Complied with the Standards because the investment strategy remained consistent across the entire period."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Transparency in Performance History</h3><p><strong>A is correct.</strong> Standard III(D) mandates that performance information be complete and not misleading. While performance can be &quot;ported&quot; or linked under specific conditions (same manager, same strategy), presenting the history as if it were always the CIS fund is misleading. Investors may falsely infer the CIS fund has a longer operational track record and asset base than it actually does. The failure to disclose that the 2010–2016 history comes from a composite of separate accounts—not the fund itself—constitutes a misrepresentation by omission.</p><p>B is incorrect: Linking performance is permissible if specific criteria are met; the violation here is the lack of disclosure, not the linkage itself.</p><p>C is incorrect: Strategy consistency is a necessary condition for linking, but it is not sufficient. Transparency regarding the source of the data (separate accounts vs. the fund) is required to prevent the information from being misleading.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Reporting - Calculation Errors",
+    "stem": "A platform lender calculates Annualized Net Returns (ANR) for investors using a legacy computer code. An update to the code inadvertently excludes the worst-performing loans from the calculation, artificially inflating reported returns. The firm's compliance officer reviews policies but lacks the technical expertise to audit the code and relies on high-level summaries that fail to detect the error. When investors complain, customer service reps rely on the flawed system to confirm the numbers. The compliance officer has most likely:",
+    "options": {
+      "A": "Violated the Standards by failing to ensure the accuracy of the performance calculation system.",
+      "B": "Complied with the Standards as the error was technical and unintentional.",
+      "C": "Complied with the Standards because she is not expected to have technical coding expertise."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Reasonable Basis and Supervision</h3><p><strong>A is correct.</strong> Under Standard V(A) (Diligence and Reasonable Basis) and IV(C) (Responsibilities of Supervisors), a member must ensure that the processes generating information are reliable. While the officer doesn't need to be a coder, she must implement adequate controls (e.g., testing, third-party audits, lower-level verifications) to verify system integrity. Relying on high-level summaries without testing the inputs or outputs against reality constitutes a failure to exercise reasonable care, especially when the metric (ANR) is a primary marketing tool.</p><p>B is incorrect: Lack of intent does not absolve a member of the duty of competence and diligence. Negligence in maintaining a compliance system that allows for systemic error is a violation.</p><p>C is incorrect: While she doesn't need to write code, she is responsible for the <em>output</em> of the system. She failed to delegate the audit to someone competent or to implement checks that would catch such a material deviation.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Performance Reporting - Conflicts of Interest",
+    "stem": "Smithson, CEO of an investment firm, hires an accounting firm to audit its financial records. To maximize efficiency, he also hires the same accounting firm to provide consulting services on GIPS compliance and to verify the firm's GIPS performance history. The fees for the consulting work are five times higher than the audit fees. Smithson's engagement of the accounting firm for GIPS verification is most likely:",
+    "options": {
+      "A": "Appropriate because the accounting firm's deep knowledge of the business enhances the quality of the GIPS verification.",
+      "B": "Inappropriate because the lucrative consulting fees compromise the independence required for a valid third-party verification.",
+      "C": "Appropriate provided Smithson discloses the dual relationship to all prospective clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Independence and Objectivity</h3><p><strong>B is correct.</strong> Third-party verification (Standard III(D) context) relies entirely on the <em>independence</em> of the verifier. If the verifier is also receiving substantial consulting fees (creating a dependency relationship) or is auditing its own consulting work (self-review threat), its objectivity is compromised. In this case, the firm is effectively paying the auditor to build the compliance framework it is then supposed to independently verify. This conflict destroys the value of the &quot;independent&quot; verification, rendering the claim of third-party verification misleading.</p><p>A is incorrect: While efficiency is a business benefit, it cannot supersede the ethical requirement for independence in an audit or verification role.</p><p>C is incorrect: Disclosure is necessary for conflicts, but some conflicts are so severe they undermine the service itself. You cannot disclose away the lack of independence in an engagement that <em>requires</em> independence by definition.</p>"
   }
 ]
+ 
