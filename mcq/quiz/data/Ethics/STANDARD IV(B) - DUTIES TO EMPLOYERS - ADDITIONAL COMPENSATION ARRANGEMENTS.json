@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Solicitation of Clients Prior to Departure",
+    "stem": "Magee, a portfolio manager at Trust Assets, Inc., accepts an offer from Fiduciary Management. Before handing in his resignation, he identifies four large accounts that are unhappy with Trust Assets' recent performance. He contacts them to suggest they might be happier at his new firm, Fiduciary Management, and also persuades a prospective client he recently pitched on behalf of Trust Assets to sign with Fiduciary instead. Has Magee violated Standard IV(A)?",
+    "options": {
+      "A": "Yes, but only regarding the prospective client, as existing clients have a right to choose their manager.",
+      "B": "Yes, because he solicited both current and prospective clients while still employed by Trust Assets.",
+      "C": "No, because he acted in the best interest of the clients who were dissatisfied with Trust Assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Agency and Duty of Loyalty</h3><p><strong>B is correct.</strong> Start with the definition of the employer-employee relationship: it is a principal-agent contract where the agent (employee) agrees to act for the benefit of the principal (employer) in exchange for compensation. The governing principle: Until the employment contract is severed, the employee's skills and efforts belong to the employer. The mechanism of violation: Magee diverted business (an asset of the employer) to a competitor while still on the payroll. This is a direct theft of opportunity. The boundary condition: 'Client best interest' is a duty to the client, but it does not override the legal and ethical duty of loyalty to the employer regarding business competition. You cannot rob your employer to 'save' a client unless the employer is breaking the law.</p><p>A is incorrect: The duty of loyalty applies equally to current revenue (clients) and future revenue (prospects). Both are assets of the employer.</p><p>C is incorrect: The 'Robin Hood' defense (helping clients) does not justify breaching the employment contract. The proper procedure is to resign first, then compete (subject to non-solicits).</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Proprietary Information and Models",
+    "stem": "Hightower, a senior PM at Jason Investment, decides to launch his own fund. To ensure continuity for his clients, he copies his own spreadsheet models for asset allocation and stock selection, which he built from scratch over the last 15 years. He also copies the client list to contact them *after* he resigns. He takes no other firm property. Has Hightower violated Standard IV(A)?",
+    "options": {
+      "A": "Yes, because both the client list and the models created during employment are the property of the employer.",
+      "B": "No, regarding the models, because he created them himself and they represent his personal skill and intellectual capital.",
+      "C": "Yes, but only regarding the client list, as the models are tools of his trade that he may take with him."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Intellectual Property and Work For Hire</h3><p><strong>A is correct.</strong> Start with the concept of 'Work For Hire'. Anything created by an employee during work hours, using firm resources, for the business of the firm, belongs to the firm. The governing principle: The creator is not the owner if they were paid to create it. The mechanism of violation: Hightower misappropriated firm assets (models and lists). The fact that he built them is irrelevant; he was paid a salary to build them. The boundary condition: Taking 'skills' (knowledge in your head) is allowed; taking 'records' (files, spreadsheets, lists) is theft. Continuity for clients does not justify theft of proprietary tools.</p><p>B is incorrect: The 'I built it, I own it' fallacy contradicts employment law. Intellectual capital (in your head) is yours; Intellectual property (the file) is theirs.</p><p>C is incorrect: Models are distinct proprietary assets. They are not just 'skills'; they are tangible tools owned by the firm.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Internship and Intellectual Property",
+    "stem": "Madeline, an unpaid intern at Murdoch & Lowell, helps develop code for a GIPS compliance software. She accepts a job at a competitor and copies the source code she worked on to aid her in her new role. She reasons that since she was unpaid, she is not an 'employee' and the code acts as a portfolio of her work. Has she violated Standard IV(A)?",
+    "options": {
+      "A": "No, because the lack of monetary compensation means no formal employment contract existed.",
+      "B": "Yes, because she misappropriated firm property, and 'employment' status is defined by control and benefit, not just salary.",
+      "C": "No, provided she deletes the code after showing it to her new employer as a work sample."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Definition of Employment and Benefit</h3><p><strong>B is correct.</strong> Start with the definition of employment under the Code: it includes relationships where compensation is non-monetary (experience, training, prestige). The governing principle: The exchange of value (labor for experience) creates a duty of loyalty. The mechanism of violation: Madeline took an asset (code) that belongs to the firm. Her compensation status is irrelevant to the ownership of the work product. The boundary condition: Interns, volunteers, and contractors all owe a duty of loyalty if they are in a position of trust and using firm resources. Theft is theft, regardless of the paycheck.</p><p>A is incorrect: Employment for ethical purposes is broader than tax law. The 'unpaid' status does not grant a license to steal IP.</p><p>C is incorrect: The violation is the <em>taking</em>. Subsequent deletion does not undo the breach of loyalty and confidentiality.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Whistleblowing vs. Loyalty",
+    "stem": "Nash discovers his firm is churning client accounts. He reports it internally but is ignored. He resigns and, at his employer's direction, sends a generic departure notice to clients. When a client calls to ask why he left, Nash truthfully details the churning scheme and encourages the client to transfer their account to his new firm to avoid further harm. Has Nash violated Standard IV(A)?",
+    "options": {
+      "A": "Yes, because he disparaged his former employer and solicited business, violating the duty of loyalty.",
+      "B": "No, because the duty to protect client interests from harm outweighs the duty of loyalty to a corrupt employer.",
+      "C": "Yes, because he should have reported the issue to regulators rather than discussing it directly with clients."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Hierarchy of Duties and Method of Correction</h3><p><strong>A is correct.</strong> This is a tricky application of competing duties. Start with the rule: You cannot solicit clients or disparage the employer <em>prior</em> to leaving (or immediately upon leaving if using firm contacts). The governing principle: Whistleblowing (Standard IV(C)) allows violating loyalty to report to <em>authorities</em>, not to solicit business. The mechanism of violation: Nash used the 'ethical breach' as a sales pitch to steal a client. While the client needed to know, using that information to <em>gain a commercial advantage</em> (soliciting) crosses the line into a Loyalty violation. The boundary condition: He should have reported to regulators or clients <em>without</em> the solicitation element, or waited until the non-compete/solicitation period expired (if any), or simply stated he resigned due to 'professional differences'. Detailed disparagement combined with solicitation is the violation.</p><p>B is incorrect: Protecting clients justifies <em>warning</em> them, but it does not automatically justify <em>soliciting</em> them for personal gain. The self-interest component (moving the book) taints the ethical act.</p><p>C is incorrect: Reporting to regulators is <em>a</em> path, but telling the truth to a client is generally allowed <em>if</em> it isn't a solicitation tactic. The violation here is specifically the solicitation/disparagement combo for gain.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Preparations to Compete (RFP)",
+    "stem": "A team of analysts at Setup Corp plans to leave to form a new firm, NewCo. Before resigning, they learn that a major client of Setup Corp has issued an RFP. The team believes NewCo would be a better fit. They draft a response to the RFP on their own time and submit it under NewCo's name before resigning. Has the team violated Standard IV(A)?",
+    "options": {
+      "A": "No, because they worked on their own time and did not use Setup Corp's resources.",
+      "B": "Yes, because submitting a proposal to a current client constitutes direct competition while still employed.",
+      "C": "No, because preparations for a new business are permitted provided they do not interfere with current duties."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Preparation vs. Active Competition</h3><p><strong>B is correct.</strong> Start with the distinction between 'preparing to compete' (e.g., renting office space, registering LLC) and 'competing' (soliciting business). The governing principle: You cannot fight your employer for business while on their payroll. The mechanism of violation: Submitting the RFP is an active solicitation of business. It pits the employee's new entity directly against the current employer for a specific contract. The boundary condition: Doing it 'on your own time' is irrelevant if the <em>act itself</em> is competitive. You cannot be a double agent, working for the firm by day and stealing its contracts by night.</p><p>A is incorrect: The 'own time' defense applies to <em>preparation</em> (admin tasks), not <em>solicitation</em>. Direct competition is never allowed while employed.</p><p>C is incorrect: This exceeds 'preparation'. Preparation is internal (getting ready); submission is external (going to market). The line was crossed at the submission.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Use of Client Information After Departure",
+    "stem": "Crome leaves YBSafe Bank to join a competitor. She does not take any physical or electronic records. However, she has a photographic memory and reconstructs a list of her 50 wealthiest clients from memory. She contacts them to solicit their business. There is no non-compete agreement in place. Has Crome violated Standard IV(A)?",
+    "options": {
+      "A": "No, because she did not take any physical or electronic records and no non-compete exists.",
+      "B": "Yes, because client identities and contact information are proprietary, regardless of how they are stored (memory vs. file).",
+      "C": "No, because the knowledge of client names is considered part of her personal 'skills and experience'."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Information as Property</h3><p><strong>B is correct.</strong> Start with the definition of proprietary information. It includes client lists and specific details built up during employment. The governing principle: The medium of storage (paper, hard drive, brain) does not change the ownership of the data. The mechanism of violation: Crome used specific proprietary data (the client list) to compete. While she can use 'skills' (how to manage money), she cannot use 'firm assets' (who the clients are) to solicit, unless that info is public. The boundary condition: Simple knowledge of names might be borderline, but reconstructing a <em>target list</em> to solicit is generally treated as using firm records. Note: The Standards are stricter here than some local laws. Standard IV(A) treats client lists as firm property.</p><p>A is incorrect: The lack of a non-compete allows competition, but not the use of proprietary assets (the list) to compete.</p><p>C is incorrect: 'Skills' are general (e.g., valuation models); 'Client Lists' are specific assets of the firm. You don't own the client relationship; the firm does.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Social Media and Departure",
+    "stem": "Webb leaves RSI. Her employment contract forbids soliciting clients for two years. She updates her personal LinkedIn profile to list her new employer. LinkedIn's algorithm automatically notifies her network, which includes many RSI clients. Several clients contact her, and she responds with her new contact info. Has Webb violated Standard IV(A)?",
+    "options": {
+      "A": "Yes, because the automated notification constitutes a passive solicitation in violation of her contract.",
+      "B": "No, because updating a personal profile is a statement of fact, not a solicitation, and she did not trigger the notification manually.",
+      "C": "Yes, because she responded to the clients who contacted her, which completes the solicitation loop."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Public Announcement vs. Solicitation</h3><p><strong>B is correct.</strong> Start with the definition of solicitation: it involves an active effort to persuade a client to move. The governing principle: Individuals have a right to announce their professional status (Truth). The mechanism: Webb merely updated a fact (new job) on a personal platform. The platform's algorithm (external agent) broadcast it. She did not target clients. The boundary condition: Responding to a client who <em>reaches out to you</em> is not solicitation; it is responsive. Unless the non-compete explicitly bans 'accepting' business (which is rare and hard to enforce), she is clear.</p><p>A is incorrect: 'Passive solicitation' via algorithmic notification is generally recognized as a personal announcement, not a targeted breach of loyalty.</p><p>C is incorrect: Once the client initiates contact, the former employee is free to respond (unless a 'non-accept' clause exists). The prohibition is on the <em>initial outreach</em>.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini 3 Pro",
+    "topic": "Preparations and Regulatory Registration",
+    "stem": "Allen, an analyst, decides to start a competing firm. Without telling her current employer, she incorporates the new business and registers with the regulatory authorities. She continues to work full hours and meets all duties at her current job. She does not contact any clients. Has Allen violated Standard IV(A)?",
+    "options": {
+      "A": "Yes, because registering a competing firm is a public act of disloyalty.",
+      "B": "No, because preparations to compete are permitted provided they don't interfere with current work or involve solicitation.",
+      "C": "Yes, because she failed to disclose the potential conflict of interest to her employer."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Right to Work</h3><p><strong>B is correct.</strong> Start with the balance between Employer Protection and Employee Mobility. The governing principle: Employees have a right to prepare for their next career move. The mechanism: Allen engaged in 'preparatory acts' (incorporation, registration) on her own time. She did not cross the line into 'operational competition' (soliciting, trading). The boundary condition: As long as the preparation is distinct from the current job (no overlapping time/resources) and not active competition, it is allowed. Silence (non-disclosure) is permitted during the preparation phase to prevent retaliation.</p><p>A is incorrect: Public registration is a legal requirement for the new entity, not a breach of duty to the old one, provided business hasn't started.</p><p>C is incorrect: You do not have to disclose an intent to resign or compete until you actually resign or the conflict becomes 'actual' (impairing current work).</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Solicitation and Loyalty",
+    "stem": "Nickoli, an investment counselor, decides to leave her current firm, HHI, to join a competitor. Prior to resigning, she informs select clients that she will be leaving soon and mentions that she lacks confidence in HHI's current leadership and strategic direction. She does not explicitly ask them to follow her yet but notes that she will be moving to a firm with \"better service.\" Regarding her duties to her employer, Nickoli *most likely* violated the Standards by:",
+    "options": {
+      "A": "Making preparations to leave the firm while still employed.",
+      "B": "Disparaging her employer to clients prior to her resignation becoming effective.",
+      "C": "Informing clients of her impending departure before notifying her employer."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Duty of Loyalty</h3><p><strong>B is correct.</strong> Standard IV(A) (Loyalty) requires members to act for the benefit of their employer and not cause harm. While employees may make preparations to leave (such as finding a new job), they must not engage in conduct that actively harms the employer while still employed. Disparaging the firm's leadership and quality of service to clients directly undermines the employer's business and client relationships. This constitutes a breach of the duty of loyalty, regardless of whether a formal solicitation to move assets occurred at that exact moment.</p><p>A is incorrect: Making preparations to leave (e.g., interviewing, negotiating terms) is generally permitted under the Standards, provided it doesn't interfere with current duties.</p><p>C is incorrect: The violation is not the timing of the notification itself (though policy may dictate it), but the <em>nature</em> of the communication (disparagement) which harmed the employer.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Record Retention",
+    "stem": "Ianetta, a chief compliance officer, oversees a transition to a new email archiving vendor. During the migration, there is a temporary period where historical emails are inaccessible. Additionally, the new system does not capture emails sent via third-party cloud-based platforms used by some employees, though it captures all internal server traffic. Regarding the Standard on Record Retention, Ianetta has *most likely*:",
+    "options": {
+      "A": "Complied, because the inaccessibility was temporary and unintentional during a necessary vendor upgrade.",
+      "B": "Violated the Standard by failing to capture cloud-based emails, regardless of the server status.",
+      "C": "Violated the Standard only if the temporary gap in access exceeded regulatory minimums."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Scope of Record Retention</h3><p><strong>B is correct.</strong> Standard V(C) (Record Retention) requires members to maintain records that support investment analyses and other investment-related communications. This requirement applies to the <em>content</em> and <em>substance</em> of the communication, not the medium or platform. If firm business is conducted via cloud-based platforms, those records must be retained. Failing to capture them creates a permanent gap in the firm's compliance record, which is a violation. The system's inability to capture these is a failure of the compliance officer's duty to implement adequate systems.</p><p>A is incorrect: While the temporary inaccessibility is problematic, the failure to capture specific <em>sources</em> of business communication (cloud emails) is a fundamental flaw in the system's design, not just a transition hiccup.</p><p>C is incorrect: The violation is substantive (missing records), not merely temporal.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Whistleblowing",
+    "stem": "Kuznetsov, a portfolio manager, suspects his supervisor is pressuring him to favor proprietary products over client interests. To document this unethical behavior, he surreptitiously records conversations and copies relevant client records containing confidential information. He provides this evidence to the local regulator. His employer fires him for violating client confidentiality policies. Kuznetsov's actions are *most likely*:",
+    "options": {
+      "A": "A violation of the Standard regarding Preservation of Confidentiality.",
+      "B": "A violation of the Standard regarding Loyalty to Employer.",
+      "C": "Permissible under the Standards as a justified whistleblowing activity."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Whistleblowing and Conflicting Duties</h3><p><strong>C is correct.</strong> While Standard III(E) requires confidentiality and Standard IV(A) requires loyalty, the Standards do not protect unethical or illegal behavior. The protection of client interests and the integrity of capital markets supersedes the duty to an employer who is acting unethically. Whistleblowing, even if it involves disclosing confidential information to a regulator to prove misconduct, is generally permitted (unless specifically prohibited by local law, which the exam assumes is not the case unless stated). Thus, using the records to expose the supervisor's violation is justified.</p><p>A is incorrect: The confidentiality standard allows disclosure if required by law or to support a complaint against a member/candidate in a professional conduct investigation.</p><p>B is incorrect: The duty of loyalty does not require complicity in unethical activity or silence regarding it.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Misconduct",
+    "stem": "McDougal, a junior analyst on a temporary contract, engages in hostile behavior and makes threats against her supervisor, Clifford, after being denied a full-time role. Clifford falsely tells McDougal the position was eliminated due to restructuring to avoid a confrontation. McDougal later sends emails to clients falsely claiming Clifford is under investigation. Regarding the Standard on Misconduct, it is *most likely* that:",
+    "options": {
+      "A": "Clifford violated the Standard by lying about the reason for the position's elimination.",
+      "B": "McDougal violated the Standard by making false and malicious claims to clients.",
+      "C": "Neither party violated the Standard as the dispute was an internal employment matter."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Professional Integrity</h3><p><strong>B is correct.</strong> Standard I(D) (Misconduct) prohibits conduct involving dishonesty, fraud, or deceit that reflects adversely on professional reputation. McDougal's actions—lying to clients about an investigation to damage a former supervisor's reputation—are a clear breach of professional integrity. This goes beyond an internal dispute and directly impacts client trust and the firm's reputation.</p><p>A is incorrect: While Clifford's &quot;white lie&quot; about restructuring is professionally suboptimal, it likely does not rise to the level of a Standard I(D) violation (fraud/deceit/felony) intended to harm or cheat. It was a management tactic to handle a hostile employee.</p><p>C is incorrect: McDougal's external actions involving clients elevate this beyond a simple internal HR dispute.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Confidentiality Post-Employment",
+    "stem": "Mikalev retires from a large bank but realizes his login credentials for the firm's premium market data and internal deal rooms remain active. He uses this access to monitor market trends for his personal knowledge but does not trade on any information found. Regarding the Code and Standards, Mikalev's use of these resources is *most likely*:",
+    "options": {
+      "A": "Acceptable because he did not trade or profit from the information.",
+      "B": "Acceptable because the firm failed to revoke his access, implying permission.",
+      "C": "Unacceptable because it constitutes misappropriation of the former employer's property."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Misappropriation of Property</h3><p><strong>C is correct.</strong> Even though Mikalev is no longer employed, he has a duty not to take or use employer property without permission. The data feeds and internal documents are proprietary assets of the firm (Standard I(D) Misconduct / Standard IV(A) Loyalty contexts). Using them without explicit authorization—even if the firm negligently left the gate open—is dishonest and unethical. It is a form of theft (misappropriation).</p><p>A is incorrect: The violation is the unauthorized <em>access and use</em> of the resource, not merely the outcome (trading). The access itself has value.</p><p>B is incorrect: A failure of the firm's security controls does not constitute an affirmative grant of permission to a former employee.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Client Lists",
+    "stem": "Clemence resigns from her firm to join a competitor. Before leaving, she downloads an Excel file containing contact details for all the firm's clients, including those she did not personally manage. She intends to use this only to send a &quot;thank you&quot; note and update her contact info. She does not solicit them for business in these notes. Her action is *most likely*:",
+    "options": {
+      "A": "A violation of the Standard on Loyalty to Employers.",
+      "B": "A violation of the Standard on Preservation of Confidentiality.",
+      "C": "Permissible if she limited the list to only clients she personally managed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Proprietary Information</h3><p><strong>A is correct.</strong> Standard IV(A) (Loyalty) prohibits taking employer property, including client lists, without permission. Client lists are proprietary assets. By downloading the <em>entire</em> firm list (not just what she might remember from memory), she misappropriated firm property. The intent (courtesy vs. solicitation) mitigates the severity but does not cure the violation of taking the property itself.</p><p>B is incorrect: While client data is confidential, the primary issue here between employee and employer is the breach of Loyalty/Ownership of records. Standard III(E) focuses more on keeping client data from <em>third parties</em>.</p><p>C is incorrect: Even for her own clients, the physical/digital <em>list</em> belongs to the firm. She generally cannot take the physical list without permission, though she may contact clients using information recalled from memory (jurisdiction dependent, but per Standards, the file is firm property).</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 3 Pro",
+    "topic": "Employment Issues - Conflict of Duties",
+    "stem": "Harris, a CFO and CFA charterholder, discovers a severe design flaw in his company's new aircraft that could cause fatal crashes. The company is fixing it, but the information is not public. As a member of the employee retirement committee, he must vote on whether to keep company stock as an investment option. He knows the stock price will crash if the flaw is revealed. He votes to keep the stock option to avoid signaling the problem. Harris's action is *most likely*:",
+    "options": {
+      "A": "Appropriate because he maintained his duty of confidentiality to his employer.",
+      "B": "Inappropriate because he failed to prioritize the interests of plan beneficiaries over the firm.",
+      "C": "Inappropriate because he is effectively acting on material nonpublic information by not acting."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fiduciary Duty vs. Confidentiality</h3><p><strong>B is correct.</strong> As a member of the retirement committee, Harris acts as a fiduciary for the employees/beneficiaries. This fiduciary duty (Standard III(A)) is paramount. By allowing the plan to purchase stock he knows is dangerously overvalued due to the undisclosed flaw, he harms the beneficiaries to protect the company. While he has a duty of confidentiality (Standard IV(A)), it cannot be used to justify a breach of fiduciary duty that results in harm to clients/beneficiaries. He should have recused himself or sought legal counsel to find a way to stop the purchases without illegal disclosure, but voting <em>for</em> the option was a violation.</p><p>A is incorrect: Confidentiality does not shield a member from the consequences of breaching a fiduciary duty to others.</p><p>C is incorrect: This is a tricky distractor. While Standard II(A) prohibits acting on MNPI, the core ethical failure here is the breach of his <em>fiduciary</em> role to the plan participants. He is conflicted, and by choosing the firm over the beneficiaries, he violated the duty of loyalty.</p>"
+  }
+]
+
+
