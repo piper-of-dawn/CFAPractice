@@ -40,6 +40,9 @@ def transform(text: str) -> str:
     for idx, seg in enumerate(disp_segments):
         text = text.replace(f"__DISP_MATH_{idx}__", seg)
 
+    # Post-fix: recover any inline math pairs accidentally broken earlier, e.g., 'USD32 ... 15$' -> '$32 ... 15$'
+    text = re.sub(r'USD(?=\s*\d[^$\n]{0,120}\$)', '$', text)
+
     return text
 
 
