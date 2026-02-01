@@ -133,20 +133,20 @@
     "id": 11,
     "model": "Gemini 3",
     "topic": "Numerical: Gross Margin Calculation",
-    "stem": "Revenue: $1,000; COGS: $600; SG&A: $150; Depreciation (included in COGS): $50. What is the Gross Profit Margin?",
+    "stem": "Revenue: USD1,000; COGS: USD600; SG&A: USD150; Depreciation (included in COGS): USD50. What is the Gross Profit Margin?",
     "options": {
       "A": "25%",
       "B": "35%",
       "C": "40%"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Defining Gross Profit</h3><p><strong>C is correct.</strong> Gross Profit = Revenue - Cost of Goods Sold (COGS). The problem states Depreciation is <em>included</em> in COGS. This is a distractor or a clarification; if it's in COGS, it's already subtracted. Gross Profit = $1,000 - $600 = $400. Gross Margin = 400 / 1,000 = 40%. SG&A is an operating expense, not part of COGS, so it is ignored for Gross Margin.</p><p>A is incorrect: This likely subtracts SG&A as well ($1000 - 600 - 150 = 250/1000 = 25%), which is Operating Margin, not Gross Margin.</p><p>B is incorrect: This might attempt to add back depreciation ($600 - 50 = 550 adjusted COGS), but if depreciation is a production cost, it belongs in COGS.</p>"
+    "explanation": "<h3>First Principles Thinking: Defining Gross Profit</h3><p><strong>C is correct.</strong> Gross Profit = Revenue - Cost of Goods Sold (COGS). The problem states Depreciation is <em>included</em> in COGS. This is a distractor or a clarification; if it's in COGS, it's already subtracted. Gross Profit = USD1,000 - USD600 = USD400. Gross Margin = 400 / 1,000 = 40%. SG&A is an operating expense, not part of COGS, so it is ignored for Gross Margin.</p><p>A is incorrect: This likely subtracts SG&A as well (USD1000 - 600 - 150 = 250/1000 = 25%), which is Operating Margin, not Gross Margin.</p><p>B is incorrect: This might attempt to add back depreciation (USD600 - 50 = 550 adjusted COGS), but if depreciation is a production cost, it belongs in COGS.</p>"
   },
   {
     "id": 12,
     "model": "Gemini 3",
     "topic": "Numerical: ROA Calculation",
-    "stem": "Net Income: $200; Interest Expense: $50; Tax Rate: 30%; Average Total Assets: $2,000. Calculate ROA adding back after-tax interest.",
+    "stem": "Net Income: USD200; Interest Expense: USD50; Tax Rate: 30%; Average Total Assets: USD2,000. Calculate ROA adding back after-tax interest.",
     "options": {
       "A": "10.0%",
       "B": "11.75%",
@@ -250,7 +250,7 @@
     "id": 20,
     "model": "Gemini 3",
     "topic": "Numerical: Tax Burden Calculation",
-    "stem": "EBIT: $1,000; Interest: $200; Tax Rate: 25%. What is the Tax Burden ratio?",
+    "stem": "EBIT: USD1,000; Interest: USD200; Tax Rate: 25%. What is the Tax Burden ratio?",
     "options": {
       "A": "0.60",
       "B": "0.75",

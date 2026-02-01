@@ -211,14 +211,14 @@
     "id": 17,
     "model": "Claude Sonnet",
     "topic": "Numerical - Receivables Turnover",
-    "stem": "Trade receivables at the beginning of the year: $4,468,392; Trade receivables at year-end: $4,972,722; Revenue for the year: $45,349,943. Calculate receivables turnover.",
+    "stem": "Trade receivables at the beginning of the year: USD4,468,392; Trade receivables at year-end: USD4,972,722; Revenue for the year: USD45,349,943. Calculate receivables turnover.",
     "options": {
       "A": "9.11 times",
       "B": "9.61 times",
       "C": "10.14 times"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Lenovo Example from Text</h3><p><strong>B is correct.</strong> This is the exact example from the text (Lenovo Group, Example 6). Average receivables = ($4,468,392 + $4,972,722) ÷ 2 = $4,720,557. Receivables turnover = Revenue ÷ Average Receivables = $45,349,943 ÷ $4,720,557 = 9.6069, rounded to 9.6 times. The text shows this calculation demonstrates that on average, Lenovo's receivables turned over about 9.6 times during the fiscal year.</p><p>A is incorrect. This might result from calculation errors in averaging (e.g., using only ending receivables adjusted incorrectly), but does not match the proper average receivables calculation.</p><p>C is incorrect. This would result from using beginning receivables only ($45,349,943 ÷ $4,468,392 ≈ 10.15), which doesn't represent the average receivables level during the period and violates the flow-to-stock matching principle.</p>"
+    "explanation": "<h3>First Principles Thinking: Lenovo Example from Text</h3><p><strong>B is correct.</strong> This is the exact example from the text (Lenovo Group, Example 6). Average receivables = (USD4,468,392 + USD4,972,722) ÷ 2 = USD4,720,557. Receivables turnover = Revenue ÷ Average Receivables = USD45,349,943 ÷ USD4,720,557 = 9.6069, rounded to 9.6 times. The text shows this calculation demonstrates that on average, Lenovo's receivables turned over about 9.6 times during the fiscal year.</p><p>A is incorrect. This might result from calculation errors in averaging (e.g., using only ending receivables adjusted incorrectly), but does not match the proper average receivables calculation.</p><p>C is incorrect. This would result from using beginning receivables only (USD45,349,943 ÷ USD4,468,392 ≈ 10.15), which doesn't represent the average receivables level during the period and violates the flow-to-stock matching principle.</p>"
   },
   {
     "id": 18,
