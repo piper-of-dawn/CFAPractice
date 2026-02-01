@@ -102,5 +102,58 @@
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Integrity of the Mandate</h3><p><strong>B is correct.</strong> From first principles, clients construct portfolios using managers as 'building blocks' (e.g., a small-cap block). The governing rule: If the block changes shape (becomes mid-cap), the builder (client) must know. The mechanism of violation: By changing the definition of 'small cap' to include much larger companies ($8B), the firm has engaged in style drift. Existing clients who hired them specifically for small-cap exposure now hold a different asset class. The boundary condition: Notification must be proactive. Relying on clients to spot the drift later is negligence. The manager broke the implied covenant of the specific mandate.</p><p>A is incorrect: Passive disclosure (reporting holdings) is insufficient for active process changes. The flaw is placing the burden of discovery on the client.</p><p>C is incorrect: Operational necessity (liquidity) explains <em>why</em> the change happened, but it doesn't excuse hiding it. The explanation for the change is exactly what must be communicated.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini 3 Pro",
+    "topic": "Client Advice - Proprietary Products & Performance",
+    "stem": "Miriam, an investment adviser, manages discretionary accounts and invests a substantial portion of client assets in her firm's proprietary funds. In marketing materials, she presents gross-of-fee performance returns with a footnote stating fees must be deducted for actual results. She benchmarks this performance (which includes reinvested dividends) against the S&P 500 price return. Regarding the Standards of Professional Conduct, Miriam's *most* distinct violation relates to:",
+    "options": {
+      "A": "Investing the majority of client assets in proprietary funds.",
+      "B": "The comparability of the benchmark used for performance presentation.",
+      "C": "The presentation of gross-of-fee returns in marketing materials."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Fair, Accurate, and Complete Presentation</h3><p><strong>B is correct.</strong> Standard III(D) requires performance information to be fair, accurate, and complete. A critical component of fairness is the &quot;apples-to-apples&quot; comparison. Miriam compares a portfolio's total return (including dividends) against a benchmark's price return (excluding dividends). This mismatch artificially inflates the manager's relative performance, misleading investors about their value-add. While other issues exist, this technical discrepancy renders the presentation unfair and misleading.</p><p>A is incorrect: Investing in proprietary funds is not a violation per se, provided the investments are suitable for the clients and the conflict of interest is properly disclosed. The &quot;majority&quot; allocation triggers a suitability review but is not an automatic violation.</p><p>C is incorrect: Presenting gross-of-fee returns is permitted under the Standards as long as there is prominent disclosure (like the footnote described) that fees must be deducted to obtain the actual client return.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 3 Pro",
+    "topic": "Client Advice - Guarantees & Misrepresentation",
+    "stem": "Urquhart advises a couple to roll over their retirement assets to a new equity fund managed by his firm. The transfer triggers a $30,000 surrender penalty from their current provider. Urquhart discloses this penalty but assures the couple they &quot;will make up this loss&quot; through the new fund's superior future returns. The new fund is consistent with the couple's risk tolerance. Urquhart *most likely* violated the Standard concerning:",
+    "options": {
+      "A": "Suitability, by recommending a transaction that incurs an immediate loss.",
+      "B": "Misrepresentation, by guaranteeing a specific recovery of losses on volatile assets.",
+      "C": "Independence and Objectivity, by recommending a proprietary product."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Prohibition on Guarantees</h3><p><strong>B is correct.</strong> Standard I(C) (Misrepresentation) prohibits members from guaranteeing a specific rate of return on volatile investments. Equity funds are inherently risky and future performance is unknown. By stating the clients &quot;will&quot; make up the loss, Urquhart transforms a probabilistic opinion into a guarantee of future performance. This misleads the clients regarding the risk they are taking, regardless of the suitability of the underlying asset.</p><p>A is incorrect: While incurring a penalty requires a high hurdle for suitability, it is not automatically a violation if the long-term net benefit is justifiably higher. The violation here is the <em>promise</em> of that benefit, not the transaction itself.</p><p>C is incorrect: Recommending proprietary products is a conflict of interest that must be disclosed, but it is not inherently a violation of Independence and Objectivity if the product is suitable.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 3 Pro",
+    "topic": "Client Advice - Referral Fees & Subadvisers",
+    "stem": "Reeves, a portfolio manager, outsources specific asset class mandates to third-party subadvisers. These subadvisers pay Reeves' firm a fee based on the volume of assets placed with them. Reeves unsuccessfully attempted to negotiate these payments as client discounts. He discloses the use of subadvisers to his clients but does not disclose the fee arrangement. Reeves has *most likely* violated the Standard regarding:",
+    "options": {
+      "A": "Independence and Objectivity, by accepting compensation that influences his hiring decisions.",
+      "B": "Disclosure of Conflicts, by failing to inform clients of the financial benefit received from subadvisers.",
+      "C": "Loyalty, Prudence, and Care, by failing to credit the subadviser fees back to client accounts."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Disclosure of Conflicts</h3><p><strong>B is correct.</strong> Standard VI(A) requires full and fair disclosure of all matters that could impair independence or objectivity. The fee arrangement creates a direct financial incentive for Reeves to select subadvisers who pay the fee rather than those who might be best for the client. By disclosing the <em>existence</em> of subadvisers but hiding the <em>financial incentive</em>, Reeves denies clients the ability to judge whether his recommendations are objective. Disclosure is the primary mechanism to cure this conflict.</p><p>A is incorrect: Independence and Objectivity (Standard I(B)) is relevant, but the specific mandate for handling such compensation arrangements is disclosure (Standard VI(A) and VI(C)). Accepting the fee is not the violation; hiding it is.</p><p>C is incorrect: While crediting fees back is a <em>best practice</em> to eliminate the conflict, the Standards do not strictly mandate it. The Standards mandate <em>disclosure</em> so the client can decide.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 3 Pro",
+    "topic": "Client Advice - Suitability & Objective Manipulation",
+    "stem": "Duri's retail clients request to liquidate their diversified portfolios to invest in a single, illiquid residential property via a self-managed fund. Duri complies, changing their recorded investment objectives from &quot;balanced&quot; to &quot;aggressive growth&quot; to align with the transaction's risk profile without conducting further analysis. She also secures the accounting work for the new structure for her own firm. Duri's action of updating the investment objectives is *best* described as:",
+    "options": {
+      "A": "A violation of the Suitability Standard.",
+      "B": "A permissible update to the Investment Policy Statement (IPS) based on client direction.",
+      "C": "A violation of the Preservation of Confidentiality Standard."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Substance Over Form in Suitability</h3><p><strong>A is correct.</strong> Standard III(C) (Suitability) requires members to make a reasonable inquiry into a client's financial situation and to determine if an investment is suitable <em>before</em> taking action. Duri effectively reverse-engineered the IPS to justify an unsuitable trade (high concentration, illiquidity) rather than analyzing whether the trade actually met the clients' true financial needs. Changing the label on the account does not change the reality of the risk to the client. This is a failure of the duty to analyze, not a valid IPS update.</p><p>B is incorrect: An IPS update should reflect a genuine change in client circumstances or risk capacity, not serve as a rubber stamp for a specific, potentially harmful trade requested by an unsophisticated client.</p><p>C is incorrect: There is no evidence in the scenario that Duri shared confidential client information with unauthorized third parties. Using her own firm for accounting is a conflict of interest/loyalty issue, not confidentiality.</p>"
   }
 ]
+ 

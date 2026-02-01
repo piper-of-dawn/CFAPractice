@@ -10,7 +10,7 @@
       "C": "65 days"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Cash Conversion Cycle Identity</h3><p><strong>C is correct.</strong> The Cash Conversion Cycle (CCC) represents the net time interval between cash outflows for inputs and cash inflows from sales. The governing relationship is: $$CCC = DSO + DOH - \\text{Days Payables}$$. This equation balances the asset side (receivables and inventory requiring funding) against the liability side (payables providing funding). Rearranging the formula to solve for the unknown variable (Days Payables): $$\\text{Days Payables} = DSO + DOH - CCC$$. Substituting the provided values: $$\\text{Days Payables} = 32 + 18 - (-15)$$. $$\\text{Days Payables} = 50 + 15 = 65\\text{ days}$$.</p><p>A is incorrect: This result arises from incorrectly subtracting the absolute value of the CCC without regarding the double negative, or effectively solving $32 + 18 - 15$.</p><p>B is incorrect: This result arises from ignoring the CCC term entirely or simply summing the asset days ($32 + 18$).</p>"
+    "explanation": "<h3>First Principles Thinking: Cash Conversion Cycle Identity</h3><p><strong>C is correct.</strong> The Cash Conversion Cycle (CCC) represents the net time interval between cash outflows for inputs and cash inflows from sales. The governing relationship is: $$CCC = DSO + DOH - \\text{Days Payables}$$. This equation balances the asset side (receivables and inventory requiring funding) against the liability side (payables providing funding). Rearranging the formula to solve for the unknown variable (Days Payables): $$\\text{Days Payables} = DSO + DOH - CCC$$. Substituting the provided values: $$\\text{Days Payables} = 32 + 18 - (-15)$$. $$\\text{Days Payables} = 50 + 15 = 65\\text{ days}$$.</p><p>A is incorrect: This result arises from incorrectly subtracting the absolute value of the CCC without regarding the double negative, or effectively solving USD32 + 18 - 15$.</p><p>B is incorrect: This result arises from ignoring the CCC term entirely or simply summing the asset days ($32 + 18$).</p>"
   },
   {
     "id": 2,
@@ -62,7 +62,7 @@
       "C": "The sales volume was insufficient to support the calculation."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Ratio Boundary Conditions</h3><p><strong>B is correct.</strong> Financial ratios rely on the mathematical validity of their inputs. Inventory Turnover is calculated as $\\frac{\\text{Cost of Goods Sold}}{\\text{Average Inventory}}$. In the specific case of National Datacomputer (NDC), the text notes that ending inventories for 2008 and 2009 were reported as $0 million. If the ending inventory is zero, calculating Days of Inventory on Hand (DOH) based on ending inventory yields zero (as seen in the text where DOH = 0.00). If one attempts to calculate turnover using just the ending balance as the denominator, the expression becomes undefined (division by zero). Even with an average, a zero balance distorts the metric's economic meaning, signaling a stoppage of operations rather than 'infinite' efficiency.</p><p>A is incorrect: COGS was positive ($1.228 million) in 2009; the issue was the denominator (inventory).</p><p>C is incorrect: Sales were present ($1.723 million); the limitation was specific to the asset balance (inventory), not the flow variable (sales).</p>"
+    "explanation": "<h3>First Principles Thinking: Ratio Boundary Conditions</h3><p><strong>B is correct.</strong> Financial ratios rely on the mathematical validity of their inputs. Inventory Turnover is calculated as $\\frac{\\text{Cost of Goods Sold}}{\\text{Average Inventory}}$. In the specific case of National Datacomputer (NDC), the text notes that ending inventories for 2008 and 2009 were reported as $0 million. If the ending inventory is zero, calculating Days of Inventory on Hand (DOH) based on ending inventory yields zero (as seen in the text where DOH = 0.00). If one attempts to calculate turnover using just the ending balance as the denominator, the expression becomes undefined (division by zero). Even with an average, a zero balance distorts the metric's economic meaning, signaling a stoppage of operations rather than 'infinite' efficiency.</p><p>A is incorrect: COGS was positive (USD1.228 million) in 2009; the issue was the denominator (inventory).</p><p>C is incorrect: Sales were present (USD1.723 million); the limitation was specific to the asset balance (inventory), not the flow variable (sales).</p>"
   },
   {
     "id": 6,
@@ -120,14 +120,14 @@
     "id": 3,
     "model": "Gemini",
     "topic": "Defensive Interval Ratio",
-    "stem": "An analyst gathers the following data: Cash $200k, Accounts Receivable $400k, Inventory $600k, Marketable Securities $100k. Daily cash expenditures are estimated at $14k. If the company faces a sudden credit freeze and cannot sell inventory or borrow, the Defensive Interval Ratio indicates it can operate for approximately:",
+    "stem": "An analyst gathers the following data: Cash USD200k, Accounts Receivable USD400k, Inventory USD600k, Marketable Securities USD100k. Daily cash expenditures are estimated at USD14k. If the company faces a sudden credit freeze and cannot sell inventory or borrow, the Defensive Interval Ratio indicates it can operate for approximately:",
     "options": {
       "A": "50 days.",
       "B": "93 days.",
       "C": "43 days."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Liquidity Runway</h3><p><strong>A is correct.</strong> The Defensive Interval Ratio (DIR) measures how many days a company can cover its cash expenses using only its most liquid assets. <br>Step 1: Identify 'Quick' Assets. These are assets that can be converted to cash quickly without relying on inventory sales. <br>Quick Assets = Cash + Marketable Securities + Accounts Receivable. <br>Quick Assets = $200k + $100k + $400k = $700k. (Inventory is excluded as it is not immediately liquid in a credit freeze scenario). <br>Step 2: Apply the ratio. <br>DIR = Quick Assets / Daily Cash Expenditures. <br>DIR = $700,000 / $14,000 = 50 days.</p><p>B is incorrect: This calculation incorrectly includes Inventory in the numerator ($1,300k / 14k = 92.8 days), essentially calculating a 'Current Asset Interval' rather than a Defensive Interval.</p><p>C is incorrect: This calculation likely excludes Accounts Receivable ($300k / 14k = 21 days) or uses Inventory only ($600k / 14k = 42.8 days).</p>"
+    "explanation": "<h3>First Principles Thinking: Liquidity Runway</h3><p><strong>A is correct.</strong> The Defensive Interval Ratio (DIR) measures how many days a company can cover its cash expenses using only its most liquid assets. <br>Step 1: Identify 'Quick' Assets. These are assets that can be converted to cash quickly without relying on inventory sales. <br>Quick Assets = Cash + Marketable Securities + Accounts Receivable. <br>Quick Assets = USD200k + USD100k + USD400k = USD700k. (Inventory is excluded as it is not immediately liquid in a credit freeze scenario). <br>Step 2: Apply the ratio. <br>DIR = Quick Assets / Daily Cash Expenditures. <br>DIR = USD700,000 / USD14,000 = 50 days.</p><p>B is incorrect: This calculation incorrectly includes Inventory in the numerator (USD1,300k / 14k = 92.8 days), essentially calculating a 'Current Asset Interval' rather than a Defensive Interval.</p><p>C is incorrect: This calculation likely excludes Accounts Receivable (USD300k / 14k = 21 days) or uses Inventory only (USD600k / 14k = 42.8 days).</p>"
   },
   {
     "id": 4,
@@ -211,7 +211,7 @@
     "id": 10,
     "model": "Gemini",
     "topic": "Net Operating Cycle Calculation",
-    "stem": "Company Z has the following annual data: Cost of Goods Sold $200m; Sales $300m; Beginning Inventory $45m; Ending Inventory $55m; Beginning Payables $20m; Ending Payables $30m; Accounts Receivable Turnover 6.0x. Based on a 365-day year, the Net Operating Cycle is closest to:",
+    "stem": "Company Z has the following annual data: Cost of Goods Sold USD200m; Sales USD300m; Beginning Inventory USD45m; Ending Inventory USD55m; Beginning Payables USD20m; Ending Payables USD30m; Accounts Receivable Turnover 6.0x. Based on a 365-day year, the Net Operating Cycle is closest to:",
     "options": {
       "A": "106 days.",
       "B": "45 days.",
