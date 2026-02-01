@@ -42,7 +42,7 @@
     "id": 4,
     "model": "Gemini 3 Pro",
     "topic": "Disclosure of Risks and Limitations (Capacity)",
-    "stem": "Quantitative analyst Yakovlev develops a small-cap strategy that works well but has a capacity limit of $3 billion, after which returns will degrade. The marketing director tells him to omit this limitation from offering materials because the fund currently has only $100 million. Yakovlev agrees. Has Yakovlev violated Standard V(B)?",
+    "stem": "Quantitative analyst Yakovlev develops a small-cap strategy that works well but has a capacity limit of USD3 billion, after which returns will degrade. The marketing director tells him to omit this limitation from offering materials because the fund currently has only USD100 million. Yakovlev agrees. Has Yakovlev violated Standard V(B)?",
     "options": {
       "A": "No, because the capacity limit is not a material risk at the current asset level.",
       "B": "Yes, because the liquidity/capacity constraint is a significant limitation of the investment process.",
@@ -94,14 +94,14 @@
     "id": 8,
     "model": "Gemini 3 Pro",
     "topic": "Style Drift Notification (Small Cap to Mid Cap)",
-    "stem": "May Associates, a small-cap manager, raises its market-cap ceiling from $2 billion to $8 billion to accommodate asset growth. The CIO updates marketing literature for <em>prospective</em> clients but does not notify <em>existing</em> clients. Has the CIO violated Standard V(B)?",
+    "stem": "May Associates, a small-cap manager, raises its market-cap ceiling from USD2 billion to USD8 billion to accommodate asset growth. The CIO updates marketing literature for <em>prospective</em> clients but does not notify <em>existing</em> clients. Has the CIO violated Standard V(B)?",
     "options": {
       "A": "No, because existing clients will see the change in their next quarterly report holdings.",
       "B": "Yes, because this is a material change in the investment process that affects existing client allocations.",
       "C": "No, because the change was necessary to maintain liquidity, which benefits all clients."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Integrity of the Mandate</h3><p><strong>B is correct.</strong> From first principles, clients construct portfolios using managers as 'building blocks' (e.g., a small-cap block). The governing rule: If the block changes shape (becomes mid-cap), the builder (client) must know. The mechanism of violation: By changing the definition of 'small cap' to include much larger companies ($8B), the firm has engaged in style drift. Existing clients who hired them specifically for small-cap exposure now hold a different asset class. The boundary condition: Notification must be proactive. Relying on clients to spot the drift later is negligence. The manager broke the implied covenant of the specific mandate.</p><p>A is incorrect: Passive disclosure (reporting holdings) is insufficient for active process changes. The flaw is placing the burden of discovery on the client.</p><p>C is incorrect: Operational necessity (liquidity) explains <em>why</em> the change happened, but it doesn't excuse hiding it. The explanation for the change is exactly what must be communicated.</p>"
+    "explanation": "<h3>First Principles Thinking: Integrity of the Mandate</h3><p><strong>B is correct.</strong> From first principles, clients construct portfolios using managers as 'building blocks' (e.g., a small-cap block). The governing rule: If the block changes shape (becomes mid-cap), the builder (client) must know. The mechanism of violation: By changing the definition of 'small cap' to include much larger companies (USD8B), the firm has engaged in style drift. Existing clients who hired them specifically for small-cap exposure now hold a different asset class. The boundary condition: Notification must be proactive. Relying on clients to spot the drift later is negligence. The manager broke the implied covenant of the specific mandate.</p><p>A is incorrect: Passive disclosure (reporting holdings) is insufficient for active process changes. The flaw is placing the burden of discovery on the client.</p><p>C is incorrect: Operational necessity (liquidity) explains <em>why</em> the change happened, but it doesn't excuse hiding it. The explanation for the change is exactly what must be communicated.</p>"
   },
   {
     "id": 1,
@@ -120,7 +120,7 @@
     "id": 2,
     "model": "Gemini 3 Pro",
     "topic": "Client Advice - Guarantees & Misrepresentation",
-    "stem": "Urquhart advises a couple to roll over their retirement assets to a new equity fund managed by his firm. The transfer triggers a $30,000 surrender penalty from their current provider. Urquhart discloses this penalty but assures the couple they &quot;will make up this loss&quot; through the new fund's superior future returns. The new fund is consistent with the couple's risk tolerance. Urquhart *most likely* violated the Standard concerning:",
+    "stem": "Urquhart advises a couple to roll over their retirement assets to a new equity fund managed by his firm. The transfer triggers a USD30,000 surrender penalty from their current provider. Urquhart discloses this penalty but assures the couple they &quot;will make up this loss&quot; through the new fund's superior future returns. The new fund is consistent with the couple's risk tolerance. Urquhart *most likely* violated the Standard concerning:",
     "options": {
       "A": "Suitability, by recommending a transaction that incurs an immediate loss.",
       "B": "Misrepresentation, by guaranteeing a specific recovery of losses on volatile assets.",
