@@ -10,7 +10,7 @@
       "C": "2.50%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Convexity Adjustment Formula</h3><p><strong>A is correct.</strong> The formula for the convexity adjustment is: $$ \\frac{1}{2} \\times \\text{AnnConvexity} \\times (\\Delta \\text{Yield})^2 $$ Given AnnConvexity = 50 and $\\Delta \\text{Yield} = 0.01$ (100 bps): $$ 0.5 \\times 50 \\times (0.01)^2 $$ $$ 0.5 \\times 50 \\times 0.0001 $$ $$ 25 \\times 0.0001 = 0.0025 = 0.25\\% $$</p><p>B is incorrect because it likely forgets the factor of 1/2 or miscalculates the decimal squares.</p><p>C is incorrect because it implies a calculation error by a factor of 10.</p>"
+    "explanation": "<h3>First Principles Thinking: Convexity Adjustment Formula</h3><p><strong>A is correct.</strong> The formula for the convexity adjustment is: $$ \\frac{1}{2} \\times \\text{AnnConvexity} \\times (\\Delta \\text{Yield})^2 $$ Given AnnConvexity = 50 and $\\Delta \\text{Yield} = 0.01USD  (100 bps): $ 0.5 \\times 50 \\times (0.01)^2 $$ $$ 0.5 \\times 50 \\times 0.0001 $$ $$ 25 \\times 0.0001 = 0.0025 = 0.25\\% $$</p><p>B is incorrect because it likely forgets the factor of 1/2 or miscalculates the decimal squares.</p><p>C is incorrect because it implies a calculation error by a factor of 10.</p>"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
       "C": "-8.4%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Duration and Convexity Combined</h3><p><strong>A is correct.</strong> The total estimated price change is the sum of the duration effect and the convexity adjustment: $$ \\%\\Delta P \\approx \\left[ -\\text{AnnModDur} \\times \\Delta \\text{Yield} \\right] + \\left[ \\frac{1}{2} \\times \\text{AnnConvexity} \\times (\\Delta \\text{Yield})^2 \\right] $$ Duration effect: $$ -4.0 \\times 0.02 = -0.08 = -8.0\\% $$ Convexity adjustment: $$ 0.5 \\times 20.0 \\times (0.02)^2 = 10 \\times 0.0004 = 0.004 = +0.4\\% $$ Total change: $$ -8.0\\% + 0.4\\% = -7.6\\% $$</p><p>B is incorrect as it only accounts for duration.</p><p>C is incorrect as it subtracts the convexity adjustment instead of adding it.</p>"
+    "explanation": "<h3>First Principles Thinking: Duration and Convexity Combined</h3><p><strong>A is correct.</strong> The total estimated price change is the sum of the duration effect and the convexity adjustment: $$ \\%\\Delta P \\approx \\left[ -\\text{AnnModDur} \\times \\Delta \\text{Yield} \\right] + \\left[ \\frac{1}{2} \\times \\text{AnnConvexity} \\times (\\Delta \\text{Yield})^2 \\right] $USD  Duration effect: $ -4.0 \\times 0.02 = -0.08 = -8.0\\% $USD  Convexity adjustment: $ 0.5 \\times 20.0 \\times (0.02)^2 = 10 \\times 0.0004 = 0.004 = +0.4\\% $USD  Total change: $ -8.0\\% + 0.4\\% = -7.6\\% $$</p><p>B is incorrect as it only accounts for duration.</p><p>C is incorrect as it subtracts the convexity adjustment instead of adding it.</p>"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
       "C": "1100"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Approximate Convexity Formula</h3><p><strong>A is correct.</strong> The formula for approximate convexity is: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Yield})^2 \\times PV_0} $$ Given $PV_- = 100.60$, $PV_+ = 99.50$, $PV_0 = 100.00$, and $\\Delta \\text{Yield} = 0.001$ (10 bps). $$ \\text{Numerator} = 100.60 + 99.50 - 2(100) = 200.10 - 200 = 0.10 $$ $$ \\text{Denominator} = (0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001 $$ $$ \\text{ApproxCon} = \\frac{0.10}{0.0001} = 1000 $$ Wait, let's recheck the calculation. Numerator is 0.10. Denominator is 0.0001. The result is 1000. Let's adjust the options or the stem. *Self-correction*: If the options are 100, 550, 1100, let's re-read the typical scale. Usually convexity is in tens or hundreds. Let's use $\\Delta y = 0.01$ (100 bps) for easier mental math in the next example or adjust this one. Let's re-calculate with the options provided. If the answer is A (100), the numerator would need to be 0.01 or denominator 0.001. Let's stick to the numbers calculated: 1000. Let's adjust the options to A: 500, B: 1000, C: 2000. **Correction for final output**: I will provide a new question with simpler numbers that fits the options perfectly.</p><p><strong>Revised Question Logic:</strong> $PV_0=100$. Yield change 1% (0.01). $PV_-=102$, $PV_+=99$. Numerator: $102+99-200 = 1$. Denominator: $100 * (0.01)^2 = 0.01$. Result: $1/0.01 = 100$. This fits Option A.</p>"
+    "explanation": "<h3>First Principles Thinking: Approximate Convexity Formula</h3><p><strong>A is correct.</strong> The formula for approximate convexity is: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Yield})^2 \\times PV_0} $USD  Given PV_- = 100.60$, $PV_+ = 99.50$, $PV_0 = 100.00USD , and \\Delta \\text{Yield} = 0.001USD  (10 bps). $ \\text{Numerator} = 100.60 + 99.50 - 2(100) = 200.10 - 200 = 0.10 $$ $$ \\text{Denominator} = (0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001 $$ $$ \\text{ApproxCon} = \\frac{0.10}{0.0001} = 1000 $$ Wait, let's recheck the calculation. Numerator is 0.10. Denominator is 0.0001. The result is 1000. Let's adjust the options or the stem. *Self-correction*: If the options are 100, 550, 1100, let's re-read the typical scale. Usually convexity is in tens or hundreds. Let's use $\\Delta y = 0.01$ (100 bps) for easier mental math in the next example or adjust this one. Let's re-calculate with the options provided. If the answer is A (100), the numerator would need to be 0.01 or denominator 0.001. Let's stick to the numbers calculated: 1000. Let's adjust the options to A: 500, B: 1000, C: 2000. **Correction for final output**: I will provide a new question with simpler numbers that fits the options perfectly.</p><p><strong>Revised Question Logic:</strong> $PV_0=100USD . Yield change 1% (0.01). PV_-=102$, $PV_+=99USD . Numerator: 102+99-200 = 1USD . Denominator: 100 * (0.01)^2 = 0.01USD . Result: 1/0.01 = 100$. This fits Option A.</p>"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "C": "150"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Approximate Convexity</h3><p><strong>B is correct.</strong> Using the formula: $$ \\text{ApproxCon} = \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Yield})^2 \\times PV_0} $$ $PV_- = 102$ (price when yield is down)<br>$PV_+ = 99$ (price when yield is up)<br>$PV_0 = 100$<br>$\\Delta \\text{Yield} = 0.01$ Numerator: $102 + 99 - 2(100) = 201 - 200 = 1$ Denominator: $(0.01)^2 \\times 100 = 0.0001 \\times 100 = 0.01$ Result: $1 / 0.01 = 100$.</p><p>A is incorrect; it is half the correct value.</p><p>C is incorrect; it implies a miscalculation.</p>"
+    "explanation": "<h3>First Principles Thinking: Approximate Convexity</h3><p><strong>B is correct.</strong> Using the formula: $$ \\text{ApproxCon} = \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Yield})^2 \\times PV_0} $$ $PV_- = 102USD  (price when yield is down)<br>PV_+ = 99USD  (price when yield is up)<br>PV_0 = 100$<br>$\\Delta \\text{Yield} = 0.01USD  Numerator: 102 + 99 - 2(100) = 201 - 200 = 1USD  Denominator: (0.01)^2 \\times 100 = 0.0001 \\times 100 = 0.01USD  Result: 1 / 0.01 = 100$.</p><p>A is incorrect; it is half the correct value.</p><p>C is incorrect; it implies a miscalculation.</p>"
   },
   {
     "id": 5,
@@ -81,7 +81,7 @@
     "id": 7,
     "model": "Gemini",
     "topic": "Portfolio Duration Calculation",
-    "stem": "A portfolio consists of two bonds. Bond A has a market value of $40 million and a duration of 4. Bond B has a market value of $60 million and a duration of 9. What is the portfolio duration?",
+    "stem": "A portfolio consists of two bonds. Bond A has a market value of USD 40 million and a duration of 4. Bond B has a market value of 60 million and a duration of 9. What is the portfolio duration?",
     "options": {
       "A": "6.5",
       "B": "7.0",
@@ -114,7 +114,7 @@
       "C": "+3.875%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Yield Decrease Effect</h3><p><strong>A is correct.</strong> Calculate the duration effect and convexity adjustment. $\\Delta \\text{Yield} = -0.005$. Duration Effect: $$ -\\text{ModDur} \\times \\Delta \\text{Yield} = -8 \\times (-0.005) = +0.04 = +4.0\\% $$ Convexity Adjustment: $$ 0.5 \\times \\text{Convexity} \\times (\\Delta \\text{Yield})^2 $$ $$ 0.5 \\times 100 \\times (-0.005)^2 = 50 \\times 0.000025 = 0.00125 = +0.125\\% $$ Total Change: $$ 4.0\\% + 0.125\\% = +4.125\\% $$</p><p>B is incorrect; it ignores convexity.</p><p>C is incorrect; it subtracts the convexity adjustment (convexity always adds value for option-free bonds).</p>"
+    "explanation": "<h3>First Principles Thinking: Yield Decrease Effect</h3><p><strong>A is correct.</strong> Calculate the duration effect and convexity adjustment. $\\Delta \\text{Yield} = -0.005USD . Duration Effect: $ -\\text{ModDur} \\times \\Delta \\text{Yield} = -8 \\times (-0.005) = +0.04 = +4.0\\% $USD  Convexity Adjustment: $ 0.5 \\times \\text{Convexity} \\times (\\Delta \\text{Yield})^2 $$ $$ 0.5 \\times 100 \\times (-0.005)^2 = 50 \\times 0.000025 = 0.00125 = +0.125\\% $USD  Total Change: $ 4.0\\% + 0.125\\% = +4.125\\% $$</p><p>B is incorrect; it ignores convexity.</p><p>C is incorrect; it subtracts the convexity adjustment (convexity always adds value for option-free bonds).</p>"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
       "C": "11.2%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Yield Increase Effect</h3><p><strong>A is correct.</strong> $\\Delta \\text{Yield} = +0.02$. Duration Effect (Loss): $$ -5 \\times 0.02 = -0.10 = -10\\% $$ Convexity Adjustment (Gain): $$ 0.5 \\times 60 \\times (0.02)^2 = 30 \\times 0.0004 = 0.012 = +1.2\\% $$ Total Price Change: $$ -10\\% + 1.2\\% = -8.8\\% $$ The question asks for price *loss*, which is 8.8%.</p><p>B is incorrect; it ignores convexity.</p><p>C is incorrect; it adds the convexity magnitude to the loss instead of reducing the loss.</p>"
+    "explanation": "<h3>First Principles Thinking: Yield Increase Effect</h3><p><strong>A is correct.</strong> $\\Delta \\text{Yield} = +0.02USD . Duration Effect (Loss): $ -5 \\times 0.02 = -0.10 = -10\\% $USD  Convexity Adjustment (Gain): $ 0.5 \\times 60 \\times (0.02)^2 = 30 \\times 0.0004 = 0.012 = +1.2\\% $USD  Total Price Change: $ -10\\% + 1.2\\% = -8.8\\% $$ The question asks for price *loss*, which is 8.8%.</p><p>B is incorrect; it ignores convexity.</p><p>C is incorrect; it adds the convexity magnitude to the loss instead of reducing the loss.</p>"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
       "C": "8 times"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Square Law of Convexity</h3><p><strong>B is correct.</strong> The convexity adjustment depends on $(\\Delta \\text{Yield})^2$. Adjustment for 1% ($\\Delta y$): proportional to $(1)^2 = 1$. Adjustment for 2% ($\\Delta y$): proportional to $(2)^2 = 4$. Since $4 / 1 = 4$, the adjustment is 4 times larger. Specifically: $0.5 \\times C \\times (2x)^2 = 4 \\times (0.5 \\times C \\times x^2)$.</p><p>A is incorrect; it assumes a linear relationship.</p><p>C is incorrect; it assumes a cubic relationship.</p>"
+    "explanation": "<h3>First Principles Thinking: Square Law of Convexity</h3><p><strong>B is correct.</strong> The convexity adjustment depends on $(\\Delta \\text{Yield})^2USD . Adjustment for 1% (\\Delta yUSD ): proportional to (1)^2 = 1USD . Adjustment for 2% (\\Delta yUSD ): proportional to (2)^2 = 4USD . Since 4 / 1 = 4USD , the adjustment is 4 times larger. Specifically: 0.5 \\times C \\times (2x)^2 = 4 \\times (0.5 \\times C \\times x^2)$.</p><p>A is incorrect; it assumes a linear relationship.</p><p>C is incorrect; it assumes a cubic relationship.</p>"
   },
   {
     "id": 12,
@@ -159,7 +159,7 @@
     "id": 13,
     "model": "Gemini",
     "topic": "Portfolio Duration with Cash",
-    "stem": "A portfolio has $80 million in bonds with a duration of 5 and $20 million in cash with a duration of 0. What is the portfolio duration?",
+    "stem": "A portfolio has USD 80 million in bonds with a duration of 5 and 20 million in cash with a duration of 0. What is the portfolio duration?",
     "options": {
       "A": "4.0",
       "B": "5.0",
@@ -179,7 +179,7 @@
       "C": "100"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Convexity Order of Magnitude</h3><p><strong>C is correct.</strong> For a zero-coupon bond, Convexity is approximately the square of the duration (or maturity). If Duration $\\approx$ 10, then Convexity $\\approx 10^2 = 100$. This is a rough rule of thumb derived from the second derivative of the price function $(1+y)^{-T}$. The second derivative introduces a $T(T+1)$ term, which is close to $T^2$.</p><p>A is incorrect; it equals the duration.</p><p>B is incorrect; it equals $2 \\times$ duration.</p>"
+    "explanation": "<h3>First Principles Thinking: Convexity Order of Magnitude</h3><p><strong>C is correct.</strong> For a zero-coupon bond, Convexity is approximately the square of the duration (or maturity). If Duration $\\approxUSD  10, then Convexity \\approx 10^2 = 100USD . This is a rough rule of thumb derived from the second derivative of the price function (1+y)^{-T}USD . The second derivative introduces a T(T+1)USD  term, which is close to T^2$.</p><p>A is incorrect; it equals the duration.</p><p>B is incorrect; it equals $2 \\times$ duration.</p>"
   },
   {
     "id": 15,
@@ -192,20 +192,20 @@
       "C": "-6.25%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Net Calculation</h3><p><strong>A is correct.</strong> Duration Term: $-6 \\times 0.01 = -0.06 = -6.00\\%$. Convexity Term: $0.5 \\times 50 \\times (0.01)^2 = 25 \\times 0.0001 = 0.0025 = +0.25\\%$. Net Change: $-6.00\\% + 0.25\\% = -5.75\\%$.</p><p>B is incorrect; ignores convexity.</p><p>C is incorrect; subtracts convexity.</p>"
+    "explanation": "<h3>First Principles Thinking: Net Calculation</h3><p><strong>A is correct.</strong> Duration Term: $-6 \\times 0.01 = -0.06 = -6.00\\%USD . Convexity Term: 0.5 \\times 50 \\times (0.01)^2 = 25 \\times 0.0001 = 0.0025 = +0.25\\%USD . Net Change: -6.00\\% + 0.25\\% = -5.75\\%$.</p><p>B is incorrect; ignores convexity.</p><p>C is incorrect; subtracts convexity.</p>"
   },
   {
     "id": 16,
     "model": "Gemini",
     "topic": "Dollar Duration vs Dollar Convexity",
-    "stem": "A position has Money Duration of $4,000 and Money Convexity of $1,000,000. For a yield change of 0.01, what is the ratio of the Dollar Duration impact to the Dollar Convexity impact?",
+    "stem": "A position has Money Duration of USD 4,000 and Money Convexity of 1,000,000. For a yield change of 0.01, what is the ratio of the Dollar Duration impact to the Dollar Convexity impact?",
     "options": {
       "A": "40:1",
       "B": "80:1",
       "C": "8:1"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Impact Ratio</h3><p><strong>B is correct.</strong> Dollar Duration Impact: $\\text{MoneyDur} \\times \\Delta y = 4,000 \\times 0.01 = 40$. Dollar Convexity Impact: $0.5 \\times \\text{MoneyCon} \\times (\\Delta y)^2 = 0.5 \\times 1,000,000 \\times 0.0001 = 500,000 \\times 0.0001 = 50$. Wait, let's recheck the numbers. If MoneyDur is 4,000, that's very low relative to convexity. Let's recalculate. Impact 1: 40. Impact 2: 50. Ratio 40:50 is 0.8. That doesn't match options. Let's adjust the Money Duration in the stem to be more realistic, e.g., $4,000,000. New Impact 1: $4,000,000 \\times 0.01 = 40,000$. New Impact 2: $50$. Ratio $40,000 / 50 = 800$. Still not matching options well. Let's assume the question asks for ratio of impacts for a *large* yield change or just use the numbers provided to fit an option. Let's work backwards from Option B (80:1). If ratio is 80, and Conv Impact is $X$, Dur Impact is $80X$. Let $\\Delta y = 0.01$. $D \\times 0.01 / (0.5 \\times C \\times 0.0001) = 80$. $200 D / C = 80$. $D/C = 0.4$. If ModDur=4, Conv=10. This is realistic. Let's rewrite the question with ModDur and Conv, asking for the ratio of percentage impacts.</p><p><strong>Revised Question:</strong> A bond has ModDur 8 and Convexity 20. For a yield change of 1% (0.01), what is the ratio of the duration effect magnitude to the convexity adjustment magnitude?</p><p><strong>Revised Logic:</strong> Duration Effect: $8 \\times 0.01 = 0.08$. Convexity Adj: $0.5 \\times 20 \\times 0.0001 = 0.001$. Ratio: $0.08 / 0.001 = 80$. This fits Option B (80:1).</p>"
+    "explanation": "<h3>First Principles Thinking: Impact Ratio</h3><p><strong>B is correct.</strong> Dollar Duration Impact: $\\text{MoneyDur} \\times \\Delta y = 4,000 \\times 0.01 = 40USD . Dollar Convexity Impact: 0.5 \\times \\text{MoneyCon} \\times (\\Delta y)^2 = 0.5 \\times 1,000,000 \\times 0.0001 = 500,000 \\times 0.0001 = 50USD . Wait, let's recheck the numbers. If MoneyDur is 4,000, that's very low relative to convexity. Let's recalculate. Impact 1: 40. Impact 2: 50. Ratio 40:50 is 0.8. That doesn't match options. Let's adjust the Money Duration in the stem to be more realistic, e.g., 4,000,000. New Impact 1: $4,000,000 \\times 0.01 = 40,000USD . New Impact 2: 50USD . Ratio 40,000 / 50 = 800$. Still not matching options well. Let's assume the question asks for ratio of impacts for a *large* yield change or just use the numbers provided to fit an option. Let's work backwards from Option B (80:1). If ratio is 80, and Conv Impact is $XUSD , Dur Impact is 80XUSD . Let \\Delta y = 0.01$. $D \\times 0.01 / (0.5 \\times C \\times 0.0001) = 80$. $200 D / C = 80$. $D/C = 0.4$. If ModDur=4, Conv=10. This is realistic. Let's rewrite the question with ModDur and Conv, asking for the ratio of percentage impacts.</p><p><strong>Revised Question:</strong> A bond has ModDur 8 and Convexity 20. For a yield change of 1% (0.01), what is the ratio of the duration effect magnitude to the convexity adjustment magnitude?</p><p><strong>Revised Logic:</strong> Duration Effect: $8 \\times 0.01 = 0.08USD . Convexity Adj: 0.5 \\times 20 \\times 0.0001 = 0.001USD . Ratio: 0.08 / 0.001 = 80$. This fits Option B (80:1).</p>"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
       "C": "100 to 1"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Comparing First and Second Order Effects</h3><p><strong>B is correct.</strong> Duration Effect Magnitude: $|-\\text{Dur} \\times \\Delta y| = 8.0 \\times 0.01 = 0.08$. Convexity Adjustment Magnitude: $0.5 \\times \\text{Conv} \\times (\\Delta y)^2 = 0.5 \\times 20.0 \\times (0.01)^2 = 10 \\times 0.0001 = 0.001$. Ratio: $0.08 / 0.001 = 80$. The duration effect is 80 times larger than the convexity effect for this yield change.</p><p>A is incorrect; calculation error.</p><p>C is incorrect; order of magnitude estimate.</p>"
+    "explanation": "<h3>First Principles Thinking: Comparing First and Second Order Effects</h3><p><strong>B is correct.</strong> Duration Effect Magnitude: $|-\\text{Dur} \\times \\Delta y| = 8.0 \\times 0.01 = 0.08USD . Convexity Adjustment Magnitude: 0.5 \\times \\text{Conv} \\times (\\Delta y)^2 = 0.5 \\times 20.0 \\times (0.01)^2 = 10 \\times 0.0001 = 0.001USD . Ratio: 0.08 / 0.001 = 80$. The duration effect is 80 times larger than the convexity effect for this yield change.</p><p>A is incorrect; calculation error.</p><p>C is incorrect; order of magnitude estimate.</p>"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
       "C": "50"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Effective Convexity Formula</h3><p><strong>B is correct.</strong> Formula: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $$ Inputs: $PV_- = 100.9$, $PV_+ = 99.2$, $PV_0 = 100$, $\\Delta \\text{Curve} = 0.001$. Numerator: $100.9 + 99.2 - 200 = 200.1 - 200 = 0.1$. Denominator: $(0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001$. Result: $0.1 / 0.0001 = 1,000$. Wait, let me recheck the math. $0.1 / 10^{-4} = 0.1 \\times 10^4 = 1,000$. Let's adjust the options again. Option B should be 1000. Or let's change the prices. If $PV_-$ was 100.85 and $PV_+$ was 99.20. $100.85+99.20 = 200.05$. Num = 0.05. Result 500. Let's use these numbers.</p><p><strong>Revised Stem:</strong> Up 10 bps -> 99.20. Down 10 bps -> 100.85. Base -> 100. <br><strong>Logic:</strong> Num = $100.85 + 99.20 - 200 = 0.05$. Denom = $100 \\times (0.001)^2 = 0.0001$. Result = $0.05 / 0.0001 = 500$. Fits Option B.</p>"
+    "explanation": "<h3>First Principles Thinking: Effective Convexity Formula</h3><p><strong>B is correct.</strong> Formula: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $USD  Inputs: PV_- = 100.9$, $PV_+ = 99.2$, $PV_0 = 100$, $\\Delta \\text{Curve} = 0.001USD . Numerator: 100.9 + 99.2 - 200 = 200.1 - 200 = 0.1USD . Denominator: (0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001USD . Result: 0.1 / 0.0001 = 1,000USD . Wait, let me recheck the math. 0.1 / 10^{-4} = 0.1 \\times 10^4 = 1,000USD . Let's adjust the options again. Option B should be 1000. Or let's change the prices. If PV_-USD  was 100.85 and PV_+USD  was 99.20. 100.85+99.20 = 200.05$. Num = 0.05. Result 500. Let's use these numbers.</p><p><strong>Revised Stem:</strong> Up 10 bps -> 99.20. Down 10 bps -> 100.85. Base -> 100. <br><strong>Logic:</strong> Num = $100.85 + 99.20 - 200 = 0.05$. Denom = $100 \\times (0.001)^2 = 0.0001$. Result = $0.05 / 0.0001 = 500$. Fits Option B.</p>"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
       "C": "750"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Effective Convexity</h3><p><strong>B is correct.</strong> Using the finite difference formula: $$ \\text{EffConv} = \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $$ $PV_- = 100.85$<br>$PV_+ = 99.20$<br>$PV_0 = 100$<br>$\\Delta \\text{Curve} = 0.001$ (10 bps) $$ \\text{Numerator} = 100.85 + 99.20 - 200 = 0.05 $$ $$ \\text{Denominator} = (0.001)^2 \\times 100 = 0.0001 $$ $$ \\text{Result} = 0.05 / 0.0001 = 500 $$</p><p>A is incorrect; half the result.</p><p>C is incorrect; 1.5 times the result.</p>"
+    "explanation": "<h3>First Principles Thinking: Effective Convexity</h3><p><strong>B is correct.</strong> Using the finite difference formula: $$ \\text{EffConv} = \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $$ $PV_- = 100.85$<br>$PV_+ = 99.20$<br>$PV_0 = 100$<br>$\\Delta \\text{Curve} = 0.001USD  (10 bps) $ \\text{Numerator} = 100.85 + 99.20 - 200 = 0.05 $$ $$ \\text{Denominator} = (0.001)^2 \\times 100 = 0.0001 $$ $$ \\text{Result} = 0.05 / 0.0001 = 500 $$</p><p>A is incorrect; half the result.</p><p>C is incorrect; 1.5 times the result.</p>"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
       "C": "-30.00%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Large Shock Calculation</h3><p><strong>A is correct.</strong> $\\Delta y = 0.03$. Duration Term: $-10 \\times 0.03 = -0.30 = -30\\%$. Convexity Term: $0.5 \\times 150 \\times (0.03)^2 = 75 \\times 0.0009 = 0.0675 = +6.75\\%$. Net Change: $-30\\% + 6.75\\% = -23.25\\%$.</p><p>B is incorrect; calculation error in convexity.</p><p>C is incorrect; ignores convexity.</p>"
+    "explanation": "<h3>First Principles Thinking: Large Shock Calculation</h3><p><strong>A is correct.</strong> $\\Delta y = 0.03USD . Duration Term: -10 \\times 0.03 = -0.30 = -30\\%USD . Convexity Term: 0.5 \\times 150 \\times (0.03)^2 = 75 \\times 0.0009 = 0.0675 = +6.75\\%USD . Net Change: -30\\% + 6.75\\% = -23.25\\%$.</p><p>B is incorrect; calculation error in convexity.</p><p>C is incorrect; ignores convexity.</p>"
   },
   {
     "id": 21,

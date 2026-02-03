@@ -296,7 +296,7 @@
       "C": "$99.50"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: PV Calculation</h3><p><strong>A is correct.</strong> The price of a bond is the present value of its future cash flows. Here, there is one cash flow ($105) at time $t=1$. The discount rate is the 1-year spot rate ($5\\%$). The calculation is $PV = \\frac{CF}{(1+r)^t} = \\frac{105}{1.05} = 100$.</p><p>B is incorrect: This ignores the time value of money entirely, assuming the present value equals the future value.</p><p>C is incorrect: This likely results from a estimation error or applying the discount incorrectly (e.g., $105 \\times 0.95$).</p>"
+    "explanation": "<h3>First Principles Thinking: PV Calculation</h3><p><strong>A is correct.</strong> The price of a bond is the present value of its future cash flows. Here, there is one cash flow (USD 105) at time t=1$. The discount rate is the 1-year spot rate ($5\\%USD ). The calculation is PV = \\frac{CF}{(1+r)^t} = \\frac{105}{1.05} = 100$.</p><p>B is incorrect: This ignores the time value of money entirely, assuming the present value equals the future value.</p><p>C is incorrect: This likely results from a estimation error or applying the discount incorrectly (e.g., $105 \\times 0.95$).</p>"
   },
   {
     "id": 3,
@@ -322,7 +322,7 @@
       "C": "2%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Arithmetic Average Approximation</h3><p><strong>A is correct.</strong> The relationship between spot and forward rates implies that investing for 2 years at the 2-year spot rate should yield roughly the same as investing for 1 year at the 1-year spot rate and rolling it over at the forward rate. The 2-year spot rate is approximately the arithmetic average of the periodic rates: $(4\\% + 6\\%) / 2 = 5\\%$. (The geometric mean would be $\\sqrt{1.04 \\times 1.06} - 1 \\approx 4.995\\%$, extremely close to 5%).</p><p>B is incorrect: This sums the rates ($4+6=10$) without averaging them over the 2-year period.</p><p>C is incorrect: This is a subtraction error or random guess unrelated to the averaging principle.</p>"
+    "explanation": "<h3>First Principles Thinking: Arithmetic Average Approximation</h3><p><strong>A is correct.</strong> The relationship between spot and forward rates implies that investing for 2 years at the 2-year spot rate should yield roughly the same as investing for 1 year at the 1-year spot rate and rolling it over at the forward rate. The 2-year spot rate is approximately the arithmetic average of the periodic rates: $(4\\% + 6\\%) / 2 = 5\\%USD . (The geometric mean would be \\sqrt{1.04 \\times 1.06} - 1 \\approx 4.995\\%$, extremely close to 5%).</p><p>B is incorrect: This sums the rates ($4+6=10$) without averaging them over the 2-year period.</p><p>C is incorrect: This is a subtraction error or random guess unrelated to the averaging principle.</p>"
   },
   {
     "id": 5,
@@ -335,7 +335,7 @@
       "C": "$105.00"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Discounting</h3><p><strong>B is correct.</strong> The price of a zero-coupon bond is calculated as $Price = \\frac{Face Value}{(1+S_2)^2}$. Substituting the simple numbers: $Price = \\frac{121}{(1.10)^2}$. Since $1.10 \\times 1.10 = 1.21$, the calculation becomes $121 / 1.21 = 100$.</p><p>A is incorrect: This discounts for only one year ($121/1.1 = 110$).</p><p>C is incorrect: This approximates the discount or assumes simple interest subtraction ($121 - 2 \\times 10 = 101$).</p>"
+    "explanation": "<h3>First Principles Thinking: Discounting</h3><p><strong>B is correct.</strong> The price of a zero-coupon bond is calculated as $Price = \\frac{Face Value}{(1+S_2)^2}USD . Substituting the simple numbers: Price = \\frac{121}{(1.10)^2}USD . Since 1.10 \\times 1.10 = 1.21USD , the calculation becomes 121 / 1.21 = 100$.</p><p>A is incorrect: This discounts for only one year ($121/1.1 = 110$).</p><p>C is incorrect: This approximates the discount or assumes simple interest subtraction ($121 - 2 \\times 10 = 101$).</p>"
   },
   {
     "id": 6,
@@ -348,7 +348,7 @@
       "C": "2%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Bootstrapping Forwards</h3><p><strong>A is correct.</strong> Using the linear approximation rule (which is sufficient for 'closest to' estimates with low rates): $2 \\times S_2 \\approx S_1 + 1y1y$. Rearranging for the forward rate: $1y1y \\approx (2 \\times 5\\%) - 3\\% = 10\\% - 3\\% = 7\\%$. The investor needs a higher 2nd-year return to justify locking in 5% for two years versus just 3% for the first year.</p><p>B is incorrect: This is the simple average of the two spot rates, not the forward rate.</p><p>C is incorrect: This subtracts the rates ($5-3=2$) without accounting for the fact that the 5% spot rate applies to two years, not one.</p>"
+    "explanation": "<h3>First Principles Thinking: Bootstrapping Forwards</h3><p><strong>A is correct.</strong> Using the linear approximation rule (which is sufficient for 'closest to' estimates with low rates): $2 \\times S_2 \\approx S_1 + 1y1yUSD . Rearranging for the forward rate: 1y1y \\approx (2 \\times 5\\%) - 3\\% = 10\\% - 3\\% = 7\\%$. The investor needs a higher 2nd-year return to justify locking in 5% for two years versus just 3% for the first year.</p><p>B is incorrect: This is the simple average of the two spot rates, not the forward rate.</p><p>C is incorrect: This subtracts the rates ($5-3=2$) without accounting for the fact that the 5% spot rate applies to two years, not one.</p>"
   },
   {
     "id": 7,
@@ -380,27 +380,27 @@
     "id": 9,
     "model": "Gemini 3",
     "topic": "Bond Pricing (Sum of PVs)",
-    "stem": "A 2-year bond with a $100 par value pays an annual coupon of $5. The 1-year spot rate is 5% and the 2-year spot rate is 6%. To calculate the price, you sum:",
+    "stem": "A 2-year bond with a USD 100 par value pays an annual coupon of 5. The 1-year spot rate is 5% and the 2-year spot rate is 6%. To calculate the price, you sum:",
     "options": {
-      "A": "PV of $5 at 5% and PV of $105 at 6%.",
-      "B": "PV of $5 at 5% and PV of $105 at 5%.",
-      "C": "PV of $5 at 6% and PV of $105 at 6%."
+      "A": "PV of USD 5 at 5% and PV of 105 at 6%.",
+      "B": "PV of USD 5 at 5% and PV of 105 at 5%.",
+      "C": "PV of USD 5 at 6% and PV of 105 at 6%."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: No-Arbitrage Valuation</h3><p><strong>A is correct.</strong> Under no-arbitrage valuation, each individual cash flow is viewed as a separate zero-coupon bond and discounted at the spot rate specific to its timing. The Year 1 cash flow ($5) is discounted at $S_1$ (5%). The Year 2 cash flow ($5 coupon + $100 principal = $105) is discounted at $S_2$ (6%).</p><p>B is incorrect: This discounts all flows at $S_1$, ignoring the term structure.</p><p>C is incorrect: This discounts all flows at $S_2$, effectively treating the spot rate as a flat YTM.</p>"
+    "explanation": "<h3>First Principles Thinking: No-Arbitrage Valuation</h3><p><strong>A is correct.</strong> Under no-arbitrage valuation, each individual cash flow is viewed as a separate zero-coupon bond and discounted at the spot rate specific to its timing. The Year 1 cash flow (USD 5) is discounted at S_1USD  (5%). The Year 2 cash flow (5 coupon + $100 principal = USD 105) is discounted at S_2$ (6%).</p><p>B is incorrect: This discounts all flows at $S_1$, ignoring the term structure.</p><p>C is incorrect: This discounts all flows at $S_2$, effectively treating the spot rate as a flat YTM.</p>"
   },
   {
     "id": 10,
     "model": "Gemini 3",
     "topic": "No-Arbitrage Principle",
-    "stem": "If a bond is trading at $98 in the market, but its value calculated using spot rates is $99, an arbitrageur would profit by:",
+    "stem": "If a bond is trading at USD 98 in the market, but its value calculated using spot rates is 99, an arbitrageur would profit by:",
     "options": {
       "A": "Buying the bond and stripping it (selling the individual cash flows).",
       "B": "Selling the bond and buying the individual strips.",
       "C": "Doing nothing; the difference is transaction costs."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Buy Low, Sell High</h3><p><strong>A is correct.</strong> The 'Law of One Price' states that a bundle of goods (the bond) must sell for the sum of the prices of its parts (the strips valued at spot rates). Here, the bundle is cheap ($98) compared to the sum of the parts ($99). An arbitrageur buys the undervalued asset (the bond at 98) and sells the overvalued components (strips at 99) to lock in a risk-free profit of $1.</p><p>B is incorrect: This would involve selling the cheap asset and buying the expensive one, guaranteeing a loss.</p><p>C is incorrect: While transaction costs exist, in a theoretical context, a price discrepancy implies an arbitrage opportunity.</p>"
+    "explanation": "<h3>First Principles Thinking: Buy Low, Sell High</h3><p><strong>A is correct.</strong> The 'Law of One Price' states that a bundle of goods (the bond) must sell for the sum of the prices of its parts (the strips valued at spot rates). Here, the bundle is cheap (USD 98) compared to the sum of the parts (99). An arbitrageur buys the undervalued asset (the bond at 98) and sells the overvalued components (strips at 99) to lock in a risk-free profit of $1.</p><p>B is incorrect: This would involve selling the cheap asset and buying the expensive one, guaranteeing a loss.</p><p>C is incorrect: While transaction costs exist, in a theoretical context, a price discrepancy implies an arbitrage opportunity.</p>"
   },
   {
     "id": 11,
@@ -413,7 +413,7 @@
       "C": "0.75"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Discount Factors</h3><p><strong>A is correct.</strong> The discount factor ($DF$) is the present value of $1 to be received in the future. The formula is $DF = \\frac{1}{1+r}$. With $r = 0.25$, $DF = \\frac{1}{1.25}$. Multiplying numerator and denominator by 4 gives $4/5$, which is $0.80$.</p><p>B is incorrect: This is $(1+r)$, the future value factor, not the discount factor.</p><p>C is incorrect: This calculates $1 - r$ ($1 - 0.25$), which is a linear approximation valid only for very small rates, not 25%.</p>"
+    "explanation": "<h3>First Principles Thinking: Discount Factors</h3><p><strong>A is correct.</strong> The discount factor ($DFUSD ) is the present value of 1 to be received in the future. The formula is $DF = \\frac{1}{1+r}USD . With r = 0.25$, $DF = \\frac{1}{1.25}USD . Multiplying numerator and denominator by 4 gives 4/5USD , which is 0.80$.</p><p>B is incorrect: This is $(1+r)$, the future value factor, not the discount factor.</p><p>C is incorrect: This calculates $1 - r$ ($1 - 0.25$), which is a linear approximation valid only for very small rates, not 25%.</p>"
   },
   {
     "id": 12,
@@ -439,20 +439,20 @@
       "C": "More than 6%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Flat Curve Equality</h3><p><strong>A is correct.</strong> If the yield curve is flat, the discount rate for every cash flow is identical (6%). Mathematically, if you discount every coupon and the principal at the same rate $r$, the bond will trade at par only if the coupon rate equals $r$. Thus, Spot Rate = YTM = Par Rate = Forward Rate in a flat environment.</p><p>B is incorrect: Par rates differ from spot rates only when the curve slopes.</p><p>C is incorrect: Same as above; with a constant discount rate, the coupon must match that rate to price at par.</p>"
+    "explanation": "<h3>First Principles Thinking: Flat Curve Equality</h3><p><strong>A is correct.</strong> If the yield curve is flat, the discount rate for every cash flow is identical (6%). Mathematically, if you discount every coupon and the principal at the same rate $rUSD , the bond will trade at par only if the coupon rate equals r$. Thus, Spot Rate = YTM = Par Rate = Forward Rate in a flat environment.</p><p>B is incorrect: Par rates differ from spot rates only when the curve slopes.</p><p>C is incorrect: Same as above; with a constant discount rate, the coupon must match that rate to price at par.</p>"
   },
   {
     "id": 14,
     "model": "Gemini 3",
     "topic": "Price to Spot Rate (Mental Math)",
-    "stem": "A zero-coupon bond matures in 1 year and is currently trading at $90 with a face value of $100. The 1-year spot rate is closest to:",
+    "stem": "A zero-coupon bond matures in 1 year and is currently trading at USD 90 with a face value of 100. The 1-year spot rate is closest to:",
     "options": {
       "A": "11.1%",
       "B": "10.0%",
       "C": "9.0%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Yield Calculation</h3><p><strong>A is correct.</strong> The spot rate is the percentage return required to grow the price to the face value. Formula: $r = \\frac{FV}{PV} - 1$. Here, $r = \\frac{100}{90} - 1 = \\frac{10}{90} = \\frac{1}{9}$. Since $1/9$ is approximately $0.1111$, the rate is $11.1\\%$.</p><p>B is incorrect: This calculates yield as a percentage of Face Value (discount yield), i.e., $10/100$.</p><p>C is incorrect: This assumes the $10 discount is the yield directly.</p>"
+    "explanation": "<h3>First Principles Thinking: Yield Calculation</h3><p><strong>A is correct.</strong> The spot rate is the percentage return required to grow the price to the face value. Formula: $r = \\frac{FV}{PV} - 1USD . Here, r = \\frac{100}{90} - 1 = \\frac{10}{90} = \\frac{1}{9}USD . Since 1/9USD  is approximately 0.1111USD , the rate is 11.1\\%$.</p><p>B is incorrect: This calculates yield as a percentage of Face Value (discount yield), i.e., $10/100$.</p><p>C is incorrect: This assumes the $10 discount is the yield directly.</p>"
   },
   {
     "id": 15,
@@ -465,7 +465,7 @@
       "C": "2 years from today."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Timeline Addition</h3><p><strong>A is correct.</strong> The notation 'AyBy' means the loan <em>starts</em> at year A and <em>lasts</em> for B years. Therefore, the maturity date (end of the loan) is $Start + Duration = A + B$. Here, $3 + 2 = 5$ years from today.</p><p>B is incorrect: This is when the loan begins.</p><p>C is incorrect: This is the duration of the loan, not the end date.</p>"
+    "explanation": "<h3>First Principles Thinking: Timeline Addition</h3><p><strong>A is correct.</strong> The notation 'AyBy' means the loan <em>starts</em> at year A and <em>lasts</em> for B years. Therefore, the maturity date (end of the loan) is $Start + Duration = A + BUSD . Here, 3 + 2 = 5$ years from today.</p><p>B is incorrect: This is when the loan begins.</p><p>C is incorrect: This is the duration of the loan, not the end date.</p>"
   },
   {
     "id": 16,
@@ -478,7 +478,7 @@
       "C": "4.5%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Weighted Averages</h3><p><strong>A is correct.</strong> Using the approximation formula: $Total Return (3yr) \\approx Total Return (2yr) + Forward Rate$. In annual terms: $3 \\times S_3 \\approx 2 \\times S_2 + 1 \\times (2y1y)$. Rearranging: $(3 \\times 5\\%) - (2 \\times 4\\%) = 15\\% - 8\\% = 7\\%$. The rate must jump significantly to pull the 2-year average of 4% up to a 3-year average of 5%.</p><p>B is incorrect: This is the simple difference ($5-4$), which ignores the duration weighting.</p><p>C is incorrect: This is the simple average, which is conceptually unrelated to bootstrapping.</p>"
+    "explanation": "<h3>First Principles Thinking: Weighted Averages</h3><p><strong>A is correct.</strong> Using the approximation formula: $Total Return (3yr) \\approx Total Return (2yr) + Forward RateUSD . In annual terms: 3 \\times S_3 \\approx 2 \\times S_2 + 1 \\times (2y1y)USD . Rearranging: (3 \\times 5\\%) - (2 \\times 4\\%) = 15\\% - 8\\% = 7\\%$. The rate must jump significantly to pull the 2-year average of 4% up to a 3-year average of 5%.</p><p>B is incorrect: This is the simple difference ($5-4$), which ignores the duration weighting.</p><p>C is incorrect: This is the simple average, which is conceptually unrelated to bootstrapping.</p>"
   },
   {
     "id": 17,
@@ -504,7 +504,7 @@
       "C": "The coupon rate."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Single Cash Flow Discounting</h3><p><strong>A is correct.</strong> A zero-coupon bond has only one cash flow at maturity. The spot rate is defined as the discount rate for a single cash flow at a specific maturity. The YTM is the single rate that equates price to PV. Since there is only one term in the equation ($P = FV/(1+r)^t$), the YTM ($r$) and the spot rate ($S_t$) are mathematically identical.</p><p>B is incorrect: Par rate applies to coupon bonds trading at par, not zeros (which trade at a discount).</p><p>C is incorrect: A zero-coupon bond has a coupon rate of 0%, which is not its yield (unless interest rates are zero).</p>"
+    "explanation": "<h3>First Principles Thinking: Single Cash Flow Discounting</h3><p><strong>A is correct.</strong> A zero-coupon bond has only one cash flow at maturity. The spot rate is defined as the discount rate for a single cash flow at a specific maturity. The YTM is the single rate that equates price to PV. Since there is only one term in the equation ($P = FV/(1+r)^tUSD ), the YTM (rUSD ) and the spot rate (S_t$) are mathematically identical.</p><p>B is incorrect: Par rate applies to coupon bonds trading at par, not zeros (which trade at a discount).</p><p>C is incorrect: A zero-coupon bond has a coupon rate of 0%, which is not its yield (unless interest rates are zero).</p>"
   },
   {
     "id": 19,
@@ -517,20 +517,20 @@
       "C": "Remain unchanged."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Denominator Effect</h3><p><strong>A is correct.</strong> Bond pricing formula: $Price = \\Sigma [CF_t / (1+S_t)^t]$. Spot rates ($S_t$) appear in the denominator. If the denominator increases (rates go up), the fraction (Present Value) decreases. This is the fundamental inverse relationship between interest rates and bond prices.</p><p>B is incorrect: Prices move inversely to yields.</p><p>C is incorrect: Prices are only unchanged if the cash flows adjust (like a floating rate note), but this is a fixed-coupon bond.</p>"
+    "explanation": "<h3>First Principles Thinking: Denominator Effect</h3><p><strong>A is correct.</strong> Bond pricing formula: $Price = \\Sigma [CF_t / (1+S_t)^t]USD . Spot rates (S_t$) appear in the denominator. If the denominator increases (rates go up), the fraction (Present Value) decreases. This is the fundamental inverse relationship between interest rates and bond prices.</p><p>B is incorrect: Prices move inversely to yields.</p><p>C is incorrect: Prices are only unchanged if the cash flows adjust (like a floating rate note), but this is a fixed-coupon bond.</p>"
   },
   {
     "id": 20,
     "model": "Gemini 3",
     "topic": "Simple Forward Calculation",
-    "stem": "Given $(1+S_3)^3 = 1.331$ and $(1+S_2)^2 = 1.21$, the 1-year forward rate two years from now ($1+2y1y$) is:",
+    "stem": "Given $(1+S_3)^3 = 1.331USD  and (1+S_2)^2 = 1.21$, the 1-year forward rate two years from now ($1+2y1y$) is:",
     "options": {
       "A": "1.10",
       "B": "1.121",
       "C": "0.121"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Division of Growth Factors</h3><p><strong>A is correct.</strong> The relationship is $(1+S_3)^3 = (1+S_2)^2 \\times (1+2y1y)$. To isolate the forward component, divide the 3-year growth factor by the 2-year growth factor: $\\frac{1.331}{1.21}$. Recognizing powers of 11: $1.331 = 1.1^3$ and $1.21 = 1.1^2$. Therefore, $1.1^3 / 1.1^2 = 1.1^1 = 1.10$. The forward rate is 10%.</p><p>B is incorrect: Calculation error.</p><p>C is incorrect: This is the difference ($1.331 - 1.21$), not the ratio.</p>"
+    "explanation": "<h3>First Principles Thinking: Division of Growth Factors</h3><p><strong>A is correct.</strong> The relationship is $(1+S_3)^3 = (1+S_2)^2 \\times (1+2y1y)$. To isolate the forward component, divide the 3-year growth factor by the 2-year growth factor: $\\frac{1.331}{1.21}USD . Recognizing powers of 11: 1.331 = 1.1^3USD  and 1.21 = 1.1^2USD . Therefore, 1.1^3 / 1.1^2 = 1.1^1 = 1.10$. The forward rate is 10%.</p><p>B is incorrect: Calculation error.</p><p>C is incorrect: This is the difference ($1.331 - 1.21$), not the ratio.</p>"
   },
   {
     "id": 21,
@@ -660,7 +660,7 @@
       "C": "$5,000,000"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Money Duration Formula</h3><p><strong>A is correct.</strong> Money duration measures dollar price change per 1% yield change: \\( MoneyDur = ModDur \\times Market\\,Value \\). Market value = \\( 10,000,000 \\times 0.98 = 9,800,000 \\). Thus \\( MoneyDur = 5 \\times 9,800,000 = 49,000,000 \\) per 100% yield change. Per 1% (0.01) yield change: \\( 49,000,000 \\times 0.01 = 490,000 \\). Alternatively, \\( MoneyDur = 5 \\times 9,800,000 = \\$490,000 \\) directly (modified duration already incorporates the \"per unit yield change\" scaling). Mental check: 5% of $9.8M ≈ $490k. Money duration converts percentage sensitivity into dollar terms, enabling position-level risk management and is essential for hedging calculations where absolute dollar exposure matters more than percentage changes.</p><p>B is incorrect because $500,000 uses par value ($10M) instead of market value ($9.8M): \\( 5 \\times 10,000,000 \\times 0.01 = 500,000 \\). Bond risk metrics must use current market value, not face value, because price changes occur from current levels, not par. A bond trading at 98 has less dollar value at risk than one at 100, so using par overstates money duration by approximately 2%.</p><p>C is incorrect because $5,000,000 results from forgetting to scale by the yield change magnitude or misunderstanding money duration units. This equals 50% of the market value, which would only occur for a 10% (1,000 bp) yield change: \\( 5 \\times 0.10 = 0.50 = 50\\% \\). Money duration should reflect a standard 1% yield change, not 10%, making this answer 10x too large.</p>"
+    "explanation": "<h3>First Principles Thinking: Money Duration Formula</h3><p><strong>A is correct.</strong> Money duration measures dollar price change per 1% yield change: \\( MoneyDur = ModDur \\times Market\\,Value \\). Market value = \\( 10,000,000 \\times 0.98 = 9,800,000 \\). Thus \\( MoneyDur = 5 \\times 9,800,000 = 49,000,000 \\) per 100% yield change. Per 1% (0.01) yield change: \\( 49,000,000 \\times 0.01 = 490,000 \\). Alternatively, \\( MoneyDur = 5 \\times 9,800,000 = \\$490,000 \\) directly (modified duration already incorporates the \"per unit yield change\" scaling). Mental check: 5% of USD 9.8M ≈ 490k. Money duration converts percentage sensitivity into dollar terms, enabling position-level risk management and is essential for hedging calculations where absolute dollar exposure matters more than percentage changes.</p><p>B is incorrect because USD 500,000 uses par value (10M) instead of market value ($9.8M): \\( 5 \\times 10,000,000 \\times 0.01 = 500,000 \\). Bond risk metrics must use current market value, not face value, because price changes occur from current levels, not par. A bond trading at 98 has less dollar value at risk than one at 100, so using par overstates money duration by approximately 2%.</p><p>C is incorrect because $5,000,000 results from forgetting to scale by the yield change magnitude or misunderstanding money duration units. This equals 50% of the market value, which would only occur for a 10% (1,000 bp) yield change: \\( 5 \\times 0.10 = 0.50 = 50\\% \\). Money duration should reflect a standard 1% yield change, not 10%, making this answer 10x too large.</p>"
   },
   {
     "id": 10,
@@ -777,7 +777,7 @@
       "C": "Macaulay duration by 500,000 years"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Money Duration Application</h3><p><strong>B is correct.</strong> Money duration directly measures dollar price change per 1% yield change, so reducing it by $500,000 directly achieves the goal. If current \\( MoneyDur = \\$10M \\) and target is \\( \\$9.5M \\), the manager reduces money duration by \\( \\$500k \\). This can be accomplished by selling bonds, adding short-duration bonds, or using derivatives. Money duration is the appropriate metric for position-level risk management because it translates percentage sensitivities into dollar terms, enabling direct comparison with risk limits, P&L targets, and hedge requirements. This is essential for practical risk management where absolute dollar exposures matter more than percentage sensitivities.</p><p>A is incorrect because modified duration is a percentage measure, not a dollar measure. Reducing modified duration by 5 (from, say, 6 to 1) doesn't directly specify the dollar risk reduction—the outcome depends on portfolio value. If the portfolio is $10M at MD=6, money duration is $600k (\\( 6 \\times 10M \\times 0.01 \\)). Reducing MD to 1 gives \\( 1 \\times 10M \\times 0.01 = 100k \\), a $500k reduction. But without knowing portfolio value, adjusting \"modified duration by 5\" doesn't precisely target a $500k money duration reduction.</p><p>C is incorrect because Macaulay duration measures weighted-average time (in years), not dollar risk. \"500,000 years\" is a nonsensical unit for duration. Even if this meant reducing Macaulay duration by 5 years (interpreting \"500,000\" as a typo), it still doesn't directly translate to dollar risk without knowing portfolio value and yield levels. Macaulay duration is primarily a theoretical construct; for risk management, modified or money duration is appropriate.</p>"
+    "explanation": "<h3>First Principles Thinking: Money Duration Application</h3><p><strong>B is correct.</strong> Money duration directly measures dollar price change per 1% yield change, so reducing it by $500,000 directly achieves the goal. If current \\( MoneyDur = \\$10M \\) and target is \\( \\$9.5M \\), the manager reduces money duration by \\( \\$500k \\). This can be accomplished by selling bonds, adding short-duration bonds, or using derivatives. Money duration is the appropriate metric for position-level risk management because it translates percentage sensitivities into dollar terms, enabling direct comparison with risk limits, P&L targets, and hedge requirements. This is essential for practical risk management where absolute dollar exposures matter more than percentage sensitivities.</p><p>A is incorrect because modified duration is a percentage measure, not a dollar measure. Reducing modified duration by 5 (from, say, 6 to 1) doesn't directly specify the dollar risk reduction—the outcome depends on portfolio value. If the portfolio is $10M at MD=6, money duration is $600k (\\( 6 \\times 10M \\times 0.01 \\)). Reducing MD to 1 gives \\( 1 \\times 10M \\times 0.01 = 100k \\), a USD 500k reduction. But without knowing portfolio value, adjusting \"modified duration by 5\" doesn't precisely target a 500k money duration reduction.</p><p>C is incorrect because Macaulay duration measures weighted-average time (in years), not dollar risk. \"500,000 years\" is a nonsensical unit for duration. Even if this meant reducing Macaulay duration by 5 years (interpreting \"500,000\" as a typo), it still doesn't directly translate to dollar risk without knowing portfolio value and yield levels. Macaulay duration is primarily a theoretical construct; for risk management, modified or money duration is appropriate.</p>"
   },
   {
     "id": 19,
@@ -818,5 +818,4 @@
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Reinvestment Risk for Buy-and-Hold</h3><p><strong>A is correct.</strong> Buy-and-hold investors (to maturity) face only reinvestment risk, not price risk, since bonds redeem at par. When rates fall, coupons are reinvested at lower rates than the original YTM, reducing the future value of reinvested coupons: \\( FV_{coupons} = \\sum c \\times (1+r_{new})^{remaining} \\), where \\( r_{new} < r_{original} \\). Since total return includes both coupon and reinvestment income, lower reinvestment rates drag realized return below the original YTM. For example, buying at 6% YTM but reinvesting coupons at 4% produces \\( Horizon\\,Yield < 6\\% \\). This fundamental relationship shows that YTM equals realized return only if reinvestment occurs at the same YTM—a restrictive assumption rarely met in practice.</p><p>B is incorrect because equal returns require reinvesting coupons at exactly the original YTM. The question specifies falling rates, violating this assumption. The YTM at purchase is a promised yield contingent on specific reinvestment assumptions. When those assumptions fail (rates change), realized yield diverges from promised yield. This answer misunderstands YTM as a guaranteed return rather than a scenario-dependent expectation.</p><p>C is incorrect because higher returns occur when rates rise, not fall. Rising rates boost reinvestment income for buy-and-hold investors, increasing total return above the original YTM. Falling rates have the opposite effect, reducing reinvestment income. This answer confuses the direction of reinvestment risk impact—it correctly identifies that rate changes affect returns but reverses which direction benefits buy-and-hold investors.</p>"
   }
-] 
-
+]
