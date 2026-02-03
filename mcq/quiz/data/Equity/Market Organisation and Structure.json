@@ -205,7 +205,7 @@
       "C": "USD 0.15"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15$. The market spread is $\\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid (USD 50.00) and the worst possible ask (USD 50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
+    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15USD . The market spread is \\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid (USD 50.00) and the worst possible ask (USD 50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
   },
   {
     "id": 17,
@@ -687,7 +687,7 @@
       "C": "USD 33.33"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = USD 50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = USD 50 \times 0.60 = USD 30. <br>Equity at any price $P$ is $P - \text{Loan}$. <br>The critical condition is: $\frac{P - \text{Loan}}{P} = \text{Maintenance Margin}$. <br>Substitute values: $\frac{P - 30}{P} = 0.25$. <br>Solve for $P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to USD 40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
+    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = USD 50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = USD 50 \times 0.60 = USD 30. <br>Equity at any price $PUSD  is P - \text{Loan}USD . <br>The critical condition is: \frac{P - \text{Loan}}{P} = \text{Maintenance Margin}USD . <br>Substitute values: \frac{P - 30}{P} = 0.25USD . <br>Solve for P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to USD 40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
   },
   {
     "id": 4,
@@ -739,7 +739,7 @@
       "C": "-25%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = USD 100 \times 0.50 = $50$. <br>Price change = USD 110 - USD 100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return $\times$ Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
+    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = USD 100 \times 0.50 = $50$. <br>Price change = USD 110 - USD 100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return USD \times Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
   },
   {
     "id": 8,
@@ -817,7 +817,7 @@
       "C": "20.0%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5$. <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>$\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}$. <br>$ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = USD 5,000. Equity = USD 40,000. USD 5,000/USD 40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
+    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5USD . <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}USD . <br>ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = USD 5,000. Equity = USD 40,000. USD 5,000/USD 40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
   },
   {
     "id": 14,
@@ -1106,7 +1106,3 @@
     "explanation": "<h3>First Principles Thinking: Pricing Outcomes</h3><p><strong>B is correct.</strong> The issuer and the investment bank jointly set the offering price[cite: 34]. If they set a price that buyers consider **too high**, the offering will be **undersubscribed**, meaning they will fail to sell the entire issue at that price[cite: 35]. Conversely, if the price is set too low, the offering will be oversubscribed [cite: 36].</p><p>A is incorrect: Setting the price **too low** will result in the offering being **oversubscribed**, not undersubscribed [cite: 36].</p><p>C is incorrect: The underwriter's market-making commitment (providing liquidity/price support after the IPO) is a related service, but the initial undersubscription is a consequence of the price being too high relative to market demand[cite: 28, 35].</p>"
   }
 ]
-
-
-
-
