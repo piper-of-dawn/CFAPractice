@@ -27,8 +27,6 @@ from quiz.views import (
     mistakes,
     mistakes_grouped,
     master,
-    flashcards_index,
-    flashcards_render,
 )
 
 urlpatterns = [
@@ -44,6 +42,4 @@ urlpatterns = [
     path('api/mistakes_dump/', api_mistakes_dump, name='api_mistakes_dump'),
     path('legacy/', mcq, name='mcq'),
     path('reset/', reset, name='reset'),
-    path('flashcards/', flashcards_index, name='flashcards_index'),
-    path('flashcards/<str:name>/', flashcards_render, name='flashcards_render'),
 ]
