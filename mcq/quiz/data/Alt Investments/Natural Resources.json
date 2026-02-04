@@ -18,7 +18,7 @@
     "id": 2,
     "model": "Gemini 3 Pro",
     "topic": "Commodity Futures Pricing",
-    "stem": "Consider the following statements regarding Commodity Futures pricing mechanics: \n 1. In a Contango market, the forward price is higher than the spot price ($F > S$). \n 2. A negative roll yield is experienced by a long investor in a Contango market. \n 3. The convenience yield is added to the risk-free rate when calculating the theoretical forward price. \n 4. High inventory levels generally decrease the convenience yield, increasing the likelihood of Contango. \n Which of the statements given above are correct?",
+    "stem": "Consider the following statements regarding Commodity Futures pricing mechanics: \n 1. In a Contango market, the forward price is higher than the spot price (USD F > S). \n 2. A negative roll yield is experienced by a long investor in a Contango market. \n 3. The convenience yield is added to the risk-free rate when calculating the theoretical forward price. \n 4. High inventory levels generally decrease the convenience yield, increasing the likelihood of Contango. \n Which of the statements given above are correct?",
     "options": {
       "A": "1, 2, and 3 only",
       "B": "1, 2, and 4 only",
@@ -26,7 +26,7 @@
       "D": "1, 2, 3, and 4"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Cost of Carry Model</h3><p><strong>B is correct.</strong> Start with the pricing formula: $F = S \times e^{(r + c - y)}$. Contango ($F > S$) occurs when costs ($r+c$) exceed benefits ($y$). Statement 1 is the definition of Contango. Statement 2 is true because in Contango, a long investor must sell a cheaper expiring contract and buy a more expensive future one, losing money on the 'roll'. Statement 4 is true because if inventory is high, there is no scarcity benefit (convenience yield $y$ drops), so costs dominate, causing Contango.</p><p>Statement 3 is incorrect (making A, C, and D wrong): The convenience yield is a *benefit* of holding the physical asset. Therefore, it reduces the fair future price. It is *subtracted* from the cost of carry ($r+c-y$), not added.</p>",
+    "explanation": "<h3>First Principles Thinking: Cost of Carry Model</h3><p><strong>B is correct.</strong> Start with the pricing formula: $F = S \times e^{(r + c - y)}USD . Contango (F > SUSD ) occurs when costs (r+cUSD ) exceed benefits (yUSD ). Statement 1 is the definition of Contango. Statement 2 is true because in Contango, a long investor must sell a cheaper expiring contract and buy a more expensive future one, losing money on the 'roll'. Statement 4 is true because if inventory is high, there is no scarcity benefit (convenience yield y$ drops), so costs dominate, causing Contango.</p><p>Statement 3 is incorrect (making A, C, and D wrong): The convenience yield is a *benefit* of holding the physical asset. Therefore, it reduces the fair future price. It is *subtracted* from the cost of carry ($r+c-y$), not added.</p>",
     "topic_id": "natural_resources_02"
   },
   {
@@ -108,7 +108,7 @@
     "id": 8,
     "model": "Gemini 3 Pro",
     "topic": "Backwardation Mechanics",
-    "stem": "Assertion (A): In a commodity market characterized by Backwardation, the roll yield for a long futures position is positive. \n Reason (R): In Backwardation, the futures price is lower than the spot price ($F < S$), requiring the futures contract to converge upward toward the spot price as it approaches maturity.",
+    "stem": "Assertion (A): In a commodity market characterized by Backwardation, the roll yield for a long futures position is positive. \n Reason (R): In Backwardation, the futures price is lower than the spot price (USD F < S), requiring the futures contract to converge upward toward the spot price as it approaches maturity.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -228,7 +228,7 @@
     "id": 16,
     "model": "Gemini 3 Pro",
     "topic": "Contango and Storage",
-    "stem": "Assertion (A): A commodity market is likely to be in Contango ($F > S$) when inventory levels are high and storage costs are significant. \n Reason (R): To induce arbitrageurs to hold physical inventory, the future price must exceed the spot price by a premium sufficient to cover the costs of storage and financing.",
+    "stem": "Assertion (A): A commodity market is likely to be in Contango (USD F > S) when inventory levels are high and storage costs are significant. \n Reason (R): To induce arbitrageurs to hold physical inventory, the future price must exceed the spot price by a premium sufficient to cover the costs of storage and financing.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -311,7 +311,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: The Roll Process</h3><p><strong>A is correct.</strong> Contango means the price curve slopes up ($Spot < Future$). You own the Spot month. It is about to expire. You must sell it (at Low Price X). You want to keep the position. You must buy the Next month. It costs (High Price X+Y). You just sold low and bought high. You have fewer contracts for the same money. This loss of value is the 'negative roll yield'. R describes the mechanical action that causes the loss in A.</p><p>B is incorrect because the causal link is direct. C and D are incorrect as both are true.</p>",
+    "explanation": "<h3>First Principles Thinking: The Roll Process</h3><p><strong>A is correct.</strong> Contango means the price curve slopes up (USD Spot < Future). You own the Spot month. It is about to expire. You must sell it (at Low Price X). You want to keep the position. You must buy the Next month. It costs (High Price X+Y). You just sold low and bought high. You have fewer contracts for the same money. This loss of value is the 'negative roll yield'. R describes the mechanical action that causes the loss in A.</p><p>B is incorrect because the causal link is direct. C and D are incorrect as both are true.</p>",
     "topic_id": "natural_resources_21"
   }
 ]
