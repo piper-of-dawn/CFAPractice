@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "When conducting a parametric test to determine if a population correlation coefficient differs from zero, which probability distribution does the test statistic follow?",
+    "options": {
+      "A": "t-distribution",
+      "B": "z-distribution",
+      "C": "Chi-square distribution"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The role of the t-distribution in correlation testing</h3><p><strong>A is correct.</strong> The primitive concept is that testing the significance of a Pearson correlation coefficient ($r$) relies on the standard error of $r$, which depends on sample size. The governing rule is that for normally distributed variables, the test statistic $t = \\frac{r\\sqrt{n-2}}{\sqrt{1-r^2}}$ follows a t-distribution with $n-2$ degrees of freedom. The PDF explicitly states: \"This test statistic is t-distributed with $n - 2$ degrees of freedom.\"</p><p>B is wrong because the z-distribution is typically used for tests involving known variances or large sample proportions, not for the standard parametric test of a correlation coefficient in this context.</p><p>C is wrong because the Chi-square distribution is used for the nonparametric test of independence (contingency tables), not the parametric correlation test.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "In a parametric test of the hypothesis that the population correlation coefficient equals zero involving $n$ observations, the degrees of freedom are:",
+    "options": {
+      "A": "n - 1",
+      "B": "n - 2",
+      "C": "n"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Degrees of freedom in bivariate analysis</h3><p><strong>B is correct.</strong> The primitive concept is that degrees of freedom ($df$) represent the number of independent pieces of information. In a correlation calculation involving two variables ($X$ and $Y$), two parameters (means of $X$ and $Y$) are estimated. The governing rule from the PDF is that the test statistic has \"$n - 2$ degrees of freedom.\"</p><p>A is wrong because $n - 1$ is the standard degrees of freedom for a single sample mean or variance test, not for bivariate correlation.</p><p>C is wrong because it fails to account for the estimation of parameters required to calculate the statistic.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "An analyst tests the significance of a correlation coefficient $r = 0.40$. If the sample size $n$ increases while the correlation coefficient remains constant, the calculated t-statistic will most likely:",
+    "options": {
+      "A": "Increase",
+      "B": "Decrease",
+      "C": "Remain the same"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Impact of sample size on statistical significance</h3><p><strong>A is correct.</strong> The primitive concept is the formula for the t-statistic: $t = \\frac{r\\sqrt{n-2}}{\sqrt{1-r^2}}$. The governing rule is that $n$ is in the numerator under the square root. Intuition suggests that more data provides stronger evidence. Mathematically, as $n$ increases, $\\sqrt{n-2}$ increases. Since $r$ (and thus the denominator $\\sqrt{1-r^2}$) is constant, the total value of $t$ increases. The PDF notes: \"the absolute value of the numerator increases with larger $n$, resulting in a larger magnitude of the calculated t-statistic.\"</p><p>B is wrong because increasing $n$ makes the numerator larger, not smaller.</p><p>C is wrong because $n$ is a direct variable in the formula.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "Which of the following is a necessary assumption for performing a parametric t-test on a correlation coefficient?",
+    "options": {
+      "A": "The variables are normally distributed.",
+      "B": "The variables are ranked.",
+      "C": "The variables are categorical."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Assumptions of parametric tests</h3><p><strong>A is correct.</strong> The primitive concept is the definition of \"parametric,\" which implies assumptions about the population parameters and distribution. The governing rule stated in the PDF is: \"If the two variables are normally distributed, we can test... using the sample correlation, $r$.\" This normality is a prerequisite for the t-test validity in this context.</p><p>B is wrong because ranked data is used for the Nonparametric (Spearman) test, not the parametric Pearson test.</p><p>C is wrong because categorical data is analyzed using the Chi-square test of independence (contingency tables).</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "The null hypothesis ($H_0$) for a parametric test investigating whether a relationship exists between two variables is most accurately stated as:",
+    "options": {
+      "A": "$\\rho = 0$",
+      "B": "$r = 0$",
+      "C": "$\\rho = 1$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Formulation of statistical hypotheses</h3><p><strong>A is correct.</strong> The primitive concept is that hypotheses are always statements about population parameters, not sample statistics. The governing rule is that \"no relationship\" implies a population correlation of zero. The PDF states: \"H0: $\\rho = 0$ versus Ha: $\\rho \\neq 0$\".</p><p>B is wrong because hypotheses are defined for population parameters (Greek letters like $\\rho$), not sample statistics (Latin letters like $r$).</p><p>C is wrong because $\\rho = 1$ implies a perfect positive linear relationship, not independence (no relationship).</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "Given a sample correlation $r = 0.50$ and a sample size of $n = 6$, the calculated t-statistic is closest to:",
+    "options": {
+      "A": "1.15",
+      "B": "1.00",
+      "C": "0.58"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Calculating the test statistic</h3><p><strong>A is correct.</strong> The primitive concept is the substitution of values into the t-test formula: $t = \\frac{r\\sqrt{n-2}}{\sqrt{1-r^2}}$. <br>Step 1: Degrees of freedom part $\\sqrt{n-2} = \\sqrt{6-2} = \\sqrt{4} = 2$. <br>Step 2: Denominator $\\sqrt{1 - 0.5^2} = \\sqrt{1 - 0.25} = \\sqrt{0.75} \\approx 0.866$. <br>Step 3: Calculate $t = \\frac{0.5 \\times 2}{0.866} = \\frac{1}{0.866} \\approx 1.15$.</p><p>B is wrong because it likely ignores the denominator or miscalculates the root.</p><p>C is wrong because it likely omits the $\\sqrt{n-2}$ term.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Parametric Test of a Correlation",
+    "stem": "If the calculated t-statistic for a correlation coefficient exceeds the critical value, the analyst should most likely:",
+    "options": {
+      "A": "Reject the null hypothesis and conclude the correlation is significant.",
+      "B": "Fail to reject the null hypothesis and conclude the correlation is zero.",
+      "C": "Reject the alternative hypothesis and conclude the variables are independent."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: interpreting hypothesis test results</h3><p><strong>A is correct.</strong> The primitive concept is the decision rule in hypothesis testing. The governing rule is that if the test statistic falls in the rejection region (is more extreme than the critical value), we reject $H_0$. Since $H_0$ is $\\rho = 0$ (no correlation), rejecting it implies accepting $H_a$ ($\\rho \\neq 0$). The PDF states: \"If we find that the calculated value... is more extreme than the critical value... we reject the null hypothesis... result is statistically significant.\"</p><p>B is wrong because this is the conclusion when the statistic is *less* extreme than the critical value.</p><p>C is wrong because we do not reject the alternative; we reject the null to support the alternative.</p>"
+  }
+]
