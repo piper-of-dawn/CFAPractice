@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "topic": "The Cs of Credit Analysis",
+    "stem": "Consider the following factors used in credit analysis:\n\nI. Capacity\nII. Capital\nIII. Character\n\nHow many of the above are classified as \"bottom-up\" factors?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>C is correct.</strong> The text classifies the \"Cs of credit\" into specific bottom-up factors (related to the individual borrower) and general top-down factors (related to the macro environment). The bottom-up factors are Capacity, Capital, Collateral, Covenants, and Character. The top-down factors are Conditions, Country, and Currency. Evaluating the items:\n1. Capacity is a bottom-up factor.\n2. Capital is a bottom-up factor.\n3. Character is a bottom-up factor.\nSince all three items satisfy the condition, the count is three.</p>\n<p>Why option A is incorrect. It underestimates the count; all listed items are bottom-up factors.</p>\n<p>Why option B is incorrect. It underestimates the count; all listed items are bottom-up factors.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "The Cs of Credit Analysis",
+    "stem": "Consider the following Cs of credit analysis:\n\nI. Capacity\nII. Collateral\nIII. Covenants\n\nHow many of the above are described as largely qualitative measures?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>B is correct.</strong> The text distinguishes between quantitative metrics (based on financial statements) and qualitative measures (based on relationships, reputation, and terms). Specifically, Capacity and Capital are described as generally quantitative. Collateral, Covenants, and Character are described as largely qualitative. Evaluating the items:\n1. Capacity is a quantitative metric.\n2. Collateral is a qualitative measure.\n3. Covenants is a qualitative measure.\nSince exactly two items (Collateral and Covenants) satisfy the condition, the count is two.</p>\n<p>Why option A is incorrect. It underestimates the count.</p>\n<p>Why option C is incorrect. Capacity is a quantitative metric, not qualitative.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Sources of Repayment",
+    "stem": "Consider the following potential sources of repayment:\n\nI. Operating cash flows\nII. Sovereign tax revenues\nIII. Asset sales\n\nHow many of the above are listed as primary or secondary sources of repayment for a Corporate borrower?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>B is correct.</strong> The text identifies specific sources of cash flow generation for different borrower types. For Corporate borrowers, primary sources include business operations (operating cash flows) and secondary sources include asset sales, divestitures, and financing. Sovereign tax revenues are a source for Sovereign borrowers, not Corporate. Evaluating the items:\n1. Operating cash flows is a primary corporate source.\n2. Sovereign tax revenues is a sovereign source.\n3. Asset sales is a secondary corporate source.\nSince exactly two items (Operating cash flows and Asset sales) satisfy the condition, the count is two.</p>\n<p>Why option A is incorrect. It underestimates the count.</p>\n<p>Why option C is incorrect. Sovereign tax revenues are not a source for corporate borrowers.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Credit Ratings",
+    "stem": "Consider the following credit ratings:\n\nI. Baa3\nII. BBB-\nIII. Ba1\n\nHow many of the above are classified as \"non-investment grade\" (high yield)?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>A is correct.</strong> The text defines the boundary between investment grade and non-investment grade (high yield). Investment grade includes ratings of Baa3 (Moody's) and BBB- (S&P/Fitch) or higher. Non-investment grade includes ratings of Ba1 (Moody's) and BB+ (S&P/Fitch) or lower. Evaluating the items:\n1. Baa3 is Investment Grade (the lowest rung).\n2. BBB- is Investment Grade (the lowest rung).\n3. Ba1 is Non-Investment Grade (the highest rung of high yield).\nSince exactly one item (Ba1) satisfies the condition, the count is one.</p>\n<p>Why option B is incorrect. It incorrectly identifies an investment grade rating as non-investment grade.</p>\n<p>Why option C is incorrect. Baa3 and BBB- are investment grade ratings.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Credit Risk Components",
+    "stem": "Consider the following statements regarding credit risk components:\n\nI. Expected Loss is the product of the Probability of Default and the Loss Given Default.\nII. Loss Given Default is the investor's loss conditional on an issuer event of default.\nIII. The Recovery Rate represents the percentage of the expected loss that is recovered.\n\nHow many of the above statements are accurate according to the text?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>B is correct.</strong> The text provides precise definitions for credit risk components. Evaluating the items:\n1. Correct. The text states \"their product is expected loss\" ($EL = POD \\times LGD$).\n2. Correct. The text defines LGD as the \"investor's loss conditional on an issuer event of default.\"\n3. Incorrect. The text states the Recovery Rate represents the percentage of an \"outstanding debt claim\" (or exposure) recovered, not a percentage of the \"expected loss.\"\nSince exactly two statements are accurate, the count is two.</p>\n<p>Why option A is incorrect. It underestimates the count of accurate statements.</p>\n<p>Why option C is incorrect. Statement III is definitionally imprecise regarding the denominator of the recovery rate.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Seniority Rankings",
+    "stem": "Consider the following types of debt:\n\nI. First Lien Debt\nII. Second Lien Debt\nIII. Senior Unsecured Debt\n\nHow many of the above have a higher priority of claim than Subordinated Debt?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>C is correct.</strong> The text and standard priority of claims rank debt from highest to lowest recovery rate/priority. The ranking is typically: First Lien > Second Lien > Senior Unsecured > Subordinated > Junior Subordinated. Evaluating the items against \"Subordinated Debt\":\n1. First Lien Debt is higher (Secured).\n2. Second Lien Debt is higher (Secured).\n3. Senior Unsecured Debt is higher (Unsecured but senior to subordinated).\nSince all three items satisfy the condition, the count is three.</p>\n<p>Why option A is incorrect. It underestimates the count.</p>\n<p>Why option B is incorrect. It underestimates the count.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Credit Rating Limitations",
+    "stem": "Consider the following potential limitations of credit ratings:\n\nI. Rating agency decisions may lag market pricing of credit risk.\nII. Ratings may overlook key financial risks or involve miscalculations.\nIII. Ratings always capture environmental risks accurately.\n\nHow many of the above are explicitly described as pitfalls or limitations of relying on credit ratings?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3>\n<p><strong>B is correct.</strong> The text explicitly lists pitfalls of relying solely on credit ratings. Evaluating the items:\n1. Listed as a pitfall. The text states rating agency decisions \"may lag market pricing of credit risk.\"\n2. Listed as a pitfall. The text states they may \"overlook key financial risks... or involve miscalculations.\"\n3. Not a limitation/False. The text states that some risks, such as environmental risks, are \"difficult to capture in credit ratings,\" contradicting the claim that they are always captured accurately.\nSince exactly two items satisfy the condition, the count is two.</p>\n<p>Why option A is incorrect. It underestimates the count of valid limitations.</p>\n<p>Why option C is incorrect. Item III is a false statement, not a valid description of a limitation found in the text.</p>"
+  }
+]
