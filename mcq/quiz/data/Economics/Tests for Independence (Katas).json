@@ -36,7 +36,7 @@
       "C": "Remain the same"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Impact of sample size on statistical significance</h3><p><strong>A is correct.</strong> The primitive concept is the formula for the t-statistic: $t = \\frac{r\\sqrt{n-2}}{\sqrt{1-r^2}}$. The governing rule is that $n$ is in the numerator under the square root. Intuition suggests that more data provides stronger evidence. Mathematically, as $n$ increases, $\\sqrt{n-2}$ increases. Since $r$ (and thus the denominator $\\sqrt{1-r^2}$) is constant, the total value of $t$ increases. The PDF notes: \"the absolute value of the numerator increases with larger $n$, resulting in a larger magnitude of the calculated t-statistic.\"</p><p>B is wrong because increasing $n$ makes the numerator larger, not smaller.</p><p>C is wrong because $n$ is a direct variable in the formula.</p>"
+    "explanation": "<h3>First Principles Thinking: Impact of sample size on statistical significance</h3><p><strong>A is correct.</strong> The primitive concept is the formula for the t-statistic: $t = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}$. The governing rule is that $n$ is in the numerator under the square root. Intuition suggests that more data provides stronger evidence. Mathematically, as $n$ increases, $\\sqrt{n-2}$ increases. Since $r$ (and thus the denominator $\\sqrt{1-r^2}$) is constant, the total value of $t$ increases. The PDF notes: \"the absolute value of the numerator increases with larger $n$, resulting in a larger magnitude of the calculated t-statistic.\"</p><p>B is wrong because increasing $n$ makes the numerator larger, not smaller.</p><p>C is wrong because $n$ is a direct variable in the formula.</p>"
   },
   {
     "id": 4,
@@ -75,7 +75,7 @@
       "C": "0.58"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Calculating the test statistic</h3><p><strong>A is correct.</strong> The primitive concept is the substitution of values into the t-test formula: $t = \\frac{r\\sqrt{n-2}}{\sqrt{1-r^2}}$. <br>Step 1: Degrees of freedom part $\\sqrt{n-2} = \\sqrt{6-2} = \\sqrt{4} = 2$. <br>Step 2: Denominator $\\sqrt{1 - 0.5^2} = \\sqrt{1 - 0.25} = \\sqrt{0.75} \\approx 0.866$. <br>Step 3: Calculate $t = \\frac{0.5 \\times 2}{0.866} = \\frac{1}{0.866} \\approx 1.15$.</p><p>B is wrong because it likely ignores the denominator or miscalculates the root.</p><p>C is wrong because it likely omits the $\\sqrt{n-2}$ term.</p>"
+    "explanation": "<h3>First Principles Thinking: Calculating the test statistic</h3><p><strong>A is correct.</strong> The primitive concept is the substitution of values into the t-test formula: $t = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}$. <br>Step 1: Degrees of freedom part $\\sqrt{n-2} = \\sqrt{6-2} = \\sqrt{4} = 2$. <br>Step 2: Denominator $\\sqrt{1 - 0.5^2} = \\sqrt{1 - 0.25} = \\sqrt{0.75} \\approx 0.866$. <br>Step 3: Calculate $t = \\frac{0.5 \\times 2}{0.866} = \\frac{1}{0.866} \\approx 1.15$.</p><p>B is wrong because it likely ignores the denominator or miscalculates the root.</p><p>C is wrong because it likely omits the $\\sqrt{n-2}$ term.</p>"
   },
   {
     "id": 7,
