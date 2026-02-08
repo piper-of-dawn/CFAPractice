@@ -1,0 +1,646 @@
+[
+{
+"id": 1,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Accrual vs cash",
+"stem": "Cash flow from operations (CFO) is most likely different from earnings because:",
+"options": {
+"A": "Earnings are based on accrual accounting and include non-cash items.",
+"B": "CFO includes only investing and financing cash flows.",
+"C": "Earnings are recorded only when cash is received."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Earnings are measured using accrual accounting, so revenues/expenses can be recognized without cash moving. CFO aims to capture operating cash receipts/payments. Because accruals and non-cash items affect net income, CFO is not the same as earnings. Apply: accrual basis ≠ cash basis → CFO differs from earnings.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because CFO is only the operating section; investing and financing are separate sections of the cash flow statement.</p><p>Why remaining distractor is wrong. C is wrong because accrual accounting recognizes revenue/expense when earned/incurred, not only when cash is received/paid. </p>"
+},
+{
+"id": 2,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Indirect method linkage",
+"stem": "Under the indirect method, CFO is most accurately described as:",
+"options": {
+"A": "A reconciliation of net income to operating cash flow.",
+"B": "A listing of gross cash receipts and gross cash payments.",
+"C": "Identical to net income because both are operating measures."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The indirect method starts with net income (income statement) and adjusts for non-cash items and net changes in working capital accounts (balance sheet current operating accounts) to arrive at operating cash flow. Rule: indirect method = reconcile net income → CFO. Apply: begin with net income → adjust → CFO.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because that describes the direct method, not the indirect method.</p><p>Why remaining distractor is wrong. C is wrong because accrual accounting makes net income differ from cash flow, requiring adjustments. </p>"
+},
+{
+"id": 3,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Operating assets adjustment sign",
+"stem": "To convert an income statement revenue item to cash receipts, an increase in a related operating asset is most likely:",
+"options": {
+"A": "Subtracted from the income statement amount.",
+"B": "Added to the income statement amount.",
+"C": "Ignored because assets are balance sheet items."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Cash receipt = accrual revenue adjusted for changes in the related operating asset (e.g., receivables). If the operating asset increases, more revenue was recognized than cash collected, so subtract the increase. Rule: cash = income statement figure − increase in related operating assets. Apply: operating asset ↑ → subtract → lower cash.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because adding an operating asset increase would move cash the wrong way by overstating cash receipts.</p><p>Why remaining distractor is wrong. C is wrong because balance sheet operating assets are explicitly used to adjust accrual figures to cash flows. </p>"
+},
+{
+"id": 4,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Operating assets decrease sign",
+"stem": "When computing cash flows, a decrease in a related operating asset is most likely:",
+"options": {
+"A": "Added to the income statement figure.",
+"B": "Subtracted from the income statement figure.",
+"C": "Classified as a financing cash flow."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> If an operating asset (like accounts receivable or inventory) decreases, cash effect is favorable relative to accrual: you collected cash or released cash tied up in operations. Rule: cash = income statement figure + decreases in related operating assets. Apply: operating asset ↓ → add → higher cash.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because subtracting a decrease would understate cash receipts/payments.</p><p>Why remaining distractor is wrong. C is wrong because changes in operating assets affect operating cash flow, not financing cash flow. </p>"
+},
+{
+"id": 5,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Operating liabilities increase sign",
+"stem": "To compute operating cash flow, an increase in a related operating liability is most likely:",
+"options": {
+"A": "Added to the income statement amount.",
+"B": "Subtracted from the income statement amount.",
+"C": "Reported as investing cash flow."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> If an operating liability (e.g., accounts payable) increases, the firm has incurred expense without paying cash yet, which increases cash relative to accrual. Rule: cash = income statement figure + increases in related operating liabilities. Apply: operating liability ↑ → add → higher cash from operations.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because subtracting an operating liability increase would reverse the cash effect.</p><p>Why remaining distractor is wrong. C is wrong because operating liabilities relate to operating activities, not investing activities. </p>"
+},
+{
+"id": 6,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Operating liabilities decrease sign",
+"stem": "In computing cash flows from an accrual expense, a decrease in a related operating liability is most likely:",
+"options": {
+"A": "Subtracted from the income statement figure.",
+"B": "Added to the income statement figure.",
+"C": "Treated as a non-cash adjustment."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> If an operating liability decreases, it usually means cash was paid to settle prior accruals, reducing cash relative to the accrual expense. Rule: cash = income statement figure − decreases in related operating liabilities. Apply: operating liability ↓ → subtract → lower cash.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because adding a liability decrease would overstate cash.</p><p>Why remaining distractor is wrong. C is wrong because the adjustment is a working-capital (balance sheet) cash adjustment, not a non-cash add-back like depreciation. </p>"
+},
+{
+"id": 7,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Working capital linkage",
+"stem": "Under the indirect method, net income is adjusted for net changes in which accounts to arrive at CFO?",
+"options": {
+"A": "Working capital accounts (current operating assets and liabilities).",
+"B": "Only noncurrent assets.",
+"C": "Only equity accounts."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The indirect method adjusts net income for non-cash items and the net changes in working capital accounts, which are current operating assets and current operating liabilities. This is the balance sheet linkage needed to move from accrual net income to operating cash. Apply: net income → adjust working capital → CFO.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because noncurrent assets are typically linked to investing activities, not the operating working-capital adjustments.</p><p>Why remaining distractor is wrong. C is wrong because equity changes are generally financing activities, not the working-capital bridge from net income to CFO. </p>"
+},
+{
+"id": 8,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Operating activities linkage",
+"stem": "Operating activities on the cash flow statement most likely relate to:",
+"options": {
+"A": "Current assets and current liabilities.",
+"B": "Noncurrent assets only.",
+"C": "Equity only."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Operating activities generally reflect cash effects of day-to-day operations and are linked to current operating assets and liabilities (working capital). Rule: operating section ties closely to current assets/current liabilities. Apply: operating = working-capital-related cash movements.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because noncurrent assets are typically associated with investing activities.</p><p>Why remaining distractor is wrong. C is wrong because equity transactions are typically financing activities, not operating activities. </p>"
+},
+{
+"id": 9,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Investing activities linkage",
+"stem": "Investing activities on the cash flow statement are most likely linked to changes in:",
+"options": {
+"A": "Noncurrent assets.",
+"B": "Current liabilities.",
+"C": "Retained earnings."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Investing cash flows typically relate to acquiring and disposing of long-term (noncurrent) assets. Rule: investing ↔ noncurrent assets. Apply: purchases/sales of equipment, buildings, etc. are investing cash flows.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because current liabilities are typically part of operating activities (working capital).</p><p>Why remaining distractor is wrong. C is wrong because retained earnings is an equity account more closely tied to financing/equity changes and income retention, not investing classification. </p>"
+},
+{
+"id": 10,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Financing activities linkage",
+"stem": "Financing activities on the cash flow statement most likely relate to changes in:",
+"options": {
+"A": "Noncurrent liabilities and equity.",
+"B": "Inventory and receivables.",
+"C": "Only depreciation expense."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Financing activities reflect how the firm raises/returns capital: debt and equity transactions. Rule: financing ↔ noncurrent liabilities and equity. Apply: issuing/repaying long-term debt, issuing/repurchasing stock, paying dividends.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because inventory and receivables are working-capital accounts tied to operating activities.</p><p>Why remaining distractor is wrong. C is wrong because depreciation is a non-cash income statement item used as an adjustment in operating cash flow, not a financing activity. </p>"
+},
+{
+"id": 11,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Balance sheet cash reconciliation",
+"stem": "The statement of cash flows most accurately reconciles which balance sheet account between two dates?",
+"options": {
+"A": "Cash (cash accounts) between balance sheet dates.",
+"B": "Retained earnings between balance sheet dates.",
+"C": "Total assets between balance sheet dates."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The cash flow statement explains the change in cash by showing cash receipts and payments during the period, reconciling cash accounts between balance sheet dates. Rule: beginning cash + net cash flows = ending cash. Apply: it bridges cash from one balance sheet date to the next.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because retained earnings is primarily linked via net income and dividends, not reconciled by the cash flow statement.</p><p>Why remaining distractor is wrong. C is wrong because the cash flow statement targets cash changes, not total assets changes. </p>"
+},
+{
+"id": 12,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Direct vs indirect operating section",
+"stem": "Which method most likely reports major classes of gross cash receipts and gross cash payments in CFO?",
+"options": {
+"A": "Direct method.",
+"B": "Indirect method.",
+"C": "Neither method; both start from net income."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The direct method presents operating cash inflows by source and outflows by use (gross receipts/payments) and sums them to net operating cash flow. Rule: direct = gross cash receipts/payments. Apply: look for line items like cash received from customers, cash paid to suppliers.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the indirect method starts from net income and adjusts for non-cash items and working-capital changes.</p><p>Why remaining distractor is wrong. C is wrong because the direct method does not start from net income; it starts from cash receipts and payments. </p>"
+},
+{
+"id": 13,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Linkage via current accounts",
+"stem": "The income statement and statement of cash flows provide key linkages between which balance sheet sections?",
+"options": {
+"A": "Current assets and current liabilities.",
+"B": "Only noncurrent assets and equity.",
+"C": "Only cash and retained earnings."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The module emphasizes that the income statement and cash flow statement link to the balance sheet mainly through current assets and current liabilities (working capital), because accrual revenues/expenses become cash via these account changes. Apply: working-capital changes bridge accrual → cash.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the highlighted linkage is specifically between current assets and current liabilities, not only noncurrent/equity sections.</p><p>Why remaining distractor is wrong. C is wrong because the linkage is broader than just cash and retained earnings; it involves multiple working-capital accounts. </p>"
+},
+{
+"id": 14,
+"model": "ChatGPT",
+"topic": "FSA LM4 LOS 30.a: Practical indirect adjustment example",
+"stem": "Under the indirect method, an increase in inventory is most likely treated as:",
+"options": {
+"A": "A subtraction from net income in computing CFO.",
+"B": "An addition to net income in computing CFO.",
+"C": "A financing cash inflow."
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Inventory is an operating asset. If inventory increases, cash was used to build inventory beyond what was expensed through cost of goods sold, so CFO decreases. Rule: cash = income statement figure − increase in related operating assets. Apply: inventory ↑ → subtract from net income in the indirect reconciliation.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because adding an increase in an operating asset would overstate CFO.</p><p>Why remaining distractor is wrong. C is wrong because inventory changes are operating (working-capital) effects, not financing flows. </p>"
+},
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Direct Method - Cash Received from Customers",
+    "stem": "A company reports revenue of USD 500,000 for the year. During the same period, accounts receivable increased by USD 20,000. Under the direct method, the cash received from customers is most likely:",
+    "options": {
+      "A": "USD 480,000",
+      "B": "USD 500,000",
+      "C": "USD 520,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset Accumulation</h3>\n<p><strong>A is correct.</strong> The primitive is that Revenue represents value earned, while Cash Received is actual inflow. Accounts Receivable (AR) represents revenue earned but not yet collected. If AR increases (primitive: asset accumulation), it means some of this period's revenue was retained as a claim rather than collected as cash. Therefore, Cash < Revenue. Calculation: $500,000 - 20,000 = 480,000$.</p>\n<p>C is incorrect because it adds the increase, implying the company collected the revenue plus extra cash, which describes a decrease in AR (collection of prior debts).</p>\n<p>B is incorrect because it ignores the accrual adjustment entirely.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Direct Method - Purchases Calculation",
+    "stem": "A retailer reports Cost of Goods Sold (COGS) of USD 200,000. During the year, inventory levels increased by USD 15,000. The total purchases from suppliers for the year are most likely:",
+    "options": {
+      "A": "USD 185,000",
+      "B": "USD 200,000",
+      "C": "USD 215,000"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Inventory Flow</h3>\n<p><strong>C is correct.</strong> The primitive is the inventory equation: $Ending = Beginning + Purchases - COGS$. Rearranging for Purchases: $Purchases = COGS + (Ending - Beginning)$. If inventory increased (primitive: accumulation), you must have purchased more than you sold. Therefore, Purchases > COGS. Calculation: $200,000 + 15,000 = 215,000$.</p>\n<p>A is incorrect because it subtracts the increase, which would imply the company sold off existing stock rather than building it up.</p>\n<p>B is incorrect because it assumes purchases exactly equal the cost of goods sold, ignoring the stockpile growth.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Direct Method - Cash Paid to Suppliers",
+    "stem": "A company made purchases from suppliers totaling USD 100,000. During the year, accounts payable increased by USD 5,000. The cash paid to suppliers is most likely:",
+    "options": {
+      "A": "USD 95,000",
+      "B": "USD 100,000",
+      "C": "USD 105,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Liability Deferral</h3>\n<p><strong>A is correct.</strong> The primitive is that Purchases represent the obligation incurred, while Cash Paid is the settlement. Accounts Payable (AP) represents obligations not yet paid. If AP increases (primitive: liability accumulation), the company has deferred payment on some of this period's purchases. Therefore, Cash Paid < Purchases. Calculation: $100,000 - 5,000 = 95,000$.</p>\n<p>C is incorrect because it adds the increase, which would imply paying off old debts in addition to current purchases (a decrease in AP).</p>\n<p>B is incorrect because it ignores the financing provided by suppliers via the increased payable.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Direct Method - Cash Paid to Employees",
+    "stem": "A firm reports salary and wage expense of USD 80,000. The balance sheet shows that salary and wages payable increased by USD 2,000 during the year. The cash paid to employees is most likely:",
+    "options": {
+      "A": "USD 78,000",
+      "B": "USD 80,000",
+      "C": "USD 82,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Expense Accrual</h3>\n<p><strong>A is correct.</strong> The primitive is that Expense is the cost incurred, while Cash Paid is the outflow. A payable represents an incurred cost not yet paid. If the payable increases (primitive: debt growth), the company \"owes\" more at the end than the start, meaning it paid less cash than the expense recognized. Therefore, Cash Paid < Expense. Calculation: $80,000 - 2,000 = 78,000$.</p>\n<p>C is incorrect because it adds the increase, implying the company paid down past obligations (decreasing the payable).</p>\n<p>B is incorrect because it assumes cash outflow matches the accrual expense exactly.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Direct Method - Cash Paid for Interest",
+    "stem": "Interest expense for the period is USD 10,000. The interest payable account decreased by USD 1,000. The cash paid for interest is most likely:",
+    "options": {
+      "A": "USD 9,000",
+      "B": "USD 10,000",
+      "C": "USD 11,000"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Liability Settlement</h3>\n<p><strong>C is correct.</strong> The primitive is that a decrease in a liability represents a cash settlement in excess of new obligations. If Interest Payable decreased (primitive: debt reduction), the company must have paid the current expense plus a portion of the prior balance. Therefore, Cash Paid > Interest Expense. Calculation: $10,000 + 1,000 = 11,000$.</p>\n<p>A is incorrect because it subtracts the decrease, which would result if the liability increased (deferral of payment).</p>\n<p>B is incorrect because it ignores the cash used to reduce the liability balance.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Direct Method - Cash Paid for Expenses (Prepaids)",
+    "stem": "A company reports insurance expense of USD 12,000. Prepaid insurance expenses increased by USD 3,000 during the year. The cash paid for insurance is most likely:",
+    "options": {
+      "A": "USD 9,000",
+      "B": "USD 12,000",
+      "C": "USD 15,000"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Asset Prepayment</h3>\n<p><strong>C is correct.</strong> The primitive is that Prepaid Expenses are assets representing cash paid before the benefit is received. An increase in this asset (primitive: asset accumulation) means the company paid for more coverage than it \"used up\" (expensed) this period. Therefore, Cash Paid > Expense. Calculation: $12,000 + 3,000 = 15,000$.</p>\n<p>A is incorrect because it subtracts the increase, which describes a situation where the company uses up existing prepaids (decreasing the asset).</p>\n<p>B is incorrect because it assumes the cash payment equals the usage (expense) without building the asset.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Direct Method - Deferred Revenue Adjustment",
+    "stem": "A company reports revenue of USD 200,000. During the year, deferred (unearned) revenue decreased by USD 5,000. Under the direct method, cash collected from customers is most likely:",
+    "options": {
+      "A": "USD 195,000",
+      "B": "USD 200,000",
+      "C": "USD 205,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Revenue Recognition vs. Cash</h3>\n<p><strong>A is correct.</strong> The primitive is that Deferred Revenue is a liability representing cash received before it is earned. A decrease in this liability (primitive: recognizing previously deferred amounts) means some of the reported Revenue came from \"old\" cash, not current cash inflows. Therefore, Cash Collected < Revenue. Calculation: $200,000 - 5,000 = 195,000$.</p>\n<p>C is incorrect because it adds the decrease, which would imply cash was received in excess of revenue (an increase in deferred revenue).</p>\n<p>B is incorrect because it assumes all revenue recognized this period was collected this period.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Indirect Method - Depreciation",
+    "stem": "A company reports Net Income of USD 100,000. This figure includes a depreciation expense of USD 15,000. Under the indirect method, the adjustment for depreciation to arrive at Cash Flow from Operations (CFO) is:",
+    "options": {
+      "A": "Add USD 15,000",
+      "B": "Subtract USD 15,000",
+      "C": "No adjustment required"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Non-Cash Expense</h3>\n<p><strong>A is correct.</strong> The primitive is that Net Income includes non-cash deductions that must be reversed to find cash flow. Depreciation is an accounting allocation of cost, not a cash outflow. Since it reduced Net Income but no cash left the building, we must add it back to cancel the reduction. Calculation: $Net\\ Income + Depreciation$.</p>\n<p>B is incorrect because subtracting it would double-count the expense, reducing cash flow further for a non-cash item.</p>\n<p>C is incorrect because Net Income does not equal Cash Flow when non-cash expenses are present.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Indirect Method - Gain on Sale",
+    "stem": "A company sells an old machine and records a gain on sale of USD 5,000 in its Net Income. Under the indirect method, how is this gain treated in the operating cash flow section?",
+    "options": {
+      "A": "Added to Net Income",
+      "B": "Deducted from Net Income",
+      "C": "Ignored in the operating section"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Classification Correction</h3>\n<p><strong>B is correct.</strong> The primitive is that cash proceeds from asset sales are Investing Cash Flows (CFI), not Operating (CFO). However, the \"Gain\" component is included in Net Income. To prevent double counting (showing the cash in CFI and the gain in CFO), the gain must be removed from the Operating section. Since gains increase Net Income, we deduct the gain to remove it.</p>\n<p>A is incorrect because adding the gain would inflate CFO with non-operating income.</p>\n<p>C is incorrect because leaving it in would incorrectly classify investing activity as operating activity.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Indirect Method - Loss on Sale",
+    "stem": "A company reports a loss of USD 8,000 on the retirement of debt. This loss is included in the calculation of Net Income. To calculate CFO using the indirect method, this loss should be:",
+    "options": {
+      "A": "Added to Net Income",
+      "B": "Deducted from Net Income",
+      "C": "Treated as a cash outflow"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Non-Operating Reversal</h3>\n<p><strong>A is correct.</strong> The primitive is that the loss reduces Net Income but is either non-cash or relates to Financing/Investing activities, not Operating. To strip this non-operating item out of the CFO calculation, we must reverse its effect. Since the loss lowered Net Income, we add it back to restore the starting point.</p>\n<p>B is incorrect because subtracting the loss would further reduce the CFO figure, compounding the error.</p>\n<p>C is incorrect because the loss itself is an accounting figure; the actual cash impact (if any) belongs in the Financing section.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Indirect Method - Increase in Assets",
+    "stem": "During the year, a company's Accounts Receivable increased by USD 20,000. Under the indirect method, this change is recorded as:",
+    "options": {
+      "A": "An addition to Net Income",
+      "B": "A deduction from Net Income",
+      "C": "A clear financing inflow"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Use of Cash</h3>\n<p><strong>B is correct.</strong> The primitive is the asset-cash seesaw: Increasing an operating asset consumes cash (or delays cash inflow). If AR increases, the company has recorded revenue (in Net Income) that it has not yet collected in cash. To convert NI to Cash, we must subtract this uncollected portion.</p>\n<p>A is incorrect because adding the increase would imply the company collected more cash than revenue, which is a decrease in AR.</p>\n<p>C is incorrect because AR changes are operating, not financing, activities.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Indirect Method - Decrease in Inventory",
+    "stem": "A retailer's Inventory balance decreased by USD 12,000 over the fiscal year. In the indirect method cash flow statement, this change is presented as:",
+    "options": {
+      "A": "An addition to Net Income",
+      "B": "A deduction from Net Income",
+      "C": "An investing cash inflow"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Source of Cash</h3>\n<p><strong>A is correct.</strong> The primitive is that decreasing an asset releases cash. If Inventory decreases, the company sold more goods than it purchased this period. The Cost of Goods Sold (COGS) subtracted in Net Income was higher than the actual cash spent on replacements. We add this difference back to reflect the cash savings.</p>\n<p>B is incorrect because subtracting the decrease would imply the company spent cash to build inventory (an increase).</p>\n<p>C is incorrect because inventory is an operating working capital item, not a long-term investment.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Indirect Method - Increase in Liabilities",
+    "stem": "Accounts Payable increased by USD 7,000 during the period. Using the indirect method, this adjustment to Net Income is:",
+    "options": {
+      "A": "An addition",
+      "B": "A deduction",
+      "C": "No adjustment"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Financing from Suppliers</h3>\n<p><strong>A is correct.</strong> The primitive is that increasing a liability preserves cash. If AP increases, the company delayed paying for some expenses/purchases that were recorded in Net Income. Since the cash wasn't actually paid out yet, the Net Income figure is \"too low\" relative to cash flow. We add the amount back.</p>\n<p>B is incorrect because subtracting it would imply we paid off debts faster than we incurred them (a decrease in AP).</p>\n<p>C is incorrect because the change represents a disconnect between accrual expense and cash outflow.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Indirect Method - Decrease in Liabilities",
+    "stem": "Wages Payable decreased by USD 4,000. Under the indirect method, how is this change reflected in the determination of CFO?",
+    "options": {
+      "A": "Added to Net Income",
+      "B": "Subtracted from Net Income",
+      "C": "Moved to Financing Activities"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash Outflow</h3>\n<p><strong>B is correct.</strong> The primitive is that decreasing a liability consumes cash. If Wages Payable decreases, the company paid its current wage expense <em>plus</em> some prior obligations. Cash outflow > Expense deducted in NI. We must subtract this extra cash payment from Net Income.</p>\n<p>A is incorrect because adding it would imply the company deferred payment (increased the liability).</p>\n<p>C is incorrect because wages are a core operating activity, not financing.</p>"
+  },
+
+{
+"id": 1,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Indirect method starting point",
+"stem": "Under the indirect method, the CFO section most likely starts with which figure?:",
+"options": {
+"A": "Net income",
+"B": "Cash received from customers",
+"C": "Cash and cash equivalents (ending balance)"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Indirect CFO starts from net income (an accrual earnings measure) and then converts it toward cash by adjustments. Governing rule: begin with net income → adjust to operating cash flow. Apply: starting line is net income → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because listing cash received from customers is characteristic of the direct method, not the indirect method.</p><p>Why remaining distractor is wrong. C is wrong because ending cash is a reconciliation endpoint for the whole cash flow statement, not the starting point of CFO under the indirect method.</p>"
+},
+{
+"id": 2,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Non-cash expense adjustment",
+"stem": "Which item is most likely added back to net income under the indirect method because it affects net income but not operating cash flow?:",
+"options": {
+"A": "Depreciation expense",
+"B": "Cash paid to suppliers",
+"C": "Cash received from issuing shares"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Depreciation reduces net income but has no operating cash outflow in the period. Governing rule: adjust net income for transactions that affect net income but not operating cash flow (non-cash items). Apply: depreciation is non-cash → add back → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because cash paid to suppliers is an actual operating cash outflow, not a non-cash adjustment.</p><p>Why remaining distractor is wrong. C is wrong because issuing shares is a financing cash flow and does not belong in CFO adjustments.</p>"
+},
+{
+"id": 3,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Gains/losses adjustment logic",
+"stem": "Under the indirect method, gains or losses on asset sales are adjusted in CFO primarily because they:",
+"options": {
+"A": "Affect net income but do not represent operating cash flow",
+"B": "Are always operating cash inflows",
+"C": "Change current assets and current liabilities only"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A gain/loss changes net income (accrual accounting) but the related cash flow from the sale is not an operating cash flow item. Governing rule: remove effects on net income that do not affect operating cash flow. Apply: gain/loss is such an item → adjust → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the gain/loss is not “cash”; it’s an accounting result, and the sale cash flow is not classified as operating in this context.</p><p>Why remaining distractor is wrong. C is wrong because the adjustment reason is the net-income vs operating-cash mismatch, not a requirement that it must change only current accounts.</p>"
+},
+{
+"id": 4,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Balance sheet changes in indirect CFO",
+"stem": "In the indirect method, net income is also adjusted for changes in which items?:",
+"options": {
+"A": "Balance sheet items",
+"B": "Only income statement items",
+"C": "Only equity valuation multiples"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Indirect CFO uses balance sheet changes to translate accrual-based net income into cash-based operating flow. Governing rule: adjust net income for changes in balance sheet items. Apply: balance sheet changes are explicitly part of the indirect method → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the method explicitly relies on balance sheet changes, not only income statement figures.</p><p>Why remaining distractor is wrong. C is wrong because valuation multiples are not part of the cash flow statement presentation.</p>"
+},
+{
+"id": 5,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Main advantage—focus of indirect method",
+"stem": "The main advantage of the indirect method is most accurately described as it:",
+"options": {
+"A": "Focuses on differences between net income and operating cash flow",
+"B": "Eliminates the need to use balance sheet information",
+"C": "Reports only gross cash receipts and payments"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The indirect method is built as a bridge from net income to CFO, so it naturally highlights why the two differ. Governing rule: advantage = focus on net income vs operating cash flow differences. Apply: that description matches A → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the indirect method explicitly adjusts for changes in balance sheet items.</p><p>Why remaining distractor is wrong. C is wrong because gross cash receipts/payments describes the direct method, not the indirect method’s advantage.</p>"
+},
+{
+"id": 6,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Earnings quality signal",
+"stem": "Using the indirect method, a user is most likely to get an indication of earnings quality because it:",
+"options": {
+"A": "Shows how accrual net income is reconciled to operating cash flow",
+"B": "Avoids using net income altogether",
+"C": "Classifies all cash flows as operating"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Earnings quality is about how well reported earnings convert into operating cash. The indirect method lays out the adjustments from net income to CFO, revealing where differences come from. Governing rule: reconciliation highlights earnings vs cash conversion. Apply: reconciliation → earnings quality insight → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the indirect method starts with net income by definition.</p><p>Why remaining distractor is wrong. C is wrong because cash flows are classified into operating, investing, and financing, not all as operating.</p>"
+},
+{
+"id": 7,
+"model": "ChatGPT",
+"topic": "FSA LOS 30.a: Identifying a non-operating adjustment item",
+"stem": "Which item is most likely adjusted in the indirect method because it affects net income but not operating cash flow?:",
+"options": {
+"A": "Loss on sale of an asset",
+"B": "Cash collected from customers",
+"C": "Cash paid for wages"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A loss on asset sale reduces net income, but it is not itself an operating cash flow item; the cash effect of the sale is handled outside operating cash flow. Governing rule: adjust net income for gains/losses and other items that affect net income but not operating cash flow. Apply: loss on sale fits → adjust → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because cash collected from customers is an operating cash flow itself, not an adjustment for a non-cash/non-operating income item.</p><p>Why remaining distractor is wrong. C is wrong because cash paid for wages is an actual operating cash outflow, not a reconciliation adjustment item.</p>"
+},
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "US GAAP - Interest Paid Classification",
+    "stem": "Under US GAAP, a company pays USD 50,000 in interest on its long-term bonds. This cash outflow is classified in the Statement of Cash Flows as:",
+    "options": {
+      "A": "Operating activity",
+      "B": "Investing activity",
+      "C": "Financing activity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Income Determination</h3>\n<p><strong>A is correct.</strong> The primitive in US GAAP is that interest cost is a component of Net Income. Since Operating Cash Flow is designed to reconcile Net Income to cash, items included in Net Income (like interest expense) are generally kept in the Operating section to maintain alignment. Therefore, Interest Paid → Operating.</p>\n<p>C is incorrect because while the <em>principal</em> of the bond is Financing, US GAAP forces the <em>servicing</em> cost (interest) into Operating, unlike IFRS which allows Financing.</p>\n<p>B is incorrect because interest paid is a cost of debt, not the acquisition of a long-term asset.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "IFRS - Interest Received Flexibility",
+    "stem": "An international firm reporting under IFRS receives USD 10,000 in interest from its bond investments. The company may classify this cash inflow as:",
+    "options": {
+      "A": "Operating or Financing",
+      "B": "Investing or Financing",
+      "C": "Operating or Investing"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Source vs. Use</h3>\n<p><strong>C is correct.</strong> The primitive in IFRS is flexibility based on economic substance. Interest Received can be viewed either as a component of daily profit determination (Operating) OR as the return on a capital allocation (Investing). Therefore, IFRS permits either Operating or Investing.</p>\n<p>A is incorrect because Financing relates to <em>obtaining</em> capital (equity/debt), not earning returns on assets.</p>\n<p>B is incorrect because Financing is the wrong category for returns earned on assets held.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "US GAAP - Dividends Paid",
+    "stem": "A US company declares and pays a cash dividend of USD 100,000 to its shareholders. Under US GAAP, this payment is reported as:",
+    "options": {
+      "A": "An operating cash outflow",
+      "B": "An investing cash outflow",
+      "C": "A financing cash outflow"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Return of Capital</h3>\n<p><strong>C is correct.</strong> The primitive is that dividends are a distribution of wealth to the providers of equity capital, not an expense used to calculate Net Income. Since it relates to the equity claim on the firm, it is a Financing activity. US GAAP strictly mandates this classification.</p>\n<p>A is incorrect because dividends are not an expense and do not affect Net Income, so they are excluded from Operating activities under US GAAP.</p>\n<p>B is incorrect because the company is not acquiring an asset; it is paying its owners.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "IFRS - Dividends Paid Flexibility",
+    "stem": "A company reporting under IFRS pays dividends to its common shareholders. To show the ability of the company to pay dividends out of operating cash flow, the company chooses to classify this payment as:",
+    "options": {
+      "A": "Operating activity",
+      "B": "Investing activity",
+      "C": "Financing activity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cash Usage Discretion</h3>\n<p><strong>A is correct.</strong> The primitive is IFRS flexibility. Dividends Paid is a cost of obtaining resources (Financing), BUT it is also a disbursement of operating surplus (Operating). IFRS allows companies to classify it as Operating to assist users in assessing the firm's ability to pay dividends from operating flows.</p>\n<p>C is incorrect as the <em>only</em> option; while permitted and common, the question asks what the company <em>chooses</em> (implying the alternative exists).</p>\n<p>B is incorrect because paying dividends is never an investment in long-term assets.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Investing Activity - Sale of Equipment",
+    "stem": "A firm sells a piece of machinery with a book value of USD 50,000 for USD 60,000 cash. In the Statement of Cash Flows, the Investing Cash Flow reported is:",
+    "options": {
+      "A": "Inflow of USD 10,000",
+      "B": "Inflow of USD 50,000",
+      "C": "Inflow of USD 60,000"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Gross Cash Flow</h3>\n<p><strong>C is correct.</strong> The primitive is that the Cash Flow Statement records the actual cash exchanged, not the accounting profit. The company received USD 60,000 in the bank. Therefore, the Investing Inflow is the full proceeds of USD 60,000.</p>\n<p>A is incorrect because USD 10,000 is the accounting <em>gain</em> (Net Income impact), not the cash received.</p>\n<p>B is incorrect because USD 50,000 is the accounting <em>book value</em>, irrelevant to the actual cash collected.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Bank Overdrafts - IFRS vs US GAAP",
+    "stem": "A company has a bank overdraft balance. Under IFRS, this overdraft is most likely considered part of:",
+    "options": {
+      "A": "Cash and cash equivalents",
+      "B": "Operating cash flows",
+      "C": "Financing cash flows"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Liquidity Offset</h3>\n<p><strong>A is correct.</strong> The primitive in IFRS is that overdrafts repayable on demand are often integral to a company's cash management. Therefore, they are subtracted from cash balances to show a net \"Cash and Cash Equivalents\" position, rather than treated as a separate borrowing.</p>\n<p>C is incorrect for IFRS (though correct for US GAAP), where overdrafts are treated as short-term debt (Financing).</p>\n<p>B is incorrect because overdrafts relate to the cash balance definition, not the operating flow itself.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Financing Activity - Share Repurchase",
+    "stem": "A corporation buys back 1,000 of its own shares from the open market for USD 25,000. This transaction is classified as:",
+    "options": {
+      "A": "Investing cash outflow",
+      "B": "Financing cash outflow",
+      "C": "Operating cash outflow"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Capital Structure</h3>\n<p><strong>B is correct.</strong> The primitive is that transactions involving the company's <em>own</em> equity are Financing activities. Repurchasing shares returns capital to owners, reducing the equity base. This is a financing decision, not an investment in an external asset.</p>\n<p>A is incorrect because \"Investing\" involves buying assets of <em>other</em> entities (machines, other companies' stock), not one's own stock.</p>\n<p>C is incorrect because it does not relate to the production of goods or services.</p>"
+  },
+{
+"id": 1,
+"model": "ChatGPT",
+"topic": "CFI/CFF classification: Dividends paid (IFRS vs US GAAP)",
+"stem": "Dividends paid are classified as a financing cash flow under US GAAP and under IFRS are most likely classified as:",
+"options": {
+"A": "Either operating or financing",
+"B": "Only investing",
+"C": "Only operating"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Classification is a rule choice set by standards. US GAAP fixes dividends paid as financing. IFRS permits flexibility: dividends paid may be operating or financing. Apply the IFRS choice set → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). C is wrong because IFRS does not restrict dividends paid to only operating; it allows operating or financing.</p><p>Why remaining distractor is wrong. B is wrong because dividends paid are not classified as investing in this standards comparison.</p>"
+},
+{
+"id": 2,
+"model": "ChatGPT",
+"topic": "CFI vs CFO: Interest and dividends received (IFRS vs US GAAP)",
+"stem": "Interest and dividends received from investments are classified under US GAAP as operating cash flows, while IFRS most likely allows them as:",
+"options": {
+"A": "Either operating or investing cash flows",
+"B": "Only financing cash flows",
+"C": "Only operating cash flows"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> US GAAP uses a fixed classification: interest/dividends received are operating. IFRS provides flexibility: interest and dividends received may be classified as operating or investing. Apply the IFRS flexibility → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). C is wrong because IFRS does not force operating-only classification for these items.</p><p>Why remaining distractor is wrong. B is wrong because the IFRS flexibility described is operating vs investing, not financing-only.</p>"
+},
+{
+"id": 3,
+"model": "ChatGPT",
+"topic": "CFF vs CFO: Interest paid (IFRS vs US GAAP)",
+"stem": "Interest paid is classified as an operating cash flow under US GAAP, while IFRS most likely allows it to be classified as:",
+"options": {
+"A": "Either operating or financing cash flows",
+"B": "Either operating or investing cash flows",
+"C": "Only investing cash flows"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> US GAAP fixes interest paid as operating. IFRS allows classification choice for interest paid between operating and financing. Apply the IFRS permitted set → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because the IFRS flexibility for interest paid is operating vs financing, not operating vs investing.</p><p>Why remaining distractor is wrong. C is wrong because interest paid is not restricted to investing under IFRS in this comparison.</p>"
+},
+{
+"id": 4,
+"model": "ChatGPT",
+"topic": "Cash equivalents vs financing: Bank overdrafts (IFRS vs US GAAP)",
+"stem": "Bank overdrafts are most likely treated under IFRS and US GAAP, respectively, as:",
+"options": {
+"A": "Part of cash equivalents; financing (not cash equivalents)",
+"B": "Financing; part of cash equivalents",
+"C": "Investing; operating"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Standards define what counts as cash/cash equivalents and where cash effects are classified. IFRS treats bank overdrafts as part of cash equivalents. US GAAP does not include them in cash equivalents and classifies them as financing. Apply the paired rules → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because it reverses the IFRS vs US GAAP treatments.</p><p>Why remaining distractor is wrong. C is wrong because these standards differences are about cash equivalents vs financing classification, not investing/operating pairing.</p>"
+},
+{
+"id": 5,
+"model": "ChatGPT",
+"topic": "Operating vs allocating: Taxes paid (IFRS vs US GAAP)",
+"stem": "Taxes paid are classified as operating cash flows under US GAAP; under IFRS they are most accurately described as:",
+"options": {
+"A": "Generally operating, but can be allocated to investing or financing if specifically identified",
+"B": "Always investing because taxes relate to long-term assets",
+"C": "Always financing because taxes relate to capital providers"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Classification rules differ by standards. US GAAP treats taxes paid as operating. IFRS treats taxes paid as generally operating, but permits allocating a portion to investing or financing when it can be specifically linked to those categories. Apply IFRS rule → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because IFRS does not require taxes paid to be investing; operating is the general classification.</p><p>Why remaining distractor is wrong. C is wrong because IFRS does not require taxes paid to be financing; operating is the general classification.</p>"
+},
+{
+"id": 6,
+"model": "ChatGPT",
+"topic": "Disclosure requirement: Reconciliation under US GAAP",
+"stem": "When a company uses the direct method, US GAAP most likely requires what additional disclosure?",
+"options": {
+"A": "A reconciliation of net income to CFO must be provided",
+"B": "No reconciliation is permitted under the direct method",
+"C": "A reconciliation of total assets to CFO must be provided"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The rule is about required supplemental information. Under US GAAP, a reconciliation of net income to cash flow from operating activities must be provided regardless of whether the direct or indirect method is used. Apply: direct method still needs the reconciliation → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because US GAAP requires the reconciliation even when the direct method is used.</p><p>Why remaining distractor is wrong. C is wrong because the reconciliation described is net income to CFO, not total assets to CFO.</p>"
+},
+{
+"id": 7,
+"model": "ChatGPT",
+"topic": "Investing vs financing: Typical transactions",
+"stem": "Which transaction is most likely classified as a financing cash outflow?",
+"options": {
+"A": "Repurchase of common stock",
+"B": "Purchase of equipment",
+"C": "Cash received from sale of equipment"
+},
+"correct_answer": "A",
+"explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Financing cash flows relate to noncurrent liabilities and equity. Repurchasing common stock is an equity transaction, so it is a financing cash outflow. Apply: equity cash outflow → financing → conclude A.</p><p>Why top distractor is wrong (PDF-based misconception). B is wrong because purchasing equipment relates to noncurrent assets and is an investing cash outflow.</p><p>Why remaining distractor is wrong. C is wrong because selling equipment generates cash related to noncurrent assets and is an investing cash inflow.</p>"
+}
+]
+
+
+
+
+
+
