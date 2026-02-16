@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +7,7 @@
   <title>MCQ Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 
 
@@ -69,12 +70,12 @@
     --danger: #BF505C;
   }
   :root[data-theme="dark"] {
-    --bg: #091717; /* requested dark background */
+    --bg: #141414; /* requested dark background */
     --card: rgba(var(--secondary-rgb), 0.08); /* warm glass base */
     --text: #d1cfc0;
     --muted: #94a3b8;
-    --secondary: #60A49B;
-    --secondary-rgb: 96, 164, 155;
+    --secondary: #fdf083;
+    --secondary-rgb: 253, 240, 131;
     /* Soften borders in dark mode */
     --border: rgba(var(--secondary-rgb), 0.52);
     --primary: #e2e8f0;
@@ -91,11 +92,11 @@
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Geist", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .stem { line-height: 1.7; font-weight: 500; }
+  .stem { line-height: 1.7; font-weight: 400; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
   header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; }
   header h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: 0.2px; }
@@ -163,7 +164,7 @@
   .card .content { padding: 20px 22px; }
 
   .question {
-    border: 2px dotted var(--border);
+    border: 1px solid var(--border);
     border-radius: 18px;
     padding: 14px 14px 18px;
     margin-bottom: 24px;
@@ -178,11 +179,11 @@
     position: relative;
     overflow: hidden;
     /* Slightly warm frosted tint, toned down */
-    background: rgba(var(--secondary-rgb), 0.05);
-    backdrop-filter: blur(28px) saturate(160%);
-    -webkit-backdrop-filter: blur(28px) saturate(160%);
-    /* Visible dotted border in secondary color */
-    border: 2px dotted rgba(var(--secondary-rgb), 0.85);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    /* Solid border in secondary color */
+    border: 1px dashed rgba(var(--secondary-rgb), 0.34);
     /* Soft, shallow drop shadow */
     box-shadow:
       inset 0 1px 0 rgba(255,255,255,0.08),
@@ -220,18 +221,28 @@
     100% { box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   }
   .question h2 { font-size: 16px; font-weight: 600; margin: 0 0 10px; letter-spacing: 0.2px; }
-  .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+  .qmeta-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+  .qmeta { color: var(--muted); font-size: 12px; margin-bottom: 0; }
+  .inline-explain-btn { display: none; padding: 5px 9px; border-radius: 10px; font-size: 11px; line-height: 1; }
+  .inline-explain-btn,
+  .see-explanation-btn {
+    transition: box-shadow 900ms cubic-bezier(0.22, 1, 0.36, 1), background-color 900ms cubic-bezier(0.22, 1, 0.36, 1), color 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .inline-explain-btn.attention,
+  .see-explanation-btn.attention {
+    box-shadow: 0 0 0 1px rgba(var(--secondary-rgb), 0.36), 0 0 18px rgba(var(--secondary-rgb), 0.28);
+  }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 6px; }
   .tag { background: var(--tag-bg); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; font-size: 11px; color: var(--tag-text); }
 
   ul.choices { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-  .choice { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 14px; transition: border-color .2s, background .2s, box-shadow .2s; background: var(--card); }
+  .choice { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 14px; transition: border-color .2s, background .2s, box-shadow .2s; background: var(--card); font-weight: 400; }
   .choice input { accent-color: var(--primary); width: 18px; height: 18px; }
-  .choice label { flex: 1; cursor: pointer; }
+  .choice label { flex: 1; cursor: pointer; font-weight: 400; }
   /* Selected state (container) */
   .choice:has(input:checked) { background: var(--hover); box-shadow: 0 0 0 2px var(--border); }
   /* Fallback highlight via label if :has() unsupported */
-  .choice input:checked + label { font-weight: 700; background: var(--hover); padding: 6px 8px; border-radius: 10px; }
+  .choice input:checked + label { font-weight: 400; background: var(--hover); padding: 6px 8px; border-radius: 10px; }
   /* Focus-visible on the radio improves accessibility */
   .choice input:focus-visible + label { outline: 2px solid var(--border); outline-offset: 2px; border-radius: 10px; }
   .choice:hover { border-color: #cbd5e1; background: var(--hover); }
@@ -263,12 +274,22 @@
   :root[data-theme="dark"] .pill-danger { background: rgba(191,80,92,0.16); color: #fecaca; border-color: rgba(191,80,92,0.32); }
   .source { color: var(--muted); font-size: 11px; margin-top: 10px; word-break: break-all; }
 
-  #outcomeBox { max-height: 280px; overflow: auto; padding-right: 4px; }
+  #outcomeBox {
+    margin-top: 10px;
+    max-height: 280px;
+    overflow: auto;
+    padding: 10px 4px 2px 0;
+  }
   #outcomeBox { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
   #outcomeBox::-webkit-scrollbar { width: 8px; height: 8px; }
   #outcomeBox::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
   #outcomeBox::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid transparent; background-clip: content-box; }
   #outcomeBox:hover::-webkit-scrollbar-thumb { background: #94a3b8; }
+  .see-explanation-btn {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
 
   .theme-toggle {
     position: fixed;
@@ -297,6 +318,7 @@
     .grid { grid-template-columns: 1fr; }
     .sidebar { position: static; }
     #outcomeBox { max-height: 220px; }
+    .inline-explain-btn { display: inline-flex; align-items: center; }
   }
 
   .modal { position: fixed; inset: 0; display: none; z-index: 9999; }
@@ -342,6 +364,29 @@
   .sidebar > .card:first-child * { color: var(--text) !important; }
   :root[data-theme="dark"] .sidebar > .card:first-child,
   :root[data-theme="dark"] .sidebar > .card:first-child * { color: var(--secondary) !important; }
+  :root[data-theme="dark"] .sidebar > .card:last-child {
+    background: #2b2a1f;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  }
+  :root[data-theme="dark"] .sidebar > .card:last-child .content,
+  :root[data-theme="dark"] .sidebar > .card:last-child .metric,
+  :root[data-theme="dark"] .sidebar > .card:last-child .metric .label,
+  :root[data-theme="dark"] .sidebar > .card:last-child .metric .value,
+  :root[data-theme="dark"] .sidebar > .card:last-child #outcomeStatus {
+    color: #fdf083 !important;
+  }
+  :root[data-theme="dark"] .sidebar > .card:last-child #outcomeBody,
+  :root[data-theme="dark"] .sidebar > .card:last-child #outcomeMeta {
+    color: var(--text) !important;
+  }
+  :root[data-theme="dark"] #outcomeBox {
+    background: inherit;
+    color: var(--text);
+  }
+  :root[data-theme="dark"] #outcomeBox,
+  :root[data-theme="dark"] #outcomeBox * {
+    color: inherit !important;
+  }
   /* Borderless look */
   .card,
   .choice,
@@ -383,7 +428,10 @@
           {% csrf_token %}
           {% for q in questions %}
             <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
-              <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
+              <div class="qmeta-row">
+                <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
+                <button class="btn btn-ghost inline-explain-btn" type="button" hidden>See Explanation</button>
+              </div>
               <p class="stem">{{ q.text|linebreaksbr }}</p>
               <ul class="choices">
                 {% for idx, choice in q.choices %}
@@ -424,12 +472,12 @@
         <div class="card">
           <div class="content">
             <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">--</span></div>
-            <div id="outcomeBox" style="margin-top:8px;">
+            <button id="seeExplanationBtn" class="btn btn-primary see-explanation-btn" type="button" hidden>See Explanation</button>
+            <div id="outcomeBox" hidden>
               <div class="pill pill-muted" id="outcomePill">Awaiting check...</div>
               <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
               <div id="outcomeMeta" style="margin-top:12px;"></div>
             </div>
-            
           </div>
         </div>
       </aside>
@@ -474,10 +522,40 @@
       const outcomePill = document.getElementById('outcomePill');
       const outcomeBody = document.getElementById('outcomeBody');
       const outcomeMeta = document.getElementById('outcomeMeta');
+      const seeExplanationBtn = document.getElementById('seeExplanationBtn');
+      const outcomeBox = document.getElementById('outcomeBox');
       const scoreEl = document.getElementById('scoreValue');
       const streakEl = document.getElementById('streakValue');
       const longestEl = document.getElementById('longestPill');
       const questions = Array.from(document.querySelectorAll('section.question'));
+      const inlineExplanationBodies = new Map();
+      function setInlineExplainState(sec, show) {
+        if (!sec) return;
+        const btn = sec.querySelector('.inline-explain-btn');
+        if (!btn) return;
+        if (show) {
+          btn.hidden = false;
+          btn.classList.add('attention');
+        } else {
+          btn.hidden = true;
+          btn.classList.remove('attention');
+        }
+      }
+      function hideExplanation() {
+        if (outcomeBox) outcomeBox.hidden = true;
+        if (seeExplanationBtn) seeExplanationBtn.textContent = 'See Explanation';
+      }
+      function setExplanationButtonState(ok) {
+        if (!seeExplanationBtn) return;
+        if (ok === false) {
+          seeExplanationBtn.hidden = false;
+          seeExplanationBtn.classList.add('attention');
+          seeExplanationBtn.textContent = 'See Explanation';
+        } else {
+          seeExplanationBtn.hidden = true;
+          seeExplanationBtn.classList.remove('attention');
+        }
+      }
 
       // Wrap wide MathJax outputs in a mini horizontal scroller
       function __wrapWideMath(scopeEl){
@@ -515,13 +593,7 @@
         } else {
           outcomePill.classList.add('pill-muted');
         }
-        // Use current theme text color for readability in light/dark modes
-        try {
-          const themeText = getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
-          outcomeBody.style.color = themeText || '';
-        } catch(_) {
-          outcomeBody.style.color = '';
-        }
+        outcomeBody.style.color = '';
         outcomeBody.innerHTML = body;
         __typesetMath(outcomeBody).then(function(){ __wrapWideMath(outcomeBody); });
         // Render attributes
@@ -536,6 +608,8 @@
         } else {
           outcomeMeta.innerHTML = '';
         }
+        setExplanationButtonState(ok);
+        hideExplanation();
       }
 
       function recomputeTotals(){
@@ -563,6 +637,7 @@
         const json = JSON.parse(sec.dataset.json || '{}');
         const selected = document.querySelector(`input[name="${target}"]:checked`);
         if (!selected) {
+          setInlineExplainState(sec, false);
           setOutcome({title: 'No selection', ok: null, body: 'Please choose an option, then press Check.', meta: null});
           recomputeTotals();
           return;
@@ -580,6 +655,13 @@
         const meta = {...json};
         delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations; delete meta.extras;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
+        if (!ok) {
+          inlineExplanationBodies.set(target, body);
+          setInlineExplainState(sec, true);
+        } else {
+          inlineExplanationBodies.delete(target);
+          setInlineExplainState(sec, false);
+        }
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
         sec.classList.toggle('incorrect', !ok);
@@ -622,15 +704,30 @@
             sec.dataset.reported = '1';
           } catch(_) {}
         }
-        // On mobile, show explanation in a popup if incorrect
-        if (!ok && window.matchMedia('(max-width: 920px)').matches) {
-          showExplanationPopup(body);
-        }
         recomputeTotals();
       }
 
       document.querySelectorAll('.check-btn').forEach(btn => {
         btn.addEventListener('click', () => onCheck(btn));
+      });
+      if (seeExplanationBtn && outcomeBox) {
+        seeExplanationBtn.addEventListener('click', () => {
+          const isHidden = outcomeBox.hidden;
+          outcomeBox.hidden = !isHidden;
+          seeExplanationBtn.textContent = isHidden ? 'Hide Explanation' : 'See Explanation';
+          if (isHidden) seeExplanationBtn.classList.remove('attention');
+        });
+      }
+      document.querySelectorAll('.inline-explain-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const sec = btn.closest('section.question');
+          if (!sec) return;
+          const qname = sec.dataset.qname;
+          const html = inlineExplanationBodies.get(qname);
+          if (!html) return;
+          showExplanationPopup(html);
+          btn.classList.remove('attention');
+        });
       });
       // Auto-check current question on selection change
       document.getElementById('quizForm').addEventListener('change', (e) => {
