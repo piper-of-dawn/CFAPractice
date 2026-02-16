@@ -121,6 +121,7 @@ from pathlib import Path as _P
 # Add repository-level static directory (contains components, JSON files)
 STATICFILES_DIRS = [
     (_P(__file__).resolve().parent.parent.parent / 'static'),
+    (_P(__file__).resolve().parent.parent.parent / 'assets'),
 ]
 
 # Use cookie-based sessions to avoid DB writes for sessions
