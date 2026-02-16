@@ -161,6 +161,38 @@ except Exception:
     TOPIC_DEFAULT = "General"
 
 
+def _has_katas(questions: list[dict], source_path: Path | None = None) -> bool:
+    """Heuristic to detect if a question set is a Kata set.
+    - Looks for the substring 'kata' in text/extras/explanation (case-insensitive)
+    - Also checks the filename or any parent folder names
+    """
+    try:
+        # Check questions content quickly
+        for q in questions:
+            for k in ("text", "explanation"):
+                v = (q.get(k) or "")
+                if isinstance(v, str) and ("kata" in v.lower()):
+                    return True
+            ex = q.get("extras") or {}
+            if isinstance(ex, dict):
+                for v in ex.values():
+                    if isinstance(v, str) and ("kata" in v.lower()):
+                        return True
+        # Check the path if provided
+        if source_path is not None:
+            for part in source_path.parts:
+                if "kata" in part.lower():
+                    return True
+    except Exception:
+        pass
+    return False
+
+
+def _timer_seconds_for(questions: list[dict], source_path: Path | None = None) -> int:
+    per_q = 15 if _has_katas(questions, source_path) else 60
+    return max(0, per_q * len(questions))
+
+
 def _score_and_streak(answers):
     # answers: list[bool] indicating correctness per question
     score = sum(1 for a in answers if a)
@@ -352,6 +384,7 @@ def mcq(request):
         "longest": longest,
         "checked": checked,
         "data_source": str(DATA_PATH),
+        "timer_seconds": _timer_seconds_for(QUESTIONS, DATA_PATH),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -507,6 +540,7 @@ def play(request, fname):
         "longest": longest,
         "checked": checked,
         "data_source": str(target),
+        "timer_seconds": _timer_seconds_for(questions, target),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -613,6 +647,8 @@ def master(request):
         "longest": longest,
         "checked": checked,
         "data_source": f"master: {total} from {len(files_used)} files",
+        # For master, default to non-kata timing unless content indicates otherwise
+        "timer_seconds": _timer_seconds_for(selection, None),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -682,6 +718,7 @@ def mistakes(request):
         "longest": longest,
         "checked": checked,
         "data_source": "mistakes",
+        "timer_seconds": _timer_seconds_for(questions, None),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -807,4 +844,3 @@ def api_mistakes_dump(request):
     base, token = _upstash_cfg()
     source = "upstash" if (base and token) else "local"
     return JsonResponse({"ok": True, "items": items, "source": source})
-

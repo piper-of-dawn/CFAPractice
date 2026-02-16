@@ -194,9 +194,9 @@
   .question.incorrect { border-color: rgba(191,80,92,0.95); box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   .question.correct.glow-correct { animation: correctGlow 3s ease-out; }
   @keyframes correctGlow {
-    0% { box-shadow: 0 0 0 0 rgba(112,124,54,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(112,124,54,0.54); }
-    100% { box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+    0% { box-shadow: 0 0 0 0 rgba(212,236,213,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(212,236,213,0.8); }
+    100% { box-shadow: 0 8px 22px rgba(212,236,213,0.7); }
   }
   .question.incorrect.glow-incorrect { animation: incorrectGlow 3s ease-out; }
   @keyframes incorrectGlow {
@@ -210,9 +210,9 @@
   :root[data-theme="dark"] .question.correct.glow-correct { animation: correctGlowDark 3s ease-out; }
   :root[data-theme="dark"] .question.incorrect.glow-incorrect { animation: incorrectGlowDark 3s ease-out; }
   @keyframes correctGlowDark {
-    0% { box-shadow: 0 0 0 0 rgba(112,124,54,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(112,124,54,0.54); }
-    100% { box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+    0% { box-shadow: 0 0 0 0 rgba(212,236,213,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(212,236,213,0.8); }
+    100% { box-shadow: 0 8px 22px rgba(212,236,213,0.7); }
   }
   @keyframes incorrectGlowDark {
     0% { box-shadow: 0 0 0 0 rgba(191,80,92,0); }
@@ -355,9 +355,18 @@
   .modal .head,
   .theme-toggle { border: none !important; }
   .modal .head { border-bottom: none !important; }
-</style>
+  /* Timer expired state: mild red background */
+  body.time-expired {
+    background: #fdecec !important;
+  }
+  /* Ensure background overlays don't overpower the red tint */
+  body.time-expired::after { opacity: 0.08; }
+  :root[data-theme="dark"] body.time-expired::after { opacity: 0.10; }
+  /* Timer badge style in sidebar */
+  .metric .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
 </head>
-<body>
+<body data-timer-seconds="{{ timer_seconds|default:'0' }}">
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
     <span class="icon" aria-hidden="true">??</span>
     <span class="label">Dark</span>
@@ -407,6 +416,9 @@
             <div class="metric"><span class="label">Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
             <div class="metric"><span class="label">Streak</span><span class="value" id="streakValue">0</span></div>
             <span class="pill" id="longestPill">Longest: 0</span>
+            <hr style="border:0;height:1px;background:var(--border);opacity:0.35;margin:12px 0;">
+            <div class="metric"><span class="label">Timer</span><span class="value mono" id="timerValue">--:--</span></div>
+            <div class="metric"><span class="label">Avg time/Q</span><span class="value mono" id="avgTimeValue">--</span></div>
           </div>
         </div>
         <div class="card">
@@ -417,7 +429,7 @@
               <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
               <div id="outcomeMeta" style="margin-top:12px;"></div>
             </div>
-            <div class="source">Data: {{ data_source }}</div>
+            
           </div>
         </div>
       </aside>
@@ -566,7 +578,7 @@
           : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
         // Build attributes excluding heavy fields
         const meta = {...json};
-        delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations;
+        delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations; delete meta.extras;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
@@ -703,6 +715,58 @@
         const y = top ? -top : (__lockedScrollY || 0);
         window.scrollTo(0, y);
       }
+
+      // ===== Timer + Avg time per question =====
+      const timerEl = document.getElementById('timerValue');
+      const avgEl = document.getElementById('avgTimeValue');
+      const totalSecs = parseInt(document.body.dataset.timerSeconds || '0', 10) || 0;
+      const startTs = Date.now();
+      let expired = false;
+      function fmtMMSS(s) {
+        if (!isFinite(s) || s < 0) s = 0;
+        const m = Math.floor(s / 60);
+        const ss = Math.floor(s % 60);
+        return `${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
+      }
+      function updateAvg() {
+        if (!avgEl) return;
+        const answered = document.querySelectorAll('section.question input[type="radio"]:checked').length;
+        const elapsed = (Date.now() - startTs) / 1000;
+        if (answered <= 0) {
+          avgEl.textContent = '--';
+          return;
+        }
+        const avg = elapsed / answered;
+        // Show seconds with one decimal if < 100s, else whole seconds
+        avgEl.textContent = avg < 100 ? `${avg.toFixed(1)}s` : `${Math.round(avg)}s`;
+      }
+      function tickTimer() {
+        if (!timerEl || totalSecs <= 0) return;
+        const elapsed = (Date.now() - startTs) / 1000;
+        const remaining = Math.max(0, Math.round(totalSecs - elapsed));
+        timerEl.textContent = fmtMMSS(remaining);
+        if (!expired && remaining <= 0) {
+          expired = true;
+          document.body.classList.add('time-expired');
+        }
+      }
+      // Start ticking if enabled
+      if (totalSecs > 0) {
+        tickTimer();
+        setInterval(tickTimer, 1000);
+      } else if (timerEl) {
+        timerEl.textContent = '--:--';
+      }
+      // Initial avg fill
+      updateAvg();
+
+      // Hook into selection changes to update average time per question
+      document.getElementById('quizForm').addEventListener('change', (e) => {
+        const t = e.target;
+        if (t && t.type === 'radio') {
+          updateAvg();
+        }
+      });
     })();
   </script>
   <script>
