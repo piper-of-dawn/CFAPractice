@@ -1,8 +1,10 @@
 import json
 import os
 import random
+import re
 import urllib.request
 import urllib.parse
+from html import escape
 from pathlib import Path
 
 from django.shortcuts import redirect, render
@@ -149,6 +151,62 @@ def _normalize_questions(raw):
         if isinstance(raw, dict) and isinstance(raw.get(key), list):
             return [norm_one(q) for q in raw[key]]
     raise ValueError("Unsupported quiz JSON structure: expected a list of questions")
+
+
+def _render_markdown_basic(text: str) -> str:
+    """Render a small markdown subset to HTML without extra dependencies."""
+    if not isinstance(text, str):
+        return ""
+    text = _fix_mojibake(text)
+    lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    out = []
+    para = []
+    quote = []
+
+    def inline_md(s: str) -> str:
+        s = escape(_fix_mojibake(s))
+        s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+        s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
+        return s
+
+    def flush_para():
+        nonlocal para
+        if para:
+            out.append(f"<p>{'<br>'.join(inline_md(x) for x in para)}</p>")
+            para = []
+
+    def flush_quote():
+        nonlocal quote
+        if quote:
+            qlines = [q for q in quote if q.strip().lower() != "[!quote]"]
+            if qlines:
+                out.append(f"<blockquote>{'<br>'.join(inline_md(x) for x in qlines)}</blockquote>")
+            quote = []
+
+    for raw in lines:
+        line = raw.rstrip()
+        if not line.strip():
+            flush_para()
+            flush_quote()
+            continue
+        if line.startswith(">"):
+            flush_para()
+            quote.append(line[1:].lstrip())
+            continue
+        flush_quote()
+        if line.startswith("# "):
+            flush_para()
+            out.append(f"<h1>{inline_md(line[2:].strip())}</h1>")
+            continue
+        if line.startswith("## "):
+            flush_para()
+            out.append(f"<h2>{inline_md(line[3:].strip())}</h2>")
+            continue
+        para.append(line)
+
+    flush_para()
+    flush_quote()
+    return "\n".join(out)
 
 
 QUESTIONS = _normalize_questions(load_questions())
@@ -392,7 +450,18 @@ def home(request):
         items = sorted(groups[sec], key=lambda x: x["name"].lower())
         grouped.append({"section": sec, "items": items})
     mistakes_count = _mistakes_count()
-    return render(request, "quiz/list.html", {"groups": grouped, "mistakes_count": mistakes_count})
+    katas_html = "<p>Katas content is not available.</p>"
+    try:
+        katas_path = Path(__file__).resolve().parents[2] / "assets" / "fonts" / "content" / "katas.md"
+        katas_text = katas_path.read_text(encoding="utf-8", errors="ignore")
+        katas_html = _render_markdown_basic(katas_text)
+    except Exception:
+        pass
+    return render(
+        request,
+        "quiz/list.html",
+        {"groups": grouped, "mistakes_count": mistakes_count, "katas_html": katas_html},
+    )
 
 
 def play(request, fname):
@@ -807,4 +876,3 @@ def api_mistakes_dump(request):
     base, token = _upstash_cfg()
     source = "upstash" if (base and token) else "local"
     return JsonResponse({"ok": True, "items": items, "source": source})
-
