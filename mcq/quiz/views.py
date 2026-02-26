@@ -220,26 +220,15 @@ except Exception:
 
 
 def _has_katas(questions: list[dict], source_path: Path | None = None) -> bool:
-    """Heuristic to detect if a question set is a Kata set.
-    - Looks for the substring 'kata' in text/extras/explanation (case-insensitive)
-    - Also checks the filename or any parent folder names
-    """
+    """Detect Kata sets by source file/folder naming."""
     try:
-        # Check questions content quickly
-        for q in questions:
-            for k in ("text", "explanation"):
-                v = (q.get(k) or "")
-                if isinstance(v, str) and ("kata" in v.lower()):
-                    return True
-            ex = q.get("extras") or {}
-            if isinstance(ex, dict):
-                for v in ex.values():
-                    if isinstance(v, str) and ("kata" in v.lower()):
-                        return True
-        # Check the path if provided
         if source_path is not None:
+            # Primary rule: filename contains "katas" (case-insensitive).
+            if "katas" in source_path.stem.lower():
+                return True
+            # Keep folder-name check as a fallback.
             for part in source_path.parts:
-                if "kata" in part.lower():
+                if "katas" in part.lower():
                     return True
     except Exception:
         pass
@@ -247,7 +236,7 @@ def _has_katas(questions: list[dict], source_path: Path | None = None) -> bool:
 
 
 def _timer_seconds_for(questions: list[dict], source_path: Path | None = None) -> int:
-    per_q = 15 if _has_katas(questions, source_path) else 60
+    per_q = 25 if _has_katas(questions, source_path) else 60
     return max(0, per_q * len(questions))
 
 
@@ -441,6 +430,7 @@ def mcq(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": DATA_PATH.stem,
         "data_source": str(DATA_PATH),
         "timer_seconds": _timer_seconds_for(QUESTIONS, DATA_PATH),
     }
@@ -608,6 +598,7 @@ def play(request, fname):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": target.stem,
         "data_source": str(target),
         "timer_seconds": _timer_seconds_for(questions, target),
     }
@@ -715,6 +706,7 @@ def master(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": "Master 180",
         "data_source": f"master: {total} from {len(files_used)} files",
         # For master, default to non-kata timing unless content indicates otherwise
         "timer_seconds": _timer_seconds_for(selection, None),
@@ -786,6 +778,7 @@ def mistakes(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": "Mistakes",
         "data_source": "mistakes",
         "timer_seconds": _timer_seconds_for(questions, None),
     }

@@ -6,30 +6,296 @@
   <title>Select Question Set</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: "JetBrains Mono", ui-monospace, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; background: #FBFAF4; color: #111; }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px; }
-    h1 { font-size: 22px; margin: 0 0 14px; }
-    p.sub { color: #6e6e73; margin: 0 0 20px; }
-    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-    li a { display: block; padding: 12px 14px; border: 1px solid #e5e5ea; border-radius: 12px; background: #fff; color: #111; text-decoration: none; }
-    li a:hover { background: #f9f9fb; }
-    .muted { color: #6e6e73; font-size: 12px; }
-    .footer { margin-top: 16px; }
-    .katas-btn {
+    :root {
+      --bg: #070d1a;
+      --surface-border: rgba(var(--secondary-rgb), 0.52);
+      --grid-line: rgba(var(--secondary-rgb), 0.08);
+      --text: #d1cfc0;
+      --muted: #94a3b8;
+      --accent: #86b6ff;
+      --secondary: #86b6ff;
+      --secondary-rgb: 134, 182, 255;
+      --grid-base-opacity: 0.06;
+      --grid-hover-opacity-boost: 0.12;
+      --grid-base-size: 1;
+      --grid-hover-size-boost: 0.45;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        radial-gradient(circle at 20% 15%, rgba(var(--secondary-rgb),0.12) 1px, transparent 1.2px),
+        radial-gradient(circle at 80% 40%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px),
+        radial-gradient(circle at 30% 70%, rgba(var(--secondary-rgb),0.08) 1px, transparent 1.2px),
+        radial-gradient(circle at 60% 85%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px);
+      background-size: 26px 26px, 22px 22px, 28px 28px, 24px 24px;
+      mix-blend-mode: screen;
+      opacity: 0.10;
+    }
+    #gridCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+    }
+    body[data-theme="light"] {
+      --bg: #FBFAF4;
+      --surface-border: rgba(var(--secondary-rgb), 0.3);
+      --grid-line: rgba(var(--secondary-rgb), 0.07);
+      --text: #091717;
+      --muted: #64748b;
+      --accent: #091717;
+      --secondary: #1244FF;
+      --secondary-rgb: 18, 68, 255;
+      --grid-base-opacity: 0.09;
+      --grid-hover-opacity-boost: 0.20;
+      --grid-base-size: 1.05;
+      --grid-hover-size-boost: 0.55;
+    }
+    .wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 26px 22px 34px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: clamp(24px, 3.4vw, 34px);
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    p.sub {
+      color: var(--muted);
+      margin: 10px 0 18px;
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 760px;
+    }
+    .master-row {
+      margin: 12px 0 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .master-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--surface-border);
+      background: rgba(var(--secondary-rgb), 0.1);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 120ms ease, background 180ms ease, border-color 180ms ease;
+    }
+    .master-link:hover {
+      transform: translateY(-1px);
+      background: rgba(var(--secondary-rgb), 0.18);
+      border-color: rgba(var(--secondary-rgb), 0.7);
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .topic-section {
+      margin: 24px 0 0;
+    }
+    .topic-section h2 {
+      font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 15px;
+      margin: 0 0 12px;
+      color: var(--secondary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 10px;
+    }
+    .card-link {
+      position: relative;
+      min-height: 136px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 6px;
+      padding: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px dotted rgba(var(--secondary-rgb), 0.46);
+      background: transparent;
+      transition: transform 140ms ease, border-color 180ms ease, box-shadow 200ms ease;
+    }
+    .card-link::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px),
+        linear-gradient(90deg, transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px);
+      background-size: 36px 36px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .card-link:hover {
+      transform: translateY(-3px);
+      border-color: rgba(var(--secondary-rgb), 0.8);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+    }
+    .card-title {
+      position: relative;
+      z-index: 1;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    .card-path {
+      position: relative;
+      z-index: 1;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cards li:nth-child(4n + 1) .card-link { background: transparent; }
+    .cards li:nth-child(4n + 2) .card-link { background: transparent; }
+    .cards li:nth-child(4n + 3) .card-link { background: transparent; }
+    .cards li:nth-child(4n + 4) .card-link { background: transparent; }
+    .footer {
+      margin-top: 22px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .footer a {
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .footer a:hover { border-color: rgba(var(--secondary-rgb), 0.6); }
+    body[data-theme="light"] .topic-section h2 { color: var(--secondary); }
+    body[data-theme="light"] .card-link {
+      color: #091717;
+      border: 2px dotted rgba(var(--secondary-rgb), 0.62);
+      background: rgba(255, 255, 255, 0.42);
+      backdrop-filter: blur(14px) saturate(150%);
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      box-shadow: 0 8px 18px rgba(var(--secondary-rgb), 0.1);
+    }
+    body[data-theme="light"] .card-link::after {
+      background:
+        linear-gradient(transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px),
+        linear-gradient(90deg, transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px);
+      opacity: 0.35;
+    }
+    body[data-theme="light"] .card-link:hover {
+      border-color: rgba(var(--secondary-rgb), 0.82);
+      box-shadow: 0 12px 24px rgba(var(--secondary-rgb), 0.18);
+    }
+    body[data-theme="light"] .card-title {
+      color: #091717;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+    }
+    body[data-theme="light"] .card-path { color: #64748b; }
+    body[data-theme="light"] .cards li:nth-child(4n + 1) .card-link {
+      background: transparent;
+    }
+    body[data-theme="light"] .cards li:nth-child(4n + 2) .card-link {
+      background: transparent;
+    }
+    body[data-theme="light"] .cards li:nth-child(4n + 3) .card-link {
+      background: transparent;
+    }
+    body[data-theme="light"] .cards li:nth-child(4n + 4) .card-link {
+      background: transparent;
+    }
+    body[data-theme="light"] .footer a {
+      color: var(--muted);
+    }
+    body[data-theme="light"] .footer a:hover {
+      border-color: rgba(var(--secondary-rgb), 0.7);
+    }
+    .top-controls {
       position: fixed;
       top: 14px;
       right: 14px;
       z-index: 1000;
-      border: 1px solid #d8d8dd;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .katas-btn,
+    .theme-btn {
+      border: 1px solid var(--surface-border);
       border-radius: 12px;
-      background: #ffffff;
-      color: #3a3a40;
+      background: rgba(var(--secondary-rgb), 0.1);
+      color: var(--accent);
       font-size: 12px;
       font-weight: 700;
       padding: 8px 10px;
       cursor: pointer;
+    }
+    .theme-btn {
+      min-width: 102px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .theme-btn .svg-icon {
+      width: 14px;
+      height: 14px;
+      display: block;
+      background-color: currentColor;
+      -webkit-mask-image: var(--icon-url);
+      mask-image: var(--icon-url);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+    body[data-theme="light"] .katas-btn,
+    body[data-theme="light"] .theme-btn {
+      border-color: var(--surface-border);
+      background: rgba(var(--secondary-rgb), 0.08);
+      color: var(--accent);
     }
     .katas-modal {
       position: fixed;
@@ -79,7 +345,7 @@
       padding-bottom: 10px;
     }
     .katas-title {
-      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 0.12em;
@@ -147,7 +413,7 @@
       line-height: 1.65;
     }
     .katas-body code {
-      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
       font-size: 0.86em;
       background: #e5e5ea;
       color: #2f2f35;
@@ -155,6 +421,10 @@
       border-radius: 5px;
     }
     @media (max-width: 680px) {
+      .wrap { padding: 20px 14px 24px; }
+      .cards { grid-template-columns: 1fr; gap: 10px; }
+      .card-link { min-height: 118px; }
+      .card-title { font-size: 15px; }
       .katas-dialog {
         left: 0;
         top: 0;
@@ -234,39 +504,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 <body>
-  <button id="katasOpenBtn" class="katas-btn" type="button">What are katas?</button>
+  <canvas id="gridCanvas" aria-hidden="true"></canvas>
+  <div class="top-controls">
+    <button id="themeToggleBtn" class="theme-btn" type="button" aria-label="Toggle color theme">Light mode</button>
+    <button id="katasOpenBtn" class="katas-btn" type="button">What are katas?</button>
+  </div>
   <div class="wrap">
     <h1>Select a Question Set</h1>
-    <div style="margin: 10px 0 20px;">
-      <a href="{% url 'master' %}" style="display:inline-block; padding:10px 12px; border-radius:12px; border:1px solid #e5e5ea; background:#fff; text-decoration:none; color:#111; font-weight:600;">Start Master 180</a>
-      <span class="muted" style="margin-left:8px;">Random mix from all topics</span>
+    <p class="sub">Choose a topic to start practicing. Cards are grouped by section for faster scanning.</p>
+    <div class="master-row">
+      <a class="master-link" href="{% url 'master' %}">Start Master 180</a>
+      <span class="muted">Random mix from all topics</span>
     </div>
     {% if groups %}
       {% for g in groups %}
-        <h2 style="font-size:16px; margin:18px 0 8px; color:#1d1d1f;">{{ g.section }}</h2>
-        <ul>
+        <section class="topic-section">
+        <h2>{{ g.section }}</h2>
+        <ul class="cards">
           {% for f in g.items %}
             <li>
-              <a href="{% url 'play' f.relpath %}">
-                {{ f.name }}
-                <div class="muted">{{ f.relpath }}</div>
+              <a class="card-link" href="{% url 'play' f.relpath %}">
+                <span class="card-title">{{ f.name }}</span>
+                <div class="card-path">{{ f.relpath }}</div>
               </a>
             </li>
           {% endfor %}
         </ul>
+        </section>
       {% endfor %}
     {% else %}
-      <ul>
+      <ul class="cards">
         <li class="muted">No JSON files found.</li>
       </ul>
     {% endif %}
 
     <div class="footer">
-      <a class="muted" href="{% url 'mcq' %}">Open default quiz</a>
-      &nbsp;•&nbsp;
-      <a class="muted" href="{% url 'mistakes' %}">Mistakes {% if mistakes_count %}({{ mistakes_count }}){% endif %}</a>
-      &nbsp;•&nbsp;
-      <a class="muted" href="{% url 'mistakes_grouped' %}">Mistakes by Topic</a>
+      <a href="{% url 'mcq' %}">Open default quiz</a>
+      <a href="{% url 'mistakes' %}">Mistakes {% if mistakes_count %}({{ mistakes_count }}){% endif %}</a>
+      <a href="{% url 'mistakes_grouped' %}">Mistakes by Topic</a>
     </div>
   </div>
 
@@ -285,9 +560,118 @@
 
   <script>
     (function () {
+      const canvas = document.getElementById("gridCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
+      const GRID_SIZE = 28;
+      const HOVER_RADIUS = 150;
+      let mouseX = -1e9;
+      let mouseY = -1e9;
+
+      function resizeCanvasToViewport() {
+        const dpr = window.devicePixelRatio || 1;
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = `${w}px`;
+        canvas.style.height = `${h}px`;
+
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(dpr, dpr);
+      }
+
+      function drawGridFrame() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const dotRgb = getComputedStyle(document.body).getPropertyValue("--secondary-rgb").trim() || "134, 182, 255";
+        const styles = getComputedStyle(document.body);
+        const BASE_OPACITY = parseFloat(styles.getPropertyValue("--grid-base-opacity")) || 0.06;
+        const HOVER_OPACITY_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-opacity-boost")) || 0.12;
+        const BASE_SIZE = parseFloat(styles.getPropertyValue("--grid-base-size")) || 1;
+        const HOVER_SIZE_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-size-boost")) || 0.45;
+
+        ctx.clearRect(0, 0, w, h);
+
+        const offsetY = -(window.scrollY % GRID_SIZE);
+        const cols = Math.ceil(w / GRID_SIZE) + 1;
+        const rows = Math.ceil(h / GRID_SIZE) + 2;
+
+        for (let row = 0; row < rows; row++) {
+          for (let col = 0; col < cols; col++) {
+            const x = col * GRID_SIZE;
+            const y = row * GRID_SIZE + offsetY;
+            const dx = x - mouseX;
+            const dy = y - mouseY;
+            const dist = Math.hypot(dx, dy);
+
+            let opacity = BASE_OPACITY;
+            let size = BASE_SIZE;
+
+            if (dist < HOVER_RADIUS) {
+              const intensity = 1 - dist / HOVER_RADIUS;
+              opacity = BASE_OPACITY + intensity * HOVER_OPACITY_BOOST;
+              size = BASE_SIZE + intensity * HOVER_SIZE_BOOST;
+            }
+
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${dotRgb}, ${opacity})`;
+            ctx.fill();
+          }
+        }
+
+        requestAnimationFrame(drawGridFrame);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      window.addEventListener("resize", resizeCanvasToViewport);
+
+      resizeCanvasToViewport();
+      requestAnimationFrame(drawGridFrame);
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
       const openBtn = document.getElementById('katasOpenBtn');
       const modal = document.getElementById('katasModal');
-      if (!openBtn || !modal) return;
+      const themeStorageKey = 'homepage_theme';
+      if (!openBtn || !modal || !themeToggleBtn || !body) return;
+
+      function getPreferredTheme() {
+        const saved = localStorage.getItem(themeStorageKey);
+        if (saved === 'light' || saved === 'dark') return saved;
+        return 'dark';
+      }
+
+      function applyTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        if (theme === 'dark') {
+          themeToggleBtn.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/sun.svg\')" aria-hidden="true"></span>Light mode';
+        } else {
+          themeToggleBtn.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/moon.svg\')" aria-hidden="true"></span>Dark mode';
+        }
+        themeToggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      function toggleTheme() {
+        const current = body.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        const next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(themeStorageKey, next);
+        applyTheme(next);
+      }
+
+      applyTheme(getPreferredTheme());
+      themeToggleBtn.addEventListener('click', toggleTheme);
 
       function openModal() {
         modal.classList.add('show');
