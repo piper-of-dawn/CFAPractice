@@ -7,7 +7,7 @@
   <title>MCQ Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 
 
@@ -50,14 +50,15 @@
       } catch (_) {}
     })();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
   :root {
     --bg: #FBFAF4; /* light mode background */
     --card: #ffffff;
     --text: #091717; /* light mode text */
     --muted: #64748b;
-    --secondary: #20808D; /* light mode secondary */
-    --secondary-rgb: 32, 128, 141;
+    --secondary: #1244FF;
+    --secondary-rgb: 18, 68, 255;
     --border: var(--secondary);
     --primary: #0f172a;
     --primary-foreground: #f8fafc;
@@ -68,16 +69,20 @@
     --tag-text: #334155;
     --success: #16a34a;
     --danger: #BF505C;
+    --grid-base-opacity: 0.09;
+    --grid-hover-opacity-boost: 0.20;
+    --grid-base-size: 1.05;
+    --grid-hover-size-boost: 0.55;
   }
   :root[data-theme="dark"] {
-    --bg: #141414; /* requested dark background */
+    --bg: #070d1a;
     --card: rgba(var(--secondary-rgb), 0.08); /* warm glass base */
-    --text: #d1cfc0;
-    --muted: #94a3b8;
-    --secondary: #fdf083;
-    --secondary-rgb: 253, 240, 131;
+    --secondary: #86b6ff;
+    --secondary-rgb: 134, 182, 255;
+    --text: var(--secondary);
+    --muted: var(--secondary);
     /* Soften borders in dark mode */
-    --border: rgba(var(--secondary-rgb), 0.52);
+    --border: rgba(var(--secondary-rgb), 0.88);
     --primary: #e2e8f0;
     --primary-foreground: #0b0f14;
     --shadow: none;
@@ -86,8 +91,20 @@
     --tag-text: #cbd5f5;
     --success: #22c55e;
     --danger: #BF505C;
+    --grid-base-opacity: 0.06;
+    --grid-hover-opacity-boost: 0.12;
+    --grid-base-size: 1;
+    --grid-hover-size-boost: 0.45;
   }
   html, body { height: 100%; }
+  #gridCanvas {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+  }
   body {
     margin: 0;
     background: var(--bg);
@@ -148,18 +165,18 @@
     mix-blend-mode: multiply;
     opacity: 0.22;
   }
-  /* Warmer grain in dark mode using secondary tint */
+  /* Cool grain in dark mode using secondary tint */
   :root[data-theme="dark"] body::after {
     background-image:
-      radial-gradient(circle at 20% 15%, rgba(var(--secondary-rgb),0.18) 1px, transparent 1.2px),
-      radial-gradient(circle at 80% 40%, rgba(var(--secondary-rgb),0.14) 1px, transparent 1.2px),
-      radial-gradient(circle at 30% 70%, rgba(var(--secondary-rgb),0.12) 1px, transparent 1.2px),
-      radial-gradient(circle at 60% 85%, rgba(var(--secondary-rgb),0.16) 1px, transparent 1.2px);
+      radial-gradient(circle at 20% 15%, rgba(var(--secondary-rgb),0.12) 1px, transparent 1.2px),
+      radial-gradient(circle at 80% 40%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px),
+      radial-gradient(circle at 30% 70%, rgba(var(--secondary-rgb),0.08) 1px, transparent 1.2px),
+      radial-gradient(circle at 60% 85%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px);
     background-size: 26px 26px, 22px 22px, 28px 28px, 24px 24px;
-    mix-blend-mode: soft-light;
-    opacity: 0.18;
+    mix-blend-mode: screen;
+    opacity: 0.10;
   }
-  .wrap { position: relative; z-index: 1; }
+  .wrap { position: relative; z-index: 2; }
   .theme-toggle { z-index: 10001; }
   .card .content { padding: 20px 22px; }
 
@@ -183,7 +200,7 @@
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     /* Solid border in secondary color */
-    border: 1px dashed rgba(var(--secondary-rgb), 0.34);
+    border: 1px dashed rgba(var(--secondary-rgb), 0.82);
     /* Soft, shallow drop shadow */
     box-shadow:
       inset 0 1px 0 rgba(255,255,255,0.08),
@@ -191,13 +208,13 @@
   }
   /* Removed scroll-reveal animations */
   /* Match light-mode feedback intensity to dark mode */
-  .question.correct { border-color: rgba(112,124,54,0.95); box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+  .question.correct { border-color: rgba(34,197,94,0.95); box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   .question.incorrect { border-color: rgba(191,80,92,0.95); box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   .question.correct.glow-correct { animation: correctGlow 3s ease-out; }
   @keyframes correctGlow {
-    0% { box-shadow: 0 0 0 0 rgba(212,236,213,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(212,236,213,0.8); }
-    100% { box-shadow: 0 8px 22px rgba(212,236,213,0.7); }
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(34,197,94,0.58); }
+    100% { box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   }
   .question.incorrect.glow-incorrect { animation: incorrectGlow 3s ease-out; }
   @keyframes incorrectGlow {
@@ -206,14 +223,14 @@
     100% { box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   }
   /* Brighter feedback in dark mode */
-  :root[data-theme="dark"] .question.correct { border-color: rgba(112,124,54,0.95); box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+  :root[data-theme="dark"] .question.correct { border-color: rgba(34,197,94,0.95); box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   :root[data-theme="dark"] .question.incorrect { border-color: rgba(191,80,92,0.95); box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   :root[data-theme="dark"] .question.correct.glow-correct { animation: correctGlowDark 3s ease-out; }
   :root[data-theme="dark"] .question.incorrect.glow-incorrect { animation: incorrectGlowDark 3s ease-out; }
   @keyframes correctGlowDark {
-    0% { box-shadow: 0 0 0 0 rgba(212,236,213,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(212,236,213,0.8); }
-    100% { box-shadow: 0 8px 22px rgba(212,236,213,0.7); }
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(34,197,94,0.58); }
+    100% { box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   }
   @keyframes incorrectGlowDark {
     0% { box-shadow: 0 0 0 0 rgba(191,80,92,0); }
@@ -251,6 +268,29 @@
   :root[data-theme="dark"] .choice:has(input:checked) { background: rgba(var(--secondary-rgb), 0.20); box-shadow: 0 0 0 2px rgba(var(--secondary-rgb), 0.50); }
   :root[data-theme="dark"] .choice input:checked + label { background: rgba(var(--secondary-rgb), 0.20); }
   :root[data-theme="dark"] .choice:hover { background: rgba(var(--secondary-rgb), 0.20); }
+  /* Selected correctness styles: full-row fill + clean ring (no inner banding). */
+  .choice.is-correct {
+    background: rgba(34, 197, 94, 0.20) !important;
+    box-shadow: inset 0 0 0 2px rgba(34, 197, 94, 0.95) !important;
+  }
+  .choice.is-incorrect {
+    background: rgba(191, 80, 92, 0.20) !important;
+    box-shadow: inset 0 0 0 2px rgba(191, 80, 92, 0.95) !important;
+  }
+  .choice.is-correct label,
+  .choice.is-incorrect label {
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  :root[data-theme="dark"] .choice.is-correct {
+    background: rgba(34, 197, 94, 0.22) !important;
+    box-shadow: inset 0 0 0 2px rgba(74, 222, 128, 0.95) !important;
+  }
+  :root[data-theme="dark"] .choice.is-incorrect {
+    background: rgba(191, 80, 92, 0.24) !important;
+    box-shadow: inset 0 0 0 2px rgba(248, 113, 113, 0.95) !important;
+  }
 
   .actions { padding: 16px 22px 22px; display: flex; gap: 8px; }
   .btn { appearance: none; border: 1px solid var(--border); background: transparent; color: var(--text); padding: 10px 14px; border-radius: 14px; font-weight: 600; letter-spacing: 0.2px; cursor: pointer; }
@@ -266,6 +306,7 @@
   .metric { display: flex; align-items: baseline; justify-content: space-between; color: var(--secondary); margin-bottom: 8px; }
   .metric .label { color: var(--secondary); font-size: 12px; }
   .metric .value { font-weight: 700; font-size: 20px; }
+  .metric .value-small { font-size: 14px; font-weight: 600; }
   .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border); font-size: 11px; }
   .pill-success { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
   .pill-danger { background: rgba(191,80,92,0.12); color: #BF505C; border-color: rgba(191,80,92,0.28); }
@@ -307,6 +348,25 @@
     align-items: center;
     gap: 8px;
     font-size: 13px;
+  }
+  .svg-icon {
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-color: currentColor;
+    -webkit-mask-image: var(--icon-url);
+    mask-image: var(--icon-url);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  }
+  .label-with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
   .theme-toggle:focus { outline: 2px solid rgba(15,23,42,0.2); outline-offset: 2px; }
   @media (max-width: 480px) {
@@ -365,7 +425,7 @@
   :root[data-theme="dark"] .sidebar > .card:first-child,
   :root[data-theme="dark"] .sidebar > .card:first-child * { color: var(--secondary) !important; }
   :root[data-theme="dark"] .sidebar > .card:last-child {
-    background: #2b2a1f;
+    background: rgba(var(--secondary-rgb), 0.12);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
   }
   :root[data-theme="dark"] .sidebar > .card:last-child .content,
@@ -373,7 +433,7 @@
   :root[data-theme="dark"] .sidebar > .card:last-child .metric .label,
   :root[data-theme="dark"] .sidebar > .card:last-child .metric .value,
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeStatus {
-    color: #fdf083 !important;
+    color: var(--secondary) !important;
   }
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeBody,
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeMeta {
@@ -408,17 +468,47 @@
   body.time-expired::after { opacity: 0.08; }
   :root[data-theme="dark"] body.time-expired::after { opacity: 0.10; }
   /* Timer badge style in sidebar */
-  .metric .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .metric .mono { font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .time-chart-wrap {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.35);
+    padding: 6px;
+    min-height: 160px;
+  }
+  #timeChartCanvas {
+    width: 100%;
+    height: 148px;
+    display: block;
+  }
+  .chart-empty {
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 58px;
+  }
+  .chart-delta {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-transform: uppercase;
+  }
+  :root[data-theme="dark"] .time-chart-wrap {
+    background: rgba(var(--secondary-rgb), 0.06);
+  }
+  :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
+  :root[data-theme="dark"] .chart-delta { color: #d7def0; }
   </style>
 </head>
 <body data-timer-seconds="{{ timer_seconds|default:'0' }}">
+  <canvas id="gridCanvas" aria-hidden="true"></canvas>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
-    <span class="icon" aria-hidden="true">??</span>
+    <span class="icon" aria-hidden="true"></span>
     <span class="label">Dark</span>
   </button>
   <div class="wrap">
     <header>
-      <h1>MCQ Quiz</h1>
+      <h1>{{ quiz_title|default:"MCQ Quiz" }}</h1>
       <div class="sub">{{ total }} questions</div>
     </header>
 
@@ -461,17 +551,29 @@
       <aside class="sidebar" id="sidebar">
         <div class="card" style="margin-bottom:16px;">
           <div class="content">
-            <div class="metric"><span class="label">Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/chart-line.svg')" aria-hidden="true"></span>Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
             <div class="metric"><span class="label">Streak</span><span class="value" id="streakValue">0</span></div>
             <span class="pill" id="longestPill">Longest: 0</span>
             <hr style="border:0;height:1px;background:var(--border);opacity:0.35;margin:12px 0;">
-            <div class="metric"><span class="label">Timer</span><span class="value mono" id="timerValue">--:--</span></div>
-            <div class="metric"><span class="label">Avg time/Q</span><span class="value mono" id="avgTimeValue">--</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/clock.svg')" aria-hidden="true"></span>Timer</span><span class="value mono" id="timerValue">--:--</span></div>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:16px;">
+          <div class="content">
+            <div class="metric">
+              <span class="label">Time Chart</span>
+              <span class="value value-small mono" id="timeChartLatest">--</span>
+            </div>
+            <div class="time-chart-wrap">
+              <canvas id="timeChartCanvas" aria-label="Stepwise running average time per answered question"></canvas>
+              <div id="timeChartEmpty" class="chart-empty">Answer questions to see the trend.</div>
+            </div>
+            <div id="timeChartDelta" class="chart-delta">YOU ARE --% ON PACE WITH EXPECTED.</div>
           </div>
         </div>
         <div class="card">
           <div class="content">
-            <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">--</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/flag-checkered.svg')" aria-hidden="true"></span>Outcome</span><span class="value" id="outcomeStatus">--</span></div>
             <button id="seeExplanationBtn" class="btn btn-primary see-explanation-btn" type="button" hidden>See Explanation</button>
             <div id="outcomeBox" hidden>
               <div class="pill pill-muted" id="outcomePill">Awaiting check...</div>
@@ -485,22 +587,101 @@
   </div>
 
   <script>
+    (function () {
+      const canvas = document.getElementById("gridCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
+      const GRID_SIZE = 28;
+      const HOVER_RADIUS = 150;
+      let mouseX = -1e9;
+      let mouseY = -1e9;
+
+      function resizeCanvasToViewport() {
+        const dpr = window.devicePixelRatio || 1;
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = `${w}px`;
+        canvas.style.height = `${h}px`;
+
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(dpr, dpr);
+      }
+
+      function drawGridFrame() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const dotRgb = getComputedStyle(document.documentElement).getPropertyValue("--secondary-rgb").trim() || "18, 68, 255";
+        const styles = getComputedStyle(document.documentElement);
+        const BASE_OPACITY = parseFloat(styles.getPropertyValue("--grid-base-opacity")) || 0.06;
+        const HOVER_OPACITY_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-opacity-boost")) || 0.12;
+        const BASE_SIZE = parseFloat(styles.getPropertyValue("--grid-base-size")) || 1;
+        const HOVER_SIZE_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-size-boost")) || 0.45;
+
+        ctx.clearRect(0, 0, w, h);
+        const offsetY = -(window.scrollY % GRID_SIZE);
+        const cols = Math.ceil(w / GRID_SIZE) + 1;
+        const rows = Math.ceil(h / GRID_SIZE) + 2;
+
+        for (let row = 0; row < rows; row++) {
+          for (let col = 0; col < cols; col++) {
+            const x = col * GRID_SIZE;
+            const y = row * GRID_SIZE + offsetY;
+            const dx = x - mouseX;
+            const dy = y - mouseY;
+            const dist = Math.hypot(dx, dy);
+
+            let opacity = BASE_OPACITY;
+            let size = BASE_SIZE;
+
+            if (dist < HOVER_RADIUS) {
+              const intensity = 1 - dist / HOVER_RADIUS;
+              opacity = BASE_OPACITY + intensity * HOVER_OPACITY_BOOST;
+              size = BASE_SIZE + intensity * HOVER_SIZE_BOOST;
+            }
+
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${dotRgb}, ${opacity})`;
+            ctx.fill();
+          }
+        }
+
+        requestAnimationFrame(drawGridFrame);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      window.addEventListener("resize", resizeCanvasToViewport);
+
+      resizeCanvasToViewport();
+      requestAnimationFrame(drawGridFrame);
+    })();
+  </script>
+
+  <script>
     // Theme toggle behavior
     (function(){
       const btn = document.getElementById('themeToggle');
       if (btn) {
         const root = document.documentElement;
         const current = () => (root.getAttribute('data-theme') === 'dark') ? 'dark' : 'light';
-        const updateButton = (theme) => {
+          const updateButton = (theme) => {
           const icon = btn.querySelector('.icon');
           const label = btn.querySelector('.label');
           if (theme === 'dark') {
-            if (icon) icon.textContent = '??';
+            if (icon) icon.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/sun.svg\')" aria-hidden="true"></span>';
             if (label) label.textContent = 'Light';
             btn.setAttribute('aria-label', 'Switch to light mode');
             btn.title = 'Switch to light mode';
           } else {
-            if (icon) icon.textContent = '??';
+            if (icon) icon.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/moon.svg\')" aria-hidden="true"></span>';
             if (label) label.textContent = 'Dark';
             btn.setAttribute('aria-label', 'Switch to dark mode');
             btn.title = 'Switch to dark mode';
@@ -510,6 +691,7 @@
           root.setAttribute('data-theme', theme);
           try { localStorage.setItem('theme', theme); } catch(_) {}
           updateButton(theme);
+          window.dispatchEvent(new Event('themechange'));
         };
         updateButton(current());
         btn.addEventListener('click', () => setTheme(current()==='dark' ? 'light' : 'dark'));
@@ -665,6 +847,14 @@
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
         sec.classList.toggle('incorrect', !ok);
+        // Add visual state on the selected choice row
+        sec.querySelectorAll('li.choice').forEach((li) => {
+          li.classList.remove('is-correct', 'is-incorrect');
+        });
+        const selectedLi = selected.closest('li.choice');
+        if (selectedLi) {
+          selectedLi.classList.add(ok ? 'is-correct' : 'is-incorrect');
+        }
         // Trigger a brief green glow (1.5s) when correct
         if (ok) {
           // Retrigger correct animation by removing then re-adding the class
@@ -816,14 +1006,23 @@
       // ===== Timer + Avg time per question =====
       const timerEl = document.getElementById('timerValue');
       const avgEl = document.getElementById('avgTimeValue');
+      const timeChartCanvas = document.getElementById('timeChartCanvas');
+      const timeChartEmpty = document.getElementById('timeChartEmpty');
+      const timeChartLatest = document.getElementById('timeChartLatest');
+      const timeChartDelta = document.getElementById('timeChartDelta');
       const totalSecs = parseInt(document.body.dataset.timerSeconds || '0', 10) || 0;
       const startTs = Date.now();
+      const firstAnswered = new Set();
+      const avgSeries = [];
+      let timeChart = null;
       let expired = false;
       function fmtMMSS(s) {
-        if (!isFinite(s) || s < 0) s = 0;
-        const m = Math.floor(s / 60);
-        const ss = Math.floor(s % 60);
-        return `${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
+        if (!isFinite(s)) s = 0;
+        const sign = s < 0 ? '-' : '';
+        const abs = Math.abs(Math.floor(s));
+        const m = Math.floor(abs / 60);
+        const ss = abs % 60;
+        return `${sign}${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
       }
       function updateAvg() {
         if (!avgEl) return;
@@ -837,10 +1036,151 @@
         // Show seconds with one decimal if < 100s, else whole seconds
         avgEl.textContent = avg < 100 ? `${avg.toFixed(1)}s` : `${Math.round(avg)}s`;
       }
+      function destroyTimeChart() {
+        if (timeChart) {
+          timeChart.destroy();
+          timeChart = null;
+        }
+      }
+      function renderTimeChart() {
+        if (!timeChartCanvas || !timeChartEmpty || !timeChartLatest) return;
+        const n = avgSeries.length;
+        if (n === 0) {
+          destroyTimeChart();
+          timeChartEmpty.hidden = false;
+          timeChartLatest.textContent = '--';
+          if (timeChartDelta) timeChartDelta.textContent = 'YOU ARE --% ON PACE WITH EXPECTED.';
+          return;
+        }
+        if (!window.Chart) {
+          timeChartEmpty.hidden = false;
+          timeChartEmpty.textContent = 'Chart library not available.';
+          return;
+        }
+        timeChartEmpty.hidden = true;
+        const axisColor = getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() || '#94a3b8';
+        const strokeColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary').trim() || '#20808D';
+        const secondaryRgb = getComputedStyle(document.documentElement).getPropertyValue('--secondary-rgb').trim() || '148, 163, 184';
+        const monoFont = '"DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+        const gridColor = `rgba(${secondaryRgb}, 0.18)`;
+        const lastAvg = avgSeries[n - 1];
+        timeChartLatest.textContent = lastAvg < 100 ? `${lastAvg.toFixed(1)}s` : `${Math.round(lastAvg)}s`;
+        if (timeChartDelta) {
+          const expected = questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60;
+          const pct = Math.abs(((lastAvg - expected) / expected) * 100);
+          if (Math.abs(lastAvg - expected) < 0.05) {
+            timeChartDelta.textContent = 'YOU ARE 0.0% ON PACE WITH EXPECTED.';
+            timeChartDelta.style.color = '';
+          } else if (lastAvg < expected) {
+            timeChartDelta.innerHTML = `YOU ARE <strong>${pct.toFixed(1)}% FASTER</strong> THAN EXPECTED.`;
+            timeChartDelta.style.color = 'var(--success)';
+          } else {
+            timeChartDelta.textContent = `YOU ARE ${pct.toFixed(1)}% SLOWER THAN EXPECTED.`;
+            timeChartDelta.style.color = 'var(--danger)';
+          }
+        }
+        const labels = avgSeries.map((_, i) => String(i + 1));
+        destroyTimeChart();
+        timeChart = new Chart(timeChartCanvas.getContext('2d'), {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [
+              {
+                label: 'AVG TIME (SECONDS)',
+                data: avgSeries.map((v) => Number(v.toFixed(2))),
+                stepped: 'before',
+                borderColor: strokeColor,
+                backgroundColor: strokeColor,
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                borderWidth: 2.4,
+                tension: 0
+              },
+              {
+                label: `EXPECTED AVERAGE (${Math.round((questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60))}S)`,
+                data: labels.map(() => (questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60)),
+                borderColor: 'rgba(191, 80, 92, 0.95)',
+                backgroundColor: 'rgba(191, 80, 92, 0.95)',
+                borderDash: [7, 5],
+                pointRadius: 0,
+                pointHoverRadius: 0,
+                borderWidth: 1.8,
+                tension: 0
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: false,
+            font: { family: monoFont },
+            plugins: {
+              legend: {
+                display: true,
+                labels: { color: axisColor, boxWidth: 16, boxHeight: 2, font: { family: monoFont } }
+              },
+              tooltip: {
+                titleFont: { family: monoFont },
+                bodyFont: { family: monoFont },
+                callbacks: {
+                  label: (ctx) => ` ${ctx.parsed.y.toFixed(1)}S`
+                }
+              }
+            },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: 'QUESTION NUMBER',
+                  color: axisColor,
+                  font: { family: monoFont }
+                },
+                ticks: {
+                  color: axisColor,
+                  autoSkip: true,
+                  maxTicksLimit: 8,
+                  font: { family: monoFont },
+                  callback: function(value) {
+                    const label = this.getLabelForValue(value);
+                    return String(label).toUpperCase();
+                  }
+                },
+                grid: { color: gridColor }
+              },
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'AVERAGE TIME (S)',
+                  color: axisColor,
+                  font: { family: monoFont }
+                },
+                ticks: {
+                  color: axisColor,
+                  font: { family: monoFont },
+                  callback: (value) => String(value).toUpperCase()
+                },
+                grid: { color: gridColor }
+              }
+            }
+          }
+        });
+      }
+      function noteAnswerForChart(radioEl) {
+        if (!radioEl || !radioEl.name) return;
+        if (firstAnswered.has(radioEl.name)) return;
+        firstAnswered.add(radioEl.name);
+        const elapsed = (Date.now() - startTs) / 1000;
+        const answered = firstAnswered.size;
+        if (answered <= 0) return;
+        avgSeries.push(elapsed / answered);
+        renderTimeChart();
+      }
       function tickTimer() {
         if (!timerEl || totalSecs <= 0) return;
         const elapsed = (Date.now() - startTs) / 1000;
-        const remaining = Math.max(0, Math.round(totalSecs - elapsed));
+        const remaining = Math.round(totalSecs - elapsed);
         timerEl.textContent = fmtMMSS(remaining);
         if (!expired && remaining <= 0) {
           expired = true;
@@ -856,14 +1196,23 @@
       }
       // Initial avg fill
       updateAvg();
+      // Bootstrap chart with pre-selected questions (if any) as current-state point
+      document.querySelectorAll('section.question input[type="radio"]:checked').forEach((input) => firstAnswered.add(input.name));
+      if (firstAnswered.size > 0) {
+        avgSeries.push(((Date.now() - startTs) / 1000) / firstAnswered.size);
+      }
+      renderTimeChart();
 
       // Hook into selection changes to update average time per question
       document.getElementById('quizForm').addEventListener('change', (e) => {
         const t = e.target;
         if (t && t.type === 'radio') {
+          noteAnswerForChart(t);
           updateAvg();
         }
       });
+      window.addEventListener('resize', renderTimeChart);
+      window.addEventListener('themechange', renderTimeChart);
     })();
   </script>
   <script>
