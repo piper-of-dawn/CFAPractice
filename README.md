@@ -1,6 +1,5 @@
+Rates and Returns (Katas)
 
-Flashcard Generator
--------------------
-- Add CSV files under `flashcard_data/` with headers `Front, Back`.
-- Visit `/flashcards/` to pick a file and generate printable A4 sheets (front/back, 3x4 grid per page).
-- Print settings: A4, no margins, 100% scale. The back page is mirrored horizontally for alignment.
+An investor will receive USD 1,000 at the beginning of each year for three years. If the discount rate is 5%, the present value is closest to:
+
+An investor will receive USD 1,000 at the beginning of each year for three years. If the discount rate is 5%, the present value is closest to:
