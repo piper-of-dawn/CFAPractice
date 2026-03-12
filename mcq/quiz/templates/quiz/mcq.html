@@ -305,8 +305,16 @@
   .sidebar { position: sticky; top: 24px; color: var(--secondary); }
   .metric { display: flex; align-items: baseline; justify-content: space-between; color: var(--secondary); margin-bottom: 8px; }
   .metric .label { color: var(--secondary); font-size: 12px; }
-  .metric .value { font-weight: 700; font-size: 20px; }
+  .metric .value { color: var(--secondary); font-weight: 700; font-size: 20px; font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   .metric .value-small { font-size: 14px; font-weight: 600; }
+  #scoreValue,
+  #streakValue,
+  #timerValue,
+  #outcomeStatus,
+  .sidebar .metric .value,
+  .sidebar .metric .value-small {
+    color: var(--secondary) !important;
+  }
   .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border); font-size: 11px; }
   .pill-success { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
   .pill-danger { background: rgba(191,80,92,0.12); color: #BF505C; border-color: rgba(191,80,92,0.28); }
@@ -320,6 +328,11 @@
     max-height: 280px;
     overflow: auto;
     padding: 10px 4px 2px 0;
+  }
+  #outcomeBody,
+  #outcomeMeta,
+  #outcomeMeta .label {
+    color: var(--secondary);
   }
   #outcomeBox { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
   #outcomeBox::-webkit-scrollbar { width: 8px; height: 8px; }
@@ -353,7 +366,8 @@
     width: 14px;
     height: 14px;
     display: block;
-    background-color: currentColor;
+    background-color: var(--secondary);
+    color: var(--secondary);
     -webkit-mask-image: var(--icon-url);
     mask-image: var(--icon-url);
     -webkit-mask-repeat: no-repeat;
@@ -381,21 +395,186 @@
     .inline-explain-btn { display: inline-flex; align-items: center; }
   }
 
-  .modal { position: fixed; inset: 0; display: none; z-index: 9999; }
-  .modal.show { display: block; }
-  .modal .backdrop { position: absolute; inset: 0; background: rgba(2,6,23,0.45); }
-  .modal .dialog { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-    width: min(92vw, 560px); max-height: 80vh; background: var(--card); color: var(--text); border-radius: 18px; box-shadow: var(--shadow);
-    display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border); }
-  .modal .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-  .modal .head .title { font-weight: 700; }
-  .modal .close { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; padding: 6px 10px; cursor: pointer; color: var(--muted); }
-  .modal .body { padding: 12px; overflow: auto; }
-  .modal .body { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
-  .modal .body::-webkit-scrollbar { width: 8px; height: 8px; }
-  .modal .body::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
-  .modal .body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid transparent; background-clip: content-box; }
-  .modal .body:hover::-webkit-scrollbar-thumb { background: #94a3b8; }
+  .katas-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+  }
+  .katas-modal.show { display: block; }
+  .katas-backdrop {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+  }
+  .katas-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(94vw, 1040px);
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border: 1px solid #ececf0;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(16, 16, 20, 0.08);
+    padding: 26px 30px 34px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.14) transparent;
+  }
+  .katas-dialog::-webkit-scrollbar { width: 6px; height: 6px; }
+  .katas-dialog::-webkit-scrollbar-track { background: transparent; }
+  .katas-dialog::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.14);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  .katas-dialog:hover::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.22); }
+  .katas-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    position: relative;
+    background: #ffffff;
+    padding-bottom: 10px;
+  }
+  .katas-title {
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5f6068;
+    margin: 0;
+    text-align: center;
+  }
+  .katas-close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #d0d1d8;
+    border-radius: 8px;
+    background: #f7f7f9;
+    color: #4b4c53;
+    font-size: 18px;
+    line-height: 1;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  .katas-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: "Times New Roman", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    color: #3f4046;
+  }
+  .katas-body h1 {
+    font-size: clamp(34px, 4.2vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin: 8px 0 14px;
+    padding: 10px 18px;
+    color: #2f3035;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+  }
+  .katas-body h2, .katas-body h3 {
+    font-size: clamp(27px, 3.2vw, 36px);
+    line-height: 1.2;
+    margin: 26px 0 12px;
+    font-weight: 500;
+    color: #35363d;
+  }
+  .katas-body p {
+    margin: 0 0 36px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    color: #595b63;
+  }
+  .katas-body strong {
+    color: #1f2024;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(31, 32, 36, 0.55);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.12em;
+  }
+  .katas-body blockquote {
+    margin: 0 0 22px;
+    padding: 0 0 0 18px;
+    border-left: 1px solid #d5d6dc;
+    background: transparent;
+    color: #6a6c75;
+    font-style: italic;
+    font-size: clamp(18px, 1.52vw, 21px);
+    line-height: 1.65;
+  }
+  .katas-body code {
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 0.86em;
+    background: #e5e5ea;
+    color: #2f2f35;
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+  .katas-richtext > * {
+    margin: 0 0 36px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    color: #595b63;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-richtext ol,
+  .katas-richtext ul {
+    margin: 0 0 36px;
+    padding-left: 1.5em;
+    color: #595b63;
+    overflow-wrap: anywhere;
+  }
+  .katas-richtext li {
+    margin: 0 0 12px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-stem {
+    margin: 0 0 24px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid #e2e3e8;
+    color: #2f3035;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-stem .stem,
+  .katas-stem p,
+  .katas-stem li,
+  .katas-stem h1,
+  .katas-stem h2,
+  .katas-stem h3 {
+    color: #2f3035;
+  }
+  .katas-stem .math-scroll,
+  .katas-richtext .math-scroll {
+    max-width: 100%;
+  }
+  .katas-richtext table,
+  .katas-stem table,
+  .katas-richtext pre,
+  .katas-stem pre {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .katas-richtext > :last-child { margin-bottom: 0; }
 
   .math-scroll {
     display: block;
@@ -456,10 +635,7 @@
   .pill-danger,
   .btn,
   .btn-ghost,
-  .modal .dialog,
-  .modal .head,
   .theme-toggle { border: none !important; }
-  .modal .head { border-bottom: none !important; }
   /* Timer expired state: mild red background */
   body.time-expired {
     background: #fdecec !important;
@@ -498,6 +674,105 @@
   }
   :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
   :root[data-theme="dark"] .chart-delta { color: #d7def0; }
+  @media (max-width: 680px) {
+    .katas-dialog {
+      left: 0;
+      top: 0;
+      transform: none;
+      width: 100vw;
+      max-height: 100vh;
+      height: 100vh;
+      border: 0;
+      box-shadow: none;
+      padding: 14px 16px 26px;
+      border-radius: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    .katas-body {
+      max-width: 100%;
+      padding: 0 8px 8px;
+      box-sizing: border-box;
+    }
+    .katas-head {
+      position: static;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+    .katas-title {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+    }
+    .katas-body h1 {
+      font-size: clamp(50px, 11vw, 66px);
+      line-height: 1.06;
+      margin: 20px 0 12px;
+      padding: 4px 10px;
+    }
+    .katas-body h1 + p {
+      text-align: center;
+      max-width: 310px;
+      margin: 0 auto 26px;
+      line-height: 1.28;
+      font-size: 24px;
+      color: #4d5563;
+    }
+    .katas-body p {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 26px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .katas-richtext > * {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 20px;
+      text-align: left;
+    }
+    .katas-richtext ol,
+    .katas-richtext ul {
+      margin: 0 0 20px;
+      padding-left: 1.2em;
+    }
+    .katas-richtext li {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 10px;
+    }
+    .katas-stem {
+      margin: 0 0 18px;
+      padding: 0 0 14px;
+    }
+    .katas-stem .stem,
+    .katas-stem p,
+    .katas-stem li,
+    .katas-stem h1,
+    .katas-stem h2,
+    .katas-stem h3 {
+      text-align: left;
+      line-height: 1.45;
+    }
+    .katas-richtext h1,
+    .katas-richtext h2,
+    .katas-richtext h3,
+    .katas-stem h1,
+    .katas-stem h2,
+    .katas-stem h3 {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .katas-body h2, .katas-body h3 {
+      font-size: 30px;
+      line-height: 1.18;
+      margin: 24px 0 12px;
+    }
+    .katas-body blockquote {
+      margin: 0 0 22px;
+      font-size: 19px;
+      line-height: 1.58;
+    }
+  }
   </style>
 </head>
 <body data-timer-seconds="{{ timer_seconds|default:'0' }}">
@@ -522,7 +797,7 @@
                 <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
                 <button class="btn btn-ghost inline-explain-btn" type="button" hidden>See Explanation</button>
               </div>
-              <p class="stem">{{ q.text|linebreaksbr }}</p>
+              <div class="stem">{{ q.text_html }}</div>
               <ul class="choices">
                 {% for idx, choice in q.choices %}
                   <li class="choice">
@@ -537,7 +812,7 @@
               {% if q.explanation %}
               <div class="explanation" style="display:none; margin-top:10px;">
                 <div class="pill pill-danger" style="margin-bottom:6px;">Explanation</div>
-                <div>{{ q.explanation }}</div>
+                <div>{{ q.explanation_html|safe }}</div>
               </div>
               {% endif %}
             </section>
@@ -577,7 +852,7 @@
             <button id="seeExplanationBtn" class="btn btn-primary see-explanation-btn" type="button" hidden>See Explanation</button>
             <div id="outcomeBox" hidden>
               <div class="pill pill-muted" id="outcomePill">Awaiting check...</div>
-              <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
+              <div id="outcomeBody" style="margin-top:10px; color: var(--secondary); font-size: 13px;">Select an answer and press Check.</div>
               <div id="outcomeMeta" style="margin-top:12px;"></div>
             </div>
           </div>
@@ -711,6 +986,9 @@
       const longestEl = document.getElementById('longestPill');
       const questions = Array.from(document.querySelectorAll('section.question'));
       const inlineExplanationBodies = new Map();
+      const inlineExplanationStems = new Map();
+      let activeExplanationHtml = '';
+      let activeExplanationStemHtml = '';
       function setInlineExplainState(sec, show) {
         if (!sec) return;
         const btn = sec.querySelector('.inline-explain-btn');
@@ -725,18 +1003,17 @@
       }
       function hideExplanation() {
         if (outcomeBox) outcomeBox.hidden = true;
-        if (seeExplanationBtn) seeExplanationBtn.textContent = 'See Explanation';
       }
       function setExplanationButtonState(ok) {
         if (!seeExplanationBtn) return;
         if (ok === false) {
           seeExplanationBtn.hidden = false;
           seeExplanationBtn.classList.add('attention');
-          seeExplanationBtn.textContent = 'See Explanation';
         } else {
           seeExplanationBtn.hidden = true;
           seeExplanationBtn.classList.remove('attention');
         }
+        seeExplanationBtn.textContent = 'See Explanation';
       }
 
       // Wrap wide MathJax outputs in a mini horizontal scroller
@@ -783,7 +1060,7 @@
           let html = '<div style="display:grid;gap:6px">';
           for (const [k,v] of Object.entries(meta)) {
             const val = typeof v === 'object' ? JSON.stringify(v) : String(v);
-            html += `<div style="display:flex;justify-content:space-between;gap:8px"><span class="label" style="color:var(--muted)">${k}</span><span>${val}</span></div>`;
+            html += `<div style="display:flex;justify-content:space-between;gap:8px"><span class="label" style="color:var(--secondary)">${k}</span><span>${val}</span></div>`;
           }
           html += '</div>';
           outcomeMeta.innerHTML = html;
@@ -829,7 +1106,7 @@
         const choices = json.choices || [];
         const chosenText = choices[chosenIdx] ?? `Option ${chosenIdx+1}`;
         const correctText = choices[correct] ?? `Option ${correct+1}`;
-        const explanation = json.explanation || json.explanations || '';
+        const explanation = json.explanation_html || json.explanation || json.explanations || '';
         const body = ok
           ? `<div><strong>${chosenText}</strong> is correct.</div>`
           : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
@@ -838,10 +1115,17 @@
         delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations; delete meta.extras;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
         if (!ok) {
+          const stemHtml = ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
+          activeExplanationHtml = body;
+          activeExplanationStemHtml = stemHtml;
           inlineExplanationBodies.set(target, body);
+          inlineExplanationStems.set(target, stemHtml);
           setInlineExplainState(sec, true);
         } else {
+          activeExplanationHtml = '';
+          activeExplanationStemHtml = '';
           inlineExplanationBodies.delete(target);
+          inlineExplanationStems.delete(target);
           setInlineExplainState(sec, false);
         }
         // Add visual state on the question card
@@ -900,12 +1184,11 @@
       document.querySelectorAll('.check-btn').forEach(btn => {
         btn.addEventListener('click', () => onCheck(btn));
       });
-      if (seeExplanationBtn && outcomeBox) {
+      if (seeExplanationBtn) {
         seeExplanationBtn.addEventListener('click', () => {
-          const isHidden = outcomeBox.hidden;
-          outcomeBox.hidden = !isHidden;
-          seeExplanationBtn.textContent = isHidden ? 'Hide Explanation' : 'See Explanation';
-          if (isHidden) seeExplanationBtn.classList.remove('attention');
+          if (!activeExplanationHtml) return;
+          showExplanationPopup(activeExplanationHtml, activeExplanationStemHtml);
+          seeExplanationBtn.classList.remove('attention');
         });
       }
       document.querySelectorAll('.inline-explain-btn').forEach((btn) => {
@@ -914,8 +1197,9 @@
           if (!sec) return;
           const qname = sec.dataset.qname;
           const html = inlineExplanationBodies.get(qname);
+          const stemHtml = inlineExplanationStems.get(qname) || ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
           if (!html) return;
-          showExplanationPopup(html);
+          showExplanationPopup(html, stemHtml);
           btn.classList.remove('attention');
         });
       });
@@ -948,19 +1232,19 @@
         if (document.getElementById('explainModal')) return document.getElementById('explainModal');
         const host = document.createElement('div');
         host.id = 'explainModal';
-        host.className = 'modal';
+        host.className = 'katas-modal';
         host.innerHTML = `
-          <div class="backdrop" data-close></div>
-          <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="explainTitle">
-            <div class="head">
-              <div class="title" id="explainTitle">Explanation</div>
-              <button class="close" type="button" aria-label="Close" data-close>&times;</button>
+          <div class="katas-backdrop" data-katas-close></div>
+          <div class="katas-dialog" role="dialog" aria-modal="true" aria-labelledby="explainTitle">
+            <div class="katas-head">
+              <h2 class="katas-title" id="explainTitle">Explanation</h2>
+              <button class="katas-close" type="button" aria-label="Close" data-katas-close>&times;</button>
             </div>
-            <div class="body" id="explainBody"></div>
+            <div class="katas-body" id="explainBody"></div>
           </div>`;
         document.body.appendChild(host);
         host.addEventListener('click', (e) => {
-          if (e.target && e.target.hasAttribute('data-close')) hideExplanationPopup();
+          if (e.target && e.target.hasAttribute('data-katas-close')) hideExplanationPopup();
         });
         window.addEventListener('keydown', (e) => {
           if (e.key === 'Escape') hideExplanationPopup();
@@ -969,10 +1253,11 @@
       }
       // Preserve scroll position across popup open/close (mobile Safari safe)
       let __lockedScrollY = 0;
-      function showExplanationPopup(html) {
+      function showExplanationPopup(html, stemHtml) {
         const modal = ensurePopup();
         const body = modal.querySelector('#explainBody');
-        body.innerHTML = html;
+        const stemBlock = stemHtml ? `<div class="katas-stem"><div class="stem">${stemHtml}</div></div>` : '';
+        body.innerHTML = `${stemBlock}<div class="katas-richtext">${html}</div>`;
         __typesetMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.add('show');
         // Lock background scroll without losing position
