@@ -303,6 +303,30 @@ def _timer_seconds_for(questions: list[dict], source_path: Path | None = None) -
     return max(0, per_q * len(questions))
 
 
+def _load_katas_html() -> str:
+    fallback_html = "<p>Katas content is not available.</p>"
+    roots = list(Path(__file__).resolve().parents)
+    candidates = []
+    for root in roots:
+        candidates.append(root / "assets" / "content" / "katas.md")
+        candidates.append(root / "assets" / "fonts" / "content" / "katas.md")
+
+    seen = set()
+    for path in candidates:
+        path_str = str(path)
+        if path_str in seen:
+            continue
+        seen.add(path_str)
+        try:
+            if path.is_file():
+                katas_text = path.read_text(encoding="utf-8", errors="ignore")
+                if katas_text.strip():
+                    return _render_markdown_basic(katas_text)
+        except Exception:
+            continue
+    return fallback_html
+
+
 def _score_and_streak(answers):
     # answers: list[bool] indicating correctness per question
     score = sum(1 for a in answers if a)
@@ -540,13 +564,7 @@ def home(request):
         items = sorted(groups[sec], key=lambda x: x["name"].lower())
         grouped.append({"section": sec, "items": items})
     mistakes_count = _mistakes_count()
-    katas_html = "<p>Katas content is not available.</p>"
-    try:
-        katas_path = Path(__file__).resolve().parents[2] / "assets" / "fonts" / "content" / "katas.md"
-        katas_text = katas_path.read_text(encoding="utf-8", errors="ignore")
-        katas_html = _render_markdown_basic(katas_text)
-    except Exception:
-        pass
+    katas_html = _load_katas_html()
     return render(
         request,
         "quiz/list.html",
