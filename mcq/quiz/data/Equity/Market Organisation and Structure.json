@@ -1104,5 +1104,91 @@
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Pricing Outcomes</h3><p><strong>B is correct.</strong> The issuer and the investment bank jointly set the offering price[cite: 34]. If they set a price that buyers consider **too high**, the offering will be **undersubscribed**, meaning they will fail to sell the entire issue at that price[cite: 35]. Conversely, if the price is set too low, the offering will be oversubscribed [cite: 36].</p><p>A is incorrect: Setting the price **too low** will result in the offering being **oversubscribed**, not undersubscribed [cite: 36].</p><p>C is incorrect: The underwriter's market-making commitment (providing liquidity/price support after the IPO) is a related service, but the initial undersubscription is a consequence of the price being too high relative to market demand[cite: 28, 35].</p>"
+  },
+  
+  {
+    "id": 1,
+    "topic": "Equity vs Debt Characteristics",
+    "stem": "Consider the following:\nI. Residual claim on assets after all obligations\nII. Contractual obligation to make periodic payments\nIII. Voting rights in corporate governance\n\nHow many of the above are characteristics of equity securities?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity is defined by residual claim and voting rights → I qualifies (residual claim) → II fails (contractual payments belong to debt) → III qualifies (voting rights) → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Nature of Equity Claims",
+    "stem": "Consider the following:\nI. Claim on assets only after suppliers, employees, and debtholders\nII. Fixed and finite claim on cash flows\nIII. Discretionary cash distributions\n\nHow many of the above describe equity investors?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity is residual and discretionary → I qualifies (last claim) → II fails (fixed/finite is debt) → III qualifies (dividends discretionary) → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Common vs Preferred Shares",
+    "stem": "Consider the following:\nI. Preferred shareholders have priority over common shareholders in liquidation\nII. Common shareholders are contractually entitled to dividends\nIII. Preferred shareholders may receive fixed dividends\n\nHow many of the above are correct statements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Preferred has priority and fixed dividend tendency → I qualifies → II fails (common dividends are not contractual) → III qualifies → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Equity Ownership Features",
+    "stem": "Consider the following:\nI. Equity investors are considered owners of the company\nII. Equity requires repayment of principal at maturity\nIII. Equity investors seek total return including price appreciation\n\nHow many of the above are characteristics of equity securities?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity implies ownership and total return → I qualifies → II fails (no repayment obligation) → III qualifies → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Equity vs Debt Distinction",
+    "stem": "Consider the following:\nI. Interest payments are tax-deductible\nII. Equity has an unlimited term\nIII. Equity investors have no decision-making power\n\nHow many of the above correctly describe equity securities?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Equity has no maturity and includes control → I fails (tax-deductible applies to debt) → II qualifies (no finite term) → III fails (equity has voting power) → count = 1.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Preferred Equity Features",
+    "stem": "Consider the following:\nI. Cumulative preferred shares require unpaid dividends to be settled before common dividends\nII. Preferred shareholders always have voting rights equivalent to common shareholders\nIII. Preferred shareholders have higher claim on assets than common shareholders\n\nHow many of the above are correct statements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Preferred priority applies to dividends and assets → I qualifies → II fails (voting rights not always equivalent) → III qualifies → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Equity Return Drivers",
+    "stem": "Consider the following:\nI. Dividend income contributes to total return\nII. Capital appreciation contributes to total return\nIII. Interest income is the primary return component\n\nHow many of the above describe equity investor returns?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity return = dividends + price appreciation → I qualifies → II qualifies → III fails (interest is debt return) → count = 2.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
   }
+
 ]
