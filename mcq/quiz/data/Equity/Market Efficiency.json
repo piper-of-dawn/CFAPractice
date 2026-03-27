@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Forms of Market Efficiency",
+    "stem": "Consider the following:\nI. Prices reflect all past trading information only\nII. Prices reflect all publicly available information\nIII. Prices reflect both public and private information\n\nHow many of the above correctly describe distinct forms of market efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> EMH forms differ by information set → weak = past data → semi-strong = public info → strong = public + private → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:0]{index=0}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Factors Affecting Market Efficiency",
+    "stem": "Consider the following:\nI. High transaction costs reduce arbitrage activity\nII. Limited information availability reduces efficiency\nIII. Unlimited ability to trade enhances efficiency\n\nHow many of the above are factors affecting market efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Efficiency depends on frictions → I qualifies (costs restrict trading) → II qualifies (less info → mispricing persists) → III qualifies (fewer limits → prices adjust faster) → count = 3 :contentReference[oaicite:1]{index=1}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Implications of EMH",
+    "stem": "Consider the following:\nI. Fundamental analysis consistently generates abnormal returns in semi-strong efficient markets\nII. Technical analysis cannot consistently generate abnormal returns in weak-form efficient markets\nIII. Passive investing is justified under strong-form efficiency\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Match strategy to information set → I fails (public info already priced) → II qualifies (past data useless in weak form) → III qualifies (no info advantage exists) → count = 2 :contentReference[oaicite:2]{index=2}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Market Pricing Anomalies",
+    "stem": "Consider the following:\nI. Time-series anomalies relate to patterns over time\nII. Cross-sectional anomalies relate to differences across securities\nIII. Anomalies imply markets are perfectly efficient\n\nHow many of the above are correct statements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Anomalies = predictable deviations → I qualifies → II qualifies → III fails (they contradict perfect efficiency) → count = 2 :contentReference[oaicite:3]{index=3}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Behavioral Finance vs Efficiency",
+    "stem": "Consider the following:\nI. Loss aversion may cause investors to avoid realizing losses\nII. Herding can lead to price deviations from intrinsic value\nIII. Behavioral biases always eliminate arbitrage opportunities\n\nHow many of the above are consistent with behavioral finance explanations of inefficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Behavioral biases distort pricing → I qualifies → II qualifies → III fails (biases create, not eliminate, opportunities) → count = 2 :contentReference[oaicite:4]{index=4}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Information and Market Efficiency",
+    "stem": "Consider the following:\nI. Faster information dissemination increases efficiency\nII. Costly information acquisition reduces efficiency\nIII. Equal access to information improves efficiency\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Efficiency depends on information flow → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:5]{index=5}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Limits to Market Efficiency",
+    "stem": "Consider the following:\nI. Short-selling restrictions can limit arbitrage\nII. Transaction costs can prevent exploitation of mispricing\nIII. Unlimited capital ensures perfect efficiency\n\nHow many of the above statements correctly describe limits to market efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Limits prevent correction of mispricing → I qualifies → II qualifies → III fails (capital constraints exist in reality) → count = 2 :contentReference[oaicite:6]{index=6}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Market Value vs Intrinsic Value",
+    "stem": "Consider the following:\nI. Market value always equals intrinsic value in an efficient market\nII. Intrinsic value is an estimate based on fundamental information\nIII. Differences between market and intrinsic value can motivate trading\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Efficiency implies prices reflect available info, not perfection → I fails (temporary deviations can exist) → II qualifies (intrinsic value is estimated) → III qualifies (mispricing drives trades) → count = 2 :contentReference[oaicite:0]{index=0}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Weak-Form Efficiency Implications",
+    "stem": "Consider the following:\nI. Past price patterns cannot be used to generate abnormal returns\nII. Public information can still generate abnormal returns\nIII. Prices fully reflect historical trading data\n\nHow many of the above statements are consistent with weak-form efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Weak form = past info fully priced → I qualifies → II qualifies (public info not fully priced) → III qualifies → count = 3 :contentReference[oaicite:1]{index=1}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Semi-Strong Efficiency Implications",
+    "stem": "Consider the following:\nI. Earnings announcements are immediately reflected in prices\nII. Fundamental analysis cannot consistently generate excess returns\nIII. Insider information can still provide an advantage\n\nHow many of the above statements are consistent with semi-strong efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Semi-strong = all public info priced → I qualifies → II qualifies → III qualifies (private info not priced) → count = 3 :contentReference[oaicite:2]{index=2}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Strong-Form Efficiency Implications",
+    "stem": "Consider the following:\nI. Even insiders cannot earn abnormal returns\nII. All information, public and private, is reflected in prices\nIII. Active management can consistently outperform markets\n\nHow many of the above statements are consistent with strong-form efficiency?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Strong form = all info priced → I qualifies → II qualifies → III fails (no consistent outperformance possible) → count = 2 :contentReference[oaicite:3]{index=3}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Information Acquisition Costs",
+    "stem": "Consider the following:\nI. Zero information-acquisition cost leads to fully efficient markets\nII. High information costs reduce incentives to exploit mispricing\nIII. Information asymmetry can persist due to acquisition costs\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Costs affect arbitrage → I qualifies (no friction → full adjustment) → II qualifies → III qualifies → count = 3 :contentReference[oaicite:4]{index=4}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Closed-End Fund Discount",
+    "stem": "Consider the following:\nI. Closed-end funds may trade below intrinsic value\nII. Discounts represent a violation of strict market efficiency\nIII. Discounts can persist over time\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Closed-end discounts = anomaly → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:5]{index=5}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Earnings Surprise Anomaly",
+    "stem": "Consider the following:\nI. Earnings surprises can lead to predictable price movements\nII. Markets may not fully adjust immediately to new earnings information\nIII. Earnings surprises are irrelevant in all forms of efficiency\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Post-earnings drift = anomaly → I qualifies → II qualifies → III fails (they matter unless strong form holds) → count = 2 :contentReference[oaicite:6]{index=6}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  }
+]
