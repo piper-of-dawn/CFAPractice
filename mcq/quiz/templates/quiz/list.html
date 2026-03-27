@@ -141,30 +141,31 @@
       flex-direction: column;
       justify-content: flex-end;
       gap: 6px;
-      padding: 12px;
-      border-radius: 10px;
+      padding: 14px;
+      border-radius: 18px;
       overflow: hidden;
       text-decoration: none;
       color: var(--accent);
-      border: 1px dotted rgba(var(--secondary-rgb), 0.46);
-      background: transparent;
-      transition: transform 140ms ease, border-color 180ms ease, box-shadow 200ms ease;
+      border: 1px solid var(--surface-border);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(28px) saturate(165%);
+      -webkit-backdrop-filter: blur(28px) saturate(165%);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      transition: transform 140ms ease, border-color 180ms ease, box-shadow 200ms ease, background 180ms ease;
     }
     .card-link::after {
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px),
-        linear-gradient(90deg, transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px);
-      background-size: 36px 36px;
-      opacity: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 42%);
+      opacity: 1;
       pointer-events: none;
     }
     .card-link:hover {
       transform: translateY(-3px);
       border-color: rgba(var(--secondary-rgb), 0.8);
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.16);
     }
     .card-title {
       position: relative;
@@ -189,10 +190,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .cards li:nth-child(4n + 1) .card-link { background: transparent; }
-    .cards li:nth-child(4n + 2) .card-link { background: transparent; }
-    .cards li:nth-child(4n + 3) .card-link { background: transparent; }
-    .cards li:nth-child(4n + 4) .card-link { background: transparent; }
     .footer {
       margin-top: 22px;
       display: flex;
@@ -210,38 +207,41 @@
     body[data-theme="light"] .topic-section h2 { color: var(--secondary); }
     body[data-theme="light"] .card-link {
       color: #091717;
-      border: 2px dotted rgba(var(--secondary-rgb), 0.62);
-      background: rgba(255, 255, 255, 0.42);
-      backdrop-filter: blur(14px) saturate(150%);
-      -webkit-backdrop-filter: blur(14px) saturate(150%);
-      box-shadow: 0 8px 18px rgba(var(--secondary-rgb), 0.1);
+      border: 1px solid rgba(var(--secondary-rgb), 0.28);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(28px) saturate(165%);
+      -webkit-backdrop-filter: blur(28px) saturate(165%);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
     }
     body[data-theme="light"] .card-link::after {
-      background:
-        linear-gradient(transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px),
-        linear-gradient(90deg, transparent 35px, rgba(var(--secondary-rgb), 0.08) 36px);
-      opacity: 0.35;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 42%);
+      opacity: 1;
     }
     body[data-theme="light"] .card-link:hover {
       border-color: rgba(var(--secondary-rgb), 0.82);
-      box-shadow: 0 12px 24px rgba(var(--secondary-rgb), 0.18);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.16);
     }
     body[data-theme="light"] .card-title {
       color: #091717;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
     }
     body[data-theme="light"] .card-path { color: #64748b; }
-    body[data-theme="light"] .cards li:nth-child(4n + 1) .card-link {
+    body:not([data-theme="light"]) .card-link {
       background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border: 1px dashed rgba(var(--secondary-rgb), 0.82);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        0 6px 18px rgba(2, 6, 23, 0.32);
     }
-    body[data-theme="light"] .cards li:nth-child(4n + 2) .card-link {
-      background: transparent;
+    body:not([data-theme="light"]) .card-link::after {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 46%);
     }
-    body[data-theme="light"] .cards li:nth-child(4n + 3) .card-link {
-      background: transparent;
-    }
-    body[data-theme="light"] .cards li:nth-child(4n + 4) .card-link {
-      background: transparent;
+    body:not([data-theme="light"]) .card-link:hover {
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 10px 24px rgba(2, 6, 23, 0.38);
     }
     body[data-theme="light"] .footer a {
       color: var(--muted);
