@@ -12,6 +12,7 @@ from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
+from django.utils.safestring import mark_safe
 
 
 def _choose_data_path() -> Path:
@@ -162,9 +163,12 @@ def _render_markdown_basic(text: str) -> str:
     out = []
     para = []
     quote = []
+    ordered = []
+    unordered = []
 
     def inline_md(s: str) -> str:
         s = escape(_fix_mojibake(s))
+        s = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", s)
         s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
         s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
         return s
@@ -183,17 +187,50 @@ def _render_markdown_basic(text: str) -> str:
                 out.append(f"<blockquote>{'<br>'.join(inline_md(x) for x in qlines)}</blockquote>")
             quote = []
 
+    def flush_ordered():
+        nonlocal ordered
+        if ordered:
+            out.append("<ol>" + "".join(f"<li>{inline_md(x)}</li>" for x in ordered) + "</ol>")
+            ordered = []
+
+    def flush_unordered():
+        nonlocal unordered
+        if unordered:
+            out.append("<ul>" + "".join(f"<li>{inline_md(x)}</li>" for x in unordered) + "</ul>")
+            unordered = []
+
+    def flush_lists():
+        flush_ordered()
+        flush_unordered()
+
     for raw in lines:
         line = raw.rstrip()
         if not line.strip():
             flush_para()
             flush_quote()
+            flush_lists()
             continue
         if line.startswith(">"):
             flush_para()
+            flush_lists()
             quote.append(line[1:].lstrip())
             continue
+        ordered_match = re.match(r"^\s*(\d+)\.\s+(.+)$", line)
+        if ordered_match:
+            flush_para()
+            flush_quote()
+            flush_unordered()
+            ordered.append(ordered_match.group(2))
+            continue
+        unordered_match = re.match(r"^\s*[-*]\s+(.+)$", line)
+        if unordered_match:
+            flush_para()
+            flush_quote()
+            flush_ordered()
+            unordered.append(unordered_match.group(1))
+            continue
         flush_quote()
+        flush_lists()
         if line.startswith("# "):
             flush_para()
             out.append(f"<h1>{inline_md(line[2:].strip())}</h1>")
@@ -206,7 +243,33 @@ def _render_markdown_basic(text: str) -> str:
 
     flush_para()
     flush_quote()
+    flush_lists()
     return "\n".join(out)
+
+
+def _render_stem_html(text: str) -> str:
+    """Render question stems safely, treating literal <br> tags as line breaks."""
+    if not isinstance(text, str):
+        return ""
+    normalized = re.sub(r"<br\s*/?>", "\n", _fix_mojibake(text), flags=re.IGNORECASE)
+    return mark_safe(_render_markdown_basic(normalized))
+
+
+def _looks_like_html(text: str) -> bool:
+    if not isinstance(text, str):
+        return False
+    return bool(re.search(r"</?[a-zA-Z][^>]*>", text))
+
+
+def _render_explanation_html(text: str) -> str:
+    """Render explanations from either trusted inline HTML or markdown/plain text."""
+    if not isinstance(text, str):
+        return ""
+    normalized = _fix_mojibake(text)
+    if _looks_like_html(normalized):
+        return mark_safe(normalized)
+    normalized = re.sub(r"<br\s*/?>", "\n", normalized, flags=re.IGNORECASE)
+    return mark_safe(_render_markdown_basic(normalized))
 
 
 QUESTIONS = _normalize_questions(load_questions())
@@ -217,6 +280,27 @@ try:
     TOPIC_DEFAULT = _parts[0] if len(_parts) > 1 else "General"
 except Exception:
     TOPIC_DEFAULT = "General"
+
+
+def _has_katas(questions: list[dict], source_path: Path | None = None) -> bool:
+    """Detect Kata sets by source file/folder naming."""
+    try:
+        if source_path is not None:
+            # Primary rule: filename contains "katas" (case-insensitive).
+            if "katas" in source_path.stem.lower():
+                return True
+            # Keep folder-name check as a fallback.
+            for part in source_path.parts:
+                if "katas" in part.lower():
+                    return True
+    except Exception:
+        pass
+    return False
+
+
+def _timer_seconds_for(questions: list[dict], source_path: Path | None = None) -> int:
+    per_q = 25 if _has_katas(questions, source_path) else 60
+    return max(0, per_q * len(questions))
 
 
 def _score_and_streak(answers):
@@ -376,6 +460,7 @@ def mcq(request):
         choices = q.get("choices", [])
         answer = q.get("answer", 0)
         explanation = q.get("explanation")
+        explanation_html = _render_explanation_html(explanation)
         # Minimal extras already computed during normalization; ensure topic present
         extras = dict(q.get("extras", {}))
         if not (extras.get("topic") or extras.get("category")):
@@ -384,10 +469,12 @@ def mcq(request):
             {
                 "index": i,
                 "text": text,
+                "text_html": _render_stem_html(text),
                 "choices": list(enumerate(choices)),
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
+                "explanation_html": explanation_html,
                 "extras": extras,
                 # Provide only the data used client-side
                 "json": json.dumps(
@@ -396,6 +483,7 @@ def mcq(request):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "explanation_html": str(explanation_html),
                         "extras": extras,
                     }
                 ),
@@ -409,7 +497,9 @@ def mcq(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": DATA_PATH.stem,
         "data_source": str(DATA_PATH),
+        "timer_seconds": _timer_seconds_for(QUESTIONS, DATA_PATH),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -546,15 +636,18 @@ def play(request, fname):
             except Exception:
                 pass
         explanation = q.get("explanation")
+        explanation_html = _render_explanation_html(explanation)
         extras = dict(q.get("extras", {}))
         enriched.append(
             {
                 "index": i,
                 "text": text,
+                "text_html": _render_stem_html(text),
                 "choices": list(enumerate(choices)),
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
+                "explanation_html": explanation_html,
                 "extras": extras,
                 "json": json.dumps(
                     {
@@ -562,6 +655,7 @@ def play(request, fname):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "explanation_html": str(explanation_html),
                         "extras": extras,
                     }
                 ),
@@ -575,7 +669,9 @@ def play(request, fname):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": target.stem,
         "data_source": str(target),
+        "timer_seconds": _timer_seconds_for(questions, target),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -652,15 +748,18 @@ def master(request):
         choices = q.get("choices", [])
         answer = q.get("answer", 0)
         explanation = q.get("explanation")
+        explanation_html = _render_explanation_html(explanation)
         extras = q.get("extras", {})
         enriched.append(
             {
                 "index": i,
                 "text": text,
+                "text_html": _render_stem_html(text),
                 "choices": list(enumerate(choices)),
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
+                "explanation_html": explanation_html,
                 "extras": extras,
                 "json": json.dumps(
                     {
@@ -668,6 +767,7 @@ def master(request):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "explanation_html": str(explanation_html),
                         "extras": extras,
                     }
                 ),
@@ -681,7 +781,10 @@ def master(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": "Master 180",
         "data_source": f"master: {total} from {len(files_used)} files",
+        # For master, default to non-kata timing unless content indicates otherwise
+        "timer_seconds": _timer_seconds_for(selection, None),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -722,15 +825,18 @@ def mistakes(request):
         choices = q.get("choices", [])
         answer = q.get("answer", 0)
         explanation = q.get("explanation")
+        explanation_html = _render_explanation_html(explanation)
         extras = q.get("extras", {})
         enriched.append(
             {
                 "index": i,
                 "text": text,
+                "text_html": _render_stem_html(text),
                 "choices": list(enumerate(choices)),
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
+                "explanation_html": explanation_html,
                 "extras": extras,
                 "json": json.dumps(
                     {
@@ -738,6 +844,7 @@ def mistakes(request):
                         "choices": choices,
                         "answer": answer,
                         "explanation": explanation,
+                        "explanation_html": str(explanation_html),
                     }
                 ),
             }
@@ -750,7 +857,9 @@ def mistakes(request):
         "streak": streak,
         "longest": longest,
         "checked": checked,
+        "quiz_title": "Mistakes",
         "data_source": "mistakes",
+        "timer_seconds": _timer_seconds_for(questions, None),
     }
     return render(request, "quiz/mcq.html", context)
 
@@ -786,15 +895,18 @@ def mistakes_grouped(request):
             choices = q.get("choices", [])
             answer = q.get("answer", 0)
             explanation = q.get("explanation")
+            explanation_html = _render_explanation_html(explanation)
             extras = q.get("extras", {})
             enriched.append(
                 {
                     "index": global_index,
                     "text": text,
+                    "text_html": _render_stem_html(text),
                     "choices": list(enumerate(choices)),
                     "answer": answer,
                     "selected": checked.get(f"q{global_index}"),
                     "explanation": explanation,
+                    "explanation_html": explanation_html,
                     "extras": extras,
                     "json": json.dumps(
                         {
@@ -802,6 +914,7 @@ def mistakes_grouped(request):
                             "choices": choices,
                             "answer": answer,
                             "explanation": explanation,
+                            "explanation_html": str(explanation_html),
                         }
                     ),
                 }

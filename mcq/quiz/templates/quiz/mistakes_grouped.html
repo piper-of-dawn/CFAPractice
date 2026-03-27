@@ -77,7 +77,7 @@
               {% for q in g.items %}
                 <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
                   <div class="qmeta">Question {{ forloop.counter }} in {{ g.topic }}</div>
-                  <p class="stem">{{ q.text|linebreaksbr }}</p>
+                  <div class="stem">{{ q.text_html }}</div>
                   <ul class="choices">
                     {% for idx, choice in q.choices %}
                       <li class="choice">

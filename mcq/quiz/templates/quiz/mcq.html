@@ -7,7 +7,7 @@
   <title>MCQ Quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
 
 
@@ -50,14 +50,15 @@
       } catch (_) {}
     })();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
   :root {
     --bg: #FBFAF4; /* light mode background */
     --card: #ffffff;
     --text: #091717; /* light mode text */
     --muted: #64748b;
-    --secondary: #20808D; /* light mode secondary */
-    --secondary-rgb: 32, 128, 141;
+    --secondary: #1244FF;
+    --secondary-rgb: 18, 68, 255;
     --border: var(--secondary);
     --primary: #0f172a;
     --primary-foreground: #f8fafc;
@@ -68,16 +69,20 @@
     --tag-text: #334155;
     --success: #16a34a;
     --danger: #BF505C;
+    --grid-base-opacity: 0.09;
+    --grid-hover-opacity-boost: 0.20;
+    --grid-base-size: 1.05;
+    --grid-hover-size-boost: 0.55;
   }
   :root[data-theme="dark"] {
-    --bg: #141414; /* requested dark background */
+    --bg: #070d1a;
     --card: rgba(var(--secondary-rgb), 0.08); /* warm glass base */
-    --text: #d1cfc0;
-    --muted: #94a3b8;
-    --secondary: #fdf083;
-    --secondary-rgb: 253, 240, 131;
+    --secondary: #86b6ff;
+    --secondary-rgb: 134, 182, 255;
+    --text: var(--secondary);
+    --muted: var(--secondary);
     /* Soften borders in dark mode */
-    --border: rgba(var(--secondary-rgb), 0.52);
+    --border: rgba(var(--secondary-rgb), 0.88);
     --primary: #e2e8f0;
     --primary-foreground: #0b0f14;
     --shadow: none;
@@ -86,8 +91,20 @@
     --tag-text: #cbd5f5;
     --success: #22c55e;
     --danger: #BF505C;
+    --grid-base-opacity: 0.06;
+    --grid-hover-opacity-boost: 0.12;
+    --grid-base-size: 1;
+    --grid-hover-size-boost: 0.45;
   }
   html, body { height: 100%; }
+  #gridCanvas {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+  }
   body {
     margin: 0;
     background: var(--bg);
@@ -148,18 +165,18 @@
     mix-blend-mode: multiply;
     opacity: 0.22;
   }
-  /* Warmer grain in dark mode using secondary tint */
+  /* Cool grain in dark mode using secondary tint */
   :root[data-theme="dark"] body::after {
     background-image:
-      radial-gradient(circle at 20% 15%, rgba(var(--secondary-rgb),0.18) 1px, transparent 1.2px),
-      radial-gradient(circle at 80% 40%, rgba(var(--secondary-rgb),0.14) 1px, transparent 1.2px),
-      radial-gradient(circle at 30% 70%, rgba(var(--secondary-rgb),0.12) 1px, transparent 1.2px),
-      radial-gradient(circle at 60% 85%, rgba(var(--secondary-rgb),0.16) 1px, transparent 1.2px);
+      radial-gradient(circle at 20% 15%, rgba(var(--secondary-rgb),0.12) 1px, transparent 1.2px),
+      radial-gradient(circle at 80% 40%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px),
+      radial-gradient(circle at 30% 70%, rgba(var(--secondary-rgb),0.08) 1px, transparent 1.2px),
+      radial-gradient(circle at 60% 85%, rgba(var(--secondary-rgb),0.10) 1px, transparent 1.2px);
     background-size: 26px 26px, 22px 22px, 28px 28px, 24px 24px;
-    mix-blend-mode: soft-light;
-    opacity: 0.18;
+    mix-blend-mode: screen;
+    opacity: 0.10;
   }
-  .wrap { position: relative; z-index: 1; }
+  .wrap { position: relative; z-index: 2; }
   .theme-toggle { z-index: 10001; }
   .card .content { padding: 20px 22px; }
 
@@ -183,7 +200,7 @@
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     /* Solid border in secondary color */
-    border: 1px dashed rgba(var(--secondary-rgb), 0.34);
+    border: 1px dashed rgba(var(--secondary-rgb), 0.82);
     /* Soft, shallow drop shadow */
     box-shadow:
       inset 0 1px 0 rgba(255,255,255,0.08),
@@ -191,13 +208,13 @@
   }
   /* Removed scroll-reveal animations */
   /* Match light-mode feedback intensity to dark mode */
-  .question.correct { border-color: rgba(112,124,54,0.95); box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+  .question.correct { border-color: rgba(34,197,94,0.95); box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   .question.incorrect { border-color: rgba(191,80,92,0.95); box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   .question.correct.glow-correct { animation: correctGlow 3s ease-out; }
   @keyframes correctGlow {
-    0% { box-shadow: 0 0 0 0 rgba(112,124,54,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(112,124,54,0.54); }
-    100% { box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(34,197,94,0.58); }
+    100% { box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   }
   .question.incorrect.glow-incorrect { animation: incorrectGlow 3s ease-out; }
   @keyframes incorrectGlow {
@@ -206,14 +223,14 @@
     100% { box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   }
   /* Brighter feedback in dark mode */
-  :root[data-theme="dark"] .question.correct { border-color: rgba(112,124,54,0.95); box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+  :root[data-theme="dark"] .question.correct { border-color: rgba(34,197,94,0.95); box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   :root[data-theme="dark"] .question.incorrect { border-color: rgba(191,80,92,0.95); box-shadow: 0 8px 22px rgba(191,80,92,0.42); }
   :root[data-theme="dark"] .question.correct.glow-correct { animation: correctGlowDark 3s ease-out; }
   :root[data-theme="dark"] .question.incorrect.glow-incorrect { animation: incorrectGlowDark 3s ease-out; }
   @keyframes correctGlowDark {
-    0% { box-shadow: 0 0 0 0 rgba(112,124,54,0); }
-    35% { box-shadow: 0 0 26px 8px rgba(112,124,54,0.54); }
-    100% { box-shadow: 0 8px 22px rgba(112,124,54,0.44); }
+    0% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    35% { box-shadow: 0 0 26px 8px rgba(34,197,94,0.58); }
+    100% { box-shadow: 0 8px 22px rgba(34,197,94,0.44); }
   }
   @keyframes incorrectGlowDark {
     0% { box-shadow: 0 0 0 0 rgba(191,80,92,0); }
@@ -251,6 +268,29 @@
   :root[data-theme="dark"] .choice:has(input:checked) { background: rgba(var(--secondary-rgb), 0.20); box-shadow: 0 0 0 2px rgba(var(--secondary-rgb), 0.50); }
   :root[data-theme="dark"] .choice input:checked + label { background: rgba(var(--secondary-rgb), 0.20); }
   :root[data-theme="dark"] .choice:hover { background: rgba(var(--secondary-rgb), 0.20); }
+  /* Selected correctness styles: full-row fill + clean ring (no inner banding). */
+  .choice.is-correct {
+    background: rgba(34, 197, 94, 0.20) !important;
+    box-shadow: inset 0 0 0 2px rgba(34, 197, 94, 0.95) !important;
+  }
+  .choice.is-incorrect {
+    background: rgba(191, 80, 92, 0.20) !important;
+    box-shadow: inset 0 0 0 2px rgba(191, 80, 92, 0.95) !important;
+  }
+  .choice.is-correct label,
+  .choice.is-incorrect label {
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+  :root[data-theme="dark"] .choice.is-correct {
+    background: rgba(34, 197, 94, 0.22) !important;
+    box-shadow: inset 0 0 0 2px rgba(74, 222, 128, 0.95) !important;
+  }
+  :root[data-theme="dark"] .choice.is-incorrect {
+    background: rgba(191, 80, 92, 0.24) !important;
+    box-shadow: inset 0 0 0 2px rgba(248, 113, 113, 0.95) !important;
+  }
 
   .actions { padding: 16px 22px 22px; display: flex; gap: 8px; }
   .btn { appearance: none; border: 1px solid var(--border); background: transparent; color: var(--text); padding: 10px 14px; border-radius: 14px; font-weight: 600; letter-spacing: 0.2px; cursor: pointer; }
@@ -265,7 +305,16 @@
   .sidebar { position: sticky; top: 24px; color: var(--secondary); }
   .metric { display: flex; align-items: baseline; justify-content: space-between; color: var(--secondary); margin-bottom: 8px; }
   .metric .label { color: var(--secondary); font-size: 12px; }
-  .metric .value { font-weight: 700; font-size: 20px; }
+  .metric .value { color: var(--secondary); font-weight: 700; font-size: 20px; font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .metric .value-small { font-size: 14px; font-weight: 600; }
+  #scoreValue,
+  #streakValue,
+  #timerValue,
+  #outcomeStatus,
+  .sidebar .metric .value,
+  .sidebar .metric .value-small {
+    color: var(--secondary) !important;
+  }
   .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border); font-size: 11px; }
   .pill-success { background: #dcfce7; color: #166534; border-color: #bbf7d0; }
   .pill-danger { background: rgba(191,80,92,0.12); color: #BF505C; border-color: rgba(191,80,92,0.28); }
@@ -279,6 +328,11 @@
     max-height: 280px;
     overflow: auto;
     padding: 10px 4px 2px 0;
+  }
+  #outcomeBody,
+  #outcomeMeta,
+  #outcomeMeta .label {
+    color: var(--secondary);
   }
   #outcomeBox { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
   #outcomeBox::-webkit-scrollbar { width: 8px; height: 8px; }
@@ -308,6 +362,26 @@
     gap: 8px;
     font-size: 13px;
   }
+  .svg-icon {
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-color: var(--secondary);
+    color: var(--secondary);
+    -webkit-mask-image: var(--icon-url);
+    mask-image: var(--icon-url);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  }
+  .label-with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
   .theme-toggle:focus { outline: 2px solid rgba(15,23,42,0.2); outline-offset: 2px; }
   @media (max-width: 480px) {
     .theme-toggle { padding: 8px; gap: 6px; }
@@ -321,21 +395,186 @@
     .inline-explain-btn { display: inline-flex; align-items: center; }
   }
 
-  .modal { position: fixed; inset: 0; display: none; z-index: 9999; }
-  .modal.show { display: block; }
-  .modal .backdrop { position: absolute; inset: 0; background: rgba(2,6,23,0.45); }
-  .modal .dialog { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-    width: min(92vw, 560px); max-height: 80vh; background: var(--card); color: var(--text); border-radius: 18px; box-shadow: var(--shadow);
-    display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border); }
-  .modal .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-  .modal .head .title { font-weight: 700; }
-  .modal .close { appearance: none; border: 0; background: transparent; font-size: 20px; line-height: 1; padding: 6px 10px; cursor: pointer; color: var(--muted); }
-  .modal .body { padding: 12px; overflow: auto; }
-  .modal .body { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
-  .modal .body::-webkit-scrollbar { width: 8px; height: 8px; }
-  .modal .body::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
-  .modal .body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid transparent; background-clip: content-box; }
-  .modal .body:hover::-webkit-scrollbar-thumb { background: #94a3b8; }
+  .katas-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+  }
+  .katas-modal.show { display: block; }
+  .katas-backdrop {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+  }
+  .katas-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(94vw, 1040px);
+    max-height: 90vh;
+    overflow: auto;
+    background: #ffffff;
+    border: 1px solid #ececf0;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(16, 16, 20, 0.08);
+    padding: 26px 30px 34px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.14) transparent;
+  }
+  .katas-dialog::-webkit-scrollbar { width: 6px; height: 6px; }
+  .katas-dialog::-webkit-scrollbar-track { background: transparent; }
+  .katas-dialog::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.14);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  .katas-dialog:hover::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.22); }
+  .katas-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    position: relative;
+    background: #ffffff;
+    padding-bottom: 10px;
+  }
+  .katas-title {
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5f6068;
+    margin: 0;
+    text-align: center;
+  }
+  .katas-close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #d0d1d8;
+    border-radius: 8px;
+    background: #f7f7f9;
+    color: #4b4c53;
+    font-size: 18px;
+    line-height: 1;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  .katas-body {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: "Times New Roman", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    color: #3f4046;
+  }
+  .katas-body h1 {
+    font-size: clamp(34px, 4.2vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin: 8px 0 14px;
+    padding: 10px 18px;
+    color: #2f3035;
+    font-weight: 500;
+    text-transform: none;
+    text-align: center;
+  }
+  .katas-body h2, .katas-body h3 {
+    font-size: clamp(27px, 3.2vw, 36px);
+    line-height: 1.2;
+    margin: 26px 0 12px;
+    font-weight: 500;
+    color: #35363d;
+  }
+  .katas-body p {
+    margin: 0 0 36px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    color: #595b63;
+  }
+  .katas-body strong {
+    color: #1f2024;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(31, 32, 36, 0.55);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.12em;
+  }
+  .katas-body blockquote {
+    margin: 0 0 22px;
+    padding: 0 0 0 18px;
+    border-left: 1px solid #d5d6dc;
+    background: transparent;
+    color: #6a6c75;
+    font-style: italic;
+    font-size: clamp(18px, 1.52vw, 21px);
+    line-height: 1.65;
+  }
+  .katas-body code {
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 0.86em;
+    background: #e5e5ea;
+    color: #2f2f35;
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+  .katas-richtext > * {
+    margin: 0 0 36px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    color: #595b63;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-richtext ol,
+  .katas-richtext ul {
+    margin: 0 0 36px;
+    padding-left: 1.5em;
+    color: #595b63;
+    overflow-wrap: anywhere;
+  }
+  .katas-richtext li {
+    margin: 0 0 12px;
+    line-height: 1.72;
+    font-size: clamp(16px, 1.35vw, 19px);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-stem {
+    margin: 0 0 24px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid #e2e3e8;
+    color: #2f3035;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .katas-stem .stem,
+  .katas-stem p,
+  .katas-stem li,
+  .katas-stem h1,
+  .katas-stem h2,
+  .katas-stem h3 {
+    color: #2f3035;
+  }
+  .katas-stem .math-scroll,
+  .katas-richtext .math-scroll {
+    max-width: 100%;
+  }
+  .katas-richtext table,
+  .katas-stem table,
+  .katas-richtext pre,
+  .katas-stem pre {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .katas-richtext > :last-child { margin-bottom: 0; }
 
   .math-scroll {
     display: block;
@@ -365,7 +604,7 @@
   :root[data-theme="dark"] .sidebar > .card:first-child,
   :root[data-theme="dark"] .sidebar > .card:first-child * { color: var(--secondary) !important; }
   :root[data-theme="dark"] .sidebar > .card:last-child {
-    background: #2b2a1f;
+    background: rgba(var(--secondary-rgb), 0.12);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
   }
   :root[data-theme="dark"] .sidebar > .card:last-child .content,
@@ -373,7 +612,7 @@
   :root[data-theme="dark"] .sidebar > .card:last-child .metric .label,
   :root[data-theme="dark"] .sidebar > .card:last-child .metric .value,
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeStatus {
-    color: #fdf083 !important;
+    color: var(--secondary) !important;
   }
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeBody,
   :root[data-theme="dark"] .sidebar > .card:last-child #outcomeMeta {
@@ -396,20 +635,155 @@
   .pill-danger,
   .btn,
   .btn-ghost,
-  .modal .dialog,
-  .modal .head,
   .theme-toggle { border: none !important; }
-  .modal .head { border-bottom: none !important; }
-</style>
+  /* Timer expired state: mild red background */
+  body.time-expired {
+    background: #fdecec !important;
+  }
+  /* Ensure background overlays don't overpower the red tint */
+  body.time-expired::after { opacity: 0.08; }
+  :root[data-theme="dark"] body.time-expired::after { opacity: 0.10; }
+  /* Timer badge style in sidebar */
+  .metric .mono { font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .time-chart-wrap {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.35);
+    padding: 6px;
+    min-height: 160px;
+  }
+  #timeChartCanvas {
+    width: 100%;
+    height: 148px;
+    display: block;
+  }
+  .chart-empty {
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 58px;
+  }
+  .chart-delta {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-transform: uppercase;
+  }
+  :root[data-theme="dark"] .time-chart-wrap {
+    background: rgba(var(--secondary-rgb), 0.06);
+  }
+  :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
+  :root[data-theme="dark"] .chart-delta { color: #d7def0; }
+  @media (max-width: 680px) {
+    .katas-dialog {
+      left: 0;
+      top: 0;
+      transform: none;
+      width: 100vw;
+      max-height: 100vh;
+      height: 100vh;
+      border: 0;
+      box-shadow: none;
+      padding: 14px 16px 26px;
+      border-radius: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    .katas-body {
+      max-width: 100%;
+      padding: 0 8px 8px;
+      box-sizing: border-box;
+    }
+    .katas-head {
+      position: static;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+    .katas-title {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+    }
+    .katas-body h1 {
+      font-size: clamp(50px, 11vw, 66px);
+      line-height: 1.06;
+      margin: 20px 0 12px;
+      padding: 4px 10px;
+    }
+    .katas-body h1 + p {
+      text-align: center;
+      max-width: 310px;
+      margin: 0 auto 26px;
+      line-height: 1.28;
+      font-size: 24px;
+      color: #4d5563;
+    }
+    .katas-body p {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 26px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .katas-richtext > * {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 20px;
+      text-align: left;
+    }
+    .katas-richtext ol,
+    .katas-richtext ul {
+      margin: 0 0 20px;
+      padding-left: 1.2em;
+    }
+    .katas-richtext li {
+      font-size: 17px;
+      line-height: 1.56;
+      margin: 0 0 10px;
+    }
+    .katas-stem {
+      margin: 0 0 18px;
+      padding: 0 0 14px;
+    }
+    .katas-stem .stem,
+    .katas-stem p,
+    .katas-stem li,
+    .katas-stem h1,
+    .katas-stem h2,
+    .katas-stem h3 {
+      text-align: left;
+      line-height: 1.45;
+    }
+    .katas-richtext h1,
+    .katas-richtext h2,
+    .katas-richtext h3,
+    .katas-stem h1,
+    .katas-stem h2,
+    .katas-stem h3 {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .katas-body h2, .katas-body h3 {
+      font-size: 30px;
+      line-height: 1.18;
+      margin: 24px 0 12px;
+    }
+    .katas-body blockquote {
+      margin: 0 0 22px;
+      font-size: 19px;
+      line-height: 1.58;
+    }
+  }
+  </style>
 </head>
-<body>
+<body data-timer-seconds="{{ timer_seconds|default:'0' }}">
+  <canvas id="gridCanvas" aria-hidden="true"></canvas>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
-    <span class="icon" aria-hidden="true">??</span>
+    <span class="icon" aria-hidden="true"></span>
     <span class="label">Dark</span>
   </button>
   <div class="wrap">
     <header>
-      <h1>MCQ Quiz</h1>
+      <h1>{{ quiz_title|default:"MCQ Quiz" }}</h1>
       <div class="sub">{{ total }} questions</div>
     </header>
 
@@ -423,7 +797,7 @@
                 <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
                 <button class="btn btn-ghost inline-explain-btn" type="button" hidden>See Explanation</button>
               </div>
-              <p class="stem">{{ q.text|linebreaksbr }}</p>
+              <div class="stem">{{ q.text_html }}</div>
               <ul class="choices">
                 {% for idx, choice in q.choices %}
                   <li class="choice">
@@ -438,7 +812,7 @@
               {% if q.explanation %}
               <div class="explanation" style="display:none; margin-top:10px;">
                 <div class="pill pill-danger" style="margin-bottom:6px;">Explanation</div>
-                <div>{{ q.explanation }}</div>
+                <div>{{ q.explanation_html|safe }}</div>
               </div>
               {% endif %}
             </section>
@@ -452,18 +826,33 @@
       <aside class="sidebar" id="sidebar">
         <div class="card" style="margin-bottom:16px;">
           <div class="content">
-            <div class="metric"><span class="label">Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/chart-line.svg')" aria-hidden="true"></span>Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
             <div class="metric"><span class="label">Streak</span><span class="value" id="streakValue">0</span></div>
             <span class="pill" id="longestPill">Longest: 0</span>
+            <hr style="border:0;height:1px;background:var(--border);opacity:0.35;margin:12px 0;">
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/clock.svg')" aria-hidden="true"></span>Timer</span><span class="value mono" id="timerValue">--:--</span></div>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:16px;">
+          <div class="content">
+            <div class="metric">
+              <span class="label">Time Chart</span>
+              <span class="value value-small mono" id="timeChartLatest">--</span>
+            </div>
+            <div class="time-chart-wrap">
+              <canvas id="timeChartCanvas" aria-label="Stepwise running average time per answered question"></canvas>
+              <div id="timeChartEmpty" class="chart-empty">Answer questions to see the trend.</div>
+            </div>
+            <div id="timeChartDelta" class="chart-delta">YOU ARE --% ON PACE WITH EXPECTED.</div>
           </div>
         </div>
         <div class="card">
           <div class="content">
-            <div class="metric"><span class="label">Outcome</span><span class="value" id="outcomeStatus">--</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/flag-checkered.svg')" aria-hidden="true"></span>Outcome</span><span class="value" id="outcomeStatus">--</span></div>
             <button id="seeExplanationBtn" class="btn btn-primary see-explanation-btn" type="button" hidden>See Explanation</button>
             <div id="outcomeBox" hidden>
               <div class="pill pill-muted" id="outcomePill">Awaiting check...</div>
-              <div id="outcomeBody" style="margin-top:10px; color: var(--muted); font-size: 13px;">Select an answer and press Check.</div>
+              <div id="outcomeBody" style="margin-top:10px; color: var(--secondary); font-size: 13px;">Select an answer and press Check.</div>
               <div id="outcomeMeta" style="margin-top:12px;"></div>
             </div>
           </div>
@@ -473,22 +862,101 @@
   </div>
 
   <script>
+    (function () {
+      const canvas = document.getElementById("gridCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
+      const GRID_SIZE = 28;
+      const HOVER_RADIUS = 150;
+      let mouseX = -1e9;
+      let mouseY = -1e9;
+
+      function resizeCanvasToViewport() {
+        const dpr = window.devicePixelRatio || 1;
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = `${w}px`;
+        canvas.style.height = `${h}px`;
+
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(dpr, dpr);
+      }
+
+      function drawGridFrame() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const dotRgb = getComputedStyle(document.documentElement).getPropertyValue("--secondary-rgb").trim() || "18, 68, 255";
+        const styles = getComputedStyle(document.documentElement);
+        const BASE_OPACITY = parseFloat(styles.getPropertyValue("--grid-base-opacity")) || 0.06;
+        const HOVER_OPACITY_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-opacity-boost")) || 0.12;
+        const BASE_SIZE = parseFloat(styles.getPropertyValue("--grid-base-size")) || 1;
+        const HOVER_SIZE_BOOST = parseFloat(styles.getPropertyValue("--grid-hover-size-boost")) || 0.45;
+
+        ctx.clearRect(0, 0, w, h);
+        const offsetY = -(window.scrollY % GRID_SIZE);
+        const cols = Math.ceil(w / GRID_SIZE) + 1;
+        const rows = Math.ceil(h / GRID_SIZE) + 2;
+
+        for (let row = 0; row < rows; row++) {
+          for (let col = 0; col < cols; col++) {
+            const x = col * GRID_SIZE;
+            const y = row * GRID_SIZE + offsetY;
+            const dx = x - mouseX;
+            const dy = y - mouseY;
+            const dist = Math.hypot(dx, dy);
+
+            let opacity = BASE_OPACITY;
+            let size = BASE_SIZE;
+
+            if (dist < HOVER_RADIUS) {
+              const intensity = 1 - dist / HOVER_RADIUS;
+              opacity = BASE_OPACITY + intensity * HOVER_OPACITY_BOOST;
+              size = BASE_SIZE + intensity * HOVER_SIZE_BOOST;
+            }
+
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${dotRgb}, ${opacity})`;
+            ctx.fill();
+          }
+        }
+
+        requestAnimationFrame(drawGridFrame);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      window.addEventListener("resize", resizeCanvasToViewport);
+
+      resizeCanvasToViewport();
+      requestAnimationFrame(drawGridFrame);
+    })();
+  </script>
+
+  <script>
     // Theme toggle behavior
     (function(){
       const btn = document.getElementById('themeToggle');
       if (btn) {
         const root = document.documentElement;
         const current = () => (root.getAttribute('data-theme') === 'dark') ? 'dark' : 'light';
-        const updateButton = (theme) => {
+          const updateButton = (theme) => {
           const icon = btn.querySelector('.icon');
           const label = btn.querySelector('.label');
           if (theme === 'dark') {
-            if (icon) icon.textContent = '??';
+            if (icon) icon.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/sun.svg\')" aria-hidden="true"></span>';
             if (label) label.textContent = 'Light';
             btn.setAttribute('aria-label', 'Switch to light mode');
             btn.title = 'Switch to light mode';
           } else {
-            if (icon) icon.textContent = '??';
+            if (icon) icon.innerHTML = '<span class="svg-icon" style="--icon-url:url(\'https://api.iconify.design/fa-solid/moon.svg\')" aria-hidden="true"></span>';
             if (label) label.textContent = 'Dark';
             btn.setAttribute('aria-label', 'Switch to dark mode');
             btn.title = 'Switch to dark mode';
@@ -498,6 +966,7 @@
           root.setAttribute('data-theme', theme);
           try { localStorage.setItem('theme', theme); } catch(_) {}
           updateButton(theme);
+          window.dispatchEvent(new Event('themechange'));
         };
         updateButton(current());
         btn.addEventListener('click', () => setTheme(current()==='dark' ? 'light' : 'dark'));
@@ -517,6 +986,9 @@
       const longestEl = document.getElementById('longestPill');
       const questions = Array.from(document.querySelectorAll('section.question'));
       const inlineExplanationBodies = new Map();
+      const inlineExplanationStems = new Map();
+      let activeExplanationHtml = '';
+      let activeExplanationStemHtml = '';
       function setInlineExplainState(sec, show) {
         if (!sec) return;
         const btn = sec.querySelector('.inline-explain-btn');
@@ -531,18 +1003,17 @@
       }
       function hideExplanation() {
         if (outcomeBox) outcomeBox.hidden = true;
-        if (seeExplanationBtn) seeExplanationBtn.textContent = 'See Explanation';
       }
       function setExplanationButtonState(ok) {
         if (!seeExplanationBtn) return;
         if (ok === false) {
           seeExplanationBtn.hidden = false;
           seeExplanationBtn.classList.add('attention');
-          seeExplanationBtn.textContent = 'See Explanation';
         } else {
           seeExplanationBtn.hidden = true;
           seeExplanationBtn.classList.remove('attention');
         }
+        seeExplanationBtn.textContent = 'See Explanation';
       }
 
       // Wrap wide MathJax outputs in a mini horizontal scroller
@@ -589,7 +1060,7 @@
           let html = '<div style="display:grid;gap:6px">';
           for (const [k,v] of Object.entries(meta)) {
             const val = typeof v === 'object' ? JSON.stringify(v) : String(v);
-            html += `<div style="display:flex;justify-content:space-between;gap:8px"><span class="label" style="color:var(--muted)">${k}</span><span>${val}</span></div>`;
+            html += `<div style="display:flex;justify-content:space-between;gap:8px"><span class="label" style="color:var(--secondary)">${k}</span><span>${val}</span></div>`;
           }
           html += '</div>';
           outcomeMeta.innerHTML = html;
@@ -635,7 +1106,7 @@
         const choices = json.choices || [];
         const chosenText = choices[chosenIdx] ?? `Option ${chosenIdx+1}`;
         const correctText = choices[correct] ?? `Option ${correct+1}`;
-        const explanation = json.explanation || json.explanations || '';
+        const explanation = json.explanation_html || json.explanation || json.explanations || '';
         const body = ok
           ? `<div><strong>${chosenText}</strong> is correct.</div>`
           : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
@@ -644,15 +1115,30 @@
         delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations; delete meta.extras;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
         if (!ok) {
+          const stemHtml = ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
+          activeExplanationHtml = body;
+          activeExplanationStemHtml = stemHtml;
           inlineExplanationBodies.set(target, body);
+          inlineExplanationStems.set(target, stemHtml);
           setInlineExplainState(sec, true);
         } else {
+          activeExplanationHtml = '';
+          activeExplanationStemHtml = '';
           inlineExplanationBodies.delete(target);
+          inlineExplanationStems.delete(target);
           setInlineExplainState(sec, false);
         }
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
         sec.classList.toggle('incorrect', !ok);
+        // Add visual state on the selected choice row
+        sec.querySelectorAll('li.choice').forEach((li) => {
+          li.classList.remove('is-correct', 'is-incorrect');
+        });
+        const selectedLi = selected.closest('li.choice');
+        if (selectedLi) {
+          selectedLi.classList.add(ok ? 'is-correct' : 'is-incorrect');
+        }
         // Trigger a brief green glow (1.5s) when correct
         if (ok) {
           // Retrigger correct animation by removing then re-adding the class
@@ -698,12 +1184,11 @@
       document.querySelectorAll('.check-btn').forEach(btn => {
         btn.addEventListener('click', () => onCheck(btn));
       });
-      if (seeExplanationBtn && outcomeBox) {
+      if (seeExplanationBtn) {
         seeExplanationBtn.addEventListener('click', () => {
-          const isHidden = outcomeBox.hidden;
-          outcomeBox.hidden = !isHidden;
-          seeExplanationBtn.textContent = isHidden ? 'Hide Explanation' : 'See Explanation';
-          if (isHidden) seeExplanationBtn.classList.remove('attention');
+          if (!activeExplanationHtml) return;
+          showExplanationPopup(activeExplanationHtml, activeExplanationStemHtml);
+          seeExplanationBtn.classList.remove('attention');
         });
       }
       document.querySelectorAll('.inline-explain-btn').forEach((btn) => {
@@ -712,8 +1197,9 @@
           if (!sec) return;
           const qname = sec.dataset.qname;
           const html = inlineExplanationBodies.get(qname);
+          const stemHtml = inlineExplanationStems.get(qname) || ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
           if (!html) return;
-          showExplanationPopup(html);
+          showExplanationPopup(html, stemHtml);
           btn.classList.remove('attention');
         });
       });
@@ -746,19 +1232,19 @@
         if (document.getElementById('explainModal')) return document.getElementById('explainModal');
         const host = document.createElement('div');
         host.id = 'explainModal';
-        host.className = 'modal';
+        host.className = 'katas-modal';
         host.innerHTML = `
-          <div class="backdrop" data-close></div>
-          <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="explainTitle">
-            <div class="head">
-              <div class="title" id="explainTitle">Explanation</div>
-              <button class="close" type="button" aria-label="Close" data-close>&times;</button>
+          <div class="katas-backdrop" data-katas-close></div>
+          <div class="katas-dialog" role="dialog" aria-modal="true" aria-labelledby="explainTitle">
+            <div class="katas-head">
+              <h2 class="katas-title" id="explainTitle">Explanation</h2>
+              <button class="katas-close" type="button" aria-label="Close" data-katas-close>&times;</button>
             </div>
-            <div class="body" id="explainBody"></div>
+            <div class="katas-body" id="explainBody"></div>
           </div>`;
         document.body.appendChild(host);
         host.addEventListener('click', (e) => {
-          if (e.target && e.target.hasAttribute('data-close')) hideExplanationPopup();
+          if (e.target && e.target.hasAttribute('data-katas-close')) hideExplanationPopup();
         });
         window.addEventListener('keydown', (e) => {
           if (e.key === 'Escape') hideExplanationPopup();
@@ -767,10 +1253,11 @@
       }
       // Preserve scroll position across popup open/close (mobile Safari safe)
       let __lockedScrollY = 0;
-      function showExplanationPopup(html) {
+      function showExplanationPopup(html, stemHtml) {
         const modal = ensurePopup();
         const body = modal.querySelector('#explainBody');
-        body.innerHTML = html;
+        const stemBlock = stemHtml ? `<div class="katas-stem"><div class="stem">${stemHtml}</div></div>` : '';
+        body.innerHTML = `${stemBlock}<div class="katas-richtext">${html}</div>`;
         __typesetMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.add('show');
         // Lock background scroll without losing position
@@ -800,6 +1287,217 @@
         const y = top ? -top : (__lockedScrollY || 0);
         window.scrollTo(0, y);
       }
+
+      // ===== Timer + Avg time per question =====
+      const timerEl = document.getElementById('timerValue');
+      const avgEl = document.getElementById('avgTimeValue');
+      const timeChartCanvas = document.getElementById('timeChartCanvas');
+      const timeChartEmpty = document.getElementById('timeChartEmpty');
+      const timeChartLatest = document.getElementById('timeChartLatest');
+      const timeChartDelta = document.getElementById('timeChartDelta');
+      const totalSecs = parseInt(document.body.dataset.timerSeconds || '0', 10) || 0;
+      const startTs = Date.now();
+      const firstAnswered = new Set();
+      const avgSeries = [];
+      let timeChart = null;
+      let expired = false;
+      function fmtMMSS(s) {
+        if (!isFinite(s)) s = 0;
+        const sign = s < 0 ? '-' : '';
+        const abs = Math.abs(Math.floor(s));
+        const m = Math.floor(abs / 60);
+        const ss = abs % 60;
+        return `${sign}${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;
+      }
+      function updateAvg() {
+        if (!avgEl) return;
+        const answered = document.querySelectorAll('section.question input[type="radio"]:checked').length;
+        const elapsed = (Date.now() - startTs) / 1000;
+        if (answered <= 0) {
+          avgEl.textContent = '--';
+          return;
+        }
+        const avg = elapsed / answered;
+        // Show seconds with one decimal if < 100s, else whole seconds
+        avgEl.textContent = avg < 100 ? `${avg.toFixed(1)}s` : `${Math.round(avg)}s`;
+      }
+      function destroyTimeChart() {
+        if (timeChart) {
+          timeChart.destroy();
+          timeChart = null;
+        }
+      }
+      function renderTimeChart() {
+        if (!timeChartCanvas || !timeChartEmpty || !timeChartLatest) return;
+        const n = avgSeries.length;
+        if (n === 0) {
+          destroyTimeChart();
+          timeChartEmpty.hidden = false;
+          timeChartLatest.textContent = '--';
+          if (timeChartDelta) timeChartDelta.textContent = 'YOU ARE --% ON PACE WITH EXPECTED.';
+          return;
+        }
+        if (!window.Chart) {
+          timeChartEmpty.hidden = false;
+          timeChartEmpty.textContent = 'Chart library not available.';
+          return;
+        }
+        timeChartEmpty.hidden = true;
+        const axisColor = getComputedStyle(document.documentElement).getPropertyValue('--muted').trim() || '#94a3b8';
+        const strokeColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary').trim() || '#20808D';
+        const secondaryRgb = getComputedStyle(document.documentElement).getPropertyValue('--secondary-rgb').trim() || '148, 163, 184';
+        const monoFont = '"DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+        const gridColor = `rgba(${secondaryRgb}, 0.18)`;
+        const lastAvg = avgSeries[n - 1];
+        timeChartLatest.textContent = lastAvg < 100 ? `${lastAvg.toFixed(1)}s` : `${Math.round(lastAvg)}s`;
+        if (timeChartDelta) {
+          const expected = questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60;
+          const pct = Math.abs(((lastAvg - expected) / expected) * 100);
+          if (Math.abs(lastAvg - expected) < 0.05) {
+            timeChartDelta.textContent = 'YOU ARE 0.0% ON PACE WITH EXPECTED.';
+            timeChartDelta.style.color = '';
+          } else if (lastAvg < expected) {
+            timeChartDelta.innerHTML = `YOU ARE <strong>${pct.toFixed(1)}% FASTER</strong> THAN EXPECTED.`;
+            timeChartDelta.style.color = 'var(--success)';
+          } else {
+            timeChartDelta.textContent = `YOU ARE ${pct.toFixed(1)}% SLOWER THAN EXPECTED.`;
+            timeChartDelta.style.color = 'var(--danger)';
+          }
+        }
+        const labels = avgSeries.map((_, i) => String(i + 1));
+        destroyTimeChart();
+        timeChart = new Chart(timeChartCanvas.getContext('2d'), {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [
+              {
+                label: 'AVG TIME (SECONDS)',
+                data: avgSeries.map((v) => Number(v.toFixed(2))),
+                stepped: 'before',
+                borderColor: strokeColor,
+                backgroundColor: strokeColor,
+                pointRadius: 2,
+                pointHoverRadius: 3,
+                borderWidth: 2.4,
+                tension: 0
+              },
+              {
+                label: `EXPECTED AVERAGE (${Math.round((questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60))}S)`,
+                data: labels.map(() => (questions.length > 0 && totalSecs > 0 ? (totalSecs / questions.length) : 60)),
+                borderColor: 'rgba(191, 80, 92, 0.95)',
+                backgroundColor: 'rgba(191, 80, 92, 0.95)',
+                borderDash: [7, 5],
+                pointRadius: 0,
+                pointHoverRadius: 0,
+                borderWidth: 1.8,
+                tension: 0
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: false,
+            font: { family: monoFont },
+            plugins: {
+              legend: {
+                display: true,
+                labels: { color: axisColor, boxWidth: 16, boxHeight: 2, font: { family: monoFont } }
+              },
+              tooltip: {
+                titleFont: { family: monoFont },
+                bodyFont: { family: monoFont },
+                callbacks: {
+                  label: (ctx) => ` ${ctx.parsed.y.toFixed(1)}S`
+                }
+              }
+            },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: 'QUESTION NUMBER',
+                  color: axisColor,
+                  font: { family: monoFont }
+                },
+                ticks: {
+                  color: axisColor,
+                  autoSkip: true,
+                  maxTicksLimit: 8,
+                  font: { family: monoFont },
+                  callback: function(value) {
+                    const label = this.getLabelForValue(value);
+                    return String(label).toUpperCase();
+                  }
+                },
+                grid: { color: gridColor }
+              },
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'AVERAGE TIME (S)',
+                  color: axisColor,
+                  font: { family: monoFont }
+                },
+                ticks: {
+                  color: axisColor,
+                  font: { family: monoFont },
+                  callback: (value) => String(value).toUpperCase()
+                },
+                grid: { color: gridColor }
+              }
+            }
+          }
+        });
+      }
+      function noteAnswerForChart(radioEl) {
+        if (!radioEl || !radioEl.name) return;
+        if (firstAnswered.has(radioEl.name)) return;
+        firstAnswered.add(radioEl.name);
+        const elapsed = (Date.now() - startTs) / 1000;
+        const answered = firstAnswered.size;
+        if (answered <= 0) return;
+        avgSeries.push(elapsed / answered);
+        renderTimeChart();
+      }
+      function tickTimer() {
+        if (!timerEl || totalSecs <= 0) return;
+        const elapsed = (Date.now() - startTs) / 1000;
+        const remaining = Math.round(totalSecs - elapsed);
+        timerEl.textContent = fmtMMSS(remaining);
+        if (!expired && remaining <= 0) {
+          expired = true;
+          document.body.classList.add('time-expired');
+        }
+      }
+      // Start ticking if enabled
+      if (totalSecs > 0) {
+        tickTimer();
+        setInterval(tickTimer, 1000);
+      } else if (timerEl) {
+        timerEl.textContent = '--:--';
+      }
+      // Initial avg fill
+      updateAvg();
+      // Bootstrap chart with pre-selected questions (if any) as current-state point
+      document.querySelectorAll('section.question input[type="radio"]:checked').forEach((input) => firstAnswered.add(input.name));
+      if (firstAnswered.size > 0) {
+        avgSeries.push(((Date.now() - startTs) / 1000) / firstAnswered.size);
+      }
+      renderTimeChart();
+
+      // Hook into selection changes to update average time per question
+      document.getElementById('quizForm').addEventListener('change', (e) => {
+        const t = e.target;
+        if (t && t.type === 'radio') {
+          noteAnswerForChart(t);
+          updateAvg();
+        }
+      });
+      window.addEventListener('resize', renderTimeChart);
+      window.addEventListener('themechange', renderTimeChart);
     })();
   </script>
   <script>
