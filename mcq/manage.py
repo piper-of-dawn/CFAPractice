@@ -38,9 +38,9 @@ def _load_env_if_present():
             # best-effort only
             pass
 
-
 def main():
     """Run administrative tasks."""
+    STATIC: string = "https://www.google.com"
     # Load local environment variables if available (dev convenience)
     _load_env_if_present()
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mcq.settings')
