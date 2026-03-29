@@ -1,170 +1,170 @@
 [
-{
-"id": 1,
-"topic": "Global Investment Performance Standards (GIPS) and Material Errors",
-"stem": "Consider the following actions regarding a typographical error discovered in promotional material for a firm claiming compliance with the GIPS standards:I. The firm must cease distribution of the incorrect material.II. The firm must correct the error by informing those who have received the erroneous information.III. The firm must comply with the GIPS standards requirements addressing the treatment of material errors.How many of the above are required actions according to the Standards of Practice Handbook?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "C",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> According to the Handbook, when a firm claims compliance with the GIPS standards and discovers a material error (even an unintentional typographical one), it must cease distribution of the incorrect material[cite: 718]. Furthermore, it must correct the error by informing those who received the erroneous information[cite: 718]. Because the firm claims compliance with the GIPS standards, it must also strictly comply with the GIPS standards requirements addressing the treatment of material errors[cite: 720]. Therefore, all three statements satisfy the condition.</p><p>Why option A is incorrect. It drastically undercounts the necessary steps; all three are explicitly mandated for a firm claiming GIPS compliance that discovers a material error.</p><p>Why option B is incorrect. It fails to recognize that all three listed actions are required according to the Handbook's guidance on correcting unintentional errors under GIPS.</p>"
-},
-{
-"id": 2,
-"topic": "GIPS Composite Calculation Rules",
-"stem": "Consider the following statements regarding a firm that claims compliance with the Global Investment Performance Standards (GIPS):I. Firms must meet all the requirements and make mandatory disclosures when claiming compliance.II. Firms must calculate composite returns by asset weighting portfolio returns.III. Firms may calculate composite returns using an equal weighting of portfolio returns to satisfy GIPS requirements.How many of the above statements are accurate?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The Handbook explicitly states that when claiming compliance with the GIPS standards, firms must meet all the requirements, make mandatory disclosures, and meet any other requirements that apply to that firm's specific situation[cite: 1765]. Furthermore, the GIPS standards strictly require firms to asset weight portfolio returns to calculate composite returns[cite: 1766]. Therefore, statement I and II are accurate. Statement III is false because equal weighting is a violation of the GIPS requirement to use asset weighting[cite: 1764, 1766]. Exactly two statements satisfy the condition.</p><p>Why option A is incorrect. It fails to count both statement I and statement II, which are explicitly stated requirements for GIPS compliance.</p><p>Why option C is incorrect. It incorrectly includes statement III, which directly contradicts the GIPS standard requiring asset-weighted returns.</p>"
-},
-{
-"id": 3,
-"topic": "Standard III(D) and Firms Not Complying with GIPS",
-"stem": "Consider the following practices for a firm that does not comply with the GIPS standards but seeks to meet obligations under Standard III(D) Performance Presentation:I. Presenting the performance of a single representative account rather than a composite.II. Excluding terminated accounts from any composite performance history to prevent downward bias.III. Maintaining the data and records used to calculate the performance being presented.How many of the above practices are recommended by the Handbook?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> For firms not complying with the GIPS standards, the Handbook recommends presenting the performance of a composite of similar portfolios rather than using a single representative account[cite: 1754]. Thus, statement I is false. The Handbook also requires including terminated accounts as part of any composite performance history[cite: 1754]. Thus, statement II is false. The Handbook does explicitly recommend maintaining the data and records used to calculate the performance being presented[cite: 1755]. Only statement III satisfies the recommended practices.</p><p>Why option B is incorrect. It assumes a second practice is recommended, but both using single representative accounts and excluding terminated accounts are explicitly contrary to the recommended guidelines for fair presentation.</p><p>Why option C is incorrect. It falsely assumes all three practices are recommended, missing the Handbook's explicit directives against single-account representations and survivor bias.</p>"
-},
-{
-"id": 4,
-"topic": "GIPS and Subadviser Selection",
-"stem": "Consider the following criteria investigated by a portfolio manager when selecting a hedge fund subadviser for a fund-of-funds product:I. The subadviser's claim of compliance with the GIPS standards.II. The subadviser's most recent quarterly and annual total returns.III. The subadviser's operations and their suitability to increase the diversification of clients' portfolios.How many of the above criteria must be investigated to conduct a sufficient review under Standard V(A) Diligence and Reasonable Basis?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "C",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> According to the Handbook, considering only performance and GIPS compliance does not constitute a sufficient review of potential firms to satisfy the requirements of Standard V(A)[cite: 2409]. A manager must thoroughly investigate the firms and their operations to ensure that their addition would increase the diversification of clients' portfolios and that they are suitable for the fund-of-funds product[cite: 2410]. Therefore, all three criteria must be investigated to satisfy the diligence requirement.</p><p>Why option A is incorrect. Investigating just one criterion, such as GIPS compliance, falls severely short of the comprehensive due diligence required by Standard V(A).</p><p>Why option B is incorrect. Reviewing only performance and GIPS compliance is explicitly called out as an insufficient review process in the Handbook.</p>"
-},
-{
-"id": 5,
-"topic": "GIPS as a Recognized Industry Standard",
-"stem": "Consider the following contexts in which the Global Investment Performance Standards (GIPS) are explicitly referenced as a best practice or recommended method in the Standards of Practice Handbook:I. As the best method to meet obligations under Standard III(D) Performance Presentation.II. As an example of a firm-wide best practice standard that supervisors should encourage their firms to adopt under Standard IV(C) Responsibilities of Supervisors.III. As a recognized industry standard that may be used as a criterion for evaluating and selecting external advisers or subadvisers under Standard V(A) Diligence and Reasonable Basis.How many of the above contexts are accurate?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "C",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The Handbook states that compliance with the GIPS standards is the best method to meet obligations under Standard III(D)[cite: 1752]. Under Standard IV(C), it cites the GIPS standards as a firm-wide best practice standard that supervisors should work to implement[cite: 2123]. Under Standard V(A), the Handbook notes that adherence to recognized industry standards, specifically including the GIPS standards, may be used as criteria for evaluating external advisers[cite: 2302, 2303]. All three contexts are explicitly supported.</p><p>Why option A is incorrect. It fails to acknowledge that the Handbook weaves GIPS compliance into multiple standards as a benchmark for professional excellence and compliance.</p><p>Why option B is incorrect. It misses one of the verified contexts. GIPS is utilized in the text for performance presentation, supervisory frameworks, and subadviser diligence.</p>"
-},
-{
-"id": 6,
-"topic": "Disclosures for Non-GIPS Compliant Firms",
-"stem": "Consider the following items that a firm not claiming GIPS compliance might disclose to fully explain its reported performance results:I. Whether the results are simulated when model results are used.II. The specific identities of the clients of a prior entity when presenting a prior entity's performance record.III. Whether the performance is gross of fees, net of fees, or after tax.According to Standard III(D), how many of the above are explicitly recommended disclosures for firms that do not comply with the GIPS standards?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The Handbook recommends that firms not complying with the GIPS standards include disclosures that fully explain the performance results, such as stating when results are simulated [cite: 1755], clearly indicating when the performance record is that of a prior entity [cite: 1755], and disclosing whether performance is gross of fees, net of fees, or after tax[cite: 1755]. However, it does not require or recommend disclosing the specific identities of a prior entity's clients; doing so would likely violate Standard III(E) Preservation of Confidentiality. Therefore, only statements I and III satisfy the condition.</p><p>Why option A is incorrect. It fails to recognize that both simulated results and fee deduction methodologies are explicitly required disclosures for non-GIPS firms.</p><p>Why option C is incorrect. It incorrectly assumes client identities must be disclosed, which is neither mentioned as a GIPS alternative disclosure nor permissible under confidentiality rules.</p>"
-},
-{
-"id": 7,
-"topic": "GIPS Technical Committee and Confidentiality",
-"stem": "Consider the following actions by a member of the CFA Institute GIPS Standards Technical Committee who has advance knowledge of confidential information regarding revised standards:I. Factually stating her involvement with the committee to clients.II. Telling clients that her committee membership will allow her to better assist them in keeping up with changes to the GIPS standards.III. Implying to clients that she would use confidential information regarding new standards to further their interests.How many of the above actions violate Standard VII(A) Conduct as Participants in CFA Institute Programs?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Standard VII(A) prohibits improperly using an association with CFA Institute to achieve personal or professional goals[cite: 2920]. The Handbook explicitly states that a member may factually state her involvement with the committee[cite: 3011]. Therefore, action I does not violate the standard. However, stating that her volunteer position provides a strategic business advantage (action II) and implying she would use confidential information to further client interests (action III) compromise the reputation and integrity of CFA Institute, thereby violating Standard VII(A)[cite: 3007, 3009, 3010]. Exactly two actions are violations.</p><p>Why option A is incorrect. It fails to identify that both implying the use of confidential knowledge and selling the committee role as a strategic advantage to clients are violations.</p><p>Why option C is incorrect. It incorrectly identifies the purely factual statement of volunteer involvement as a violation, which the Handbook explicitly permits.</p>"
-},
-{
-"id": 8,
-"topic": "Competence and GIPS Standard Application",
-"stem": "Consider the following statements regarding Standard I(E) Competence and the assessment of performance standards:I. An accounting professional supremely competent in providing financial statement audits is automatically deemed competent in assessing compliance with the GIPS standards.II. Members and candidates must act with and maintain the competence necessary to fulfill their professional responsibilities.III. Standard I(E) mandates participation in a specific continuing education program focused on performance standards to maintain GIPS competence.How many of the above statements are accurate according to the Handbook?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Statement II is a direct quotation of Standard I(E) and is accurate[cite: 927]. Statement I is false; the Handbook explicitly states that an accounting professional supremely competent in financial statement audits may not be competent in assessing compliance with performance presentation standards, such as the GIPS standards[cite: 945]. Statement III is false; the Handbook explicitly clarifies that Standard I(E) does not mandate participation in a particular continuing education program or professional development plan[cite: 950]. Only one statement is accurate.</p><p>Why option B is incorrect. It assumes a second statement is true, but the Handbook strictly refutes automatic cross-domain competence and strictly denies mandatory specific CE programs.</p><p>Why option C is incorrect. It fails to recognize the explicit limitations defined in the Handbook regarding the transferability of skills and continuing education mandates.</p>"
-},
-{
-"id": 9,
-"topic": "Prohibitions under Standard III(D) Performance Presentation",
-"stem": "Consider the following practices related to communicating investment performance information:I. Misrepresenting past performance.II. Providing brief presentations of performance without supplying detailed supporting information, even if the client does not request it.III. Providing performance information for pooled funds for which the manager is claiming responsibility without ensuring the history is accurate.How many of the above practices are explicitly prohibited or addressed as violations under Standard III(D) Performance Presentation?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Standard III(D) explicitly prohibits misrepresentations of past performance[cite: 1745], making statement I a violation. The standard also states that whenever a member or candidate provides performance information for which the manager is claiming responsibility, such as for pooled funds, the history must be accurate[cite: 1748], making statement III a violation if not ensured. However, for brief presentations, the standard only requires that the member make available to clients the detailed supporting information. Supplying it without a request is not mandated, so statement II is not a violation. Exactly two practices constitute violations.</p><p>Why option A is incorrect. It fails to identify that both misrepresenting past performance and failing to ensure the accuracy of pooled fund history are strict violations.</p><p>Why option C is incorrect. It falsely assumes that detailed supporting information must proactively accompany every brief presentation, rather than just being available upon request.</p>"
-},
-{
-"id": 10,
-"topic": "Performance Attribution Methodology Changes",
-"stem": "Consider the following statements regarding an analyst who modifies a firm's performance attribution methodology to improve the appearance of the manager's stock selection activities:I. Modifying the attribution methodology without proper disclosure fails to meet the requirements of Standard III(D).II. The change is acceptable if it is done solely for the interest of the firm to improve its perceived ability to meet the stated investment strategy.III. A change in methodology to roll the effect to the sector level is permitted without disclosure as long as the firm internally defines its own attribution terms.How many of the above statements are correct according to the Handbook?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Statement I is correct because the Handbook explicitly states that modifying the attribution methodology without proper disclosure fails to meet the requirements of Standard III(D)[cite: 1793]. Statement II is false because making a recommendation solely for the interest of the firm to improve its perceived ability to meet a strategy obscures the facts and violates the standard[cite: 1794, 1795]. Statement III is false because defining internal terms does not bypass the requirement to properly disclose methodology changes that obscure performance facts[cite: 1792, 1793]. Only one statement is correct.</p><p>Why option B is incorrect. It incorrectly validates an unethical motivation (firm interest) or a procedural loophole (internal definitions) that the Handbook explicitly rejects.</p><p>Why option C is incorrect. It fails to recognize that changing methodologies specifically to flatter performance without disclosure is a textbook violation of fair and complete presentation.</p>"
-},
-{
-"id": 11,
-"topic": "Historical Performance and Prior Firms",
-"stem": "Consider the following statements regarding a portfolio manager who prepares an advertisement including the equity investment performance achieved at a prior firm:I. Standard III(D) prohibits showing past performance of accounts managed at a prior firm as part of a performance track record under all circumstances.II. The manager must make full disclosure of the source of the historical performance.III. The manager must include appropriate disclosures about his specific role in achieving that performance at the prior firm.How many of the above statements are true?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I is false; the standard does not generally prohibit showing past performance of accounts managed at a prior firm, provided it is accompanied by appropriate disclosures[cite: 1775]. Statement II is true; the manager must make full disclosure of the source of the historical performance[cite: 1776]. Statement III is true; the manager must include appropriate disclosures about where the performance took place and his specific role in achieving that performance[cite: 1775]. Exactly two statements are true.</p><p>Why option A is incorrect. It fails to identify that both source disclosure and role disclosure are explicit requirements for portability of track records.</p><p>Why option C is incorrect. It falsely assumes an absolute prohibition on using prior firm performance, which contradicts the Handbook's conditional allowance.</p>"
-},
-{
-"id": 12,
-"topic": "Record Retention for Performance Presentation",
-"stem": "Consider the following practices regarding record retention and performance presentation for a firm that does not comply with the GIPS standards:I. Maintain the data and records used to calculate the performance being presented.II. Retain records that substantiate the scope of the research and reasons for actions, including computer-based model outputs and analyses.III. Rely entirely on the firm's compliance department to archive research notes, as the responsibility to maintain records rests exclusively with the firm, not the individual.How many of the above are correct practices under the Code and Standards?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I is a correct practice recommended to meet obligations under Standard III(D) when not complying with GIPS[cite: 1755]. Statement II is a correct practice under Standard V(C) Record Retention, which explicitly requires retaining records like computer-based model outputs[cite: 2638]. Statement III is false; while the responsibility generally rests with the firm, the Handbook explicitly states that individuals should archive research notes to assist their firms, and electronic formats do not remove the individual's responsibility[cite: 2640, 2654, 2655]. Exactly two practices are correct.</p><p>Why option A is incorrect. It misses the dual requirement that data must be maintained for performance calculation and substantiating research models.</p><p>Why option C is incorrect. It incorrectly absolves the individual member of all archiving responsibility, which contradicts the individual duty outlined in Standard V(C).</p>"
-},
-{
-"id": 13,
-"topic": "Presentation of Simulated Results",
-"stem": "Consider the following statements regarding an analyst who tests a new methodology by applying it retroactively to historical data to produce simulated performance results:I. Failing to clearly identify simulated performance results violates Standard III(D).II. The use of simulated results must be accompanied by full disclosure as to the source of the performance data.III. The analyst must disclose the fact that the results are the product of applying the model retroactively to that time period.How many of the above are required actions or true statements?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "C",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Statement I is true; failing to clearly identify simulated performance results violates Standard III(D) because it misrepresents actual historical achievement[cite: 1780]. Statement II is true; the Handbook explicitly states that the use of simulated results must be accompanied by full disclosure as to the source of the performance data[cite: 1782]. Statement III is true; the analyst must disclose the fact that the results are the product of applying the model retroactively[cite: 1782]. All three statements correctly identify Handbook requirements.</p><p>Why option A is incorrect. It drastically undercounts the stringent disclosure mechanisms required when an analyst utilizes backtested or simulated data.</p><p>Why option B is incorrect. It fails to recognize that identifying the data as simulated, disclosing its source, and noting its retroactive application are all mandatory interconnected disclosures.</p>"
-},
-{
-"id": 14,
-"topic": "Performance Calculation Methodology Disclosure",
-"stem": "Consider the following statements regarding a firm that automatically calculates both time-weighted and money-weighted returns, where the head of client services instructs an analyst not to label the returns so the firm can show whichever is highest:I. Reporting inconsistent return types without labels provides complete information because the underlying mathematical calculations are inherently accurate.II. Following the instructions to omit labels so the firm can selectively show the highest return violates Standard III(D).III. Clients must have sufficient information to judge the performance generated by the firm, which requires clear labeling of the return type used.How many of the above statements are correct according to the Handbook?",
-"options": {
-"A": "Only one",
-"B": "Only two",
-"C": "All the three"
-},
-"correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I is false; reporting inconsistent return types without labels fails to provide complete information, regardless of mathematical accuracy, because it obscures the basis of the calculation[cite: 1799, 1800]. Statement II is true; omitting labels to selectively present the highest return violates Standard III(D) by misrepresenting the nature of the performance[cite: 1798]. Statement III is true; complete information requires that clients have sufficient data to judge performance, which dictates clear labeling[cite: 1800]. Exactly two statements are correct.</p><p>Why option A is incorrect. It fails to recognize both that following the instruction is a violation and that clear labeling is a prerequisite for clients to judge performance.</p><p>Why option C is incorrect. It erroneously validates the idea that unlabeled but mathematically accurate numbers constitute \"complete information\" which the Handbook explicitly rejects.</p>"
-}
+  {
+    "id": 1,
+    "topic": "Standard III(D) Performance Presentation — Non-GIPS Compliant Firms",
+    "stem": "Consider the following practices employed by a firm that does NOT comply with the GIPS standards when presenting performance history to prospective clients:\n\nI. Presenting the performance of a composite of similar portfolios rather than using a single representative account\nII. Excluding terminated accounts from composite performance history to avoid downward skew in reported returns\nIII. Using one top-performing account as a single representative proxy for the firm's overall performance record\n\nHow many of the above practices would satisfy the firm's obligations under Standard III(D)?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Standard III(D) permits composites, requires terminated-account inclusion, and prohibits single-representative-account presentations</h3><p><strong>A is correct.</strong> The SPH states that firms not complying with the GIPS standards can meet Standard III(D) obligations by, among other things, \"presenting the performance of a composite of similar portfolios rather than using a single representative account\" and \"including terminated accounts as part of any composite performance history.\" Item I qualifies — using a composite satisfies III(D). Item II does not qualify — excluding terminated accounts directly contradicts the explicit requirement to include them. Item III does not qualify — it is precisely the single-representative-account approach the SPH prohibits in favor of composites. Only Item I satisfies the standard.</p><p>Option B is incorrect because it implies two items satisfy the standard. Item II (excluding terminated accounts) is explicitly prohibited; the SPH requires their inclusion. Item III (single representative account) is also explicitly prohibited; the SPH requires a composite instead. Only one item satisfies the obligations.</p><p>Option C is incorrect because all three items do not satisfy Standard III(D). Items II and III each violate specific guidance in the SPH: terminated accounts must be included, and a single representative account may not substitute for a composite presentation.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard III(D) Performance Presentation — GIPS Compliance Claim Requirements",
+    "stem": "Consider the following statements about a firm that claims compliance with the GIPS standards:\n\nI. The firm must asset-weight portfolio returns when calculating composite returns\nII. The firm may use simple-average (equal) weighting of portfolio returns within a composite if the composite contains fewer than ten portfolios\nIII. The firm must comply with GIPS requirements addressing the treatment of material errors in performance presentations\n\nHow many of the above statements accurately describe the firm's obligations under the GIPS standards as discussed in the SPH?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: GIPS claims require asset-weighting and material-error compliance; no exception exists for small composites</h3><p><strong>B is correct.</strong> The SPH states in the Judd example: \"The GIPS standards require firms to asset weight portfolio returns to calculate composite returns.\" No exception for small composites is mentioned. Item I is therefore accurate. The SPH also establishes from the Yao example that when a firm claims GIPS compliance, the member \"must also comply with the GIPS standards requirements addressing the treatment of material errors.\" Item III is therefore accurate. Item II is inaccurate — the SPH specifies asset-weighting with no carve-out for composites of any size. Two items (I and III) satisfy the criterion.</p><p>Option A is incorrect because two statements accurately describe GIPS obligations, not just one. Both asset-weighting (Item I) and material-error compliance (Item III) are explicitly required by the SPH.</p><p>Option C is incorrect because Item II introduces a size-based exemption from asset-weighting that has no basis in the SPH. The requirement to asset-weight composite returns applies without qualification.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard I(C) Misrepresentation — GIPS Material Error Treatment",
+    "stem": "Consider the following statements regarding a member whose firm claims GIPS compliance and has distributed performance materials containing an error:\n\nI. A member who unknowingly distributes a performance presentation containing a typographical error before the mistake is discovered has not violated Standard I(C)\nII. Once an error in a distributed GIPS-compliant performance report is discovered, the member must cease distribution of the incorrect material and correct the error by informing recipients\nIII. A member whose firm claims GIPS compliance is not subject to any GIPS requirements regarding error correction as long as the error is typographical rather than methodological\n\nHow many of the above statements are accurate according to the SPH?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: unintentional errors do not violate I(C), but discovery triggers GIPS material-error requirements; typographical errors are not exempt from GIPS error treatment rules</h3><p><strong>B is correct.</strong> The SPH's Yao example states: \"Because Yao did not knowingly make the misrepresentation, however, he did not violate Standard I(C).\" Item I is accurate. The same example also states: \"Once the error is discovered, Yao must take steps to cease distribution of the incorrect material and correct the error by informing those who have received the erroneous information.\" Item II is therefore accurate. Item III is inaccurate — the SPH states that because the firm claims GIPS compliance, Yao \"must also comply with the GIPS standards requirements addressing the treatment of material errors,\" with no exemption for typographical errors. Two items (I and II) are accurate.</p><p>Option A is incorrect because two statements are accurate. The requirement to cease distribution and correct errors (Item II) is explicitly stated alongside the absence of an I(C) violation for unintentional pre-discovery distribution (Item I).</p><p>Option C is incorrect because Item III inaccurately introduces a typographical-versus-methodological distinction that does not appear in the SPH. GIPS material-error requirements apply regardless of the error's origin.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard III(D) Performance Presentation — Explicit Non-GIPS Compliance Practices",
+    "stem": "Consider the following practices that the SPH explicitly lists as methods by which firms not complying with the GIPS standards may satisfy their Standard III(D) obligations:\n\nI. Presenting the performance of a composite of similar portfolios rather than using a single representative account\nII. Including terminated accounts as part of any composite performance history\nIII. Maintaining the data and records used to calculate the performance being presented\n\nHow many of the above practices are explicitly enumerated in the SPH as satisfying Standard III(D) for non-GIPS-compliant firms?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: the SPH enumerates a specific list of five practices; all three items correspond directly to items on that list</h3><p><strong>C is correct.</strong> The SPH explicitly states that firms not complying with GIPS can meet Standard III(D) obligations by, among other things: \"presenting the performance of a composite of similar portfolios rather than using a single representative account\" (Item I), \"including terminated accounts as part of any composite performance history\" (Item II), and \"maintaining the data and records used to calculate the performance being presented\" (Item III). Each item maps directly to a practice listed in the SPH. All three satisfy the criterion.</p><p>Option A is incorrect because all three practices — not merely one — are explicitly enumerated in the SPH. Selecting only Item I would ignore the equally explicit requirements for terminated accounts and record maintenance.</p><p>Option B is incorrect because all three items qualify, not just two. The SPH lists maintaining records and including terminated accounts alongside the composite-presentation requirement as co-equal methods of satisfying Standard III(D).</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard V(A) Diligence and Reasonable Basis — GIPS Compliance in Subadviser Selection",
+    "stem": "Consider the following statements concerning the role of GIPS compliance in the selection of external advisers or subadvisers under Standard V(A):\n\nI. GIPS compliance is among the CFA Institute guides that the SPH identifies as criteria members and candidates may use when selecting external advisers\nII. Under conditions of tight time constraints, relying solely on a subadviser's GIPS compliance and recent total return performance satisfies the due diligence required by Standard V(A)\nIII. The SPH indicates that GIPS compliance alone is insufficient — members must also thoroughly investigate firms and their operations before making a subadviser recommendation\n\nHow many of the above statements accurately reflect the SPH's guidance?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: GIPS is one factor supporting adviser evaluation, not a standalone sufficient basis regardless of time pressure</h3><p><strong>B is correct.</strong> The SPH lists \"the Global Investment Performance Standards (GIPS®)\" among the CFA Institute guides available as criteria for selecting external advisers — confirming Item I. In the Jackson example, the SPH concludes: \"By considering only performance and GIPS compliance, Jackson did not conduct sufficient review of potential firms to satisfy the requirements of Standard V(A). Jackson must thoroughly investigate the firms and their operations\" — confirming Item III. Item II is inaccurate: the SPH's explicit treatment of the Jackson case establishes that time constraints do not excuse a member from thorough investigation; GIPS compliance combined with return data alone is insufficient. Items I and III are accurate.</p><p>Option A is incorrect because two statements reflect the SPH's guidance. Item III — that GIPS compliance alone is insufficient — is directly supported by the Jackson example.</p><p>Option C is incorrect because Item II is directly contradicted by the Jackson example, which establishes that relying solely on GIPS compliance and performance data violates Standard V(A) regardless of time pressure.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard III(D) Performance Presentation — Disclosures for Non-GIPS Firms",
+    "stem": "Consider the following disclosures that a member's firm — which does NOT claim GIPS compliance — may include to satisfy Standard III(D):\n\nI. Tailoring the performance presentation based on the knowledge and sophistication of the audience\nII. Disclosing that results are simulated when model results are used in the performance presentation\nIII. Disclosing whether the performance record presented is that of a prior entity rather than the current firm\n\nHow many of the above are explicitly identified in the SPH as methods of meeting Standard III(D) obligations for non-GIPS-compliant firms?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: the SPH enumerates tailoring presentations to audience sophistication and providing specific disclosures — including simulation status and prior-entity attribution — as valid III(D) methods</h3><p><strong>C is correct.</strong> The SPH states that non-GIPS firms may satisfy Standard III(D) by \"considering the knowledge and sophistication of the audience to whom a performance presentation is addressed when determining what information to provide and tailoring it accordingly\" (Item I); by \"including disclosures that fully explain the performance results being reported (for example, stating, when appropriate, that results are simulated when model results are used\" (Item II); and by \"clearly indicating when the performance record is that of a prior entity\" (Item III). All three items correspond directly to explicit SPH provisions. All three satisfy the criterion.</p><p>Option A is incorrect. All three items are explicitly enumerated; identifying only one as satisfying the standard ignores the equally explicit audience-tailoring and simulated-results disclosures.</p><p>Option B is incorrect. All three practices appear in the same enumerated list in the SPH, making it inaccurate to exclude any one of them as a valid non-GIPS method of satisfying Standard III(D).</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard VII(A) Conduct as Participants in CFA Institute Programs — GIPS Technical Committee",
+    "stem": "Consider the following actions by Warrenski, a member of the CFA Institute GIPS Standards Technical Committee:\n\nI. Using advance knowledge of confidential upcoming GIPS standard changes to promote her firm's services and imply a strategic advantage to clients\nII. Factually stating to clients that she serves on the GIPS Standards Technical Committee when explaining her familiarity with GIPS requirements\nIII. Assisting clients in facilitating compliance with GIPS changes after those changes have been publicly released by CFA Institute\n\nHow many of the above actions constitute a violation of Standard VII(A) according to the SPH?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Standard VII(A) is violated by using committee association to promote firm services; factual committee disclosure and post-release client assistance are permitted</h3><p><strong>A is correct.</strong> The SPH states that Warrenski \"used her association with the GIPS Standards Technical Committee to promote her firm's services to clients and potential clients\" and that \"implying to clients that she would use confidential information to further their interests, Warrenski compromised the reputation and integrity of CFA Institute and thus violated Standard VII(A).\" Item I therefore constitutes a violation. The SPH expressly permits the alternative: \"She may factually state her involvement with the committee but cannot infer any special advantage to her clients from such participation.\" Item II (factual disclosure) is explicitly permitted. Item III — assisting with publicly released GIPS changes — involves no confidential information and no promotion of firm advantage; it does not fall within the SPH's description of the violation. Only Item I constitutes a violation.</p><p>Option B is incorrect because Item II is explicitly permitted by the SPH, which distinguishes factual disclosure of committee membership from the prohibited use of confidential committee knowledge to suggest a business advantage.</p><p>Option C is incorrect because Items II and III are not violations. Item II is explicitly sanctioned; Item III involves only publicly available information and does not implicate the promotion-of-firm-services concern at the heart of Standard VII(A).</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard III(D) Performance Presentation — Cumulative Requirements When Claiming GIPS Compliance",
+    "stem": "Consider the following requirements that the SPH establishes for firms claiming compliance with the GIPS standards:\n\nI. Firms must meet all the requirements of the GIPS standards\nII. Firms must make all mandatory disclosures required by the GIPS standards\nIII. Firms must meet any other GIPS requirements that apply to that firm's specific situation\n\nHow many of the above are explicitly identified in the SPH as obligations that arise when a firm claims GIPS compliance?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: the SPH gives a three-part formulation of GIPS compliance obligations in the Judd example — all three elements are stated in a single sentence</h3><p><strong>C is correct.</strong> The SPH states verbatim in the comment on the Judd example: \"When claiming compliance with the GIPS standards, firms must meet all the requirements, make mandatory disclosures, and meet any other requirements that apply to that firm's specific situation.\" Item I (meet all requirements), Item II (make mandatory disclosures), and Item III (meet situation-specific requirements) each map directly to a clause of this sentence. All three are explicitly stated obligations. All three satisfy the criterion.</p><p>Option A is incorrect. The SPH presents the three obligations as a unified package — selecting only one clause misrepresents the SPH's cumulative formulation of what claiming GIPS compliance entails.</p><p>Option B is incorrect. The SPH uses a three-part conjunction: \"all the requirements,\" \"mandatory disclosures,\" and \"any other requirements that apply to that firm's specific situation.\" All three are co-equal; excluding any one of them is inconsistent with the SPH's text.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard IV(A) Loyalty — GIPS Compliance Software and Employer Property",
+    "stem": "Consider the following statements concerning the Madeline scenario from the SPH, in which an unpaid intern assists a firm's effort to achieve GIPS compliance:\n\nI. Because Madeline did not receive monetary compensation, she is not considered an employee for purposes of Standard IV(A) and may take GIPS compliance software she developed\nII. Madeline violates Standard IV(A) by copying and taking proprietary GIPS compliance software she helped develop, because she used firm resources in creating it\nIII. Work product created by an intern using firm resources — such as GIPS compliance software — constitutes employer property regardless of whether the intern receives monetary compensation\n\nHow many of the above statements accurately reflect the SPH's analysis of this scenario?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: unpaid interns who use firm resources are considered employees for Standard IV(A); employer property created with firm resources cannot be taken without permission</h3><p><strong>B is correct.</strong> The SPH states: \"Even though Madeline does not receive monetary compensation for her services at Murdoch, she used firm resources in creating the software and is considered an employee because she receives compensation and benefits in the form of work experience and knowledge.\" Item I is therefore inaccurate — the SPH explicitly extends employee status to unpaid interns who use firm resources. Item II is accurate — \"By copying the software, Madeline violated Standard IV(A) because she misappropriated Murdoch's property without permission.\" Item III is accurate — the SPH's reasoning treats work product created using firm resources as employer property. Items II and III are accurate.</p><p>Option A is incorrect because two statements — not one — accurately reflect the SPH. Both the finding of a violation (Item II) and the characterization of the software as employer property (Item III) are directly supported by the SPH's analysis.</p><p>Option C is incorrect because Item I is explicitly contradicted by the SPH, which states that Madeline is considered an employee despite the absence of monetary compensation and therefore cannot take firm property without permission.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard III(D) Performance Presentation — Identifying GIPS-Related Violations",
+    "stem": "Consider the following three scenarios involving performance presentation:\n\nI. A firm circulates a performance report claiming GIPS compliance when composite returns are calculated using simple-average (equal) weighting of portfolio returns rather than asset weighting\nII. A member at a firm claiming GIPS compliance unknowingly distributes a performance presentation containing a typographical error that overstates composite assets tenfold before the mistake is discovered\nIII. A member presents an advertisement attributing performance achieved at a prior employer to the current firm without identifying that the results were earned while at the prior entity\n\nHow many of the above scenarios constitute a violation of the Standards according to the SPH?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: asset-weighting violations and undisclosed prior-employer performance violate Standards; unintentional pre-discovery typographical errors do not</h3><p><strong>B is correct.</strong> Scenario I matches the Judd example: \"The GIPS standards require firms to asset weight portfolio returns to calculate composite returns. Judd's violation is not from any misuse of the data but from publishing a performance report with her firm's false claim of GIPS compliance\" — a violation of Standard III(D). Scenario II matches the Yao example: \"Because Yao did not knowingly make the misrepresentation, however, he did not violate Standard I(C)\" — the pre-discovery distribution of an unintentional error is explicitly not a violation. Scenario III matches the McCoy example, in which the SPH holds that advertising performance earned at a prior employer \"does not identify the equity performance as being earned while at G&P\" constitutes a violation of Standard III(D). Scenarios I and III constitute violations; Scenario II does not.</p><p>Option A is incorrect because two scenarios constitute violations. Scenario III (misattributing prior-employer performance) is as explicitly condemned in the SPH as Scenario I (false GIPS asset-weighting claim).</p><p>Option C is incorrect because Scenario II is specifically excluded from constituting a violation by the SPH, which conditions a Standard I(C) violation on knowledge of the misrepresentation at the time of distribution.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard I(C) Misrepresentation and Standard III(D) — Correct Characterizations of GIPS Scenarios",
+    "stem": "Consider the following characterizations of Standards-related conclusions from SPH examples involving GIPS:\n\nI. A member who unknowingly distributes a GIPS-compliant firm's performance report containing a typographical error prior to discovering it has violated Standard I(C)\nII. A firm that calculates composite returns using equal weighting — rather than asset weighting — while claiming GIPS compliance has violated Standard III(D)\nIII. A member who factually discloses her membership on the CFA Institute GIPS Standards Technical Committee to clients has violated Standard VII(A)\n\nHow many of the above characterizations are accurate according to the SPH?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: the SPH exonerates inadvertent pre-discovery distribution under I(C), condemns equal-weighted composites under III(D), and expressly permits factual committee disclosure under VII(A)</h3><p><strong>A is correct.</strong> Item I is inaccurate: the Yao example states explicitly that \"Because Yao did not knowingly make the misrepresentation, however, he did not violate Standard I(C)\" — the inadvertent, pre-discovery distribution of an error does not constitute an I(C) violation. Item II is accurate: the Judd example confirms that equal-weighting composite returns while claiming GIPS compliance violates Standard III(D). Item III is inaccurate: the Warrenski example states that \"She may factually state her involvement with the committee\" without violating Standard VII(A). Only Item II is an accurate characterization.</p><p>Option B is incorrect because only one characterization — Item II — is accurate. Item I mischaracterizes the SPH, which explicitly exonerates inadvertent pre-discovery errors under Standard I(C).</p><p>Option C is incorrect because Items I and III are each directly contradicted by the SPH. A violation of I(C) requires knowing misrepresentation, and factual committee disclosure is expressly permitted under VII(A).</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard III(D) Performance Presentation — Specific Disclosures Enumerated for Non-GIPS Firms",
+    "stem": "Consider the following disclosures that a member at a non-GIPS-compliant firm might include in a performance presentation:\n\nI. A disclosure stating whether the performance shown is gross of fees, net of fees, or after tax\nII. A disclosure identifying the names and years of service of every portfolio manager who contributed to the composite's historical returns\nIII. A disclosure stating that performance results are simulated when model results have been used\n\nHow many of the above disclosures are explicitly listed in the SPH as examples of inclusions that help a non-GIPS-compliant firm meet its Standard III(D) obligations?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the SPH enumerates specific disclosure types — fee basis and simulation status are explicit; individual manager attribution is not mentioned</h3><p><strong>B is correct.</strong> The SPH identifies as qualifying disclosures: \"stating, when appropriate, that results are simulated when model results are used\" (Item III — accurate) and \"disclosing whether the performance is gross of fees, net of fees, or after tax\" (Item I — accurate). The SPH does not enumerate disclosing the individual names or tenures of portfolio managers contributing to a composite (Item II) as part of the qualifying-disclosure list. Items I and III satisfy the criterion; Item II does not.</p><p>Option A is incorrect because two disclosures — fee basis (Item I) and simulated-results notation (Item III) — are explicitly listed as qualifying disclosures in the SPH. Selecting only one ignores an equally explicit provision.</p><p>Option C is incorrect because Item II — individual manager attribution — is not enumerated in the SPH's list of disclosures that satisfy Standard III(D) for non-GIPS-compliant firms. Inferring its inclusion would go beyond the SPH text.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard III(D) Performance Presentation — Full Set of Non-GIPS Satisfactory Practices",
+    "stem": "Consider the following practices that a member at a non-GIPS-compliant firm might adopt when presenting performance history:\n\nI. Considering the knowledge and sophistication of the audience when determining what performance information to provide and tailoring it accordingly\nII. Presenting the performance of a composite of similar portfolios rather than using a single representative account\nIII. Including disclosures that fully explain performance results, such as disclosing whether performance is gross of fees, net of fees, or after tax\n\nHow many of the above practices are explicitly enumerated in the SPH as methods by which non-GIPS-compliant firms can satisfy Standard III(D)?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: the SPH lists all three items within the same enumerated set of practices permitting non-GIPS firms to satisfy Standard III(D)</h3><p><strong>C is correct.</strong> The SPH states verbatim that non-GIPS firms may meet Standard III(D) obligations by \"considering the knowledge and sophistication of the audience to whom a performance presentation is addressed when determining what information to provide and tailoring it accordingly\" (Item I); \"presenting the performance of a composite of similar portfolios rather than using a single representative account\" (Item II); and \"including disclosures that fully explain the performance results being reported (for example, stating, when appropriate, that results are simulated when model results are used; clearly indicating when the performance record is that of a prior entity; or disclosing whether the performance is gross of fees, net of fees, or after tax)\" (Item III). All three items are explicitly enumerated. All three satisfy the criterion.</p><p>Option A is incorrect because all three practices appear in the same enumerated list in the SPH. Selecting only one misrepresents the scope of the SPH's guidance, which presents all three as co-equal methods of satisfying the standard.</p><p>Option B is incorrect because Items I, II, and III are each individually named in the SPH's enumeration. Excluding any one of them cannot be reconciled with the SPH's text.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard III(D) Performance Presentation — General GIPS Guidance for Members and Candidates",
+    "stem": "Consider the following general statements about GIPS standards as presented in the SPH:\n\nI. Compliance with the GIPS standards is described as the best method for members and candidates to meet their Standard III(D) obligations when showing the performance history of assets they manage\nII. Members and candidates whose firms do not comply with the GIPS standards have no obligation under Standard III(D) to present fair, accurate, or complete investment performance history\nIII. Members and candidates should encourage their firms to comply with the GIPS standards\n\nHow many of the above statements accurately reflect the SPH's guidance on GIPS standards?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: GIPS is the best III(D) method and members should encourage adoption, but non-GIPS firms still bear full III(D) obligations through alternative practices</h3><p><strong>B is correct.</strong> The SPH states: \"compliance with the GIPS standards is the best method to meet their obligations under Standard III(D)\" — confirming Item I. The SPH also states: \"Members and candidates should encourage their firms to comply with the GIPS standards\" — confirming Item III. Item II is directly contradicted by the SPH, which devotes substantial guidance to describing how non-GIPS-compliant firms must \"present fair, accurate, and complete investment performance history\" through alternative practices such as composite presentations, inclusion of terminated accounts, and specific disclosures. Non-compliance with GIPS does not extinguish Standard III(D) obligations. Items I and III are accurate.</p><p>Option A is incorrect because two statements — not one — accurately reflect SPH guidance. The obligation on members to encourage GIPS adoption (Item III) is stated alongside the characterization of GIPS as the best III(D) method (Item I).</p><p>Option C is incorrect because Item II is directly refuted by the SPH. A substantial portion of the Standard III(D) guidance is devoted specifically to articulating how non-GIPS-compliant firms remain obligated — and how they may discharge that obligation through alternative practices.</p>"
+  }
 ]
