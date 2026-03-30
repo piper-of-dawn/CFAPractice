@@ -436,9 +436,22 @@
       transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
       opacity 420ms cubic-bezier(0.22, 1, 0.36, 1);
   }
-  #explainModal.show .katas-backdrop,
-  #explainModal.show .katas-dialog {
+  #explainModal.is-visible .katas-backdrop,
+  #explainModal.is-visible .katas-dialog {
     opacity: 1;
+  }
+  #explainModal .katas-head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #ffffff;
+    padding-top: 2px;
+  }
+  #explainModal .katas-close {
+    position: sticky;
+    top: 8px;
+    margin-left: auto;
+    transform: none;
   }
   .katas-dialog::-webkit-scrollbar { width: 6px; height: 6px; }
   .katas-dialog::-webkit-scrollbar-track { background: transparent; }
@@ -738,8 +751,8 @@
   :root[data-theme="dark"] .chart-delta { color: #d7def0; }
   @media (max-width: 680px) {
     #explainModal .katas-dialog {
-      width: 70vw;
-      max-width: 70vw;
+      width: 82vw;
+      max-width: 82vw;
       height: auto;
       max-height: 80vh;
       left: 50%;
@@ -748,16 +761,17 @@
       border-radius: 18px;
       box-shadow: 0 18px 48px rgba(16, 16, 20, 0.18);
       transform: translate(-50%, calc(-50% + 48px));
+      padding: 14px 16px 24px;
+      overflow-x: hidden;
     }
-    #explainModal.show .katas-dialog {
+    #explainModal.is-visible .katas-dialog {
       transform: translate(-50%, -50%);
     }
     #explainModal.is-closing .katas-dialog {
-      opacity: 0;
       transform: translate(-50%, calc(-50% + 48px));
     }
-    #explainModal.is-closing .katas-backdrop {
-      opacity: 0;
+    #explainModal .katas-body {
+      padding: 0 8px 8px;
     }
     .katas-dialog {
       left: 0;
@@ -1546,6 +1560,11 @@
         __typesetMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.remove('is-closing');
         modal.classList.add('show');
+        window.requestAnimationFrame(() => {
+          window.requestAnimationFrame(() => {
+            modal.classList.add('is-visible');
+          });
+        });
         saveQuizState();
         // Lock background scroll without losing position
         // Capture current scroll position
@@ -1563,8 +1582,10 @@
         const modal = document.getElementById('explainModal');
         if (modal && modal.classList.contains('show')) {
           modal.classList.add('is-closing');
+          modal.classList.remove('is-visible');
           window.setTimeout(() => {
             modal.classList.remove('is-closing');
+            modal.classList.remove('is-visible');
             modal.classList.remove('show');
           }, 420);
         }
