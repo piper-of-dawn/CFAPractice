@@ -424,7 +424,21 @@
     scrollbar-color: rgba(0, 0, 0, 0.14) transparent;
   }
   #explainModal .katas-dialog {
-    width: min(70vw, 1100px);
+    width: min(210mm, calc(100vw - 48px));
+  }
+  #explainModal .katas-backdrop {
+    opacity: 0;
+    transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  #explainModal .katas-dialog {
+    opacity: 0;
+    transition:
+      transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  #explainModal.show .katas-backdrop,
+  #explainModal.show .katas-dialog {
+    opacity: 1;
   }
   .katas-dialog::-webkit-scrollbar { width: 6px; height: 6px; }
   .katas-dialog::-webkit-scrollbar-track { background: transparent; }
@@ -725,6 +739,25 @@
   @media (max-width: 680px) {
     #explainModal .katas-dialog {
       width: 70vw;
+      max-width: 70vw;
+      height: auto;
+      max-height: 80vh;
+      left: 50%;
+      top: 50%;
+      border: 1px solid #ececf0;
+      border-radius: 18px;
+      box-shadow: 0 18px 48px rgba(16, 16, 20, 0.18);
+      transform: translate(-50%, calc(-50% + 48px));
+    }
+    #explainModal.show .katas-dialog {
+      transform: translate(-50%, -50%);
+    }
+    #explainModal.is-closing .katas-dialog {
+      opacity: 0;
+      transform: translate(-50%, calc(-50% + 48px));
+    }
+    #explainModal.is-closing .katas-backdrop {
+      opacity: 0;
     }
     .katas-dialog {
       left: 0;
@@ -1179,6 +1212,11 @@
         flushLists();
         return out.join('\n');
       }
+      function renderExplanationContent(value) {
+        const text = String(value || '').trim();
+        if (!text) return '';
+        return /<[a-z][\s\S]*>/i.test(text) ? text : renderMarkdownBasic(text);
+      }
       function setInlineExplainState(sec, show) {
         if (!sec) return;
         const btn = sec.querySelector('.inline-explain-btn');
@@ -1351,7 +1389,7 @@
         const correctText = choices[correct] ?? `Option ${correct+1}`;
         const explanationHtml = json.explanation_html || '';
         const explanationRaw = json.explanation || json.explanations || '';
-        const explanation = explanationHtml || renderMarkdownBasic(explanationRaw);
+        const explanation = renderExplanationContent(explanationHtml || explanationRaw);
         const body = ok
           ? `<div><strong>${chosenText}</strong> is correct.</div>`
           : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
@@ -1506,6 +1544,7 @@
         const stemBlock = stemHtml ? `<div class="katas-stem"><div class="stem">${stemHtml}</div></div>` : '';
         body.innerHTML = `${stemBlock}<div class="katas-richtext">${html}</div>`;
         __typesetMath(body).then(function(){ __wrapWideMath(body); });
+        modal.classList.remove('is-closing');
         modal.classList.add('show');
         saveQuizState();
         // Lock background scroll without losing position
@@ -1522,7 +1561,13 @@
       }
       function hideExplanationPopup() {
         const modal = document.getElementById('explainModal');
-        if (modal) modal.classList.remove('show');
+        if (modal && modal.classList.contains('show')) {
+          modal.classList.add('is-closing');
+          window.setTimeout(() => {
+            modal.classList.remove('is-closing');
+            modal.classList.remove('show');
+          }, 420);
+        }
         // Restore document flow and exact scroll position
         document.documentElement.style.overflow = '';
         const top = parseInt((document.body.style.top || '0').replace('px',''), 10) || 0;
