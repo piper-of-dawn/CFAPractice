@@ -162,8 +162,8 @@
       position: absolute;
       inset: 0;
       pointer-events: none;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 42%);
-      opacity: 1;
+      background: none;
+      opacity: 0;
       pointer-events: none;
     }
     .card-link:hover {
@@ -219,8 +219,8 @@
       box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
     }
     body[data-theme="light"] .card-link::after {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 42%);
-      opacity: 1;
+      background: none;
+      opacity: 0;
     }
     body[data-theme="light"] .card-link:hover {
       border-color: rgba(var(--secondary-rgb), 0.82);
@@ -241,7 +241,8 @@
         0 6px 18px rgba(2, 6, 23, 0.32);
     }
     body:not([data-theme="light"]) .card-link::after {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 46%);
+      background: none;
+      opacity: 0;
     }
     body:not([data-theme="light"]) .card-link:hover {
       box-shadow:
