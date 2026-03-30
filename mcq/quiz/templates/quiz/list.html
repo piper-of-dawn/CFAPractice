@@ -134,8 +134,12 @@
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 10px;
     }
+    .cards > li {
+      min-width: 0;
+    }
     .card-link {
       position: relative;
+      width: 100%;
       min-height: 136px;
       display: flex;
       flex-direction: column;
@@ -186,6 +190,7 @@
       color: var(--muted);
       font-size: 12px;
       font-weight: 500;
+      max-width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -426,10 +431,47 @@
       border-radius: 5px;
     }
     @media (max-width: 680px) {
-      .wrap { padding: 20px 14px 24px; }
-      .cards { grid-template-columns: 1fr; gap: 10px; }
-      .card-link { min-height: 118px; }
+      .top-controls {
+        position: sticky;
+        top: 0;
+        right: auto;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 12px 14px 0;
+        margin: 0 0 4px;
+        background: linear-gradient(180deg, rgba(7, 13, 26, 0.96), rgba(7, 13, 26, 0.82) 72%, transparent);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      body[data-theme="light"] .top-controls {
+        background: linear-gradient(180deg, rgba(251, 250, 244, 0.96), rgba(251, 250, 244, 0.84) 72%, transparent);
+      }
+      .theme-btn,
+      .katas-btn {
+        flex: 1 1 140px;
+        min-height: 42px;
+      }
+      .wrap { padding: 8px 14px 24px; }
+      .master-row {
+        align-items: stretch;
+      }
+      .master-link {
+        width: 100%;
+        text-align: center;
+      }
+      .cards {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+      }
+      .card-link {
+        min-height: auto;
+        padding: 14px 13px;
+      }
       .card-title { font-size: 15px; }
+      .card-path {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
       .katas-dialog {
         left: 0;
         top: 0;

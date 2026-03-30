@@ -423,6 +423,9 @@
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.14) transparent;
   }
+  #explainModal .katas-dialog {
+    width: min(70vw, 1100px);
+  }
   .katas-dialog::-webkit-scrollbar { width: 6px; height: 6px; }
   .katas-dialog::-webkit-scrollbar-track { background: transparent; }
   .katas-dialog::-webkit-scrollbar-thumb {
@@ -472,6 +475,22 @@
     font-family: "Times New Roman", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
     color: #3f4046;
   }
+  #explainModal .katas-body,
+  #explainModal .katas-body p,
+  #explainModal .katas-body li,
+  #explainModal .katas-body blockquote,
+  #explainModal .katas-body h1,
+  #explainModal .katas-body h2,
+  #explainModal .katas-body h3,
+  #explainModal .katas-body h4,
+  #explainModal .katas-body h5,
+  #explainModal .katas-body h6,
+  #explainModal .katas-body .stem {
+    font-family: Cambria, Georgia, "Times New Roman", serif;
+  }
+  #explainModal .katas-body {
+    max-width: 100%;
+  }
   .katas-body h1 {
     font-size: clamp(34px, 4.2vw, 48px);
     line-height: 1.12;
@@ -489,6 +508,15 @@
     margin: 26px 0 12px;
     font-weight: 500;
     color: #35363d;
+  }
+  .katas-body h4,
+  .katas-body h5,
+  .katas-body h6 {
+    font-size: clamp(20px, 2.2vw, 24px);
+    line-height: 1.3;
+    margin: 22px 0 10px;
+    font-weight: 600;
+    color: #3c3d45;
   }
   .katas-body p {
     margin: 0 0 36px;
@@ -522,6 +550,26 @@
     color: #2f2f35;
     padding: 1px 5px;
     border-radius: 5px;
+  }
+  .katas-body pre {
+    margin: 0 0 28px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #f1f3f8;
+    color: #2f2f35;
+    overflow-x: auto;
+  }
+  .katas-body pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.92em;
+    line-height: 1.65;
+  }
+  .katas-body a {
+    color: #1244FF;
+    text-decoration: underline;
+    text-underline-offset: 0.14em;
   }
   .katas-richtext > * {
     margin: 0 0 36px;
@@ -675,6 +723,9 @@
   :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
   :root[data-theme="dark"] .chart-delta { color: #d7def0; }
   @media (max-width: 680px) {
+    #explainModal .katas-dialog {
+      width: 70vw;
+    }
     .katas-dialog {
       left: 0;
       top: 0;
@@ -775,7 +826,7 @@
   }
   </style>
 </head>
-<body data-timer-seconds="{{ timer_seconds|default:'0' }}">
+<body data-timer-seconds="{{ timer_seconds|default:'0' }}" data-quiz-source="{{ data_source|default:''|escape }}">
   <canvas id="gridCanvas" aria-hidden="true"></canvas>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
     <span class="icon" aria-hidden="true"></span>
@@ -987,8 +1038,147 @@
       const questions = Array.from(document.querySelectorAll('section.question'));
       const inlineExplanationBodies = new Map();
       const inlineExplanationStems = new Map();
+      const quizStorageKey = `quiz-progress:${window.location.pathname}:${document.body.dataset.quizSource || document.title || 'quiz'}`;
       let activeExplanationHtml = '';
       let activeExplanationStemHtml = '';
+      let lastActiveQuestion = '';
+
+      function escapeHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function renderMarkdownBasic(text) {
+        if (!text || typeof text !== 'string') return '';
+        const lines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+        const out = [];
+        let para = [];
+        let quote = [];
+        let ordered = [];
+        let unordered = [];
+        let inCodeBlock = false;
+        let codeLines = [];
+
+        const inlineMd = (value) => {
+          let s = escapeHtml(value);
+          s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+          s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          s = s.replace(/__(.+?)__/g, '<strong>$1</strong>');
+          s = s.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+          s = s.replace(/(?<!_)_(?!_)(.+?)(?<!_)_(?!_)/g, '<em>$1</em>');
+          s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+          return s;
+        };
+
+        const flushPara = () => {
+          if (para.length) {
+            out.push(`<p>${para.map(inlineMd).join('<br>')}</p>`);
+            para = [];
+          }
+        };
+        const flushQuote = () => {
+          if (quote.length) {
+            const qlines = quote.filter((q) => q.trim().toLowerCase() !== '[!quote]');
+            if (qlines.length) out.push(`<blockquote>${qlines.map(inlineMd).join('<br>')}</blockquote>`);
+            quote = [];
+          }
+        };
+        const flushOrdered = () => {
+          if (ordered.length) {
+            out.push(`<ol>${ordered.map((item) => `<li>${inlineMd(item)}</li>`).join('')}</ol>`);
+            ordered = [];
+          }
+        };
+        const flushUnordered = () => {
+          if (unordered.length) {
+            out.push(`<ul>${unordered.map((item) => `<li>${inlineMd(item)}</li>`).join('')}</ul>`);
+            unordered = [];
+          }
+        };
+        const flushLists = () => {
+          flushOrdered();
+          flushUnordered();
+        };
+        const flushCodeBlock = () => {
+          if (codeLines.length) {
+            out.push(`<pre><code>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+            codeLines = [];
+          }
+          inCodeBlock = false;
+        };
+
+        lines.forEach((raw) => {
+          const line = raw.replace(/\s+$/, '');
+          if (line.trim().startsWith('```')) {
+            flushPara();
+            flushQuote();
+            flushLists();
+            if (inCodeBlock) flushCodeBlock();
+            else {
+              inCodeBlock = true;
+              codeLines = [];
+            }
+            return;
+          }
+          if (inCodeBlock) {
+            codeLines.push(raw);
+            return;
+          }
+          if (!line.trim()) {
+            flushPara();
+            flushQuote();
+            flushLists();
+            return;
+          }
+          if (line.startsWith('>')) {
+            flushPara();
+            flushLists();
+            quote.push(line.slice(1).trimStart());
+            return;
+          }
+          const orderedMatch = line.match(/^\s*\d+\.\s+(.+)$/);
+          if (orderedMatch) {
+            flushPara();
+            flushQuote();
+            flushUnordered();
+            ordered.push(orderedMatch[1]);
+            return;
+          }
+          const unorderedMatch = line.match(/^\s*[-*]\s+(.+)$/);
+          if (unorderedMatch) {
+            flushPara();
+            flushQuote();
+            flushOrdered();
+            unordered.push(unorderedMatch[1]);
+            return;
+          }
+          flushQuote();
+          flushLists();
+          const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
+          if (headingMatch) {
+            flushPara();
+            const level = Math.min(headingMatch[1].length, 6);
+            out.push(`<h${level}>${inlineMd(headingMatch[2].trim())}</h${level}>`);
+            return;
+          }
+          if (/^\s*([-*_])(?:\s*\1){2,}\s*$/.test(line)) {
+            flushPara();
+            out.push('<hr>');
+            return;
+          }
+          para.push(line);
+        });
+
+        if (inCodeBlock) flushCodeBlock();
+        flushPara();
+        flushQuote();
+        flushLists();
+        return out.join('\n');
+      }
       function setInlineExplainState(sec, show) {
         if (!sec) return;
         const btn = sec.querySelector('.inline-explain-btn');
@@ -999,6 +1189,56 @@
         } else {
           btn.hidden = true;
           btn.classList.remove('attention');
+        }
+      }
+      function readQuizState() {
+        try {
+          const raw = sessionStorage.getItem(quizStorageKey);
+          return raw ? JSON.parse(raw) : null;
+        } catch (_) {
+          return null;
+        }
+      }
+      function saveQuizState(extra) {
+        try {
+          const answers = {};
+          const reported = [];
+          questions.forEach((sec) => {
+            const qname = sec.dataset.qname;
+            if (!qname) return;
+            const checked = document.querySelector(`input[name="${qname}"]:checked`);
+            if (checked) answers[qname] = parseInt(checked.value, 10);
+            if (sec.dataset.reported) reported.push(qname);
+          });
+          sessionStorage.setItem(quizStorageKey, JSON.stringify({
+            answers,
+            reported,
+            activeQuestion: lastActiveQuestion || '',
+            scrollY: window.scrollY || document.documentElement.scrollTop || 0,
+            savedAt: Date.now(),
+            ...(extra || {}),
+          }));
+        } catch (_) {}
+      }
+      function restoreQuizState() {
+        const state = readQuizState();
+        if (!state || typeof state !== 'object') return;
+        const answers = state.answers || {};
+        Object.entries(answers).forEach(([qname, value]) => {
+          const input = document.querySelector(`input[name="${qname}"][value="${value}"]`);
+          if (input) input.checked = true;
+        });
+        (state.reported || []).forEach((qname) => {
+          const sec = document.querySelector(`section.question[data-qname="${qname}"]`);
+          if (sec) sec.dataset.reported = '1';
+        });
+        Object.keys(answers).forEach((qname) => onCheck({ dataset: { target: qname } }, { reportMistake: false, saveState: false }));
+        if (state.activeQuestion && answers[state.activeQuestion] !== undefined) {
+          lastActiveQuestion = state.activeQuestion;
+          onCheck({ dataset: { target: state.activeQuestion } }, { reportMistake: false, saveState: false });
+        }
+        if (typeof state.scrollY === 'number') {
+          window.requestAnimationFrame(() => window.scrollTo(0, state.scrollY));
         }
       }
       function hideExplanation() {
@@ -1088,10 +1328,12 @@
         longestEl.textContent = `Longest: ${longest}`;
       }
 
-      function onCheck(btn){
+      function onCheck(btn, options){
+        const { reportMistake = true, saveState: shouldSaveState = true } = options || {};
         const target = btn.dataset.target;
         const sec = document.querySelector(`section.question[data-qname="${target}"]`);
         if (!sec) return;
+        lastActiveQuestion = target || lastActiveQuestion;
         const correct = parseInt(sec.dataset.correct);
         const json = JSON.parse(sec.dataset.json || '{}');
         const selected = document.querySelector(`input[name="${target}"]:checked`);
@@ -1099,6 +1341,7 @@
           setInlineExplainState(sec, false);
           setOutcome({title: 'No selection', ok: null, body: 'Please choose an option, then press Check.', meta: null});
           recomputeTotals();
+          if (shouldSaveState) saveQuizState();
           return;
         }
         const chosenIdx = parseInt(selected.value);
@@ -1106,7 +1349,9 @@
         const choices = json.choices || [];
         const chosenText = choices[chosenIdx] ?? `Option ${chosenIdx+1}`;
         const correctText = choices[correct] ?? `Option ${correct+1}`;
-        const explanation = json.explanation_html || json.explanation || json.explanations || '';
+        const explanationHtml = json.explanation_html || '';
+        const explanationRaw = json.explanation || json.explanations || '';
+        const explanation = explanationHtml || renderMarkdownBasic(explanationRaw);
         const body = ok
           ? `<div><strong>${chosenText}</strong> is correct.</div>`
           : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
@@ -1156,7 +1401,7 @@
           setTimeout(() => sec.classList.remove('glow-incorrect'), 4100);
         }
         // Report mistake once per question to server (Upstash-backed)
-        if (!ok && !sec.dataset.reported) {
+        if (reportMistake && !ok && !sec.dataset.reported) {
           try {
             // Capture the actual stem text for mistake payloads
             const stemEl = sec.querySelector('.stem');
@@ -1179,6 +1424,7 @@
           } catch(_) {}
         }
         recomputeTotals();
+        if (shouldSaveState) saveQuizState();
       }
 
       document.querySelectorAll('.check-btn').forEach(btn => {
@@ -1212,6 +1458,7 @@
           if (sec) onCheck({ dataset: { target: sec.dataset.qname } });
         }
       });
+      restoreQuizState();
       recomputeTotals();
 
       // Run MathJax over stems/options once loaded, then wrap wide formulas
@@ -1260,6 +1507,7 @@
         body.innerHTML = `${stemBlock}<div class="katas-richtext">${html}</div>`;
         __typesetMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.add('show');
+        saveQuizState();
         // Lock background scroll without losing position
         // Capture current scroll position
         __lockedScrollY = window.scrollY || document.documentElement.scrollTop || 0;
@@ -1286,7 +1534,13 @@
         // Scroll back to where the user was
         const y = top ? -top : (__lockedScrollY || 0);
         window.scrollTo(0, y);
+        saveQuizState({ scrollY: y });
       }
+      window.addEventListener('pagehide', () => saveQuizState());
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') saveQuizState();
+      });
+      window.addEventListener('pageshow', () => restoreQuizState());
 
       // ===== Timer + Avg time per question =====
       const timerEl = document.getElementById('timerValue');
