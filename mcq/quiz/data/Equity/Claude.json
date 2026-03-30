@@ -10,7 +10,7 @@
       "C": "Clearing instruction"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Order Instruction Classification</h3><p><strong>C is correct.</strong> Orders include core parameters plus additional instructions grouped into three categories. Clearing instructions specifically indicate how the final settlement of the trade, including custody and transfer, should be arranged. The PDF defines clearing instructions as indicating 'how to arrange the final settlement of the trade'.</p><p>A is incorrect because execution instructions indicate how to fill the order (e.g., price and size constraints).</p><p>B is incorrect because validity instructions indicate when the order may be filled (i.e., its temporal life).</p>"
+    "explanation": "<h3>First Principles Thinking: Order Instruction Classification</h3><p><strong>C is correct.</strong> Orders include core parameters plus additional instructions grouped into three categories. Clearing instructions specifically indicate how the final settlement of the trade, including custody and transfer, should be arranged.</p><p>A is incorrect because execution instructions indicate how to fill the order (e.g., price and size constraints).</p><p>B is incorrect because validity instructions indicate when the order may be filled (i.e., its temporal life).</p>"
   },
   {
     "id": 2,
@@ -205,7 +205,7 @@
       "C": "USD 0.15"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market bid-ask spread uses the best quotes available across dealers. The best bid is the highest bid, which is USD 50.05 from Broker B. The best ask is the lowest ask, which is USD 50.15 from Broker A. Therefore, the market spread is USD 50.15 - USD 50.05 = USD 0.10.</p><p>A is incorrect because it uses the worst bid and worst ask rather than the best market quotes.</p><p>C is incorrect because it uses only Broker A's spread instead of the combined market spread.</p>"
+    "explanation": "<h3>First Principles Thinking: Composite Market</h3><p><strong>B is correct.</strong> The market spread is determined by the combination of the best quotes across all venues (brokers). The **Best Bid** (highest price to buy) is $\\text{max}(\\$50.00, \\$50.05) = \\$50.05$. The **Best Ask** (lowest price to sell) is $\\text{min}(\\$50.15, \\$50.20) = \\$50.15USD . The market spread is \\text{Best Ask} - \\text{Best Bid} = \\$50.15 - \\$50.05 = \\$0.10$.</p><p>A is incorrect because it uses the worst possible bid (USD 50.00) and the worst possible ask (USD 50.20), resulting in an artificially wide spread.</p><p>C is incorrect because it calculates the spread of Broker A only, ignoring the tighter spread provided by the combination of both brokers.</p>"
   },
   {
     "id": 17,
@@ -687,7 +687,7 @@
       "C": "USD 33.33"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity as a percentage of the stock value falls to the maintenance margin. The stock is purchased at USD 50 with 40% initial margin, so the investor provides USD 20 and borrows USD 30. At stock price $P$, equity is $P - 30$. Set the maintenance-margin condition equal to 25%: $\\frac{P - 30}{P} = 0.25$. Solving gives $P - 30 = 0.25P$, so $0.75P = 30$ and $P = 40$. Thus, the first margin call occurs when the stock price falls to USD 40.00.</p><p>A is incorrect because USD 30 would imply equity of zero, not equity equal to the maintenance margin.</p><p>C is incorrect because it results from using the wrong denominator or misapplying the maintenance-margin formula.</p>"
+    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity in the position falls to the maintenance margin requirement. <br>Define variables: Purchase Price ($P_0$) = USD 50. Leverage implies the investor borrows $1 - \text{Initial Margin} = 60\\%$ of the value. Loan amount = USD 50 \times 0.60 = USD 30. <br>Equity at any price $PUSD is P - \text{Loan}USD . <br>The critical condition is: \frac{P - \text{Loan}}{P} = \text{Maintenance Margin}USD . <br>Substitute values: \frac{P - 30}{P} = 0.25USD . <br>Solve for P$: $P - 30 = 0.25P \rightarrow 0.75P = 30 \rightarrow P = \frac{30}{0.75} = $40$. <br>The price must fall to USD 40 before equity drops to 25%.</p><p>A is incorrect: This calculates the price where equity is zero or uses a wrong formula derivation.</p><p>C is incorrect: This likely confuses the maintenance margin with the initial margin or misapplies the formula $\text{Price} \times (1 - \text{Initial}) / (1 - \text{Maintenance})$.</p>"
   },
   {
     "id": 4,
@@ -739,7 +739,7 @@
       "C": "-25%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> The investor shorts the stock at USD 100 and posts 50% initial margin, so initial equity is USD 50. When the stock rises to USD 110, the short position loses USD 10 per share. Return on equity is therefore $\\frac{-10}{50} = -0.20$, or -20%. The same result follows from leverage: the stock return to a short seller is -10%, and with 2x leverage the equity return is -20%.</p><p>B is incorrect because -10% is the price move on the stock, not the leveraged return on the investor's equity.</p><p>C is incorrect because it overstates the loss and does not match the margin-based return calculation.</p>"
+    "explanation": "<h3>First Principles Thinking: Short Sale Returns</h3><p><strong>A is correct.</strong> Return on Equity (ROE) = $\frac{\text{Profit/Loss}}{\text{Initial Equity}}$. <br>Initial Equity = USD 100 \times 0.50 = $50$. <br>Price change = USD 110 - USD 100 = +$10$. <br>For a short seller, a price increase is a loss. Loss = -$10$. <br>ROE = $\frac{-10}{50} = -0.20$ or -20%. <br>Alternatively, Leverage Factor = $\frac{1}{\text{Margin}} = \frac{1}{0.5} = 2$. <br>Asset return = $\frac{100 - 110}{100} = -10\\%$. <br>Leveraged ROE = Asset Return USD \times Leverage = $-10\\% \times 2 = -20\\%$.</p><p>B is incorrect: This is the return on the asset price itself, ignoring the leverage effect of the margin deposit.</p><p>C is incorrect: This assumes a different margin base or miscalculates the leverage multiplier.</p>"
   },
   {
     "id": 8,
@@ -817,7 +817,7 @@
       "C": "20.0%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> The leverage ratio is asset value divided by equity: $\\frac{100{,}000}{40{,}000} = 2.5$. A 5% increase in the asset value therefore produces a return on equity of $5\\% \\times 2.5 = 12.5\\%$. You can confirm this directly: a 5% gain on USD 100,000 is USD 5,000, and $\\frac{5{,}000}{40{,}000} = 12.5\\%$.</p><p>B is incorrect because it is the unleveraged asset return, not the return on equity.</p><p>C is incorrect because it would require a higher leverage ratio than the one given.</p>"
+    "explanation": "<h3>First Principles Thinking: Leverage Multiplier</h3><p><strong>A is correct.</strong> <br>1. Calculate Leverage Ratio: $\text{Leverage} = \frac{\text{Asset Value}}{\text{Equity}} = \frac{100,000}{40,000} = 2.5USD . <br>2. Apply the leverage to the asset return. Since the debt is fixed, all gains accrue to the equity. <br>\text{Return on Equity} = \text{Asset Return} \times \text{Leverage}USD . <br>ROE = 5\\% \times 2.5 = 12.5\\%$. <br>Check: Gain on assets = USD 5,000. Equity = USD 40,000. USD 5,000/USD 40,000 = 12.5%.</p><p>B is incorrect: This is the unleveraged asset return.</p><p>C is incorrect: This assumes a different leverage ratio (e.g., 4x) or miscalculation.</p>"
   },
   {
     "id": 14,
@@ -843,7 +843,7 @@
       "C": "Primary markets always deal with Initial Public Offerings (IPOs), while secondary markets deal with seasoned offerings."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Market Definitions</h3><p><strong>B is correct.</strong> The **primary market** is the market where an issuer (corporation or government) first sells its securities to investors and receives the proceeds. These include IPOs (first time sales) and seasoned offerings (sales of additional units of previously issued securities). The **secondary market** is where securities are traded among investors after the initial sale, and the issuer is not directly involved.</p><p>A is incorrect: This reverses the definitions. Trades between investors occur in the secondary market; sales from the issuer to investors occur in the primary market.</p><p>C is incorrect: Primary markets include both **Initial Public Offerings (IPOs)** and **seasoned offerings** (the sale of additional units of a previously issued security). Secondary markets facilitate trades of *all* securities, regardless of whether they were originally an IPO or a seasoned offering.</p>"
+    "explanation": "<h3>First Principles Thinking: Market Definitions</h3><p><strong>B is correct.</strong> The **primary market** is the market where an issuer (corporation or government) first sells its securities to investors and receives the proceeds. These include IPOs (first time sales) and seasoned offerings (sales of additional units of previously issued securities). The **secondary market** is where securities are traded among investors after the initial sale, and the issuer is not directly involved.</p><p>A is incorrect: This reverses the definitions. Trades between investors occur in the secondary market; sales from the issuer to investors occur in the primary market .</p><p>C is incorrect: Primary markets include both **Initial Public Offerings (IPOs)** and **seasoned offerings** (the sale of additional units of a previously issued security). Secondary markets facilitate trades of *all* securities, regardless of whether they were originally an IPO or a seasoned offering.</p>"
   },
   {
     "id": 2,
@@ -856,7 +856,7 @@
       "C": "The investment bank guarantees the sale of the issue as a principal in an underwritten offering, but only acts as a broker for the issuer in a best effort offering."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Underwriting Commitment</h3><p><strong>C is correct.</strong> In an **underwritten offering** (or firm commitment offering), the investment bank acts as a **principal**, guarantees the sale of the issue at a negotiated price, and buys any undersubscribed securities. In a **best effort offering**, the investment bank acts only as a **broker** (an agent) and promises to use its best efforts to sell the issue but does *not* guarantee a specific amount will be sold.</p><p>A is incorrect: This statement is the opposite of the fact. The guarantee exists in an underwritten offering, not a best effort offering.</p><p>B is incorrect: In an underwritten offering, the bank acts as a principal, not an agent who guarantees the sale. The best effort offering correctly describes the bank as a broker (agent).</p>"
+    "explanation": "<h3>First Principles Thinking: Underwriting Commitment</h3><p><strong>C is correct.</strong> In an **underwritten offering** (or firm commitment offering), the investment bank acts as a **principal**, guarantees the sale of the issue at a negotiated price, and buys any undersubscribed securities. In a **best effort offering**, the investment bank acts only as a **broker** (an agent) and promises to use its best efforts to sell the issue but does *not* guarantee a specific amount will be sold.</p><p>A is incorrect: This statement is the opposite of the fact. The guarantee exists in an underwritten offering, not a best effort offering .</p><p>B is incorrect: In an underwritten offering, the bank acts as a principal, not an agent who guarantees the sale. The best effort offering correctly describes the bank as a broker (agent).</p>"
   },
   {
     "id": 3,
@@ -869,7 +869,7 @@
       "C": "Set a high price as agents for the issuer, but a low price as underwriters to avoid buying overvalued shares and to allocate valuable shares to clients."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Underwriter Incentives</h3><p><strong>C is correct.</strong> The investment bank has dual roles. As **agents for the issuer**, they should seek a high price to raise the most money. However, as **underwriters**, they have strong incentives to choose a low price. A low price allows them to allocate valuable shares to benefit their clients. A high price exposes them to the direct cost of having to buy overvalued, undersubscribed shares and potentially providing price support in the secondary market. This conflict tends to lower initial offering prices.</p><p>A is incorrect: The underwriting fee is typically a percentage of the gross proceeds, so a high price would increase the fee, not reduce it.</p><p>B is incorrect: A high price increases the risk of the issue being undersubscribed, forcing the underwriter to buy shares and increasing the cost of price support. A low price benefits preferred clients.</p>"
+    "explanation": "<h3>First Principles Thinking: Underwriter Incentives</h3><p><strong>C is correct.</strong> The investment bank has dual roles. As **agents for the issuer**, they should seek a high price to raise the most money. However, as **underwriters**, they have strong incentives to choose a low price. A low price allows them to allocate valuable shares to benefit their clients. A high price exposes them to the direct cost of having to buy overvalued, undersubscribed shares and potentially providing price support in the secondary market. This conflict tends to lower initial offering prices .</p><p>A is incorrect: The underwriting fee is typically a percentage of the gross proceeds, so a high price would increase the fee, not reduce it .</p><p>B is incorrect: A high price increases the risk of the issue being undersubscribed, forcing the underwriter to buy shares and increasing the cost of price support. A low price benefits preferred clients.</p>"
   },
   {
     "id": 4,
@@ -882,7 +882,7 @@
       "C": "They allow investors to easily sell their holdings, making them willing to pay more for the securities, which lowers the cost of capital for the issuer."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Liquidity and Cost of Capital</h3><p><strong>C is correct.</strong> **Liquid secondary markets** allow traders to buy or sell securities with low transaction costs and small price concessions. Because investors value the ability to easily sell their securities (liquidity), they are willing to pay **more** for securities that trade in liquid markets. This higher price at the time of issuance translates directly into a **lower cost of capital** for the corporation or government issuing the security in the primary market.</p><p>A is incorrect: Secondary markets do not inherently guarantee a price floor; the underwriter may temporarily support the price, but this is a primary market service related to the IPO, not the market's general function.</p><p>B is incorrect: While trading in the secondary market helps identify the proper price for seasoned offerings, the primary benefit is that liquidity makes investors willing to pay *more*, not that it allows issuers to set a *lower* price. A lower price would increase the cost of capital.</p>"
+    "explanation": "<h3>First Principles Thinking: Liquidity and Cost of Capital</h3><p><strong>C is correct.</strong> **Liquid secondary markets** allow traders to buy or sell securities with low transaction costs and small price concessions. Because investors value the ability to easily sell their securities (liquidity), they are willing to pay **more** for securities that trade in liquid markets. This higher price at the time of issuance translates directly into a **lower cost of capital** for the corporation or government issuing the security in the primary market .</p><p>A is incorrect: Secondary markets do not inherently guarantee a price floor; the underwriter may temporarily support the price, but this is a primary market service related to the IPO, not the market's general function .</p><p>B is incorrect: While trading in the secondary market helps identify the proper price for seasoned offerings, the primary benefit is that liquidity makes investors willing to pay *more*, not that it allows issuers to set a *lower* price. A lower price would increase the cost of capital.</p>"
   },
   {
     "id": 5,
@@ -895,7 +895,7 @@
       "C": "They result in lower required returns for investors because the securities can be easily traded in the organized secondary market."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Private Placement Mechanics</h3><p><strong>B is correct.</strong> In a **private placement**, corporations sell securities directly to a **small group of qualified investors**. Qualified investors are those with sufficient knowledge, experience, and wealth to recognize and assume the risks. Most countries allow private placements to occur **without nearly as much public disclosure** as is required for public offerings.</p><p>A is incorrect: Private placements generally require *less* public disclosure than public offerings, which makes them cheaper, not more expensive.</p><p>C is incorrect: A key drawback of private placements is that the buyers generally require **higher returns** (lower purchase prices) because they **cannot subsequently trade the securities in an organized secondary market** (i.e., they are illiquid).</p>"
+    "explanation": "<h3>First Principles Thinking: Private Placement Mechanics</h3><p><strong>B is correct.</strong> In a **private placement**, corporations sell securities directly to a **small group of qualified investors**. Qualified investors are those with sufficient knowledge, experience, and wealth to recognize and assume the risks. Most countries allow private placements to occur **without nearly as much public disclosure** as is required for public offerings .</p><p>A is incorrect: Private placements generally require *less* public disclosure than public offerings, which makes them cheaper, not more expensive .</p><p>C is incorrect: A key drawback of private placements is that the buyers generally require **higher returns** (lower purchase prices) because they **cannot subsequently trade the securities in an organized secondary market** (i.e., they are illiquid).</p>"
   },
   {
     "id": 6,
@@ -908,7 +908,7 @@
       "C": "A gain in the value of their existing shares, as the exercise price is set below the current market price."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Rights Offering and Dilution</h3><p><strong>B is correct.</strong> A **rights offering** distributes rights to existing shareholders to buy stock at a fixed, favorable price (below market). Because the new stock is issued below the current market price, the existing shares will experience **dilution** in value. The shareholders can offset this loss by **exercising their rights** (buying the stock at the favorable price) or by **selling the rights** to others who will exercise them.</p><p>A is incorrect: The dilution loss can be offset by *either* exercising the rights or selling them.</p><p>C is incorrect: The issuance of new shares below the current market price causes a **loss** of value due to dilution for the existing shares, even though the right itself is profitable if exercised.</p>"
+    "explanation": "<h3>First Principles Thinking: Rights Offering and Dilution</h3><p><strong>B is correct.</strong> A **rights offering** distributes rights to existing shareholders to buy stock at a fixed, favorable price (below market). Because the new stock is issued below the current market price, the existing shares will experience **dilution** in value. The shareholders can offset this loss by **exercising their rights** (buying the stock at the favorable price) or by **selling the rights** to others who will exercise them .</p><p>A is incorrect: The dilution loss can be offset by *either* exercising the rights or selling them .</p><p>C is incorrect: The issuance of new shares below the current market price causes a **loss** of value due to dilution for the existing shares, even though the right itself is profitable if exercised.</p>"
   },
   {
     "id": 7,
@@ -921,7 +921,7 @@
       "C": "Accelerated book build."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Offering Procedures</h3><p><strong>B is correct.</strong> The process where the investment bank lines up subscribers who will buy the security and compiles a 'book' of orders is specifically called **book building**. The investment bank attempts to build a book of orders to sell the offering to.</p><p>A is incorrect: Underwriting syndication is the formation of a **syndicate**—a group of investment banks and broker-dealers—that helps the lead underwriter build the book for large issues. It is not the process of compiling the list itself.</p><p>C is incorrect: An accelerated book build is a *type* of offering used in Europe when time is critical, where the offering is arranged in only one or two days. It is the speed of the offering, not the name of the process of compiling the list.</p>"
+    "explanation": "<h3>First Principles Thinking: Offering Procedures</h3><p><strong>B is correct.</strong> The process where the investment bank lines up subscribers who will buy the security and compiles a 'book' of orders is specifically called **book building**. The investment bank attempts to build a book of orders to sell the offering to .</p><p>A is incorrect: Underwriting syndication is the formation of a **syndicate**—a group of investment banks and broker-dealers—that helps the lead underwriter build the book for large issues. It is not the process of compiling the list itself.</p><p>C is incorrect: An accelerated book build is a *type* of offering used in Europe when time is critical, where the offering is arranged in only one or two days. It is the speed of the offering, not the name of the process of compiling the list.</p>"
   },
   {
     "id": 8,
@@ -934,7 +934,7 @@
       "C": "Selling the entire issue in a single transaction via a best effort offering over a period of weeks."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Specialized Offering Mechanisms</h3><p><strong>B is correct.</strong> An **accelerated book build** (ABB) is a method used when **time is of the essence**, particularly by European issuers, in which the investment bank arranges the offering in **only one or two days**. Due to the speed and abbreviated marketing period, such sales often occur at **discounted prices**.</p><p>A is incorrect: The process is accelerated because time is of the essence, which suggests a *less* lengthy due diligence process than a regular public offering, and the sales often occur at *discounted*, not guaranteed highest, prices.</p><p>C is incorrect: While it sells the entire issue in a single (very short) transaction, it is a fast process and often conducted as an underwritten (guaranteed) offering, not a 'best effort' over weeks. Selling shares over time is typical of a shelf registration.</p>"
+    "explanation": "<h3>First Principles Thinking: Specialized Offering Mechanisms</h3><p><strong>B is correct.</strong> An **accelerated book build** (ABB) is a method used when **time is of the essence**, particularly by European issuers, in which the investment bank arranges the offering in **only one or two days**. Due to the speed and abbreviated marketing period, such sales often occur at **discounted prices** .</p><p>A is incorrect: The process is accelerated because time is of the essence, which suggests a *less* lengthy due diligence process than a regular public offering, and the sales often occur at *discounted*, not guaranteed highest, prices.</p><p>C is incorrect: While it sells the entire issue in a single (very short) transaction, it is a fast process and often conducted as an underwritten (guaranteed) offering, not a 'best effort' over weeks. Selling shares over time is typical of a shelf registration.</p>"
   },
   {
     "id": 9,
@@ -947,7 +947,7 @@
       "C": "They are allocated exclusively on a pro-rata basis, as required by CFA Standard of Professional Conduct III.B (Fair Dealing)."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Fair Dealing and Allocation</h3><p><strong>B is correct.</strong> If the offering price is set too low, the offering will be **oversubscribed**. In this case, the securities are often allocated to **preferred clients or on a pro-rata basis**. CFA Standard of Professional Conduct III.B (Fair Dealing) requires that the allocation be based on a written policy disclosed to clients and *suggests* they be offered on a pro-rata basis among clients with comparable relationships.</p><p>A is incorrect: The offering price is usually set jointly by the issuer and the bank following negotiation, and all subscriptions are at that price, not based on a high-bid auction.</p><p>C is incorrect: The standard **suggests** a pro-rata basis but requires a written policy disclosed to clients, allowing for allocation to preferred clients as long as the policy is followed and disclosed. It is not an *exclusive* requirement.</p>"
+    "explanation": "<h3>First Principles Thinking: Fair Dealing and Allocation</h3><p><strong>B is correct.</strong> If the offering price is set too low, the offering will be **oversubscribed**. In this case, the securities are often allocated to **preferred clients or on a pro-rata basis**. CFA Standard of Professional Conduct III.B (Fair Dealing) requires that the allocation be based on a written policy disclosed to clients and *suggests* they be offered on a pro-rata basis among clients with comparable relationships .</p><p>A is incorrect: The offering price is usually set jointly by the issuer and the bank following negotiation, and all subscriptions are at that price, not based on a high-bid auction .</p><p>C is incorrect: The standard **suggests** a pro-rata basis but requires a written policy disclosed to clients, allowing for allocation to preferred clients as long as the policy is followed and disclosed. It is not an *exclusive* requirement.</p>"
   },
   {
     "id": 10,
@@ -960,7 +960,7 @@
       "C": "Private placement."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Types of Public Offerings</h3><p><strong>B is correct.</strong> A **seasoned security** is one that an issuer has already issued. If the issuer sells additional units of a previously issued security, this is called a **seasoned offering** (sometimes called a secondary offering). Both IPOs and seasoned offerings take place in the primary market.</p><p>A is incorrect: An **Initial Public Offering (IPO)** (or placing) is when the issuer sells a security to the public for the *first* time.</p><p>C is incorrect: A private placement is a sale to a small group of qualified investors on an unregulated basis, not necessarily a sale to the public of previously issued securities.</p>"
+    "explanation": "<h3>First Principles Thinking: Types of Public Offerings</h3><p><strong>B is correct.</strong> A **seasoned security** is one that an issuer has already issued. If the issuer sells additional units of a previously issued security, this is called a **seasoned offering** (sometimes called a secondary offering). Both IPOs and seasoned offerings take place in the primary market .</p><p>A is incorrect: An **Initial Public Offering (IPO)** (or placing) is when the issuer sells a security to the public for the *first* time .</p><p>C is incorrect: A private placement is a sale to a small group of qualified investors on an unregulated basis, not necessarily a sale to the public of previously issued securities.</p>"
   },
   {
     "id": 11,
@@ -973,7 +973,7 @@
       "C": "Sell the shares in a single, large transaction immediately after making all required public disclosures."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Shelf Registration Utility</h3><p><strong>A is correct.</strong> In a **shelf registration**, the corporation makes a single, comprehensive public disclosure that covers a series of issues, but it does *not* sell all the shares in a single transaction. Instead, it sells the shares **directly into the secondary market over time**, generally when it needs capital, providing flexibility in the timing of transactions.</p><p>B is incorrect: The corporation makes *all* public disclosures required for a regular offering. Avoiding public disclosure is a feature of private placements.</p><p>C is incorrect: Selling the shares over time, not in a single large transaction, is the defining feature that provides flexibility and alleviates downward price pressure.</p>"
+    "explanation": "<h3>First Principles Thinking: Shelf Registration Utility</h3><p><strong>A is correct.</strong> In a **shelf registration**, the corporation makes a single, comprehensive public disclosure that covers a series of issues, but it does *not* sell all the shares in a single transaction. Instead, it sells the shares **directly into the secondary market over time**, generally when it needs capital, providing flexibility in the timing of transactions .</p><p>B is incorrect: The corporation makes *all* public disclosures required for a regular offering. Avoiding public disclosure is a feature of private placements .</p><p>C is incorrect: Selling the shares over time, not in a single large transaction, is the defining feature that provides flexibility and alleviates downward price pressure.</p>"
   },
   {
     "id": 12,
@@ -986,7 +986,7 @@
       "C": "IPOs are always undersubscribed, whereas seasoned offerings are generally oversubscribed, leading to a natural price rise for IPOs."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Information Asymmetry and Pricing</h3><p><strong>B is correct.</strong> The tendency for initial prices to be lower (and subsequently rise) is due to the **underwriter's conflict of interest** and the first-time issuer's fear of an undersubscribed IPO conveying unfavorable information. This dynamic is **less important in a seasoned offering** because **trading in the secondary market helps identify the proper price** for the offering, reducing the information asymmetry and pricing uncertainty.</p><p>A is incorrect: While seasoned offerings may have lower costs, the primary reason for the price difference is the level of information asymmetry and the existing secondary market price discovery.</p><p>C is incorrect: Undersubscribed IPOs convey unfavorable information, which issuers try to avoid by setting a low price, but IPOs are *not* always undersubscribed. Oversubscription or undersubscription can happen in both IPOs and seasoned offerings.</p>"
+    "explanation": "<h3>First Principles Thinking: Information Asymmetry and Pricing</h3><p><strong>B is correct.</strong> The tendency for initial prices to be lower (and subsequently rise) is due to the **underwriter's conflict of interest** and the first-time issuer's fear of an undersubscribed IPO conveying unfavorable information. This dynamic is **less important in a seasoned offering** because **trading in the secondary market helps identify the proper price** for the offering, reducing the information asymmetry and pricing uncertainty .</p><p>A is incorrect: While seasoned offerings may have lower costs, the primary reason for the price difference is the level of information asymmetry and the existing secondary market price discovery .</p><p>C is incorrect: Undersubscribed IPOs convey unfavorable information, which issuers try to avoid by setting a low price, but IPOs are *not* always undersubscribed. Oversubscription or undersubscription can happen in both IPOs and seasoned offerings.</p>"
   },
   {
     "id": 13,
@@ -1012,7 +1012,7 @@
       "C": "Newly issued shares sold by the company, and potentially shares sold by the company’s founders and early investors."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: IPO Structure</h3><p><strong>C is correct.</strong> The first public offering of common stock (IPO) in a company consists of **newly issued shares** that the company sells to raise capital. It **may also include shares** that the founders and other early investors in the company seek to sell, providing these existing investors with a means of liquidating their investments.</p><p>A is incorrect: While newly issued shares are central, the offering can also include shares sold by existing early investors for liquidity.</p><p>B is incorrect: The IPO is primarily a capital-raising transaction for the company (new shares), but also offers a liquidation channel for early investors (existing shares).</p>"
+    "explanation": "<h3>First Principles Thinking: IPO Structure</h3><p><strong>C is correct.</strong> The first public offering of common stock (IPO) in a company consists of **newly issued shares** that the company sells to raise capital. It **may also include shares** that the founders and other early investors in the company seek to sell, providing these existing investors with a means of liquidating their investments .</p><p>A is incorrect: While newly issued shares are central, the offering can also include shares sold by existing early investors for liquidity .</p><p>B is incorrect: The IPO is primarily a capital-raising transaction for the company (new shares), but also offers a liquidation channel for early investors (existing shares).</p>"
   },
   {
     "id": 15,
@@ -1025,7 +1025,7 @@
       "C": "The rights are considered short-term stock warrants, which inherently reduce the stock's future earnings per share."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Dilution Mechanism</h3><p><strong>B is correct.</strong> A rights offering involves issuing new stock to existing shareholders at an **exercise price set below the current market price** of the stock. The new, lower-priced shares dilute the value of the existing shares because the same total firm value (or a slightly higher value from the new cash) is now spread over a greater number of shares, dragging the average share price down toward the offering price.</p><p>A is incorrect: The exercise price is intentionally set **below** the current market price so that buying stock with the rights is immediately profitable, ensuring the rights have value.</p><p>C is incorrect: While financial analysts recognize rights as short-term stock warrants, the *reason* for the dilution is the issuance of shares below market value, not just the classification of the security.</p>"
+    "explanation": "<h3>First Principles Thinking: Dilution Mechanism</h3><p><strong>B is correct.</strong> A rights offering involves issuing new stock to existing shareholders at an **exercise price set below the current market price** of the stock. The new, lower-priced shares dilute the value of the existing shares because the same total firm value (or a slightly higher value from the new cash) is now spread over a greater number of shares, dragging the average share price down toward the offering price .</p><p>A is incorrect: The exercise price is intentionally set **below** the current market price so that buying stock with the rights is immediately profitable, ensuring the rights have value .</p><p>C is incorrect: While financial analysts recognize rights as short-term stock warrants , the *reason* for the dilution is the issuance of shares below market value, not just the classification of the security.</p>"
   },
   {
     "id": 16,
@@ -1038,7 +1038,7 @@
       "C": "Underwritten offerings by a syndicate of investment banks to ensure the sale is guaranteed."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Sovereign Issuance Methods</h3><p><strong>B is correct.</strong> The national governments of financially strong countries generally issue their debt securities (bonds, notes, and bills) in **public auctions organized by a government agency** (like the finance ministry). They may also sell them **directly to dealers**.</p><p>A is incorrect: Financially strong governments rely on transparent public auctions, and many governments are required by law to auction their securities. Private placements are more typical for corporations.</p><p>C is incorrect: Underwritten offerings are more common for **smaller and less financially secure** national governments and most regional governments, who often contract with investment banks for help. Strong governments typically use direct auctions.</p>"
+    "explanation": "<h3>First Principles Thinking: Sovereign Issuance Methods</h3><p><strong>B is correct.</strong> The national governments of financially strong countries generally issue their debt securities (bonds, notes, and bills) in **public auctions organized by a government agency** (like the finance ministry). They may also sell them **directly to dealers** .</p><p>A is incorrect: Financially strong governments rely on transparent public auctions, and many governments are required by law to auction their securities. Private placements are more typical for corporations .</p><p>C is incorrect: Underwritten offerings are more common for **smaller and less financially secure** national governments and most regional governments, who often contract with investment banks for help. Strong governments typically use direct auctions.</p>"
   },
   {
     "id": 17,
@@ -1051,7 +1051,7 @@
       "C": "Violates fair dealing standards, leading to regulatory scrutiny and fines."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Adverse Signaling</h3><p><strong>B is correct.</strong> First-time issuers are highly vulnerable to public opinion. They generally accept lower offering prices because they and others believe that an **undersubscribed IPO conveys very unfavorable information** to the market about the company's future prospects. Their fear is that this negative signal will make it substantially harder to raise additional capital through subsequent seasoned offerings.</p><p>A is incorrect: In an underwritten offering, the bank buys the undersubscribed securities, completing the offering. In a best-effort offering, the offering proceeds but sells less. The offering is not typically withdrawn.</p><p>C is incorrect: Undersubscription (selling too few shares) is a pricing error, not a direct violation of the fair dealing standard, which is concerned with the *allocation* of shares when the offering is oversubscribed.</p>"
+    "explanation": "<h3>First Principles Thinking: Adverse Signaling</h3><p><strong>B is correct.</strong> First-time issuers are highly vulnerable to public opinion. They generally accept lower offering prices because they and others believe that an **undersubscribed IPO conveys very unfavorable information** to the market about the company's future prospects. Their fear is that this negative signal will make it substantially harder to raise additional capital through subsequent seasoned offerings .</p><p>A is incorrect: In an underwritten offering, the bank buys the undersubscribed securities, completing the offering. In a best-effort offering, the offering proceeds but sells less. The offering is not typically withdrawn.</p><p>C is incorrect: Undersubscription (selling too few shares) is a pricing error, not a direct violation of the fair dealing standard, which is concerned with the *allocation* of shares when the offering is oversubscribed.</p>"
   },
   {
     "id": 18,
@@ -1064,7 +1064,7 @@
       "C": "Securities being sold at a discounted price due to the short time frame and the urgency to complete the sale."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: ABB Trade-offs</h3><p><strong>C is correct.</strong> An accelerated book build is arranged in only one or two days when time is of the essence. This rapid execution, without the usual time for extensive marketing and due diligence, typically results in the sales occurring at **discounted prices**. The discount compensates buyers for the reduced information and rapid decision-making required.</p><p>A is incorrect: The sales often occur at *discounted*, not higher, prices.</p><p>B is incorrect: While there is a risk, the discount is often applied to ensure the deal is fully subscribed, mitigating the risk of undersubscription. The primary and intended consequence is the sale at a discount, which allows for the rapid execution.</p>"
+    "explanation": "<h3>First Principles Thinking: ABB Trade-offs</h3><p><strong>C is correct.</strong> An accelerated book build is arranged in only one or two days when time is of the essence. This rapid execution, without the usual time for extensive marketing and due diligence, typically results in the sales occurring at **discounted prices**. The discount compensates buyers for the reduced information and rapid decision-making required.</p><p>A is incorrect: The sales often occur at *discounted*, not higher, prices .</p><p>B is incorrect: While there is a risk, the discount is often applied to ensure the deal is fully subscribed, mitigating the risk of undersubscription. The primary and intended consequence is the sale at a discount, which allows for the rapid execution.</p>"
   },
   {
     "id": 19,
@@ -1077,7 +1077,7 @@
       "C": "It is an unregulated sale of securities to a small group of qualified investors."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: DRIP Mechanics</h3><p><strong>B is correct.</strong> A primary market transaction is one where the issuer first sells its securities to investors and receives the proceeds. A DRP specifies that the corporation **issue new shares** for the plan rather than purchasing them on the open market. By issuing new shares and selling them to existing shareholders (who reinvest their dividends), the corporation is essentially raising new capital, which defines it as a primary market transaction.</p><p>A is incorrect: If the corporation were to purchase shares on the open market, it would be a secondary market transaction, but the defining characteristic of this type of DRP is the issuance of *new* shares.</p><p>C is incorrect: This describes a private placement. DRPs are offered to all shareholders, which is a broader group than the 'small group of qualified investors' in a private placement.</p>"
+    "explanation": "<h3>First Principles Thinking: DRIP Mechanics</h3><p><strong>B is correct.</strong> A primary market transaction is one where the issuer first sells its securities to investors and receives the proceeds. A DRP specifies that the corporation **issue new shares** for the plan rather than purchasing them on the open market. By issuing new shares and selling them to existing shareholders (who reinvest their dividends), the corporation is essentially raising new capital, which defines it as a primary market transaction .</p><p>A is incorrect: If the corporation were to purchase shares on the open market, it would be a secondary market transaction, but the defining characteristic of this type of DRP is the issuance of *new* shares .</p><p>C is incorrect: This describes a private placement. DRPs are offered to all shareholders, which is a broader group than the 'small group of qualified investors' in a private placement.</p>"
   },
   {
     "id": 20,
@@ -1090,7 +1090,7 @@
       "C": "The investment bank is required to buy all unsold securities, exposing the issuer to credit risk."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Best Effort Offering Risk</h3><p><strong>B is correct.</strong> In a **best effort offering**, the investment bank acts only as a broker (agent) and makes no guarantee of sale. If the offering is undersubscribed (not enough demand at the set price), the **issuer will not sell as much as it hoped to sell**. This exposes the issuer to the risk of failing to raise the desired amount of capital. In an underwritten offering, this risk is borne by the bank.</p><p>A is incorrect: The incentive to set a low price is the primary risk for the *underwriter* in an underwritten offering, as it reduces the potential gross proceeds for the issuer.</p><p>C is incorrect: The bank is **not** required to buy unsold securities in a best effort offering; that is the defining commitment of an underwritten offering.</p>"
+    "explanation": "<h3>First Principles Thinking: Best Effort Offering Risk</h3><p><strong>B is correct.</strong> In a **best effort offering**, the investment bank acts only as a broker (agent) and makes no guarantee of sale. If the offering is undersubscribed (not enough demand at the set price), the **issuer will not sell as much as it hoped to sell**. This exposes the issuer to the risk of failing to raise the desired amount of capital. In an underwritten offering, this risk is borne by the bank .</p><p>A is incorrect: The incentive to set a low price is the primary risk for the *underwriter* in an underwritten offering, as it reduces the potential gross proceeds for the issuer .</p><p>C is incorrect: The bank is **not** required to buy unsold securities in a best effort offering; that is the defining commitment of an underwritten offering.</p>"
   },
   {
     "id": 21,
@@ -1103,7 +1103,7 @@
       "C": "The demand for the issue is less than the underwriter's market-making commitment."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Pricing Outcomes</h3><p><strong>B is correct.</strong> The issuer and the investment bank jointly set the offering price. If they set a price that buyers consider **too high**, the offering will be **undersubscribed**, meaning they will fail to sell the entire issue at that price. Conversely, if the price is set too low, the offering will be oversubscribed.</p><p>A is incorrect: Setting the price **too low** will result in the offering being **oversubscribed**, not undersubscribed.</p><p>C is incorrect: The underwriter's market-making commitment (providing liquidity/price support after the IPO) is a related service, but the initial undersubscription is a consequence of the price being too high relative to market demand.</p>"
+    "explanation": "<h3>First Principles Thinking: Pricing Outcomes</h3><p><strong>B is correct.</strong> The issuer and the investment bank jointly set the offering price. If they set a price that buyers consider **too high**, the offering will be **undersubscribed**, meaning they will fail to sell the entire issue at that price. Conversely, if the price is set too low, the offering will be oversubscribed .</p><p>A is incorrect: Setting the price **too low** will result in the offering being **oversubscribed**, not undersubscribed .</p><p>C is incorrect: The underwriter's market-making commitment (providing liquidity/price support after the IPO) is a related service, but the initial undersubscription is a consequence of the price being too high relative to market demand.</p>"
   },
   {
     "id": 1,
@@ -1115,10 +1115,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Equity versus debt characteristics</h3><p><strong>B is correct.</strong> Statement I is an equity characteristic because equity holders have a residual claim on assets after all obligations are paid. Statement II is a debt characteristic because contractual periodic payments belong to debt, not equity. Statement III is also an equity characteristic because common equity typically carries voting rights in corporate governance. Therefore, two statements describe equity securities.</p><p>A is incorrect because both statements I and III are correct.</p><p>C is incorrect because statement II describes debt, not equity.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity is defined by residual claim and voting rights → I qualifies (residual claim) → II fails (contractual payments belong to debt) → III qualifies (voting rights) → count = 2.</p>\n<p>A is incorrect because both residual claim (I) and voting rights (III) qualify as equity characteristics — a count of two, not one.</p>\n<p>C is incorrect because statement II (contractual periodic payments) is a debt characteristic, not equity.</p>"
   },
   {
     "id": 2,
@@ -1130,10 +1127,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Nature of equity claims</h3><p><strong>B is correct.</strong> Statement I is correct because equity investors are residual claimants and are paid only after suppliers, employees, and debtholders. Statement II is incorrect because a fixed and finite claim on cash flows describes debt rather than equity. Statement III is correct because dividends and other cash distributions to equity holders are discretionary. Therefore, two statements describe equity investors.</p><p>A is incorrect because statements I and III are both correct.</p><p>C is incorrect because statement II is not an equity characteristic.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity is residual and discretionary → I qualifies (last claim) → II fails (fixed/finite is debt) → III qualifies (dividends discretionary) → count = 2.</p>\n<p>A is incorrect because both the last claim on assets (I) and discretionary distributions (III) describe equity investors — count is two.</p>\n<p>C is incorrect because statement II (fixed and finite claim on cash flows) describes debt; equity claims are residual and open-ended.</p>"
   },
   {
     "id": 3,
@@ -1145,10 +1139,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Common versus preferred shares</h3><p><strong>B is correct.</strong> Statement I is correct because preferred shareholders have priority over common shareholders in liquidation. Statement II is incorrect because common shareholders are not contractually entitled to dividends; common dividends are declared at the board's discretion. Statement III is correct because preferred shares often carry fixed dividends. Therefore, two statements are correct.</p><p>A is incorrect because statements I and III are both correct.</p><p>C is incorrect because statement II is incorrect.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Preferred has priority and fixed dividend tendency → I qualifies → II fails (common dividends are not contractual) → III qualifies → count = 2.</p>\n<p>A is incorrect because two statements are correct — preferred liquidation priority (I) and fixed preferred dividends (III).</p>\n<p>C is incorrect because statement II is false: common dividends are discretionary, not contractually guaranteed.</p>"
   },
   {
     "id": 4,
@@ -1160,10 +1151,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Equity ownership features</h3><p><strong>B is correct.</strong> Statement I is correct because equity investors are owners of the company. Statement II is incorrect because equity does not require repayment of principal at maturity; that is a debt feature. Statement III is correct because equity investors seek total return from both cash distributions and price appreciation. Therefore, two statements are correct.</p><p>A is incorrect because statements I and III are both correct.</p><p>C is incorrect because statement II is not a characteristic of equity.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity implies ownership and total return → I qualifies → II fails (no repayment obligation) → III qualifies → count = 2.</p>\n<p>A is incorrect because two statements apply — equity ownership (I) and total return including price appreciation (III).</p>\n<p>C is incorrect because statement II is false: equity has no maturity date or obligation to repay principal; that is a debt feature.</p>"
   },
   {
     "id": 5,
@@ -1175,10 +1163,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>Equity versus debt distinction</h3><p><strong>A is correct.</strong> Statement I is incorrect because interest payments are associated with debt, not equity. Statement II is correct because common equity generally has no maturity date and therefore has an unlimited term. Statement III is incorrect because equity investors, especially common shareholders, can have decision-making power through voting rights. Therefore, only one statement correctly describes equity securities.</p><p>B is incorrect because only statement II is correct.</p><p>C is incorrect because statements I and III are both incorrect for equity.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating other options were incorrect without matching the answer logic."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Equity has no maturity and includes control → I fails (tax-deductible applies to debt) → II qualifies (no finite term) → III fails (equity has voting power) → count = 1.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
   },
   {
     "id": 6,
@@ -1190,10 +1175,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Preferred equity features</h3><p><strong>B is correct.</strong> Statement I is correct because cumulative preferred shares require missed dividends to be paid before common dividends can be paid. Statement II is incorrect because preferred shareholders do not always have voting rights equivalent to common shareholders. Statement III is correct because preferred shareholders have a higher claim on assets than common shareholders. Therefore, two statements are correct.</p><p>A is incorrect because statements I and III are both correct.</p><p>C is incorrect because statement II is incorrect.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Preferred priority applies to dividends and assets → I qualifies → II fails (voting rights not always equivalent) → III qualifies → count = 2.</p>\n<p>A is incorrect because two statements are correct — cumulative dividend catch-up (I) and higher liquidation claim over common shareholders (III).</p>\n<p>C is incorrect because statement II is false: preferred shareholders typically have limited or no voting rights, not equivalent to common shareholders.</p>"
   },
   {
     "id": 7,
@@ -1205,9 +1187,6 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>Equity return drivers</h3><p><strong>B is correct.</strong> Statement I is correct because dividend income contributes to equity total return. Statement II is also correct because capital appreciation contributes to total return. Statement III is incorrect because interest income is primarily associated with debt securities, not equity. Therefore, two statements describe equity investor returns.</p><p>A is incorrect because statements I and II are both correct.</p><p>C is incorrect because statement III is incorrect.</p>",
-    "hallucination_notes": [
-      "Original explanation contained contradictory template text stating the correct option was incorrect."
-    ]
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Equity return = dividends + price appreciation → I qualifies → II qualifies → III fails (interest is debt return) → count = 2.</p>\n<p>A is incorrect because two return drivers qualify — dividend income (I) and capital appreciation (II).</p>\n<p>C is incorrect because statement III is false: interest income is the return driver for debt investors, not equity investors.</p>"
   }
 ]
