@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Storage Costs",
+    "stem": "Storage costs are most likely included in inventory cost when:",
+    "options": {
+      "A": "they are necessary as part of the production process",
+      "B": "they occur after production is complete",
+      "C": "they relate to finished goods warehousing"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Inventory cost = bring to condition/location → if storage is required during production → it is part of conversion → apply → included → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because post-production storage is not necessary for production.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because warehousing finished goods is a selling/storage cost, expensed.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Administrative Costs",
+    "stem": "Administrative costs are most likely included in inventory when they:",
+    "options": {
+      "A": "relate directly to production activities",
+      "B": "are general corporate overhead",
+      "C": "are incurred in head office functions"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Only costs tied to production → included → admin tied to production supports conversion → apply → included → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because general admin is not production-related.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because head office costs are typically expensed.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Abnormal Costs",
+    "stem": "Abnormal waste costs are most likely:",
+    "options": {
+      "A": "expensed in the period incurred",
+      "B": "included in inventory cost",
+      "C": "allocated to finished goods"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Only normal production costs capitalized → abnormal = inefficiency → not part of asset → expensed → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because abnormal costs are excluded from inventory.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because allocation would overstate inventory.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Selling Costs",
+    "stem": "Which cost is most likely excluded from inventory even if incurred before sale:",
+    "options": {
+      "A": "Selling costs",
+      "B": "Direct labor",
+      "C": "Factory overhead"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Selling ≠ production → even if before sale → not needed to bring inventory to condition → expensed → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because labor is part of conversion.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because overhead is production-related.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Fixed Overhead",
+    "stem": "Fixed manufacturing overhead is most accurately allocated based on:",
+    "options": {
+      "A": "normal production capacity",
+      "B": "actual production regardless of level",
+      "C": "selling price of output"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Fixed cost unrelated to short-term output → use normal capacity → avoid distortion → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because low output would inflate per-unit cost.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because allocation is cost-based, not price-based.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Freight",
+    "stem": "Freight costs are most likely included in inventory when they:",
+    "options": {
+      "A": "bring inventory to its location",
+      "B": "deliver goods to customers",
+      "C": "relate to marketing distribution"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Cost includes all to bring inventory to location → freight-in qualifies → included → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because delivery to customers is selling cost.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because distribution is post-production.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Discounts",
+    "stem": "Purchase discounts are most accurately treated as:",
+    "options": {
+      "A": "a reduction in inventory cost",
+      "B": "other income",
+      "C": "a reduction in cost of sales only at sale"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Inventory recorded at net cost → discounts reduce purchase price → apply → lower inventory → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because discount is not income.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because adjustment happens at purchase, not sale.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Borrowing Costs",
+    "stem": "Borrowing costs are most likely included in inventory cost when:",
+    "options": {
+      "A": "inventory requires substantial time to produce",
+      "B": "inventory is purchased and ready for sale",
+      "C": "inventory is sold quickly after purchase"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Qualifying asset → long production → financing tied → capitalize → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because no production period exists.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because no time to capitalize.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Normal vs Abnormal",
+    "stem": "Which cost is most likely included in inventory:",
+    "options": {
+      "A": "Normal spoilage",
+      "B": "Abnormal spoilage",
+      "C": "Selling loss"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Normal spoilage is expected → part of production → included in cost → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because abnormal spoilage is expensed.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because selling loss is not production-related.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Conversion Costs",
+    "stem": "Which of the following is least likely part of conversion cost:",
+    "options": {
+      "A": "Selling commission",
+      "B": "Direct labor",
+      "C": "Manufacturing overhead"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Conversion = production → selling happens after → not included → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because labor is core conversion.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because overhead supports production.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Allocation Trap",
+    "stem": "Under low production levels, fixed overhead per unit will most likely:",
+    "options": {
+      "A": "increase if based on actual output",
+      "B": "remain constant if based on normal capacity",
+      "C": "decrease regardless of method"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Fixed cost ÷ lower units → higher per-unit cost → distortion → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because constant per-unit applies only with normal capacity method.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because math contradicts this.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Storage vs Selling Trap",
+    "stem": "Which storage-related cost is most likely expensed:",
+    "options": {
+      "A": "Finished goods warehousing",
+      "B": "Storage required during aging process",
+      "C": "Storage during production stage"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Warehousing finished goods → post-production → not needed to create asset → expensed → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because aging may be required for production.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because production-stage storage is included.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Joint Costs",
+    "stem": "Joint production costs are most likely:",
+    "options": {
+      "A": "allocated to products using a rational method",
+      "B": "expensed immediately",
+      "C": "ignored in financial statements"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Multiple outputs share cost → must allocate → inventory valuation requires assignment → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because cost contributes to inventory.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because accounting requires recognition.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Cost of Inventories - Core Principle Trap",
+    "stem": "Which cost is most likely included in inventory:",
+    "options": {
+      "A": "Costs necessary to bring inventory to present condition",
+      "B": "Costs incurred to sell inventory",
+      "C": "Costs incurred after inventory is ready for sale"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Core rule → include only costs to make inventory ready → condition + location → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because selling costs are excluded.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because post-ready costs are expensed.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Inventories - Definition",
+    "stem": "Inventories are most accurately defined as assets that are:",
+    "options": {
+      "A": "held for sale in the ordinary course of business",
+      "B": "used in administrative activities",
+      "C": "intended for long-term capital appreciation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Inventory = current asset → purpose is sale → part of operating cycle → includes goods held for sale → apply → inventory represents items intended for sale → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because administrative-use assets are not inventory.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because long-term appreciation assets are investments, not inventory.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Inventories - Components",
+    "stem": "Inventory most likely includes which of the following:",
+    "options": {
+      "A": "Raw materials, work-in-progress, and finished goods",
+      "B": "Land, buildings, and equipment",
+      "C": "Accounts receivable and cash"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Production flow → raw materials → work-in-progress → finished goods → all stages represent inventory → apply → all included → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because these are long-term assets, not inventory.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because these are financial assets, not goods for sale.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Inventories - Measurement",
+    "stem": "Inventory is most likely measured initially at:",
+    "options": {
+      "A": "cost",
+      "B": "market value",
+      "C": "selling price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Accounting base → acquisition/production → cost reflects resources used → initial recognition at cost → apply → inventory recorded at cost → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because market value is not used at initial recognition.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because selling price is future value, not initial measurement.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Inventories - Cost Components",
+    "stem": "Inventory cost most accurately includes:",
+    "options": {
+      "A": "costs of purchase and conversion",
+      "B": "only selling expenses",
+      "C": "only administrative expenses"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Cost = bring inventory to present condition → includes purchase + conversion → excludes non-production costs → apply → include both → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because selling expenses are not inventory costs.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because administrative expenses are not directly tied to inventory production.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Inventories - Expense Recognition",
+    "stem": "Inventory cost is most likely recognized as an expense when:",
+    "options": {
+      "A": "the inventory is sold",
+      "B": "the inventory is purchased",
+      "C": "the inventory is produced"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Matching principle → expense when revenue recognized → inventory becomes cost of sales → apply → at sale → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because purchase creates an asset, not expense.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because production still results in inventory asset, not expense.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Inventories - Balance Sheet Role",
+    "stem": "Inventories are most likely classified on the balance sheet as:",
+    "options": {
+      "A": "current assets",
+      "B": "non-current liabilities",
+      "C": "equity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Inventory converts to cash within operating cycle → short-term asset → classified as current asset → apply → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because inventory is not an obligation.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because inventory is not owner’s claim.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Inventories - Economic Role",
+    "stem": "Inventory most likely represents which economic function for a company:",
+    "options": {
+      "A": "supporting revenue generation through sale of goods",
+      "B": "providing financing to other entities",
+      "C": "hedging interest rate risk"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Business cycle → produce/buy goods → sell → generate revenue → inventory enables this process → apply → conclude.</p><p>Why top distractor is wrong (PDF-based misconception).</p><p>B is wrong because financing relates to financial assets, not inventory.</p><p>Why remaining distractor is wrong.</p><p>C is wrong because hedging is a derivatives function, not inventory role.</p>"
+  }
+]
