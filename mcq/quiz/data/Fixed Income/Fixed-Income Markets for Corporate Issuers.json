@@ -310,5 +310,123 @@
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA curriculum states that high-yield issuers typically face shorter maturities of 10 years or less, so Item I is correct. Because default is more likely, analysts emphasize likelihood of default and loss given default, making Item II correct. The CFA curriculum also explains that issuers expecting improved creditworthiness often choose callable debt so they can refinance at a lower YTM if spreads fall enough, so Item III is correct. All three statements satisfy the criterion.</p><p>Why option B is incorrect. Only two is too low because each item is directly supported by the discussion of high-yield issuance and callable debt.</p><p>Why option C is incorrect. This option is not incorrect; it is correct because all three statements match the CFA curriculum's treatment of high-yield features.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Short-term funding alternatives",
+    "stem": "Assertion (A): Committed bank lines of credit are generally more reliable than uncommitted lines of credit.\nReason (R): Committed lines involve a formal written commitment.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum states that committed lines are more reliable than uncommitted lines because they involve a formal written commitment. The reason is therefore the mechanism that explains the assertion."
+  },
+  {
+    "id": 2,
+    "topic": "Short-term funding alternatives",
+    "stem": "Assertion (A): Uncommitted bank lines of credit are the least reliable form of bank borrowing for a company.\nReason (R): Uncommitted lines do not require the company to pay compensation other than interest on balances outstanding.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "B is correct. The assertion is true because banks may refuse to honor requests under uncommitted lines, making them the least reliable. The reason is also true, but the absence of fees does not explain the lack of reliability."
+  },
+  {
+    "id": 3,
+    "topic": "Commercial paper and rollover risk",
+    "stem": "Assertion (A): A commercial paper issuer most likely obtains liquidity enhancement to minimize rollover risk.\nReason (R): A credit rating by itself ensures that maturing commercial paper can be fully repaid if rollover is not possible.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "C is correct. The CFA curriculum states that investors usually require a committed backup line of credit, or liquidity enhancement, to address rollover risk. A credit rating does not itself ensure repayment if rollover is not possible."
+  },
+  {
+    "id": 4,
+    "topic": "Repurchase agreements",
+    "stem": "Assertion (A): From a security buyer's perspective, a repo offers a short-term cash investment with significant liquidity or default risk.\nReason (R): Overnight cash repos with high-quality collateral result in the lowest return.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "D is correct. The assertion is false because the CFA curriculum says a repo offers a collateralized investment with minimal liquidity or default risk from the security buyer's perspective. The reason is true because overnight repos with high-quality collateral provide the lowest return."
+  },
+  {
+    "id": 5,
+    "topic": "Asset-backed commercial paper",
+    "stem": "Assertion (A): Asset-backed commercial paper financing is not recorded on the balance sheet of the issuer.\nReason (R): In the ABCP structure, loans are transferred to an SPE that issues ABCP to investors.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum describes ABCP as off-balance-sheet financing. That treatment follows from the structure in which the bank transfers short-term loans to an SPE and the SPE issues the ABCP."
+  },
+  {
+    "id": 6,
+    "topic": "Repurchase agreements",
+    "stem": "Assertion (A): Repo rates generally increase with maturity under normal market conditions.\nReason (R): Higher demand for a specific collateral security lowers the repo rate.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "B is correct. The assertion is true because the CFA curriculum says repo rates generally increase with maturity under normal market conditions. The reason is also true, but collateral uniqueness is a different driver and does not explain the maturity effect."
+  },
+  {
+    "id": 7,
+    "topic": "Reverse repos and short positions",
+    "stem": "Assertion (A): Financial market participants use the repo market to borrow a security in order to sell it short.\nReason (R): When viewed from the security buyer's perspective, the transaction is called a triparty repo.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "C is correct. The assertion is true because the CFA curriculum lists borrowing a security in order to sell it short as one of the repo market's uses. The reason is false because, from the security buyer's perspective, the transaction is called a reverse repo, not a triparty repo."
+  },
+  {
+    "id": 8,
+    "topic": "Fallen angels",
+    "stem": "Assertion (A): Fallen angels typically have outstanding debt with high-yield bond features, such as shorter maturities and many restrictive covenants.\nReason (R): Original investment-grade investors may be forced to divest these bonds once they no longer meet minimum rating requirements.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "D is correct. The assertion is false because the CFA curriculum says fallen angels usually retain investment-grade bond features, including typically being non-callable, having few restrictions and covenants, and having longer maturities. The reason is true because original investment-grade investors may need to sell once the bonds fall below required ratings."
+  },
+  {
+    "id": 9,
+    "topic": "High-yield issuance",
+    "stem": "Assertion (A): High-yield issuers may choose callable debt when they expect their creditworthiness to improve.\nReason (R): If future financing cost savings exceed the call premium in present value terms, the issuer may redeem the bonds and issue new debt at a lower YTM.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum explains that borrowers who expect improved creditworthiness often issue callable debt. The reason states the mechanism: if the refinancing savings exceed the call premium, calling the bonds and reissuing at a lower YTM is rational."
   }
+
 ]
