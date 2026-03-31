@@ -9,7 +9,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> EMH forms differ by information set → weak = past data → semi-strong = public info → strong = public + private → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:0]{index=0}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Forms of market efficiency</h3><p><strong>C is correct.</strong> Statement I describes weak-form efficiency because prices reflect past trading information. Statement II describes semi-strong-form efficiency because prices reflect all publicly available information. Statement III describes strong-form efficiency because prices reflect both public and private information. Therefore, all three statements describe distinct forms of market efficiency.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 2,
@@ -21,7 +25,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Efficiency depends on frictions → I qualifies (costs restrict trading) → II qualifies (less info → mispricing persists) → III qualifies (fewer limits → prices adjust faster) → count = 3 :contentReference[oaicite:1]{index=1}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Factors affecting market efficiency</h3><p><strong>C is correct.</strong> High transaction costs reduce arbitrage activity, so mispricing may persist. Limited information availability also reduces efficiency because prices adjust less completely to fundamentals. Unlimited ability to trade enhances efficiency because investors can act on information and help prices adjust. Therefore, all three statements are relevant factors.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 3,
@@ -33,7 +41,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Match strategy to information set → I fails (public info already priced) → II qualifies (past data useless in weak form) → III qualifies (no info advantage exists) → count = 2 :contentReference[oaicite:2]{index=2}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Implications of EMH</h3><p><strong>B is correct.</strong> Statement I is false because in a semi-strong efficient market, publicly available information is already reflected in prices, so fundamental analysis cannot consistently generate abnormal returns. Statement II is true because weak-form efficiency implies past price and volume data cannot be used consistently to earn abnormal returns, which undermines technical analysis. Statement III is true because if markets are strong-form efficient, even private information is already reflected in prices, so passive investing is justified. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements II and III are both correct.</p><p><strong>Why C is incorrect:</strong> statement I is not correct under semi-strong efficiency.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 4,
@@ -45,7 +57,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Anomalies = predictable deviations → I qualifies → II qualifies → III fails (they contradict perfect efficiency) → count = 2 :contentReference[oaicite:3]{index=3}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Market pricing anomalies</h3><p><strong>B is correct.</strong> Statement I is correct because time-series anomalies concern return patterns across time, such as seasonal or momentum effects. Statement II is correct because cross-sectional anomalies concern differences in returns across securities, such as size or value effects. Statement III is false because the existence of anomalies challenges perfect market efficiency rather than proving it. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements I and II are both correct.</p><p><strong>Why C is incorrect:</strong> statement III is incorrect.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 5,
@@ -57,7 +73,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Behavioral biases distort pricing → I qualifies → II qualifies → III fails (biases create, not eliminate, opportunities) → count = 2 :contentReference[oaicite:4]{index=4}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Behavioral finance and inefficiency</h3><p><strong>B is correct.</strong> Statement I is consistent with behavioral finance because loss-averse investors may hold losing positions too long to avoid realizing losses. Statement II is also consistent because herding can push prices away from intrinsic value. Statement III is false because behavioral biases do not always eliminate arbitrage opportunities; instead, they may create mispricing, while practical limits can prevent arbitrageurs from fully correcting it. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements I and II are both correct.</p><p><strong>Why C is incorrect:</strong> statement III is incorrect.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 6,
@@ -69,7 +89,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Efficiency depends on information flow → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:5]{index=5}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Information and market efficiency</h3><p><strong>C is correct.</strong> Faster dissemination of information helps prices adjust more quickly, which increases efficiency. Costly information acquisition reduces efficiency because fewer investors will gather and trade on value-relevant information. Equal access to information also improves efficiency by allowing more market participants to incorporate information into prices. Therefore, all three statements are correct.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 7,
@@ -81,7 +105,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Limits prevent correction of mispricing → I qualifies → II qualifies → III fails (capital constraints exist in reality) → count = 2 :contentReference[oaicite:6]{index=6}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Limits to market efficiency</h3><p><strong>B is correct.</strong> Statement I is correct because short-selling restrictions can prevent investors from trading against overvalued securities. Statement II is correct because transaction costs can make apparent arbitrage opportunities unprofitable. Statement III is false because even if capital were abundant, other frictions and risks would still prevent perfect efficiency in practice. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements I and II are both correct.</p><p><strong>Why C is incorrect:</strong> statement III is incorrect.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 1,
@@ -93,7 +121,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Efficiency implies prices reflect available info, not perfection → I fails (temporary deviations can exist) → II qualifies (intrinsic value is estimated) → III qualifies (mispricing drives trades) → count = 2 :contentReference[oaicite:0]{index=0}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Market value versus intrinsic value</h3><p><strong>B is correct.</strong> Statement I is false because even in an efficient market, price is best viewed as a fair estimate based on available information, not as a guarantee that market value always exactly equals intrinsic value at every moment. Statement II is correct because intrinsic value is an estimate derived from fundamental information. Statement III is correct because perceived differences between market price and intrinsic value motivate active trading. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements II and III are both correct.</p><p><strong>Why C is incorrect:</strong> statement I is too absolute and therefore incorrect.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 2,
@@ -105,7 +137,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Weak form = past info fully priced → I qualifies → II qualifies (public info not fully priced) → III qualifies → count = 3 :contentReference[oaicite:1]{index=1}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Weak-form efficiency implications</h3><p><strong>C is correct.</strong> Weak-form efficiency means prices fully reflect historical trading data, so statement III is correct. As a result, past price patterns cannot be used consistently to generate abnormal returns, so statement I is also correct. Weak-form efficiency does not require all public information to be reflected in prices, so statement II can also be correct. Therefore, all three statements are consistent with weak-form efficiency.</p><p><strong>Why A is incorrect:</strong> more than one statement is consistent with weak-form efficiency.</p><p><strong>Why B is incorrect:</strong> all three statements are consistent, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 3,
@@ -117,7 +153,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Semi-strong = all public info priced → I qualifies → II qualifies → III qualifies (private info not priced) → count = 3 :contentReference[oaicite:2]{index=2}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Semi-strong efficiency implications</h3><p><strong>C is correct.</strong> Under semi-strong efficiency, public information such as earnings announcements is rapidly incorporated into prices, so statement I is correct. Because public information is already reflected in prices, fundamental analysis cannot consistently generate excess returns, so statement II is correct. Private information is not assumed to be reflected in prices under semi-strong efficiency, so insider information can still provide an advantage, making statement III correct. Therefore, all three statements are consistent with semi-strong efficiency.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 4,
@@ -129,7 +169,11 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Strong form = all info priced → I qualifies → II qualifies → III fails (no consistent outperformance possible) → count = 2 :contentReference[oaicite:3]{index=3}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Strong-form efficiency implications</h3><p><strong>B is correct.</strong> Strong-form efficiency means all information, both public and private, is already reflected in prices, so statement II is correct. That also implies even insiders cannot consistently earn abnormal returns, so statement I is correct. Statement III is false because if prices already reflect all information, active management cannot consistently outperform the market after adjusting for risk and costs. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements I and II are both correct.</p><p><strong>Why C is incorrect:</strong> statement III is inconsistent with strong-form efficiency.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   },
   {
     "id": 5,
@@ -141,7 +185,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Costs affect arbitrage → I qualifies (no friction → full adjustment) → II qualifies → III qualifies → count = 3 :contentReference[oaicite:4]{index=4}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Information acquisition costs</h3><p><strong>C is correct.</strong> In the frictionless benchmark, zero information-acquisition cost supports fully efficient markets because value-relevant information can be obtained and traded on without cost, so statement I is treated as correct. Statement II is correct because high information costs reduce the incentive to identify and exploit mispricing. Statement III is also correct because when information is costly to acquire, some investors remain less informed and information asymmetry can persist. Therefore, all three statements are correct.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 6,
@@ -153,7 +201,11 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Closed-end discounts = anomaly → I qualifies → II qualifies → III qualifies → count = 3 :contentReference[oaicite:5]{index=5}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Closed-end fund discount</h3><p><strong>C is correct.</strong> Closed-end funds can trade at prices below the net asset value of their underlying holdings, so statement I is correct. Persistent discounts are commonly viewed as inconsistent with strict market efficiency, so statement II is correct in this context. These discounts can also persist over time rather than disappearing immediately, so statement III is correct. Therefore, all three statements are correct.</p><p><strong>Why A is incorrect:</strong> more than one statement is correct.</p><p><strong>Why B is incorrect:</strong> all three statements are correct, not just two.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option C was incorrect."
+    ]
   },
   {
     "id": 7,
@@ -165,6 +217,10 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Post-earnings drift = anomaly → I qualifies → II qualifies → III fails (they matter unless strong form holds) → count = 2 :contentReference[oaicite:6]{index=6}.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+    "explanation": "<h3>Earnings surprise anomaly</h3><p><strong>B is correct.</strong> Statement I is correct because earnings surprises are associated with post-earnings announcement drift, a pattern of predictable price movement. Statement II is also correct because that anomaly suggests markets may not adjust fully and immediately to new earnings information. Statement III is false because earnings surprises are not irrelevant; their relevance is precisely what makes the anomaly important. Therefore, two statements are correct.</p><p><strong>Why A is incorrect:</strong> statements I and II are both correct.</p><p><strong>Why C is incorrect:</strong> statement III is incorrect.</p>",
+    "hallucination_notes": [
+      "Original explanation contained a citation artifact.",
+      "Original explanation included a paragraph stating the correct option B was incorrect."
+    ]
   }
 ]

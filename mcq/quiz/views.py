@@ -165,11 +165,16 @@ def _render_markdown_basic(text: str) -> str:
     quote = []
     ordered = []
     unordered = []
+    in_code_block = False
+    code_lines = []
 
     def inline_md(s: str) -> str:
         s = escape(_fix_mojibake(s))
-        s = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", s)
+        s = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', s)
         s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+        s = re.sub(r"__(.+?)__", r"<strong>\1</strong>", s)
+        s = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", s)
+        s = re.sub(r"(?<!_)_(?!_)(.+?)(?<!_)_(?!_)", r"<em>\1</em>", s)
         s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
         return s
 
@@ -203,8 +208,28 @@ def _render_markdown_basic(text: str) -> str:
         flush_ordered()
         flush_unordered()
 
+    def flush_code_block():
+        nonlocal code_lines, in_code_block
+        if code_lines:
+            out.append("<pre><code>" + escape("\n".join(code_lines)) + "</code></pre>")
+            code_lines = []
+        in_code_block = False
+
     for raw in lines:
         line = raw.rstrip()
+        if line.strip().startswith("```"):
+            flush_para()
+            flush_quote()
+            flush_lists()
+            if in_code_block:
+                flush_code_block()
+            else:
+                in_code_block = True
+                code_lines = []
+            continue
+        if in_code_block:
+            code_lines.append(raw)
+            continue
         if not line.strip():
             flush_para()
             flush_quote()
@@ -231,16 +256,20 @@ def _render_markdown_basic(text: str) -> str:
             continue
         flush_quote()
         flush_lists()
-        if line.startswith("# "):
+        heading_match = re.match(r"^(#{1,6})\s+(.+)$", line)
+        if heading_match:
             flush_para()
-            out.append(f"<h1>{inline_md(line[2:].strip())}</h1>")
+            level = min(len(heading_match.group(1)), 6)
+            out.append(f"<h{level}>{inline_md(heading_match.group(2).strip())}</h{level}>")
             continue
-        if line.startswith("## "):
+        if re.match(r"^\s*([-*_])(?:\s*\1){2,}\s*$", line):
             flush_para()
-            out.append(f"<h2>{inline_md(line[3:].strip())}</h2>")
+            out.append("<hr>")
             continue
         para.append(line)
 
+    if in_code_block:
+        flush_code_block()
     flush_para()
     flush_quote()
     flush_lists()
