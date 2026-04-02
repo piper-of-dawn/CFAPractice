@@ -1,14 +1,40 @@
 Building-block Style
-Generate 21 CFA-style MCQs for Topic:  Module 4: Fixed-Income Markets for Corporate Issuers using PDF/CFA L1 B6 Fixed Income.pdf.
-Follow AGENTS.md and use the Enumeration / Counting format.
-Write the output only the JSON array to a dedicated file Fixed-Income Markets for Corporate Issuers (Katas).json.
+Generate 21 very easy CFA-style MCQs for Topic: Module 2: Forward Commitment and Contingent Claim Features and Instruments using PDF/CFA L1 DERIVATIVES.pdf.
+Follow AGENTS.md and use the Building Blocks style format.
 
-Enumeration / counting
-Generate 14 CFA-style MCQs for Topic:  Module 4: Fixed-Income Markets for Corporate Issuers using PDF/CFA L1 B6 Fixed Income.pdf.
-Follow AGENTS.md and use the Enumeration / Counting format.
-Write or append the output only the JSON array to Fixed-Income Markets for Corporate Issuers.json.
+Write the output only the JSON array to a dedicated file Forward Commitment and Contingent Claim Features and Instruments (Katas).json.
+
+Enumeration / Counting Format
+Generate 9 CFA-style MCQs for Topic: Module 2: Forward Commitment and Contingent Claim Features and Instruments using PDF/CFA L1 DERIVATIVES.pdf.
+Follow AGENTS.md and use the Enumeration / Counting Format Format.
+Write the output only the JSON array to a dedicated file Forward Commitment and Contingent Claim Features and Instruments.json.
 
 Assertion–Reason
-Generate 12 CFA-style assertion–reason questions for Topic:  Module 4: Fixed-Income Markets for Corporate Issuers  using PDF/CFA L1 B6 Fixed Income.pdf.
+Generate 5 CFA-style assertion–reason questions for Topic: Module 2: Forward Commitment and Contingent Claim Features and Instruments using PDF/CFA L1 DERIVATIVES.pdf.
 Follow AGENTS.md and use the Enumeration / Counting format.
-Write or append the output only the JSON array to Fixed-Income Markets for Corporate Issuers.json.
+Write the output only the JSON array to a dedicated file Forward Commitment and Contingent Claim Features and Instruments.json.
+
+Numerical Questions
+Generate 5 CFA-style numerical questions for Topic: Module 2: Forward Commitment and Contingent Claim Features and Instruments using PDF/CFA L1 DERIVATIVES.pdf.
+Follow AGENTS.md and use the Numerical Questions format.
+Write the output only the JSON array to a dedicated file Forward Commitment and Contingent Claim Features and Instruments.json.
+
+
+---
+
+Hard and Confusing Questions on Ethics
+
+Generate 14 CFA-style confusing MCQs for Standard VI(B) - Referral Fees.
+Use PDFs in PDF/CFA Ethics in Practice.pdf and PDF/standards-practice-handbook-12th-edition.pdf.
+Follow AGENTS.md and use the CFA Ethics Confusion-Driven and Hard Edition format.
+Write the output only the JSON array to a dedicated file to Standard VI(B) - Referral Fees.json.
+
+
+---
+
+CFA Ethics Questions Fundamental Katas Edition
+
+Generate 21 CFA-style very easy MCQs for Standard VI(B) - Referral Fees.
+Use PDFs in PDF/CFA Ethics in Practice.pdf and PDF/standards-practice-handbook-12th-edition.pdf.
+Follow AGENTS.md and use the CFA Ethics Questions Fundamental Katas Edition.
+Write the output only the JSON array to a dedicated file to Standard VI(B) - Referral Fees (Katas).json.

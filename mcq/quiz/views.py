@@ -564,6 +564,14 @@ def reset(request):
 def home(request):
     # Build hierarchical grouping by top-level folder under data/
     # Example: Equity/Foo.json -> section "Equity" with item Foo.json
+    def _title_size_class(name: str) -> str:
+        name_len = len(name)
+        if name_len >= 72:
+            return "card-title-compact"
+        if name_len >= 48:
+            return "card-title-small"
+        return "card-title-regular"
+
     groups = {}
     for p in sorted(DATA_DIR.rglob("*.json")):
         try:
@@ -581,10 +589,12 @@ def home(request):
             fname = str(rel)
         section_key = section
         groups.setdefault(section_key, [])
+        title = Path(fname).stem
         groups[section_key].append(
             {
-                "name": Path(fname).stem,
+                "name": title,
                 "relpath": str(rel).replace("\\", "/"),
+                "title_size_class": _title_size_class(title),
             }
         )
     # Sort groups and items within

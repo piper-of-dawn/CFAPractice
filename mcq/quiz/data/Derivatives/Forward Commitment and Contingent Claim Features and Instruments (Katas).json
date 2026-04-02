@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Introduction",
+    "stem": "Which derivative type most likely requires both counterparties to perform under the contract?",
+    "options": {
+      "A": "Firm commitment",
+      "B": "Contingent claim",
+      "C": "European option premium"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: firm commitment</h3><p><strong>A is correct.</strong> A firm commitment is the primitive derivative type in which both counterparties are required to exchange the underlying or cash flows in the future at an agreed-on price. The intuition is mutual obligation. The CFA Curriculum contrasts this with a contingent claim, where one side decides whether settlement occurs. Applying that rule, the contract requiring both sides to perform is a firm commitment.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). A contingent claim gives one counterparty the right to determine whether and when the trade will settle, so performance is not mandatory for both sides.</p><p>Why remaining distractor is wrong. A European option premium is just the upfront payment for an option right, not a derivative type requiring mutual performance.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "An option buyer most likely pays a premium in exchange for which right?",
+    "options": {
+      "A": "The right to transact the underlying in the future at a pre-agreed exercise price",
+      "B": "The obligation to exchange the underlying each day",
+      "C": "The guarantee of a positive profit at maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: option right</h3><p><strong>A is correct.</strong> The primitive feature of an option is a right, not an obligation. The CFA Curriculum states that the option buyer pays a premium to the seller for the right to transact the underlying in the future at a pre-agreed exercise price. The intuition is choice with an upfront cost. Under that condition, the paid premium buys the right to transact later at the exercise price.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Daily settlement is the key feature of futures contracts through mark to market, not the right purchased by an option buyer.</p><p>Why remaining distractor is wrong. The CFA Curriculum says option payoff to the buyer is never negative, but profit can be negative because the premium may exceed the payoff.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Forwards",
+    "stem": "A forward contract is most accurately described as which of the following?",
+    "options": {
+      "A": "An OTC derivative with flexible and customizable terms",
+      "B": "An exchange-traded derivative with daily settlement",
+      "C": "A contingent claim that the buyer may ignore"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: forward definition</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a forward contract as an over-the-counter derivative in which buyer and seller agree to exchange an underlying in the future at a pre-agreed fixed price. The governing rule is customization of size, maturity, underlying details, and credit terms. The intuition is tailored hedging. Applying that definition, an OTC contract with flexible terms is a forward.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Exchange trading with daily settlement describes a futures contract, not a forward contract.</p><p>Why remaining distractor is wrong. A forward is a firm commitment, so both counterparties are obligated; it is not a contingent claim that one side may choose to ignore.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Forwards",
+    "stem": "Which position most likely benefits from price appreciation of the underlying over the life of the contract?",
+    "options": {
+      "A": "Forward contract buyer",
+      "B": "Forward contract seller",
+      "C": "Neither buyer nor seller"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: long forward exposure</h3><p><strong>A is correct.</strong> A forward contract buyer has the long position in the underlying. The CFA Curriculum states that a long forward benefits from price appreciation because payoff at maturity from the buyer's perspective is $S_T - F_0(T)$. The intuition is buying later at a fixed price becomes favorable when market price rises. Applying that rule, the forward buyer benefits from appreciation.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The forward seller has the short exposure and benefits when the underlying price declines, not when it appreciates.</p><p>Why remaining distractor is wrong. The contract is zero-sum at maturity between buyer and seller, so one side does benefit when the underlying appreciates.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Forwards",
+    "stem": "A long forward position has a positive payoff at maturity when which condition holds most likely?",
+    "options": {
+      "A": "The spot price at maturity exceeds the forward price",
+      "B": "The initial spot price exceeds the forward price",
+      "C": "The forward price exceeds the spot price at maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: forward payoff sign</h3><p><strong>A is correct.</strong> The buyer payoff on a forward at maturity is $S_T - F_0(T)$. The governing relation is positive payoff when the future spot price is greater than the agreed forward price. The intuition is receiving something worth more than the contracted purchase price. Under the CFA Curriculum condition $S_T > F_0(T)$, the long forward payoff is positive.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The CFA Curriculum emphasizes that settlement depends on the future spot price $S_T$, not the initial spot price $S_0$.</p><p>Why remaining distractor is wrong. If the forward price exceeds the spot price at maturity, then $S_T - F_0(T)$ is negative for the buyer.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Futures",
+    "stem": "Which feature most likely distinguishes a futures contract from a forward contract?",
+    "options": {
+      "A": "Daily settlement of gains and losses through mark to market",
+      "B": "A pre-agreed price for future exchange",
+      "C": "A maturity date for the contract"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: futures mark to market</h3><p><strong>A is correct.</strong> Both forwards and futures have a pre-agreed price and a future settlement date, but the CFA Curriculum highlights daily settlement of gains and losses through the clearinghouse as the key futures feature. The governing rule is mark to market each day to the settlement price. The intuition is ongoing credit protection rather than waiting until maturity. Applying that distinction, daily MTM is the differentiating feature.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). A pre-agreed price is common to both forward and futures contracts, so it does not distinguish futures.</p><p>Why remaining distractor is wrong. Both forwards and futures include a maturity date, so this is not the main differentiating feature.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Futures",
+    "stem": "If a futures margin account falls below the maintenance margin, the counterparty must most likely restore it to which level?",
+    "options": {
+      "A": "The initial margin",
+      "B": "Zero",
+      "C": "The previous day's settlement price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: futures margin mechanics</h3><p><strong>A is correct.</strong> The CFA Curriculum defines maintenance margin as the minimum balance that must be held in the futures margin account. If the account falls below that level, a margin call requires an immediate deposit to return the balance to the initial margin. The intuition is replenishing the cushion used for daily MTM. Under that rule, the account is restored to initial margin.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The account is not allowed to remain at zero; the exchange requires replenishment above maintenance margin back to initial margin.</p><p>Why remaining distractor is wrong. The settlement price is used to mark contracts to market, but it is not a margin account balance target.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Futures",
+    "stem": "At futures contract initiation, where is the required initial margin most accurately held?",
+    "options": {
+      "A": "In a futures margin account held at the exchange",
+      "B": "With the option buyer as a premium reserve",
+      "C": "Inside the underlying asset account"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: margin location</h3><p><strong>A is correct.</strong> The CFA Curriculum states that each futures counterparty deposits the required minimum sum, or initial margin, into a futures margin account held at the exchange. The governing rule is that the clearinghouse uses that account to settle daily mark to market. The intuition is centralized credit protection. Applying the rule, initial margin is held in the exchange margin account.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). An option premium is paid to the option seller, not held as futures initial margin.</p><p>Why remaining distractor is wrong. The underlying asset account is not where futures initial margin is posted according to the CFA Curriculum.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Swaps",
+    "stem": "A swap is most accurately described as which of the following?",
+    "options": {
+      "A": "A firm commitment to exchange a series of cash flows in the future",
+      "B": "A right to choose whether a single trade settles",
+      "C": "A standardized exchange contract with only one final cash flow"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: swap definition</h3><p><strong>A is correct.</strong> The primitive swap concept in the CFA Curriculum is a firm commitment under which two counterparties exchange a series of cash flows in the future. The governing rule is repeated future exchanges, not a single optional exercise. The intuition is a chain of forward-like exchanges across periods. Applying that definition, a swap is a firm commitment to exchange a series of future cash flows.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The right to choose whether settlement occurs describes an option, not a swap.</p><p>Why remaining distractor is wrong. A swap is typically negotiated OTC and usually involves more than one future exchange, so this description does not fit.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Swaps",
+    "stem": "Under a swap contract, the counterparty paying the variable cash flows is most likely called the:",
+    "options": {
+      "A": "Floating-rate payer",
+      "B": "Fixed-rate payer",
+      "C": "Call option purchaser"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: swap party labels</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the party paying the variable cash flow stream is the floating-rate payer, also called the fixed-rate receiver. The governing rule is naming based on the leg paid. The intuition is direct labeling from the cash flow obligation. Applying that rule, the variable cash flow payer is the floating-rate payer.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The fixed-rate payer pays the fixed leg and receives the floating leg, so it is the opposite role.</p><p>Why remaining distractor is wrong. A call option purchaser is an option participant, not a swap cash flow payer label.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Swaps",
+    "stem": "In an interest rate swap, which party most likely receives a net payment for a period when the market reference rate exceeds the fixed rate?",
+    "options": {
+      "A": "Fixed-rate payer",
+      "B": "Floating-rate payer",
+      "C": "Neither party"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: netting fixed versus floating</h3><p><strong>A is correct.</strong> The fixed-rate payer is also the floating-rate receiver. The CFA Curriculum's swap question set states that the fixed-rate payer receives a net payment for any period when the market reference rate exceeds the fixed rate. The intuition is that the received floating amount is larger than the paid fixed amount. Under that condition, the fixed-rate payer receives the net payment.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The floating-rate payer is paying the higher floating leg when the market reference rate exceeds the fixed rate, so that party does not receive the net payment.</p><p>Why remaining distractor is wrong. One party must receive the net amount after fixed and floating payments are netted.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "The payoff to an option buyer at maturity is most likely which of the following?",
+    "options": {
+      "A": "Always zero or positive",
+      "B": "Always equal to the premium paid",
+      "C": "Always negative if the option expires worthless"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: option payoff floor</h3><p><strong>A is correct.</strong> The CFA Curriculum states that because the option buyer has a right but not an obligation, the payoff to an option buyer is always zero or positive and can never be negative. The governing rule is selective exercise. The intuition is that the buyer simply does not exercise when exercise would hurt payoff. Applying that rule, buyer payoff has a floor of zero.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The premium affects profit, not payoff. Payoff is based on exercise value at maturity.</p><p>Why remaining distractor is wrong. If the option expires worthless, payoff is zero; it is profit that becomes negative by the amount of the premium paid.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "A European option may most likely be exercised at which time?",
+    "options": {
+      "A": "Only at maturity",
+      "B": "At any time from inception until maturity",
+      "C": "Only on the trade date"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: European exercise style</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly says European options may be exercised only at maturity. The governing rule is exercise timing defined by the option style. The intuition is a single decision point at the end of the contract. Under that CFA Curriculum condition, exercise occurs only at maturity.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Exercise at any time from inception until maturity describes an American option, not a European option.</p><p>Why remaining distractor is wrong. The trade date is when the contract is initiated, but European exercise occurs at maturity, not at inception.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "A call option gives the buyer the most likely right to do which of the following?",
+    "options": {
+      "A": "Buy the underlying at the exercise price",
+      "B": "Sell the underlying at the exercise price",
+      "C": "Receive daily margin from the exchange"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: call versus put</h3><p><strong>A is correct.</strong> The primitive distinction in the CFA Curriculum is that a call option is the right to buy the underlying, while a put option is the right to sell it. The governing rule is based on the direction of the transaction chosen by the buyer. The intuition is simple: call to buy, put to sell. Applying that rule, a call gives the right to buy at the exercise price.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The right to sell at the exercise price belongs to a put option buyer, not a call option buyer.</p><p>Why remaining distractor is wrong. Daily margin through an exchange is a futures market feature, not the right conveyed by a call option.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "A call option is in the money when which condition is most accurate?",
+    "options": {
+      "A": "The spot price exceeds the exercise price",
+      "B": "The exercise price exceeds the spot price",
+      "C": "The option premium equals zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: call intrinsic value</h3><p><strong>A is correct.</strong> The CFA Curriculum says a call option is in the money at time $t$ if the spot price $S_t$ exceeds the exercise price $X$, giving intrinsic value of $(S_t - X)$. The governing rule is positive exercise value. The intuition is being able to buy below market. Under that condition, the call is in the money.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). If the exercise price exceeds the spot price, the call would be out of the money, not in the money.</p><p>Why remaining distractor is wrong. Premium size does not define moneyness in the CFA Curriculum; the relation between spot price and exercise price does.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "A put option buyer will most likely exercise at maturity when which condition holds?",
+    "options": {
+      "A": "The underlying price is below the exercise price",
+      "B": "The underlying price is above the exercise price",
+      "C": "The premium paid was high"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: put exercise condition</h3><p><strong>A is correct.</strong> The long put payoff in the CFA Curriculum is $\\max(0, X - S_T)$. The governing rule is exercise only when selling at the exercise price is better than selling at the market price, which requires $S_T < X$. The intuition is exercising the right to sell high when market price is lower. Applying that condition, a put buyer exercises when the underlying is below the exercise price.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). If the underlying is above the exercise price, the put expires worthless because exercising would not create positive payoff.</p><p>Why remaining distractor is wrong. The premium affects profit, but it does not determine whether exercise creates positive payoff.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Options",
+    "stem": "Once the upfront premium has been paid, who most likely has no counterparty credit risk to the option buyer?",
+    "options": {
+      "A": "The option seller",
+      "B": "The option buyer",
+      "C": "Both counterparties equally"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: one-sided credit exposure</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that contingent claims create one-sided counterparty credit risk after premium payment. Once the buyer pays the premium, the seller has no credit exposure to the buyer, while the buyer faces the seller's risk up to the option payoff. The intuition is that the buyer has already performed upfront. Applying that rule, the seller has no counterparty credit risk to the buyer after premium payment.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The option buyer still faces the risk that the seller fails to perform if the option finishes with positive payoff.</p><p>Why remaining distractor is wrong. The CFA Curriculum does not describe equal two-sided exposure after premium payment; it describes one-sided exposure borne by the buyer.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Credit Derivatives",
+    "stem": "In a credit default swap, the credit protection buyer most likely pays what to the seller?",
+    "options": {
+      "A": "A fixed CDS spread",
+      "B": "The notional principal at inception",
+      "C": "The issuer's cash bond coupon"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: CDS periodic premium</h3><p><strong>A is correct.</strong> The CFA Curriculum states that in a CDS contract the credit protection buyer pays the credit protection seller a fixed CDS spread in exchange for protection against loss from a credit event. The governing rule is periodic spread payment for contingent protection. The intuition is premium-like payment for transferred credit risk. Applying that rule, the buyer pays the fixed CDS spread.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The notional amount is usually not exchanged; it serves as the basis for spread and settlement calculations.</p><p>Why remaining distractor is wrong. The CDS buyer does not pay the issuer's bond coupon; the relevant payment under the derivative is the CDS spread.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Credit Derivatives",
+    "stem": "The contingent payment under a CDS equals the most likely which amount for the contract notional?",
+    "options": {
+      "A": "Loss given default",
+      "B": "Initial margin",
+      "C": "Intrinsic value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: CDS settlement amount</h3><p><strong>A is correct.</strong> The CFA Curriculum directly states that if an issuer credit event occurs, the protection seller pays the buyer an amount equal to the issuer loss given default for the CDS notional amount. The governing rule is default-loss compensation. The intuition is replacing the loss caused by the credit event. Under that CFA Curriculum condition, the contingent payment equals loss given default.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Initial margin is associated with futures margining, not with the contingent payment measure in a CDS.</p><p>Why remaining distractor is wrong. Intrinsic value is an option concept tied to exercise value, not the settlement amount on a CDS credit event.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Credit Derivatives",
+    "stem": "A credit protection buyer without the related cash bond exposure is most likely seeking to gain from what?",
+    "options": {
+      "A": "Higher issuer credit spreads",
+      "B": "Lower issuer credit spreads",
+      "C": "A higher fixed swap rate"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: CDS directional view</h3><p><strong>A is correct.</strong> The CFA Curriculum says a credit protection buyer without the corresponding fixed-income exposure buys a CDS to seek gains from higher credit spreads, which correspond to lower cash bond prices. The governing rule is that the buyer is short credit risk. The intuition is benefiting when issuer credit quality worsens. Applying that rule, the buyer seeks to gain from higher issuer credit spreads.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Lower credit spreads would benefit the protection seller, not the buyer, because the seller would then be receiving an above-market spread.</p><p>Why remaining distractor is wrong. A higher fixed swap rate is an interest rate swap concept and is not the directional exposure described for a CDS protection buyer.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Forward Commitments vs. Contingent Claims",
+    "stem": "Which statement most accurately contrasts a forward commitment with a contingent claim?",
+    "options": {
+      "A": "A forward commitment has a linear payoff, while an option has a non-linear payoff",
+      "B": "A forward commitment gives the buyer the right but not the obligation to settle",
+      "C": "An option always has zero initial value because no premium is paid"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: linear versus non-linear exposure</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that firm commitments such as forwards have payoffs that are linear in underlying price changes, while option contracts have non-linear payoff and profit profiles. The governing rule is symmetric obligation for forwards versus contingent exercise for options. The intuition is one-for-one exposure for a forward but asymmetric exposure for an option. Applying that distinction, the forward is linear and the option is non-linear.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). The right but not the obligation to settle is the defining feature of an option buyer, not of a forward commitment.</p><p>Why remaining distractor is wrong. The CFA Curriculum states an option buyer pays a premium upfront, so an option does not start with zero cost in the way described here.</p>"
+  }
+]
