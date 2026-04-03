@@ -1,0 +1,275 @@
+[
+  {
+    "id": "1",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "An analyst invests USD 100 today at 5% for one year. Using the basic future value formula, the amount received in one year is most likely?",
+    "options": {
+      "A": "USD 105",
+      "B": "USD 100",
+      "C": "USD 95"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is future value: grow today’s cash by the required rate for the number of periods. The governing relation is $FV_t = PV(1 + r)^t$. Intuitively, one year at 5% means the original USD 100 earns 5% once. Here, $PV = 100$, $r = 0.05$, and $t = 1$, so $FV = 100(1.05) = 105$. Therefore, the future value is USD 105.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). USD 100 ignores the required interest growth and treats one year in the future as equal to today.</p><p>Why remaining distractor is wrong. USD 95 applies the rate in the wrong direction and would imply discounting rather than compounding.</p>"
+  },
+  {
+    "id": "2",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "A cash flow of USD 105 will be received in one year and the discount rate is 5%. Its present value is closest to?",
+    "options": {
+      "A": "USD 110.25",
+      "B": "USD 100",
+      "C": "USD 95"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is present value: convert future cash into today’s equivalent by discounting. The governing relation is $PV = FV_t(1 + r)^{-t} = \\frac{FV_t}{(1+r)^t}$. Intuitively, if USD 100 grows to USD 105 in one year at 5%, then USD 105 next year must be worth USD 100 today. With $FV = 105$, $r = 0.05$, and $t = 1$, $PV = 105/1.05 = 100$. Therefore, the present value is USD 100.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). USD 110.25 compounds the future cash again instead of discounting it back one period.</p><p>Why remaining distractor is wrong. USD 95 over-discounts the cash flow and does not satisfy the one-year 5% relationship.</p>"
+  },
+  {
+    "id": "3",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "If USD 100 compounds annually at 10% for two years, the future value is most likely?",
+    "options": {
+      "A": "USD 120",
+      "B": "USD 121",
+      "C": "USD 110"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is compound growth over multiple periods. The governing relation is $FV_t = PV(1 + r)^t$. Intuitively, the second year earns interest on both principal and first-year interest. With $PV = 100$, $r = 0.10$, and $t = 2$, $FV = 100(1.10)^2 = 121$. Therefore, the future value is USD 121.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). USD 120 uses simple interest, adding 10 each year without compounding the first year’s interest.</p><p>Why remaining distractor is wrong. USD 110 reflects only one year of compounding rather than two years.</p>"
+  },
+  {
+    "id": "4",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which formula most accurately gives the future value of a cash flow when compounding is continuous?",
+    "options": {
+      "A": "$FV_t = PVe^{rt}$",
+      "B": "$FV_t = PV(1 + r)t$",
+      "C": "$FV_t = PV(1 + r)^{-t}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is continuous compounding. The governing relation in the CFA Curriculum is $FV_t = PVe^{rt}$ when the number of compounding periods becomes very large. Intuitively, continuous compounding is the limit of more and more frequent compounding. Under that condition, the exponential form applies. Therefore, $FV_t = PVe^{rt}$ is the correct formula.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). $PV(1 + r)t$ is a simple-interest style expression and does not represent compounding.</p><p>Why remaining distractor is wrong. $PV(1 + r)^{-t}$ moves in the present value direction, not the future value direction.</p>"
+  },
+  {
+    "id": "5",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which formula most accurately gives the present value of a future cash flow under continuous compounding?",
+    "options": {
+      "A": "$PV = FVe^{-rt}$",
+      "B": "$PV = FV(1 + r)^t$",
+      "C": "$PV = FVe^{rt}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is discounting under continuous compounding. The governing relation is $PV = FVe^{-rt}$. Intuitively, present value reverses future value growth, so the exponent must discount rather than compound. Under continuous compounding, the CFA Curriculum uses the negative exponent for this backward move in time. Therefore, $PV = FVe^{-rt}$ is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). $FV(1 + r)^t$ compounds a future amount further instead of discounting it back.</p><p>Why remaining distractor is wrong. $FVe^{rt}$ is the continuous future value formula, not the present value formula.</p>"
+  },
+  {
+    "id": "6",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "A quoted annual rate is 12% with monthly compounding. The periodic monthly rate is closest to?",
+    "options": {
+      "A": "12%",
+      "B": "6%",
+      "C": "1%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is that the quoted annual rate must be converted to the periodic rate when compounding occurs more than once a year. The governing relation is periodic rate $= R_s/m$. Intuitively, monthly compounding splits the annual quote into 12 equal periodic rates. Here, $R_s = 12\\%$ and $m = 12$, so $R_s/m = 1\\%$. Therefore, the monthly periodic rate is 1%.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). 12% is the quoted annual rate, not the monthly rate used inside the compounding formula.</p><p>Why remaining distractor is wrong. 6% would divide the annual rate by only 2, which would correspond to semiannual rather than monthly compounding.</p>"
+  },
+  {
+    "id": "7",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "An investment lasts 3 years and compounds monthly. The total number of compounding periods is most likely?",
+    "options": {
+      "A": "12",
+      "B": "36",
+      "C": "48"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is counting periods correctly when compounding is more frequent than annual. The governing relation is total periods $= mN$. Intuitively, 3 years with 12 months each gives 36 monthly compounding points. Here, $m = 12$ and $N = 3$, so $mN = 36$. Therefore, the total number of periods is 36.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). 12 counts only one year of monthly periods and ignores the full 3-year horizon.</p><p>Why remaining distractor is wrong. 48 would imply 4 years of monthly compounding, not 3 years.</p>"
+  },
+  {
+    "id": "8",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which expression is the CFA Curriculum formula for the present value of a lump sum with non-annual compounding?",
+    "options": {
+      "A": "$PV = FV_N\\left(1 + \\frac{R_s}{m}\\right)^{-mN}$",
+      "B": "$PV = FV_N\\left(1 + R_s\\right)^{-N/m}$",
+      "C": "$PV = FV_N\\left(1 + mR_s\\right)^{-N}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is discounting a lump sum when the annual rate is quoted with multiple compounding periods per year. The governing relation is $PV = FV_N\\left(1 + \\frac{R_s}{m}\\right)^{-mN}$. Intuitively, we must use the periodic rate and the matching total number of periods. The CFA Curriculum states both adjustments together: divide the annual quote by $m$ and multiply years by $m$. Therefore, option A is the correct expression.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Using $-N/m$ puts the number of periods in the denominator, which reverses the required period adjustment.</p><p>Why remaining distractor is wrong. Multiplying the annual rate by $m$ inflates the periodic rate instead of converting it correctly.</p>"
+  },
+  {
+    "id": "9",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "A fund must pay CAD 5,000,000 in 10 years. At 6% compounded monthly, the amount to invest today is closest to?",
+    "options": {
+      "A": "CAD 2,748,164",
+      "B": "CAD 3,000,000",
+      "C": "CAD 5,300,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is present value of a lump sum with monthly compounding. The governing relation is $PV = FV_N\\left(1 + \\frac{R_s}{m}\\right)^{-mN}$. Intuitively, discount the CAD 5,000,000 target by the monthly rate over 120 months. Using $FV = 5{,}000{,}000$, $R_s = 0.06$, $m = 12$, and $N = 10$ gives $PV = 5{,}000{,}000(1.005)^{-120} = 2{,}748{,}163.67$. Therefore, the required investment is about CAD 2,748,164.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). CAD 3,000,000 is a rough guess and does not apply the curriculum discounting formula with monthly compounding.</p><p>Why remaining distractor is wrong. CAD 5,300,000 is above the future payment and moves in the future value direction rather than the present value direction.</p>"
+  },
+  {
+    "id": "10",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Present value and future value factors are most accurately described as?",
+    "options": {
+      "A": "Equal",
+      "B": "Reciprocals",
+      "C": "Unrelated"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is that compounding and discounting reverse each other. The governing relation is that the future value factor $(1+r)^t$ and present value factor $(1+r)^{-t}$ are reciprocals. Intuitively, one moves cash forward in time and the other brings the same cash back to today. Because they undo each other, their factors must be reciprocal. Therefore, present value and future value factors are reciprocals.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). They are not equal because one grows cash and the other discounts it.</p><p>Why remaining distractor is wrong. They are directly linked by the same discount rate and number of periods, so they are not unrelated.</p>"
+  },
+  {
+    "id": "11",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "If the number of compounding periods becomes very large, the CFA Curriculum says compounding becomes most accurately?",
+    "options": {
+      "A": "Simple",
+      "B": "Annual",
+      "C": "Continuous"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is the limit case for compounding frequency. The governing rule is that as the number of compounding periods approaches infinity, compounding becomes continuous. Intuitively, cash is being updated so frequently that the discrete compounding formula is replaced by the exponential form. That is why the CFA Curriculum moves from $(1+r)^t$ to $e^{rt}$. Therefore, the correct description is continuous compounding.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Simple interest does not involve compounding at all, so it is not the limit of more frequent compounding.</p><p>Why remaining distractor is wrong. Annual compounding is only one compounding period per year, not the very large-period case.</p>"
+  },
+  {
+    "id": "12",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Using the exact CFA Curriculum relation, if the real risk-free rate is 2% and the inflation premium is 3%, the nominal risk-free rate is closest to?",
+    "options": {
+      "A": "5.00%",
+      "B": "5.06%",
+      "C": "6.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is the exact relation between the nominal risk-free rate, the real risk-free rate, and the inflation premium. The governing rule is $(1 + \\text{nominal}) = (1 + \\text{real})(1 + \\text{inflation})$. Intuitively, inflation compounds on top of the real return. Using 2% and 3%, $(1.02)(1.03) = 1.0506$, so the nominal risk-free rate is 5.06%. Therefore, 5.06% is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). 5.00% is the common approximation, not the exact multiplicative relation stated in the curriculum.</p><p>Why remaining distractor is wrong. 6.00% overstates the combined effect and does not follow the exact formula.</p>"
+  },
+  {
+    "id": "13",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "In practice, the nominal risk-free rate is often approximated as which sum?",
+    "options": {
+      "A": "Real risk-free rate + inflation premium",
+      "B": "Default risk premium + liquidity premium",
+      "C": "Real risk-free rate + default risk premium"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is the curriculum approximation for the nominal risk-free rate. The governing rule is nominal risk-free rate $\\approx$ real risk-free rate $+$ inflation premium. Intuitively, this approximation simplifies the exact multiplicative formula when rates are not large. The CFA Curriculum states this approximation explicitly as a practical shortcut. Therefore, option A is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Default and liquidity premiums are risk premia, not the approximation for the nominal risk-free rate.</p><p>Why remaining distractor is wrong. Adding default risk to the real risk-free rate produces a risky required return, not the nominal risk-free rate.</p>"
+  },
+  {
+    "id": "14",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which premium compensates investors for expected inflation over the maturity of a debt instrument?",
+    "options": {
+      "A": "Liquidity premium",
+      "B": "Inflation premium",
+      "C": "Maturity premium"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is the named source of compensation for loss of purchasing power. The governing rule is that the inflation premium compensates investors for expected inflation over the maturity of the debt. Intuitively, if prices are expected to rise, investors require extra return just to preserve real purchasing power. That specific add-on is called the inflation premium in the CFA Curriculum. Therefore, the correct premium is the inflation premium.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Liquidity premium compensates for possible loss when the investment must be sold quickly, not for inflation.</p><p>Why remaining distractor is wrong. Maturity premium compensates for greater sensitivity of debt value as maturity extends, not for expected inflation.</p>"
+  },
+  {
+    "id": "15",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which premium compensates investors for the risk of loss relative to fair value if the investment must be converted to cash quickly?",
+    "options": {
+      "A": "Liquidity premium",
+      "B": "Default risk premium",
+      "C": "Inflation premium"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is the compensation for not being able to sell quickly at fair value. The governing rule is that the liquidity premium compensates investors for the risk of loss relative to fair value when rapid conversion to cash is needed. Intuitively, harder-to-trade investments require extra return. The CFA Curriculum uses this exact idea to define the liquidity premium. Therefore, liquidity premium is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Default risk premium relates to the borrower failing to pay promised amounts, not to ease of sale.</p><p>Why remaining distractor is wrong. Inflation premium addresses expected inflation, not trading difficulty.</p>"
+  },
+  {
+    "id": "16",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which premium compensates investors for the possibility that the borrower will fail to make a promised payment on time and in full?",
+    "options": {
+      "A": "Maturity premium",
+      "B": "Default risk premium",
+      "C": "Inflation premium"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is the compensation for credit failure risk. The governing rule is that the default risk premium compensates investors for the possibility that the borrower will not make the promised payment at the contracted time and amount. Intuitively, a riskier borrower must offer more return. The CFA Curriculum names that add-on the default risk premium. Therefore, option B is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Maturity premium concerns sensitivity to interest-rate changes as maturity extends, not failure to pay.</p><p>Why remaining distractor is wrong. Inflation premium compensates for expected inflation, not borrower nonpayment.</p>"
+  },
+  {
+    "id": "17",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "Which premium most accurately compensates investors for greater sensitivity of debt value to changes in market interest rates as maturity extends?",
+    "options": {
+      "A": "Maturity premium",
+      "B": "Liquidity premium",
+      "C": "Default risk premium"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is compensation for longer-maturity debt being more sensitive to interest-rate changes. The governing rule is that the maturity premium compensates investors for that increased sensitivity as maturity extends, holding other factors equal. Intuitively, longer timing means more exposure to rate movements. The CFA Curriculum defines that extra required return as the maturity premium. Therefore, maturity premium is correct.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Liquidity premium is about trading quickly at fair value, not interest-rate sensitivity from longer maturity.</p><p>Why remaining distractor is wrong. Default risk premium is about borrower payment failure, not duration-related rate sensitivity.</p>"
+  },
+  {
+    "id": "18",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "If USD 9,500 today is equivalent to USD 10,000 in one year, the interest rate is closest to?",
+    "options": {
+      "A": "5.00%",
+      "B": "5.26%",
+      "C": "5.50%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is that an interest rate expresses required compensation as a rate of return between differently timed cash flows. The governing rule is rate $= \\frac{FV - PV}{PV}$. Intuitively, the investor gives up USD 9,500 today and requires USD 500 compensation one year later. Using the CFA Curriculum example, $500/9{,}500 = 0.0526$, or 5.26%. Therefore, the interest rate is 5.26%.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). 5.00% wrongly divides the USD 500 gain by the future amount of USD 10,000 instead of the present amount invested.</p><p>Why remaining distractor is wrong. 5.50% overstates the return and does not match the required compensation formula.</p>"
+  },
+  {
+    "id": "19",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "In the CFA Curriculum, an interest rate can most accurately be interpreted as all of the following except:",
+    "options": {
+      "A": "A required rate of return",
+      "B": "A discount rate",
+      "C": "A tax rate"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is the three curriculum interpretations of an interest rate. The governing rule is that an interest rate may be viewed as a required rate of return, a discount rate, or an opportunity cost. Intuitively, each of those describes the same compensation for waiting. A tax rate is not part of this framework in the CFA Curriculum. Therefore, the exception is a tax rate.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). A required rate of return is explicitly one of the curriculum’s interpretations of an interest rate.</p><p>Why remaining distractor is wrong. A discount rate is also explicitly one of the curriculum’s interpretations of an interest rate.</p>"
+  },
+  {
+    "id": "20",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "For the same annual rate and horizon, using more frequent compounding with a positive rate will most likely make the present value of a future lump sum?",
+    "options": {
+      "A": "Higher",
+      "B": "Lower",
+      "C": "Unchanged"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is how compounding frequency affects discounting when $r \\ge 0$. The governing relation is that the present value factor becomes smaller when the same positive annual rate is applied over more compounding periods. Intuitively, discounting more often pushes today’s value down. The CFA Curriculum illustrates this by showing a lower present value under semiannual compounding than under annual compounding for the same annual rate and horizon. Therefore, present value is lower.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Higher would be the opposite of the curriculum example for positive rates and more frequent compounding.</p><p>Why remaining distractor is wrong. The value does change because both the periodic rate and number of periods change with compounding frequency.</p>"
+  },
+  {
+    "id": "21",
+    "model": "ChatGPT",
+    "topic": "Interest Rates, Present Value, and Future Value",
+    "stem": "A zero-coupon government bond has a negative yield. Which statement is most accurate at issuance?",
+    "options": {
+      "A": "Present value is less than future value",
+      "B": "Present value equals future value",
+      "C": "Present value is greater than future value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is the discount bond relation $PV = \\frac{FV}{(1+r)^t}$. The governing rule is that when $r$ is negative, the denominator is less than 1, so present value exceeds future value. Intuitively, a negative yield means the investor pays a premium today to receive a smaller principal amount at maturity. The CFA Curriculum’s negative-yield example shows exactly this pattern. Therefore, the present value is greater than the future value at issuance.</p><p>Why top distractor is wrong (CFA Curriculum-based misconception). Present value being less than future value is the usual positive-yield case, not the negative-yield case.</p><p>Why remaining distractor is wrong. Equality would hold only at a zero yield, not at a negative yield.</p>"
+  }
+]

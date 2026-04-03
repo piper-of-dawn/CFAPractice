@@ -5,6 +5,102 @@ def _to_decimal(value):
     return Decimal(str(value))
 
 
+def _round_currency(value):
+    return value.quantize(Decimal("0.01"))
+
+
+def future_value_lump_sum(present_value, rate_per_period, periods):
+    pv = _to_decimal(present_value)
+    rate = _to_decimal(rate_per_period)
+    t = int(periods)
+    growth_factor = (Decimal("1") + rate) ** t
+    final_answer = pv * growth_factor
+    return {
+        "final_answer": final_answer,
+        "intermediate_steps": {
+            "growth_factor": growth_factor,
+            "future_value": final_answer,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(final_answer),
+        "validation_checks": {
+            "periods_non_negative": t >= 0,
+            "rate_greater_than_negative_one": rate > Decimal("-1"),
+        },
+    }
+
+
+def present_value_lump_sum(future_value, rate_per_period, periods):
+    fv = _to_decimal(future_value)
+    rate = _to_decimal(rate_per_period)
+    t = int(periods)
+    discount_factor = (Decimal("1") + rate) ** (-t)
+    final_answer = fv * discount_factor
+    return {
+        "final_answer": final_answer,
+        "intermediate_steps": {
+            "discount_factor": discount_factor,
+            "present_value": final_answer,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(final_answer),
+        "validation_checks": {
+            "periods_non_negative": t >= 0,
+            "rate_greater_than_negative_one": rate > Decimal("-1"),
+        },
+    }
+
+
+def present_value_lump_sum_non_annual(future_value, quoted_annual_rate, compounds_per_year, years):
+    fv = _to_decimal(future_value)
+    quoted_rate = _to_decimal(quoted_annual_rate)
+    m = int(compounds_per_year)
+    n = int(years)
+    periodic_rate = quoted_rate / Decimal(m)
+    total_periods = m * n
+    discount_factor = (Decimal("1") + periodic_rate) ** (-total_periods)
+    final_answer = fv * discount_factor
+    return {
+        "final_answer": final_answer,
+        "intermediate_steps": {
+            "periodic_rate": periodic_rate,
+            "total_periods": total_periods,
+            "discount_factor": discount_factor,
+            "present_value": final_answer,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(final_answer),
+        "validation_checks": {
+            "compounds_per_year_positive": m > 0,
+            "years_non_negative": n >= 0,
+            "quoted_rate_greater_than_negative_compounds": quoted_rate > Decimal(-m),
+        },
+    }
+
+
+def implied_rate_lump_sum(present_value, future_value, periods):
+    pv = _to_decimal(present_value)
+    fv = _to_decimal(future_value)
+    t = int(periods)
+    ratio = fv / pv
+    exponent = Decimal("1") / Decimal(t)
+    rate = ratio.__pow__(exponent) - Decimal("1")
+    return {
+        "final_answer": rate,
+        "intermediate_steps": {
+            "future_value_to_present_value_ratio": ratio,
+            "implied_rate": rate,
+        },
+        "units": "rate per period",
+        "rounded_answer": rate.quantize(Decimal("0.0001")),
+        "validation_checks": {
+            "present_value_positive": pv > 0,
+            "future_value_positive": fv > 0,
+            "periods_positive": t > 0,
+        },
+    }
+
+
 def forward_payoff(contract_size, forward_price, spot_at_maturity):
     size = _to_decimal(contract_size)
     fwd = _to_decimal(forward_price)
@@ -18,7 +114,7 @@ def forward_payoff(contract_size, forward_price, spot_at_maturity):
             "total_payoff": total_payoff,
         },
         "units": "currency",
-        "rounded_answer": total_payoff.quantize(Decimal("0.01")),
+        "rounded_answer": _round_currency(total_payoff),
         "validation_checks": {
             "contract_size_non_negative": size >= 0,
         },
@@ -39,7 +135,7 @@ def futures_daily_mtm(contract_size, prior_futures_price, current_futures_price,
             "ending_balance": ending_balance,
         },
         "units": "currency",
-        "rounded_answer": ending_balance.quantize(Decimal("0.01")),
+        "rounded_answer": _round_currency(ending_balance),
         "validation_checks": {
             "contract_size_non_negative": size >= 0,
         },
@@ -62,7 +158,7 @@ def futures_margin_call(initial_margin, maintenance_margin, ending_balance_befor
             "margin_call": margin_call,
         },
         "units": "currency",
-        "rounded_answer": margin_call.quantize(Decimal("0.01")),
+        "rounded_answer": _round_currency(margin_call),
         "validation_checks": {
             "initial_margin_at_least_maintenance": initial >= maintenance,
         },
@@ -82,7 +178,7 @@ def long_call_profit(spot_at_expiry, exercise_price, premium):
             "profit": profit,
         },
         "units": "currency per unit",
-        "rounded_answer": profit.quantize(Decimal("0.01")),
+        "rounded_answer": _round_currency(profit),
         "validation_checks": {
             "premium_non_negative": premium_paid >= 0,
         },
@@ -99,7 +195,7 @@ def long_put_profit_threshold(exercise_price, premium):
             "exercise_price_minus_premium": threshold,
         },
         "units": "currency per unit",
-        "rounded_answer": threshold.quantize(Decimal("0.01")),
+        "rounded_answer": _round_currency(threshold),
         "validation_checks": {
             "premium_non_negative": premium_paid >= 0,
         },
