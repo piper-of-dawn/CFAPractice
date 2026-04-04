@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PyPDF2; print\\(''''PyPDF2 available''''\\)\")",
+      "Bash(python3 -c \"import pypdf; print\\(''''pypdf available''''\\)\")",
+      "Bash(python3 -c \"import pdfplumber; print\\(''''pdfplumber available''''\\)\")",
+      "Bash(python -c \"import PyPDF2; print\\(''''PyPDF2 available''''\\)\")",
+      "Bash(python -c \"import pdfplumber; print\\(''''pdfplumber available''''\\)\")",
+      "Bash(python -c ':*)",
+      "Bash(python -m pip list)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import pdfplumber; print\\('ok'\\)\")",
+      "Bash(where python:*)",
+      "Bash(C:\\\\karma\\\\mcq\\\\.venv\\\\Scripts\\\\python.exe:*)",
+      "Bash(/c/karma/mcq/.venv/Scripts/python.exe:*)",
+      "Bash(\"/c/karma/mcq/.venv/Scripts/pip.exe\" install:*)",
+      "Bash(\"/c/karma/mcq/.venv/Scripts/python.exe\" -m pip install pdfplumber)",
+      "Bash(\"/c/karma/mcq/.venv/Scripts/python.exe\" -m pip list)",
+      "Bash(\"/c/karma/mcq/.venv/Scripts/python.exe\" -c \"import site; print\\(site.getsitepackages\\(\\)\\)\")",
+      "Read(//c/karma/mcq/.venv/Lib/site-packages//**)",
+      "Bash(/c/binaries/python314/python.exe:*)",
+      "Bash(/c/binaries/python314/python.exe << 'EOF'\nimport pdfplumber\nimport sys\nimport io\n\nsys.stdout = io.TextIOWrapper\\(sys.stdout.buffer, encoding='utf-8', errors='replace'\\)\n\nwith pdfplumber.open\\('C:/karma/mcq/mcq/quiz/AI/PDF/CFA L1 B2 FSA.pdf'\\) as pdf:\n    for i in range\\(292, 340\\):\n        if i < len\\(pdf.pages\\):\n            text = pdf.pages[i].extract_text\\(\\) or ''\n            if text.strip\\(\\):\n                print\\(f'=== Page {i+1} ==='\\)\n                print\\(text\\)\n                print\\(\\)\nEOF)",
+      "Bash(python3:*)",
+      "Bash(python3 -c \"open\\(''/tmp/gen_mcq.py'',''w''\\).write\\(''print\\(42\\)''\\)\")",
+      "Bash(python -c \"print\\(42\\)\")",
+      "Bash(python -c \"open\\(''C:/tmp/gen_mcq.py'',''w'',encoding=''utf-8''\\).write\\(''x=1''\\)\")",
+      "Bash(python -c \"import os; os.makedirs\\(''C:/tmp'',exist_ok=True\\); open\\(''C:/tmp/gen_mcq.py'',''w'',encoding=''utf-8''\\).write\\(''x=1''\\)\")",
+      "Bash(python:*)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Total questions: {len\\(d\\)}''''\\); [print\\(f''''id:{q[\"\"id\"\"]} topic:{q.get\\(\"\"topic\"\",\"\"?\"\"\\)[:50]}''''\\) for q in d]\")"
+    ]
+  }
+}

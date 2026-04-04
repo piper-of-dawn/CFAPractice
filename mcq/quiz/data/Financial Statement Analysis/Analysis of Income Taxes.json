@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Deferred Tax Liabilities — Temporary Difference",
+    "stem": "Reston Partners owns equipment purchased for GBP 20,000. For financial reporting, straight-line depreciation is used over 10 years; for tax purposes, straight-line depreciation is used over 7 years (GBP 2,857/year). Assuming a tax rate of 30%, what is the deferred tax liability on the balance sheet at the end of Year 1?",
+    "options": {
+      "A": "GBP 257",
+      "B": "GBP 514",
+      "C": "GBP 600"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: deferred tax liability = temporary difference × tax rate</h3><p><strong>A is correct.</strong> A deferred tax liability arises when an asset's carrying amount exceeds its tax base. Year 1 carrying amount = GBP 20,000 − GBP 2,000 = GBP 18,000; tax base = GBP 20,000 − GBP 2,857 = GBP 17,143; temporary difference = GBP 857; DTL = GBP 857 × 30% = GBP 257, per the CFA Curriculum's Reston Partners example.</p><p>B (GBP 514) is the deferred tax liability at the end of Year 2 (GBP 1,714 × 30%), not Year 1.</p><p>C (GBP 600) incorrectly applies the 30% rate to the full accounting depreciation charge (GBP 2,000 × 30%) rather than to the temporary difference between accounting and tax depreciation.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Tax Expense — Income Statement",
+    "stem": "Using the Reston Partners data, taxable income for Year 1 is GBP 3,843 and the deferred tax liability increases from GBP 0 to GBP 257 during Year 1. Assuming a 30% tax rate, what is the income tax expense reported on the income statement for Year 1?",
+    "options": {
+      "A": "GBP 1,153",
+      "B": "GBP 1,410",
+      "C": "GBP 4,584"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: income tax expense = taxes payable + change in deferred tax liability</h3><p><strong>B is correct.</strong> Per the CFA Curriculum, income tax expense = income taxes payable + change in deferred tax liability. Taxes payable = GBP 3,843 × 30% = GBP 1,153; increase in DTL = GBP 257; income tax expense = GBP 1,153 + GBP 257 = GBP 1,410. Note this equals GBP 4,700 × 30%, confirming tax expense is 30% of accounting profit.</p><p>A (GBP 1,153) captures only the taxes payable component, omitting the GBP 257 increase in the deferred tax liability, which the CFA Curriculum requires to be added.</p><p>C (GBP 4,584) is the income tax expense for Year 2, not Year 1.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Effective Tax Rate — Multi-Jurisdiction",
+    "stem": "Neutrino earns USD 1,000 of profit before taxes in the United States (statutory rate 21%) and USD 1,000 in Ireland (statutory rate 12%) in Year 20X1. What is Neutrino's combined effective tax rate for 20X1?",
+    "options": {
+      "A": "12.0%",
+      "B": "16.5%",
+      "C": "21.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: effective tax rate = total taxes paid ÷ total pre-tax income</h3><p><strong>B is correct.</strong> Effective tax rate = total income taxes / total pre-tax income. US tax = USD 1,000 × 21% = USD 210; Ireland tax = USD 1,000 × 12% = USD 120; total taxes = USD 330; total pre-tax income = USD 2,000; effective tax rate = USD 330 / USD 2,000 = 16.5%, the weighted average of both statutory rates per the CFA Curriculum.</p><p>C (21.0%) applies only the US domestic statutory rate and ignores the lower Irish rate on an equal share of total profits.</p><p>A (12.0%) applies only the Irish statutory rate, ignoring the higher US rate that applies to the other half of total profits.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Effective Tax Rate vs. Cash Tax Rate",
+    "stem": "A company reports total income before taxes of USD 18,696 million. Its total income tax provision is USD 4,756 million and its total current tax provision is USD 5,515 million. The company's effective tax rate is closest to:",
+    "options": {
+      "A": "25.4%",
+      "B": "29.5%",
+      "C": "33.7%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: effective tax rate = total income tax provision ÷ pre-tax income</h3><p><strong>A is correct.</strong> Per the CFA Curriculum, effective tax rate = total income tax provision / total income before taxes = USD 4,756 / USD 18,696 = 25.4%. This rate uses total provision (current + deferred), not just cash paid.</p><p>B (29.5%) is the cash tax rate, calculated as the current tax provision (USD 5,515) divided by pre-tax income (USD 18,696). The CFA Curriculum defines cash tax rate and effective tax rate as distinct measures; the cash tax rate uses only the current portion.</p><p>C (33.7%) would result from mistakenly dividing current tax provision by net income rather than pre-tax income, confusing the denominator in the formula.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Statutory Rate Reconciliation",
+    "stem": "A technology company reports income before taxes of USD 5,196 million. Its home country's federal statutory tax rate is 35%. What is the income tax provision at the statutory rate, as would appear at the top of a statutory-to-effective tax rate reconciliation disclosure?",
+    "options": {
+      "A": "USD 1,299 million",
+      "B": "USD 1,819 million",
+      "C": "USD 2,078 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: statutory-rate tax = pre-tax income × statutory rate</h3><p><strong>B is correct.</strong> The starting line of the statutory-to-effective reconciliation required by the CFA Curriculum = pre-tax income × statutory rate = USD 5,196 million × 35% = USD 1,818.6 million ≈ USD 1,819 million. Companies then itemize adjustments that reconcile this amount to the actual income tax provision.</p><p>A (USD 1,299 million) results from applying 25% instead of the correct 35% US federal statutory rate.</p><p>C (USD 2,078 million) results from using a 40% rate, which is a common distractor but not the statutory rate cited in the CFA Curriculum for this example.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Effective Tax Rate — Single Company",
+    "stem": "A global company reports income before taxes of USD 22,776 million and a provision for income taxes of USD 1,898 million for the fiscal year. The company's effective tax rate is closest to:",
+    "options": {
+      "A": "8.3%",
+      "B": "12.7%",
+      "C": "21.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: effective tax rate = income tax provision ÷ pre-tax income</h3><p><strong>A is correct.</strong> Effective tax rate = provision for income taxes / income before taxes = USD 1,898 / USD 22,776 = 8.33% ≈ 8.3%. Per the CFA Curriculum, an effective rate substantially below the statutory rate can arise from lower tax rates on international operations and other reconciling items disclosed in the tax footnote.</p><p>C (21.0%) is the US federal statutory tax rate. The CFA Curriculum explicitly contrasts the statutory rate with the effective rate, which incorporates all jurisdictional and structural differences.</p><p>B (12.7%) is the effective tax rate from a prior fiscal year, not from the year in question.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Deferred Tax Liability — Tax Rate Change",
+    "stem": "A company has a taxable temporary difference of USD 100 million. The deferred tax liability was initially recorded at a statutory tax rate of 35%. If the statutory tax rate is subsequently reduced to 21%, what is the revised deferred tax liability?",
+    "options": {
+      "A": "USD 14 million",
+      "B": "USD 21 million",
+      "C": "USD 35 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: deferred tax liability = temporary difference × current statutory rate</h3><p><strong>B is correct.</strong> Per the CFA Curriculum, if statutory tax rates change, the recorded value of a deferred tax liability is remeasured at the new rate. New DTL = USD 100 million × 21% = USD 21 million. The future tax obligation is smaller because the rate that will apply when the difference reverses has declined.</p><p>A (USD 14 million) incorrectly applies the change in the tax rate (35% − 21% = 14%) to the temporary difference rather than the new rate itself.</p><p>C (USD 35 million) is the original DTL at the old 35% rate and fails to update for the tax rate change, ignoring that DTLs must be remeasured at the current statutory rate per the CFA Curriculum.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Deferred Tax Liability — Taxable Temporary Difference",
+    "stem": "Assertion (A): When a company uses accelerated depreciation for tax purposes and straight-line depreciation for financial reporting, it recognizes a deferred tax liability.\nReason (R): The asset's carrying amount exceeds its tax base, creating a taxable temporary difference that will reverse in future periods.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: taxable temporary difference → deferred tax liability</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a taxable temporary difference as one where an asset's carrying amount exceeds its tax base. Accelerated tax depreciation makes the tax base smaller than the carrying amount each year (e.g., in Year 1 of Reston Partners, carrying amount = GBP 18,000 vs. tax base = GBP 17,143). Because this excess will generate higher taxable income when it reverses, a deferred tax liability is recorded. R accurately identifies the mechanism that produces the DTL.</p><p>Option B is wrong because R is not merely coincidentally true — it is the precise causal mechanism: the excess of carrying amount over tax base is the definitional condition that produces the deferred tax liability per Exhibit 1 of the CFA Curriculum.</p><p>Option C is wrong because R is factually correct; accelerated tax depreciation does leave the tax base below the carrying amount in early years, and the CFA Curriculum explicitly confirms this difference is temporary and reverses over the asset's life.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Income Tax Expense — Components",
+    "stem": "Assertion (A): A company's income tax expense on the income statement can differ from the income taxes payable to tax authorities in the same period.\nReason (R): Permanent differences between accounting profit and taxable income create deferred tax items on the balance sheet that cause this divergence.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: only temporary differences generate deferred tax items</h3><p><strong>C is correct.</strong> A is true: the CFA Curriculum states that income tax expense equals taxes payable plus the net change in deferred tax assets and liabilities, so the two figures routinely differ. However, R is false: permanent differences do NOT create deferred tax items. The CFA Curriculum explicitly states that because permanent differences will never be reversed, they do not give rise to deferred tax assets or liabilities. It is temporary differences — not permanent ones — that produce the deferred items causing income tax expense to diverge from taxes payable.</p><p>Option A is wrong because R is factually incorrect; permanent differences are precisely the category that bypasses deferred tax recognition under both IFRS and US GAAP per the CFA Curriculum.</p><p>Option D is wrong because A is unambiguously true — the Reston Partners example throughout the CFA Curriculum shows income tax expense (e.g., GBP 1,410 in Year 1) consistently exceeding taxes payable (GBP 1,153) due to the deferred tax component.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Valuation Allowance — US GAAP vs. IFRS",
+    "stem": "Assertion (A): Under US GAAP, when sufficient doubt arises about realizing the future economic benefit of a deferred tax asset, the entire deferred tax asset is removed from the balance sheet.\nReason (R): US GAAP requires a valuation allowance to reduce the deferred tax asset to the amount that is more likely than not to be realized.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: valuation allowance reduces but does not eliminate the DTA under US GAAP</h3><p><strong>D is correct.</strong> A is false: US GAAP does not remove the deferred tax asset entirely — it establishes a valuation allowance that reduces the DTA to the portion more likely than not to be realized, leaving any remaining realizable amount on the balance sheet. Complete removal of the DTA is the IFRS treatment, where an existing deferred tax asset is reversed if sufficient doubt exists about future economic benefits. R is true: the CFA Curriculum states precisely that under US GAAP a valuation allowance is established to reduce the DTA to the amount more likely than not to be realized.</p><p>Option A is wrong because A is false — conflating complete removal (IFRS approach) with the partial reduction via valuation allowance (US GAAP approach) is a boundary error the CFA Curriculum explicitly highlights.</p><p>Option C is wrong because R is true and accurately describes US GAAP treatment; the error lies solely in Assertion A overstating the extent of the write-down.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Deferred Tax Asset — Advance Receipts Liability",
+    "stem": "Assertion (A): When a company receives rent in advance that is taxable immediately but recognized as revenue for accounting purposes only when earned, a deferred tax liability is recorded on the balance sheet.\nReason (R): The carrying amount of the advance receipt liability exceeds its tax base of zero, creating a deductible temporary difference.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: liability with carrying amount > tax base → deferred tax asset</h3><p><strong>D is correct.</strong> A is false: rent received in advance that is immediately taxable creates a deferred tax ASSET, not a liability. The CFA Curriculum's Example 2 explicitly shows rent received in advance (carrying amount EUR 10,000,000; tax base EUR 0) giving rise to a deferred tax asset. The company has already paid more tax than it has recognized as expense, so a future tax benefit exists. R is true: the carrying amount of the liability does exceed its tax base (zero, since tax has already been collected), which per Exhibit 1 of the CFA Curriculum — liability carrying amount > tax base — produces a deferred tax asset.</p><p>Option A is wrong because A misclassifies the deferred tax item; the mechanism described in R (liability CA > tax base) always yields a DTA under the CFA Curriculum's classification table, not a DTL.</p><p>Option C is wrong because R correctly describes the temporary difference; the asset-versus-liability classification rule and the zero tax base for an already-taxed advance are both stated explicitly in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Tax Rate Change — Impact on Deferred Tax Items",
+    "stem": "Assertion (A): A reduction in the statutory corporate tax rate decreases the carrying value of both deferred tax assets and deferred tax liabilities on the balance sheet.\nReason (R): Deferred tax items are remeasured at the current statutory rate; a lower rate reduces the future tax benefit of deferred tax assets and simultaneously reduces the future tax obligation of deferred tax liabilities.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: deferred tax items remeasured at current statutory rate</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if a tax authority reduces the statutory corporate tax rate, the recorded value of a deferred tax asset decreases (reduced future benefit) and the value of a corresponding deferred tax liability also decreases (reduced future obligation). Both changes occur because deferred tax items are measured as the temporary difference multiplied by the applicable tax rate, and a lower rate mechanically reduces both. R accurately captures both the remeasurement mechanism and its dual effect on DTAs and DTLs.</p><p>Option B is wrong because R is not merely coincidentally true — it identifies the exact valuation rule (DT item = temporary difference × statutory rate) that makes A necessarily true, making it the direct causal explanation.</p><p>Option C is wrong because R is factually correct; the CFA Curriculum's discussion of tax rate changes confirms that deferred items are reduced symmetrically when rates fall, for both assets and liabilities.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Taxable Temporary Differences and Deferred Tax Liabilities",
+    "stem": "Consider the following balance sheet items and the relationship between their carrying amount and tax base:\n\nI. An asset whose carrying amount exceeds its tax base.\nII. A liability whose carrying amount exceeds its tax base.\nIII. A liability whose tax base exceeds its carrying amount.\n\nHow many of the above items give rise to a deferred tax liability?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: taxable temporary difference classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum defines a taxable temporary difference — which creates a deferred tax liability — as arising when: (1) an asset carrying amount exceeds its tax base, or (2) a liability tax base exceeds its carrying amount. Item I qualifies (asset CA > TB → DTL). Item II does not qualify (liability CA > TB → deferred tax asset, not liability). Item III qualifies (liability TB > CA → DTL). Only Items I and III create a deferred tax liability, so two items qualify.</p><p>Why option A is incorrect: Both Items I and III satisfy the criterion for a taxable temporary difference; limiting the answer to only one item misses Item III.</p><p>Why option C is incorrect: Item II — a liability whose carrying amount exceeds its tax base — creates a deductible temporary difference and gives rise to a deferred tax asset, not a liability. Not all three items qualify.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Permanent Differences and Deferred Tax",
+    "stem": "Consider the following differences between accounting profit and taxable income:\n\nI. Penalties and fines recorded as an accounting expense but explicitly disallowed as a deduction under tax law.\nII. Revenue recognized under accrual accounting in the current period but taxable only when cash is received.\nIII. Tax credits that directly reduce taxes payable arising from eligible equipment purchases.\n\nHow many of the above items result in NO deferred tax asset or deferred tax liability?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: permanent difference — no reversal, no deferred tax</h3><p><strong>B is correct.</strong> The CFA Curriculum states that permanent differences will not reverse at a future date and therefore give rise to no deferred tax asset or liability. Non-deductible penalties (Item I) are permanently disallowed — a permanent difference, no deferred tax. Tax credits that directly reduce taxes payable (Item III) are also a permanent difference — no deferred tax arises. Item II (revenue recognized on accrual basis but taxed on cash receipt) is a temporary difference that creates a deferred tax asset; it does give rise to a deferred tax item. Items I and III result in no deferred tax — two items qualify.</p><p>Why option A is incorrect: Two items — not just one — qualify as permanent differences with no deferred tax consequence; both Items I and III meet this criterion.</p><p>Why option C is incorrect: Item II is a temporary difference — the timing mismatch reverses when cash is ultimately received, creating a deferred tax asset in the interim. It does not qualify as a permanent difference.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Deductible Temporary Differences and Deferred Tax Assets",
+    "stem": "Consider the following relationships between an item's carrying amount and its tax base:\n\nI. An asset whose tax base exceeds its carrying amount.\nII. An asset whose carrying amount exceeds its tax base.\nIII. A liability whose tax base exceeds its carrying amount.\n\nHow many of the above items represent a deductible temporary difference that gives rise to a deferred tax asset?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: deductible temporary difference identification</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a deductible temporary difference — which creates a deferred tax asset — as arising when: (a) the tax base of an asset exceeds its carrying amount, or (b) the carrying amount of a liability exceeds its tax base. Item I satisfies condition (a) and gives rise to a deferred tax asset. Item II (asset CA > TB) is a taxable temporary difference creating a deferred tax liability, not an asset. Item III (liability TB > CA) is also a taxable temporary difference creating a deferred tax liability. Only Item I qualifies as a deductible temporary difference.</p><p>Why option B is incorrect: Only Item I satisfies the definition of a deductible temporary difference; Items II and III both create deferred tax liabilities, not assets.</p><p>Why option C is incorrect: Items II and III both produce taxable (not deductible) temporary differences, leading to deferred tax liabilities. They cannot be counted as deductible temporary differences.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "Realizability of Deferred Tax Assets: US GAAP vs. IFRS",
+    "stem": "Consider the following statements regarding the treatment of uncertain deferred tax assets:\n\nI. Under US GAAP, a valuation allowance is established to reduce the deferred tax asset to the amount more likely than not to be realized.\nII. Under IFRS, a valuation allowance account is set up against a deferred tax asset when future economic benefits are uncertain.\nIII. Under US GAAP, if future economic benefits from a deferred tax asset are in doubt, the existing deferred tax asset is reversed outright.\n\nHow many of the above statements are correct according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: US GAAP uses valuation allowance; IFRS reverses the DTA outright</h3><p><strong>A is correct.</strong> The CFA Curriculum clearly distinguishes the two standards. Under US GAAP, a valuation allowance is created to reduce the DTA to the amount more likely than not to be realized — Item I is correct. Under IFRS, there is no valuation allowance concept; instead, the existing deferred tax asset is reversed outright when future economic benefits are in doubt — Item II is incorrect. Item III describes the IFRS approach but attributes it to US GAAP — also incorrect. Only Item I correctly describes the applicable standard.</p><p>Why option B is incorrect: Only Item I accurately describes a curriculum-compliant treatment; Items II and III each confuse the US GAAP and IFRS approaches by swapping their respective mechanisms.</p><p>Why option C is incorrect: Items II and III directly contradict the CFA Curriculum — IFRS reverses the DTA outright rather than creating a valuation allowance, and US GAAP uses a valuation allowance rather than outright reversal. They cannot simultaneously be correct.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "Deferred Tax Assets from Liability Temporary Differences",
+    "stem": "Consider the following scenarios where amounts are taxed on a cash basis but recognized for accounting purposes differently:\n\nI. A company receives advance rent payments, records a deferred revenue liability, and the amount is included in taxable income at the time of receipt.\nII. A company accrues a liability for employee vacation pay; the amount is deductible for tax only when vacation is actually taken.\nIII. A company recognizes a liability for interest received in advance; the amount is included in taxable income in the year of receipt.\n\nHow many of the above scenarios give rise to a deferred tax asset?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: liability carrying amount exceeding zero tax base creates a deferred tax asset</h3><p><strong>C is correct.</strong> The CFA Curriculum states that a deferred tax asset arises when a liability carrying amount exceeds its tax base. In each scenario, the amount is received and taxed immediately so the tax base equals zero, while the accounting liability remains on the balance sheet. Item I: advance rent taxed on receipt → carrying amount > 0 tax base → DTA. Item II: vacation pay accrual deductible only when paid → carrying amount > 0 tax base → DTA. Item III: advance interest taxed on receipt → carrying amount > 0 tax base → DTA. All three scenarios give rise to deferred tax assets.</p><p>Why option A is incorrect: All three scenarios share the same structure and all three create deferred tax assets — the answer is not limited to one item.</p><p>Why option B is incorrect: No scenario fails the criterion; each involves a liability with a carrying amount exceeding its zero tax base, generating a deferred tax asset in all three cases.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Analytical Treatment of Deferred Tax Liabilities",
+    "stem": "Consider the following statements about how deferred tax liabilities should be treated for financial analysis purposes:\n\nI. A deferred tax liability should be classified as a liability when it is expected to reverse, resulting in a future cash tax payment.\nII. A deferred tax liability should be classified as equity when it is not expected to reverse.\nIII. A deferred tax liability should be excluded from both debt and equity when only the timing — but not the amount — of future tax payments is uncertain.\n\nHow many of the above statements are consistent with the CFA Curriculum's guidance?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: three-way analytical classification of deferred tax liabilities</h3><p><strong>B is correct.</strong> The CFA Curriculum specifies: treat as a liability when the DTL is expected to reverse (Item I — correct); treat as equity when not expected to reverse (Item II — correct); exclude from both debt and equity when BOTH the amount AND timing of future tax payments are uncertain. Item III is incorrect because it requires only timing uncertainty, whereas the curriculum requires uncertainty about both amount and timing simultaneously. Items I and II are correct.</p><p>Why option A is incorrect: Both Items I and II align with the CFA Curriculum guidance; limiting the count to one item omits one valid treatment.</p><p>Why option C is incorrect: Item III misstates the exclusion condition — the curriculum requires uncertainty about both the amount and timing of future tax payments, not timing alone. Item III does not qualify.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Impact of Statutory Tax Rate Changes on Deferred Tax Items",
+    "stem": "Consider the following potential effects when a company's statutory tax rate decreases:\n\nI. An existing deferred tax liability recorded on the balance sheet decreases in carrying value.\nII. An existing deferred tax asset recorded on the balance sheet decreases in carrying value.\nIII. The remeasurement of deferred tax items due to the rate change flows through income tax expense on the income statement.\n\nHow many of the above effects are consistent with the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: tax rate change remeasures all deferred tax balances through income tax expense</h3><p><strong>C is correct.</strong> The CFA Curriculum states that when statutory tax rates change, recorded values of deferred tax assets and liabilities change accordingly. A lower rate reduces the future obligation on a deferred tax liability (Item I — correct) and reduces the future benefit on a deferred tax asset (Item II — correct). The remeasurement flows through income tax expense on the income statement in the period of the rate change (Item III — correct). All three effects are consistent with the curriculum.</p><p>Why option A is incorrect: All three effects occur simultaneously when a statutory tax rate decreases; limiting the count to one omits two additional valid consequences.</p><p>Why option B is incorrect: Item III is also correct — the remeasurement gain or loss from the rate change is recognized in income tax expense on the income statement, making all three statements accurate.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Statutory, Effective, and Cash Tax Rates",
+    "stem": "Consider the following descriptions of the three tax rates discussed in the CFA Curriculum:\n\nI. The statutory tax rate is the corporate income tax rate in the jurisdiction where the company is domiciled.\nII. The effective tax rate is computed as cash taxes paid divided by pre-tax income.\nIII. The cash tax rate is the most appropriate rate to use when forecasting a company's future operating cash flows.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: distinguishing the three tax rate definitions and their analytical uses</h3><p><strong>B is correct.</strong> The CFA Curriculum defines: (1) Statutory tax rate — the corporate income tax rate in the country of domicile (Item I — correct); (2) Effective tax rate — reported income tax expense divided by pre-tax income (Item II — incorrect; the formula stated describes the cash tax rate, not the effective tax rate); (3) Cash tax rate — cash taxes paid divided by pre-tax income, used for forecasting cash flows (Item III — correct). Items I and III are correct.</p><p>Why option A is incorrect: Both Item I and Item III accurately describe their respective tax rates as defined in the CFA Curriculum; two statements qualify, not one.</p><p>Why option C is incorrect: Item II inverts the definition — the effective tax rate uses income tax expense from the income statement as the numerator, not cash taxes paid. Using cash taxes paid yields the cash tax rate, making Item II incorrect.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Identifying Permanent Differences",
+    "stem": "Consider the following differences between accounting profit and taxable income:\n\nI. A regulatory fine recorded as an expense for financial reporting but explicitly disallowed as a tax deduction.\nII. Equipment depreciated using the straight-line method for accounting over ten years but using an accelerated method for tax over seven years.\nIII. Research costs expensed immediately for accounting but capitalized and amortized over three years for tax purposes.\n\nHow many of the above represent permanent differences?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: permanent difference does not reverse and creates no deferred tax</h3><p><strong>A is correct.</strong> The CFA Curriculum defines permanent differences as those that will not reverse at a future date and do not give rise to deferred tax. Item I (non-deductible fine) is permanently disallowed with no future reversal — a permanent difference. Item II (different depreciation methods) is a temporary difference because both methods depreciate the full asset cost over its life and the timing gap reverses when the asset is fully depreciated. Item III (immediate expensing vs. tax amortization) is also a temporary difference — the tax deduction ultimately equals the accounting expense. Only Item I is a permanent difference.</p><p>Why option B is incorrect: Only Item I qualifies as a permanent difference; both Items II and III are temporary differences that fully reverse over time as depreciation or amortization is completed for tax purposes.</p><p>Why option C is incorrect: Items II and III each unwind completely over time, making them temporary differences that create deferred tax items on the balance sheet. Only Item I meets the non-reversing criterion of a permanent difference.</p>"
+  }
+]
