@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A wealth adviser works for a firm that mainly sells its own mutual funds. She recommends one of those funds to a client because it fits the client’s objectives, but she does not explain that her firm earns additional fees when its proprietary fund is selected. Her conduct is most likely:",
+    "options": {
+      "A": "acceptable because suitability removes the conflict",
+      "B": "acceptable if clients can infer she prefers her employer’s products",
+      "C": "a violation because the extra firm benefit should be prominently disclosed even if the fund is suitable"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard is Standard VI(A), which requires avoiding a conflict when reasonable or making full and fair disclosure when it cannot be avoided. The competing principle is that a suitable recommendation may still be in the client’s interest. The hierarchy is that suitability does not erase a conflict created by additional firm fees. Because the adviser’s recommendation benefits her employer in a way that could affect objectivity, she must disclose that fact in plain language and in a prominent manner before the client can fairly judge the recommendation. Under the CFA Curriculum, the undisclosed proprietary-fee incentive makes this a violation.</p><p>Why option A is tempting but wrong (missed nuance): the fund may be suitable, but suitability does not cancel the need to disclose a conflict that could reasonably impair independence and objectivity.</p><p>Why option B fails (boundary violation): clients are not expected to infer a conflict on their own; Standard VI(A) requires effective disclosure, not assumptions based on the adviser’s employer.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A portfolio adviser hires outside subadvisers for clients. Certain subadvisers pay the adviser’s firm based on client assets placed with them. The adviser tells clients that subadvisers will be used but says nothing about those payments. The adviser’s conduct is most likely:",
+    "options": {
+      "A": "acceptable because clients approved the use of subadvisers",
+      "B": "a violation unless the source and nature of the subadviser payments are disclosed to clients",
+      "C": "acceptable if the adviser intended to negotiate a direct benefit for clients"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) governs because payments tied to the amount of client assets placed with subadvisers can bias the adviser’s selection. The competing principle is that delegated management by subadvisers may itself be fully appropriate. The hierarchy is that a proper service structure does not remove a conflict created by hidden financial incentives. Because the adviser disclosed only the use of subadvisers and not the compensation arrangement, clients lack the information needed to evaluate whether the adviser may favor one subadviser over another. The CFA Curriculum treats that omitted financial arrangement as the core conflict requiring disclosure.</p><p>Why option A is tempting but wrong (missed nuance): client approval of subadviser use is not the same as informed approval of payments that may influence which subadviser is chosen.</p><p>Why option C fails (boundary violation): a good initial intention does not satisfy Standard VI(A); the actual conflict must still be disclosed if payments are ultimately made to the adviser’s firm.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An adviser personally lent funds to a private company. Later, he invests client assets in a fund that purchases securities linked to that same company, but he does not tell clients about his creditor position. Which action is most appropriate under Standard VI(A)?:",
+    "options": {
+      "A": "disclose the personal loan because repayment could affect his objectivity",
+      "B": "make no disclosure because co-investing with clients can sometimes be appropriate",
+      "C": "make no disclosure if the client mandate gave him broad discretion"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(A) applies because the adviser’s status as a creditor creates a personal financial interest that may interfere with duties to clients. The competing principle is that lending to or co-investing alongside a business is not automatically improper. The hierarchy is that a potentially biasing financial stake must be disclosed even if the investment could otherwise fit the mandate. Because client money could support a company that might repay the adviser personally, the adviser’s independence is open to question and full disclosure is required. Under the CFA Curriculum, the undisclosed creditor relationship is the decisive conflict.</p><p>Why option B is tempting but wrong (missed nuance): the fact that co-investing may sometimes be acceptable does not remove the obligation to disclose a personal interest that could affect judgment.</p><p>Why option C fails (boundary violation): broad investment discretion does not absolve an adviser from revealing conflicts of interest tied to a recommended or selected investment.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "At lunch, a research analyst tells a colleague that her own financial adviser is very capable. She does not mention that the adviser is her brother. The colleague is not her client, is not seeking investment advice from her professionally, and no referral fee is paid. Under the CFA Curriculum, this is most likely:",
+    "options": {
+      "A": "a violation because family relationships must always be disclosed before any recommendation",
+      "B": "not a violation of Standard VI(A), although disclosure would have been prudent",
+      "C": "a violation because the brother should disclose that the referral came from a relative"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) requires disclosure of matters that could reasonably impair independence and objectivity in carrying out duties to clients, prospective clients, or employers. The competing principle is transparency about a family relationship that may appear relevant. The hierarchy is that prudence and good transparency do not create a mandatory disclosure when the conversation is personal rather than professional, the colleague is not receiving investment advice from the analyst, and no referral fee influences the exchange. On these facts, the CFA Curriculum treats disclosure as wise but not required under Standard VI(A).</p><p>Why option A is tempting but wrong (missed nuance): the family tie creates an appearance issue, but the setting and relationship here do not amount to the analyst providing professional advice to a client or prospective client.</p><p>Why option C fails (boundary violation): in this fact pattern, the adviser received no paid referral benefit, so the brother does not have a disclosure duty on that basis.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A firm recommends promissory notes issued by Aquarius to mutual fund clients. One principal of the recommending firm also has indirect ownership ties to entities receiving fees, credit support, and referral benefits from Aquarius, but clients are told only that some affiliates are related. This disclosure is most likely:",
+    "options": {
+      "A": "insufficient because it omits the nature, magnitude, and extent of the financial ties",
+      "B": "sufficient because a general statement of affiliation alerts clients to possible conflicts",
+      "C": "sufficient if the firm’s compliance staff reviewed the investment"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(A) requires full and fair disclosure that effectively communicates a conflict. The competing principle is that some disclosure was made and internal review occurred. The hierarchy is that vague affiliation language does not satisfy the duty when the real issue is a material web of financial incentives tied to the recommended investment. Clients need enough detail to judge whether the principal has a meaningful economic interest in steering assets toward Aquarius. Under the CFA Curriculum, incomplete disclosure that hides the true nature and extent of the ties remains a violation.</p><p>Why option B is tempting but wrong (missed nuance): a bare statement that parties are affiliated does not tell clients how the recommending principal benefits financially from the recommendation.</p><p>Why option C fails (boundary violation): compliance review cannot substitute for full and fair disclosure to clients when the conflict itself has not been clearly communicated.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An adviser begins a personal relationship with an advisory client. He continues to handle the client’s account and believes he can stay objective, so he tells no one at his firm. His conduct is most likely:",
+    "options": {
+      "A": "acceptable if he gives the client no preferential pricing",
+      "B": "acceptable because the relationship concerns his private life rather than investment analysis",
+      "C": "a violation because the relationship should be disclosed to his employer"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(A) covers personal interests that may impair duties to clients or employers. The competing principle is that the adviser may sincerely believe he can remain fair. The hierarchy is that the possibility of bias or neglect of other clients is enough to require disclosure to the employer so the firm can assess and manage the conflict. A personal relationship with a client may create incentives to favor that account or otherwise compromise judgment. The CFA Curriculum therefore treats nondisclosure to the employer as the governing violation.</p><p>Why option A is tempting but wrong (missed nuance): preferential pricing is not the only concern; the conflict exists because the personal relationship itself may affect objectivity and allocation of attention.</p><p>Why option B fails (boundary violation): private-life facts become reportable under Standard VI(A) once they could reasonably interfere with professional duties.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A pension portfolio manager’s bonus is changed from a long-term system to one based on quarterly results relative to peers and benchmarks. She starts buying higher-beta stocks for long-term client accounts without telling clients about the new incentive arrangement. She most likely:",
+    "options": {
+      "A": "violates Standard VI(A) because the changed compensation structure should be disclosed when it may conflict with client objectives",
+      "B": "does not violate Standard VI(A) because employer pay policy is an internal matter",
+      "C": "does not violate Standard VI(A) if the higher-beta stocks may improve returns"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(A) treats compensation structures as a common source of conflict because they can pressure members to favor their own rewards over client objectives. The competing principle is that employers may legitimately reward performance and the securities purchased may still have upside. The hierarchy is that when a new bonus system creates incentives misaligned with the clients’ long-term mandates, the conflict must be disclosed and managed. Here, the manager’s short-term pay incentive may interfere with duties owed under the clients’ stated objectives. The CFA Curriculum specifically identifies this kind of compensation change as a conflict requiring disclosure.</p><p>Why option B is tempting but wrong (missed nuance): compensation is internal only until it can reasonably impair independence and objectivity in handling client portfolios.</p><p>Why option C fails (boundary violation): possible return improvement does not remove the duty to disclose an incentive that may push the manager away from the clients’ long-term objectives.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A broker is offered extra compensation by a stock promoter for selling a particular issuer’s shares to clients. He believes he can still judge the stock fairly and plans to tell his employer but not the clients. Under Standard VI(A), the most accurate statement is:",
+    "options": {
+      "A": "disclosure to the employer alone is sufficient because the employer supervises recommendations",
+      "B": "the arrangement should at minimum be disclosed to clients, and best practice is to decline it",
+      "C": "no disclosure is needed if the broker would have recommended the stock anyway"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) applies because extra compensation from an issuer or promoter creates a direct financial interest in recommending that security. The competing principle is that the broker may honestly believe the stock merits a recommendation and may involve the employer. The hierarchy is that clients must be able to assess whether the recommendation is tainted by outside compensation, and avoiding the conflict entirely is best practice. Because the promoter payment could reasonably impair objectivity, disclosure to clients is required at minimum. The CFA Curriculum also indicates that declining such compensation is the cleaner course.</p><p>Why option A is tempting but wrong (missed nuance): employer awareness does not provide clients the information they need to judge the broker’s independence on the recommendation.</p><p>Why option C fails (boundary violation): a recommendation that might have been made anyway still becomes conflicted when undisclosed issuer-linked compensation is added.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A chief investment officer shifts a retirement fund’s real estate mandate to a new external manager run by an old classmate. The only mention of the change appears months later in the annual report’s manager list. The most appropriate interpretation is:",
+    "options": {
+      "A": "no violation because the annual report eventually informed stakeholders of the new manager",
+      "B": "no violation if the new manager was chosen partly to improve returns",
+      "C": "a violation because the personal relationship should have been disclosed promptly to the employer before the decision"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(A) requires prompt disclosure of personal relationships that may impair judgment in selecting service providers or investments. The competing principle is that seeking stronger performance for the fund is a legitimate objective and later public reporting adds transparency. The hierarchy is that after-the-fact mention of a manager change does not address the conflict that existed when the decision was made. The employer needed to know about the classmate relationship in time to assess whether independence was compromised and whether safeguards were needed. Under the CFA Curriculum, delayed generic reporting is not an adequate substitute for prompt conflict disclosure.</p><p>Why option A is tempting but wrong (missed nuance): later disclosure of the manager’s name does not reveal the prior personal relationship that may have affected the selection decision.</p><p>Why option B fails (boundary violation): a potentially beneficial motive does not erase the need to disclose a friendship that could reasonably call objectivity into question.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A research analyst covers an issuer whose acquisition work has long been handled by her employer’s investment banking unit, and officers of her employer have served on boards of the issuer’s subsidiaries. She writes a positive report without mentioning those ties. This is most likely:",
+    "options": {
+      "A": "acceptable because the relationships belong to the firm, not to the analyst personally",
+      "B": "a violation because the firm’s special relationship with the issuer should be disclosed in the report",
+      "C": "acceptable if the report contains objective valuation analysis"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) reaches conflicts arising from relationships between the issuer and the member’s firm, not just the member’s personal holdings. The competing principle is that the analyst may perform careful analysis and may not have a direct personal benefit. The hierarchy is that an investment banking and board-service relationship with the issuer creates a meaningful conflict or appearance of conflict that readers must be told about. Because those ties could reasonably influence or appear to influence the research, they must be disclosed in the report. The CFA Curriculum treats broker-dealer underwriting and similar relationships as among the most obvious conflicts requiring disclosure.</p><p>Why option A is tempting but wrong (missed nuance): firm-level relationships can impair or appear to impair analyst independence just as clearly as personal ones.</p><p>Why option C fails (boundary violation): sound analysis does not cure a disclosure failure when material business ties with the issuer exist.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A research analyst recommends Kincaid for clients. Later, the analyst’s spouse inherits a large amount of Kincaid stock. The analyst is asked to publish a follow-up report on Kincaid. Under the CFA Curriculum, the best course is to:",
+    "options": {
+      "A": "continue coverage without disclosure because the shares are legally owned by the spouse",
+      "B": "disclose the spouse’s ownership to the employer and in the follow-up report, while best practice is to seek reassignment",
+      "C": "continue coverage if the analyst did not influence the inheritance"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) requires disclosure of beneficial ownership interests that could reasonably impair objectivity in recommendations. The competing principle is that the analyst did not personally choose the holding and may still believe the company is attractive. The hierarchy is that once a close household ownership interest exists, the analyst’s independence can reasonably be questioned, regardless of how the shares were acquired. Disclosure to the employer and in the report is required, and avoiding the conflict through reassignment is best practice. The CFA Curriculum specifically treats this type of inherited family holding as a disclosable conflict.</p><p>Why option A is tempting but wrong (missed nuance): a spouse’s large holding can still create an indirect pecuniary interest and therefore a conflict under the standard.</p><p>Why option C fails (boundary violation): the absence of influence over the inheritance does not eliminate the present conflict created by the household’s ownership stake.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An analyst personally owns shares of a thinly traded mining company. Her employer then asks her to publish industry research that would likely move that company’s stock price upward. She believes the stock is genuinely attractive. The most appropriate action is to:",
+    "options": {
+      "A": "disclose the conflict to her employer and, if she still writes the report, disclose it in the report",
+      "B": "write the report without disclosure because she would recommend the stock even without owning it",
+      "C": "sell her shares after publication because that avoids the original conflict"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(A) applies because personal ownership in a security that is the subject of research can impair or appear to impair objectivity. The competing principle is that the analyst may have reached the same conclusion without any holding. The hierarchy is that a real or apparent benefit from publication must be addressed before the report is issued, not rationalized afterward. Disclosure to the employer is required, and if the analyst still writes the report, the conflict must also be disclosed to readers. The CFA Curriculum also indicates that declining the assignment should be considered.</p><p>Why option B is tempting but wrong (missed nuance): the analyst’s claimed honesty about the recommendation does not negate the market-moving benefit she may receive from her own published report.</p><p>Why option C fails (boundary violation): post-publication selling does not cure the undisclosed conflict that existed when the recommendation was prepared and released.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A portfolio manager’s firm sells a 25% interest to a bank holding company. Soon after, the manager changes the firm’s view on that bank from sell to buy and adds its short-term debt to the approved list. She tells portfolio managers internally but not clients. Her conduct is most likely:",
+    "options": {
+      "A": "acceptable because internal communication ensures consistent treatment across accounts",
+      "B": "a violation because clients should be informed of the new ownership relationship, and best practice is to stop covering the issuer",
+      "C": "acceptable if the new recommendation can be supported by research"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(A) requires disclosure when a new ownership relationship between the member’s firm and an issuer could reasonably affect objectivity. The competing principle is that research may support the revised recommendation and internal awareness may improve supervision. The hierarchy is that clients remain entitled to know about a material firm-level ownership tie that may influence security recommendations or investment actions. Because the changed ownership creates a conflict or appearance of conflict, client disclosure is required, and the CFA Curriculum identifies discontinuing coverage as best practice where feasible.</p><p>Why option A is tempting but wrong (missed nuance): internal notice helps the firm but does not provide clients the information needed to evaluate the recommendation’s objectivity.</p><p>Why option C fails (boundary violation): even well-supported research does not remove the obligation to disclose a material new ownership relationship.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An investment professional serves on a public company’s board while also helping manage client portfolios. The firm erects a firewall so she is isolated from the team making investment decisions about that company, and the arrangement is disclosed. Under the CFA Curriculum, this setup is most likely:",
+    "options": {
+      "A": "acceptable if the conflict is isolated and disclosed because board service creates risks that must be managed rather than ignored",
+      "B": "a violation in all circumstances because board service can never coexist with investment responsibilities",
+      "C": "acceptable without disclosure because the firewall alone removes the conflict"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(A) recognizes that board service creates several conflicts, including duties to shareholders, possible compensation in securities, and exposure to material nonpublic information. The competing principle is that such service is not automatically forbidden in every case. The hierarchy is that the member must avoid the conflict when reasonable, but where the role is maintained, strong mitigation and full disclosure are required so investment decision making is insulated. A firewall addresses the risk of tainted decisions, while disclosure addresses the remaining conflict and appearance issue. The CFA Curriculum therefore supports management of the conflict through isolation and disclosure rather than assuming board service is always prohibited.</p><p>Why option B is tempting but wrong (missed nuance): board service is highly sensitive, but the curriculum discusses managing the conflict with firewalls or similar restrictions rather than declaring it per se impermissible.</p><p>Why option C fails (boundary violation): structural safeguards help mitigate the conflict, but Standard VI(A) still requires full and fair disclosure of the conflict itself.</p>"
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A consultant hired by a state pension plan recommends an emerging-markets manager. The manager separately pays the consultant if selected, but the recommendation appears objective and the plan is satisfied. The consultant's conduct is most likely:",
+    "options": {
+      "A": "acceptable because the recommendation was appropriate",
+      "B": "acceptable if the pension plan later confirms the choice independently",
+      "C": "in violation because the separate payment should have been disclosed"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) in the CFA Curriculum governs compensation, consideration, or benefits tied to recommending products or services. The competing principle is that an objectively appropriate recommendation may still seem defensible. The hierarchy is that disclosure of the referral fee dominates later proof that the recommendation was sound. Because the consultant was paid by both the plan and the recommended manager, that payment created a referral-fee conflict that had to be disclosed before the plan relied on the recommendation. Therefore, the consultant violated the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). Objective performance or a suitable choice does not cure an undisclosed referral fee because the issue is undisclosed partiality, not only the final quality of the recommendation.</p><p>Why remaining distractor fails (boundary violation). A later independent review comes after the recommendation has already influenced the selection process, so it does not replace the required upfront disclosure.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "An adviser and a lawyer agree to send clients to each other. No cash changes hands, and the adviser informs his employer but says nothing to the clients he sends to the lawyer. The adviser's conduct is most accurate as:",
+    "options": {
+      "A": "acceptable because there is no cash payment",
+      "B": "unacceptable because mutual benefit still requires disclosure to clients and prospective clients",
+      "C": "acceptable because employer disclosure alone addresses the conflict"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) covers any compensation, consideration, or benefit received from or paid to others for recommendations. The competing principle is that the arrangement may look harmless because no money is exchanged and the employer knows about it. The hierarchy is that referral-benefit disclosure to the relevant audiences dominates the no-cash form of the arrangement. Here, reciprocal client flow is consideration, so the adviser must disclose the arrangement not just to the employer but also to clients and prospective clients as appropriate. Because he omitted client-side disclosure, his conduct is unacceptable.</p><p>Why top distractor is tempting but wrong (missed nuance). The CFA Curriculum treats noncash or reciprocal benefit as consideration, so the absence of cash does not remove the disclosure duty.</p><p>Why remaining distractor fails (boundary violation). Employer disclosure is necessary but not sufficient when clients or prospective clients are also affected by the referral arrangement.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A trust officer receives an internal bonus when his referrals to the bank's financial planning unit lead to a sale. He tells his supervisor, but he refers clients without mentioning the internal arrangement because no outside party is involved. He has most likely:",
+    "options": {
+      "A": "violated the standard because internal referral payments must also be disclosed to clients",
+      "B": "complied because only third-party referral fees require client disclosure",
+      "C": "complied because supervisor disclosure is enough for an internal arrangement"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard VI(C) requires disclosure of compensation or benefits connected to recommendations, and the CFA Curriculum does not distinguish between outside-party payments and internal payments among departments. The competing principle is the intuition that an in-house transfer looks less conflicted than an external commission. The hierarchy is that the source being internal does not narrow the disclosure duty. Because the trust officer earns compensation for steering clients internally, he must disclose that arrangement to clients at the time of referral. Failing to do so violates the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). The curriculum expressly rejects limiting the rule to third-party payments, so the internal setting does not excuse nondisclosure.</p><p>Why remaining distractor fails (boundary violation). Disclosure to a supervisor does not replace disclosure to clients whose decision may be influenced by the undisclosed incentive.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A broker refers prospective tax-exempt accounts to an investment manager. In return, the manager provides research, market reviews, and directs commission business back to the broker. When a prospect contacts the manager, the manager says only that the broker 'thinks highly' of the firm. The manager should most likely have:",
+    "options": {
+      "A": "said nothing more because the prospect asked about investment skill, not compensation",
+      "B": "disclosed the referral arrangement, including the noncash and commission benefits",
+      "C": "disclosed only if the prospect first became a client"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) requires disclosure of any benefit given or received for recommendations before entry into a formal agreement for services. The competing principle is that praise from the referring broker may seem like simple opinion about quality. The hierarchy is that the existence of research support and commission business tied to the referral controls, because those benefits may bias the recommendation. Since the manager knew the prospect arrived through a compensated arrangement, the manager had to disclose the referral arrangement and its benefit structure before the prospect engaged the firm. That makes option B correct.</p><p>Why top distractor is tempting but wrong (missed nuance). The duty arises from the compensation-linked recommendation, not from the specific question the prospect happened to ask.</p><p>Why remaining distractor fails (boundary violation). Waiting until after the prospect becomes a client is too late because the curriculum requires disclosure before formalizing the service relationship.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A portfolio manager steers a large share of her firm's trading to a classmate's broker/dealer, even though pricing is not competitive and the research is weak. In return, the broker/dealer recommends the manager's advisory services to wealthy households. If she tells the referred households but not her employer, her conduct is most likely:",
+    "options": {
+      "A": "acceptable because the clients most affected received disclosure",
+      "B": "acceptable if the manager genuinely believes the referrals are deserved",
+      "C": "in violation because the employer also must be informed of the referral arrangement"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) requires disclosure to employer, clients, and prospective clients, as appropriate, when compensation or benefits are tied to recommendations. The competing principle is that telling the referred households may seem to address the outward-facing conflict. The hierarchy is that the standard allocates disclosure duties to all relevant parties, including the employer whose trading relationships are being used. Because the manager used employer business to support a referral arrangement and failed to inform the firm, the disclosure remained incomplete and the conduct violated the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). Client-side disclosure does not eliminate the employer's right to know that firm trading is being used to obtain personal business referrals.</p><p>Why remaining distractor fails (boundary violation). Personal belief in the quality of the recommendation does not remove the duty to disclose compensation-linked recommendations.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "An adviser pays current clients nominal gift cards and sometimes fee discounts when their referrals become especially lucrative. New clients often learn about these rewards later, after they themselves begin referring others. The adviser's practice is most likely:",
+    "options": {
+      "A": "acceptable because the rewards are modest",
+      "B": "acceptable because all clients have the same chance to earn them",
+      "C": "in violation because later awareness is not the required disclosure to incoming clients"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) focuses on disclosure of any compensation, consideration, or benefit paid for recommendations. The competing principle is that modest rewards offered broadly can look like fair client-development activity rather than a conflict. The hierarchy is that once benefits are tied to referrals, disclosure to prospective or incoming clients becomes the controlling requirement. Because the adviser relied on clients learning about the benefits only later, the incoming clients were not told at the relevant time that the recommendation may have been influenced by gift cards or fee discounts. That violates the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). The standard covers benefits in kind, so modest size does not eliminate the need for disclosure.</p><p>Why remaining distractor fails (boundary violation). Equal access to the reward program may address fairness arguments, but it does not satisfy the referral-fee disclosure requirement.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A prospective client asks why an adviser is recommending a particular subadviser. The adviser discloses that outside subadvisers are used but does not mention that the main adviser receives a discount linked to placing client assets with one of them. The adviser has most likely:",
+    "options": {
+      "A": "complied because clients only need to know that a subadviser is involved",
+      "B": "violated the standard because the financial incentive affecting the recommendation was not disclosed",
+      "C": "complied because the discount reduces the adviser's own costs rather than increasing the client's fee directly"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) requires disclosure when a member receives compensation, consideration, or benefit connected to recommending products or services. The competing principle is that naming the use of a subadviser may appear to provide enough transparency about the service model. The hierarchy is that the undisclosed financial incentive behind the recommendation is the more important fact because it may affect the adviser's partiality. Since the adviser omitted the source and nature of the discount tied to the placement decision, the client could not properly assess the recommendation. That omission violates the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). Disclosure of structure is not the same as disclosure of the benefit that may bias the selection of that structure.</p><p>Why remaining distractor fails (boundary violation). A benefit to the adviser can still distort the recommendation even if it does not visibly appear as a separate fee line item to the client.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A current client casually tells a friend that her brother is a good financial adviser. The brother has a standing policy of paying referral fees to current clients, but the sister does not know that and refuses the fee once offered. Which statement is most accurate?",
+    "options": {
+      "A": "The adviser violated the standard because any standing referral program must be disclosed even if no fee is actually paid",
+      "B": "Neither party violated the referral-fee standard because the sister was unaware and no referral fee was paid",
+      "C": "The sister violated the standard because family ties always require disclosure in personal conversations"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) is triggered by compensation, consideration, or benefit received from or paid to others for recommendations. The competing principle is that the adviser's standing referral program makes the recommendation look tainted from the outset. The hierarchy is that actual payment or benefit tied to the recommendation matters here because the sister neither knew of the program nor accepted compensation. With no paid referral fee and no awareness influencing the recommendation, the referral-fee standard is not implicated on these facts. Therefore, option B is correct.</p><p>Why top distractor is tempting but wrong (missed nuance). The curriculum example turns on the fact that the fee was not paid and the referrer was not influenced by an expected benefit.</p><p>Why remaining distractor fails (boundary violation). Family relationships may raise separate transparency questions, but that does not make this a referral-fee violation under the stated facts.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A manager discloses that a referring broker receives 'support from our firm' if a prospect becomes a client. She does not explain whether the support is a flat fee, research, commissions, or another benefit and gives no estimate of value. Her disclosure is most likely:",
+    "options": {
+      "A": "sufficient because it alerts the prospect that some arrangement exists",
+      "B": "sufficient if the prospect can ask follow-up questions",
+      "C": "insufficient because the nature of the benefit and estimated value should be disclosed"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) requires more than a vague warning that an arrangement exists. The competing principle is that any hint of a conflict may seem enough to put a prospect on notice. The hierarchy is that the curriculum specifically requires disclosure of the nature of the consideration or benefit and its estimated dollar value so the prospect can evaluate possible partiality and full cost. Because the manager withheld those details, the disclosure was not complete enough to satisfy the standard. Thus, option C is correct.</p><p>Why top distractor is tempting but wrong (missed nuance). A generic statement does not tell the prospect how the recommender is being influenced or how significant the benefit may be.</p><p>Why remaining distractor fails (boundary violation). The burden is on the member to make proper disclosure, not on the prospect to discover the missing facts through extra questions.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "An investment manager learns that a prospect arrived through a compensated referral arrangement with a broker. To avoid making the referral look biased, the manager waits until the prospect signs the account documents and then discloses the arrangement. This approach is most likely:",
+    "options": {
+      "A": "acceptable because disclosure was eventually made",
+      "B": "unacceptable because disclosure should occur before any formal agreement for services",
+      "C": "acceptable if the prospect can still terminate the relationship afterward"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) requires disclosure before entry into a formal agreement for services. The competing principle is that delayed disclosure may seem harmless if the client can later reconsider. The hierarchy is that timing is part of the rule because the prospect must know about the referral incentive before deciding whether to engage the manager. By waiting until after the account documents were signed, the manager deprived the prospect of that information at the decision point. That makes the approach unacceptable.</p><p>Why top distractor is tempting but wrong (missed nuance). Eventual disclosure is not enough when the standard requires disclosure at a particular stage of the client decision process.</p><p>Why remaining distractor fails (boundary violation). The possibility of reversing the decision later does not substitute for informed consent before entering the service relationship.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A relationship manager receives a one-time internal referral payment for sending a client to the bank's brokerage desk. She tells the client only that she may receive 'extra compensation' and believes that naming the exact form and value would be unnecessary because it is a small amount. Her disclosure is most likely:",
+    "options": {
+      "A": "adequate because the client was warned that compensation exists",
+      "B": "adequate because the payment is internal and small",
+      "C": "inadequate because the client should be told the nature and value of the benefit"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) requires disclosure of the nature of the consideration or benefit and the estimated dollar value. The competing principle is that a small, internal payment may appear too minor to justify a detailed explanation. The hierarchy is that the curriculum does not carve out an exception for modest or internal referral benefits once they are tied to the recommendation. Because the manager used only vague language and omitted the form and value of the payment, the disclosure was incomplete. Therefore, option C is correct.</p><p>Why top distractor is tempting but wrong (missed nuance). A generic warning does not let the client judge whether the incentive is flat, continuing, in kind, or otherwise structured.</p><p>Why remaining distractor fails (boundary violation). Internal source and small size do not erase the requirement to disclose the nature and value of the referral benefit.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A manager recommends an outside firm to a prospect and will receive continuing research support as long as referred accounts stay with that firm. He discloses only that there is 'a relationship' between the firms because he believes noncash support is different from a fee. His conduct is most likely:",
+    "options": {
+      "A": "acceptable because research support is not cash compensation",
+      "B": "acceptable if the support improves service quality for all clients",
+      "C": "in violation because noncash and continuing benefits are still referral consideration"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) covers benefits whether paid in cash, soft dollars, or in kind, and it expects the member to explain the form of the benefit. The competing principle is that research support may look like a service enhancement rather than a personal referral fee. The hierarchy is that if the support is provided because of the recommendation, it is referral consideration regardless of its noncash form or continuing structure. Because the manager minimized the arrangement as a mere relationship and failed to disclose the in-kind continuing benefit, the conduct violates the standard.</p><p>Why top distractor is tempting but wrong (missed nuance). The curriculum expressly includes noncash benefits within the required referral-fee disclosure framework.</p><p>Why remaining distractor fails (boundary violation). Even if clients may indirectly benefit from better research, that does not remove the need to disclose the incentive that could bias the recommendation.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "A broker recommends an investment manager to a prospect. The manager knows the broker will receive commissions from trades generated by the referred account, but the manager assumes the broker is responsible for any disclosure because the broker made the recommendation. The manager's assumption is most likely:",
+    "options": {
+      "A": "reasonable because the recommending broker controls the client contact",
+      "B": "unreasonable because the manager also has a duty to disclose the referral arrangement to the prospect",
+      "C": "reasonable if the manager does not know the exact amount of the commissions"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard VI(C) requires members and candidates to inform employer, clients, and prospective clients of benefits given or received for referrals. The competing principle is that the broker, as the person making the recommendation, may look like the only party who needs to speak. The hierarchy is that each member involved in the arrangement must satisfy his or her own disclosure obligations when dealing with the affected prospect. Because the manager knows the prospect came through a compensated referral arrangement, the manager cannot rely solely on the broker to make the disclosure. Thus, the assumption is unreasonable.</p><p>Why top distractor is tempting but wrong (missed nuance). Control of the first contact does not transfer away the manager's own duty once the manager engages the prospect under a known referral arrangement.</p><p>Why remaining distractor fails (boundary violation). Lack of an exact amount may affect how the value is estimated, but it does not remove the duty to disclose the existence and nature of the benefit.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard VI(C) - Referral Fees",
+    "stem": "An adviser tells a prospect that a referring client may receive a fee if the prospect signs up, but she adds that the fee is paid only after the prospect becomes a client, so the prospect can ignore it for now. Her statement is most likely:",
+    "options": {
+      "A": "most appropriate because no conflict exists until the payment is actually made",
+      "B": "most appropriate because the prospect was at least alerted to a possible fee",
+      "C": "least appropriate because the prospect must evaluate the referral incentive before entering the service agreement"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard VI(C) is built to let prospects judge possible partiality before committing to a service relationship. The competing principle is that the payment may seem future-oriented and therefore not yet relevant. The hierarchy is that the prospect's decision is exactly what the referral incentive is designed to influence, so disclosure must matter before the agreement is formed, not after. By telling the prospect to ignore the fee for now, the adviser undermines the purpose of the required disclosure. Therefore, option C is the least appropriate statement.</p><p>Why top distractor is tempting but wrong (missed nuance). The conflict arises from the contingent incentive attached to the recommendation, even before the payment is formally made.</p><p>Why remaining distractor fails (boundary violation). A vague alert is not enough when the adviser simultaneously tells the prospect to postpone evaluating the significance of the referral benefit.</p>"
+  }
+]

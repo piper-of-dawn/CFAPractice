@@ -1,0 +1,275 @@
+[
+  {
+    "id": "1",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "Under Standard VI(A), when a conflict can reasonably be avoided, the member should most likely:",
+    "options": {
+      "A": "avoid the conflict",
+      "B": "disclose it after the recommendation",
+      "C": "ignore it if no harm occurs"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: avoid first</h3><p><strong>A is correct.</strong> Standard VI(A) in the CFA Curriculum says members must avoid or make full and fair disclosure of matters that could impair independence and objectivity. The governing rule is that avoiding a conflict is best practice when it is reasonable to do so. The intuition is simple: no conflict is easier for clients and employers to assess than a disclosed one. When avoidance is possible, the member should avoid it and then act. So, avoiding the conflict is the correct answer.</p><p>Why top distractor is wrong (PDF-based misconception). Disclosure is important when a conflict cannot reasonably be avoided, but it is not the first choice when the conflict can be avoided.</p><p>Why remaining distractor is wrong. Standard VI(A) does not allow a member to ignore a conflict just because no visible harm has occurred.</p>"
+  },
+  {
+    "id": "2",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "If a conflict cannot reasonably be avoided, the member must most likely:",
+    "options": {
+      "A": "delay any disclosure until year-end",
+      "B": "make full and fair disclosure",
+      "C": "disclose only if asked"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: disclose unavoidable conflicts</h3><p><strong>B is correct.</strong> Standard VI(A) in the CFA Curriculum requires members to avoid conflicts when reasonable, but if a conflict cannot reasonably be avoided, they must make full and fair disclosure. The governing rule is disclosure of actual or potential conflicts that could impair independence and objectivity. The intuition is that clients, prospective clients, and employers need the facts to judge possible bias. When avoidance is not realistic, disclosure becomes mandatory. Therefore, full and fair disclosure is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Waiting until year-end is not effective communication and does not satisfy the requirement for prominent and timely disclosure.</p><p>Why remaining distractor is wrong. Standard VI(A) does not make disclosure optional or dependent on someone asking for it.</p>"
+  },
+  {
+    "id": "3",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A required conflict disclosure under Standard VI(A) should be most likely:",
+    "options": {
+      "A": "prominent and in plain language",
+      "B": "buried in technical wording",
+      "C": "kept vague to stay brief"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: effective communication</h3><p><strong>A is correct.</strong> The CFA Curriculum states that disclosures under Standard VI(A) must be prominent, delivered in plain language, and communicated effectively. The governing rule is not just to mention a conflict but to communicate it so the audience can understand it. The intuition is that a hidden or confusing disclosure does not help a client evaluate bias. A clear and visible disclosure satisfies the rule. So, prominent and plain language is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Technical wording and hidden placement make disclosure less effective, which is the opposite of what Standard VI(A) requires.</p><p>Why remaining distractor is wrong. Vague disclosure does not give enough useful information for clients or employers to judge the conflict.</p>"
+  },
+  {
+    "id": "4",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "When reporting a conflict to an employer, the member should give the employer most likely:",
+    "options": {
+      "A": "only the conflict label",
+      "B": "enough information to assess the impact",
+      "C": "no details if the member feels unbiased"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: employer must be able to assess</h3><p><strong>B is correct.</strong> Under Standard VI(A), the CFA Curriculum says disclosures to employers must contain enough information for the employer to assess the impact of the conflict. The governing rule is meaningful disclosure, not symbolic disclosure. The intuition is that an employer cannot manage or resolve a conflict without understanding it. Because the employer must be able to evaluate the situation, enough information must be provided. Therefore, option B is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Simply naming a conflict without meaningful details does not allow the employer to assess its seriousness.</p><p>Why remaining distractor is wrong. A member’s personal belief that he or she is unbiased does not remove the duty to disclose the conflict to the employer.</p>"
+  },
+  {
+    "id": "5",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "The CFA Curriculum notes that members should be especially careful about which type of conflict source?",
+    "options": {
+      "A": "compensation structures",
+      "B": "client birthdays",
+      "C": "office locations"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: compensation can bias judgment</h3><p><strong>A is correct.</strong> The CFA Curriculum identifies compensation structure as a common source of conflicts of interest under Standard VI(A). The governing rule is that any personal or professional interest that may impair independent judgment must be avoided or disclosed. The intuition is that pay incentives can push a member toward actions that benefit the member rather than the client. Because compensation can shape behavior and bias recommendations, it is a key conflict source. So, compensation structures is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Personal background details like birthdays are not identified in the curriculum as a common conflict source under this standard.</p><p>Why remaining distractor is wrong. Office location does not by itself create the type of bias or divided loyalty discussed in Standard VI(A).</p>"
+  },
+  {
+    "id": "6",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "If the nature of a conflict becomes materially worse, disclosures should most likely be:",
+    "options": {
+      "A": "left unchanged",
+      "B": "updated",
+      "C": "removed"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: disclosures must stay current</h3><p><strong>B is correct.</strong> The CFA Curriculum says best practice is to update disclosures when the nature of a conflict changes materially. The governing rule is effective communication of relevant conflict information. The intuition is that an outdated disclosure may understate the real level of bias. If a conflict becomes stronger, the audience needs the newer facts, not the old ones. Therefore, the disclosure should be updated.</p><p>Why top distractor is wrong (PDF-based misconception). Leaving a disclosure unchanged when the conflict worsens means the disclosure is no longer fully informative.</p><p>Why remaining distractor is wrong. Removing the disclosure would hide the conflict rather than communicate it effectively.</p>"
+  },
+  {
+    "id": "7",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A member owns stock in a company that he recommends to clients. Under Standard VI(A), he should most likely:",
+    "options": {
+      "A": "disclose the beneficial ownership",
+      "B": "say nothing if the recommendation is sound",
+      "C": "disclose only after clients buy"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: personal ownership can impair objectivity</h3><p><strong>A is correct.</strong> The CFA Curriculum states that one of the most common conflicts under Standard VI(A) is ownership of securities that a member recommends to clients. The governing rule is that beneficial ownership that could impair objectivity must be disclosed. The intuition is that the member may benefit if the recommendation supports the stock price. Because the member has a direct financial interest in the issuer, disclosure is required before clients judge the recommendation. So, disclosing the beneficial ownership is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Even a well-researched recommendation does not remove the conflict created by the member’s own financial stake.</p><p>Why remaining distractor is wrong. Disclosure after clients act is too late for them to evaluate possible bias before the recommendation affects them.</p>"
+  },
+  {
+    "id": "8",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A member’s spouse inherits a large holding in a company the member covers. The member should most likely:",
+    "options": {
+      "A": "ignore it because the spouse owns the shares",
+      "B": "disclose the holding to the employer and in the report",
+      "C": "mention it only to friends"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: indirect pecuniary interest still matters</h3><p><strong>B is correct.</strong> In the CFA Curriculum, a spouse’s large holding in a covered company creates a conflict under Standard VI(A). The governing rule is that direct or indirect pecuniary interests that could impair objectivity must be disclosed. The intuition is that household financial interests can still affect the member’s judgment or appear to do so. Because the member’s analysis may be seen as biased, the member should disclose the interest to the employer and in the follow-up report. Therefore, option B is correct.</p><p>Why top distractor is wrong (PDF-based misconception). The fact that the spouse owns the shares does not remove the indirect financial interest within the household.</p><p>Why remaining distractor is wrong. Telling friends is irrelevant; Standard VI(A) requires disclosure to the parties who need to assess the conflict.</p>"
+  },
+  {
+    "id": "9",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A member personally owns shares in a mining stock and is asked to write a report on that stock. The member should first most likely:",
+    "options": {
+      "A": "sell after publication",
+      "B": "disclose the conflict to the employer",
+      "C": "publish quickly before prices move"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: disclose to employer before proceeding</h3><p><strong>B is correct.</strong> The CFA Curriculum example on personal stock ownership shows that a member asked to write on a stock he or she owns must disclose the conflict to the employer. The governing rule is that ownership in a recommended security can impair objectivity and must be reported. The intuition is that the employer needs to decide how to manage the conflict, including whether to reassign the work. Because the conflict exists before publication, the employer must be informed first. So, disclosure to the employer is the correct answer.</p><p>Why top distractor is wrong (PDF-based misconception). Selling later does not address the conflict that existed while the report was being prepared.</p><p>Why remaining distractor is wrong. Publishing faster does not cure the conflict and may worsen the appearance of self-interest.</p>"
+  },
+  {
+    "id": "10",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A member serves on a company’s board while also providing investment services. The CFA Curriculum says the member should most likely be:",
+    "options": {
+      "A": "isolated by firewalls from investment decisions on that company",
+      "B": "free to trade for clients without restrictions",
+      "C": "allowed to share board information internally"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: board service creates special risks</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that board service creates several conflicts, including divided duties, possible compensation in securities, and access to material nonpublic information. The governing rule is to avoid or manage those conflicts under Standard VI(A). The intuition is that investment decisions should be separated from the person who sits on the board so clients are protected from biased judgment or misuse of information. Firewalls are the specific control named in the curriculum for this setting. Therefore, isolation by firewalls is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Board service does not permit unrestricted client trading because the conflict and information risks remain.</p><p>Why remaining distractor is wrong. Sharing board information internally would increase, not reduce, the risk created by the board role.</p>"
+  },
+  {
+    "id": "11",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A research analyst’s firm has a long underwriting and advisory relationship with an issuer she covers. Her report should most likely:",
+    "options": {
+      "A": "omit the relationship if analysis is objective",
+      "B": "disclose the firm’s special relationship",
+      "C": "mention it only in internal files"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: firm relationships can taint research</h3><p><strong>B is correct.</strong> The CFA Curriculum states that special broker/dealer and investment banking relationships with an issuer are obvious conflicts under Standard VI(A). The governing rule is that these relationships must be disclosed in research reports because they may impair independence and objectivity. The intuition is that readers should know whether the firm has a business interest connected to the issuer. That information helps them judge possible bias in the report. So, disclosing the firm’s special relationship is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Good analysis does not remove the need to disclose a material business relationship with the issuer.</p><p>Why remaining distractor is wrong. Internal files do not inform clients or report readers, who are the people affected by the recommendation.</p>"
+  },
+  {
+    "id": "12",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An adviser recommends a proprietary fund that pays extra fees to her firm. Even if the fund suits the client, she should most likely:",
+    "options": {
+      "A": "disclose the extra fee conflict",
+      "B": "stay silent because the fund is suitable",
+      "C": "assume clients already know"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: suitability does not erase a conflict</h3><p><strong>A is correct.</strong> In the CFA Curriculum, recommending a proprietary product that gives the firm extra fees creates a conflict under Standard VI(A). The governing rule is that members must disclose matters that could impair independence and objectivity. The intuition is that a suitable product can still be recommended under a conflicted incentive. Because the firm benefits directly from the recommendation, the conflict must be clearly disclosed to the client. Therefore, option A is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Suitability and conflict disclosure are separate questions; satisfying one does not remove the need for the other.</p><p>Why remaining distractor is wrong. The curriculum specifically rejects assuming clients understand the conflict without effective disclosure.</p>"
+  },
+  {
+    "id": "13",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An asset manager uses subadvisers and receives payments from some of them based on client assets placed. The manager should most likely:",
+    "options": {
+      "A": "disclose the financial arrangement to clients",
+      "B": "disclose only that subadvisers are used",
+      "C": "treat the payments as irrelevant"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: fee arrangements may bias selection</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that payments from subadvisers based on assets placed with them create a conflict under Standard VI(A). The governing rule is that fee arrangements and other nonstandard compensation structures that may affect objectivity must be disclosed. The intuition is that the manager may prefer a paying subadviser over a better one for the client. Because the payment source can influence the choice, clients need that information. So, the financial arrangement should be disclosed.</p><p>Why top distractor is wrong (PDF-based misconception). Saying only that subadvisers are used does not tell clients about the incentive that may bias which subadviser is chosen.</p><p>Why remaining distractor is wrong. The payments are directly relevant because they can reasonably impair independent selection of subadvisers.</p>"
+  },
+  {
+    "id": "14",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "An adviser has personally lent money to a company and then invests client assets in that company without telling clients. The main Standard VI(A) issue is most likely:",
+    "options": {
+      "A": "the undisclosed creditor conflict",
+      "B": "the size of the office",
+      "C": "the color of the prospectus"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: being a creditor can bias judgment</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that when an adviser is a creditor of a company in which client assets are invested, that financial position creates a conflict under Standard VI(A). The governing rule is that personal interests that could impair objectivity must be disclosed. The intuition is that client money may help a company repay the adviser personally. Because that incentive can interfere with loyalty to clients, the undisclosed creditor position is the core issue. Therefore, option A is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Office details have nothing to do with the adviser’s independence and objectivity in the investment decision.</p><p>Why remaining distractor is wrong. Document design is irrelevant to whether a personal financial interest should have been disclosed.</p>"
+  },
+  {
+    "id": "15",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A portfolio manager’s bonus changes to reward short-term results, and that may conflict with long-term client objectives. She should most likely:",
+    "options": {
+      "A": "disclose the compensation change to clients",
+      "B": "say nothing because bonuses are private",
+      "C": "change strategy without explanation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: changed incentives can create new conflicts</h3><p><strong>A is correct.</strong> The CFA Curriculum treats a compensation change that pushes a manager toward short-term performance as a conflict under Standard VI(A) when clients have long-term objectives. The governing rule is that compensation structures that may impair objectivity or interfere with duties must be disclosed. The intuition is that the manager may now have a reason to favor short-term gains over the client’s stated mandate. Because the conflict arises from the changed pay arrangement, clients should be told. So, disclosure to clients is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Bonus details become relevant when they create incentives that may conflict with client interests.</p><p>Why remaining distractor is wrong. Changing strategy without explaining the conflict leaves clients unable to judge whether the action serves them or the manager’s pay.</p>"
+  },
+  {
+    "id": "16",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A stock promoter offers a broker extra compensation for selling one issuer’s shares to clients. At minimum, the broker should most likely:",
+    "options": {
+      "A": "disclose the arrangement to clients",
+      "B": "accept quietly if the stock is attractive",
+      "C": "hide it from everyone except the promoter"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: outside pay can distort recommendations</h3><p><strong>A is correct.</strong> The CFA Curriculum states that extra compensation from a stock promoter for selling an issuer’s shares creates a conflict under Standard VI(A). The governing rule is that clients must be told about matters that could reasonably impair objectivity. The intuition is that the broker may recommend the stock partly because of the extra pay rather than only because it is suitable. At minimum, that arrangement must be disclosed to clients so they can evaluate the recommendation. Therefore, option A is correct.</p><p>Why top distractor is wrong (PDF-based misconception). The stock’s attractiveness does not remove the conflict created by separate compensation tied to the sale.</p><p>Why remaining distractor is wrong. Standard VI(A) requires disclosure, not concealment, when compensation may bias advice.</p>"
+  },
+  {
+    "id": "17",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A chief investment officer shifts assets to a manager run by an old classmate and tells the employer only later in an annual report. He should most likely have:",
+    "options": {
+      "A": "disclosed the personal relationship promptly to the employer",
+      "B": "waited for the annual report",
+      "C": "disclosed only if returns fell"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: prompt employer disclosure matters</h3><p><strong>A is correct.</strong> The CFA Curriculum example on requested favors shows that a personal relationship with a selected manager can impair independence and should be disclosed to the employer promptly under Standard VI(A). The governing rule is that conflicts affecting employer-related decisions must be reported in time for assessment. The intuition is that the employer must know before or during the decision, not after it is complete. Because delayed reporting prevents proper review of the conflict, prompt disclosure was required. So, option A is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Waiting for an annual report is too late because it does not let the employer assess the conflict when the decision is made.</p><p>Why remaining distractor is wrong. The duty to disclose does not depend on whether the later performance outcome is good or bad.</p>"
+  },
+  {
+    "id": "18",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A firm tells clients only that certain entities are affiliated, but it does not explain the nature, magnitude, or extent of financial ties. This disclosure is most likely:",
+    "options": {
+      "A": "sufficient because affiliation was mentioned",
+      "B": "insufficient",
+      "C": "sufficient if compliance reviewed it"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: clients need the real economic picture</h3><p><strong>B is correct.</strong> The CFA Curriculum indicates that conflict disclosures must communicate relevant information effectively under Standard VI(A). The governing rule is full and fair disclosure, not partial hints. The intuition is that a generic statement about affiliation does not tell clients how strong the financial incentives are or why objectivity may be affected. Without the nature, magnitude, and extent of the ties, clients cannot properly evaluate the conflict. Therefore, the disclosure is insufficient.</p><p>Why top distractor is wrong (PDF-based misconception). Mentioning affiliation alone does not satisfy the requirement for full and fair disclosure of a meaningful financial conflict.</p><p>Why remaining distractor is wrong. Internal compliance review does not replace clear disclosure to clients.</p>"
+  },
+  {
+    "id": "19",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "Standard VI(A) says clients should receive disclosures about known conflicts of whose firm?",
+    "options": {
+      "A": "only competing firms",
+      "B": "the member’s own firm",
+      "C": "only firms in other countries"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: firm conflicts also matter</h3><p><strong>B is correct.</strong> The CFA Curriculum states that members must take reasonable steps to determine whether a conflict exists and disclose to clients any known conflicts of their firm. The governing rule covers both personal conflicts and firm-level conflicts. The intuition is that a client is affected not only by the member’s incentives but also by the firm’s incentives tied to recommendations or actions. Because the standard specifically refers to known conflicts of the member’s firm, that is the correct answer. So, option B is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Standard VI(A) is concerned with conflicts in the member’s own professional setting, not only with outside competitors.</p><p>Why remaining distractor is wrong. Geography is irrelevant; the issue is whether the member’s own firm has a known conflict affecting the client.</p>"
+  },
+  {
+    "id": "20",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A member has an unavoidable conflict and has already disclosed it. The CFA Curriculum says the member should also most likely:",
+    "options": {
+      "A": "seek to mitigate the conflict and disclose that mitigation",
+      "B": "do nothing further",
+      "C": "stop all communication with clients"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: disclosure is not the only step</h3><p><strong>A is correct.</strong> The CFA Curriculum says that when a conflict cannot reasonably be avoided, clear disclosure is necessary and members should also seek to mitigate the conflict to the extent possible and disclose how it has been mitigated. The governing rule is to manage unavoidable conflicts, not merely mention them. The intuition is that reducing the conflict protects clients and employers beyond simple notice. Because mitigation plus disclosure of the mitigation improves protection, option A is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Standard VI(A) does not treat disclosure as the end of the process when further mitigation is possible.</p><p>Why remaining distractor is wrong. Stopping all communication is not the rule and would not by itself address the underlying conflict.</p>"
+  },
+  {
+    "id": "21",
+    "model": "ChatGPT",
+    "topic": "Standard VI(A): Conflicts of Interest",
+    "stem": "A colleague casually asks which adviser a member uses personally. The member mentions her brother, who is an adviser, but gives no professional advice and no referral fee is paid. Under Standard VI(A), this is most likely:",
+    "options": {
+      "A": "a clear violation",
+      "B": "not a violation on these facts",
+      "C": "a violation because family ties must always be disclosed"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: context matters for whether a duty arises</h3><p><strong>B is correct.</strong> In the CFA Curriculum, a casual personal conversation of this type did not create a required disclosure under Standard VI(A) because the colleague was not a client or prospective client of the member in that exchange, no professional advice was being given, and no referral fee influenced the recommendation. The governing rule is to disclose conflicts that could impair duties to clients, prospective clients, or employers. The intuition is that not every family connection triggers a formal conflict disclosure duty in a purely personal setting. On these facts, the standard is not violated. Therefore, option B is correct.</p><p>Why top distractor is wrong (PDF-based misconception). The curriculum treats disclosure here as prudent, but not mandatory, given the personal context and lack of professional advice.</p><p>Why remaining distractor is wrong. Family ties do not always require disclosure; the duty depends on whether the relationship creates a relevant professional conflict in the specific setting.</p>"
+  }
+]

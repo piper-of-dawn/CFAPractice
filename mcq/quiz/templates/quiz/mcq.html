@@ -305,7 +305,7 @@
   .sidebar { position: sticky; top: 24px; color: var(--secondary); }
   .metric { display: flex; align-items: baseline; justify-content: space-between; color: var(--secondary); margin-bottom: 8px; }
   .metric .label { color: var(--secondary); font-size: 12px; }
-  .metric .value { color: var(--secondary); font-weight: 700; font-size: 20px; font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .metric .value { color: var(--secondary); font-weight: 400; font-size: 20px; font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   .metric .value-small { font-size: 14px; font-weight: 600; }
   #scoreValue,
   #streakValue,
@@ -513,7 +513,7 @@
   #explainModal .katas-body h5,
   #explainModal .katas-body h6,
   #explainModal .katas-body .stem {
-    font-family: Cambria, Georgia, "Times New Roman", serif;
+    font-family: Cambria, "Georgia Pro", Georgia, "Times New Roman", serif;
   }
   #explainModal .katas-body {
     max-width: 100%;
@@ -793,13 +793,34 @@
       box-sizing: border-box;
     }
     .katas-head {
-      position: static;
+      position: sticky;
+      top: 0;
+      z-index: 2;
       margin-bottom: 10px;
-      padding-bottom: 0;
+      padding: 4px 0 10px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
     .katas-title {
       font-size: 11px;
       letter-spacing: 0.1em;
+    }
+    .katas-close {
+      right: 4px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border-radius: 999px;
+      border: 1px solid rgba(75, 76, 83, 0.18);
+      background: rgba(255, 255, 255, 0.52);
+      color: #2f3035;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 24px rgba(16, 16, 20, 0.08);
     }
     .katas-body h1 {
       font-size: clamp(50px, 11vw, 66px);
@@ -816,15 +837,15 @@
       color: #4d5563;
     }
     .katas-body p {
-      font-size: 17px;
-      line-height: 1.56;
+      font-size: 18px;
+      line-height: 1.64;
       margin: 0 0 26px;
       text-align: justify;
       text-justify: inter-word;
     }
     .katas-richtext > * {
-      font-size: 17px;
-      line-height: 1.56;
+      font-size: 18px;
+      line-height: 1.64;
       margin: 0 0 20px;
       text-align: left;
     }
@@ -834,8 +855,8 @@
       padding-left: 1.2em;
     }
     .katas-richtext li {
-      font-size: 17px;
-      line-height: 1.56;
+      font-size: 18px;
+      line-height: 1.64;
       margin: 0 0 10px;
     }
     .katas-stem {
@@ -849,7 +870,8 @@
     .katas-stem h2,
     .katas-stem h3 {
       text-align: left;
-      line-height: 1.45;
+      font-size: 18px;
+      line-height: 1.58;
     }
     .katas-richtext h1,
     .katas-richtext h2,
@@ -867,8 +889,8 @@
     }
     .katas-body blockquote {
       margin: 0 0 22px;
-      font-size: 19px;
-      line-height: 1.58;
+      font-size: 20px;
+      line-height: 1.66;
     }
   }
   </style>
@@ -1085,10 +1107,8 @@
       const questions = Array.from(document.querySelectorAll('section.question'));
       const inlineExplanationBodies = new Map();
       const inlineExplanationStems = new Map();
-      const quizStorageKey = `quiz-progress:${window.location.pathname}:${document.body.dataset.quizSource || document.title || 'quiz'}`;
       let activeExplanationHtml = '';
       let activeExplanationStemHtml = '';
-      let lastActiveQuestion = '';
 
       function escapeHtml(value) {
         return String(value || '')
@@ -1243,56 +1263,6 @@
           btn.classList.remove('attention');
         }
       }
-      function readQuizState() {
-        try {
-          const raw = sessionStorage.getItem(quizStorageKey);
-          return raw ? JSON.parse(raw) : null;
-        } catch (_) {
-          return null;
-        }
-      }
-      function saveQuizState(extra) {
-        try {
-          const answers = {};
-          const reported = [];
-          questions.forEach((sec) => {
-            const qname = sec.dataset.qname;
-            if (!qname) return;
-            const checked = document.querySelector(`input[name="${qname}"]:checked`);
-            if (checked) answers[qname] = parseInt(checked.value, 10);
-            if (sec.dataset.reported) reported.push(qname);
-          });
-          sessionStorage.setItem(quizStorageKey, JSON.stringify({
-            answers,
-            reported,
-            activeQuestion: lastActiveQuestion || '',
-            scrollY: window.scrollY || document.documentElement.scrollTop || 0,
-            savedAt: Date.now(),
-            ...(extra || {}),
-          }));
-        } catch (_) {}
-      }
-      function restoreQuizState() {
-        const state = readQuizState();
-        if (!state || typeof state !== 'object') return;
-        const answers = state.answers || {};
-        Object.entries(answers).forEach(([qname, value]) => {
-          const input = document.querySelector(`input[name="${qname}"][value="${value}"]`);
-          if (input) input.checked = true;
-        });
-        (state.reported || []).forEach((qname) => {
-          const sec = document.querySelector(`section.question[data-qname="${qname}"]`);
-          if (sec) sec.dataset.reported = '1';
-        });
-        Object.keys(answers).forEach((qname) => onCheck({ dataset: { target: qname } }, { reportMistake: false, saveState: false }));
-        if (state.activeQuestion && answers[state.activeQuestion] !== undefined) {
-          lastActiveQuestion = state.activeQuestion;
-          onCheck({ dataset: { target: state.activeQuestion } }, { reportMistake: false, saveState: false });
-        }
-        if (typeof state.scrollY === 'number') {
-          window.requestAnimationFrame(() => window.scrollTo(0, state.scrollY));
-        }
-      }
       function hideExplanation() {
         if (outcomeBox) outcomeBox.hidden = true;
       }
@@ -1381,7 +1351,7 @@
       }
 
       function onCheck(btn, options){
-        const { reportMistake = true, saveState: shouldSaveState = true } = options || {};
+        const { reportMistake = true } = options || {};
         const target = btn.dataset.target;
         const sec = document.querySelector(`section.question[data-qname="${target}"]`);
         if (!sec) return;
@@ -1565,7 +1535,6 @@
             modal.classList.add('is-visible');
           });
         });
-        saveQuizState();
         // Lock background scroll without losing position
         // Capture current scroll position
         __lockedScrollY = window.scrollY || document.documentElement.scrollTop || 0;
@@ -1600,13 +1569,7 @@
         // Scroll back to where the user was
         const y = top ? -top : (__lockedScrollY || 0);
         window.scrollTo(0, y);
-        saveQuizState({ scrollY: y });
       }
-      window.addEventListener('pagehide', () => saveQuizState());
-      document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'hidden') saveQuizState();
-      });
-      window.addEventListener('pageshow', () => restoreQuizState());
 
       // ===== Timer + Avg time per question =====
       const timerEl = document.getElementById('timerValue');

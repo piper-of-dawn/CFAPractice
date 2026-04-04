@@ -1,0 +1,432 @@
+[
+  {
+    "id": 1,
+    "topic": "Primary and secondary fixed-income markets",
+    "stem": "Consider the following:\nI. A new corporate legal entity formed after a merger that refinances existing debt\nII. Existing bonds traded among investors\nIII. An increase in the size of an existing bond issue at a price significantly different from par\nHow many of the above are examples of debut bond issuers?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum defines debut issuers as first-time bond issuers, with examples including new corporate legal entities formed after a merger, acquisition, or divestiture that refinance existing debt. Item I fits that definition. Item II is secondary market trading, not issuance. Item III is a reopening of an existing bond, not a debut issue. Therefore, only one item qualifies.</p><p>Why option B is incorrect. Two items do not qualify because only Item I is a debut issuer example; Items II and III refer to later trading or reopening activity.</p><p>Why option C is incorrect. All three do not satisfy the criterion because the CFA curriculum clearly distinguishes secondary trading and reopening from a first-time bond issuance.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Short-term funding alternatives",
+    "stem": "Consider the following:\nI. Usually offered on an unsecured basis to clients that maintain stable cash deposits at the bank\nII. Usually involves an upfront commitment fee on the line\nIII. Represents the most reliable source of short-term bank funding for a company\nHow many of the above are characteristics of an uncommitted line of credit?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum states that uncommitted lines are often offered on an unsecured basis to clients with stable cash deposits, so Item I qualifies. Uncommitted lines do not require compensation other than interest on balances outstanding, so Item II is false. The CFA curriculum identifies revolvers, not uncommitted lines, as the most reliable source of short-term bank funding, so Item III is false. Thus, only one item satisfies the condition.</p><p>Why option B is incorrect. Only Item I matches the CFA curriculum; the other two conflict with the text on fees and reliability.</p><p>Why option C is incorrect. The CFA curriculum does not support all three statements because uncommitted lines lack upfront commitment fees and are the least reliable form of bank borrowing.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Short-term funding alternatives",
+    "stem": "Consider the following:\nI. It involves a formal written commitment.\nII. It has no upfront commitment fee.\nIII. It is defined as a multiyear credit commitment with covenant protections.\nHow many of the above most accurately describe a committed regular line of credit?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion for a committed regular line is the formal written commitment, so Item I is correct. The CFA curriculum says regular committed lines usually involve upfront costs in the form of a commitment fee, so Item II is incorrect. Multiyear credit commitments with covenant protections are revolvers, not regular committed lines, so Item III is incorrect. Therefore, only one item qualifies.</p><p>Why option B is incorrect. Two items cannot qualify because the CFA curriculum assigns the fee-free feature to uncommitted lines and the multiyear covenant feature to revolvers.</p><p>Why option C is incorrect. All three are not correct because only the written commitment is a defining feature of a regular committed line.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Short-term funding alternatives",
+    "stem": "Consider the following:\nI. Multiyear credit commitments in which lenders typically seek covenants that require or restrict certain borrower actions\nII. The least reliable form of bank borrowing for a company\nIII. A source of financing that usually avoids commitment fees\nHow many of the above most accurately describe revolving credit agreements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum defines revolvers as multiyear credit commitments in which lenders typically seek covenant protections, so Item I is correct. Item II is incorrect because uncommitted lines are the least reliable form of borrowing. Item III is incorrect because revolvers have similar borrowing rates and commitment fee features to regular committed lines. Hence, only one item meets the rule.</p><p>Why option B is incorrect. The CFA curriculum supports only Item I; the other two describe other instruments or contradict the stated fee structure.</p><p>Why option C is incorrect. All three do not qualify because revolvers are reliable and may include commitment fees.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Secured loans and factoring",
+    "stem": "Consider the following:\nI. Accounts receivable are sold to a factor, typically at a substantial discount.\nII. The company remains responsible for collecting the accounts.\nIII. Inventory cannot be used as collateral for a loan.\nHow many of the above are consistent with factoring as described in the CFA curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Under factoring, the company sells accounts receivable to a factor at a substantial discount, so Item I is correct. The CFA curriculum contrasts this with assignment, under which the company remains responsible for collection, making Item II incorrect. It also states that inventory can be used in different ways as collateral for a loan, so Item III is incorrect. Only one statement matches the factoring rule.</p><p>Why option B is incorrect. Two statements do not qualify because Item II describes assignment, and Item III conflicts with the CFA curriculum's treatment of inventory as possible collateral.</p><p>Why option C is incorrect. All three are not consistent with factoring because only the sale of receivables to a factor is part of that arrangement.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Commercial paper",
+    "stem": "Consider the following:\nI. It is a short-term unsecured note that can fund working capital, seasonal cash demand, or bridge financing.\nII. It is secured directly by pledged collateral.\nIII. It typically has a maturity longer than one year.\nHow many of the above most accurately describe commercial paper issued by corporations?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum defines commercial paper as short-term unsecured notes used for working capital, seasonal cash needs, or bridge financing, so Item I is correct. Item II is incorrect because commercial paper is unsecured. Item III is incorrect because the CFA curriculum says corporate commercial paper typically matures in less than three months. Therefore, only one item satisfies the criterion.</p><p>Why option B is incorrect. Only Item I is supported; the other two contradict the unsecured and very short-term nature of commercial paper.</p><p>Why option C is incorrect. All three are not correct because the CFA curriculum does not describe commercial paper as secured or longer than one year.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Commercial paper and rollover risk",
+    "stem": "Consider the following:\nI. A committed backup line of credit, also called a liquidity enhancement\nII. Bridge financing obtained by issuing additional commercial paper\nIII. A credit rating by itself\nHow many of the above would most likely minimize rollover risk for a commercial paper issuer?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum states that investors usually require a committed backup line of credit, or liquidity enhancement, to ensure maturing commercial paper can be repaid if rollover is not possible, so Item I qualifies. Item II does not reduce rollover risk because it depends on more issuance. Item III is also insufficient because a credit rating does not itself remove rollover risk. Thus, only one item fits.</p><p>Why option B is incorrect. Two items do not satisfy the condition because only the committed backup line directly addresses failure to roll the paper.</p><p>Why option C is incorrect. All three do not minimize rollover risk; the CFA curriculum singles out liquidity enhancement rather than extra issuance or ratings alone.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Asset-backed commercial paper",
+    "stem": "Consider the following:\nI. The SPE issues ABCP to investors, with a backup credit liquidity line provided by the bank.\nII. The financing is recorded on the balance sheet of the issuer.\nIII. Investors obtain direct ownership of the transferred loans instead of a short-term note.\nHow many of the above are correct descriptions of ABCP issuance?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> In the CFA curriculum's ABCP structure, the bank transfers short-term loans to an SPE, and the SPE issues ABCP to investors with a backup liquidity line provided by the bank, so Item I is correct. Item II is incorrect because this financing is described as off-balance-sheet for the issuer. Item III is incorrect because investors buy a liquid, short-term note backed by loan cash flows, not direct ownership of the loans. Only one statement qualifies.</p><p>Why option B is incorrect. Two statements are not correct because the balance-sheet treatment and investor position are both misstated in Items II and III.</p><p>Why option C is incorrect. The CFA curriculum does not support all three statements; only the SPE issuance with bank liquidity support is accurate.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Repurchase agreements",
+    "stem": "Consider the following:\nI. Finance the ownership of a security\nII. Earn short-term income by lending funds on an unsecured basis\nIII. Borrow a security in order to hold it without selling it short\nHow many of the above are specific repo market purposes stated in the CFA curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum lists three repo purposes, including financing the ownership of a security, so Item I is correct. Item II is incorrect because the income is earned by lending funds on a secured basis. Item III is incorrect because the CFA curriculum says a security may be borrowed in order to sell it short, not merely to hold it. Therefore, only one listed item matches the stated purposes.</p><p>Why option B is incorrect. Two items do not satisfy the criterion because the security of the lending and the short-sale purpose are misstated.</p><p>Why option C is incorrect. All three are not repo purposes as stated in the CFA curriculum; only financing ownership appears exactly as listed.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Repo rates",
+    "stem": "Consider the following:\nI. Higher demand for a specific collateral security\nII. Higher collateral risk\nIII. A longer repo term under normal market conditions\nHow many of the above would most likely lower a repo rate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum states that greater collateral uniqueness, meaning higher demand for a specific security, lowers the repo rate, so Item I qualifies. Higher collateral risk increases repo rates, making Item II incorrect. Repo rates generally increase with maturity under normal conditions, so Item III is also incorrect. Only one item lowers the repo rate.</p><p>Why option B is incorrect. Two items do not qualify because both higher collateral risk and longer term move repo rates upward in the CFA curriculum.</p><p>Why option C is incorrect. All three do not lower the repo rate; only the uniqueness of the collateral does.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Repo risks",
+    "stem": "Consider the following:\nI. Collateral should have little or no correlation with the repo counterparty's credit risk.\nII. Collateral eliminates default risk under a repo transaction.\nIII. Legal risk addresses proper and timely collateral valuation and variation margin transfer.\nHow many of the above are consistent with the CFA curriculum's discussion of repo risks?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum says collateral should have little or no correlation with counterparty credit risk to diversify exposure, so Item I is correct. Item II is incorrect because default risk remains the primary exposure despite collateral. Item III is incorrect because valuation and variation margin relate to margining risk, whereas legal risk concerns enforceability of rights under the agreement. Thus, only one statement is consistent with the classification.</p><p>Why option B is incorrect. Two items do not fit because the CFA curriculum expressly preserves default risk and separately defines margining risk and legal risk.</p><p>Why option C is incorrect. All three are not consistent with the repo risk discussion; only the low-correlation collateral criterion is stated that way.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Bilateral versus triparty repos",
+    "stem": "Consider the following:\nI. A triparty agent administers cash, securities, collateral valuation and management, and collateral custody.\nII. A triparty repo removes the credit risk relationship between the two repo participants.\nIII. A triparty repo is a repo executed directly between two parties without an agent.\nHow many of the above most accurately describe a triparty repo arrangement?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum explains that the triparty agent administers the transaction and handles cash, securities, collateral valuation, management, and custody, so Item I is correct. Item II is incorrect because the agent does not change the credit risk relationship between participants. Item III is incorrect because a repo executed directly between two parties is a bilateral repo. Therefore, only one item satisfies the criterion.</p><p>Why option B is incorrect. Two items are wrong because the triparty structure neither eliminates participant credit risk nor describes direct bilateral execution.</p><p>Why option C is incorrect. All three are not accurate descriptions of triparty repos; only the agent's administrative role is correct.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Investment-grade versus high-yield issuance",
+    "stem": "Consider the following:\nI. Investment-grade bonds usually have a significant proportion of YTM attributed to the government benchmark yield and few restrictive covenants.\nII. High-yield issuers generally have longer maturities and fewer investor constraints than investment-grade issuers.\nIII. High-yield bonds have more bond-like cash flows than investment-grade bonds.\nHow many of the above are consistent with the CFA curriculum's contrast between investment-grade and high-yield debt?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum states that investment-grade bonds derive a larger share of YTM from the government benchmark and typically carry few or no restrictive covenants, so Item I is correct. Item II is incorrect because high-yield issuers face shorter maturities and more investor constraints. Item III is incorrect because the CFA curriculum describes high-yield debt as more equity-like, not more bond-like. Hence, only one item matches the rule.</p><p>Why option B is incorrect. Two items do not qualify because the CFA curriculum assigns tighter restrictions and more equity-like cash flows to high-yield debt.</p><p>Why option C is incorrect. All three are not consistent with the contrast; only Item I reflects the stated investment-grade characteristics.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Fallen angels",
+    "stem": "Consider the following:\nI. Their outstanding debt typically retains investment-grade features such as being non-callable, having few covenants, and having longer maturities.\nII. Original investors are usually forced to divest because issuer credit quality improves.\nIII. Their likelihood of financial distress is lower than that of other high-yield issuers.\nHow many of the above most accurately describe fallen angels?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA curriculum defines fallen angels as formerly investment-grade issuers whose outstanding debt still has investment-grade features, so Item I is correct. Item II is incorrect because divestment follows deterioration in credit quality, not improvement. Item III is incorrect because the CFA curriculum says their likelihood of financial distress is similar to that of other high-yield issuers. Therefore, only one item satisfies the criterion.</p><p>Why option B is incorrect. Two items are not accurate because the trigger for forced selling is deterioration, and the distress likelihood is not lower than that of other high-yield issuers.</p><p>Why option C is incorrect. All three do not describe fallen angels; only the retention of investment-grade bond features is supported by the CFA curriculum.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Primary fixed-income markets",
+    "stem": "Consider the following:\nI. Bonds sold in a public offering may be bought by any member of the public.\nII. A private placement may be bought only by a selected investor or group of investors.\nIII. A repeat bond issuer typically issues more debt under an identical instrument in the same way as a follow-on equity offering.\nHow many of the above are consistent with the CFA curriculum's description of primary bond markets?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum distinguishes a public offering, where any member of the public may buy the bonds, from a private placement, where only a selected investor or group may buy them, so Items I and II qualify. Item III does not qualify because repeat fixed-income issuers usually issue a new security priced at or close to par rather than increasing shares under an identical instrument. Therefore, only two statements satisfy the criterion.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because exactly two items, I and II, match the CFA curriculum's classification.</p><p>Why option C is incorrect. All three do not qualify because Item III conflicts with the CFA curriculum's distinction between follow-on equity issuance and repeat bond issuance.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "Investment-grade bond issuance process",
+    "stem": "Consider the following:\nI. Underwriters and issuer agree to launch the transaction.\nII. The order book closes to investors.\nIII. The final term sheet is delivered and the bonds are free to trade the same or next day.\nHow many of the above occur after the investor conference call in the CFA curriculum's investment-grade corporate bond issuance timeline?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> In the timeline, the investor conference call occurs at 10:30 a.m. The order book closes at 12:00 p.m., and the final term sheet is delivered at 4:00 p.m., so Items II and III occur after the call. Item I takes place at 9:00 a.m., before the conference call. The count is therefore two.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because exactly Items II and III happen after the conference call.</p><p>Why option C is incorrect. All three are not after the investor call because the agreement to launch the transaction precedes it.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "Secondary fixed-income markets",
+    "stem": "Consider the following:\nI. The most recently issued developed market sovereign bonds are typically among the most liquid fixed-income securities.\nII. Recently issued corporate bonds from frequent higher-credit-quality issuers usually exhibit strong liquidity and tight bid-offer spreads.\nIII. Seasoned bonds of less frequent corporate issuers usually trade with the narrowest bid-offer spreads in small size.\nHow many of the above are consistent with the CFA curriculum's description of secondary market liquidity?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum states that on-the-run developed market sovereign bonds are typically the most liquid, so Item I is correct. It also states that recently issued corporate bonds from frequent issuers of higher credit quality usually have the greatest liquidity and tightest spreads, so Item II is correct. Item III is incorrect because less frequent or more seasoned corporate issues tend to have wider spreads, often at least 10 to 20 basis points or more. Thus, two items qualify.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and II match the liquidity rules in the CFA curriculum.</p><p>Why option C is incorrect. All three do not satisfy the criterion because the CFA curriculum says seasoned issues of less frequent issuers are rarely traded and usually have wider spreads.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Deposits and certificates of deposit",
+    "stem": "Consider the following:\nI. Demand deposits are usually checking accounts available for transactional purposes and often pay little or no interest.\nII. A non-negotiable certificate of deposit allows early exit by selling the CD in the open market.\nIII. Large-denomination CDs are a common source of wholesale funding from institutional investors.\nHow many of the above are consistent with the CFA curriculum's discussion of bank deposits?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum describes demand deposits as checking-account-type deposits available for transactions and paying little or no interest, so Item I is correct. It also states that large-denomination CDs are a common wholesale funding source from institutional investors, so Item III is correct. Item II is incorrect because selling in the open market applies to negotiable CDs; non-negotiable CDs instead involve a penalty for early withdrawal. Therefore, only two statements satisfy the rule.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and III align with the deposit classifications in the CFA curriculum.</p><p>Why option C is incorrect. All three are not consistent because Item II confuses negotiable CDs with non-negotiable CDs.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Interbank market and central bank funding",
+    "stem": "Consider the following:\nI. Unsecured interbank loans and deposits typically range from overnight to one year.\nII. Discount window lending is typically offered at a lower interest rate than the central bank funds rate.\nIII. Borrowing directly from the central bank as a last resort may involve posting collateral and greater oversight.\nHow many of the above are consistent with the CFA curriculum's description of bank funding markets?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum says unsecured interbank loans and deposits typically range from overnight to one year, so Item I is correct. It also states that last-resort borrowing from the central bank may require collateral and may lead to greater oversight, so Item III is correct. Item II is incorrect because such lending is offered at a higher interest rate than the central bank funds rate. Hence, two items qualify.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and III match the CFA curriculum and Item II contradicts it.</p><p>Why option C is incorrect. All three do not satisfy the condition because discount window lending is not cheaper than central bank funds borrowing.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Commercial paper markets",
+    "stem": "Consider the following:\nI. Commercial paper issuance is dominated by large financial institutions.\nII. Eurocommercial paper typically involves smaller transaction sizes and lower liquidity than the US commercial paper market.\nIII. Commercial paper is used only by non-financial corporations.\nHow many of the above are consistent with the CFA curriculum's description of commercial paper markets?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum states that commercial paper issuance is dominated by large financial institutions, so Item I is correct. It also states that Eurocommercial paper is similar to US commercial paper but typically has smaller transaction sizes and less liquidity, so Item II is correct. Item III is incorrect because the largest issuers also include financial institutions, governments, and supranational agencies. Therefore, only two items satisfy the criterion.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and II are supported and Item III is not.</p><p>Why option C is incorrect. All three do not qualify because commercial paper is not limited to non-financial corporations.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Repo mechanics",
+    "stem": "Consider the following:\nI. In a repo, the security seller is the cash borrower.\nII. The security seller retains ownership of the security over the repo term.\nIII. The security buyer receives the coupon paid by the security during the repo term as the defining return on the trade.\nHow many of the above are consistent with the CFA curriculum's description of repo mechanics?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum describes the security seller as the cash borrower, so Item I is correct. It also states that the security seller retains ownership of the security over the repo term, so Item II is correct. Item III is incorrect because the security buyer receives the repo rate, while the seller retains the interest and actual coupon paid by the security. Thus, exactly two statements satisfy the rule.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and II match the repo mechanics in the CFA curriculum.</p><p>Why option C is incorrect. All three do not qualify because the buyer's defining return is the repo rate rather than the security coupon.</p>"
+  },
+  {
+    "id": 22,
+    "topic": "Reverse repos and short positions",
+    "stem": "Consider the following:\nI. A hedge fund acting as the security buyer in a repo can borrow a security and sell it in the cash market.\nII. At settlement, the hedge fund can buy back the security in the secondary market and return it in the repo.\nIII. When viewed from the security buyer's perspective, the transaction is called a reverse repo.\nHow many of the above are consistent with the CFA curriculum's description of using a repo to facilitate a short position?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA curriculum's four-step example shows the hedge fund as security buyer borrowing the security in the repo market and selling it in the cash market, so Item I is correct. It later buys back the security and returns it in the repo to settle, so Item II is also correct. The CFA curriculum then states that from the security buyer's perspective, the transaction is referred to as a reverse repurchase agreement or reverse repo, making Item III correct. All three statements therefore satisfy the condition.</p><p>Why option B is incorrect. Only two is too low because the CFA curriculum supports each of the three steps and the naming convention.</p><p>Why option C is incorrect. This option is not incorrect; it is correct because all three items are explicitly described or directly implied by the CFA curriculum.</p>"
+  },
+  {
+    "id": 23,
+    "topic": "Repo risks and structure",
+    "stem": "Consider the following:\nI. Default risk remains the primary exposure under a repo transaction despite the existence of collateral.\nII. Margining risk concerns proper and timely collateral valuation and transfer of variation margin.\nIII. Triparty agents eliminate the credit risk relationship between repo participants in the event of default.\nHow many of the above are consistent with the CFA curriculum's discussion of repo risk management?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum says default risk is the primary exposure under a repo even with collateral, so Item I is correct. It also states that margining risk involves proper and timely collateral valuation and transfer of variation margin, so Item II is correct. Item III is incorrect because triparty agents do not change the underlying credit risk relationship between participants. Therefore, two statements satisfy the criterion.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and II match the stated risk framework.</p><p>Why option C is incorrect. All three are not consistent because the CFA curriculum explicitly says triparty structure does not remove participant credit risk.</p>"
+  },
+  {
+    "id": 24,
+    "topic": "Long-term issuer maturity trade-offs",
+    "stem": "Consider the following:\nI. For a given issuer under normal market conditions, longer maturities are associated with higher government yields.\nII. For a given issuer under normal market conditions, longer maturities are associated with higher credit spreads.\nIII. An issuer choosing a shorter maturity to fund a longer project avoids rollover risk.\nHow many of the above are consistent with the CFA curriculum's description of long-term maturity choices?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum states that under normal market conditions longer maturities are associated with both higher government yields and higher credit spreads for a given issuer, so Items I and II are correct. Item III is incorrect because funding a longer project with shorter debt creates rollover risk, meaning the issuer may need to refinance at higher rates later. Thus, only two items satisfy the condition.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because Items I and II are supported while Item III reverses the CFA curriculum's rollover-risk logic.</p><p>Why option C is incorrect. All three do not qualify because shorter maturity funding does not eliminate rollover risk.</p>"
+  },
+  {
+    "id": 25,
+    "topic": "Investment-grade debt features",
+    "stem": "Consider the following:\nI. Investment-grade issuers usually have broad flexibility in choosing debt maturities, often up to 30 years.\nII. Investment-grade borrowers generally issue debt with few or no restrictive covenants.\nIII. Investment-grade issuers usually face the same level of ongoing monitoring and restrictive creditor protections as high-yield issuers.\nHow many of the above are consistent with the CFA curriculum's description of investment-grade debt?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA curriculum explains that investment-grade borrowers can usually choose maturities up to 30 years and are accepted by investors with few or no restrictive covenants, so Items I and II are correct. Item III is incorrect because high investor confidence in investment-grade issuers allows relatively little monitoring from bondholders throughout the debt term. Therefore, exactly two statements satisfy the criterion.</p><p>Why option B is incorrect. This option is not incorrect; it is correct because the CFA curriculum supports Items I and II but not the claim of equally restrictive monitoring.</p><p>Why option C is incorrect. All three do not qualify because investment-grade debt is explicitly described as less restrictive than high-yield debt.</p>"
+  },
+  {
+    "id": 26,
+    "topic": "High-yield debt features",
+    "stem": "Consider the following:\nI. High-yield issuers often face shorter maturities, typically 10 years or less.\nII. High-yield investors place greater emphasis on likelihood of default and loss given default.\nIII. Callable debt may appeal to issuers that believe their creditworthiness will improve because they may refinance at a lower YTM later.\nHow many of the above are consistent with the CFA curriculum's description of high-yield debt?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA curriculum states that high-yield issuers typically face shorter maturities of 10 years or less, so Item I is correct. Because default is more likely, analysts emphasize likelihood of default and loss given default, making Item II correct. The CFA curriculum also explains that issuers expecting improved creditworthiness often choose callable debt so they can refinance at a lower YTM if spreads fall enough, so Item III is correct. All three statements satisfy the criterion.</p><p>Why option B is incorrect. Only two is too low because each item is directly supported by the discussion of high-yield issuance and callable debt.</p><p>Why option C is incorrect. This option is not incorrect; it is correct because all three statements match the CFA curriculum's treatment of high-yield features.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Short-term funding alternatives",
+    "stem": "Assertion (A): Committed bank lines of credit are generally more reliable than uncommitted lines of credit.\nReason (R): Committed lines involve a formal written commitment.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum states that committed lines are more reliable than uncommitted lines because they involve a formal written commitment. The reason is therefore the mechanism that explains the assertion."
+  },
+  {
+    "id": 2,
+    "topic": "Short-term funding alternatives",
+    "stem": "Assertion (A): Uncommitted bank lines of credit are the least reliable form of bank borrowing for a company.\nReason (R): Uncommitted lines do not require the company to pay compensation other than interest on balances outstanding.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "B is correct. The assertion is true because banks may refuse to honor requests under uncommitted lines, making them the least reliable. The reason is also true, but the absence of fees does not explain the lack of reliability."
+  },
+  {
+    "id": 3,
+    "topic": "Commercial paper and rollover risk",
+    "stem": "Assertion (A): A commercial paper issuer most likely obtains liquidity enhancement to minimize rollover risk.\nReason (R): A credit rating by itself ensures that maturing commercial paper can be fully repaid if rollover is not possible.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "C is correct. The CFA curriculum states that investors usually require a committed backup line of credit, or liquidity enhancement, to address rollover risk. A credit rating does not itself ensure repayment if rollover is not possible."
+  },
+  {
+    "id": 4,
+    "topic": "Repurchase agreements",
+    "stem": "Assertion (A): From a security buyer's perspective, a repo offers a short-term cash investment with significant liquidity or default risk.\nReason (R): Overnight cash repos with high-quality collateral result in the lowest return.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "D is correct. The assertion is false because the CFA curriculum says a repo offers a collateralized investment with minimal liquidity or default risk from the security buyer's perspective. The reason is true because overnight repos with high-quality collateral provide the lowest return."
+  },
+  {
+    "id": 5,
+    "topic": "Asset-backed commercial paper",
+    "stem": "Assertion (A): Asset-backed commercial paper financing is not recorded on the balance sheet of the issuer.\nReason (R): In the ABCP structure, loans are transferred to an SPE that issues ABCP to investors.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum describes ABCP as off-balance-sheet financing. That treatment follows from the structure in which the bank transfers short-term loans to an SPE and the SPE issues the ABCP."
+  },
+  {
+    "id": 6,
+    "topic": "Repurchase agreements",
+    "stem": "Assertion (A): Repo rates generally increase with maturity under normal market conditions.\nReason (R): Higher demand for a specific collateral security lowers the repo rate.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "B is correct. The assertion is true because the CFA curriculum says repo rates generally increase with maturity under normal market conditions. The reason is also true, but collateral uniqueness is a different driver and does not explain the maturity effect."
+  },
+  {
+    "id": 7,
+    "topic": "Reverse repos and short positions",
+    "stem": "Assertion (A): Financial market participants use the repo market to borrow a security in order to sell it short.\nReason (R): When viewed from the security buyer's perspective, the transaction is called a triparty repo.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "C is correct. The assertion is true because the CFA curriculum lists borrowing a security in order to sell it short as one of the repo market's uses. The reason is false because, from the security buyer's perspective, the transaction is called a reverse repo, not a triparty repo."
+  },
+  {
+    "id": 8,
+    "topic": "Fallen angels",
+    "stem": "Assertion (A): Fallen angels typically have outstanding debt with high-yield bond features, such as shorter maturities and many restrictive covenants.\nReason (R): Original investment-grade investors may be forced to divest these bonds once they no longer meet minimum rating requirements.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "D is correct. The assertion is false because the CFA curriculum says fallen angels usually retain investment-grade bond features, including typically being non-callable, having few restrictions and covenants, and having longer maturities. The reason is true because original investment-grade investors may need to sell once the bonds fall below required ratings."
+  },
+  {
+    "id": 9,
+    "topic": "High-yield issuance",
+    "stem": "Assertion (A): High-yield issuers may choose callable debt when they expect their creditworthiness to improve.\nReason (R): If future financing cost savings exceed the call premium in present value terms, the issuer may redeem the bonds and issue new debt at a lower YTM.\nOptions:\n(A) Both A and R are true and R is the correct explanation of A\n(B) Both A and R are true but R is not the correct explanation of A\n(C) A is true but R is false\n(D) A is false but R is true",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "A is correct. The CFA curriculum explains that borrowers who expect improved creditworthiness often issue callable debt. The reason states the mechanism: if the refinancing savings exceed the call premium, calling the bonds and reissuing at a lower YTM is rational."
+  }
+
+]

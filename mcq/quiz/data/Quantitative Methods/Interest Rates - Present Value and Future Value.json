@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "An investor places USD 100 today in an account that earns 5% per year for 2 years. The future value is most likely?",
+    "options": {
+      "A": "USD 110.25",
+      "B": "USD 110.00",
+      "C": "USD 115.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: future value of a lump sum</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the lump-sum relation as $FV_t = PV(1 + r)^t$. Here, $PV = 100$, $r = 0.05$, and $t = 2$. So $FV = 100(1.05)^2 = 100(1.1025) = USD 110.25$. Therefore, USD 110.25 is the future value.</p><p>Why B is wrong: USD 110.00 treats the growth as if compounding did not fully apply for both years.</p><p>Why C is wrong: USD 115.00 overstates the growth and does not follow $100(1.05)^2$.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A cash flow of USD 121 will be received in 2 years. If the discount rate is 10% per year, the present value is most likely?",
+    "options": {
+      "A": "USD 100.00",
+      "B": "USD 110.00",
+      "C": "USD 99.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: present value of a lump sum</h3><p><strong>A is correct.</strong> The CFA Curriculum states that present value is $PV = FV_t(1 + r)^{-t}$. Here, $FV = 121$, $r = 0.10$, and $t = 2$. So $PV = 121/(1.10)^2 = 121/1.21 = USD 100.00$. That is the amount today equivalent to USD 121 in two years.</p><p>Why B is wrong: USD 110.00 discounts for only one year instead of two years.</p><p>Why C is wrong: USD 99.00 is too low and does not match the exact two-period discounting in the CFA Curriculum formula.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A discount bond will pay INR 100 in 20 years. If the market discount rate is 6.70% with annual compounding, the present value is most likely?",
+    "options": {
+      "A": "INR 27.33",
+      "B": "INR 33.21",
+      "C": "INR 22.68"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: discount bond present value</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the discount-bond formula as $PV = FV_t/(1 + r)^t$. Using $FV = 100$, $r = 0.067$, and $t = 20$, we get $PV = 100/(1.067)^{20} = INR 27.33$. This is the price paid today for the single principal cash flow.</p><p>Why B is wrong: INR 33.21 is the value after 3 years have passed, leaving 17 years to maturity, not the value at issuance with 20 years remaining.</p><p>Why C is wrong: INR 22.68 is linked to a higher implied yield, not to the 6.70% discount rate stated here.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A pension fund needs CAD 5,000,000 in 10 years. If the quoted annual rate is 6% compounded monthly, the amount to invest today is most likely?",
+    "options": {
+      "A": "CAD 2,748,163.67",
+      "B": "CAD 2,792,847.57",
+      "C": "CAD 3,061,000.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: non-annual compounding</h3><p><strong>A is correct.</strong> The CFA Curriculum adjusts the lump-sum present value formula for non-annual compounding as $PV = FV_N(1 + R_s/m)^{-mN}$. Here, $FV = 5{,}000{,}000$, $R_s = 0.06$, $m = 12$, and $N = 10$. So the periodic rate is $0.06/12 = 0.005$ and the number of periods is $12 \\times 10 = 120$. Thus, $PV = 5{,}000{,}000(1.005)^{-120} = CAD 2{,}748{,}163.67$.</p><p>Why B is wrong: CAD 2,792,847.57 comes from using annual compounding at 6% for 10 years instead of monthly compounding.</p><p>Why C is wrong: CAD 3,061,000.00 is too high and does not apply the curriculum formula with monthly discounting over 120 periods.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A discount bond is priced at INR 22.68224 today and will pay INR 100 in 20 years. The implied annual interest rate is most likely?",
+    "options": {
+      "A": "6.70%",
+      "B": "7.70%",
+      "C": "10.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: solving for the implied rate</h3><p><strong>B is correct.</strong> The CFA Curriculum starts with $PV = FV_t/(1 + r)^t$ and rearranges to solve for the rate. With $PV = 22.68224$, $FV = 100$, and $t = 20$, $r = (100/22.68224)^{1/20} - 1 = 7.70\\%$. This is the annual rate consistent with that price and maturity value.</p><p>Why A is wrong: 6.70% is the earlier yield used for a different bond price of INR 27.33.</p><p>Why C is wrong: 10.00% is above the implied rate from the stated price and would produce a lower present value than INR 22.68224.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A German government bond will pay EUR 100 in 10 years. If the annual yield is -0.05%, the present value at issuance is most likely?",
+    "options": {
+      "A": "EUR 99.50",
+      "B": "EUR 100.00",
+      "C": "EUR 100.50"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: present value with a negative yield</h3><p><strong>C is correct.</strong> The CFA Curriculum still uses $PV = FV_t/(1 + r)^t$. Here, $FV = 100$, $r = -0.0005$, and $t = 10$. So $PV = 100/(1 - 0.0005)^{10} = EUR 100.50$. A negative yield makes the present value slightly above the future value.</p><p>Why A is wrong: EUR 99.50 moves in the opposite direction and would be more consistent with a positive yield, not a negative one.</p><p>Why B is wrong: EUR 100.00 ignores the effect of discounting altogether.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "A bond is trading at EUR 95.72 and will pay EUR 100 in 4 years. The yield to maturity is most likely?",
+    "options": {
+      "A": "0.50%",
+      "B": "1.10%",
+      "C": "4.28%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: implied yield from price and maturity value</h3><p><strong>B is correct.</strong> The CFA Curriculum uses the discount-bond relation $PV = FV_t/(1 + r)^t$ and solves for $r$. With $PV = 95.72$, $FV = 100$, and $t = 4$, the implied rate is $r = (100/95.72)^{1/4} - 1 = 1.10\\%$. So the bond\u2019s yield to maturity is 1.10%.</p><p>Why A is wrong: 0.50% is too low to grow EUR 95.72 to EUR 100 over four years.</p><p>Why C is wrong: 4.28% is the simple total gain from EUR 95.72 to EUR 100, not the annualized rate required by the CFA Curriculum formula.</p>"
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Real risk-free interest rate\nII. Liquidity premium\nIII. Discount rate\nHow many of the above are identified as premiums that compensate investors for bearing a distinct type of risk?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The qualifying criterion is being a premium that compensates investors for bearing a distinct type of risk. Item I does not qualify because the real risk-free interest rate is not a premium. Item II qualifies because the CFA Curriculum identifies the liquidity premium as compensation for liquidity risk. Item III does not qualify because a discount rate is an interpretation of an interest rate, not one of the listed premiums. Therefore, only one item satisfies the condition.</p><p>Why option B is incorrect. Two items do not meet the premium classification, so the count cannot be two.</p><p>Why option C is incorrect. All three do not qualify because only the liquidity premium is a risk premium in this list.</p>",
+    "id": 8
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Required rate of return\nII. Discount rate\nIII. Maturity premium\nHow many of the above are described as an interpretation of an interest rate and also noted as being used almost interchangeably with the term interest rate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The qualifying criterion is stricter than merely being related to interest rates: the item must be an interpretation of an interest rate and also be used almost interchangeably with that term. Item I is an interpretation, but the CFA Curriculum does not say it is used almost interchangeably with interest rate. Item II qualifies because the curriculum states that interest rate and discount rate are used almost interchangeably. Item III does not qualify because a maturity premium is one component of an interest rate, not an interpretation used interchangeably with it. Therefore, only one item qualifies.</p><p>Why option B is incorrect. There is not a second item that meets both parts of the criterion.</p><p>Why option C is incorrect. The maturity premium clearly fails the interpretation test, so all three cannot qualify.</p>",
+    "id": 9
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Inflation premium\nII. Liquidity premium\nIII. Opportunity cost\nHow many of the above compensate investors for the risk of loss relative to fair value if an investment must be converted to cash quickly?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is compensation for the risk of loss relative to fair value when the investment must be converted to cash quickly. Item I does not qualify because the inflation premium compensates for expected inflation. Item II qualifies because the CFA Curriculum defines the liquidity premium exactly in terms of this risk. Item III does not qualify because opportunity cost is an interpretation of an interest rate, not a premium for quick-sale risk. Thus, only one item satisfies the condition.</p><p>Why option B is incorrect. Neither inflation premium nor opportunity cost fits the liquidity-risk definition, so the count does not reach two.</p><p>Why option C is incorrect. The criterion is narrow, and only the liquidity premium matches it.</p>",
+    "id": 10
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Discount cash flow pattern\nII. Periodic interest cash flow pattern\nIII. Level-payment cash flow pattern\nHow many of the above involve uniform cash flows at pre-determined intervals through maturity that represent both interest and principal repayment?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is a pattern with uniform periodic cash flows that combine interest and principal repayment through maturity. Item I does not qualify because a discount instrument pays a single principal cash flow at maturity. Item II does not qualify because periodic interest instruments pay interest during the life of the instrument and principal at maturity, so the final cash flow differs from the earlier ones. Item III qualifies because the level-payment pattern consists of uniform cash flows that include both interest and principal. Therefore, only one item qualifies.</p><p>Why option B is incorrect. The periodic interest pattern is close, but it fails because principal is concentrated in the final payment rather than embedded uniformly in each payment.</p><p>Why option C is incorrect. The discount pattern plainly lacks periodic level payments, so all three cannot satisfy the condition.</p>",
+    "id": 11
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. $FV_t = PV(1 + r)^t$\nII. $PV_t = FVe^{-rt}$\nIII. $PV = FV_t/(1 + r)^t$\nHow many of the above are the continuous-time expression for present value?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is being the continuous-time expression for present value. Item I does not qualify because it is the discrete compounding formula for future value. Item II qualifies because the CFA Curriculum gives $PV_t = FVe^{-rt}$ as the continuous-time equivalent present value expression. Item III does not qualify because it is the discrete present value formula, not the continuous-time version. Hence, only one item satisfies the condition.</p><p>Why option B is incorrect. Only one formula, not two, is both continuous-time and expressed in present value form.</p><p>Why option C is incorrect. The two formulas with $(1 + r)^t$ are discrete-time relationships, so all three cannot qualify.</p>",
+    "id": 12
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Discount bond\nII. Coupon bond\nIII. Mortgage annuity\nHow many of the above have the investor's sole source of return as the difference between the initial price paid and the full principal received at maturity?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The qualifying criterion is that the investor earns return only from the gap between the price paid today and the principal received at maturity. Item I qualifies because the CFA Curriculum states that the discount bond investor's sole source of return is the difference between PV and FV. Item II does not qualify because a coupon bond also pays periodic interest cash flows. Item III does not qualify because a mortgage annuity consists of level payments combining interest and principal over time. Therefore, only one item meets the criterion.</p><p>Why option B is incorrect. Neither the coupon bond nor the mortgage annuity has only one terminal source of return.</p><p>Why option C is incorrect. The curriculum explicitly separates the discount pattern from coupon and level-payment patterns, so all three cannot fit this description.</p>",
+    "id": 13
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. $PV = PMT/r$\nII. $PV = FV_t/(1 + r)^t$\nIII. $A = r(PV)/(1 - (1 + r)^{-t})$\nHow many of the above are presented as the simplified present value formula for a perpetuity or perpetual fixed periodic cash flow without early redemption?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is the simplified present value formula for a perpetuity or perpetual fixed periodic cash flow without early redemption. Item I qualifies because the CFA Curriculum states the perpetuity formula as $PV = PMT/r$. Item II does not qualify because it is the present value formula for a single future cash flow. Item III does not qualify because it solves for the periodic annuity cash flow, not the present value of a perpetuity. Therefore, only one item qualifies.</p><p>Why option B is incorrect. The single-cash-flow and annuity-payment formulas serve different valuation problems, so the count cannot be two.</p><p>Why option C is incorrect. Only the perpetuity formula matches the stated classification.</p>",
+    "id": 14
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. $A$\nII. $PV$\nIII. $t$\nHow many of the above are defined in the annuity formula as the number of payment periods?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is being the variable identified as the number of payment periods in the annuity formula. Item I does not qualify because $A$ is the periodic cash flow. Item II does not qualify because $PV$ is the present value or principal amount. Item III qualifies because the CFA Curriculum defines $t$ as the number of payment periods. Thus, only one item satisfies the condition.</p><p>Why option B is incorrect. The variable labels are distinct in Equation 8, so there is no second item that represents the number of periods.</p><p>Why option C is incorrect. $A$ and $PV$ refer to cash flow amount and principal, not period count.</p>",
+    "id": 15
+  },
+  {
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Constant dividends\nII. Constant dividend growth rate\nIII. Changing dividend growth rate\nHow many of the above assume the investor receives a fixed periodic dividend rather than an initial dividend expected to grow over time?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is assuming a fixed periodic dividend instead of an initial dividend that is expected to grow. Item I qualifies because the constant-dividends approach assumes a fixed periodic dividend. Item II does not qualify because it starts from an initial dividend in one period and assumes constant growth over time. Item III does not qualify because it also starts from an initial dividend in one period, but the growth rate changes over time. Therefore, only one item qualifies.</p><p>Why option B is incorrect. Both growth-based approaches fail the fixed-dividend condition, so the count does not reach two.</p><p>Why option C is incorrect. The curriculum clearly separates constant dividends from dividend-growth models, so all three cannot satisfy the same condition.</p>",
+    "id": 16
+  },
+  {
+    "id": 17,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Present value and future value factors are reciprocals.\nII. Changing compounding frequency changes that reciprocal relationship.\nIII. Monthly compounding requires use of the periodic rate and the corresponding number of periods.\nHow many of the above are consistent with the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The criterion is consistency with the CFA Curriculum's treatment of present value, future value, and compounding frequency. Item I qualifies because the curriculum states that present value and future value factors are reciprocals. Item II does not qualify because the curriculum explicitly states that changing the frequency of compounding does not alter this reciprocal result. Item III qualifies because the curriculum says to use the periodic rate and the corresponding number of compounding periods. Therefore, only two items qualify.</p><p>Why option A is incorrect. It omits one correct statement because both Items I and III satisfy the criterion.</p><p>Why option C is incorrect. Item II contradicts the curriculum's statement on the reciprocal relationship.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Price of a bond equals the sum of the present values of promised coupon payments and par value.\nII. For discount bonds, price reflects only the present value of par value.\nIII. Value of a stock should reflect the sum of the present values of expected future dividends in perpetuity.\nHow many of the above are stated in the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the valuation statement is directly stated in the CFA Curriculum. Item I qualifies because the curriculum gives this bond-pricing description. Item II qualifies because the curriculum separately states that a discount bond reflects only the present value of par value. Item III qualifies because the curriculum states that stock value should reflect the sum of the present values of expected future dividends in perpetuity. Therefore, all three items qualify.</p><p>Why option A is incorrect. It understates the count because more than one statement is explicitly given in the curriculum.</p><p>Why option B is incorrect. It still excludes one valuation statement that the curriculum clearly includes.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Inflation premium\nII. Liquidity premium\nIII. Maturity premium\nHow many of the above are identified in the CFA Curriculum as premiums that may be embedded in an interest rate in addition to the real risk-free rate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the item is listed as a premium that can be added to the real risk-free rate when decomposing an interest rate. Item I qualifies because expected inflation is one of the stated premiums. Item II qualifies because the curriculum includes a liquidity premium. Item III qualifies because the curriculum also includes a maturity premium. Therefore, all three items satisfy the condition.</p><p>Why option A is incorrect. It ignores two other premiums that are explicitly listed in the curriculum.</p><p>Why option B is incorrect. The full decomposition includes all three listed premiums, not just two of them.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. The present value of the difference in two strategies can be zero when the strategies are economically equivalent.\nII. Cash flow additivity supports no-arbitrage pricing.\nIII. Comparing two economically equivalent strategies is used in the CFA Curriculum to illustrate cash flow additivity.\nHow many of the above are consistent with the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the statement matches the curriculum's explanation of cash flow additivity. Item I qualifies because the curriculum shows that the net cash flows from two equivalent strategies can have a present value of zero. Item II qualifies because the curriculum links cash flow additivity to the no-arbitrage condition. Item III qualifies because the examples repeatedly compare economically equivalent strategies to illustrate the principle. Therefore, all three items satisfy the condition.</p><p>Why option A is incorrect. It misses two additional statements that are both directly supported by the curriculum discussion.</p><p>Why option B is incorrect. The curriculum supports each of the three statements, so the count is not limited to two.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Module 1: Interest Rates, Present Value, and Future Value",
+    "stem": "Consider the following:\nI. Borrow for two years at the two-year rate.\nII. Invest for one year at the one-year rate and reinvest for one more year at the forward rate.\nIII. Lock in the forward rate so that the two strategies produce equivalent future values.\nHow many of the above are part of the CFA Curriculum's implied forward rate framework?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the step belongs to the implied forward rate framework described in the CFA Curriculum. Item I qualifies because one strategy uses the known two-year rate. Item II qualifies because the alternative strategy invests for one year and then reinvests at the one-year forward rate starting in one year. Item III qualifies because the forward rate is set so that the two strategies are economically equivalent and arbitrage is avoided. Therefore, all three items satisfy the condition.</p><p>Why option A is incorrect. It ignores two other steps that are central to the framework.</p><p>Why option B is incorrect. The curriculum's forward-rate setup requires all three listed elements, not just two.</p>"
+  }
+]

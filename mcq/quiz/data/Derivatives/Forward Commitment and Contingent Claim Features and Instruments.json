@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "topic": "Forward contract payoff",
+    "stem": "An investor is long a forward on 1,000 barrels of oil at USD 64 per barrel. If the spot price at maturity is USD 58.50, the investor's total payoff is most likely?",
+    "options": {
+      "A": "USD 5,500 gain",
+      "B": "USD 5,500 loss",
+      "C": "USD 64,000 gain"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: forward payoff</h3><p><strong>B is correct.</strong> The CFA Curriculum states that a long forward payoff at maturity equals $S_T - F_0(T)$. Here, the payoff per barrel is USD 58.50 minus USD 64.00, which equals USD -5.50. For 1,000 barrels, the total payoff is USD -5,500. Therefore, the investor has a loss of USD 5,500.</p><p>Why option A is wrong: it uses the correct size of the price difference but reverses the sign, which would apply to the short side rather than the long side.</p><p>Why option C is wrong: it ignores the payoff rule and treats the forward price itself as a gain.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Futures daily mark to market",
+    "stem": "A gold futures buyer holds one 100-ounce contract. The futures price rises from USD 1,792.13 to USD 1,797.13 in one day. If the initial margin balance is USD 4,950, the ending margin balance is most likely?",
+    "options": {
+      "A": "USD 5,450",
+      "B": "USD 4,450",
+      "C": "USD 5,000"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: futures MTM</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that daily futures gains are marked to market through the margin account. The daily price increase is USD 5.00 per ounce, and for 100 ounces the gain is USD 500. Adding this to the initial margin balance of USD 4,950 gives an ending margin balance of USD 5,450.</p><p>Why option B is wrong: it treats the day's price increase as if it were a loss to the futures buyer.</p><p>Why option C is wrong: it applies the USD 5 price change as though it were a total gain rather than USD 5 per ounce across 100 ounces.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Futures margin call",
+    "stem": "A futures seller has an initial margin of USD 4,950, a maintenance margin of USD 4,500, and an end-of-day margin balance of USD 4,450. The required margin call is most likely?",
+    "options": {
+      "A": "USD 50",
+      "B": "USD 450",
+      "C": "USD 500"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: margin call amount</h3><p><strong>C is correct.</strong> The CFA Curriculum states that when the margin account falls below maintenance margin, the counterparty must deposit funds to restore the balance to the initial margin. The account is at USD 4,450, so the required deposit is USD 4,950 minus USD 4,450, which equals USD 500. That is the variation margin required.</p><p>Why option A is wrong: it measures only the shortfall below maintenance margin, but the account must be restored to initial margin.</p><p>Why option B is wrong: it still does not bring the balance back to the initial margin level required by the CFA Curriculum.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Call option profit",
+    "stem": "A call option has an exercise price of USD 45 and a premium of USD 6. If the underlying price at expiration is USD 50, the buyer's profit per unit is most likely?",
+    "options": {
+      "A": "USD 5 profit",
+      "B": "USD 1 loss",
+      "C": "USD 1 profit"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: call profit</h3><p><strong>B is correct.</strong> The CFA Curriculum gives the long call payoff as $\\max(0, S_T - X)$ and profit as payoff minus premium. The payoff is $\\max(0, 50 - 45) = 5$. After subtracting the premium of USD 6, the buyer's profit is USD -1. So the buyer has a loss of USD 1 per unit.</p><p>Why option A is wrong: it reports the option payoff only and ignores the premium paid upfront.</p><p>Why option C is wrong: it subtracts incorrectly and turns a loss into a gain.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Put option positive profit threshold",
+    "stem": "A put option has an exercise price of USD 40 and a premium of USD 3. The put buyer earns a positive profit only if the underlying price at expiration is most likely below?",
+    "options": {
+      "A": "USD 40",
+      "B": "USD 37",
+      "C": "USD 43"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: put break-even for profit</h3><p><strong>B is correct.</strong> The CFA Curriculum states that a put buyer earns a positive profit only if the underlying price is below the exercise price minus the premium. Here, that threshold is USD 40 minus USD 3, which equals USD 37. Therefore, the underlying must be below USD 37 for profit to be positive.</p><p>Why option A is wrong: being below the exercise price gives a positive payoff, but not necessarily a positive profit once the premium is included.</p><p>Why option C is wrong: a price above the exercise price makes the put out of the money and gives zero payoff.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Forwards versus futures",
+    "stem": "Consider the following:\nI. The contract is negotiated over the counter with flexible terms.\nII. The contract requires daily settlement of gains and losses through the clearinghouse.\nIII. The contract uses standardized terms set by an exchange.\nHow many of the above most accurately describe a forward contract rather than a futures contract?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum distinguishes a forward from a futures contract mainly by trading venue and settlement method. A forward is an OTC contract with flexible terms, while a futures contract is standardized, exchange traded, and marked to market daily. Item I meets the forward criterion. Item II does not because daily settlement is a futures feature. Item III does not because standardization by an exchange is also a futures feature. Therefore, only one item qualifies.</p><p>Why option B is incorrect. Counting two would incorrectly classify either daily settlement or exchange standardization as a forward feature, which the CFA Curriculum does not support.</p><p>Why option C is incorrect. All three cannot describe a forward because two of the statements are explicit futures characteristics in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Firm commitments versus contingent claims",
+    "stem": "Consider the following:\nI. A fixed-rate payer on an interest rate swap agrees to a series of future exchanges.\nII. A call option buyer pays a premium for the right, but not the obligation, to transact later.\nIII. A forward contract seller agrees to a single future exchange at a pre-agreed price.\nHow many of the above are contingent claims rather than firm commitments?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum classifies forwards, futures, and swaps as firm commitments because counterparties are required to exchange in the future, whereas options are contingent claims because one party has a right that determines whether settlement occurs. Item I is a firm commitment because a swap requires a series of exchanges. Item II is a contingent claim because the call buyer has a right after paying a premium. Item III is a firm commitment because a forward seller agrees to a future exchange at a pre-agreed price. Therefore, only one item is a contingent claim.</p><p>Why option B is incorrect. Counting two would wrongly place either the swap or the forward into the contingent-claim category, contrary to the CFA Curriculum classification.</p><p>Why option C is incorrect. All three cannot qualify because the CFA Curriculum explicitly labels swaps and forwards as firm commitments.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Option moneyness and intrinsic value",
+    "stem": "Consider the following:\nI. A call option is in the money when the spot price is below the exercise price.\nII. A call option is in the money when the spot price exceeds the exercise price.\nIII. An at-the-money call option has positive intrinsic value.\nHow many of the above are correct according to the CFA Curriculum's option moneyness rules?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum defines call option intrinsic value as positive only when the spot price exceeds the exercise price. If the spot price is below the exercise price, the call is out of the money, and if it equals the exercise price, the call is at the money with zero intrinsic value. Item I is false because it reverses the in-the-money condition. Item II is true because it matches the CFA Curriculum definition. Item III is false because at-the-money options have zero intrinsic value. Therefore, only one item is correct.</p><p>Why option B is incorrect. Counting two would require accepting either the reversed moneyness rule or positive intrinsic value for an at-the-money call, both of which conflict with the CFA Curriculum.</p><p>Why option C is incorrect. All three cannot be correct because only the middle statement matches the CFA Curriculum's definition.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Interest rate swaps",
+    "stem": "Consider the following:\nI. The floating-rate payer receives a net payment when the market reference rate exceeds the fixed rate for the period.\nII. The fixed-rate payer receives a net payment when the market reference rate exceeds the fixed rate for the period.\nIII. The notional principal is usually exchanged at inception in an interest rate swap.\nHow many of the above are accurate based on the CFA Curriculum's swap description?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that the fixed-rate payer is also the floating-rate receiver, so this party benefits when the market reference rate exceeds the fixed rate. It also states that the notional principal is usually not exchanged and is used only to calculate payments. Item I is false because the floating-rate payer would be making the larger payment when the market reference rate is above the fixed rate. Item II is true because the fixed-rate payer receives the net difference in that case. Item III is false because the notional is usually not exchanged. Therefore, only one item is accurate.</p><p>Why option B is incorrect. Counting two would incorrectly treat either the floating-rate payer as the beneficiary of a higher market reference rate or the notional as normally exchanged.</p><p>Why option C is incorrect. All three cannot qualify because two statements directly contradict the CFA Curriculum's swap mechanics.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Option exercise style and expiration",
+    "stem": "Consider the following:\nI. A European option may be exercised at any time from inception until maturity.\nII. An American option may be exercised only at maturity.\nIII. If an option is not exercised, the buyer's loss equals the premium paid.\nHow many of the above are correct under the CFA Curriculum's description of option exercise?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum distinguishes European and American options by when they may be exercised: European options only at maturity and American options at any time up to maturity. It also states that if an option is not exercised, it expires worthless and the buyer's loss equals the premium paid. Item I is false because it describes an American-style exercise rule. Item II is false because it describes a European-style rule. Item III is true because it matches the CFA Curriculum's treatment of an unexercised option. Therefore, only one item is correct.</p><p>Why option B is incorrect. Counting two would require misclassifying one of the exercise-style definitions, which the CFA Curriculum states explicitly.</p><p>Why option C is incorrect. All three cannot be correct because the first two statements reverse the European and American exercise rules.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Forward commitments versus contingent claims",
+    "stem": "Assertion (A): Option contracts are classified as contingent claims.\nReason (R): The option buyer determines whether and when the trade will settle after paying a premium for that right.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a contingent claim as a contract in which one counterparty determines whether and when settlement occurs. It also states that an option buyer pays a premium to obtain the right to transact later at a pre-agreed exercise price. Because the buyer controls exercise, the option's settlement is conditional rather than mandatory. Therefore, the reason directly explains why options are contingent claims.</p><p>Why option B is incorrect. The reason is not merely an accompanying fact; it is the core feature the CFA Curriculum uses to distinguish contingent claims from firm commitments.</p><p>Why option C is incorrect. The reason is true under the CFA Curriculum because the buyer's right to choose exercise is explicit.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Futures margining",
+    "stem": "Assertion (A): A futures contract requires daily settlement of gains and losses.\nReason (R): Futures contracts are standardized and traded on an exchange.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: mechanism versus attribute</h3><p><strong>B is correct.</strong> The CFA Curriculum states that futures contracts do require daily settlement through the clearinghouse mark-to-market process, so the assertion is true. It also states that futures are standardized and traded on an exchange, so the reason is true. However, exchange trading and standardization are descriptive features of futures contracts, while the daily settlement requirement arises from the clearinghouse mark-to-market process rather than from 21standardization alone. Therefore, both statements are true, but the reason is not the correct explanation of the assertion.</p><p>Why option B is incorrect. This option is not incorrect because both statements are true but the causal link is too weak under the CFA Curriculum's treatment.</p><p>Why option C is incorrect. The reason is not false; the CFA Curriculum explicitly describes futures as standardized exchange-traded contracts.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Swap mechanics",
+    "stem": "Assertion (A): In an interest rate swap, the notional principal is usually exchanged at inception.\nReason (R): The notional principal is used to calculate fixed and floating interest payments.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: defining boundary</h3><p><strong>D is correct.</strong> The CFA Curriculum explains that in a standard interest rate swap the notional principal is usually not exchanged. Instead, it serves as the reference amount used to compute the fixed and floating cash flow payments for each period. That makes the assertion false and the reason true. The classification turns on the CFA Curriculum's distinction between a payment-calculation base and an actual principal exchange.</p><p>Why option B is incorrect. The assertion is not true because the CFA Curriculum states the notional is usually not exchanged.</p><p>Why option C is incorrect. The reason is true because the CFA Curriculum explicitly says the notional is used for payment calculations.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Option intrinsic value",
+    "stem": "Assertion (A): An at-the-money call option has zero intrinsic value.\nReason (R): A call option is in the money only when the spot price exceeds the exercise price.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: payoff condition</h3><p><strong>A is correct.</strong> The CFA Curriculum defines call intrinsic value as positive only when the spot price exceeds the exercise price. If the spot price equals the exercise price, the option is at the money and has no positive exercise value, so intrinsic value is zero. The reason states exactly the condition that creates positive call intrinsic value, and that condition fails at the money. Therefore, the reason correctly explains the assertion.</p><p>Why option B is incorrect. The reason is not incidental; it is the direct rule that determines why intrinsic value is zero at the money.</p><p>Why option C is incorrect. The reason is true according to the CFA Curriculum's definition of a call being in the money.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Option profit versus payoff",
+    "stem": "Assertion (A): A put option buyer can have a positive payoff but still earn a non-positive profit.\nReason (R): Positive profit requires the option payoff to exceed the premium paid.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: payoff-to-profit bridge</h3><p><strong>A is correct.</strong> The CFA Curriculum distinguishes payoff from profit by subtracting the premium paid from the option payoff. It specifically notes that a put buyer earns positive profit only if the underlying price is sufficiently below the exercise price so that the positive payoff is greater than the premium. A put may therefore be exercised with positive payoff while still failing to cover the premium. Thus, the reason correctly explains why a positive payoff does not guarantee positive profit.</p><p>Why option B is incorrect. The reason is the direct mechanism linking option payoff to profit in the CFA Curriculum, not a separate unrelated truth.</p><p>Why option C is incorrect. The reason is true because the CFA Curriculum explicitly requires payoff to exceed premium for positive profit.</p>"
+  }
+]
