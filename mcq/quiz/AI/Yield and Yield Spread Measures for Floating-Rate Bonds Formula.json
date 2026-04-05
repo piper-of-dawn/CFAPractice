@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "For a floating-rate note, which formula most accurately gives the periodic payment $PMT$ in the simplified pricing model?",
+    "options": {
+      "A": "$PMT = \\dfrac{(MRR + QM) \\times FV}{m}$",
+      "B": "$PMT = \\dfrac{(MRR + DM) \\times FV}{m}$",
+      "C": "$PMT = (MRR + QM) \\times FV \\times m$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, the floater's periodic cash payment is the annual reference rate plus quoted margin, applied to face value and divided by the number of payment periods per year. That gives $PMT = \\\\dfrac{(MRR + QM) \\\\times FV}{m}$. The division by $m$ converts the annual rate into a periodic payment. Applying that rule gives the correct floater coupon amount each period.</p><p>Why top distractor is wrong (PDF-based misconception): B is tempting because $DM$ also appears in the floater model, but it belongs in the discount rate used to value cash flows, not in the coupon payment itself.</p><p>Why remaining distractor is wrong: C multiplies by $m$ instead of dividing by $m$, so it overstates the periodic payment rather than converting the annual rate to one period.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If the simplified floater model uses $r = \\dfrac{MRR + DM}{m}$, which rearrangement solves for the discount margin $DM$?",
+    "options": {
+      "A": "$DM = mr - MRR$",
+      "B": "$DM = \\dfrac{r - MRR}{m}$",
+      "C": "$DM = MRR - mr$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum links the periodic discount rate to the market reference rate and discount margin through $r = \\\\dfrac{MRR + DM}{m}$. Multiply both sides by $m$ to get $mr = MRR + DM$, then isolate the primitive unknown: $DM = mr - MRR$. This is the direct rearrangement of the floater discount-rate relation.</p><p>Why top distractor is wrong (PDF-based misconception): B incorrectly divides after rearranging. Once both annual spreads are inside the numerator, the correct step is to multiply by $m$, not divide again.</p><p>Why remaining distractor is wrong: C reverses the sign and would imply a lower required margin when the periodic discount rate rises, which contradicts the CFA Curriculum relation.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 90-day money market instrument has $FV = 100$, $DR = 4\\%$, and a 360-day year. Its price is closest to:",
+    "options": {
+      "A": "99.00",
+      "B": "96.00",
+      "C": "101.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices a discount-rate money market instrument as $PV = FV \\\\times \\\\left(1 - \\\\dfrac{Days}{Year} \\\\times DR\\\\right)$. Substituting gives $PV = 100 \\\\times \\\\left(1 - \\\\dfrac{90}{360} \\\\times 0.04\\\\right) = 100 \\\\times (1 - 0.01) = 99$. The formula directly converts the quoted annual discount rate into a simple period discount. Therefore the price is 99.00.</p><p>Why top distractor is wrong (PDF-based misconception): B treats the 4% annual discount as if it applied to the full face value without adjusting for the 90-day fraction of the year.</p><p>Why remaining distractor is wrong: C is above face value, but a positive discount rate in the CFA Curriculum gives a price below face value, not above it.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula is the CFA Curriculum expression for a money market discount rate $DR$?",
+    "options": {
+      "A": "$DR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{FV}$",
+      "B": "$DR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{PV}$",
+      "C": "$DR = \\dfrac{Days}{Year} \\times \\dfrac{FV - PV}{FV}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, the money market discount rate is annualized by multiplying by $\\\\dfrac{Year}{Days}$ and uses face value in the denominator: $DR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{FV}$. The key primitive is that discount-rate quotations are based on the maturity value, not the investment amount. Applying that definition gives the exact formula.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $PV$ in the denominator, but that is the add-on-rate structure, not the discount-rate structure.</p><p>Why remaining distractor is wrong: C inverts the annualization term. The CFA Curriculum annualizes with $\\\\dfrac{Year}{Days}$, not $\\\\dfrac{Days}{Year}$.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately prices a money market instrument quoted on an add-on rate basis?",
+    "options": {
+      "A": "$PV = \\dfrac{FV}{1 + \\dfrac{Days}{Year} \\times AOR}$",
+      "B": "$PV = FV \\times \\left(1 - \\dfrac{Days}{Year} \\times AOR\\right)$",
+      "C": "$PV = \\dfrac{FV}{1 + \\dfrac{Year}{Days} \\times AOR}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices an add-on-rate instrument by discounting the redemption amount with simple interest: $PV = \\\\dfrac{FV}{1 + \\\\dfrac{Days}{Year} \\\\times AOR}$. The term $\\\\dfrac{Days}{Year}$ converts the annual add-on rate to the relevant holding period. Applying that relation gives the present value.</p><p>Why top distractor is wrong (PDF-based misconception): B looks like the discount-rate pricing formula, but add-on instruments use the add-on structure with $PV$ as the investment amount, not the discount-rate structure.</p><p>Why remaining distractor is wrong: C reverses the time fraction. The CFA Curriculum uses $\\\\dfrac{Days}{Year}$ inside the add-on denominator.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which expression correctly isolates the add-on rate $AOR$ from the CFA Curriculum money market formula?",
+    "options": {
+      "A": "$AOR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{PV}$",
+      "B": "$AOR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{FV}$",
+      "C": "$AOR = \\dfrac{Days}{Year} \\times \\dfrac{FV - PV}{PV}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, add-on rate is annualized simple return on the invested amount, so $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. The denominator is $PV$ because add-on interest is earned on the principal invested. That is the exact algebraic isolation of the add-on relation.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $FV$ in the denominator, which is the defining feature of a discount-rate quotation, not an add-on-rate quotation.</p><p>Why remaining distractor is wrong: C flips the annualization fraction and so does not produce the annualized rate shown in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 180-day instrument has $PV = 100$, $AOR = 6\\%$, and a 360-day year. The maturity value $FV$ is closest to:",
+    "options": {
+      "A": "103.00",
+      "B": "106.00",
+      "C": "112.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Rearranging the CFA Curriculum add-on formula gives $FV = PV \\\\times \\\\left(1 + \\\\dfrac{Days}{Year} \\\\times AOR\\\\right)$. Substituting yields $FV = 100 \\\\times \\\\left(1 + \\\\dfrac{180}{360} \\\\times 0.06\\\\right) = 100 \\\\times 1.03 = 103$. The add-on interest is simple interest added to principal. Therefore the maturity value is 103.00.</p><p>Why top distractor is wrong (PDF-based misconception): B applies the full 6% annual rate to the entire principal without scaling it to the 180-day holding period.</p><p>Why remaining distractor is wrong: C overstates the interest even further and does not match the simple-interest add-on formula in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 120-day instrument has $FV = 100$, $PV = 99$, and a 360-day year. Its discount rate $DR$ is closest to:",
+    "options": {
+      "A": "3.00%",
+      "B": "3.03%",
+      "C": "1.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum discount-rate formula is $DR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{FV}$. Here, $DR = \\\\dfrac{360}{120} \\\\times \\\\dfrac{100 - 99}{100} = 3 \\\\times 0.01 = 0.03 = 3.00\\\\%$. The denominator remains face value because this is a discount-rate quote. Therefore the discount rate is 3.00%.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $PV$ in the denominator, which would convert the question into an add-on-rate calculation rather than a discount-rate calculation.</p><p>Why remaining distractor is wrong: C ignores the annualization factor of $\\\\dfrac{360}{120} = 3$ and uses only the one-period discount.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 120-day instrument has $FV = 100$, $PV = 99$, and a 360-day year. Its add-on rate $AOR$ is closest to:",
+    "options": {
+      "A": "3.03%",
+      "B": "3.00%",
+      "C": "1.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum add-on formula is $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. Substituting gives $AOR = \\\\dfrac{360}{120} \\\\times \\\\dfrac{1}{99} = 3 \\\\times 0.010101... = 0.0303$, or about 3.03%. Because the investment amount is $PV$, the rate is slightly above the discount rate. That makes 3.03% the correct answer.</p><p>Why top distractor is wrong (PDF-based misconception): B uses face value in the denominator, which is the discount-rate formula rather than the add-on-rate formula.</p><p>Why remaining distractor is wrong: C ignores the annualization term and treats the one-period return as if it were already annual.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A two-year semiannual floater has $MRR = 1\\%$, $QM = 0.5\\%$, $FV = 100$, and $m = 2$. The periodic payment $PMT$ is closest to:",
+    "options": {
+      "A": "0.75",
+      "B": "1.50",
+      "C": "0.50"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum periodic floater payment is $PMT = \\\\dfrac{(MRR + QM) \\\\times FV}{m}$. Substituting gives $PMT = \\\\dfrac{(0.01 + 0.005) \\\\times 100}{2} = \\\\dfrac{1.5}{2} = 0.75$. The division by the semiannual periodicity turns the annual coupon rate into one semiannual cash flow. Therefore the payment is 0.75.</p><p>Why top distractor is wrong (PDF-based misconception): B applies the annual coupon amount but forgets to divide by the two payment periods per year.</p><p>Why remaining distractor is wrong: C omits part of the annual coupon rate and understates the periodic payment.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "In the simplified FRN pricing model, which one-period denominator is most accurate when $MRR = 1.2\\%$, $DM = 0.8\\%$, and $m = 4$?",
+    "options": {
+      "A": "$1 + \\dfrac{0.012 + 0.008}{4}$",
+      "B": "$1 + 0.012 + 0.008$",
+      "C": "$1 + \\dfrac{0.012 - 0.008}{4}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum simplified FRN model, the periodic discount rate is the annual market reference rate plus annual discount margin, divided by the number of periods per year. So one period's denominator is $1 + \\\\dfrac{MRR + DM}{m} = 1 + \\\\dfrac{0.012 + 0.008}{4}$. This converts annual rates into a quarterly discount factor. That is the correct denominator form.</p><p>Why top distractor is wrong (PDF-based misconception): B does not divide by the periodicity, so it uses annual rates directly in a one-period denominator.</p><p>Why remaining distractor is wrong: C subtracts the discount margin from the reference rate, but the CFA Curriculum model adds them in the denominator.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a floater has periodic discount rate $r = 0.006$, $m = 4$, and $MRR = 1.0\\%$, the discount margin $DM$ is closest to:",
+    "options": {
+      "A": "1.4%",
+      "B": "0.5%",
+      "C": "2.4%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum relation is $r = \\\\dfrac{MRR + DM}{m}$, so rearranging gives $DM = mr - MRR$. Substituting gives $DM = 4 \\\\times 0.006 - 0.01 = 0.024 - 0.01 = 0.014 = 1.4\\\\%$. The periodic rate is first converted back to an annualized total spread and then reduced by the reference rate. Therefore the discount margin is 1.4%.</p><p>Why top distractor is wrong (PDF-based misconception): B comes from dividing instead of multiplying by $m$, which understates the annual margin implied by the periodic discount rate.</p><p>Why remaining distractor is wrong: C ignores subtracting the market reference rate after annualizing the periodic discount rate.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 90-day instrument has $FV = 100$, $DR = 0.12\\%$, and a 360-day year. Its price is closest to:",
+    "options": {
+      "A": "99.97",
+      "B": "99.88",
+      "C": "100.12"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum discount-pricing formula is $PV = FV \\\\times \\\\left(1 - \\\\dfrac{Days}{Year} \\\\times DR\\\\right)$. Substituting gives $PV = 100 \\\\times \\\\left(1 - \\\\dfrac{90}{360} \\\\times 0.0012\\\\right) = 100 \\\\times (1 - 0.0003) = 99.97$. A small positive discount rate gives a price slightly below face value. Therefore 99.97 is correct.</p><p>Why top distractor is wrong (PDF-based misconception): B is too low because it overstates the discount and does not match the simple fraction-of-year adjustment used in the CFA Curriculum.</p><p>Why remaining distractor is wrong: C is above face value, which is inconsistent with a positive discount-rate quote.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 180-day instrument has $PV = 100$, $FV = 101$, and a 360-day year. Its add-on rate $AOR$ is closest to:",
+    "options": {
+      "A": "2.00%",
+      "B": "1.00%",
+      "C": "1.98%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum formula is $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. Substituting gives $AOR = \\\\dfrac{360}{180} \\\\times \\\\dfrac{101 - 100}{100} = 2 \\\\times 0.01 = 0.02 = 2.00\\\\%$. The rate is simple annualized return on the invested principal. Therefore the add-on rate is 2.00%.</p><p>Why top distractor is wrong (PDF-based misconception): B uses the one-period return of 1% but forgets to annualize the 180-day result.</p><p>Why remaining distractor is wrong: C is close, but it uses a denominator other than the invested amount or introduces unnecessary rounding not required by the CFA Curriculum formula.</p>"
+  }
+]

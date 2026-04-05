@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Formula",
+    "stem": "Which of the following correctly expresses the periodicity conversion formula (Equation 1) for converting $APR_m$ with $m$ periods per year to $APR_n$ with $n$ periods per year?",
+    "options": {
+      "A": "$(1 + APR_m)^m = (1 + APR_n)^n$",
+      "B": "$(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$",
+      "C": "$(1 + \\frac{APR_m}{m})^n = (1 + \\frac{APR_n}{n})^m$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: periodicity conversion formula</h3><p><strong>B is correct.</strong> Equation 1 in the CFA Curriculum states $(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$. Each side represents the same effective annual return: the periodic rate $\\frac{APR}{\\text{periods}}$ compounded for the number of periods in a year. Setting both sides equal converts one periodicity to another.</p><p>A is incorrect because it omits the division by $m$ and $n$ in the base; $APR_m$ is the annual rate so the periodic rate must be $\\frac{APR_m}{m}$, not $APR_m$ itself.</p><p>C is incorrect because the exponents $m$ and $n$ are swapped across the two sides, making the equation dimensionally inconsistent.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Formula",
+    "stem": "A bond's annual yield is 4% with a periodicity of 2 (semiannual). Using Equation 1, the equation needed to find the equivalent annual yield $APR_4$ with periodicity 4 (quarterly) is:",
+    "options": {
+      "A": "$(1 + 0.04)^2 = (1 + \\frac{APR_4}{4})^4$",
+      "B": "$(1 + \\frac{0.04}{4})^4 = (1 + \\frac{APR_2}{2})^2$",
+      "C": "$(1 + \\frac{0.04}{2})^2 = (1 + \\frac{APR_4}{4})^4$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: applying periodicity conversion</h3><p><strong>C is correct.</strong> Equation 1: $(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$. Here $m = 2$ and $APR_m = 0.04$, so the left side is $(1 + \\frac{0.04}{2})^2$. The unknown $APR_4$ with $n = 4$ gives the right side $(1 + \\frac{APR_4}{4})^4$.</p><p>A is incorrect because it omits the division by $m = 2$ in the base; the periodic rate must be $\\frac{0.04}{2}$, not $0.04$.</p><p>B is incorrect because the sides are reversed: it converts from quarterly to semiannual, not from semiannual to quarterly as required.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Formula",
+    "stem": "A five-year zero-coupon bond is priced at 80 per 100 of par. Which formula correctly solves for the annual yield $r$ assuming annual compounding (periodicity of 1)?",
+    "options": {
+      "A": "$80 = \\frac{100}{(1+r)^{10}}$",
+      "B": "$80 = 100 \\times (1+r)^5$",
+      "C": "$80 = \\frac{100}{(1+r)^5}$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: zero-coupon bond pricing formula</h3><p><strong>C is correct.</strong> For a zero-coupon bond with annual compounding, the price equals the present value of the single future cash flow: $PV = \\frac{FV}{(1+r)^N}$. With $PV = 80$, $FV = 100$, and $N = 5$ years (periodicity of 1), the formula is $80 = \\frac{100}{(1+r)^5}$, exactly as shown in the CFA Curriculum Example 1.</p><p>A is incorrect because $N = 10$ would apply to semiannual compounding over five years, not annual compounding; with periodicity of 1 there are only 5 compounding periods.</p><p>B is incorrect because it multiplies rather than discounts, growing the price forward to a future value rather than discounting the face value back to the present.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Formula",
+    "stem": "The same five-year zero-coupon bond priced at 80 per 100 now uses quarterly compounding (periodicity of 4). Which equation correctly sets up the yield calculation?",
+    "options": {
+      "A": "$80 = \\frac{100}{(1+r)^{20}}$, then annual yield $= r \\times 4$",
+      "B": "$80 = \\frac{100}{(1+r)^{5}}$, then annual yield $= r \\times 4$",
+      "C": "$80 = \\frac{100}{(1+r)^{20}}$, then annual yield $= r \\times 2$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: zero-coupon bond with quarterly compounding</h3><p><strong>A is correct.</strong> With quarterly compounding, there are $4 \\times 5 = 20$ compounding periods. Solving $80 = \\frac{100}{(1+r)^{20}}$ gives the periodic (quarterly) yield $r$, which is annualized by multiplying by 4. The CFA Curriculum shows this structure in Example 1.</p><p>B is incorrect because 5 periods matches annual compounding (periodicity of 1), not quarterly; quarterly compounding requires 20 periods over five years.</p><p>C is incorrect because multiplying a quarterly rate by 2 would annualize a semiannual rate; quarterly rates must be multiplied by 4 to obtain the annual rate.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Formula",
+    "stem": "A bond pays semiannual coupons and its periodic yield per semiannual period is 1.5%. What is the semiannual bond basis yield (annual yield on a semiannual bond basis)?",
+    "options": {
+      "A": "3.0225%",
+      "B": "3.0%",
+      "C": "1.5%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: semiannual bond basis yield formula</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the semiannual bond basis yield as the periodic yield per semiannual period multiplied by 2: annual yield $= 1.5\\% \\times 2 = 3.0\\%$. This is a simple multiplication, not compounding.</p><p>A is incorrect because 3.0225% is the effective annual rate (EAR) obtained by compounding: $(1.015)^2 - 1 = 3.0225\\%$. The semiannual bond basis yield uses multiplication by 2, not compounding.</p><p>C is incorrect because 1.5% is the periodic semiannual rate, not the annualized semiannual bond basis yield; it must be multiplied by 2 to annualize.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Formula",
+    "stem": "Which formula correctly represents the price of an $N$-period fixed-rate bond with coupon payment $PMT$, face value $FV$, and yield per period $r$?",
+    "options": {
+      "A": "$PV = \\frac{PMT}{(1+r)^1} + \\frac{PMT}{(1+r)^2} + \\cdots + \\frac{FV}{(1+r)^N}$",
+      "B": "$PV = PMT \\times (1+r)^1 + \\cdots + (PMT + FV) \\times (1+r)^N$",
+      "C": "$PV = \\frac{PMT}{(1+r)^1} + \\frac{PMT}{(1+r)^2} + \\cdots + \\frac{PMT + FV}{(1+r)^N}$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: bond pricing formula structure</h3><p><strong>C is correct.</strong> The bond price equals the present value of all future cash flows discounted at the yield per period $r$. Each intermediate period pays only $PMT$, while the final period $N$ pays $PMT + FV$ (last coupon plus face value). Cash flows are divided by $(1+r)^t$, not multiplied.</p><p>A is incorrect because the final period omits $PMT$; the last payment includes both the final coupon and face value, so it must be $\\frac{PMT + FV}{(1+r)^N}$, not $\\frac{FV}{(1+r)^N}$.</p><p>B is incorrect because it multiplies by $(1+r)^t$, which compounds forward rather than discounting back to present value.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Formula",
+    "stem": "The G-spread for a corporate bond over a government benchmark is most accurately expressed as:",
+    "options": {
+      "A": "G-spread $=$ YTM$_{\\text{bond}}$ $-$ swap rate",
+      "B": "G-spread $=$ YTM$_{\\text{government}}$ $-$ YTM$_{\\text{bond}}$",
+      "C": "G-spread $=$ YTM$_{\\text{bond}}$ $-$ YTM$_{\\text{government benchmark}}$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: G-spread formula</h3><p><strong>C is correct.</strong> The CFA Curriculum defines the G-spread as the yield spread of a bond above the yield of a government bond with the same (or interpolated) maturity. The bond's YTM minus the government benchmark YTM gives a positive spread for a credit-risky issuer. For example, the curriculum shows G-spread $= 2.707\\% - 1.904\\% = 80.3$ bps.</p><p>A is incorrect because subtracting a swap rate from the bond's YTM is the formula for the I-spread, not the G-spread; the G-spread specifically uses a government bond yield as the benchmark.</p><p>B is incorrect because reversing the subtraction order yields a negative number; the bond yield must be the minuend since corporate bonds yield more than government benchmarks.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Formula",
+    "stem": "A corporate bond has a YTM of 3.5%. The interpolated swap rate for the same maturity is 2.8%. What is the I-spread?",
+    "options": {
+      "A": "280 bps",
+      "B": "70 bps",
+      "C": "35 bps"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: I-spread formula</h3><p><strong>B is correct.</strong> The I-spread (interpolated spread) equals the bond's YTM minus the interpolated standard swap rate of the same maturity: $3.5\\% - 2.8\\% = 0.7\\% = 70$ bps. This is the formula used throughout the CFA Curriculum.</p><p>A is incorrect because 280 bps equals the swap rate of 2.8% expressed in basis points; the I-spread is the difference between the bond yield and the swap rate, not the swap rate itself.</p><p>C is incorrect because 35 bps is half the correct answer; no halving step is involved in the I-spread formula.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Formula",
+    "stem": "The Z-spread $Z$ is a constant added to benchmark spot rates. Which equation correctly represents Equation 4 from the CFA Curriculum?",
+    "options": {
+      "A": "$PV = \\frac{PMT}{(1+z_1+Z)^1} + \\frac{PMT}{(1+z_2+Z)^2} + \\cdots + \\frac{PMT+FV}{(1+z_N+Z)^N}$",
+      "B": "$PV = \\frac{PMT+Z}{(1+z_1)^1} + \\frac{PMT+Z}{(1+z_2)^2} + \\cdots + \\frac{PMT+FV+Z}{(1+z_N)^N}$",
+      "C": "$PV = \\frac{PMT}{(1+z_1)^1+Z} + \\frac{PMT}{(1+z_2)^2+Z} + \\cdots + \\frac{PMT+FV}{(1+z_N)^N+Z}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Z-spread formula structure</h3><p><strong>A is correct.</strong> Equation 4 places $Z$ inside the discount rate base alongside each benchmark spot rate $z_t$: the discount factor for period $t$ is $(1 + z_t + Z)^t$. $Z$ is a constant added to every spot rate, and the present value of cash flows equals the bond's price.</p><p>B is incorrect because it adds $Z$ to the cash flows (numerator) rather than to the discount rates (denominator); the Z-spread adjusts rates, not cash flows.</p><p>C is incorrect because adding $Z$ outside the entire power $(1+z_t)^t + Z$ changes the mathematical structure; $Z$ must be inside the base of the exponent.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Formula",
+    "stem": "According to the CFA Curriculum (Equation 5), the OAS for a callable bond equals:",
+    "options": {
+      "A": "OAS $=$ Z-spread $+$ option value (bps per year)",
+      "B": "OAS $=$ G-spread $-$ option value (bps per year)",
+      "C": "OAS $=$ Z-spread $-$ option value (bps per year)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: OAS formula</h3><p><strong>C is correct.</strong> Equation 5 states: OAS $=$ Z-spread $-$ option value in basis points per year. For a callable bond, the embedded call has positive value to the issuer, so the Z-spread exceeds the OAS; the option value is subtracted to strip out the option component from the total spread.</p><p>A is incorrect because adding the option value overstates the OAS; for a callable bond the option value must be subtracted since the issuer benefits from the call at the investor's expense.</p><p>B is incorrect because Equation 5 uses the Z-spread as the starting point, not the G-spread; the OAS is derived from the zero-volatility spread, not the government-bond spread.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Formula",
+    "stem": "A bond's Z-spread is 120 bps and its embedded call option value is 30 bps per year. Using Equation 5, what is the OAS?",
+    "options": {
+      "A": "150 bps",
+      "B": "30 bps",
+      "C": "90 bps"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: OAS calculation</h3><p><strong>C is correct.</strong> Equation 5: OAS $=$ Z-spread $-$ option value $= 120 - 30 = 90$ bps. The call option value is subtracted from the Z-spread to isolate the spread compensating for credit and liquidity risk only.</p><p>A is incorrect because adding the option value gives $120 + 30 = 150$ bps; the option value must be subtracted, not added.</p><p>B is incorrect because 30 bps is the option value alone; the OAS requires subtracting the option value from the Z-spread of 120 bps.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Formula",
+    "stem": "To rearrange the periodicity conversion formula to solve for $APR_n$, given $APR_m$, $m$, and $n$, which expression is correct?",
+    "options": {
+      "A": "$APR_n = n \\left[ \\left(1 + \\frac{APR_m}{m}\\right)^{m+n} - 1 \\right]$",
+      "B": "$APR_n = n \\left[ \\left(1 + \\frac{APR_m}{m}\\right)^{m/n} - 1 \\right]$",
+      "C": "$APR_n = \\frac{n}{m} \\times APR_m$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: rearranging the periodicity conversion formula</h3><p><strong>B is correct.</strong> Starting from $(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$, raise both sides to the power $\\frac{1}{n}$: $(1 + \\frac{APR_m}{m})^{m/n} = 1 + \\frac{APR_n}{n}$. Subtracting 1 and multiplying by $n$ gives $APR_n = n\\left[(1 + \\frac{APR_m}{m})^{m/n} - 1\\right]$.</p><p>A is incorrect because the exponent $m + n$ has no basis in the formula; the correct exponent from rearrangement is $m/n$, obtained by taking the $n$-th root of both sides.</p><p>C is incorrect because $\\frac{n}{m} \\times APR_m$ is simple linear scaling that ignores compounding; periodicity conversions require the exponential form of Equation 1.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Formula",
+    "stem": "A bond has a periodic yield of 1% per quarter (periodicity of 4). Its annual yield on a semiannual bond basis ($APR_2$) is found by solving which equation?",
+    "options": {
+      "A": "$(1 + \\frac{0.04}{2})^2 = (1 + \\frac{APR_2}{4})^4$",
+      "B": "$(1 + 0.04)^1 = (1 + \\frac{APR_2}{2})^2$",
+      "C": "$(1 + \\frac{0.04}{4})^4 = (1 + \\frac{APR_2}{2})^2$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: converting quarterly to semiannual periodicity</h3><p><strong>C is correct.</strong> The quarterly annual rate is $APR_4 = 1\\% \\times 4 = 4\\%$. Applying Equation 1 with $m = 4$ and $n = 2$: $(1 + \\frac{0.04}{4})^4 = (1 + \\frac{APR_2}{2})^2$. This equates the effective annual return from both periodicities and solves for $APR_2$.</p><p>A is incorrect because the left side uses $m = 2$ (semiannual) and the right side uses $n = 4$ (quarterly), which converts in the opposite direction from semiannual to quarterly, not quarterly to semiannual.</p><p>B is incorrect because the left side uses annual compounding (periodicity of 1) with the full annual rate, not quarterly compounding; it would convert an EAR to semiannual, not a quarterly rate.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Formula",
+    "stem": "When the government bond benchmark maturity does not exactly match the bond's maturity and interpolation is required, the G-spread is:",
+    "options": {
+      "A": "G-spread $=$ YTM$_{\\text{bond}}$ $-$ interpolated YTM$_{\\text{government}}$",
+      "B": "G-spread $=$ interpolated YTM$_{\\text{government}}$ $-$ YTM$_{\\text{bond}}$",
+      "C": "G-spread $=$ YTM$_{\\text{bond}}$ $-$ spot rate$_{\\text{government}}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: G-spread with interpolation</h3><p><strong>A is correct.</strong> The CFA Curriculum states the G-spread is the yield spread over an actual or interpolated government bond yield. When no government bond matches the exact maturity, the benchmark rate is interpolated between surrounding government bond yields, and G-spread $=$ YTM$_{\\text{bond}}$ $-$ interpolated YTM$_{\\text{government}}$.</p><p>B is incorrect because reversing the subtraction yields a negative spread for a corporate bond that yields more than the government benchmark; the bond's yield must be the minuend.</p><p>C is incorrect because using a spot rate describes the Z-spread calculation (Equation 4), not the G-spread; the G-spread uses YTMs, not spot rates.</p>"
+  }
+]

@@ -1,6 +1,7 @@
 Building-block Style
-Generate 21 very easy CFA-style MCQs for Topic:  Module 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves using PDF/CFA L1 B6 Fixed Income.pdf'.
-Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST
+Generate 21 very easy CFA-style MCQs for Topic:  Module 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves using 'PDF/FixedIncome/module_07_yield_and_yield_spread_measures_for_fixed_rate_bonds.txt'.
+Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
+A special instruction this time is to ONLY FOCUS ON MATHEMATICAL FORMULAS
 Write the output only the JSON array to a dedicated file The Term Structure of Interest Rates (Katas).json.
 
 Enumeration / Counting Format
@@ -37,3 +38,23 @@ Generate 21 CFA-style very easy MCQs for Standard VI(B) - Referral Fees.
 Use PDFs in PDF/CFA Ethics in Practice.pdf and PDF/standards-practice-handbook-12th-edition.pdf.
 Follow AGENTS.md and use the CFA Ethics Questions Fundamental Katas Edition.
 Write the output only the JSON array to a dedicated file to Standard VI(B) - Referral Fees (Katas).json.
+
+---
+
+Formula Questions
+
+Generate 14 very easy CFA-style MCQs focused only on formulas from 'PDF/FixedIncome/module_06_fixed_income_bond_valuation_prices_and_yields.txt'.
+
+Follow AGENTS.md (CFA Formula Section).
+Topic must be "Formula".
+
+Test:
+- formula recall
+- simple substitution
+- rearrangements
+
+Use LaTeX for formulas.
+Return only JSON array.
+Save to 'Fixed Income Bond Valuation.json'.
+
+Always start with Todo list and keep updating the user on claude console of what you are currently doing with exact command lines

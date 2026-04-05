@@ -32,6 +32,10 @@ rg --files
 ls -lah PDF
 ls -lah "Target File.json"
 ```
+Before every rg, sed, or jq command, print a one-line summary:
+"[STEP N] Running: <command> | Reason: <why>"
+After every command, print:
+"[RESULT] Got <line count> lines / <status>"
 
 ## PDF Parsing
 

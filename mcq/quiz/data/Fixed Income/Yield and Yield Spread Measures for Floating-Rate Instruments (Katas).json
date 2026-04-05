@@ -1,0 +1,458 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Module 8: Yield and Yield Spread Measures for Floating-Rate Instruments",
+    "stem": "A floating-rate instrument is most accurately described as a debt instrument with interest determined by:",
+    "options": {
+      "A": "an observed market reference rate plus a quoted margin",
+      "B": "a fixed coupon rate only",
+      "C": "its par value minus accrued interest"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a floating-rate instrument as a debt instrument with interest determined by an observed market reference rate (MRR) plus a quoted margin. The rule is that the coupon is not fixed for the life of the instrument. The intuition is that the interest payment adjusts with market rates. Applying that rule identifies MRR plus a quoted margin.</p><p>Why top distractor is wrong :. A fixed coupon describes a fixed-rate bond, not a floating-rate instrument.</p><p>Why remaining distractor is wrong. Par value minus accrued interest is not the coupon-setting rule for floaters.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "The market reference rate on a floating-rate note is most likely reset on:",
+    "options": {
+      "A": "predetermined dates",
+      "B": "the maturity date only",
+      "C": "random dates chosen by investors"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that interest payments on floaters are reset on predetermined dates, capturing any change in the MRR. The rule is that reset timing is specified in the contract. The intuition is that coupon adjustments follow a known schedule. Applying that rule gives predetermined dates.</p><p>Why top distractor is wrong :. Resetting only at maturity would not create a standard floating-rate structure.</p><p>Why remaining distractor is wrong. Investors do not choose reset dates arbitrarily; the note terms do.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "The quoted margin on a floating-rate note is most accurately the specified spread ________ the reference rate:",
+    "options": {
+      "A": "over or under",
+      "B": "equal to",
+      "C": "multiplied by"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the quoted margin as a specified spread over or under the reference rate. The rule is that the floater coupon equals the MRR plus or minus that quoted spread. The intuition is that issuer-specific credit compensation is layered on top of the base reference rate. Applying that rule gives over or under.</p><p>Why top distractor is wrong :. The quoted margin is not required to be exactly equal to the reference rate.</p><p>Why remaining distractor is wrong. The curriculum describes an additive spread, not a multiplicative adjustment.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "The required margin is also known as the:",
+    "options": {
+      "A": "discount margin",
+      "B": "coupon reset period",
+      "C": "bond equivalent yield"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the required margin is also known as the discount margin. The rule is purely definitional in the module’s floater pricing section. The intuition is that it is the market-required spread consistent with par pricing on a reset date. Applying that definition identifies discount margin.</p><p>Why top distractor is wrong :. Coupon reset period is a timing feature, not the market-required spread.</p><p>Why remaining distractor is wrong. Bond equivalent yield is a money market comparison measure, not the name for required margin.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "If a floater trades at par on a reset date, the quoted margin is most likely ________ the required margin:",
+    "options": {
+      "A": "equal to",
+      "B": "greater than",
+      "C": "less than"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if a floater trades at par, the quoted and required margins are equal. The rule is that par pricing on a reset date occurs when the contracted spread matches the market-required spread. The intuition is that there is no excess or deficient spread to create a premium or discount. Applying that rule gives equality.</p><p>Why top distractor is wrong :. A quoted margin above the required margin would imply a premium, not par.</p><p>Why remaining distractor is wrong. A quoted margin below the required margin would imply a discount, not par.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "On a reset date, if the quoted margin is greater than the required margin, the floater will most likely be priced at a:",
+    "options": {
+      "A": "premium",
+      "B": "discount",
+      "C": "par value only if duration is zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that if the required margin is below the quoted margin, the floater pays an excess spread and is priced at a premium. The rule is that investors value the extra future interest payments above par. The intuition is that better-than-required cash flows raise price. Applying that rule gives a premium.</p><p>Why top distractor is wrong :. A discount arises when the quoted margin is below the required margin, not above it.</p><p>Why remaining distractor is wrong. The module ties premium pricing directly to the margin relationship, not to duration being zero.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "On a reset date, if the quoted margin is less than the required margin, the floater will most likely be priced at a:",
+    "options": {
+      "A": "premium",
+      "B": "discount",
+      "C": "par value"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum states that when the required margin is above the quoted margin, the floater pays a deficient spread and is priced at a discount. The rule is that the market demands more spread than the note contract provides. The intuition is that weaker-than-required future interest payments lower present value. Applying that rule gives a discount.</p><p>Why top distractor is wrong :. A premium would require quoted margin above required margin, not below it.</p><p>Why remaining distractor is wrong. Par requires quoted and required margins to be equal.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "Changes in the required margin usually come from changes in the issuer's:",
+    "options": {
+      "A": "credit risk",
+      "B": "coupon frequency only",
+      "C": "par value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says changes in the required margin usually come from changes in the issuer’s credit risk. The rule is that required margin reflects bottom-up issuer and security risks. The intuition is that investors demand more or less spread as the issuer’s risk changes. Applying that rule identifies credit risk.</p><p>Why top distractor is wrong :. Coupon frequency does not usually drive the required margin in this module’s framework.</p><p>Why remaining distractor is wrong. Par value is fixed and is not the usual driver of changes in required margin.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "The required margin for a floater is most analogous to which measure for a fixed-rate bond?",
+    "options": {
+      "A": "Yield spread",
+      "B": "Coupon payment",
+      "C": "Accrued interest"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly says the required margin is analogous to a yield spread for a fixed-rate bond. The rule is that both capture issuer- and security-specific risks beyond a benchmark rate. The intuition is that the spread component serves the same pricing role across floating-rate and fixed-rate instruments. Applying that rule identifies yield spread.</p><p>Why top distractor is wrong :. Coupon payment is a cash flow, not the risk spread analogy emphasized here.</p><p>Why remaining distractor is wrong. Accrued interest is a settlement concept, not the analogous spread measure.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "Most loans are most accurately classified in this module as:",
+    "options": {
+      "A": "floating-rate instruments",
+      "B": "zero-coupon bonds",
+      "C": "money market discount instruments only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that most loans are floating-rate instruments. The rule is that loan interest commonly varies with a market reference rate plus a spread. The intuition is that lenders often want rates that adjust with market conditions. Applying that rule classifies most loans as floating-rate instruments.</p><p>Why top distractor is wrong :. Most loans are not structured as zero-coupon bonds in this module.</p><p>Why remaining distractor is wrong. Loans are not described here as money market discount instruments only.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "Compared with fixed-rate instruments, floating-rate instruments generally bear less:",
+    "options": {
+      "A": "price risk",
+      "B": "credit risk",
+      "C": "principal amount"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that floating-rate instruments, by adjusting cash flows to changes in interest rates, bear less price risk than fixed-rate instruments. The rule is that coupon resets reduce price sensitivity to rate changes. The intuition is that changing cash flows absorb much of the rate movement. Applying that rule gives price risk.</p><p>Why top distractor is wrong :. The module does not say floating-rate instruments inherently bear less credit risk than fixed-rate instruments.</p><p>Why remaining distractor is wrong. Principal amount is a contractual amount, not the risk dimension being compared here.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Money market instruments have original maturities of most accurately:",
+    "options": {
+      "A": "one year or less",
+      "B": "more than one year only",
+      "C": "exactly ten years"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines money market instruments as debt securities with original maturities of one year or less. The rule is based on original, not remaining, maturity. The intuition is that these are short-term financing instruments. Applying that definition gives one year or less.</p><p>Why top distractor is wrong :. More than one year falls outside the module’s money market definition.</p><p>Why remaining distractor is wrong. Ten years is far beyond the maturity range for money market instruments.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Yield measures in the money market are most accurately described as annualized and:",
+    "options": {
+      "A": "not compounded",
+      "B": "compounded semiannually",
+      "C": "always compounded monthly"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says money market yields are annualized but not compounded; they are stated on a simple interest basis. The rule distinguishes them from longer-term bond yields-to-maturity. The intuition is that money market quoting conventions use simple annualization for short maturities. Applying that rule gives not compounded.</p><p>Why top distractor is wrong :. Semiannual compounding is a bond convention, not the basic money market convention here.</p><p>Why remaining distractor is wrong. The curriculum does not define money market yield measures as always compounded monthly.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Commercial paper, Treasury bills, and bankers' acceptances are typically quoted on a:",
+    "options": {
+      "A": "discount rate basis",
+      "B": "add-on rate basis",
+      "C": "full price plus accrued interest basis"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that commercial paper, Treasury bills, and bankers’ acceptances are often quoted on a discount rate basis. The rule is a market quotation convention specific to these money market instruments. The intuition is that these securities often embed interest in the maturity value. Applying that rule gives discount rate basis.</p><p>Why top distractor is wrong :. Add-on rate basis is more typical for certificates of deposit, repos, and market reference rates.</p><p>Why remaining distractor is wrong. Full price plus accrued interest is not the money market quotation convention described here.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Bank certificates of deposit, repos, and market reference rates are typically quoted on an:",
+    "options": {
+      "A": "add-on rate basis",
+      "B": "discount rate basis",
+      "C": "equity dividend basis"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says bank certificates of deposit, repos, and market reference rate indexes are quoted on an add-on rate basis. The rule is a standard money market convention for these instruments. The intuition is that interest is added to principal rather than embedded in face value. Applying that rule gives add-on rate basis.</p><p>Why top distractor is wrong :. Discount rate basis applies to other money market instruments such as Treasury bills and commercial paper.</p><p>Why remaining distractor is wrong. Equity dividend basis is unrelated to the money market yield conventions in this module.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "A money market discount rate understates the investor's rate of return when the purchase price is ________ the face value:",
+    "options": {
+      "A": "below",
+      "B": "equal to",
+      "C": "above only because of default"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that discount rates divide interest income by face value, not by the lower purchase price, so they understate the investor’s return when purchase price is below face value. The rule is based on the denominator used in the discount-rate convention. The intuition is that the actual invested amount is smaller than face value. Applying that rule gives below.</p><p>Why top distractor is wrong :. If purchase price equals face value, the underpricing logic described here does not apply in the same way.</p><p>Why remaining distractor is wrong. The understatement is a quotation-convention issue, not something that requires default.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "An add-on rate most accurately involves interest that is:",
+    "options": {
+      "A": "added to the principal amount",
+      "B": "subtracted from the face value",
+      "C": "ignored until maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum contrasts discount rates with add-on rates by stating that an add-on rate involves interest added to the principal or investment amount. The rule is definitional. The intuition is that redemption amount equals principal plus earned interest. Applying that rule identifies interest added to principal.</p><p>Why top distractor is wrong :. Subtracting from face value describes discount-rate pricing, not add-on-rate pricing.</p><p>Why remaining distractor is wrong. Interest is not ignored; it is explicitly built into the maturity redemption amount.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "A bond equivalent yield for a money market instrument is most accurately a money market rate stated on a:",
+    "options": {
+      "A": "365-day add-on rate basis",
+      "B": "360-day discount rate basis",
+      "C": "semiannual coupon basis only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines bond equivalent yield as a money market rate stated on a 365-day add-on rate basis. The rule is that this conversion improves comparability across money market instruments and with bonds. The intuition is that a common basis makes return comparisons cleaner. Applying that rule gives 365-day add-on rate basis.</p><p>Why top distractor is wrong :. A 360-day discount rate basis is one quotation convention, not the bond equivalent yield basis.</p><p>Why remaining distractor is wrong. Semiannual coupon basis is a bond compounding convention, not the BEY definition here.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Money market instruments with different times-to-maturity have different:",
+    "options": {
+      "A": "periodicities",
+      "B": "face values by definition",
+      "C": "coupon reset dates by definition"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that money market instruments with different times-to-maturity have different periodicities because the annual rate is based on Year divided by Days. The rule is that the simple-interest annualization changes with the term. The intuition is that a shorter or longer money market instrument implies a different number of such periods in a year. Applying that rule gives periodicities.</p><p>Why top distractor is wrong :. Face value is not determined by time-to-maturity in the way periodicity is.</p><p>Why remaining distractor is wrong. Coupon reset dates apply to floaters, not to all money market instruments by definition.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Yield Measures for Money Market Instruments",
+    "stem": "Conventional money market measures can most accurately be converted to enhance:",
+    "options": {
+      "A": "comparability to longer-term securities",
+      "B": "equity voting rights",
+      "C": "coupon accrual conventions only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that conventional money market measures can be converted to enhance comparability to longer-term securities. The rule is that different quotation conventions can otherwise hide the true relative return. The intuition is that a common comparison basis helps investors rank alternatives. Applying that rule gives comparability to longer-term securities.</p><p>Why top distractor is wrong :. Money market yield conversions have nothing to do with equity voting rights.</p><p>Why remaining distractor is wrong. The conversion goal is broader return comparability, not only coupon accrual conventions.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Yield and Yield Spread Measures for Floating-Rate Notes",
+    "stem": "For a floater, the premium or discount relative to par most likely arises from the difference between the fixed quoted margin and the:",
+    "options": {
+      "A": "required margin",
+      "B": "market value of equity",
+      "C": "face value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that for floating-rate bonds, premium or discount arises from the difference between the fixed quoted margin and the required margin. The rule parallels fixed-rate bond pricing, where the key difference is between promised coupon and required yield. The intuition is that excess or deficient future spread payments create price premiums or discounts. Applying that rule gives required margin.</p><p>Why top distractor is wrong :. Market value of equity is not part of the floater pricing identity in this module.</p><p>Why remaining distractor is wrong. Face value is the principal amount, not the market-required spread that drives the premium or discount.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "For a floating-rate note, which formula most accurately gives the periodic payment $PMT$ in the simplified pricing model?",
+    "options": {
+      "A": "$PMT = \\dfrac{(MRR + QM) \\times FV}{m}$",
+      "B": "$PMT = \\dfrac{(MRR + DM) \\times FV}{m}$",
+      "C": "$PMT = (MRR + QM) \\times FV \\times m$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, the floater's periodic cash payment is the annual reference rate plus quoted margin, applied to face value and divided by the number of payment periods per year. That gives $PMT = \\\\dfrac{(MRR + QM) \\\\times FV}{m}$. The division by $m$ converts the annual rate into a periodic payment. Applying that rule gives the correct floater coupon amount each period.</p><p>Why top distractor is wrong (PDF-based misconception): B is tempting because $DM$ also appears in the floater model, but it belongs in the discount rate used to value cash flows, not in the coupon payment itself.</p><p>Why remaining distractor is wrong: C multiplies by $m$ instead of dividing by $m$, so it overstates the periodic payment rather than converting the annual rate to one period.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If the simplified floater model uses $r = \\dfrac{MRR + DM}{m}$, which rearrangement solves for the discount margin $DM$?",
+    "options": {
+      "A": "$DM = mr - MRR$",
+      "B": "$DM = \\dfrac{r - MRR}{m}$",
+      "C": "$DM = MRR - mr$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum links the periodic discount rate to the market reference rate and discount margin through $r = \\\\dfrac{MRR + DM}{m}$. Multiply both sides by $m$ to get $mr = MRR + DM$, then isolate the primitive unknown: $DM = mr - MRR$. This is the direct rearrangement of the floater discount-rate relation.</p><p>Why top distractor is wrong (PDF-based misconception): B incorrectly divides after rearranging. Once both annual spreads are inside the numerator, the correct step is to multiply by $m$, not divide again.</p><p>Why remaining distractor is wrong: C reverses the sign and would imply a lower required margin when the periodic discount rate rises, which contradicts the CFA Curriculum relation.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 90-day money market instrument has $FV = 100$, $DR = 4\\%$, and a 360-day year. Its price is closest to:",
+    "options": {
+      "A": "99.00",
+      "B": "96.00",
+      "C": "101.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices a discount-rate money market instrument as $PV = FV \\\\times \\\\left(1 - \\\\dfrac{Days}{Year} \\\\times DR\\\\right)$. Substituting gives $PV = 100 \\\\times \\\\left(1 - \\\\dfrac{90}{360} \\\\times 0.04\\\\right) = 100 \\\\times (1 - 0.01) = 99$. The formula directly converts the quoted annual discount rate into a simple period discount. Therefore the price is 99.00.</p><p>Why top distractor is wrong (PDF-based misconception): B treats the 4% annual discount as if it applied to the full face value without adjusting for the 90-day fraction of the year.</p><p>Why remaining distractor is wrong: C is above face value, but a positive discount rate in the CFA Curriculum gives a price below face value, not above it.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula is the CFA Curriculum expression for a money market discount rate $DR$?",
+    "options": {
+      "A": "$DR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{FV}$",
+      "B": "$DR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{PV}$",
+      "C": "$DR = \\dfrac{Days}{Year} \\times \\dfrac{FV - PV}{FV}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, the money market discount rate is annualized by multiplying by $\\\\dfrac{Year}{Days}$ and uses face value in the denominator: $DR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{FV}$. The key primitive is that discount-rate quotations are based on the maturity value, not the investment amount. Applying that definition gives the exact formula.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $PV$ in the denominator, but that is the add-on-rate structure, not the discount-rate structure.</p><p>Why remaining distractor is wrong: C inverts the annualization term. The CFA Curriculum annualizes with $\\\\dfrac{Year}{Days}$, not $\\\\dfrac{Days}{Year}$.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately prices a money market instrument quoted on an add-on rate basis?",
+    "options": {
+      "A": "$PV = \\dfrac{FV}{1 + \\dfrac{Days}{Year} \\times AOR}$",
+      "B": "$PV = FV \\times \\left(1 - \\dfrac{Days}{Year} \\times AOR\\right)$",
+      "C": "$PV = \\dfrac{FV}{1 + \\dfrac{Year}{Days} \\times AOR}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices an add-on-rate instrument by discounting the redemption amount with simple interest: $PV = \\\\dfrac{FV}{1 + \\\\dfrac{Days}{Year} \\\\times AOR}$. The term $\\\\dfrac{Days}{Year}$ converts the annual add-on rate to the relevant holding period. Applying that relation gives the present value.</p><p>Why top distractor is wrong (PDF-based misconception): B looks like the discount-rate pricing formula, but add-on instruments use the add-on structure with $PV$ as the investment amount, not the discount-rate structure.</p><p>Why remaining distractor is wrong: C reverses the time fraction. The CFA Curriculum uses $\\\\dfrac{Days}{Year}$ inside the add-on denominator.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which expression correctly isolates the add-on rate $AOR$ from the CFA Curriculum money market formula?",
+    "options": {
+      "A": "$AOR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{PV}$",
+      "B": "$AOR = \\dfrac{Year}{Days} \\times \\dfrac{FV - PV}{FV}$",
+      "C": "$AOR = \\dfrac{Days}{Year} \\times \\dfrac{FV - PV}{PV}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum, add-on rate is annualized simple return on the invested amount, so $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. The denominator is $PV$ because add-on interest is earned on the principal invested. That is the exact algebraic isolation of the add-on relation.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $FV$ in the denominator, which is the defining feature of a discount-rate quotation, not an add-on-rate quotation.</p><p>Why remaining distractor is wrong: C flips the annualization fraction and so does not produce the annualized rate shown in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 180-day instrument has $PV = 100$, $AOR = 6\\%$, and a 360-day year. The maturity value $FV$ is closest to:",
+    "options": {
+      "A": "103.00",
+      "B": "106.00",
+      "C": "112.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Rearranging the CFA Curriculum add-on formula gives $FV = PV \\\\times \\\\left(1 + \\\\dfrac{Days}{Year} \\\\times AOR\\\\right)$. Substituting yields $FV = 100 \\\\times \\\\left(1 + \\\\dfrac{180}{360} \\\\times 0.06\\\\right) = 100 \\\\times 1.03 = 103$. The add-on interest is simple interest added to principal. Therefore the maturity value is 103.00.</p><p>Why top distractor is wrong (PDF-based misconception): B applies the full 6% annual rate to the entire principal without scaling it to the 180-day holding period.</p><p>Why remaining distractor is wrong: C overstates the interest even further and does not match the simple-interest add-on formula in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 120-day instrument has $FV = 100$, $PV = 99$, and a 360-day year. Its discount rate $DR$ is closest to:",
+    "options": {
+      "A": "3.00%",
+      "B": "3.03%",
+      "C": "1.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum discount-rate formula is $DR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{FV}$. Here, $DR = \\\\dfrac{360}{120} \\\\times \\\\dfrac{100 - 99}{100} = 3 \\\\times 0.01 = 0.03 = 3.00\\\\%$. The denominator remains face value because this is a discount-rate quote. Therefore the discount rate is 3.00%.</p><p>Why top distractor is wrong (PDF-based misconception): B uses $PV$ in the denominator, which would convert the question into an add-on-rate calculation rather than a discount-rate calculation.</p><p>Why remaining distractor is wrong: C ignores the annualization factor of $\\\\dfrac{360}{120} = 3$ and uses only the one-period discount.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 120-day instrument has $FV = 100$, $PV = 99$, and a 360-day year. Its add-on rate $AOR$ is closest to:",
+    "options": {
+      "A": "3.03%",
+      "B": "3.00%",
+      "C": "1.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum add-on formula is $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. Substituting gives $AOR = \\\\dfrac{360}{120} \\\\times \\\\dfrac{1}{99} = 3 \\\\times 0.010101... = 0.0303$, or about 3.03%. Because the investment amount is $PV$, the rate is slightly above the discount rate. That makes 3.03% the correct answer.</p><p>Why top distractor is wrong (PDF-based misconception): B uses face value in the denominator, which is the discount-rate formula rather than the add-on-rate formula.</p><p>Why remaining distractor is wrong: C ignores the annualization term and treats the one-period return as if it were already annual.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A two-year semiannual floater has $MRR = 1\\%$, $QM = 0.5\\%$, $FV = 100$, and $m = 2$. The periodic payment $PMT$ is closest to:",
+    "options": {
+      "A": "0.75",
+      "B": "1.50",
+      "C": "0.50"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum periodic floater payment is $PMT = \\\\dfrac{(MRR + QM) \\\\times FV}{m}$. Substituting gives $PMT = \\\\dfrac{(0.01 + 0.005) \\\\times 100}{2} = \\\\dfrac{1.5}{2} = 0.75$. The division by the semiannual periodicity turns the annual coupon rate into one semiannual cash flow. Therefore the payment is 0.75.</p><p>Why top distractor is wrong (PDF-based misconception): B applies the annual coupon amount but forgets to divide by the two payment periods per year.</p><p>Why remaining distractor is wrong: C omits part of the annual coupon rate and understates the periodic payment.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "In the simplified FRN pricing model, which one-period denominator is most accurate when $MRR = 1.2\\%$, $DM = 0.8\\%$, and $m = 4$?",
+    "options": {
+      "A": "$1 + \\dfrac{0.012 + 0.008}{4}$",
+      "B": "$1 + 0.012 + 0.008$",
+      "C": "$1 + \\dfrac{0.012 - 0.008}{4}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum simplified FRN model, the periodic discount rate is the annual market reference rate plus annual discount margin, divided by the number of periods per year. So one period's denominator is $1 + \\\\dfrac{MRR + DM}{m} = 1 + \\\\dfrac{0.012 + 0.008}{4}$. This converts annual rates into a quarterly discount factor. That is the correct denominator form.</p><p>Why top distractor is wrong (PDF-based misconception): B does not divide by the periodicity, so it uses annual rates directly in a one-period denominator.</p><p>Why remaining distractor is wrong: C subtracts the discount margin from the reference rate, but the CFA Curriculum model adds them in the denominator.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a floater has periodic discount rate $r = 0.006$, $m = 4$, and $MRR = 1.0\\%$, the discount margin $DM$ is closest to:",
+    "options": {
+      "A": "1.4%",
+      "B": "0.5%",
+      "C": "2.4%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum relation is $r = \\\\dfrac{MRR + DM}{m}$, so rearranging gives $DM = mr - MRR$. Substituting gives $DM = 4 \\\\times 0.006 - 0.01 = 0.024 - 0.01 = 0.014 = 1.4\\\\%$. The periodic rate is first converted back to an annualized total spread and then reduced by the reference rate. Therefore the discount margin is 1.4%.</p><p>Why top distractor is wrong (PDF-based misconception): B comes from dividing instead of multiplying by $m$, which understates the annual margin implied by the periodic discount rate.</p><p>Why remaining distractor is wrong: C ignores subtracting the market reference rate after annualizing the periodic discount rate.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 90-day instrument has $FV = 100$, $DR = 0.12\\%$, and a 360-day year. Its price is closest to:",
+    "options": {
+      "A": "99.97",
+      "B": "99.88",
+      "C": "100.12"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum discount-pricing formula is $PV = FV \\\\times \\\\left(1 - \\\\dfrac{Days}{Year} \\\\times DR\\\\right)$. Substituting gives $PV = 100 \\\\times \\\\left(1 - \\\\dfrac{90}{360} \\\\times 0.0012\\\\right) = 100 \\\\times (1 - 0.0003) = 99.97$. A small positive discount rate gives a price slightly below face value. Therefore 99.97 is correct.</p><p>Why top distractor is wrong (PDF-based misconception): B is too low because it overstates the discount and does not match the simple fraction-of-year adjustment used in the CFA Curriculum.</p><p>Why remaining distractor is wrong: C is above face value, which is inconsistent with a positive discount-rate quote.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A 180-day instrument has $PV = 100$, $FV = 101$, and a 360-day year. Its add-on rate $AOR$ is closest to:",
+    "options": {
+      "A": "2.00%",
+      "B": "1.00%",
+      "C": "1.98%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum formula is $AOR = \\\\dfrac{Year}{Days} \\\\times \\\\dfrac{FV - PV}{PV}$. Substituting gives $AOR = \\\\dfrac{360}{180} \\\\times \\\\dfrac{101 - 100}{100} = 2 \\\\times 0.01 = 0.02 = 2.00\\\\%$. The rate is simple annualized return on the invested principal. Therefore the add-on rate is 2.00%.</p><p>Why top distractor is wrong (PDF-based misconception): B uses the one-period return of 1% but forgets to annualize the 180-day result.</p><p>Why remaining distractor is wrong: C is close, but it uses a denominator other than the invested amount or introduces unnecessary rounding not required by the CFA Curriculum formula.</p>"
+  }
+]
+

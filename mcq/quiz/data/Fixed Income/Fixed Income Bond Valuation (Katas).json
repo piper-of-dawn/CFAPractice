@@ -10,7 +10,7 @@
       "C": "Credit rating migration"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines bond pricing as an application of discounted cash flow analysis. The rule is to discount promised coupon and principal cash flows at the relevant market discount rate. The intuition is simple: a bond’s value comes from the present value of future payments. Applying that rule leads directly to discounted cash flow analysis.</p><p>Why top distractor is wrong (PDF-based misconception). Equity index weighting is a portfolio index concept, not a bond valuation method in this module.</p><p>Why remaining distractor is wrong. Credit rating migration may affect required yield, but it is not the valuation method itself.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines bond pricing as an application of discounted cash flow analysis. The rule is to discount promised coupon and principal cash flows at the relevant market discount rate. The intuition is simple: a bond’s value comes from the present value of future payments. Applying that rule leads directly to discounted cash flow analysis.</p><p>Why top distractor is wrong :. Equity index weighting is a portfolio index concept, not a bond valuation method in this module.</p><p>Why remaining distractor is wrong. Credit rating migration may affect required yield, but it is not the valuation method itself.</p>"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
       "C": "equal to accrued interest"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the market discount rate is the rate of return required by investors given the risk of the bond investment. The rule is that this rate is used to discount future cash flows. The intuition is that investors need compensation for time and risk. Applying that rule identifies the market discount rate as the required return.</p><p>Why top distractor is wrong (PDF-based misconception). The coupon is a contractual payment rate and does not have to equal the required return.</p><p>Why remaining distractor is wrong. Accrued interest is part of price between coupon dates, not the required discount rate.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the market discount rate is the rate of return required by investors given the risk of the bond investment. The rule is that this rate is used to discount future cash flows. The intuition is that investors need compensation for time and risk. Applying that rule identifies the market discount rate as the required return.</p><p>Why top distractor is wrong :. The coupon is a contractual payment rate and does not have to equal the required return.</p><p>Why remaining distractor is wrong. Accrued interest is part of price between coupon dates, not the required discount rate.</p>"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
       "C": "higher than the market discount rate"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says a bond trades at par when the coupon rate equals the market discount rate. The rule is that coupon cash flows then exactly match what investors require for that maturity and risk. The intuition is that no price adjustment above or below face value is needed. Applying the rule gives par when the two rates are equal.</p><p>Why top distractor is wrong (PDF-based misconception). If the coupon rate is lower than the market discount rate, the bond trades at a discount, not par.</p><p>Why remaining distractor is wrong. If the coupon rate is higher than the market discount rate, the bond trades at a premium, not par.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says a bond trades at par when the coupon rate equals the market discount rate. The rule is that coupon cash flows then exactly match what investors require for that maturity and risk. The intuition is that no price adjustment above or below face value is needed. Applying the rule gives par when the two rates are equal.</p><p>Why top distractor is wrong :. If the coupon rate is lower than the market discount rate, the bond trades at a discount, not par.</p><p>Why remaining distractor is wrong. If the coupon rate is higher than the market discount rate, the bond trades at a premium, not par.</p>"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "C": "above the market discount rate"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that a discount bond has a coupon rate below the market discount rate. The rule is that deficient coupons must be offset by a lower price. The intuition is that investors need a price concession when the promised coupon is too low relative to required return. Applying that rule gives a discount price.</p><p>Why top distractor is wrong (PDF-based misconception). Equality between coupon and discount rate implies par, not discount.</p><p>Why remaining distractor is wrong. A coupon above the market discount rate leads to a premium, not a discount.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that a discount bond has a coupon rate below the market discount rate. The rule is that deficient coupons must be offset by a lower price. The intuition is that investors need a price concession when the promised coupon is too low relative to required return. Applying that rule gives a discount price.</p><p>Why top distractor is wrong :. Equality between coupon and discount rate implies par, not discount.</p><p>Why remaining distractor is wrong. A coupon above the market discount rate leads to a premium, not a discount.</p>"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "C": "above the market discount rate"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that a premium bond has a coupon rate above the market discount rate. The rule is that excess coupon payments justify a price above face value. The intuition is that investors are willing to pay more for cash flows richer than current market requirements. Applying that rule leads to a premium price.</p><p>Why top distractor is wrong (PDF-based misconception). A lower coupon rate leads to a discount, not a premium.</p><p>Why remaining distractor is wrong. Equal coupon and market discount rates imply par pricing, not premium pricing.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that a premium bond has a coupon rate above the market discount rate. The rule is that excess coupon payments justify a price above face value. The intuition is that investors are willing to pay more for cash flows richer than current market requirements. Applying that rule leads to a premium price.</p><p>Why top distractor is wrong :. A lower coupon rate leads to a discount, not a premium.</p><p>Why remaining distractor is wrong. Equal coupon and market discount rates imply par pricing, not premium pricing.</p>"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
       "C": "accrued interest divided by face value"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines yield-to-maturity as the internal rate of return that equates the present value of future cash flows to the bond’s price. The rule is one discount rate for all promised cash flows. The intuition is that yield summarizes the bond’s price and cash flow pattern in a single return measure. Applying that definition identifies YTM as the internal rate of return.</p><p>Why top distractor is wrong (PDF-based misconception). Annual coupon divided by flat price is current yield, not yield-to-maturity.</p><p>Why remaining distractor is wrong. Accrued interest relative to face value is not a return measure defined in this module.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines yield-to-maturity as the internal rate of return that equates the present value of future cash flows to the bond’s price. The rule is one discount rate for all promised cash flows. The intuition is that yield summarizes the bond’s price and cash flow pattern in a single return measure. Applying that definition identifies YTM as the internal rate of return.</p><p>Why top distractor is wrong :. Annual coupon divided by flat price is current yield, not yield-to-maturity.</p><p>Why remaining distractor is wrong. Accrued interest relative to face value is not a return measure defined in this module.</p>"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
       "C": "quoted at full price only"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum lists holding the bond to maturity as one condition for earning the YTM. The rule is that the realized return matches YTM only if the planned bond cash flow path is completed. The intuition is that selling early exposes the investor to a different price and return outcome. Applying that condition makes holding to maturity necessary.</p><p>Why top distractor is wrong (PDF-based misconception). Selling before maturity breaks one of the stated conditions for realizing YTM.</p><p>Why remaining distractor is wrong. Whether a bond is discussed by full price or quoted price is not one of the required YTM conditions.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum lists holding the bond to maturity as one condition for earning the YTM. The rule is that the realized return matches YTM only if the planned bond cash flow path is completed. The intuition is that selling early exposes the investor to a different price and return outcome. Applying that condition makes holding to maturity necessary.</p><p>Why top distractor is wrong :. Selling before maturity breaks one of the stated conditions for realizing YTM.</p><p>Why remaining distractor is wrong. Whether a bond is discussed by full price or quoted price is not one of the required YTM conditions.</p>"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
       "C": "reinvested at any rate"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that coupons must be reinvested at the same YTM for realized return to equal YTM. The rule is that the internal rate of return assumption includes reinvestment at that same rate. The intuition is that coupon cash flows contribute to the total return path. Applying the rule makes same-rate reinvestment necessary.</p><p>Why top distractor is wrong (PDF-based misconception). Spending coupons immediately does not satisfy the reinvestment assumption underlying YTM.</p><p>Why remaining distractor is wrong. Reinvestment at any rate can produce a realized return different from the quoted YTM.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that coupons must be reinvested at the same YTM for realized return to equal YTM. The rule is that the internal rate of return assumption includes reinvestment at that same rate. The intuition is that coupon cash flows contribute to the total return path. Applying the rule makes same-rate reinvestment necessary.</p><p>Why top distractor is wrong :. Spending coupons immediately does not satisfy the reinvestment assumption underlying YTM.</p><p>Why remaining distractor is wrong. Reinvestment at any rate can produce a realized return different from the quoted YTM.</p>"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
       "C": "secured"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly states that a bond’s yield-to-maturity may be positive, zero, or negative. The rule is that price and promised cash flows can imply any of those three yield states. The intuition is that very high prices relative to future payoff can imply a negative return. Applying the curriculum statement gives negative as the missing category.</p><p>Why top distractor is wrong (PDF-based misconception). Callable describes a bond feature, not a possible sign of YTM.</p><p>Why remaining distractor is wrong. Secured describes seniority or collateral status, not a yield sign.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly states that a bond’s yield-to-maturity may be positive, zero, or negative. The rule is that price and promised cash flows can imply any of those three yield states. The intuition is that very high prices relative to future payoff can imply a negative return. Applying the curriculum statement gives negative as the missing category.</p><p>Why top distractor is wrong :. Callable describes a bond feature, not a possible sign of YTM.</p><p>Why remaining distractor is wrong. Secured describes seniority or collateral status, not a yield sign.</p>"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
       "C": "coupon plus face value"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the identity $PV_{Full} = PV_{Flat} + AI$. The rule is that the buyer compensates the seller for interest earned since the last coupon date. The intuition is that the next full coupon will be received by the buyer even though part of it was earned by the seller. Applying the identity yields full price as flat price plus accrued interest.</p><p>Why top distractor is wrong (PDF-based misconception). Subtracting accrued interest gives the flat price, not the full price.</p><p>Why remaining distractor is wrong. Coupon plus face value is a maturity cash flow, not the definition of full price.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the identity $PV_{Full} = PV_{Flat} + AI$. The rule is that the buyer compensates the seller for interest earned since the last coupon date. The intuition is that the next full coupon will be received by the buyer even though part of it was earned by the seller. Applying the identity yields full price as flat price plus accrued interest.</p><p>Why top distractor is wrong :. Subtracting accrued interest gives the flat price, not the full price.</p><p>Why remaining distractor is wrong. Coupon plus face value is a maturity cash flow, not the definition of full price.</p>"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
       "C": "dirty price"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says the flat price is also called the quoted or clean price. The rule is that dealers usually quote bonds excluding accrued interest. The intuition is that quoting the flat price avoids the mechanical rise in price from daily interest accrual. Applying that rule identifies the flat price as the quoted price.</p><p>Why top distractor is wrong (PDF-based misconception). Invoice price is another name for the full price, not the flat price.</p><p>Why remaining distractor is wrong. Dirty price is also another name for full price, not flat price.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says the flat price is also called the quoted or clean price. The rule is that dealers usually quote bonds excluding accrued interest. The intuition is that quoting the flat price avoids the mechanical rise in price from daily interest accrual. Applying that rule identifies the flat price as the quoted price.</p><p>Why top distractor is wrong :. Invoice price is another name for the full price, not the flat price.</p><p>Why remaining distractor is wrong. Dirty price is also another name for full price, not flat price.</p>"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@
       "C": "coupon rate only"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if a trade occurs between coupon dates, accrued interest is added to flat price to obtain the full price paid by the buyer. The rule is compensation for the seller’s earned but unpaid coupon portion. The intuition is that the seller held the bond for part of the coupon period. Applying that rule means the buyer pays the full price.</p><p>Why top distractor is wrong (PDF-based misconception). Flat price alone omits accrued interest, so it is not the settlement amount between coupon dates.</p><p>Why remaining distractor is wrong. The coupon rate is a yield input, not the transaction amount paid at settlement.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if a trade occurs between coupon dates, accrued interest is added to flat price to obtain the full price paid by the buyer. The rule is compensation for the seller’s earned but unpaid coupon portion. The intuition is that the seller held the bond for part of the coupon period. Applying that rule means the buyer pays the full price.</p><p>Why top distractor is wrong :. Flat price alone omits accrued interest, so it is not the settlement amount between coupon dates.</p><p>Why remaining distractor is wrong. The coupon rate is a yield input, not the transaction amount paid at settlement.</p>"
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@
       "C": "credit rating agency"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that accrued interest is the portion of the next coupon payment owed to the seller. The rule is based on ownership during the elapsed part of the coupon period. The intuition is that the seller earned part of the upcoming coupon before settlement. Applying that rule makes the seller the party owed accrued interest.</p><p>Why top distractor is wrong (PDF-based misconception). The issuer pays the coupon but is not the party receiving accrued interest at settlement.</p><p>Why remaining distractor is wrong. A credit rating agency has no role in coupon allocation between buyer and seller.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that accrued interest is the portion of the next coupon payment owed to the seller. The rule is based on ownership during the elapsed part of the coupon period. The intuition is that the seller earned part of the upcoming coupon before settlement. Applying that rule makes the seller the party owed accrued interest.</p><p>Why top distractor is wrong :. The issuer pays the coupon but is not the party receiving accrued interest at settlement.</p><p>Why remaining distractor is wrong. A credit rating agency has no role in coupon allocation between buyer and seller.</p>"
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@
       "C": "yield-to-maturity divided by maturity"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives accrued interest as $AI = (t/T) \\times PMT$. The rule uses the fraction of the coupon period that has elapsed. The intuition is proportional allocation of the upcoming coupon. Applying that formula yields days elapsed divided by days in the coupon period times coupon payment.</p><p>Why top distractor is wrong (PDF-based misconception). Face value divided by coupon rate is unrelated to the curriculum formula for accrued interest.</p><p>Why remaining distractor is wrong. Yield-to-maturity and maturity do not determine accrued interest directly in this formula.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives accrued interest as $AI = (t/T) \\times PMT$. The rule uses the fraction of the coupon period that has elapsed. The intuition is proportional allocation of the upcoming coupon. Applying that formula yields days elapsed divided by days in the coupon period times coupon payment.</p><p>Why top distractor is wrong :. Face value divided by coupon rate is unrelated to the curriculum formula for accrued interest.</p><p>Why remaining distractor is wrong. Yield-to-maturity and maturity do not determine accrued interest directly in this formula.</p>"
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@
       "C": "actual days"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that 30/360 assumes each month has exactly 30 days and each year has exactly 360 days. The rule is a simplified counting convention. The intuition is that this creates a standardized method for accrual calculations. Applying the convention gives 30 days per month.</p><p>Why top distractor is wrong (PDF-based misconception). Thirty-one days is not the simplifying assumption used in 30/360.</p><p>Why remaining distractor is wrong. Using actual days describes actual/actual, not 30/360.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that 30/360 assumes each month has exactly 30 days and each year has exactly 360 days. The rule is a simplified counting convention. The intuition is that this creates a standardized method for accrual calculations. Applying the convention gives 30 days per month.</p><p>Why top distractor is wrong :. Thirty-one days is not the simplifying assumption used in 30/360.</p><p>Why remaining distractor is wrong. Using actual days describes actual/actual, not 30/360.</p>"
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
       "C": "365 always"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum says actual/actual assumes the actual number of days in each month and the actual number of days in a year. The rule is calendar-based counting rather than a fixed simplification. The intuition is that leap years and different month lengths matter under this convention. Applying that rule gives the actual number of days.</p><p>Why top distractor is wrong (PDF-based misconception). A constant 360-day year belongs to the 30/360 convention, not actual/actual.</p><p>Why remaining distractor is wrong. Actual/actual does not force every year to 365 days because leap years can have 366 days.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum says actual/actual assumes the actual number of days in each month and the actual number of days in a year. The rule is calendar-based counting rather than a fixed simplification. The intuition is that leap years and different month lengths matter under this convention. Applying that rule gives the actual number of days.</p><p>Why top distractor is wrong :. A constant 360-day year belongs to the 30/360 convention, not actual/actual.</p><p>Why remaining distractor is wrong. Actual/actual does not force every year to 365 days because leap years can have 366 days.</p>"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
       "C": "random directions"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that bond prices and yields-to-maturity move inversely. The rule is that a higher discount rate lowers present value, while a lower discount rate raises present value. The intuition is standard time value of money. Applying that rule gives opposite directions.</p><p>Why top distractor is wrong (PDF-based misconception). Moving in the same direction would contradict discounted cash flow logic.</p><p>Why remaining distractor is wrong. The relationship is systematic in this module, not random.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that bond prices and yields-to-maturity move inversely. The rule is that a higher discount rate lowers present value, while a lower discount rate raises present value. The intuition is standard time value of money. Applying that rule gives opposite directions.</p><p>Why top distractor is wrong :. Moving in the same direction would contradict discounted cash flow logic.</p><p>Why remaining distractor is wrong. The relationship is systematic in this module, not random.</p>"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
       "C": "same coupon effect either way"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says the lower the coupon rate, the greater the percentage price change for a given change in yield-to-maturity. The rule is that lower-coupon bonds have more of their value concentrated in later cash flows. The intuition is that later cash flows are more sensitive to discount rate changes. Applying that rule identifies the lower-coupon bond.</p><p>Why top distractor is wrong (PDF-based misconception). Higher-coupon bonds are less sensitive, not more sensitive, all else equal.</p><p>Why remaining distractor is wrong. The curriculum explicitly says coupon rate affects price sensitivity.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says the lower the coupon rate, the greater the percentage price change for a given change in yield-to-maturity. The rule is that lower-coupon bonds have more of their value concentrated in later cash flows. The intuition is that later cash flows are more sensitive to discount rate changes. Applying that rule identifies the lower-coupon bond.</p><p>Why top distractor is wrong :. Higher-coupon bonds are less sensitive, not more sensitive, all else equal.</p><p>Why remaining distractor is wrong. The curriculum explicitly says coupon rate affects price sensitivity.</p>"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
       "C": "same maturity effect either way"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that, generally, a longer-term bond has a greater percentage price change than a shorter-term bond when yields change by the same amount. The rule is that more distant cash flows are more sensitive to discounting. The intuition is that time magnifies the impact of yield changes. Applying that rule identifies the longer-maturity bond.</p><p>Why top distractor is wrong (PDF-based misconception). Shorter-maturity bonds are usually less sensitive to the same yield change.</p><p>Why remaining distractor is wrong. The module explicitly teaches a maturity effect, so the sensitivity is not the same either way.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that, generally, a longer-term bond has a greater percentage price change than a shorter-term bond when yields change by the same amount. The rule is that more distant cash flows are more sensitive to discounting. The intuition is that time magnifies the impact of yield changes. Applying that rule identifies the longer-maturity bond.</p><p>Why top distractor is wrong :. Shorter-maturity bonds are usually less sensitive to the same yield change.</p><p>Why remaining distractor is wrong. The module explicitly teaches a maturity effect, so the sensitivity is not the same either way.</p>"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
       "C": "its coupon rate"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum describes a constant-yield price trajectory in which bond prices are pulled to par as maturity approaches. The rule is that fewer remaining periods reduce the gap between price and redemption value. The intuition is that a bond gets closer to receiving 100 at maturity if default does not occur. Applying that rule means a discount bond moves toward par value.</p><p>Why top distractor is wrong (PDF-based misconception). A performing bond does not move toward zero merely because time passes.</p><p>Why remaining distractor is wrong. Coupon rate is not a price target; it is a cash flow feature.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum describes a constant-yield price trajectory in which bond prices are pulled to par as maturity approaches. The rule is that fewer remaining periods reduce the gap between price and redemption value. The intuition is that a bond gets closer to receiving 100 at maturity if default does not occur. Applying that rule means a discount bond moves toward par value.</p><p>Why top distractor is wrong :. A performing bond does not move toward zero merely because time passes.</p><p>Why remaining distractor is wrong. Coupon rate is not a price target; it is a cash flow feature.</p>"
   },
   {
     "id": 21,
@@ -270,6 +270,174 @@
       "C": "repo haircut, tax lot, and accrued interest only"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines matrix pricing as estimating the price of a new or illiquid bond using securities with similar time-to-maturity, coupon rates, and credit quality. The rule is comparability of core bond features. The intuition is that similar bonds should imply similar yields and prices. Applying that rule identifies maturity, coupon rate, and credit quality.</p><p>Why top distractor is wrong (PDF-based misconception). Equity beta, dividend yield, and index weight are not the comparable features used in bond matrix pricing.</p><p>Why remaining distractor is wrong. Repo haircut, tax lot, and accrued interest only do not form the curriculum’s matrix pricing comparison set.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines matrix pricing as estimating the price of a new or illiquid bond using securities with similar time-to-maturity, coupon rates, and credit quality. The rule is comparability of core bond features. The intuition is that similar bonds should imply similar yields and prices. Applying that rule identifies maturity, coupon rate, and credit quality.</p><p>Why top distractor is wrong :. Equity beta, dividend yield, and index weight are not the comparable features used in bond matrix pricing.</p><p>Why remaining distractor is wrong. Repo haircut, tax lot, and accrued interest only do not form the curriculum’s matrix pricing comparison set.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives the present value of one bond coupon received in period $t$?",
+    "options": {
+      "A": "$PV(\\text{Bond coupon}) = \\dfrac{PMT_t}{(1 + r)^t}$",
+      "B": "$PV(\\text{Bond coupon}) = PMT_t(1 + r)^t$",
+      "C": "$PV(\\text{Bond coupon}) = \\dfrac{PMT_t}{1 + rt}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the coupon present value formula as $PV(\\text{Bond coupon}) = \\dfrac{PMT_t}{(1 + r)^t}$. Here, $PMT_t$ is the coupon in period $t$ and $r$ is the market discount rate per period. No substitution is needed, so this is the correct formula form.</p><p>Why first distractor is incorrect (formula error): it compounds the coupon forward instead of discounting it back to the present.</p><p>Why second distractor is incorrect: it uses simple discounting with $1 + rt$ rather than the bond discounting form shown in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Formula",
+    "stem": "If $PV(\\text{Bond coupon}) = \\dfrac{PMT_t}{(1 + r)^t}$, which rearrangement solves for $PMT_t$?",
+    "options": {
+      "A": "$PMT_t = PV(\\text{Bond coupon}) + (1 + r)^t$",
+      "B": "$PMT_t = PV(\\text{Bond coupon}) \\times (1 + r)^t$",
+      "C": "$PMT_t = \\dfrac{PV(\\text{Bond coupon})}{(1 + r)^t}$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Start with $PV(\\text{Bond coupon}) = \\dfrac{PMT_t}{(1 + r)^t}$. Multiply both sides by $(1 + r)^t$ to isolate the coupon, so $PMT_t = PV(\\text{Bond coupon}) \\times (1 + r)^t$. That is the correct rearrangement.</p><p>Why first distractor is incorrect (formula error): solving for a variable requires multiplication here, not adding the discount factor.</p><p>Why second distractor is incorrect: it moves $(1 + r)^t$ in the wrong direction and discounts again instead of undoing the discounting.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Formula",
+    "stem": "Which formula most accurately states the bond price on a coupon date?",
+    "options": {
+      "A": "$PV = PMT_1 + PMT_2 + \\cdots + (PMT_N + FV_N)$",
+      "B": "$PV = \\dfrac{PMT_1}{(1 + r)^1} + \\dfrac{PMT_2}{(1 + r)^2} + \\cdots + \\dfrac{PMT_N + FV_N}{(1 + r)^N}$",
+      "C": "$PV = \\dfrac{PMT_1 + PMT_2 + \\cdots + PMT_N + FV_N}{1 + r}$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> The CFA Curriculum prices a bond by discounting each coupon and the final principal repayment period by period: $PV = \\dfrac{PMT_1}{(1 + r)^1} + \\dfrac{PMT_2}{(1 + r)^2} + \\cdots + \\dfrac{PMT_N + FV_N}{(1 + r)^N}$. Each cash flow uses its own exponent, so this is the correct full bond-pricing formula.</p><p>Why first distractor is incorrect (formula error): it adds future cash flows without discounting them to present value.</p><p>Why second distractor is incorrect: it discounts the entire stream only once rather than discounting each period separately.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Formula",
+    "stem": "In the bond-pricing formula, which expression correctly represents the final period cash flow term?",
+    "options": {
+      "A": "$\\dfrac{PMT_N + FV_N}{(1 + r)^N}$",
+      "B": "$\\dfrac{FV_N - PMT_N}{(1 + r)^N}$",
+      "C": "$\\dfrac{FV_N}{(1 + r)^{N-1}}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> In the final period, the investor receives both the last coupon and the face value. The CFA Curriculum therefore writes the last term as $\\dfrac{PMT_N + FV_N}{(1 + r)^N}$. That combines both final cash flows and discounts them for $N$ periods.</p><p>Why first distractor is incorrect (formula error): the last coupon is added to face value, not subtracted from it.</p><p>Why second distractor is incorrect: it omits the last coupon and also uses the wrong exponent.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Formula",
+    "stem": "Which formula most accurately links full price, flat price, and accrued interest?",
+    "options": {
+      "A": "$PV_{Full} = PV_{Flat} + AI$",
+      "B": "$PV_{Full} = PV_{Flat} - AI$",
+      "C": "$PV_{Flat} = PV_{Full} + AI$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> The CFA Curriculum states that a bond traded between coupon dates has two parts: flat price and accrued interest. The governing relation is $PV_{Full} = PV_{Flat} + AI$. So the buyer pays the flat price plus accrued interest to arrive at the full price.</p><p>Why first distractor is incorrect (formula error): subtracting accrued interest would move from full price to flat price, not the other way around.</p><p>Why second distractor is incorrect: it reverses the relationship and would overstate the flat price.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Formula",
+    "stem": "If $PV_{Full} = PV_{Flat} + AI$, which rearrangement gives the flat price?",
+    "options": {
+      "A": "$PV_{Flat} = PV_{Full} - AI$",
+      "B": "$PV_{Flat} = PV_{Full} + AI$",
+      "C": "$PV_{Flat} = AI - PV_{Full}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Start with $PV_{Full} = PV_{Flat} + AI$. Subtract accrued interest from both sides to isolate the flat price, giving $PV_{Flat} = PV_{Full} - AI$. That is the direct rearrangement from the CFA Curriculum relation.</p><p>Why first distractor is incorrect (formula error): adding accrued interest would produce a value above the full price, which is not the flat price.</p><p>Why second distractor is incorrect: it reverses the sign and would usually create a meaningless negative result.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Formula",
+    "stem": "Which rearrangement of $PV_{Full} = PV_{Flat} + AI$ solves for accrued interest?",
+    "options": {
+      "A": "$AI = PV_{Flat} - PV_{Full}$",
+      "B": "$AI = PV_{Full} - PV_{Flat}$",
+      "C": "$AI = PV_{Full} + PV_{Flat}$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Begin with $PV_{Full} = PV_{Flat} + AI$. Subtract $PV_{Flat}$ from both sides, and accrued interest is $AI = PV_{Full} - PV_{Flat}$. This follows directly from the full-price identity in the CFA Curriculum.</p><p>Why first distractor is incorrect (formula error): it reverses the subtraction and would make accrued interest negative when full price exceeds flat price.</p><p>Why second distractor is incorrect: accrued interest is only one component of the gap, not the sum of the two prices.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives accrued interest between coupon dates?",
+    "options": {
+      "A": "$AI = \\dfrac{t}{T} \\times PMT$",
+      "B": "$AI = \\dfrac{T}{t} \\times PMT$",
+      "C": "$AI = \\dfrac{t}{T + PMT}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> The CFA Curriculum defines accrued interest as the proportional share of the next coupon owed to the seller. The formula is $AI = \\dfrac{t}{T} \\times PMT$, where $t$ is days since the last coupon date, $T$ is days in the coupon period, and $PMT$ is the coupon payment. That is the correct pattern.</p><p>Why first distractor is incorrect (formula error): it inverts the day-count fraction, which would overstate accrued interest.</p><p>Why second distractor is incorrect: it does not match the Curriculum formula and mixes the coupon into the denominator incorrectly.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Formula",
+    "stem": "A bond has $t = 60$, $T = 184$, and $PMT = 0.75$. Using $AI = \\dfrac{t}{T} \\times PMT$, the accrued interest is closest to?",
+    "options": {
+      "A": "0.184",
+      "B": "0.245",
+      "C": "0.434"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use the Curriculum formula $AI = \\dfrac{t}{T} \\times PMT$. Substituting gives $AI = \\dfrac{60}{184} \\times 0.75 = 0.245$ approximately. So the accrued interest is 0.245 per 100 of par value.</p><p>Why first distractor is incorrect (formula error): it is too low and is consistent with an incorrect fraction or premature rounding.</p><p>Why second distractor is incorrect: it is too high and is consistent with using the day-count inputs incorrectly.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Formula",
+    "stem": "If a bond’s full price is 99.587 and accrued interest is 0.245, the flat price is closest to?",
+    "options": {
+      "A": "99.342",
+      "B": "99.587",
+      "C": "99.832"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> From the Curriculum relation, $PV_{Flat} = PV_{Full} - AI$. Substituting gives $PV_{Flat} = 99.587 - 0.245 = 99.342$, which rounds to 99.342. This is the quoted clean price implied by the formula.</p><p>Why first distractor is incorrect (formula error): it simply repeats the full price and ignores the subtraction of accrued interest.</p><p>Why second distractor is incorrect: it adds accrued interest instead of removing it.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Formula",
+    "stem": "For a zero-coupon bond with one cash flow at maturity, which formula most accurately gives present value?",
+    "options": {
+      "A": "$PV = \\dfrac{PMT}{(1 + r)^t}$",
+      "B": "$PV = PMT(1 + r)^t$",
+      "C": "$PV = \\dfrac{PMT}{1 + r + t}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> The CFA Curriculum uses the single-cash-flow present value formula for a zero-coupon bond: $PV = \\dfrac{PMT}{(1 + r)^t}$. Here, the only payment is the maturity value, discounted for $t$ years. That is the correct zero-coupon valuation form.</p><p>Why first distractor is incorrect (formula error): it compounds the maturity payment forward rather than discounting it to the present.</p><p>Why second distractor is incorrect: it replaces exponential discounting with an incorrect linear denominator.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Formula",
+    "stem": "If $PV = \\dfrac{PMT}{(1 + r)^t}$, which rearrangement solves for the yield $r$?",
+    "options": {
+      "A": "$r = \\left(\\dfrac{PV}{PMT}\\right)^{1/t} - 1$",
+      "B": "$r = \\left(\\dfrac{PMT}{PV}\\right)^{1/t} - 1$",
+      "C": "$r = \\dfrac{PMT - PV}{t}$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Starting from $PV = \\dfrac{PMT}{(1 + r)^t}$, move terms to get $(1 + r)^t = \\dfrac{PMT}{PV}$. Raising both sides to the power $1/t$ gives $1 + r = \\left(\\dfrac{PMT}{PV}\\right)^{1/t}$, so $r = \\left(\\dfrac{PMT}{PV}\\right)^{1/t} - 1$. That is the correct rearrangement.</p><p>Why first distractor is incorrect (formula error): it flips the ratio and would reverse the yield result.</p><p>Why second distractor is incorrect: it uses a simple average change formula that is not the bond-yield formula in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Formula",
+    "stem": "A zero-coupon bond has $PV = 100.763$, $PMT = 100$, and $t = 5$. Using $r = \\left(\\dfrac{PMT}{PV}\\right)^{1/t} - 1$, the annualized yield is closest to?",
+    "options": {
+      "A": "$-0.15\\%$",
+      "B": "$0.15\\%$",
+      "C": "$0.76\\%$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Apply the Curriculum formula $r = \\left(\\dfrac{PMT}{PV}\\right)^{1/t} - 1$. Substituting gives $r = \\left(\\dfrac{100}{100.763}\\right)^{1/5} - 1$, which is approximately $-0.15\\%$. The negative sign is expected because the bond price is above par for a zero-coupon bond.</p><p>Why first distractor is incorrect (formula error): it has the wrong sign and ignores that a price above par implies a negative yield here.</p><p>Why second distractor is incorrect: it is much too large and is consistent with using the wrong input directly instead of the fifth-root formula.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Formula",
+    "stem": "A semiannual bond has a periodic IRR of $0.67\\%$. Using the Curriculum’s annualizing approach, the annualized yield-to-maturity is closest to?",
+    "options": {
+      "A": "$0.335\\%$",
+      "B": "$0.67\\%$",
+      "C": "$1.34\\%$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>C is correct.</strong> The CFA Curriculum annualizes the periodic IRR by multiplying by the number of periods in a year. For a semiannual bond, annualized yield $= 2 \\times 0.67\\% = 1.34\\%$. So the annualized yield-to-maturity is 1.34%.</p><p>Why first distractor is incorrect (formula error): it divides by two instead of multiplying by the semiannual frequency.</p><p>Why second distractor is incorrect: it leaves the yield at the periodic rate rather than converting it to an annualized yield.</p>"
   }
 ]

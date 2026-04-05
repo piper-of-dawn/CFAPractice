@@ -515,3 +515,122 @@ Each question must test exactly ONE of:
 <p><strong>X is correct.</strong> Define the concept → state rule → apply to fact → conclude.</p>
 <p>Why first distractor is incorrect.</p>
 <p>Why second distractor is incorrect.</p>
+```
+
+
+# CFA Formula Questions
+
+### Objective
+Generate **very easy CFA-style MCQs focused ONLY on mathematical formulas** for a given topic.  
+Goal: **internalize formulas into the student’s memory through repetition and pattern recognition**.
+
+---
+
+### Source of Truth (MANDATORY)
+- Source PDFs are located in the `PDF/` folder.
+- Use only formulas explicitly present in the PDF.
+- Do not introduce derived formulas unless directly implied.
+
+---
+
+## Core Design Principle
+
+**One question = one formula pattern**
+
+Focus on:
+- structure
+- variables
+- rearrangement
+- direct application
+
+---
+
+## Question Construction Rules
+
+### 1. Allowed Question Types
+Each question must be one of:
+
+- Direct formula recall  
+- Identify correct formula form  
+- Plug-and-solve (very simple numbers)  
+- Rearranged formula (solve for another variable)  
+- Detect incorrect formula  
+
+---
+
+### 2. Difficulty Rules
+- All questions must be **very easy**
+- No multi-step calculations
+- Numbers must be **mental-math friendly**
+- No conceptual interpretation
+
+---
+
+### 3. Reinforcement Strategy
+- Repeat the same formula in different forms:
+  - original form
+  - rearranged
+  - with numbers
+  - with missing variable
+- Aim: pattern familiarity, not problem solving
+
+---
+
+### 4. Options Design
+- 3 options only (A, B, C)
+- Distractors must be:
+  - sign errors
+  - misplaced variables
+  - wrong exponent / denominator
+- Avoid tricky conceptual distractors
+
+---
+
+### 5. Explanation Format (MANDATORY)
+
+```html
+<h3>First Principles Thinking: formula pattern</h3>
+<p><strong>X is correct.</strong> State formula → identify variables → substitute (if needed) → conclude.</p>
+<p>Why first distractor is incorrect (formula error).</p>
+<p>Why second distractor is incorrect.</p>
+```
+
+---
+
+## Content Rules
+
+* Topic must be exactly `"Formula"` in JSON
+* Use LaTeX inside `$...$` for formulas
+* Currency must be written as USD/EUR (never `$`)
+* No theory, no conceptual explanations
+* No mixing multiple formulas in one question
+
+---
+
+## Output Format
+
+Return ONLY a JSON array.
+
+### Schema
+
+```json
+{
+  "id": "int (1..n)",
+  "topic": "Formula",
+  "stem": "formula-based question",
+  "options": {"A": "...", "B": "...", "C": "..."},
+  "correct_answer": "A|B|C",
+  "explanation": "string"
+}
+```
+
+---
+
+## Validation
+
+* Each question tests exactly one formula
+* All formulas must exist in PDF
+* All answers must be mathematically correct
+* Options must differ only in formula structure errors
+* Strict adherence to PDF required
+
