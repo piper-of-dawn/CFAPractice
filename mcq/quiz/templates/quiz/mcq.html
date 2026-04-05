@@ -115,7 +115,7 @@
     --grid-base-size: 1;
     --grid-hover-size-boost: 0.45;
   }
-  html, body { height: 100%; }
+  html, body { height: 100%; overflow-x: hidden; }
   #gridCanvas {
     position: fixed;
     inset: 0;
@@ -132,7 +132,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .stem { line-height: 1.7; font-weight: 400; }
+  .stem { line-height: 1.7; font-weight: 400; min-width: 0; overflow-wrap: anywhere; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
   header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; }
   header h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: 0.2px; }
@@ -274,7 +274,7 @@
   ul.choices { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
   .choice { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 14px; transition: border-color .2s, background .2s, box-shadow .2s; background: var(--card); font-weight: 400; }
   .choice input { accent-color: var(--primary); width: 18px; height: 18px; }
-  .choice label { flex: 1; cursor: pointer; font-weight: 400; }
+  .choice label { flex: 1; min-width: 0; cursor: pointer; font-weight: 400; overflow-wrap: anywhere; }
   /* Selected state (container) */
   .choice:has(input:checked) { background: var(--hover); box-shadow: 0 0 0 2px var(--border); }
   /* Fallback highlight via label if :has() unsupported */
@@ -673,6 +673,7 @@
   .math-scroll {
     display: block;
     max-width: 100%;
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -685,10 +686,20 @@
   .math-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid transparent; background-clip: content-box; }
   .math-scroll:hover::-webkit-scrollbar-thumb { background: #94a3b8; }
   .katex-display {
+    display: block;
     margin: 0.85em 0;
+    max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+  }
+  .katex-display > .katex {
+    max-width: none;
+  }
+  .stem .katex,
+  .choice label .katex,
+  .katas-body .katex {
+    max-width: 100%;
   }
   .choice .katex-display,
   .choice label .katex-display {
@@ -779,6 +790,24 @@
   :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
   :root[data-theme="dark"] .chart-delta { color: #d7def0; }
   @media (max-width: 680px) {
+    .question,
+    .choice,
+    .choice label,
+    .stem {
+      min-width: 0;
+    }
+    .math-scroll,
+    .katex-display {
+      max-width: 100%;
+    }
+    .katex-display {
+      font-size: 0.9em;
+      margin: 0.6em 0;
+    }
+    .choice .katex-display,
+    .choice label .katex-display {
+      font-size: 0.88em;
+    }
     #explainModal .katas-dialog {
       width: 82vw;
       max-width: 82vw;
