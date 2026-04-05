@@ -1,0 +1,182 @@
+[{
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives the realized annualized rate of return on a bond investment over a holding period of $T$ years?",
+    "options": {
+      "A": "$r = \\left(\\dfrac{FV}{PV}\\right)^{1/T} - 1$",
+      "B": "$r = \\dfrac{FV - PV}{T}$",
+      "C": "$r = \\left(\\dfrac{PV}{FV}\\right)^{1/T} - 1$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the realized annualized return as the compounded annual growth rate from purchase price to ending value over the holding period. That relation is $r = \\left(\\dfrac{FV}{PV}\\right)^{1/T} - 1$. It converts total return over $T$ years into an annual compounded rate. Applying that formula gives the horizon yield.</p><p>Why top distractor is wrong (PDF-based misconception): B computes an average absolute gain per year, not a compounded annualized rate of return.</p><p>Why remaining distractor is wrong: C reverses the ratio of ending value to purchase price, which would produce the wrong sign for positive returns.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a bond investment has $PV = 100$, ending value $FV = 121$, and holding period $T = 2$, the realized annualized return is closest to:",
+    "options": {
+      "A": "10.0%",
+      "B": "21.0%",
+      "C": "9.5%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum uses $r = \\left(\\dfrac{FV}{PV}\\right)^{1/T} - 1$ for annualized realized return. Substituting gives $r = \\left(\\dfrac{121}{100}\\right)^{1/2} - 1 = 1.1 - 1 = 0.10$, or 10.0%. The square root converts the two-year total growth into a one-year compounded rate. Therefore the realized annualized return is 10.0%.</p><p>Why top distractor is wrong (PDF-based misconception): B uses the total two-year return without annualizing it.</p><p>Why remaining distractor is wrong: C understates the rate and does not match the exact compounded annualization from the CFA Curriculum formula.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A bond investor has reinvested coupons worth 20 at the horizon and a sale price of 95. If the purchase price was 100 and the horizon is one year, the realized return is closest to:",
+    "options": {
+      "A": "15%",
+      "B": "20%",
+      "C": "5%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum combines the future value of reinvested coupons and the sale price to form ending wealth. Here, $FV = 20 + 95 = 115$, so $r = \\left(\\dfrac{115}{100}\\right)^{1/1} - 1 = 0.15$. With a one-year horizon, no additional root is needed. Therefore the realized return is 15%.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the capital loss on sale and treats the coupons alone as the full return.</p><p>Why remaining distractor is wrong: C captures only the difference between sale price and purchase price, ignoring the coupons’ future value.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula matches the CFA Curriculum definition of duration gap?",
+    "options": {
+      "A": "$\\text{Duration gap} = \\text{Macaulay duration} - \\text{Investment horizon}$",
+      "B": "$\\text{Duration gap} = \\text{Investment horizon} - \\text{Macaulay duration}$",
+      "C": "$\\text{Duration gap} = \\text{Time to maturity} - \\text{Investment horizon}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines duration gap directly as the bond's Macaulay duration minus the investor's investment horizon. This measures whether price risk or reinvestment risk dominates. A positive result means duration exceeds horizon; a negative result means horizon exceeds duration. That makes choice A the correct formula.</p><p>Why top distractor is wrong (PDF-based misconception): B reverses the subtraction and changes the sign convention used in the CFA Curriculum.</p><p>Why remaining distractor is wrong: C uses time to maturity rather than Macaulay duration, which is not the formula stated in the module.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a bond's Macaulay duration is 9.0 years and the investor's horizon is 6.5 years, the duration gap is closest to:",
+    "options": {
+      "A": "2.5 years",
+      "B": "-2.5 years",
+      "C": "15.5 years"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum formula is $\\text{Duration gap} = \\text{Macaulay duration} - \\text{Investment horizon}$. Substituting gives $9.0 - 6.5 = 2.5$ years. The sign stays positive because the duration is larger than the horizon. Therefore the duration gap is 2.5 years.</p><p>Why top distractor is wrong (PDF-based misconception): B reverses the subtraction and gives the wrong sign.</p><p>Why remaining distractor is wrong: C adds the two values instead of taking their difference.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately defines the weight of a bond cash flow in a Macaulay duration table?",
+    "options": {
+      "A": "$\\text{Weight} = \\dfrac{\\text{Present value of the cash flow}}{\\text{Bond full price}}$",
+      "B": "$\\text{Weight} = \\dfrac{\\text{Cash flow}}{\\text{Bond full price}}$",
+      "C": "$\\text{Weight} = \\dfrac{\\text{Time to receipt}}{\\text{Bond full price}}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that Macaulay duration uses present value weights, where each cash flow's weight is its share of the bond's full price. So the correct formula is present value of the cash flow divided by the bond's full price. This makes the weights sum to 1. Applying that rule gives the correct weighting basis.</p><p>Why top distractor is wrong (PDF-based misconception): B uses undiscounted cash flow amounts, but the module explicitly uses present value weights.</p><p>Why remaining distractor is wrong: C uses timing rather than the cash flow's share of present value, so it is not a weight formula.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a bond cash flow has present value 4 and the bond full price is 100, that cash flow's Macaulay weight is closest to:",
+    "options": {
+      "A": "0.04",
+      "B": "4.00",
+      "C": "0.25"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum weight formula is $\\text{Weight} = \\dfrac{PV\\text{ of cash flow}}{\\text{Bond full price}}$. Substituting gives $\\dfrac{4}{100} = 0.04$. This expresses the cash flow as a share of the bond's total present value. Therefore the weight is 0.04.</p><p>Why top distractor is wrong (PDF-based misconception): B leaves the value as an amount rather than converting it into a proportion of full price.</p><p>Why remaining distractor is wrong: C does not come from the stated present value weighting formula.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which expression gives Macaulay duration from a duration table once each cash flow's weight is known?",
+    "options": {
+      "A": "$\\text{MacDur} = \\sum (\\text{time to receipt} \\times \\text{weight})$",
+      "B": "$\\text{MacDur} = \\sum (\\text{cash flow} \\times \\text{weight})$",
+      "C": "$\\text{MacDur} = \\sum (\\text{present value} \\times \\text{time to receipt})$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines Macaulay duration as the present value weighted average time to receipt of cash flows. Once each weight is computed, the duration is the sum of each time to receipt multiplied by its weight. This produces a time measure in periods, later annualized if needed. Therefore choice A is the correct expression.</p><p>Why top distractor is wrong (PDF-based misconception): B weights cash flow amounts rather than the timing of those cash flows, so it does not produce a duration measure.</p><p>Why remaining distractor is wrong: C omits dividing by bond full price, which is already built into the weight and is necessary for the weighted-average formula.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a bond has two cash flows with times to receipt of 1 and 3 years and weights of 0.4 and 0.6, its Macaulay duration is closest to:",
+    "options": {
+      "A": "2.2 years",
+      "B": "2.0 years",
+      "C": "1.8 years"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum computes Macaulay duration as the weighted average time to receipt: $\\text{MacDur} = \\sum (t \\times w)$. Substituting gives $1 \\times 0.4 + 3 \\times 0.6 = 0.4 + 1.8 = 2.2$ years. Because the later cash flow has the larger weight, the result is pulled toward 3 years. Therefore the Macaulay duration is 2.2 years.</p><p>Why top distractor is wrong (PDF-based misconception): B treats the two dates like an equal-weight average even though the weights are not equal.</p><p>Why remaining distractor is wrong: C understates the weighted effect of the later cash flow.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Between coupon dates, if 63 days have passed in a 180-day coupon period, the fraction of the coupon period that has passed, $t/T$, is closest to:",
+    "options": {
+      "A": "0.35",
+      "B": "0.65",
+      "C": "2.86"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines $t/T$ as the number of days from the last coupon payment to settlement divided by the number of days in the coupon period. Here, $t/T = \\dfrac{63}{180} = 0.35$. This is the portion of the current coupon period already elapsed. Therefore the correct fraction is 0.35.</p><p>Why top distractor is wrong (PDF-based misconception): B is the fraction remaining until the next coupon, not the fraction that has passed since the last coupon.</p><p>Why remaining distractor is wrong: C is the inverted ratio and exceeds 1, which is not consistent with a fraction of one coupon period.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If 63 days have passed in a 180-day coupon period, the time to receipt of the first coupon in periods is closest to:",
+    "options": {
+      "A": "0.65",
+      "B": "0.35",
+      "C": "1.35"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum example sets the first cash flow's time to receipt as the fraction of the coupon period remaining: $\\dfrac{180 - 63}{180} = \\dfrac{117}{180} = 0.65$. This is how the first timing entry is built between coupon dates. Subsequent cash flows occur one full period later each time. Therefore the first time to receipt is 0.65 periods.</p><p>Why top distractor is wrong (PDF-based misconception): B gives the fraction of the period already elapsed, not the remaining time to the first coupon.</p><p>Why remaining distractor is wrong: C incorrectly adds a full extra period to the first cash flow timing.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a semiannual bond's Macaulay duration is 3.6 periods, its annualized Macaulay duration is closest to:",
+    "options": {
+      "A": "1.8 years",
+      "B": "3.6 years",
+      "C": "7.2 years"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum annualizes Macaulay duration by dividing period-based duration by the number of coupon periods per year. For a semiannual bond, that means dividing by 2. So $\\dfrac{3.6}{2} = 1.8$ years. Therefore the annualized Macaulay duration is 1.8 years.</p><p>Why top distractor is wrong (PDF-based misconception): B leaves the measure in periods rather than converting it to years.</p><p>Why remaining distractor is wrong: C multiplies by the payment frequency rather than dividing by it.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "For the general Macaulay duration formula between coupon dates, which input is defined as the yield-to-maturity per period?",
+    "options": {
+      "A": "$r$",
+      "B": "$t$",
+      "C": "$T$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> In the CFA Curriculum's general Macaulay duration formula, $r$ is defined as the yield-to-maturity per period. It is the discount rate used in the present value terms for each cash flow. The symbols $t$ and $T$ instead describe coupon-period timing. Therefore $r$ is the correct input.</p><p>Why top distractor is wrong (PDF-based misconception): B is the number of days from the last coupon payment to settlement, not the periodic yield.</p><p>Why remaining distractor is wrong: C is the number of days in the coupon period, not the discount rate per period.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If a bond is held to maturity and the ending value is 182.493 on an initial price of 100 over 10 years, the realized annualized return is closest to:",
+    "options": {
+      "A": "6.20%",
+      "B": "8.25%",
+      "C": "18.25%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum uses $r = \\left(\\dfrac{FV}{PV}\\right)^{1/T} - 1$ for realized annualized return. Substituting gives $r = \\left(\\dfrac{182.493}{100}\\right)^{1/10} - 1 \\approx 0.0620$, or 6.20%. This is the compounded annual rate consistent with the ending wealth after 10 years. Therefore the realized annualized return is 6.20%.</p><p>Why top distractor is wrong (PDF-based misconception): B confuses the ending wealth number with an annualized return and overstates the compound rate.</p><p>Why remaining distractor is wrong: C treats the cumulative ending gain as if it were a one-year return instead of annualizing it over 10 years.</p>"
+  }]

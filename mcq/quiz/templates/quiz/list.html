@@ -6,7 +6,7 @@
   <title>Select Question Set</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Geist+Mono:wght@500;600;700&family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #070d1a;
@@ -140,7 +140,7 @@
     .card-link {
       position: relative;
       width: 100%;
-      min-height: 136px;
+      min-height: 152px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -176,20 +176,42 @@
       z-index: 1;
       margin: auto 0;
       font-weight: 800;
+      font-size: 15px;
       line-height: 1.2;
       letter-spacing: -0.01em;
       word-break: break-word;
       overflow-wrap: anywhere;
       text-wrap: balance;
     }
-    .card-title-regular {
-      font-size: 16px;
+    .card-katas-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--secondary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: "Geist Mono", "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1;
     }
-    .card-title-small {
-      font-size: 14px;
+    .card-katas-badge svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+      flex: 0 0 auto;
     }
+    .card-link.has-katas .card-title {
+      margin-top: 34px;
+    }
+    .card-title-regular,
+    .card-title-small,
     .card-title-compact {
-      font-size: 12.5px;
+      font-size: 15px;
     }
     .footer {
       margin-top: 22px;
@@ -207,7 +229,7 @@
     .footer a:hover { border-color: rgba(var(--secondary-rgb), 0.6); }
     body[data-theme="light"] .topic-section h2 { color: var(--secondary); }
     body[data-theme="light"] .card-link {
-      color: #091717;
+      color: #2f3b46;
       border: 1px solid rgba(var(--secondary-rgb), 0.28);
       background: rgba(255, 255, 255, 0.82);
       backdrop-filter: blur(28px) saturate(165%);
@@ -223,7 +245,7 @@
       box-shadow: 0 14px 32px rgba(15, 23, 42, 0.16);
     }
     body[data-theme="light"] .card-title {
-      color: #091717;
+      color: #2f3b46;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
     }
     body:not([data-theme="light"]) .card-link {
@@ -460,12 +482,20 @@
         gap: 12px;
       }
       .card-link {
-        min-height: auto;
+        min-height: 144px;
         padding: 14px 13px;
       }
-      .card-title-regular { font-size: 15px; }
-      .card-title-small { font-size: 13.5px; }
-      .card-title-compact { font-size: 12px; }
+      .card-katas-badge {
+        top: 13px;
+        left: 13px;
+      }
+      .card-link.has-katas .card-title {
+        margin-top: 32px;
+      }
+      .card-title,
+      .card-title-regular,
+      .card-title-small,
+      .card-title-compact { font-size: 14px; }
       .katas-dialog {
         left: 0;
         top: 0;
@@ -564,8 +594,19 @@
         <ul class="cards">
           {% for f in g.items %}
             <li>
-              <a class="card-link" href="{% url 'play' f.relpath %}">
-                <span class="card-title {{ f.title_size_class }}">{{ f.name }}</span>
+              <a class="card-link has-katas" href="{% url 'play' f.relpath %}">
+                {% if '(Katas)' in f.name %}
+                  <span class="card-katas-badge" aria-label="Katas">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m19.8 2l-8.2 6.7l-1.21-1.04L14 5.58L9.41 1L8 2.41l2.74 2.74L5 8.46l-1.19 4.29L6.27 17L8 16l-2.03-3.5l.35-1.32L9.5 13l.5 9h2l.5-10L21 3.4zM5 3a2 2 0 1 1 0 4c-1.11 0-2-.89-2-2s.9-2 2-2"/></svg>
+                    <span>KATAS</span>
+                  </span>
+                {% else %}
+                  <span class="card-katas-badge" aria-label="Shugyo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m4.5 17.42l1.08 1.08l-2.3 2.28c-.28.29-.78.29-1.06 0s-.29-.78 0-1.06zm13.79-12V4L12 10.29L5.71 4v1.42L11.29 11L7.5 14.81c-1.18-.84-2.82-.74-3.87.31l4.25 4.25c1.05-1.05 1.15-2.69.32-3.87zm3.49 14.3l-2.28-2.3l-1.08 1.08l2.3 2.28c.28.29.78.29 1.06 0s.29-.78 0-1.06m-5.28-4.91l-3.08-3.1l-.71.71l3.1 3.08c-.84 1.18-.74 2.82.31 3.87l4.25-4.25c-1.05-1.05-2.69-1.15-3.87-.31"/></svg>
+                    <span>SHUGYO</span>
+                  </span>
+                {% endif %}
+                <span class="card-title {{ f.title_size_class }}">{{ f.name|cut:"(Katas)"|cut:".json"|cut:".JSON" }}</span>
               </a>
             </li>
           {% endfor %}

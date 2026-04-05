@@ -50,6 +50,20 @@
       } catch (_) {}
     })();
   </script>
+  <script>
+    (function() {
+      try {
+        var ua = navigator.userAgent || '';
+        var platform = navigator.platform || '';
+        var vendor = navigator.vendor || '';
+        var isApple = /Mac|iPhone|iPad|iPod/.test(platform) || /iPhone|iPad|iPod|Macintosh/.test(ua) || /Apple/.test(vendor);
+        var isWindows = /Win/.test(platform) || /Windows/.test(ua);
+        document.documentElement.setAttribute('data-platform-family', isApple ? 'apple' : (isWindows ? 'windows' : 'other'));
+      } catch (_) {
+        document.documentElement.setAttribute('data-platform-family', 'other');
+      }
+    })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
   :root {
@@ -73,6 +87,16 @@
     --grid-hover-opacity-boost: 0.20;
     --grid-base-size: 1.05;
     --grid-hover-size-boost: 0.55;
+    --explanation-serif-font: serif;
+  }
+  :root[data-platform-family="apple"] {
+    --explanation-serif-font: ui-serif, "Iowan Old Style", "New York", "Palatino", "Times", serif;
+  }
+  :root[data-platform-family="windows"] {
+    --explanation-serif-font: "Times New Roman", Times, serif;
+  }
+  :root[data-platform-family="other"] {
+    --explanation-serif-font: serif;
   }
   :root[data-theme="dark"] {
     --bg: #070d1a;
@@ -499,7 +523,7 @@
   .katas-body {
     max-width: 760px;
     margin: 0 auto;
-    font-family: "Times New Roman", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-family: var(--explanation-serif-font);
     color: #3f4046;
   }
   #explainModal .katas-body,
@@ -513,7 +537,7 @@
   #explainModal .katas-body h5,
   #explainModal .katas-body h6,
   #explainModal .katas-body .stem {
-    font-family: Cambria, "Georgia Pro", Georgia, "Times New Roman", serif;
+    font-family: var(--explanation-serif-font);
   }
   #explainModal .katas-body {
     max-width: 100%;
@@ -547,8 +571,8 @@
   }
   .katas-body p {
     margin: 0 0 36px;
-    line-height: 1.72;
-    font-size: clamp(16px, 1.35vw, 19px);
+    line-height: 1.82;
+    font-size: clamp(15px, 1.2vw, 18px);
     color: #595b63;
   }
   .katas-body strong {
@@ -567,8 +591,8 @@
     background: transparent;
     color: #6a6c75;
     font-style: italic;
-    font-size: clamp(18px, 1.52vw, 21px);
-    line-height: 1.65;
+    font-size: clamp(17px, 1.4vw, 20px);
+    line-height: 1.75;
   }
   .katas-body code {
     font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -600,8 +624,8 @@
   }
   .katas-richtext > * {
     margin: 0 0 36px;
-    line-height: 1.72;
-    font-size: clamp(16px, 1.35vw, 19px);
+    line-height: 1.82;
+    font-size: clamp(15px, 1.2vw, 18px);
     color: #595b63;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -615,8 +639,8 @@
   }
   .katas-richtext li {
     margin: 0 0 12px;
-    line-height: 1.72;
-    font-size: clamp(16px, 1.35vw, 19px);
+    line-height: 1.82;
+    font-size: clamp(15px, 1.2vw, 18px);
     overflow-wrap: anywhere;
     word-break: break-word;
   }
@@ -1584,6 +1608,7 @@
       const avgSeries = [];
       let timeChart = null;
       let expired = false;
+      let timeChartRenderQueued = false;
       function fmtMMSS(s) {
         if (!isFinite(s)) s = 0;
         const sign = s < 0 ? '-' : '';
@@ -1610,8 +1635,24 @@
           timeChart = null;
         }
       }
+      function queueTimeChartRender() {
+        if (timeChartRenderQueued) return;
+        timeChartRenderQueued = true;
+        window.requestAnimationFrame(() => {
+          timeChartRenderQueued = false;
+          renderTimeChart();
+        });
+      }
       function renderTimeChart() {
         if (!timeChartCanvas || !timeChartEmpty || !timeChartLatest) return;
+        const chartHost = timeChartCanvas.parentElement;
+        if (chartHost) {
+          const hostRect = chartHost.getBoundingClientRect();
+          if (!hostRect.width || !hostRect.height) {
+            queueTimeChartRender();
+            return;
+          }
+        }
         const n = avgSeries.length;
         if (n === 0) {
           destroyTimeChart();
@@ -1743,7 +1784,7 @@
         const answered = firstAnswered.size;
         if (answered <= 0) return;
         avgSeries.push(elapsed / answered);
-        renderTimeChart();
+        queueTimeChartRender();
       }
       function tickTimer() {
         if (!timerEl || totalSecs <= 0) return;
@@ -1769,18 +1810,22 @@
       if (firstAnswered.size > 0) {
         avgSeries.push(((Date.now() - startTs) / 1000) / firstAnswered.size);
       }
-      renderTimeChart();
+      queueTimeChartRender();
 
       // Hook into selection changes to update average time per question
-      document.getElementById('quizForm').addEventListener('change', (e) => {
+      function handleQuizSelectionMetrics(e) {
         const t = e.target;
         if (t && t.type === 'radio') {
           noteAnswerForChart(t);
           updateAvg();
         }
-      });
-      window.addEventListener('resize', renderTimeChart);
-      window.addEventListener('themechange', renderTimeChart);
+      }
+      document.getElementById('quizForm').addEventListener('input', handleQuizSelectionMetrics);
+      document.getElementById('quizForm').addEventListener('change', handleQuizSelectionMetrics);
+      window.addEventListener('resize', queueTimeChartRender);
+      window.addEventListener('orientationchange', queueTimeChartRender);
+      window.addEventListener('pageshow', queueTimeChartRender);
+      window.addEventListener('themechange', queueTimeChartRender);
     })();
   </script>
   <script>

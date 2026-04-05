@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives a bond's price using a sequence of spot rates?",
+    "options": {
+      "A": "$PV = \\dfrac{PMT}{(1+Z_1)^1} + \\dfrac{PMT}{(1+Z_2)^2} + \\cdots + \\dfrac{PMT+FV}{(1+Z_N)^N}$",
+      "B": "$PV = \\dfrac{PMT+FV}{(1+Z_1)^1} + \\dfrac{PMT}{(1+Z_1)^2}$",
+      "C": "$PV = \\dfrac{PMT}{1+Z_N} + \\dfrac{FV}{1+Z_N}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices a bond with spot rates by discounting each cash flow at the spot rate matching that cash flow's maturity. Earlier coupons use earlier spot rates, and the final coupon plus principal use the last spot rate. That produces $PV = \\dfrac{PMT}{(1+Z_1)^1} + \\dfrac{PMT}{(1+Z_2)^2} + \\cdots + \\dfrac{PMT+FV}{(1+Z_N)^N}$. This is the no-arbitrage spot-rate pricing relation.</p><p>Why top distractor is wrong (PDF-based misconception): B incorrectly discounts more than one cash flow using the one-year spot rate and misplaces the final principal payment.</p><p>Why remaining distractor is wrong: C ignores the different maturities of the cash flows and does not raise discount factors to the correct powers.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "A three-year bond has annual coupon $PMT = 5$, face value $FV = 100$, and spot rates $Z_1 = 2\\%$, $Z_2 = 3\\%$, and $Z_3 = 4\\%$. Its price is closest to:",
+    "options": {
+      "A": "102.96",
+      "B": "100.00",
+      "C": "104.50"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum spot-rate pricing formula discounts each cash flow at its own maturity spot rate: $PV = \\dfrac{5}{1.02} + \\dfrac{5}{(1.03)^2} + \\dfrac{105}{(1.04)^3}$. That gives about $4.902 + 4.713 + 93.345 = 102.96$. Each cash flow must use the matching spot rate term. Therefore the bond price is 102.96.</p><p>Why top distractor is wrong (PDF-based misconception): B would suggest a par bond, but the spot-rate valuation here produces a premium price.</p><p>Why remaining distractor is wrong: C overstates the value and does not match the CFA Curriculum's spot-rate discounting example.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which equation is the CFA Curriculum pricing relation used to solve for a par-rate coupon payment $PMT$ on a bond priced at par?",
+    "options": {
+      "A": "$100 = \\dfrac{PMT}{(1+z_1)^1} + \\dfrac{PMT}{(1+z_2)^2} + \\cdots + \\dfrac{PMT+100}{(1+z_N)^N}$",
+      "B": "$PV = \\dfrac{PMT}{(1+r)^1} + \\dfrac{PMT+100}{(1+r)^N}$",
+      "C": "$100 = PMT + 100$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum derives the par rate by setting a bond's price equal to par and discounting each cash flow with the sequence of spot rates. That gives $100 = \\dfrac{PMT}{(1+z_1)^1} + \\dfrac{PMT}{(1+z_2)^2} + \\cdots + \\dfrac{PMT+100}{(1+z_N)^N}$. Solving this equation gives the coupon payment that makes the bond trade at par. Dividing that coupon payment by 100 gives the par rate per period.</p><p>Why top distractor is wrong (PDF-based misconception): B uses a single yield rather than the spot-rate sequence that the module requires for calculating a par rate.</p><p>Why remaining distractor is wrong: C ignores discounting entirely and therefore cannot be a bond-pricing relation.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If the coupon payment that solves the par-rate equation is $PMT = 2.607$ per 100 of par value, the par rate per period is closest to:",
+    "options": {
+      "A": "2.607%",
+      "B": "0.02607%",
+      "C": "26.07%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that once the coupon payment solving the par-price equation is found, the par rate per period is that coupon payment divided by 100. So $2.607/100 = 0.02607 = 2.607\\%$. Because the bond is quoted per 100 of par value, the coupon payment in currency units directly maps into a percentage coupon rate. Therefore the par rate is 2.607%.</p><p>Why top distractor is wrong (PDF-based misconception): B divides by 100 twice, which understates the rate by a factor of 100.</p><p>Why remaining distractor is wrong: C fails to divide the coupon payment by 100 at all and therefore overstates the rate by a factor of 10.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives the implied forward rate from spot rates in the CFA Curriculum?",
+    "options": {
+      "A": "$(1+Z_A)^A \\times (1+IFR_{A,B-A})^{B-A} = (1+Z_B)^B$",
+      "B": "$(1+Z_A)^B \\times (1+IFR_{A,B-A})^A = (1+Z_B)^{B-A}$",
+      "C": "$Z_A + IFR_{A,B-A} = Z_B$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the implied forward-rate relation by equating the compounded return of investing to time $A$ and then rolling over for $B-A$ more periods with the compounded return of investing directly to time $B$. That relation is $(1+Z_A)^A \\times (1+IFR_{A,B-A})^{B-A} = (1+Z_B)^B$. It is the breakeven reinvestment condition linking spot and forward rates. Therefore choice A is the correct formula.</p><p>Why top distractor is wrong (PDF-based misconception): B misplaces the exponents and does not preserve the timing structure shown in the CFA Curriculum.</p><p>Why remaining distractor is wrong: C treats the relation as simple addition, but the module uses compounded growth terms.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Using annual compounding, if $Z_2 = 1.5\\%$ and $Z_3 = 2.0\\%$, the implied one-year forward rate two years from now is closest to:",
+    "options": {
+      "A": "3.01%",
+      "B": "2.00%",
+      "C": "0.50%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum forward-rate equation is $(1+Z_A)^A(1+IFR_{A,B-A})^{B-A}=(1+Z_B)^B$. For a 2y1y, use $A=2$, $B=3$, so $(1.015)^2(1+IFR_{2,1})=(1.02)^3$. Solving gives $IFR_{2,1} \\approx 0.0301 = 3.01\\%$. This is the breakeven one-year reinvestment rate beginning two years from now.</p><p>Why top distractor is wrong (PDF-based misconception): B simply repeats the three-year spot rate instead of solving the forward-rate relation.</p><p>Why remaining distractor is wrong: C treats the forward rate like a simple difference between the spot rates rather than a compounded implied rate.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If $(1+Z_3)^3 = (1+Z_2)^2 \\times (1+IFR_{2,1})$, which rearrangement correctly solves for $IFR_{2,1}$?",
+    "options": {
+      "A": "$IFR_{2,1} = \\dfrac{(1+Z_3)^3}{(1+Z_2)^2} - 1$",
+      "B": "$IFR_{2,1} = (1+Z_3)^3 - (1+Z_2)^2$",
+      "C": "$IFR_{2,1} = \\dfrac{1+Z_2}{1+Z_3} - 1$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Starting from the CFA Curriculum forward-rate identity, isolate the forward-rate term by dividing both sides by $(1+Z_2)^2$. That gives $1+IFR_{2,1} = \\dfrac{(1+Z_3)^3}{(1+Z_2)^2}$, so $IFR_{2,1} = \\dfrac{(1+Z_3)^3}{(1+Z_2)^2} - 1$. This is the correct rearrangement of the compounded relation. Therefore A is correct.</p><p>Why top distractor is wrong (PDF-based misconception): B subtracts compounded gross returns instead of dividing them, which breaks the reinvestment identity.</p><p>Why remaining distractor is wrong: C uses only first powers and the wrong inversion, so it does not represent the 2y1y formula.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If the one-year forward rates are $0y1y = 1.88\\%$ and $1y1y = 2.77\\%$, the two-year spot rate is closest to:",
+    "options": {
+      "A": "2.324%",
+      "B": "4.650%",
+      "C": "1.880%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that spot rates can be recovered from the geometric average of forward rates. So $(1+Z_2)^2 = 1.0188 \\times 1.0277$, which gives $Z_2 = (1.0188 \\times 1.0277)^{1/2} - 1 \\approx 0.02324 = 2.324\\%$. This uses the product of the forward growth rates over the two years. Therefore the two-year spot rate is 2.324%.</p><p>Why top distractor is wrong (PDF-based misconception): B adds the two forward rates instead of taking the geometric average implied by compounded returns.</p><p>Why remaining distractor is wrong: C uses only the first one-year rate and ignores the second year's forward rate.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which formula most accurately gives a three-year spot rate from one-year forward rates $0y1y$, $1y1y$, and $2y1y$?",
+    "options": {
+      "A": "$(1+Z_3)^3 = (1+0y1y)(1+1y1y)(1+2y1y)$",
+      "B": "$Z_3 = 0y1y + 1y1y + 2y1y$",
+      "C": "$(1+Z_3) = (1+0y1y)(1+1y1y)(1+2y1y)$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the spot curve can be calculated from the geometric average of the forward curve. For three years, the three-year accumulated gross return equals the product of the first three one-year forward gross returns. That gives $(1+Z_3)^3 = (1+0y1y)(1+1y1y)(1+2y1y)$. This is the correct compounding identity.</p><p>Why top distractor is wrong (PDF-based misconception): B uses simple addition of rates, but the module uses compounded gross returns.</p><p>Why remaining distractor is wrong: C omits the third-root structure and therefore overstates the one-period spot gross return.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Using forward rates $0y1y = 1.5\\%$, $1y1y = 2.5\\%$, and $2y1y = 3.5\\%$, the price of a three-year 2% coupon bond with par value 100 is closest to:",
+    "options": {
+      "A": "98.619",
+      "B": "100.000",
+      "C": "102.500"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices the bond with chained forward-rate discount factors: $PV = \\dfrac{2}{1.015} + \\dfrac{2}{1.015 \\times 1.025} + \\dfrac{102}{1.015 \\times 1.025 \\times 1.035}$. That gives approximately $98.619$. Each later cash flow is discounted by the product of all forward gross returns up to that date. Therefore the bond price is 98.619.</p><p>Why top distractor is wrong (PDF-based misconception): B would imply the bond trades exactly at par, but the given forward-rate term structure does not produce that result.</p><p>Why remaining distractor is wrong: C ignores discounting and is just the final cash flow plus one coupon amount pattern, not a present value.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Which expression most accurately prices a bond using one-year forward rates?",
+    "options": {
+      "A": "$PV = \\dfrac{CF_1}{1+f_1} + \\dfrac{CF_2}{(1+f_1)(1+f_2)} + \\cdots + \\dfrac{CF_N}{(1+f_1)(1+f_2)\\cdots(1+f_N)}$",
+      "B": "$PV = \\dfrac{CF_1+CF_2+\\cdots+CF_N}{1+f_N}$",
+      "C": "$PV = CF_1(1+f_1) + CF_2(1+f_2)$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that each cash flow can be discounted using the product of forward gross returns up to that cash flow date. The first cash flow uses one factor, the second uses two factors, and so on. That gives $PV = \\dfrac{CF_1}{1+f_1} + \\dfrac{CF_2}{(1+f_1)(1+f_2)} + \\cdots + \\dfrac{CF_N}{(1+f_1)(1+f_2)\\cdots(1+f_N)}$. This is the forward-rate pricing form.</p><p>Why top distractor is wrong (PDF-based misconception): B discounts every cash flow with only the last forward rate, which ignores the sequence of forward periods.</p><p>Why remaining distractor is wrong: C compounds cash flows forward rather than discounting them back to present value.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If the price of a bond equals 100 and its coupon payment per 100 of par also equals the yield-to-maturity per 100 of par, the bond is most accurately described as trading at:",
+    "options": {
+      "A": "Par",
+      "B": "A discount",
+      "C": "A premium"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a par rate as the yield-to-maturity that makes the bond's present value equal to par, or 100% of face value. At that point, the bond's coupon rate and yield-to-maturity are equal. This is exactly the condition for a bond trading at par. Therefore the correct description is par.</p><p>Why top distractor is wrong (PDF-based misconception): B would require the bond's price to be below 100, which is not true here.</p><p>Why remaining distractor is wrong: C would require the bond's price to be above 100, which also does not hold here.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "Using annual compounding, if $(1+0.03)^3(1+IFR_{3,2})^2 = (1+0.04)^5$, the implied two-year forward rate in three years is closest to:",
+    "options": {
+      "A": "5.52%",
+      "B": "4.00%",
+      "C": "1.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum forward-rate identity gives $(1+IFR_{3,2})^2 = \\dfrac{(1.04)^5}{(1.03)^3}$. Taking the square root and subtracting 1 gives about $0.0552 = 5.52\\%$. This is the breakeven two-year reinvestment rate beginning three years from now. Therefore the implied forward rate is 5.52%.</p><p>Why top distractor is wrong (PDF-based misconception): B simply repeats the five-year spot rate instead of solving for the forward rate embedded between years 3 and 5.</p><p>Why remaining distractor is wrong: C is far too low and does not match the compounded spread implied by the two spot rates.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Formula",
+    "stem": "If spot rates are flat across maturities, the formula relationships in the CFA Curriculum imply that forward rates and par rates are most likely:",
+    "options": {
+      "A": "Equal to the spot rates",
+      "B": "Always above the spot rates",
+      "C": "Always below the spot rates"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that when the spot rate is constant across all maturities, the derived par and forward rates will also equal the spot rate across maturities. The formulas for par rates and implied forward rates therefore collapse to the same constant level. With no change in the term structure, there is no embedded upward or downward slope to create differences. So forward rates and par rates equal the spot rates.</p><p>Why top distractor is wrong (PDF-based misconception): B applies the upward-sloping result, but that only holds when the spot curve is rising, not when it is flat.</p><p>Why remaining distractor is wrong: C applies the downward-sloping result, which also does not fit a flat spot-rate environment.</p>"
+  }
+]
