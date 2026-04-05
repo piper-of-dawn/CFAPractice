@@ -1,22 +1,22 @@
 Building-block Style
-Generate 21 very easy CFA-style MCQs for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
-Follow AGENTS.md and use the Building Blocks style format.
-Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation (Katas).json.
+Generate 21 very easy CFA-style MCQs for Topic:  Module 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves using PDF/CFA L1 B6 Fixed Income.pdf'.
+Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST
+Write the output only the JSON array to a dedicated file The Term Structure of Interest Rates (Katas).json.
 
 Enumeration / Counting Format
-Generate 9 CFA-style MCQs for Topic: Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
+Generate 9 CFA-style MCQs for Topic:  Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds  using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation EC.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Yield and Yield Spread Measures for Fixed-Rate Bonds EC.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 5 CFA-style assertion–reason questions for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
+Generate 5 CFA-style assertion–reason questions for Topic: Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds  using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Assertion Reason.
-Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation AR.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Yield and Yield Spread Measures for Fixed-Rate Bonds AR.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Numerical Questions
-Generate 14 CFA-style numerical questions for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
+Generate 14 CFA-style numerical questions for Topic: Module 8: Yield and Yield Spread Measures for Floating-Rate Instruments using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Numerical Questions format.
-Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation N.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file ield and Yield Spread Measures for Fixed-Rate Bonds N.json. Append the file if it already exists, DO NOT OVERWRITE. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST
 
 
 ---

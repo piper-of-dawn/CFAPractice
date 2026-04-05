@@ -1,3 +1,38 @@
+# JSON File Append Protocol
+
+### Objective
+When writing question files, preserve existing JSON arrays and append safely.
+
+### Append Rule (MANDATORY)
+- Never overwrite an existing topic JSON file unless the user explicitly asks for replacement.
+- If the destination file exists, read and validate the existing array first.
+- Continue IDs from the current last `id`.
+- Write the final file as one valid JSON array containing old and new objects.
+- Do not write only the newly generated questions to an existing file.
+
+### Verification Before Writing
+1. Check whether the destination file exists.
+2. If it exists, parse it as JSON.
+3. Find the last `id`.
+4. Start new question IDs at `last_id + 1`.
+5. Validate the final JSON after writing.
+
+### Recommended Local Checks
+```bash
+ls -lah "Target File.json"
+jq empty "Target File.json"
+jq 'length, .[-1].id' "Target File.json"
+```
+
+If the file does not exist, create a new JSON array and start IDs at `1`.
+
+### Tooling Available
+- `ripgrep` (`rg`) is installed.
+- Always use `rg` for text search and `rg --files` for file discovery.
+- Prefer `rg` over slower alternatives for locating PDFs, extracted source text, JSON files, module headings, and topic keywords.
+
+---
+
 # CFA Question Generator — Building-Block Edition
 
 ### Objective
@@ -177,9 +212,8 @@ Reason (R): …
   "id": "int (1..n)",
   "topic": "PDF-based subtopic",
   "stem": "string",
-  "options": {"A": "Both A and R are true and R is the correct explanation of A", "B": "Both A and R are true but R is not the correct explanation of A
-", "C": "A is true but R is false", "D": "A is false but R is true"},
-  "correct_answer": "A|B|C",
+  "options": {"A": "Both A and R are true and R is the correct explanation of A", "B": "Both A and R are true but R is not the correct explanation of A", "C": "A is true but R is false", "D": "A is false but R is true"},
+  "correct_answer": "A|B|C|D",
   "explanation": "string"
 }
 ```
@@ -197,6 +231,8 @@ Reason (R): …
 ### Validation
 - Exact schema match with `Hedge Funds.json`.
 - Uniform answer distribution across A, B, C, D.
+- Options must include exactly A, B, C, and D.
+- `correct_answer` must be one of A, B, C, or D.
 - Each question follows the strict A–R format.
 - Strict adherence to PDF content is mandatory.
 

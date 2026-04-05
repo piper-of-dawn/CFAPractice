@@ -9,6 +9,10 @@ def _round_currency(value):
     return value.quantize(Decimal("0.01"))
 
 
+def _round_rate(value):
+    return value.quantize(Decimal("0.000001"))
+
+
 def future_value_lump_sum(present_value, rate_per_period, periods):
     pv = _to_decimal(present_value)
     rate = _to_decimal(rate_per_period)
@@ -198,5 +202,255 @@ def long_put_profit_threshold(exercise_price, premium):
         "rounded_answer": _round_currency(threshold),
         "validation_checks": {
             "premium_non_negative": premium_paid >= 0,
+        },
+    }
+
+
+def annual_yield_from_periodic_rate(rate_per_period, periods_per_year):
+    periodic_rate = _to_decimal(rate_per_period)
+    periodicity = _to_decimal(periods_per_year)
+    annual_yield = periodic_rate * periodicity
+    return {
+        "final_answer": annual_yield,
+        "intermediate_steps": {
+            "rate_per_period": periodic_rate,
+            "periods_per_year": periodicity,
+            "annual_yield": annual_yield,
+        },
+        "units": "annual rate",
+        "rounded_answer": _round_rate(annual_yield),
+        "validation_checks": {
+            "periods_per_year_positive": periodicity > 0,
+        },
+    }
+
+
+def convert_apr_periodicity(apr_m, periods_per_year_m, periods_per_year_n):
+    apr_source = _to_decimal(apr_m)
+    m = _to_decimal(periods_per_year_m)
+    n = _to_decimal(periods_per_year_n)
+    effective_annual_rate = (Decimal("1") + (apr_source / m)) ** m - Decimal("1")
+    apr_target = n * ((Decimal("1") + effective_annual_rate) ** (Decimal("1") / n) - Decimal("1"))
+    return {
+        "final_answer": apr_target,
+        "intermediate_steps": {
+            "source_apr": apr_source,
+            "source_periodicity": m,
+            "target_periodicity": n,
+            "effective_annual_rate": effective_annual_rate,
+            "target_apr": apr_target,
+        },
+        "units": "annual rate",
+        "rounded_answer": _round_rate(apr_target),
+        "validation_checks": {
+            "source_periodicity_positive": m > 0,
+            "target_periodicity_positive": n > 0,
+            "apr_above_negative_source_periodicity": apr_source > -m,
+        },
+    }
+
+
+def current_yield_from_rate_and_price(annual_coupon_rate_percent_of_par, flat_price_percent_of_par):
+    annual_coupon_rate = _to_decimal(annual_coupon_rate_percent_of_par)
+    flat_price = _to_decimal(flat_price_percent_of_par)
+    current_yield = annual_coupon_rate / flat_price
+    return {
+        "final_answer": current_yield,
+        "intermediate_steps": {
+            "annual_coupon_rate_percent_of_par": annual_coupon_rate,
+            "flat_price_percent_of_par": flat_price,
+            "current_yield": current_yield,
+        },
+        "units": "annual rate",
+        "rounded_answer": _round_rate(current_yield),
+        "validation_checks": {
+            "flat_price_positive": flat_price > 0,
+        },
+    }
+
+
+def government_equivalent_yield(corporate_yield_30_360):
+    corporate_yield = _to_decimal(corporate_yield_30_360)
+    act_act_yield = corporate_yield * Decimal("365") / Decimal("360")
+    return {
+        "final_answer": act_act_yield,
+        "intermediate_steps": {
+            "corporate_yield_30_360": corporate_yield,
+            "conversion_factor_365_over_360": Decimal("365") / Decimal("360"),
+            "government_equivalent_yield": act_act_yield,
+        },
+        "units": "annual rate",
+        "rounded_answer": _round_rate(act_act_yield),
+        "validation_checks": {
+            "yield_non_negative": corporate_yield >= 0,
+        },
+    }
+
+
+def simple_yield(annual_coupon_amount, straight_line_amortized_gain_or_loss, flat_price):
+    annual_coupon = _to_decimal(annual_coupon_amount)
+    amortized_gain_or_loss = _to_decimal(straight_line_amortized_gain_or_loss)
+    price = _to_decimal(flat_price)
+    result = (annual_coupon + amortized_gain_or_loss) / price
+    return {
+        "final_answer": result,
+        "intermediate_steps": {
+            "annual_coupon_amount": annual_coupon,
+            "straight_line_amortized_gain_or_loss": amortized_gain_or_loss,
+            "flat_price": price,
+            "simple_yield": result,
+        },
+        "units": "annual rate",
+        "rounded_answer": _round_rate(result),
+        "validation_checks": {
+            "flat_price_positive": price > 0,
+        },
+    }
+
+
+def g_spread_bps(bond_yield, benchmark_yield):
+    bond = _to_decimal(bond_yield)
+    benchmark = _to_decimal(benchmark_yield)
+    spread = bond - benchmark
+    spread_bps = spread * Decimal("10000")
+    return {
+        "final_answer": spread_bps,
+        "intermediate_steps": {
+            "bond_yield": bond,
+            "benchmark_yield": benchmark,
+            "spread_decimal": spread,
+            "spread_bps": spread_bps,
+        },
+        "units": "basis points",
+        "rounded_answer": spread_bps.quantize(Decimal("0.1")),
+        "validation_checks": {
+            "inputs_present": True,
+        },
+    }
+
+
+def bond_price_coupon_date(periodic_coupon_amount, periodic_discount_rate, periods_to_maturity, face_value):
+    coupon = _to_decimal(periodic_coupon_amount)
+    rate = _to_decimal(periodic_discount_rate)
+    periods = int(periods_to_maturity)
+    face = _to_decimal(face_value)
+    present_value = Decimal("0")
+    for t in range(1, periods + 1):
+        cash_flow = coupon
+        if t == periods:
+            cash_flow += face
+        present_value += cash_flow / ((Decimal("1") + rate) ** t)
+    return {
+        "final_answer": present_value,
+        "intermediate_steps": {
+            "periodic_coupon_amount": coupon,
+            "periodic_discount_rate": rate,
+            "periods_to_maturity": periods,
+            "face_value": face,
+            "price": present_value,
+        },
+        "units": "price per 100 of par value",
+        "rounded_answer": present_value.quantize(Decimal("0.001")),
+        "validation_checks": {
+            "periods_positive": periods > 0,
+            "rate_greater_than_negative_one": rate > Decimal("-1"),
+        },
+    }
+
+
+def accrued_interest(coupon_payment_per_period, days_elapsed, days_in_period):
+    coupon = _to_decimal(coupon_payment_per_period)
+    t = _to_decimal(days_elapsed)
+    total_days = _to_decimal(days_in_period)
+    accrued = (t / total_days) * coupon
+    return {
+        "final_answer": accrued,
+        "intermediate_steps": {
+            "coupon_payment_per_period": coupon,
+            "days_elapsed": t,
+            "days_in_period": total_days,
+            "fraction_of_period_elapsed": t / total_days,
+            "accrued_interest": accrued,
+        },
+        "units": "price per 100 of par value",
+        "rounded_answer": accrued.quantize(Decimal("0.001")),
+        "validation_checks": {
+            "days_in_period_positive": total_days > 0,
+            "days_elapsed_non_negative": t >= 0,
+            "days_elapsed_not_more_than_period": t <= total_days,
+        },
+    }
+
+
+def full_price_between_coupons(price_at_start_of_period, periodic_discount_rate, days_elapsed, days_in_period):
+    pv = _to_decimal(price_at_start_of_period)
+    rate = _to_decimal(periodic_discount_rate)
+    t = _to_decimal(days_elapsed)
+    total_days = _to_decimal(days_in_period)
+    exponent = t / total_days
+    full_price = pv * ((Decimal("1") + rate) ** exponent)
+    return {
+        "final_answer": full_price,
+        "intermediate_steps": {
+            "price_at_start_of_period": pv,
+            "periodic_discount_rate": rate,
+            "days_elapsed": t,
+            "days_in_period": total_days,
+            "exponent_t_over_T": exponent,
+            "full_price": full_price,
+        },
+        "units": "price per 100 of par value",
+        "rounded_answer": full_price.quantize(Decimal("0.001")),
+        "validation_checks": {
+            "days_in_period_positive": total_days > 0,
+            "days_elapsed_non_negative": t >= 0,
+            "rate_greater_than_negative_one": rate > Decimal("-1"),
+        },
+    }
+
+
+def flat_price_from_full_price(full_price_value, accrued_interest_value):
+    full_price = _to_decimal(full_price_value)
+    accrued = _to_decimal(accrued_interest_value)
+    flat_price = full_price - accrued
+    return {
+        "final_answer": flat_price,
+        "intermediate_steps": {
+            "full_price": full_price,
+            "accrued_interest": accrued,
+            "flat_price": flat_price,
+        },
+        "units": "price per 100 of par value",
+        "rounded_answer": flat_price.quantize(Decimal("0.001")),
+        "validation_checks": {
+            "full_price_at_least_accrued_interest": full_price >= accrued,
+        },
+    }
+
+
+def interpolated_yield(lower_maturity, upper_maturity, target_maturity, lower_yield, upper_yield):
+    lower_m = _to_decimal(lower_maturity)
+    upper_m = _to_decimal(upper_maturity)
+    target_m = _to_decimal(target_maturity)
+    lower_y = _to_decimal(lower_yield)
+    upper_y = _to_decimal(upper_yield)
+    weight = (target_m - lower_m) / (upper_m - lower_m)
+    interpolated = lower_y + weight * (upper_y - lower_y)
+    return {
+        "final_answer": interpolated,
+        "intermediate_steps": {
+            "lower_maturity": lower_m,
+            "upper_maturity": upper_m,
+            "target_maturity": target_m,
+            "lower_yield": lower_y,
+            "upper_yield": upper_y,
+            "interpolation_weight": weight,
+            "interpolated_yield": interpolated,
+        },
+        "units": "annual yield",
+        "rounded_answer": _round_rate(interpolated),
+        "validation_checks": {
+            "upper_maturity_greater_than_lower": upper_m > lower_m,
+            "target_between_bounds": target_m >= lower_m and target_m <= upper_m,
         },
     }

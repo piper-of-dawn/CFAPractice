@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Modified Duration",
+    "stem": "Modified duration is most accurately described as the sensitivity of a bond's price to changes in its:",
+    "options": {
+      "A": "yield-to-maturity",
+      "B": "coupon frequency only",
+      "C": "face value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines modified duration as the slope, or first derivative, of a bond’s price with respect to its yield-to-maturity. The rule is that it measures how sensitive price is to a change in yield. The intuition is that duration summarizes interest rate risk in one number. Applying that rule identifies yield-to-maturity as the variable that modified duration measures price sensitivity against.</p><p>Why top distractor is wrong (PDF-based misconception). Coupon frequency matters in bond pricing, but modified duration is not defined as sensitivity to coupon frequency only.</p><p>Why remaining distractor is wrong. Face value affects price level, but modified duration is not defined as sensitivity to face value changes.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Modified Duration",
+    "stem": "Modified duration is most likely used to estimate the ________ change in a bond's full price for a given change in yield-to-maturity:",
+    "options": {
+      "A": "percentage",
+      "B": "coupon",
+      "C": "credit spread only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that modified duration is used to estimate the percentage change in a bond’s full price for a given change in yield-to-maturity. The rule is that modified duration is a relative, not currency-based, sensitivity measure. The intuition is that duration gives a proportional effect before position size is considered. Applying that rule gives percentage change.</p><p>Why top distractor is wrong (PDF-based misconception). Modified duration does not estimate a change in coupon payment.</p><p>Why remaining distractor is wrong. The curriculum discusses yield-to-maturity here, not credit spread only.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Money Duration",
+    "stem": "Money duration is most accurately the product of annualized modified duration and the bond's:",
+    "options": {
+      "A": "full price",
+      "B": "coupon rate",
+      "C": "par value only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines money duration as the product of annualized modified duration and the full price of the bond or bond position. The rule is that money duration converts percentage sensitivity into currency sensitivity. The intuition is that position size must be incorporated to express price change in money terms. Applying that rule gives full price as the quantity multiplied by annualized modified duration.</p><p>Why top distractor is wrong (PDF-based misconception). Coupon rate influences duration, but it is not multiplied directly by modified duration to get money duration.</p><p>Why remaining distractor is wrong. The curriculum uses full price, not par value only, in the money duration definition.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Price Value of a Basis Point",
+    "stem": "Price value of a basis point most accurately estimates the change in the full price of a bond for a:",
+    "options": {
+      "A": "1 bp change in yield",
+      "B": "1% coupon change",
+      "C": "1-year maturity change"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the price value of a basis point as an estimate of the change in the full price of a bond for a 1 bp change in yield-to-maturity. The rule is direct and specific to a one-basis-point move. The intuition is that PVBP is a small-move price risk measure. Applying that definition gives a 1 bp change in yield.</p><p>Why top distractor is wrong (PDF-based misconception). PVBP is not defined for a 1% coupon change.</p><p>Why remaining distractor is wrong. PVBP measures sensitivity to yield, not to a one-year maturity change.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Yield Duration Statistics",
+    "stem": "Which of the following is a type of yield duration statistic in this module?",
+    "options": {
+      "A": "Modified duration",
+      "B": "Curve duration",
+      "C": "Empirical duration"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that Macaulay duration, modified duration, money duration, and price value of a basis point are types of yield duration. The rule is classification within this module’s framework. The intuition is that these measures all assess sensitivity to a bond’s own yield-to-maturity. Applying that classification identifies modified duration as a yield duration statistic.</p><p>Why top distractor is wrong (PDF-based misconception). The curriculum explicitly says curve duration is not classified as a type of yield duration.</p><p>Why remaining distractor is wrong. Empirical duration belongs to a later module and is not the yield-duration classification used here.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Full Price versus Flat Price",
+    "stem": "Duration measures in this module are used to measure the sensitivity of which price to changes in yield?",
+    "options": {
+      "A": "Full price",
+      "B": "Flat price",
+      "C": "Call price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that duration measures are used to measure the sensitivity of full prices to changes in yields. The rule is that full price includes accrued interest and reflects the complete current value. The intuition is that duration is tied to the full present value of cash flows. Applying that rule gives full price.</p><p>Why top distractor is wrong (PDF-based misconception). The module explicitly says duration measures are not stated as sensitivity of flat prices.</p><p>Why remaining distractor is wrong. Call price is relevant for callable bonds, not the general duration definition here.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Modified Duration",
+    "stem": "If a bond's modified duration is higher, its price–yield relationship is most likely:",
+    "options": {
+      "A": "steeper",
+      "B": "flatter",
+      "C": "unchanged"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that the higher a bond’s modified duration, the steeper its price–yield relationship line is and the more sensitive its price is to changes in yield. The rule links higher duration to greater price sensitivity. The intuition is that price responds more strongly to yield changes when duration is larger. Applying that rule gives a steeper relationship.</p><p>Why top distractor is wrong (PDF-based misconception). A flatter line would indicate lower, not higher, price sensitivity.</p><p>Why remaining distractor is wrong. A higher modified duration changes the slope; it does not leave it unchanged.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Approximate Modified Duration",
+    "stem": "Approximate modified duration is most accurately based on changing a bond's yield:",
+    "options": {
+      "A": "up and down by the same amount",
+      "B": "up only",
+      "C": "to zero only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains approximate modified duration by increasing and decreasing the bond’s yield-to-maturity by the same amount and using the resulting prices. The rule is symmetric yield shocks around the current yield. The intuition is that this approximates the slope of the tangent line to the price–yield curve. Applying that method requires moving the yield up and down by the same amount.</p><p>Why top distractor is wrong (PDF-based misconception). Moving the yield up only would not produce the approximation method described in the module.</p><p>Why remaining distractor is wrong. Setting yield to zero is not the approximation method defined here.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Approximate Modified Duration",
+    "stem": "Approximate modified duration is especially useful for bonds with unknown Macaulay duration because of:",
+    "options": {
+      "A": "contingency features or default risk",
+      "B": "equal coupon dates only",
+      "C": "zero accrued interest only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says the approximation approach is useful for bonds with unknown Macaulay duration owing to contingency features or default risk. The rule is that direct closed-form duration may be less convenient when cash flows are uncertain or altered by features. The intuition is that price-based approximation can still be applied. Applying the rule identifies contingency features or default risk.</p><p>Why top distractor is wrong (PDF-based misconception). Equal coupon dates alone do not create the special need for approximate modified duration.</p><p>Why remaining distractor is wrong. Zero accrued interest is not the reason the approximation is highlighted here.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Zero-Coupon Bond Duration",
+    "stem": "The Macaulay duration of a zero-coupon bond is most accurately its:",
+    "options": {
+      "A": "time-to-maturity",
+      "B": "coupon rate",
+      "C": "full price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that because a zero-coupon bond has a single payment at maturity, its Macaulay duration equals its time-to-maturity. The rule is that the only cash flow has a present value weight of 1.0. The intuition is that all value is received at one final date. Applying that rule gives time-to-maturity.</p><p>Why top distractor is wrong (PDF-based misconception). A zero-coupon bond does not use coupon rate to define Macaulay duration.</p><p>Why remaining distractor is wrong. Full price is used in other measures, not as the definition of zero-coupon Macaulay duration.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Zero-Coupon Bond Duration",
+    "stem": "For a zero-coupon bond with a positive yield, modified duration is most likely ________ its Macaulay duration:",
+    "options": {
+      "A": "less than",
+      "B": "equal to",
+      "C": "greater than"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives modified duration as Macaulay duration divided by 1 plus yield per period. The rule is that dividing by a number greater than 1 reduces the value when yield is positive. The intuition is straightforward arithmetic. Applying that rule means modified duration is less than Macaulay duration for a positive-yield zero-coupon bond.</p><p>Why top distractor is wrong (PDF-based misconception). Equality would hold only if the divisor were 1, which is not the case with a positive yield.</p><p>Why remaining distractor is wrong. Modified duration exceeds Macaulay duration only when yield is negative, not positive.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Perpetual Bonds",
+    "stem": "A non-callable perpetuity has a Macaulay duration of most accurately:",
+    "options": {
+      "A": "(1 + r)/r",
+      "B": "time-to-maturity",
+      "C": "zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the Macaulay duration of a perpetuity as $(1 + r)/r$. The rule is specific to perpetual bonds because they have no maturity payment and pay coupons forever. The intuition is that duration remains finite even without maturity because the discounted coupon stream has a weighted average time. Applying the formula yields $(1 + r)/r$.</p><p>Why top distractor is wrong (PDF-based misconception). Time-to-maturity is not defined for a perpetuity because it does not mature.</p><p>Why remaining distractor is wrong. A perpetuity does have interest rate risk, so its Macaulay duration is not zero.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Floating-Rate Notes and Loans",
+    "stem": "Interest rate risk for a floating-rate note most likely arises primarily:",
+    "options": {
+      "A": "between reset dates",
+      "B": "only at maturity",
+      "C": "only after default"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that for floating-rate instruments, interest rate risk arises only between reset dates because coupon payments adjust to the market reference rate at the next reset. The rule is that reset dates refresh the coupon to market conditions. The intuition is that rate risk is confined to the remaining time until the next reset. Applying that rule identifies the period between reset dates.</p><p>Why top distractor is wrong (PDF-based misconception). The module does not say the risk appears only at maturity.</p><p>Why remaining distractor is wrong. Default is a credit event, not the source of the floating-rate interest rate risk described here.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Floating-Rate Notes and Loans",
+    "stem": "The Macaulay duration of a floating-rate note is most accurately the fraction of the period remaining until the next:",
+    "options": {
+      "A": "reset date",
+      "B": "maturity extension",
+      "C": "call notice"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the Macaulay duration for a floating-rate note as the fraction of a period remaining until the next reset date. The rule follows from coupon adjustment to the market reference rate at reset. The intuition is that price sensitivity persists only until the next reset updates the coupon. Applying that rule identifies the next reset date.</p><p>Why top distractor is wrong (PDF-based misconception). Maturity extension is not part of the floating-rate duration formula in this module.</p><p>Why remaining distractor is wrong. Call notice is not the defining timing point for floating-rate Macaulay duration here.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Floating-Rate Notes and Loans",
+    "stem": "Floating-rate instruments typically have very ________ duration because coupon periods are usually less than six months:",
+    "options": {
+      "A": "low",
+      "B": "high",
+      "C": "negative"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that floating-rate instruments typically have very low duration because coupon periods are usually short. The rule is that duration is linked to the time remaining until the next reset. The intuition is that frequent resets keep interest rate sensitivity small. Applying that rule gives low duration.</p><p>Why top distractor is wrong (PDF-based misconception). High duration would be inconsistent with the short time-to-reset emphasized in the module.</p><p>Why remaining distractor is wrong. The module does not describe floating-rate instruments as having negative duration.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Duration Properties",
+    "stem": "All else equal, a lower coupon rate results in most likely ________ duration:",
+    "options": {
+      "A": "higher",
+      "B": "lower",
+      "C": "unchanged"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that, all else equal, a lower-coupon bond has a higher duration and more interest rate risk than a higher-coupon bond. The rule is that lower coupons put more weight on the final payment. The intuition is that cash flows are pushed effectively farther out in present-value terms. Applying that rule gives higher duration.</p><p>Why top distractor is wrong (PDF-based misconception). Lower coupon does not reduce duration when other features are held constant.</p><p>Why remaining distractor is wrong. The curriculum explicitly says coupon rate affects duration.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Duration Properties",
+    "stem": "All else equal, a lower yield-to-maturity results in most likely ________ duration:",
+    "options": {
+      "A": "higher",
+      "B": "lower",
+      "C": "zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says a lower yield-to-maturity increases the weighted average time to receipt of cash flow and thus increases duration. The rule is that lower discounting raises the weight on later cash flows. The intuition is that distant payments matter more when discount rates fall. Applying that rule gives higher duration.</p><p>Why top distractor is wrong (PDF-based misconception). The module states the opposite relationship between yield and duration.</p><p>Why remaining distractor is wrong. Lower yield does not imply zero duration; it changes the level of duration.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Duration Properties",
+    "stem": "All else equal, a longer time-to-maturity results in most likely ________ duration:",
+    "options": {
+      "A": "higher",
+      "B": "lower",
+      "C": "unchanged"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that longer times-to-maturity typically correspond to higher duration. The rule is that more distant cash flows increase the present-value-weighted average time to receipt. The intuition is that interest rate exposure generally grows when cash flows are pushed further into the future. Applying that rule gives higher duration.</p><p>Why top distractor is wrong (PDF-based misconception). Lower duration is inconsistent with the usual maturity effect described in the module.</p><p>Why remaining distractor is wrong. The curriculum clearly says maturity affects duration.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Duration Properties",
+    "stem": "All else equal, an increase in the fraction of the current coupon period that has elapsed results in most likely ________ duration:",
+    "options": {
+      "A": "lower",
+      "B": "higher",
+      "C": "equal"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum summarizes in Exhibit 4 that an increase in the fraction of the current coupon period that has elapsed has an inverse relationship with duration. The rule is that duration decreases as more of the current period passes. The intuition is that time to receipt of the next cash flow shortens. Applying that rule gives lower duration.</p><p>Why top distractor is wrong (PDF-based misconception). A higher elapsed fraction does not increase duration under the stated property.</p><p>Why remaining distractor is wrong. Duration changes through the coupon period; it is not equal throughout.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Duration over Time",
+    "stem": "Between coupon payments, if yield-to-maturity does not change, a bond's Macaulay duration most likely:",
+    "options": {
+      "A": "decreases smoothly",
+      "B": "stays constant",
+      "C": "increases smoothly"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that with a constant yield-to-maturity, Macaulay duration decreases smoothly as time passes and then jumps upward after the coupon is paid, creating a saw-tooth pattern. The rule is based on the passage of time within the coupon period. The intuition is that each day brings the next cash flow closer. Applying that rule gives a smooth decline between coupon payments.</p><p>Why top distractor is wrong (PDF-based misconception). Duration is not constant through the coupon period under a constant yield.</p><p>Why remaining distractor is wrong. The curriculum shows the opposite direction between coupon dates.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Duration and Price Change",
+    "stem": "For most bonds, the price decrease from a 100 bp yield increase is most likely ________ the price increase from a 100 bp yield decrease:",
+    "options": {
+      "A": "less than",
+      "B": "equal to",
+      "C": "greater than"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the price–yield relationship for most bonds is convex, so the increase in price for a yield decrease is greater than the decrease in price for the same yield increase. The rule is asymmetry from convexity. The intuition is that price gains from falling yields exceed equal-sized price losses from rising yields. Applying that rule means the price decrease from a 100 bp rise is less than the price increase from a 100 bp fall.</p><p>Why top distractor is wrong (PDF-based misconception). Equality would imply a linear relationship, which the curriculum rejects for most bonds.</p><p>Why remaining distractor is wrong. The curriculum’s convexity discussion implies the opposite ordering.</p>"
+  }
+]

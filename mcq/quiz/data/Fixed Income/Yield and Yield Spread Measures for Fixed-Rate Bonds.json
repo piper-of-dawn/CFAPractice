@@ -1,0 +1,279 @@
+[
+  {
+    "id": 1,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. It is the sum of coupon payments plus the straight-line amortized share of the gain or loss, divided by the flat price.\nII. It assumes cash flows are paid on their scheduled dates without adjusting for weekends or bank holidays.\nIII. It restates a yield based on a 30/360 day count to one based on an actual/actual day count.\nHow many of the above define simple yield?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum definition of simple yield. Item I matches exactly: simple yield equals coupon payments plus the straight-line amortized share of gain or loss, divided by flat price. Item II describes street convention yield, and Item III describes government equivalent yield. Therefore, only one item qualifies.</p><p>Why option B is incorrect. Two items do not qualify because only Item I is the simple yield definition; Items II and III belong to different yield conventions.</p><p>Why option C is incorrect. All three cannot qualify because the curriculum clearly separates simple yield from street convention yield and government equivalent yield.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. It accounts for weekends and bank holidays and assumes cash flows are paid after their scheduled dates when needed.\nII. It is never higher than street convention yield because delayed payment dates reduce the yield measure.\nIII. It is the convention most commonly used in practice for quoting bond yields.\nHow many of the above describe true yield?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum description of true yield. Item I qualifies because true yield adjusts for weekends and holidays. Item II also qualifies because the curriculum states true yield is never higher than street convention yield due to delayed payment. Item III does not qualify because street convention, not true yield, is the commonly used market convention. Therefore, two items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect. All three do not qualify because Item III contradicts the curriculum's statement that true yield is not commonly used in practice.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. It restates a yield-to-maturity based on a 30/360 day count to one based on an actual/actual day count.\nII. It is used to restate the yield-to-maturity on a corporate bond to obtain the spread over a government bond yield.\nIII. It is the same as current yield because both divide annual coupon by flat price.\nHow many of the above describe government equivalent yield?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum description of government equivalent yield. Item I qualifies because this yield measure restates 30/360 to actual/actual. Item II also qualifies because the curriculum says it is used to obtain the spread over the government YTM. Item III does not qualify because current yield is a different measure based on annual coupon divided by flat price. Therefore, two items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect. All three cannot qualify because Item III confuses government equivalent yield with current yield, which the curriculum defines separately.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. Expected inflation rate\nII. Expected real rate\nIII. Liquidity risk\nHow many of the above are benchmark-rate components rather than spread components of yield-to-maturity?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the item is a macroeconomic benchmark-rate component in the CFA Curriculum decomposition of yield. Expected inflation rate and expected real rate are benchmark components. Liquidity risk is a spread component because it is issuer- or security-specific. Therefore, two items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect. All three do not qualify because liquidity belongs to the spread, not the benchmark, side of the decomposition.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. Most recently issued government bond\nII. Trades at slightly lower yields-to-maturity than similar off-the-run bonds\nIII. Has a coupon rate closest to the current market discount rate for that maturity\nHow many of the above describe an on-the-run government bond?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum description of an on-the-run government bond. Item I qualifies because on-the-run means most recently issued. Item II qualifies because these bonds typically trade at slightly lower yields than similar off-the-run bonds. Item III qualifies because the on-the-run coupon is closest to the current market discount rate, so the bond tends to trade near par. Therefore, all three items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. G-spread is the yield spread over an actual or interpolated government bond yield.\nII. I-spread is the yield spread over the standard swap rate in the same currency and with the same tenor.\nIII. Z-spread is a constant yield spread added to each benchmark spot rate so the present value of cash flows equals the bond's price.\nHow many of the above are correctly matched with their yield spread measures?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether each spread measure is matched to the correct curriculum definition. Item I matches the G-spread definition. Item II matches the I-spread definition. Item III matches the Z-spread definition as a constant spread over the benchmark spot curve. Therefore, all three items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. Annual coupon divided by flat price\nII. A crude return measure because it ignores coupon frequency, interest on interest, and accrued interest\nIII. Used mostly to quote Japanese government bonds\nHow many of the above describe current yield?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum description of current yield. Item I qualifies because current yield equals annual coupon divided by flat price. Item II qualifies because the curriculum explicitly calls current yield a crude measure that ignores coupon frequency, interest on interest, and accrued interest. Item III does not qualify because simple yield, not current yield, is used mostly to quote Japanese government bonds. Therefore, two items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect. All three do not qualify because Item III belongs to simple yield, not current yield.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. The annualized yield on a fixed-rate bond depends on the assumed number of interest periods in the year.\nII. For a bond with coupons, the periodicity typically matches the coupon payment frequency.\nIII. More frequent compounding at a lower annual rate can be equivalent to less frequent compounding at a higher annual rate.\nHow many of the above are consistent with the CFA Curriculum discussion of periodicity and annualized yields?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches the periodicity rules stated in the CFA Curriculum. Item I qualifies because annualized yield depends on the assumed number of interest periods in the year. Item II qualifies because periodicity typically matches coupon frequency. Item III qualifies because the curriculum states that more frequent compounding at a lower annual rate can be equivalent to less frequent compounding at a higher rate. Therefore, all three items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Module 7: Yield and Yield Spread Measures for Fixed-Rate Bonds",
+    "stem": "Consider the following:\nI. Yield-to-worst is the lowest of the sequence of yields-to-call and the yield-to-maturity.\nII. Its purpose is to provide the investor with a conservative measure of the rate of return.\nIII. It is commonly cited for fixed-rate callable bonds by bond dealers and investors.\nHow many of the above describe yield-to-worst?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches the CFA Curriculum treatment of yield-to-worst. Item I qualifies because yield-to-worst is the lowest of the yields-to-call and yield-to-maturity. Item II qualifies because the curriculum says its intent is to provide the most conservative return measure. Item III qualifies because it is a commonly cited measure for fixed-rate callable bonds. Therefore, all three items qualify.</p><p>Why option B is incorrect.</p><p>Why option C is incorrect.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Periodicity and annualized yields",
+    "stem": "A bond yields 1.5% per semiannual period. Its annual yield on a semiannual bond basis is closest to?",
+    "options": {
+      "A": "3.0%",
+      "B": "1.5%",
+      "C": "6.0%"
+    },
+    "correct_answer": "A",
+    "explanation": "A semiannual bond basis yield equals the yield per semiannual period times 2. Here, $1.5\\% \\times 2 = 3.0\\%$. Option B uses only one period. Option C doubles twice."
+  },
+  {
+    "id": 2,
+    "topic": "Periodicity and annualized yields",
+    "stem": "A bond yields 0.8% per quarter. The stated annual yield with periodicity 4 is closest to?",
+    "options": {
+      "A": "0.8%",
+      "B": "3.2%",
+      "C": "4.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "For periodicity 4, the stated annual yield is the rate per quarter times 4. So $0.8\\% \\times 4 = 3.2\\%$. Option A is the per-quarter rate only. Option C overstates the annualized rate."
+  },
+  {
+    "id": 3,
+    "topic": "Periodicity conversions",
+    "stem": "A bond has an annualized yield-to-maturity of 3.582% with periodicity 2. Converted to periodicity 4, the annualized yield is closest to?",
+    "options": {
+      "A": "3.566%",
+      "B": "3.582%",
+      "C": "3.620%"
+    },
+    "correct_answer": "A",
+    "explanation": "Using the periodicity conversion rule from the CFA Curriculum, a 3.582% yield with periodicity 2 converts to about 3.566% with periodicity 4. Option B ignores the compounding conversion. Option C moves in the wrong direction because more frequent compounding corresponds to a lower annualized stated rate."
+  },
+  {
+    "id": 4,
+    "topic": "Periodicity conversions",
+    "stem": "A bond has an annualized yield-to-maturity of 3.582% with periodicity 2. Converted to periodicity 12, the annualized yield is closest to?",
+    "options": {
+      "A": "3.700%",
+      "B": "3.582%",
+      "C": "3.556%"
+    },
+    "correct_answer": "C",
+    "explanation": "The CFA Curriculum example converts 3.582% with periodicity 2 to about 3.556% with periodicity 12. Option B ignores the conversion. Option A incorrectly raises the quoted annual rate."
+  },
+  {
+    "id": 5,
+    "topic": "Negative yield periodicity conversions",
+    "stem": "A zero-coupon bond has a yield of -0.7278% with annual compounding. Converted to semiannual compounding, the annualized yield is closest to?",
+    "options": {
+      "A": "-0.729%",
+      "B": "-0.650%",
+      "C": "-0.364%"
+    },
+    "correct_answer": "A",
+    "explanation": "The periodicity conversion in the CFA Curriculum gives a slightly more negative stated annual rate when compounding becomes more frequent. So the semiannual equivalent is about -0.729%. Option B is not the equivalent rate. Option C incorrectly halves the annual rate."
+  },
+  {
+    "id": 6,
+    "topic": "Current yield",
+    "stem": "A bond has an annual coupon rate of 3.2% and a flat price of 98.7 per 100 of par. Its current yield is closest to?",
+    "options": {
+      "A": "3.24%",
+      "B": "3.20%",
+      "C": "3.04%"
+    },
+    "correct_answer": "A",
+    "explanation": "Current yield equals annual coupon divided by flat price. So $3.2/98.7 = 0.03242$, or about 3.24%. Option B is just the coupon rate. Option C uses the wrong direction for the price effect."
+  },
+  {
+    "id": 7,
+    "topic": "Current yield",
+    "stem": "A bond has an annual coupon rate of 2.5% and a flat price of 98.70 per 100 of par. The current yield is closest to?",
+    "options": {
+      "A": "2.25%",
+      "B": "2.53%",
+      "C": "2.78%"
+    },
+    "correct_answer": "B",
+    "explanation": "Current yield is annual coupon divided by flat price. Here, $2.5/98.70 = 0.02533$, or about 2.53%. Option A understates the yield. Option C confuses current yield with a different yield measure."
+  },
+  {
+    "id": 8,
+    "topic": "Government equivalent yield",
+    "stem": "A corporate bond yield is 3.20% on a 30/360 basis. Using the CFA Curriculum approximation, the government equivalent yield is closest to?",
+    "options": {
+      "A": "3.11%",
+      "B": "3.20%",
+      "C": "3.24%"
+    },
+    "correct_answer": "C",
+    "explanation": "Government equivalent yield is approximated by multiplying the 30/360 yield by $365/360$. Thus, $3.20\\% \\times 365/360 = 3.244\\%$, about 3.24%. Option B ignores the day-count restatement. Option A moves in the wrong direction."
+  },
+  {
+    "id": 9,
+    "topic": "Government equivalent yield spread comparison",
+    "stem": "A corporate bond yield is 3.20% on a 30/360 basis, and a comparable government bond yield is 2.30% on an actual/actual basis. After restating the corporate bond to a government equivalent yield, the spread is closest to?",
+    "options": {
+      "A": "90.0 bps",
+      "B": "94.4 bps",
+      "C": "124.4 bps"
+    },
+    "correct_answer": "B",
+    "explanation": "First restate the corporate yield: $3.20\\% \\times 365/360 = 3.2444\\%$. Then subtract the government yield: $3.2444\\% - 2.30\\% = 0.9444\\% = 94.4$ bps. Option A skips the day-count adjustment. Option C overstates the spread."
+  },
+  {
+    "id": 10,
+    "topic": "G-spread",
+    "stem": "A bond yield-to-maturity is 1.271%, and the interpolated government benchmark yield is 1.100%. The G-spread is closest to?",
+    "options": {
+      "A": "17.1 bps",
+      "B": "171 bps",
+      "C": "1.71 bps"
+    },
+    "correct_answer": "A",
+    "explanation": "G-spread equals bond yield minus government benchmark yield, expressed in basis points. Here, $1.271\\% - 1.100\\% = 0.171\\% = 17.1$ bps. Option B forgets that 0.171% is not 1.71%. Option C is off by a factor of 10."
+  },
+  {
+    "id": 11,
+    "topic": "G-spread",
+    "stem": "A bond yield-to-maturity is 3.756%, and the matched interpolated government benchmark yield is 2.10%. The G-spread is closest to?",
+    "options": {
+      "A": "16.6 bps",
+      "B": "165.6 bps",
+      "C": "1.656 bps"
+    },
+    "correct_answer": "B",
+    "explanation": "The G-spread is $3.756\\% - 2.10\\% = 1.656\\%$. Converting to basis points gives $1.656 \\times 100 = 165.6$ bps. Option A misses one decimal place. Option C fails to convert percent to basis points correctly."
+  },
+  {
+    "id": 12,
+    "topic": "G-spread after periodicity adjustment",
+    "stem": "A bond with annual coupons has a yield-to-maturity of 1.271%. The semiannual equivalent yield is 1.267%. If the government benchmark rate on a semiannual bond basis is 1.10%, the G-spread is closest to?",
+    "options": {
+      "A": "16.7 bps",
+      "B": "17.1 bps",
+      "C": "12.7 bps"
+    },
+    "correct_answer": "A",
+    "explanation": "The yields must be on the same periodicity before taking the spread. Using the semiannual equivalent, $1.267\\% - 1.10\\% = 0.167\\% = 16.7$ bps. Option B incorrectly uses 1.271% without periodicity adjustment. Option C miscomputes the difference."
+  },
+  {
+    "id": 13,
+    "topic": "Simple yield",
+    "stem": "A bond pays an annual coupon of 2 per 100 of par. Its straight-line amortized annual gain is 1 per 100, and its flat price is 100. The simple yield is closest to?",
+    "options": {
+      "A": "2%",
+      "B": "3%",
+      "C": "1%"
+    },
+    "correct_answer": "B",
+    "explanation": "Simple yield equals coupon payments plus the straight-line amortized share of gain or loss, divided by flat price. So $(2 + 1)/100 = 0.03$, or 3%. Option A ignores the amortized gain. Option C ignores most of the coupon income."
+  },
+  {
+    "id": 14,
+    "topic": "Simple yield",
+    "stem": "A bond pays an annual coupon of 4 per 100 of par. Its straight-line amortized annual loss is 1 per 100, and its flat price is 100. The simple yield is closest to?",
+    "options": {
+      "A": "5%",
+      "B": "4%",
+      "C": "3%"
+    },
+    "correct_answer": "C",
+    "explanation": "Simple yield includes coupon plus straight-line amortized gain or loss, divided by flat price. Here the loss reduces the numerator: $(4 - 1)/100 = 0.03$, or 3%. Option A adds instead of subtracting the loss. Option B ignores the amortized loss."
+  }
+
+]

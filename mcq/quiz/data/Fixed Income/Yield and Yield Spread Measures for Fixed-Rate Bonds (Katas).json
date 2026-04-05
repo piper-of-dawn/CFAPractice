@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Periodicity and annualized yields",
+    "stem": "For capital market securities maturing in more than one year, investors most likely want a yield measure that is:",
+    "options": {
+      "A": "Annualized and compounded",
+      "B": "Annualized but not compounded",
+      "C": "Stated only per coupon period"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that for capital market securities maturing in more than one year, investors seek a standardized yield measure that is annualized and compounded. The governing rule is comparability across bonds with different cash flow patterns. The intuition is that annualized and compounded yields put bonds on a common basis. Under the CFA Curriculum condition of bonds maturing in more than one year, this is the required format. Therefore, annualized and compounded is most accurate.</p><p>Why top distractor is wrong (PDF-based misconception). Annualized but not compounded fits money market conventions more closely, not the standard yield convention for these fixed-rate bonds.</p><p>Why remaining distractor is wrong. A per-period yield alone is not the standardized annual measure the CFA Curriculum emphasizes for comparison.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Periodicity and annualized yields",
+    "stem": "A bond that pays quarterly coupons most likely has a stated annual yield with periodicity of:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum defines periodicity as the assumed number of interest periods in a year, and it typically matches coupon frequency. The governing rule is: quarterly coupons imply four periods per year. The intuition is direct because each quarter is one compounding interval. Under the CFA Curriculum condition of a quarterly coupon bond, the annual stated yield is based on periodicity 4. Therefore, 4 is correct.</p><p>Why top distractor is wrong (PDF-based misconception). A periodicity of 1 is an effective annual rate, not the usual stated annual yield for a quarterly coupon bond.</p><p>Why remaining distractor is wrong. A periodicity of 2 corresponds to semiannual compounding, not quarterly coupons.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Semiannual bond basis yield",
+    "stem": "An annual rate with periodicity of two is most accurately called a:",
+    "options": {
+      "A": "Semiannual bond basis yield",
+      "B": "True yield",
+      "C": "Simple yield"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum names an annual rate having periodicity of two a semiannual bond basis yield. The governing rule is purely definitional. The intuition is that the annual figure is built from the per-semiannual-period rate times 2. Under the CFA Curriculum convention used in many bond markets, this is the standard term. Therefore, semiannual bond basis yield is correct.</p><p>Why top distractor is wrong (PDF-based misconception). True yield adjusts for weekends and holidays in payment timing; it is not the name for periodicity two.</p><p>Why remaining distractor is wrong. Simple yield is a different measure based on coupon plus straight-line amortized gain or loss over flat price.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Semiannual bond basis yield",
+    "stem": "If a bond yield is 2% per semiannual period, its annual yield on a semiannual bond basis is most likely:",
+    "options": {
+      "A": "2%",
+      "B": "4%",
+      "C": "6%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum states that a semiannual bond basis yield equals the yield per semiannual period times 2. The governing rule is simple annualization on that basis. The intuition is that there are two semiannual periods in a year. Applying the CFA Curriculum condition of 2% per semiannual period gives 2% × 2 = 4%. Therefore, 4% is correct.</p><p>Why top distractor is wrong (PDF-based misconception). 2% is the yield per semiannual period, not the annual yield on a semiannual bond basis.</p><p>Why remaining distractor is wrong. 6% would overstate the annualized semiannual bond basis yield.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Zero-coupon bond periodicity",
+    "stem": "For a zero-coupon bond, the periodicity of the annual market discount rate is most accurately described as:",
+    "options": {
+      "A": "Fixed at 1",
+      "B": "Arbitrary",
+      "C": "Always equal to 2"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum states that for a zero-coupon bond, periodicity is arbitrary because there are no coupon payments. The governing rule is that no coupon frequency exists to anchor the compounding choice. The intuition is that different periodicities can express the same economic return after conversion. Under the CFA Curriculum treatment of strip or zero-coupon bonds, any convenient periodicity may be used. Therefore, arbitrary is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Periodicity 1 is one possible choice, but the CFA Curriculum does not require it.</p><p>Why remaining distractor is wrong. Periodicity 2 is also only one possible choice, not a rule for zero-coupon bonds.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Periodicity conversions",
+    "stem": "When converting a positive annualized yield to more frequent compounding, the stated annual rate will most likely:",
+    "options": {
+      "A": "Rise",
+      "B": "Stay the same",
+      "C": "Fall"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum gives a general rule for periodicity conversions: compounding more frequently at a lower annual rate corresponds to compounding less frequently at a higher annual rate. The governing relation keeps the compounded return the same. The intuition is that more compounding periods require a smaller stated annual rate to produce the same total return. Under the CFA Curriculum conversion rule for positive yields, the stated annual rate falls. Therefore, fall is correct.</p><p>Why top distractor is wrong (PDF-based misconception). A rise would violate the conversion rule for equivalent compounded returns.</p><p>Why remaining distractor is wrong. The stated annual rate changes when periodicity changes, even though the compounded total return stays equivalent.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Negative yield periodicity conversions",
+    "stem": "A bond has a negative yield using annual compounding. If the yield is converted to monthly compounding, the yield will most likely become:",
+    "options": {
+      "A": "More negative",
+      "B": "Zero",
+      "C": "Less negative"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that compounding more frequently corresponds to a lower, or more negative, yield-to-maturity when the starting yield is negative. The governing rule is the same periodicity conversion identity used for positive yields. The intuition is that the annual quoted rate adjusts downward as compounding becomes more frequent. Under the CFA Curriculum example with negative yields, monthly compounding produces a more negative stated annual yield. Therefore, more negative is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Zero would imply the negative yield disappears, which the periodicity conversion does not do.</p><p>Why remaining distractor is wrong. Less negative is the opposite of the curriculum rule for converting a negative yield to more frequent compounding.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Current yield",
+    "stem": "Current yield is most accurately defined as annual coupon divided by the bond's:",
+    "options": {
+      "A": "Face value",
+      "B": "Flat price",
+      "C": "Full price"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines current yield as annual coupon divided by the flat price. The governing rule is a direct formula. The intuition is that current yield is a simple income measure based on the quoted bond price rather than redemption value. Under the CFA Curriculum convention, flat price is the denominator. Therefore, flat price is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Dividing by face value gives the coupon rate, not the current yield.</p><p>Why remaining distractor is wrong. The curriculum defines current yield using flat price, not full price.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Current yield limitations",
+    "stem": "Current yield is a crude measure of return because it most likely ignores:",
+    "options": {
+      "A": "Interest on interest",
+      "B": "Annual coupon",
+      "C": "The bond's flat price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum says current yield is crude because it focuses only on interest income and ignores items including interest on interest, coupon frequency, accrued interest, and gain or loss from redemption at par. The governing rule is that current yield leaves out important parts of total return. The intuition is that coupon income alone is not the full economics of holding a bond. Under the CFA Curriculum explanation, interest on interest is one of the omitted elements. Therefore, interest on interest is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Current yield explicitly uses annual coupon in its numerator, so it does not ignore it.</p><p>Why remaining distractor is wrong. Current yield explicitly uses flat price in its denominator, so it does not ignore it.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Street convention yield",
+    "stem": "A yield measure that assumes cash flows are paid on scheduled dates and does not account for weekends and holidays is most likely called:",
+    "options": {
+      "A": "Street convention yield",
+      "B": "Government equivalent yield",
+      "C": "Option-adjusted spread"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines street convention yield as a yield measure that ignores weekends and bank holidays and assumes cash flows are paid on scheduled dates. The governing rule is definitional. The intuition is that this simplifies yield quotation and calculation. Under the CFA Curriculum bond pricing conventions, this is the commonly used practical convention. Therefore, street convention yield is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Government equivalent yield is a restatement from a 30/360 basis to an actual/actual basis, not a weekend-and-holiday convention.</p><p>Why remaining distractor is wrong. Option-adjusted spread is a spread measure for bonds with embedded options, not a payment-date convention.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "True yield",
+    "stem": "Compared with street convention yield, true yield is most likely:",
+    "options": {
+      "A": "Never higher",
+      "B": "Always higher",
+      "C": "Exactly the same"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that true yield accounts for weekends and holidays, which delay payments, and therefore true yield is never higher than street convention yield. The governing rule is that later payment dates reduce the yield measure relative to an otherwise identical scheduled-date assumption. The intuition is simple: delayed cash flows are less valuable. Under the CFA Curriculum definition, true yield cannot exceed street convention yield. Therefore, never higher is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Always higher reverses the effect of delayed payment dates.</p><p>Why remaining distractor is wrong. The two may be close, but they are not defined as exactly the same.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Government equivalent yield",
+    "stem": "Government equivalent yield most accurately restates a bond yield from:",
+    "options": {
+      "A": "Actual/actual to 30/360",
+      "B": "30/360 to actual/actual",
+      "C": "Quarterly to monthly"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines government equivalent yield as a yield measure that restates a 30/360-based yield-to-maturity to one based on actual/actual. The governing rule is used to compare a corporate bond yield with a government bond yield on the same day-count basis. The intuition is that a common basis is needed before taking a spread. Under the CFA Curriculum convention, the direction is from 30/360 to actual/actual. Therefore, 30/360 to actual/actual is correct.</p><p>Why top distractor is wrong (PDF-based misconception). The curriculum states the opposite direction for government equivalent yield.</p><p>Why remaining distractor is wrong. Quarterly to monthly is a periodicity conversion, not a government equivalent yield conversion.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Simple yield",
+    "stem": "Simple yield is most accurately described as coupon payments plus straight-line amortized gain or loss, divided by the bond's:",
+    "options": {
+      "A": "Flat price",
+      "B": "Face value",
+      "C": "Accrued interest"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines simple yield as the sum of coupon payments plus the straight-line amortized share of the gain or loss, divided by the flat price. The governing rule is formula-based. The intuition is that the measure adds a basic price pull-to-par component to coupon income. Under the CFA Curriculum definition, flat price is the denominator. Therefore, flat price is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Using face value would not match the curriculum definition of simple yield.</p><p>Why remaining distractor is wrong. Accrued interest is not the denominator in the simple yield definition.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Simple yield usage",
+    "stem": "According to the CFA Curriculum, simple yields are used mostly to quote:",
+    "options": {
+      "A": "Japanese government bonds",
+      "B": "US Treasury bills",
+      "C": "Euro corporate bonds"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that simple yields are used mostly to quote Japanese government bonds, or JGBs. The governing rule is a market convention noted directly in the reading. The intuition is that some yield measures are market-specific quotation practices. Under the CFA Curriculum description, JGBs are the main example. Therefore, Japanese government bonds is correct.</p><p>Why top distractor is wrong (PDF-based misconception). US Treasury bills use different money market conventions covered later, not the simple yield convention described here.</p><p>Why remaining distractor is wrong. Euro corporate bonds are commonly discussed with swap-based spread measures, not simple yield as the main convention.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Callable bonds and yield measures",
+    "stem": "For a callable bond, traditional yield-to-maturity must most likely be modified because it assumes:",
+    "options": {
+      "A": "All cash flows occur as promised",
+      "B": "Coupon rates change each period",
+      "C": "The bond has no maturity date"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that traditional yield-to-maturity assumes all cash flows occur as promised, so it must be modified for callable bonds. The governing rule is that an embedded call can change the timing and amount of bond cash flows. The intuition is that the issuer may redeem the bond early. Under the CFA Curriculum treatment of callable bonds, this makes plain yield-to-maturity incomplete. Therefore, all cash flows occur as promised is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Fixed-rate callable bonds do not require coupon rates to change each period.</p><p>Why remaining distractor is wrong. Callable bonds still have stated maturity dates even though they may be redeemed earlier.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Yield-to-worst",
+    "stem": "For investors facing call risk, yield-to-worst is most accurately understood as the:",
+    "options": {
+      "A": "Highest yield among call-date yields",
+      "B": "Lowest possible yield from the relevant call or maturity outcomes",
+      "C": "Coupon rate minus current yield"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum notes that investors facing call risk often estimate the lowest possible yield by calculating the sequence of yields corresponding to call dates and maturity. The governing rule is that yield-to-worst captures the minimum yield outcome available under those contractual paths. The intuition is conservative: investors focus on the least favorable yield they could receive. Under the CFA Curriculum discussion of callable bonds, that is yield-to-worst. Therefore, the lowest possible yield is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Yield-to-worst is not the highest yield; it is explicitly the lowest relevant yield.</p><p>Why remaining distractor is wrong. Coupon rate minus current yield is not a curriculum-defined yield measure here.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Benchmark and spread decomposition",
+    "stem": "A bond's yield-to-maturity can most accurately be decomposed into a benchmark rate and a:",
+    "options": {
+      "A": "Spread",
+      "B": "Coupon frequency",
+      "C": "Face value"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that yield-to-maturity can be decomposed into a base rate, or benchmark, and an issuer-specific spread. The governing rule separates top-down and bottom-up drivers. The intuition is that the benchmark captures broad market conditions and the spread captures issuer-related factors. Under the CFA Curriculum framework, spread is the second component. Therefore, spread is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Coupon frequency affects yield conventions but is not the decomposition paired with the benchmark rate.</p><p>Why remaining distractor is wrong. Face value is a bond feature, not the issuer-specific component added to a benchmark rate.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Benchmark versus spread meaning",
+    "stem": "In the benchmark-plus-spread framework, the benchmark rate most likely captures:",
+    "options": {
+      "A": "Macroeconomic top-down factors",
+      "B": "Issuer-specific bottom-up factors",
+      "C": "Only coupon payment frequency"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the benchmark rate captures macroeconomic, top-down conditions that affect all bonds in a market. The governing rule contrasts benchmark effects with spread effects. The intuition is that broad interest-rate conditions influence many issuers at once. Under the CFA Curriculum decomposition, top-down macro factors belong in the benchmark rate. Therefore, macroeconomic top-down factors is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Issuer-specific bottom-up factors are captured by the spread, not by the benchmark rate.</p><p>Why remaining distractor is wrong. Coupon frequency affects convention and quotation, not the macro benchmark component.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "On-the-run benchmark bonds",
+    "stem": "The most recently issued government bond used as a benchmark is most accurately called:",
+    "options": {
+      "A": "Off-the-run",
+      "B": "On-the-run",
+      "C": "Callable benchmark"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the most recently issued government bond as the on-the-run security. The governing rule is based on issuance status and market use as a benchmark. The intuition is that the newest issue is usually the most actively traded and most liquid. Under the CFA Curriculum terminology, that benchmark bond is on-the-run. Therefore, on-the-run is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Off-the-run refers to seasoned government bonds, not the most recently issued one.</p><p>Why remaining distractor is wrong. Callable benchmark is not the relevant curriculum term for this benchmark concept.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "G-spread",
+    "stem": "The yield spread in basis points over an actual or interpolated government bond yield is most accurately called the:",
+    "options": {
+      "A": "G-spread",
+      "B": "I-spread",
+      "C": "Option-adjusted spread"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the G-spread as the yield spread in basis points over an actual or interpolated government bond yield. The governing rule is a direct definition tied to sovereign benchmarks. The intuition is that it measures extra return over a government rate for bearing the bond's relative risks. Under the CFA Curriculum spread definitions, this is the G-spread. Therefore, G-spread is correct.</p><p>Why top distractor is wrong (PDF-based misconception). I-spread is measured over the standard swap rate in the same currency and tenor, not over a government bond yield.</p><p>Why remaining distractor is wrong. Option-adjusted spread adjusts a spread for embedded option value and is not the plain government benchmark spread definition.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Z-spread",
+    "stem": "A constant yield spread added to each benchmark spot rate to match a bond's price is most accurately called the:",
+    "options": {
+      "A": "Current yield",
+      "B": "Z-spread",
+      "C": "True yield"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the zero-volatility spread, or Z-spread, as the constant spread added to each benchmark spot rate so that the present value of the bond's cash flows equals its price. The governing rule is that the same spread is applied across the benchmark spot curve. The intuition is that it converts a whole curve into a bond-consistent discount curve. Under the CFA Curriculum definition, that constant spread is the Z-spread. Therefore, Z-spread is correct.</p><p>Why top distractor is wrong (PDF-based misconception). Current yield is a simple coupon-over-flat-price measure, not a spread over a spot curve.</p><p>Why remaining distractor is wrong. True yield adjusts payment timing for weekends and holidays; it is not a constant spread measure.</p>"
+  }
+]

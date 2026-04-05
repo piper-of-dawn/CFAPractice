@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Assertion (A): Between coupon dates, bond dealers usually quote the flat price rather than the full price.\nReason (R): If dealers quoted the full price, investors would observe daily price increases from accrued interest even when the yield-to-maturity did not change.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: quotation convention</h3><p><strong>A is correct.</strong> The CFA Curriculum states that a bond traded between coupon dates has a full price equal to flat price plus accrued interest. Dealers quote the flat price because accrued interest rises mechanically with time even if yield-to-maturity is unchanged. Quoting the full price would therefore create a misleading upward pattern unrelated to a change in market discount rates.</p><p>The assertion is true because the quoted or clean price is the flat price.</p><p>The reason is true and directly explains why the flat price, rather than the full price, is quoted.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Assertion (A): If two otherwise identical non-callable fixed-coupon bonds trade at a discount and at a premium, and yield stays constant until maturity, their prices will converge toward par over time.\nReason (R): Bond prices and yields move inversely.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: pull-to-par</h3><p><strong>B is correct.</strong> The CFA Curriculum explains that with a constant yield, bond prices change as time passes because the number of periods to maturity declines. As maturity approaches, both discount and premium bond prices are pulled toward par, provided the issuer does not default.</p><p>The assertion is true because the constant-yield price trajectory causes prices to converge to par at maturity.</p><p>The reason is also true, but it is not the reason for convergence over time. Inverse price-yield movement explains what happens when yield changes, not the pull-to-par effect when yield stays constant.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Assertion (A): Even if the issuer makes all promised payments and the investor holds the bond to maturity, the realized return need not equal the bond's yield-to-maturity.\nReason (R): The yield-to-maturity depends only on receiving scheduled coupon and principal payments and does not require coupon reinvestment at the same rate.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: YTM conditions</h3><p><strong>C is correct.</strong> The CFA Curriculum states that an investor earns the bond's yield-to-maturity only if the bond is held to maturity, the issuer makes full coupon and principal payments on schedule, and all coupons are reinvested at the same yield-to-maturity. If reinvestment occurs at a different rate, the realized return can differ from the quoted YTM.</p><p>The assertion is true because failure to reinvest coupons at the YTM breaks one of the required conditions.</p><p>The reason is false because coupon reinvestment at the same YTM is explicitly required for realized return to equal YTM.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Assertion (A): For a bond traded between coupon dates, accrued interest changes when the yield-to-maturity changes.\nReason (R): Only the flat price is affected by a change in interest rates, while accrued interest does not depend on yield-to-maturity.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: accrued interest versus market yield</h3><p><strong>D is correct.</strong> In the CFA Curriculum, accrued interest equals the coupon payment multiplied by the fraction of the coupon period that has elapsed. That amount is determined by coupon size and day-count convention, not by the market yield. Yield changes affect the flat price component of the bond's value, not accrued interest.</p><p>The assertion is false because accrued interest is not recalculated from yield-to-maturity.</p><p>The reason is true because interest-rate changes alter the flat price, while accrued interest remains based on elapsed time in the coupon period.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Assertion (A): For two otherwise identical non-callable bonds with the same maturity, the lower-coupon bond will usually have the larger percentage price change for a given change in yield-to-maturity.\nReason (R): A lower coupon means a larger share of total cash flow is received at maturity, so discounting the final cash flow magnifies the impact of a yield change.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: coupon effect</h3><p><strong>A is correct.</strong> The CFA Curriculum states that, for bonds with the same maturity, the lower the coupon, the greater the percentage price change for a given change in yield-to-maturity. This follows because a lower-coupon bond places a greater proportion of its total cash flow in the final payment at maturity, and that distant cash flow is more sensitive to the discount rate.</p><p>The assertion is true because lower-coupon bonds are more yield-sensitive than higher-coupon bonds, all else equal.</p><p>The reason is true and correctly explains the coupon effect described in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "Consider the following:\nI. A fixed-rate bond priced at par has a coupon rate equal to the market discount rate.\nII. A discount bond has a coupon rate greater than the market discount rate.\nIII. A premium bond has a price below face value.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum classifies fixed-rate bonds by comparing coupon rate with the market discount rate. Statement I satisfies the rule because a par bond has price equal to face value when coupon rate equals the market discount rate. Statement II fails because a discount bond has a coupon rate below the market discount rate. Statement III fails because a premium bond has a price above face value, not below it. Therefore, only one statement qualifies.</p><p>Why option B is incorrect: only Statement I meets the curriculum rule, so the count is not two.</p><p>Why option C is incorrect: Statements II and III conflict with the curriculum definitions of discount and premium bonds.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Yield-to-Maturity",
+    "stem": "Consider the following:\nI. Selling the bond before maturity.\nII. The issuer makes full coupon and principal payments on scheduled dates.\nIII. Reinvesting all coupon payments at the same yield-to-maturity.\nHow many of the above, if they occur, would most likely prevent an investor's realized return from equaling the bond's yield-to-maturity?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states that realized return equals yield-to-maturity only if the bond is held to maturity, the issuer makes full scheduled payments, and coupons are reinvested at the same yield-to-maturity. Statement I violates that criterion because selling before maturity breaks a required condition. Statements II and III satisfy the required conditions rather than prevent them. Therefore, only one item qualifies.</p><p>Why option B is incorrect: the count would be two only if either scheduled payment or same-rate reinvestment worked against earning yield-to-maturity, but both are required conditions.</p><p>Why option C is incorrect: all three do not prevent earning yield-to-maturity because Statements II and III are part of the required set.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "Consider the following:\nI. Full price equals flat price plus accrued interest.\nII. Accrued interest depends on the bond's yield-to-maturity.\nIII. A bond dealer usually quotes the full price.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the full price as the sum of the flat price and accrued interest, so Statement I is correct. Statement II fails because accrued interest is determined from the coupon payment and the fraction of the coupon period that has passed, not from yield-to-maturity. Statement III fails because dealers usually quote the flat price, also called the clean price. Therefore, only one statement qualifies.</p><p>Why option B is incorrect: neither Statement II nor Statement III matches the curriculum treatment of accrued interest and quoted price.</p><p>Why option C is incorrect: all three cannot qualify because only Statement I is consistent with the full-price identity.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Day Count Conventions",
+    "stem": "Consider the following:\nI. Under 30/360, each month is assumed to have 30 days.\nII. Under actual/actual, each year is assumed to have 360 days.\nIII. Under actual/actual, leap years are ignored.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum distinguishes day-count methods by how they count days within a period and how many days they assume per period. Statement I is correct because 30/360 assumes 30 days per month and 360 days per year. Statement II fails because actual/actual uses the actual number of days in the year. Statement III also fails because actual/actual includes actual calendar days, so leap years matter. Therefore, only one item satisfies the criterion.</p><p>Why option B is incorrect: there is not a second correct statement once the actual/actual convention is applied properly.</p><p>Why option C is incorrect: the curriculum explicitly contrasts 30/360 with actual/actual, so all three cannot be correct.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Relationships between Bond Prices and Bond Features",
+    "stem": "Consider the following:\nI. Bond prices and yields-to-maturity move in opposite directions.\nII. For the same maturity, a lower-coupon bond has a smaller percentage price change than a higher-coupon bond for the same yield change.\nIII. The bond price-yield relationship is linear.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states first that bond price and yield-to-maturity have an inverse relationship, so Statement I is correct. Statement II fails because the coupon effect says the lower-coupon bond has the greater percentage price change, not the smaller one. Statement III fails because the price-yield relation is convex rather than linear. Therefore, only one statement qualifies.</p><p>Why option B is incorrect: a second correct item would require either reversing the coupon effect or ignoring convexity, both of which conflict with the curriculum.</p><p>Why option C is incorrect: Statements II and III are both inconsistent with the stated bond price sensitivities.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Maturity Effect",
+    "stem": "Consider the following:\nI. All else equal, a longer-maturity bond generally has a greater percentage price change than a shorter-maturity bond for the same yield change.\nII. The maturity effect always holds for low-coupon bonds trading at a discount.\nIII. The curriculum's exception to the maturity effect applies to zero-coupon bonds.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The governing criterion in the CFA Curriculum is the maturity effect: generally, longer-maturity bonds show larger percentage price changes for the same yield change. Statement I matches that rule. Statement II fails because the curriculum notes rare exceptions for low-coupon, long-term bonds trading at a discount. Statement III fails because the curriculum says the maturity effect always holds for zero-coupon bonds. Therefore, only one item qualifies.</p><p>Why option B is incorrect: the count is not two because Statements II and III both contradict the stated boundary conditions.</p><p>Why option C is incorrect: all three cannot satisfy the rule when the exception is described so narrowly in the curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Constant-Yield Price Trajectory",
+    "stem": "Consider the following:\nI. With a constant market discount rate, a discount bond's price rises toward par as maturity approaches.\nII. With a constant market discount rate, a premium bond's price rises further above par as maturity approaches.\nIII. If one bond trades at a discount and another at a premium, their prices diverge over time when yield remains constant.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum explains the constant-yield price trajectory through the pull-to-par effect. Statement I is correct because a discount bond's price increases toward par as maturity nears when yield is unchanged. Statement II fails because a premium bond falls toward par, not farther above it. Statement III fails because discount and premium bond prices converge toward par rather than diverge. Therefore, only one statement satisfies the rule.</p><p>Why option B is incorrect: there is no second qualifying statement once the pull-to-par logic is applied.</p><p>Why option C is incorrect: the premium and discount paths both move toward par, so all three cannot be correct.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Matrix Pricing",
+    "stem": "Consider the following:\nI. Matrix pricing uses comparable bonds with similar maturity, coupon rate, and credit quality.\nII. Matrix pricing determines bond value from derivative market quotes rather than comparable bonds.\nIII. Matrix pricing can be used only when the bond being valued has recent transaction prices.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum defines matrix pricing as estimating the value of a new or illiquid bond from comparable bonds with similar time-to-maturity, coupon rate, and credit quality, so Statement I is correct. Statement II fails because derivative quotes are not the basis of matrix pricing. Statement III fails because matrix pricing is especially useful when recent transaction data for the bond itself are scarce or absent. Therefore, only one item qualifies.</p><p>Why option B is incorrect: neither Statement II nor Statement III matches the curriculum's matrix pricing process.</p><p>Why option C is incorrect: all three cannot be correct because Statements II and III reverse the purpose and source inputs of matrix pricing.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Matrix Pricing Process",
+    "stem": "Consider the following:\nI. An analyst may linearly interpolate comparable-bond yields to estimate the yield for a new or illiquid bond.\nII. In the process shown in the curriculum, the bond's price is estimated before the yield is estimated.\nIII. Comparable bonds used in matrix pricing should have materially different credit quality from the bond being valued.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum's matrix pricing process first identifies comparable bonds, then calculates their yields, then linearly interpolates to estimate the new bond's yield, and finally uses that estimated yield to price the bond. Statement I matches that process. Statement II fails because yield estimation comes before price estimation. Statement III fails because comparable bonds should have similar, not materially different, credit quality. Therefore, only one item satisfies the criterion.</p><p>Why option B is incorrect: once the process order is applied correctly, there is no second valid statement.</p><p>Why option C is incorrect: the curriculum requires similarity in credit quality and sequence, so all three cannot qualify.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "A five-year bond pays 1.6 every semiannual period and returns 100 at maturity. If the market discount rate is 1.6% per semiannual period, the bond's price per 100 of par is closest to?",
+    "options": {
+      "A": "96.407",
+      "B": "100.000",
+      "C": "103.748"
+    },
+    "correct_answer": "B",
+    "explanation": "When the periodic coupon equals the periodic market discount rate, the bond is priced at par. Discounting the 10 semiannual cash flows at 1.6% gives 100.000. Choice A uses a higher discount rate. Choice C uses a lower discount rate."
+  },
+  {
+    "id": 2,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "A five-year bond pays 1.6 every semiannual period and returns 100 at maturity. If the market discount rate is 2.0% per semiannual period, the bond's price per 100 of par is closest to?",
+    "options": {
+      "A": "96.407",
+      "B": "100.000",
+      "C": "103.748"
+    },
+    "correct_answer": "A",
+    "explanation": "Bond price is the present value of coupon and principal cash flows. Discounting 10 semiannual cash flows of 1.6 and the final 100 at 2.0% per period gives 96.407. Choice B incorrectly assumes par pricing. Choice C uses too low a discount rate."
+  },
+  {
+    "id": 3,
+    "topic": "Module 6: Fixed-Income Bond Valuation: Prices and Yields",
+    "stem": "A five-year bond pays 1.6 every semiannual period and returns 100 at maturity. If the market discount rate is 1.2% per semiannual period, the bond's price per 100 of par is closest to?",
+    "options": {
+      "A": "96.407",
+      "B": "100.000",
+      "C": "103.748"
+    },
+    "correct_answer": "C",
+    "explanation": "Discounting the bond's cash flows at a lower market discount rate increases the present value. Using 1.2% per semiannual period gives a price of 103.748. Choice A comes from a higher discount rate. Choice B would apply only if coupon and discount rate were equal."
+  },
+  {
+    "id": 4,
+    "topic": "Yield-to-Maturity",
+    "stem": "A five-year zero-coupon bond is issued at 100.763 and pays 100 at maturity. The annualized yield-to-maturity is closest to?",
+    "options": {
+      "A": "-0.15%",
+      "B": "0.15%",
+      "C": "1.50%"
+    },
+    "correct_answer": "A",
+    "explanation": "For a zero-coupon bond, solve $100.763 = 100/(1+r)^5$. This gives $r \\approx -0.0015$, or about -0.15% per year. Choice B has the wrong sign. Choice C is much too large."
+  },
+  {
+    "id": 5,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond pays semiannual coupon interest of 2.3125 per 100 of par. Using an actual/actual day count, 43 days have elapsed in a 184-day coupon period. The accrued interest is closest to?",
+    "options": {
+      "A": "0.540",
+      "B": "2.313",
+      "C": "0.467"
+    },
+    "correct_answer": "A",
+    "explanation": "Accrued interest equals $(t/T) \\times PMT$. So $(43/184) \\times 2.3125 = 0.540421$, or about 0.540. Choice B is the full coupon, not accrued interest. Choice C uses the wrong fraction."
+  },
+  {
+    "id": 6,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond pays semiannual coupon interest of 2.3125 per 100 of par. Using a 30/360 day count, 42 days have elapsed in a 180-day coupon period. The accrued interest is closest to?",
+    "options": {
+      "A": "0.420",
+      "B": "0.540",
+      "C": "2.313"
+    },
+    "correct_answer": "B",
+    "explanation": "Accrued interest equals $(42/180) \\times 2.3125 = 0.539583$, which rounds to 0.540. Choice A understates the accrual. Choice C is the coupon payment rather than the accrued fraction."
+  },
+  {
+    "id": 7,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond's value at the start of the coupon period is 96.735. The periodic market discount rate is 2.0%, and settlement occurs 90 days into a 180-day period. The full price is closest to?",
+    "options": {
+      "A": "96.735",
+      "B": "97.698",
+      "C": "98.535"
+    },
+    "correct_answer": "B",
+    "explanation": "Between coupon dates, full price is $PV \\times (1+r)^{t/T}$. So $96.735 \\times (1.02)^{90/180} = 97.698$. Choice A ignores the passage of time. Choice C overstates the growth."
+  },
+  {
+    "id": 8,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "If a bond's full price is 97.698 and accrued interest is 0.800, the flat price is closest to?",
+    "options": {
+      "A": "96.898",
+      "B": "97.698",
+      "C": "98.498"
+    },
+    "correct_answer": "A",
+    "explanation": "Flat price equals full price minus accrued interest. So $97.698 - 0.800 = 96.898$. Choice B ignores accrued interest. Choice C adds instead of subtracts accrued interest."
+  },
+  {
+    "id": 9,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond pays an annual coupon of 4.625 per 100 of par. If 256 days have elapsed in a 366-day coupon period, the accrued interest is closest to?",
+    "options": {
+      "A": "3.235",
+      "B": "4.625",
+      "C": "2.560"
+    },
+    "correct_answer": "A",
+    "explanation": "Accrued interest is $(256/366) \\times 4.625 = 3.234973$, which rounds to 3.235. Choice B is the full coupon. Choice C confuses elapsed days with coupon amount."
+  },
+  {
+    "id": 10,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond's value at the beginning of the coupon period is 114.838. The annual yield-to-maturity is 3.50%, and settlement occurs 256 days into a 366-day period. The full price is closest to?",
+    "options": {
+      "A": "114.400",
+      "B": "114.838",
+      "C": "117.635"
+    },
+    "correct_answer": "C",
+    "explanation": "Use $PV_{Full} = PV \\times (1+r)^{t/T}$. So $114.838 \\times (1.035)^{256/366} = 117.635$. Choice A is the flat price after subtracting accrued interest. Choice B ignores the growth from the start of the period."
+  },
+  {
+    "id": 11,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond's full price is 117.635 and its accrued interest is 3.235. The flat price is closest to?",
+    "options": {
+      "A": "114.400",
+      "B": "117.635",
+      "C": "120.870"
+    },
+    "correct_answer": "A",
+    "explanation": "Flat price equals full price minus accrued interest. Thus, $117.635 - 3.235 = 114.400$. Choice B is the full price. Choice C adds accrued interest instead of subtracting it."
+  },
+  {
+    "id": 12,
+    "topic": "Flat Price, Accrued Interest, and the Full Price",
+    "stem": "A bond's value at the beginning of the coupon period is 108.584. The annual yield-to-maturity is 9.75%, and settlement occurs 131 days into a 365-day period. The full price is closest to?",
+    "options": {
+      "A": "107.964",
+      "B": "112.271",
+      "C": "108.584"
+    },
+    "correct_answer": "B",
+    "explanation": "Use the between-coupon full price formula: $108.584 \\times (1.0975)^{131/365} = 112.271$. Choice A is the flat price after subtracting accrued interest. Choice C ignores the growth from the last coupon date."
+  },
+  {
+    "id": 13,
+    "topic": "Matrix Pricing",
+    "stem": "Comparable bonds imply an average two-year yield of 3.8035% and an average five-year yield of 4.1885%. Using linear interpolation, the estimated three-year yield is closest to?",
+    "options": {
+      "A": "3.932%",
+      "B": "4.189%",
+      "C": "3.804%"
+    },
+    "correct_answer": "A",
+    "explanation": "Linear interpolation gives $0.038035 + ((3-2)/(5-2)) \\times (0.041885 - 0.038035) = 0.039318$, or about 3.932%. Choice B uses the five-year yield directly. Choice C uses the two-year yield directly."
+  },
+  {
+    "id": 14,
+    "topic": "Matrix Pricing",
+    "stem": "An illiquid three-year corporate bond pays 4% annual coupon, with semiannual coupon payments. Using matrix pricing, its estimated annual yield is 3.9318%. The estimated price per 100 of par is closest to?",
+    "options": {
+      "A": "99.125",
+      "B": "100.191",
+      "C": "102.250"
+    },
+    "correct_answer": "B",
+    "explanation": "With semiannual coupon payments, discount six cash flows of 2 and the final 100 using the semiannual rate implied by 3.9318% annual yield. The present value is about 100.191. Choice A and Choice C are prices of comparable bonds, not the estimated price of the illiquid bond."
+  }
+]
+
