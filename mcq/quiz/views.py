@@ -168,15 +168,36 @@ def _render_markdown_basic(text: str) -> str:
     in_code_block = False
     code_lines = []
 
+    math_pattern = re.compile(
+        r"(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|(?<!\$)\$[^$\n]+\$(?!\$))"
+    )
+
     def inline_md(s: str) -> str:
-        s = escape(_fix_mojibake(s))
-        s = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', s)
-        s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-        s = re.sub(r"__(.+?)__", r"<strong>\1</strong>", s)
-        s = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", s)
-        s = re.sub(r"(?<!_)_(?!_)(.+?)(?<!_)_(?!_)", r"<em>\1</em>", s)
-        s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
-        return s
+        s = _fix_mojibake(s)
+        parts = []
+        last = 0
+        for match in math_pattern.finditer(s):
+            if match.start() > last:
+                parts.append(("text", s[last:match.start()]))
+            parts.append(("math", match.group(0)))
+            last = match.end()
+        if last < len(s):
+            parts.append(("text", s[last:]))
+
+        out = []
+        for kind, chunk in parts:
+            if kind == "math":
+                out.append(escape(chunk))
+                continue
+            chunk = escape(chunk)
+            chunk = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)", r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', chunk)
+            chunk = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", chunk)
+            chunk = re.sub(r"__(.+?)__", r"<strong>\1</strong>", chunk)
+            chunk = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", chunk)
+            chunk = re.sub(r"(?<!_)_(?!_)(.+?)(?<!_)_(?!_)", r"<em>\1</em>", chunk)
+            chunk = re.sub(r"`([^`]+)`", r"<code>\1</code>", chunk)
+            out.append(chunk)
+        return "".join(out)
 
     def flush_para():
         nonlocal para
@@ -282,6 +303,15 @@ def _render_stem_html(text: str) -> str:
         return ""
     normalized = re.sub(r"<br\s*/?>", "\n", _fix_mojibake(text), flags=re.IGNORECASE)
     return mark_safe(_render_markdown_basic(normalized))
+
+
+def _render_choice_html(text: str) -> str:
+    """Render answer choices as inline-safe HTML without markdown emphasis side effects."""
+    if not isinstance(text, str):
+        return ""
+    normalized = re.sub(r"<br\s*/?>", "\n", _fix_mojibake(text), flags=re.IGNORECASE)
+    escaped = escape(normalized)
+    return mark_safe(escaped.replace("\n", "<br>"))
 
 
 def _looks_like_html(text: str) -> bool:
@@ -523,7 +553,7 @@ def mcq(request):
                 "index": i,
                 "text": text,
                 "text_html": _render_stem_html(text),
-                "choices": list(enumerate(choices)),
+                "choices": [(idx, choice, _render_choice_html(choice)) for idx, choice in enumerate(choices)],
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
@@ -700,7 +730,7 @@ def play(request, fname):
                 "index": i,
                 "text": text,
                 "text_html": _render_stem_html(text),
-                "choices": list(enumerate(choices)),
+                "choices": [(idx, choice, _render_choice_html(choice)) for idx, choice in enumerate(choices)],
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
@@ -812,7 +842,7 @@ def master(request):
                 "index": i,
                 "text": text,
                 "text_html": _render_stem_html(text),
-                "choices": list(enumerate(choices)),
+                "choices": [(idx, choice, _render_choice_html(choice)) for idx, choice in enumerate(choices)],
                 "answer": answer,
                 "selected": checked.get(f"q{i}"),
                 "explanation": explanation,
@@ -959,7 +989,7 @@ def mistakes_grouped(request):
                     "index": global_index,
                     "text": text,
                     "text_html": _render_stem_html(text),
-                    "choices": list(enumerate(choices)),
+                    "choices": [(idx, choice, _render_choice_html(choice)) for idx, choice in enumerate(choices)],
                     "answer": answer,
                     "selected": checked.get(f"q{global_index}"),
                     "explanation": explanation,

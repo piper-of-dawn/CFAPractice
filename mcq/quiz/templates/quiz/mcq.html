@@ -8,37 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
   <script>
-    // Helper to typeset MathJax in dynamic regions
-    function __typesetMath(el){
+    function __renderMath(el){
       try {
-        if (window.MathJax && MathJax.typesetPromise) {
-          return MathJax.typesetPromise(el ? [el] : undefined).catch(function(){});
+        if (window.renderMathInElement) {
+          window.renderMathInElement(el || document.body, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '\\[', right: '\\]', display: true },
+              { left: '$', right: '$', display: false },
+              { left: '\\(', right: '\\)', display: false }
+            ],
+            throwOnError: false,
+            strict: 'ignore',
+            trust: false,
+            ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          });
         }
-      } catch(_) {}
+      } catch (err) {
+        console.error('[mcq-math] KaTeX render failed', err);
+      }
       return Promise.resolve();
     }
-    // MathJax configuration for LaTeX rendering
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true,
-        processEnvironments: true
-      },
-      options: {
-        skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
-        ignoreHtmlClass: 'tex2jax_ignore',
-        processHtmlClass: 'tex2jax_process'
-      },
-      svg: { fontCache: 'global' },
-      startup: { typeset: false }
-    };
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
   <script>
     // Apply saved or system theme early to avoid flash
     (function(){
@@ -689,6 +684,16 @@
   .math-scroll::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
   .math-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid transparent; background-clip: content-box; }
   .math-scroll:hover::-webkit-scrollbar-thumb { background: #94a3b8; }
+  .katex-display {
+    margin: 0.85em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .choice .katex-display,
+  .choice label .katex-display {
+    margin: 0.35em 0;
+  }
   /* Dim explanation for lower emphasis */
   .explanation { opacity: 0.02; }
   /* Scoreboard (first sidebar card) should be fully visible */
@@ -941,12 +946,12 @@
                 <div class="qmeta">Question {{ q.index|add:1 }} of {{ total }}</div>
                 <button class="btn btn-ghost inline-explain-btn" type="button" hidden>See Explanation</button>
               </div>
-              <div class="stem">{{ q.text_html }}</div>
+              <div class="stem">{{ q.text_html|safe }}</div>
               <ul class="choices">
-                {% for idx, choice in q.choices %}
+                {% for idx, choice, choice_html in q.choices %}
                   <li class="choice">
                     <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}" {% if q.selected == idx %}checked{% endif %}>
-                    <label for="q{{ q.index }}_{{ idx }}">{{ choice }}</label>
+                    <label for="q{{ q.index }}_{{ idx }}">{{ choice_html|safe }}</label>
                   </li>
                 {% endfor %}
               </ul>
@@ -1131,8 +1136,49 @@
       const questions = Array.from(document.querySelectorAll('section.question'));
       const inlineExplanationBodies = new Map();
       const inlineExplanationStems = new Map();
+      const quizStateKey = `quiz-state:${window.location.pathname}`;
+      const shouldSaveState = true;
+      let lastActiveQuestion = '';
       let activeExplanationHtml = '';
       let activeExplanationStemHtml = '';
+
+      function saveQuizState() {
+        try {
+          const checked = {};
+          document.querySelectorAll('section.question input[type="radio"]:checked').forEach((input) => {
+            checked[input.name] = input.value;
+          });
+          const payload = {
+            checked,
+            lastActiveQuestion: lastActiveQuestion || '',
+            savedAt: Date.now()
+          };
+          sessionStorage.setItem(quizStateKey, JSON.stringify(payload));
+          console.debug('[mcq-state] saved', payload);
+        } catch (err) {
+          console.warn('[mcq-state] save failed', err);
+        }
+      }
+
+      function restoreQuizState() {
+        try {
+          const raw = sessionStorage.getItem(quizStateKey);
+          if (!raw) {
+            console.debug('[mcq-state] no saved state');
+            return;
+          }
+          const payload = JSON.parse(raw);
+          const checked = payload && payload.checked ? payload.checked : {};
+          Object.entries(checked).forEach(([name, value]) => {
+            const input = document.querySelector(`input[name="${name}"][value="${value}"]`);
+            if (input) input.checked = true;
+          });
+          lastActiveQuestion = payload && payload.lastActiveQuestion ? payload.lastActiveQuestion : '';
+          console.debug('[mcq-state] restored', payload);
+        } catch (err) {
+          console.warn('[mcq-state] restore failed', err);
+        }
+      }
 
       function escapeHtml(value) {
         return String(value || '')
@@ -1155,14 +1201,34 @@
         let codeLines = [];
 
         const inlineMd = (value) => {
-          let s = escapeHtml(value);
-          s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-          s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-          s = s.replace(/__(.+?)__/g, '<strong>$1</strong>');
-          s = s.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
-          s = s.replace(/(?<!_)_(?!_)(.+?)(?<!_)_(?!_)/g, '<em>$1</em>');
-          s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
-          return s;
+          const src = String(value || '');
+          const mathPattern = /(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|(?<!\$)\$[^$\n]+\$(?!\$))/g;
+          const out = [];
+          let last = 0;
+          let match;
+          while ((match = mathPattern.exec(src)) !== null) {
+            if (match.index > last) {
+              out.push({ kind: 'text', value: src.slice(last, match.index) });
+            }
+            out.push({ kind: 'math', value: match[0] });
+            last = match.index + match[0].length;
+          }
+          if (last < src.length) {
+            out.push({ kind: 'text', value: src.slice(last) });
+          }
+          return out.map((part) => {
+            if (part.kind === 'math') {
+              return escapeHtml(part.value);
+            }
+            let s = escapeHtml(part.value);
+            s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+            s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            s = s.replace(/__(.+?)__/g, '<strong>$1</strong>');
+            s = s.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+            s = s.replace(/(?<!_)_(?!_)(.+?)(?<!_)_(?!_)/g, '<em>$1</em>');
+            s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+            return s;
+          }).join('');
         };
 
         const flushPara = () => {
@@ -1302,26 +1368,26 @@
         seeExplanationBtn.textContent = 'See Explanation';
       }
 
-      // Wrap wide MathJax outputs in a mini horizontal scroller
+      // Wrap wide KaTeX display blocks in a mini horizontal scroller
       function __wrapWideMath(scopeEl){
         try {
           const root = scopeEl || document;
-          const blocks = root.querySelectorAll('mjx-container');
-          blocks.forEach((mjx) => {
+          const blocks = root.querySelectorAll('.katex-display');
+          blocks.forEach((display) => {
             // Skip if already handled
-            if (mjx.closest('.math-scroll')) return;
-            const parent = mjx.parentElement;
+            if (display.closest('.math-scroll')) return;
+            const parent = display.parentElement;
             if (!parent) return;
-            const mjxRect = mjx.getBoundingClientRect();
+            const displayRect = display.getBoundingClientRect();
             // Choose bounds as the nearest scrolling ancestor or provided scope
             const boundsEl = scopeEl || parent;
             const boundsRect = boundsEl.getBoundingClientRect();
-            if (mjxRect.width > Math.max(0, boundsRect.width - 8)) {
+            if (displayRect.width > Math.max(0, boundsRect.width - 8)) {
               // Use span to avoid invalid block-in-p structure; styled as block
               const wrap = document.createElement('span');
               wrap.className = 'math-scroll';
-              parent.insertBefore(wrap, mjx);
-              wrap.appendChild(mjx);
+              parent.insertBefore(wrap, display);
+              wrap.appendChild(display);
             }
           });
         } catch(_) {}
@@ -1340,7 +1406,7 @@
         }
         outcomeBody.style.color = '';
         outcomeBody.innerHTML = body;
-        __typesetMath(outcomeBody).then(function(){ __wrapWideMath(outcomeBody); });
+        __renderMath(outcomeBody).then(function(){ __wrapWideMath(outcomeBody); });
         // Render attributes
         if (meta) {
           let html = '<div style="display:grid;gap:6px">';
@@ -1453,7 +1519,7 @@
             const stemEl = sec.querySelector('.stem');
             const labels = Array.from(sec.querySelectorAll('ul.choices label'));
             const choicesDom = labels.map(l => l.textContent || '');
-            const explDom = (sec.querySelector('.explanation > div:last-child') || {}).innerHTML || explanation || '';
+            const explDom = explanationHtml || explanationRaw || '';
             const payload = {
               text: (stemEl ? (stemEl.textContent || '').trim() : (json.text || '')) || '',
               choices: choicesDom.length ? choicesDom : (json.choices || []),
@@ -1507,16 +1573,34 @@
       restoreQuizState();
       recomputeTotals();
 
-      // Run MathJax over stems/options once loaded, then wrap wide formulas
+      // Run KaTeX over stems/options once loaded, then wrap wide formulas
       const quizForm = document.getElementById('quizForm');
       const runTypeset = () => {
-        __typesetMath(quizForm || document).then(function(){ __wrapWideMath(quizForm || document); });
+        const root = quizForm || document;
+        const mathNodes = root.querySelectorAll('.stem, ul.choices label');
+        console.debug('[mcq-math] runTypeset:start', {
+          hasKaTeX: !!window.katex,
+          hasAutoRender: !!window.renderMathInElement,
+          nodeCount: mathNodes.length,
+          sampleStem: root.querySelector('.stem') ? root.querySelector('.stem').textContent.slice(0, 120) : null,
+          sampleChoice: root.querySelector('ul.choices label') ? root.querySelector('ul.choices label').textContent.slice(0, 120) : null
+        });
+        __renderMath(root).then(function(){
+          __wrapWideMath(root);
+          console.debug('[mcq-math] runTypeset:done', {
+            katexCount: root.querySelectorAll('.katex').length,
+            firstStemHtml: root.querySelector('.stem') ? root.querySelector('.stem').innerHTML.slice(0, 240) : null,
+            firstChoiceHtml: root.querySelector('ul.choices label') ? root.querySelector('ul.choices label').innerHTML.slice(0, 240) : null
+          });
+        });
       };
-      runTypeset();
-      const mjxScript = document.getElementById('MathJax-script');
-      if (mjxScript) {
-        mjxScript.addEventListener('load', runTypeset);
-      }
+      window.addEventListener('load', () => {
+        console.debug('[mcq-math] KaTeX assets ready check', {
+          hasKaTeX: !!window.katex,
+          hasAutoRender: !!window.renderMathInElement
+        });
+        runTypeset();
+      });
 
       // Scroll animations removed per request
 
@@ -1551,7 +1635,7 @@
         const body = modal.querySelector('#explainBody');
         const stemBlock = stemHtml ? `<div class="katas-stem"><div class="stem">${stemHtml}</div></div>` : '';
         body.innerHTML = `${stemBlock}<div class="katas-richtext">${html}</div>`;
-        __typesetMath(body).then(function(){ __wrapWideMath(body); });
+        __renderMath(body).then(function(){ __wrapWideMath(body); });
         modal.classList.remove('is-closing');
         modal.classList.add('show');
         window.requestAnimationFrame(() => {

@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
   <style>
     body { margin:0; background:#f3ece1; color:#111; font-family:"Geist", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
     .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px; }
@@ -56,6 +59,7 @@
     .choice { display:flex; gap:10px; align-items:center; padding:10px 12px; border:1px solid #e5e5ea; border-radius:10px; }
     .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
     .tag { background:#f2f2f7; border:1px solid #e5e5ea; border-radius:999px; padding:2px 8px; font-size:11px; }
+    .katex-display { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
   </style>
 </head>
 <body>
@@ -77,12 +81,12 @@
               {% for q in g.items %}
                 <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
                   <div class="qmeta">Question {{ forloop.counter }} in {{ g.topic }}</div>
-                  <div class="stem">{{ q.text_html }}</div>
+                  <div class="stem">{{ q.text_html|safe }}</div>
                   <ul class="choices">
-                    {% for idx, choice in q.choices %}
+                    {% for idx, choice, choice_html in q.choices %}
                       <li class="choice">
                         <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}">
-                        <label for="q{{ q.index }}_{{ idx }}">{{ choice }}</label>
+                        <label for="q{{ q.index }}_{{ idx }}">{{ choice_html|safe }}</label>
                       </li>
                     {% endfor %}
                   </ul>
@@ -104,6 +108,31 @@
     {% endif %}
   </div>
 
+  <script>
+    (function () {
+      function renderMath() {
+        try {
+          if (window.renderMathInElement) {
+            window.renderMathInElement(document.body, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '\\[', right: '\\]', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false }
+              ],
+              throwOnError: false,
+              strict: 'ignore',
+              trust: false,
+              ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            });
+          }
+        } catch (err) {
+          console.error('[mistakes_grouped] katex render failed', err);
+        }
+      }
+      window.addEventListener('load', renderMath);
+    })();
+  </script>
   <script>
     // Log Upstash/local source for debugging
     (function(){
