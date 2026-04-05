@@ -7,5 +7,6 @@ wheels/
 *.egg-info
 # Virtual environments
 .venv
-
+*.pdf
+quiz/AI/PDF/
 assets/fonts/

@@ -1,23 +1,22 @@
 Building-block Style
-Generate 21 very easy CFA-style MCQs for Topic:  Module 1: Interest Rates, Present Value, and Future Value using PDF/CFA L1 B1 - QUANTITATIVE METHODS.pdf'.
+Generate 21 very easy CFA-style MCQs for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Building Blocks style format.
-This is formula heavi so focus on how to make student mememorise the formulas
-Write the output only the JSON array to a dedicated file Interest Rates - Present Value and Future Value (Katas).json.
+Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation (Katas).json.
 
 Enumeration / Counting Format
-Generate 9 CFA-style MCQs for Topic:  Module 1: Interest Rates, Present Value, and Future Value using PDF/CFA L1 B1 - QUANTITATIVE METHODS.pdf'.
+Generate 9 CFA-style MCQs for Topic: Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Interest Rates - Present Value and Future Value.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation EC.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 5 CFA-style assertion–reason questions for Topic:  Module 1: Interest Rates, Present Value, and Future Value using PDF/CFA L1 B1 - QUANTITATIVE METHODS.pdf'.
+Generate 5 CFA-style assertion–reason questions for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Assertion Reason.
-Write the output only the JSON array to a dedicated file Interest Rates - Present Value and Future Value.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation AR.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Numerical Questions
-Generate 7 CFA-style numerical questions for Topic:  Module 1: Interest Rates, Present Value, and Future Value using PDF/CFA L1 B1 - QUANTITATIVE METHODS.pdf'.
+Generate 14 CFA-style numerical questions for Topic:   Module 6: Fixed-Income Bond Valuation: Prices and Yields using PDF/CFA L1 B6 Fixed Income.pdf'.
 Follow AGENTS.md and use the Numerical Questions format.
-Write the output only the JSON array to a dedicated file Interest Rates - Present Value and Future Value.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Fixed-Income Bond Valuation N.json. Append the file if it already exists, DO NOT OVERWRITE
 
 
 ---
