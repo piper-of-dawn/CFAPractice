@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Cash flow statement linkage",
+    "stem": "Which formula most accurately links beginning cash and ending cash for a period?",
+    "options": {
+      "A": "Ending cash = Beginning cash + Cash inflows - Cash outflows",
+      "B": "Ending cash = Beginning cash + Cash inflows + Cash outflows",
+      "C": "Ending cash = Beginning cash - Cash inflows - Cash outflows"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum presents the cash flow statement as a bridge from beginning cash to ending cash. Cash inflows increase cash and cash outflows reduce cash. Applying that relation gives Ending cash = Beginning cash + Cash inflows - Cash outflows. That is the basic reconciliation formula.</p><p>Why top distractor is wrong (PDF-based misconception): B treats cash outflows as if they increase cash, which reverses their effect.</p><p>Why remaining distractor is wrong: C subtracts cash inflows even though inflows raise the cash balance.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Accounts receivable formula",
+    "stem": "Which formula most accurately gives ending accounts receivable?",
+    "options": {
+      "A": "Ending accounts receivable = Beginning accounts receivable + Revenue - Cash collected from customers",
+      "B": "Ending accounts receivable = Beginning accounts receivable + Cash collected from customers - Revenue",
+      "C": "Ending accounts receivable = Revenue - Beginning accounts receivable - Cash collected from customers"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum shows accounts receivable rising when revenue is recognized before cash is collected. Start with beginning receivables, add revenue on account, and subtract cash collected from customers. That gives Ending accounts receivable = Beginning accounts receivable + Revenue - Cash collected from customers. This is the direct balance-sheet linkage.</p><p>Why top distractor is wrong (PDF-based misconception): B swaps revenue and cash collection, which reverses how receivables are built and reduced.</p><p>Why remaining distractor is wrong: C does not start from the beginning balance and therefore does not reconcile the account correctly.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Cash received from customers",
+    "stem": "If revenue is USD 100 and accounts receivable increase by USD 8, cash received from customers is closest to:",
+    "options": {
+      "A": "USD 92",
+      "B": "USD 100",
+      "C": "USD 108"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that cash received from customers equals revenue adjusted for the change in accounts receivable. An increase in accounts receivable means some recognized revenue was not yet collected in cash, so subtract the increase: USD 100 - USD 8 = USD 92. Therefore cash received from customers is USD 92.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the increase in accounts receivable and treats accrual revenue as if it were all cash.</p><p>Why remaining distractor is wrong: C adds the increase in accounts receivable when it should be subtracted.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Cash received from customers",
+    "stem": "If revenue is USD 70 and accounts receivable decrease by USD 5, cash received from customers is closest to:",
+    "options": {
+      "A": "USD 65",
+      "B": "USD 70",
+      "C": "USD 75"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum explains that a decrease in accounts receivable means the company collected more cash than the revenue recognized in the current period. So cash received from customers equals revenue plus the decrease in accounts receivable: USD 70 + USD 5 = USD 75. That gives the cash collection amount.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the decrease in accounts receivable, but a decrease should increase cash collected relative to revenue.</p><p>Why remaining distractor is wrong: B ignores the working-capital adjustment and uses accrual revenue alone.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Purchases from suppliers",
+    "stem": "If cost of goods sold is USD 60 and inventory increases by USD 9, purchases from suppliers are closest to:",
+    "options": {
+      "A": "USD 51",
+      "B": "USD 60",
+      "C": "USD 69"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that purchases from suppliers are found by adjusting cost of goods sold for the change in inventory. If inventory increases, purchases exceeded the amount expensed as cost of goods sold, so add the increase: USD 60 + USD 9 = USD 69. Therefore purchases from suppliers are USD 69.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the increase in inventory even though an inventory build means more was purchased than sold.</p><p>Why remaining distractor is wrong: B assumes purchases equal cost of goods sold and ignores the inventory change.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Purchases from suppliers",
+    "stem": "If cost of goods sold is USD 80 and inventory decreases by USD 6, purchases from suppliers are closest to:",
+    "options": {
+      "A": "USD 74",
+      "B": "USD 80",
+      "C": "USD 86"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that when inventory decreases, the company sold more inventory than it purchased during the period. So purchases from suppliers equal cost of goods sold minus the decrease in inventory: USD 80 - USD 6 = USD 74. That is the purchases figure.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the inventory drawdown and treats purchases as equal to cost of goods sold.</p><p>Why remaining distractor is wrong: C adds the decrease in inventory, which moves in the wrong direction.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Cash paid to suppliers",
+    "stem": "If purchases from suppliers are USD 90 and accounts payable increase by USD 4, cash paid to suppliers is closest to:",
+    "options": {
+      "A": "USD 86",
+      "B": "USD 90",
+      "C": "USD 94"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that an increase in accounts payable means some purchases were not yet paid in cash. Therefore cash paid to suppliers equals purchases from suppliers minus the increase in accounts payable: USD 90 - USD 4 = USD 86. This converts accrual purchases into cash paid.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the increase in accounts payable and assumes all purchases were paid immediately.</p><p>Why remaining distractor is wrong: C adds the increase in accounts payable when it should be subtracted.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Cash paid to suppliers",
+    "stem": "If purchases from suppliers are USD 55 and accounts payable decrease by USD 3, cash paid to suppliers is closest to:",
+    "options": {
+      "A": "USD 52",
+      "B": "USD 55",
+      "C": "USD 58"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that a decrease in accounts payable means the company paid more cash than the purchases recognized for the period. So cash paid to suppliers equals purchases from suppliers plus the decrease in accounts payable: USD 55 + USD 3 = USD 58. That is the cash outflow.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the decrease in accounts payable even though a decrease means extra cash was paid.</p><p>Why remaining distractor is wrong: B ignores the accounts payable adjustment and leaves the figure on an accrual basis.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Cash paid to employees",
+    "stem": "If salary and wages expense is USD 40 and salary and wages payable increase by USD 2, cash paid to employees is closest to:",
+    "options": {
+      "A": "USD 38",
+      "B": "USD 40",
+      "C": "USD 42"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum adjusts salary and wage expense for the change in salary and wages payable to find cash paid to employees. An increase in the payable means some expense has not yet been paid, so subtract it: USD 40 - USD 2 = USD 38. Therefore cash paid to employees is USD 38.</p><p>Why top distractor is wrong (PDF-based misconception): B treats the accrual expense as if it were already a cash amount.</p><p>Why remaining distractor is wrong: C adds the increase in wages payable instead of subtracting it.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Cash paid to employees",
+    "stem": "If salary and wages expense is USD 30 and salary and wages payable decrease by USD 4, cash paid to employees is closest to:",
+    "options": {
+      "A": "USD 26",
+      "B": "USD 30",
+      "C": "USD 34"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum shows that a decrease in salary and wages payable means cash payments exceeded the current period's accrued expense. So cash paid to employees equals salary and wages expense plus the decrease in the payable: USD 30 + USD 4 = USD 34. That is the cash amount.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the decrease in the payable, but a decrease indicates extra cash was paid.</p><p>Why remaining distractor is wrong: B ignores the payable adjustment and leaves the figure on an accrual basis.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Cash paid for other operating expenses",
+    "stem": "If other operating expenses are USD 25, prepaid expenses increase by USD 3, and other accrued liabilities decrease by USD 2, cash paid for other operating expenses is closest to:",
+    "options": {
+      "A": "USD 20",
+      "B": "USD 25",
+      "C": "USD 30"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum explains that an increase in prepaid expenses raises cash paid relative to accrual expense, and a decrease in accrued liabilities also raises cash paid. So cash paid for other operating expenses equals USD 25 + USD 3 + USD 2 = USD 30. This converts the accrual expense to the cash basis.</p><p>Why top distractor is wrong (PDF-based misconception): A moves both working-capital adjustments in the wrong direction.</p><p>Why remaining distractor is wrong: B ignores both the prepaid expense and accrued liability adjustments.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Cash paid for interest",
+    "stem": "If interest expense is USD 18 and interest payable decreases by USD 2, cash paid for interest is closest to:",
+    "options": {
+      "A": "USD 16",
+      "B": "USD 18",
+      "C": "USD 20"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that cash paid for interest equals interest expense adjusted for the change in interest payable. A decrease in interest payable means more cash was paid than the accrual expense, so add the decrease: USD 18 + USD 2 = USD 20. Therefore cash paid for interest is USD 20.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the decrease in interest payable, but the decrease should increase cash paid.</p><p>Why remaining distractor is wrong: B ignores the payable adjustment and keeps the amount on an accrual basis.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Cash paid for income taxes",
+    "stem": "If income tax expense is USD 22 and income tax payable increases by USD 5, cash paid for income taxes is closest to:",
+    "options": {
+      "A": "USD 17",
+      "B": "USD 22",
+      "C": "USD 27"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that an increase in income tax payable means some tax expense has not yet been paid in cash. So cash paid for income taxes equals income tax expense minus the increase in income tax payable: USD 22 - USD 5 = USD 17. That gives the cash outflow for taxes.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the tax payable adjustment and uses the accrual expense directly.</p><p>Why remaining distractor is wrong: C adds the increase in tax payable when it should be subtracted.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Indirect method adjustment",
+    "stem": "Under the indirect method, which item is most accurately added back to net income when computing operating cash flow?",
+    "options": {
+      "A": "Depreciation expense",
+      "B": "An increase in accounts receivable",
+      "C": "A gain on sale of equipment"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that non-cash expenses are added back to net income under the indirect method. Depreciation expense reduces net income but does not use cash in the current period, so it is added back in reconciling to operating cash flow. This is a standard non-cash adjustment.</p><p>Why top distractor is wrong (PDF-based misconception): B is subtracted, not added, because an increase in accounts receivable means revenue exceeded cash collected.</p><p>Why remaining distractor is wrong: C is also subtracted because the gain is non-operating and its cash effect belongs in investing activities.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Indirect method adjustment",
+    "stem": "Under the indirect method, an increase in a current operating liability is most accurately treated as a:",
+    "options": {
+      "A": "Subtraction from net income",
+      "B": "No adjustment to net income",
+      "C": "Addition to net income"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum explains that an increase in a current operating liability means accrual expenses exceeded cash payments. Because net income was reduced by expense more than cash actually paid, the increase is added back when reconciling to operating cash flow. This is the liability-side working-capital rule.</p><p>Why top distractor is wrong (PDF-based misconception): A reverses the sign of the current-liability adjustment.</p><p>Why remaining distractor is wrong: B ignores a required working-capital adjustment under the indirect method.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Equipment sold formula",
+    "stem": "If beginning equipment is USD 100, equipment purchased is USD 20, and ending equipment is USD 112, the historical cost of equipment sold is closest to:",
+    "options": {
+      "A": "USD 8",
+      "B": "USD 12",
+      "C": "USD 32"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum determines historical cost of equipment sold by reconciling the equipment account: Beginning equipment + purchases - ending equipment. Applying the formula gives USD 100 + USD 20 - USD 112 = USD 8. Therefore the historical cost of equipment sold is USD 8.</p><p>Why top distractor is wrong (PDF-based misconception): B comes from comparing ending equipment with purchases without using the full account reconciliation.</p><p>Why remaining distractor is wrong: C adds values that should be netted within the equipment account formula.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Accumulated depreciation formula",
+    "stem": "If beginning accumulated depreciation is USD 40, depreciation expense is USD 9, and ending accumulated depreciation is USD 45, accumulated depreciation on equipment sold is closest to:",
+    "options": {
+      "A": "USD 4",
+      "B": "USD 5",
+      "C": "USD 14"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum computes accumulated depreciation on equipment sold by reconciling the accumulated depreciation account: Beginning accumulated depreciation + depreciation expense - ending accumulated depreciation. Applying that gives USD 40 + USD 9 - USD 45 = USD 4. That is the accumulated depreciation attached to the asset sold.</p><p>Why top distractor is wrong (PDF-based misconception): B usually comes from subtracting beginning from ending and ignoring current-period depreciation expense.</p><p>Why remaining distractor is wrong: C adds the balances rather than reconciling the account correctly.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Book value of equipment sold",
+    "stem": "If the historical cost of equipment sold is USD 10 and accumulated depreciation on that equipment is USD 3, the book value is closest to:",
+    "options": {
+      "A": "USD 7",
+      "B": "USD 10",
+      "C": "USD 13"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines book value of equipment sold as historical cost less accumulated depreciation on that equipment. Applying the rule gives USD 10 - USD 3 = USD 7. That is the carrying amount removed from the balance sheet.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores accumulated depreciation and leaves the asset at historical cost.</p><p>Why remaining distractor is wrong: C adds accumulated depreciation even though accumulated depreciation reduces carrying value.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Cash received from sale of equipment",
+    "stem": "If the book value of equipment sold is USD 6 and the gain on sale is USD 2, cash received from the sale is closest to:",
+    "options": {
+      "A": "USD 4",
+      "B": "USD 6",
+      "C": "USD 8"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that selling price minus book value equals gain or loss on sale. Rearranging for a gain gives cash received from sale = book value + gain. So USD 6 + USD 2 = USD 8. That is the investing cash inflow.</p><p>Why top distractor is wrong (PDF-based misconception): A subtracts the gain from book value, which would fit neither the stated relation nor a gain outcome.</p><p>Why remaining distractor is wrong: B ignores the gain and sets proceeds equal to book value.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Cash received from sale of equipment",
+    "stem": "If the book value of equipment sold is USD 5 and the loss on sale is USD 2, cash received from the sale is closest to:",
+    "options": {
+      "A": "USD 3",
+      "B": "USD 5",
+      "C": "USD 7"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum uses the relation selling price minus book value equals gain or loss on sale. When there is a loss, selling price must be below book value by the amount of the loss. So cash received from sale = USD 5 - USD 2 = USD 3. That is the correct proceeds amount.</p><p>Why top distractor is wrong (PDF-based misconception): B ignores the reported loss and makes proceeds equal to book value.</p><p>Why remaining distractor is wrong: C adds the loss to book value even though a loss means the selling price is lower than book value.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Dividends paid formula",
+    "stem": "If beginning retained earnings are USD 50, net income is USD 12, and ending retained earnings are USD 55, dividends paid are closest to:",
+    "options": {
+      "A": "USD 5",
+      "B": "USD 7",
+      "C": "USD 17"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum links retained earnings through the statement of shareholders' equity: Ending retained earnings = Beginning retained earnings + Net income - Dividends paid. Rearranging gives Dividends paid = Beginning retained earnings + Net income - Ending retained earnings. Applying the numbers gives USD 50 + USD 12 - USD 55 = USD 7. Therefore dividends paid are USD 7.</p><p>Why top distractor is wrong (PDF-based misconception): A understates the dividends because it does not fully reconcile retained earnings.</p><p>Why remaining distractor is wrong: C adds values that should be netted in the retained earnings formula.</p>"
+  }
+]

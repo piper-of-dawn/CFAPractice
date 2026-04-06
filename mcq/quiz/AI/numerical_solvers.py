@@ -454,3 +454,316 @@ def interpolated_yield(lower_maturity, upper_maturity, target_maturity, lower_yi
             "target_between_bounds": target_m >= lower_m and target_m <= upper_m,
         },
     }
+
+
+def cash_received_from_customers(revenue, accounts_receivable_change):
+    sales = _to_decimal(revenue)
+    ar_change = _to_decimal(accounts_receivable_change)
+    cash_received = sales - ar_change
+    return {
+        "final_answer": cash_received,
+        "intermediate_steps": {
+            "revenue": sales,
+            "accounts_receivable_change": ar_change,
+            "cash_received_from_customers": cash_received,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_received),
+        "validation_checks": {
+            "revenue_non_negative": sales >= 0,
+        },
+    }
+
+
+def purchases_from_suppliers(cost_of_goods_sold, inventory_change):
+    cogs = _to_decimal(cost_of_goods_sold)
+    inv_change = _to_decimal(inventory_change)
+    purchases = cogs + inv_change
+    return {
+        "final_answer": purchases,
+        "intermediate_steps": {
+            "cost_of_goods_sold": cogs,
+            "inventory_change": inv_change,
+            "purchases_from_suppliers": purchases,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(purchases),
+        "validation_checks": {
+            "cost_of_goods_sold_non_negative": cogs >= 0,
+        },
+    }
+
+
+def cash_paid_to_suppliers(cost_of_goods_sold, inventory_change, accounts_payable_change):
+    cogs = _to_decimal(cost_of_goods_sold)
+    inv_change = _to_decimal(inventory_change)
+    ap_change = _to_decimal(accounts_payable_change)
+    purchases = cogs + inv_change
+    cash_paid = purchases - ap_change
+    return {
+        "final_answer": cash_paid,
+        "intermediate_steps": {
+            "cost_of_goods_sold": cogs,
+            "inventory_change": inv_change,
+            "purchases_from_suppliers": purchases,
+            "accounts_payable_change": ap_change,
+            "cash_paid_to_suppliers": cash_paid,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_paid),
+        "validation_checks": {
+            "cost_of_goods_sold_non_negative": cogs >= 0,
+        },
+    }
+
+
+def cash_paid_to_employees(salary_and_wages_expense, salary_and_wages_payable_change):
+    expense = _to_decimal(salary_and_wages_expense)
+    payable_change = _to_decimal(salary_and_wages_payable_change)
+    cash_paid = expense - payable_change
+    return {
+        "final_answer": cash_paid,
+        "intermediate_steps": {
+            "salary_and_wages_expense": expense,
+            "salary_and_wages_payable_change": payable_change,
+            "cash_paid_to_employees": cash_paid,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_paid),
+        "validation_checks": {
+            "salary_and_wages_expense_non_negative": expense >= 0,
+        },
+    }
+
+
+def cash_paid_for_other_operating_expenses(
+    other_operating_expenses,
+    prepaid_expenses_change,
+    other_accrued_liabilities_change,
+):
+    expense = _to_decimal(other_operating_expenses)
+    prepaid_change = _to_decimal(prepaid_expenses_change)
+    accrued_change = _to_decimal(other_accrued_liabilities_change)
+    cash_paid = expense + prepaid_change - accrued_change
+    return {
+        "final_answer": cash_paid,
+        "intermediate_steps": {
+            "other_operating_expenses": expense,
+            "prepaid_expenses_change": prepaid_change,
+            "other_accrued_liabilities_change": accrued_change,
+            "cash_paid_for_other_operating_expenses": cash_paid,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_paid),
+        "validation_checks": {
+            "other_operating_expenses_non_negative": expense >= 0,
+        },
+    }
+
+
+def cash_paid_for_interest(interest_expense, interest_payable_change):
+    expense = _to_decimal(interest_expense)
+    payable_change = _to_decimal(interest_payable_change)
+    cash_paid = expense - payable_change
+    return {
+        "final_answer": cash_paid,
+        "intermediate_steps": {
+            "interest_expense": expense,
+            "interest_payable_change": payable_change,
+            "cash_paid_for_interest": cash_paid,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_paid),
+        "validation_checks": {
+            "interest_expense_non_negative": expense >= 0,
+        },
+    }
+
+
+def cash_paid_for_income_taxes(
+    income_tax_expense,
+    income_tax_payable_change="0",
+    taxes_receivable_change="0",
+    deferred_tax_assets_change="0",
+    deferred_tax_liabilities_change="0",
+):
+    expense = _to_decimal(income_tax_expense)
+    payable_change = _to_decimal(income_tax_payable_change)
+    receivable_change = _to_decimal(taxes_receivable_change)
+    dta_change = _to_decimal(deferred_tax_assets_change)
+    dtl_change = _to_decimal(deferred_tax_liabilities_change)
+    cash_paid = expense - payable_change + receivable_change + dta_change - dtl_change
+    return {
+        "final_answer": cash_paid,
+        "intermediate_steps": {
+            "income_tax_expense": expense,
+            "income_tax_payable_change": payable_change,
+            "taxes_receivable_change": receivable_change,
+            "deferred_tax_assets_change": dta_change,
+            "deferred_tax_liabilities_change": dtl_change,
+            "cash_paid_for_income_taxes": cash_paid,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_paid),
+        "validation_checks": {
+            "income_tax_expense_non_negative": expense >= 0,
+        },
+    }
+
+
+def operating_cash_flow_direct(
+    cash_received_from_customers_value,
+    cash_paid_to_suppliers_value,
+    cash_paid_to_employees_value,
+    cash_paid_for_other_operating_expenses_value,
+    cash_paid_for_interest_value,
+    cash_paid_for_income_taxes_value,
+):
+    cash_received = _to_decimal(cash_received_from_customers_value)
+    cash_suppliers = _to_decimal(cash_paid_to_suppliers_value)
+    cash_employees = _to_decimal(cash_paid_to_employees_value)
+    cash_other = _to_decimal(cash_paid_for_other_operating_expenses_value)
+    cash_interest = _to_decimal(cash_paid_for_interest_value)
+    cash_taxes = _to_decimal(cash_paid_for_income_taxes_value)
+    cfo = cash_received - cash_suppliers - cash_employees - cash_other - cash_interest - cash_taxes
+    return {
+        "final_answer": cfo,
+        "intermediate_steps": {
+            "cash_received_from_customers": cash_received,
+            "cash_paid_to_suppliers": cash_suppliers,
+            "cash_paid_to_employees": cash_employees,
+            "cash_paid_for_other_operating_expenses": cash_other,
+            "cash_paid_for_interest": cash_interest,
+            "cash_paid_for_income_taxes": cash_taxes,
+            "operating_cash_flow": cfo,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cfo),
+        "validation_checks": {
+            "cash_received_non_negative": cash_received >= 0,
+        },
+    }
+
+
+def operating_cash_flow_indirect(
+    net_income,
+    depreciation_expense="0",
+    gain_on_sale_of_equipment="0",
+    loss_on_sale_of_equipment="0",
+    accounts_receivable_change="0",
+    inventory_change="0",
+    prepaid_expenses_change="0",
+    accounts_payable_change="0",
+    salary_and_wages_payable_change="0",
+    interest_payable_change="0",
+    income_tax_payable_change="0",
+    other_accrued_liabilities_change="0",
+):
+    ni = _to_decimal(net_income)
+    depreciation = _to_decimal(depreciation_expense)
+    gain = _to_decimal(gain_on_sale_of_equipment)
+    loss = _to_decimal(loss_on_sale_of_equipment)
+    ar_change = _to_decimal(accounts_receivable_change)
+    inv_change = _to_decimal(inventory_change)
+    prepaid_change = _to_decimal(prepaid_expenses_change)
+    ap_change = _to_decimal(accounts_payable_change)
+    wages_payable_change = _to_decimal(salary_and_wages_payable_change)
+    interest_payable = _to_decimal(interest_payable_change)
+    tax_payable = _to_decimal(income_tax_payable_change)
+    other_accrued = _to_decimal(other_accrued_liabilities_change)
+    cfo = (
+        ni
+        + depreciation
+        - gain
+        + loss
+        - ar_change
+        - inv_change
+        - prepaid_change
+        + ap_change
+        + wages_payable_change
+        + interest_payable
+        + tax_payable
+        + other_accrued
+    )
+    return {
+        "final_answer": cfo,
+        "intermediate_steps": {
+            "net_income": ni,
+            "depreciation_expense": depreciation,
+            "gain_on_sale_of_equipment": gain,
+            "loss_on_sale_of_equipment": loss,
+            "accounts_receivable_change": ar_change,
+            "inventory_change": inv_change,
+            "prepaid_expenses_change": prepaid_change,
+            "accounts_payable_change": ap_change,
+            "salary_and_wages_payable_change": wages_payable_change,
+            "interest_payable_change": interest_payable,
+            "income_tax_payable_change": tax_payable,
+            "other_accrued_liabilities_change": other_accrued,
+            "operating_cash_flow": cfo,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cfo),
+        "validation_checks": {
+            "net_income_numeric": True,
+        },
+    }
+
+
+def dividends_paid(beginning_retained_earnings, net_income, ending_retained_earnings):
+    beginning = _to_decimal(beginning_retained_earnings)
+    income = _to_decimal(net_income)
+    ending = _to_decimal(ending_retained_earnings)
+    dividends = beginning + income - ending
+    return {
+        "final_answer": dividends,
+        "intermediate_steps": {
+            "beginning_retained_earnings": beginning,
+            "net_income": income,
+            "ending_retained_earnings": ending,
+            "dividends_paid": dividends,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(dividends),
+        "validation_checks": {
+            "all_inputs_numeric": True,
+        },
+    }
+
+
+def cash_received_from_sale_of_equipment(
+    beginning_equipment,
+    equipment_purchased,
+    ending_equipment,
+    beginning_accumulated_depreciation,
+    depreciation_expense,
+    ending_accumulated_depreciation,
+    gain_or_loss_on_sale,
+):
+    beginning_eq = _to_decimal(beginning_equipment)
+    purchased = _to_decimal(equipment_purchased)
+    ending_eq = _to_decimal(ending_equipment)
+    beginning_ad = _to_decimal(beginning_accumulated_depreciation)
+    depreciation = _to_decimal(depreciation_expense)
+    ending_ad = _to_decimal(ending_accumulated_depreciation)
+    gain_or_loss = _to_decimal(gain_or_loss_on_sale)
+    historical_cost_sold = beginning_eq + purchased - ending_eq
+    accumulated_depreciation_sold = beginning_ad + depreciation - ending_ad
+    book_value_sold = historical_cost_sold - accumulated_depreciation_sold
+    cash_received = book_value_sold + gain_or_loss
+    return {
+        "final_answer": cash_received,
+        "intermediate_steps": {
+            "historical_cost_of_equipment_sold": historical_cost_sold,
+            "accumulated_depreciation_on_equipment_sold": accumulated_depreciation_sold,
+            "book_value_of_equipment_sold": book_value_sold,
+            "gain_or_loss_on_sale": gain_or_loss,
+            "cash_received_from_sale_of_equipment": cash_received,
+        },
+        "units": "currency",
+        "rounded_answer": _round_currency(cash_received),
+        "validation_checks": {
+            "historical_cost_sold_non_negative": historical_cost_sold >= 0,
+            "accumulated_depreciation_sold_non_negative": accumulated_depreciation_sold >= 0,
+        },
+    }

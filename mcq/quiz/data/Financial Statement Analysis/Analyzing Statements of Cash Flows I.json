@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "topic": "Indirect method working capital adjustments",
+    "stem": "Assertion (A): Under the indirect method, an increase in accounts receivable is subtracted from net income when reconciling to cash flow from operating activities.\nReason (R): An increase in accounts receivable indicates that revenue recognized on an accrual basis exceeded cash collected from customers during the period.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. Under the indirect method, increases in current operating assets are subtracted from net income. The reason is also the mechanism: if accounts receivable rises, accrual revenue was higher than cash collected, so net income must be reduced to arrive at operating cash flow."
+  },
+  {
+    "id": 2,
+    "topic": "IFRS versus US GAAP classification",
+    "stem": "Assertion (A): Under US GAAP, dividends paid are classified as financing cash flows.\nReason (R): Under IFRS, dividends paid may be classified as either operating or financing cash flows.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "Both statements are true, but the reason does not explain the assertion. US GAAP classifies dividends paid as financing cash flows. IFRS does allow dividends paid to be classified as either operating or financing, but that flexibility under IFRS is not the reason for the fixed US GAAP classification."
+  },
+  {
+    "id": 3,
+    "topic": "Conversion from indirect to direct method",
+    "stem": "Assertion (A): In converting operating cash flow from the indirect method to the direct method, non-cash depreciation expense must be removed from aggregated expenses before deriving cash payment categories.\nReason (R): Depreciation creates a current operating liability that is later settled in cash.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "The assertion is true because the module's three-step conversion process removes non-operating and non-cash items before converting accrual amounts into cash receipts and payments. The reason is false because depreciation is a non-cash expense, not a current operating liability that is later paid in cash."
+  },
+  {
+    "id": 4,
+    "topic": "Direct method cash paid to suppliers",
+    "stem": "Assertion (A): Under the direct method, cash paid to suppliers equals cost of goods sold minus any increase in inventory and minus any increase in accounts payable.\nReason (R): An increase in accounts payable means purchases exceeded cash paid to suppliers during the period.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "The assertion is false. The module states that purchases from suppliers equal cost of goods sold plus any increase in inventory, and cash paid to suppliers equals purchases minus any increase in accounts payable. The reason is true because a rise in accounts payable indicates some purchases were accrued rather than paid in cash."
+  },
+  {
+    "id": 5,
+    "topic": "Interest payable and cash interest",
+    "stem": "Assertion (A): If interest payable decreases during the year, cash paid for interest is greater than interest expense.\nReason (R): A decrease in interest payable means the company paid more cash than the current period's accrued interest expense.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "Both statements are true. The module shows that cash paid for interest equals interest expense adjusted for the change in interest payable. When interest payable decreases, cash paid exceeds current accrual expense, which is why the decrease is added to interest expense to determine cash paid."
+  },
+{
+    "id": 1,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. The income statement reports performance between balance sheet dates.\nII. The statement of cash flows is a point-in-time statement.\nIII. The statement of shareholders' equity is a flow statement.\nHow many of the above are flow statements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> A flow statement reports activity over a period rather than balances at a single date. Item I qualifies because the income statement covers the period between balance sheet dates. Item II does not qualify because the CFA Curriculum describes the statement of cash flows as a flow statement, not a point-in-time statement. Item III qualifies because the statement of shareholders' equity reports changes during the period. Therefore, two items satisfy the criterion.</p><p>Option A is incorrect because more than one listed item is a flow statement.</p><p>Option C is incorrect because Item II fails the criterion.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Operating cash inflows are disclosed by source.\nII. Operating cash outflows are disclosed by use.\nIII. Net income is reconciled to operating cash flow by adjusting for non-cash items and net changes in working capital.\nHow many of the above describe the direct method for reporting operating cash flow?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Under the direct method, operating cash inflows are shown by source and operating cash outflows are shown by use. That means Items I and II meet the defining criterion. Item III describes the indirect method because it starts from net income and adjusts for non-cash items and working capital changes. Therefore, two items satisfy the criterion.</p><p>Option A is incorrect because both Items I and II describe the direct method.</p><p>Option C is incorrect because Item III belongs to the indirect method, not the direct method.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Interest received may be classified as operating or investing under IFRS.\nII. Dividends paid may be classified as operating or financing under IFRS.\nIII. Taxes paid must always be classified as operating under IFRS, with no exception.\nHow many of the above are consistent with the CFA Curriculum's description of IFRS?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The criterion is whether the statement matches the IFRS flexibility described in the CFA Curriculum. Item I qualifies because IFRS allow interest received to be operating or investing. Item II qualifies because IFRS allow dividends paid to be operating or financing. Item III does not qualify because taxes paid are generally operating under IFRS, but a portion can be allocated to investing or financing when specifically identified with those categories. Therefore, two items satisfy the criterion.</p><p>Option A is incorrect because both Items I and II are valid IFRS classifications.</p><p>Option C is incorrect because Item III overstates the rule by ignoring the stated exception.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. When accrual-basis revenue exceeds cash collections, accounts receivable increases.\nII. When expenses recognized on an accrual basis are lower than cash actually paid, accounts payable or another accrued liability typically decreases.\nIII. Cash received in advance for future delivery creates a deferred revenue liability.\nHow many of the above are directly implied by the linkage between accrual accounting and current operating accounts?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the item follows directly from the accrual-versus-cash linkage described in the CFA Curriculum. Item I qualifies because revenue recognized before collection creates or increases accounts receivable. Item II qualifies because cash paid in excess of expense recognized reduces accounts payable or another accrued liability. Item III qualifies because advance cash collections create an obligation to deliver goods or services later, which is recorded as deferred revenue. Therefore, all three items satisfy the criterion.</p><p>Option A is incorrect because more than one listed item is directly implied by the linkage.</p><p>Option B is incorrect because no listed item violates the stated accrual-cash relationships.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Interest paid.\nII. Dividends received.\nIII. Dividends paid.\nUnder US GAAP, how many of the above are classified as operating cash flows?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Under US GAAP, the criterion for an operating cash flow includes interest paid and dividends received, while dividends paid are classified as financing. Item I qualifies and Item II qualifies. Item III does not qualify because it is a financing activity. Therefore, two items satisfy the criterion.</p><p>Option A is incorrect because both interest paid and dividends received are operating under US GAAP.</p><p>Option C is incorrect because dividends paid are not operating under US GAAP.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Investing and financing cash flows are reported using a direct method regardless of how operating cash flow is presented.\nII. Analysts may prefer direct-format operating cash flow to review trends in cash receipts and cash payments.\nIII. Operating cash flow reported under the indirect method can generally be converted to an approximation of the direct format.\nHow many of the above are consistent with the CFA Curriculum's overview of cash flow reporting?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the statement matches the reporting guidance summarized in the module overview. Item I qualifies because investing and financing sections are presented directly regardless of the operating section method. Item II qualifies because the direct format helps analysts observe trends in cash collected and cash paid. Item III qualifies because the module states that indirect-format operating cash flow can generally be converted to an approximation of the direct format. Therefore, all three items satisfy the criterion.</p><p>Option A is incorrect because each statement is supported by the module overview.</p><p>Option B is incorrect because there is no unsupported item among the three statements.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. The balance sheet reports the balances of permanent or stock accounts.\nII. Income statements prepared under IFRS or US GAAP are based on accrual accounting and therefore do not necessarily reflect cash inflows and outflows.\nIII. The statement of cash flows reports the change in cash, cash equivalents, and restricted cash between balance sheet dates.\nHow many of the above accurately describe the primary financial statements?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the description matches the module's definition of a primary financial statement. Item I qualifies because the balance sheet presents permanent or stock accounts at a point in time. Item II qualifies because accrual-based income statements do not necessarily equal cash inflows and outflows. Item III qualifies because the statement of cash flows explains the change in cash, cash equivalents, and restricted cash between balance sheet dates. Therefore, all three items satisfy the criterion.</p><p>Option A is incorrect because each item is an accurate description from the module.</p><p>Option B is incorrect because no listed statement conflicts with the module's definitions.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Beginning and ending cash are shown on the balance sheets for two dates.\nII. The statement of cash flows reconciles beginning cash to ending cash through operating, investing, and financing cash flows.\nIII. Cash dividends paid affect retained earnings through the statement of shareholders' equity and also appear on the statement of cash flows if paid in cash.\nHow many of the above reflect statement linkages described in the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The criterion is whether the item reflects an interstatement linkage stated in the CFA Curriculum. Item I qualifies because the beginning and ending cash balances are shown on two balance sheets. Item II qualifies because the cash flow statement bridges those two cash balances through operating, investing, and financing flows. Item III qualifies because cash dividends reduce retained earnings through the statement of shareholders' equity and appear on the cash flow statement when paid in cash. Therefore, all three items satisfy the criterion.</p><p>Option A is incorrect because more than one linkage is explicitly described in the module.</p><p>Option B is incorrect because each of the three listed linkages appears in the module discussion.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Module 4: Analyzing Statements of Cash Flows I",
+    "stem": "Consider the following:\nI. Under IFRS, bank overdrafts may be considered part of cash equivalents.\nII. Under US GAAP, bank overdrafts are not considered part of cash and cash equivalents and are classified as financing.\nIII. Under US GAAP, a reconciliation of net income to cash flow from operating activities must be provided regardless of whether the direct or indirect method is used.\nHow many of the above are consistent with the CFA Curriculum's comparison of IFRS and US GAAP?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches the IFRS versus US GAAP comparison in the module. Item I qualifies because IFRS may treat bank overdrafts as part of cash equivalents. Item II qualifies because US GAAP exclude bank overdrafts from cash and cash equivalents and classify them as financing. Item III qualifies because US GAAP require a reconciliation of net income to operating cash flow regardless of the method used. Therefore, all three items satisfy the criterion.</p><p>Option A is incorrect because all three statements match the comparison table.</p><p>Option B is incorrect because there is no incorrect item among the three statements.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Cash received from customers",
+    "stem": "A company reports revenue of USD 90 and accounts receivable increase by USD 5 during the year. Cash received from customers is closest to?",
+    "options": {
+      "A": "USD 85",
+      "B": "USD 90",
+      "C": "USD 95"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: cash collection conversion</h3><p><strong>A is correct.</strong> The CFA Curriculum converts accrual revenue to cash received by adjusting for the change in accounts receivable. An increase in accounts receivable means some revenue was not yet collected in cash, so subtract it: USD 90 - USD 5 = USD 85. Therefore cash received from customers is USD 85.</p><p>B is incorrect because it ignores the increase in accounts receivable and leaves revenue on an accrual basis.</p><p>C is incorrect because it adds the increase in accounts receivable when it should be subtracted.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Cash received from customers",
+    "stem": "A company reports revenue of USD 60 and accounts receivable decrease by USD 4. Cash received from customers is closest to?",
+    "options": {
+      "A": "USD 56",
+      "B": "USD 60",
+      "C": "USD 64"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: cash collection conversion</h3><p><strong>C is correct.</strong> A decrease in accounts receivable means cash collected exceeded current-period revenue. So cash received from customers equals revenue plus the decrease in accounts receivable: USD 60 + USD 4 = USD 64. That is the cash amount.</p><p>A is incorrect because it treats a decrease in accounts receivable as if it reduces cash collections.</p><p>B is incorrect because it ignores the working capital adjustment.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Cash paid to suppliers",
+    "stem": "Cost of goods sold is USD 50, inventory increases by USD 6, and accounts payable increase by USD 3. Cash paid to suppliers is closest to?",
+    "options": {
+      "A": "USD 47",
+      "B": "USD 53",
+      "C": "USD 59"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: supplier cash payment</h3><p><strong>B is correct.</strong> The CFA Curriculum first converts cost of goods sold to purchases, then adjusts for accounts payable. Purchases equal USD 50 + USD 6 = USD 56 because inventory increased. An increase in accounts payable means not all purchases were paid in cash, so cash paid to suppliers is USD 56 - USD 3 = USD 53.</p><p>A is incorrect because it subtracts both changes, which understates purchases and cash paid.</p><p>C is incorrect because it ignores that an increase in accounts payable reduces cash paid.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Cash paid to suppliers",
+    "stem": "Cost of goods sold is USD 70, inventory decreases by USD 5, and accounts payable decrease by USD 2. Cash paid to suppliers is closest to?",
+    "options": {
+      "A": "USD 63",
+      "B": "USD 67",
+      "C": "USD 73"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: supplier cash payment</h3><p><strong>B is correct.</strong> Purchases from suppliers equal cost of goods sold adjusted for the inventory change. Because inventory decreased, purchases are USD 70 - USD 5 = USD 65. A decrease in accounts payable means cash paid exceeded purchases, so cash paid to suppliers is USD 65 + USD 2 = USD 67.</p><p>A is incorrect because it subtracts the decrease in accounts payable instead of adding it.</p><p>C is incorrect because it adds the inventory decrease when purchases should be lower than cost of goods sold.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Cash paid to employees",
+    "stem": "Salary and wages expense is USD 24 and salary and wages payable increase by USD 4. Cash paid to employees is closest to?",
+    "options": {
+      "A": "USD 20",
+      "B": "USD 24",
+      "C": "USD 28"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: employee cash payment</h3><p><strong>A is correct.</strong> Cash paid to employees equals salary and wages expense adjusted for the change in salary and wages payable. An increase in the payable means some expense has not yet been paid, so subtract it: USD 24 - USD 4 = USD 20. Therefore cash paid to employees is USD 20.</p><p>B is incorrect because it leaves the amount on an accrual basis.</p><p>C is incorrect because it adds the increase in the payable when it should be subtracted.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Cash paid for other operating expenses",
+    "stem": "Other operating expenses are USD 30, prepaid expenses increase by USD 2, and other accrued liabilities increase by USD 3. Cash paid for other operating expenses is closest to?",
+    "options": {
+      "A": "USD 25",
+      "B": "USD 29",
+      "C": "USD 35"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: other operating expense cash payment</h3><p><strong>B is correct.</strong> The CFA Curriculum adjusts other operating expenses for prepaid expenses and accrued liabilities. An increase in prepaid expenses increases cash paid, while an increase in accrued liabilities decreases cash paid. So cash paid equals USD 30 + USD 2 - USD 3 = USD 29.</p><p>A is incorrect because it moves both working capital adjustments in the wrong direction.</p><p>C is incorrect because it adds both changes even though the increase in accrued liabilities should reduce cash paid.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Cash paid for interest",
+    "stem": "Interest expense is USD 12 and interest payable decreases by USD 1. Cash paid for interest is closest to?",
+    "options": {
+      "A": "USD 11",
+      "B": "USD 12",
+      "C": "USD 13"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: interest cash payment</h3><p><strong>C is correct.</strong> Cash paid for interest equals interest expense adjusted for the change in interest payable. A decrease in interest payable means the company paid more cash than the expense recognized, so add the decrease: USD 12 + USD 1 = USD 13. Therefore cash paid for interest is USD 13.</p><p>A is incorrect because it subtracts the decrease in interest payable.</p><p>B is incorrect because it ignores the payable adjustment.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Cash paid for income taxes",
+    "stem": "Income tax expense is USD 18 and income tax payable increases by USD 2. Cash paid for income taxes is closest to?",
+    "options": {
+      "A": "USD 16",
+      "B": "USD 18",
+      "C": "USD 20"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: income tax cash payment</h3><p><strong>A is correct.</strong> The CFA Curriculum adjusts income tax expense for the change in income tax payable. An increase in tax payable means some expense has not yet been paid in cash, so subtract it: USD 18 - USD 2 = USD 16. That is the cash paid for income taxes.</p><p>B is incorrect because it keeps the amount on an accrual basis.</p><p>C is incorrect because it adds the increase in tax payable when it should be subtracted.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Operating cash flow using the direct method",
+    "stem": "Cash received from customers is USD 80. Cash paid to suppliers is USD 30, cash paid to employees is USD 20, cash paid for other operating expenses is USD 10, cash paid for interest is USD 5, and cash paid for income taxes is USD 5. Operating cash flow is closest to?",
+    "options": {
+      "A": "USD 10",
+      "B": "USD 20",
+      "C": "USD 30"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: direct-method operating cash flow</h3><p><strong>A is correct.</strong> The direct method starts with cash received from customers and subtracts the main operating cash payments. Operating cash flow equals USD 80 - USD 30 - USD 20 - USD 10 - USD 5 - USD 5 = USD 10. This is the net cash provided by operating activities.</p><p>B is incorrect because it omits one of the cash outflows.</p><p>C is incorrect because it omits more than one required cash payment.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Operating cash flow using the indirect method",
+    "stem": "Net income is USD 25, depreciation expense is USD 4, accounts receivable increase by USD 3, inventory decreases by USD 2, and accounts payable increase by USD 1. Operating cash flow is closest to?",
+    "options": {
+      "A": "USD 23",
+      "B": "USD 27",
+      "C": "USD 29"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: indirect-method operating cash flow</h3><p><strong>C is correct.</strong> Under the indirect method, add back non-cash expenses and adjust for working capital. Start with net income of USD 25, add depreciation of USD 4, subtract the USD 3 increase in accounts receivable, add the USD 2 decrease in inventory, and add the USD 1 increase in accounts payable. The result is USD 25 + USD 4 - USD 3 + USD 2 + USD 1 = USD 29.</p><p>A is incorrect because it reverses at least one working capital adjustment.</p><p>B is incorrect because it omits one of the required additions.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Dividends paid",
+    "stem": "Beginning retained earnings are USD 40, net income is USD 12, and ending retained earnings are USD 45. Dividends paid are closest to?",
+    "options": {
+      "A": "USD 5",
+      "B": "USD 7",
+      "C": "USD 17"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: retained earnings relation</h3><p><strong>B is correct.</strong> The CFA Curriculum uses Beginning retained earnings + Net income - Dividends = Ending retained earnings. Rearranging gives Dividends = Beginning retained earnings + Net income - Ending retained earnings. So dividends paid equal USD 40 + USD 12 - USD 45 = USD 7.</p><p>A is incorrect because it understates the distribution by not applying the full retained earnings relation.</p><p>C is incorrect because it adds the ending retained earnings instead of subtracting it.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Cash received from sale of equipment",
+    "stem": "Beginning equipment is USD 100, equipment purchased is USD 20, and ending equipment is USD 112. Beginning accumulated depreciation is USD 40, depreciation expense is USD 9, and ending accumulated depreciation is USD 45. If the sale produced a gain of USD 2, cash received from the sale is closest to?",
+    "options": {
+      "A": "USD 2",
+      "B": "USD 4",
+      "C": "USD 6"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: equipment sale cash proceeds</h3><p><strong>C is correct.</strong> First find the historical cost of equipment sold: USD 100 + USD 20 - USD 112 = USD 8. Next find accumulated depreciation on the equipment sold: USD 40 + USD 9 - USD 45 = USD 4. So book value sold is USD 8 - USD 4 = USD 4. Because the sale produced a gain of USD 2, cash received must be USD 4 + USD 2 = USD 6.</p><p>A is incorrect because it confuses the gain with the total cash proceeds.</p><p>B is incorrect because it gives the book value but ignores the gain on sale.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Financing cash flows from equity changes",
+    "stem": "Common stock increases by USD 2 and additional paid-in capital increases by USD 10 during the year. Ignoring debt, cash received from issuing common stock is closest to?",
+    "options": {
+      "A": "USD 8",
+      "B": "USD 10",
+      "C": "USD 12"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: financing inflow from stock issuance</h3><p><strong>C is correct.</strong> The CFA Curriculum illustrates that stock issuance is captured through the combined increase in common stock and additional paid-in capital. Adding the two changes gives the financing inflow from issuance: USD 2 + USD 10 = USD 12. Therefore the cash received from issuing stock is USD 12.</p><p>A is incorrect because it nets rather than aggregates the equity increases.</p><p>B is incorrect because it includes only additional paid-in capital and ignores the increase in common stock.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Cash flow statement linkage",
+    "stem": "Beginning cash is USD 15, net cash provided by operating activities is USD 8, net cash used in investing activities is USD 3, and net cash used in financing activities is USD 4. Ending cash is closest to?",
+    "options": {
+      "A": "USD 16",
+      "B": "USD 20",
+      "C": "USD 30"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: ending cash reconciliation</h3><p><strong>A is correct.</strong> The cash flow statement links beginning cash to ending cash through the three activity sections. Ending cash equals beginning cash plus operating cash flow minus investing cash outflow minus financing cash outflow. So ending cash is USD 15 + USD 8 - USD 3 - USD 4 = USD 16.</p><p>B is incorrect because it treats one of the cash outflows as an inflow.</p><p>C is incorrect because it ignores the investing and financing cash uses.</p>"
+  }
+
+
+]
