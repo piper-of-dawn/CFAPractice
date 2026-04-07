@@ -16,14 +16,14 @@
     "id": 2,
     "model": "ChatGPT",
     "topic": "Formula",
-    "stem": "A bond has a Macaulay duration of 8 and a yield per period of 4%. Its modified duration is closest to:",
+    "stem": "A bond has a Macaulay duration of 5.25 and a yield per period of 5%. Its modified duration is closest to:",
     "options": {
-      "A": "7.692",
-      "B": "8.320",
-      "C": "8.000"
+      "A": "5.5125",
+      "B": "5.000",
+      "C": "5.250"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: ModDur Substitution</h3><p><strong>A is correct.</strong> Using $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{8}{1.04} = 7.692$. Modified duration is always less than Macaulay duration when yields are positive because we divide by a number greater than one.</p><p>B is incorrect because it multiplies $8 \\times 1.04 = 8.32$, reversing the formula.</p><p>C is incorrect because it assumes modified duration equals Macaulay duration, ignoring the yield adjustment.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: ModDur Substitution</h3><p><strong>B is correct.</strong> Using $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. Modified duration is always less than Macaulay duration when yields are positive because we divide by a number greater than one.</p><p>A is incorrect because it multiplies $5.25 \\times 1.05 = 5.5125$, reversing the formula.</p><p>C is incorrect because it assumes modified duration equals Macaulay duration, ignoring the yield adjustment.</p>"
   },
   {
     "id": 3,
@@ -32,11 +32,11 @@
     "stem": "If a bond's modified duration is 6 and its yield per period is 5%, the Macaulay duration is closest to:",
     "options": {
       "A": "5.714",
-      "B": "6.300",
-      "C": "6.000"
+      "B": "6.000",
+      "C": "6.300"
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Rearranging ModDur Formula</h3><p><strong>B is correct.</strong> Rearranging $ModDur = \\dfrac{MacDur}{1 + r}$ gives $MacDur = ModDur \\times (1 + r) = 6 \\times 1.05 = 6.30$. Macaulay duration is always greater than modified duration when yields are positive.</p><p>A is incorrect because it divides by $(1 + r)$ instead of multiplying, which would give a second layer of discounting.</p><p>C is incorrect because it assumes the two durations are equal, ignoring the yield adjustment factor.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Rearranging ModDur Formula</h3><p><strong>C is correct.</strong> Rearranging $ModDur = \\dfrac{MacDur}{1 + r}$ gives $MacDur = ModDur \\times (1 + r) = 6 \\times 1.05 = 6.30$. Macaulay duration is always greater than modified duration when yields are positive.</p><p>A is incorrect because it divides by $(1 + r)$ instead of multiplying, which would give a second layer of discounting.</p><p>B is incorrect because it assumes the two durations are equal, ignoring the yield adjustment factor.</p>"
   },
   {
     "id": 4,
@@ -44,12 +44,12 @@
     "topic": "Formula",
     "stem": "Which formula most accurately estimates the percentage change in a bond's full price for a change in yield?",
     "options": {
-      "A": "$\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield$",
-      "B": "$\\%\\Delta PV^{Full} \\approx AnnModDur \\times \\Delta AnnYield$",
+      "A": "$\\%\\Delta PV^{Full} \\approx AnnModDur \\times \\Delta AnnYield$",
+      "B": "$\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield$",
       "C": "$\\%\\Delta PV^{Full} \\approx -AnnModDur \\div \\Delta AnnYield$"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Price-Yield Sensitivity</h3><p><strong>A is correct.</strong> The CFA Curriculum states $\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield$. The negative sign reflects the inverse relationship between bond prices and yields: when yields rise, prices fall.</p><p>B is incorrect because it omits the negative sign, which would imply that prices and yields move in the same direction.</p><p>C is incorrect because it divides by the yield change instead of multiplying, which has no economic meaning in this context.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Price-Yield Sensitivity</h3><p><strong>B is correct.</strong> The CFA Curriculum states $\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield$. The negative sign reflects the inverse relationship between bond prices and yields: when yields rise, prices fall.</p><p>A is incorrect because it omits the negative sign, which would imply that prices and yields move in the same direction.</p><p>C is incorrect because it divides by the yield change instead of multiplying, which has no economic meaning in this context.</p>"
   },
   {
     "id": 5,
@@ -57,12 +57,12 @@
     "topic": "Formula",
     "stem": "A bond has an annualized modified duration of 5. If yields increase by 50 bps, the estimated percentage price change is closest to:",
     "options": {
-      "A": "-2.50%",
-      "B": "+2.50%",
+      "A": "+2.50%",
+      "B": "-2.50%",
       "C": "-0.25%"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Applying the %ΔPV Formula</h3><p><strong>A is correct.</strong> Using $\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield = -5 \\times 0.005 = -0.025 = -2.50\\%$. A 50 bp increase in yield causes an estimated 2.50% decline in price.</p><p>B is incorrect because it drops the negative sign, suggesting the price rises when yield increases.</p><p>C is incorrect because it uses 0.0005 (0.5 bps) instead of 0.005 (50 bps) for the yield change.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Applying the %ΔPV Formula</h3><p><strong>B is correct.</strong> Using $\\%\\Delta PV^{Full} \\approx -AnnModDur \\times \\Delta AnnYield = -5 \\times 0.005 = -0.025 = -2.50\\%$. A 50 bp increase in yield causes an estimated 2.50% decline in price.</p><p>A is incorrect because it drops the negative sign, suggesting the price rises when yield increases.</p><p>C is incorrect because it uses 0.0005 (0.5 bps) instead of 0.005 (50 bps) for the yield change.</p>"
   },
   {
     "id": 6,
@@ -83,25 +83,25 @@
     "topic": "Formula",
     "stem": "Which formula most accurately gives the approximate annualized modified duration using bond prices at shifted yields?",
     "options": {
-      "A": "$AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{2 \\times \\Delta Yield \\times PV_0}$",
-      "B": "$AnnModDur \\approx \\dfrac{PV_{+} - PV_{-}}{2 \\times \\Delta Yield \\times PV_0}$",
-      "C": "$AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{\\Delta Yield \\times PV_0}$"
+      "A": "$AnnModDur \\approx \\dfrac{PV_{+} - PV_{-}}{2 \\times \\Delta Yield \\times PV_0}$",
+      "B": "$AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{\\Delta Yield \\times PV_0}$",
+      "C": "$AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{2 \\times \\Delta Yield \\times PV_0}$"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Approximate ModDur Formula</h3><p><strong>A is correct.</strong> The CFA Curriculum defines approximate annualized modified duration as $AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{2 \\times \\Delta Yield \\times PV_0}$. Since $PV_{-} > PV_{+}$ (lower yields produce higher prices), the numerator is positive, giving a positive duration.</p><p>B is incorrect because it reverses the order in the numerator ($PV_{+} - PV_{-}$), which would produce a negative value.</p><p>C is incorrect because it omits the factor of 2 in the denominator. The 2 is needed because the yield is shifted both up and down.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Approximate ModDur Formula</h3><p><strong>C is correct.</strong> The CFA Curriculum defines approximate annualized modified duration as $AnnModDur \\approx \\dfrac{PV_{-} - PV_{+}}{2 \\times \\Delta Yield \\times PV_0}$. Since $PV_{-} > PV_{+}$ (lower yields produce higher prices), the numerator is positive, giving a positive duration.</p><p>A is incorrect because it reverses the order in the numerator ($PV_{+} - PV_{-}$), which would produce a negative value.</p><p>B is incorrect because it omits the factor of 2 in the denominator. The 2 is needed because the yield is shifted both up and down.</p>"
   },
   {
     "id": 8,
     "model": "ChatGPT",
     "topic": "Formula",
-    "stem": "A bond's full price is 100, $PV_{+} = 99.50$ at a yield 10 bps higher, and $PV_{-} = 100.52$ at a yield 10 bps lower. The approximate annualized modified duration is closest to:",
+    "stem": "A bond's full price is 100, $PV_{+} = 99.00$ at a yield 10 bps higher, and $PV_{-} = 101.00$ at a yield 10 bps lower. The approximate annualized modified duration is closest to:",
     "options": {
-      "A": "5.10",
-      "B": "10.20",
-      "C": "0.51"
+      "A": "10",
+      "B": "20",
+      "C": "1"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Applying Approximate ModDur</h3><p><strong>A is correct.</strong> $AnnModDur \\approx \\dfrac{100.52 - 99.50}{2 \\times 0.001 \\times 100} = \\dfrac{1.02}{0.20} = 5.10$. Each variable is substituted directly into the approximation formula.</p><p>B is incorrect because it omits the factor of 2 in the denominator, doubling the result to 10.20.</p><p>C is incorrect because it uses $\\Delta Yield = 0.01$ (100 bps) instead of $0.001$ (10 bps), producing a value ten times too small.</p>"
+    "explanation": "<h3>First Principles Thinking: Applying Approximate ModDur</h3><p><strong>A is correct.</strong> $AnnModDur \\approx \\dfrac{101 - 99}{2 \\times 0.001 \\times 100} = \\dfrac{2}{0.2} = 10$. Each variable is substituted directly into the approximation formula.</p><p>B is incorrect because it omits the factor of 2 in the denominator, giving $\\dfrac{2}{0.1} = 20$.</p><p>C is incorrect because it uses $\\Delta Yield = 0.01$ (100 bps) instead of $0.001$ (10 bps), producing $\\dfrac{2}{2} = 1$.</p>"
   },
   {
     "id": 9,
@@ -122,12 +122,12 @@
     "topic": "Formula",
     "stem": "Which formula most accurately defines money duration?",
     "options": {
-      "A": "$MoneyDur = AnnModDur \\times PV^{Full}$",
-      "B": "$MoneyDur = \\dfrac{AnnModDur}{PV^{Full}}$",
-      "C": "$MoneyDur = AnnModDur + PV^{Full}$"
+      "A": "$MoneyDur = \\dfrac{AnnModDur}{PV^{Full}}$",
+      "B": "$MoneyDur = AnnModDur + PV^{Full}$",
+      "C": "$MoneyDur = AnnModDur \\times PV^{Full}$"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Money Duration Formula</h3><p><strong>A is correct.</strong> The CFA Curriculum defines money duration as the product of annualized modified duration and the full price: $MoneyDur = AnnModDur \\times PV^{Full}$. This converts the percentage sensitivity into a currency-unit sensitivity.</p><p>B is incorrect because dividing by price would reduce the value rather than scale it up to currency terms.</p><p>C is incorrect because adding duration to price has no economic meaning — the relationship is multiplicative.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Money Duration Formula</h3><p><strong>C is correct.</strong> The CFA Curriculum defines money duration as the product of annualized modified duration and the full price: $MoneyDur = AnnModDur \\times PV^{Full}$. This converts the percentage sensitivity into a currency-unit sensitivity.</p><p>A is incorrect because dividing by price would reduce the value rather than scale it up to currency terms.</p><p>B is incorrect because adding duration to price has no economic meaning — the relationship is multiplicative.</p>"
   },
   {
     "id": 11,
@@ -135,12 +135,12 @@
     "topic": "Formula",
     "stem": "A bond has an annualized modified duration of 4 and a full price of 95 per 100 of par value. Its money duration is closest to:",
     "options": {
-      "A": "380",
-      "B": "23.75",
+      "A": "23.75",
+      "B": "380",
       "C": "99"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Money Duration Calculation</h3><p><strong>A is correct.</strong> $MoneyDur = AnnModDur \\times PV^{Full} = 4 \\times 95 = 380$. Money duration scales modified duration by the bond's full price to express sensitivity in currency units per 100 of par.</p><p>B is incorrect because it divides $95 / 4 = 23.75$, reversing the multiplication.</p><p>C is incorrect because it adds $4 + 95 = 99$; duration and price are multiplied, not added.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Money Duration Calculation</h3><p><strong>B is correct.</strong> $MoneyDur = AnnModDur \\times PV^{Full} = 4 \\times 95 = 380$. Money duration scales modified duration by the bond's full price to express sensitivity in currency units per 100 of par.</p><p>A is incorrect because it divides $95 / 4 = 23.75$, reversing the multiplication.</p><p>C is incorrect because it adds $4 + 95 = 99$; duration and price are multiplied, not added.</p>"
   },
   {
     "id": 12,
@@ -148,12 +148,12 @@
     "topic": "Formula",
     "stem": "Which formula most accurately estimates the change in a bond's full price in currency units?",
     "options": {
-      "A": "$\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield$",
-      "B": "$\\Delta PV^{Full} \\approx MoneyDur \\times \\Delta Yield$",
-      "C": "$\\Delta PV^{Full} \\approx -MoneyDur \\div \\Delta Yield$"
+      "A": "$\\Delta PV^{Full} \\approx MoneyDur \\times \\Delta Yield$",
+      "B": "$\\Delta PV^{Full} \\approx -MoneyDur \\div \\Delta Yield$",
+      "C": "$\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield$"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Currency Price Change Formula</h3><p><strong>A is correct.</strong> The CFA Curriculum states $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield$. The negative sign reflects the inverse price–yield relationship, and money duration converts the result into currency units.</p><p>B is incorrect because it omits the negative sign, implying prices and yields move together.</p><p>C is incorrect because it divides by the yield change instead of multiplying, producing an economically meaningless result.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Currency Price Change Formula</h3><p><strong>C is correct.</strong> The CFA Curriculum states $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield$. The negative sign reflects the inverse price–yield relationship, and money duration converts the result into currency units.</p><p>A is incorrect because it omits the negative sign, implying prices and yields move together.</p><p>B is incorrect because it divides by the yield change instead of multiplying, producing an economically meaningless result.</p>"
   },
   {
     "id": 13,
@@ -161,12 +161,12 @@
     "topic": "Formula",
     "stem": "A bond's money duration is 380 per 100 of par. If yields rise by 50 bps, the estimated change in price per 100 of par is closest to:",
     "options": {
-      "A": "-1.90",
-      "B": "+1.90",
-      "C": "-19.00"
+      "A": "+1.90",
+      "B": "-19.00",
+      "C": "-1.90"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Applying Money Duration</h3><p><strong>A is correct.</strong> $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield = -380 \\times 0.005 = -1.90$. A 50 bp yield increase causes an estimated price decline of 1.90 per 100 of par value.</p><p>B is incorrect because it drops the negative sign, suggesting the price increases when yields rise.</p><p>C is incorrect because it uses $\\Delta Yield = 0.05$ (500 bps) instead of $0.005$ (50 bps).</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Applying Money Duration</h3><p><strong>C is correct.</strong> $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield = -380 \\times 0.005 = -1.90$. A 50 bp yield increase causes an estimated price decline of 1.90 per 100 of par value.</p><p>A is incorrect because it drops the negative sign, suggesting the price increases when yields rise.</p><p>B is incorrect because it uses $\\Delta Yield = 0.05$ (500 bps) instead of $0.005$ (50 bps).</p>"
   },
   {
     "id": 14,
@@ -200,12 +200,12 @@
     "topic": "Formula",
     "stem": "Which formula most accurately gives the Macaulay duration of a perpetual bond?",
     "options": {
-      "A": "$MacDur = \\dfrac{1 + r}{r}$",
-      "B": "$MacDur = \\dfrac{r}{1 + r}$",
+      "A": "$MacDur = \\dfrac{r}{1 + r}$",
+      "B": "$MacDur = \\dfrac{1 + r}{r}$",
       "C": "$MacDur = \\dfrac{1}{r}$"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Perpetuity Duration</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the Macaulay duration of a perpetual bond as $MacDur = \\dfrac{1 + r}{r}$. For example, at a 5% yield, $MacDur = 1.05 / 0.05 = 21$.</p><p>B is incorrect because it inverts the formula, placing $r$ in the numerator and $(1 + r)$ in the denominator, which gives a value less than 1.</p><p>C is incorrect because it omits the 1 in the numerator. The correct formula is $(1 + r)/r$, not $1/r$.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Perpetuity Duration</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the Macaulay duration of a perpetual bond as $MacDur = \\dfrac{1 + r}{r}$. For example, at a 5% yield, $MacDur = 1.05 / 0.05 = 21$.</p><p>A is incorrect because it inverts the formula, placing $r$ in the numerator and $(1 + r)$ in the denominator, which gives a value less than 1.</p><p>C is incorrect because it omits the 1 in the numerator. The correct formula is $(1 + r)/r$, not $1/r$.</p>"
   },
   {
     "id": 17,
@@ -213,12 +213,12 @@
     "topic": "Formula",
     "stem": "A perpetual bond is priced to yield 4%. Its Macaulay duration is closest to:",
     "options": {
-      "A": "26.0",
-      "B": "25.0",
-      "C": "4.0"
+      "A": "25.0",
+      "B": "4.0",
+      "C": "26.0"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Perpetuity Duration Calculation</h3><p><strong>A is correct.</strong> $MacDur = \\dfrac{1 + r}{r} = \\dfrac{1.04}{0.04} = 26.0$. The Macaulay duration of a perpetuity is always $(1 + r)/r$.</p><p>B is incorrect because it uses $1/r = 1/0.04 = 25$, omitting the additional 1 in the numerator.</p><p>C is incorrect because it confuses the yield itself with the duration; a perpetuity has a very long duration far exceeding its yield level.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Perpetuity Duration Calculation</h3><p><strong>C is correct.</strong> $MacDur = \\dfrac{1 + r}{r} = \\dfrac{1.04}{0.04} = 26.0$. The Macaulay duration of a perpetuity is always $(1 + r)/r$.</p><p>A is incorrect because it uses $1/r = 1/0.04 = 25$, omitting the additional 1 in the numerator.</p><p>B is incorrect because it confuses the yield itself with the duration; a perpetuity has a very long duration far exceeding its yield level.</p>"
   },
   {
     "id": 18,
@@ -239,37 +239,37 @@
     "topic": "Formula",
     "stem": "A floating-rate note has 180 days in the coupon period and 60 days have passed since the last reset. Its Macaulay duration is closest to:",
     "options": {
-      "A": "0.667",
-      "B": "0.333",
+      "A": "0.333",
+      "B": "0.667",
       "C": "120.000"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: FRN Duration Calculation</h3><p><strong>A is correct.</strong> $MacDur_{Floating} = \\dfrac{T - t}{T} = \\dfrac{180 - 60}{180} = \\dfrac{120}{180} = 0.667$. The duration is simply the fraction of the coupon period remaining until the next reset.</p><p>B is incorrect because it computes $t/T = 60/180 = 0.333$, which is the fraction already elapsed rather than the fraction remaining.</p><p>C is incorrect because it gives the raw number of remaining days (120) instead of the fraction of the period.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: FRN Duration Calculation</h3><p><strong>B is correct.</strong> $MacDur_{Floating} = \\dfrac{T - t}{T} = \\dfrac{180 - 60}{180} = \\dfrac{120}{180} = 0.667$. The duration is simply the fraction of the coupon period remaining until the next reset.</p><p>A is incorrect because it computes $t/T = 60/180 = 0.333$, which is the fraction already elapsed rather than the fraction remaining.</p><p>C is incorrect because it gives the raw number of remaining days (120) instead of the fraction of the period.</p>"
   },
   {
     "id": 20,
     "model": "ChatGPT",
     "topic": "Formula",
-    "stem": "A semiannual coupon bond has a Macaulay duration of 9.32 periods and a yield-to-maturity of 3.2%. Its annualized modified duration is closest to:",
+    "stem": "A semiannual coupon bond has a Macaulay duration of 10 periods and a yield-to-maturity of 0%. Its annualized modified duration is closest to:",
     "options": {
-      "A": "4.587",
-      "B": "9.174",
-      "C": "9.320"
+      "A": "10.000",
+      "B": "20.000",
+      "C": "5.000"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Annualizing Modified Duration</h3><p><strong>A is correct.</strong> First compute periodic modified duration: $ModDur = \\dfrac{9.32}{1 + 0.032/2} = \\dfrac{9.32}{1.016} = 9.174$. Then annualize by dividing by 2 (the number of periods per year): $AnnModDur = 9.174 / 2 = 4.587$.</p><p>B is incorrect because it computes periodic modified duration (9.174) but does not annualize by dividing by the coupon frequency.</p><p>C is incorrect because it uses the raw Macaulay duration without adjusting for the yield or annualizing.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Annualizing Modified Duration</h3><p><strong>C is correct.</strong> First compute periodic modified duration: $ModDur = \\dfrac{10}{1 + 0/2} = \\dfrac{10}{1} = 10$. Then annualize by dividing by 2 (the number of coupon periods per year): $AnnModDur = 10 / 2 = 5$. Annualizing requires dividing periodic duration by the coupon frequency.</p><p>A is incorrect because it gives the periodic modified duration (10) without annualizing by dividing by the coupon frequency.</p><p>B is incorrect because it multiplies by 2 instead of dividing, doubling the periodic duration rather than converting to annual terms.</p>"
   },
   {
     "id": 21,
     "model": "ChatGPT",
     "topic": "Formula",
-    "stem": "A zero-coupon bond matures in 6 years and is priced to yield 3% annually. Its modified duration is closest to:",
+    "stem": "A zero-coupon bond matures in 5.25 years and is priced to yield 5% annually. Its modified duration is closest to:",
     "options": {
-      "A": "5.825",
-      "B": "6.000",
-      "C": "6.180"
+      "A": "5.5125",
+      "B": "5.000",
+      "C": "5.250"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Duration</h3><p><strong>A is correct.</strong> A zero-coupon bond's Macaulay duration equals its time-to-maturity, so $MacDur = 6$. Modified duration is $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{6}{1.03} = 5.825$. The single cash flow has a present value weight of 1.0, making Macaulay duration exactly equal to maturity.</p><p>B is incorrect because it uses the Macaulay duration directly without dividing by $(1 + r)$.</p><p>C is incorrect because it multiplies by $(1 + r)$ instead of dividing, giving $6 \\times 1.03 = 6.18$.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Duration</h3><p><strong>B is correct.</strong> A zero-coupon bond's Macaulay duration equals its time-to-maturity, so $MacDur = 5.25$. Modified duration is $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. The single cash flow has a present value weight of 1.0, making Macaulay duration exactly equal to maturity.</p><p>C is incorrect because it uses the Macaulay duration directly without dividing by $(1 + r)$.</p><p>A is incorrect because it multiplies by $(1 + r)$ instead of dividing, giving $5.25 \\times 1.05 = 5.5125$.</p>"
   }
 ]
