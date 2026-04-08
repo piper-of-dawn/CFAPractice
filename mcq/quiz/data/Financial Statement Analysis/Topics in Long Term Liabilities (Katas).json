@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "Deferred compensation most likely vests:",
+    "options": {
+      "A": "Over time",
+      "B": "Immediately upon hiring",
+      "C": "Only at retirement"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: nature of deferred compensation</h3><p><strong>A is correct.</strong> According to the CFA Curriculum, deferred compensation vests over time and can provide valuable retirement savings and financial upside to employees. The vesting period serves as a retention and alignment tool for employers.</p><p>A is incorrect because if compensation vested immediately upon hiring, it would not be classified as deferred compensation — it would be current compensation.</p><p>C is incorrect because deferred compensation does not necessarily vest only at retirement; it vests over time according to the plan's terms, which may be well before retirement.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "Financial reporting for deferred compensation plans is more complex than for immediately vesting compensation primarily because of:",
+    "options": {
+      "A": "Higher tax rates on deferred amounts",
+      "B": "The requirement to use cash-basis accounting",
+      "C": "Difficulty in measurement and potential lags between service and cash outflows"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: complexity of deferred compensation reporting</h3><p><strong>C is correct.</strong> The CFA Curriculum states that reporting for deferred compensation is more complex because of the difficulty in measurement and potential lags between employee service and cash outflows. Employees may earn compensation currently but receive it in future periods.</p><p>A is incorrect because the complexity arises from measurement difficulty, not from tax rate differences.</p><p>C is incorrect because financial reporting uses accrual-basis accounting, not cash-basis accounting, for deferred compensation.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "Under a defined-contribution pension plan, the pension expense for the employer is most likely equal to:",
+    "options": {
+      "A": "The company's contribution to the plan",
+      "B": "The present value of future retirement benefits",
+      "C": "The expected return on plan assets"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: defined-contribution plan expense</h3><p><strong>A is correct.</strong> Under a defined-contribution plan, as stated in the CFA Curriculum, a company contributes an agreed-upon amount into the plan. The company contribution is the pension expense and is reported as an operating cash outflow.</p><p>A is incorrect because calculating the present value of future retirement benefits is a feature of defined-benefit plans, not defined-contribution plans.</p><p>C is incorrect because the expected return on plan assets is a component relevant to defined-benefit plan accounting, not defined-contribution plans.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "Under a defined-contribution plan, if the agreed-upon contribution has not been paid by fiscal year-end, the company most likely recognizes:",
+    "options": {
+      "A": "No balance sheet impact",
+      "B": "A net pension asset",
+      "C": "An accrued compensation liability on the balance sheet"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: unpaid defined-contribution obligation</h3><p><strong>C is correct.</strong> The CFA Curriculum states that if some portion of the agreed-upon amount has not been paid by fiscal year-end, an accrued compensation liability would be recognized on the balance sheet.</p><p>A is incorrect because a net pension asset arises in defined-benefit plans when plan assets exceed the pension obligation, not in defined-contribution plans.</p><p>C is incorrect because an unpaid contribution creates a liability that must be recognized on the balance sheet.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "A company's defined-contribution plan contributions are most likely reported on the cash flow statement as:",
+    "options": {
+      "A": "An operating cash outflow",
+      "B": "A financing cash outflow",
+      "C": "An investing cash outflow"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: cash flow classification of pension contributions</h3><p><strong>A is correct.</strong> According to the CFA Curriculum, under a defined-contribution plan, the company contribution is the pension expense and is reported as an operating cash outflow.</p><p>B is incorrect because financing activities relate to raising or repaying capital, not to employee compensation costs.</p><p>C is incorrect because investing activities relate to the acquisition or disposal of long-term assets, not to pension contributions.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "Under a defined-benefit pension plan, if the fair value of plan assets exceeds the present value of the pension obligation, the company most likely reports:",
+    "options": {
+      "A": "A net pension asset",
+      "B": "No balance sheet impact",
+      "C": "A net pension liability"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: funded status of defined-benefit plans</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if the fair value of the plan's assets is higher than the present value of the estimated pension obligation, the plan has a surplus and the company will report a net pension asset on its balance sheet.</p><p>A is incorrect because a net pension liability arises when the pension obligation exceeds plan assets, which is the opposite scenario.</p><p>C is incorrect because the funded status of a defined-benefit plan must always be reported on the balance sheet as either an asset or a liability.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "The discount rate used to determine the present value of a defined-benefit pension obligation is most likely equal to the yield on:",
+    "options": {
+      "A": "Government treasury bonds",
+      "B": "The company's own debt",
+      "C": "High-quality corporate bonds"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: discount rate for pension obligation</h3><p><strong>C is correct.</strong> The CFA Curriculum states that a company discounts future estimated pension amounts to a present value using a discount rate equal to the yield on a high-quality corporate bond.</p><p>A is incorrect because the standard requires the yield on high-quality corporate bonds, not government bonds.</p><p>C is incorrect because the discount rate is based on high-quality corporate bond yields, not the company's own borrowing rate.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "Under IFRS, the change in the net pension asset or liability has how many general components?",
+    "options": {
+      "A": "Two",
+      "B": "Three",
+      "C": "Five"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: IFRS pension components</h3><p><strong>B is correct.</strong> Under IFRS, according to the CFA Curriculum, the change in the net pension asset or liability each period is viewed as having three general components: (1) service costs, (2) net interest expense or income, and (3) remeasurements.</p><p>A is incorrect because only two of the three components are recognized on the income statement; the total number of components is three.</p><p>C is incorrect because five components is the number under US GAAP, not IFRS.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "Under IFRS, remeasurements of a defined-benefit pension plan are recognized in:",
+    "options": {
+      "A": "Other comprehensive income",
+      "B": "Profit or loss",
+      "C": "Cash flow from operations"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: IFRS treatment of remeasurements</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the third component of the change in the net pension asset or liability — remeasurements — is recognized in other comprehensive income. Remeasurements are not amortized into profit or loss over time under IFRS.</p><p>A is incorrect because remeasurements bypass the income statement entirely under IFRS and go directly to other comprehensive income.</p><p>C is incorrect because remeasurements are an accounting recognition issue, not a cash flow classification.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "Under IFRS, remeasurements of a defined-benefit pension plan include actuarial gains and losses and:",
+    "options": {
+      "A": "Past service costs",
+      "B": "The actual return on plan assets less the return included in net interest",
+      "C": "Current service costs"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: components of remeasurements under IFRS</h3><p><strong>B is correct.</strong> The CFA Curriculum states that remeasurements include (1) actuarial gains and losses and (2) the actual return on plan assets less any return included in the net interest expense or income.</p><p>A is incorrect because past service costs are included in the service cost component recognized on the income statement under IFRS, not in remeasurements.</p><p>C is incorrect because current service costs are part of the service cost component on the income statement, not remeasurements.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "Under US GAAP, the change in net pension asset or liability each period is viewed as having how many components?",
+    "options": {
+      "A": "Three",
+      "B": "Five",
+      "C": "Four"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: US GAAP pension components</h3><p><strong>B is correct.</strong> Under US GAAP, the CFA Curriculum states that the change in net pension asset or liability each period is viewed as having five components: (1) service costs, (2) interest expense, (3) expected return on plan assets, (4) past service costs, and (5) actuarial gains and losses.</p><p>A is incorrect because three is the number of components under IFRS, not US GAAP.</p><p>B is incorrect because there are five, not four, components under US GAAP.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "Under US GAAP, past service costs related to a defined-benefit pension plan are first recognized in:",
+    "options": {
+      "A": "Cash flow from financing activities",
+      "B": "Other comprehensive income and then amortized into pension expense",
+      "C": "Profit or loss immediately"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: US GAAP treatment of past service costs</h3><p><strong>B is correct.</strong> The CFA Curriculum states that under US GAAP, past service costs are recognized in other comprehensive income in the period in which they arise and then subsequently amortized into pension expense over the future service period of the employees covered by the plan.</p><p>A is incorrect because past service costs are not immediately recognized in profit or loss under US GAAP; they are first recorded in OCI and then amortized.</p><p>C is incorrect because past service costs relate to income recognition, not cash flow classification.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "Share-based compensation is most likely intended to:",
+    "options": {
+      "A": "Align employees' interests with those of the shareholders",
+      "B": "Reduce the company's tax liability",
+      "C": "Increase the company's cash reserves"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: purpose of share-based compensation</h3><p><strong>A is correct.</strong> The CFA Curriculum states that share-based compensation is intended to align employees' interests with those of the shareholders.</p><p>A is incorrect because the primary purpose of share-based compensation is alignment of interests, not tax reduction.</p><p>C is incorrect because share-based compensation may require no cash outlay, but its purpose is interest alignment, not increasing cash reserves.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "A disadvantage of share-based compensation is that issuing shares to employees most likely:",
+    "options": {
+      "A": "Increases the company's debt",
+      "B": "Reduces the company's credit rating",
+      "C": "Dilutes existing shareholders"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: disadvantage of share-based compensation</h3><p><strong>C is correct.</strong> The CFA Curriculum explicitly states that issuing shares to employees dilutes existing shareholders, which is one of the disadvantages of share-based compensation.</p><p>A is incorrect because share-based compensation involves equity issuance, not debt, so it does not increase the company's debt.</p><p>C is incorrect because share-based compensation affects equity, not the company's debt profile or credit rating.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "For share-based compensation plans, compensation expense is generally measured at the fair value on the:",
+    "options": {
+      "A": "Vesting date",
+      "B": "Exercise date",
+      "C": "Grant date"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: measurement date for share-based compensation</h3><p><strong>C is correct.</strong> The CFA Curriculum states that under both IFRS and US GAAP, companies generally estimate the fair value of the share-based compensation at the grant date and recognize it as compensation expense ratably over the plan's vesting schedule.</p><p>A is incorrect because the fair value is measured at the grant date, not the vesting date, even though expense recognition continues through the vesting period.</p><p>B is incorrect because the market price at the exercise date is not relevant for determining compensation expense; the grant date fair value is used.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "For an outright stock grant, compensation expense is most likely based on the fair value of the stock on the:",
+    "options": {
+      "A": "Grant date",
+      "B": "Date the employee sells the stock",
+      "C": "Reporting date"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: stock grant expense measurement</h3><p><strong>A is correct.</strong> The CFA Curriculum states that for an outright stock grant, compensation expense is reported on the basis of the fair value of the stock on the grant date — generally the market value at grant date.</p><p>B is incorrect because the date the employee sells the stock has no bearing on the measurement of compensation expense.</p><p>C is incorrect because fair value is measured at the grant date, not at subsequent reporting dates.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "Restricted stock grants require the employee to return shares to the company if:",
+    "options": {
+      "A": "Certain conditions such as remaining with the company or meeting performance goals are not met",
+      "B": "The stock price declines below the grant date price",
+      "C": "The company reports a net loss"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: restricted stock grant conditions</h3><p><strong>A is correct.</strong> The CFA Curriculum states that a restricted stock grant requires the employee to return ownership of those shares to the company if certain conditions are not met. Common restrictions include requirements that employees remain with the company for a specified period or that certain performance goals are met.</p><p>A is incorrect because the forfeiture conditions relate to service and performance requirements, not stock price movements.</p><p>C is incorrect because company-level net losses do not trigger the return of restricted shares; the conditions are employee-specific service or performance criteria.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "The vesting date for stock options is best described as the date when employees:",
+    "options": {
+      "A": "Sell the underlying shares",
+      "B": "Receive the option grant",
+      "C": "Can first exercise the stock options"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: vesting date definition</h3><p><strong>C is correct.</strong> The CFA Curriculum defines the vesting date as the date that employees can first exercise the stock options.</p><p>A is incorrect because the date employees receive the option grant is the grant date, not the vesting date.</p><p>C is incorrect because selling the underlying shares occurs after exercise and is unrelated to the vesting date.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Deferred Compensation",
+    "stem": "When a stock option is exercised, the amount of compensation expense recognized is based on:",
+    "options": {
+      "A": "The market price at the time of exercise",
+      "B": "The difference between market price and exercise price",
+      "C": "The fair value of the option at the grant date"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: option expense at exercise</h3><p><strong>C is correct.</strong> The CFA Curriculum explicitly states that when an option is exercised, the market price of the option at the time of exercise is not relevant. The amount of expense is determined based on the fair value of the option at the grant date.</p><p>A is incorrect because the market price at exercise does not affect the compensation expense already determined at the grant date.</p><p>B is incorrect because the intrinsic value difference at exercise is not the basis for compensation expense; the grant date fair value is used.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Deferred Compensation",
+    "stem": "Recognition of stock option expense over the vesting period most likely has what net impact on total equity?",
+    "options": {
+      "A": "Decreases total equity",
+      "B": "Increases total equity",
+      "C": "No net impact on total equity"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: equity impact of option expense</h3><p><strong>C is correct.</strong> The CFA Curriculum states that as the option expense is recognized over the vesting period, retained earnings are reduced (as with any other expense), but the offsetting entry is an increase in paid-in capital. Thus, the recognition of option expense has no net impact on total equity.</p><p>A is incorrect because although retained earnings decrease, paid-in capital increases by the same amount, leaving total equity unchanged.</p><p>B is incorrect because recognition of an expense does not increase total equity; it creates offsetting changes within equity components.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Grok",
+    "topic": "Deferred Compensation",
+    "stem": "Stock appreciation rights (SARs) are best described as a form of:",
+    "options": {
+      "A": "Defined-benefit pension compensation",
+      "B": "Cash-settled share-based compensation",
+      "C": "Equity-settled share-based compensation"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification of SARs</h3><p><strong>B is correct.</strong> The CFA Curriculum states that stock appreciation rights (SARs) and phantom stock compensate employees based on changes in share value without requiring the employee to hold shares. These are referred to as cash-settled share-based compensation.</p><p>A is incorrect because SARs do not require the employee to obtain ownership in the company; they are cash-settled, not equity-settled.</p><p>C is incorrect because SARs are a form of share-based compensation, not a pension plan.</p>"
+  }
+]

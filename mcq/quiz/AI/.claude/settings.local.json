@@ -32,7 +32,8 @@
       "Bash(rg --files /home/karma/CFAPractice)",
       "Bash(rg --files /home/karma/CFAPractice/mcq/quiz/AI/PDF/)",
       "Bash(rg --files /home/karma/CFAPractice/ --glob \"*.pdf\")",
-      "Bash(ls -lah \"/home/karma/CFAPractice/mcq/quiz/AI/\"*\"Yield and Yield Spread\"*)"
+      "Bash(ls -lah \"/home/karma/CFAPractice/mcq/quiz/AI/\"*\"Yield and Yield Spread\"*)",
+      "Bash(echo \"EXIT:$?\")"
     ]
   }
 }
