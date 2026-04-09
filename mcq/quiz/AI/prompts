@@ -1,11 +1,10 @@
 Building-block Style
-Generate 21 very easy CFA-style MCQs for Topic:  Module 4: Analyzing Statements of Cash Flows I using 'PDF/FSA/module_08_topics_in_long_term_liabilities_and_equity.txt'.
+Generate 35 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part I strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_I.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Make sure you focus only on Deferred Compensation section.
-Write the output only the JSON array to a dedicated file Topics in Long Term Liabilities (Katas).json.
+Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part I (Katas).json.
 
-Enumeration / Counting Format
-Generate 9 CFA-style MCQs for Topic:  Module 4: Analyzing Statements of Cash Flows I for Fixed-Rate Bonds  using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_08_topics_in_long_term_liabilities_and_equity.txt'.
+enumeration / counting format
+generate 9 cfa-style mcqs for topic:  module 4: analyzing statements of cash flows i for fixed-rate bonds  using /home/karma/cfapractice/mcq/quiz/ai/pdf/fsa/module_08_topics_in_long_term_liabilities_and_equity.txt'.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
 Write the output only the JSON array to a dedicated file Analyzing Statements of Cash Flows I EC.json. Append the file if it already exists, DO NOT OVERWRITE
 

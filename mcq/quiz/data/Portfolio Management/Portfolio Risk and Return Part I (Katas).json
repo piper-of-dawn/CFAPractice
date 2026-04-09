@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "Among major US asset classes over the period 1926-2017, which asset class most likely had the highest annualized return?",
+    "options": {
+      "A": "Long-term corporate bonds",
+      "B": "Small company stocks",
+      "C": "Treasury bills"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: risk-return trade-off across asset classes</h3><p><strong>B is correct.</strong> According to the CFA Curriculum, small company stocks had an overall annual geometric mean return of 12.1% during the 1926-2017 period, which was the highest among all major US asset classes. Higher risk assets are expected to deliver higher returns over long periods, and small company stocks carried the highest risk at 31.7%.</p><p>A is incorrect because long-term corporate bonds earned only 6.1% annualized, reflecting their lower risk profile compared with equities.</p><p>C is incorrect because Treasury bills earned only 3.4% annualized, the lowest return among major asset classes, consistent with their very low risk.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "Which of the following US asset classes most likely had the lowest risk (standard deviation) over the period 1926-2017?",
+    "options": {
+      "A": "Large company stocks",
+      "B": "Long-term government bonds",
+      "C": "Treasury bills"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risk hierarchy of asset classes</h3><p><strong>C is correct.</strong> Treasury bills had the lowest risk at approximately 3.1% standard deviation over 1926-2017. This is consistent with the fact that Treasury bills are short-term government securities with minimal interest rate and inflation risk.</p><p>A is incorrect because large company stocks had a standard deviation of 19.8%, reflecting the uncertainty and volatility inherent in equity returns.</p><p>B is incorrect because long-term government bonds had a standard deviation of 9.9%, higher than Treasury bills due to their greater sensitivity to interest rate changes.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Grok",
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "The risk-return trade-off is most accurately described as:",
+    "options": {
+      "A": "Higher risk is associated with higher expected return over long periods",
+      "B": "Higher risk always guarantees a higher return in any given year",
+      "C": "Lower risk assets always outperform higher risk assets"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: risk-return trade-off</h3><p><strong>A is correct.</strong> The risk-return trade-off refers to the positive relationship between expected risk and return. Over long periods and in efficient markets, higher returns are not achievable without accepting higher risk. Historical data confirm that assets with greater risk, such as equities, have earned higher mean returns than lower risk assets like bonds and T-bills.</p><p>B is incorrect because higher risk does not guarantee higher return in any single year. Returns are uncertain, and risky assets can have negative returns in specific periods.</p><p>C is incorrect because the historical evidence shows the opposite: higher risk assets have generally outperformed lower risk assets over long periods.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "An investment return distribution that has a higher probability of extreme returns than a normal distribution most likely exhibits:",
+    "options": {
+      "A": "Positive skewness",
+      "B": "Kurtosis (fat tails)",
+      "C": "Negative mean return"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: distributional characteristics</h3><p><strong>B is correct.</strong> Kurtosis refers to fat tails, meaning there is a higher than normal probability for extreme returns. This increases the asset's risk beyond what is captured in a simple mean-variance framework. The CFA Curriculum notes that the probability and magnitude of extreme events is often underappreciated.</p><p>A is incorrect because skewness refers to asymmetry of the return distribution, not the probability of extreme events. A positively skewed distribution has a long right tail but this describes asymmetry, not fat tails.</p><p>C is incorrect because having a negative mean return is unrelated to the probability of extreme outcomes. An asset can have a positive mean return and still exhibit fat tails.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "Which of the following is least likely a component of trading costs that affects investment decisions?",
+    "options": {
+      "A": "Brokerage commission",
+      "B": "Dividend yield",
+      "C": "Bid-ask spread"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: trading cost components</h3><p><strong>B is correct.</strong> According to the CFA Curriculum, the cost of trading has three main components: brokerage commission, bid-ask spread, and price impact. Dividend yield is a return component, not a trading cost.</p><p>A is incorrect because brokerage commission is explicitly identified as one of the three main components of trading costs.</p><p>C is incorrect because the bid-ask spread is explicitly identified as a trading cost component. It represents the difference between the buying and selling price of a security.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Grok",
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "An investor who chooses a guaranteed outcome of EUR 50 over a gamble with an expected value of EUR 50 is most likely classified as:",
+    "options": {
+      "A": "Risk seeking",
+      "B": "Risk neutral",
+      "C": "Risk averse"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: concept of risk aversion</h3><p><strong>C is correct.</strong> A risk-averse investor prefers certainty over uncertainty when the expected values are equal. By choosing the guaranteed EUR 50 over the gamble with the same expected value, the investor demonstrates unwillingness to bear risk without additional compensation.</p><p>A is incorrect because a risk-seeking investor would choose the gamble, deriving extra utility from the uncertainty itself, even when the expected values are equal.</p><p>B is incorrect because a risk-neutral investor would be indifferent between the gamble and the guaranteed outcome since both have the same expected value.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "A risk-neutral investor most likely makes decisions based solely on:",
+    "options": {
+      "A": "Expected return, ignoring risk",
+      "B": "Risk, ignoring expected return",
+      "C": "Both risk and return equally"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: risk neutrality</h3><p><strong>A is correct.</strong> Risk neutrality means the investor cares only about return and not about risk. Higher return investments are more desirable even if they come with higher risk. In the utility function $U = E(r) - \\frac{1}{2}A\\sigma^2$, the risk aversion coefficient A equals 0 for a risk-neutral investor, so the variance term disappears.</p><p>B is incorrect because an investor who focuses only on risk and ignores return does not match any standard investor classification in the CFA Curriculum.</p><p>C is incorrect because considering both risk and return equally describes neither risk-neutral nor risk-averse behavior. A risk-averse investor weighs both but penalizes risk.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "In the utility function $U = E(r) - \\frac{1}{2}A\\sigma^2$, for a risk-averse investor the value of A is most likely:",
+    "options": {
+      "A": "Negative",
+      "B": "Zero",
+      "C": "Positive"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risk aversion coefficient</h3><p><strong>C is correct.</strong> For a risk-averse investor, the risk aversion coefficient A is greater than zero. A positive A means that any increase in risk (variance) reduces the investor's utility, which is consistent with the behavior of risk-averse investors who require compensation for bearing risk.</p><p>A is incorrect because a negative value of A corresponds to a risk-seeking (risk-loving) investor, for whom additional risk actually increases utility.</p><p>B is incorrect because A = 0 corresponds to a risk-neutral investor, for whom changes in risk do not affect utility at all.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Grok",
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "Risk tolerance is most accurately described as being:",
+    "options": {
+      "A": "Positively related to risk aversion",
+      "B": "Negatively related to risk aversion",
+      "C": "Unrelated to risk aversion"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: risk tolerance vs. risk aversion</h3><p><strong>B is correct.</strong> Risk tolerance refers to the amount of risk an investor can tolerate to achieve an investment goal. The higher the risk tolerance, the greater the willingness to take risk. The CFA Curriculum explicitly states that risk tolerance is negatively related to risk aversion.</p><p>A is incorrect because risk tolerance and risk aversion move in opposite directions. An investor with high risk aversion has low risk tolerance, and vice versa.</p><p>C is incorrect because risk tolerance and risk aversion are directly linked concepts. They are inversely related measures of an investor's attitude toward risk.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "A risk-free asset most likely generates the same utility for:",
+    "options": {
+      "A": "Only risk-averse investors",
+      "B": "Only risk-neutral investors",
+      "C": "All investors regardless of risk preference"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: utility of a risk-free asset</h3><p><strong>C is correct.</strong> A risk-free asset has $\\sigma^2 = 0$, so the utility function reduces to $U = E(r)$ for all investors regardless of their risk aversion coefficient A. Since the variance term vanishes, the utility equals the risk-free return for every investor, whether risk-averse, risk-neutral, or risk-seeking.</p><p>A is incorrect because the risk-free asset generates the same utility for all investors, not just risk-averse ones. The risk aversion coefficient becomes irrelevant when variance is zero.</p><p>B is incorrect for the same reason. The zero-variance property makes the utility identical across all investor types.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Gemini",
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "The capital allocation line (CAL) is most accurately described as the line that represents:",
+    "options": {
+      "A": "All portfolios that combine a risk-free asset with a risky asset",
+      "B": "Only portfolios of risky assets",
+      "C": "Only the risk-free asset"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: capital allocation line</h3><p><strong>A is correct.</strong> The capital allocation line represents portfolios available to an investor by combining a risk-free asset with a risky asset (or portfolio of risky assets). It is a straight line starting from the risk-free rate on the y-axis, with each point representing a different allocation between the risk-free asset and the risky portfolio.</p><p>B is incorrect because the CAL specifically includes the risk-free asset as its starting point. A line representing only risky portfolios would describe the efficient frontier, not the CAL.</p><p>C is incorrect because the CAL extends from the risk-free asset through the risky portfolio, encompassing many possible portfolio combinations, not just the risk-free asset alone.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Grok",
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "The slope of the capital allocation line is most accurately referred to as the:",
+    "options": {
+      "A": "Risk-free rate",
+      "B": "Market price of risk",
+      "C": "Portfolio variance"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: slope of the CAL</h3><p><strong>B is correct.</strong> The slope of the capital allocation line equals $\\frac{E(R_i) - R_f}{\\sigma_i}$, which represents the additional return required for every increment in risk. The CFA Curriculum refers to this slope as the market price of risk.</p><p>A is incorrect because the risk-free rate is the y-intercept of the capital allocation line, not its slope.</p><p>C is incorrect because portfolio variance is a measure of risk for a specific portfolio, not the slope of the CAL.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "An investor's optimal portfolio is most likely found at the point where:",
+    "options": {
+      "A": "The indifference curve is tangent to the capital allocation line",
+      "B": "The capital allocation line intersects the efficient frontier at two points",
+      "C": "The indifference curve crosses the capital allocation line at two points"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: optimal portfolio selection</h3><p><strong>A is correct.</strong> The optimal portfolio for an investor is at the tangency point between the investor's indifference curve and the capital allocation line. At this point, the investor achieves the highest possible utility from the set of feasible portfolios on the CAL.</p><p>B is incorrect because the CAL is tangent to the efficient frontier at one point (the optimal risky portfolio), not intersecting it at two points. This tangency identifies the optimal risky portfolio, not the individual investor's optimal portfolio.</p><p>C is incorrect because if an indifference curve crosses the CAL at two points, it represents a lower utility curve. The investor can move to a higher utility indifference curve that is tangent to the CAL.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Gemini",
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "According to the two-fund separation theorem, all investors will most likely hold a combination of:",
+    "options": {
+      "A": "Two risky portfolios",
+      "B": "A risk-free asset and the optimal risky portfolio",
+      "C": "A risk-free asset and the global minimum-variance portfolio"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: two-fund separation theorem</h3><p><strong>B is correct.</strong> The two-fund separation theorem states that all investors, regardless of taste, risk preferences, and initial wealth, will hold a combination of two funds: a risk-free asset and the optimal risky portfolio. Investor preferences only determine the allocation between these two funds.</p><p>A is incorrect because the theorem specifies one of the two funds as the risk-free asset, not two risky portfolios.</p><p>C is incorrect because investors combine the risk-free asset with the optimal risky portfolio (the tangency portfolio on the efficient frontier), not the global minimum-variance portfolio.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Grok",
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "A highly risk-averse investor's optimal portfolio on the capital allocation line will most likely be located:",
+    "options": {
+      "A": "Close to the risk-free asset on the y-axis",
+      "B": "At the optimal risky portfolio",
+      "C": "Beyond the optimal risky portfolio using leverage"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: investor preferences along the CAL</h3><p><strong>A is correct.</strong> A highly risk-averse investor may invest a large proportion, even 100%, of assets in the risk-free asset. The optimal portfolio for such an investor will be located close to the y-axis on the capital allocation line, reflecting minimal exposure to the risky portfolio.</p><p>B is incorrect because being fully invested at the optimal risky portfolio implies 0% allocation to the risk-free asset, which is more appropriate for a less risk-averse investor with high risk tolerance.</p><p>C is incorrect because leveraging (borrowing to invest more in the risky portfolio) reflects very high risk tolerance, the opposite of high risk aversion.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "The covariance between two asset returns can be expressed as:",
+    "options": {
+      "A": "$Cov(R_1, R_2) = \\rho_{12} \\sigma_1 \\sigma_2$",
+      "B": "$Cov(R_1, R_2) = \\rho_{12} \\sigma_1^2 \\sigma_2^2$",
+      "C": "$Cov(R_1, R_2) = \\sigma_1 + \\sigma_2$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: covariance formula</h3><p><strong>A is correct.</strong> Covariance between two asset returns equals the product of the correlation coefficient ($\\rho_{12}$) and the standard deviations of the two assets ($\\sigma_1$ and $\\sigma_2$). This relationship, $Cov(R_1, R_2) = \\rho_{12}\\sigma_1\\sigma_2$, is explicitly stated in the CFA Curriculum.</p><p>B is incorrect because the formula uses standard deviations ($\\sigma_1, \\sigma_2$), not variances ($\\sigma_1^2, \\sigma_2^2$). Using variances would overstate the covariance.</p><p>C is incorrect because covariance is a product relationship involving correlation and standard deviations, not a simple sum of standard deviations.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Gemini",
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "The correlation coefficient between two assets is most likely bounded between:",
+    "options": {
+      "A": "0 and +1",
+      "B": "-1 and +1",
+      "C": "-infinity and +infinity"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: correlation coefficient range</h3><p><strong>B is correct.</strong> The correlation coefficient ($\\rho_{12}$) can be positive or negative and ranges from -1 to +1. A value of +1 indicates perfectly positive correlation, -1 indicates perfectly negative correlation, and 0 indicates no linear relationship.</p><p>A is incorrect because correlation can be negative. Assets that move in opposite directions have negative correlation, which is valuable for diversification.</p><p>C is incorrect because unlike covariance, which is unbounded, correlation is specifically bounded between -1 and +1, making it easier to interpret.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Grok",
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "The return of a two-asset portfolio is most accurately described as:",
+    "options": {
+      "A": "A weighted average of the individual asset returns",
+      "B": "The product of the individual asset returns",
+      "C": "The sum of the individual asset variances"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: portfolio return calculation</h3><p><strong>A is correct.</strong> The portfolio return is a weighted average of the returns of the individual assets: $R_p = w_1 R_1 + w_2 R_2$. If Asset 1 has a return of 20% and constitutes 25% of the portfolio, its contribution to the portfolio return is 5% (= 25% × 20%).</p><p>B is incorrect because portfolio return is calculated as a weighted sum, not a product of individual returns.</p><p>C is incorrect because the sum of variances relates to risk calculations, not return calculations. Returns and variances are fundamentally different measures.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "If Asset 1 has a return of 10% with a weight of 60% and Asset 2 has a return of 20% with a weight of 40%, the portfolio return is closest to:",
+    "options": {
+      "A": "14%",
+      "B": "15%",
+      "C": "16%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: weighted average return</h3><p><strong>A is correct.</strong> Portfolio return = $w_1 R_1 + w_2 R_2$ = (0.60 × 10%) + (0.40 × 20%) = 6% + 8% = 14%. The portfolio return is simply the weighted average of the two asset returns.</p><p>B is incorrect. This would be the simple average of 10% and 20%, ignoring the unequal weights.</p><p>C is incorrect. This might result from reversing the weights, applying 40% to the 10% asset and 60% to the 20% asset: (0.40 × 10%) + (0.60 × 20%) = 16%.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Gemini",
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "Compared to the correlation coefficient, the covariance between two assets is most likely:",
+    "options": {
+      "A": "Easier to interpret because it is bounded",
+      "B": "More difficult to interpret because it is unbounded",
+      "C": "Always positive"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: covariance vs. correlation</h3><p><strong>B is correct.</strong> Although covariance is important in portfolio analysis, it is difficult to interpret because it is unbounded on both sides. The correlation coefficient, which is bounded between -1 and +1, provides similar information but in a more interpretable standardized form.</p><p>A is incorrect because it is the correlation coefficient that is bounded (between -1 and +1), not the covariance. Covariance is unbounded, making it harder to interpret.</p><p>C is incorrect because covariance can be negative when asset returns tend to move in opposite directions, just as correlation can be negative.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Grok",
+    "topic": "Portfolio Standard Deviation",
+    "stem": "The variance of a two-asset portfolio is given by the formula $\\sigma_P^2 = w_1^2\\sigma_1^2 + w_2^2\\sigma_2^2 + 2w_1w_2\\rho_{12}\\sigma_1\\sigma_2$. If the correlation ($\\rho_{12}$) equals +1, the portfolio standard deviation is most likely equal to:",
+    "options": {
+      "A": "The weighted average of the individual standard deviations",
+      "B": "Less than the weighted average of the individual standard deviations",
+      "C": "Zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: perfect positive correlation</h3><p><strong>A is correct.</strong> When $\\rho_{12}$ = +1, the variance formula simplifies to $(w_1\\sigma_1 + w_2\\sigma_2)^2$, so $\\sigma_P = w_1\\sigma_1 + w_2\\sigma_2$. The portfolio standard deviation is simply the weighted average of the individual standard deviations. There is no diversification benefit.</p><p>B is incorrect because portfolio risk is less than the weighted average only when the correlation is less than +1. At perfect positive correlation, no risk reduction occurs.</p><p>C is incorrect because portfolio risk is zero only when correlation is -1 and the weights are chosen appropriately. With correlation of +1, risk cannot be eliminated.</p>"
+  },
+  {
+    "id": 22,
+    "model": "ChatGPT",
+    "topic": "Portfolio Standard Deviation",
+    "stem": "Two stocks each have a standard deviation of 20% and equal portfolio weights of 50%. If their correlation is 0, the portfolio standard deviation is closest to:",
+    "options": {
+      "A": "10%",
+      "B": "14%",
+      "C": "20%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: portfolio risk with zero correlation</h3><p><strong>B is correct.</strong> $\\sigma_P^2 = (0.5^2 \\times 0.2^2) + (0.5^2 \\times 0.2^2) + (2 \\times 0.5 \\times 0.5 \\times 0.2 \\times 0.2 \\times 0) = 0.01 + 0.01 + 0 = 0.02$. $\\sigma_P = \\sqrt{0.02} \\approx 0.1414 = 14\\%$. The zero correlation eliminates the covariance term, reducing portfolio risk below the weighted average.</p><p>A is incorrect. A standard deviation of 10% would require negative correlation between the assets, not zero correlation.</p><p>C is incorrect because 20% would be the portfolio standard deviation only if the correlation were +1, meaning no diversification benefit at all.</p>"
+  },
+  {
+    "id": 23,
+    "model": "Gemini",
+    "topic": "Portfolio Standard Deviation",
+    "stem": "Two stocks each have a standard deviation of 20% and equal weights of 50%. If their correlation is -1, the portfolio standard deviation is closest to:",
+    "options": {
+      "A": "0%",
+      "B": "14%",
+      "C": "20%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: perfect negative correlation</h3><p><strong>A is correct.</strong> $\\sigma_P^2 = (0.5^2 \\times 0.2^2) + (0.5^2 \\times 0.2^2) + (2 \\times 0.5 \\times 0.5 \\times 0.2 \\times 0.2 \\times -1) = 0.01 + 0.01 - 0.02 = 0$. $\\sigma_P = 0\\%$. With perfect negative correlation and equal weights for assets with equal risk, the portfolio risk is completely eliminated.</p><p>B is incorrect because 14% is the portfolio standard deviation when correlation is 0, not -1.</p><p>C is incorrect because 20% is the portfolio standard deviation when correlation is +1. With correlation of -1, the assets perfectly offset each other.</p>"
+  },
+  {
+    "id": 24,
+    "model": "Grok",
+    "topic": "Portfolio Standard Deviation",
+    "stem": "As the number of assets in an equally weighted portfolio increases, portfolio variance most likely approaches:",
+    "options": {
+      "A": "Zero",
+      "B": "The average variance of the individual assets",
+      "C": "The average covariance among the assets"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: portfolio variance with many assets</h3><p><strong>C is correct.</strong> For an equally weighted portfolio, portfolio variance equals $\\frac{\\bar{\\sigma}^2}{N} + \\frac{(N-1)}{N}\\overline{Cov}$. As N becomes large, the first term approaches zero and the second term approaches the average covariance. Thus, covariance among assets accounts for almost all of the portfolio's risk in large portfolios.</p><p>A is incorrect because portfolio variance only approaches zero if the average covariance is also zero, which means assets are uncorrelated. In practice, most assets have positive covariance.</p><p>B is incorrect because the average variance term ($\\bar{\\sigma}^2/N$) diminishes as N increases, so individual asset variance becomes negligible in a large portfolio.</p>"
+  },
+  {
+    "id": 25,
+    "model": "ChatGPT",
+    "topic": "Portfolio Standard Deviation",
+    "stem": "The standard deviation of a portfolio of risky assets is most likely equal to the weighted average of the individual assets' standard deviations when the correlation between all assets is:",
+    "options": {
+      "A": "-1",
+      "B": "0",
+      "C": "+1"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: when portfolio risk equals weighted average risk</h3><p><strong>C is correct.</strong> When all assets are perfectly positively correlated ($\\rho = +1$), the portfolio standard deviation equals the weighted average of the individual standard deviations: $\\sigma_P = w_1\\sigma_1 + w_2\\sigma_2$. No diversification benefit exists.</p><p>A is incorrect because with $\\rho = -1$, portfolio risk can be reduced to zero with appropriate weights, which is far below the weighted average.</p><p>B is incorrect because with $\\rho = 0$, the cross-product term in the variance formula disappears, resulting in portfolio risk below the weighted average.</p>"
+  },
+  {
+    "id": 26,
+    "model": "Gemini",
+    "topic": "Diversification and Less-Than-Perfect Correlation",
+    "stem": "Diversification most likely reduces portfolio risk when the correlation between assets is:",
+    "options": {
+      "A": "Equal to +1",
+      "B": "Less than +1",
+      "C": "Equal to 0 only"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: correlation and diversification</h3><p><strong>B is correct.</strong> Diversification benefits arise whenever the correlation between assets is less than +1. When $\\rho < +1$, the portfolio standard deviation is less than the weighted average of the individual standard deviations, meaning risk has been reduced without proportionally reducing return.</p><p>A is incorrect because when correlation equals +1, portfolio risk is simply the weighted average of asset risks. No diversification benefit occurs because the assets move in perfect lockstep.</p><p>C is incorrect because diversification benefits occur at any correlation below +1, not just at zero. Even moderately positive correlations (e.g., 0.5) provide some risk reduction.</p>"
+  },
+  {
+    "id": 27,
+    "model": "Grok",
+    "topic": "Diversification and Less-Than-Perfect Correlation",
+    "stem": "A portfolio can be made completely risk-free by combining two assets when their correlation is:",
+    "options": {
+      "A": "+1",
+      "B": "0",
+      "C": "-1"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: eliminating portfolio risk</h3><p><strong>C is correct.</strong> When two asset returns are perfectly negatively correlated ($\\rho = -1$), the portfolio can be made risk-free with the appropriate combination of weights. The assets move in exactly opposite directions, so gains in one perfectly offset losses in the other.</p><p>A is incorrect because with $\\rho = +1$, no risk reduction occurs at all. Portfolio risk equals the weighted average of individual risks.</p><p>B is incorrect because while $\\rho = 0$ does reduce portfolio risk below the weighted average, it does not eliminate risk entirely. The variance terms for each asset still contribute to portfolio risk.</p>"
+  },
+  {
+    "id": 28,
+    "model": "ChatGPT",
+    "topic": "Diversification and Less-Than-Perfect Correlation",
+    "stem": "Including international securities in a domestic portfolio is most likely to reduce portfolio risk because international and domestic assets tend to have:",
+    "options": {
+      "A": "Correlations less than +1",
+      "B": "Identical return distributions",
+      "C": "Correlations equal to +1"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: international diversification</h3><p><strong>A is correct.</strong> Country returns are not likely to be highly correlated because countries differ in industry focus, economic policy, and political climate. Since international and domestic assets typically have correlations less than +1, combining them reduces portfolio risk through diversification.</p><p>B is incorrect because international and domestic assets do not have identical return distributions. They differ in expected returns, risks, and distributional characteristics.</p><p>C is incorrect because if the correlation were +1, no diversification benefit would exist. The benefit of international diversification comes precisely from imperfect correlation.</p>"
+  },
+  {
+    "id": 29,
+    "model": "Gemini",
+    "topic": "Diversification and Less-Than-Perfect Correlation",
+    "stem": "A correlation above 0.90 between two assets is most accurately described as providing:",
+    "options": {
+      "A": "No opportunity for diversification",
+      "B": "Limited opportunity for diversification",
+      "C": "Significant opportunity for diversification"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: high correlation and diversification</h3><p><strong>B is correct.</strong> The CFA Curriculum notes that a correlation above 0.90 is considered high because the assets do not provide much opportunity for diversification of risk. However, as long as correlation is below +1, some diversification benefit still exists, so the opportunity is limited rather than nonexistent.</p><p>A is incorrect because even at correlations slightly below +1, there is a small diversification benefit. Only a correlation of exactly +1 provides absolutely no opportunity for diversification.</p><p>C is incorrect because correlations below 0.50 are considered desirable for portfolio diversification. A correlation above 0.90 provides very limited benefit.</p>"
+  },
+  {
+    "id": 30,
+    "model": "Grok",
+    "topic": "Diversification and Less-Than-Perfect Correlation",
+    "stem": "Investing in one's own employer's stock is least likely a good diversification strategy because:",
+    "options": {
+      "A": "It concentrates both human capital and financial capital in one entity",
+      "B": "Employer stock always has negative expected returns",
+      "C": "Employer stock is perfectly correlated with the risk-free asset"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: diversification and employer stock</h3><p><strong>A is correct.</strong> The CFA Curriculum warns that employees are already heavily invested in their employer through human capital since their earnings depend on the employer's performance. Additional investment in employer stock further concentrates wealth in a single entity, reducing diversification.</p><p>B is incorrect because employer stock does not necessarily have negative expected returns. The issue is concentration of risk, not the direction of expected returns.</p><p>C is incorrect because employer stock is a risky asset and is not perfectly correlated with the risk-free asset. The problem is concentration, not correlation with risk-free assets.</p>"
+  },
+  {
+    "id": 31,
+    "model": "ChatGPT",
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "The minimum-variance frontier is best described as the set of portfolios that have the:",
+    "options": {
+      "A": "Highest return for each level of risk",
+      "B": "Lowest risk for each level of expected return",
+      "C": "Highest utility for all investors"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: minimum-variance frontier</h3><p><strong>B is correct.</strong> The minimum-variance frontier is the collection of portfolios that have the minimum variance (lowest risk) for each given level of expected return. No portfolio to the right of this frontier would be chosen by a risk-averse investor because it offers the same return with higher risk.</p><p>A is incorrect because the set of portfolios with the highest return for each level of risk describes the efficient frontier (the upper portion of the minimum-variance frontier), not the entire minimum-variance frontier.</p><p>C is incorrect because utility depends on individual investor preferences. The minimum-variance frontier defines feasible low-risk portfolios but does not determine which is optimal for any particular investor.</p>"
+  },
+  {
+    "id": 32,
+    "model": "Gemini",
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "The global minimum-variance portfolio is most accurately described as the portfolio with:",
+    "options": {
+      "A": "The highest expected return among all risky asset portfolios",
+      "B": "The lowest risk among all portfolios of risky assets",
+      "C": "Zero risk"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: global minimum-variance portfolio</h3><p><strong>B is correct.</strong> The global minimum-variance portfolio is the left-most point on the minimum-variance frontier. It has the minimum variance among all portfolios consisting of risky assets. An investor cannot hold a portfolio of risky assets that has less risk than this portfolio.</p><p>A is incorrect because the global minimum-variance portfolio does not have the highest return. It has the lowest risk, and portfolios with higher returns lie above it on the efficient frontier but with more risk.</p><p>C is incorrect because the global minimum-variance portfolio still has positive risk since it consists only of risky assets. Only the addition of a risk-free asset can reduce risk below this level.</p>"
+  },
+  {
+    "id": 33,
+    "model": "Grok",
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "The Markowitz efficient frontier consists of portfolios that lie:",
+    "options": {
+      "A": "Below the global minimum-variance portfolio on the minimum-variance frontier",
+      "B": "Above and to the right of the global minimum-variance portfolio on the minimum-variance frontier",
+      "C": "On the capital allocation line only"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: efficient frontier</h3><p><strong>B is correct.</strong> The Markowitz efficient frontier is the curve that lies above and to the right of the global minimum-variance portfolio. It contains all portfolios of risky assets that rational, risk-averse investors will choose because these portfolios offer the maximum return for each level of risk.</p><p>A is incorrect because portfolios below the global minimum-variance portfolio are inefficient. For each such portfolio, there exists a portfolio on the upper portion with the same risk but higher return.</p><p>C is incorrect because the efficient frontier consists only of risky portfolios. The capital allocation line is a separate concept that combines the risk-free asset with the optimal risky portfolio.</p>"
+  },
+  {
+    "id": 34,
+    "model": "ChatGPT",
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "Adding a new asset class that is not perfectly correlated with existing assets will most likely cause the investment opportunity set to:",
+    "options": {
+      "A": "Shift to the right",
+      "B": "Expand to the northwest",
+      "C": "Remain unchanged"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: expanding the opportunity set</h3><p><strong>B is correct.</strong> As long as a new asset class is not perfectly correlated with the existing asset classes, the investment opportunity set will expand further to the northwest, providing a superior risk-return trade-off. This means investors can achieve higher returns for the same risk or lower risk for the same return.</p><p>A is incorrect because shifting to the right implies higher risk without benefit, which contradicts the effect of adding imperfectly correlated assets that improve diversification.</p><p>C is incorrect because the opportunity set expands whenever a new imperfectly correlated asset class is added. Only a perfectly correlated asset would fail to improve the frontier.</p>"
+  },
+  {
+    "id": 35,
+    "model": "Gemini",
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "On the efficient frontier, as an investor moves from left to right, the incremental return for each additional unit of risk most likely:",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Remains constant"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: slope of the efficient frontier</h3><p><strong>B is correct.</strong> The CFA Curriculum notes that the slope of the efficient frontier decreases as one moves from the global minimum-variance portfolio to the right. The increase in return with every unit increase in risk keeps decreasing, meaning investors obtain diminishing increases in returns as they assume more risk.</p><p>A is incorrect because the incremental return per unit of risk decreases, not increases. The efficient frontier becomes flatter as risk increases.</p><p>C is incorrect because the slope is not constant. The efficient frontier is a curve, not a straight line, and the risk-return trade-off becomes less favorable at higher risk levels.</p>"
+  }
+]

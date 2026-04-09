@@ -33,7 +33,11 @@
       "Bash(rg --files /home/karma/CFAPractice/mcq/quiz/AI/PDF/)",
       "Bash(rg --files /home/karma/CFAPractice/ --glob \"*.pdf\")",
       "Bash(ls -lah \"/home/karma/CFAPractice/mcq/quiz/AI/\"*\"Yield and Yield Spread\"*)",
-      "Bash(echo \"EXIT:$?\")"
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(pdftotext -v)",
+      "Bash(pdfinfo \"/home/karma/CFAPractice/mcq/quiz/AI/PDF/CFA L1 B9 PORTFOLIO MANAGEMENT.pdf\")",
+      "Bash(pdftotext:*)",
+      "Bash(wc:*)"
     ]
   }
 }
