@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "Consider the following statements about major US asset classes based on historical data (1926–2017) as described in the CFA Curriculum:\n\nI. Small company stocks had both higher annualized returns and higher risk than large company stocks.\nII. Long-term government bonds had lower total risk than long-term corporate bonds.\nIII. Treasury bills never recorded a negative return in any single decade.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: historical risk-return characteristics of US asset classes</h3><p><strong>B is correct.</strong> According to the CFA Curriculum, small company stocks had an overall annual return of 12.1% versus 10.2% for large company stocks, with risk of 31.7% versus 19.8%, making Statement I correct. Statement II is incorrect because the CFA Curriculum explicitly notes that long-term government bonds had higher total risk (9.9%) than long-term corporate bonds (8.3%) during 1926–2017, which was uncharacteristic. Statement III is correct because Treasury bills did not earn a negative return in any decade shown in the data. Therefore, two statements (I and III) are correct.</p><p>Option A is incorrect because it undercounts: both Statements I and III are supported by the historical data in the CFA Curriculum.</p><p>Option C is incorrect because Statement II reverses the actual relationship — government bonds had higher, not lower, total risk than corporate bonds over this period.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "Consider the following statements about risk aversion and investor behavior as described in the CFA Curriculum:\n\nI. A risk-averse investor's indifference curves are upward sloping and convex, reflecting diminishing marginal utility of return.\nII. For a risk-neutral investor, the risk aversion coefficient in the utility function $U = E(r) - \\frac{1}{2}A\\sigma^2$ equals zero.\nIII. A risk-free asset generates different utility values for investors with different levels of risk aversion.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: risk aversion, utility theory, and indifference curves</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum states that indifference curves for risk-averse investors run from southwest to northeast (upward sloping) and are convex because of diminishing marginal utility of return — as risk increases, an investor needs greater return to compensate at an increasing rate. Statement II is correct: the CFA Curriculum explicitly states that the risk aversion coefficient for a risk-neutral investor is 0, meaning changes in risk do not affect utility. Statement III is incorrect: the CFA Curriculum notes that a risk-free asset ($\\sigma^2 = 0$) generates the same utility for all individuals, because the risk penalty term vanishes regardless of the value of A. Therefore, two statements (I and II) are correct.</p><p>Option A is incorrect because both Statements I and II are directly supported by the CFA Curriculum's discussion of utility theory.</p><p>Option C is incorrect because Statement III contradicts the CFA Curriculum — when variance is zero, the utility simply equals E(r), which is identical for all investors regardless of risk aversion.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Optimal Portfolio Selection and the Capital Allocation Line",
+    "stem": "Consider the following statements about the capital allocation line (CAL) and optimal portfolio selection as described in the CFA Curriculum:\n\nI. The slope of the capital allocation line equals $\\frac{E(R_i) - R_f}{\\sigma_i}$ and is sometimes referred to as the market price of risk.\nII. The two-fund separation theorem states that all investors, regardless of risk preferences, will hold a combination of the risk-free asset and the same optimal risky portfolio.\nIII. A more risk-averse investor's optimal portfolio on the CAL will lie to the right of a less risk-averse investor's optimal portfolio.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: capital allocation line and two-fund separation</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum derives the CAL equation and states its slope is $\\frac{E(R_i) - R_f}{\\sigma_i}$, which represents the additional required return for every increment in risk, sometimes called the market price of risk. Statement II is correct: the CFA Curriculum states the two-fund separation theorem holds that all investors regardless of taste, risk preferences, and initial wealth will hold a combination of the risk-free asset and the optimal portfolio of risky assets. Statement III is incorrect: the CFA Curriculum shows (via the example of Kelly with A=2 and Jane with A=4) that a more risk-averse investor's optimal portfolio lies to the left (lower risk, lower return) on the CAL, not to the right. Therefore, two statements (I and II) are correct.</p><p>Option A is incorrect because both the CAL slope definition and the two-fund separation theorem are explicitly stated in the CFA Curriculum.</p><p>Option C is incorrect because Statement III reverses the relationship — higher risk aversion leads to an optimal portfolio with less risk (further left on the CAL), not more risk.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "Consider the following statements about calculating and interpreting return statistics as described in the CFA Curriculum:\n\nI. The geometric mean return is never greater than the arithmetic mean return.\nII. Covariance between two asset returns can be expressed as $Cov(R_i, R_j) = \\rho_{ij} \\sigma_i \\sigma_j$, and is bounded between −1 and +1.\nIII. The portfolio return for a two-asset portfolio is a weighted average of the individual asset returns, where the weights must sum to one.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: return statistics and covariance properties</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum explicitly states that the geometric mean is never greater than the arithmetic mean. Statement II is incorrect: while the formula $Cov(R_i, R_j) = \\rho_{ij} \\sigma_i \\sigma_j$ is correct, it is the correlation coefficient ($\\rho$) that is bounded between −1 and +1, not covariance. The CFA Curriculum states that covariance is unbounded on both sides and difficult to interpret for this reason. Statement III is correct: the CFA Curriculum provides $R_p = w_1 R_1 + (1 - w_1) R_2$ and notes that weights must account for 100% of the investment. Therefore, two statements (I and III) are correct.</p><p>Option A is incorrect because both the geometric-arithmetic mean relationship and the weighted average return formula are directly stated in the CFA Curriculum.</p><p>Option C is incorrect because Statement II conflates the boundedness of correlation with covariance — covariance is unbounded, which is precisely why correlation is preferred for interpretation.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Portfolio Standard Deviation",
+    "stem": "Consider the following statements about portfolio standard deviation as described in the CFA Curriculum:\n\nI. For a portfolio of two risky assets, the portfolio variance includes a term $2w_1 w_2 \\rho_{12} \\sigma_1 \\sigma_2$, which captures the co-movement between the assets.\nII. When one asset in a two-asset portfolio is the risk-free asset, portfolio standard deviation simplifies to $(1 - w_1)\\sigma_i$, where $w_1$ is the weight of the risk-free asset.\nIII. For a portfolio of N equally weighted assets with identical variance and identical pairwise correlation, portfolio risk depends only on individual asset variance as N becomes very large.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: portfolio standard deviation components and diversification</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum derives the two-asset portfolio variance as $\\sigma_P^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2w_1 w_2 \\rho_{12} \\sigma_1 \\sigma_2$, where the third term captures co-movement. Statement II is correct: the CFA Curriculum shows that because $\\sigma_f = 0$ for the risk-free asset, the first and third terms vanish, leaving $\\sigma_p = (1 - w_1)\\sigma_i$. Statement III is incorrect: the CFA Curriculum demonstrates that as N becomes large, the individual variance term becomes negligible and covariance (which depends on correlation) becomes the dominant factor in portfolio risk, not individual asset variance. Therefore, two statements (I and II) are correct.</p><p>Option A is incorrect because both the two-asset variance formula and the risk-free asset simplification are explicitly derived in the CFA Curriculum.</p><p>Option C is incorrect because Statement III reverses the key insight of diversification — as N grows, it is the average covariance (correlation), not individual variance, that determines portfolio risk.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Effect of Correlation on Portfolio Risk",
+    "stem": "Consider the following statements about the effect of correlation on portfolio risk as described in the CFA Curriculum:\n\nI. When the correlation between two assets is exactly +1, the portfolio standard deviation equals the weighted average of the individual standard deviations, providing no diversification benefit.\nII. When two assets with equal risk and equal weights have a correlation of 0, the portfolio risk is reduced to approximately 70% of each individual asset's risk.\nIII. Adding an asset with a negative expected return to a portfolio is never beneficial because it reduces the portfolio's expected return.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: correlation, diversification benefit, and negative-return assets</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum derives that when $\\rho_{12} = +1$, $\\sigma_p = w_1 \\sigma_1 + w_2 \\sigma_2$, which is a simple weighted average with no diversification benefit. Statement II is correct: the CFA Curriculum's Example 4 shows that with equal weights (50/50), equal risk (20% each), and $\\rho = 0$, portfolio risk drops from 20% to 14%, which is 70% of the individual risk. Statement III is incorrect: the CFA Curriculum explicitly discusses insurance and gold as examples of assets that may have negative expected returns but are valuable because their negative correlation with portfolio assets significantly reduces overall portfolio risk. Therefore, two statements (I and II) are correct.</p><p>Option A is incorrect because both the perfect correlation result and the zero-correlation numerical example are directly demonstrated in the CFA Curriculum.</p><p>Option C is incorrect because Statement III contradicts the CFA Curriculum's discussion of insurance and put options — assets with negative returns can be beneficial if they significantly reduce portfolio risk through negative correlation.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "Consider the following statements about the minimum-variance frontier and efficient frontier as described in the CFA Curriculum:\n\nI. The efficient frontier of risky assets is the portion of the minimum-variance frontier that lies above and to the right of the global minimum-variance portfolio.\nII. As an investor moves along the efficient frontier from the global minimum-variance portfolio toward higher-return portfolios, each additional unit of risk provides a decreasing increment in return.\nIII. Adding a new asset class that is not perfectly correlated with existing assets causes the investment opportunity set to shift inward toward the origin.\n\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: efficient frontier properties and the effect of adding asset classes</h3><p><strong>B is correct.</strong> Statement I is correct: the CFA Curriculum states that the curve lying above and to the right of the global minimum-variance portfolio is the Markowitz efficient frontier, containing all portfolios of risky assets that rational, risk-averse investors will choose. Statement II is correct: the CFA Curriculum explicitly notes that the slope of the efficient frontier decreases as one moves from the global minimum-variance portfolio rightward — investors obtain decreasing increases in returns as they assume more risk. Statement III is incorrect: the CFA Curriculum states that adding a new asset class not perfectly correlated with existing assets causes the investment opportunity set to expand outward to the northwest, providing a superior risk-return trade-off, not shift inward. Therefore, two statements (I and II) are correct.</p><p>Option A is incorrect because both the definition of the efficient frontier and its decreasing slope property are explicitly described in the CFA Curriculum.</p><p>Option C is incorrect because Statement III reverses the direction — new imperfectly correlated asset classes expand the opportunity set outward (northwest), they do not contract it inward.</p>"
+  }
+]

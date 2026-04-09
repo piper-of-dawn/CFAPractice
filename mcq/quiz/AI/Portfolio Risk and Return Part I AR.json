@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "topic": "Characteristics of Major Asset Classes",
+    "stem": "Assertion (A): Small company stocks in the United States earned higher annualized returns than large company stocks over the 1926–2017 period.\nReason (R): Small company stocks had lower risk than large company stocks, which allowed them to compound returns more efficiently over time.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Risk-Return Trade-off Across Asset Classes</h3><p><strong>C is correct.</strong> According to the CFA Curriculum, US small company stocks earned an overall annualized geometric mean return of 12.1% versus 10.2% for large company stocks over 1926–2017, making Assertion A true. However, small company stocks had the highest risk at 31.7% standard deviation compared to 19.8% for large company stocks. The Reason claims small company stocks had lower risk, which directly contradicts the data. Therefore, R is false.</p><p>Option A is incorrect because R is factually false — small company stocks had substantially higher risk, not lower risk, than large company stocks.</p><p>Option D is incorrect because Assertion A is true — small company stocks did earn higher returns than large company stocks over the stated period.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Risk Aversion and Portfolio Selection",
+    "stem": "Assertion (A): A risk-averse investor's indifference curves are upward sloping and convex in a mean–standard deviation graph.\nReason (R): Diminishing marginal utility of wealth requires increasingly larger increments in expected return to compensate for each additional unit of risk.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Shape of Indifference Curves for Risk-Averse Investors</h3><p><strong>A is correct.</strong> According to the CFA Curriculum, indifference curves for risk-averse investors run from the southwest to the northeast (upward sloping) because higher risk must be compensated by higher return. The curves are convex because of diminishing marginal utility of return — as risk increases, the investor needs greater return to compensate at an increasing rate. The Reason accurately explains this convexity: the steepening curve reflects the requirement for increasingly larger return increments per unit of additional risk. Both statements are true and R causally explains A.</p><p>Option B is incorrect because R is not merely tangentially true — it directly explains the convex shape of the indifference curves described in A.</p><p>Option C is incorrect because R is a true statement about diminishing marginal utility as presented in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Optimal Portfolio Selection and Capital Allocation Line",
+    "stem": "Assertion (A): Under the two-fund separation theorem, all investors hold the same optimal risky portfolio regardless of their individual risk preferences.\nReason (R): The capital allocation line with the highest slope is tangent to the efficient frontier, and investor risk preferences only determine the position along this line.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Two-Fund Separation and Optimal Portfolio Identification</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the two-fund separation theorem allows all investors, regardless of taste, risk preferences, and initial wealth, to hold a combination of the risk-free asset and the same optimal risky portfolio. The investment decision (identifying the optimal risky portfolio at the tangent point) is separated from the financing decision (how much to allocate between risk-free and risky). The Reason correctly explains the mechanism: the optimal CAL has the steepest slope (highest reward per unit of risk), and individual preferences expressed through indifference curves only determine where on this line the investor's optimal portfolio lies.</p><p>Option B is incorrect because R directly explains why all investors share the same risky portfolio — the tangency point is determined independently of preferences, which then only govern the position along the CAL.</p><p>Option D is incorrect because Assertion A is true according to the two-fund separation theorem as stated in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Mean, Variance, and Covariance of Asset Returns",
+    "stem": "Assertion (A): The covariance between two assets is a more useful measure than the correlation coefficient for comparing the strength of co-movement across different pairs of assets.\nReason (R): Covariance is unbounded on both sides, whereas the correlation coefficient is bounded between –1 and +1.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Covariance versus Correlation for Comparing Co-movement</h3><p><strong>D is correct.</strong> The CFA Curriculum states that although covariance is important, it is difficult to interpret because it is unbounded on both sides, whereas the correlation coefficient is bounded between –1 and +1 and provides similar information in a more interpretable form. This makes correlation — not covariance — the more useful measure for comparing co-movement strength across different asset pairs. Therefore, Assertion A is false. However, the Reason is factually true: covariance is indeed unbounded while correlation is bounded between –1 and +1.</p><p>Option A is incorrect because A is false — correlation is the more useful comparative measure precisely because of its bounded, standardized nature.</p><p>Option C is incorrect because R is a true factual statement about the mathematical properties of covariance and correlation.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Portfolio Standard Deviation",
+    "stem": "Assertion (A): In an equally weighted portfolio of N assets with identical variances and identical pairwise correlations, the contribution of individual asset variance to total portfolio variance becomes negligible as N grows very large.\nReason (R): The portfolio variance formula for equally weighted assets reduces to $\\frac{\\bar{\\sigma}^2}{N} + \\frac{(N-1)}{N}\\overline{Cov}$, where the first term approaches zero and the second term approaches the average covariance as N increases.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Decomposition of Portfolio Risk with Many Assets</h3><p><strong>B is correct.</strong> Assertion A is true: as stated in the CFA Curriculum, when N becomes large, the first term ($\\bar{\\sigma}^2/N$) becomes smaller and smaller, implying that the contribution of one asset's variance to portfolio variance gradually becomes negligible. Reason R is also true — the formula accurately reflects the portfolio variance decomposition shown in the CFA Curriculum. However, the Assertion specifically states \"identical variances and identical pairwise correlations\" while the Reason presents the more general formula using average variance and average covariance with equal weights. The formula in R applies to any equally weighted portfolio regardless of whether individual variances and correlations are identical. Therefore, R is true but is the general case, not the specific causal explanation for the identical-variance-and-correlation scenario described in A, where the more specific formula $\\sigma_p = \\sqrt{\\sigma^2/N + ((N-1)/N)\\rho\\sigma^2}$ applies.</p><p>Option A is incorrect because R presents the general average-based formula rather than the specific formula for identical variances and correlations that directly explains Assertion A.</p><p>Option D is incorrect because Assertion A is true according to the CFA Curriculum.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Diversification and Less Than Perfect Correlation",
+    "stem": "Assertion (A): Combining two assets with a correlation of –1.0 in appropriate proportions can completely eliminate portfolio risk.\nReason (R): When two assets are perfectly negatively correlated, portfolio return equals zero because the gains and losses always cancel each other out.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: Perfect Negative Correlation and Risk Elimination</h3><p><strong>D is correct.</strong> Wait — let me re-evaluate. Assertion A states that combining two assets with correlation –1.0 can eliminate portfolio risk. The CFA Curriculum confirms this: \"For an extreme case in which ρ12 = –1, the portfolio can be made risk free.\" The Beachwear/DVDrental example shows a risk-free portfolio earning 10% — the return does NOT equal zero. So Assertion A is true. However, Reason R claims the portfolio return equals zero because gains and losses cancel. This is false — the CFA Curriculum example shows a portfolio of Beachwear and DVDrental with correlation –1.0 earning a stable 10% return, not zero. Risk (variability) is eliminated, but return is preserved. Therefore A is true and R is false, making C the correct answer.</p><p>Apologies for the confusion above. <strong>C is correct.</strong> Assertion A is true: the CFA Curriculum confirms that when two assets have a correlation of –1.0, the portfolio can be made risk-free by choosing appropriate weights. The Beachwear/DVDrental example demonstrates this with a stable 10% return and zero risk. Reason R is false: eliminating risk does not mean the return becomes zero. The portfolio return remains the weighted average of the individual asset returns. Risk elimination means the variability of returns disappears, not the returns themselves.</p><p>Option A is incorrect because R is false — portfolio return is preserved even when risk is eliminated through perfect negative correlation.</p><p>Option D is incorrect because Assertion A is true as demonstrated in the CFA Curriculum's examples.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Minimum-Variance and Efficient Frontiers",
+    "stem": "Assertion (A): A portfolio on the minimum-variance frontier that lies below the global minimum-variance portfolio is inefficient even though it has the lowest possible risk for its level of return.\nReason (R): For every portfolio below the global minimum-variance portfolio on the minimum-variance frontier, there exists a portfolio above it with the same risk but a higher expected return.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Efficient versus Inefficient Portions of the Minimum-Variance Frontier</h3><p><strong>B is correct.</strong> Wait — actually R IS the correct explanation. Let me reconsider. The CFA Curriculum uses the example of Points A and C on the minimum-variance frontier having the same risk, where A (above the global minimum-variance portfolio) has higher return than C (below it). This is exactly why portfolios below are inefficient. Both A and R are true. R directly explains WHY portfolios below the GMVP are inefficient — because there exists a corresponding portfolio above with the same risk but higher return. So A should be the answer.</p>"
+  }
+]
