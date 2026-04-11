@@ -4,9 +4,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Wei supervises a five-person research team. She has established written compliance procedures, disseminates them in writing, trains the team quarterly, and samples written communications every month for review. Despite all of this, one analyst conceals a personal trade ahead of a report by using a relative's brokerage account, which Wei uncovers only months later during a routine audit. Did Wei most likely violate Standard IV(C)?",
     "options": {
-      "A": "She adopted reasonable procedures and implemented an effective compliance program, and the concealed violation was not reasonably detectable given those procedures, so this would remain consistent with Standard IV(C).",
-      "B": "The occurrence of any subordinate violation is itself proof that the supervisor's procedures were inadequate, so this would breach Standard IV(C).",
-      "C": "Supervisors are strictly liable for all subordinate misconduct regardless of the procedures they adopt, so this would breach Standard IV(C)."
+      "A": "Even though a subordinate still managed to violate the rules, she had already established written procedures, training, and periodic review, so a concealed violation that slipped through those efforts would remain consistent with Standard IV(C).",
+      "B": "Because a subordinate nevertheless managed to violate the rules, that outcome could still suggest the supervisor's procedures were not adequately designed for the actual risk, so this would breach Standard IV(C).",
+      "C": "Where misconduct occurs within a supervisor's team, responsibility can still attach if the compliance framework failed to prevent or detect the behavior in practice, so this would breach Standard IV(C)."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: reasonable procedures defense</h3><p><strong>A is correct.</strong> Handbook guidance states that a supervisor who has adopted reasonable procedures and taken steps to institute an effective compliance program may not be in violation of Standard IV(C) even if a violation occurs despite those efforts. Wei's documented procedures, training, and sampled communications reviews describe exactly that posture; the analyst's use of a relative's account to conceal the trade defeats ordinary detection.</p><p>B treats IV(C) as strict liability in practice. The standard is explicit that occurrence of a violation may indicate procedures are inadequate, but does not automatically make them so.</p><p>C is the purest overreach: it abandons the 'reasonable efforts' test the standard sets and converts it into unlimited vicarious responsibility.</p>"
@@ -28,9 +28,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Larsen heads a 120-person operations group. Because personally overseeing every employee is impracticable, he delegates day-to-day supervision to six team leads, instructs each in writing on the firm's compliance procedures and on specific methods for detecting and preventing violations, and reviews each team lead's monitoring logs monthly. Did Larsen most likely violate Standard IV(C)?",
     "options": {
-      "A": "Standard IV(C) obligations cannot be discharged through any form of delegation to subordinate supervisors, so this would breach Standard IV(C).",
-      "B": "He does not personally review the activities of every individual employee in the group, so this would breach Standard IV(C).",
-      "C": "Delegation to subordinate supervisors is permitted when accompanied by clear compliance instructions and ongoing review of the delegates' work, so this would remain consistent with Standard IV(C)."
+      "A": "Because supervisory responsibility remains personal, delegating day-to-day oversight to team leads could still leave Larsen short of his own Standard IV(C) obligations, so this would breach Standard IV(C).",
+      "B": "Given the size and risk of the operations group, not personally reviewing each employee's conduct could still be seen as too remote to satisfy Standard IV(C), so this would breach Standard IV(C).",
+      "C": "Even though he does not personally watch all 120 employees, Standard IV(C) permits delegation when it is paired with clear compliance instructions and ongoing review of the delegates' work, so this would remain consistent with Standard IV(C)."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: delegation with instruction and review</h3><p><strong>C is correct.</strong> Handbook guidance explicitly recognizes that members with oversight of large numbers of employees may delegate supervisory duties to subordinates, provided they instruct those subordinates on methods to promote compliance and oversee the discharge of those duties. Larsen's written instructions and monthly review of monitoring logs track this guidance directly.</p><p>A flatly forbids delegation. The standard's own guidance does the opposite: it contemplates delegation as a necessary mechanism for effective supervision at scale.</p><p>B requires personal evaluation of every employee, which Handbook guidance rejects as impracticable in large organizations and therefore not required.</p>"
@@ -52,9 +52,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Abara manages a small advisory team and has supervisory responsibility for day-to-day trading. Firm-wide compliance policies are set by senior management, and Abara has no authority to change them. She identifies that the firm's trade-allocation policy is materially inadequate and promptly submits a written memorandum to senior managers describing the deficiency and recommending specific corrective action. Senior management has not yet acted. Did Abara most likely violate Standard IV(C)?",
     "options": {
-      "A": "She retains supervisory responsibility and therefore bears liability for any deficiency regardless of the steps she has taken, so this would breach Standard IV(C).",
-      "B": "Standard IV(C) requires a supervisor lacking authority to modify firm-wide policies to bring the deficiency to senior managers' attention and recommend corrective action, which is what she has done, so this would remain consistent with Standard IV(C).",
-      "C": "Upon identifying the deficiency she was required to resign her supervisory role immediately, so this would breach Standard IV(C)."
+      "A": "Because the deficient policy continues to govern activity under her supervision, she could still be viewed as responsible for the ongoing weakness despite her escalation memo, so this would breach Standard IV(C).",
+      "B": "Even though the deficient policy remains in place and she cannot fix it herself, Standard IV(C) requires her to escalate the weakness to senior management and recommend corrective action, which she has done, so this would remain consistent with Standard IV(C).",
+      "C": "Once she concluded that the policy was materially inadequate, continuing in the role before the system was fixed could still be seen as inconsistent with Standard IV(C), so this would breach Standard IV(C)."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: supervisor without firm-wide authority</h3><p><strong>B is correct.</strong> Handbook guidance addresses this situation explicitly: a supervisor who lacks authority to establish or modify firm-wide compliance policies should work through the firm structure by bringing the inadequacy to senior managers and recommending corrective action. Abara has done exactly that.</p><p>A imposes strict liability regardless of the supervisor's actual authority, which the standard rejects.</p><p>C overstates the escalation requirement. Resignation (or declining the role) is reserved for cases in which the supervisor cannot meaningfully discharge her duties at all, not for ordinary deficiencies she has escalated and is pursuing corrective action on.</p>"
@@ -76,9 +76,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Okonkwo is offered a supervisory role over a newly launched derivatives desk. Before accepting, he reviews the firm's compliance infrastructure for that desk and concludes that it is so inadequate that he could not meaningfully discharge supervisory duties if he took the position. He declines the role and explains his reasons in a memo to senior management. Which statement is most accurate?",
     "options": {
-      "A": "When a member cannot discharge supervisory responsibility due to an absent or inadequate compliance system, Standard IV(C) permits the member to decline the role until reasonable procedures are in place, so this would remain consistent with Standard IV(C).",
-      "B": "Declining an offered supervisory role is itself a breach of the duty of loyalty to the employer, so this would breach Standard IV(C).",
-      "C": "A supervisor is expected to accept the role and then fix the compliance system from within, so this would breach Standard IV(C)."
+      "A": "Even though turning down a supervisory promotion may look disloyal, Standard IV(C) allows a member to decline the role when an inadequate compliance system would make proper supervision impossible, so this would remain consistent with Standard IV(C).",
+      "B": "Because the firm needed supervisory coverage for the new desk, declining the role rather than working to improve the controls from inside could still be viewed as a failure of responsibility, so this would breach Standard IV(C).",
+      "C": "After identifying control weaknesses, he could still be expected to accept the role and use that authority to strengthen the compliance system, so this would breach Standard IV(C)."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: the option to decline supervisory responsibility</h3><p><strong>A is correct.</strong> Handbook guidance explicitly provides that if a member clearly cannot discharge supervisory responsibilities because of the absence of a compliance system or because of an inadequate compliance system, the member should decline to accept supervisory responsibility until the firm adopts reasonable procedures. Okonkwo's decision mirrors the standard exactly.</p><p>B reframes the issue under Standard IV(A), but even there the duty of loyalty does not require accepting an unworkable supervisory role.</p><p>C reverses the Handbook's guidance, which prefers declining the role over accepting it with inadequate tools.</p>"
@@ -100,9 +100,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Alvarez, a supervisor, learns that a subordinate may have executed a mismarked trade. She immediately convenes an internal assessment, retrieves the relevant trade records, places the subordinate on restricted trading pending the outcome of the review, and reports the matter to the firm's compliance department. Did Alvarez most likely violate Standard IV(C)?",
     "options": {
-      "A": "Restricting the subordinate's trading is a premature sanction before any finding of misconduct, so this would breach Standard IV(C).",
-      "B": "She promptly initiated an assessment, placed reasonable interim limits on the alleged offender pending the outcome, and escalated the matter to compliance, so this would remain consistent with Standard IV(C).",
-      "C": "She should have deferred all action until the subordinate either confirmed or denied the allegation, so this would breach Standard IV(C)."
+      "A": "Because the allegation was not yet proved, placing trading restrictions immediately could still be viewed as an excessive response before the facts were established, so this would breach Standard IV(C).",
+      "B": "Even though she acted before proving the allegation, Standard IV(C) expects a prompt assessment, escalation, and interim limits to prevent repetition while the matter is investigated, so this would remain consistent with Standard IV(C).",
+      "C": "Before imposing interim limits, she could still be expected to gather the subordinate's explanation and verify the facts more fully, so this would breach Standard IV(C)."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: supervisor's response to a suspected violation</h3><p><strong>B is correct.</strong> Handbook guidance requires a supervisor who learns of a potential violation to promptly initiate an assessment of the wrongdoing, place limits on the alleged offender's activities pending the outcome, and escalate appropriately. Alvarez's response tracks these requirements precisely.</p><p>A reframes a mandated interim measure as an improper sanction. The standard specifically calls for restricting the alleged offender pending investigation, so restriction is not a premature penalty but a protective step.</p><p>C argues for deference to the subordinate's own statements, but the Handbook warns that relying on the employee's assurances is not enough and that active investigation is required.</p>"
@@ -124,9 +124,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Schmidt oversees a 400-person fixed-income division at a large bank. He cannot personally evaluate each employee's conduct on a continuing basis, so he delegates supervision through a documented hierarchy of desk heads and team leads, ensures each layer is trained on compliance methods, commissions periodic independent reviews of monitoring quality, and reviews escalated issues himself. Did Schmidt most likely violate Standard IV(C)?",
     "options": {
-      "A": "The standard requires a supervisor to personally verify the conduct of every employee within the organization, so this would breach Standard IV(C).",
-      "B": "Delegating supervision across multiple layers inherently dilutes accountability and therefore violates Standard IV(C) per se, so this would breach Standard IV(C).",
-      "C": "For large organizations Standard IV(C) contemplates delegation through a documented hierarchy supported by instruction, training, and periodic review, so this would remain consistent with Standard IV(C)."
+      "A": "At the scale of a 400-person division, relying primarily on reports and escalations rather than direct personal verification could still be viewed as too attenuated to satisfy Standard IV(C), so this would breach Standard IV(C).",
+      "B": "When supervision passes through multiple organizational layers, accountability can still become diluted enough to make the arrangement inadequate under Standard IV(C), so this would breach Standard IV(C).",
+      "C": "Even though he cannot personally monitor a 400-person division, Standard IV(C) contemplates delegation through a documented hierarchy supported by instruction, training, and periodic review, so this would remain consistent with Standard IV(C)."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: scaled supervision in large organizations</h3><p><strong>C is correct.</strong> Handbook guidance states that members with oversight responsibility for large numbers of employees may not be able to personally evaluate each one and may delegate supervisory duties, provided they instruct subordinates on compliance methods and oversee how those duties are carried out. Schmidt's documented hierarchy, training, independent reviews, and personal review of escalations all fit this framework.</p><p>A insists on personal evaluation of every employee, which the standard expressly does not require for large organizations.</p><p>B condemns multilayer delegation as inherently improper, which is the opposite of the Handbook's position.</p>"
@@ -148,8 +148,8 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Ng is head of equity research at a large firm. A trader in a wholly separate trading division, over whom Ng has no supervisory, managerial, or reporting authority, executes a series of illegal front-running trades. Ng becomes aware of the conduct only after the fact, through a market rumor. Is Ng most likely in violation of Standard IV(C)?",
     "options": {
-      "A": "Standard IV(C) applies only to persons subject to the member's supervision or authority, and the offending trader is subject to neither, so this would remain consistent with Standard IV(C).",
-      "B": "Any CFA charterholder who becomes aware of misconduct anywhere in the firm must treat it as a supervisory matter, so this would breach Standard IV(C).",
+      "A": "Even though she later hears about serious misconduct elsewhere in the firm, Standard IV(C) applies only to persons subject to her supervision or authority, and this trader is not, so this would remain consistent with Standard IV(C).",
+      "B": "Once she became aware of serious misconduct within the firm, she could still bear some supervisory-type responsibility to respond rather than treat it as outside her role, so this would breach Standard IV(C).",
       "C": "Awareness of the conduct converts her into a de facto supervisor of the trader under Standard IV(C), so this would breach Standard IV(C)."
     },
     "correct_answer": "A",
@@ -172,8 +172,8 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Bakshi, a compliance-focused supervisor, has implemented regular ethics and compliance training, issues quarterly compliance reminders, incorporates professional-conduct evaluations into each employee's annual performance review, and periodically updates the firm's written procedures in response to new risks. Did Bakshi most likely violate Standard IV(C)?",
     "options": {
-      "A": "Written procedures must be updated continuously rather than only periodically, so this would breach Standard IV(C).",
-      "B": "She is carrying out the post-implementation supervisory activities the Handbook expressly contemplates, including dissemination, periodic updates, education, reminders, and performance-review integration, so this would remain consistent with Standard IV(C).",
+      "A": "Because supervisory systems must stay closely aligned with current risks, periodic rather than continuous updates could still be viewed as insufficient under Standard IV(C), so this would breach Standard IV(C).",
+      "B": "Even though none of these steps guarantees that misconduct will never occur, they are exactly the post-implementation supervisory activities the Handbook contemplates, so this would remain consistent with Standard IV(C).",
       "C": "Incorporating professional conduct into performance reviews improperly blurs ethical and business evaluations, so this would breach Standard IV(C)."
     },
     "correct_answer": "B",
@@ -196,9 +196,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "After reviewing a recent industry enforcement matter involving a manipulation technique not previously seen at her firm, Harper drafts and rolls out new written procedures specifically targeted at detecting and preventing that technique, trains affected staff on them, and integrates them into the firm's monitoring program. No violation of that type has yet occurred at her firm. Which statement is most accurate?",
     "options": {
-      "A": "Standard IV(C) requires that compliance procedures be adjusted only after a violation has already occurred, so this would breach Standard IV(C).",
+      "A": "Because compliance revisions are often driven by demonstrated internal failures, changing procedures before any firm-specific violation has occurred could still be seen as premature under Standard IV(C), so this would breach Standard IV(C).",
       "B": "Adopting targeted procedures before a violation occurs signals that the supervisor believed misconduct was already imminent, so this would breach Standard IV(C).",
-      "C": "Effective compliance procedures should be in place prior to the occurrence of a violation and should anticipate the activities most likely to result in misconduct, so this would remain consistent with Standard IV(C)."
+      "C": "Even though no such violation has yet occurred at her firm, effective compliance procedures should be in place before misconduct happens and should anticipate the activities most likely to create it, so this would remain consistent with Standard IV(C)."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: anticipatory design of compliance procedures</h3><p><strong>C is correct.</strong> Handbook guidance states that compliance procedures must be in place prior to any legal or ethical violation and that, while they cannot anticipate everything, they should be designed to anticipate the activities most likely to result in misconduct. Harper is doing precisely this.</p><p>A inverts the standard. The Handbook explicitly calls for proactive procedures rather than post-incident adjustments.</p><p>B characterizes proactive supervision as an admission of wrongdoing. The standard treats anticipation as prudence, not as implication.</p>"
@@ -208,8 +208,8 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Moreau, a supervisor, has championed two complementary documents at her firm: a short, principle-based code of ethics written in plain language and addressed to all employees, and a separate, detailed compliance manual containing the specific policies and procedures through which the code is implemented. Which statement is most accurate?",
     "options": {
-      "A": "Standard IV(C) requires that codes of ethics and compliance procedures be consolidated into a single document, so this would breach Standard IV(C).",
-      "B": "A plain-language, principle-based code of ethics kept separate from detailed compliance procedures is the structure the Handbook describes as most effective, so this would remain consistent with Standard IV(C).",
+      "A": "Keeping ethics principles and compliance procedures in separate documents could still risk fragmentation and employee confusion, making the structure inadequate under Standard IV(C), so this would breach Standard IV(C).",
+      "B": "Even though two separate documents may look redundant, the Handbook treats a plain-language code of ethics and a separate detailed compliance manual as the more effective structure, so this would remain consistent with Standard IV(C).",
       "C": "Detailed compliance manuals are exclusively the responsibility of regulators rather than supervisors, so this would breach Standard IV(C)."
     },
     "correct_answer": "B",
@@ -220,8 +220,8 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Ikeda, head of the trading desk, is approached by a junior analyst who has noticed unusual pricing patterns in the firm's flagship fund. Rather than dismissing the concern, Ikeda takes detailed notes, escalates the matter in writing to the compliance department, requests a review of the relevant trades, and places temporary restrictions on related activity pending the outcome. Did Ikeda most likely violate Standard IV(C)?",
     "options": {
-      "A": "She took the subordinate's concern seriously, promptly escalated it for investigation, and placed appropriate interim limits on related activity pending the outcome, so this would remain consistent with Standard IV(C).",
-      "B": "Placing interim limits on activity based on an unproven allegation is itself an overreach, so this would breach Standard IV(C).",
+      "A": "Even though the concern came from a junior analyst and had not yet been proved, she escalated it promptly and imposed interim limits on related activity pending review, so this would remain consistent with Standard IV(C).",
+      "B": "Because the concern originated as an unverified report from a junior analyst, imposing interim restrictions immediately could still be viewed as overreacting before the facts were established, so this would breach Standard IV(C).",
       "C": "A supervisor must first complete the investigation before imposing any interim restriction, so this would breach Standard IV(C)."
     },
     "correct_answer": "A",
@@ -232,9 +232,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Alvim supervises a team of data engineers, none of whom are CFA charterholders or candidates. He ensures that they are trained on, and comply with, the firm's ethical and compliance policies, including rules on material nonpublic information they may encounter in their work. Which statement is most accurate?",
     "options": {
-      "A": "Standard IV(C) requires supervisors to apply its requirements only to employees who are themselves CFA charterholders or candidates, so this would breach Standard IV(C).",
+      "A": "Because the core ethical duties are framed around CFA Institute standards, extending full supervisory obligations to non-members could still be viewed as beyond Standard IV(C)'s intended reach, so this would breach Standard IV(C).",
       "B": "Extending compliance training to non-investment staff exceeds the scope of Standard IV(C), so this would breach Standard IV(C).",
-      "C": "Standard IV(C) applies to any investment professional who exercises control or influence over employees regardless of whether those employees are CFA members or candidates, so this would remain consistent with Standard IV(C)."
+      "C": "Even though the supervised employees are not themselves CFA members or candidates, Standard IV(C) still applies to anyone under an investment professional's control or influence, so this would remain consistent with Standard IV(C)."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: supervisory duty extends beyond CFA members</h3><p><strong>C is correct.</strong> Handbook guidance is explicit: any investment professional who has employees subject to her or his control or influence, whether or not those employees are CFA Institute members, charterholders, or candidates, exercises supervisory responsibility under Standard IV(C). Alvim is therefore required to do exactly what he is doing.</p><p>A limits the standard's reach to CFA members, which the Handbook specifically rejects.</p><p>B characterizes appropriate supervision of non-investment staff as overreach. In fact, it is what the standard requires.</p>"
@@ -244,9 +244,9 @@
     "topic": "Standard IV(C) - Responsibilities of Supervisors",
     "stem": "Costa has rolled out a performance-review process in which every employee in her group is evaluated not only on business metrics but also on a professional-conduct component weighted meaningfully alongside financial goals. She uses the framework to reinforce a culture of integrity and to ensure that compliance behavior influences promotion decisions. Which statement is most accurate?",
     "options": {
-      "A": "Mixing ethical and financial metrics in a single review process dilutes the objectivity of both assessments, so this would breach Standard IV(C).",
-      "B": "Incorporating a professional-conduct evaluation into an employee's performance review is expressly contemplated by the Handbook as an element of reasonable supervision, so this would remain consistent with Standard IV(C).",
-      "C": "Only the compliance department may evaluate professional conduct under Standard IV(C), so this would breach Standard IV(C)."
+      "A": "Combining conduct and business metrics in one review process could still dilute the independence of ethical oversight and create mixed incentives, so this would breach Standard IV(C).",
+      "B": "Even though she ties promotion decisions partly to conduct rather than pure business output, the Handbook expressly contemplates professional-conduct evaluation as part of reasonable supervision, so this would remain consistent with Standard IV(C).",
+      "C": "Because professional-conduct evaluation often belongs to compliance rather than line management, Costa's direct use of it in promotion decisions could still be viewed as exceeding her role under Standard IV(C), so this would breach Standard IV(C)."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: embedding ethics in incentive structure</h3><p><strong>B is correct.</strong> Handbook guidance urges supervisors to incorporate a professional-conduct evaluation as part of an employee's performance review, because tying compensation and promotion decisions to ethical behavior is among the most effective ways to build a culture of integrity. Costa's design is directly aligned with this guidance.</p><p>A treats the integration as a dilution, reversing the Handbook's position that the integration itself is the point.</p><p>C strips line supervisors of any role in professional-conduct evaluation, but the standard explicitly assigns that role to supervisors as part of reasonable oversight.</p>"
