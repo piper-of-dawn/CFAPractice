@@ -117,7 +117,7 @@
       "C": "6.0%"
     },
     "correct_answer": "A",
-    "explanation": "A semiannual bond basis yield equals the yield per semiannual period times 2. Here, $1.5\\% \\times 2 = 3.0\\%$. Option B uses only one period. Option C doubles twice."
+    "explanation": "A semiannual bond basis yield equals the yield per semiannual period times 2. Here, USD 1.5\\% \\times 2 = 3.0\\%$. Option B uses only one period. Option C doubles twice."
   },
   {
     "id": 2,
@@ -129,7 +129,7 @@
       "C": "4.0%"
     },
     "correct_answer": "B",
-    "explanation": "For periodicity 4, the stated annual yield is the rate per quarter times 4. So $0.8\\% \\times 4 = 3.2\\%$. Option A is the per-quarter rate only. Option C overstates the annualized rate."
+    "explanation": "For periodicity 4, the stated annual yield is the rate per quarter times 4. So USD 0.8\\% \\times 4 = 3.2\\%$. Option A is the per-quarter rate only. Option C overstates the annualized rate."
   },
   {
     "id": 3,
@@ -177,7 +177,7 @@
       "C": "3.04%"
     },
     "correct_answer": "A",
-    "explanation": "Current yield equals annual coupon divided by flat price. So $3.2/98.7 = 0.03242$, or about 3.24%. Option B is just the coupon rate. Option C uses the wrong direction for the price effect."
+    "explanation": "Current yield equals annual coupon divided by flat price. So USD 3.2/98.7 = 0.03242$, or about 3.24%. Option B is just the coupon rate. Option C uses the wrong direction for the price effect."
   },
   {
     "id": 7,
@@ -189,7 +189,7 @@
       "C": "2.78%"
     },
     "correct_answer": "B",
-    "explanation": "Current yield is annual coupon divided by flat price. Here, $2.5/98.70 = 0.02533$, or about 2.53%. Option A understates the yield. Option C confuses current yield with a different yield measure."
+    "explanation": "Current yield is annual coupon divided by flat price. Here, USD 2.5/98.70 = 0.02533$, or about 2.53%. Option A understates the yield. Option C confuses current yield with a different yield measure."
   },
   {
     "id": 8,
@@ -201,7 +201,7 @@
       "C": "3.24%"
     },
     "correct_answer": "C",
-    "explanation": "Government equivalent yield is approximated by multiplying the 30/360 yield by $365/360$. Thus, $3.20\\% \\times 365/360 = 3.244\\%$, about 3.24%. Option B ignores the day-count restatement. Option A moves in the wrong direction."
+    "explanation": "Government equivalent yield is approximated by multiplying the 30/360 yield by $365/360$. Thus, USD 3.20\\% \\times 365/360 = 3.244\\%$, about 3.24%. Option B ignores the day-count restatement. Option A moves in the wrong direction."
   },
   {
     "id": 9,
@@ -213,7 +213,7 @@
       "C": "124.4 bps"
     },
     "correct_answer": "B",
-    "explanation": "First restate the corporate yield: $3.20\\% \\times 365/360 = 3.2444\\%$. Then subtract the government yield: $3.2444\\% - 2.30\\% = 0.9444\\% = 94.4$ bps. Option A skips the day-count adjustment. Option C overstates the spread."
+    "explanation": "First restate the corporate yield: USD 3.20\\% \\times 365/360 = 3.2444\\%$. Then subtract the government yield: USD 3.2444\\% - 2.30\\% = 0.9444\\% = 94.4$ bps. Option A skips the day-count adjustment. Option C overstates the spread."
   },
   {
     "id": 10,
@@ -225,7 +225,7 @@
       "C": "1.71 bps"
     },
     "correct_answer": "A",
-    "explanation": "G-spread equals bond yield minus government benchmark yield, expressed in basis points. Here, $1.271\\% - 1.100\\% = 0.171\\% = 17.1$ bps. Option B forgets that 0.171% is not 1.71%. Option C is off by a factor of 10."
+    "explanation": "G-spread equals bond yield minus government benchmark yield, expressed in basis points. Here, USD 1.271\\% - 1.100\\% = 0.171\\% = 17.1$ bps. Option B forgets that 0.171% is not 1.71%. Option C is off by a factor of 10."
   },
   {
     "id": 11,
@@ -237,7 +237,7 @@
       "C": "1.656 bps"
     },
     "correct_answer": "B",
-    "explanation": "The G-spread is $3.756\\% - 2.10\\% = 1.656\\%$. Converting to basis points gives $1.656 \\times 100 = 165.6$ bps. Option A misses one decimal place. Option C fails to convert percent to basis points correctly."
+    "explanation": "The G-spread is USD 3.756\\% - 2.10\\% = 1.656\\%$. Converting to basis points gives USD 1.656 \\times 100 = 165.6$ bps. Option A misses one decimal place. Option C fails to convert percent to basis points correctly."
   },
   {
     "id": 12,
@@ -249,7 +249,7 @@
       "C": "12.7 bps"
     },
     "correct_answer": "A",
-    "explanation": "The yields must be on the same periodicity before taking the spread. Using the semiannual equivalent, $1.267\\% - 1.10\\% = 0.167\\% = 16.7$ bps. Option B incorrectly uses 1.271% without periodicity adjustment. Option C miscomputes the difference."
+    "explanation": "The yields must be on the same periodicity before taking the spread. Using the semiannual equivalent, USD 1.267\\% - 1.10\\% = 0.167\\% = 16.7$ bps. Option B incorrectly uses 1.271% without periodicity adjustment. Option C miscomputes the difference."
   },
   {
     "id": 13,

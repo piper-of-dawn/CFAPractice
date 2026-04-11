@@ -557,6 +557,7 @@
         line-height: 1.58;
       }
     }
+    {% include "quiz/includes/reading_modal_styles.html" %}
   </style>
   {% load static %}
   <link rel="icon" href="data:," />
@@ -584,8 +585,9 @@
     <h1>Select a Question Set</h1>
     <p class="sub">Choose a topic to start practicing. Cards are grouped by section for faster scanning.</p>
     <div class="master-row">
-      <a class="master-link" href="{% url 'master' %}">Start Master 180</a>
-      <span class="muted">Random mix from all topics</span>
+      <a class="master-link" href="{% url 'session_practice' 'morning' %}">Practice Morning Session</a>
+      <a class="master-link" href="{% url 'session_practice' 'evening' %}">Practice Evening Session</a>
+      <span class="muted">90-question mock sessions scaled from CFA midpoint weights</span>
     </div>
     {% if groups %}
       {% for g in groups %}

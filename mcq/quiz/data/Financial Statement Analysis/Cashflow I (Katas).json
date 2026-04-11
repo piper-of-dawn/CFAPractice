@@ -192,7 +192,7 @@
       "C": "USD 520,000"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Asset Accumulation</h3>\n<p><strong>B is correct.</strong> The primitive is that Revenue represents value earned, while Cash Received is actual inflow. Accounts Receivable (AR) represents revenue earned but not yet collected. If AR increases (primitive: asset accumulation), it means some of this period's revenue was retained as a claim rather than collected as cash. Therefore, Cash < Revenue. Calculation: $500,000 - 20,000 = 480,000$.</p>\n<p>C is incorrect because it adds the increase, implying the company collected the revenue plus extra cash, which describes a decrease in AR (collection of prior debts).</p>\n<p>A is incorrect because it ignores the accrual adjustment entirely.</p>"
+    "explanation": "<h3>First Principles Thinking: Asset Accumulation</h3>\n<p><strong>B is correct.</strong> The primitive is that Revenue represents value earned, while Cash Received is actual inflow. Accounts Receivable (AR) represents revenue earned but not yet collected. If AR increases (primitive: asset accumulation), it means some of this period's revenue was retained as a claim rather than collected as cash. Therefore, Cash < Revenue. Calculation: USD 500,000 - 20,000 = 480,000$.</p>\n<p>C is incorrect because it adds the increase, implying the company collected the revenue plus extra cash, which describes a decrease in AR (collection of prior debts).</p>\n<p>A is incorrect because it ignores the accrual adjustment entirely.</p>"
   },
   {
     "id": 2,
@@ -205,7 +205,7 @@
       "C": "USD 185,000"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Inventory Flow</h3>\n<p><strong>A is correct.</strong> The primitive is the inventory equation: $Ending = Beginning + Purchases - COGS$. Rearranging for Purchases: $Purchases = COGS + (Ending - Beginning)$. If inventory increased (primitive: accumulation), you must have purchased more than you sold. Therefore, Purchases > COGS. Calculation: $200,000 + 15,000 = 215,000$.</p>\n<p>C is incorrect because it subtracts the increase, which would imply the company sold off existing stock rather than building it up.</p>\n<p>B is incorrect because it assumes purchases exactly equal the cost of goods sold, ignoring the stockpile growth.</p>"
+    "explanation": "<h3>First Principles Thinking: Inventory Flow</h3>\n<p><strong>A is correct.</strong> The primitive is the inventory equation: $Ending = Beginning + Purchases - COGS$. Rearranging for Purchases: $Purchases = COGS + (Ending - Beginning)$. If inventory increased (primitive: accumulation), you must have purchased more than you sold. Therefore, Purchases > COGS. Calculation: USD 200,000 + 15,000 = 215,000$.</p>\n<p>C is incorrect because it subtracts the increase, which would imply the company sold off existing stock rather than building it up.</p>\n<p>B is incorrect because it assumes purchases exactly equal the cost of goods sold, ignoring the stockpile growth.</p>"
   },
   {
     "id": 3,
@@ -218,7 +218,7 @@
       "C": "USD 95,000"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Liability Deferral</h3>\n<p><strong>C is correct.</strong> The primitive is that Purchases represent the obligation incurred, while Cash Paid is the settlement. Accounts Payable (AP) represents obligations not yet paid. If AP increases (primitive: liability accumulation), the company has deferred payment on some of this period's purchases. Therefore, Cash Paid < Purchases. Calculation: $100,000 - 5,000 = 95,000$.</p>\n<p>B is incorrect because it adds the increase, which would imply paying off old debts in addition to current purchases (a decrease in AP).</p>\n<p>A is incorrect because it ignores the financing provided by suppliers via the increased payable.</p>"
+    "explanation": "<h3>First Principles Thinking: Liability Deferral</h3>\n<p><strong>C is correct.</strong> The primitive is that Purchases represent the obligation incurred, while Cash Paid is the settlement. Accounts Payable (AP) represents obligations not yet paid. If AP increases (primitive: liability accumulation), the company has deferred payment on some of this period's purchases. Therefore, Cash Paid < Purchases. Calculation: USD 100,000 - 5,000 = 95,000$.</p>\n<p>B is incorrect because it adds the increase, which would imply paying off old debts in addition to current purchases (a decrease in AP).</p>\n<p>A is incorrect because it ignores the financing provided by suppliers via the increased payable.</p>"
   },
   {
     "id": 4,
@@ -231,7 +231,7 @@
       "C": "USD 78,000"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Expense Accrual</h3>\n<p><strong>C is correct.</strong> The primitive is that Expense is the cost incurred, while Cash Paid is the outflow. A payable represents an incurred cost not yet paid. If the payable increases (primitive: debt growth), the company \"owes\" more at the end than the start, meaning it paid less cash than the expense recognized. Therefore, Cash Paid < Expense. Calculation: $80,000 - 2,000 = 78,000$.</p>\n<p>A is incorrect because it adds the increase, implying the company paid down past obligations (decreasing the payable).</p>\n<p>B is incorrect because it assumes cash outflow matches the accrual expense exactly.</p>"
+    "explanation": "<h3>First Principles Thinking: Expense Accrual</h3>\n<p><strong>C is correct.</strong> The primitive is that Expense is the cost incurred, while Cash Paid is the outflow. A payable represents an incurred cost not yet paid. If the payable increases (primitive: debt growth), the company \"owes\" more at the end than the start, meaning it paid less cash than the expense recognized. Therefore, Cash Paid < Expense. Calculation: USD 80,000 - 2,000 = 78,000$.</p>\n<p>A is incorrect because it adds the increase, implying the company paid down past obligations (decreasing the payable).</p>\n<p>B is incorrect because it assumes cash outflow matches the accrual expense exactly.</p>"
   },
   {
     "id": 5,
@@ -244,7 +244,7 @@
       "C": "USD 10,000"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Liability Settlement</h3>\n<p><strong>A is correct.</strong> The primitive is that a decrease in a liability represents a cash settlement in excess of new obligations. If Interest Payable decreased (primitive: debt reduction), the company must have paid the current expense plus a portion of the prior balance. Therefore, Cash Paid > Interest Expense. Calculation: $10,000 + 1,000 = 11,000$.</p>\n<p>B is incorrect because it subtracts the decrease, which would result if the liability increased (deferral of payment).</p>\n<p>C is incorrect because it ignores the cash used to reduce the liability balance.</p>"
+    "explanation": "<h3>First Principles Thinking: Liability Settlement</h3>\n<p><strong>A is correct.</strong> The primitive is that a decrease in a liability represents a cash settlement in excess of new obligations. If Interest Payable decreased (primitive: debt reduction), the company must have paid the current expense plus a portion of the prior balance. Therefore, Cash Paid > Interest Expense. Calculation: USD 10,000 + 1,000 = 11,000$.</p>\n<p>B is incorrect because it subtracts the decrease, which would result if the liability increased (deferral of payment).</p>\n<p>C is incorrect because it ignores the cash used to reduce the liability balance.</p>"
   },
   {
     "id": 6,
@@ -257,7 +257,7 @@
       "C": "USD 9,000"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Asset Prepayment</h3>\n<p><strong>A is correct.</strong> The primitive is that Prepaid Expenses are assets representing cash paid before the benefit is received. An increase in this asset (primitive: asset accumulation) means the company paid for more coverage than it \"used up\" (expensed) this period. Therefore, Cash Paid > Expense. Calculation: $12,000 + 3,000 = 15,000$.</p>\n<p>C is incorrect because it subtracts the increase, which describes a situation where the company uses up existing prepaids (decreasing the asset).</p>\n<p>B is incorrect because it assumes the cash payment equals the usage (expense) without building the asset.</p>"
+    "explanation": "<h3>First Principles Thinking: Asset Prepayment</h3>\n<p><strong>A is correct.</strong> The primitive is that Prepaid Expenses are assets representing cash paid before the benefit is received. An increase in this asset (primitive: asset accumulation) means the company paid for more coverage than it \"used up\" (expensed) this period. Therefore, Cash Paid > Expense. Calculation: USD 12,000 + 3,000 = 15,000$.</p>\n<p>C is incorrect because it subtracts the increase, which describes a situation where the company uses up existing prepaids (decreasing the asset).</p>\n<p>B is incorrect because it assumes the cash payment equals the usage (expense) without building the asset.</p>"
   },
   {
     "id": 7,
@@ -270,7 +270,7 @@
       "C": "USD 200,000"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Revenue Recognition vs. Cash</h3>\n<p><strong>B is correct.</strong> The primitive is that Deferred Revenue is a liability representing cash received before it is earned. A decrease in this liability (primitive: recognizing previously deferred amounts) means some of the reported Revenue came from \"old\" cash, not current cash inflows. Therefore, Cash Collected < Revenue. Calculation: $200,000 - 5,000 = 195,000$.</p>\n<p>A is incorrect because it adds the decrease, which would imply cash was received in excess of revenue (an increase in deferred revenue).</p>\n<p>C is incorrect because it assumes all revenue recognized this period was collected this period.</p>"
+    "explanation": "<h3>First Principles Thinking: Revenue Recognition vs. Cash</h3>\n<p><strong>B is correct.</strong> The primitive is that Deferred Revenue is a liability representing cash received before it is earned. A decrease in this liability (primitive: recognizing previously deferred amounts) means some of the reported Revenue came from \"old\" cash, not current cash inflows. Therefore, Cash Collected < Revenue. Calculation: USD 200,000 - 5,000 = 195,000$.</p>\n<p>A is incorrect because it adds the decrease, which would imply cash was received in excess of revenue (an increase in deferred revenue).</p>\n<p>C is incorrect because it assumes all revenue recognized this period was collected this period.</p>"
   },
   {
     "id": 1,

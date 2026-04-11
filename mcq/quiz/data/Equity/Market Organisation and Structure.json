@@ -687,7 +687,7 @@
       "C": "USD 33.33"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity as a percentage of the stock value falls to the maintenance margin. The stock is purchased at USD 50 with 40% initial margin, so the investor provides USD 20 and borrows USD 30. At stock price $P$, equity is $P - 30$. Set the maintenance-margin condition equal to 25%: $\\frac{P - 30}{P} = 0.25$. Solving gives $P - 30 = 0.25P$, so $0.75P = 30$ and $P = 40$. Thus, the first margin call occurs when the stock price falls to USD 40.00.</p><p>A is incorrect because USD 30 would imply equity of zero, not equity equal to the maintenance margin.</p><p>C is incorrect because it results from using the wrong denominator or misapplying the maintenance-margin formula.</p>"
+    "explanation": "<h3>First Principles Thinking: Margin Call Mechanics</h3><p><strong>B is correct.</strong> A margin call occurs when the investor's equity as a percentage of the stock value falls to the maintenance margin. The stock is purchased at USD 50 with 40% initial margin, so the investor provides USD 20 and borrows USD 30. At stock price $P$, equity is $P - 30$. Set the maintenance-margin condition equal to 25%: $\\frac{P - 30}{P} = 0.25$. Solving gives $P - 30 = 0.25P$, so USD 0.75P = 30$ and $P = 40$. Thus, the first margin call occurs when the stock price falls to USD 40.00.</p><p>A is incorrect because USD 30 would imply equity of zero, not equity equal to the maintenance margin.</p><p>C is incorrect because it results from using the wrong denominator or misapplying the maintenance-margin formula.</p>"
   },
   {
     "id": 4,

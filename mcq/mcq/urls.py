@@ -27,6 +27,7 @@ from quiz.views import (
     mistakes,
     mistakes_grouped,
     master,
+    session_practice,
 )
 
 urlpatterns = [
@@ -35,6 +36,7 @@ urlpatterns = [
     # Allow subfolders inside data/ via <path:fname>
     path('play/<path:fname>/', play, name='play'),
     path('master/', master, name='master'),
+    path('session/<str:session_name>/', session_practice, name='session_practice'),
     path('mistakes/', mistakes, name='mistakes'),
     path('mistakes/topics/', mistakes_grouped, name='mistakes_grouped'),
     path('api/mistake/', api_mistake, name='api_mistake'),

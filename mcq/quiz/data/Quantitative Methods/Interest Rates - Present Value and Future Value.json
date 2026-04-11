@@ -45,7 +45,7 @@
       "C": "CAD 3,061,000.00"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: non-annual compounding</h3><p><strong>A is correct.</strong> The CFA Curriculum adjusts the lump-sum present value formula for non-annual compounding as $PV = FV_N(1 + R_s/m)^{-mN}$. Here, $FV = 5{,}000{,}000$, $R_s = 0.06$, $m = 12$, and $N = 10$. So the periodic rate is $0.06/12 = 0.005$ and the number of periods is $12 \\times 10 = 120$. Thus, $PV = 5{,}000{,}000(1.005)^{-120} = CAD 2{,}748{,}163.67$.</p><p>Why B is wrong: CAD 2,792,847.57 comes from using annual compounding at 6% for 10 years instead of monthly compounding.</p><p>Why C is wrong: CAD 3,061,000.00 is too high and does not apply the curriculum formula with monthly discounting over 120 periods.</p>"
+    "explanation": "<h3>First Principles Thinking: non-annual compounding</h3><p><strong>A is correct.</strong> The CFA Curriculum adjusts the lump-sum present value formula for non-annual compounding as $PV = FV_N(1 + R_s/m)^{-mN}$. Here, $FV = 5{,}000{,}000$, $R_s = 0.06$, $m = 12$, and $N = 10$. So the periodic rate is USD 0.06/12 = 0.005$ and the number of periods is $12 \\times 10 = 120$. Thus, $PV = 5{,}000{,}000(1.005)^{-120} = CAD 2{,}748{,}163.67$.</p><p>Why B is wrong: CAD 2,792,847.57 comes from using annual compounding at 6% for 10 years instead of monthly compounding.</p><p>Why C is wrong: CAD 3,061,000.00 is too high and does not apply the curriculum formula with monthly discounting over 120 periods.</p>"
   },
   {
     "id": 5,

@@ -23,7 +23,7 @@
       "C": "5.250"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: ModDur Substitution</h3><p><strong>B is correct.</strong> Using $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. Modified duration is always less than Macaulay duration when yields are positive because we divide by a number greater than one.</p><p>A is incorrect because it multiplies $5.25 \\times 1.05 = 5.5125$, reversing the formula.</p><p>C is incorrect because it assumes modified duration equals Macaulay duration, ignoring the yield adjustment.</p>"
+    "explanation": "<h3>First Principles Thinking: ModDur Substitution</h3><p><strong>B is correct.</strong> Using $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. Modified duration is always less than Macaulay duration when yields are positive because we divide by a number greater than one.</p><p>A is incorrect because it multiplies USD 5.25 \\times 1.05 = 5.5125$, reversing the formula.</p><p>C is incorrect because it assumes modified duration equals Macaulay duration, ignoring the yield adjustment.</p>"
   },
   {
     "id": 3,
@@ -101,7 +101,7 @@
       "C": "1"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Applying Approximate ModDur</h3><p><strong>A is correct.</strong> $AnnModDur \\approx \\dfrac{101 - 99}{2 \\times 0.001 \\times 100} = \\dfrac{2}{0.2} = 10$. Each variable is substituted directly into the approximation formula.</p><p>B is incorrect because it omits the factor of 2 in the denominator, giving $\\dfrac{2}{0.1} = 20$.</p><p>C is incorrect because it uses $\\Delta Yield = 0.01$ (100 bps) instead of $0.001$ (10 bps), producing $\\dfrac{2}{2} = 1$.</p>"
+    "explanation": "<h3>First Principles Thinking: Applying Approximate ModDur</h3><p><strong>A is correct.</strong> $AnnModDur \\approx \\dfrac{101 - 99}{2 \\times 0.001 \\times 100} = \\dfrac{2}{0.2} = 10$. Each variable is substituted directly into the approximation formula.</p><p>B is incorrect because it omits the factor of 2 in the denominator, giving $\\dfrac{2}{0.1} = 20$.</p><p>C is incorrect because it uses $\\Delta Yield = 0.01$ (100 bps) instead of USD 0.001$ (10 bps), producing $\\dfrac{2}{2} = 1$.</p>"
   },
   {
     "id": 9,
@@ -166,7 +166,7 @@
       "C": "-1.90"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: Applying Money Duration</h3><p><strong>C is correct.</strong> $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield = -380 \\times 0.005 = -1.90$. A 50 bp yield increase causes an estimated price decline of 1.90 per 100 of par value.</p><p>A is incorrect because it drops the negative sign, suggesting the price increases when yields rise.</p><p>B is incorrect because it uses $\\Delta Yield = 0.05$ (500 bps) instead of $0.005$ (50 bps).</p>"
+    "explanation": "<h3>First Principles Thinking: Applying Money Duration</h3><p><strong>C is correct.</strong> $\\Delta PV^{Full} \\approx -MoneyDur \\times \\Delta Yield = -380 \\times 0.005 = -1.90$. A 50 bp yield increase causes an estimated price decline of 1.90 per 100 of par value.</p><p>A is incorrect because it drops the negative sign, suggesting the price increases when yields rise.</p><p>B is incorrect because it uses $\\Delta Yield = 0.05$ (500 bps) instead of USD 0.005$ (50 bps).</p>"
   },
   {
     "id": 14,
@@ -270,6 +270,6 @@
       "C": "5.250"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Duration</h3><p><strong>B is correct.</strong> A zero-coupon bond's Macaulay duration equals its time-to-maturity, so $MacDur = 5.25$. Modified duration is $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. The single cash flow has a present value weight of 1.0, making Macaulay duration exactly equal to maturity.</p><p>C is incorrect because it uses the Macaulay duration directly without dividing by $(1 + r)$.</p><p>A is incorrect because it multiplies by $(1 + r)$ instead of dividing, giving $5.25 \\times 1.05 = 5.5125$.</p>"
+    "explanation": "<h3>First Principles Thinking: Zero-Coupon Bond Duration</h3><p><strong>B is correct.</strong> A zero-coupon bond's Macaulay duration equals its time-to-maturity, so $MacDur = 5.25$. Modified duration is $ModDur = \\dfrac{MacDur}{1 + r} = \\dfrac{5.25}{1.05} = 5.0$. The single cash flow has a present value weight of 1.0, making Macaulay duration exactly equal to maturity.</p><p>C is incorrect because it uses the Macaulay duration directly without dividing by $(1 + r)$.</p><p>A is incorrect because it multiplies by $(1 + r)$ instead of dividing, giving USD 5.25 \\times 1.05 = 5.5125$.</p>"
   }
 ]

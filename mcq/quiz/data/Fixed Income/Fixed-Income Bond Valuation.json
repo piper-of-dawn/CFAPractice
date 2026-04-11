@@ -218,7 +218,7 @@
       "C": "1.50%"
     },
     "correct_answer": "A",
-    "explanation": "For a zero-coupon bond, solve $100.763 = 100/(1+r)^5$. This gives $r \\approx -0.0015$, or about -0.15% per year. Choice B has the wrong sign. Choice C is much too large."
+    "explanation": "For a zero-coupon bond, solve USD 100.763 = 100/(1+r)^5$. This gives $r \\approx -0.0015$, or about -0.15% per year. Choice B has the wrong sign. Choice C is much too large."
   },
   {
     "id": 5,
@@ -254,7 +254,7 @@
       "C": "98.535"
     },
     "correct_answer": "B",
-    "explanation": "Between coupon dates, full price is $PV \\times (1+r)^{t/T}$. So $96.735 \\times (1.02)^{90/180} = 97.698$. Choice A ignores the passage of time. Choice C overstates the growth."
+    "explanation": "Between coupon dates, full price is $PV \\times (1+r)^{t/T}$. So USD 96.735 \\times (1.02)^{90/180} = 97.698$. Choice A ignores the passage of time. Choice C overstates the growth."
   },
   {
     "id": 8,
@@ -266,7 +266,7 @@
       "C": "98.498"
     },
     "correct_answer": "A",
-    "explanation": "Flat price equals full price minus accrued interest. So $97.698 - 0.800 = 96.898$. Choice B ignores accrued interest. Choice C adds instead of subtracts accrued interest."
+    "explanation": "Flat price equals full price minus accrued interest. So USD 97.698 - 0.800 = 96.898$. Choice B ignores accrued interest. Choice C adds instead of subtracts accrued interest."
   },
   {
     "id": 9,
@@ -290,7 +290,7 @@
       "C": "117.635"
     },
     "correct_answer": "C",
-    "explanation": "Use $PV_{Full} = PV \\times (1+r)^{t/T}$. So $114.838 \\times (1.035)^{256/366} = 117.635$. Choice A is the flat price after subtracting accrued interest. Choice B ignores the growth from the start of the period."
+    "explanation": "Use $PV_{Full} = PV \\times (1+r)^{t/T}$. So USD 114.838 \\times (1.035)^{256/366} = 117.635$. Choice A is the flat price after subtracting accrued interest. Choice B ignores the growth from the start of the period."
   },
   {
     "id": 11,
@@ -302,7 +302,7 @@
       "C": "120.870"
     },
     "correct_answer": "A",
-    "explanation": "Flat price equals full price minus accrued interest. Thus, $117.635 - 3.235 = 114.400$. Choice B is the full price. Choice C adds accrued interest instead of subtracting it."
+    "explanation": "Flat price equals full price minus accrued interest. Thus, USD 117.635 - 3.235 = 114.400$. Choice B is the full price. Choice C adds accrued interest instead of subtracting it."
   },
   {
     "id": 12,
@@ -314,7 +314,7 @@
       "C": "108.584"
     },
     "correct_answer": "B",
-    "explanation": "Use the between-coupon full price formula: $108.584 \\times (1.0975)^{131/365} = 112.271$. Choice A is the flat price after subtracting accrued interest. Choice C ignores the growth from the last coupon date."
+    "explanation": "Use the between-coupon full price formula: USD 108.584 \\times (1.0975)^{131/365} = 112.271$. Choice A is the flat price after subtracting accrued interest. Choice C ignores the growth from the last coupon date."
   },
   {
     "id": 13,
@@ -326,7 +326,7 @@
       "C": "3.804%"
     },
     "correct_answer": "A",
-    "explanation": "Linear interpolation gives $0.038035 + ((3-2)/(5-2)) \\times (0.041885 - 0.038035) = 0.039318$, or about 3.932%. Choice B uses the five-year yield directly. Choice C uses the two-year yield directly."
+    "explanation": "Linear interpolation gives USD 0.038035 + ((3-2)/(5-2)) \\times (0.041885 - 0.038035) = 0.039318$, or about 3.932%. Choice B uses the five-year yield directly. Choice C uses the two-year yield directly."
   },
   {
     "id": 14,

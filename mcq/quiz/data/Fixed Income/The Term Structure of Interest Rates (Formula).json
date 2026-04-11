@@ -23,7 +23,7 @@
       "C": "104.50"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum spot-rate pricing formula discounts each cash flow at its own maturity spot rate: $PV = \\dfrac{5}{1.02} + \\dfrac{5}{(1.03)^2} + \\dfrac{105}{(1.04)^3}$. That gives about $4.902 + 4.713 + 93.345 = 102.96$. Each cash flow must use the matching spot rate term. Therefore the bond price is 102.96.</p><p>Why top distractor is wrong (PDF-based misconception): B would suggest a par bond, but the spot-rate valuation here produces a premium price.</p><p>Why remaining distractor is wrong: C overstates the value and does not match the CFA Curriculum's spot-rate discounting example.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum spot-rate pricing formula discounts each cash flow at its own maturity spot rate: $PV = \\dfrac{5}{1.02} + \\dfrac{5}{(1.03)^2} + \\dfrac{105}{(1.04)^3}$. That gives about USD 4.902 + 4.713 + 93.345 = 102.96$. Each cash flow must use the matching spot rate term. Therefore the bond price is 102.96.</p><p>Why top distractor is wrong (PDF-based misconception): B would suggest a par bond, but the spot-rate valuation here produces a premium price.</p><p>Why remaining distractor is wrong: C overstates the value and does not match the CFA Curriculum's spot-rate discounting example.</p>"
   },
   {
     "id": 3,
@@ -49,7 +49,7 @@
       "C": "26.07%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that once the coupon payment solving the par-price equation is found, the par rate per period is that coupon payment divided by 100. So $2.607/100 = 0.02607 = 2.607\\%$. Because the bond is quoted per 100 of par value, the coupon payment in currency units directly maps into a percentage coupon rate. Therefore the par rate is 2.607%.</p><p>Why top distractor is wrong (PDF-based misconception): B divides by 100 twice, which understates the rate by a factor of 100.</p><p>Why remaining distractor is wrong: C fails to divide the coupon payment by 100 at all and therefore overstates the rate by a factor of 10.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that once the coupon payment solving the par-price equation is found, the par rate per period is that coupon payment divided by 100. So USD 2.607/100 = 0.02607 = 2.607\\%$. Because the bond is quoted per 100 of par value, the coupon payment in currency units directly maps into a percentage coupon rate. Therefore the par rate is 2.607%.</p><p>Why top distractor is wrong (PDF-based misconception): B divides by 100 twice, which understates the rate by a factor of 100.</p><p>Why remaining distractor is wrong: C fails to divide the coupon payment by 100 at all and therefore overstates the rate by a factor of 10.</p>"
   },
   {
     "id": 5,
@@ -127,7 +127,7 @@
       "C": "102.500"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices the bond with chained forward-rate discount factors: $PV = \\dfrac{2}{1.015} + \\dfrac{2}{1.015 \\times 1.025} + \\dfrac{102}{1.015 \\times 1.025 \\times 1.035}$. That gives approximately $98.619$. Each later cash flow is discounted by the product of all forward gross returns up to that date. Therefore the bond price is 98.619.</p><p>Why top distractor is wrong (PDF-based misconception): B would imply the bond trades exactly at par, but the given forward-rate term structure does not produce that result.</p><p>Why remaining distractor is wrong: C ignores discounting and is just the final cash flow plus one coupon amount pattern, not a present value.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum prices the bond with chained forward-rate discount factors: $PV = \\dfrac{2}{1.015} + \\dfrac{2}{1.015 \\times 1.025} + \\dfrac{102}{1.015 \\times 1.025 \\times 1.035}$. That gives approximately USD 98.619$. Each later cash flow is discounted by the product of all forward gross returns up to that date. Therefore the bond price is 98.619.</p><p>Why top distractor is wrong (PDF-based misconception): B would imply the bond trades exactly at par, but the given forward-rate term structure does not produce that result.</p><p>Why remaining distractor is wrong: C ignores discounting and is just the final cash flow plus one coupon amount pattern, not a present value.</p>"
   },
   {
     "id": 11,
@@ -166,7 +166,7 @@
       "C": "1.00%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum forward-rate identity gives $(1+IFR_{3,2})^2 = \\dfrac{(1.04)^5}{(1.03)^3}$. Taking the square root and subtracting 1 gives about $0.0552 = 5.52\\%$. This is the breakeven two-year reinvestment rate beginning three years from now. Therefore the implied forward rate is 5.52%.</p><p>Why top distractor is wrong (PDF-based misconception): B simply repeats the five-year spot rate instead of solving for the forward rate embedded between years 3 and 5.</p><p>Why remaining distractor is wrong: C is far too low and does not match the compounded spread implied by the two spot rates.</p>"
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum forward-rate identity gives $(1+IFR_{3,2})^2 = \\dfrac{(1.04)^5}{(1.03)^3}$. Taking the square root and subtracting 1 gives about USD 0.0552 = 5.52\\%$. This is the breakeven two-year reinvestment rate beginning three years from now. Therefore the implied forward rate is 5.52%.</p><p>Why top distractor is wrong (PDF-based misconception): B simply repeats the five-year spot rate instead of solving for the forward rate embedded between years 3 and 5.</p><p>Why remaining distractor is wrong: C is far too low and does not match the compounded spread implied by the two spot rates.</p>"
   },
   {
     "id": 14,

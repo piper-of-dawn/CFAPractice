@@ -55,7 +55,7 @@
     "id": 5,
     "model": "Gemini",
     "topic": "Money Convexity Calculation",
-    "stem": "An investor holds a bond position with a market value of $2,000,000. The bond has an annualized convexity of 60. What is the Money Convexity of this position?",
+    "stem": "An investor holds a bond position with a market value of USD 2,000,000. The bond has an annualized convexity of 60. What is the Money Convexity of this position?",
     "options": {
       "A": "120,000,000",
       "B": "12,000,000",
@@ -70,9 +70,9 @@
     "topic": "Money Convexity Adjustment",
     "stem": "An investor's bond position has a Money Convexity of 50,000,000. If the yield changes by 1% (0.01), what is the dollar value increase added by the convexity adjustment?",
     "options": {
-      "A": "$2,500",
-      "B": "$5,000",
-      "C": "$25,000"
+      "A": "USD 2,500",
+      "B": "USD 5,000",
+      "C": "USD 25,000"
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Money Convexity Adjustment</h3><p><strong>A is correct.</strong> The money convexity adjustment (dollar amount) is calculated as: $$ \\frac{1}{2} \\times \\text{MoneyCon} \\times (\\Delta \\text{Yield})^2 $$ $$ 0.5 \\times 50,000,000 \\times (0.01)^2 $$ $$ 0.5 \\times 50,000,000 \\times 0.0001 $$ $$ 25,000,000 \\times 0.0001 = 2,500 $$</p><p>B is incorrect because it neglects the 1/2 factor.</p><p>C is incorrect because it implies a calculation error with the yield squared term.</p>"
@@ -88,7 +88,7 @@
       "C": "7.5"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Weighted Average Duration</h3><p><strong>B is correct.</strong> Portfolio duration is the weighted average of the individual bond durations. Total Market Value = $40M + $60M = $100M. Weight of Bond A = 40/100 = 0.4. Weight of Bond B = 60/100 = 0.6. $$ \\text{PortDur} = (0.4 \\times 4) + (0.6 \\times 9) $$ $$ \\text{PortDur} = 1.6 + 5.4 = 7.0 $$</p><p>A is incorrect; it is the simple average (4+9)/2.</p><p>C is incorrect; it assumes equal weighting or another error.</p>"
+    "explanation": "<h3>First Principles Thinking: Weighted Average Duration</h3><p><strong>B is correct.</strong> Portfolio duration is the weighted average of the individual bond durations. Total Market Value = USD 40M + USD 60M = USD 100M. Weight of Bond A = 40/100 = 0.4. Weight of Bond B = 60/100 = 0.6. $$ \\text{PortDur} = (0.4 \\times 4) + (0.6 \\times 9) $$ $$ \\text{PortDur} = 1.6 + 5.4 = 7.0 $$</p><p>A is incorrect; it is the simple average (4+9)/2.</p><p>C is incorrect; it assumes equal weighting or another error.</p>"
   },
   {
     "id": 8,
@@ -166,7 +166,7 @@
       "C": "2.5"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Weighted Average with Zero Duration Asset</h3><p><strong>A is correct.</strong> Total Value = $100M. Weight of Bonds = 0.8. Weight of Cash = 0.2. Duration of Bonds = 5. Duration of Cash = 0. $$ \\text{PortDur} = (0.8 \\times 5) + (0.2 \\times 0) = 4.0 + 0 = 4.0 $$</p><p>B is incorrect; it ignores the cash drag on duration.</p><p>C is incorrect; it calculates a simple average (5+0)/2.</p>"
+    "explanation": "<h3>First Principles Thinking: Weighted Average with Zero Duration Asset</h3><p><strong>A is correct.</strong> Total Value = USD 100M. Weight of Bonds = 0.8. Weight of Cash = 0.2. Duration of Bonds = 5. Duration of Cash = 0. $$ \\text{PortDur} = (0.8 \\times 5) + (0.2 \\times 0) = 4.0 + 0 = 4.0 $$</p><p>B is incorrect; it ignores the cash drag on duration.</p><p>C is incorrect; it calculates a simple average (5+0)/2.</p>"
   },
   {
     "id": 14,
@@ -205,7 +205,7 @@
       "C": "8:1"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Impact Ratio</h3><p><strong>B is correct.</strong> Dollar Duration Impact: $\\text{MoneyDur} \\times \\Delta y = 4,000 \\times 0.01 = 40USD . Dollar Convexity Impact: 0.5 \\times \\text{MoneyCon} \\times (\\Delta y)^2 = 0.5 \\times 1,000,000 \\times 0.0001 = 500,000 \\times 0.0001 = 50USD . Wait, let's recheck the numbers. If MoneyDur is 4,000, that's very low relative to convexity. Let's recalculate. Impact 1: 40. Impact 2: 50. Ratio 40:50 is 0.8. That doesn't match options. Let's adjust the Money Duration in the stem to be more realistic, e.g., 4,000,000. New Impact 1: $4,000,000 \\times 0.01 = 40,000USD . New Impact 2: 50USD . Ratio 40,000 / 50 = 800$. Still not matching options well. Let's assume the question asks for ratio of impacts for a *large* yield change or just use the numbers provided to fit an option. Let's work backwards from Option B (80:1). If ratio is 80, and Conv Impact is $XUSD , Dur Impact is 80XUSD . Let \\Delta y = 0.01$. $D \\times 0.01 / (0.5 \\times C \\times 0.0001) = 80$. $200 D / C = 80$. $D/C = 0.4$. If ModDur=4, Conv=10. This is realistic. Let's rewrite the question with ModDur and Conv, asking for the ratio of percentage impacts.</p><p><strong>Revised Question:</strong> A bond has ModDur 8 and Convexity 20. For a yield change of 1% (0.01), what is the ratio of the duration effect magnitude to the convexity adjustment magnitude?</p><p><strong>Revised Logic:</strong> Duration Effect: $8 \\times 0.01 = 0.08USD . Convexity Adj: 0.5 \\times 20 \\times 0.0001 = 0.001USD . Ratio: 0.08 / 0.001 = 80$. This fits Option B (80:1).</p>"
+    "explanation": "<h3>First Principles Thinking: Impact Ratio</h3><p><strong>B is correct.</strong> Dollar Duration Impact: $\\text{MoneyDur} \\times \\Delta y = 4,000 \\times 0.01 = 40USD . Dollar Convexity Impact: 0.5 \\times \\text{MoneyCon} \\times (\\Delta y)^2 = 0.5 \\times 1,000,000 \\times 0.0001 = 500,000 \\times 0.0001 = 50USD . Wait, let's recheck the numbers. If MoneyDur is 4,000, that's very low relative to convexity. Let's recalculate. Impact 1: 40. Impact 2: 50. Ratio 40:50 is 0.8. That doesn't match options. Let's adjust the Money Duration in the stem to be more realistic, e.g., 4,000,000. New Impact 1: USD 4,000,000 \\times 0.01 = 40,000USD . New Impact 2: 50USD . Ratio 40,000 / 50 = 800$. Still not matching options well. Let's assume the question asks for ratio of impacts for a *large* yield change or just use the numbers provided to fit an option. Let's work backwards from Option B (80:1). If ratio is 80, and Conv Impact is $XUSD , Dur Impact is 80XUSD . Let \\Delta y = 0.01$. $D \\times 0.01 / (0.5 \\times C \\times 0.0001) = 80$. $200 D / C = 80$. $D/C = 0.4$. If ModDur=4, Conv=10. This is realistic. Let's rewrite the question with ModDur and Conv, asking for the ratio of percentage impacts.</p><p><strong>Revised Question:</strong> A bond has ModDur 8 and Convexity 20. For a yield change of 1% (0.01), what is the ratio of the duration effect magnitude to the convexity adjustment magnitude?</p><p><strong>Revised Logic:</strong> Duration Effect: $8 \\times 0.01 = 0.08USD . Convexity Adj: 0.5 \\times 20 \\times 0.0001 = 0.001USD . Ratio: 0.08 / 0.001 = 80$. This fits Option B (80:1).</p>"
   },
   {
     "id": 17,
@@ -231,7 +231,7 @@
       "C": "50"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Effective Convexity Formula</h3><p><strong>B is correct.</strong> Formula: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $USD  Inputs: PV_- = 100.9$, $PV_+ = 99.2$, $PV_0 = 100$, $\\Delta \\text{Curve} = 0.001USD . Numerator: 100.9 + 99.2 - 200 = 200.1 - 200 = 0.1USD . Denominator: (0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001USD . Result: 0.1 / 0.0001 = 1,000USD . Wait, let me recheck the math. 0.1 / 10^{-4} = 0.1 \\times 10^4 = 1,000USD . Let's adjust the options again. Option B should be 1000. Or let's change the prices. If PV_-USD  was 100.85 and PV_+USD  was 99.20. 100.85+99.20 = 200.05$. Num = 0.05. Result 500. Let's use these numbers.</p><p><strong>Revised Stem:</strong> Up 10 bps -> 99.20. Down 10 bps -> 100.85. Base -> 100. <br><strong>Logic:</strong> Num = $100.85 + 99.20 - 200 = 0.05$. Denom = $100 \\times (0.001)^2 = 0.0001$. Result = $0.05 / 0.0001 = 500$. Fits Option B.</p>"
+    "explanation": "<h3>First Principles Thinking: Effective Convexity Formula</h3><p><strong>B is correct.</strong> Formula: $$ \\frac{PV_- + PV_+ - 2PV_0}{(\\Delta \\text{Curve})^2 \\times PV_0} $USD  Inputs: PV_- = 100.9$, $PV_+ = 99.2$, $PV_0 = 100$, $\\Delta \\text{Curve} = 0.001USD . Numerator: 100.9 + 99.2 - 200 = 200.1 - 200 = 0.1USD . Denominator: (0.001)^2 \\times 100 = 0.000001 \\times 100 = 0.0001USD . Result: 0.1 / 0.0001 = 1,000USD . Wait, let me recheck the math. 0.1 / 10^{-4} = 0.1 \\times 10^4 = 1,000USD . Let's adjust the options again. Option B should be 1000. Or let's change the prices. If PV_-USD  was 100.85 and PV_+USD  was 99.20. 100.85+99.20 = 200.05$. Num = 0.05. Result 500. Let's use these numbers.</p><p><strong>Revised Stem:</strong> Up 10 bps -> 99.20. Down 10 bps -> 100.85. Base -> 100. <br><strong>Logic:</strong> Num = USD 100.85 + 99.20 - 200 = 0.05$. Denom = $100 \\times (0.001)^2 = 0.0001$. Result = USD 0.05 / 0.0001 = 500$. Fits Option B.</p>"
   },
   {
     "id": 19,

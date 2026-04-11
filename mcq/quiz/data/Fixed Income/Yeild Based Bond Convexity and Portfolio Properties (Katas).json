@@ -81,7 +81,7 @@
       "C": "GBP 204,252"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use $\\mathrm{MoneyCon} = \\mathrm{AnnConvexity} \\times PV_{Full}$. Substituting gives $81.701 \\times \\text{GBP }50{,}000{,}000 = \\text{GBP }4{,}085{,}033{,}604$. So option B is correct.</p><p>Why first distractor is incorrect (formula error): A is far too small because money convexity multiplies by the full position value, not by a reduced base.</p><p>Why second distractor is incorrect: C is the money convexity adjustment for a 100 bp move, not money convexity itself.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use $\\mathrm{MoneyCon} = \\mathrm{AnnConvexity} \\times PV_{Full}$. Substituting gives USD 81.701 \\times \\text{GBP }50{,}000{,}000 = \\text{GBP }4{,}085{,}033{,}604$. So option B is correct.</p><p>Why first distractor is incorrect (formula error): A is far too small because money convexity multiplies by the full position value, not by a reduced base.</p><p>Why second distractor is incorrect: C is the money convexity adjustment for a 100 bp move, not money convexity itself.</p>"
   },
   {
     "id": 8,
@@ -105,7 +105,7 @@
       "C": "8.0110%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use $%\\Delta PV_{Full} \\approx (-\\mathrm{AnnModDur} \\times \\Delta \\mathrm{Yield}) + \\left[\\tfrac{1}{2} \\times \\mathrm{AnnConvexity} \\times (\\Delta \\mathrm{Yield})^2\\right]$. Substituting gives $(-8.376 \\times -0.01) + [0.5 \\times 81.701 \\times 0.0001] = 0.08376 + 0.00408505 = 0.08784505$, or about $8.78\\%$. So B is correct.</p><p>Why first distractor is incorrect (formula error): A uses only duration and misses the convexity addition.</p><p>Why second distractor is incorrect: C is close but still too low because it understates the convexity term.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use $%\\Delta PV_{Full} \\approx (-\\mathrm{AnnModDur} \\times \\Delta \\mathrm{Yield}) + \\left[\\tfrac{1}{2} \\times \\mathrm{AnnConvexity} \\times (\\Delta \\mathrm{Yield})^2\\right]$. Substituting gives $(-8.376 \\times -0.01) + [0.5 \\times 81.701 \\times 0.0001] = 0.08376 + 0.00408505 = 0.08784505$, or about USD 8.78\\%$. So B is correct.</p><p>Why first distractor is incorrect (formula error): A uses only duration and misses the convexity addition.</p><p>Why second distractor is incorrect: C is close but still too low because it understates the convexity term.</p>"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
       "C": "GBP 4,085,034"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use the adjustment term $\\tfrac{1}{2} \\times \\mathrm{MoneyCon} \\times (\\Delta \\mathrm{Yield})^2$. Substituting gives $0.5 \\times \\text{GBP }4{,}085{,}033{,}604 \\times 0.0001 \\approx \\text{GBP }204{,}252$. That is option B.</p><p>Why first distractor is incorrect (formula error): A doubles the correct amount and effectively drops the one-half factor.</p><p>Why second distractor is incorrect: C is close to money convexity scaled by 0.001, not the stated adjustment formula.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use the adjustment term $\\tfrac{1}{2} \\times \\mathrm{MoneyCon} \\times (\\Delta \\mathrm{Yield})^2$. Substituting gives USD 0.5 \\times \\text{GBP }4{,}085{,}033{,}604 \\times 0.0001 \\approx \\text{GBP }204{,}252$. That is option B.</p><p>Why first distractor is incorrect (formula error): A doubles the correct amount and effectively drops the one-half factor.</p><p>Why second distractor is incorrect: C is close to money convexity scaled by 0.001, not the stated adjustment formula.</p>"
   },
   {
     "id": 11,
@@ -146,31 +146,31 @@
   {
     "id": 13,
     "topic": "Formula",
-    "stem": "If portfolio weights are $0.40$ and $0.60$, and modified durations are $2.858$ and $8.376$, what is weighted-average modified duration?",
+    "stem": "If portfolio weights are USD 0.40$ and USD 0.60$, and modified durations are USD 2.858$ and USD 8.376$, what is weighted-average modified duration?",
     "options": {
       "A": "5.617",
       "B": "6.169",
       "C": "6.617"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use weighted-average duration: $(0.40 \\times 2.858) + (0.60 \\times 8.376) = 1.1432 + 5.0256 = 6.1688$. Rounded, that is $6.169$. So B is correct.</p><p>Why first distractor is incorrect (formula error): A understates the second bond’s contribution.</p><p>Why second distractor is incorrect: C is too high and does not match the weighted-average calculation.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use weighted-average duration: $(0.40 \\times 2.858) + (0.60 \\times 8.376) = 1.1432 + 5.0256 = 6.1688$. Rounded, that is USD 6.169$. So B is correct.</p><p>Why first distractor is incorrect (formula error): A understates the second bond’s contribution.</p><p>Why second distractor is incorrect: C is too high and does not match the weighted-average calculation.</p>"
   },
   {
     "id": 14,
     "topic": "Formula",
-    "stem": "If portfolio weights are $0.40$ and $0.60$, and convexities are $9.752$ and $81.701$, what is weighted-average convexity?",
+    "stem": "If portfolio weights are USD 0.40$ and USD 0.60$, and convexities are USD 9.752$ and USD 81.701$, what is weighted-average convexity?",
     "options": {
       "A": "45.727",
       "B": "52.921",
       "C": "57.727"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use weighted-average convexity: $(0.40 \\times 9.752) + (0.60 \\times 81.701) = 3.9008 + 49.0206 = 52.9214$. Rounded, that is $52.921$. So option B is correct.</p><p>Why first distractor is incorrect (formula error): A is too low because it understates the weight on the higher-convexity bond.</p><p>Why second distractor is incorrect: C is too high and does not come from the weighted-average formula.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>B is correct.</strong> Use weighted-average convexity: $(0.40 \\times 9.752) + (0.60 \\times 81.701) = 3.9008 + 49.0206 = 52.9214$. Rounded, that is USD 52.921$. So option B is correct.</p><p>Why first distractor is incorrect (formula error): A is too low because it understates the weight on the higher-convexity bond.</p><p>Why second distractor is incorrect: C is too high and does not come from the weighted-average formula.</p>"
   },
   {
     "id": 15,
     "topic": "Formula",
-    "stem": "If portfolio duration is $6.169$, portfolio convexity is $52.921$, and $\\Delta \\mathrm{Yield} = 0.005$, what is the estimated percentage price change?",
+    "stem": "If portfolio duration is USD 6.169$, portfolio convexity is USD 52.921$, and $\\Delta \\mathrm{Yield} = 0.005$, what is the estimated percentage price change?",
     "options": {
       "A": "-3.018%",
       "B": "-3.085%",
@@ -213,7 +213,7 @@
       "C": "EUR 22,482"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Apply the formula directly: $0.5 \\times \\text{EUR }449{,}647{,}660 \\times (0.005)^2 = 0.5 \\times 449{,}647{,}660 \\times 0.000025 \\approx \\text{EUR }5{,}621$. So A is correct.</p><p>Why first distractor is incorrect (formula error): B is about double the correct result and drops the one-half factor.</p><p>Why second distractor is incorrect: C is about four times the correct result and misapplies the squared yield term.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Apply the formula directly: USD 0.5 \\times \\text{EUR }449{,}647{,}660 \\times (0.005)^2 = 0.5 \\times 449{,}647{,}660 \\times 0.000025 \\approx \\text{EUR }5{,}621$. So A is correct.</p><p>Why first distractor is incorrect (formula error): B is about double the correct result and drops the one-half factor.</p><p>Why second distractor is incorrect: C is about four times the correct result and misapplies the squared yield term.</p>"
   },
   {
     "id": 19,
@@ -249,6 +249,6 @@
       "C": "0.060597400"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Rearranging gives $PV_- + PV_+ - 2PV_0 = \\mathrm{ApproxCon} \\times (\\Delta \\mathrm{Yield})^2 \\times PV_0$. Substituting gives $24.23896 \\times (0.0005)^2 \\times 100 = 24.23896 \\times 0.00000025 \\times 100 = 0.000605974$. So A is correct.</p><p>Why first distractor is incorrect (formula error): B is ten times too large, which comes from misplacing a decimal.</p><p>Why second distractor is incorrect: C is one hundred times too large and ignores the very small squared yield change.</p>"
+    "explanation": "<h3>First Principles Thinking: formula pattern</h3><p><strong>A is correct.</strong> Rearranging gives $PV_- + PV_+ - 2PV_0 = \\mathrm{ApproxCon} \\times (\\Delta \\mathrm{Yield})^2 \\times PV_0$. Substituting gives USD 24.23896 \\times (0.0005)^2 \\times 100 = 24.23896 \\times 0.00000025 \\times 100 = 0.000605974$. So A is correct.</p><p>Why first distractor is incorrect (formula error): B is ten times too large, which comes from misplacing a decimal.</p><p>Why second distractor is incorrect: C is one hundred times too large and ignores the very small squared yield change.</p>"
   }
 ]

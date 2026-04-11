@@ -101,7 +101,7 @@
 "C": "USD 1,160"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: compounding more than once per year</h3><p><strong>B is correct.</strong> With semiannual compounding, m = 2. Periodic rate = 0.08/2 = 0.04. Number of periods = 2. Using $FV = PV(1 + r/m)^{mt}$ → $1,000(1.04)^2 = 1,081.60$. The governing rule is dividing the stated rate by m and multiplying time by m.</p><p>A is wrong because it uses annual compounding (simple 8% once).</p><p>C is wrong because it incorrectly doubles the 8% rate.</p>"
+"explanation": "<h3>First Principles Thinking: compounding more than once per year</h3><p><strong>B is correct.</strong> With semiannual compounding, m = 2. Periodic rate = 0.08/2 = 0.04. Number of periods = 2. Using $FV = PV(1 + r/m)^{mt}$ → USD 1,000(1.04)^2 = 1,081.60$. The governing rule is dividing the stated rate by m and multiplying time by m.</p><p>A is wrong because it uses annual compounding (simple 8% once).</p><p>C is wrong because it incorrectly doubles the 8% rate.</p>"
 },
 {
 "id": 2,
@@ -192,7 +192,7 @@
 "C": "USD 1,100"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: continuous compounding formula</h3><p><strong>B is correct.</strong> With continuous compounding, $FV = PV e^{rt}$. Here, $1,000 e^{0.05×1} = 1,000 e^{0.05} ≈ 1,051.27$. The governing rule uses the exponential function because compounding occurs infinitely often.</p><p>A is wrong because it assumes annual compounding.</p><p>C is wrong because it overstates growth at 5%.</p>"
+"explanation": "<h3>First Principles Thinking: continuous compounding formula</h3><p><strong>B is correct.</strong> With continuous compounding, $FV = PV e^{rt}$. Here, USD 1,000 e^{0.05×1} = 1,000 e^{0.05} ≈ 1,051.27$. The governing rule uses the exponential function because compounding occurs infinitely often.</p><p>A is wrong because it assumes annual compounding.</p><p>C is wrong because it overstates growth at 5%.</p>"
 },
 {
 "id": 2,
@@ -231,7 +231,7 @@
 "C": "12%"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: solving for r in $FV = PV e^{rt}$</h3><p><strong>B is correct.</strong> $1,657.76 = 1,500 e^{r}$. So $e^{r} = 1.10517$. Taking natural log gives $r = ln(1.10517) ≈ 0.10 = 10%$. The governing step is isolating r using the natural logarithm.</p><p>A is wrong because $e^{0.08}$ produces less growth.</p><p>C is wrong because it overstates the exponential factor.</p>"
+"explanation": "<h3>First Principles Thinking: solving for r in $FV = PV e^{rt}$</h3><p><strong>B is correct.</strong> USD 1,657.76 = 1,500 e^{r}$. So $e^{r} = 1.10517$. Taking natural log gives $r = ln(1.10517) ≈ 0.10 = 10%$. The governing step is isolating r using the natural logarithm.</p><p>A is wrong because $e^{0.08}$ produces less growth.</p><p>C is wrong because it overstates the exponential factor.</p>"
 },
 {
 "id": 5,
@@ -283,7 +283,7 @@
 "C": "USD 3,310.13"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: future value of an ordinary annuity</h3><p><strong>B is correct.</strong> For end-of-year payments, use $FV = PMT[(1+r)^n - 1]/r$. Here: $1,000[(1.05)^3 - 1]/0.05 = 1,000(0.157625/0.05) = 3,152.50$. Each deposit compounds from its payment date to Year 3.</p><p>A is wrong because it ignores compounding.</p><p>C is wrong because it overstates the annuity growth.</p>"
+"explanation": "<h3>First Principles Thinking: future value of an ordinary annuity</h3><p><strong>B is correct.</strong> For end-of-year payments, use $FV = PMT[(1+r)^n - 1]/r$. Here: USD 1,000[(1.05)^3 - 1]/0.05 = 1,000(0.157625/0.05) = 3,152.50$. Each deposit compounds from its payment date to Year 3.</p><p>A is wrong because it ignores compounding.</p><p>C is wrong because it overstates the annuity growth.</p>"
 },
 {
 "id": 2,
@@ -296,7 +296,7 @@
 "C": "USD 4,220"
 },
 "correct_answer": "C",
-"explanation": "<h3>First Principles Thinking: compounding each payment separately</h3><p><strong>C is correct.</strong> First payment grows one year: $2,000(1.10)=2,200$. Second payment is 2,000. Total = 4,200? No — careful. End-of-year 1 grows to 2,200. End-of-year 2 payment adds 2,000. Total = 4,200? That would ignore timing precision. Actually formula: $2,000[(1.10)^2 -1]/0.10 = 2,000(0.21/0.10)=4,200$. Wait — recompute properly: $(1.10)^2=1.21; (1.21-1)=0.21/0.10=2.1×2,000=4,200$. Correct answer is 4,200. </p><p><strong>Corrected:</strong> B is correct.</p><p>A is wrong because it ignores interest.</p><p>C is wrong because it double counts compounding.</p>"
+"explanation": "<h3>First Principles Thinking: compounding each payment separately</h3><p><strong>C is correct.</strong> First payment grows one year: USD 2,000(1.10)=2,200$. Second payment is 2,000. Total = 4,200? No — careful. End-of-year 1 grows to 2,200. End-of-year 2 payment adds 2,000. Total = 4,200? That would ignore timing precision. Actually formula: USD 2,000[(1.10)^2 -1]/0.10 = 2,000(0.21/0.10)=4,200$. Wait — recompute properly: $(1.10)^2=1.21; (1.21-1)=0.21/0.10=2.1×2,000=4,200$. Correct answer is 4,200. </p><p><strong>Corrected:</strong> B is correct.</p><p>A is wrong because it ignores interest.</p><p>C is wrong because it double counts compounding.</p>"
 },
 {
 "id": 3,
@@ -322,7 +322,7 @@
 "C": "USD 3,374.62"
 },
 "correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: annuity due adjustment</h3><p><strong>A is correct.</strong> First find ordinary annuity FV: $1,000[(1.06)^3 -1]/0.06 = 3,183.60$. Because payments occur at the beginning, multiply by (1.06): 3,183.60×1.06 ≈ 3,374.62. Actually 3,374.62 is correct final. </p><p><strong>Corrected:</strong> C is correct.</p><p>B ignores compounding.</p>"
+"explanation": "<h3>First Principles Thinking: annuity due adjustment</h3><p><strong>A is correct.</strong> First find ordinary annuity FV: USD 1,000[(1.06)^3 -1]/0.06 = 3,183.60$. Because payments occur at the beginning, multiply by (1.06): 3,183.60×1.06 ≈ 3,374.62. Actually 3,374.62 is correct final. </p><p><strong>Corrected:</strong> C is correct.</p><p>B ignores compounding.</p>"
 },
 {
 "id": 5,
@@ -361,7 +361,7 @@
 "C": "USD 3,240"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: two-period annuity</h3><p><strong>B is correct.</strong> First payment grows: 1,500(1.08)=1,620. Add second payment 1,500 → total 3,120. Or formula: $1,500[(1.08)^2 -1]/0.08 = 3,120$.</p><p>A ignores interest.</p><p>C overstates growth.</p>"
+"explanation": "<h3>First Principles Thinking: two-period annuity</h3><p><strong>B is correct.</strong> First payment grows: 1,500(1.08)=1,620. Add second payment 1,500 → total 3,120. Or formula: USD 1,500[(1.08)^2 -1]/0.08 = 3,120$.</p><p>A ignores interest.</p><p>C overstates growth.</p>"
 },
 {
 "id": 1,
@@ -374,7 +374,7 @@
 "C": "USD 2,500"
 },
 "correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: present value of an ordinary annuity</h3><p><strong>A is correct.</strong> Present value equals $PMT[1 - (1+r)^{-n}]/r$. Here, $1,000[1 - (1.05)^{-3}]/0.05 = 2,723$. The rule discounts each equal payment back to today. Because payments occur at the end of each year, this is an ordinary annuity. Applying the formula gives approximately USD 2,723.</p><p>B is wrong because it ignores discounting and simply sums the payments.</p><p>C is wrong because it understates the correctly discounted annuity value.</p>"
+"explanation": "<h3>First Principles Thinking: present value of an ordinary annuity</h3><p><strong>A is correct.</strong> Present value equals $PMT[1 - (1+r)^{-n}]/r$. Here, USD 1,000[1 - (1.05)^{-3}]/0.05 = 2,723$. The rule discounts each equal payment back to today. Because payments occur at the end of each year, this is an ordinary annuity. Applying the formula gives approximately USD 2,723.</p><p>B is wrong because it ignores discounting and simply sums the payments.</p><p>C is wrong because it understates the correctly discounted annuity value.</p>"
 },
 {
 "id": 2,
@@ -387,7 +387,7 @@
 "C": "USD 3,000"
 },
 "correct_answer": "B",
-"explanation": "<h3>First Principles Thinking: annuity due adjustment</h3><p><strong>B is correct.</strong> First compute ordinary annuity PV: USD 2,723. Because payments occur at the beginning of each year, multiply by $(1+r)$. So $2,723 × 1.05 ≈ 2,859$. Annuity due payments are worth more because each cash flow is received one period earlier.</p><p>A is wrong because it treats the annuity due as an ordinary annuity.</p><p>C is wrong because it ignores discounting entirely.</p>"
+"explanation": "<h3>First Principles Thinking: annuity due adjustment</h3><p><strong>B is correct.</strong> First compute ordinary annuity PV: USD 2,723. Because payments occur at the beginning of each year, multiply by $(1+r)$. So USD 2,723 × 1.05 ≈ 2,859$. Annuity due payments are worth more because each cash flow is received one period earlier.</p><p>A is wrong because it treats the annuity due as an ordinary annuity.</p><p>C is wrong because it ignores discounting entirely.</p>"
 },
 {
 "id": 3,
@@ -400,7 +400,7 @@
 "C": "USD 2,300"
 },
 "correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: discounting unequal cash flows</h3><p><strong>A is correct.</strong> Each cash flow is discounted separately. $1,000/1.10 = 909$ and $2,000/(1.10)^2 = 1,653$. Total PV ≈ 2,562. The governing rule is that each cash flow must be discounted by $(1+r)^t$ based on its timing.</p><p>B is wrong because it sums the payments without discounting.</p><p>C is wrong because it incorrectly discounts at the wrong rate or period.</p>"
+"explanation": "<h3>First Principles Thinking: discounting unequal cash flows</h3><p><strong>A is correct.</strong> Each cash flow is discounted separately. USD 1,000/1.10 = 909$ and USD 2,000/(1.10)^2 = 1,653$. Total PV ≈ 2,562. The governing rule is that each cash flow must be discounted by $(1+r)^t$ based on its timing.</p><p>B is wrong because it sums the payments without discounting.</p><p>C is wrong because it incorrectly discounts at the wrong rate or period.</p>"
 },
 {
 "id": 4,
@@ -439,7 +439,7 @@
 "C": "USD 1,600"
 },
 "correct_answer": "A",
-"explanation": "<h3>First Principles Thinking: discounting each cash flow separately</h3><p><strong>A is correct.</strong> Discount each payment: $1,000/1.06 = 943$ and $1,000/(1.06)^3 ≈ 840$. Total ≈ 1,783. Each payment is discounted based on its exact timing.</p><p>B is wrong because it ignores discounting.</p><p>C is wrong because it incorrectly discounts or miscalculates periods.</p>"
+"explanation": "<h3>First Principles Thinking: discounting each cash flow separately</h3><p><strong>A is correct.</strong> Discount each payment: USD 1,000/1.06 = 943$ and USD 1,000/(1.06)^3 ≈ 840$. Total ≈ 1,783. Each payment is discounted based on its exact timing.</p><p>B is wrong because it ignores discounting.</p><p>C is wrong because it incorrectly discounts or miscalculates periods.</p>"
 },
 {
 "id": 7,
@@ -467,7 +467,7 @@
       "C": "21%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: solving for r in a single cash flow</h3><p><strong>B is correct.</strong> Use $FV = PV(1+r)^n$. So $1,210 = 1,000(1+r)^2$. Then $(1+r)^2 = 1.21$, so $1+r = √1.21 = 1.10$, and $r = 10%$. The governing rule isolates the growth factor and extracts the root based on periods.</p><p>A is wrong because 5% would produce only 1.1025 growth over two years.</p><p>C is wrong because 21% is the total growth, not the annual rate.</p>"
+    "explanation": "<h3>First Principles Thinking: solving for r in a single cash flow</h3><p><strong>B is correct.</strong> Use $FV = PV(1+r)^n$. So USD 1,210 = 1,000(1+r)^2$. Then $(1+r)^2 = 1.21$, so $1+r = √1.21 = 1.10$, and $r = 10%$. The governing rule isolates the growth factor and extracts the root based on periods.</p><p>A is wrong because 5% would produce only 1.1025 growth over two years.</p><p>C is wrong because 21% is the total growth, not the annual rate.</p>"
   },
   {
     "id": 2,
@@ -480,7 +480,7 @@
       "C": "4"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: solving for n</h3><p><strong>B is correct.</strong> Use $FV = PV(1+r)^n$. So $2,662/2,000 = 1.331 = (1.10)^n$. Since $(1.10)^3 = 1.331$, n = 3 years. The governing rule compares growth factors.</p><p>A is wrong because two periods give only 1.21 growth.</p><p>C is wrong because four periods would produce greater growth.</p>"
+    "explanation": "<h3>First Principles Thinking: solving for n</h3><p><strong>B is correct.</strong> Use $FV = PV(1+r)^n$. So USD 2,662/2,000 = 1.331 = (1.10)^n$. Since $(1.10)^3 = 1.331$, n = 3 years. The governing rule compares growth factors.</p><p>A is wrong because two periods give only 1.21 growth.</p><p>C is wrong because four periods would produce greater growth.</p>"
   },
   {
     "id": 3,
@@ -506,7 +506,7 @@
       "C": "10%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: isolating r using roots</h3><p><strong>B is correct.</strong> $1,500/1,000 = 1.5 = (1+r)^5$. So $1+r = 1.5^{1/5} ≈ 1.084$, giving r ≈ 8.4% (closest to 8%). The governing rule extracts the fifth root.</p><p>A is too low to reach 1.5 growth in five years.</p><p>C is too high and would exceed the target value.</p>"
+    "explanation": "<h3>First Principles Thinking: isolating r using roots</h3><p><strong>B is correct.</strong> USD 1,500/1,000 = 1.5 = (1+r)^5$. So $1+r = 1.5^{1/5} ≈ 1.084$, giving r ≈ 8.4% (closest to 8%). The governing rule extracts the fifth root.</p><p>A is too low to reach 1.5 growth in five years.</p><p>C is too high and would exceed the target value.</p>"
   },
   {
     "id": 5,
@@ -519,7 +519,7 @@
       "C": "6"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: solving for time</h3><p><strong>B is correct.</strong> $1,338/1,000 = 1.338$. Since $(1.06)^5 ≈ 1.338$, n = 5 years. Growth factors determine time required.</p><p>A is wrong because four years gives only 1.262 growth.</p><p>C is wrong because six years would exceed 1.418 growth.</p>"
+    "explanation": "<h3>First Principles Thinking: solving for time</h3><p><strong>B is correct.</strong> USD 1,338/1,000 = 1.338$. Since $(1.06)^5 ≈ 1.338$, n = 5 years. Growth factors determine time required.</p><p>A is wrong because four years gives only 1.262 growth.</p><p>C is wrong because six years would exceed 1.418 growth.</p>"
   },
   {
     "id": 6,
@@ -532,7 +532,7 @@
       "C": "12%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: extracting compound rate</h3><p><strong>B is correct.</strong> $1,464/1,000 = 1.464 = (1+r)^4$. Since $(1.10)^4 = 1.4641$, r ≈ 10%. The governing rule matches the growth factor.</p><p>A and C are wrong because they produce lower or higher compound factors.</p>"
+    "explanation": "<h3>First Principles Thinking: extracting compound rate</h3><p><strong>B is correct.</strong> USD 1,464/1,000 = 1.464 = (1+r)^4$. Since $(1.10)^4 = 1.4641$, r ≈ 10%. The governing rule matches the growth factor.</p><p>A and C are wrong because they produce lower or higher compound factors.</p>"
   },
   {
     "id": 7,
@@ -545,7 +545,7 @@
       "C": "21%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: solving for r over multiple periods</h3><p><strong>B is correct.</strong> $2,420/2,000 = 1.21 = (1+r)^2$. So $1+r = √1.21 = 1.10$, and r = 10%. Compound growth must be extracted using square roots for two periods.</p><p>A is too low to reach 1.21 over two years.</p><p>C confuses total growth with annual rate.</p>"
+    "explanation": "<h3>First Principles Thinking: solving for r over multiple periods</h3><p><strong>B is correct.</strong> USD 2,420/2,000 = 1.21 = (1+r)^2$. So $1+r = √1.21 = 1.10$, and r = 10%. Compound growth must be extracted using square roots for two periods.</p><p>A is too low to reach 1.21 over two years.</p><p>C confuses total growth with annual rate.</p>"
   },
 
 

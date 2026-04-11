@@ -1,40 +1,38 @@
 Building-block Style
-Generate 35 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part I strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_I.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 35 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part I (Katas).json.
+Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II (Katas).json.
 
-enumeration / counting format
-generate 9 cfa-style mcqs for topic:  module 4: analyzing statements of cash flows i for fixed-rate bonds  using /home/karma/cfapractice/mcq/quiz/ai/pdf/fsa/module_08_topics_in_long_term_liabilities_and_equity.txt'.
+Enumeration / counting format
+Generate 7 very hard CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
 Write the output only the JSON array to a dedicated file Analyzing Statements of Cash Flows I EC.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 5 CFA-style assertion–reason questions for Topic: Module 4: Analyzing Statements of Cash Flows I for Fixed-Rate Bonds  using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_08_topics_in_long_term_liabilities_and_equity.txt'.
+Generate 7 very hard CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
 Follow AGENTS.md and use the Assertion Reason.
-Write the output only the JSON array to a dedicated file Analyzing Statements of Cash Flows I AR.json. Append the file if it already exists, DO NOT OVERWRITE
+BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
+Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II AR.json.
 
 Numerical Questions
-Generate 14 CFA-style numerical questions for Topic: Topic: Module 4: Analyzing Statements of Cash Flows I using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_08_topics_in_long_term_liabilities_and_equity.txt'.
-Follow AGENTS.md and use the Numerical Questions format.
-Write the output only the JSON array to a dedicated file and Analyzing Statements of Cash Flows I N.json. Append the file if it already exists, DO NOT OVERWRITE. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST
+Generate 7 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
+BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
+Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II N.json.
 
 
 ---
 
 Hard and Confusing Questions on Ethics
 
-Generate 14 CFA-style confusing MCQs for Standard VI(B) - Referral Fees.
-Use PDFs in PDF/CFA Ethics in Practice.pdf and PDF/standards-practice-handbook-12th-edition.pdf.
-Follow AGENTS.md and use the CFA Ethics Confusion-Driven and Hard Edition format.
-Write the output only the JSON array to a dedicated file to Standard VI(B) - Referral Fees.json.
+Generate 21 CFA-style very hard MCQs for Standard IV(C) - Responsibilities of Supervisors. Use Ethics/standard_04_duties_to_employers.txt. The 60% of the questions should be 'Not a Violation' and you can confuse the student using edge cases or concepts on margins. Follow AGENTS.md and use the CFA Ethics Confusion-Driven and Hard Edition format.
+Write the output only the JSON array to a dedicated file to Standard IV(C) - Responsibilities of Supervisors.json.
 
 
 ---
 
 CFA Ethics Questions Fundamental Katas Edition
 
-Generate 21 CFA-style very easy MCQs for Standard VI(B) - Referral Fees.
-Use PDFs in PDF/CFA Ethics in Practice.pdf and PDF/standards-practice-handbook-12th-edition.pdf.
+Generate 21 CFA-style very easy MCQs for Standard IV(A) - Loyalty. Use Ethics/standard_04_duties_to_employers.txt.
 Follow AGENTS.md and use the CFA Ethics Questions Fundamental Katas Edition.
 Write the output only the JSON array to a dedicated file to Standard VI(B) - Referral Fees (Katas).json.
 

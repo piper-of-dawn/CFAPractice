@@ -362,6 +362,255 @@ def _timer_seconds_for(questions: list[dict], source_path: Path | None = None) -
     return max(0, per_q * len(questions))
 
 
+CFA_SESSION_TOTAL = 90
+CFA_SESSION_SPECS = {
+    "morning": {
+        "title": "Practice Morning Session",
+        "topics": {
+            "Ethics": (15, 20),
+            "Quantitative Methods": (6, 9),
+            "Economics": (6, 9),
+            "Financial Statement Analysis": (11, 14),
+            "Corporate Issuers": (6, 9),
+        },
+    },
+    "evening": {
+        "title": "Practice Evening Session",
+        "topics": {
+            "Equity": (11, 14),
+            "Fixed Income": (11, 14),
+            "Derivatives": (5, 8),
+            "Alternative Investments": (7, 10),
+            "Portfolio Management": (8, 12),
+        },
+    },
+}
+
+
+def _scaled_session_allocations(spec: dict, total: int = CFA_SESSION_TOTAL) -> dict[str, int]:
+    """Scale CFA midpoint weights to exact integer topic counts."""
+    midpoints = {
+        topic: (weight_range[0] + weight_range[1]) / 2
+        for topic, weight_range in spec["topics"].items()
+    }
+    midpoint_total = sum(midpoints.values())
+    raw = {
+        topic: (midpoint / midpoint_total) * total
+        for topic, midpoint in midpoints.items()
+    }
+    allocations = {topic: int(count) for topic, count in raw.items()}
+    remaining = total - sum(allocations.values())
+    remainders = sorted(
+        raw.items(),
+        key=lambda item: (item[1] - int(item[1]), item[0]),
+        reverse=True,
+    )
+    for topic, _ in remainders[:remaining]:
+        allocations[topic] += 1
+    return allocations
+
+
+def _load_topic_question_pool(topic: str) -> list[dict]:
+    topic_dir = DATA_DIR / topic
+    if not topic_dir.is_dir():
+        return []
+
+    pool = []
+    for p in sorted(topic_dir.glob("*.json")):
+        if p.name.lower() == "mistakes.json" or "katas" in p.stem.lower():
+            continue
+        try:
+            with p.open("r", encoding="utf-8") as f:
+                qs = _normalize_questions(json.load(f))
+        except Exception:
+            continue
+        rel = str(p.relative_to(DATA_DIR)).replace("\\", "/")
+        for idx, q in enumerate(qs):
+            extras = dict(q.get("extras") or {})
+            if not (extras.get("topic") or extras.get("category")):
+                extras["topic"] = topic
+            extras["source_file"] = rel
+            q["extras"] = extras
+            pool.append({"ref": f"{rel}#{idx}", "question": q})
+    return pool
+
+
+def _load_questions_by_refs(refs: list[str]) -> list[dict]:
+    grouped_refs: dict[str, list[tuple[int, str]]] = {}
+    for ref in refs:
+        rel, sep, idx_s = ref.rpartition("#")
+        if not sep:
+            continue
+        try:
+            idx = int(idx_s)
+        except ValueError:
+            continue
+        grouped_refs.setdefault(rel, []).append((idx, ref))
+
+    questions_by_ref = {}
+    base = DATA_DIR.resolve()
+    for rel, wanted in grouped_refs.items():
+        target = (base / rel).resolve()
+        try:
+            if not target.is_file() or not target.is_relative_to(base):
+                continue
+            with target.open("r", encoding="utf-8") as f:
+                qs = _normalize_questions(json.load(f))
+            topic = Path(rel).parts[0] if len(Path(rel).parts) > 1 else "General"
+            for idx, ref in wanted:
+                if idx < 0 or idx >= len(qs):
+                    continue
+                q = dict(qs[idx])
+                extras = dict(q.get("extras") or {})
+                if not (extras.get("topic") or extras.get("category")):
+                    extras["topic"] = topic
+                extras["source_file"] = rel
+                q["extras"] = extras
+                questions_by_ref[ref] = q
+        except Exception:
+            continue
+    return [questions_by_ref[ref] for ref in refs if ref in questions_by_ref]
+
+
+def _build_session_refs(session_name: str) -> tuple[list[str], dict[str, int]]:
+    spec = CFA_SESSION_SPECS[session_name]
+    allocations = _scaled_session_allocations(spec)
+    selected = []
+    for topic, count in allocations.items():
+        pool = _load_topic_question_pool(topic)
+        if len(pool) <= count:
+            picked = pool
+        else:
+            picked = random.sample(pool, count)
+        selected.extend(item["ref"] for item in picked)
+    random.shuffle(selected)
+    return selected, allocations
+
+
+def _enrich_questions_for_template(questions: list[dict], checked: dict | None = None) -> list[dict]:
+    checked = checked or {}
+    enriched = []
+    for i, q in enumerate(questions):
+        text = q.get("text", "")
+        choices = q.get("choices", [])
+        answer = q.get("answer", 0)
+        explanation = q.get("explanation")
+        explanation_html = _render_explanation_html(explanation)
+        extras = dict(q.get("extras", {}))
+        enriched.append(
+            {
+                "index": i,
+                "text": text,
+                "text_html": _render_stem_html(text),
+                "choices": [(idx, choice, _render_choice_html(choice)) for idx, choice in enumerate(choices)],
+                "answer": answer,
+                "selected": checked.get(f"q{i}"),
+                "explanation": explanation,
+                "explanation_html": explanation_html,
+                "extras": extras,
+                "json": json.dumps(
+                    {
+                        "text": text,
+                        "choices": choices,
+                        "answer": answer,
+                        "explanation": explanation,
+                        "explanation_html": str(explanation_html),
+                        "extras": extras,
+                    }
+                ),
+            }
+        )
+    return enriched
+
+
+def _session_section(q: dict) -> str:
+    extras = q.get("extras") or {}
+    source_file = (extras.get("source_file") or "").strip()
+    if source_file:
+        return Path(source_file).stem
+    return (extras.get("topic") or extras.get("category") or "Unknown").strip() or "Unknown"
+
+
+def _session_grand_section(q: dict) -> str:
+    extras = q.get("extras") or {}
+    source_file = (extras.get("source_file") or "").strip()
+    if source_file:
+        parts = Path(source_file).parts
+        if len(parts) > 1:
+            return parts[0]
+    return (extras.get("topic") or extras.get("category") or "Unknown").strip() or "Unknown"
+
+
+def _build_session_report(questions: list[dict], checked: dict) -> dict:
+    section_stats: dict[str, dict] = {}
+    wrong = []
+    correctness = []
+    for i, q in enumerate(questions):
+        key = f"q{i}"
+        selected_idx = checked.get(key)
+        answer_idx = q.get("answer", 0)
+        is_answered = selected_idx is not None
+        is_correct = is_answered and selected_idx == answer_idx
+        correctness.append(bool(is_correct))
+        grand_section = _session_grand_section(q)
+        subtopic = _session_section(q)
+        section_stat = section_stats.setdefault(
+            grand_section,
+            {"section": grand_section, "correct": 0, "answered": 0, "total": 0, "subtopics": {}},
+        )
+        subtopic_stat = section_stat["subtopics"].setdefault(
+            subtopic,
+            {"subtopic": subtopic, "correct": 0, "answered": 0, "total": 0},
+        )
+        for stat in (section_stat, subtopic_stat):
+            stat["total"] += 1
+            if is_answered:
+                stat["answered"] += 1
+            if is_correct:
+                stat["correct"] += 1
+        if not is_correct:
+            choices = q.get("choices") or []
+            wrong.append(
+                {
+                    "number": i + 1,
+                    "section": grand_section,
+                    "source": subtopic,
+                    "text_html": _render_stem_html(q.get("text", "")),
+                    "selected": choices[selected_idx] if selected_idx is not None and 0 <= selected_idx < len(choices) else "No answer",
+                    "correct": choices[answer_idx] if 0 <= answer_idx < len(choices) else f"Option {answer_idx + 1}",
+                    "explanation_html": _render_explanation_html(q.get("explanation")),
+                }
+            )
+            if is_answered:
+                try:
+                    _append_mistake(q)
+                except Exception:
+                    pass
+
+    score, streak, longest = _score_and_streak(correctness)
+    sections = []
+    for stat in section_stats.values():
+        stat["accuracy"] = (stat["correct"] / stat["total"] * 100) if stat["total"] else 0
+        subtopics = []
+        for subtopic_stat in stat["subtopics"].values():
+            subtopic_stat["accuracy"] = (
+                subtopic_stat["correct"] / subtopic_stat["total"] * 100
+            ) if subtopic_stat["total"] else 0
+            subtopics.append(subtopic_stat)
+        stat["subtopics"] = sorted(subtopics, key=lambda item: item["subtopic"].lower())
+        sections.append(stat)
+    return {
+        "score": score,
+        "total": len(questions),
+        "answered": sum(1 for v in checked.values() if v is not None),
+        "accuracy": (score / len(questions) * 100) if questions else 0,
+        "streak": streak,
+        "longest": longest,
+        "sections": sorted(sections, key=lambda item: item["section"].lower()),
+        "wrong": wrong,
+    }
+
+
 def _load_katas_html() -> str:
     fallback_html = "<p>Katas content is not available.</p>"
     roots = list(Path(__file__).resolve().parents)
@@ -872,6 +1121,60 @@ def master(request):
         "data_source": f"master: {total} from {len(files_used)} files",
         # For master, default to non-kata timing unless content indicates otherwise
         "timer_seconds": _timer_seconds_for(selection, None),
+    }
+    return render(request, "quiz/mcq.html", context)
+
+
+@require_http_methods(["GET", "POST"])
+def session_practice(request, session_name):
+    if session_name not in CFA_SESSION_SPECS:
+        return redirect("home")
+
+    allocations = _scaled_session_allocations(CFA_SESSION_SPECS[session_name])
+    if request.method == "POST":
+        refs = request.POST.getlist("question_ref")
+    else:
+        refs, allocations = _build_session_refs(session_name)
+
+    questions = _load_questions_by_refs(list(refs))
+    if not questions:
+        return redirect("home")
+
+    checked = {}
+    report = None
+    score = 0
+    streak = 0
+    longest = 0
+    if request.method == "POST":
+        correctness = []
+        for i, q in enumerate(questions):
+            key = f"q{i}"
+            val = request.POST.get(key)
+            try:
+                selected_idx = int(val) if val is not None else None
+            except (TypeError, ValueError):
+                selected_idx = None
+            checked[key] = selected_idx
+            correctness.append(selected_idx is not None and selected_idx == q.get("answer", 0))
+        score, streak, longest = _score_and_streak(correctness)
+        report = _build_session_report(questions, checked)
+
+    context = {
+        "questions": _enrich_questions_for_template(questions, checked),
+        "total": len(questions),
+        "score": score,
+        "streak": streak,
+        "longest": longest,
+        "checked": checked,
+        "quiz_title": CFA_SESSION_SPECS[session_name]["title"],
+        "data_source": f"{session_name}: session topic mix",
+        "timer_seconds": _timer_seconds_for(questions, None),
+        "is_session_quiz": True,
+        "session_name": session_name,
+        "session_report": report,
+        "session_submitted": report is not None,
+        "session_allocations": allocations,
+        "session_refs": refs,
     }
     return render(request, "quiz/mcq.html", context)
 

@@ -9,7 +9,7 @@
       "C": "6.5%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: equity risk premium calculation</h3><p><strong>B is correct.</strong> The equity risk premium over bonds equals the real equity return minus the real bond return: $6.5\\% - 2.0\\% = 4.5\\%$. This premium compensates investors for the additional risk of holding equities instead of bonds.</p><p>A is incorrect. This is the real bond return itself (2.0%), not the premium of equities over bonds. Confusing the bond return with the premium is a common beginner error.</p><p>C is incorrect. This is the total real equity return (6.5%), not the premium over bonds. The premium requires subtracting the bond return to isolate the additional compensation for equity risk.</p>"
+    "explanation": "<h3>First Principles Thinking: equity risk premium calculation</h3><p><strong>B is correct.</strong> The equity risk premium over bonds equals the real equity return minus the real bond return: USD 6.5\\% - 2.0\\% = 4.5\\%$. This premium compensates investors for the additional risk of holding equities instead of bonds.</p><p>A is incorrect. This is the real bond return itself (2.0%), not the premium of equities over bonds. Confusing the bond return with the premium is a common beginner error.</p><p>C is incorrect. This is the total real equity return (6.5%), not the premium over bonds. The premium requires subtracting the bond return to isolate the additional compensation for equity risk.</p>"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
       "C": "12.00%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: utility function computation</h3><p><strong>B is correct.</strong> $U = E(r) - \\frac{1}{2}A\\sigma^2 = 0.12 - 0.5 \\times 4 \\times 0.25^2 = 0.12 - 0.5 \\times 4 \\times 0.0625 = 0.12 - 0.125 = -0.005 = -0.50\\%$. The high risk aversion and high variance result in a negative utility, indicating this investor would prefer the risk-free asset if it offered more than -0.50%.</p><p>A is incorrect. This results from omitting the $\\frac{1}{2}$ factor: $0.12 - 4 \\times 0.0625 = 0.12 - 0.25 = -0.13$. The $\\frac{1}{2}$ is an integral part of the utility formula and must not be dropped.</p><p>C is incorrect. This equals the expected return alone and ignores the risk penalty entirely, which would only be correct for a risk-neutral investor where $A = 0$.</p>"
+    "explanation": "<h3>First Principles Thinking: utility function computation</h3><p><strong>B is correct.</strong> $U = E(r) - \\frac{1}{2}A\\sigma^2 = 0.12 - 0.5 \\times 4 \\times 0.25^2 = 0.12 - 0.5 \\times 4 \\times 0.0625 = 0.12 - 0.125 = -0.005 = -0.50\\%$. The high risk aversion and high variance result in a negative utility, indicating this investor would prefer the risk-free asset if it offered more than -0.50%.</p><p>A is incorrect. This results from omitting the $\\frac{1}{2}$ factor: USD 0.12 - 4 \\times 0.0625 = 0.12 - 0.25 = -0.13$. The $\\frac{1}{2}$ is an integral part of the utility formula and must not be dropped.</p><p>C is incorrect. This equals the expected return alone and ignores the risk penalty entirely, which would only be correct for a risk-neutral investor where $A = 0$.</p>"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "C": "0.0300"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: covariance from correlation and standard deviations</h3><p><strong>B is correct.</strong> $Cov(R_A, R_B) = \\rho_{AB} \\times \\sigma_A \\times \\sigma_B = 0.60 \\times 0.15 \\times 0.20 = 0.0180$. The covariance is the product of the correlation coefficient and both standard deviations.</p><p>A is incorrect. This results from mistakenly using variances instead of standard deviations: $0.60 \\times 0.15^2 \\times 0.20^2 = 0.60 \\times 0.0225 \\times 0.04 = 0.00054$, or from a decimal placement error. The formula requires standard deviations, not variances.</p><p>C is incorrect. This results from omitting the correlation coefficient entirely: $0.15 \\times 0.20 = 0.03$. The correlation is a required component of the covariance formula and cannot be ignored.</p>"
+    "explanation": "<h3>First Principles Thinking: covariance from correlation and standard deviations</h3><p><strong>B is correct.</strong> $Cov(R_A, R_B) = \\rho_{AB} \\times \\sigma_A \\times \\sigma_B = 0.60 \\times 0.15 \\times 0.20 = 0.0180$. The covariance is the product of the correlation coefficient and both standard deviations.</p><p>A is incorrect. This results from mistakenly using variances instead of standard deviations: USD 0.60 \\times 0.15^2 \\times 0.20^2 = 0.60 \\times 0.0225 \\times 0.04 = 0.00054$, or from a decimal placement error. The formula requires standard deviations, not variances.</p><p>C is incorrect. This results from omitting the correlation coefficient entirely: USD 0.15 \\times 0.20 = 0.03$. The correlation is a required component of the covariance formula and cannot be ignored.</p>"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
       "C": "16.00%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: two-asset portfolio standard deviation</h3><p><strong>A is correct.</strong> $\\sigma_P^2 = w_X^2\\sigma_X^2 + w_Y^2\\sigma_Y^2 + 2w_Xw_Y\\rho_{XY}\\sigma_X\\sigma_Y$ $= 0.40^2 \\times 0.10^2 + 0.60^2 \\times 0.20^2 + 2 \\times 0.40 \\times 0.60 \\times 0.30 \\times 0.10 \\times 0.20$ $= 0.0016 + 0.0144 + 0.00288 = 0.01888$. $\\sigma_P = \\sqrt{0.01888} = 0.1374 = 13.74\\%$.</p><p>B is incorrect. This is the portfolio standard deviation if the correlation were 0 instead of 0.30: $\\sqrt{0.0016 + 0.0144} = \\sqrt{0.0160} = 12.65\\%$. Omitting the covariance term understates portfolio risk.</p><p>C is incorrect. This is the weighted average of standard deviations: $0.40 \\times 10\\% + 0.60 \\times 20\\% = 16\\%$, which would only be correct if the correlation were +1. Portfolio standard deviation is less than the weighted average when $\\rho < 1$.</p>"
+    "explanation": "<h3>First Principles Thinking: two-asset portfolio standard deviation</h3><p><strong>A is correct.</strong> $\\sigma_P^2 = w_X^2\\sigma_X^2 + w_Y^2\\sigma_Y^2 + 2w_Xw_Y\\rho_{XY}\\sigma_X\\sigma_Y$ $= 0.40^2 \\times 0.10^2 + 0.60^2 \\times 0.20^2 + 2 \\times 0.40 \\times 0.60 \\times 0.30 \\times 0.10 \\times 0.20$ $= 0.0016 + 0.0144 + 0.00288 = 0.01888$. $\\sigma_P = \\sqrt{0.01888} = 0.1374 = 13.74\\%$.</p><p>B is incorrect. This is the portfolio standard deviation if the correlation were 0 instead of 0.30: $\\sqrt{0.0016 + 0.0144} = \\sqrt{0.0160} = 12.65\\%$. Omitting the covariance term understates portfolio risk.</p><p>C is incorrect. This is the weighted average of standard deviations: USD 0.40 \\times 10\\% + 0.60 \\times 20\\% = 16\\%$, which would only be correct if the correlation were +1. Portfolio standard deviation is less than the weighted average when $\\rho < 1$.</p>"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
       "C": "11.60%"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: weighted average portfolio return</h3><p><strong>A is correct.</strong> $R_p = w_A \\times R_A + w_B \\times R_B = 0.60 \\times 8\\% + 0.40 \\times 14\\% = 4.80\\% + 5.60\\% = 10.40\\%$. Portfolio return is always a weighted average of individual asset returns, regardless of correlation.</p><p>B is incorrect. This is the simple average of the two returns: $(8\\% + 14\\%) / 2 = 11\\%$. The simple average ignores the different portfolio weights and assumes equal allocation.</p><p>C is incorrect. This results from reversing the weights: $0.40 \\times 8\\% + 0.60 \\times 14\\% = 3.20\\% + 8.40\\% = 11.60\\%$. Applying the wrong weight to the wrong asset is a common error in portfolio return calculations.</p>"
+    "explanation": "<h3>First Principles Thinking: weighted average portfolio return</h3><p><strong>A is correct.</strong> $R_p = w_A \\times R_A + w_B \\times R_B = 0.60 \\times 8\\% + 0.40 \\times 14\\% = 4.80\\% + 5.60\\% = 10.40\\%$. Portfolio return is always a weighted average of individual asset returns, regardless of correlation.</p><p>B is incorrect. This is the simple average of the two returns: $(8\\% + 14\\%) / 2 = 11\\%$. The simple average ignores the different portfolio weights and assumes equal allocation.</p><p>C is incorrect. This results from reversing the weights: USD 0.40 \\times 8\\% + 0.60 \\times 14\\% = 3.20\\% + 8.40\\% = 11.60\\%$. Applying the wrong weight to the wrong asset is a common error in portfolio return calculations.</p>"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
       "C": "15.00%"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: diversification benefit on the minimum-variance frontier</h3><p><strong>B is correct.</strong> $\\sigma_P^2 = 0.50^2 \\times 0.15^2 + 0.50^2 \\times 0.15^2 + 2 \\times 0.50 \\times 0.50 \\times 0.40 \\times 0.15 \\times 0.15$ $= 0.005625 + 0.005625 + 0.0045 = 0.01575$. $\\sigma_P = \\sqrt{0.01575} = 0.1255 = 12.55\\%$. The portfolio risk is below 15% because the correlation is less than +1, demonstrating the diversification benefit.</p><p>A is incorrect. This is the portfolio standard deviation if the correlation were 0: $\\sqrt{0.005625 + 0.005625} = \\sqrt{0.01125} = 10.61\\%$. Using zero correlation overstates the diversification benefit when the actual correlation is positive.</p><p>C is incorrect. This is the weighted average of standard deviations (or the result when $\\rho = +1$): $0.50 \\times 15\\% + 0.50 \\times 15\\% = 15\\%$. This assumes no diversification benefit, which only occurs at perfect positive correlation.</p>"
+    "explanation": "<h3>First Principles Thinking: diversification benefit on the minimum-variance frontier</h3><p><strong>B is correct.</strong> $\\sigma_P^2 = 0.50^2 \\times 0.15^2 + 0.50^2 \\times 0.15^2 + 2 \\times 0.50 \\times 0.50 \\times 0.40 \\times 0.15 \\times 0.15$ $= 0.005625 + 0.005625 + 0.0045 = 0.01575$. $\\sigma_P = \\sqrt{0.01575} = 0.1255 = 12.55\\%$. The portfolio risk is below 15% because the correlation is less than +1, demonstrating the diversification benefit.</p><p>A is incorrect. This is the portfolio standard deviation if the correlation were 0: $\\sqrt{0.005625 + 0.005625} = \\sqrt{0.01125} = 10.61\\%$. Using zero correlation overstates the diversification benefit when the actual correlation is positive.</p><p>C is incorrect. This is the weighted average of standard deviations (or the result when $\\rho = +1$): USD 0.50 \\times 15\\% + 0.50 \\times 15\\% = 15\\%$. This assumes no diversification benefit, which only occurs at perfect positive correlation.</p>"
   },
   {
     "id": 1,

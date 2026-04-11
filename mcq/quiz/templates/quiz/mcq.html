@@ -59,6 +59,7 @@
       }
     })();
   </script>
+  <script defer src="{% static 'quiz/js/question_keyboard_nav.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
   :root {
@@ -210,6 +211,16 @@
     box-shadow: 0 10px 30px rgba(15,23,42,0.12);
     transition: border-color .2s, box-shadow .2s, background .2s;
   }
+  .question.is-selected {
+    border-color: rgba(var(--secondary-rgb), 0.95);
+    box-shadow: 0 8px 22px rgba(var(--secondary-rgb), 0.44);
+    animation: selectedQuestionGlow 3s ease-out;
+  }
+  @keyframes selectedQuestionGlow {
+    0% { box-shadow: 0 0 0 0 rgba(var(--secondary-rgb), 0); }
+    35% { box-shadow: 0 0 26px 8px rgba(var(--secondary-rgb), 0.58); }
+    100% { box-shadow: 0 8px 22px rgba(var(--secondary-rgb), 0.44); }
+  }
   :root[data-theme="dark"] .question {
     /* Apple-like glass: translucent tint + strong blur + soft shadow */
     position: relative;
@@ -224,6 +235,12 @@
     box-shadow:
       inset 0 1px 0 rgba(255,255,255,0.08),
       0 6px 18px rgba(2,6,23,0.32);
+  }
+  :root[data-theme="dark"] .question.is-selected {
+    border-color: rgba(var(--secondary-rgb), 0.95);
+    box-shadow:
+      0 0 26px 6px rgba(var(--secondary-rgb), 0.42),
+      0 8px 22px rgba(var(--secondary-rgb), 0.34);
   }
   /* Removed scroll-reveal animations */
   /* Match light-mode feedback intensity to dark mode */
@@ -279,8 +296,7 @@
   .choice:has(input:checked) { background: var(--hover); box-shadow: 0 0 0 2px var(--border); }
   /* Fallback highlight via label if :has() unsupported */
   .choice input:checked + label { font-weight: 400; background: var(--hover); padding: 6px 8px; border-radius: 10px; }
-  /* Focus-visible on the radio improves accessibility */
-  .choice input:focus-visible + label { outline: 2px solid var(--border); outline-offset: 2px; border-radius: 10px; }
+  .choice input:focus-visible + label { outline: none; }
   .choice:hover { border-color: #cbd5e1; background: var(--hover); }
   :root[data-theme="dark"] .choice { background: rgba(var(--secondary-rgb), 0.03); }
   :root[data-theme="dark"] .choice input { accent-color: var(--secondary); }
@@ -789,6 +805,152 @@
   }
   :root[data-theme="dark"] .chart-empty { color: #b8c1d8; }
   :root[data-theme="dark"] .chart-delta { color: #d7def0; }
+  .session-report {
+    margin: 0 0 24px;
+    padding: 24px 28px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #3f4046;
+    border: 1px solid #ececf0;
+    box-shadow: 0 2px 10px rgba(16, 16, 20, 0.08);
+  }
+  .session-report h2,
+  .session-report h3 {
+    font-family: var(--explanation-serif-font);
+    font-weight: 500;
+    color: #35363d;
+    margin: 0 0 12px;
+  }
+  .session-report h2 {
+    font-size: clamp(30px, 3.6vw, 42px);
+    text-align: center;
+  }
+  .session-report h3 {
+    font-size: clamp(22px, 2.4vw, 30px);
+    margin-top: 24px;
+  }
+  .session-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 18px 0 22px;
+  }
+  .session-metric {
+    border: 1px solid #e2e3e8;
+    border-radius: 8px;
+    padding: 12px;
+    background: #f8f8fa;
+  }
+  .session-metric span {
+    display: block;
+    color: #6a6c75;
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .session-metric strong {
+    color: #1f2024;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .session-report table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 18px;
+    font-size: 15px;
+  }
+  .session-report th,
+  .session-report td {
+    border-bottom: 1px solid #e5e5ea;
+    padding: 9px 6px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .session-report th {
+    color: #5f6068;
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .section-row td {
+    font-weight: 700;
+    color: #1f2024;
+    background: #f4f5f7;
+  }
+  .subtopic-row td:first-child {
+    padding-left: 24px;
+    color: #595b63;
+  }
+  .subtopic-row td:first-child::before {
+    content: "Subtopic: ";
+    color: #8a8c95;
+    font-family: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .wrong-answer {
+    margin: 18px 0;
+    padding: 16px 0 0;
+    border-top: 1px solid #d5d6dc;
+  }
+  .wrong-answer .stem {
+    color: #3f4046;
+    margin-bottom: 10px;
+  }
+  .wrong-answer p {
+    color: #595b63;
+    font-family: var(--explanation-serif-font);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+  }
+  .report-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  :root[data-theme="dark"] .session-report {
+    background: #ffffff;
+    color: #3f4046;
+  }
+  @media print {
+    body,
+    :root[data-theme="dark"] body {
+      background: #ffffff !important;
+      color: #111827 !important;
+    }
+    body::before,
+    body::after,
+    #gridCanvas,
+    .theme-toggle,
+    .grid,
+    .top-controls {
+      display: none !important;
+    }
+    .wrap {
+      max-width: none;
+      padding: 0;
+    }
+    header {
+      margin-bottom: 12px;
+    }
+    .session-report {
+      box-shadow: none;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+    .report-actions {
+      display: none !important;
+    }
+    .wrong-answer {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
   @media (max-width: 680px) {
     .question,
     .choice,
@@ -951,9 +1113,10 @@
       line-height: 1.66;
     }
   }
+  {% include "quiz/includes/reading_modal_styles.html" %}
   </style>
 </head>
-<body data-timer-seconds="{{ timer_seconds|default:'0' }}" data-quiz-source="{{ data_source|default:''|escape }}">
+<body data-timer-seconds="{{ timer_seconds|default:'0' }}" data-quiz-source="{{ data_source|default:''|escape }}" data-session-mode="{% if is_session_quiz %}1{% else %}0{% endif %}" data-session-submitted="{% if session_submitted %}1{% else %}0{% endif %}">
   <canvas id="gridCanvas" aria-hidden="true"></canvas>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
     <span class="icon" aria-hidden="true"></span>
@@ -965,10 +1128,105 @@
       <div class="sub">{{ total }} questions</div>
     </header>
 
+    {% if is_session_quiz and not session_submitted %}
+      <div id="sessionIntroModal" class="katas-modal show is-visible" aria-hidden="false">
+        <div class="katas-backdrop" data-session-intro-close></div>
+        <div class="katas-dialog" role="dialog" aria-modal="true" aria-labelledby="sessionIntroTitle">
+          <div class="katas-head">
+            <h2 class="katas-title" id="sessionIntroTitle">{{ quiz_title }}</h2>
+            <button class="katas-close" type="button" aria-label="Close" data-session-intro-close>&times;</button>
+          </div>
+          <div class="katas-body">
+            <h2>Before You Start</h2>
+            <ol>
+              <li>This session has 90 practice questions.</li>
+              <li>Questions are randomly mixed from the session topics.</li>
+              <li>Use arrow keys to move between questions, and Q, W, E or A, W, C to select an answer.</li>
+              <li>No answers or explanations are shown while you practice.</li>
+              <li>Submit once to see your score, section accuracy, and wrong-answer explanations.</li>
+            </ol>
+            <div class="report-actions">
+              <button class="btn btn-primary" type="button" data-session-intro-close>Begin</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if session_report %}
+      <section class="session-report katas-body" id="sessionReport">
+        <h2>{{ quiz_title }} Report</h2>
+        <div class="session-metrics">
+          <div class="session-metric"><span>Score</span><strong>{{ session_report.score }} / {{ session_report.total }}</strong></div>
+          <div class="session-metric"><span>Accuracy</span><strong>{{ session_report.accuracy|floatformat:1 }}%</strong></div>
+          <div class="session-metric"><span>Answered</span><strong>{{ session_report.answered }} / {{ session_report.total }}</strong></div>
+          <div class="session-metric"><span>Longest Streak</span><strong>{{ session_report.longest }}</strong></div>
+        </div>
+
+        <h3>Section Accuracy</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Correct</th>
+              <th>Answered</th>
+              <th>Accuracy</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for section in session_report.sections %}
+              <tr class="section-row">
+                <td>{{ section.section }}</td>
+                <td>{{ section.correct }} / {{ section.total }}</td>
+                <td>{{ section.answered }} / {{ section.total }}</td>
+                <td>{{ section.accuracy|floatformat:1 }}%</td>
+              </tr>
+              {% for subtopic in section.subtopics %}
+                <tr class="subtopic-row">
+                  <td>{{ subtopic.subtopic }}</td>
+                  <td>{{ subtopic.correct }} / {{ subtopic.total }}</td>
+                  <td>{{ subtopic.answered }} / {{ subtopic.total }}</td>
+                  <td>{{ subtopic.accuracy|floatformat:1 }}%</td>
+                </tr>
+              {% endfor %}
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <h3>Wrong Answer Review</h3>
+        {% if session_report.wrong %}
+          {% for item in session_report.wrong %}
+            <article class="wrong-answer">
+              <p><strong>Question {{ item.number }} · {{ item.section }}</strong></p>
+              <p>Source: <strong>{{ item.source }}</strong></p>
+              <div class="stem">{{ item.text_html|safe }}</div>
+              <p>Your answer: <strong>{{ item.selected }}</strong><br>Correct answer: <strong>{{ item.correct }}</strong></p>
+              {% if item.explanation_html %}
+                <div class="katas-richtext">{{ item.explanation_html|safe }}</div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        {% else %}
+          <p>No wrong answers in this session.</p>
+        {% endif %}
+
+        <div class="report-actions">
+          <button class="btn btn-primary" type="button" id="printSessionReportBtn">Print to PDF</button>
+          <a class="btn btn-secondary" href="{% url 'home' %}">Back to Home</a>
+          <a class="btn btn-primary" href="{% url 'session_practice' session_name %}?fresh=1">Start New {{ quiz_title }}</a>
+        </div>
+      </section>
+    {% endif %}
+
     <div class="grid">
       <form method="post" action="" id="quizForm" autocomplete="off">
         <div class="content">
           {% csrf_token %}
+          {% if is_session_quiz %}
+            {% for ref in session_refs %}
+              <input type="hidden" name="question_ref" value="{{ ref }}">
+            {% endfor %}
+          {% endif %}
           {% for q in questions %}
             <section class="question" data-correct="{{ q.answer }}" data-qname="q{{ q.index }}" data-json='{{ q.json|escape }}'>
               <div class="qmeta-row">
@@ -979,7 +1237,7 @@
               <ul class="choices">
                 {% for idx, choice, choice_html in q.choices %}
                   <li class="choice">
-                    <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}" {% if q.selected == idx %}checked{% endif %}>
+                    <input type="radio" name="q{{ q.index }}" value="{{ idx }}" id="q{{ q.index }}_{{ idx }}" {% if q.selected == idx %}checked{% endif %} {% if session_submitted %}disabled{% endif %}>
                     <label for="q{{ q.index }}_{{ idx }}">{{ choice_html|safe }}</label>
                   </li>
                 {% endfor %}
@@ -997,14 +1255,23 @@
           {% endfor %}
         </div>
         <div class="actions">
-          <a href="{% url 'reset' %}"><button class="btn btn-secondary" type="button">Reset</button></a>
+          {% if is_session_quiz %}
+            {% if session_submitted %}
+              <a href="{% url 'session_practice' session_name %}?fresh=1"><button class="btn btn-secondary" type="button">Start New Session</button></a>
+            {% else %}
+              <button class="btn btn-primary" type="submit">Submit Session</button>
+              <a href="{% url 'home' %}"><button class="btn btn-secondary" type="button">Back Home</button></a>
+            {% endif %}
+          {% else %}
+            <a href="{% url 'reset' %}"><button class="btn btn-secondary" type="button">Reset</button></a>
+          {% endif %}
         </div>
       </form>
 
       <aside class="sidebar" id="sidebar">
         <div class="card" style="margin-bottom:16px;">
           <div class="content">
-            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/chart-line.svg')" aria-hidden="true"></span>Score</span><span class="value" id="scoreValue">0 / {{ total }}</span></div>
+            <div class="metric"><span class="label label-with-icon"><span class="svg-icon" style="--icon-url:url('https://api.iconify.design/fa-solid/chart-line.svg')" aria-hidden="true"></span>{% if is_session_quiz and not session_submitted %}Progress{% else %}Score{% endif %}</span><span class="value" id="scoreValue">{% if session_submitted %}{{ score }} / {{ total }}{% else %}0 / {{ total }}{% endif %}</span></div>
             <div class="metric"><span class="label">Streak</span><span class="value" id="streakValue">0</span></div>
             <span class="pill" id="longestPill">Longest: 0</span>
             <hr style="border:0;height:1px;background:var(--border);opacity:0.35;margin:12px 0;">
@@ -1038,6 +1305,40 @@
       </aside>
     </div>
   </div>
+
+  {% if is_session_quiz and not session_submitted %}
+  <script>
+    (function () {
+      const modal = document.getElementById('sessionIntroModal');
+      if (!modal) return;
+      const closeTargets = modal.querySelectorAll('[data-session-intro-close]');
+      function closeIntro() {
+        modal.classList.add('is-closing');
+        modal.classList.remove('is-visible');
+        window.setTimeout(() => {
+          modal.classList.remove('show', 'is-closing');
+          modal.setAttribute('aria-hidden', 'true');
+          window.dispatchEvent(new CustomEvent('sessionintroclosed'));
+        }, 220);
+      }
+      closeTargets.forEach((el) => el.addEventListener('click', closeIntro));
+      window.addEventListener('keydown', (event) => {
+        if (!modal.classList.contains('show')) return;
+        if (event.key === 'Escape' || event.key === 'Enter') closeIntro();
+      });
+    })();
+  </script>
+  {% endif %}
+
+  {% if session_submitted %}
+  <script>
+    (function () {
+      const printBtn = document.getElementById('printSessionReportBtn');
+      if (!printBtn) return;
+      printBtn.addEventListener('click', () => window.print());
+    })();
+  </script>
+  {% endif %}
 
   <script>
     (function () {
@@ -1163,10 +1464,12 @@
       const streakEl = document.getElementById('streakValue');
       const longestEl = document.getElementById('longestPill');
       const questions = Array.from(document.querySelectorAll('section.question'));
+      const isSessionMode = document.body.dataset.sessionMode === '1';
+      const isSessionSubmitted = document.body.dataset.sessionSubmitted === '1';
       const inlineExplanationBodies = new Map();
       const inlineExplanationStems = new Map();
       const quizStateKey = `quiz-state:${window.location.pathname}`;
-      const shouldSaveState = true;
+      const shouldSaveState = !isSessionMode;
       let lastActiveQuestion = '';
       let activeExplanationHtml = '';
       let activeExplanationStemHtml = '';
@@ -1453,6 +1756,16 @@
       }
 
       function recomputeTotals(){
+        if (isSessionMode && !isSessionSubmitted) {
+          const answered = questions.filter(sec => {
+            const qname = sec.dataset.qname;
+            return !!document.querySelector(`input[name="${qname}"]:checked`);
+          }).length;
+          scoreEl.textContent = `${answered} / ${questions.length}`;
+          streakEl.textContent = '--';
+          longestEl.textContent = 'Longest: --';
+          return;
+        }
         const answers = questions.map(sec => {
           const correct = parseInt(sec.dataset.correct);
           const qname = sec.dataset.qname;
@@ -1474,6 +1787,7 @@
         const target = btn.dataset.target;
         const sec = document.querySelector(`section.question[data-qname="${target}"]`);
         if (!sec) return;
+        if (!isSessionMode && sec.dataset.answerLocked === 'true') return;
         lastActiveQuestion = target || lastActiveQuestion;
         const correct = parseInt(sec.dataset.correct);
         const json = JSON.parse(sec.dataset.json || '{}');
@@ -1524,6 +1838,12 @@
         const selectedLi = selected.closest('li.choice');
         if (selectedLi) {
           selectedLi.classList.add(ok ? 'is-correct' : 'is-incorrect');
+        }
+        if (!isSessionMode) {
+          sec.dataset.answerLocked = 'true';
+          sec.querySelectorAll('input[type="radio"]').forEach((input) => {
+            input.disabled = true;
+          });
         }
         // Trigger a brief green glow (1.5s) when correct
         if (ok) {
@@ -1594,18 +1914,18 @@
       document.getElementById('quizForm').addEventListener('change', (e) => {
         recomputeTotals();
         const t = e.target;
-        if (t && t.type === 'radio') {
+        if (!isSessionMode && t && t.type === 'radio') {
           const sec = t.closest('section.question');
           if (sec) onCheck({ dataset: { target: sec.dataset.qname } });
         }
       });
-      restoreQuizState();
+      if (shouldSaveState) restoreQuizState();
       recomputeTotals();
 
       // Run KaTeX over stems/options once loaded, then wrap wide formulas
       const quizForm = document.getElementById('quizForm');
       const runTypeset = () => {
-        const root = quizForm || document;
+        const root = document;
         const mathNodes = root.querySelectorAll('.stem, ul.choices label');
         console.debug('[mcq-math] runTypeset:start', {
           hasKaTeX: !!window.katex,
@@ -1716,12 +2036,13 @@
       const timeChartLatest = document.getElementById('timeChartLatest');
       const timeChartDelta = document.getElementById('timeChartDelta');
       const totalSecs = parseInt(document.body.dataset.timerSeconds || '0', 10) || 0;
-      const startTs = Date.now();
+      let startTs = (isSessionMode && !isSessionSubmitted) ? null : Date.now();
       const firstAnswered = new Set();
       const avgSeries = [];
       let timeChart = null;
       let expired = false;
       let timeChartRenderQueued = false;
+      let timerInterval = null;
       function fmtMMSS(s) {
         if (!isFinite(s)) s = 0;
         const sign = s < 0 ? '-' : '';
@@ -1732,6 +2053,10 @@
       }
       function updateAvg() {
         if (!avgEl) return;
+        if (!startTs) {
+          avgEl.textContent = '--';
+          return;
+        }
         const answered = document.querySelectorAll('section.question input[type="radio"]:checked').length;
         const elapsed = (Date.now() - startTs) / 1000;
         if (answered <= 0) {
@@ -1891,6 +2216,7 @@
       }
       function noteAnswerForChart(radioEl) {
         if (!radioEl || !radioEl.name) return;
+        if (!startTs) return;
         if (firstAnswered.has(radioEl.name)) return;
         firstAnswered.add(radioEl.name);
         const elapsed = (Date.now() - startTs) / 1000;
@@ -1901,6 +2227,10 @@
       }
       function tickTimer() {
         if (!timerEl || totalSecs <= 0) return;
+        if (!startTs) {
+          timerEl.textContent = fmtMMSS(totalSecs);
+          return;
+        }
         const elapsed = (Date.now() - startTs) / 1000;
         const remaining = Math.round(totalSecs - elapsed);
         timerEl.textContent = fmtMMSS(remaining);
@@ -1909,10 +2239,20 @@
           document.body.classList.add('time-expired');
         }
       }
-      // Start ticking if enabled
-      if (totalSecs > 0) {
+      function startSessionClock() {
+        if (startTs) return;
+        startTs = Date.now();
         tickTimer();
-        setInterval(tickTimer, 1000);
+        updateAvg();
+      }
+      window.addEventListener('sessionintroclosed', startSessionClock, { once: true });
+      // Start ticking if enabled
+      if (totalSecs > 0 && startTs) {
+        tickTimer();
+        timerInterval = setInterval(tickTimer, 1000);
+      } else if (totalSecs > 0 && timerEl) {
+        timerEl.textContent = fmtMMSS(totalSecs);
+        timerInterval = setInterval(tickTimer, 1000);
       } else if (timerEl) {
         timerEl.textContent = '--:--';
       }
@@ -1920,7 +2260,7 @@
       updateAvg();
       // Bootstrap chart with pre-selected questions (if any) as current-state point
       document.querySelectorAll('section.question input[type="radio"]:checked').forEach((input) => firstAnswered.add(input.name));
-      if (firstAnswered.size > 0) {
+      if (startTs && firstAnswered.size > 0) {
         avgSeries.push(((Date.now() - startTs) / 1000) / firstAnswered.size);
       }
       queueTimeChartRender();

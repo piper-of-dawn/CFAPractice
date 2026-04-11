@@ -294,7 +294,7 @@
       "C": "$(1 + \\frac{0.04}{2})^2 = (1 + \\frac{APR_4}{4})^4$"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: applying periodicity conversion</h3><p><strong>C is correct.</strong> Equation 1: $(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$. Here $m = 2$ and $APR_m = 0.04$, so the left side is $(1 + \\frac{0.04}{2})^2$. The unknown $APR_4$ with $n = 4$ gives the right side $(1 + \\frac{APR_4}{4})^4$.</p><p>A is incorrect because it omits the division by $m = 2$ in the base; the periodic rate must be $\\frac{0.04}{2}$, not $0.04$.</p><p>B is incorrect because the sides are reversed: it converts from quarterly to semiannual, not from semiannual to quarterly as required.</p>"
+    "explanation": "<h3>First Principles Thinking: applying periodicity conversion</h3><p><strong>C is correct.</strong> Equation 1: $(1 + \\frac{APR_m}{m})^m = (1 + \\frac{APR_n}{n})^n$. Here $m = 2$ and $APR_m = 0.04$, so the left side is $(1 + \\frac{0.04}{2})^2$. The unknown $APR_4$ with $n = 4$ gives the right side $(1 + \\frac{APR_4}{4})^4$.</p><p>A is incorrect because it omits the division by $m = 2$ in the base; the periodic rate must be $\\frac{0.04}{2}$, not USD 0.04$.</p><p>B is incorrect because the sides are reversed: it converts from quarterly to semiannual, not from semiannual to quarterly as required.</p>"
   },
   {
     "id": 3,
@@ -366,7 +366,7 @@
       "C": "35 bps"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: I-spread formula</h3><p><strong>B is correct.</strong> The I-spread (interpolated spread) equals the bond's YTM minus the interpolated standard swap rate of the same maturity: $3.5\\% - 2.8\\% = 0.7\\% = 70$ bps. This is the formula used throughout the CFA Curriculum.</p><p>A is incorrect because 280 bps equals the swap rate of 2.8% expressed in basis points; the I-spread is the difference between the bond yield and the swap rate, not the swap rate itself.</p><p>C is incorrect because 35 bps is half the correct answer; no halving step is involved in the I-spread formula.</p>"
+    "explanation": "<h3>First Principles Thinking: I-spread formula</h3><p><strong>B is correct.</strong> The I-spread (interpolated spread) equals the bond's YTM minus the interpolated standard swap rate of the same maturity: USD 3.5\\% - 2.8\\% = 0.7\\% = 70$ bps. This is the formula used throughout the CFA Curriculum.</p><p>A is incorrect because 280 bps equals the swap rate of 2.8% expressed in basis points; the I-spread is the difference between the bond yield and the swap rate, not the swap rate itself.</p><p>C is incorrect because 35 bps is half the correct answer; no halving step is involved in the I-spread formula.</p>"
   },
   {
     "id": 9,
