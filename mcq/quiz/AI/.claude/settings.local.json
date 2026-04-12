@@ -37,7 +37,8 @@
       "Bash(pdftotext -v)",
       "Bash(pdfinfo \"/home/karma/CFAPractice/mcq/quiz/AI/PDF/CFA L1 B9 PORTFOLIO MANAGEMENT.pdf\")",
       "Bash(pdftotext:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Read(//home/karma/CFAPractice/mcq/quiz/data/Ethics/**)"
     ]
   }
 }

@@ -1,5 +1,10 @@
 # JSON File Append Protocol
 
+## Skills
+- For CFA Ethics question generation, rewriting, or cleanup, use [skills/ethics/SKILLS.md](/home/karma/CFAPractice/mcq/quiz/AI/skills/ethics/SKILLS.md) as the task-specific instruction file.
+- For ethics work, follow `skills/ethics/SKILLS.md`.
+- Do not proceed on ethics work unless the prompt explicitly provides both the topic and the source-of-truth file.
+
 ### Objective
 When writing question files, preserve existing JSON arrays and append safely.
 
@@ -633,4 +638,3 @@ Return ONLY a JSON array.
 * All answers must be mathematically correct
 * Options must differ only in formula structure errors
 * Strict adherence to PDF required
-
