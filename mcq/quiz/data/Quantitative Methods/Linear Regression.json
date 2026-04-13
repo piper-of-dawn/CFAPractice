@@ -343,6 +343,5 @@
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: convert predicted log value back to level</h3><p><strong>C is correct.</strong> The CFA Curriculum requires converting the predicted logarithm back to the original level. First compute $\\ln(\\mathrm{NPM}) = 0.5987 + (0.2951 \\times 2) = 1.1889$. Then exponentiate: $\\mathrm{NPM} = e^{1.1889} = 3.2835$ approximately.</p><p>Why A is wrong: 1.1889 is the predicted natural log of NPM, not NPM itself.</p><p>Why B is wrong: 1.8043 reflects an incorrect back-transformation and is not the antilog of 1.1889.</p>"
-  },
-
+  }
 ]
