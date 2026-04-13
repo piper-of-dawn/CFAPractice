@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A longtime client tells an adviser that she may donate a large sum to a local charity. The adviser also serves as treasurer of that charity and quietly suggests to the charity's fundraising officer that the client would likely consider a gift in that amount range. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because the adviser disclosed confidential client information for a third party's benefit without client permission.",
+      "B": "There is most likely no violation because the adviser shared only a possible intention rather than an executed transaction.",
+      "C": "There is most likely no violation because the disclosure was motivated by charitable rather than personal gain."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard requires members and candidates to keep information about current, former, and prospective clients confidential unless an exception applies. The competing principle here is that the adviser believed the disclosure might serve a worthwhile purpose. The CFA Curriculum resolves that hierarchy in favor of confidentiality unless the client permits disclosure, law requires it, or the information concerns illegal activity. Here, the client's planned charitable giving discussion was obtained within the confidential advisory relationship and was relayed to a third party without authorization. That makes the conduct a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because the information related to a possible future gift rather than a completed act, but confidentiality protects sensitive client information communicated in the relationship, not only finalized decisions.</p><p>Why remaining distractor fails (boundary violation). C fails because benevolent intent does not create an exception to confidentiality where the CFA Curriculum recognizes none.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "During account opening, an adviser requires each client to designate a secondary contact for use if concerns later arise about the client's ability to make informed financial decisions. Years later, a client's sudden speculative liquidation request is paired with repeated confusion about longstanding objectives, and the adviser contacts the designated person and documents the reasons. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because the client previously authorized this limited contact and the adviser acted to protect the client's interests.",
+      "B": "There is most likely a violation because client instructions must be executed first and questioned only afterward.",
+      "C": "There is most likely a violation because discussing any aspect of the account with a third party is improper once the client is still able to speak for herself."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard is preservation of confidentiality, while the competing principle is the duty to protect a potentially vulnerable client when warning signs of diminished capacity appear. The CFA Curriculum resolves that tension by endorsing a designated secondary contact established at the start of the relationship and allowing limited disclosures, where legally permissible, to protect the client. Here, the client previously authorized contact with the designated person, the adviser's concern is grounded in a pattern of confusion and a sudden high-risk instruction, and the adviser documents the basis for disclosure. On those facts, the conduct is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because acting promptly on client instructions often reflects loyalty, but the CFA Curriculum recognizes that vulnerability concerns may justify limited protective action before execution.</p><p>Why remaining distractor fails (boundary violation). C fails because the prior authorization and the narrow protective purpose place this disclosure within a recognized boundary rather than outside it.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A portfolio manager learns from a corporate officer that a pension plan may have been charged improper amounts by the sponsoring company's chief executive. Two days later, government officials request access to pension fund records held by the manager's firm. After consulting legal counsel, the manager provides the records as required under applicable law. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because client records may not be shared with outsiders while the client's own internal review is still ongoing.",
+      "B": "There is most likely no violation because disclosure required by law, made with legal guidance, falls within a recognized exception to confidentiality.",
+      "C": "There is most likely a violation because suspicion of misconduct by an officer does not allow any disclosure until the client consents."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires confidentiality of client information, while the competing principle is compliance with applicable law when regulators demand records. The CFA Curriculum resolves this hierarchy by stating that members and candidates must disclose client information when required by law and should consult legal counsel when in doubt. Here, the manager sought legal advice and responded to a government request under applicable law rather than volunteering information casually. Because the disclosure fits a stated exception, it is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because preserving confidentiality during sensitive investigations seems protective, but the CFA Curriculum puts legal requirements ahead of confidentiality when the law compels disclosure.</p><p>Why remaining distractor fails (boundary violation). C fails because client consent is not required when disclosure is required by law.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "An analyst receives internal capital-expansion reports from a hospital's trustees so she can advise on endowment investments. A local donor asks her to reveal those building plans so he can decide where to make a contribution, and he does not want to ask the trustees directly. Which is the most appropriate conclusion if the analyst shares the plans?",
+    "options": {
+      "A": "There is most likely no violation because the donor's intended charitable purpose aligns with the hospital's interests.",
+      "B": "There is most likely no violation because the information concerns general institutional strategy rather than the donor's own account.",
+      "C": "There is most likely a violation because the reports are confidential and fall within the scope of the advisory relationship for that client."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard protects confidential information received because of the member's special role in a client's affairs, while the competing principle is that disclosure might indirectly help the client by attracting support. The CFA Curriculum resolves that tension by preserving confidentiality unless an explicit exception applies. Here, the analyst received the internal reports solely because she was advising the trustees on the endowment, and the donor is an outside party seeking access to information the client has not authorized her to reveal. Sharing the plans would therefore violate Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the donor's objective appears benign, but good motives do not erase the client's confidentiality interest.</p><p>Why remaining distractor fails (boundary violation). B fails because institutional planning information can still be client-confidential when it arises within the confidential relationship.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A firm permits certain clients to receive market outlook posts through a controlled group page on the firm's own social platform. Clients are told in advance that all comments on the page will be visible to the group and that confidential information should not be posted there. One client nevertheless discloses deeply personal financial details in a reply, and the adviser removes the post promptly after seeing it. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because the adviser should have prevented any possibility that a client could reveal private information in the forum.",
+      "B": "There is most likely no violation because the adviser took reasonable steps to warn clients and acted promptly once aware of the disclosure.",
+      "C": "There is most likely a violation because any client information visible to other clients on social media is automatically attributable to the adviser."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires members and candidates to preserve client confidentiality and make reasonable efforts to prevent accidental distribution of confidential information. The competing principle is that electronic platforms create disclosure risks that may appear to make any incident improper. The CFA Curriculum resolves that issue by focusing on whether the member took reasonable precautions and responded appropriately, not on imposing absolute control over a client's own posting. Here, the adviser warned clients that the page was not suitable for confidential information and removed the client's disclosure promptly once aware of it. That conduct is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because stronger controls might have reduced risk further, but the CFA Curriculum asks for reasonable efforts rather than perfect prevention.</p><p>Why remaining distractor fails (boundary violation). C fails because the accidental disclosure came from the client, and the adviser had already clarified the page's limited confidentiality and took corrective action quickly.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A client divorces, remarries quickly, and directs her planner to add the new spouse's name to her investment account documents. Over the next months, the client continues to authorize withdrawals, and her adult children later demand that the planner freeze the account and discuss the account history with them because they distrust the new spouse. The planner refuses to discuss the account with the children and continues following the client's directions. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because family members who are also clients of the planner are entitled to an explanation when they raise exploitation concerns.",
+      "B": "There is most likely no violation because sudden personal decisions alone do not establish diminished capacity, and the planner must preserve the client's confidentiality.",
+      "C": "There is most likely a violation because the planner should have frozen the account as soon as close relatives objected to the withdrawals."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard is confidentiality owed to the actual client, while the competing principle is concern from family members who believe the client may be vulnerable. The CFA Curriculum resolves that tension by allowing limited disclosures where vulnerability concerns are genuine and legally permissible, but it does not permit disclosure merely because family members demand it. Here, the facts show abrupt personal decisions but do not by themselves establish a loss of decision-making ability, and the client has expressly directed changes to her account. Because the planner owes confidentiality to the client and lacks a recognized basis to discuss the account with the children, the conduct is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the children's concerns may seem sincere, but they are not automatically entitled to confidential information about another client's account.</p><p>Why remaining distractor fails (boundary violation). C fails because the CFA Curriculum does not authorize freezing or discussing an account solely because relatives disagree with a competent client's decisions.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A manager suspects a corporate client's chief financial officer is diverting money into a personal investment account. Before speaking to any outside authority, the manager consults the firm's compliance department to determine whether reporting is required under applicable regulations. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because seeking compliance or legal guidance before deciding whether disclosure is required is consistent with the standard.",
+      "B": "There is most likely a violation because once illegal activity is suspected, immediate reporting to authorities is mandatory without internal consultation.",
+      "C": "There is most likely a violation because discussing a client's records with compliance personnel is disclosure to a third party."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard preserves confidentiality, while the competing principle is that suspected illegal activity may trigger reporting duties. The CFA Curriculum resolves this by directing members and candidates to consult compliance personnel or legal counsel when in doubt and to follow applicable law. Here, the manager does not immediately publicize the suspicion but instead seeks guidance through proper internal channels to determine whether the law requires disclosure. That measured step is consistent with Standard III(E) and is not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because suspected illegality feels urgent, but the CFA Curriculum does not require reflexive reporting without first determining what the law requires.</p><p>Why remaining distractor fails (boundary violation). C fails because authorized compliance personnel working on the matter are not the kind of outside third party the standard is designed to exclude.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A former client ended her advisory relationship two years ago. A new employer asks the former adviser for background details about the client's prior portfolio constraints and liquidity needs, and the adviser provides them because the relationship has already ended. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because confidentiality ends when the client relationship ends.",
+      "B": "There is most likely a violation because former-client information remains confidential unless an exception applies.",
+      "C": "There is most likely no violation because business-related portfolio information is less protected than personal information."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard expressly covers current, former, and prospective clients, while the competing principle is that stale information may seem less sensitive after the engagement ends. The CFA Curriculum resolves that issue clearly by requiring members and candidates to maintain confidentiality even after the client relationship has ended unless the former client authorizes disclosure or another exception applies. Here, no such exception is present. The adviser therefore violates Standard III(E) by disclosing the former client's information.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because many business obligations end with the relationship, but confidentiality is one the CFA Curriculum specifically carries forward.</p><p>Why remaining distractor fails (boundary violation). C fails because the standard protects confidential information arising from the relationship, not only intensely personal facts.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "At the start of a relationship, a client signs a written authorization allowing the adviser to share specified account information with the client's outside legal adviser for estate-planning work. Months later, the adviser provides only the information covered by that authorization. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because account information may be shared only with fellow employees of the firm, never with outside advisers.",
+      "B": "There is most likely a violation because client permission cannot override a member's duty of confidentiality.",
+      "C": "There is most likely no violation because the client permitted disclosure and the adviser stayed within the terms of that authorization."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard protects client confidentiality, while the competing principle is that clients may want coordinated service involving outside professionals. The CFA Curriculum resolves this directly by allowing disclosure when the client or prospective client permits it. Here, the client gave written authorization, and the adviser limited the disclosure to the information and recipient covered by that permission. Because the disclosure stays within a recognized exception, it is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the CFA Curriculum advises avoiding disclosures except to authorized fellow employees working for the client, but client permission is an explicit independent exception.</p><p>Why remaining distractor fails (boundary violation). B fails because permission from the client is one of the stated circumstances in which disclosure is allowed.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A prospective client shares detailed financial information during an initial exploratory meeting but does not engage the firm. Later, the member mentions the prospective client's circumstances to another business contact because no formal client relationship was ever established. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because a duty of confidentiality arises only after compensation begins.",
+      "B": "There is most likely no violation because exploratory discussions are too preliminary to create a protected relationship.",
+      "C": "There is most likely a violation because the standard protects information about prospective clients as well as current and former clients."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard covers information about current, former, and prospective clients, while the competing principle is that an unconsummated engagement may appear too tentative to trigger the duty. The CFA Curriculum rejects that limitation by expressly including prospective clients within the confidentiality obligation. Here, the member received sensitive information during a professional exploratory discussion and later shared it without permission and without another exception. That conduct violates Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because compensation often marks the start of formal duties, but confidentiality under the CFA Curriculum is not limited to paid engagements.</p><p>Why remaining distractor fails (boundary violation). B fails because the standard explicitly extends the duty to prospective clients precisely to cover these pre-engagement disclosures.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A regulator in the member's jurisdiction requires customer records to remain confidential even when those records concern a client's illegal activity unless the regulator itself compels production. The member suspects misconduct but, after legal advice, does not disclose the information voluntarily. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because the illegal-activity exception in the standard always overrides local confidentiality law.",
+      "B": "There is most likely no violation because the member must follow the stricter applicable law when it requires continued confidentiality.",
+      "C": "There is most likely a violation because once the member believes the client acted illegally, silence is inconsistent with ethical conduct."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard recognizes an exception for illegal activity, while the competing principle is obedience to applicable law under Knowledge of the Law. The CFA Curriculum resolves that hierarchy by requiring members and candidates to follow the stricter applicable law. It specifically notes that if law requires confidentiality even where the information concerns illegal activity, the member must comply with that law and not disclose. Here, the member sought legal advice and followed the law's confidentiality requirement. That is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the illegal-activity language appears broad, but the CFA Curriculum subordinates that possibility to stricter applicable law.</p><p>Why remaining distractor fails (boundary violation). C fails because ethical conduct under the CFA Curriculum includes compliance with binding legal confidentiality obligations.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "An adviser stores a spreadsheet containing client account numbers and personal notes on an unapproved personal device despite firm policies prohibiting such storage. No outsider actually accesses the file. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because confidentiality is breached only if the data are actually viewed by an unauthorized person.",
+      "B": "There is most likely no violation because the standard does not require expertise in information security technology.",
+      "C": "There is most likely a violation because members must understand and follow their firm's procedures designed to protect confidential information."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard requires members and candidates to preserve confidentiality and to understand and follow employer policies for electronic information security. The competing principle is that no actual disclosure occurred and the member may lack technical expertise. The CFA Curriculum resolves that issue by stating that members need not be information-security experts, but they must have a thorough understanding of and comply with firm policies for securing confidential information. Here, the adviser disregards those procedures by storing client information on an unapproved personal device. That conduct violates Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because visible harm often feels necessary, but the CFA Curriculum imposes duties of prevention and policy compliance, not merely duties to respond after a leak.</p><p>Why remaining distractor fails (boundary violation). B fails because lack of technical expertise does not excuse ignoring the employer's established confidentiality procedures.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A member is asked by CFA Institute Professional Conduct to provide documents relevant to an investigation into her own conduct. She is not prohibited by law from cooperating and provides the requested materials. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because confidentiality to clients bars cooperation with any outside investigation that is not court-ordered.",
+      "B": "There is most likely no violation because the standard does not prevent cooperation with Professional Conduct investigations when law does not forbid it.",
+      "C": "There is most likely a violation because only anonymized summaries, and not documents, may be shared with Professional Conduct."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard preserves client confidentiality, while the competing principle is the obligation to cooperate with Professional Conduct investigations by CFA Institute. The CFA Curriculum resolves this by stating that Standard III(E) does not prevent such cooperation and that members and candidates must cooperate unless prevented by law. Here, no law bars disclosure to Professional Conduct, so providing the requested materials is consistent with the standard. The conduct is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because outside investigations can resemble third-party intrusion, but the CFA Curriculum specifically addresses Professional Conduct and permits cooperation.</p><p>Why remaining distractor fails (boundary violation). C fails because the CFA Curriculum does not restrict cooperation to anonymized summaries when documents are properly requested and disclosure is legally permissible.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A relationship manager, worried about a client's confused recent behavior, telephones the client's sibling to discuss the account because the sibling seems responsible. The client never designated a secondary contact, and the manager has not confirmed that local law permits such a disclosure. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because family discussions are permitted whenever the adviser subjectively believes the client may be vulnerable.",
+      "B": "There is most likely a violation because, without prior authorization or legally permitted grounds, discussing the account with a family member exceeds the confidentiality exceptions.",
+      "C": "There is most likely no violation because the manager disclosed the information for the client's protection rather than for personal advantage."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires confidentiality, while the competing principle is concern for a potentially vulnerable client. The CFA Curriculum resolves that tension through narrow channels: prior designation of a secondary contact, legally permissible limited disclosures, and use of compliance policies and documentation. Here, the manager bypasses those safeguards and discusses the account with a sibling despite having neither prior client authorization nor confirmation that local law permits the disclosure. That places the disclosure outside the recognized boundary and makes it a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because vulnerability concerns are important, but the CFA Curriculum does not authorize open-ended disclosures to whichever relative seems trustworthy.</p><p>Why remaining distractor fails (boundary violation). C fails because protective motive alone does not substitute for the required authorization or legal basis.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A firm has no written procedures for electronic handling of client information. A member raises the issue internally and urges the firm to adopt confidentiality procedures and periodic training for all staff, including noninvestment personnel who handle client records. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because encouraging the development of confidentiality procedures is consistent with the compliance practices under the standard.",
+      "B": "There is most likely a violation because the member should first stop all electronic communication with clients until formal procedures are written.",
+      "C": "There is most likely a violation because only compliance officers, not investment professionals, should address operational confidentiality weaknesses."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard requires members and candidates to safeguard confidential information, while the competing principle is that operational policy design may seem outside an investment professional's role. The CFA Curriculum resolves that issue by specifically recommending that members encourage the development of appropriate procedures and regular confidentiality training if the firm lacks them. Here, the member follows that guidance by escalating the absence of procedures and advocating firmwide training. That conduct is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because incomplete controls call for caution, but the CFA Curriculum identifies procedural improvement as the relevant response rather than an automatic halt to all electronic communication.</p><p>Why remaining distractor fails (boundary violation). C fails because the compliance practices explicitly place some responsibility on members and candidates to promote sound confidentiality procedures.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A client asks an adviser to send sensitive account documents through a personal email address that the adviser knows is prone to misdelivery and has already caused one mistaken recipient incident at the client's workplace. The adviser sends the documents that way anyway without discussing safer methods. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because the client selected the delivery method and therefore assumed the confidentiality risk.",
+      "B": "There is most likely a violation because members must make reasonable efforts to use communication methods designed to prevent accidental distribution of confidential information.",
+      "C": "There is most likely no violation because accidental distribution is relevant only when the firm, not the client, chooses the communication channel."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires preservation of confidentiality, while the competing principle is deference to the client's stated communication preference. The CFA Curriculum resolves that by requiring members and candidates to discuss appropriate methods with clients and make reasonable efforts to ensure that communications are designed to prevent accidental distribution. Here, the adviser knows the requested method is prone to misdelivery and nevertheless uses it without addressing safer alternatives. That failure to take reasonable preventive steps violates Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the client requested the method, but the CFA Curriculum still imposes an independent duty on the member to make reasonable efforts to protect confidentiality.</p><p>Why remaining distractor fails (boundary violation). C fails because the duty concerns the reasonableness of the communication method itself, not who originally suggested it.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A team member shares a client's confidential tax-lot information with another employee at the same firm who is actively working on that client's account and is authorized to do so under the firm's procedures. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because the information was disclosed to someone other than the primary adviser originally assigned to the client.",
+      "B": "There is most likely no violation because authorized fellow employees working for the same client may receive the information.",
+      "C": "There is most likely a violation because tax-lot details are too sensitive to be shared internally under any circumstances."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard protects confidentiality from third parties, while the competing principle is that efficient service often requires limited internal sharing. The CFA Curriculum resolves this by advising members and candidates to avoid disclosing client information except to authorized fellow employees who are also working for the client. Here, the recipient is an authorized colleague actively serving the same account under firm procedures. That internal, need-based sharing is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because client information should not circulate broadly, but the CFA Curriculum permits internal disclosure to authorized personnel working for the client.</p><p>Why remaining distractor fails (boundary violation). C fails because the standard does not impose an absolute ban on internal sharing of sensitive information where authorization and client-service relevance exist.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A member casually tells a friend that one of the firm's prospective clients is considering selling a family business, reasoning that the person never signed an engagement letter and the conversation occurred over coffee rather than in a formal office meeting. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because no formal engagement existed at the time of the discussion.",
+      "B": "There is most likely a violation because prospective-client information obtained through the professional relationship is still confidential.",
+      "C": "There is most likely no violation because the discussion concerned a business transaction rather than portfolio holdings."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard covers prospective clients as well as current and former clients, while the competing principle is that an informal setting and the absence of a signed engagement may seem to weaken the duty. The CFA Curriculum rejects that distinction by protecting confidential information received in the course of the professional relationship, including pre-engagement discussions. Here, the member discloses the prospective client's contemplated sale to a friend without permission and without another exception. That is a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because formal paperwork often signals a relationship, but the CFA Curriculum explicitly extends confidentiality to prospective clients before the relationship is finalized.</p><p>Why remaining distractor fails (boundary violation). C fails because the type of business matter disclosed does not remove it from the scope of confidential information.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "Concerned about a client's possible diminished capacity, an adviser follows firm reporting procedures, reviews the account under enhanced internal compliance scrutiny, and documents all discussions before deciding whether any outside disclosure is legally permissible. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because these internal protective steps are specifically consistent with the compliance practices for vulnerable investors.",
+      "B": "There is most likely a violation because the adviser should either contact a family member immediately or ignore the issue until the client misses more meetings.",
+      "C": "There is most likely a violation because documenting vulnerability concerns in the file improperly expands access to sensitive information."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard preserves confidentiality, while the competing principle is the need to protect potentially vulnerable investors from harm. The CFA Curriculum resolves that tension by recommending internal reporting procedures, additional compliance review, training, and full documentation as part of the appropriate response. Here, the adviser uses those internal safeguards and does not rush into outside disclosure without considering legal permissibility. Those actions align with the standard and are not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because decisive action can feel prudent, but the CFA Curriculum favors structured internal steps and legally grounded decisions rather than improvisation.</p><p>Why remaining distractor fails (boundary violation). C fails because documented reasons for handling confidential information are specifically recommended, not condemned, by the CFA Curriculum.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A member receives a request from a client's accountant for account information needed to finish the client's tax return. Before sending anything, the member obtains the client's written permission and then shares only the information covered by that authorization. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely no violation because the client permitted the disclosure and the member limited it to the authorized scope.",
+      "B": "There is most likely a violation because disclosure to an outside professional is improper even when the client expressly authorizes it.",
+      "C": "There is most likely a violation because accountants are never appropriate recipients of client account information."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard protects client information unless the client permits disclosure, the law requires it, or the information concerns illegal activity. The competing principle is that sharing with an outside accountant may feel risky because the recipient is not inside the firm. The CFA Curriculum resolves that tension by expressly allowing disclosure when the client permits it. Here, the member first obtains written permission from the client and limits the disclosure to what the authorization covers. Because the disclosure falls within a recognized exception, it is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because outside professionals are third parties, but client authorization is itself a valid basis for disclosure.</p><p>Why remaining distractor fails (boundary violation). C fails because the CFA Curriculum does not prohibit disclosure to accountants categorically; the key issue is whether permission or another exception exists.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "III(E) Preservation of Confidentiality",
+    "stem": "A member receives a subpoena requiring production of specified client records. Unsure of the proper response, the member consults the firm's legal counsel, confirms the subpoena is valid, and then produces only the records required. Which is the most appropriate conclusion?",
+    "options": {
+      "A": "There is most likely a violation because all compelled disclosure should be resisted until the client personally approves the release.",
+      "B": "There is most likely no violation because disclosure required by law, after confirming the obligation with counsel, is permitted under the standard.",
+      "C": "There is most likely a violation because even valid legal process does not override the duty of confidentiality."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard imposes confidentiality, while the competing principle is obedience to valid legal process requiring disclosure. The CFA Curriculum resolves that conflict by permitting and requiring disclosure when the law so demands and by recommending consultation with legal counsel when doubt exists. Here, the member verifies the subpoena with counsel and limits the production to what is legally required. That conduct falls within the legal-disclosure exception and is not a violation of Standard III(E).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because client approval feels protective, but it is not necessary when the law independently compels disclosure.</p><p>Why remaining distractor fails (boundary violation). C fails because the CFA Curriculum expressly recognizes required-by-law disclosure as an exception to confidentiality.</p>"
+  }
+]

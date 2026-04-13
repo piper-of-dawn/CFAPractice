@@ -1,9 +1,9 @@
-1
+12
 
 Enumeration / counting format
 Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Simulation Methods strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/Quant/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Linear Regression EC.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Linear Regression EC.json. Append the file if it already exists, DO NOT OV6ERWRITE
 
 Assertion–Reason
 Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Simulation Methods strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/Quant/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
@@ -20,8 +20,8 @@ Write the output only the JSON array to a dedicated file Simulation Methods N.js
 
 Hard and Confusing Questions on Ethics
 
-Generate 21 CFA-style very hard MCQs for Standard III(C) Suitability. Use PDF/Ethics/standard_03_duties_to_clients.txt. The 60% of the questions should be 'Not a Violation' and you can confuse the student using edge cases or concepts on margins. Follow AGENTS.md and use the CFA Ethics Confusion-Driven and Hard Edition format. Also stricly adhere to /home/karma/CFAPractice/mcq/quiz/AI/skills/ethics/SKILLS.md for guidelines on how to create confusion-driven questions.
-Write the output only the JSON array to a dedicated file to /home/karma/CFAPractice/mcq/quiz/data/Ethics/Standard III(C) Suitability.json.
+Generate 21 CFA-style very hard MCQs for III(E) Preservation of Confidentiality. Use PDF/Ethics/standard_03_duties_to_clients.txt. The 60% of the questions should be 'Not a Violation' and you can confuse the student using edge cases or concepts on margins. Follow AGENTS.md and use the CFA Ethics Confusion-Driven and Hard Edition format. Also stricly adhere to /home/karma/CFAPractice/mcq/quiz/AI/skills/ethics/SKILLS.md for guidelines on how to create confusion-driven questions. Do not giveaway the answers.
+Write the output only the JSON array to a dedicated file to /home/karma/CFAPractice/mcq/quiz/data/Ethics/III(E) Preservation of Confidentiality.json.
 ---
 
 CFA Ethics Questions Fundamental Katas Edition
@@ -36,7 +36,7 @@ Formula Questions
 
 Generate 21 very easy CFA-style MCQs focused only on formulas from 'PDF/FixedIncome/module_11_yield_based_bond_duration_measures_and_properties.txt'.
 
-Follow AGENTS.md (CFA Formula Section). 
+Follow AGENTS.md (CFA Formula Section).
 Topic must be "Formula".
 
 Test:

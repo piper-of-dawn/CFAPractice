@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "model": "Grok",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "A random variable Y is most likely said to follow a lognormal distribution when:",
+    "options": {
+      "A": "ln Y is normally distributed.",
+      "B": "Y is uniformly distributed.",
+      "C": "Y is normally distributed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: definition of lognormal</h3><p><strong>A is correct.</strong> By definition, Y is lognormal if its natural logarithm, ln Y, is normally distributed. The phrase 'the log is normal' captures the rule. Applying this directly identifies option A as the correct characterization.</p><p>B is incorrect because a uniform distribution for Y has no link to normality of ln Y.</p><p>C is incorrect because if Y itself were normal, it could take negative values, which contradicts the lognormal structure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "The lognormal distribution is bounded from below by a value of:",
+    "options": {
+      "A": "1.",
+      "B": "0.",
+      "C": "-1."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: support of the lognormal</h3><p><strong>B is correct.</strong> A lognormal variable equals exp(X) for some normal X, and the exponential function is strictly positive. Therefore the smallest value the variable can approach is 0, making 0 the lower bound.</p><p>A is incorrect because lognormal values can lie between 0 and 1.</p><p>C is incorrect because a lognormal variable cannot be negative.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "The shape of a lognormal distribution is most accurately described as:",
+    "options": {
+      "A": "symmetric around its mean.",
+      "B": "skewed to the left with a long left tail.",
+      "C": "skewed to the right with a long right tail."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: skewness of lognormal</h3><p><strong>C is correct.</strong> Because the distribution is bounded below by 0 but unbounded above, the density stretches out to the right. This creates positive (right) skew with a long right tail.</p><p>A is incorrect because symmetry describes the normal distribution, not the lognormal.</p><p>B is incorrect because the long tail of a lognormal lies to the right, not the left.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Grok",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "A lognormal distribution is completely described by how many parameters?",
+    "options": {
+      "A": "Two.",
+      "B": "One.",
+      "C": "Three."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: parameters of the lognormal</h3><p><strong>A is correct.</strong> The lognormal is fully specified by the mean and variance (or standard deviation) of its associated normal distribution—two parameters.</p><p>B is incorrect because a single parameter cannot capture both location and dispersion.</p><p>C is incorrect because no third parameter is required to describe the lognormal.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "If a normal random variable X has mean $\\mu$ and variance $\\sigma^{2}$, the mean of Y = exp(X) is most likely:",
+    "options": {
+      "A": "$\\exp(\\mu)$.",
+      "B": "$\\exp(\\mu + 0.5\\sigma^{2})$.",
+      "C": "$\\exp(\\mu - 0.5\\sigma^{2})$."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: mean of lognormal</h3><p><strong>B is correct.</strong> The mean of a lognormal variable exceeds exp($\\mu$) by a factor of exp(0.5$\\sigma^{2}$) because the distribution can spread upward without bound but is truncated below at 0, pushing the mean rightward.</p><p>A is incorrect because exp($\\mu$) ignores the positive skew adjustment.</p><p>C is incorrect because subtracting 0.5$\\sigma^{2}$ would understate, not correctly express, the mean.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "If the natural logarithm of a random variable is normally distributed, the variable itself most likely follows which distribution?",
+    "options": {
+      "A": "Uniform.",
+      "B": "Normal.",
+      "C": "Lognormal."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: log-to-level mapping</h3><p><strong>C is correct.</strong> If ln Y is normal, then by definition Y follows a lognormal distribution.</p><p>A is incorrect because normality of ln Y does not imply uniformity for Y.</p><p>B is incorrect because Y is not normal whenever its log is normal; the two are distinct distributions.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Grok",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "The lognormal distribution is often preferred to the normal for modeling asset prices primarily because:",
+    "options": {
+      "A": "asset prices cannot take negative values.",
+      "B": "asset prices are always symmetric around the mean.",
+      "C": "asset returns cannot take negative values."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: why lognormal fits asset prices</h3><p><strong>A is correct.</strong> Asset prices are bounded from below by 0, and the lognormal distribution shares this lower bound, making it a natural fit for modeling prices.</p><p>B is incorrect because asset price distributions are not symmetric.</p><p>C is incorrect because asset returns can easily be negative; the bounded behavior applies to prices, not returns.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "If the current stock price is $P_{0}$ and the continuously compounded return from 0 to T is $r_{0,T}$, the future stock price $P_{T}$ is most likely:",
+    "options": {
+      "A": "$P_{0} \\times \\ln(r_{0,T})$.",
+      "B": "$P_{0} \\times \\exp(r_{0,T})$.",
+      "C": "$P_{0} \\times (1 + r_{0,T})$."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: price from continuously compounded return</h3><p><strong>B is correct.</strong> Continuous compounding uses the exponential function, so the future price equals the initial price multiplied by exp(r), giving $P_{T}=P_{0}\\exp(r_{0,T})$.</p><p>A is incorrect because taking the logarithm of a return does not recover a future price.</p><p>C is incorrect because (1 + r) corresponds to simple or discretely compounded returns, not continuously compounded returns.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "A share price rises from EUR 100 to EUR 110 over one period. The continuously compounded return is most closely expressed as:",
+    "options": {
+      "A": "$(110 - 100)/100$.",
+      "B": "$\\exp(110/100)$.",
+      "C": "$\\ln(110/100)$."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: definition of continuously compounded return</h3><p><strong>C is correct.</strong> The continuously compounded return over a period equals the natural logarithm of the ending price divided by the beginning price, ln($P_{1}/P_{0}$).</p><p>A is incorrect because (P1 − P0)/P0 gives the simple holding-period return, not the continuously compounded return.</p><p>B is incorrect because the exponential function is the inverse of what is needed; it would not produce a return measure.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Grok",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "For i.i.d. one-period continuously compounded returns, the T-period continuously compounded return is most likely equal to:",
+    "options": {
+      "A": "the sum of the one-period returns.",
+      "B": "the product of the one-period returns.",
+      "C": "the average of the one-period returns."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: additivity of continuously compounded returns</h3><p><strong>A is correct.</strong> Continuously compounded returns are additive across time, so the multi-period return equals the sum of the incremental one-period returns.</p><p>B is incorrect because multiplicative aggregation applies to gross holding-period returns, not continuously compounded returns.</p><p>C is incorrect because averaging loses the cumulative return over the horizon.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "If one-period continuously compounded returns are i.i.d. with variance $\\sigma^{2}$, the variance of the T-period continuously compounded return is most likely:",
+    "options": {
+      "A": "$\\sigma^{2}/T$.",
+      "B": "$\\sigma^{2} \\times T$.",
+      "C": "$\\sigma^{2}$."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: variance scaling under independence</h3><p><strong>B is correct.</strong> Because returns are independent, variances add over periods, so the T-period variance equals T multiplied by the one-period variance.</p><p>A is incorrect because dividing by T reverses the scaling relationship.</p><p>C is incorrect because the one-period variance alone ignores accumulation across T periods.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "If the daily volatility of continuously compounded returns is 0.01, the annualized volatility assuming 250 trading days is most closely:",
+    "options": {
+      "A": "$0.01 / \\sqrt{250}$.",
+      "B": "$0.01 \\times 250$.",
+      "C": "$0.01 \\times \\sqrt{250}$."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: annualizing volatility</h3><p><strong>C is correct.</strong> Standard deviation scales with the square root of time under i.i.d. assumptions, so annual volatility equals daily volatility multiplied by $\\sqrt{250}$.</p><p>A is incorrect because dividing by $\\sqrt{250}$ would shrink rather than annualize the daily figure.</p><p>B is incorrect because multiplying by 250 scales variance, not standard deviation.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Grok",
+    "topic": "Monte Carlo Simulation",
+    "stem": "A Monte Carlo simulation is most accurately characterized as a technique that:",
+    "options": {
+      "A": "generates many random samples from specified probability distributions.",
+      "B": "derives an exact closed-form price through algebraic manipulation.",
+      "C": "relies only on a single observed historical path of returns."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: defining feature of Monte Carlo</h3><p><strong>A is correct.</strong> A defining feature of Monte Carlo simulation is drawing a large number of random samples from one or more specified probability distributions to represent the role of risk.</p><p>B is incorrect because Monte Carlo produces statistical estimates, not closed-form exact prices.</p><p>C is incorrect because a single historical path is the opposite of the many random draws that characterize Monte Carlo.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Monte Carlo Simulation",
+    "stem": "Monte Carlo simulation is most useful for valuing securities when:",
+    "options": {
+      "A": "the security already has a simple closed-form price.",
+      "B": "no analytic pricing formula is available.",
+      "C": "historical price observations are unavailable."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: when Monte Carlo adds value</h3><p><strong>B is correct.</strong> Monte Carlo is commonly used to value securities with complex features for which no analytic pricing formula exists.</p><p>A is incorrect because when a closed-form price exists, analytic methods are preferred.</p><p>C is incorrect because Monte Carlo uses specified probability distributions rather than requiring historical data.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Monte Carlo Simulation",
+    "stem": "A key application of Monte Carlo simulation in investment management is to:",
+    "options": {
+      "A": "provide exact valuations with no statistical uncertainty.",
+      "B": "replace analytic solutions that are already known in closed form.",
+      "C": "test a model's sensitivity to changes in key assumptions."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: sensitivity analysis via Monte Carlo</h3><p><strong>C is correct.</strong> Because the analyst controls the input assumptions, Monte Carlo is well suited to testing how a model's outputs respond to changes in distributional assumptions for key variables.</p><p>A is incorrect because Monte Carlo yields statistical estimates, not exact values.</p><p>B is incorrect because when an analytic solution exists, it is generally preferred for its direct insight.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Grok",
+    "topic": "Monte Carlo Simulation",
+    "stem": "Which investment task is Monte Carlo simulation most likely to support?",
+    "options": {
+      "A": "Valuing securities with complex embedded options.",
+      "B": "Eliminating all statistical uncertainty in pricing.",
+      "C": "Producing exact cause-and-effect relationships."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Monte Carlo and complex payoffs</h3><p><strong>A is correct.</strong> Securities with complex embedded options, such as mortgage-backed securities, are common candidates for Monte Carlo pricing because analytic formulas are typically unavailable.</p><p>B is incorrect because Monte Carlo produces statistical estimates that contain sampling variability.</p><p>C is incorrect because analytic methods, when available, provide more insight into cause-and-effect relationships.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Monte Carlo Simulation",
+    "stem": "The first step when implementing a Monte Carlo simulation is most likely to:",
+    "options": {
+      "A": "draw the final set of random numbers.",
+      "B": "specify the quantity of interest.",
+      "C": "compute the terminal summary statistic across all trials."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: simulation workflow</h3><p><strong>B is correct.</strong> The process begins by specifying the quantity of interest—such as the value of a contingent claim—before any data are generated.</p><p>A is incorrect because random draws occur only after the quantity and model have been specified.</p><p>C is incorrect because producing the final summary statistic is the last step, performed only after running all trials.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Monte Carlo Simulation",
+    "stem": "In a Monte Carlo simulation, dividing the calendar horizon into K subperiods primarily defines the:",
+    "options": {
+      "A": "number of distributions required per trial.",
+      "B": "number of independent risk factors in the model.",
+      "C": "time increment $\\Delta t$."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: time grid construction</h3><p><strong>C is correct.</strong> Calendar time divided by K gives the time increment $\\Delta t$, which controls how finely the horizon is discretized.</p><p>A is incorrect because the choice of K does not dictate how many probability distributions are used.</p><p>B is incorrect because the number of risk factors is determined by the model specification, not by the number of subperiods.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Grok",
+    "topic": "Monte Carlo Simulation",
+    "stem": "A contingent claim whose payoff at maturity depends on the average price of the underlying over its life is most accurately described as:",
+    "options": {
+      "A": "an Asian option.",
+      "B": "a lookback option.",
+      "C": "a plain vanilla European option."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: payoff structure identification</h3><p><strong>A is correct.</strong> An Asian option's payoff is linked to the average price of the underlying over the life of the claim.</p><p>B is incorrect because a lookback payoff depends on the minimum (or maximum) price reached during the life of the claim, not the average.</p><p>C is incorrect because a plain vanilla European option depends only on the final underlying price relative to a fixed strike.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Monte Carlo Simulation",
+    "stem": "A standard lookback contingent claim pays the greater of zero and the difference between:",
+    "options": {
+      "A": "the average price and the initial price.",
+      "B": "the final stock price and the minimum price during its life.",
+      "C": "the initial price and the final price."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: lookback payoff rule</h3><p><strong>B is correct.</strong> A standard lookback pays the greater of zero and the final stock price minus the minimum stock price observed over the life of the claim.</p><p>A is incorrect because comparing average and initial prices describes a different payoff structure.</p><p>C is incorrect because subtracting the final from the initial price inverts the lookback rule.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Monte Carlo Simulation",
+    "stem": "A recognized limitation of Monte Carlo simulation is that it:",
+    "options": {
+      "A": "cannot use any probability distributions as inputs.",
+      "B": "is incapable of performing sensitivity analysis.",
+      "C": "provides only statistical estimates, not exact results."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: nature of simulation output</h3><p><strong>C is correct.</strong> Monte Carlo outputs are statistical estimates subject to sampling error rather than exact values.</p><p>A is incorrect because Monte Carlo explicitly relies on specified probability distributions.</p><p>B is incorrect because Monte Carlo is widely used to explore sensitivities to assumption changes.</p>"
+  },
+  {
+    "id": 22,
+    "model": "Grok",
+    "topic": "Monte Carlo Simulation",
+    "stem": "Compared with Monte Carlo simulation, analytic methods most likely:",
+    "options": {
+      "A": "provide more insight into cause-and-effect relationships.",
+      "B": "always require historical observations of returns.",
+      "C": "cannot be used to value options."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: analytic vs simulation</h3><p><strong>A is correct.</strong> Where available, analytic methods expose the direct relationship between inputs and outputs, giving clearer cause-and-effect insight than simulation-based estimates.</p><p>B is incorrect because analytic methods rely on closed-form formulas and do not require historical data.</p><p>C is incorrect because many options have analytic pricing formulas, such as the Black–Scholes–Merton model.</p>"
+  },
+  {
+    "id": 23,
+    "model": "ChatGPT",
+    "topic": "Monte Carlo Simulation",
+    "stem": "In Monte Carlo simulation, specifying the method for generating the data most likely requires the analyst to:",
+    "options": {
+      "A": "avoid any parametric assumptions entirely.",
+      "B": "make distributional assumptions for key risk factors.",
+      "C": "rely solely on observed historical records of returns."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: distributional inputs</h3><p><strong>B is correct.</strong> Monte Carlo requires the analyst to specify probability distributions for the risk factors that drive the underlying variables.</p><p>A is incorrect because Monte Carlo is fundamentally parametric, relying on specified distributions.</p><p>C is incorrect because the technique generates random values from distributions, not from raw historical records.</p>"
+  },
+  {
+    "id": 24,
+    "model": "Gemini",
+    "topic": "Monte Carlo Simulation",
+    "stem": "In Monte Carlo simulation, the final estimate of value is generally obtained by:",
+    "options": {
+      "A": "using only the result of a single representative trial.",
+      "B": "solving an exact analytic equation at the end.",
+      "C": "averaging outcomes across the specified number of trials."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: aggregating simulation output</h3><p><strong>C is correct.</strong> After running the required number of trials, the mean of the simulated present values serves as the Monte Carlo estimate of the quantity of interest.</p><p>A is incorrect because relying on one trial ignores the distribution of outcomes that the simulation is designed to produce.</p><p>B is incorrect because Monte Carlo is used precisely when an analytic equation is unavailable.</p>"
+  },
+  {
+    "id": 25,
+    "model": "Grok",
+    "topic": "Bootstrap Resampling",
+    "stem": "Bootstrap resampling most likely draws each new sample from:",
+    "options": {
+      "A": "the original observed sample.",
+      "B": "the true population directly.",
+      "C": "a specified theoretical probability distribution."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: source of bootstrap draws</h3><p><strong>A is correct.</strong> The bootstrap treats the observed sample as if it were the population and repeatedly draws resamples from this sample.</p><p>B is incorrect because the true population is unknown, which is precisely why bootstrap is used.</p><p>C is incorrect because specifying a theoretical distribution describes Monte Carlo, not bootstrap.</p>"
+  },
+  {
+    "id": 26,
+    "model": "ChatGPT",
+    "topic": "Bootstrap Resampling",
+    "stem": "In bootstrap resampling, each item drawn from the original sample is most likely:",
+    "options": {
+      "A": "removed permanently so it cannot be drawn again.",
+      "B": "replaced before the next draw.",
+      "C": "redrawn only after every other item has been selected."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: sampling with replacement</h3><p><strong>B is correct.</strong> Bootstrap uses sampling with replacement, so each drawn item is put back before the next draw and may be drawn again.</p><p>A is incorrect because permanent removal describes sampling without replacement, not bootstrap.</p><p>C is incorrect because bootstrap imposes no such ordering rule on repeat draws.</p>"
+  },
+  {
+    "id": 27,
+    "model": "Gemini",
+    "topic": "Bootstrap Resampling",
+    "stem": "In bootstrap resampling, the size of each resample most likely equals:",
+    "options": {
+      "A": "half the size of the original sample.",
+      "B": "the size of the unknown population.",
+      "C": "the size of the original sample."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: resample size rule</h3><p><strong>C is correct.</strong> Each bootstrap resample is drawn to be the same size as the original sample.</p><p>A is incorrect because halving the sample size is not part of the bootstrap procedure.</p><p>B is incorrect because the population size is unknown; only the sample size is available.</p>"
+  },
+  {
+    "id": 28,
+    "model": "Grok",
+    "topic": "Bootstrap Resampling",
+    "stem": "The core idea of the bootstrap is to:",
+    "options": {
+      "A": "treat the observed sample as if it were the population.",
+      "B": "fit an analytic distribution to the sample before resampling.",
+      "C": "discard the sample and draw directly from the true population."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: bootstrap rationale</h3><p><strong>A is correct.</strong> Because a random sample offers a good representation of the population, the bootstrap mimics population sampling by treating the sample itself as if it were the population.</p><p>B is incorrect because the bootstrap does not require fitting an analytic distribution.</p><p>C is incorrect because the true population is not accessible in the bootstrap setting.</p>"
+  },
+  {
+    "id": 29,
+    "model": "ChatGPT",
+    "topic": "Bootstrap Resampling",
+    "stem": "Bootstrap resampling is most appropriate when an analyst:",
+    "options": {
+      "A": "has access to the complete population data.",
+      "B": "has only one sample and no knowledge of the true population.",
+      "C": "knows the exact analytic sampling distribution of the statistic."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: when bootstrap helps</h3><p><strong>B is correct.</strong> The bootstrap is designed for situations where the analyst has a single observed sample and lacks knowledge of the underlying population.</p><p>A is incorrect because full population data would remove the need for resampling in the first place.</p><p>C is incorrect because a known analytic sampling distribution can be used directly without simulation.</p>"
+  },
+  {
+    "id": 30,
+    "model": "Gemini",
+    "topic": "Bootstrap Resampling",
+    "stem": "A key distinction between bootstrap simulation and Monte Carlo simulation is that bootstrap:",
+    "options": {
+      "A": "requires the analyst to specify a theoretical probability distribution.",
+      "B": "cannot be implemented using repeated sampling.",
+      "C": "draws random values from the observed empirical distribution."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: bootstrap vs Monte Carlo inputs</h3><p><strong>C is correct.</strong> Bootstrap draws random values from the observed empirical distribution of the data, whereas Monte Carlo draws from a specified theoretical distribution.</p><p>A is incorrect because specifying a theoretical distribution is characteristic of Monte Carlo, not bootstrap.</p><p>B is incorrect because bootstrap is fundamentally built on repeated sampling.</p>"
+  },
+  {
+    "id": 31,
+    "model": "Grok",
+    "topic": "Bootstrap Resampling",
+    "stem": "In a bootstrap resample, individual observations from the original sample most likely:",
+    "options": {
+      "A": "appear multiple times or not at all.",
+      "B": "each appear exactly once.",
+      "C": "are excluded from every resample by rule."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: composition of resamples</h3><p><strong>A is correct.</strong> Because draws occur with replacement, some observations may be selected several times while others may not appear at all in a given resample.</p><p>B is incorrect because 'exactly once' describes sampling without replacement, not bootstrap.</p><p>C is incorrect because bootstrap draws from the full sample with equal chances, not by exclusion.</p>"
+  },
+  {
+    "id": 32,
+    "model": "ChatGPT",
+    "topic": "Bootstrap Resampling",
+    "stem": "A recognized weakness of bootstrap resampling is that it:",
+    "options": {
+      "A": "cannot be performed without an analytic z-statistic.",
+      "B": "provides only statistical estimates, not exact results.",
+      "C": "requires the population distribution to be fully known."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: output quality of bootstrap</h3><p><strong>B is correct.</strong> Like Monte Carlo, bootstrap delivers statistical estimates subject to sampling variability and not exact results.</p><p>A is incorrect because bootstrap is designed precisely to avoid reliance on analytic statistics such as the z-statistic.</p><p>C is incorrect because bootstrap is used when the population distribution is not known.</p>"
+  },
+  {
+    "id": 33,
+    "model": "Gemini",
+    "topic": "Bootstrap Resampling",
+    "stem": "A common feature of both Monte Carlo simulation and bootstrap resampling is that they:",
+    "options": {
+      "A": "rely only on closed-form analytic solutions.",
+      "B": "require the population distribution to be known in advance.",
+      "C": "build on repetitive sampling to produce estimates."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: shared foundation</h3><p><strong>C is correct.</strong> Both methods generate estimates by performing repeated sampling many times.</p><p>A is incorrect because neither method depends on closed-form analytic solutions.</p><p>B is incorrect because bootstrap specifically does not require the population distribution to be known.</p>"
+  },
+  {
+    "id": 34,
+    "model": "Grok",
+    "topic": "Bootstrap Resampling",
+    "stem": "In a bootstrap simulation of a contingent claim, the random stock price changes are most likely drawn from:",
+    "options": {
+      "A": "the empirical distribution of observed price changes.",
+      "B": "a specified normal distribution with chosen mean and variance.",
+      "C": "a lognormal distribution with known analytic parameters."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: bootstrap data source for simulation</h3><p><strong>A is correct.</strong> In bootstrap, the random stock price changes are drawn from the empirical distribution of observed historical changes.</p><p>B is incorrect because drawing from a specified normal distribution characterizes a Monte Carlo approach.</p><p>C is incorrect because drawing from a parameterized lognormal distribution is also a Monte Carlo feature, not bootstrap.</p>"
+  },
+  {
+    "id": 35,
+    "model": "ChatGPT",
+    "topic": "Bootstrap Resampling",
+    "stem": "A recognized strength of bootstrap resampling is that it is:",
+    "options": {
+      "A": "guaranteed to provide exact numerical results.",
+      "B": "simple to perform.",
+      "C": "free of any statistical uncertainty in its estimates."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: advantages of bootstrap</h3><p><strong>B is correct.</strong> A recognized strength of the bootstrap is its computational and conceptual simplicity while offering a good representation of the statistical features of the population.</p><p>A is incorrect because bootstrap produces statistical estimates, not exact results.</p><p>C is incorrect because bootstrap estimates still contain sampling variability.</p>"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "topic": "III-D Performance Presentation",
+    "stem": "A portfolio manager sends a one-page pitch sheet to prospective institutional clients showing a 10-year composite return for similar discretionary accounts. The sheet states that it is a summary, labels the results as gross of fees, and says full calculation details are available on request. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the presentation is brief but identifies its limited nature and makes supporting details available on request.",
+      "B": "There is most likely a violation because any presentation to prospects must contain all supporting calculations within the same document.",
+      "C": "There is most likely a violation because gross returns may never be shown unless net returns appear with equal prominence."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard is that performance information must be fair, accurate, and complete, while the competing concern is that a short marketing piece may omit detail. The curriculum resolves that tension by permitting brief presentations if the member makes the detailed supporting information available on request, with best practice being to note the limited nature of the summary. Here, the manager uses a composite of similar portfolios, discloses that results are gross of fees, and signals that fuller information is available. Those facts support a fair summary rather than a misleading one, so the conduct is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because full detail often reduces misunderstanding, but the standard does not require every brief communication to contain all underlying support in the same document.</p><p>Why remaining distractor fails (boundary violation). C fails because the curriculum requires disclosure of whether results are gross, net, or after tax; it does not state that gross returns are forbidden when clearly identified.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "III-D Performance Presentation",
+    "stem": "An adviser markets a balanced composite to prospects. The composite excludes all terminated accounts from prior years to avoid confusing readers, but the omission is not disclosed anywhere in the presentation. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because terminated accounts are no longer relevant to the current client experience.",
+      "B": "There is most likely a violation because omitting terminated accounts without disclosure can distort the composite’s performance history.",
+      "C": "There is most likely no violation because a manager may simplify a presentation whenever doing so makes the data easier to understand."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires a fair, accurate, and complete presentation, while the competing principle is the desire to simplify a performance history for readability. The curriculum resolves that conflict by favoring completeness when simplification would alter what the audience is entitled to understand. It specifically identifies including terminated accounts in composite history as part of a fair presentation. By removing those accounts without disclosure, the adviser changes the historical picture presented to prospects. That omission makes the performance record incomplete and therefore most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because terminated accounts may appear stale, but the standard treats them as part of the performance history rather than irrelevant background.</p><p>Why remaining distractor fails (boundary violation). C fails because clarity does not justify deleting material information that may change how readers judge the record.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "III-D Performance Presentation",
+    "stem": "A new boutique includes a founder’s five-year track record from her prior employer in a presentation to prospects. The presentation clearly states the name of the prior firm, the period during which the returns were earned, and the founder’s specific role in managing the strategy. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because any use of prior-employer performance in current marketing is prohibited.",
+      "B": "There is most likely a violation because only the current firm’s performance may ever be shown to prospects.",
+      "C": "There is most likely no violation because prior performance may be used when accompanied by clear disclosure of its source and the manager’s role."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard is fair, accurate, and complete performance presentation, and the competing concern is that prior-employer returns can wrongly suggest a current firm track record. The curriculum resolves that tension by allowing prior performance to be shown if the source of the record and the member’s specific role are appropriately disclosed. Here, the boutique identifies the prior firm, the period, and the founder’s role instead of allowing prospects to infer that the boutique itself earned those results. Because the context is preserved rather than obscured, the communication is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because prior-firm advertising can easily mislead, but the curriculum does not impose a blanket ban; it focuses on whether disclosure is sufficient.</p><p>Why remaining distractor fails (boundary violation). B fails for the same reason. The boundary is not current firm only, but whether the record is presented with enough context to remain fair and accurate.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "III-D Performance Presentation",
+    "stem": "A firm tests a model on past market data before launching the strategy. In a client handout, the results from the retroactive test are placed under a separate heading marked 'simulated results,' and the handout explains that the model was applied retrospectively. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the simulated nature and source of the results are clearly disclosed.",
+      "B": "There is most likely a violation because simulated performance may never be shown to clients or prospects under any circumstances.",
+      "C": "There is most likely a violation because only actual post-launch returns can be used in a handout, even if the simulation is identified."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard prohibits misrepresenting past or expected performance, while the competing principle is that back-tested information can still be informative if honestly characterized. The curriculum resolves this by requiring full disclosure that the results are simulated and by explaining the source of those returns. In this handout, the results are separately labeled as simulated and are expressly described as retroactive model application rather than actual achieved performance. Because the disclosure preserves the distinction that matters, the presentation is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because simulated returns often create misuse risk, but the standard does not ban them outright; it bans presenting them in a misleading way.</p><p>Why remaining distractor fails (boundary violation). C fails because the key boundary is disclosure, not whether the numbers were generated before or after launch.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "III-D Performance Presentation",
+    "stem": "A firm does not claim compliance with the GIPS standards. It presents the performance of a composite of similar portfolios, includes terminated accounts, labels the results as net of fees, and maintains the records used to calculate the figures. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because any firm that presents performance but does not claim GIPS compliance is automatically deficient.",
+      "B": "There is most likely no violation because a non-GIPS firm may still meet Standard III(D) by presenting fair, accurate, and complete performance information.",
+      "C": "There is most likely a violation because only GIPS-compliant firms may use composite performance in client communications."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing rule is fairness, accuracy, and completeness in performance presentation, while the competing idea is that GIPS is the best method and therefore might be the only acceptable one. The curriculum resolves that issue by saying GIPS compliance is best practice, not the exclusive route to meeting Standard III(D). It also gives examples of how non-GIPS firms can still comply, including using composites of similar portfolios, including terminated accounts, making needed disclosures, and maintaining calculation records. Because the firm does those things and does not falsely claim GIPS compliance, the presentation is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because GIPS has special authority in performance reporting, but the standard does not convert best practice into a universal mandate.</p><p>Why remaining distractor fails (boundary violation). C fails because composite presentation is encouraged precisely as a fair method even for firms that do not claim GIPS compliance.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "III-D Performance Presentation",
+    "stem": "A marketing booklet states that a firm's composite returns are GIPS-compliant. The returns themselves are computed correctly, but the composite was not asset weighted as required under the GIPS standards. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the underlying account data are accurate.",
+      "B": "There is most likely no violation because the defect concerns methodology rather than the actual returns achieved.",
+      "C": "There is most likely a violation because claiming GIPS compliance without meeting all applicable requirements is misleading."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard requires a fair, accurate, and complete presentation, while the competing principle is that technically correct raw data might seem enough. The curriculum resolves that tension by treating a claim of GIPS compliance as meaningful only if the firm actually satisfies all relevant GIPS requirements, including the required calculation approach. Here, the booklet asserts compliance while failing to asset weight the composite as required. That mismatch makes the claim itself misleading even if the raw portfolio data are real, so the conduct most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because truthful raw numbers matter, but compliance claims communicate something broader than data authenticity alone.</p><p>Why remaining distractor fails (boundary violation). B fails because methodology is not a side issue once the firm invokes an external standard that depends on that methodology.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "III-D Performance Presentation",
+    "stem": "A research analyst advertises the historical success of her recommendations. The advertisement states the evaluation period, includes all covered recommendations from that period, and makes supporting records available to prospects who ask for them. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because claims about recommendation success may be made when they are fair, accurate, and complete.",
+      "B": "There is most likely a violation because analysts may never discuss the historical accuracy of their recommendations in promotional materials.",
+      "C": "There is most likely a violation because only portfolio performance, and not recommendation results, may be presented under Standard III(D)."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard extends beyond separate-account returns to any communication that could misrepresent performance, including claims about recommendation success. The competing concern is that such advertisements can easily become selective or overstated. The curriculum resolves that by requiring the claim to be fair, accurate, and complete. Because the analyst uses the full covered set for the stated period and preserves supporting records for review, the communication remains tied to a complete and supportable record. On those facts, the advertisement is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because recommendation advertising is high risk, but the standard does not prohibit it categorically.</p><p>Why remaining distractor fails (boundary violation). C fails because the curriculum expressly brings recommendation-success claims within the scope of fair performance presentation.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "III-D Performance Presentation",
+    "stem": "A salesperson circulates a brochure saying the firm 'consistently delivers 18% annual growth.' In fact, one pooled fund earned 18% last year, but the firm's broader accounts averaged far less over a longer period. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the brochure relies on a real result achieved by one of the firm's products.",
+      "B": "There is most likely a violation because one fund's single-year result is being generalized into a broader and ongoing firm claim.",
+      "C": "There is most likely no violation because prospects can infer that marketing language is aspirational rather than historical."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires a fair, accurate, and complete representation of performance, while the competing temptation is to use a striking true number as shorthand for broader capability. The curriculum resolves that conflict by rejecting communications that turn isolated actual performance into a misleading statement about overall or expected results. Here, a single pooled fund's one-year return is presented as though it reflects a consistent firm-level growth pattern. That overgeneralization changes both the scope and the implication of the data, so the brochure most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because the 18% figure is real, but truth in a narrow sense does not cure a misleading overall impression.</p><p>Why remaining distractor fails (boundary violation). C fails because the standard does not allow a member to rely on the audience to discount misleading wording as mere marketing puffery.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "III-D Performance Presentation",
+    "stem": "A client report for a private market account shows a money-weighted return, while a separate report for a public-equity strategy shows a time-weighted return. Each report clearly labels the return type used rather than leaving the metric ambiguous. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because a firm must use the same return type for every strategy it reports.",
+      "B": "There is most likely a violation because any difference in return methodology is inherently misleading even when disclosed.",
+      "C": "There is most likely no violation because the problem under Standard III(D) is incomplete or misleading reporting, not disclosed methodological differences by themselves."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing requirement is that clients receive fair, accurate, and complete information, while the competing concern is that different calculation methods can be used opportunistically. The curriculum resolves that concern by focusing on disclosure and completeness. Its warning example is about failing to label return types so the firm can show whichever appears higher, not about disclosed differences as such. Here, each report identifies the method used instead of obscuring it. Because the communication does not hide the methodology, it is most likely not a violation on these facts.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because uniformity can aid comparison, but the curriculum does not state that one return type must govern every strategy in every report.</p><p>Why remaining distractor fails (boundary violation). B fails because disclosed methodological differences are not the same as switching methods secretly to create a better appearance.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "III-D Performance Presentation",
+    "stem": "To improve the appearance of stock-selection skill, a performance analyst switches to a new attribution method before quarter-end reports go out. The new method is not disclosed to clients, even though the revised presentation better aligns with how the firm prefers to describe its process. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because changing attribution methodology without proper disclosure obscures the facts being presented.",
+      "B": "There is most likely no violation because a firm may redefine attribution whenever the new method better reflects its stated strategy.",
+      "C": "There is most likely no violation because attribution reports are explanatory tools rather than performance presentations."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard covers practices that misrepresent performance presentation or performance measurement, while the competing rationale is that a revised method may fit the firm's story more closely. The curriculum resolves that issue against undisclosed changes that improve appearance at the expense of transparency. Here, the analyst changes attribution methodology specifically to improve how the firm's stock selection looks and does not tell clients that the basis changed. That lack of disclosure prevents clients from fairly understanding what the report means, so the conduct most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because methodological refinement can be legitimate, but the problem is the undisclosed switch used to improve appearances.</p><p>Why remaining distractor fails (boundary violation). C fails because attribution reporting still communicates performance-related information and remains within the standard's concern for fair and complete presentation.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "III-D Performance Presentation",
+    "stem": "A boutique prepares a short email for prospects showing a strategy's three-year composite result. The email states that it is a summary only and offers the full list of assumptions, records, and calculation support upon request. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because email communications may not rely on follow-up disclosure.",
+      "B": "There is most likely no violation because a brief presentation may be acceptable if its limited nature is made clear and support is available on request.",
+      "C": "There is most likely a violation because every prospect must receive the full record package before seeing any performance number."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing principle is fair, accurate, and complete performance communication, while the competing concern is that abbreviated materials risk omitting too much. The curriculum resolves that by allowing brief presentations so long as the member makes detailed supporting information available on request, with best practice being to note that the information is limited. This email does both. It is brief, but it flags that fact and points the recipient to fuller support rather than pretending the summary is exhaustive. On those facts, the communication is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because email can feel informal, but the medium does not change the rule permitting brief presentations with available supporting detail.</p><p>Why remaining distractor fails (boundary violation). C fails because the curriculum does not require every initial communication to deliver the entire underlying record at the outset.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "III-D Performance Presentation",
+    "stem": "A manager markets the historical performance of a pooled fund for which she is claiming responsibility. The record is accurate, the period shown is identified, and the presentation does not imply that the figures come from a broader set of products. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because only separate-account performance may be used when the manager claims responsibility.",
+      "B": "There is most likely a violation because pooled-fund history may never be shown to prospective clients.",
+      "C": "There is most likely no violation because Standard III(D) applies to pooled-fund performance as well, so long as the history presented is accurate and not misleading."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard requires fair, accurate, and complete performance information, while the competing concern is that some readers may assume the rule only addresses separate-account managers. The curriculum resolves that directly by stating that whenever a member provides performance information for which the manager is claiming responsibility, such as for pooled funds, the history must be accurate. Here, the pooled-fund record is identified for what it is and is not stretched into a broader claim. Because the presentation preserves that boundary, it is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because composites and separate accounts receive much emphasis, but the standard expressly includes pooled funds.</p><p>Why remaining distractor fails (boundary violation). B fails because the curriculum does not prohibit pooled-fund history; it prohibits misrepresentation of that history.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "III-D Performance Presentation",
+    "stem": "A firm excludes very small accounts from a composite because those accounts operate under a materially different service model. The exclusion is applied consistently and explicitly disclosed in the presentation. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the exclusion is not hidden and the presentation explains the boundary of the composite being shown.",
+      "B": "There is most likely a violation because any exclusion from a composite automatically makes the record incomplete.",
+      "C": "There is most likely a violation because Standard III(D) requires every account managed by the firm to appear in every composite."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing requirement is a fair, accurate, and complete presentation, while the competing concern is that excluding accounts can be used to improve appearance. The curriculum resolves that problem by condemning undisclosed exclusions and manipulated composite membership, not by forbidding every boundary choice. Here, the firm makes the exclusion explicit and applies it consistently, which allows the audience to understand exactly what set of accounts the composite represents. Because the limitation is disclosed instead of concealed, the communication is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because exclusions can be abused, but the standard focuses on whether the audience is misled about the composition and results.</p><p>Why remaining distractor fails (boundary violation). C fails because composites are meant to represent similar portfolios, not every account at the firm regardless of mandate or service structure.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "III-D Performance Presentation",
+    "stem": "A performance report shows whichever of time-weighted or money-weighted return is higher for each period, and the report does not identify which method was used in a given period. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because both return types are legitimate and the higher figure is still a real figure.",
+      "B": "There is most likely a violation because leaving the return methodology unlabeled prevents clients from judging the performance fairly.",
+      "C": "There is most likely no violation because clients care about the amount earned, not the route used to calculate it."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires complete information, while the competing temptation is to select whichever legitimate metric makes the results look stronger. The curriculum resolves that by treating unlabeled inconsistency in return methodology as misleading because clients cannot judge what the reported number actually represents. Here, the firm switches between money-weighted and time-weighted returns and hides that choice. That omission deprives clients of the information needed to evaluate the performance record fairly, so the conduct most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because each number may be real on its own, but the standard is concerned with the completeness of the communication, not just isolated numerical truth.</p><p>Why remaining distractor fails (boundary violation). C fails because methodology directly affects how performance should be interpreted; it is not a dispensable technicality.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "III-D Performance Presentation",
+    "stem": "A manager presents a composite of similar discretionary portfolios to a sophisticated consultant. The deck identifies that the record is from a prior entity, states the performance is gross of fees, and offers the underlying records if the consultant wants them. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because a gross-of-fees record from a prior entity may never be shown in the same presentation.",
+      "B": "There is most likely a violation because performance for sophisticated audiences must still be presented without tailoring.",
+      "C": "There is most likely no violation because the deck discloses the source of the record, the fee basis, and the availability of supporting detail."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing rule is fair, accurate, and complete presentation, while the competing concern is that combining several sensitive disclosures in one pitch can make the deck look risky. The curriculum resolves the issue by emphasizing disclosure: members may tailor information to the audience, may use prior-entity records with proper identification, and must disclose whether performance is gross, net, or after tax. This deck does each of those things and does not hide the limited nature of the summary or the source of the returns. Because the material boundaries are disclosed rather than masked, the communication is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because prior-entity and gross-of-fees information each require care, but neither is forbidden when clearly identified.</p><p>Why remaining distractor fails (boundary violation). B fails because the curriculum expressly contemplates considering the sophistication of the audience when deciding what information to provide.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "III-D Performance Presentation",
+    "stem": "A firm advertises a strategy using only one particularly strong account and calls it a 'representative client experience,' even though it does not present a composite of similar portfolios and does not explain the account selection. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because using a selected account without explaining the basis of selection can misrepresent the broader performance history.",
+      "B": "There is most likely no violation because the account is real and representative examples are always acceptable in marketing.",
+      "C": "There is most likely no violation because Standard III(D) is concerned only with false calculations, not with selective account choice."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard requires a fair, accurate, and complete presentation, while the competing temptation is to use one appealing account as a proxy for the whole strategy. The curriculum resolves that tension by recommending composites of similar portfolios rather than a single representative account because selected accounts can distort the audience's impression. Here, the firm labels one strong account as representative without explaining why that account was chosen and without providing a composite context. That creates a material risk of misleading prospects about the broader history, so the conduct most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because the account is real, but reality of one account does not make it a fair proxy for the strategy overall.</p><p>Why remaining distractor fails (boundary violation). C fails because the standard reaches performance presentation practices, not just arithmetic or formula errors.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "III-D Performance Presentation",
+    "stem": "A firm revises its attribution methodology after concluding the new approach better matches its stated investment process. Before sending the next client reports, the firm discloses the methodology change and applies the new method consistently going forward. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because attribution methodology must never be changed once clients have seen earlier reports.",
+      "B": "There is most likely no violation because the concern under Standard III(D) is undisclosed methodology changes that obscure the facts, not every disclosed change.",
+      "C": "There is most likely a violation because any methodology update that improves the appearance of results is automatically improper."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires fair, accurate, and complete communication, while the competing concern is that methodology changes can be abused to make results look better. The curriculum resolves that concern by condemning modifications made without proper disclosure because they obscure the facts regarding the firm's abilities. Here, the firm tells clients about the change before sending the reports and then applies the revised method consistently. With disclosure, the key vice identified by the curriculum is removed, so the conduct is most likely not a violation on these facts.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because stable methodology aids comparability, but the curriculum does not impose an absolute ban on all revisions.</p><p>Why remaining distractor fails (boundary violation). C fails because the standard focuses on whether the change is disclosed and fair, not on a categorical rule that any favorable effect makes the change improper.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "III-D Performance Presentation",
+    "stem": "A manager launches a new firm and circulates an advertisement showing his former team's six-year return record as though it were the new firm's own history. The advertisement does not identify the prior employer or explain his role. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the manager personally participated in generating the record.",
+      "B": "There is most likely no violation because prospects are expected to understand that new firms often rely on the founder's prior experience.",
+      "C": "There is most likely a violation because omitting the prior firm and the manager's role makes the new firm's history appear broader than it is."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard requires a fair, accurate, and complete representation of performance, while the competing idea is that a founder's genuine prior success may seem portable enough to market without elaboration. The curriculum resolves that by permitting prior-firm performance only when accompanied by proper disclosure of where the performance occurred and the person's specific role in achieving it. Here, those disclosures are omitted, so the advertisement invites readers to treat the old record as the new firm's own experience. That is a material misrepresentation and therefore most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because personal involvement matters, but it does not erase the need to identify the source and context of the record.</p><p>Why remaining distractor fails (boundary violation). B fails because the standard does not permit reliance on audience assumptions where the member can and should disclose the true source directly.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "III-D Performance Presentation",
+    "stem": "A short conference handout shows only the strategy's headline return and benchmark comparison. The handout adds a note that it is a limited summary and that full supporting performance information is available from the presenter after the session. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because a limited handout may be acceptable if it signals its brevity and the presenter can provide the supporting details on request.",
+      "B": "There is most likely a violation because any omission of detailed support in a conference setting is inherently incomplete.",
+      "C": "There is most likely a violation because performance handouts must always be self-sufficient with no follow-up option."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The governing standard demands fair, accurate, and complete communication, while the competing constraint is the practical brevity of a conference handout. The curriculum resolves that by allowing brief presentations if the member makes the detailed supporting information available on request, with best practice being to reference the limited nature of the material. This handout does exactly that. It does not pretend to be exhaustive and gives the audience a path to the fuller record. On those facts, the communication is most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). B is tempting because conference materials can be abbreviated to the point of confusion, but the standard does not treat all brevity as misconduct.</p><p>Why remaining distractor fails (boundary violation). C fails because follow-up availability of detail is part of the curriculum's solution for brief presentations, not evidence of a violation.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "III-D Performance Presentation",
+    "stem": "A manager presents a composite to prospects and states that the figures are after tax. The presentation also preserves the records used in the calculation and does not imply compliance with any standard the firm has not met. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely a violation because after-tax reporting is misleading unless gross and net returns are also shown.",
+      "B": "There is most likely no violation because Standard III(D) focuses on whether the performance basis is disclosed clearly, not on a single mandated fee or tax format.",
+      "C": "There is most likely a violation because maintaining records is relevant only for GIPS-compliant firms."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing standard requires fair, accurate, and complete information, while the competing concern is that different bases of reporting can influence how attractive the results look. The curriculum resolves that by requiring disclosure of whether performance is gross of fees, net of fees, or after tax. It does not impose one universal format for every presentation. Here, the manager clearly identifies the performance as after tax, keeps the supporting records, and avoids any false claim of external-standard compliance. Those facts make the communication most likely not a violation.</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because multiple views can be useful, but the standard requires clear disclosure of the basis used rather than simultaneous presentation of every basis.</p><p>Why remaining distractor fails (boundary violation). C fails because maintaining records is one of the practices that supports fair presentation more generally, not only a GIPS issue.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "III-D Performance Presentation",
+    "stem": "A client-reporting system leaves gross-of-fees and net-of-fees fields unlabeled so relationship managers can emphasize whichever figure looks stronger in a given quarter. The underlying calculations are stored accurately in the system. Which statement is most accurate?",
+    "options": {
+      "A": "There is most likely no violation because the figures themselves are accurate and can be explained later if a client asks.",
+      "B": "There is most likely no violation because both gross and net figures relate to the same portfolio history.",
+      "C": "There is most likely a violation because withholding the basis of the reported result makes the presentation incomplete and potentially misleading."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The governing standard requires performance information to be fair, accurate, and complete, while the competing temptation is to exploit multiple real metrics to present the most flattering number. The curriculum resolves that issue by requiring disclosure of whether performance is gross of fees, net of fees, or after tax. Here, the firm intentionally leaves that basis unlabeled so staff can choose the more attractive figure. Even though the underlying calculations are accurate, the communication conceals a fact clients need to judge the result properly, so the conduct most likely violates Standard III(D).</p><p>Why top distractor is tempting but wrong (missed nuance). A is tempting because later clarification may sound curative, but Standard III(D) addresses the fairness and completeness of the communication when it is made.</p><p>Why remaining distractor fails (boundary violation). B fails because figures tied to the same portfolio are not interchangeable once the fee basis materially affects how the audience interprets them.</p>"
+  }
+]
