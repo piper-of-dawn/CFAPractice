@@ -1787,7 +1787,6 @@
         const target = btn.dataset.target;
         const sec = document.querySelector(`section.question[data-qname="${target}"]`);
         if (!sec) return;
-        if (!isSessionMode && sec.dataset.answerLocked === 'true') return;
         lastActiveQuestion = target || lastActiveQuestion;
         const correct = parseInt(sec.dataset.correct);
         const json = JSON.parse(sec.dataset.json || '{}');
@@ -1838,12 +1837,6 @@
         const selectedLi = selected.closest('li.choice');
         if (selectedLi) {
           selectedLi.classList.add(ok ? 'is-correct' : 'is-incorrect');
-        }
-        if (!isSessionMode) {
-          sec.dataset.answerLocked = 'true';
-          sec.querySelectorAll('input[type="radio"]').forEach((input) => {
-            input.disabled = true;
-          });
         }
         // Trigger a brief green glow (1.5s) when correct
         if (ok) {

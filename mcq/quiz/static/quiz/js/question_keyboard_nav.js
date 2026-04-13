@@ -74,7 +74,6 @@
     function selectOption(number) {
       const question = questions[selectedIndex];
       if (!question) return;
-      if (question.dataset.answerLocked === 'true') return;
       const options = Array.from(question.querySelectorAll('input[type="radio"]'));
       const target = options[number - 1];
       if (!target || target.disabled) return;
