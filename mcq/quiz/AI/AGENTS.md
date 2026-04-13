@@ -57,6 +57,9 @@ Generate CFA-style MCQs for “{TOPIC}” as a JSON array. Each question must te
 - Return **ONLY** a JSON array. No additional text.
 - When writing to an existing topic file, always append new questions to the existing JSON array. Never overwrite existing questions unless the user explicitly asks for replacement.
 - In generated JSON content, never refer to the source as the “PDF.” Refer to it as the “CFA Curriculum.”
+- Every question must be fully self-contained. Do not rely on unstated exhibit values, prior examples, chapter context, or “as shown above” phrasing.
+- Never write stems or explanations that refer to a named example, exhibit, table, figure, question set, or the CFA Curriculum as an external authority.
+- If a question uses numerical inputs, include every required number explicitly in the stem so the student can solve it in isolation.
 
 ### Schema (exact)
 ```json
@@ -149,6 +152,7 @@ Generate CFA-style multiple-choice questions for “{TOPIC}” using the enumera
 * List items using Roman numerals (I, II, III, IV if needed).
 * Ask a counting question such as “How many of the above…?”, “Which of the above…?”, or “How many satisfy…?”.
 * Use CFA-style neutral phrasing.
+* Make each question self-contained; do not mention the CFA Curriculum, an example, or any external text in the stem.
 
 ### Options (exactly three)
 
@@ -232,6 +236,7 @@ Reason (R): …
 - Do not reveal answers within the question text.
 - Avoid citations entirely.
 - Always include a space after the currency code, for example `USD 30` and `EUR 30`.
+- Make each A–R question fully self-contained; never reference an example, exhibit, or external source in either the assertion, the reason, or the explanation.
 
 ### Validation
 - Exact schema match with `Hedge Funds.json`.
@@ -312,6 +317,7 @@ Must come from realistic numerical mistakes:
 - Return ONLY a JSON array.
 - When writing to an existing topic file, always append new questions to the existing JSON array. Never overwrite existing questions unless the user explicitly asks for replacement.
 - In generated JSON content, never refer to the source as the “PDF.” Refer to it as the “CFA Curriculum.”
+- Every numerical question must be self-contained. Include all required numerical inputs in the stem and never reference a prior example, exhibit, table, or the CFA Curriculum in the question or explanation.
 
 ### Schema (exact)
 ```json

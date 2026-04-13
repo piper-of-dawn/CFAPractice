@@ -2,92 +2,91 @@
   {
     "id": 1,
     "topic": "Estimation of the Simple Linear Regression Model",
-    "stem": "Consider the following:\nI. In simple linear regression, the least squares criterion fits the line by minimizing the sum of squared residuals.\nII. Because the intercept equals the predicted value of the dependent variable when the independent variable is zero, it is always economically meaningful.\nIII. The estimated slope equals the covariance of Y and X divided by the standard deviation of X.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. In simple linear regression, the least squares criterion fits the line by minimizing the sum of squared residuals.\nII. Because the intercept equals the predicted value of the dependent variable when the independent variable is zero, it is always economically meaningful.\nIII. The estimated slope equals the covariance of Y and X divided by the standard deviation of X.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement matches the CFA Curriculum's definition of estimation in simple linear regression. Statement I qualifies because ordinary least squares minimizes the sum of squared residuals. Statement II does not qualify because the Curriculum states the intercept may lack meaning when X = 0 is unrealistic. Statement III does not qualify because the slope uses covariance divided by the variance of X, not the standard deviation. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two statements would qualify only if either the intercept were always meaningful or the slope formula used the standard deviation of X, and the CFA Curriculum states neither point.</p><p>Why option C is incorrect. All three cannot qualify because Statements II and III both violate the Curriculum's boundary conditions on interpretation and on the slope formula.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement matches the definition of estimation in simple linear regression. Statement I qualifies because ordinary least squares minimizes the sum of squared residuals. Statement II does not qualify because the rule states the intercept may lack meaning when X = 0 is unrealistic. Statement III does not qualify because the slope uses covariance divided by the variance of X, not the standard deviation. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two statements would qualify only if either the intercept were always meaningful or the slope formula used the standard deviation of X, and the governing rule states neither point.</p><p>Why option C is incorrect. All three cannot qualify because Statements II and III both violate the rule's boundary conditions on interpretation and on the slope formula.</p>"
   },
   {
     "id": 2,
     "topic": "Assumptions of the Simple Linear Regression Model",
-    "stem": "Consider the following:\nI. Residuals that appear random when plotted against the independent variable are consistent with the linearity assumption.\nII. Residuals clustering into regimes with markedly different variances support the homoskedasticity assumption.\nIII. Normality in simple linear regression requires the dependent and independent variables themselves to be normally distributed.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. Residuals that appear random when plotted against the independent variable are consistent with the linearity assumption.\nII. Residuals clustering into regimes with markedly different variances support the homoskedasticity assumption.\nIII. Normality in simple linear regression requires the dependent and independent variables themselves to be normally distributed.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement correctly applies the regression assumptions described in the CFA Curriculum. Statement I qualifies because random residuals against X are what the analyst wants to see under linearity. Statement II does not qualify because clustering into groups with different variances indicates heteroskedasticity, not homoskedasticity. Statement III does not qualify because normality applies to residuals, not to X and Y themselves. Only one statement meets the criterion.</p><p>Why option B is incorrect. A count of two would require either regime clustering to confirm constant variance or normality to apply to the raw variables, and both interpretations are rejected by the Curriculum.</p><p>Why option C is incorrect. All three cannot satisfy the rule because Statements II and III reverse the Curriculum's guidance on variance patterns and normality.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement correctly applies the regression assumptions described in the governing rule. Statement I qualifies because random residuals against X are what the analyst wants to see under linearity. Statement II does not qualify because clustering into groups with different variances indicates heteroskedasticity, not homoskedasticity. Statement III does not qualify because normality applies to residuals, not to X and Y themselves. Only one statement meets the criterion.</p><p>Why option B is incorrect. A count of two would require either regime clustering to confirm constant variance or normality to apply to the raw variables, and both interpretations are rejected by the rule.</p><p>Why option C is incorrect. All three cannot satisfy the rule because Statements II and III reverse the rule's guidance on variance patterns and normality.</p>"
   },
   {
     "id": 3,
     "topic": "Hypothesis Tests in the Simple Linear Regression Model",
-    "stem": "Consider the following:\nI. In simple linear regression, the coefficient of determination equals the square of the pairwise correlation.\nII. The regression F-statistic is left-tailed because the analyst tests whether explained variation is smaller than unexplained variation.\nIII. If the null hypothesis that the slope equals zero is not rejected, the intercept must also equal zero.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. In simple linear regression, the coefficient of determination equals the square of the pairwise correlation.\nII. The regression F-statistic is left-tailed because the analyst tests whether explained variation is smaller than unexplained variation.\nIII. If the null hypothesis that the slope equals zero is not rejected, the intercept must also equal zero.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement matches the CFA Curriculum's treatment of fit and coefficient testing. Statement I qualifies because in simple linear regression the Curriculum states that R-squared equals r-squared. Statement II does not qualify because the F-test is right-tailed, since the analyst asks whether explained variation is large relative to unexplained variation. Statement III does not qualify because tests of slope and intercept are distinct; a result on one does not force the other. Only one statement qualifies.</p><p>Why option B is incorrect. Reaching two would require either reversing the tail of the F-test or merging the slope and intercept tests into one conclusion, and the Curriculum does neither.</p><p>Why option C is incorrect. All three cannot be correct because Statements II and III misstate both the rejection region and the independence of coefficient tests.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement matches the treatment of fit and coefficient testing. Statement I qualifies because in simple linear regression the rule states that R-squared equals r-squared. Statement II does not qualify because the F-test is right-tailed, since the analyst asks whether explained variation is large relative to unexplained variation. Statement III does not qualify because tests of slope and intercept are distinct; a result on one does not force the other. Only one statement qualifies.</p><p>Why option B is incorrect. Reaching two would require either reversing the tail of the F-test or merging the slope and intercept tests into one conclusion, and the rule does neither.</p><p>Why option C is incorrect. All three cannot be correct because Statements II and III misstate both the rejection region and the independence of coefficient tests.</p>"
   },
   {
     "id": 4,
     "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
-    "stem": "Consider the following:\nI. In an ANOVA table for simple linear regression, the standard error of the estimate equals the square root of mean square error.\nII. In an ANOVA table for simple linear regression, the error degrees of freedom equal n minus 1.\nIII. The standard error of the estimate is a relative measure of fit in the same sense as R-squared.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. In an ANOVA table for simple linear regression, the standard error of the estimate equals the square root of mean square error.\nII. In an ANOVA table for simple linear regression, the error degrees of freedom equal n minus 1.\nIII. The standard error of the estimate is a relative measure of fit in the same sense as R-squared.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement reflects the ANOVA and standard-error definitions in the CFA Curriculum. Statement I qualifies because the standard error of the estimate is defined as the square root of MSE. Statement II does not qualify because the error degrees of freedom in simple linear regression are n minus 2, not n minus 1. Statement III does not qualify because the standard error of the estimate is an absolute, not relative, measure of fit. Only one statement satisfies the rule.</p><p>Why option B is incorrect. A count of two would require changing either the error degrees of freedom or the nature of se, but both are explicitly defined otherwise in the Curriculum.</p><p>Why option C is incorrect. All three cannot qualify because Statements II and III conflict with the ANOVA structure and with how fit measures are classified.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement reflects the ANOVA and standard-error definitions in the governing rule. Statement I qualifies because the standard error of the estimate is defined as the square root of MSE. Statement II does not qualify because the error degrees of freedom in simple linear regression are n minus 2, not n minus 1. Statement III does not qualify because the standard error of the estimate is an absolute, not relative, measure of fit. Only one statement satisfies the rule.</p><p>Why option B is incorrect. A count of two would require changing either the error degrees of freedom or the nature of se, but both are explicitly defined otherwise in the rule.</p><p>Why option C is incorrect. All three cannot qualify because Statements II and III conflict with the ANOVA structure and with how fit measures are classified.</p>"
   },
   {
     "id": 5,
     "topic": "Prediction Using Simple Linear Regression and Prediction Intervals",
-    "stem": "Consider the following:\nI. The predicted value of the dependent variable is obtained by inserting the forecasted independent variable into the estimated regression equation.\nII. The standard error of the forecast is minimized when the forecasted independent variable is farthest from the mean of the independent variable.\nIII. A prediction interval around the forecast uses only the standard error of the estimate, without using the standard error of the forecast.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. The predicted value of the dependent variable is obtained by inserting the forecasted independent variable into the estimated regression equation.\nII. The standard error of the forecast is minimized when the forecasted independent variable is farthest from the mean of the independent variable.\nIII. A prediction interval around the forecast uses only the standard error of the estimate, without using the standard error of the forecast.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement matches the CFA Curriculum's prediction framework. Statement I qualifies because the forecast uses the estimated intercept and slope with Xf. Statement II does not qualify because the standard error of the forecast is smallest when Xf is closest to the sample mean of X, not farthest from it. Statement III does not qualify because the prediction interval uses the standard error of the forecast, not se alone. Only one statement satisfies the criterion.</p><p>Why option B is incorrect. Two statements do not qualify because both Statement II and Statement III reverse key parts of the Curriculum's forecast-uncertainty framework.</p><p>Why option C is incorrect. All three cannot qualify because only Statement I matches the prescribed method for forecasting and interval construction.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement matches the prediction framework. Statement I qualifies because the forecast uses the estimated intercept and slope with Xf. Statement II does not qualify because the standard error of the forecast is smallest when Xf is closest to the sample mean of X, not farthest from it. Statement III does not qualify because the prediction interval uses the standard error of the forecast, not se alone. Only one statement satisfies the criterion.</p><p>Why option B is incorrect. Two statements do not qualify because both Statement II and Statement III reverse key parts of the rule's forecast-uncertainty framework.</p><p>Why option C is incorrect. All three cannot qualify because only Statement I matches the prescribed method for forecasting and interval construction.</p>"
   },
   {
     "id": 6,
     "topic": "Functional Forms for Simple Linear Regression",
-    "stem": "Consider the following:\nI. In a lin-log model, the slope gives the absolute change in the dependent variable for a relative change in the independent variable.\nII. In a log-lin model, the predicted value of the dependent variable is obtained by taking the antilog of the predicted logarithmic value.\nIII. In a log-log model, the slope gives the absolute change in the dependent variable for an absolute change in the independent variable.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. In a lin-log model, the slope gives the absolute change in the dependent variable for a relative change in the independent variable.\nII. In a log-lin model, the predicted value of the dependent variable is obtained by taking the antilog of the predicted logarithmic value.\nIII. In a log-log model, the slope gives the absolute change in the dependent variable for an absolute change in the independent variable.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement matches the Curriculum's interpretation of transformed regressions. Statement I qualifies because the lin-log slope maps a relative change in X into an absolute change in Y. Statement II does not qualify because a log-lin forecast requires taking the antilog of the predicted logarithmic value to recover Y. Statement III does not qualify because in a log-log model the slope captures a relative change in Y for a relative change in X, not absolute for absolute. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two statements do not qualify because both Statement II and Statement III contradict the Curriculum's rules for transformed-model interpretation.</p><p>Why option C is incorrect. All three cannot qualify because only Statement I is consistent with the stated meaning of the lin-log slope.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The criterion is whether each statement matches the rule's interpretation of transformed regressions. Statement I qualifies because the lin-log slope maps a relative change in X into an absolute change in Y. Statement II does not qualify because a log-lin forecast requires taking the antilog of the predicted logarithmic value to recover Y. Statement III does not qualify because in a log-log model the slope captures a relative change in Y for a relative change in X, not absolute for absolute. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two statements do not qualify because both Statement II and Statement III contradict the rule's rules for transformed-model interpretation.</p><p>Why option C is incorrect. All three cannot qualify because only Statement I is consistent with the stated meaning of the lin-log slope.</p>"
   },
   {
     "id": 7,
     "topic": "Selecting the Correct Functional Form",
-    "stem": "Consider the following:\nI. When the dependent variable is in different forms across models, raw R-squared and F-statistics are still directly comparable.\nII. Random residuals are useful evidence when deciding whether a functional form fits well.\nIII. Selecting a functional form should rely only on the highest R-squared, without examining the standard error of the estimate or residual patterns.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "stem": "Consider the following:\nI. When the dependent variable is in different forms across models, raw R-squared and F-statistics are still directly comparable.\nII. Random residuals are useful evidence when deciding whether a functional form fits well.\nIII. Selecting a functional form should rely only on the highest R-squared, without examining the standard error of the estimate or residual patterns.\nHow many of the above statements are most accurate?",
     "options": {
       "A": "Only one",
       "B": "Only two",
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement follows the CFA Curriculum's method for choosing among functional forms. Statement I does not qualify because raw R-squared and F-statistics are not directly comparable when the dependent variable is transformed into a different form. Statement II qualifies because residuals that appear random support the chosen specification. Statement III does not qualify because the Curriculum instructs the analyst to examine R-squared, F, se, and residual patterns together. Only one statement satisfies the criterion.</p><p>Why option B is incorrect. A count of two would require either allowing direct comparison across different dependent-variable forms or ignoring se and residual diagnostics, both of which the Curriculum rejects.</p><p>Why option C is incorrect. All three cannot qualify because Statements I and III each contradict the stated model-selection framework.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement follows the method for choosing among functional forms. Statement I does not qualify because raw R-squared and F-statistics are not directly comparable when the dependent variable is transformed into a different form. Statement II qualifies because residuals that appear random support the chosen specification. Statement III does not qualify because the rule instructs the analyst to examine R-squared, F, se, and residual patterns together. Only one statement satisfies the criterion.</p><p>Why option B is incorrect. A count of two would require either allowing direct comparison across different dependent-variable forms or ignoring se and residual diagnostics, both of which the rule rejects.</p><p>Why option C is incorrect. All three cannot qualify because Statements I and III each contradict the stated model-selection framework.</p>"
   },
-
   {
     "id": 1,
     "topic": "Estimation of the Simple Linear Regression Model",
-    "stem": "Assertion (A): In simple linear regression with an intercept, the fitted line is not chosen by minimizing the sum of residuals, even though the residuals sum to zero.\nReason (R): Ordinary least squares selects the intercept and slope that minimize the sum of squared residuals, and the CFA Curriculum notes that the residuals sum to zero by design.",
+    "stem": "Assertion (A): In simple linear regression with an intercept, the fitted line is not chosen by minimizing the sum of residuals, even though the residuals sum to zero.\nReason (R): Ordinary least squares selects the intercept and slope that minimize the sum of squared residuals, and with an estimated intercept the residuals sum to zero by design.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -95,7 +94,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: least squares criterion</h3><p><strong>A is correct.</strong> The fitted line in simple linear regression is chosen by minimizing the sum of squared residuals, not the plain sum of residuals. The CFA Curriculum separately notes that the residuals sum to zero by design when the intercept is estimated, which is why minimizing the raw sum would not be the governing criterion.</p><p>Why option B is incorrect: R does explain A, because it identifies the actual optimization target and contrasts it with the zero-sum residual property.</p><p>Why option C is incorrect: R is not false; both the minimization of squared residuals and the zero-sum residual result are stated in the CFA Curriculum.</p>"
+    "explanation": "<h3>First Principles Thinking: least squares criterion</h3><p><strong>A is correct.</strong> The fitted line in simple linear regression is chosen by minimizing the sum of squared residuals, not the plain sum of residuals. The regression setup also implies that the residuals sum to zero by design when the intercept is estimated, which is why minimizing the raw sum would not be the governing criterion.</p><p>Why option B is incorrect: R does explain A, because it identifies the actual optimization target and contrasts it with the zero-sum residual property.</p><p>Why option C is incorrect: R is not false; both the minimization of squared residuals and the zero-sum residual result are stated in the governing rule.</p>"
   },
   {
     "id": 2,
@@ -108,12 +107,12 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: separating assumptions</h3><p><strong>C is correct.</strong> The CFA Curriculum states that, under linearity, residuals plotted against the independent variable should appear random. A curved pattern indicates the linear model is underestimating in some ranges of X and overestimating in others, so the linearity assumption is suspect. The reason is false because equal residual variance is the homoskedasticity assumption, not the linearity assumption.</p><p>Why option A is incorrect: the assertion is true, but the reason misidentifies a different assumption.</p><p>Why option D is incorrect: the assertion is not false; a patterned residual plot is exactly the type of evidence used to question linearity.</p>"
+    "explanation": "<h3>First Principles Thinking: separating assumptions</h3><p><strong>C is correct.</strong> The governing rule states that, under linearity, residuals plotted against the independent variable should appear random. A curved pattern indicates the linear model is underestimating in some ranges of X and overestimating in others, so the linearity assumption is suspect. The reason is false because equal residual variance is the homoskedasticity assumption, not the linearity assumption.</p><p>Why option A is incorrect: the assertion is true, but the reason misidentifies a different assumption.</p><p>Why option D is incorrect: the assertion is not false; a patterned residual plot is exactly the type of evidence used to question linearity.</p>"
   },
   {
     "id": 3,
     "topic": "Hypothesis Tests in the Simple Linear Regression Model",
-    "stem": "Assertion (A): In simple linear regression, the calculated t-statistic for testing whether the correlation is zero can differ from the calculated t-statistic for testing whether the slope is zero.\nReason (R): The CFA Curriculum states that, in simple linear regression, the t-statistic for testing a zero slope and the t-statistic for testing zero correlation are the same value.",
+    "stem": "Assertion (A): In simple linear regression, the calculated t-statistic for testing whether the correlation is zero can differ from the calculated t-statistic for testing whether the slope is zero.\nReason (R): In simple linear regression, the t-statistic for testing a zero slope and the t-statistic for testing zero correlation are the same value.",
     "options": {
       "A": "Both A and R are true and R is the correct explanation of A",
       "B": "Both A and R are true but R is not the correct explanation of A",
@@ -121,7 +120,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "D",
-    "explanation": "<h3>First Principles Thinking: equivalent zero-slope and zero-correlation tests</h3><p><strong>D is correct.</strong> The assertion is false because the CFA Curriculum explicitly states that, in simple linear regression, the t-statistic used to test whether the slope coefficient equals zero and the t-statistic used to test whether the pairwise correlation equals zero are the same value. The reason is therefore true.</p><p>Why option A is incorrect: both statements are not true; the assertion contradicts the stated equivalence.</p><p>Why option C is incorrect: the reason is not false. The zero-slope and zero-correlation tests share the same calculated t-statistic in this setting.</p>"
+    "explanation": "<h3>First Principles Thinking: equivalent zero-slope and zero-correlation tests</h3><p><strong>D is correct.</strong> The assertion is false because the governing rule explicitly states that, in simple linear regression, the t-statistic used to test whether the slope coefficient equals zero and the t-statistic used to test whether the pairwise correlation equals zero are the same value. The reason is therefore true.</p><p>Why option A is incorrect: both statements are not true; the assertion contradicts the stated equivalence.</p><p>Why option C is incorrect: the reason is not false. The zero-slope and zero-correlation tests share the same calculated t-statistic in this setting.</p>"
   },
   {
     "id": 4,
@@ -134,7 +133,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: what changes in a slope test</h3><p><strong>B is correct.</strong> Both statements are true. In simple linear regression, slope tests use n minus 2 degrees of freedom because two parameters, the intercept and slope, are estimated. That does not change when the hypothesized slope is 0 or 1.0. The reason is also true because the t-statistic compares the estimated slope with the hypothesized population slope and scales that difference by the standard error of the slope.</p><p>Why option A is incorrect: R does not explain why the degrees of freedom are unchanged. The unchanged degrees of freedom come from the number of estimated parameters, not from the subtraction step itself.</p><p>Why option D is incorrect: the assertion is not false; the CFA Curriculum uses the same n minus 2 degrees of freedom for such slope tests.</p>"
+    "explanation": "<h3>First Principles Thinking: what changes in a slope test</h3><p><strong>B is correct.</strong> Both statements are true. In simple linear regression, slope tests use n minus 2 degrees of freedom because two parameters, the intercept and slope, are estimated. That does not change when the hypothesized slope is 0 or 1.0. The reason is also true because the t-statistic compares the estimated slope with the hypothesized population slope and scales that difference by the standard error of the slope.</p><p>Why option A is incorrect: R does not explain why the degrees of freedom are unchanged. The unchanged degrees of freedom come from the number of estimated parameters, not from the subtraction step itself.</p><p>Why option D is incorrect: the assertion is not false; the governing rule uses the same n minus 2 degrees of freedom for such slope tests.</p>"
   },
   {
     "id": 5,
@@ -147,7 +146,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: absolute versus relative fit</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the standard error of the estimate as the square root of MSE and interprets it as the distance between observed Y values and the fitted regression line. Because it is expressed as a direct distance in the dependent variable's units, it is an absolute measure of fit. By contrast, the coefficient of determination and the F-statistic are presented as relative measures of goodness of fit.</p><p>Why option B is incorrect: the reason directly explains why se is absolute rather than relative.</p><p>Why option C is incorrect: R is not false; the square-root-of-MSE definition and distance interpretation are both explicit in the CFA Curriculum.</p>"
+    "explanation": "<h3>First Principles Thinking: absolute versus relative fit</h3><p><strong>A is correct.</strong> The relevant formula defines the standard error of the estimate as the square root of MSE and interprets it as the distance between observed Y values and the fitted regression line. Because it is expressed as a direct distance in the dependent variable's units, it is an absolute measure of fit. By contrast, the coefficient of determination and the F-statistic are presented as relative measures of goodness of fit.</p><p>Why option B is incorrect: the reason directly explains why se is absolute rather than relative.</p><p>Why option C is incorrect: R is not false; the square-root-of-MSE definition and distance interpretation are both explicit in the governing rule.</p>"
   },
   {
     "id": 6,
@@ -160,7 +159,7 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: what drives forecast uncertainty</h3><p><strong>C is correct.</strong> The assertion is true. The CFA Curriculum states that the standard error of the forecast is smaller when the forecasted independent variable is closer to the mean of the independent variable used in estimation, so the prediction interval is narrowest there. The reason is false because $(X_f - \\bar{X})^2$ is minimized, not maximized, at the sample mean.</p><p>Why option A is incorrect: the reason reverses the direction of the effect.</p><p>Why option D is incorrect: the assertion is not false. Forecast uncertainty increases as the forecasted X moves farther from the sample mean.</p>"
+    "explanation": "<h3>First Principles Thinking: what drives forecast uncertainty</h3><p><strong>C is correct.</strong> The assertion is true. The governing rule states that the standard error of the forecast is smaller when the forecasted independent variable is closer to the mean of the independent variable used in estimation, so the prediction interval is narrowest there. The reason is false because $(X_f - \\bar{X})^2$ is minimized, not maximized, at the sample mean.</p><p>Why option A is incorrect: the reason reverses the direction of the effect.</p><p>Why option D is incorrect: the assertion is not false. Forecast uncertainty increases as the forecasted X moves farther from the sample mean.</p>"
   },
   {
     "id": 7,
@@ -173,20 +172,19 @@
       "D": "A is false but R is true"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: interpreting transformed slopes</h3><p><strong>B is correct.</strong> Both statements are true, but they describe two different functional forms. In the log-log model, the CFA Curriculum states that the slope gives the relative change in Y for a relative change in X. In the lin-log model, the slope gives the absolute change in Y for a relative change in X. The reason does not explain the assertion; it contrasts another model's interpretation.</p><p>Why option A is incorrect: R is true, but it is not the causal explanation for A.</p><p>Why option C is incorrect: the reason is not false; it is the stated interpretation of the lin-log specification.</p>"
+    "explanation": "<h3>First Principles Thinking: interpreting transformed slopes</h3><p><strong>B is correct.</strong> Both statements are true, but they describe two different functional forms. In the log-log model, the governing rule states that the slope gives the relative change in Y for a relative change in X. In the lin-log model, the slope gives the absolute change in Y for a relative change in X. The reason does not explain the assertion; it contrasts another model's interpretation.</p><p>Why option A is incorrect: R is true, but it is not the causal explanation for A.</p><p>Why option C is incorrect: the reason is not false; it is the stated interpretation of the lin-log specification.</p>"
   },
-
   {
     "id": 1,
     "topic": "Simple Linear Regression Model and Least Squares",
-    "stem": "Using the ROA-on-CAPEX data in the CFA Curriculum, the least-squares slope coefficient is closest to?",
+    "stem": "Given that the sum of cross-deviations is 153.30 and the sum of squared deviations of X is 122.64, the least-squares slope coefficient is closest to?",
     "options": {
       "A": "0.8001",
       "B": "1.2500",
       "C": "4.8750"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: least-squares slope</h3><p><strong>B is correct.</strong> In the CFA Curriculum, the slope in a simple linear regression is the sum of cross-deviations divided by the sum of squared deviations of X. Using 153.30 and 122.64 gives $153.30 / 122.64 = 1.25$. That is the estimated change in ROA for a one-unit change in CAPEX.</p><p>Why A is wrong: 0.8001 is the coefficient of determination, not the slope coefficient.</p><p>Why C is wrong: 4.8750 is the intercept, not the slope.</p>"
+    "explanation": "<h3>First Principles Thinking: least-squares slope</h3><p><strong>B is correct.</strong> In simple linear regression, the slope equals the sum of cross-deviations divided by the sum of squared deviations of X. Using 153.30 and 122.64 gives $153.30 / 122.64 = 1.25$. That is the estimated change in the dependent variable for a one-unit change in X.</p><p>Why A is wrong: 0.8001 is the coefficient of determination, not the slope coefficient.</p><p>Why C is wrong: 4.8750 is an intercept value, not the slope.</p>"
   },
   {
     "id": 2,
@@ -198,31 +196,31 @@
       "C": "20.1250"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: intercept from sample means</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the intercept formula as $\\hat{b}_0 = \\bar{Y} - \\hat{b}_1\\bar{X}$. Substituting the values gives $12.5 - (1.25 \\times 6.1) = 12.5 - 7.625 = 4.875$.</p><p>Why B is wrong: 6.4000 comes from subtracting the mean of X from the mean of Y and ignores the slope.</p><p>Why C is wrong: 20.1250 adds instead of subtracting the slope term.</p>"
+    "explanation": "<h3>First Principles Thinking: intercept from sample means</h3><p><strong>A is correct.</strong> The relevant formula gives the intercept formula as $\\hat{b}_0 = \\bar{Y} - \\hat{b}_1\\bar{X}$. Substituting the values gives $12.5 - (1.25 \\times 6.1) = 12.5 - 7.625 = 4.875$.</p><p>Why B is wrong: 6.4000 comes from subtracting the mean of X from the mean of Y and ignores the slope.</p><p>Why C is wrong: 20.1250 adds instead of subtracting the slope term.</p>"
   },
   {
     "id": 3,
     "topic": "Regression Assumptions and Residual Diagnostics",
-    "stem": "After correcting the Month 2 outlier in the portfolio-versus-index regression, the standard error of the estimate fell by closest to?",
+    "stem": "A portfolio-versus-index regression had an original standard error of the estimate of 2.8619. After correcting a data error, the revised standard error was 2.0624. The standard error fell by closest to?",
     "options": {
       "A": "0.3137",
       "B": "0.7995",
       "C": "8.1903"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: outlier impact on residual dispersion</h3><p><strong>B is correct.</strong> The CFA Curriculum reports the original standard error as 2.8619 and the revised standard error as 2.0624 after the bad data are corrected. The reduction is $2.8619 - 2.0624 = 0.7995$. A lower standard error means the corrected regression leaves smaller residual errors.</p><p>Why A is wrong: 0.3137 is the drop in $R^2$, not the drop in the standard error.</p><p>Why C is wrong: 8.1903 is the original residual mean square, not the change in the standard error.</p>"
+    "explanation": "<h3>First Principles Thinking: outlier impact on residual dispersion</h3><p><strong>B is correct.</strong> The reduction in the standard error equals the original value minus the revised value. Using 2.8619 and 2.0624 gives $2.8619 - 2.0624 = 0.7995$. A lower standard error means the corrected regression leaves smaller residual errors.</p><p>Why A is wrong: 0.3137 is the drop in $R^2$, not the drop in the standard error.</p><p>Why C is wrong: 8.1903 is the original residual mean square, not the change in the standard error.</p>"
   },
   {
     "id": 4,
     "topic": "Regression Assumptions and Residual Diagnostics",
-    "stem": "Using the original and corrected portfolio regressions, the fit measured by $R^2$ was overstated by closest to?",
+    "stem": "A portfolio-versus-index regression had an original $R^2$ of 0.9921. After correcting a data error, the revised $R^2$ was 0.6784. The original fit was overstated by closest to?",
     "options": {
       "A": "0.3137",
       "B": "0.7995",
       "C": "4.2534"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: numerical effect of a bad observation</h3><p><strong>A is correct.</strong> The CFA Curriculum shows $R^2 = 0.9921$ before correction and $R^2 = 0.6784$ after correction. The overstatement is $0.9921 - 0.6784 = 0.3137$, or 31.37 percentage points.</p><p>Why B is wrong: 0.7995 is the decline in the standard error of the estimate, not the decline in $R^2$.</p><p>Why C is wrong: 4.2534 is the revised residual mean square, not the amount by which $R^2$ was overstated.</p>"
+    "explanation": "<h3>First Principles Thinking: numerical effect of a bad observation</h3><p><strong>A is correct.</strong> The overstatement equals the original $R^2$ minus the revised $R^2$. Using 0.9921 and 0.6784 gives $0.9921 - 0.6784 = 0.3137$, or 31.37 percentage points.</p><p>Why B is wrong: 0.7995 is the decline in the standard error of the estimate, not the decline in $R^2$.</p><p>Why C is wrong: 4.2534 is the revised residual mean square, not the amount by which $R^2$ was overstated.</p>"
   },
   {
     "id": 5,
@@ -234,19 +232,19 @@
       "C": "30.1364"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: coefficient of determination</h3><p><strong>A is correct.</strong> The CFA Curriculum defines $R^2$ as explained variation divided by total variation. So $R^2 = 576.1485 / 2449.7100 = 0.2352$. This means the model explains 23.52% of the variation in the dependent variable.</p><p>Why B is wrong: 0.7648 is the unexplained share, which is $1 - R^2$.</p><p>Why C is wrong: 30.1364 is the F-statistic from the same ANOVA data, not $R^2$.</p>"
+    "explanation": "<h3>First Principles Thinking: coefficient of determination</h3><p><strong>A is correct.</strong> The relevant formula defines $R^2$ as explained variation divided by total variation. So $R^2 = 576.1485 / 2449.7100 = 0.2352$. This means the model explains 23.52% of the variation in the dependent variable.</p><p>Why B is wrong: 0.7648 is the unexplained share, which is $1 - R^2$.</p><p>Why C is wrong: 30.1364 is the F-statistic from the same ANOVA data, not $R^2$.</p>"
   },
   {
     "id": 6,
     "topic": "Measures of Fit and Tests of Regression Coefficients",
-    "stem": "In the ROA-on-CAPEX example, if the calculated $t$-statistic for testing a zero slope is 4.00131, the equivalent $F$-statistic is closest to?",
+    "stem": "If the calculated $t$-statistic for testing a zero slope is 4.00131, the equivalent $F$-statistic is closest to?",
     "options": {
       "A": "2.7760",
       "B": "4.0013",
       "C": "16.0104"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: link between slope test and fit test</h3><p><strong>C is correct.</strong> For simple linear regression, the CFA Curriculum states that the test statistic for model fit and the test statistic for a zero slope are linked by $F = t^2$. Squaring 4.00131 gives approximately 16.0104.</p><p>Why A is wrong: 2.7760 is the critical two-sided $t$ value for 4 degrees of freedom at the 5% level, not the calculated $F$ value.</p><p>Why B is wrong: 4.0013 is the $t$-statistic itself, not its square.</p>"
+    "explanation": "<h3>First Principles Thinking: link between slope test and fit test</h3><p><strong>C is correct.</strong> For simple linear regression, the governing rule states that the test statistic for model fit and the test statistic for a zero slope are linked by $F = t^2$. Squaring 4.00131 gives approximately 16.0104.</p><p>Why A is wrong: 2.7760 is the critical two-sided $t$ value for 4 degrees of freedom at the 5% level, not the calculated $F$ value.</p><p>Why B is wrong: 4.0013 is the $t$-statistic itself, not its square.</p>"
   },
   {
     "id": 7,
@@ -258,7 +256,7 @@
       "C": "31.7333"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: total variation per degree of freedom</h3><p><strong>B is correct.</strong> The CFA Curriculum uses the sample variance of the dependent variable as SST divided by $n - 1$. With 5 observations, the denominator is 4, so $95.2 / 4 = 23.8$.</p><p>Why A is wrong: 19.0400 divides by $n$ instead of $n - 1$.</p><p>Why C is wrong: 31.7333 divides by the residual degrees of freedom of 3, which is not the sample-variance formula.</p>"
+    "explanation": "<h3>First Principles Thinking: total variation per degree of freedom</h3><p><strong>B is correct.</strong> The governing rule uses the sample variance of the dependent variable as SST divided by $n - 1$. With 5 observations, the denominator is 4, so $95.2 / 4 = 23.8$.</p><p>Why A is wrong: 19.0400 divides by $n$ instead of $n - 1$.</p><p>Why C is wrong: 31.7333 divides by the residual degrees of freedom of 3, which is not the sample-variance formula.</p>"
   },
   {
     "id": 8,
@@ -270,7 +268,7 @@
       "C": "36.6670"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: standard error from mean square error</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the standard error of the estimate as the square root of MSE. Therefore, $s_e = \\sqrt{2.4} = 1.5492$ approximately.</p><p>Why B is wrong: 2.4000 is MSE before taking the square root.</p><p>Why C is wrong: 36.6670 is the F-statistic from the same ANOVA table, not the standard error.</p>"
+    "explanation": "<h3>First Principles Thinking: standard error from mean square error</h3><p><strong>A is correct.</strong> The relevant formula defines the standard error of the estimate as the square root of MSE. Therefore, $s_e = \\sqrt{2.4} = 1.5492$ approximately.</p><p>Why B is wrong: 2.4000 is MSE before taking the square root.</p><p>Why C is wrong: 36.6670 is the F-statistic from the same ANOVA table, not the standard error.</p>"
   },
   {
     "id": 9,
@@ -282,19 +280,19 @@
       "C": "-10.0000"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: point forecast from the fitted line</h3><p><strong>B is correct.</strong> The CFA Curriculum gives the forecast formula as $\\hat{Y}_f = \\hat{b}_0 + \\hat{b}_1 X_f$. Substituting $X_f = 5$ gives $16.5 - (1.3 \\times 5) = 10.0$.</p><p>Why A is wrong: 23.0000 adds the slope effect instead of subtracting it.</p><p>Why C is wrong: -10.0000 ignores the intercept and keeps only the slope term with the wrong sign.</p>"
+    "explanation": "<h3>First Principles Thinking: point forecast from the fitted line</h3><p><strong>B is correct.</strong> The relevant formula gives the forecast formula as $\\hat{Y}_f = \\hat{b}_0 + \\hat{b}_1 X_f$. Substituting $X_f = 5$ gives $16.5 - (1.3 \\times 5) = 10.0$.</p><p>Why A is wrong: 23.0000 adds the slope effect instead of subtracting it.</p><p>Why C is wrong: -10.0000 ignores the intercept and keeps only the slope term with the wrong sign.</p>"
   },
   {
     "id": 10,
     "topic": "Prediction and Prediction Intervals",
-    "stem": "For the NPM-on-RDR forecast problem in the CFA Curriculum, the standard error of the forecast when RDR = 15 is closest to?",
+    "stem": "A regression has standard error of the estimate 1.8618987, sample size 8, mean of X equal to 7.5, and variance of X equal to 4.285714. If the forecasted X value is 15, the standard error of the forecast is closest to?",
     "options": {
       "A": "2.1499",
       "B": "3.2249",
       "C": "7.8913"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: forecast uncertainty away from the mean of X</h3><p><strong>B is correct.</strong> The CFA Curriculum shows that the standard error of the forecast rises as the forecasted X moves farther from the sample mean of X. Using the given inputs for the RDR example produces $s_f = 3.2249$ when RDR = 15.</p><p>Why A is wrong: 2.1499 is the standard error of the forecast when RDR = 5, which is closer to the sample mean.</p><p>Why C is wrong: 7.8913 is the half-width of the 95% prediction interval, not the forecast standard error itself.</p>"
+    "explanation": "<h3>First Principles Thinking: forecast uncertainty away from the mean of X</h3><p><strong>B is correct.</strong> First convert the variance of X to the sum of squared deviations: $4.285714 \times 7 = 30$. Then apply the forecast standard error formula: $s_f = 1.8618987\\sqrt{1 + 1/8 + (15 - 7.5)^2/30} = 3.2249$. The forecast standard error is larger because the forecasted X is far from the sample mean.</p><p>Why A is wrong: 2.1499 is the standard error of the forecast when X is 5, which is closer to the sample mean.</p><p>Why C is wrong: 7.8913 is the half-width of a 95% prediction interval, not the forecast standard error itself.</p>"
   },
   {
     "id": 11,
@@ -306,7 +304,7 @@
       "C": "0.1350"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: prediction interval bound</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the prediction interval as $\\hat{Y}_f \\pm t_c s_f$. The lower bound is $0.0071 - (2.728 \\times 0.0469) = -0.1208$ approximately.</p><p>Why B is wrong: 0.0071 is the point forecast, not the lower bound.</p><p>Why C is wrong: 0.1350 is the upper bound, obtained by adding rather than subtracting the margin.</p>"
+    "explanation": "<h3>First Principles Thinking: prediction interval bound</h3><p><strong>A is correct.</strong> The relevant formula gives the prediction interval as $\\hat{Y}_f \\pm t_c s_f$. The lower bound is $0.0071 - (2.728 \\times 0.0469) = -0.1208$ approximately.</p><p>Why B is wrong: 0.0071 is the point forecast, not the lower bound.</p><p>Why C is wrong: 0.1350 is the upper bound, obtained by adding rather than subtracting the margin.</p>"
   },
   {
     "id": 12,
@@ -318,19 +316,19 @@
       "C": "7.389056"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: reversing a log-lin forecast</h3><p><strong>B is correct.</strong> In the CFA Curriculum, a log-lin forecast must be converted back to the level of Y. First compute $\\ln Y = -7 + (2 \\times 2.5) = -2$. Then take the antilog: $Y = e^{-2} = 0.135335$.</p><p>Why A is wrong: -2.000000 is the forecast of $\\ln Y$, not of Y.</p><p>Why C is wrong: 7.389056 is $e^2$, which uses the wrong sign.</p>"
+    "explanation": "<h3>First Principles Thinking: reversing a log-lin forecast</h3><p><strong>B is correct.</strong> In the governing rule, a log-lin forecast must be converted back to the level of Y. First compute $\\ln Y = -7 + (2 \\times 2.5) = -2$. Then take the antilog: $Y = e^{-2} = 0.135335$.</p><p>Why A is wrong: -2.000000 is the forecast of $\\ln Y$, not of Y.</p><p>Why C is wrong: 7.389056 is $e^2$, which uses the wrong sign.</p>"
   },
   {
     "id": 13,
     "topic": "Functional Forms of Simple Linear Regressions",
-    "stem": "When the revenues-on-advertising model is changed from lin-lin to log-log, the increase in $R^2$ is closest to?",
+    "stem": "A regression model has $R^2 = 0.2089$ in lin-lin form and $R^2 = 0.8491$ after a log-log transformation. The increase in $R^2$ is closest to?",
     "options": {
       "A": "0.6402",
       "B": "0.8491",
       "C": "4.0656"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: comparing fit for transformed forms</h3><p><strong>A is correct.</strong> The CFA Curriculum reports $R^2 = 0.2089$ for the lin-lin model and $R^2 = 0.8491$ for the log-log model. The increase is $0.8491 - 0.2089 = 0.6402$.</p><p>Why B is wrong: 0.8491 is the transformed model’s ending $R^2$, not the increase.</p><p>Why C is wrong: 4.0656 is approximately the multiple by which $R^2$ increases, not the absolute increase.</p>"
+    "explanation": "<h3>First Principles Thinking: comparing fit for transformed forms</h3><p><strong>A is correct.</strong> The increase in $R^2$ equals the transformed-model value minus the original value. Using 0.8491 and 0.2089 gives $0.8491 - 0.2089 = 0.6402$.</p><p>Why B is wrong: 0.8491 is the transformed model's ending $R^2$, not the increase.</p><p>Why C is wrong: 4.0656 is approximately the multiple by which $R^2$ increases, not the absolute increase.</p>"
   },
   {
     "id": 14,
@@ -342,6 +340,6 @@
       "C": "3.2835"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: convert predicted log value back to level</h3><p><strong>C is correct.</strong> The CFA Curriculum requires converting the predicted logarithm back to the original level. First compute $\\ln(\\mathrm{NPM}) = 0.5987 + (0.2951 \\times 2) = 1.1889$. Then exponentiate: $\\mathrm{NPM} = e^{1.1889} = 3.2835$ approximately.</p><p>Why A is wrong: 1.1889 is the predicted natural log of NPM, not NPM itself.</p><p>Why B is wrong: 1.8043 reflects an incorrect back-transformation and is not the antilog of 1.1889.</p>"
+    "explanation": "<h3>First Principles Thinking: convert predicted log value back to level</h3><p><strong>C is correct.</strong> The correct method requires converting the predicted logarithm back to the original level. First compute $\\ln(\\mathrm{NPM}) = 0.5987 + (0.2951 \\times 2) = 1.1889$. Then exponentiate: $\\mathrm{NPM} = e^{1.1889} = 3.2835$ approximately.</p><p>Why A is wrong: 1.1889 is the predicted natural log of NPM, not NPM itself.</p><p>Why B is wrong: 1.8043 reflects an incorrect back-transformation and is not the antilog of 1.1889.</p>"
   }
 ]
