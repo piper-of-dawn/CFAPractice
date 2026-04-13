@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "Assertion (A): If a random variable's natural logarithm is normally distributed, the variable itself is lognormally distributed.\nReason (R): The lognormal distribution is defined in terms of the mean and variance of the lognormal variable itself rather than the associated normal distribution.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: normal-lognormal mapping</h3><p><strong>C is correct.</strong> The CFA Curriculum states directly that a random variable Y follows a lognormal distribution if ln Y is normally distributed, and the reverse is also true. The reason is false because the parameters of a lognormal distribution are defined in terms of the mean and variance of the associated normal distribution, namely ln Y, not in terms of the lognormal variable itself.</p><p>Why option A is incorrect: the assertion is true, but the reason reverses the parameterization described in the CFA Curriculum.</p><p>Why option D is incorrect: the assertion is not false; it is the defining relationship between the two distributions.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "Assertion (A): Even if one-period continuously compounded returns are not normal, future stock price may still be modeled as lognormal.\nReason (R): Under the central limit theorem, the sum of one-period continuously compounded returns can be approximately normal, and stock price equals current price multiplied by the exponential of that sum.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: why prices can be lognormal without exact one-period normality</h3><p><strong>A is correct.</strong> The CFA Curriculum shows that the holding-period continuously compounded return is the sum of shorter-period continuously compounded returns. Even when those one-period returns are not themselves normal, their sum can be approximately normal by the central limit theorem. Because future price satisfies $P_T = P_0 \\exp(r_{0,T})$, exponentiating an approximately normal return supports modeling the future price as lognormal.</p><p>Why option B is incorrect: the reason is not merely related; it is the mechanism that explains the assertion.</p><p>Why option C is incorrect: the reason is not false. Both the central-limit-theorem step and the exponential price relation are stated in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Monte Carlo Simulation",
+    "stem": "Assertion (A): Monte Carlo simulation is useful in investment applications partly because the analyst can change assumptions and study model sensitivity.\nReason (R): In Monte Carlo simulation, the analyst controls assumptions by specifying probability distributions for key risk factors that drive the underlying variables.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: controlled assumptions in Monte Carlo</h3><p><strong>A is correct.</strong> The CFA Curriculum states that Monte Carlo simulation is an important modeling resource because the analyst controls the assumptions used in the simulation. That control comes from specifying the model and the probability distributions for key risk factors, then drawing random numbers from those distributions. This is exactly why the technique is useful for sensitivity analysis.</p><p>Why option B is incorrect: the reason directly explains the source of the sensitivity-analysis benefit.</p><p>Why option D is incorrect: the assertion is not false; changing distributional assumptions is one of the explicit uses of Monte Carlo simulation.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Monte Carlo Simulation",
+    "stem": "Assertion (A): In the six-step Monte Carlo process for valuing the contingent claim, specifying the time grid belongs to the stage of running the simulation rather than specifying it.\nReason (R): The CFA Curriculum separates the process into specification steps 1 through 3 and running steps 4 through 6.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: where the time grid belongs</h3><p><strong>D is correct.</strong> The assertion is false because specifying the time grid is Step 2, and the CFA Curriculum explicitly says that Steps 1 through 3 are part of specifying the simulation. The reason is true and directly states that structure.</p><p>Why option A is incorrect: both statements are not true because the assertion places the time grid in the wrong stage.</p><p>Why option C is incorrect: the reason is not false; the specification-versus-run split is stated explicitly in the step framework.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Monte Carlo Simulation",
+    "stem": "Assertion (A): Monte Carlo simulation is inferior to analytical methods whenever an analytical pricing formula exists, because Monte Carlo cannot value any security exactly.\nReason (R): The CFA Curriculum describes Monte Carlo simulation as a complement to analytical methods because it provides statistical estimates rather than exact results, whereas analytical methods provide more cause-and-effect insight when available.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: complement versus blanket inferiority</h3><p><strong>D is correct.</strong> The assertion is false because the CFA Curriculum does not claim that Monte Carlo is categorically inferior whenever an analytical formula exists. It describes Monte Carlo as a complement to analytical methods and emphasizes its usefulness for complex securities and sensitivity analysis. The reason is true: Monte Carlo provides statistical estimates, not exact results, and analytical methods offer more cause-and-effect insight when available.</p><p>Why option A is incorrect: the assertion overreaches beyond what the CFA Curriculum states.</p><p>Why option B is incorrect: both statements are not true; only the reason is supported by the source.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Bootstrapping",
+    "stem": "Assertion (A): Bootstrap resampling mimics sampling from a population by repeatedly drawing samples of the same size, with replacement, from the observed sample.\nReason (R): Bootstrap requires the analyst to specify probability distributions for key risk factors because the underlying population distribution is unknown.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: resampling from observed data</h3><p><strong>C is correct.</strong> The assertion matches the CFA Curriculum: bootstrap repeatedly draws resamples of the same size as the original sample, with replacement, and treats the observed sample as if it were the population. The reason is false because specifying probability distributions for key risk factors is the Monte Carlo approach. In bootstrap, the random draws come from the observed empirical distribution.</p><p>Why option A is incorrect: the reason confuses bootstrap with Monte Carlo simulation.</p><p>Why option D is incorrect: the assertion is not false; it describes the core bootstrap mechanism.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Bootstrapping",
+    "stem": "Assertion (A): In the contingent-claim example, bootstrap and Monte Carlo share the same first two steps and the same last three steps, differing mainly in the source of the random variable used in the simulation.\nReason (R): Under bootstrap, the simulated random values are drawn from the observed empirical distribution of stock price processes rather than from a specified probability distribution.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: the actual bootstrap-Monte Carlo difference</h3><p><strong>A is correct.</strong> The CFA Curriculum states that, for the contingent-claim example, the first two steps and the last three steps are the same for bootstrapping as for Monte Carlo simulation. The difference lies in the source of the simulated random variable: bootstrap draws from the observed empirical distribution of historical stock price changes or returns, while Monte Carlo draws from specified probability distributions. That source difference explains why the shared step structure can remain intact.</p><p>Why option B is incorrect: the reason is not incidental; it is the exact distinction emphasized by the CFA Curriculum.</p><p>Why option C is incorrect: the reason is not false. Bootstrap relies on observed empirical distributions.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Simulation Methods",
+    "stem": "A continuously compounded return has mean $\\mu = 0.07$ and variance $\\sigma^2 = 0.0144$. If future price is modeled as a lognormal variable $Y = \\exp(X)$, the expected value of $Y$ is closest to:",
+    "options": {
+      "A": "1.073",
+      "B": "1.080",
+      "C": "1.154"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: lognormal mean</h3><p><strong>B is correct.</strong> The CFA Curriculum states that if $X$ is normal with mean $\\mu$ and variance $\\sigma^2$, then for $Y = \\exp(X)$ the mean of the lognormal variable is $\\exp(\\mu + 0.50\\sigma^2)$. Here, $\\mu + 0.50\\sigma^2 = 0.07 + 0.50(0.0144) = 0.0772$. Thus, $E(Y) = \\exp(0.0772) \\approx 1.080$. The variance term matters, so the mean is larger than $\\exp(\\mu)$.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A uses $\\exp(\\mu)$ and ignores the $0.50\\sigma^2$ adjustment that pushes the mean of a lognormal variable upward.</p><p>Why remaining distractor is wrong: C overstates the mean and is closer to adding the variance term incorrectly rather than applying the exponential formula from the CFA Curriculum.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Simulation Methods",
+    "stem": "Using the same associated normal distribution with $\\mu = 0.07$ and $\\sigma^2 = 0.0144$, the variance of the lognormal variable is closest to:",
+    "options": {
+      "A": "0.0145",
+      "B": "0.0169",
+      "C": "0.0772"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: lognormal variance</h3><p><strong>B is correct.</strong> The CFA Curriculum gives the variance of a lognormal variable as $\\exp(2\\mu + \\sigma^2) \\times [\\exp(\\sigma^2) - 1]$. Here, $2\\mu + \\sigma^2 = 0.1544$, so $\\exp(0.1544) \\approx 1.1670$. Also, $\\exp(0.0144) - 1 \\approx 0.0145$. Multiplying gives about $1.1670 \\times 0.0145 \\approx 0.0169$.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A captures only the bracketed term $\\exp(\\sigma^2) - 1$ and omits the scaling factor $\\exp(2\\mu + \\sigma^2)$.</p><p>Why remaining distractor is wrong: C is the exponent input used inside the mean formula, not the variance of the lognormal variable.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Simulation Methods",
+    "stem": "An asset has one-period continuously compounded returns of 1.0%, -2.0%, and 3.0% over three successive periods. The total continuously compounded return over the full horizon is closest to:",
+    "options": {
+      "A": "1.97%",
+      "B": "2.00%",
+      "C": "2.02%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: additive continuously compounded returns</h3><p><strong>B is correct.</strong> The CFA Curriculum states that the continuously compounded return over a horizon is the sum of the one-period continuously compounded returns. Therefore, $r_{0,T} = 0.01 - 0.02 + 0.03 = 0.02$, or 2.00%. This additive property is one reason continuously compounded returns are useful in modeling.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A comes from treating the returns like simple multiperiod returns and then converting, but the module states that continuously compounded returns add directly.</p><p>Why remaining distractor is wrong: C also reflects unnecessary compounding noise; the CFA Curriculum relation here is a direct sum, not a close approximation.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Simulation Methods",
+    "stem": "If a stock's current price is USD 50 and its continuously compounded return to time $T$ is 0.20, the future stock price $P_T$ is closest to:",
+    "options": {
+      "A": "USD 60.00",
+      "B": "USD 61.07",
+      "C": "USD 62.14"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: price from continuous return</h3><p><strong>B is correct.</strong> The CFA Curriculum gives the relation $P_T = P_0\\exp(r_{0,T})$. Substituting the values gives $P_T = 50\\exp(0.20) \\approx 50(1.2214) = 61.07$. Because the return is continuously compounded, the exponential form must be used rather than a simple gross return multiplier.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A uses simple compounding, $50(1.20)$, rather than the continuous compounding relation stated in the module.</p><p>Why remaining distractor is wrong: C overstates the future price and does not match the exponential formula for the given return.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Simulation Methods",
+    "stem": "A stock's standard deviation of daily continuously compounded returns is 0.02. Using 250 trading days, the annualized volatility is closest to:",
+    "options": {
+      "A": "15.81%",
+      "B": "31.62%",
+      "C": "50.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: annualizing volatility</h3><p><strong>B is correct.</strong> The CFA Curriculum states that the standard deviation of the $T$-period continuously compounded return equals the one-period standard deviation times $\\sqrt{T}$. So annualized volatility is $0.02\\sqrt{250} \\approx 0.02(15.811) = 0.3162$, or 31.62%.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A would be correct only if the daily volatility were 0.01, which is the illustrative value used elsewhere in the module.</p><p>Why remaining distractor is wrong: C incorrectly scales volatility linearly by time rather than by the square root of time.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Simulation Methods",
+    "stem": "For the contingent claim in the Monte Carlo section, if the final stock price is USD 34 and the average stock price during the claim's life is USD 31, the payoff at maturity is closest to:",
+    "options": {
+      "A": "USD 0",
+      "B": "USD 3",
+      "C": "USD 31"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: contingent claim payoff</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the payoff of this contingent claim as the greater of final stock price minus average stock price, or USD 0. Here, $34 - 31 = 3$, which is positive, so the payoff is USD 3. The floor at zero matters only when the final price does not exceed the average price.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A ignores that the final price is above the average price, so the zero floor does not bind.</p><p>Why remaining distractor is wrong: C confuses the average stock price itself with the payoff, but the payoff depends on the difference, not the level.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Simulation Methods",
+    "stem": "In 654 of 1,000 Monte Carlo trials, the contingent claim payoff was zero. The proportion of trials with a positive payoff is closest to:",
+    "options": {
+      "A": "34.6%",
+      "B": "45.6%",
+      "C": "65.4%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: complement of zero-payoff trials</h3><p><strong>A is correct.</strong> The CFA Curriculum states that if 654 of 1,000 trials have zero payoff, then the remaining $1{,}000 - 654 = 346$ trials have positive payoff. The corresponding proportion is $346/1{,}000 = 0.346$, or 34.6%.</p><p>Why top distractor is wrong (CFA Curriculum misconception): B does not correspond to either the zero-payoff fraction or its complement and reflects an arithmetic slip.</p><p>Why remaining distractor is wrong: C is the proportion of trials with zero payoff, not the proportion with positive payoff.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Simulation Methods",
+    "stem": "A Monte Carlo valuation uses 12 monthly subperiods and 1,000 simulation trials, with one standard normal draw $Z_k$ for each subperiod in each trial. The total number of standard normal draws is closest to:",
+    "options": {
+      "A": "1,012",
+      "B": "12,000",
+      "C": "120,000"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: random draws by trial and subperiod</h3><p><strong>B is correct.</strong> The CFA Curriculum Monte Carlo process draws $K$ random values of each risk factor for each trial. Here, $K = 12$ and the number of trials is 1,000, so total draws equal $12 \\times 1{,}000 = 12{,}000$. This count follows directly from the monthly time grid used across all simulated paths.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A adds the two figures rather than multiplying subperiod draws by the number of trials.</p><p>Why remaining distractor is wrong: C overstates the total by multiplying by an extra factor of 10 not supported by the simulation design in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Simulation Methods",
+    "stem": "If a one-year Monte Carlo simulation is split into $K = 4$ equal subperiods, the time increment $\\Delta t$ is closest to:",
+    "options": {
+      "A": "1 month",
+      "B": "3 months",
+      "C": "4 months"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: time grid increment</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the time increment as calendar time divided by the number of subperiods, $\\Delta t$. For a one-year horizon with $K = 4$, each increment is one-quarter of a year, or 3 months. The grid must partition the full horizon evenly.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A would correspond to $K = 12$, which is the monthly example used elsewhere in the module.</p><p>Why remaining distractor is wrong: C does not divide the one-year horizon into four equal subperiods.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Simulation Methods",
+    "stem": "A standard lookback contingent claim has value at maturity equal to the stock's value at maturity minus the minimum value reached during the life of the claim, or USD 0 if that difference is negative. If the minimum value reached is USD 20.11 and the stock ends at USD 23.00, the claim's value is closest to:",
+    "options": {
+      "A": "USD 2.89",
+      "B": "USD 3.00",
+      "C": "USD 20.11"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: lookback payoff</h3><p><strong>A is correct.</strong> The CFA Curriculum states that a standard lookback contingent claim pays the greater of value at maturity minus the minimum prior value, or USD 0. Here, $23.00 - 20.11 = 2.89$, which is positive. Therefore, the claim's value at maturity is USD 2.89.</p><p>Why top distractor is wrong (CFA Curriculum misconception): B rounds away the exact difference given in the module's own numeric illustration.</p><p>Why remaining distractor is wrong: C is the minimum stock value itself, not the contingent claim payoff defined by the CFA Curriculum.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Simulation Methods",
+    "stem": "An observed sample contains 8 stock-price changes. Under bootstrap resampling, the size of each resample drawn from this observed sample is closest to:",
+    "options": {
+      "A": "7",
+      "B": "8",
+      "C": "16"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: bootstrap resample size</h3><p><strong>B is correct.</strong> The CFA Curriculum states that in bootstrap resampling, each resample is of the same size as the original sample. Therefore, if the observed sample has 8 stock-price changes, each bootstrap resample also contains 8 draws. Sampling is with replacement, but the resample size does not change.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A incorrectly reduces the size by one, but the CFA Curriculum says the resample matches the original sample size.</p><p>Why remaining distractor is wrong: C doubles the sample size even though bootstrap does not enlarge each resample beyond the original sample size by definition.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Simulation Methods",
+    "stem": "If the original observed sample has size 12 and an analyst generates 1,000 bootstrap resamples, each of the same size as the original sample, the total number of draws across all resamples is closest to:",
+    "options": {
+      "A": "1,012",
+      "B": "12,000",
+      "C": "120,000"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: total bootstrap draws</h3><p><strong>B is correct.</strong> The CFA Curriculum bootstrap procedure repeatedly draws samples of the same size as the original sample. Here, each resample has 12 draws and there are 1,000 resamples, so the total number of draws is $12 \\times 1{,}000 = 12{,}000$. Replacement affects whether values can repeat, not how many draws are made.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A adds the sample size and the number of resamples instead of multiplying them.</p><p>Why remaining distractor is wrong: C adds an extra factor of 10 that is not implied by the bootstrap procedure described in the CFA Curriculum.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Simulation Methods",
+    "stem": "A bootstrap resample of size 6 taken from an original sample of six distinct observations contains the following frequencies for the original observations: $2, 2, 1, 1, 0, 0$. The number of original observations omitted from this resample is closest to:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: omitted observations under sampling with replacement</h3><p><strong>B is correct.</strong> The CFA Curriculum emphasizes that in bootstrap resampling some items may appear several times, whereas other items may not appear at all. The frequency pattern $2, 2, 1, 1, 0, 0$ shows two observations with frequency zero. Therefore, two original observations are omitted from that particular resample.</p><p>Why top distractor is wrong (CFA Curriculum misconception): A undercounts the observations with zero frequency; there are two, not one.</p><p>Why remaining distractor is wrong: C confuses repeated appearances with omitted appearances and overstates the number of missing original observations.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Simulation Methods",
+    "stem": "In a bootstrap valuation of a contingent claim, the present values $C_{i0}$ from 1,000 runs sum to USD 4,250. The bootstrap estimate of the claim's value is closest to:",
+    "options": {
+      "A": "USD 4.25",
+      "B": "USD 42.50",
+      "C": "USD 425.00"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: bootstrap estimate as the mean of simulated present values</h3><p><strong>A is correct.</strong> The CFA Curriculum states that the bootstrap estimate of the contingent claim's value is the mean of $C_{i0}$ over all runs. If the 1,000 present values sum to USD 4,250, the estimate is $4{,}250 / 1{,}000 = 4.25$. The simulation output is summarized by averaging across the full set of runs.</p><p>Why top distractor is wrong (CFA Curriculum misconception): B divides by 100 instead of by the 1,000 runs specified in the bootstrap procedure.</p><p>Why remaining distractor is wrong: C treats the total sum of simulated present values as if it were already the per-run estimate.</p>"
+  },
+  {
+    "id": 1,
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "Consider the following:\nI. If $\\ln Y$ is normally distributed, $Y$ is lognormally distributed.\nII. A lognormal distribution is bounded below by 0.\nIII. A lognormal distribution is symmetric around its mean.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> In the CFA Curriculum, a variable is lognormal when its natural logarithm is normal, so Statement I qualifies. The lognormal distribution is also bounded below by 0, so Statement II qualifies. Statement III does not qualify because the lognormal distribution is right-skewed rather than symmetric. Therefore, two statements satisfy the criterion.</p><p>Why option A is incorrect: more than one statement is correct because both I and II match the definition and properties given.</p><p>Why option C is incorrect: Statement III fails because symmetry is a normal-distribution feature, not a lognormal one.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "Consider the following:\nI. If one-period continuously compounded returns are i.i.d. with mean $\\mu$, then $E(r_{0,T}) = \\mu T$.\nII. Under the same i.i.d. assumption, $\\sigma^2(r_{0,T}) = \\sigma^2 T$.\nIII. If one-period continuously compounded returns are normally distributed, the T-period continuously compounded return is also normally distributed.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA Curriculum states that the expected T-period continuously compounded return equals the sum of the one-period means, so Statement I qualifies. Independence implies T-period variance equals T times one-period variance, so Statement II qualifies. A linear combination of normal random variables is normal, so Statement III also qualifies. Therefore, all three statements satisfy the criterion.</p><p>Why option A is incorrect: this understates the result because more than one statement is supported directly by the learning module.</p><p>Why option B is incorrect: none of the three statements violates the stated assumptions, so stopping at two is too low.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Lognormal Distribution and Continuous Compounding",
+    "stem": "Consider the following:\nI. The mean of a lognormal random variable is $\\exp(\\mu + 0.50\\sigma^2)$.\nII. The variance of a lognormal random variable is $\\exp(2\\mu + \\sigma^2) \\times [\\exp(\\sigma^2) - 1]$.\nIII. The expected value of $\\exp(X)$, where $X$ is normal with mean $\\mu$, is exactly $\\exp(\\mu)$.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum gives Statement I as the mean of a lognormal variable and Statement II as its variance, so both qualify. Statement III does not qualify because the expected value is larger than $\\exp(\\mu)$ and equals $\\exp(\\mu + 0.50\\sigma^2)$. Therefore, exactly two statements satisfy the rule.</p><p>Why option A is incorrect: both Statements I and II are formula statements explicitly provided in the CFA Curriculum.</p><p>Why option C is incorrect: Statement III fails because it omits the variance adjustment term that pushes the mean to the right.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Monte Carlo Simulation",
+    "stem": "Consider the following:\nI. Monte Carlo simulation generates a large number of random samples from specified probability distributions.\nII. Monte Carlo simulation can be used to test a model’s sensitivity to changes in assumptions about key variables.\nIII. Monte Carlo simulation provides exact values whenever enough trials are used.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum defines Monte Carlo simulation as repeated random sampling from specified probability distributions, so Statement I qualifies. It also notes that Monte Carlo simulation is useful for sensitivity analysis, so Statement II qualifies. Statement III does not qualify because Monte Carlo produces statistical estimates rather than exact results. Therefore, two statements meet the criterion.</p><p>Why option A is incorrect: the CFA Curriculum supports both I and II, not just one of them.</p><p>Why option C is incorrect: Statement III is the trap, because more trials improve precision but do not convert the method into an exact analytic solution.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Monte Carlo Simulation",
+    "stem": "Consider the following:\nI. In the Monte Carlo process, specifying a time grid with K subperiods is part of setting up the simulation.\nII. In the Monte Carlo process, drawing K random values for each key risk factor is part of generating the simulation data.\nIII. In the Monte Carlo process, drawing repeated samples with replacement from the observed sample is the stated method for generating the data.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum includes specifying the time grid as one of the simulation setup steps, so Statement I qualifies. It also states that K random values are drawn for each risk factor, so Statement II qualifies. Statement III describes bootstrap resampling from the observed sample, not Monte Carlo simulation. Therefore, only two statements fit Monte Carlo.</p><p>Why option A is incorrect: both I and II are genuine Monte Carlo steps, not just one of them.</p><p>Why option C is incorrect: Statement III crosses the boundary into bootstrap methodology, so all three cannot be correct.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Bootstrap Resampling",
+    "stem": "Consider the following:\nI. Bootstrap treats the observed sample as if it were the population.\nII. Each bootstrap resample is the same size as the original sample and is drawn with replacement.\nIII. Bootstrap requires the analyst to specify probability distributions for key risk factors before drawing observations.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum explains bootstrap by treating the observed sample as if it were the population, so Statement I qualifies. It also states that bootstrap repeatedly draws resamples of the same size with replacement, so Statement II qualifies. Statement III does not qualify because specifying probability distributions for key risk factors is associated with Monte Carlo simulation, not bootstrap. Therefore, two statements satisfy the criterion.</p><p>Why option A is incorrect: both Statements I and II are explicit features of bootstrap in the CFA Curriculum.</p><p>Why option C is incorrect: Statement III violates the bootstrap boundary because bootstrap uses the empirical distribution from observed data instead.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Bootstrap Resampling",
+    "stem": "Consider the following:\nI. Bootstrap can be used to infer population parameter values such as mean, variance, skewness, and kurtosis from repetitive resampling.\nII. In simulation using bootstrap, the first two steps and the last three steps are the same as in the Monte Carlo procedure discussed in the CFA Curriculum.\nIII. Bootstrap simulation, like analytical methods, provides exact results rather than statistical estimates.\nHow many of the above statements are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum states that bootstrap can infer population parameters such as mean, variance, skewness, and kurtosis from repetitive resampling, so Statement I qualifies. It also explicitly says that in the contingent-claim example the first two and last three steps are the same as for Monte Carlo, so Statement II qualifies. Statement III does not qualify because bootstrap, like Monte Carlo, provides statistical estimates rather than exact results. Therefore, exactly two statements meet the criterion.</p><p>Why option A is incorrect: both I and II are supported directly by the bootstrap discussion.</p><p>Why option C is incorrect: Statement III fails because exact results belong to analytical methods, not to bootstrap simulation.</p>"
+  }
+]

@@ -767,3 +767,400 @@ def cash_received_from_sale_of_equipment(
             "accumulated_depreciation_sold_non_negative": accumulated_depreciation_sold >= 0,
         },
     }
+
+
+def _round_stat(value, places="0.0001"):
+    return value.quantize(Decimal(places))
+
+
+def regression_slope_from_deviation_sums(sum_cross_deviations, sum_x_squared_deviations):
+    numerator = _to_decimal(sum_cross_deviations)
+    denominator = _to_decimal(sum_x_squared_deviations)
+    slope = numerator / denominator
+    return {
+        "final_answer": slope,
+        "intermediate_steps": {
+            "sum_cross_deviations": numerator,
+            "sum_x_squared_deviations": denominator,
+            "slope": slope,
+        },
+        "units": "slope coefficient",
+        "rounded_answer": _round_stat(slope),
+        "validation_checks": {
+            "x_variation_non_zero": denominator != 0,
+        },
+    }
+
+
+def regression_intercept_from_means(y_mean, slope, x_mean):
+    y_bar = _to_decimal(y_mean)
+    beta_1 = _to_decimal(slope)
+    x_bar = _to_decimal(x_mean)
+    intercept = y_bar - (beta_1 * x_bar)
+    return {
+        "final_answer": intercept,
+        "intermediate_steps": {
+            "y_mean": y_bar,
+            "slope": beta_1,
+            "x_mean": x_bar,
+            "intercept": intercept,
+        },
+        "units": "intercept coefficient",
+        "rounded_answer": _round_stat(intercept),
+        "validation_checks": {
+            "inputs_numeric": True,
+        },
+    }
+
+
+def correlation_from_covariance_and_standard_deviations(covariance_xy, standard_deviation_y, standard_deviation_x):
+    covariance = _to_decimal(covariance_xy)
+    s_y = _to_decimal(standard_deviation_y)
+    s_x = _to_decimal(standard_deviation_x)
+    correlation = covariance / (s_y * s_x)
+    return {
+        "final_answer": correlation,
+        "intermediate_steps": {
+            "covariance_xy": covariance,
+            "standard_deviation_y": s_y,
+            "standard_deviation_x": s_x,
+            "correlation": correlation,
+        },
+        "units": "correlation",
+        "rounded_answer": _round_stat(correlation),
+        "validation_checks": {
+            "standard_deviations_positive": s_y > 0 and s_x > 0,
+        },
+    }
+
+
+def coefficient_of_determination(ssr, sst):
+    regression_sum_squares = _to_decimal(ssr)
+    total_sum_squares = _to_decimal(sst)
+    r_squared = regression_sum_squares / total_sum_squares
+    return {
+        "final_answer": r_squared,
+        "intermediate_steps": {
+            "sum_squares_regression": regression_sum_squares,
+            "sum_squares_total": total_sum_squares,
+            "r_squared": r_squared,
+        },
+        "units": "coefficient of determination",
+        "rounded_answer": _round_stat(r_squared),
+        "validation_checks": {
+            "sst_positive": total_sum_squares > 0,
+        },
+    }
+
+
+def mean_square_error(sse, observations, independent_variables=1):
+    error_sum_squares = _to_decimal(sse)
+    n = int(observations)
+    k = int(independent_variables)
+    denominator = n - k - 1
+    mse = error_sum_squares / Decimal(denominator)
+    return {
+        "final_answer": mse,
+        "intermediate_steps": {
+            "sum_squares_error": error_sum_squares,
+            "observations": Decimal(n),
+            "independent_variables": Decimal(k),
+            "degrees_of_freedom_error": Decimal(denominator),
+            "mean_square_error": mse,
+        },
+        "units": "mean square error",
+        "rounded_answer": _round_stat(mse),
+        "validation_checks": {
+            "error_degrees_of_freedom_positive": denominator > 0,
+        },
+    }
+
+
+def f_statistic_from_mean_squares(msr, mse):
+    mean_square_regression = _to_decimal(msr)
+    mean_square_err = _to_decimal(mse)
+    f_stat = mean_square_regression / mean_square_err
+    return {
+        "final_answer": f_stat,
+        "intermediate_steps": {
+            "mean_square_regression": mean_square_regression,
+            "mean_square_error": mean_square_err,
+            "f_statistic": f_stat,
+        },
+        "units": "F-statistic",
+        "rounded_answer": _round_stat(f_stat),
+        "validation_checks": {
+            "mse_positive": mean_square_err > 0,
+        },
+    }
+
+
+def standard_error_of_estimate_from_mse(mse):
+    mean_square_err = _to_decimal(mse)
+    se = mean_square_err.sqrt()
+    return {
+        "final_answer": se,
+        "intermediate_steps": {
+            "mean_square_error": mean_square_err,
+            "standard_error_of_estimate": se,
+        },
+        "units": "standard error of estimate",
+        "rounded_answer": _round_stat(se),
+        "validation_checks": {
+            "mse_non_negative": mean_square_err >= 0,
+        },
+    }
+
+
+def sample_variance_from_sst(sst, observations):
+    total_sum_squares = _to_decimal(sst)
+    n = int(observations)
+    variance = total_sum_squares / Decimal(n - 1)
+    return {
+        "final_answer": variance,
+        "intermediate_steps": {
+            "sum_squares_total": total_sum_squares,
+            "observations": Decimal(n),
+            "degrees_of_freedom_total": Decimal(n - 1),
+            "sample_variance": variance,
+        },
+        "units": "sample variance",
+        "rounded_answer": _round_stat(variance),
+        "validation_checks": {
+            "observations_greater_than_one": n > 1,
+        },
+    }
+
+
+def standard_error_of_slope(standard_error_estimate, sum_x_squared_deviations):
+    se = _to_decimal(standard_error_estimate)
+    x_variation = _to_decimal(sum_x_squared_deviations)
+    slope_se = se / x_variation.sqrt()
+    return {
+        "final_answer": slope_se,
+        "intermediate_steps": {
+            "standard_error_of_estimate": se,
+            "sum_x_squared_deviations": x_variation,
+            "standard_error_of_slope": slope_se,
+        },
+        "units": "standard error of slope",
+        "rounded_answer": _round_stat(slope_se, "0.000001"),
+        "validation_checks": {
+            "x_variation_positive": x_variation > 0,
+        },
+    }
+
+
+def t_statistic_for_slope(estimated_slope, hypothesized_slope, standard_error_slope):
+    beta_hat = _to_decimal(estimated_slope)
+    beta_hyp = _to_decimal(hypothesized_slope)
+    slope_se = _to_decimal(standard_error_slope)
+    t_value = (beta_hat - beta_hyp) / slope_se
+    return {
+        "final_answer": t_value,
+        "intermediate_steps": {
+            "estimated_slope": beta_hat,
+            "hypothesized_slope": beta_hyp,
+            "standard_error_of_slope": slope_se,
+            "t_statistic": t_value,
+        },
+        "units": "t-statistic",
+        "rounded_answer": _round_stat(t_value, "0.00001"),
+        "validation_checks": {
+            "standard_error_slope_positive": slope_se > 0,
+        },
+    }
+
+
+def t_statistic_for_correlation(correlation, observations):
+    r_value = _to_decimal(correlation)
+    n = int(observations)
+    numerator = r_value * Decimal(n - 2).sqrt()
+    denominator = (Decimal("1") - (r_value * r_value)).sqrt()
+    t_value = numerator / denominator
+    return {
+        "final_answer": t_value,
+        "intermediate_steps": {
+            "correlation": r_value,
+            "observations": Decimal(n),
+            "numerator": numerator,
+            "denominator": denominator,
+            "t_statistic": t_value,
+        },
+        "units": "t-statistic",
+        "rounded_answer": _round_stat(t_value, "0.00001"),
+        "validation_checks": {
+            "observations_greater_than_two": n > 2,
+            "correlation_magnitude_below_one": abs(r_value) < 1,
+        },
+    }
+
+
+def standard_error_of_intercept(standard_error_estimate, observations, x_mean, sum_x_squared_deviations):
+    se = _to_decimal(standard_error_estimate)
+    n = int(observations)
+    x_bar = _to_decimal(x_mean)
+    x_variation = _to_decimal(sum_x_squared_deviations)
+    term = (Decimal("1") / Decimal(n)) + ((x_bar * x_bar) / x_variation)
+    intercept_se = se * term.sqrt()
+    return {
+        "final_answer": intercept_se,
+        "intermediate_steps": {
+            "standard_error_of_estimate": se,
+            "observations": Decimal(n),
+            "x_mean": x_bar,
+            "sum_x_squared_deviations": x_variation,
+            "scaling_term": term,
+            "standard_error_of_intercept": intercept_se,
+        },
+        "units": "standard error of intercept",
+        "rounded_answer": _round_stat(intercept_se, "0.00001"),
+        "validation_checks": {
+            "observations_positive": n > 0,
+            "x_variation_positive": x_variation > 0,
+        },
+    }
+
+
+def t_statistic_for_intercept(estimated_intercept, hypothesized_intercept, standard_error_intercept):
+    intercept_hat = _to_decimal(estimated_intercept)
+    intercept_hyp = _to_decimal(hypothesized_intercept)
+    intercept_se = _to_decimal(standard_error_intercept)
+    t_value = (intercept_hat - intercept_hyp) / intercept_se
+    return {
+        "final_answer": t_value,
+        "intermediate_steps": {
+            "estimated_intercept": intercept_hat,
+            "hypothesized_intercept": intercept_hyp,
+            "standard_error_of_intercept": intercept_se,
+            "t_statistic": t_value,
+        },
+        "units": "t-statistic",
+        "rounded_answer": _round_stat(t_value, "0.0001"),
+        "validation_checks": {
+            "standard_error_intercept_positive": intercept_se > 0,
+        },
+    }
+
+
+def predicted_value_simple_linear_regression(intercept, slope, forecast_x):
+    beta_0 = _to_decimal(intercept)
+    beta_1 = _to_decimal(slope)
+    x_forecast = _to_decimal(forecast_x)
+    predicted = beta_0 + (beta_1 * x_forecast)
+    return {
+        "final_answer": predicted,
+        "intermediate_steps": {
+            "intercept": beta_0,
+            "slope": beta_1,
+            "forecast_x": x_forecast,
+            "predicted_y": predicted,
+        },
+        "units": "predicted dependent variable",
+        "rounded_answer": _round_stat(predicted, "0.0001"),
+        "validation_checks": {
+            "inputs_numeric": True,
+        },
+    }
+
+
+def sum_x_squared_deviations_from_sample_variance(sample_variance_x, observations):
+    variance_x = _to_decimal(sample_variance_x)
+    n = int(observations)
+    sum_sq_dev = variance_x * Decimal(n - 1)
+    return {
+        "final_answer": sum_sq_dev,
+        "intermediate_steps": {
+            "sample_variance_x": variance_x,
+            "observations": Decimal(n),
+            "sum_x_squared_deviations": sum_sq_dev,
+        },
+        "units": "sum of squared deviations of x",
+        "rounded_answer": _round_stat(sum_sq_dev),
+        "validation_checks": {
+            "observations_greater_than_one": n > 1,
+        },
+    }
+
+
+def standard_error_of_forecast(standard_error_estimate, observations, forecast_x, x_mean, sum_x_squared_deviations):
+    se = _to_decimal(standard_error_estimate)
+    n = int(observations)
+    x_forecast = _to_decimal(forecast_x)
+    x_bar = _to_decimal(x_mean)
+    x_variation = _to_decimal(sum_x_squared_deviations)
+    term = Decimal("1") + (Decimal("1") / Decimal(n)) + (((x_forecast - x_bar) ** 2) / x_variation)
+    forecast_se = se * term.sqrt()
+    return {
+        "final_answer": forecast_se,
+        "intermediate_steps": {
+            "standard_error_of_estimate": se,
+            "observations": Decimal(n),
+            "forecast_x": x_forecast,
+            "x_mean": x_bar,
+            "sum_x_squared_deviations": x_variation,
+            "scaling_term": term,
+            "standard_error_of_forecast": forecast_se,
+        },
+        "units": "standard error of forecast",
+        "rounded_answer": _round_stat(forecast_se, "0.0001"),
+        "validation_checks": {
+            "observations_positive": n > 0,
+            "x_variation_positive": x_variation > 0,
+        },
+    }
+
+
+def prediction_interval(predicted_value, critical_t, standard_error_forecast):
+    forecast = _to_decimal(predicted_value)
+    t_critical = _to_decimal(critical_t)
+    forecast_se = _to_decimal(standard_error_forecast)
+    half_width = t_critical * forecast_se
+    lower_bound = forecast - half_width
+    upper_bound = forecast + half_width
+    return {
+        "final_answer": {
+            "lower_bound": lower_bound,
+            "upper_bound": upper_bound,
+        },
+        "intermediate_steps": {
+            "predicted_value": forecast,
+            "critical_t": t_critical,
+            "standard_error_of_forecast": forecast_se,
+            "half_width": half_width,
+            "lower_bound": lower_bound,
+            "upper_bound": upper_bound,
+        },
+        "units": "prediction interval",
+        "rounded_answer": {
+            "lower_bound": _round_stat(lower_bound, "0.0001"),
+            "upper_bound": _round_stat(upper_bound, "0.0001"),
+        },
+        "validation_checks": {
+            "critical_t_non_negative": t_critical >= 0,
+            "standard_error_forecast_non_negative": forecast_se >= 0,
+        },
+    }
+
+
+def level_forecast_from_log_lin(intercept, slope, forecast_x):
+    beta_0 = _to_decimal(intercept)
+    beta_1 = _to_decimal(slope)
+    x_forecast = _to_decimal(forecast_x)
+    ln_y = beta_0 + (beta_1 * x_forecast)
+    y_level = ln_y.exp()
+    return {
+        "final_answer": y_level,
+        "intermediate_steps": {
+            "intercept": beta_0,
+            "slope": beta_1,
+            "forecast_x": x_forecast,
+            "predicted_ln_y": ln_y,
+            "predicted_y_level": y_level,
+        },
+        "units": "predicted dependent variable level",
+        "rounded_answer": _round_stat(y_level, "0.000001"),
+        "validation_checks": {
+            "inputs_numeric": True,
+        },
+    }

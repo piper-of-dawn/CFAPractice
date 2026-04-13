@@ -1,23 +1,22 @@
 Building-block Style
-Generate 35 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 35 very easy CFA-style MCQs for LEARNING MODULE Simulation Methods Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Building Blocks style format. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II (Katas).json.
+Write the output only the JSON array to a dedicated file Simulation Methods (Katas).json.
 
 Enumeration / counting format
-Generate 7 very hard CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Simulation Methods strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/Quant/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Analyzing Statements of Cash Flows I EC.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Linear Regression EC.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 7 very hard CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
+Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Simulation Methods strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/Quant/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
 Follow AGENTS.md and use the Assertion Reason.
 BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II AR.json.
+Write the output only the JSON array to a dedicated file Simulation Methods AR.json.
 
 Numerical Questions
-Generate 7 very easy CFA-style MCQs for Topic: Module 1 - Portfolio Risk and Return Part II strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module1_Portfolio_Risk_and_Return_Part_II.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
-BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Portfolio Risk and Return Part II N.json.
+Generate 14 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Simulation Methods strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/Quant/module_06_simulation_methods.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
+Write the output only the JSON array to a dedicated file Simulation Methods N.json.
 
 
 ---
