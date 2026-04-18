@@ -574,6 +574,21 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <script>
+    (function () {
+      function themeFromLocalTime(date) {
+        const hour = date.getHours();
+        return (hour >= 7 && hour < 19) ? 'light' : 'dark';
+      }
+      try {
+        const saved = localStorage.getItem('homepage_theme');
+        const theme = (saved === 'light' || saved === 'dark') ? saved : themeFromLocalTime(new Date());
+        document.addEventListener('DOMContentLoaded', function () {
+          document.body.setAttribute('data-theme', theme);
+        }, { once: true });
+      } catch (_) {}
+    })();
+  </script>
 </head>
 <body>
   <canvas id="gridCanvas" aria-hidden="true"></canvas>
@@ -728,12 +743,37 @@
       const openBtn = document.getElementById('katasOpenBtn');
       const modal = document.getElementById('katasModal');
       const themeStorageKey = 'homepage_theme';
+      let autoThemeTimer = null;
       if (!openBtn || !modal || !themeToggleBtn || !body) return;
+
+      function themeFromLocalTime(date) {
+        const hour = date.getHours();
+        return (hour >= 7 && hour < 19) ? 'light' : 'dark';
+      }
+
+      function hasSavedOverride() {
+        const saved = localStorage.getItem(themeStorageKey);
+        return saved === 'light' || saved === 'dark';
+      }
 
       function getPreferredTheme() {
         const saved = localStorage.getItem(themeStorageKey);
         if (saved === 'light' || saved === 'dark') return saved;
-        return 'dark';
+        return themeFromLocalTime(new Date());
+      }
+
+      function msUntilNextThemeBoundary(date) {
+        const next = new Date(date.getTime());
+        const hour = date.getHours();
+        if (hour < 7) {
+          next.setHours(7, 0, 0, 0);
+        } else if (hour < 19) {
+          next.setHours(19, 0, 0, 0);
+        } else {
+          next.setDate(next.getDate() + 1);
+          next.setHours(7, 0, 0, 0);
+        }
+        return Math.max(1000, next.getTime() - date.getTime());
       }
 
       function applyTheme(theme) {
@@ -746,14 +786,33 @@
         themeToggleBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       }
 
+      function scheduleAutoThemeSync() {
+        if (autoThemeTimer) {
+          window.clearTimeout(autoThemeTimer);
+          autoThemeTimer = null;
+        }
+        if (hasSavedOverride()) return;
+        autoThemeTimer = window.setTimeout(() => {
+          applyAutoTheme();
+          scheduleAutoThemeSync();
+        }, msUntilNextThemeBoundary(new Date()));
+      }
+
+      function applyAutoTheme() {
+        if (hasSavedOverride()) return;
+        applyTheme(themeFromLocalTime(new Date()));
+      }
+
       function toggleTheme() {
         const current = body.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
         const next = current === 'dark' ? 'light' : 'dark';
         localStorage.setItem(themeStorageKey, next);
         applyTheme(next);
+        scheduleAutoThemeSync();
       }
 
       applyTheme(getPreferredTheme());
+      scheduleAutoThemeSync();
       themeToggleBtn.addEventListener('click', toggleTheme);
 
       function openModal() {

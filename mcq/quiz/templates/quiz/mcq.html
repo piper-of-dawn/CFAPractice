@@ -35,12 +35,15 @@
     }
   </script>
   <script>
-    // Apply saved or system theme early to avoid flash
+    // Apply saved or local-time theme early to avoid flash.
     (function(){
+      function themeFromLocalTime(date) {
+        var hour = date.getHours();
+        return (hour >= 7 && hour < 19) ? 'light' : 'dark';
+      }
       try {
         var saved = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefersDark ? 'dark' : 'light');
+        var theme = (saved === 'light' || saved === 'dark') ? saved : themeFromLocalTime(new Date());
         document.documentElement.setAttribute('data-theme', theme);
       } catch (_) {}
     })();
@@ -1425,8 +1428,46 @@
       const btn = document.getElementById('themeToggle');
       if (btn) {
         const root = document.documentElement;
+        const themeStorageKey = 'theme';
+        let autoThemeTimer = null;
         const current = () => (root.getAttribute('data-theme') === 'dark') ? 'dark' : 'light';
-          const updateButton = (theme) => {
+        const hasSavedOverride = () => {
+          try {
+            const saved = localStorage.getItem(themeStorageKey);
+            return saved === 'light' || saved === 'dark';
+          } catch (_) {
+            return false;
+          }
+        };
+        const themeFromLocalTime = (date) => {
+          const hour = date.getHours();
+          return (hour >= 7 && hour < 19) ? 'light' : 'dark';
+        };
+        const msUntilNextThemeBoundary = (date) => {
+          const next = new Date(date.getTime());
+          const hour = date.getHours();
+          if (hour < 7) {
+            next.setHours(7, 0, 0, 0);
+          } else if (hour < 19) {
+            next.setHours(19, 0, 0, 0);
+          } else {
+            next.setDate(next.getDate() + 1);
+            next.setHours(7, 0, 0, 0);
+          }
+          return Math.max(1000, next.getTime() - date.getTime());
+        };
+        const scheduleAutoThemeSync = () => {
+          if (autoThemeTimer) {
+            window.clearTimeout(autoThemeTimer);
+            autoThemeTimer = null;
+          }
+          if (hasSavedOverride()) return;
+          autoThemeTimer = window.setTimeout(() => {
+            applyAutoTheme();
+            scheduleAutoThemeSync();
+          }, msUntilNextThemeBoundary(new Date()));
+        };
+        const updateButton = (theme) => {
           const icon = btn.querySelector('.icon');
           const label = btn.querySelector('.label');
           if (theme === 'dark') {
@@ -1443,12 +1484,21 @@
         };
         const setTheme = (theme) => {
           root.setAttribute('data-theme', theme);
-          try { localStorage.setItem('theme', theme); } catch(_) {}
           updateButton(theme);
           window.dispatchEvent(new Event('themechange'));
         };
+        const setManualTheme = (theme) => {
+          try { localStorage.setItem(themeStorageKey, theme); } catch(_) {}
+          setTheme(theme);
+          scheduleAutoThemeSync();
+        };
+        const applyAutoTheme = () => {
+          if (hasSavedOverride()) return;
+          setTheme(themeFromLocalTime(new Date()));
+        };
         updateButton(current());
-        btn.addEventListener('click', () => setTheme(current()==='dark' ? 'light' : 'dark'));
+        scheduleAutoThemeSync();
+        btn.addEventListener('click', () => setManualTheme(current()==='dark' ? 'light' : 'dark'));
       }
     })();
 

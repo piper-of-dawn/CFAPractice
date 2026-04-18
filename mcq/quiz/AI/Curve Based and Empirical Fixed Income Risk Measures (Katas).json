@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Callable Bond Intuition",
+    "stem": "As benchmark yields fall toward the coupon rate of a callable bond, the value of the embedded call option most likely:",
+    "options": {
+      "A": "rises.",
+      "B": "falls.",
+      "C": "is unchanged."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: when the issuer wants to call</h3><p><strong>A is correct.</strong> The issuer can refinance at lower market rates when yields fall. The CFA Curriculum notes that when rates are low, the call option is more likely to be exercised, so its value rises.</p><p>Falls is backward; low rates make the call more attractive to the issuer, not less.</p><p>Unchanged ignores that call value depends on how far yields have moved relative to the coupon rate.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Callable Bond Intuition",
+    "stem": "The price of a callable bond is most likely:",
+    "options": {
+      "A": "higher than the price of an otherwise identical non-callable bond.",
+      "B": "lower than the price of an otherwise identical non-callable bond.",
+      "C": "equal to the price of an otherwise identical non-callable bond."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: who owns the option</h3><p><strong>B is correct.</strong> The call option belongs to the issuer, not the investor. The investor is effectively short the option, so the callable bond must be cheaper than the comparable non-callable bond by the value of that embedded call.</p><p>Higher reverses option ownership; the investor does not benefit from the call, the issuer does.</p><p>Equal would imply the option has no value, which is inconsistent with a live call feature.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Putable Bond Intuition",
+    "stem": "An otherwise identical putable bond is most likely priced:",
+    "options": {
+      "A": "below a non-putable bond.",
+      "B": "above a non-putable bond.",
+      "C": "at the same level as a non-putable bond."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: investor holds the put</h3><p><strong>B is correct.</strong> The put option is held by the investor, who can sell the bond back to the issuer, typically at par, if yields rise. This protection adds value, so the putable bond always trades above the comparable non-putable bond.</p><p>Below reverses the direction of the embedded option value.</p><p>The same level ignores that the put provides downside protection, which has positive value.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Putable Bond Convexity",
+    "stem": "The effective convexity of a putable bond is most likely:",
+    "options": {
+      "A": "always positive.",
+      "B": "always negative.",
+      "C": "positive when yields are low and negative when yields are high."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: put floor supports the price</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly states that putable bonds always have positive effective convexity because the put limits price depreciation when yields rise without capping price appreciation when yields fall.</p><p>Always negative describes neither callable nor putable bonds.</p><p>Positive at low yields and negative at high yields describes callable-bond behavior, not putable-bond behavior.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Callable Bond Effective Duration",
+    "stem": "When benchmark yields are high relative to a callable bond's coupon rate, its effective duration compared to that of an otherwise identical non-callable bond is most likely:",
+    "options": {
+      "A": "much lower.",
+      "B": "very similar.",
+      "C": "always higher."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: when the call is out of the money</h3><p><strong>B is correct.</strong> When yields are high, the call option has little value and is unlikely to be exercised. The callable bond behaves almost like the non-callable bond, so their effective durations are very similar.</p><p>Much lower describes the callable bond when yields are low and falling, not when yields are high.</p><p>Always higher is wrong; the callable bond's effective duration is never above the non-callable bond's.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Callable Bond Expected Life",
+    "stem": "A decline in a callable bond's effective duration when yields fall is best interpreted as a:",
+    "options": {
+      "A": "lengthening of expected life.",
+      "B": "shortening of expected life.",
+      "C": "change in credit quality."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: duration as expected life</h3><p><strong>B is correct.</strong> The CFA Curriculum interprets a lower effective duration on a callable bond as a shorter expected life, reflecting the higher probability that the issuer will call and repay early when rates are low.</p><p>Lengthening of expected life would imply higher duration, the opposite of what occurs.</p><p>Credit quality change is unrelated to the interest rate sensitivity implied by the call feature.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Positive Convexity Asymmetry",
+    "stem": "For an option-free bond with positive convexity, equal upward and downward parallel shifts in the benchmark curve most likely produce:",
+    "options": {
+      "A": "a larger price increase than price decrease in absolute terms.",
+      "B": "a larger price decrease than price increase in absolute terms.",
+      "C": "equal absolute price changes in both directions."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: convexity adds for both shifts</h3><p><strong>A is correct.</strong> The convexity adjustment $\\tfrac{1}{2} \\times EffCon \\times (\\Delta Curve)^2$ is positive in both directions when convexity is positive. It adds to the price gain when yields fall and offsets part of the price loss when yields rise, producing a larger absolute gain than loss.</p><p>A larger decrease than increase describes negative convexity (as in a callable bond), not positive convexity.</p><p>Equal absolute changes would require zero convexity, i.e., a strictly linear price-yield relationship.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Grok",
+    "topic": "Negative Convexity Asymmetry",
+    "stem": "For a bond with negative effective convexity, an upward 100 bps parallel curve shift produces a price decline that is most likely:",
+    "options": {
+      "A": "smaller in absolute terms than the price increase from a downward 100 bps shift.",
+      "B": "larger in absolute terms than the price increase from a downward 100 bps shift.",
+      "C": "equal to the price increase from a downward 100 bps shift."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: squared shift, negative convexity</h3><p><strong>B is correct.</strong> With negative convexity, the $\\tfrac{1}{2} \\times EffCon \\times (\\Delta Curve)^2$ term is negative for both up and down shifts. It adds to the price decline when yields rise and offsets part of the price gain when yields fall, so the upward-shift loss is larger in absolute terms.</p><p>Smaller would require positive convexity, not negative.</p><p>Equal ignores the convexity adjustment altogether.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Duration vs Convexity Contribution",
+    "stem": "If the parallel curve shift doubles from 100 bps to 200 bps, the absolute size of the convexity adjustment most likely:",
+    "options": {
+      "A": "doubles.",
+      "B": "quadruples.",
+      "C": "is unchanged."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: squared term scales quadratically</h3><p><strong>B is correct.</strong> The convexity adjustment is $\\tfrac{1}{2} \\times EffCon \\times (\\Delta Curve)^2$. Doubling $\\Delta Curve$ multiplies $(\\Delta Curve)^2$ by four, so the convexity contribution quadruples.</p><p>Doubles describes the duration contribution, which is linear in $\\Delta Curve$.</p><p>Unchanged ignores that the convexity term depends on $\\Delta Curve$ at all.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Effective vs Modified Duration",
+    "stem": "On an option-free bond, the difference between effective duration and modified duration most likely narrows as the yield curve:",
+    "options": {
+      "A": "steepens.",
+      "B": "flattens.",
+      "C": "inverts further."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: par curve shift vs YTM change</h3><p><strong>B is correct.</strong> The CFA Curriculum states that the gap between effective and modified duration on an option-free bond narrows as the yield curve flattens, shortens in time-to-maturity, or the bond is closer to par. The difference disappears only when the yield curve is flat.</p><p>Steepening makes the non-parallel shift in spot rates relative to the par curve more pronounced, widening the gap, not narrowing it.</p><p>Further inversion also worsens the non-parallel relationship and does not narrow the gap.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Grok",
+    "topic": "Downward Shift and Positive Convexity",
+    "stem": "When the benchmark curve shifts downward, holding effective duration constant, an increase in a bond's positive effective convexity will most likely:",
+    "options": {
+      "A": "decrease the estimated percentage price rise.",
+      "B": "increase the estimated percentage price rise.",
+      "C": "leave the estimated price rise unchanged."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: positive convexity adds to gains</h3><p><strong>B is correct.</strong> For a downward shift, $(\\Delta Curve)^2$ is positive and $EffCon$ is positive, so a larger convexity strengthens the convexity adjustment and increases the estimated price rise.</p><p>Decrease reverses the sign of a positive convexity contribution.</p><p>Unchanged ignores the additional upside that convexity provides when yields fall.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Key Rate Duration - Flattening",
+    "stem": "A portfolio with a large 10-year key rate duration and a small 2-year key rate duration will most likely benefit if the benchmark yield curve:",
+    "options": {
+      "A": "flattens because long rates fall.",
+      "B": "steepens because long rates rise.",
+      "C": "shifts upward in a parallel manner."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: where the sensitivity lies</h3><p><strong>A is correct.</strong> With most sensitivity concentrated at the 10-year point, the portfolio gains when the 10-year rate falls, which is consistent with a flattening driven by lower long rates.</p><p>Steepening via higher long rates pushes down the price at exactly the tenor with largest key rate duration, causing losses.</p><p>A parallel upward shift raises all yields, including the 10-year, which is the tenor the portfolio is most exposed to.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Key Rate Duration - Steepening",
+    "stem": "If long-dated benchmark rates rise while short-dated benchmark rates are unchanged, a bond whose key rate duration is concentrated at long maturities will most likely experience a:",
+    "options": {
+      "A": "price increase.",
+      "B": "price decrease.",
+      "C": "zero price change."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: price and yield move opposite</h3><p><strong>B is correct.</strong> Using $\\Delta PV / PV = -KeyRateDur_k \\times \\Delta r_k$, a positive shift at the long tenor where the key rate duration is large produces a negative price change.</p><p>A price increase would require a fall in the long rate, not a rise.</p><p>Zero change would require either a zero key rate duration at the long tenor or a zero shift at that tenor, neither of which applies.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Grok",
+    "topic": "Key Rate Duration vs Effective Duration",
+    "stem": "For a parallel shift of the entire benchmark yield curve, the percentage price change estimated from key rate durations is most likely:",
+    "options": {
+      "A": "equal to the change estimated from effective duration.",
+      "B": "larger than the change estimated from effective duration.",
+      "C": "smaller than the change estimated from effective duration."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: key rate durations sum to effective duration</h3><p><strong>A is correct.</strong> For a parallel shift every $\\Delta r_k$ equals the same value, so summing $-KeyRateDur_k \\times \\Delta r_k$ across tenors equals $-EffDur \\times \\Delta Curve$ because the key rate durations sum to effective duration.</p><p>Larger would require the key rate durations to sum to more than effective duration, which contradicts the decomposition.</p><p>Smaller would require the sum to be less than effective duration, again contradicting the decomposition.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Key Rate Duration Intuition",
+    "stem": "A zero-coupon bond maturing in ten years will most likely have its key rate duration concentrated at the:",
+    "options": {
+      "A": "2-year tenor.",
+      "B": "10-year tenor.",
+      "C": "30-year tenor."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: cash flow timing drives sensitivity</h3><p><strong>B is correct.</strong> All of the zero-coupon bond's cash flow arrives at its maturity, so its sensitivity to benchmark yield changes is concentrated at that same 10-year tenor on the curve.</p><p>The 2-year tenor has little effect because no cash flow is received there.</p><p>The 30-year tenor is beyond the bond's maturity and does not influence its price.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Key Rate Duration - Parallel Shift",
+    "stem": "If only the 5-year benchmark rate falls by 25 bps and all other key rates are unchanged, a bond whose 5-year key rate duration is positive will most likely see its price:",
+    "options": {
+      "A": "rise.",
+      "B": "fall.",
+      "C": "stay the same."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: isolated curve shock</h3><p><strong>A is correct.</strong> $\\Delta PV / PV = -KeyRateDur_5 \\times \\Delta r_5$. With a positive key rate duration and a negative $\\Delta r_5$, the percentage price change is positive, so the bond's price rises.</p><p>Fall reverses the sign; falling yields raise prices for a positive-duration bond.</p><p>Stay the same would require either zero key rate duration at the 5-year point or a zero shift, neither of which is given.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Grok",
+    "topic": "Flight to Safety",
+    "stem": "During a flight to safety, the price of a high-quality government bond most likely:",
+    "options": {
+      "A": "rises as benchmark yields fall.",
+      "B": "falls as benchmark yields rise.",
+      "C": "is unchanged because credit spreads absorb the move."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: safe-haven demand</h3><p><strong>A is correct.</strong> Investors sell risky assets and buy government bonds during a flight to safety, pushing government benchmark yields lower and prices higher. The government bond has little credit spread to offset this price rise.</p><p>Falling prices would require rising benchmark yields, contrary to safe-haven demand.</p><p>Unchanged prices would require an offsetting credit spread, which government bonds effectively lack.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Flight to Safety and High-Yield Bonds",
+    "stem": "During a flight to safety, the price of a high-yield corporate bond is most likely affected as:",
+    "options": {
+      "A": "falling benchmark yields fully raise its price.",
+      "B": "widening credit spreads partially or fully offset the price increase from falling benchmark yields.",
+      "C": "widening credit spreads reinforce the price increase from falling benchmark yields."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: competing forces on a risky bond</h3><p><strong>B is correct.</strong> Benchmark yields fall, which alone would raise the bond's price, but credit spreads widen because default risk rises. These forces work in opposite directions and the spread widening partially or fully offsets the rally in benchmark yields.</p><p>Fully raising the price ignores the credit spread widening, which is the defining feature of a flight to safety for risky bonds.</p><p>Reinforcing the price increase treats spread widening as a positive for price, which is wrong.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Analytical Duration in Stress",
+    "stem": "In a flight-to-safety scenario, the analytical duration estimate for a corporate bond is most likely:",
+    "options": {
+      "A": "unaffected by the event itself.",
+      "B": "lower than the empirical duration estimate.",
+      "C": "driven higher by the widening of credit spreads."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: formula-based vs data-based</h3><p><strong>A is correct.</strong> Analytical duration is computed from mathematical formulas that assume benchmark yields and spreads are independent, so the flight-to-safety event itself does not change the analytical duration number.</p><p>Lower than empirical duration is the opposite of the observed pattern; empirical duration falls below analytical duration in this scenario.</p><p>Widening credit spreads do not enter the analytical duration formula at all, so they cannot drive it higher.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Grok",
+    "topic": "Empirical Duration Direction",
+    "stem": "For a lower-quality corporate bond during stressed market conditions, empirical duration compared with analytical duration is most likely:",
+    "options": {
+      "A": "significantly higher.",
+      "B": "significantly lower.",
+      "C": "approximately equal."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: observed prices vs formula prediction</h3><p><strong>B is correct.</strong> Observed bond prices rise less (or fall) than the formula predicts because widening credit spreads offset falling benchmark yields. The empirical estimate of duration from actual price behavior is therefore significantly lower than the analytical estimate.</p><p>Significantly higher would require observed prices to respond more strongly to benchmark yields than formulas predict, which contradicts the flight-to-safety dynamic.</p><p>Approximately equal holds for high-quality government bonds, not lower-quality corporate bonds under stress.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Empirical vs Analytical for Government Bonds",
+    "stem": "For a highly rated developed-market government bond, empirical duration and analytical duration are most likely:",
+    "options": {
+      "A": "broadly similar because benchmark yields drive prices.",
+      "B": "very different because credit spreads drive prices.",
+      "C": "unrelated because empirical duration cannot be estimated for government bonds."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: minimal credit spread</h3><p><strong>A is correct.</strong> A high-quality government bond has negligible credit spread risk, so benchmark yields are the dominant driver of its price. Both analytical and empirical estimates capture this relationship and are broadly similar.</p><p>Very different because of credit spreads applies to corporate bonds, not high-quality government bonds.</p><p>Empirical duration can be estimated from historical data for government bonds; the claim that it cannot is wrong.</p>"
+  }
+]
