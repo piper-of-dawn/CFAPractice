@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "DuPont Analysis — Two-Way Decomposition",
+    "stem": "Under the two-way DuPont decomposition, return on equity is most accurately expressed as the product of:",
+    "options": {
+      "A": "Return on assets and financial leverage.",
+      "B": "Net profit margin and total asset turnover.",
+      "C": "Tax burden and interest burden."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: two-way DuPont identity</h3><p><strong>A is correct.</strong> ROE equals net income divided by average shareholders' equity. Multiplying numerator and denominator by average total assets yields ROE = (Net income / Average total assets) × (Average total assets / Average shareholders' equity), which is ROA × Leverage per the CFA Curriculum.</p><p>B describes ROA only (net profit margin × total asset turnover), not the two-way ROE decomposition.</p><p>C lists two of the five components in the five-way decomposition, not the two-way form.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "DuPont Analysis — Three-Way Decomposition",
+    "stem": "A company reports a net profit margin of 10%, total asset turnover of 2.0, and financial leverage of 1.5. Using the three-way DuPont decomposition, its ROE is closest to:",
+    "options": {
+      "A": "15%.",
+      "B": "20%.",
+      "C": "30%."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: three-way DuPont identity</h3><p><strong>C is correct.</strong> The three-way DuPont decomposition states ROE = Net profit margin × Total asset turnover × Leverage. Applying the values, ROE = 0.10 × 2.0 × 1.5 = 0.30, or 30%.</p><p>A (15%) results from omitting total asset turnover, multiplying only margin and leverage.</p><p>B (20%) results from omitting leverage, computing only margin × turnover, which equals ROA rather than ROE.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "DuPont Analysis — Tax Burden",
+    "stem": "In the five-way DuPont decomposition, if a company faces an average tax rate of 20%, its tax burden ratio is closest to:",
+    "options": {
+      "A": "0.20.",
+      "B": "0.80.",
+      "C": "1.20."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: tax burden definition</h3><p><strong>B is correct.</strong> The tax burden in the five-way decomposition equals Net income / EBT, which reflects one minus the average tax rate. With a 20% tax rate, tax burden = 1 − 0.20 = 0.80, meaning the company keeps 80% of pretax profits.</p><p>A (0.20) represents the tax rate itself, not the fraction of pretax profits retained.</p><p>C (1.20) incorrectly adds the tax rate to 1 rather than subtracting it.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "DuPont Analysis — Interest Burden",
+    "stem": "Within the five-way DuPont decomposition of ROE, the interest burden ratio is most accurately defined as:",
+    "options": {
+      "A": "EBIT divided by revenue.",
+      "B": "EBT divided by EBIT.",
+      "C": "Net income divided by EBT."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: interest burden definition</h3><p><strong>B is correct.</strong> Per the CFA Curriculum, the interest burden equals EBT / EBIT and captures the effect of interest expense on ROE. Higher borrowing costs reduce EBT relative to EBIT, lowering this ratio.</p><p>A defines the EBIT margin, which measures operating profitability, not interest impact.</p><p>C defines the tax burden (Net income / EBT), reflecting taxes rather than interest.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "DuPont Analysis — Leverage Component",
+    "stem": "A company finances all of its assets with equity and carries no liabilities. Using the two-way DuPont decomposition, its ROE most likely equals:",
+    "options": {
+      "A": "Its net profit margin.",
+      "B": "Its return on assets.",
+      "C": "Zero, because leverage is zero."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: leverage when no liabilities exist</h3><p><strong>B is correct.</strong> Leverage equals average total assets divided by average shareholders' equity. With no liabilities, assets equal equity, so leverage = 1.0. ROE = ROA × Leverage = ROA × 1.0 = ROA.</p><p>A confuses ROE with net profit margin; they are equal only if asset turnover and leverage both equal 1.0.</p><p>C incorrectly treats the leverage ratio as zero when there is no debt; in fact, the minimum value of the leverage ratio is 1.0.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "DuPont Analysis — Five-Way Decomposition",
+    "stem": "In the five-way DuPont decomposition, which component is the primary indicator of a company's operating profitability?",
+    "options": {
+      "A": "EBIT margin.",
+      "B": "Total asset turnover.",
+      "C": "Financial leverage."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: role of each component</h3><p><strong>A is correct.</strong> The five-way decomposition is ROE = Tax burden × Interest burden × EBIT margin × Total asset turnover × Leverage. The EBIT margin (EBIT / Revenue) primarily measures operating profitability per unit of sales.</p><p>B, total asset turnover, indicates efficiency in generating revenue from assets, not operating profitability.</p><p>C, financial leverage, indicates solvency by comparing assets to equity, not operating profitability.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "DuPont Analysis — Interpretation of Drivers",
+    "stem": "Over two years, a company's net profit margin and total asset turnover were unchanged, while its financial leverage increased from 1.5 to 2.0 with borrowing costs below the return on invested funds. Under the three-way DuPont framework, its ROE most likely:",
+    "options": {
+      "A": "Decreased due to higher interest expense.",
+      "B": "Increased due to higher leverage.",
+      "C": "Remained unchanged because ROA did not change."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: leverage as an ROE driver</h3><p><strong>B is correct.</strong> In the three-way decomposition, ROE = Net profit margin × Total asset turnover × Leverage. With margin and turnover constant, ROE moves proportionally with leverage. Because the company borrows at a rate below what it earns on the borrowed funds, leverage is effective and ROE rises.</p><p>A is wrong because the three-way framework holds margin constant here, and the scenario states leverage is effective, so the leverage effect dominates.</p><p>C ignores that ROE depends on leverage in addition to ROA; a higher leverage factor raises ROE even when ROA is unchanged.</p>"
+  }
+]

@@ -1,0 +1,952 @@
+[
+  {
+    "id": 1,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "An analyst is evaluating the solvency of a manufacturing firm and gathers the following data from the current year's financial statements (in millions of USD):\n\n*   Short-term interest-bearing debt: USD 150\n*   Accounts payable: USD 400\n*   Current portion of long-term debt: USD 50\n*   Long-term bonds payable (Face value USD 1,000, unamortized discount USD 50): USD 950\n*   Deferred tax liabilities: USD 120\n*   Total Shareholders' Equity: USD 1,850\n\nBased strictly on the definition of Total Debt used in the provided text, calculate the Debt-to-Capital ratio.",
+    "options": {
+      "A": "37.1%",
+      "B": "38.3%",
+      "C": "48.3%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Defining Capital Structure</h3><p><strong>B is correct.</strong> The Debt-to-Capital ratio is calculated as Total Debt divided by (Total Debt + Total Shareholders' Equity).</p><p>First, we must determine Total Debt. According to the text, Total Debt typically includes interest-bearing short-term and long-term debt. It excludes operating liabilities like accounts payable and non-debt liabilities like deferred taxes.</p><ul><li>Short-term interest-bearing debt: USD 150</li><li>Current portion of long-term debt: USD 50 (This is part of interest-bearing debt)</li><li>Long-term bonds payable: $ 950 (Carrying value is used, not face value)</li></ul><p>$$ \\text{Total Debt} = 150 + 50 + 950 = \\text{USD } 1,150 \\text{ million} $$</p><p>Next, we calculate Total Capital:</p><p>$$ \\text{Total Capital} = \\text{Total Debt} + \\text{Total Equity} $$</p><p>$$ \\text{Total Capital} = 1,150 + 1,850 = \\text{USD } 3,000 \\text{ million} $$</p><p>Finally, the ratio:</p><p>$$ \\text{Debt-to-Capital} = \\frac{1,150}{3,000} = 38.33\\% $$</p><p>A is incorrect because it likely excludes the current portion of long-term debt (USD1,100 / (USD1,100 + USD1,850) = 37.3%) or uses face value of bonds in a specific way that doesn't align.</p><p>C is incorrect because it includes Accounts Payable or Deferred Taxes in the debt figure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "A company reports the following information for the fiscal year (in millions of USD):\n\n*   Net Income: USD 450\n*   Income Tax Expense: USD 190\n*   Interest Expense reported on Income Statement: USD 80\n*   Capitalized Interest (reported in footnotes): USD 20\n\nCalculate the Interest Coverage ratio.",
+    "options": {
+      "A": "7.2x",
+      "B": "7.4x",
+      "C": "9.0x"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Coverage Ratios and Capitalized Interest</h3><p><strong>A is correct.</strong> The Interest Coverage ratio is calculated as EBIT divided by Interest Payments. Crucially, the text notes that to provide a true picture of solvency, the <em>entire</em> amount of interest (both the expensed portion and the capitalized portion) should be used in the denominator.</p><p>1. <strong>Calculate EBIT:</strong><br>$$ \\text{EBIT} = \\text{Net Income} + \\text{Tax Expense} + \\text{Interest Expense} $$<br>$$ \\text{EBIT} = 450 + 190 + 80 = \\text{USD } 720 \\text{ million} $$<br>(Note: Capitalized interest is not added back to calculate EBIT because it was never subtracted from earnings to begin with; it was capitalized onto the balance sheet).</p><p>2. <strong>Calculate Interest Payments (Gross Interest):</strong><br>$$ \\text{Gross Interest} = \\text{Interest Expense} + \\text{Capitalized Interest} $$<br>$$ \\text{Gross Interest} = 80 + 20 = \\text{USD } 100 \\text{ million} $$</p><p>3. <strong>Calculate Ratio:</strong><br>$$ \\text{Interest Coverage} = \\frac{720}{100} = 7.2\\text{x} $$</p><p>B is incorrect because it excludes capitalized interest from the denominator (USD720 / USD80 = 9.0x) or makes an adjustment to the numerator.</p><p>C is incorrect because it ignores capitalized interest in the denominator (USD720 / USD80 = 9.0x).</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "An analyst compiles the following balance sheet data for a company (in millions of USD):\n\n| Item | Beginning of Year | End of Year |\n| :--- | :--- | :--- |\n| Total Assets | USD 10,000 | USD 12,000 |\n| Total Liabilities | USD 6,000 | USD 7,500 |\n| Total Equity | USD 4,000 | USD 4,500 |\n\nCalculate the Financial Leverage ratio used in DuPont analysis.",
+    "options": {
+      "A": "2.59",
+      "B": "2.67",
+      "C": "2.40"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Financial Leverage Calculation</h3><p><strong>A is correct.</strong> The Financial Leverage ratio is typically defined as Average Total Assets divided by Average Total Equity. While point-in-time ratios are used for simple solvency checks, the text specifies that for DuPont analysis (which links solvency to profitability), average values are generally used.</p><p>1. <strong>Calculate Average Total Assets:</strong><br>$$ \\text{Average Assets} = \\frac{10,000 + 12,000}{2} = 11,000 $$</p><p>2. <strong>Calculate Average Total Equity:</strong><br>$$ \\text{Average Equity} = \\frac{4,000 + 4,500}{2} = 4,250 $$</p><p>3. <strong>Calculate Ratio:</strong><br>$$ \\text{Financial Leverage} = \\frac{11,000}{4,250} \\approx 2.588 $$</p><p>B is incorrect because it uses End of Year values (USD12,000 / USD4,500 = 2.67).</p><p>C is incorrect because it uses Beginning of Year values (USD10,000 / USD4,000 = 2.50) or calculates Debt-to-Equity.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "A telecommunications company provides the following data (in millions of USD):\n\n*   Net Income: USD 200\n*   Tax Rate: 25%\n*   Interest Expense: USD 50\n*   Depreciation & Amortization: USD 100\n*   Lease Payments (Operating): USD 40\n\nCalculate the Fixed Charge Coverage ratio.",
+    "options": {
+      "A": "2.71",
+      "B": "3.52",
+      "C": "3.96"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Fixed Charge Coverage</h3><p><strong>C is correct.</strong> The Fixed Charge Coverage ratio measures the number of times a company's earnings (before interest, taxes, and lease payments) can cover its interest and lease payments.</p><p>Formula: $$ \\frac{\\text{EBIT} + \\text{Lease Payments}}{\\text{Interest Payments} + \\text{Lease Payments}} $$</p><p>1. <strong>Calculate EBIT:</strong><br>Start with Net Income and add back Tax and Interest.<br>$$ \\text{EBT} = \\frac{\\text{Net Income}}{1 - \\text{Tax Rate}} = \\frac{200}{0.75} = 266.67 $$<br>$$ \\text{EBIT} = \\text{EBT} + \\text{Interest} = 266.67 + 50 = 316.67 $$</p><p>2. <strong>Calculate Numerator:</strong><br>$$ \\text{Numerator} = \\text{EBIT} + \\text{Lease Payments} = 316.67 + 40 = 356.67 $$</p><p>3. <strong>Calculate Denominator:</strong><br>$$ \\text{Denominator} = \\text{Interest Expense} + \\text{Lease Payments} = 50 + 40 = 90 $$</p><p>4. <strong>Calculate Ratio:</strong><br>$$ \\text{Ratio} = \\frac{356.67}{90} \\approx 3.96 $$</p><p>A is incorrect because it likely calculates Interest Coverage only (USD316.67 / USD50 = 6.33) or omits lease add-back in numerator.</p><p>B is incorrect because it includes Depreciation in the numerator (EBITDA based coverage).</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "A company has the following financial data (in millions of USD):\n\n*   Net Income: USD 500\n*   Depreciation: USD 150\n*   Amortization: USD 50\n*   Interest Expense: USD 80\n*   Income Tax Expense: USD 200\n*   Total Debt: USD 2,500\n*   Cash and Marketable Securities: USD 300\n\nCalculate the Debt-to-EBITDA ratio.",
+    "options": {
+      "A": "2.55",
+      "B": "2.84",
+      "C": "3.21"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Debt-to-EBITDA</h3><p><strong>A is correct.</strong> This ratio estimates how many years it would take to repay total debt based on EBITDA.</p><p>1. <strong>Calculate EBITDA:</strong><br>$$ \\text{EBITDA} = \\text{Net Income} + \\text{Interest} + \\text{Taxes} + \\text{Depreciation} + \\text{Amortization} $$<br>$$ \\text{EBITDA} = 500 + 80 + 200 + 150 + 50 = \\text{USD } 980 \\text{ million} $$</p><p>2. <strong>Identify Total Debt:</strong><br>$$ \\text{Total Debt} = 2,500 $$ (Note: The ratio usually uses Gross Debt, not Net Debt, unless specified as Net Debt-to-EBITDA. The standard formula in the text is Total Debt / EBITDA).</p><p>3. <strong>Calculate Ratio:</strong><br>$$ \\text{Ratio} = \\frac{2,500}{980} = 2.55 $$</p><p>B is incorrect because it might exclude Amortization from EBITDA (USD2,500 / USD930 = 2.68) or use Net Debt (USD2,200 / USD980 = 2.24).</p><p>C is incorrect because it uses EBIT (USD2,500 / USD780 = 3.21).</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "An analyst wants to calculate the Net Debt-to-Equity ratio for a company with the following balance sheet items (in millions of USD):\n\n*   Short-term Debt: USD 200\n*   Long-term Debt: USD 800\n*   Accounts Payable: USD 300\n*   Cash and Cash Equivalents: USD 150\n*   Marketable Securities: USD 50\n*   Total Equity: USD 1,200\n\nWhat is the Net Debt-to-Equity ratio?",
+    "options": {
+      "A": "0.67",
+      "B": "0.83",
+      "C": "0.92"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Net Debt Concept</h3><p><strong>A is correct.</strong> Net Debt is defined as Total Interest-Bearing Debt minus Cash, Cash Equivalents, and Marketable Securities.</p><p>1. <strong>Calculate Total Debt:</strong><br>$$ \\text{Total Debt} = \\text{Short-term Debt} + \\text{Long-term Debt} = 200 + 800 = 1,000 $$</p><p>2. <strong>Calculate Liquid Assets:</strong><br>$$ \\text{Liquid Assets} = \\text{Cash} + \\text{Marketable Securities} = 150 + 50 = 200 $$</p><p>3. <strong>Calculate Net Debt:</strong><br>$$ \\text{Net Debt} = 1,000 - 200 = 800 $$</p><p>4. <strong>Calculate Ratio:</strong><br>$$ \\text{Net Debt-to-Equity} = \\frac{800}{1,200} = 0.67 $$</p><p>B is incorrect because it uses Total Debt (Gross) instead of Net Debt (USD1,000 / USD1,200 = 0.83).</p><p>C is incorrect because it might include Accounts Payable in debt (USD1,300 - 200) / 1,200 = 0.92.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini 2.0 Flash",
+    "topic": "Solvency Ratios",
+    "stem": "A firm has Total Assets of USD 5,000 million and Total Equity of USD 2,000 million. The firm issues USD 1,000 million in new bonds to repurchase USD 1,000 million of its own stock. Assuming no other changes, what is the new Debt-to-Assets ratio? (Assume 'Debt' refers to Total Liabilities for this specific calculation context as is sometimes seen in broad market definitions, or assume the original gap between Assets and Equity was all Debt).",
+    "options": {
+      "A": "0.60",
+      "B": "0.80",
+      "C": "4.00"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Impact of Leverage Recapitalization</h3><p><strong>B is correct.</strong> We must trace the changes through the accounting equation.</p><p>1. <strong>Initial State:</strong><br>$$ \\text{Assets} = 5,000 $$<br>$$ \\text{Equity} = 2,000 $$<br>$$ \\text{Liabilities (Initial Debt)} = \\text{Assets} - \\text{Equity} = 5,000 - 2,000 = 3,000 $$</p><p>2. <strong>Transaction Effect:</strong><br>Issuing Bonds: Increases Cash (+1,000) and Increases Debt (+1,000).<br>Repurchasing Stock: Decreases Cash (-1,000) and Decreases Equity (-1,000).<br>Net effect on Assets: +1,000 - 1,000 = 0 (Assets remain 5,000).<br>Net effect on Debt: 3,000 (Initial) + 1,000 (New) = 4,000.<br>Net effect on Equity: 2,000 (Initial) - 1,000 (Repurchase) = 1,000.</p><p>3. <strong>Calculate New Ratio:</strong><br>$$ \\text{Debt-to-Assets} = \\frac{\\text{Total Debt}}{\\text{Total Assets}} = \\frac{4,000}{5,000} = 0.80 \\text{ or } 80\\% $$</p><p>A is incorrect because it reflects the ratio before the transaction (USD3,000 / USD5,000 = 0.60).</p><p>C is incorrect because it represents the Debt-to-Equity ratio (USD4,000 / USD1,000 = 4.0).</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Cash Conversion Cycle Calculation",
+    "stem": "An analyst determines that a company has a Days Sales Outstanding (DSO) of 32 days and Days of Inventory on Hand (DOH) of 18 days. If the company's Cash Conversion Cycle (CCC) is reported as -15 days, the number of days of payables is closest to:",
+    "options": {
+      "A": "35 days",
+      "B": "50 days",
+      "C": "65 days"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Cash Conversion Cycle Identity</h3><p><strong>C is correct.</strong> The Cash Conversion Cycle (CCC) represents the net time interval between cash outflows for inputs and cash inflows from sales. The governing relationship is: $$CCC = DSO + DOH - \\text{Days Payables}$USD . This equation balances the asset side (receivables and inventory requiring funding) against the liability side (payables providing funding). Rearranging the formula to solve for the unknown variable (Days Payables): $\\text{Days Payables} = DSO + DOH - CCC$USD . Substituting the provided values: $\\text{Days Payables} = 32 + 18 - (-15)$$. $$\\text{Days Payables} = 50 + 15 = 65\\text{ days}$$.</p><p>A is incorrect: This result arises from incorrectly subtracting the absolute value of the CCC without regarding the double negative, or effectively solving $32 + 18 - 15$.</p><p>B is incorrect: This result arises from ignoring the CCC term entirely or simply summing the asset days ($32 + 18$).</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Interpretation of Negative CCC (Distress)",
+    "stem": "A technology company reports a highly negative cash conversion cycle driven by a substantial increase in days payable outstanding, while simultaneously reporting zero ending inventory. Based on the National Datacomputer case study, this scenario most likely indicates:",
+    "options": {
+      "A": "Operational efficiency allowing for just-in-time manufacturing.",
+      "B": "Financial distress and an inability to secure credit for inventory.",
+      "C": "Aggressive reinvestment of excess cash into short-term securities."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Liquidity Stress vs. Efficiency</h3><p><strong>B is correct.</strong> While a negative Cash Conversion Cycle (CCC) is generally viewed as favorable (indicating the firm is financed by suppliers), the driver of the negative number determines the signal. In the National Datacomputer (NDC) case, the negative CCC was driven by a spike in accounts payable (delaying payments due to cash shortages) and a drop in inventory to zero (inability to purchase new stock). From a first-principles perspective, if the 'financing' (payables) grows only because the firm <em>cannot</em> pay, and the 'asset' (inventory) shrinks because the firm <em>cannot</em> buy, the negative cycle signals a liquidity crisis rather than leverage or efficiency. </p><p>A is incorrect: Just-in-time manufacturing reduces DOH, but it does not typically lead to a complete disappearance of inventory due to credit freezes, nor is it characterized by an inability to pay suppliers (spiking payables) as a primary feature.</p><p>C is incorrect: This describes the Apple scenario, where the firm <em>has</em> cash but chooses to use supplier credit. The NDC case is defined by a lack of cash.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Interpretation of Negative CCC (Strategy)",
+    "stem": "An analyst observes that Apple Inc. has a negative cash conversion cycle and holds significant short-term investments. From a liquidity management perspective, this structure allows the company to:",
+    "options": {
+      "A": "Finance working capital needs primarily through equity issuance.",
+      "B": "Eliminate the need for accounts payable by paying suppliers immediately.",
+      "C": "Earn interest on excess cash while funding operations via supplier credit."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: The Time Value of Money in Working Capital</h3><p><strong>C is correct.</strong> A negative Cash Conversion Cycle implies that the company collects cash from customers <em>before</em> it is required to pay suppliers (Days Payables > DSO + DOH). Structurally, this means the suppliers are financing the company's operations. If the company also holds large cash reserves (as Apple does), it is not using supplier credit out of necessity (distress), but out of strategy. The firm essentially receives an interest-free loan from suppliers, allowing it to keep its own cash invested in interest-bearing short-term securities. </p><p>A is incorrect: A negative CCC reduces or eliminates the need for external working capital financing (equity or debt) because the operating cycle generates cash rather than consuming it.</p><p>B is incorrect: A negative CCC relies on <em>maximizing</em> the days payable (paying later), not paying immediately. Paying immediately would increase the CCC.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Impact of Operational Changes on CCC",
+    "stem": "A firm currently has a cash conversion cycle of 25 days. If the firm negotiates with suppliers to extend payment terms by 10 days, while simultaneously reducing its inventory holding period by 5 days, the new cash conversion cycle will be:",
+    "options": {
+      "A": "10 days",
+      "B": "30 days",
+      "C": "40 days"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Component Sensitivity Analysis</h3><p><strong>A is correct.</strong> The Cash Conversion Cycle formula is $CCC = DSO + DOH - \\text{Days Payables}$. Changes in the components directly shift the CCC. <br>1. <strong>Extension of payables:</strong> Increasing the liability duration (Days Payables) by 10 days reduces the net cycle. $\\Delta CCC = -10$. <br>2. <strong>Reduction of inventory:</strong> Decreasing the asset holding period (DOH) by 5 days reduces the funding gap. $\\Delta CCC = -5$. <br>Total Change = $-10 - 5 = -15$ days. <br>New CCC = Starting CCC + Total Change = $25 - 15 = 10$ days.</p><p>B is incorrect: This calculation likely adds the reduction in DOH (treating it as a saving) but incorrectly adds the payable extension to the cycle length (treating it as an asset) rather than subtracting it.</p><p>C is incorrect: This assumes both changes lengthen the cycle (adding 15 days to 25).</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Inventory Metrics and Limitations",
+    "stem": "When is it most appropriate to conclude that a firm's inventory turnover ratio is undefined or infinite?",
+    "options": {
+      "A": "The cost of goods sold was negative due to accounting adjustments.",
+      "B": "The ending inventory balance was reported as zero.",
+      "C": "The sales volume was insufficient to support the calculation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Ratio Boundary Conditions</h3><p><strong>B is correct.</strong> Financial ratios rely on the mathematical validity of their inputs. Inventory Turnover is calculated as $\\frac{\\text{Cost of Goods Sold}}{\\text{Average Inventory}}USD . In the specific case of National Datacomputer (NDC), the text notes that ending inventories for 2008 and 2009 were reported as 0 million. If the ending inventory is zero, calculating Days of Inventory on Hand (DOH) based on ending inventory yields zero (as seen in the text where DOH = 0.00). If one attempts to calculate turnover using just the ending balance as the denominator, the expression becomes undefined (division by zero). Even with an average, a zero balance distorts the metric's economic meaning, signaling a stoppage of operations rather than 'infinite' efficiency.</p><p>A is incorrect: COGS was positive (USD1.228 million) in 2009; the issue was the denominator (inventory).</p><p>C is incorrect: Sales were present (USD1.723 million); the limitation was specific to the asset balance (inventory), not the flow variable (sales).</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Cash Conversion Cycle Definition",
+    "stem": "The cash conversion cycle is best interpreted as the time elapsed between which two specific events?",
+    "options": {
+      "A": "The purchase of raw materials and the sale of finished goods.",
+      "B": "The cash payment for resource inputs and the cash collection from sales.",
+      "C": "The sale of finished goods and the collection of accounts receivable."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Cash-to-Cash Timeline</h3><p><strong>B is correct.</strong> The Cash Conversion Cycle (CCC) is a <em>cash</em> timeline metric, not an accrual accounting metric. It measures the gap between the actual cash outflow and cash inflow. <br>1. The cycle starts when the company actually parts with cash to pay suppliers (Payment point). <br>2. It ends when the company actually receives cash from customers (Collection point). <br>The period before payment is covered by trade credit (Payables), and the period after sale is the receivables phase. The CCC is the 'gap' where the firm's own capital is tied up.</p><p>A is incorrect: This defines the <em>Operating Cycle</em> (DOH + DSO), which ignores the financing provided by suppliers (Days Payables).</p><p>C is incorrect: This defines only the Days Sales Outstanding (DSO) component, representing the collection period, not the full conversion cycle.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Days Payable Outstanding Signal",
+    "stem": "An analyst reviewing a firm's liquidity notes that the number of days of payables has increased from 66 days to 295 days over a three-year period. Without further context on cash holdings, this trend is most typically a signal of:",
+    "options": {
+      "A": "Improved bargaining power with suppliers.",
+      "B": "Increased creditworthiness permitting better terms.",
+      "C": "Potential liquidity problems and delayed payments."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Magnitude and Normality</h3><p><strong>C is correct.</strong> While a moderate increase in days payable often signals increased bargaining power (using supplier money), an increase of this magnitude (from ~2 months to nearly a year/295 days) is structurally abnormal for standard trade credit terms. In the context of the provided text (National Datacomputer), such an extreme extension signals that the company is failing to pay its obligations on time due to a lack of cash ('stretching the payables'). It represents a default-like behavior rather than a negotiated term.</p><p>A is incorrect: While bargaining power allows for <em>better</em> terms (e.g., moving from 30 to 60 days), suppliers rarely agree to 295-day payment terms voluntarily. Such a duration implies non-payment/arrears.</p><p>B is incorrect: Improved creditworthiness might yield slightly longer terms, but extreme delays generally hurt creditworthiness, causing suppliers to cut off credit (as seen with NDC's inventory disappearance).</p>"
+  },
+  {
+    "id": 1,
+    "model": "Gemini",
+    "topic": "Impact of Transactions on Liquidity Ratios",
+    "stem": "A manufacturing company with a current ratio of 1.4 and a quick ratio of 0.9 uses available cash to pay off a significant trade payable account. Assuming no other changes, the immediate impact on these ratios will be:",
+    "options": {
+      "A": "Both the current ratio and the quick ratio will increase.",
+      "B": "The current ratio will increase, but the quick ratio will decrease.",
+      "C": "Both the current ratio and the quick ratio will decrease."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Ratio Sensitivity to Numerator/Denominator Changes</h3><p><strong>B is correct.</strong> Analyze the mathematical structure of the ratios. Let \\( C \\) be Current Assets, \\( Q \\) be Quick Assets, and \\( L \\) be Current Liabilities. The transaction reduces Cash (part of \\( C \\) and \\( Q \\)) and Accounts Payable (part of \\( L \\)) by the same amount \\( X \\). <br>New Current Ratio = \\( (C-X)/(L-X) \\). Since the starting ratio \\( C/L > 1 \\), subtracting the same amount from both numerator and denominator increases the ratio (the numerator decreases by a smaller percentage than the denominator). <br>New Quick Ratio = \\( (Q-X)/(L-X) \\). Since the starting ratio \\( Q/L < 1 \\), subtracting the same amount from both causes the ratio to decrease (the numerator decreases by a larger percentage than the denominator).</p><p>A is incorrect: The quick ratio starts below 1.0, so reducing both sides by the same amount mathematically lowers the ratio.</p><p>C is incorrect: The current ratio starts above 1.0, so reducing both sides raises it.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Gemini",
+    "topic": "Cash Conversion Cycle",
+    "stem": "A retailer aims to improve its liquidity position by negotiating extended payment terms with suppliers, increasing its days payables outstanding (DPO) from 30 to 45 days. Simultaneously, a slowdown in sales causes inventory turnover to drop from 12.0 to 10.0. Assuming days sales outstanding (DSO) remains constant at 15 days, the impact on the Cash Conversion Cycle (CCC) is:",
+    "options": {
+      "A": "The CCC increases by 1.5 days.",
+      "B": "The CCC decreases by 8.9 days.",
+      "C": "The CCC decreases by 15.0 days."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: The Cash Operating Cycle</h3><p><strong>A is correct.</strong> The Cash Conversion Cycle measures the time capital is tied up. Formula: \\( CCC = \\text{Days Inventory} + \\text{DSO} - \\text{DPO} \\). <br>Step 1: Calculate change in Days Inventory on Hand (DOH). <br>Initial DOH = \\( 365 / 12 = 30.4 \\) days. <br>New DOH = \\( 365 / 10 = 36.5 \\) days. <br>Change in DOH = \\( +6.1 \\) days (worsens liquidity). <br>Step 2: Calculate change in DPO. Change = \\( +15 \\) days (improves liquidity). <br>Step 3: Combine effects. The increase in inventory holding time (+6.1) adds to the cycle, while the extension of payables (-15) subtracts from it. <br>Net Change = \\( +6.1 \\) (Inventory) + 0 (Receivables) - 15 (Payables) = \\( -8.9 \\) days. <br>Wait, let's re-verify the logic. CCC = DOH + DSO - DPO. <br>Old CCC = 30.4 + 15 - 30 = 15.4 days. <br>New CCC = 36.5 + 15 - 45 = 6.5 days. <br>Change = 6.5 - 15.4 = -8.9 days. <br>Wait, the stem asks for the impact. A decrease in CCC is an improvement. Let's re-read the options carefully. The question asks for the impact value. <br>Let's re-calculate DOH exactly. <br>Old DOH: 365/12 = 30.416. New DOH: 365/10 = 36.5. Delta = +6.08 days. <br>Delta DPO = +15 days. <br>Delta CCC = +6.08 - 15 = -8.92 days. <br>Wait, did I misread option A? Option A says 'Increases by 1.5'. Let me re-check the math. <br>If DOH goes 30.4 -> 36.5 (+6.1) and DPO goes 30->45 (+15). The net effect is 6.1 - 15 = -8.9. This matches option B. Let me double check the distractor logic for A. <br>Distractor A logic: 45-30 = 15 benefit. 12-10 = 2 turnover change. Maybe they subtracted 2 from 15? No. <br>Let's stick to the calculation: DOH increases by 6.1 days. DPO increases by 15 days. Since DPO is subtracted, the cycle shortens by 15 - 6.1 = 8.9 days.</p><p>B is correct.</p><p>A is incorrect: This likely ignores the conversion of turnover to days.</p><p>C is incorrect: This ignores the negative impact of the slowing inventory turnover.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Defensive Interval Ratio",
+    "stem": "An analyst gathers the following data: Cash USD200k, Accounts Receivable USD400k, Inventory USD600k, Marketable Securities USD100k. Daily cash expenditures are estimated at USD14k. If the company faces a sudden credit freeze and cannot sell inventory or borrow, the Defensive Interval Ratio indicates it can operate for approximately:",
+    "options": {
+      "A": "50 days.",
+      "B": "93 days.",
+      "C": "43 days."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Liquidity Runway</h3><p><strong>A is correct.</strong> The Defensive Interval Ratio (DIR) measures how many days a company can cover its cash expenses using only its most liquid assets. <br>Step 1: Identify 'Quick' Assets. These are assets that can be converted to cash quickly without relying on inventory sales. <br>Quick Assets = Cash + Marketable Securities + Accounts Receivable. <br>Quick Assets = USD200k + USD100k + USD400k = USD700k. (Inventory is excluded as it is not immediately liquid in a credit freeze scenario). <br>Step 2: Apply the ratio. <br>DIR = Quick Assets / Daily Cash Expenditures. <br>DIR = USD700,000 / USD14,000 = 50 days.</p><p>B is incorrect: This calculation incorrectly includes Inventory in the numerator (USD1,300k / 14k = 92.8 days), essentially calculating a 'Current Asset Interval' rather than a Defensive Interval.</p><p>C is incorrect: This calculation likely excludes Accounts Receivable (USD300k / 14k = 21 days) or uses Inventory only (USD600k / 14k = 42.8 days).</p>"
+  },
+  {
+    "id": 4,
+    "model": "Gemini",
+    "topic": "Inventory Write-downs",
+    "stem": "A company operating in a deflationary environment writes down the value of its inventory to net realizable value. Assuming the company has positive working capital and a current ratio greater than 1.0, the immediate impact of this write-down on the Quick Ratio and the Current Ratio is:",
+    "options": {
+      "A": "Quick Ratio: No Change; Current Ratio: Decrease.",
+      "B": "Quick Ratio: Decrease; Current Ratio: Decrease.",
+      "C": "Quick Ratio: Increase; Current Ratio: No Change."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset Classification</h3><p><strong>A is correct.</strong> An inventory write-down reduces the book value of the Inventory asset on the balance sheet. It is recorded as an expense (COGS or loss), reducing Retained Earnings (Equity). <br>Current Ratio = Current Assets / Current Liabilities. Since Inventory is a component of Current Assets, the numerator decreases. The denominator (Liabilities) is unchanged. Thus, the Current Ratio decreases. <br>Quick Ratio = (Cash + Marketable Securities + Receivables) / Current Liabilities. Inventory is <em>excluded</em> from the numerator of the Quick Ratio. Therefore, a change in the value of inventory has no direct mechanical effect on the Quick Ratio numerator or denominator.</p><p>B is incorrect: The Quick Ratio numerator does not include inventory, so it does not decrease.</p><p>C is incorrect: The Current Ratio must decrease because the numerator (Total Current Assets) has shrunk.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Gemini",
+    "topic": "Inventory Valuation Methods (LIFO/FIFO)",
+    "stem": "Two competitors, Company A and Company B, are identical in all operating aspects. In a period of rising raw material costs, Company A uses FIFO while Company B uses LIFO. Which of the following statements accurately compares their liquidity ratios?",
+    "options": {
+      "A": "Company B will report a higher current ratio due to lower tax payments.",
+      "B": "Company A will report a higher current ratio due to higher inventory valuation.",
+      "C": "Company B will report a higher working capital turnover due to lower sales figures."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Inventory Cost Flows</h3><p><strong>B is correct.</strong> In an inflationary environment (rising costs): <br>FIFO (First-In, First-Out) assumes the oldest (cheaper) goods are sold first. The ending inventory consists of the most recent (expensive) goods. This maximizes the reported value of Inventory (Current Asset). <br>LIFO (Last-In, First-Out) assumes the newest (expensive) goods are sold first. The ending inventory consists of older (cheaper) layers. This minimizes the reported value of Inventory. <br>Since Company A (FIFO) reports higher Inventory than Company B (LIFO), its Current Assets are higher. Assuming equal liabilities, Company A's Current Ratio will be higher. <br>(Note: While LIFO saves taxes, increasing Cash, the cumulative effect of the inventory valuation difference usually outweighs the tax cash savings in the current ratio calculation).</p><p>A is incorrect: While LIFO does result in lower taxes (and thus higher Cash), the reduction in the Inventory asset value (LIFO Reserve) typically dwarfs the tax savings, resulting in a net lower Current Ratio.</p><p>C is incorrect: LIFO does not affect Sales (Revenue) figures, only COGS and Inventory.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Window Dressing",
+    "stem": "Just prior to the fiscal year-end, a company issues long-term debt and uses the proceeds to pay down its short-term accounts payable. The company has a current ratio of 0.8. The most likely effect on the company's liquidity ratios is:",
+    "options": {
+      "A": "Current Ratio increases; Quick Ratio decreases.",
+      "B": "Current Ratio increases; Quick Ratio increases.",
+      "C": "Current Ratio decreases; Working Capital remains unchanged."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Liquidity Event Analysis</h3><p><strong>B is correct.</strong> Analyze the flow of cash and liabilities. <br>Transaction 1: Issue Long-Term Debt -> Cash increases (Current Asset Up), Long-Term Debt increases (Non-Current Liability Up). <br>Transaction 2: Pay Short-Term Payables -> Cash decreases (Current Asset Down), Accounts Payable decreases (Current Liability Down). <br>Net Effect: Current Assets are unchanged (Cash came in and went out). Current Liabilities decreased (Payables paid off). <br>Current Ratio = CA / CL. If the denominator decreases while the numerator stays constant, the ratio increases. <br>Quick Ratio = Quick Assets / CL. The numerator (Quick Assets) is unchanged, the denominator decreases. The ratio increases.</p><p>A is incorrect: The Quick Ratio increases because the denominator decreases while the numerator remains effectively unchanged (or net unchanged).</p><p>C is incorrect: The Current Ratio increases because the denominator gets smaller.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Gemini",
+    "topic": "Interpreting Solvency vs Liquidity",
+    "stem": "An analyst observes that a company has a Cash Conversion Cycle of -10 days. The company has a high debt-to-equity ratio compared to peers. This combination most likely suggests:",
+    "options": {
+      "A": "The company is facing an imminent liquidity crisis due to high leverage.",
+      "B": "The company is using supplier credit to fund operations, reducing the need for working capital but increasing solvency risk.",
+      "C": "The company has inefficient inventory management, requiring debt to finance the backlog."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Negative Operating Cycle</h3><p><strong>B is correct.</strong> A negative Cash Conversion Cycle (CCC) means the company collects cash from customers <em>before</em> it has to pay its suppliers (DPO > DOH + DSO). This is a source of interest-free funding (like Amazon or Dell). <br>Mechanism: The company receives goods, sells them, and collects the cash in X days. It pays suppliers in X + 10 days. For those 10 days, it holds cash provided by operations. <br>Implication: This efficiency reduces the need for short-term working capital financing. The high debt-to-equity ratio indicates high leverage (Solvency risk), but the negative CCC indicates strong <em>liquidity</em> generation. The company is effectively using suppliers to fund operations, which is a sign of bargaining power, not distress.</p><p>A is incorrect: A negative CCC is a source of liquidity, not a drain. It mitigates liquidity risk, even if solvency risk is high.</p><p>C is incorrect: Inefficient inventory management leads to high DOH and a positive/high CCC, not a negative one.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Gemini",
+    "topic": "Receivables Turnover",
+    "stem": "A company adopts a more aggressive revenue recognition policy, recognizing sales FOB shipping point instead of FOB destination. Assuming sales volume and customer payment behavior remain unchanged, how will this policy change impact the Receivables Turnover ratio in the current period?",
+    "options": {
+      "A": "Receivables Turnover will likely decrease.",
+      "B": "Receivables Turnover will likely increase.",
+      "C": "Receivables Turnover will remain unaffected as both Sales and Receivables change proportionally."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Timing of Recognition</h3><p><strong>A is correct.</strong> Accelerating revenue recognition (booking it at shipping rather than destination) increases reported Sales (Numerator) and Accounts Receivable (Denominator) earlier than before. <br>Mechanism: While both numerator and denominator increase, the ending Accounts Receivable balance is a <em>snapshot</em> at a point in time. By recognizing sales earlier that haven't been collected, the Ending Accounts Receivable balance swells disproportionately relative to the <em>annual</em> sales flow in the short term, especially if the change happens near year-end. More importantly, aggressive recognition often books sales that are essentially 'in transit' or less certain of collection, inflating the AR balance. Mathematically, if you add \\( X \\) to the numerator and \\( X \\) to the denominator of a ratio \\( > 1 \\), the ratio decreases. Since Receivables Turnover (Sales/Avg AR) is typically much greater than 1 (e.g., 6.0 or 8.0), adding the same 'uncollected sale' amount to both decreases the ratio.</p><p>B is incorrect: Adding to the numerator and denominator of a fraction > 1 brings it closer to 1 (decrease).</p><p>C is incorrect: The ratio changes because of the mathematical property of adding constants to a ratio not equal to 1.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Sustainable Growth & Liquidity",
+    "stem": "A rapidly growing startup has a Quick Ratio of 0.5 and a Current Ratio of 2.5. The industry average Current Ratio is 2.0. The divergence between the company's Current and Quick ratios most likely indicates:",
+    "options": {
+      "A": "Excessive cash holdings relative to current liabilities.",
+      "B": "A potential liquidity trap where assets are tied up in slow-moving inventory.",
+      "C": "Strong collection practices leading to low accounts receivable."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Ratio Decomposition</h3><p><strong>B is correct.</strong> Analyze the spread between the ratios. <br>Current Ratio = (Cash + AR + Inventory) / CL = 2.5 <br>Quick Ratio = (Cash + AR) / CL = 0.5 <br>The difference (2.0 units of coverage) is entirely attributable to Inventory (and prepaids). <br>This large gap indicates that the bulk of the company's current assets are illiquid inventory. While the Current Ratio looks 'healthy' (2.5 vs 2.0 industry avg), the Quick Ratio (0.5) is dangerous. This suggests the company is stockpiling inventory that it hasn't sold yet—a 'liquidity trap' where capital is frozen in the warehouse.</p><p>A is incorrect: High cash would boost <em>both</em> the Quick and Current ratios.</p><p>C is incorrect: Low receivables would lower both ratios, not create a gap between them.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Gemini",
+    "topic": "Net Operating Cycle Calculation",
+    "stem": "Company Z has the following annual data: Cost of Goods Sold USD200m; Sales USD300m; Beginning Inventory USD45m; Ending Inventory USD55m; Beginning Payables USD20m; Ending Payables USD30m; Accounts Receivable Turnover 6.0x. Based on a 365-day year, the Net Operating Cycle is closest to:",
+    "options": {
+      "A": "106 days.",
+      "B": "45 days.",
+      "C": "61 days."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Cycle Components</h3><p><strong>A is correct.</strong> <br>1. Calculate Inventory Turnover: COGS / Avg Inventory. <br>Avg Inv = (45+55)/2 = 50. <br>Inv Turnover = 200 / 50 = 4.0. <br>Days Inventory (DOH) = 365 / 4 = 91.25 days. <br>2. Calculate Payables Turnover: Purchases / Avg Payables. <br>Purchases = COGS + Ending Inv - Beg Inv = 200 + 55 - 45 = 210. <br>Avg Payables = (20+30)/2 = 25. <br>Payables Turnover = 210 / 25 = 8.4. <br>Days Payables (DPO) = 365 / 8.4 = 43.45 days. <br>3. Calculate Days Sales Outstanding (DSO). <br>DSO = 365 / Receivables Turnover = 365 / 6.0 = 60.83 days. <br>4. Calculate Net Operating Cycle (Cash Conversion Cycle). <br>NOC = DOH + DSO - DPO. <br>NOC = 91.25 + 60.83 - 43.45 = 108.6 days. <br>Wait, let me check the closest option. 108.6 is closest to 106. Let's re-verify the math. <br>Is Receivables Turnover Sales/Avg AR? Yes. 365/6 = 60.83. <br>Purchases = 210. Pay Turnover = 8.4. DPO = 43.45. <br>Inv Turnover = 4.0. DOH = 91.25. <br>91.25 + 60.83 - 43.45 = 108.63. <br>Let's check if the question implies using Ending balances instead of averages? <br>Inv Turn (end) = 200/55 = 3.63 -> DOH = 100. <br>Pay Turn (end) = 210/30 = 7.0 -> DPO = 52. <br>DSO = 60.8. <br>100 + 60.8 - 52 = 108.8. Still close to 108. <br>Let me re-check option B calculation: 91 + 60 - 43 = 108. <br>Let me check if Purchases were calculated wrong. Purchases = COGS + Change in Inv = 200 + 10 = 210. Correct. <br>Let's check if Payables Turnover uses COGS (a common simplification in some texts, though less accurate). <br>If Pay Turnover = COGS / Avg Payables = 200 / 25 = 8.0. DPO = 45.6. <br>NOC = 91.25 + 60.83 - 45.6 = 106.48. <br><strong>This matches Option A (106 days)</strong>. This confirms the question assumes the simplification of using COGS for Payables turnover.</p><p>B is incorrect: Likely ignores DOH or DSO.</p><p>C is incorrect: Likely subtracts DSO instead of adding it.</p>"
+  },
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Inventory Turnover and DOH Interpretation",
+    "stem": "A company’s inventory turnover rises from 3.2× to 4.0×, but its sales have grown only modestly. Based strictly on the PDF’s interpretation of activity ratios, what is the most likely explanation?",
+    "options": {
+      "A": "Inventory management has improved, or inventory levels have fallen relative to sales.",
+      "B": "Sales must have grown at least proportionally more than inventory, making the turnover rise unavoidable.",
+      "C": "The higher turnover necessarily means the company is overproducing relative to demand."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover = Cost Flow Efficiency</h3><p><strong>A is correct.</strong> Page 4–5 of the PDF explains that higher inventory turnover (and lower DOH) generally signals improved inventory management or lower inventory relative to sales. It does not require high sales growth. A firm may simply be holding less stock for the same sales level, improving efficiency. :contentReference[oaicite:0]{index=0}</p><p>B is wrong because turnover can rise even when sales growth is modest if inventory decreases.</p><p>C is wrong because overproduction typically increases inventory and reduces turnover, the opposite of the pattern observed.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Numerical Inventory Turnover (Quarterly vs Annual)",
+    "stem": "A company reports quarterly cost of goods sold of EUR 35,699 and ending inventory of EUR 11,869 (page 2 example). Using the PDF’s method for annualizing quarterly COGS (multiply by 4), what is the annualized inventory turnover?",
+    "options": {
+      "A": "12.0×",
+      "B": "4.0×",
+      "C": "3.0×"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover Requires Annual Cost Flow</h3><p><strong>A is correct.</strong> Page 2 shows that quarterly COGS should be annualized by ×4 before computing turnover. Annualized COGS = 35,699 × 4 = 142,796. Inventory = 11,869. Turnover = 142,796 ÷ 11,869 ≈ 12.0×. :contentReference[oaicite:1]{index=1}</p><p>B (4×) incorrectly uses quarterly COGS directly.</p><p>C (3×) roughly matches the quarterly turnover, not the required annualized turnover.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Receivables Turnover and DSO — Conceptual",
+    "stem": "The PDF emphasizes that DSO should be interpreted alongside revenue trends. If a firm’s DSO increases while revenue grows only slightly, what is the most defensible explanation?",
+    "options": {
+      "A": "Customers are taking longer to pay, potentially weakening credit quality.",
+      "B": "Receivables turnover has improved because sales increased.",
+      "C": "The firm has shortened credit terms, causing higher DSO temporarily."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: DSO Measures Cash Collection Speed</h3><p><strong>A is correct.</strong> Pages 5–7 state that rising DSO generally signals slower collections or deteriorating customer payment behavior unless explained by strong revenue growth. If revenue growth is modest, delayed payments are the primary cause. :contentReference[oaicite:2]{index=2}</p><p>B is wrong because higher DSO implies worse turnover, not improvement.</p><p>C reverses the relationship: shorter credit terms would normally reduce DSO.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Numerical DSO (Lenovo Example)",
+    "stem": "Using the Lenovo example on page 4, receivables turnover for FY2018 is approximately 9.66× and the year has 365 days. What is the DSO?",
+    "options": {
+      "A": "38 days",
+      "B": "28 days",
+      "C": "45 days"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: DSO = Days per Period ÷ Turnover</h3><p><strong>A is correct.</strong> Page 4 shows the computation: DSO = 365 ÷ 9.66 ≈ 37.8 → 38 days. :contentReference[oaicite:3]{index=3}</p><p>B (28 days) corresponds to a turnover of ~13×, which is inconsistent with the example.</p><p>C (45 days) implies significantly slower collections, not supported by the PDF calculation.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Working Capital Turnover Interpretation",
+    "stem": "The PDF states that a working capital turnover of 4.0 means the company generates EUR 4 of revenue per EUR 1 of working capital. If this ratio increases to 6.0, what is the cleanest interpretation consistent with the PDF?",
+    "options": {
+      "A": "The company is using working capital more efficiently to generate revenue.",
+      "B": "The firm must have increased its inventory and receivables significantly.",
+      "C": "This always implies a deterioration in liquidity despite higher turnover."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Turnover = Output per Unit of Capital</h3><p><strong>A is correct.</strong> Page 8 explains that a higher working capital turnover indicates greater efficiency—more revenue generated per unit of working capital. It does not mechanically imply liquidity stress. :contentReference[oaicite:4]{index=4}</p><p>B is wrong because higher inventory/receivables would generally reduce the ratio.</p><p>C has no basis in the PDF; liquidity must be assessed using multiple ratios, not turnover alone.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Fixed Asset Turnover and Asset Age",
+    "stem": "The PDF states that fixed asset turnover may be lower for companies with newly acquired assets. Why?",
+    "options": {
+      "A": "Newer assets are carried at a higher book value, causing turnover to be mechanically lower until revenue grows.",
+      "B": "Newer assets reduce depreciation, which directly raises the denominator of the turnover ratio.",
+      "C": "Fixed asset turnover excludes depreciation entirely, making newer assets appear less productive."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Book Value Effects on Ratios</h3><p><strong>A is correct.</strong> Page 8–9 explains that new fixed assets appear at higher carrying value, meaning revenue must grow before turnover rises. High asset base → lower turnover, even if efficiency hasn't changed. :contentReference[oaicite:5]{index=5}</p><p>B is wrong because depreciation affects net book value but does not ‘raise’ the denominator; older assets typically have lower book value.</p><p>C is incorrect: depreciation indirectly affects carrying value, not the inclusion/exclusion of depreciation in the ratio.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Total Asset Turnover Interpretation",
+    "stem": "A company has a total asset turnover of 1.20×. Based strictly on the PDF, what does this indicate?",
+    "options": {
+      "A": "The company generates EUR 1.20 in revenue for every EUR 1 of assets, suggesting relatively efficient use of assets.",
+      "B": "The company’s asset base is too small and must be expanded to sustain operations.",
+      "C": "The company’s revenue must grow more slowly than assets for this ratio to occur."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Asset Productivity</h3><p><strong>A is correct.</strong> Page 9 explains that a total asset turnover of 1.20 means EUR 1.20 of revenue per EUR 1 of assets. Higher values indicate stronger operational efficiency. :contentReference[oaicite:6]{index=6}</p><p>B is unsupported; turnover does not prescribe optimal asset size.</p><p>C reverses causality: turnover is revenue ÷ assets; multiple revenue-to-asset paths can produce 1.20×.</p>"
+  },
+  {
+    "id": 1,
+    "model": "Claude Sonnet",
+    "topic": "Activity Ratios Definition",
+    "stem": "Activity ratios are also known by which alternative names and measure which aspect of company performance?",
+    "options": {
+      "A": "Asset utilization ratios; they measure how effectively a company uses its working capital and long-term assets.",
+      "B": "Leverage ratios; they measure how effectively a company uses debt to finance operations.",
+      "C": "Coverage ratios; they measure how effectively a company covers its fixed obligations."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Defining Activity Ratios</h3><p><strong>A is correct.</strong> Activity ratios, also known as asset utilization ratios or operating efficiency ratios, measure operational performance—specifically how effectively the company is using working capital and longer-term assets. The text explicitly states this definition. These ratios combine income statement data (flows) with balance sheet items (stocks) to assess efficiency of asset deployment. Examples include inventory turnover, receivables turnover, and asset turnover ratios.</p><p>B is incorrect because leverage ratios (such as debt-to-equity) are part of solvency analysis, not activity analysis. They measure the degree of financial leverage rather than operational efficiency in using assets.</p><p>C is incorrect because coverage ratios (such as interest coverage) measure a company's ability to meet fixed charges like interest payments, not the efficiency of asset utilization that activity ratios capture.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Claude Sonnet",
+    "topic": "Inventory Turnover Formula",
+    "stem": "Which formula correctly calculates inventory turnover?",
+    "options": {
+      "A": "Revenue ÷ Average Inventory",
+      "B": "Cost of Goods Sold ÷ Average Inventory",
+      "C": "Average Inventory ÷ Cost of Goods Sold"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Matching Numerator and Denominator</h3><p><strong>B is correct.</strong> Inventory turnover equals Cost of Goods Sold (or Cost of Sales) divided by Average Inventory. The principle is to match the numerator and denominator: inventory is valued at cost, not at selling price, so the numerator must also be at cost. COGS represents the cost of inventory sold during the period, while average inventory represents the typical investment in inventory. The ratio measures how many times inventory is sold and replaced during the period.</p><p>A is incorrect because using Revenue in the numerator would create a mismatch—revenue includes markup/profit margin, while inventory is carried at cost. This would overstate the turnover ratio.</p><p>C is incorrect because it inverts the formula. This would give the inverse of turnover (essentially days of inventory as a fraction of a year) rather than the number of times inventory turns over.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Claude Sonnet",
+    "topic": "Days of Inventory on Hand (DOH)",
+    "stem": "An analyst calculates that a company has inventory turnover of 12 times per year. How should the analyst interpret the Days of Inventory on Hand (DOH)?",
+    "options": {
+      "A": "The company holds approximately 12 days of inventory.",
+      "B": "The company holds approximately 30 days of inventory.",
+      "C": "The company holds approximately 365 days of inventory."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Converting Turnover to Days</h3><p><strong>B is correct.</strong> DOH equals Number of Days in Period divided by Inventory Turnover. With 12 times turnover: DOH = 365 ÷ 12 ≈ 30.4 days. This means the company holds approximately 30 days' worth of inventory on hand. Mechanically, if inventory turns over 12 times per year, each cycle lasts one-twelfth of a year, or about 30 days. DOH indicates the average number of days inventory sits before being sold.</p><p>A is incorrect because 12 days would result from dividing the turnover ratio by approximately 30, not dividing 365 by the turnover. This confuses the relationship between turnover and days.</p><p>C is incorrect because 365 days would imply inventory turnover of only 1.0 time per year (365 ÷ 365 = 1), not the stated 12 times. This reverses the calculation completely.</p>"
+  },
+  {
+    "id": 4,
+    "model": "Claude Sonnet",
+    "topic": "Receivables Turnover Formula",
+    "stem": "According to the text, what numerator is generally used in calculating receivables turnover, and why?",
+    "options": {
+      "A": "Credit sales only, because this represents sales for which receivables were created.",
+      "B": "Total revenue, because credit sales information is usually not available to external analysts.",
+      "C": "Cash collections, because this represents the actual cash received from customers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Practical Constraints in Ratio Calculation</h3><p><strong>B is correct.</strong> The text explicitly states: 'Although limiting the numerator to sales made on credit in the receivables turnover would be more appropriate, credit sales information is usually not available to analysts; therefore, revenue as reported in the income statement is generally used.' This represents a practical compromise—theoretically credit sales would be ideal, but data availability constrains analysts to use total revenue as reported.</p><p>A is incorrect because, while conceptually superior (receivables arise only from credit sales), this information is typically not disclosed in published financial statements, making it unavailable to external analysts.</p><p>C is incorrect because cash collections are not the numerator for receivables turnover. The ratio measures how many times receivables are generated and collected, using revenue (or ideally credit sales) in the numerator, not cash collections which would double-count the timing issue.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Claude Sonnet",
+    "topic": "Interpreting High Inventory Turnover",
+    "stem": "A company has a high inventory turnover ratio relative to industry norms. Which interpretation requires additional investigation?",
+    "options": {
+      "A": "The company has highly effective inventory management resulting in minimal carrying costs.",
+      "B": "The company does not carry adequate inventory, potentially leading to stockouts and lost sales.",
+      "C": "The company has significant obsolete inventory that should be written down."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Dual Interpretations of High Turnover</h3><p><strong>B is correct.</strong> The text states that high inventory turnover 'might indicate highly effective inventory management. Alternatively, a high inventory turnover ratio and commensurately low DOH could possibly indicate the company does not carry adequate inventory, so shortages could potentially hurt revenue.' To assess which is correct, the analyst should compare revenue growth with industry growth—slower growth combined with higher turnover could indicate inadequate inventory levels.</p><p>A is incorrect—while this is a possible positive interpretation of high turnover, it does not require additional investigation in the same way that option B does. High turnover generally suggests efficient management, but the analyst must rule out the negative scenario in B.</p><p>C is incorrect because obsolete inventory would typically result in LOW turnover (high DOH), not high turnover. Slow-moving obsolete items sit in inventory longer, reducing the turnover ratio.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Claude Sonnet",
+    "topic": "Days Sales Outstanding (DSO) Interpretation",
+    "stem": "A company's Days Sales Outstanding (DSO) has increased from 30 days to 45 days while industry DSO remained at 30 days. Which conclusion is most appropriate?",
+    "options": {
+      "A": "The company is collecting cash from customers more quickly than before.",
+      "B": "The company may have loosened credit standards or is experiencing collection difficulties.",
+      "C": "The company's liquidity has improved due to better working capital management."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: DSO as a Collection Efficiency Metric</h3><p><strong>B is correct.</strong> DSO reflects how fast the company collects cash from credit customers. An increase in DSO means it takes longer to collect receivables. The text indicates that comparing with industry helps assess 'whether low turnover reflects credit management issues.' An increase from 30 to 45 days (versus stable industry levels) suggests the company may have relaxed credit policies, extended payment terms, or is experiencing collection problems. This deterioration warrants investigation of credit quality and receivables aging.</p><p>A is incorrect because higher DSO means slower collection (more days to collect), not faster. This choice reverses the interpretation.</p><p>C is incorrect because longer collection periods tie up more cash in receivables, which worsens liquidity rather than improving it. Working capital management has deteriorated, not improved.</p>"
+  },
+  {
+    "id": 7,
+    "model": "Claude Sonnet",
+    "topic": "Payables Turnover Interpretation",
+    "stem": "A company has a high payables turnover ratio (low days payable) relative to its industry. Which is the most likely explanation?",
+    "options": {
+      "A": "The company is experiencing difficulty paying suppliers on time.",
+      "B": "The company is taking advantage of early payment discounts or not fully utilizing available credit.",
+      "C": "The company has negotiated extended payment terms with suppliers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: High Turnover Means Quick Payment</h3><p><strong>B is correct.</strong> The text states: 'A payables turnover ratio that is high (low days payable) relative to the industry could indicate that the company is not making full use of available credit facilities; alternatively, it could result from a company taking advantage of early payment discounts.' High turnover means the company pays suppliers quickly (few days payable), suggesting either foregone credit terms or strategic use of discounts for early payment.</p><p>A is incorrect because payment difficulties would result in LOW payables turnover (HIGH days payable)—the company would stretch payments out over more days, not pay faster.</p><p>C is incorrect because extended payment terms would lead to LOW payables turnover (more days to pay), not high turnover. Longer terms mean slower payment, which is the opposite of what high turnover indicates.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Claude Sonnet",
+    "topic": "Cash Conversion Cycle Formula",
+    "stem": "The cash conversion cycle (net operating cycle) is calculated as:",
+    "options": {
+      "A": "DOH + DSO + Number of Days of Payables",
+      "B": "DOH + DSO − Number of Days of Payables",
+      "C": "DSO − DOH − Number of Days of Payables"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: The Timeline of Cash Flows</h3><p><strong>B is correct.</strong> The cash conversion cycle equals DOH + DSO − Number of Days of Payables. This measures the time from when cash is invested in inventory until cash is collected from customers. DOH represents days inventory sits, DSO represents days to collect receivables—these are cash outflow/waiting periods that add together. Days payable is subtracted because it represents free financing from suppliers (cash the company hasn't yet paid out), which reduces the net time cash is tied up in operations.</p><p>A is incorrect because it adds payables instead of subtracting them. Payables represent a source of cash (delayed payment), not a use of cash, so they must be subtracted to find the net operating cycle.</p><p>C is incorrect because it subtracts DOH rather than adding it. Inventory holding time (DOH) ties up cash and should be added to the collection period (DSO) to find total cash tied up before subtracting the payables deferral.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Claude Sonnet",
+    "topic": "Working Capital Turnover",
+    "stem": "A company has working capital turnover of 4.0. What does this indicate?",
+    "options": {
+      "A": "The company generates €4 of revenue for every €1 of working capital.",
+      "B": "The company generates €1 of revenue for every €4 of working capital.",
+      "C": "The company takes 4 days to convert working capital into revenue."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Interpreting the Turnover Ratio</h3><p><strong>A is correct.</strong> Working capital turnover equals Revenue ÷ Average Working Capital. A ratio of 4.0 means the company generates 4 monetary units of revenue for each 1 unit of working capital invested. The text explicitly provides this example: 'a working capital turnover ratio of 4.0 indicates that the company generates EUR4 of revenue for every EUR1 of working capital.' Higher turnover indicates greater efficiency in using working capital to generate sales.</p><p>B is incorrect because it inverts the interpretation. A ratio of 4.0 means revenue is 4 times working capital, not one-quarter of working capital.</p><p>C is incorrect because working capital turnover is not expressed in days—it's expressed as times per period. To convert to days would require dividing 365 by the turnover ratio (365 ÷ 4 ≈ 91 days), which would be a different metric altogether.</p>"
+  },
+  {
+    "id": 10,
+    "model": "Claude Sonnet",
+    "topic": "Fixed Asset Turnover Interpretation",
+    "stem": "A company with newer, less-depreciated assets would most likely have a fixed asset turnover ratio that is:",
+    "options": {
+      "A": "Higher than a company with older, more-depreciated assets, assuming similar revenue levels.",
+      "B": "Lower than a company with older, more-depreciated assets, assuming similar revenue levels.",
+      "C": "Unaffected by the age and depreciation status of assets."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Impact of Asset Age on Book Value</h3><p><strong>B is correct.</strong> The text states: 'The fixed asset turnover ratio would be lower for a company whose assets are newer and, therefore, less depreciated and so reflected in the financial statements at a higher carrying value than the ratio for a company with older assets that are thus more depreciated and so reflected at a lower carrying value.' Fixed asset turnover = Revenue ÷ Average Net Fixed Assets. Newer assets have higher book values (denominator), producing a lower ratio, even with identical revenue and operational efficiency.</p><p>A is incorrect because it reverses the relationship. Newer assets have higher book values, which increases the denominator and lowers the turnover ratio, not raises it.</p><p>C is incorrect because asset age and accumulated depreciation directly affect net fixed assets (the denominator), thereby affecting the ratio. This accounting effect can obscure true operational efficiency differences between companies.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Claude Sonnet",
+    "topic": "Total Asset Turnover",
+    "stem": "Total asset turnover measures a company's overall ability to generate revenues with a given level of assets. What does a ratio of 1.20 indicate?",
+    "options": {
+      "A": "The company generates €1.20 of assets for every €1 of revenue.",
+      "B": "The company generates €1.20 of revenue for every €1 of average assets.",
+      "C": "The company's assets turn over every 1.20 years."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Revenue Generation per Asset Unit</h3><p><strong>B is correct.</strong> The text explicitly states: 'A ratio of 1.20 would indicate that the company is generating EUR1.20 of revenues for every EUR1 of average assets.' Total asset turnover = Revenue ÷ Average Total Assets. A higher ratio indicates greater efficiency in using assets to generate revenue. This measure combines both working capital efficiency and fixed asset efficiency into one overall metric.</p><p>A is incorrect because it reverses the relationship. Assets are in the denominator, not the numerator, so the ratio measures revenue per unit of assets, not assets per unit of revenue.</p><p>C is incorrect because total asset turnover is not a time-based measure expressed in years. It's expressed as times per period (e.g., per year). To convert to a time cycle would require taking the reciprocal and multiplying by the period length.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Inventory Turnover",
+    "stem": "A company has Cost of Goods Sold of €600,000 for the year. Beginning inventory was €80,000 and ending inventory was €120,000. What is the inventory turnover ratio?",
+    "options": {
+      "A": "5.0 times",
+      "B": "6.0 times",
+      "C": "7.5 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Calculating Average Inventory</h3><p><strong>B is correct.</strong> Inventory turnover = COGS ÷ Average Inventory. Average inventory = (Beginning + Ending) ÷ 2 = (€80,000 + €120,000) ÷ 2 = €100,000. Turnover = €600,000 ÷ €100,000 = 6.0 times. The company sold and replaced its inventory 6 times during the year. Using average inventory (rather than beginning or ending) aligns the period-based flow (COGS) with the average stock level during that period.</p><p>A is incorrect. This would result from using ending inventory only (€600,000 ÷ €120,000 = 5.0), which doesn't represent the average inventory level throughout the year and violates the principle of matching flows to average stocks.</p><p>C is incorrect. This would result from using beginning inventory only (€600,000 ÷ €80,000 = 7.5), which also fails to represent the typical inventory level during the period when COGS was incurred.</p>"
+  },
+  {
+    "id": 13,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - DSO Calculation",
+    "stem": "A company has annual revenue of €730 million and average receivables of €100 million. What is the Days Sales Outstanding (DSO)?",
+    "options": {
+      "A": "7.3 days",
+      "B": "50 days",
+      "C": "73 days"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Two-Step Calculation</h3><p><strong>B is correct.</strong> First calculate receivables turnover: Revenue ÷ Average Receivables = €730 million ÷ €100 million = 7.3 times. Then calculate DSO: 365 days ÷ 7.3 times = 50 days. This means the company takes an average of 50 days to collect its receivables. The turnover of 7.3 means receivables cycle through 7.3 times per year, so each cycle lasts 365 ÷ 7.3 = 50 days.</p><p>A is incorrect. This represents the receivables turnover (7.3 times) but not DSO in days. It confuses the turnover ratio with the days measure.</p><p>C is incorrect. This appears to multiply revenue percentage by days (10% × 730 = 73), which has no basis in the DSO formula. DSO requires first calculating turnover, then dividing days by turnover.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Cash Conversion Cycle",
+    "stem": "A company has DOH of 45 days, DSO of 35 days, and Days Payable of 50 days. What is the cash conversion cycle?",
+    "options": {
+      "A": "30 days",
+      "B": "80 days",
+      "C": "130 days"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: Net Operating Cycle</h3><p><strong>A is correct.</strong> Cash conversion cycle = DOH + DSO − Days Payable = 45 + 35 − 50 = 30 days. The company's cash is tied up for a net 30 days. It takes 45 days to sell inventory and 35 more days to collect cash from customers (total 80 days), but it delays paying suppliers for 50 days, reducing the net cash cycle to 30 days. A shorter cash conversion cycle indicates the company needs less working capital financing.</p><p>B is incorrect. This adds DOH and DSO (45 + 35 = 80) but fails to subtract Days Payable. This would represent the gross time from inventory purchase to cash collection, ignoring the benefit of deferred payment to suppliers.</p><p>C is incorrect. This adds all three components (45 + 35 + 50 = 130), treating payables as an additional use of time rather than as a source of financing that reduces the net cycle. Days payable must be subtracted, not added.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Claude Sonnet",
+    "topic": "Annualizing Quarterly Ratios",
+    "stem": "A company has quarterly (90-day) Cost of Goods Sold of €35,000 and average inventory of €11,000. What is the annualized inventory turnover?",
+    "options": {
+      "A": "3.18 times",
+      "B": "12.72 times",
+      "C": "28.30 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Converting Quarterly to Annual</h3><p><strong>B is correct.</strong> The text provides this exact example: Quarterly turnover = €35,000 ÷ €11,000 = 3.18 times per quarter. To annualize, multiply by 4 (quarters per year): 3.18 × 4 = 12.72 times per year. Alternatively, multiply by (365 ÷ 90) = 4.06 for 12.90 times. The principle is that a quarterly rate must be scaled to an annual rate for comparison with annual figures, using the number of quarters (or days) in a year.</p><p>A is incorrect. This is the quarterly turnover (3.18 times per 90 days), not the annualized rate. Comparing this directly to an annual turnover would be misleading because it's measured over different time periods.</p><p>C is incorrect. This represents days (90 ÷ 3.18 ≈ 28.3 days), not annualized turnover. While DOH of 28.3 days is a valid metric, the question asks for annualized turnover in times per year.</p>"
+  },
+  {
+    "id": 16,
+    "model": "Claude Sonnet",
+    "topic": "Activity Ratios and Balance Sheet Data",
+    "stem": "Why do activity ratios typically use average balance sheet figures rather than ending balances?",
+    "options": {
+      "A": "Average figures are easier to calculate than ending balances.",
+      "B": "Income statement data represents flows over a period, so they should be matched with average stocks during that period.",
+      "C": "Ending balances are often distorted by seasonal effects."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Matching Flows to Stocks</h3><p><strong>B is correct.</strong> The text states: 'Activity ratios generally combine information from the income statement in the numerator with balance sheet items in the denominator. Because the income statement measures what happened during a period, whereas the balance sheet shows the condition only at the end of the period, average balance sheet figures are normally used for consistency.' This fundamental principle ensures the denominator represents the average resources available during the period when the numerator (revenue or COGS) was generated.</p><p>A is incorrect. Averages actually require more calculation (beginning + ending ÷ 2) than simply using ending balance. Computational ease is not the conceptual reason for using averages.</p><p>C is incorrect. While seasonality can affect ratios, this is a secondary consideration. The primary reason is the flow-versus-stock matching principle. The text mentions seasonality as a refinement (using quarterly or monthly averages when appropriate), not as the main rationale.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Claude Sonnet",
+    "topic": "Numerical - Receivables Turnover",
+    "stem": "Trade receivables at the beginning of the year: USD4,468,392; Trade receivables at year-end: USD4,972,722; Revenue for the year: USD45,349,943. Calculate receivables turnover.",
+    "options": {
+      "A": "9.11 times",
+      "B": "9.61 times",
+      "C": "10.14 times"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Lenovo Example from Text</h3><p><strong>B is correct.</strong> This is the exact example from the text (Lenovo Group, Example 6). Average receivables = (USD4,468,392 + USD4,972,722) ÷ 2 = USD4,720,557. Receivables turnover = Revenue ÷ Average Receivables = USD45,349,943 ÷ USD4,720,557 = 9.6069, rounded to 9.6 times. The text shows this calculation demonstrates that on average, Lenovo's receivables turned over about 9.6 times during the fiscal year.</p><p>A is incorrect. This might result from calculation errors in averaging (e.g., using only ending receivables adjusted incorrectly), but does not match the proper average receivables calculation.</p><p>C is incorrect. This would result from using beginning receivables only (USD45,349,943 ÷ USD4,468,392 ≈ 10.15), which doesn't represent the average receivables level during the period and violates the flow-to-stock matching principle.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Claude Sonnet",
+    "topic": "Receivables Aging Analysis",
+    "stem": "According to the text's Lenovo example, if accounts receivable are increasing faster than sales growth while the percentage of receivables over 30 days old is also increasing, what is the most likely interpretation?",
+    "options": {
+      "A": "The company has improved its collection efficiency.",
+      "B": "The company may be extending customer financing to drive sales growth or underestimating impairment.",
+      "C": "The company has tightened its credit standards to reduce credit risk."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Linking Multiple Signals</h3><p><strong>B is correct.</strong> The text's Example 7 states: 'total accounts receivable increased by 11 percent in FY2017 versus FY2016, while total sales increased by only 5.4 percent. Further, the percentage of receivables in all categories older than 30 days has increased over the three-year period, indicating that customers are indeed taking longer to pay... Considering all this information, the company may be increasing customer financing purposely to drive its sales growth. They also may be underestimating the impairment.' This pattern suggests looser credit to boost sales.</p><p>A is incorrect because improved collection efficiency would show faster growth in cash collections than receivables, and aging would shift toward newer receivables (0-30 days), not older categories—the opposite of what's described.</p><p>C is incorrect because tightening credit standards would reduce receivables growth and aging issues, not increase them. The pattern described indicates loosening, not tightening, of credit terms.</p>"
+  },
+  {
+    "id": 19,
+    "model": "Claude Sonnet",
+    "topic": "Payables and Liquidity Assessment",
+    "stem": "A company has high days payable relative to the industry. To determine if this indicates payment difficulties or lenient supplier terms, an analyst should examine:",
+    "options": {
+      "A": "The company's revenue growth rate compared to industry.",
+      "B": "The company's liquidity ratios to assess availability of cash and short-term assets.",
+      "C": "The company's fixed asset turnover to determine capital intensity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Distinguishing Between Interpretations</h3><p><strong>B is correct.</strong> The text states: 'An excessively low turnover ratio (high days payable) could indicate trouble making payments on time, or alternatively, exploitation of lenient supplier terms. This is another example in which it is useful to look simultaneously at other ratios. If liquidity ratios indicate that the company has sufficient cash and other short-term assets to pay obligations and yet the days payable ratio is relatively high, the analyst would favor the lenient supplier credit and collection policies as an explanation.' Liquidity ratios distinguish between inability to pay versus strategic choice.</p><p>A is incorrect because revenue growth helps interpret inventory and receivables ratios (e.g., whether high inventory turnover indicates efficiency or stockouts), but it doesn't directly distinguish between payment difficulties and favorable supplier terms.</p><p>C is incorrect because fixed asset turnover measures efficiency of long-term asset utilization, which is unrelated to whether high payables stem from cash constraints or favorable credit terms from suppliers.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Claude Sonnet",
+    "topic": "Working Capital Turnover Limitation",
+    "stem": "According to the text, when is working capital turnover incapable of being meaningfully interpreted?",
+    "options": {
+      "A": "When the company has negative net income.",
+      "B": "When working capital is near zero or negative.",
+      "C": "When the company operates in a capital-intensive industry."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Denominator Constraints</h3><p><strong>B is correct.</strong> The text explicitly states: 'For some companies, working capital can be near zero or negative, rendering this ratio incapable of being interpreted.' If working capital (current assets minus current liabilities) is zero, the ratio involves division by zero (undefined). If working capital is negative, the ratio becomes negative, which has no meaningful interpretation for a turnover metric. The text notes that fixed asset and total asset turnover are more useful in these circumstances.</p><p>A is incorrect because negative net income affects profitability ratios, not activity ratios like working capital turnover, which uses revenue in the numerator, not net income.</p><p>C is incorrect. Capital intensity affects the level and interpretation of fixed asset turnover and total asset turnover, but the text does not indicate it makes working capital turnover uninterpretable. The issue is the magnitude of working capital itself, not industry characteristics.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Claude Sonnet",
+    "topic": "Negative Cash Conversion Cycle",
+    "stem": "In the Apple example from the text, what explains the negative cash conversion cycle?",
+    "options": {
+      "A": "Apple's DOH is negative because it sells products before purchasing inventory.",
+      "B": "Apple's days payable (112 days) exceeds the sum of DOH (9 days) and DSO (27 days).",
+      "C": "Apple has a negative DSO because customers pay in advance."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: Exceptional Working Capital Management</h3><p><strong>B is correct.</strong> The text's Example 9 shows Apple FY2017: DSO = 27, DOH = 9, Days Payable = 112. Cash conversion cycle = 27 + 9 − 112 = −76 days. The text explains: 'Apple takes advantage of the favorable credit terms granted by its suppliers. The overall effect is a negative cash cycle... Instead of requiring additional capital to fund working capital as is the case for most companies, Apple has excess cash to invest for over 50 days.' Days payable exceeding the sum of DOH and DSO creates the negative cycle.</p><p>A is incorrect because DOH cannot be negative—it measures how long inventory sits, which is always a positive number of days. Apple's DOH is positive (9 days), just very low due to outsourced manufacturing and lean inventory.</p><p>C is incorrect because DSO also cannot be negative in standard interpretation. It measures collection time, which is positive. Apple's DSO of 27 days is positive and normal; the negative cash cycle comes from extraordinarily long payment terms with suppliers (112 days).</p>"
+  },
+    {
+      "id": 1,
+      "model": "Gemini 3",
+      "topic": "Gross Profit Margin Drivers",
+      "stem": "A company's gross profit margin increased from 35% to 40% while its sales volume remained constant. Which scenario is the most likely driver?",
+      "options": {
+        "A": "The company successfully passed on higher input costs to customers through price increases greater than the cost rise.",
+        "B": "The company experienced an increase in administrative efficiency, reducing overhead costs.",
+        "C": "The company increased its investment in marketing, leading to higher brand awareness."
+      },
+      "correct_answer": "A",
+      "explanation": "<h3>First Principles Thinking: Components of Gross Profit</h3><p><strong>A is correct.</strong> Gross profit margin is calculated as (Revenue - Cost of Goods Sold) / Revenue. An increase in this margin implies either Revenue increased relative to COGS, or COGS decreased relative to Revenue. If sales volume is constant, revenue growth comes from price. If prices rose more than unit costs (or unit costs fell), the margin expands. Scenario A describes a price increase outpacing cost inflation, directly widening the spread between price and direct cost.</p><p>B is incorrect: Administrative expenses are operating expenses, deducted <em>after</em> gross profit to reach operating profit. They do not affect gross profit margin.</p><p>C is incorrect: Marketing expenses are selling expenses (part of SG&A), which are also deducted below the gross profit line. While successful marketing might support higher prices, the expense itself does not impact the calculation of gross profit.</p>"
+    },
+    {
+      "id": 2,
+      "model": "Gemini 3",
+      "topic": "Operating Profit Margin vs. Gross Margin",
+      "stem": "A firm reports a stable gross profit margin of 50% but a declining operating profit margin from 20% to 15%. What is the most plausible underlying cause?",
+      "options": {
+        "A": "The cost of raw materials has increased significantly.",
+        "B": "Selling, general, and administrative (SG&A) expenses have grown faster than revenue.",
+        "C": "Interest expenses have risen due to higher debt levels."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: The Income Statement Cascade</h3><p><strong>B is correct.</strong> Operating profit equals Gross Profit minus Operating Expenses (SG&A, R&D, etc.). If Gross Margin is stable, the ratio of Cost of Goods Sold to Sales is unchanged. A decline in Operating Margin therefore must stem from the \"wedge\" between Gross Profit and Operating Profit. This wedge is Operating Expenses. If these expenses rise as a percentage of sales (faster growth than revenue), the operating margin shrinks.</p><p>A is incorrect: Rising raw material costs would increase Cost of Goods Sold, thereby reducing the Gross Profit Margin, which is stated to be stable.</p><p>C is incorrect: Interest expense is a non-operating item deducted <em>after</em> operating income to reach Pretax Income. It affects Net Profit Margin but has no impact on Operating Profit Margin.</p>"
+    },
+    {
+      "id": 3,
+      "model": "Gemini 3",
+      "topic": "Pretax Margin vs. Net Profit Margin",
+      "stem": "Company X has a Pretax Margin of 15% and a Net Profit Margin of 12%. Company Y has a Pretax Margin of 15% and a Net Profit Margin of 10%. Which conclusion is strictly valid?",
+      "options": {
+        "A": "Company Y has less efficient operations than Company X.",
+        "B": "Company Y faces a higher effective tax rate than Company X.",
+        "C": "Company Y has a higher interest burden than Company X."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: The Tax Wedge</h3><p><strong>B is correct.</strong> Pretax Margin is EBT / Revenue. Net Profit Margin is Net Income / Revenue. The link between EBT and Net Income is taxes: Net Income = EBT * (1 - Tax Rate). Since both companies have the same Pretax Margin (15%) but Company Y retains less as Net Income (10% vs 12%), the only variable between these two lines is the tax expense. Company Y must be paying a higher percentage of its EBT in taxes.</p><p>A is incorrect: Operational efficiency is captured at the Operating Margin level (or Pretax Margin to some extent regarding interest). Since Pretax Margins are identical, there is no evidence of operational superiority.</p><p>C is incorrect: Interest burden is deducted <em>before</em> arriving at Pretax Margin. Since Pretax Margins are equal, the interest impact is already factored in and cannot explain the difference occurring <em>below</em> that line.</p>"
+    },
+    {
+      "id": 4,
+      "model": "Gemini 3",
+      "topic": "ROA Denominator Calculation",
+      "stem": "When calculating Return on Assets (ROA), why is it conceptually superior to use average total assets rather than ending total assets, especially for a growing firm?",
+      "options": {
+        "A": "Average assets smooth out the effects of seasonal fluctuations in cash balances.",
+        "B": "Net income is a flow measure generated over a period, so it should be matched with the asset base available throughout that period.",
+        "C": "Using ending assets inflates the ratio because ending assets are typically higher than beginning assets in a growing firm."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Matching Flows to Stocks</h3><p><strong>B is correct.</strong> Net income is a flow variable (measured over a time duration, e.g., one year). Assets are a stock variable (measured at a specific point in time). To measure the efficiency of generating the flow, we must compare it to the resources available to generate it <em>during</em> that time. Using ending assets for a growing firm assumes the new assets added late in the year contributed to profit for the full year, which is false. The average approximates the resources actually deployed over the period.</p><p>A is incorrect: While averages do smooth seasonality, the primary conceptual reason is the flow-stock mismatch, not just seasonality smoothing.</p><p>C is incorrect: Using ending assets (which are higher for a growing firm) would actually <em>deflate</em> (lower) the ratio because the denominator would be larger. The logic in option C is mathematically backward.</p>"
+    },
+    {
+      "id": 5,
+      "model": "Gemini 3",
+      "topic": "Operating ROA Definition",
+      "stem": "An analyst calculates \"Operating ROA\" to assess business performance independent of financing decisions. The most appropriate formula is:",
+      "options": {
+        "A": "Net Income / Average Total Assets",
+        "B": "Operating Income / Average Total Assets",
+        "C": "Operating Income / Average Total Equity"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Isolating Operating Performance</h3><p><strong>B is correct.</strong> Return on Assets aims to measure the productivity of the firm's asset base. To remove the influence of financing decisions (leverage/interest) and tax jurisdictions, we use Operating Income (EBIT) in the numerator. This measures the return generated by the assets themselves, regardless of how those assets were funded (debt vs. equity).</p><p>A is incorrect: Net Income includes interest expense, so it conflates operating efficiency with financing structure (leverage).</p><p>C is incorrect: Dividing by Equity measures return on owner's capital, not return on the total asset base. It also mixes a pre-interest numerator with a post-interest denominator base (since equity is residual).</p>"
+    },
+    {
+      "id": 6,
+      "model": "Gemini 3",
+      "topic": "Return on Total Capital (ROTC)",
+      "stem": "Return on Total Capital (ROTC) differs from ROA primarily because ROTC:",
+      "options": {
+        "A": "Includes short-term non-interest bearing liabilities in the denominator.",
+        "B": "Excludes short-term non-interest bearing liabilities from the denominator.",
+        "C": "Uses Net Income rather than EBIT in the numerator."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Invested Capital vs. Total Assets</h3><p><strong>B is correct.</strong> Total Assets includes everything on the left side of the balance sheet, funded by all liabilities and equity. Invested Capital (or Total Capital) usually refers to Long-Term Debt + Short-Term Debt + Equity. It represents the capital explicitly raised from investors. It excludes non-interest bearing current liabilities like Accounts Payable and Accrued Expenses, which are viewed as \"free\" financing arising from operations. Therefore, ROTC focuses on the return to the providers of capital, excluding operating liabilities.</p><p>A is incorrect: This describes ROA (Total Assets), which implicitly includes assets funded by payables. ROTC excludes the portion funded by payables.</p><p>C is incorrect: ROTC typically uses EBIT or Operating Profit (sometimes tax-adjusted) to be comparable to the capital base, similar to Operating ROA. The distinction is in the denominator.</p>"
+    },
+    {
+      "id": 7,
+      "model": "Gemini 3",
+      "topic": "ROE and Financial Leverage",
+      "stem": "A company has an ROA of 10% and an ROE of 15%. If the company retires debt using equity, keeping total assets constant, what will likely happen to ROE (assuming ROA remains constant)?",
+      "options": {
+        "A": "ROE will increase toward 20%.",
+        "B": "ROE will decrease toward 10%.",
+        "C": "ROE will remain at 15%."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: The Leverage Effect</h3><p><strong>B is correct.</strong> ROE is functionally ROA * Financial Leverage. Here, ROE (15%) > ROA (10%), implying positive financial leverage (the return on assets exceeds the cost of debt). If the company retires debt and replaces it with equity (de-leveraging), the equity base increases while assets (and earnings, assuming constant ROA) remain constant. Mathematically, the leverage multiplier decreases. As leverage drops to 1.0 (all equity), ROE converges to ROA. Thus, ROE will fall from 15% toward 10%.</p><p>A is incorrect: Increasing equity (denominator) decreases ROE. Increasing leverage would be required to push ROE higher.</p><p>C is incorrect: Changing capital structure directly alters the relationship between ROA and ROE.</p>"
+    },
+    {
+      "id": 8,
+      "model": "Gemini 3",
+      "topic": "DuPont Analysis: Three-Component",
+      "stem": "According to the three-part DuPont decomposition, if a company maintains constant Net Profit Margin and Asset Turnover, but its Debt-to-Equity ratio rises, its ROE will:",
+      "options": {
+        "A": "Decrease.",
+        "B": "Stay the same.",
+        "C": "Increase."
+      },
+      "correct_answer": "C",
+      "explanation": "<h3>First Principles Thinking: DuPont Mechanics</h3><p><strong>C is correct.</strong> The three-part DuPont formula is: ROE = (Net Profit Margin) * (Asset Turnover) * (Financial Leverage Multiplier). The Financial Leverage Multiplier is Assets / Equity. If Debt-to-Equity rises, Assets/Equity must also rise (since Assets = Debt + Equity). Therefore, if the first two terms (Margin and Turnover) are constant, an increase in the third term (Leverage) mathematically increases the product, ROE.</p><p>A is incorrect: Higher leverage amplifies ROE (assuming positive earnings), it does not reduce it.</p><p>B is incorrect: Leverage is a direct multiplier in the DuPont identity. It cannot change without affecting the result unless another factor offsets it.</p>"
+    },
+    {
+      "id": 9,
+      "model": "Gemini 3",
+      "topic": "DuPont Analysis: Five-Component",
+      "stem": "In the five-part DuPont analysis, a decrease in the \"Interest Burden\" ratio (EBT / EBIT) indicates:",
+      "options": {
+        "A": "The company is paying less interest relative to its operating income.",
+        "B": "The company is paying more interest relative to its operating income.",
+        "C": "The company's tax rate has increased."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Interpreting the Ratio</h3><p><strong>B is correct.</strong> The Interest Burden ratio is calculated as EBT / EBIT. Since EBIT is usually larger than EBT (because Interest is deducted), this ratio is typically < 1. If the ratio <em>decreases</em> (e.g., goes from 0.8 to 0.6), the numerator (EBT) has shrunk relative to the denominator (EBIT). The difference between EBIT and EBT is Interest Expense. A widening gap implies higher interest costs relative to operating income.</p><p>A is incorrect: This would result in a ratio closer to 1.0 (an increase), not a decrease.</p><p>C is incorrect: Taxes affect the Tax Burden ratio (Net Income / EBT), which is the next step in the chain, not the Interest Burden ratio.</p>"
+    },
+    {
+      "id": 10,
+      "model": "Gemini 3",
+      "topic": "Return on Common Equity",
+      "stem": "When calculating Return on Common Equity specifically, what adjustment must be made to the numerator (Net Income)?",
+      "options": {
+        "A": "Add back minority interest.",
+        "B": "Subtract preferred dividends.",
+        "C": "Add back after-tax interest expense."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Residual Claims</h3><p><strong>B is correct.</strong> Common Equity is the claim of common shareholders <em>after</em> all other claimants, including preferred shareholders. Net Income is the bottom line, but it includes earnings distributable to preferred stock. To isolate the return belonging strictly to common shareholders, Preferred Dividends must be subtracted from Net Income. The denominator is Average Common Equity.</p><p>A is incorrect: Minority interest is usually already deducted to arrive at Net Income attributable to the parent.</p><p>C is incorrect: Adding back interest is for ROA or ROIC (returns to all capital providers), not for ROE (returns to equity only).</p>"
+    },
+    {
+      "id": 11,
+      "model": "Gemini 3",
+      "topic": "Numerical: Gross Margin Calculation",
+      "stem": "Revenue: USD1,000; COGS: USD600; SG&A: USD150; Depreciation (included in COGS): USD50. What is the Gross Profit Margin?",
+      "options": {
+        "A": "25%",
+        "B": "35%",
+        "C": "40%"
+      },
+      "correct_answer": "C",
+      "explanation": "<h3>First Principles Thinking: Defining Gross Profit</h3><p><strong>C is correct.</strong> Gross Profit = Revenue - Cost of Goods Sold (COGS). The problem states Depreciation is <em>included</em> in COGS. This is a distractor or a clarification; if it's in COGS, it's already subtracted. Gross Profit = USD1,000 - USD600 = USD400. Gross Margin = 400 / 1,000 = 40%. SG&A is an operating expense, not part of COGS, so it is ignored for Gross Margin.</p><p>A is incorrect: This likely subtracts SG&A as well (USD1000 - 600 - 150 = 250/1000 = 25%), which is Operating Margin, not Gross Margin.</p><p>B is incorrect: This might attempt to add back depreciation (USD600 - 50 = 550 adjusted COGS), but if depreciation is a production cost, it belongs in COGS.</p>"
+    },
+    {
+      "id": 12,
+      "model": "Gemini 3",
+      "topic": "Numerical: ROA Calculation",
+      "stem": "Net Income: USD200; Interest Expense: USD50; Tax Rate: 30%; Average Total Assets: USD2,000. Calculate ROA adding back after-tax interest.",
+      "options": {
+        "A": "10.0%",
+        "B": "11.75%",
+        "C": "12.5%"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Neutralizing Capital Structure</h3><p><strong>B is correct.</strong> The formula for ROA adjusted for financing is: (Net Income + Interest Expense * (1 - Tax Rate)) / Average Total Assets. \nNumerator = 200 + 50 * (1 - 0.30) = 200 + 35 = 235. \nROA = 235 / 2,000 = 11.75%.</p><p>A is incorrect: This is simple ROA (Net Income / Assets = 200/2000 = 10%), ignoring the interest adjustment.</p><p>C is incorrect: This adds back full interest without the tax shield adjustment (200 + 50 = 250 / 2000 = 12.5%).</p>"
+    },
+    {
+      "id": 13,
+      "model": "Gemini 3",
+      "topic": "Numerical: ROE Derivation",
+      "stem": "ROA: 8%; Total Asset Turnover: 2.0; Financial Leverage Multiplier: 1.5. What is the Net Profit Margin?",
+      "options": {
+        "A": "4.0%",
+        "B": "6.0%",
+        "C": "12.0%"
+      },
+      "correct_answer": "A",
+      "explanation": "<h3>First Principles Thinking: Deconstructing ROA</h3><p><strong>A is correct.</strong> We know that ROA = Net Profit Margin * Total Asset Turnover. \n8% = Net Profit Margin * 2.0. \nSolving for Margin: 8% / 2.0 = 4.0%. \nThe Financial Leverage Multiplier is extra information (used for ROE, not required to find Margin from ROA).</p><p>B is incorrect: Confuses the relationship or tries to use Leverage.</p><p>C is incorrect: Multiplies 8% * 1.5, calculating ROE instead of Margin.</p>"
+    },
+    {
+      "id": 14,
+      "model": "Gemini 3",
+      "topic": "Numerical: DuPont Solving",
+      "stem": "Tax Burden: 0.7; Interest Burden: 0.8; EBIT Margin: 15%; Asset Turnover: 1.2; Financial Leverage: 1.5. Calculate ROE.",
+      "options": {
+        "A": "10.08%",
+        "B": "15.12%",
+        "C": "18.50%"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: The Five-Part Chain</h3><p><strong>B is correct.</strong> ROE = (Tax Burden) * (Interest Burden) * (EBIT Margin) * (Asset Turnover) * (Financial Leverage). \nCalculation: 0.7 * 0.8 * 0.15 * 1.2 * 1.5 \nStep 1: 0.7 * 0.8 = 0.56 (Net Income margin relative to EBIT) \nStep 2: 0.56 * 0.15 = 0.084 (Net Profit Margin) \nStep 3: 0.084 * 1.2 = 0.1008 (ROA) \nStep 4: 0.1008 * 1.5 = 0.1512 = 15.12%.</p><p>A is incorrect: This is the ROA calculation (stops before multiplying by Leverage).</p><p>C is incorrect: Likely a calculation error skipping a term.</p>"
+    },
+    {
+      "id": 15,
+      "model": "Gemini 3",
+      "topic": "Numerical: Operating Cycle",
+      "stem": "Days Sales Outstanding: 40 days; Days Inventory on Hand: 60 days; Days Payables Outstanding: 30 days. What is the Cash Conversion Cycle?",
+      "options": {
+        "A": "50 days",
+        "B": "70 days",
+        "C": "130 days"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Cash Timeline</h3><p><strong>B is correct.</strong> The Cash Conversion Cycle measures the time cash is tied up in operations. \nFormula: DOH (Inventory sits) + DSO (Waiting for customer cash) - DPO (Holding onto supplier cash). \nCalculation: 60 + 40 - 30 = 70 days.</p><p>A is incorrect: Likely subtracted DSO or misapplied signs.</p><p>C is incorrect: Added all days (60+40+30), failing to account for Payables as a source of funding (subtraction).</p>"
+    },
+    {
+      "id": 16,
+      "model": "Gemini 3",
+      "topic": "Fixed Asset Turnover Interpretation",
+      "stem": "A company has a significantly higher Fixed Asset Turnover ratio than its peers. This could indicate all of the following EXCEPT:",
+      "options": {
+        "A": "The company has older, depreciated assets.",
+        "B": "The company outsources its manufacturing.",
+        "C": "The company has recently invested heavily in new modernization equipment."
+      },
+      "correct_answer": "C",
+      "explanation": "<h3>First Principles Thinking: Denominator Dynamics</h3><p><strong>C is correct.</strong> Fixed Asset Turnover = Revenue / Average Net Fixed Assets. A low denominator leads to a high ratio. \nOption C involves buying *new* equipment, which increases the denominator (Net Fixed Assets), thereby *lowering* the turnover ratio, not raising it. Thus, C is the exception.</p><p>A is incorrect: Older assets have high accumulated depreciation, lowering the Book Value (denominator), artificially inflating the ratio.</p><p>B is incorrect: Outsourcing removes assets from the balance sheet entirely, drastically lowering the denominator and inflating the ratio.</p>"
+    },
+    {
+      "id": 17,
+      "model": "Gemini 3",
+      "topic": "Working Capital Turnover",
+      "stem": "Which action would most immediately improve a company's Working Capital Turnover ratio?",
+      "options": {
+        "A": "Selling inventory for cash (at cost).",
+        "B": "Collecting accounts receivable.",
+        "C": "Delaying payments to suppliers (increasing Accounts Payable)."
+      },
+      "correct_answer": "C",
+      "explanation": "<h3>First Principles Thinking: Net Working Capital</h3><p><strong>C is correct.</strong> Working Capital Turnover = Revenue / Average Working Capital. Working Capital = Current Assets - Current Liabilities. To improve (increase) the ratio, we need to decrease the denominator. \nIncreasing Accounts Payable (a Current Liability) reduces Net Working Capital. Thus, the denominator shrinks, and the ratio rises.</p><p>A is incorrect: Swapping Inventory for Cash (both Current Assets) leaves Total Current Assets unchanged, so Working Capital is unchanged.</p><p>B is incorrect: Swapping AR for Cash (both Current Assets) leaves Working Capital unchanged.</p>"
+    },
+    {
+      "id": 18,
+      "model": "Gemini 3",
+      "topic": "Numerical: Retention Rate & Growth",
+      "stem": "ROE: 20%; Dividend Payout Ratio: 40%. What is the Sustainable Growth Rate (g)?",
+      "options": {
+        "A": "8%",
+        "B": "12%",
+        "C": "20%"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Reinvestment Drive Growth</h3><p><strong>B is correct.</strong> Sustainable Growth Rate = Retention Rate (b) * ROE. \nRetention Rate = 1 - Dividend Payout Ratio = 1 - 0.40 = 0.60 (60%). \nGrowth = 0.60 * 20% = 12%. \nThis represents the growth equity can support internally via reinvested earnings.</p><p>A is incorrect: Uses the Payout Ratio (0.4 * 20%), calculating the dividend yield equivalent rather than growth.</p><p>C is incorrect: Assumes 100% retention.</p>"
+    },
+    {
+      "id": 19,
+      "model": "Gemini 3",
+      "topic": "Interpretating High Profitability",
+      "stem": "A company reports extremely high ROE compared to peers but has very low Net Profit Margins and low Asset Turnover. What is the likely driver?",
+      "options": {
+        "A": "High operating efficiency.",
+        "B": "Excessive financial leverage.",
+        "C": "Tax loss carryforwards."
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: DuPont Balance</h3><p><strong>B is correct.</strong> ROE = Margin * Turnover * Leverage. If Margin is low and Turnover is low, the first two terms of the equation are dragging ROE down. For the final ROE to be \"extremely high,\" the third term—Financial Leverage—must be massive to compensate. This indicates a highly risky capital structure.</p><p>A is incorrect: High efficiency would result in high Margins or Turnover.</p><p>C is incorrect: Tax issues affect the Margin, which is stated to be low.</p>"
+    },
+    {
+      "id": 20,
+      "model": "Gemini 3",
+      "topic": "Numerical: Tax Burden Calculation",
+      "stem": "EBIT: USD1,000; Interest: USD200; Tax Rate: 25%. What is the Tax Burden ratio?",
+      "options": {
+        "A": "0.60",
+        "B": "0.75",
+        "C": "0.80"
+      },
+      "correct_answer": "B",
+      "explanation": "<h3>First Principles Thinking: Tax Impact</h3><p><strong>B is correct.</strong> Tax Burden = Net Income / EBT. Alternatively, Tax Burden = (1 - Tax Rate). \nCheck: EBT = 1000 - 200 = 800. Tax = 800 * 0.25 = 200. Net Income = 600. \nRatio: 600 / 800 = 0.75. \nOr simply: 1 - 0.25 = 0.75.</p><p>A is incorrect: Calculates 600 / 1000 (Net Income / EBIT), conflating Interest and Tax burdens.</p><p>C is incorrect: This represents the Interest Burden (800 / 1000).</p>"
+    },
+    {
+      "id": 21,
+      "model": "Gemini 3",
+      "topic": "Impact of Inventory Accounting on Ratios",
+      "stem": "In an inflationary environment, a company switches from LIFO to FIFO. What is the immediate impact on the Current Ratio and Net Profit Margin?",
+      "options": {
+        "A": "Both increase.",
+        "B": "Current Ratio increases, Net Profit Margin decreases.",
+        "C": "Current Ratio decreases, Net Profit Margin increases."
+      },
+      "correct_answer": "A",
+      "explanation": "<h3>First Principles Thinking: Flow of Costs</h3><p><strong>A is correct.</strong> \n1. <strong>Current Ratio (Current Assets / Liabilities):</strong> Under FIFO (inflationary), older, cheaper inventory is sold, leaving newer, more expensive inventory on the balance sheet. Inventory (asset) value rises. Thus, Current Ratio increases. \n2. <strong>Net Profit Margin (NI / Sales):</strong> Under FIFO, COGS is lower (using older, cheaper costs). Lower COGS = Higher Gross Profit = Higher Net Income. Thus, Margin increases.</p><p>B is incorrect: Margin increases because COGS falls.</p><p>C is incorrect: Current Ratio increases because ending inventory value is higher under FIFO.</p>"
+    }
+  ]
+  ]
