@@ -298,10 +298,13 @@ def _render_markdown_basic(text: str) -> str:
 
 
 def _render_stem_html(text: str) -> str:
-    """Render question stems safely, treating literal <br> tags as line breaks."""
+    """Render question stems from trusted content, preserving inline HTML when present."""
     if not isinstance(text, str):
         return ""
-    normalized = re.sub(r"<br\s*/?>", "\n", _fix_mojibake(text), flags=re.IGNORECASE)
+    normalized = _fix_mojibake(text)
+    if _looks_like_html(normalized):
+        return mark_safe(normalized)
+    normalized = re.sub(r"<br\s*/?>", "\n", normalized, flags=re.IGNORECASE)
     return mark_safe(_render_markdown_basic(normalized))
 
 

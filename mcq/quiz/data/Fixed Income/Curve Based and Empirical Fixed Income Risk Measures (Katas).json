@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Effective Duration for Bonds with Embedded Options",
+    "stem": "For a callable bond, the most appropriate interest rate risk measure is most likely:",
+    "options": {
+      "A": "Macaulay duration.",
+      "B": "Modified duration.",
+      "C": "Effective duration."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: curve duration vs yield duration</h3><p><strong>C is correct.</strong> A callable bond has an embedded option so its future cash flows are uncertain and it lacks a well-defined yield-to-maturity. The CFA Curriculum therefore requires a curve-based measure, effective duration, which gauges sensitivity of the bond's price to a parallel shift in the benchmark yield curve.</p><p>Macaulay duration is a yield-based statistic that assumes fixed, certain cash flows and cannot handle the call feature.</p><p>Modified duration is also a yield-based statistic derived from Macaulay duration and is inappropriate when cash flows depend on future interest rates.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Effective Duration for Bonds with Embedded Options",
+    "stem": "Yield duration and yield convexity are least appropriate for bonds whose cash flows are:",
+    "options": {
+      "A": "fixed and certain.",
+      "B": "received on scheduled dates.",
+      "C": "contingent on future interest rates."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: assumption behind yield duration</h3><p><strong>C is correct.</strong> Yield duration and convexity assume cash flows are received on scheduled dates. When cash flows are contingent on future interest rates, as with callable or putable bonds, yield-based measures no longer correctly capture price sensitivity, so effective duration and convexity are used instead.</p><p>Fixed and certain cash flows are exactly the setting in which yield duration is valid, not inappropriate.</p><p>Cash flows received on scheduled dates is the explicit assumption that yield duration relies on, making it appropriate rather than inappropriate.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Effective Duration for Bonds with Embedded Options",
+    "stem": "Compared with an otherwise identical non-callable bond, when benchmark yields are low and falling, the effective duration of a callable bond is most likely:",
+    "options": {
+      "A": "lower.",
+      "B": "higher.",
+      "C": "the same."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: call option limits price appreciation</h3><p><strong>A is correct.</strong> When rates fall, the embedded call becomes more valuable to the issuer and the callable bond's price does not rise as much as a non-callable bond's price. Because effective duration measures price sensitivity to curve shifts, the callable bond's effective duration is lower than that of the comparable non-callable bond.</p><p>Higher is backward: the call feature caps upside price appreciation, which reduces rather than raises effective duration.</p><p>The same is only approximately true when yields are high and the call option has little value, not when yields are low and falling.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Effective Convexity and Embedded Options",
+    "stem": "A bond most likely exhibits negative effective convexity when it is:",
+    "options": {
+      "A": "a putable bond with rising yields.",
+      "B": "a callable bond with low benchmark yields.",
+      "C": "an option-free bond priced at par."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: where convexity turns negative</h3><p><strong>B is correct.</strong> For a callable bond, as benchmark yields decline the slope of the price-yield curve flattens and eventually reaches an inflection point after which effective convexity becomes negative. The call option caps price appreciation as rates fall.</p><p>Putable bonds always have positive effective convexity, because the put floor only adds to price stability.</p><p>An option-free bond priced at par has positive convexity; negative convexity is tied specifically to embedded call features.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Effective Duration for Bonds with Embedded Options",
+    "stem": "Effective duration is least appropriate for which of the following bonds?",
+    "options": {
+      "A": "A mortgage-backed security.",
+      "B": "A putable corporate bond.",
+      "C": "None of the above; effective duration is appropriate for all of them."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: universality of effective duration</h3><p><strong>C is correct.</strong> Effective duration measures price sensitivity to a parallel shift in the benchmark yield curve. It is the required measure for bonds with uncertain cash flows (callable, putable, MBS) and can also supplement yield duration for option-free bonds. It is therefore appropriate for all three.</p><p>Option A is wrong because MBS cash flows depend on prepayment behavior, which is exactly when effective duration is needed.</p><p>Option B is wrong because a putable bond has an embedded option making effective duration the correct measure.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Percentage Price Change from Effective Duration and Convexity",
+    "stem": "A bond has an effective duration of 5 and an effective convexity of 0. For a +100 bps parallel shift in the benchmark curve, the estimated percentage change in full price is closest to:",
+    "options": {
+      "A": "-5.00%.",
+      "B": "+5.00%.",
+      "C": "-4.50%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: duration-only price change</h3><p><strong>A is correct.</strong> The CFA Curriculum formula is $\\%\\Delta PV \\approx (-EffDur \\times \\Delta Curve) + [\\tfrac{1}{2} \\times EffCon \\times (\\Delta Curve)^2]$. With convexity zero, $\\%\\Delta PV \\approx -5 \\times 0.01 = -5.00\\%$.</p><p>+5.00% flips the sign; a rise in yields reduces the bond's price, so the change must be negative.</p><p>-4.50% incorrectly adds a positive convexity adjustment when convexity is zero.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Percentage Price Change from Effective Duration and Convexity",
+    "stem": "Given effective duration of 6 and effective convexity of -200, for a +100 bps parallel curve shift the estimated percentage change in full price is closest to:",
+    "options": {
+      "A": "-7.00%.",
+      "B": "-5.00%.",
+      "C": "-6.00%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: combining duration and negative convexity</h3><p><strong>A is correct.</strong> $\\%\\Delta PV \\approx (-6 \\times 0.01) + [\\tfrac{1}{2} \\times (-200) \\times (0.01)^2] = -0.06 + (-0.01) = -7.00\\%$. Negative convexity adds to the price decline when yields rise.</p><p>-5.00% subtracts the convexity term from duration, reversing its sign.</p><p>-6.00% ignores the convexity adjustment entirely and uses duration only.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Grok",
+    "topic": "Percentage Price Change from Effective Duration and Convexity",
+    "stem": "A bond has an effective duration of 8 and effective convexity of 100. For a -100 bps parallel shift in the benchmark curve, the estimated percentage change in full price is closest to:",
+    "options": {
+      "A": "+8.00%.",
+      "B": "+8.50%.",
+      "C": "-8.50%."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: downward shift, positive convexity</h3><p><strong>B is correct.</strong> $\\%\\Delta PV \\approx (-8 \\times -0.01) + [\\tfrac{1}{2} \\times 100 \\times (-0.01)^2] = 0.08 + 0.005 = 8.50\\%$. Note that the convexity term is always non-negative for positive convexity because $\\Delta Curve$ is squared.</p><p>+8.00% omits the positive convexity adjustment.</p><p>-8.50% gets the sign wrong; a downward yield shift raises the bond's price.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Percentage Price Change from Effective Duration and Convexity",
+    "stem": "For a +200 bps parallel curve shift, the duration component of a bond's estimated percentage price change, using an effective duration of 5, is closest to:",
+    "options": {
+      "A": "-10.00%.",
+      "B": "+10.00%.",
+      "C": "-5.00%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: duration contribution</h3><p><strong>A is correct.</strong> The duration component is $-EffDur \\times \\Delta Curve = -5 \\times 0.02 = -10.00\\%$.</p><p>+10.00% drops the negative sign; rising yields produce a negative duration contribution.</p><p>-5.00% uses $\\Delta Curve = 0.01$ (100 bps) instead of the stated 200 bps.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Percentage Price Change from Effective Duration and Convexity",
+    "stem": "In the formula $\\%\\Delta PV \\approx (-EffDur \\times \\Delta Curve) + [\\tfrac{1}{2} \\times EffCon \\times (\\Delta Curve)^2]$, the convexity adjustment for a positive-convexity bond is most likely:",
+    "options": {
+      "A": "positive for both upward and downward curve shifts.",
+      "B": "positive only for downward curve shifts.",
+      "C": "negative for upward curve shifts."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: squared curve shift</h3><p><strong>A is correct.</strong> $(\\Delta Curve)^2$ is always non-negative, so when effective convexity is positive the entire convexity adjustment is positive whether the curve shifts up or down. This is why positive convexity is favorable to investors.</p><p>Positive only for downward shifts ignores that the curve shift is squared, making the sign of $\\Delta Curve$ irrelevant.</p><p>Negative for upward shifts confuses the sign; with positive convexity the adjustment cannot be negative.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Grok",
+    "topic": "Key Rate Duration",
+    "stem": "Key rate duration is most accurately described as a measure of a bond's price sensitivity to a change in the benchmark yield at:",
+    "options": {
+      "A": "all maturities simultaneously.",
+      "B": "a single specific maturity.",
+      "C": "the bond's own yield-to-maturity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: partial duration</h3><p><strong>B is correct.</strong> Key rate (or partial) duration isolates the price response of a bond to a change in the benchmark yield at one specific maturity along the curve, with other key rates held constant.</p><p>All maturities simultaneously describes effective duration, a parallel shift measure, not key rate duration.</p><p>The bond's own yield-to-maturity describes modified or Macaulay (yield) duration, which is distinct from any curve-based measure.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Key Rate Duration",
+    "stem": "The sum of the key rate durations of a bond is most likely equal to its:",
+    "options": {
+      "A": "modified duration.",
+      "B": "effective duration.",
+      "C": "Macaulay duration."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decomposition of effective duration</h3><p><strong>B is correct.</strong> The CFA Curriculum states that key rate durations decompose effective duration across the curve, and their sum equals the effective duration of the bond (or portfolio).</p><p>Modified duration is a yield-based statistic and is not the sum of curve-based key rate durations.</p><p>Macaulay duration is also yield-based and measures a weighted average time to cash flows, unrelated to key rate decomposition.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Key Rate Duration",
+    "stem": "A bond's 5-year key rate duration is 2. If only the 5-year benchmark yield rises by 50 bps, the estimated percentage change in the bond's price is closest to:",
+    "options": {
+      "A": "-1.00%.",
+      "B": "+1.00%.",
+      "C": "-2.50%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: applying key rate duration</h3><p><strong>A is correct.</strong> Using $\\Delta PV / PV = -KeyRateDur_k \\times \\Delta r_k$, we get $-2 \\times 0.005 = -1.00\\%$.</p><p>+1.00% ignores the negative sign in the formula; rising yields reduce prices.</p><p>-2.50% incorrectly uses the product of key rate duration and 50 bps expressed as 1.25%, or compounds the change inappropriately.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Grok",
+    "topic": "Key Rate Duration",
+    "stem": "Key rate durations are most useful for measuring a bond's sensitivity to:",
+    "options": {
+      "A": "parallel shifts in the benchmark yield curve.",
+      "B": "changes in the shape of the benchmark yield curve.",
+      "C": "changes in the bond's own credit spread."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: shaping risk</h3><p><strong>B is correct.</strong> Key rate durations help identify shaping risk, that is, a bond's sensitivity to changes in the shape of the benchmark yield curve, such as steepening, flattening, or twisting.</p><p>Parallel shifts are captured by effective duration, not by individual key rate durations.</p><p>Credit spread changes are not what key rate durations measure; they focus on benchmark yield changes at specific tenors.</p>"
+  },
+  {
+    "id": 15,
+    "model": "Gemini",
+    "topic": "Key Rate Duration",
+    "stem": "To compute a key rate duration at a given maturity, the analyst most likely:",
+    "options": {
+      "A": "shifts the entire benchmark yield curve up and down in parallel.",
+      "B": "shifts only the benchmark yield at that maturity up and down.",
+      "C": "shifts the bond's yield-to-maturity up and down."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: one point at a time</h3><p><strong>B is correct.</strong> The CFA Curriculum procedure for key rate duration is to shift only the selected key point (for example, the 5-year rate) up and down, hold all other key rates fixed, reprice the bond, and then apply the duration formula.</p><p>Shifting the entire curve in parallel is the procedure for effective duration, not key rate duration.</p><p>Shifting the bond's yield-to-maturity is how yield-based approximate modified duration is computed, which is unrelated to key rate duration.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "Duration and convexity statistics estimated using mathematical formulas are most accurately described as:",
+    "options": {
+      "A": "empirical duration and convexity.",
+      "B": "analytical duration and convexity.",
+      "C": "key rate duration and convexity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: definition of analytical duration</h3><p><strong>B is correct.</strong> The CFA Curriculum defines analytical duration and convexity as duration and convexity estimated using mathematical formulas.</p><p>Empirical duration is estimated from historical data using statistical models, not from formulas directly.</p><p>Key rate duration is a partial duration concept at specific maturities, not a label for formula-based estimates in general.</p>"
+  },
+  {
+    "id": 17,
+    "model": "Grok",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "Empirical duration is best described as a duration estimate obtained from:",
+    "options": {
+      "A": "closed-form mathematical formulas.",
+      "B": "historical data in statistical models incorporating factors affecting bond prices.",
+      "C": "a parallel shift applied to the benchmark par curve in a pricing model."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: definition of empirical duration</h3><p><strong>B is correct.</strong> Empirical duration uses historical data in statistical models that incorporate various factors affecting bond prices to estimate the price-yield relationship.</p><p>Closed-form mathematical formulas describe analytical duration, not empirical duration.</p><p>A parallel shift to the par curve in a pricing model describes how effective (analytical) duration is computed.</p>"
+  },
+  {
+    "id": 18,
+    "model": "Gemini",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "During a flight to safety, government benchmark yields and credit spreads are most likely:",
+    "options": {
+      "A": "positively correlated.",
+      "B": "negatively correlated.",
+      "C": "uncorrelated."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: flight-to-safety correlation</h3><p><strong>B is correct.</strong> In a flight to safety, investors buy government bonds, pushing benchmark yields down, while credit spreads widen due to rising default risk. Benchmark yields and credit spreads therefore move in opposite directions, a negative correlation.</p><p>Positive correlation would imply spreads widen when yields rise, which contradicts the flight-to-safety pattern.</p><p>Uncorrelated is the assumption implicit in analytical duration; empirical evidence contradicts this during stress periods.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "For a corporate bond with significant credit risk during a market stress scenario, empirical duration is most likely:",
+    "options": {
+      "A": "higher than analytical duration.",
+      "B": "lower than analytical duration.",
+      "C": "equal to analytical duration."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: offsetting spread widening</h3><p><strong>B is correct.</strong> In stress, falling benchmark yields are partially or fully offset by widening credit spreads. The bond's price rises less (or falls) than analytical duration would predict, producing a lower empirical duration than analytical duration.</p><p>Higher is the opposite: empirical duration is reduced, not amplified, by the offsetting spread widening.</p><p>Equal holds only when benchmark yields and credit spreads are uncorrelated, which is not the case in stress.</p>"
+  },
+  {
+    "id": 20,
+    "model": "Grok",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "Empirical duration is most likely a more relevant interest rate risk measure than analytical duration for a portfolio of:",
+    "options": {
+      "A": "high-quality developed-market government bonds.",
+      "B": "investment-grade and high-yield corporate bonds.",
+      "C": "zero-coupon short-term Treasury bills."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: credit risk and correlation</h3><p><strong>B is correct.</strong> Corporate bonds have credit and liquidity spreads that are negatively correlated with benchmark yields, especially under stress, so empirical duration captures interest rate risk more accurately than analytical duration.</p><p>High-quality government bonds have minimal credit spread risk; analytical and empirical duration are broadly similar.</p><p>Short-term Treasury bills have negligible credit risk and very short maturity, so empirical and analytical estimates largely coincide.</p>"
+  },
+  {
+    "id": 21,
+    "model": "Gemini",
+    "topic": "Analytical vs Empirical Duration",
+    "stem": "Analytical duration estimates implicitly assume that benchmark yields and credit spreads are:",
+    "options": {
+      "A": "negatively correlated.",
+      "B": "positively correlated.",
+      "C": "independent and uncorrelated."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: assumption behind analytical duration</h3><p><strong>C is correct.</strong> Analytical duration treats government benchmark yields and credit spreads as independent, uncorrelated variables. This assumption motivates the use of empirical duration when that independence is violated, such as during flights to safety.</p><p>Negative correlation is the empirically observed pattern during stress, not the analytical assumption.</p><p>Positive correlation is neither assumed by analytical duration nor observed during flights to safety.</p>"
+  }
+]

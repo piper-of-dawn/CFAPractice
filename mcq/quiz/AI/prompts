@@ -2,24 +2,24 @@ Now I have a note making task for you. There is a placeholder for ### MODULE 62.
 
 
 Katas format
-Generate 7 easy CFA-style MCQs for Topic: Dupont Analysis strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_11_financial_analysis_techniques.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 21 easy CFA-style MCQs for Topic: CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_13_curve_based_and_empirical_fixed_income_risk_measures.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the CFA Question Generator — Building-Block Edition.
-Write the output only the JSON array to a dedicated file Financial Analysis Techniques (Katas) 1.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Curve Based and Empirical Fixed Income Risk Measures (Katas).json. Append the file if it already exists, DO NOT OVERWRITE
 
 Enumeration / counting format
-Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Basics of Portfolio Planning and Construction strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module4_Basics_of_Portfolio_Planning_and_Construction.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 7 very hard and confusing CFA-style MCQs for CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_13_curve_based_and_empirical_fixed_income_risk_measures.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Basics of Portfolio Planning and Construction.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file Basics of Curve Based and Empirical Fixed Income Risk Measures EC.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 7 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Basics of Portfolio Planning and Construction strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module4_Basics_of_Portfolio_Planning_and_Construction.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
+Generate 7 very hard and confusing CFA-style MCQs for CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_13_curve_based_and_empirical_fixed_income_risk_measures.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
 Follow AGENTS.md and use the Assertion Reason.
 BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Basics of Portfolio Planning and Construction AR.json.
+Write the output only the JSON array to a dedicated file Basics of Curve Based and Empirical Fixed Income Risk Measures AR.json.
 
 Numerical Questions
-Generate 14 very hard and confusing CFA-style MCQs for Topic: LEARNING MODULE Basics of Portfolio Planning and Construction strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/PortfolioManagement/Module4_Basics_of_Portfolio_Planning_and_Construction.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Basics of Portfolio Planning and Construction.json.
+Generate 14 very hard and confusing CFA-style MCQs for CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_13_curve_based_and_empirical_fixed_income_risk_measures.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
+Write the output only the JSON array to a dedicated file Basics of Curve Based and Empirical Fixed Income Risk Measures N.json.
 
 
 ---

@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Effective Duration for Bonds with Embedded Options",
+    "stem": "A callable bond has the following curve-based pricing information: full price PV0 = 98.50; price after the benchmark par curve is shifted up 30 basis points PV+ = 95.82; price after the benchmark par curve is shifted down 30 basis points PV- = 101.30. The effective duration of the callable bond is closest to:",
+    "options": {
+      "A": "8.89.",
+      "B": "9.27.",
+      "C": "9.73."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: curve-based duration formula</h3><p><strong>B is correct.</strong> Effective duration uses a parallel shift in the benchmark yield curve, not the bond's yield-to-maturity, because a callable bond has uncertain cash flows and no well-defined yield-to-maturity. EffDur = (PV- - PV+) / (2 x deltaCurve x PV0) = (101.30 - 95.82) / (2 x 0.0030 x 98.50) = 5.48 / 0.5910 = 9.27.</p><p>8.89 understates the numerator (for example by using 5.26 instead of 5.48) and is therefore too low.</p><p>9.73 uses a denominator that drops the factor of 2, overstating effective duration.</p>"
+  },
+  {
+    "id": 2,
+    "model": "Grok",
+    "topic": "Effective Convexity for Bonds with Embedded Options",
+    "stem": "An analyst gathers the following on a callable bond: PV0 = 102.00; PV+ = 99.10 after a +25 bp parallel shift in the government par curve; PV- = 104.40 after a -25 bp parallel shift. The effective convexity of the callable bond is closest to:",
+    "options": {
+      "A": "-1,569.",
+      "B": "-784.",
+      "C": "+784."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: curve-based convexity formula</h3><p><strong>B is correct.</strong> EffCon = [(PV- + PV+) - 2 x PV0] / [(deltaCurve)^2 x PV0] = [(104.40 + 99.10) - 2 x 102.00] / [(0.0025)^2 x 102.00] = (203.50 - 204.00) / (0.00000625 x 102.00) = -0.50 / 0.0006375 = -784.3. The negative sign reflects that the call option caps price appreciation when benchmark yields fall, pushing the callable bond into a region of negative effective convexity.</p><p>-1,569 drops the factor of 2 in the denominator structure and doubles the magnitude incorrectly.</p><p>+784 has the correct magnitude but the wrong sign; for a callable bond at these prices the numerator is negative because PV- rises by less than PV+ falls.</p>"
+  },
+  {
+    "id": 3,
+    "model": "Gemini",
+    "topic": "Effective Duration of a Putable Bond",
+    "stem": "A putable corporate bond is valued using an option-pricing model. The current full price is 97.80. After a +40 bp parallel shift of the benchmark par curve, the model price is 94.60; after a -40 bp shift the model price is 100.40. The effective duration of the putable bond is closest to:",
+    "options": {
+      "A": "7.16.",
+      "B": "7.41.",
+      "C": "14.82."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: effective duration is symmetric about PV0</h3><p><strong>B is correct.</strong> EffDur = (PV- - PV+) / (2 x deltaCurve x PV0) = (100.40 - 94.60) / (2 x 0.0040 x 97.80) = 5.80 / 0.78240 = 7.413.</p><p>7.16 results from using PV0 = 100 (par) instead of the given full price 97.80 in the denominator.</p><p>14.82 omits the factor of 2 in the denominator and therefore doubles the duration estimate.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Percentage Price Change Using Effective Duration and Convexity",
+    "stem": "A callable bond has effective duration of 7.35 and effective convexity of -180. If the benchmark par curve shifts upward by 150 basis points, the estimated percentage change in the bond's full price is closest to:",
+    "options": {
+      "A": "-11.03%.",
+      "B": "-13.05%.",
+      "C": "-9.00%."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: combining first and second-order effects</h3><p><strong>B is correct.</strong> %deltaPV_Full ~= (-EffDur x deltaCurve) + [1/2 x EffCon x (deltaCurve)^2] = (-7.35 x 0.0150) + [0.5 x (-180) x (0.0150)^2] = -0.11025 + (-0.02025) = -0.13050, or -13.05%. With negative convexity, the convexity adjustment adds to the duration-driven price decline when yields rise.</p><p>-11.03% uses only the duration term and ignores the negative convexity adjustment.</p><p>-9.00% incorrectly treats the convexity as positive, partially offsetting the duration loss.</p>"
+  },
+  {
+    "id": 5,
+    "model": "Grok",
+    "topic": "Percentage Price Change Using Effective Duration and Convexity",
+    "stem": "An option-free corporate bond has effective duration of 8.20 and effective convexity of 95. If the benchmark par curve shifts downward by 75 basis points, the estimated percentage change in the bond's full price is closest to:",
+    "options": {
+      "A": "+6.15%.",
+      "B": "+6.42%.",
+      "C": "+5.88%."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: signs under a downward curve shift</h3><p><strong>B is correct.</strong> %deltaPV_Full ~= (-8.20 x -0.0075) + [0.5 x 95 x (-0.0075)^2] = 0.06150 + 0.002672 = 0.06417, or +6.42%. The duration term adds 6.15% and the positive convexity contributes an extra 0.27%.</p><p>+6.15% captures only the duration effect and omits the positive convexity adjustment.</p><p>+5.88% incorrectly subtracts the convexity term, which would only be correct if convexity were negative.</p>"
+  },
+  {
+    "id": 6,
+    "model": "Gemini",
+    "topic": "Percentage Price Change Using Effective Duration and Convexity",
+    "stem": "A bond has PV0 = 95.00, PV+ = 91.00 and PV- = 99.50 for a +/-50 bp parallel shift in the benchmark par curve. Using the implied effective duration and effective convexity, the estimated percentage change in the bond's full price for a +120 bp parallel upward shift is closest to:",
+    "options": {
+      "A": "-10.74%.",
+      "B": "-9.22%.",
+      "C": "-12.25%."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: derive EffDur and EffCon, then apply formula</h3><p><strong>B is correct.</strong> EffDur = (99.50 - 91.00) / (2 x 0.005 x 95.00) = 8.50 / 0.95 = 8.9474. EffCon = (99.50 + 91.00 - 2 x 95.00) / [(0.005)^2 x 95.00] = 0.50 / 0.002375 = 210.526. For +120 bp: %deltaPV ~= -8.9474 x 0.012 + 0.5 x 210.526 x (0.012)^2 = -0.10737 + 0.01516 = -0.09221, or -9.22%.</p><p>-10.74% uses only the duration term and ignores the positive convexity adjustment.</p><p>-12.25% applies the convexity term with the wrong sign, deepening the price decline instead of partially offsetting it.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Convexity Adjustment Component",
+    "stem": "A mortgage-backed security has effective duration of 6.50 and effective convexity of -250. For a +200 basis point parallel shift in the benchmark par curve, the convexity-only component of the estimated percentage price change is closest to:",
+    "options": {
+      "A": "-5.00%.",
+      "B": "-2.50%.",
+      "C": "-10.00%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: isolating the second-order term</h3><p><strong>A is correct.</strong> The convexity adjustment is 0.5 x EffCon x (deltaCurve)^2 = 0.5 x (-250) x (0.02)^2 = 0.5 x (-250) x 0.0004 = -0.0500, or -5.00%. With negative effective convexity, the adjustment amplifies the price decline caused by the duration term rather than offsetting it.</p><p>-2.50% omits the factor of 0.5 in reverse: it multiplies by 0.25 somewhere rather than applying the correct 0.5 x EffCon x (deltaCurve)^2 formula.</p><p>-10.00% drops the factor of 0.5 entirely and doubles the true convexity effect.</p>"
+  },
+  {
+    "id": 8,
+    "model": "Grok",
+    "topic": "Key Rate Duration and Portfolio Price Change",
+    "stem": "A portfolio holds Bond X (60% weight) with a five-year key rate duration of 2.10 and Bond Y (40% weight) with a ten-year key rate duration of 3.80. The forecasted non-parallel par curve shift is +80 bps at the five-year tenor and +120 bps at the ten-year tenor, with no change at other key tenors that affect these bonds. The estimated percentage change in the portfolio's value is closest to:",
+    "options": {
+      "A": "-2.83%.",
+      "B": "-3.12%.",
+      "C": "-6.24%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: weight each bond's key-rate price change</h3><p><strong>A is correct.</strong> Bond X: %deltaPV = -KeyRateDur_5 x deltaRate_5 = -2.10 x 0.0080 = -1.680%. Bond Y: %deltaPV = -3.80 x 0.0120 = -4.560%. Portfolio return = 0.60 x (-1.680%) + 0.40 x (-4.560%) = -1.008% - 1.824% = -2.832%.</p><p>-3.12% averages the two bond returns with equal weights instead of the actual 60/40 weights.</p><p>-6.24% simply sums the two bond price changes without weighting, double-counting each position.</p>"
+  },
+  {
+    "id": 9,
+    "model": "Gemini",
+    "topic": "Key Rate Duration Under Non-Parallel Twist",
+    "stem": "A corporate bond has key rate durations of 0.60 at the two-year tenor, 1.40 at the five-year tenor, and 2.30 at the ten-year tenor. The benchmark par curve undergoes the following shifts: +50 bps at the two-year, +20 bps at the five-year, and -30 bps at the ten-year. The estimated percentage change in the bond's full price is closest to:",
+    "options": {
+      "A": "+0.11%.",
+      "B": "-0.11%.",
+      "C": "+0.69%."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: sum of key-rate contributions</h3><p><strong>A is correct.</strong> %deltaPV = -Sum(KeyRateDur_k x deltaRate_k) = -(0.60 x 0.0050 + 1.40 x 0.0020 + 2.30 x (-0.0030)) = -(0.00300 + 0.00280 - 0.00690) = -(-0.00110) = +0.00110, or +0.11%. The ten-year key rate drop dominates, producing a small net gain despite the short-end increases.</p><p>-0.11% has the sign wrong; it treats the ten-year rate decline as a price loss instead of a gain.</p><p>+0.69% forgets to subtract the sum and simply reports the absolute value of the ten-year contribution alone.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Key Rate Durations Summing to Effective Duration",
+    "stem": "A bond has the following key rate durations: 0.5-year = 0.10; 2-year = 0.45; 5-year = 1.20; 10-year = 2.75; 30-year = 1.80. The effective duration of the bond is closest to:",
+    "options": {
+      "A": "5.50.",
+      "B": "6.30.",
+      "C": "1.26."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: additivity of key rate durations</h3><p><strong>B is correct.</strong> By construction, the sum of a bond's key rate durations equals its effective duration because each key rate duration is the partial sensitivity to a shift at that specific maturity, and shifting all maturities together is a parallel shift. Sum = 0.10 + 0.45 + 1.20 + 2.75 + 1.80 = 6.30.</p><p>5.50 omits the 30-year key rate, implicitly treating the longest maturity as if it contributed no price sensitivity.</p><p>1.26 is the simple average of the five key rate durations, which has no economic meaning; the sum, not the mean, equals effective duration.</p>"
+  },
+  {
+    "id": 11,
+    "model": "Grok",
+    "topic": "Inferring a Missing Key Rate Duration",
+    "stem": "A bond has effective duration of 8.50. Its reported key rate durations at the 2-, 5-, and 10-year tenors are 0.70, 1.50, and 2.80, respectively. The only other non-zero key rate duration is at the 30-year tenor. That 30-year key rate duration is closest to:",
+    "options": {
+      "A": "3.50.",
+      "B": "4.20.",
+      "C": "1.70."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: residual from the sum identity</h3><p><strong>A is correct.</strong> Because the key rate durations must sum to the effective duration, KRD_30 = EffDur - (KRD_2 + KRD_5 + KRD_10) = 8.50 - (0.70 + 1.50 + 2.80) = 8.50 - 5.00 = 3.50.</p><p>4.20 forgets to subtract the 2-year key rate duration.</p><p>1.70 subtracts all reported key rate durations twice, double-counting the short-end contributions.</p>"
+  },
+  {
+    "id": 12,
+    "model": "Gemini",
+    "topic": "Empirical Duration Under Flight to Safety",
+    "stem": "A high-yield corporate bond has analytical duration of 7.00. During a stress episode, the benchmark government yield falls by 80 basis points while the bond's credit spread widens by 50 basis points; the bond's total yield therefore declines by only 30 basis points. Assuming a linear price-yield relation, the bond's empirical duration (measured against the government benchmark yield) is closest to:",
+    "options": {
+      "A": "2.63.",
+      "B": "4.38.",
+      "C": "7.00."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: empirical duration uses the benchmark denominator</h3><p><strong>A is correct.</strong> Price change driven by the net 30 bp decline in the bond's total yield: %deltaPV ~= -AnalDur x deltaYield_total = -7.00 x (-0.0030) = +0.0210, or +2.10%. Empirical duration is defined against the benchmark government yield: EmpDur = -(%deltaPV) / deltaYield_gov = -0.0210 / (-0.0080) = 2.625. The negative correlation between benchmark yields and credit spreads compresses observed empirical duration well below analytical duration.</p><p>4.38 divides the 2.10% price change by the 48 bp net change in some alternative yield metric, mixing denominators inconsistently.</p><p>7.00 simply reports the analytical duration and ignores the spread-widening offset captured by empirical duration.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Empirical Duration With Perfect Spread Offset",
+    "stem": "During a severe flight-to-quality episode, the benchmark government yield on a reference Treasury falls by 100 basis points and, over the same window, the credit spread on a distressed high-yield bond widens by exactly 100 basis points. Assuming the bond's all-in yield fully determines its price via analytical duration of 9.00, the empirical duration of the bond estimated against the government benchmark yield is closest to:",
+    "options": {
+      "A": "0.00.",
+      "B": "9.00.",
+      "C": "-9.00."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: zero net yield change implies zero empirical duration</h3><p><strong>A is correct.</strong> Because the 100 bp decline in benchmark yield is exactly offset by the 100 bp widening in credit spread, the bond's all-in yield is unchanged and its price does not move: %deltaPV ~= -9.00 x 0 = 0. Empirical duration = -(%deltaPV) / deltaYield_gov = 0 / (-0.0100) = 0.00. This illustrates why empirical duration for lower-quality credit bonds is far below analytical duration when spreads and benchmark yields are perfectly negatively correlated.</p><p>9.00 is the analytical duration and ignores the complete spread offset.</p><p>-9.00 incorrectly flips the sign, as if the bond price moved opposite to the government yield by the full analytical amount.</p>"
+  },
+  {
+    "id": 14,
+    "model": "Grok",
+    "topic": "Gap Between Analytical and Empirical Duration",
+    "stem": "An investment-grade corporate bond has analytical duration of 10.00. In a stress scenario, the benchmark government yield declines by 150 basis points and the bond's credit spread widens by 60 basis points; the bond's total yield therefore falls by 90 basis points. Empirical duration is measured against the government benchmark yield. The difference between the analytical duration and the empirical duration (analytical minus empirical) is closest to:",
+    "options": {
+      "A": "4.00.",
+      "B": "6.00.",
+      "C": "0.60."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: translate spread offset into duration units</h3><p><strong>A is correct.</strong> Price change: %deltaPV ~= -10.00 x (-0.0090) = +0.0900, or +9.00%. Empirical duration against government yield: EmpDur = -(0.0900) / (-0.0150) = 6.00. Gap = AnalDur - EmpDur = 10.00 - 6.00 = 4.00. Equivalently, empirical duration scales analytical duration by the ratio of net yield change to benchmark yield change: 10.00 x (90/150) = 6.00.</p><p>6.00 is the empirical duration itself, not the gap between analytical and empirical.</p><p>0.60 is the ratio of net to benchmark yield change (90/150) without applying it to the duration value.</p>"
+  }
+]

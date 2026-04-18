@@ -8,9 +8,13 @@ class StemRenderingTests(TestCase):
         html = str(_render_stem_html("Line 1<br>Line 2"))
         self.assertIn("Line 1<br>Line 2", html)
 
-    def test_other_html_is_escaped(self):
-        html = str(_render_stem_html("Safe<script>alert(1)</script>"))
-        self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", html)
+    def test_inline_html_is_preserved_for_trusted_stems(self):
+        html = str(_render_stem_html("This is <em>important</em>."))
+        self.assertIn("This is <em>important</em>.", html)
+
+    def test_plain_text_stems_still_use_markdown_rendering(self):
+        html = str(_render_stem_html("This is *important*."))
+        self.assertIn("This is <em>important</em>.", html)
 
     def test_choice_html_preserves_latex_delimiters_for_mathjax(self):
         html = str(_render_choice_html("$PV = \\dfrac{PMT_t}{(1 + r)^t}$"))
