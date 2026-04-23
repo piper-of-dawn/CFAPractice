@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "topic": "Uses of industry analysis",
+    "stem": "Assertion (A): Industry and competitive analysis helps an analyst estimate an industry base rate for profitability and then judge a firm's position against that base rate.\nReason (R): Competition tends to pull company profitability toward an industry base rate over time.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: industry base rate</h3><p><strong>A is correct.</strong> The module explains that industry and competitive analysis is used to estimate an industry's base rate and its determinants, then compare a company with that base rate. The reason explains why this is useful: competition tends to pull profitability toward the industry median over time, so estimating that base rate is central to forecasting and valuation.</p><p>Option B is incorrect because the reason is not merely an accompanying fact; it directly explains why analysts need an industry base rate in the first place.</p><p>Option C is incorrect because the reason is explicitly stated in the curriculum, so R is not false.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Industry and competitive analysis steps",
+    "stem": "Assertion (A): The main purpose of industry and competitive analysis is to determine a company's business model and capital structure.\nReason (R): The process begins with defining the industry and ends with evaluating a company's competitive positioning in that industry.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: scope of the process</h3><p><strong>D is correct.</strong> The assertion is false because determining business model and capital structure belongs to company analysis, not the industry and competitive analysis step. The reason is true: the industry process runs from defining the industry through surveying it, assessing structure and external influences, and ending with evaluating company positioning.</p><p>Option A is incorrect because the assertion misstates the purpose of this stage of analysis, so both statements cannot be true.</p><p>Option C is incorrect because the steps described in the reason are consistent with the module's framework, so R is not false.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Why analyze an industry",
+    "stem": "Assertion (A): Industry was found to be the most important factor in the sustainability of economic profits over time.\nReason (R): Sell-side analysts who covered both companies and their suppliers made more accurate earnings forecasts than analysts who did not.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: evidence versus explanation</h3><p><strong>B is correct.</strong> Both statements are true. The module cites research that industry was the most important factor in sustaining economic profits, and it separately notes that analysts covering companies and suppliers produced better forecasts. But the forecasting result does not explain the research finding about economic-profit sustainability; it is a distinct example of why broader industry perspective improves analysis.</p><p>Option A is incorrect because the reason does not establish why industry dominates sustainability; it only shows that broader coverage can sharpen analyst forecasts.</p><p>Option D is incorrect because the assertion is directly supported by the cited research, so A is not false.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Industry classification methods",
+    "stem": "Assertion (A): In commercial classification schemes such as GICS, ICB, and TRBC, a company is assigned to a single group in the lowest tier.\nReason (R): These schemes are strictly hierarchical taxonomies, so classifying a company at the lowest tier automatically places it in the higher tiers.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: hierarchical taxonomy</h3><p><strong>A is correct.</strong> The curriculum describes GICS, ICB, and TRBC as strict hierarchies. A company is placed into one lowest-tier group, and that single placement determines all higher-tier assignments. The reason therefore explains the assertion directly.</p><p>Option B is incorrect because the hierarchy is exactly why one lowest-tier assignment governs all higher tiers; the two statements are causally linked.</p><p>Option D is incorrect because the assertion accurately reflects how these schemes classify firms, so A is not false.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Limitations of classification schemes",
+    "stem": "Assertion (A): When identifying competitors, an analyst may need to treat a business segment as relevant even if its parent company is classified in another sector.\nReason (R): Commercial classification schemes solve the multi-product problem by assigning each segment of a company to its own lowest-tier industry group.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: single-company assignment</h3><p><strong>C is correct.</strong> The assertion is true because the curriculum warns that relevant competitors may sit inside parent companies classified in another industry or sector. The reason is false: commercial schemes do not assign each segment to separate lowest-tier groups. They classify the company as a whole into a single grouping, which is exactly why the limitation arises.</p><p>Option A is incorrect because the reason reverses the source of the problem. A segment-level system would reduce this issue, not create it.</p><p>Option D is incorrect because analysts are explicitly cautioned that competitor identification can require looking through the parent company's formal classification.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Alternative methods of grouping companies",
+    "stem": "Assertion (A): Grouping companies by geography is typically based on the geographic composition of revenue because that best captures economic exposure.\nReason (R): Country classification is typically based on incorporation, primary listing, headquarters location, or market perception.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: geography classification boundary</h3><p><strong>D is correct.</strong> The assertion is false because the curriculum specifically says geographic composition of revenue is generally not the basis for country classification, even if analysts care about it. The reason is true: country grouping usually relies on incorporation, primary listing, headquarters, or market perception.</p><p>Option A is incorrect because the assertion conflicts with the stated rule for geographic grouping.</p><p>Option C is incorrect because the reason accurately states the typical basis for country classification.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Industry size measurement",
+    "stem": "Assertion (A): If an industry is well defined, its size is best measured as the sum of total annual sales of all constituent companies.\nReason (R): Industry size is usually measured from the product or customer perspective, so only the sales relevant to that industry should be included.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: product-versus-company measurement</h3><p><strong>D is correct.</strong> The assertion is false because some constituents have segments in other industries, so summing total company sales overstates industry size. The reason is true and reflects the curriculum's rule that industry size should be measured from the product or customer perspective.</p><p>Option A is incorrect because the assertion ignores multi-segment companies, which is one of the central measurement complications in industry surveys.</p><p>Option C is incorrect because the reason is exactly how the module says industry size should be measured.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Industry concentration and profitability",
+    "stem": "Assertion (A): Rising industry concentration is generally associated with lower competitive intensity and higher profitability.\nReason (R): The Herfindahl-Hirschman Index is calculated as the sum of the squares of competitor market shares stated as whole numbers.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: relationship versus metric</h3><p><strong>B is correct.</strong> Both statements are true. The curriculum says consolidation is associated with falling competitive intensity and higher profitability, and it also defines HHI as the sum of squared market shares using whole-number shares. But the formula for HHI does not itself explain why profitability tends to improve as concentration rises; it only measures concentration.</p><p>Option A is incorrect because a measurement formula is not the causal explanation for the economic relationship stated in the assertion.</p><p>Option D is incorrect because the assertion is directly supported by the discussion of consolidation and rivalry.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Characterizing industry growth",
+    "stem": "Assertion (A): A mature industry necessarily has a growth rate below broader economic activity.\nReason (R): In a mature industry, customer demand can migrate to a substitute, causing growth to decline.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: mature does not mean always declining</h3><p><strong>D is correct.</strong> The assertion is false because the curriculum says mature industries may grow in line with broader economic activity or decline if demand migrates to a substitute. The reason is true, but it describes only one mature-industry case rather than a necessary outcome in all cases.</p><p>Option A is incorrect because the word \"necessarily\" makes the assertion too strong relative to the curriculum.</p><p>Option C is incorrect because migration to substitutes is explicitly identified as a reason a mature industry's growth may decline.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Porter's Five Forces and PESTLE",
+    "stem": "Assertion (A): PESTLE analysis is more concerned with an industry's growth rate and market share dynamics than with its long-run profitability.\nReason (R): Porter's Five Forces is mainly a framework for identifying themes or narratives that investors may want exposure to.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: framework roles</h3><p><strong>C is correct.</strong> The assertion is true: the curriculum distinguishes PESTLE as being more concerned with growth rate and market share dynamics, whereas Five Forces focuses on long-run profitability drivers. The reason is false because identifying themes or narratives investors may desire exposure to is the role assigned to PESTLE, not to Porter's Five Forces.</p><p>Option A is incorrect because the reason misattributes PESTLE's purpose to Five Forces.</p><p>Option D is incorrect because the assertion accurately states the contrast between the two frameworks.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Technological influences and disruption",
+    "stem": "Assertion (A): Disruptive innovation is more likely to come from new entrants than from incumbents.\nReason (R): Incumbents often face an innovator's dilemma because investing in the disruptive offering can speed the decline of their existing profitable business.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: innovator's dilemma</h3><p><strong>A is correct.</strong> The curriculum states that disruptive innovation is most likely to come from new entrants. The reason explains why: incumbents have an existing business to protect, so backing the disruptive model can cannibalize current profits and accelerate the decline of their legacy business.</p><p>Option B is incorrect because the reason is not incidental; it is the mechanism that makes entrants more likely sources of disruption.</p><p>Option D is incorrect because the assertion is directly supported by the section on technological influences.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "PESTLE external influences",
+    "stem": "Assertion (A): A potential tax on small parcel deliveries would be identified in a PESTLE analysis of an e-commerce retailer.\nReason (R): Porter's Five Forces evaluates threat of substitutes, threat of new entrants, bargaining power of customers, bargaining power of suppliers, and rivalry among existing competitors.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: external theme versus industry structure</h3><p><strong>B is correct.</strong> Both statements are true. A parcel-delivery tax is a political or legal external influence and therefore belongs in PESTLE. The reason also correctly lists the Five Forces. But the reason does not explain the assertion; it merely describes a different framework used for industry structure rather than external-theme identification.</p><p>Option A is incorrect because listing the Five Forces does not explain why a delivery tax belongs in PESTLE.</p><p>Option C is incorrect because the assertion is consistent with the module's example of political discussion around a delivery tax.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Competitive strategy evaluation",
+    "stem": "Assertion (A): A company that is neither a cost leader, nor differentiated, nor focused is described as being stuck in the middle.\nReason (R): Despite company-specific variations, the generic strategies of cost leadership, differentiation, and focus explain a large percentage of strategies in practice.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: generic strategies boundary</h3><p><strong>B is correct.</strong> Both statements are true. The curriculum explicitly warns that a poor situation is to be stuck in the middle, meaning not a cost leader, not differentiated, and not focused. It also says the three generic strategies explain a large percentage of strategies in practice. But that second point does not explain the definition of being stuck in the middle; it is a broader observation about strategy classification.</p><p>Option A is incorrect because the reason does not provide the causal logic for the definition in the assertion.</p><p>Option D is incorrect because the assertion matches the curriculum's exact strategic warning.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Focus strategy",
+    "stem": "Assertion (A): A focus strategy may incorporate elements of both cost leadership and differentiation while targeting a particular customer group, product set, or geography.\nReason (R): A focus strategy is most appropriate when larger competitors can serve the target group more economically than specialized firms can.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: when focus works</h3><p><strong>C is correct.</strong> The assertion is true because the curriculum states that a focus strategy may incorporate elements of both cost leadership and differentiation while remaining aimed at a narrow group. The reason is false because focus is appropriate when it is difficult or uneconomical for other players to serve that customer group, product niche, or geography, not when larger competitors can do so more economically.</p><p>Option A is incorrect because the reason reverses the condition that makes focus attractive.</p><p>Option D is incorrect because the assertion accurately describes the nature of a focus strategy.</p>"
+  }
+]

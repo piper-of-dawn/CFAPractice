@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Uses of Industry Analysis",
+    "stem": "Consider the following:\nI. Industry and competitive analysis is used to estimate an industry's base rate of profitability and its determinants.\nII. McGahan and Porter found company-specific effects were larger for high performers than for low performers in an industry.\nIII. Industry and competitive analysis can sharpen forecasts by helping analysts understand competitive actions across suppliers and peers.\nHow many of the above are most accurate according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The curriculum states that industry and competitive analysis helps estimate the industry's base rate and its determinants, and it improves forecasts by clarifying competitive forces and supplier relationships. Statement II is incorrect because the cited finding was that company-specific effects were much larger for low performers than for high performers. Therefore, two statements qualify.</p><p>Why option B is incorrect. It is not incorrect because exactly two statements, I and III, satisfy the criterion.</p><p>Why option C is incorrect. All three do not qualify because Statement II reverses the direction of the finding on company-specific effects.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Uses of Industry Analysis",
+    "stem": "Consider the following:\nI. Defining the industry comes before surveying its size, growth, profitability, and market share trends.\nII. External influences are assessed before Porter’s Five Forces because profitability is determined outside the industry first.\nIII. Evaluating a company’s competitive positioning is the final step in the process shown in the module.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The process in the curriculum begins with defining the industry, then surveying it, then analyzing structure, then external influences, and finally evaluating competitive positioning. Statement I is true and Statement III is true. Statement II is false because Porter’s Five Forces is shown before external influences, not after them. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III satisfy the criterion while Statement II does not.</p><p>Why option C is incorrect. All three are not accurate because the sequence in Statement II contradicts the framework in the module.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Uses of Industry Analysis",
+    "stem": "Consider the following:\nI. Sensitivity to the business cycle is presented as an industry attribute rather than a company-specific attribute.\nII. Competitive strategy is identified as an industry-wide structural factor rather than a company-specific characteristic.\nIII. Business model variation is listed as a company-specific source of variance around the industry median.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The curriculum distinguishes industry attributes from company-specific ones. Sensitivity to the business cycle is described as an industry attribute, while competitive strategy and business model variation are company-specific factors that create variance around the industry median. Thus all three statements are accurate.</p><p>Why option B is incorrect. Only two do not qualify because each of the three statements matches the treatment in the curriculum.</p><p>Why option C is incorrect. It is not incorrect because all three statements satisfy the criterion.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Industry Classification",
+    "stem": "Consider the following:\nI. Commercial schemes such as GICS, ICB, and TRBC use a demand approach centered on similarity of products or services sold.\nII. These commercial schemes are strictly hierarchical taxonomies that assign a company to multiple lowest-tier groups when it has several business lines.\nIII. TRBC differs from GICS and ICB in that it also covers private companies, non-profits, and government entities.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The curriculum says commercial schemes use a demand approach and that TRBC also covers private companies, non-profits, and government entities. Statement II is false because strict hierarchy means a company is assigned to a single lowest-tier group, not multiple ones. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III are consistent with the module and Statement II is not.</p><p>Why option C is incorrect. All three do not qualify because the single-group assignment is a core feature of strict taxonomies.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Industry Classification",
+    "stem": "Consider the following:\nI. One limitation of third-party classification schemes is that changes in groupings over time can reduce comparability of prior-period industry statistics.\nII. A multi-product company can always be classified without discretion whenever no segment has at least 60% of revenue.\nIII. Geographical considerations can make global schemes less useful for service industries that compete locally or nationally.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The curriculum explicitly identifies changing groupings over time and geographical considerations as limitations. Statement II is false because if no segment meets the threshold tests, discretion or a multi-industry classification may still be needed. Thus only I and III qualify.</p><p>Why option B is incorrect. It is not incorrect because two statements satisfy the criterion.</p><p>Why option C is incorrect. All three are not accurate because Statement II ignores the role of discretion in the classification process.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Industry Classification",
+    "stem": "Consider the following:\nI. Classification by geography is typically based on the geographic composition of revenue.\nII. Grouping by statistical similarities can include valuation ratios, growth rates, profitability ratios, and price-performance statistics.\nIII. Groupings based on ESG characteristics tend to show more turnover than industry and country groupings because the underlying statistics are less stable by company.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The curriculum notes that geography is usually based on incorporation, listing, headquarters, or market perception rather than revenue mix, so Statement I is false. Statements II and III are both directly supported by the discussion of statistical and ESG grouping methods. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements II and III satisfy the criterion and Statement I does not.</p><p>Why option C is incorrect. All three do not qualify because geographic composition of revenue is specifically noted as generally not the approach taken.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Industry Survey",
+    "stem": "Consider the following:\nI. Industry size is typically measured by total annual sales from the product or customer perspective rather than necessarily by all sales of each constituent.\nII. Historical growth may be calculated either year over year or as a multi-year compounded annual growth rate.\nIII. If possible, industry growth should be broken out by contributions from volume and price or mix drivers.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> All three statements restate the measurement guidance in the industry survey section. Industry size is defined from the product or customer perspective, growth can be measured year over year or with CAGR, and analysts should separate volume from price or mix effects when possible. Hence all three qualify.</p><p>Why option B is incorrect. Only two do not qualify because each item matches the survey methods described in the curriculum.</p><p>Why option C is incorrect. It is not incorrect because all three statements are accurate.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Industry Survey",
+    "stem": "Consider the following:\nI. A growth industry is one that has not yet fully penetrated its total addressable market and may have idiosyncratic growth drivers apart from broader economic growth.\nII. Mature industries are described as having growth rates that are always exactly zero once saturation is reached.\nIII. Sensitivity to the business cycle is driven partly by whether the product is a durable or capital good versus a recurring purchase such as consumables or subscriptions.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I matches the definition of a growth industry and Statement III matches the listed drivers of cyclical sensitivity. Statement II is too absolute: the curriculum says mature industries have growth rates in line with broader economic activity, approximately zero, or declining if demand migrates to a substitute. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III satisfy the criterion while Statement II overstates the rule.</p><p>Why option C is incorrect. All three are not accurate because the curriculum does not require mature industries to have exactly zero growth.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Industry Survey",
+    "stem": "Consider the following:\nI. The Herfindahl-Hirschman Index is calculated as the sum of the squares of competitor market shares stated as whole numbers.\nII. A market with shares of 30, 30, 20, and 20 has an HHI of 2,600.\nIII. The curriculum states that acquisitions in markets with an HHI above 1,500 are always challenged if the HHI increase exceeds 200 points.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statements I and II are directly consistent with the definition and example of HHI. Statement III is false because the module presents this as a rule of thumb for highly concentrated markets, not as an automatic or universal challenge once HHI is merely above 1,500. Thus two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and II satisfy the criterion.</p><p>Why option C is incorrect. All three do not qualify because Statement III turns a conditional rule of thumb into an absolute regulatory rule.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Industry Structure and External Influences",
+    "stem": "Consider the following:\nI. Network effects, economies of scale from fixed costs, and significant customer switching costs are all factors that can deter new entrants.\nII. The curriculum treats incumbents’ experience and expertise as sustainable barriers to entry because entrants cannot imitate them quickly.\nIII. Exclusive or preferential access to hard-to-obtain inputs or end-customer interfaces can strengthen entry barriers.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statements I and III are part of the checklist for assessing the threat of new entrants. Statement II is false because the module explicitly notes that incumbent experience and expertise are not sustainable barriers; entrants can imitate, poach employees, purchase inputs, and hire consultants. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III satisfy the criterion and Statement II does not.</p><p>Why option C is incorrect. All three are not accurate because the curriculum rejects incumbent experience and expertise as sustainable entry barriers.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Industry Structure and External Influences",
+    "stem": "Consider the following:\nI. A substitute may threaten an industry if it fulfills a similar customer need at a lower price.\nII. PESTLE analysis is primarily concerned with determinants of long-run profitability in the same way as Porter’s Five Forces.\nIII. The curriculum describes political, economic, social, technological, legal, and environmental influences as more concerned with growth rate and market share dynamics.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I is part of the substitute checklist and Statement III captures the stated role of PESTLE. Statement II is false because Porter’s Five Forces is the framework tied to the determinants of industry profitability, whereas PESTLE focuses more on growth and market share dynamics. Hence two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III satisfy the criterion.</p><p>Why option C is incorrect. All three do not qualify because Statement II conflates the purpose of PESTLE with Porter’s Five Forces.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Industry Structure and External Influences",
+    "stem": "Consider the following:\nI. Sustaining innovation improves performance or adds marginal features without fundamentally changing functionality or operation.\nII. Disruptive innovation is most likely to come from incumbents because they already have profitable businesses to defend.\nIII. The innovator’s dilemma describes the choice between investing in a disruptive innovation and accelerating decline of the existing business, or ignoring it and risking market-share loss.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Statement I accurately describes sustaining innovation and Statement III accurately describes the innovator’s dilemma. Statement II is false because disruptive innovation is most likely to come from new entrants, not incumbents. Therefore, two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III meet the criterion while Statement II does not.</p><p>Why option C is incorrect. All three are not accurate because the source attributes disruptive innovation primarily to new entrants.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Competitive Positioning",
+    "stem": "Consider the following:\nI. An analyst should assess whether a company’s strategy creates a defense against the five industry forces.\nII. A strategy can be considered sound even if it is at odds with the expected external influences identified in a PESTLE analysis, provided it is intentional.\nIII. The analyst should assess whether the company has the resources and capabilities necessary to execute the strategy.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The curriculum gives three forward-looking evaluation dimensions, including whether the strategy defends against the five forces and whether the company has resources and capabilities to execute it. Statement II is false because the strategy should benefit from, or at least not be at odds with, expected external influences. Thus two items qualify.</p><p>Why option B is incorrect. It is not incorrect because Statements I and III satisfy the criterion.</p><p>Why option C is incorrect. All three do not qualify because Statement II contradicts the requirement for alignment with expected external influences.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Competitive Positioning",
+    "stem": "Consider the following:\nI. Cost leadership is especially appropriate when customers are price conscious and do not value or notice product differences.\nII. Differentiation may defend against supplier power because the company can pass along cost increases to customers or absorb them within margin.\nIII. A company that is neither a cost leader, nor differentiated, nor focused is described as being stuck in the middle.\nHow many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Each statement comes directly from the generic strategy discussion. Cost leadership fits price-conscious markets with limited perceived product differences, differentiation can defend against supplier power through pricing power or margin absorption, and the curriculum explicitly warns against being stuck in the middle. Therefore, all three qualify.</p><p>Why option B is incorrect. Only two do not qualify because all three statements are supported by the curriculum.</p><p>Why option C is incorrect. It is not incorrect because every item satisfies the criterion.</p>"
+  }
+]

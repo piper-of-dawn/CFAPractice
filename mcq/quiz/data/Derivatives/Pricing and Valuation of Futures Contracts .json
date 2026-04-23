@@ -172,14 +172,14 @@
     "id": 4,
     "model": "Gemini",
     "topic": "Treasury Bond Futures Conversion Factor",
-    "stem": "A Treasury bond futures contract allows the delivery of several different bonds. The quoted futures price is \\( 98\text{-}16 \\) (i.e., 98.50). You hold a bond that is eligible for delivery with a conversion factor (\\( CF \\)) of 1.10 and accrued interest (\\( AI \\)) of 0.50. What is the invoice price (the amount the short receives upon delivery)?",
+    "stem": "A Treasury bond futures contract allows the delivery of several different bonds. The quoted futures price is \\( 98\\text{-}16 \\) (i.e., 98.50). You hold a bond that is eligible for delivery with a conversion factor (\\( CF \\)) of 1.10 and accrued interest (\\( AI \\)) of 0.50. What is the invoice price (the amount the short receives upon delivery)?",
     "options": {
       "A": "$\\text{USD } 108.85$",
       "B": "$\\text{USD } 108.35$",
       "C": "$\\text{USD } 99.00$"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Futures Invoice Price</h3><p><strong>A is correct.</strong> The invoice price is the cash amount the buyer pays the seller when a specific bond is delivered against a futures contract. The formula is:<br>$$ \\text{Invoice Price} = (\\text{Futures Price} \\times \\text{Conversion Factor}) + \\text{Accrued Interest} $$</p><p>Convert the quoted price: \\( 98\text{-}16 = 98 + 16/32 = 98.50 \\). Then:<br>$$ \\text{Invoice Price} = 98.50 \\times 1.10 + 0.50 = 108.85 $$</p><p>B is incorrect because it ignores accrued interest.</p><p>C is incorrect because it ignores the conversion factor.</p>"
+    "explanation": "<h3>First Principles Thinking: Futures Invoice Price</h3><p><strong>A is correct.</strong> The invoice price is the cash amount the buyer pays the seller when a specific bond is delivered against a futures contract. The formula is:<br>$$ \\text{Invoice Price} = (\\text{Futures Price} \\times \\text{Conversion Factor}) + \\text{Accrued Interest} $$</p><p>Convert the quoted price: \\( 98\\text{-}16 = 98 + 16/32 = 98.50 \\). Then:<br>$$ \\text{Invoice Price} = 98.50 \\times 1.10 + 0.50 = 108.85 $$</p><p>B is incorrect because it ignores accrued interest.</p><p>C is incorrect because it ignores the conversion factor.</p>"
   },
   {
     "id": 5,
@@ -335,7 +335,7 @@
       "C": "They are identical"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Tail Risk and Convexity</h3><p><strong>A is correct.</strong> This demonstrates the 'Convexity Bias'.<br><strong>Futures (Short):</strong> Payoff is linear. $Gain = \\text{Notional} \\times \\Delta Rate \\times Time$. The cash is received daily (no discounting).<br><strong>FRA (Long):</strong> Payoff is $ \\frac{\\text{Notional} \\times \\Delta Rate \\times Time}{1 + (Rate \\times Time)} $.<br><strong>Mechanism:</strong> As rates ($R$) rise, the denominator in the FRA formula increases, dampening the payoff. The Futures contract does not have this denominator effect. Therefore, for a large rate increase, the Futures payoff (undiscounted) > FRA payoff (discounted).</p><p>B is incorrect. The FRA payoff is concave (dampened) relative to rates.<br>C is incorrect due to the daily settlement vs term settlement difference.</p>"
+    "explanation": "<h3>First Principles Thinking: Tail Risk and Convexity</h3><p><strong>A is correct.</strong> This demonstrates the 'Convexity Bias'.<br><strong>Futures (Short):</strong> Payoff is linear: \\( \\text{Gain} = \\text{Notional} \\times \\Delta \\text{Rate} \\times \\text{Time} \\). The cash is received daily, so there is no discounting effect.<br><strong>FRA (Long):</strong> Payoff is \\( \\frac{\\text{Notional} \\times \\Delta \\text{Rate} \\times \\text{Time}}{1 + (\\text{Rate} \\times \\text{Time})} \\).<br><strong>Mechanism:</strong> As rates (\\( R \\)) rise, the denominator in the FRA formula increases, dampening the payoff. The futures contract does not have this denominator effect. Therefore, for a large rate increase, the futures payoff (undiscounted) is greater than the FRA payoff (discounted).</p><p>B is incorrect. The FRA payoff is concave (dampened) relative to rates.<br>C is incorrect due to the daily settlement vs. term settlement difference.</p>"
   },
   {
     "id": 7,
@@ -348,7 +348,7 @@
       "C": "USD 25.25"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Future Value of Costs</h3><p><strong>A is correct.</strong> We must sum the Future Value of the spot price and the Future Value of the storage costs.<br><strong>1. FV of Spot:</strong><br>$$ 25.00 \\times (1.04)^{3/12} = 25.00 \\times 1.00985 = 25.246 $$<br><strong>2. FV of Storage Costs:</strong><br>Cost 1 (t=1m): USD 0.10 \\times (1.04)^{2/12} = 0.10 \\times 1.0065 = 0.1007$<br>Cost 2 (t=2m): USD 0.10 \\times (1.04)^{1/12} = 0.10 \\times 1.0033 = 0.1003$<br>Cost 3 (t=3m): USD 0.10$<br>Total FV Costs = USD 0.3010$<br><strong>Total Futures Price:</strong><br>$$ 25.246 + 0.301 = 25.547 $$<br>Rounded to USD 25.55.</p><p>B is incorrect. It likely assumes costs are paid at \\( t=0 \\) and compounded (\\( 0.30 \\times 1.04^{0.25} \\)).<br>C is incorrect. It ignores the time value of money on the spot price or costs.</p>"
+    "explanation": "<h3>First Principles Thinking: Future Value of Costs</h3><p><strong>A is correct.</strong> We must sum the future value of the spot price and the future value of the storage costs.<br><strong>1. FV of Spot:</strong><br>$$ 25.00 \\times (1.04)^{3/12} = 25.00 \\times 1.00985 = 25.246 $$<br><strong>2. FV of Storage Costs:</strong><br>Cost 1 (\\( t=1m \\)): \\( \\text{USD } 0.10 \\times (1.04)^{2/12} = 0.10 \\times 1.0065 = 0.1007 \\)<br>Cost 2 (\\( t=2m \\)): \\( \\text{USD } 0.10 \\times (1.04)^{1/12} = 0.10 \\times 1.0033 = 0.1003 \\)<br>Cost 3 (\\( t=3m \\)): \\( \\text{USD } 0.10 \\)<br>Total FV Costs = \\( \\text{USD } 0.3010 \\)<br><strong>Total Futures Price:</strong><br>$$ 25.246 + 0.301 = 25.547 $$<br>Rounded to \\( \\text{USD } 25.55 \\).</p><p>B is incorrect. It likely assumes costs are paid at \\( t=0 \\) and compounded (\\( 0.30 \\times 1.04^{0.25} \\)).<br>C is incorrect. It ignores the time value of money on the spot price or costs.</p>"
   },
   {
     "id": 8,
