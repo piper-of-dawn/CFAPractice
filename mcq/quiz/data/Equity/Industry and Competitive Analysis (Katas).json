@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Uses of Industry Analysis",
+    "stem": "Industry and competitive analysis most directly helps an analyst understand which driver of company performance?",
+    "options": {
+      "A": "Industry structure and relative competitive position",
+      "B": "Only the company's prior-year accounting policies",
+      "C": "Only the currency used in company reporting"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Industry analysis studies industry size, profitability, market shares, structure, and competitive position -> these shape company performance -> the analyst uses them to understand economic profits -> apply that purpose here -> conclude that industry structure and competitive position are central.</p><p>Option B is wrong because accounting policies alone do not capture industry drivers or competitive forces.</p><p>Option C is wrong because reporting currency is not the purpose of industry and competitive analysis.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Uses of Industry Analysis",
+    "stem": "In the long run, profitability differences across industries are most likely driven by:",
+    "options": {
+      "A": "One company's temporary sales promotion",
+      "B": "A single manager's compensation plan",
+      "C": "Structural factors in the industry"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Industry structural factors influence long-run profitability -> competition pulls companies toward an industry base rate -> company details create variation around that base -> apply the rule to industry differences -> conclude that structural factors drive them.</p><p>Option A is wrong because a temporary promotion is a company-specific action, not a long-run industry driver.</p><p>Option B is wrong because one manager's pay plan is company-specific and does not explain profitability differences across industries.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Uses of Industry Analysis",
+    "stem": "Which step should generally come first in an industry and competitive analysis?",
+    "options": {
+      "A": "Evaluate the company's competitive strategy",
+      "B": "Define the industry and its constituents",
+      "C": "Forecast the company's capital structure"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The analysis begins by defining industry boundaries -> later steps survey the industry, examine structure, assess external influences, and evaluate strategy -> the first condition is knowing what industry is being studied -> apply this sequence -> conclude that defining the industry comes first.</p><p>Option A is wrong because competitive strategy is evaluated after the industry context has been developed.</p><p>Option C is wrong because capital structure forecasting belongs to company forecasting, not the first step of industry analysis.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Uses of Industry Analysis",
+    "stem": "An analyst who wants exposure to an industry but less company-specific risk would most likely use:",
+    "options": {
+      "A": "Only the smallest company in the industry",
+      "B": "Only the company with the highest reported revenue",
+      "C": "A basket of several companies in that industry"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Industry analysis can identify when the industry itself is the desired exposure -> company-specific risk can be diversified -> a basket approach spreads exposure across several companies -> apply that goal -> conclude that a basket is most appropriate.</p><p>Option A is wrong because one small company increases, rather than diversifies away, company-specific risk.</p><p>Option B is wrong because selecting only the largest revenue company still leaves concentrated company-specific risk.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Industry Classification",
+    "stem": "An industry is most commonly defined from the customer perspective as companies that sell:",
+    "options": {
+      "A": "Similar products or services",
+      "B": "Identical amounts of debt",
+      "C": "Securities listed on the same exchange"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> An industry is commonly defined by similar products or services from the customers view -> customers compare offerings that satisfy similar needs -> this sets the boundary for analysis -> apply the definition -> conclude that similar products or services define the industry.</p><p>Option B is wrong because financing choices do not define an industry from the customer perspective.</p><p>Option C is wrong because exchange listing is a market feature, not a product or service similarity.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Industry Classification",
+    "stem": "GICS, ICB, and TRBC are best described as which type of classification schemes?",
+    "options": {
+      "A": "Random peer lists",
+      "B": "Strictly hierarchical taxonomies",
+      "C": "Only country-specific government codes"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> These commercial schemes assign each company within a tiered hierarchy -> a lowest-tier assignment maps upward into broader groups -> this is a strict taxonomy -> apply that structure -> conclude that they are strictly hierarchical taxonomies.</p><p>Option A is wrong because the schemes use defined groupings rather than random peer selection.</p><p>Option C is wrong because these commercial schemes are global, unlike older country-specific schemes.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Industry Classification",
+    "stem": "A key limitation of strict commercial classification schemes is that a multi-product company is usually assigned to:",
+    "options": {
+      "A": "Every industry in which it has any sales",
+      "B": "No industry until all segments are sold",
+      "C": "A single grouping"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Strict taxonomies classify a company to one lowest-tier group -> multi-product companies may operate across several businesses -> this can hide relevant competitors or segments -> apply the limitation -> conclude that assignment to a single grouping is the issue.</p><p>Option A is wrong because the commercial schemes generally do not assign a company to every industry with any sales.</p><p>Option B is wrong because companies are classified even when they have multiple segments.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Industry Classification",
+    "stem": "Which grouping method classifies companies as defensive or cyclical?",
+    "options": {
+      "A": "Exact legal incorporation date",
+      "B": "Sensitivity to the business cycle",
+      "C": "The number of board members"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Defensive and cyclical labels describe how sales, profitability, and valuations respond to macroeconomic activity -> that is sensitivity to the business cycle -> apply the classification rule -> conclude that business-cycle sensitivity is the method.</p><p>Option A is wrong because incorporation date does not indicate defensive or cyclical behavior.</p><p>Option C is wrong because board size is not the basis for defensive or cyclical grouping.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Industry Survey",
+    "stem": "After defining an industry, the next step is most likely to survey it by estimating size, growth, profitability, and:",
+    "options": {
+      "A": "Market share trends",
+      "B": "Only the CEO age of each firm",
+      "C": "Only the par value of each firms debt"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The industry survey examines size, growth rate and character, profitability, and major players market share trends -> these create a base for later evaluation -> apply the survey components -> conclude that market share trends belong in this step.</p><p>Option B is wrong because CEO age is not one of the core survey dimensions.</p><p>Option C is wrong because debt par value is not a standard industry survey measure in this framework.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Industry Survey",
+    "stem": "Industry size is typically measured using total annual sales from which perspective?",
+    "options": {
+      "A": "Only the parent-company legal name",
+      "B": "Only the number of stock tickers",
+      "C": "Product or customer perspective"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Industry size is measured by total annual sales tied to the relevant product or customer market -> not necessarily all sales of every constituent -> apply the sizing rule -> conclude that the product or customer perspective is used.</p><p>Option A is wrong because a legal name does not determine which segment sales belong in industry size.</p><p>Option B is wrong because the number of listed tickers does not measure annual industry sales.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Industry Survey",
+    "stem": "A growth industry is most likely one that has:",
+    "options": {
+      "A": "No customers remaining to acquire",
+      "B": "Not fully penetrated its total addressable market",
+      "C": "Growth always equal to zero"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Growth industries have not reached full saturation or penetration of their addressable market -> they may have growth drivers beyond broad economic growth -> apply the definition -> conclude that incomplete penetration is the key feature.</p><p>Option A is wrong because having no customers left to acquire describes saturation, not growth status.</p><p>Option C is wrong because zero growth is inconsistent with the growth industry concept.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Industry Survey",
+    "stem": "The Herfindahl-Hirschman Index is used most directly to measure industry:",
+    "options": {
+      "A": "Exchange-rate exposure",
+      "B": "Employee satisfaction",
+      "C": "Concentration"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> HHI sums the squares of competitor market shares -> higher values indicate greater concentration -> concentration helps assess competitive intensity -> apply the measure -> conclude that HHI measures industry concentration.</p><p>Option A is wrong because exchange-rate exposure is an economic influence, not what HHI measures.</p><p>Option B is wrong because employee satisfaction is unrelated to the market-share calculation used in HHI.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Industry Survey",
+    "stem": "Market share should often be interpreted as a range rather than a precise point estimate because:",
+    "options": {
+      "A": "Industry size can be difficult to measure",
+      "B": "All public companies report identical segment data",
+      "C": "Market shares never change over time"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Market share uses company revenues divided by industry size -> industry size can be hard to estimate, especially with private firms -> this creates measurement uncertainty -> apply the condition -> conclude that a range is often more appropriate.</p><p>Option B is wrong because identical public-company segment data would reduce, not create, measurement uncertainty.</p><p>Option C is wrong because trends in market share over time are a key part of the analysis.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Industry Structure and External Influences",
+    "stem": "Porter's Five Forces is primarily used to assess an industry's long-run:",
+    "options": {
+      "A": "Profitability and structure",
+      "B": "Legal name changes",
+      "C": "Accounting calendar"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Porter's Five Forces assesses industry structure -> industry structure determines long-run profitability through returns on invested capital -> apply the framework purpose -> conclude that profitability and structure are the focus.</p><p>Option B is wrong because legal name changes are not the object of the Five Forces framework.</p><p>Option C is wrong because accounting calendar choice is not an industry force.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Industry Structure and External Influences",
+    "stem": "Which item is one of Porter's Five Forces?",
+    "options": {
+      "A": "Personal income growth",
+      "B": "Environmental land-use rules",
+      "C": "Bargaining power of suppliers"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The five forces include supplier bargaining power, customer bargaining power, threat of new entrants, threat of substitutes, and rivalry -> supplier power is one of these forces -> apply the list -> conclude that supplier bargaining power is included.</p><p>Option A is wrong because personal income growth is an economic influence in PESTLE, not a Five Forces element.</p><p>Option B is wrong because environmental rules are external influences, not one of Porter's five competitive forces.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Industry Structure and External Influences",
+    "stem": "If an industry's products are standardized and undifferentiated, customer bargaining power is most likely:",
+    "options": {
+      "A": "Eliminated",
+      "B": "Higher",
+      "C": "Unrelated to switching"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Standardized products are easier for customers to compare and replace -> customers can switch or negotiate more effectively -> this raises bargaining power -> apply the condition -> conclude that customer bargaining power is higher.</p><p>Option A is wrong because standardization strengthens customer power rather than eliminating it.</p><p>Option C is wrong because ease of switching is directly related to customer bargaining power.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Industry Structure and External Influences",
+    "stem": "PESTLE analysis is more concerned than Porter's Five Forces with an industry's:",
+    "options": {
+      "A": "Sum of squared market shares",
+      "B": "Single lowest-tier taxonomy assignment",
+      "C": "Growth rate and market share dynamics"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> PESTLE identifies political, economic, social, technological, legal, and environmental influences -> these outside forces affect growth and market share dynamics -> apply the framework purpose -> conclude that growth rate and market share dynamics are central.</p><p>Option A is wrong because the sum of squared market shares describes HHI, not PESTLE.</p><p>Option B is wrong because a lowest-tier taxonomy assignment belongs to classification schemes, not PESTLE analysis.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Competitive Positioning",
+    "stem": "A company's competitive strategy is most effective when it is supported by resources, fits external influences, and:",
+    "options": {
+      "A": "Avoids all performance measurement",
+      "B": "Creates a defense against industry forces",
+      "C": "Ignores customer needs"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A forward-looking strategy evaluation asks whether the strategy defends against the five forces, fits PESTLE influences, and can be executed with company resources -> apply those dimensions -> conclude that defense against industry forces is required.</p><p>Option A is wrong because intentional strategy uses planning, performance measurement, and feedback.</p><p>Option C is wrong because ignoring customer needs would undermine competitive positioning.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Competitive Positioning",
+    "stem": "Which generic strategy most directly relies on economies of scale, strict cost control, and aggressive pricing?",
+    "options": {
+      "A": "Differentiation",
+      "B": "Focus",
+      "C": "Cost leadership"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Cost leadership is executed through scale economies, favorable input access, strict cost control, aggressive pricing, low-cost distribution, and scope economies -> apply those features -> conclude that the strategy is cost leadership.</p><p>Option A is wrong because differentiation relies on uniqueness, brand, service, quality, and premium pricing.</p><p>Option B is wrong because focus targets a particular customer group, product, or geography rather than broad low-cost scale alone.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Competitive Positioning",
+    "stem": "Which generic strategy most directly uses brand, superior quality, unique features, and premium pricing?",
+    "options": {
+      "A": "Cost leadership",
+      "B": "Differentiation",
+      "C": "Statistical clustering"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Differentiation seeks a unique product or service through brand, quality, features, customer experience, and premium pricing -> apply those execution methods -> conclude that the strategy is differentiation.</p><p>Option A is wrong because cost leadership emphasizes low cost and aggressive pricing, not uniqueness and premium pricing.</p><p>Option C is wrong because statistical clustering is a grouping method, not a generic competitive strategy.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Competitive Positioning",
+    "stem": "A company that is not a cost leader, not differentiated, and not focused is best described as:",
+    "options": {
+      "A": "A monopoly by definition",
+      "B": "Always a growth industry",
+      "C": "Stuck in the middle"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Generic strategies include cost leadership, differentiation, and focus -> a weak position is having none of these clear strategies -> apply that classification -> conclude that the company is stuck in the middle.</p><p>Option A is wrong because lacking a clear generic strategy does not make a company a monopoly.</p><p>Option B is wrong because growth industry status describes an industry's market penetration, not a company's strategy.</p>"
+  }
+]
