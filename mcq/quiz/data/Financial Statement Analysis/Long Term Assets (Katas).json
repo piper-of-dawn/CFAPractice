@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Purchased intangible assets",
+    "stem": "A company buys a patent in a transaction that is not a business combination. At acquisition, how is the patent most likely recorded?",
+    "options": {
+      "A": "At fair value, generally equal to the purchase price",
+      "B": "As an expense when the cash is paid",
+      "C": "As goodwill because it lacks physical substance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: purchased intangible recognition</h3><p><strong>A is correct.</strong> A purchased intangible asset acquired outside a business combination is treated like a long-lived tangible asset at acquisition. The governing rule is to record it at fair value, which is assumed to equal the purchase price. A patent is an intangible asset involving exclusive rights, so the company records the patent as an asset.</p><p>B is wrong because immediate expensing is generally associated with internally developed intangible costs, not a separately purchased intangible asset.</p><p>C is wrong because goodwill arises only when one company acquires another and the purchase price exceeds the fair value of net identifiable assets.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "IFRS identifiable intangible assets",
+    "stem": "Under IFRS, which condition is required for an intangible asset to be identifiable?",
+    "options": {
+      "A": "It must be separable or arise from contractual or legal rights",
+      "B": "It must have been created by the company through advertising",
+      "C": "It must be reported as goodwill after every acquisition"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: identifiability criterion</h3><p><strong>A is correct.</strong> Under IFRS, an identifiable intangible asset must be identifiable, controlled by the company, and expected to generate future economic benefits. Identifiability means the asset is capable of being separated from the entity or arises from contractual or legal rights. A separable patent or legal license therefore meets this primitive criterion.</p><p>B is wrong because internally developed advertising-related assets are generally expensed and are not automatically identifiable assets.</p><p>C is wrong because goodwill is not an identifiable intangible asset under IFRS.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Internally developed intangible assets",
+    "stem": "A company spends money to build a brand internally. Which treatment is generally most accurate?",
+    "options": {
+      "A": "Expense the costs as incurred",
+      "B": "Capitalize all costs as an intangible asset",
+      "C": "Record the costs as goodwill"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: internal development cost</h3><p><strong>A is correct.</strong> Costs to internally develop intangible assets are generally expensed when incurred. The rule reflects that internally created items such as brands often do not meet recognition requirements in the same way as purchased assets. Therefore, the internally developed brand costs are normally expenses.</p><p>B is wrong because capitalization is not the general treatment for internally developed intangible assets.</p><p>C is wrong because goodwill is recognized in a business combination, not from internally building a brand.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Research and development under IFRS",
+    "stem": "Under IFRS, research-phase expenditures for an internal project are most likely:",
+    "options": {
+      "A": "Expensed rather than capitalized",
+      "B": "Capitalized once paid in cash",
+      "C": "Recorded as goodwill"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: research phase rule</h3><p><strong>A is correct.</strong> IFRS requires expenditures on research, or during the research phase of an internal project, to be expensed rather than capitalized. The research phase is the stage when the company cannot yet demonstrate that an intangible asset is being created. Therefore, research costs are recognized as expenses.</p><p>B is wrong because payment in cash does not make research-phase spending eligible for capitalization.</p><p>C is wrong because goodwill is not created by research spending on an internal project.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Development costs under IFRS",
+    "stem": "Under IFRS, development costs for an internal project may be capitalized when the company can demonstrate criteria such as:",
+    "options": {
+      "A": "Technical feasibility and intent to use or sell the asset",
+      "B": "A completed marketing campaign for the product",
+      "C": "A desire to avoid reporting an expense"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: development phase capitalization</h3><p><strong>A is correct.</strong> IFRS allows an intangible asset from development expenditures to be recognized if specified criteria are met. These include demonstrating technical feasibility of completing the asset and the intent to use or sell it. Once those conditions are met, capitalization may be appropriate.</p><p>B is wrong because a marketing campaign is not the stated criterion for capitalizing development costs.</p><p>C is wrong because accounting treatment is based on recognition criteria, not management preference.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Software development under US GAAP",
+    "stem": "Under US GAAP, costs to develop software for sale are expensed until which point is reached?",
+    "options": {
+      "A": "Technological feasibility is established",
+      "B": "The first customer pays for the product",
+      "C": "The company records goodwill"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: software threshold</h3><p><strong>A is correct.</strong> Under US GAAP, costs incurred to develop software for sale are expensed until technological feasibility is established and are capitalized thereafter. This is an edge case because US GAAP generally expenses research and development, but certain software costs are capitalized after the required threshold. Therefore, technological feasibility is the key point.</p><p>B is wrong because customer payment is not the stated capitalization threshold for software development costs.</p><p>C is wrong because software development costs do not become goodwill.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Business combinations and goodwill",
+    "stem": "In a business combination, goodwill is most likely recorded when the purchase price exceeds:",
+    "options": {
+      "A": "The fair value of net identifiable assets acquired",
+      "B": "The historical cost of the acquirer's own assets",
+      "C": "The cash balance of the acquired company"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: goodwill measurement</h3><p><strong>A is correct.</strong> Under the acquisition method, the acquirer allocates the purchase price to identifiable assets acquired and liabilities assumed based on fair value. Any excess of the purchase price over the fair value of net identifiable assets acquired is recorded as goodwill. Goodwill cannot be identified separately from the business as a whole.</p><p>B is wrong because the acquirer's own historical asset cost is not the benchmark for goodwill in the acquisition.</p><p>C is wrong because goodwill is based on net identifiable assets, not just the acquired company's cash balance.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Impairment of property, plant, and equipment",
+    "stem": "Property, plant, and equipment are tested for impairment when:",
+    "options": {
+      "A": "Events or circumstances indicate possible impairment",
+      "B": "Every reporting period automatically, even with no indicators",
+      "C": "Only after the asset is fully depreciated"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: impairment trigger</h3><p><strong>A is correct.</strong> Property, plant, and equipment are not required to be tested annually for impairment. At the end of each reporting period, the company assesses whether there are indications of impairment, such as obsolescence or declining demand. If an indication exists, the recoverable amount is measured to test for impairment.</p><p>B is wrong because annual impairment testing is not required for property, plant, and equipment when no impairment indicator exists.</p><p>C is wrong because impairment testing depends on indicators, not on the asset being fully depreciated.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "IFRS impairment measurement",
+    "stem": "Under IFRS, an impairment loss for an asset is measured as carrying amount minus:",
+    "options": {
+      "A": "Recoverable amount",
+      "B": "Undiscounted expected future cash flows",
+      "C": "Original historical cost"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: IFRS impairment loss</h3><p><strong>A is correct.</strong> Under IFRS, an impairment loss is the excess of carrying amount over recoverable amount. Recoverable amount is the higher of fair value less costs to sell and value in use. Therefore, carrying amount minus recoverable amount gives the impairment loss when carrying amount is higher.</p><p>B is wrong because undiscounted expected future cash flows are used in the US GAAP recoverability assessment, not as the IFRS measurement amount.</p><p>C is wrong because original historical cost is not the IFRS impairment measurement benchmark.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "US GAAP impairment measurement",
+    "stem": "Under US GAAP, an asset group is considered not recoverable when its carrying amount exceeds:",
+    "options": {
+      "A": "Undiscounted expected future cash flows",
+      "B": "Value in use",
+      "C": "Accumulated depreciation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: US GAAP recoverability test</h3><p><strong>A is correct.</strong> Under US GAAP, assessing recoverability is separate from measuring the impairment loss. The carrying amount of an asset group is considered not recoverable when it exceeds the undiscounted expected future cash flows of the group. If not recoverable, the loss is measured using fair value.</p><p>B is wrong because value in use is part of IFRS recoverable amount, not the US GAAP recoverability test.</p><p>C is wrong because accumulated depreciation is not compared with carrying amount to decide recoverability.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Finite-life intangible impairment",
+    "stem": "An intangible asset with a finite useful life is most likely tested for impairment:",
+    "options": {
+      "A": "When significant events suggest the need to test",
+      "B": "At least annually in all circumstances",
+      "C": "Only when management plans to sell the company"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: finite-life intangible testing</h3><p><strong>A is correct.</strong> Finite-life intangible assets are amortized and may become impaired. Like property, plant, and equipment, they are not tested annually for impairment in all cases. They are tested when significant events, such as a major market price decline or adverse legal or economic change, suggest the need to test.</p><p>B is wrong because annual testing applies to indefinite-life intangibles, not automatically to finite-life intangibles.</p><p>C is wrong because a company sale plan is not the only trigger for impairment testing.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Indefinite-life intangible assets",
+    "stem": "An intangible asset with an indefinite useful life is most likely:",
+    "options": {
+      "A": "Not amortized but tested at least annually for impairment",
+      "B": "Amortized every year and never tested for impairment",
+      "C": "Removed from the balance sheet immediately"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: indefinite-life treatment</h3><p><strong>A is correct.</strong> Intangible assets with indefinite useful lives are not amortized. Instead, they are carried on the balance sheet at historical cost and tested at least annually for impairment. Impairment exists when carrying amount exceeds fair value.</p><p>B is wrong because indefinite-life intangibles are not amortized and are tested for impairment.</p><p>C is wrong because indefinite useful life does not mean the asset is immediately derecognized.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Long-lived assets held for sale",
+    "stem": "A long-lived asset classified as held for sale is most likely measured at reclassification using fair value less costs to sell and:",
+    "options": {
+      "A": "Depreciation or amortization stops",
+      "B": "Depreciation continues until disposal",
+      "C": "The asset is automatically recorded as goodwill"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: held-for-sale classification</h3><p><strong>A is correct.</strong> A long-lived asset is reclassified as held for sale when management intends to sell it, sale is highly probable, and the asset is available for immediate sale in its present condition. At reclassification, it is tested for impairment against fair value less costs to sell. Long-lived assets held for sale cease to be depreciated or amortized.</p><p>B is wrong because depreciation or amortization stops once the asset is classified as held for sale.</p><p>C is wrong because held-for-sale classification does not create goodwill.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Reversal of impairments",
+    "stem": "Which statement about impairment reversals is most accurate?",
+    "options": {
+      "A": "IFRS permits reversals of impairment losses when recoverable amount increases",
+      "B": "US GAAP permits reversals for assets held for use after any impairment",
+      "C": "IFRS permits revaluation above the previous carrying amount through impairment reversal"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: impairment reversal limit</h3><p><strong>A is correct.</strong> IFRS permits impairment losses to be reversed if an asset's recoverable amount increases, whether the asset is held for use or held for sale. This is limited to reversing impairment losses. IFRS does not permit increasing the asset to recoverable amount if that exceeds the previous carrying amount.</p><p>B is wrong because US GAAP does not permit reversal of impairment losses for assets held for use.</p><p>C is wrong because IFRS reversal is limited and does not allow revaluation above the previous carrying amount through an impairment reversal.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "IFRS PPE disclosures",
+    "stem": "Under IFRS, which disclosure is required for each class of property, plant, and equipment?",
+    "options": {
+      "A": "Measurement basis and depreciation method",
+      "B": "The exact purchase date of every asset",
+      "C": "The market value of every individual machine"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: PPE disclosure requirements</h3><p><strong>A is correct.</strong> Under IFRS, for each class of property, plant, and equipment, a company must disclose items such as the measurement basis, depreciation method, useful life or depreciation rate, gross carrying amount, accumulated depreciation, and a reconciliation of carrying amount. Measurement basis and depreciation method are therefore required disclosures.</p><p>B is wrong because IFRS does not require the exact purchase date of every asset as part of the listed disclosure requirements.</p><p>C is wrong because individual machine market values are not the required class-level PPE disclosure.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "IFRS intangible asset disclosures",
+    "stem": "Under IFRS, if an intangible asset has an indefinite life, what must the company disclose?",
+    "options": {
+      "A": "The carrying amount and why the useful life is indefinite",
+      "B": "The annual amortization rate used for every future year",
+      "C": "The sale proceeds expected from immediate disposal"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: indefinite-life disclosure</h3><p><strong>A is correct.</strong> Under IFRS, a company must disclose whether intangible asset useful lives are finite or indefinite. If an asset has an indefinite life, the company must disclose the carrying amount and explain why the useful life is considered indefinite. This disclosure helps analysts evaluate the asset's accounting treatment.</p><p>B is wrong because indefinite-life intangible assets are not amortized, so an amortization rate is not the key disclosure for that asset.</p><p>C is wrong because expected sale proceeds from immediate disposal are not the required indefinite-life disclosure.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "US GAAP intangible asset disclosures",
+    "stem": "Under US GAAP, which disclosure is required for intangible assets?",
+    "options": {
+      "A": "Estimated amortization expense for the next five fiscal years",
+      "B": "Reversals of impairment losses for assets held for use",
+      "C": "The reason every intangible asset has physical substance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: US GAAP intangible disclosure</h3><p><strong>A is correct.</strong> Under US GAAP, companies disclose gross carrying amounts and accumulated amortization in total and by major class, aggregate amortization expense for the period, and estimated amortization expense for the next five fiscal years. The five-year amortization estimate is a required disclosure.</p><p>B is wrong because US GAAP does not allow reversal of impairment losses for assets held for use.</p><p>C is wrong because intangible assets lack physical substance; that statement contradicts the nature of the assets.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Depreciation expense presentation",
+    "stem": "Under IFRS, whether depreciation appears as a separate income statement line item depends most directly on:",
+    "options": {
+      "A": "Whether expenses are presented by nature or by function",
+      "B": "Whether the company reports under US GAAP",
+      "C": "Whether the asset is classified as current"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: expense presentation method</h3><p><strong>A is correct.</strong> Under IFRS, depreciation expense may or may not appear as a separate income statement line item. The presentation depends on whether the company uses a nature of expense method or a function of expense method. Under function of expense, depreciation may be included within cost of sales or other functional categories.</p><p>B is wrong because the statement asks about IFRS presentation, not US GAAP reporting status.</p><p>C is wrong because depreciation presentation is not determined by classifying the asset as current.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Statement of cash flows disclosures",
+    "stem": "In the statement of cash flows, acquisitions and disposals of fixed assets are most likely shown in which section?",
+    "options": {
+      "A": "Investing activities",
+      "B": "Operating activities only",
+      "C": "Financing activities only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: cash flow classification</h3><p><strong>A is correct.</strong> The statement of cash flows reflects acquisitions and disposals of fixed assets in the investing section. This separates long-term asset purchases and sale proceeds from normal operating cash flows. Under the indirect method, gains or losses on asset sales are removed from operating cash flow and proceeds are included in investing cash flow.</p><p>B is wrong because acquisitions and disposal proceeds for fixed assets are not shown only as operating activities.</p><p>C is wrong because fixed asset purchases and disposals are investing activities, not financing activities.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Fixed asset turnover ratio",
+    "stem": "The fixed asset turnover ratio is calculated as total revenue divided by:",
+    "options": {
+      "A": "Average net fixed assets",
+      "B": "Accumulated depreciation",
+      "C": "Annual depreciation expense"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: fixed asset turnover</h3><p><strong>A is correct.</strong> Fixed asset turnover is total revenue divided by average net fixed assets. The ratio reflects the relationship between sales and investment in property, plant, and equipment. A higher ratio is often interpreted as greater efficiency in generating sales from fixed assets.</p><p>B is wrong because accumulated depreciation is used in asset age estimates, not as the denominator of fixed asset turnover.</p><p>C is wrong because annual depreciation expense is used in age and remaining-life estimates, not fixed asset turnover.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Asset age ratios",
+    "stem": "For PPE reported under the cost model, average remaining useful life is estimated as:",
+    "options": {
+      "A": "Net PPE divided by depreciation expense",
+      "B": "Accumulated depreciation divided by depreciation expense",
+      "C": "Revenue divided by average net fixed assets"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: remaining useful life estimate</h3><p><strong>A is correct.</strong> Asset age ratios generally rely on historical cost and depreciation, especially for PPE under the cost model. Average remaining useful life is estimated as net PPE divided by depreciation expense. This estimate helps analysts identify whether reinvestment in productive capacity may be needed.</p><p>B is wrong because accumulated depreciation divided by depreciation expense estimates the average age of the asset base.</p><p>C is wrong because revenue divided by average net fixed assets is fixed asset turnover, not remaining useful life.</p>"
+  }
+]

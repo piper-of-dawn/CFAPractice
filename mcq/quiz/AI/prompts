@@ -1,10 +1,10 @@
-Now I have a note making task for you. There is a placeholder for ### MODULE 35.2: DEFERRED TAX ASSETS AND LIABILITIES in /home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/FSA.md and it is empty.
-Consult the text /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_9* and fill the placeholder. For note making style, STRICTLY FOLLOW: /home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/AGENT.md.
+Now I have a note making task for you. There is a placeholder for ### MODULE 30.2: INDIRECT METHOD CASHFLOW in /home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/FSA.md and it already has my notes. You need to improve it
+Consult the text /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_05_analyzing_statements_of_cash_flows_ii.txt and fill the placeholder. For note making style, STRICTLY FOLLOW: /home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/AGENT.md.
 Make sure you explain in a very casual language in Feynman style, speaking directly to the reader. Use real world examples of scandals, interesting events and anecdotes to make the text interesting. And focus on each learning outcome (this is sacrosanct).
 
 Katas format
-Generate 21 easy CFA-style MCQs for Topic: Module 10: Financial Reporting Quality strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_10_financial_reporting_quality.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. You need to make sure that atleast 7 questions come from edge cases or concepts that students usually ignore while reading the text. Follow AGENTS.md and use the CFA Question Generator — Building-Block Edition.
-Write the output only the JSON array to a dedicated file to "/home/karma/CFAPractice/mcq/quiz/data/Financial Statement Analysis/Financial Reporting Quality (Katas).json". Append the file if it already exists, DO NOT OVERWRITE
+Generate 21 easy CFA-style MCQs for Topic: Module 07: Long Term Assets.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_07*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. You need to make sure that atleast 7 questions come from edge cases or concepts that students usually ignore while reading the text. Follow AGENTS.md and use the CFA Question Generator — Building-Block Edition.
+Write the output only the JSON array to a dedicated file to "/home/karma/CFAPractice/mcq/quiz/data/Financial Statement Analysis/Long Term Assets (Katas).json". Append the file if it already exists, DO NOT OVERWRITE
 
 
 Enumeration / counting format
