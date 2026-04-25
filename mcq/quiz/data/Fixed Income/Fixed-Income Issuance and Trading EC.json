@@ -9,7 +9,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is BBB- or higher for investment grade on the S&P scale → item I meets the threshold → items II and III are below investment grade and are high yield or speculative grade → one item qualifies → conclude Only one.</p><p>Why option B is incorrect: BB+ is the highest speculative-grade rating, not a second investment-grade rating.</p><p>Why option C is incorrect: B is also below investment grade, so all three cannot qualify.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The investment-grade line in the module is BBB- or higher. Item I, BBB-, sits exactly on that line, so it qualifies. Item II, BB+, is just below the line and is speculative grade. Item III, B, is also below the line. One item qualifies, so the answer is Only one.</p><p><strong>Option B is incorrect.</strong> Only two would require one more rating besides BBB- to be investment grade, but BB+ is specifically the highest speculative-grade rating.</p><p><strong>Option C is incorrect.</strong> All three cannot qualify because both BB+ and B are below investment grade.</p>"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is being below investment grade, including new less stable issuers and fallen angels → item I qualifies → item II qualifies as fallen angels are high yield → item III does not qualify because developed market sovereigns are typically the most creditworthy borrowers → two items qualify → conclude Only two.</p><p>Why option A is incorrect: it misses that both new collateral-dependent issuers and fallen angels are included in high yield.</p><p>Why option C is incorrect: developed market sovereign issuers are not classified as high yield in this context.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The module places two types of issuers in the high-yield category here. Item I qualifies because new issuers with less stable cash flows may need collateral and are high-yield-type borrowers. Item II qualifies because fallen angels are formerly investment-grade issuers whose credit quality has deteriorated. Item III does not qualify because developed market sovereign issuers are generally the most creditworthy borrowers in their markets. Two items qualify, so the answer is Only two.</p><p><strong>Option A is incorrect.</strong> Only one would ignore either the new less stable issuer or the fallen angel, both of which the module associates with high yield.</p><p><strong>Option C is incorrect.</strong> All three would incorrectly classify developed market sovereign issuers as high yield.</p>"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches investor positioning across maturity and credit spectra → item I matches short-term liquidity needs → item II matches long-horizon liability matching → item III matches taking credit risk to augment returns across maturities → three items qualify → conclude All the three.</p><p>Why option A is incorrect: more than one listed investor-positioning statement is directly supported.</p><p>Why option B is incorrect: it incorrectly excludes one of the three valid investor-positioning statements.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The module says investors position along maturity and credit spectra. Item I qualifies because near-term obligations and liquid cash alternatives are often met with money market securities. Item II qualifies because pension funds and insurers may match long-term liabilities with suitable maturity profiles. Item III qualifies because investors may take credit risk at any maturity to increase expected return. Three items qualify, so the answer is All the three.</p><p><strong>Option A is incorrect.</strong> Only one is too low because the module supports each of the three investor-positioning statements.</p><p><strong>Option B is incorrect.</strong> Only two is also too low because none of the listed statements contradicts the module.</p>"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is placement in the default-risk-free issuer category rather than investment-grade or high-yield credit categories → item I is a Treasury instrument and belongs to the default-risk-free category, although bills are short term → item II is high-yield credit exposure → item III is shown under investment-grade long-term instruments → one item qualifies by issuer category → conclude Only one.</p><p>Why option B is incorrect: mortgage-backed securities are investment-grade instruments in the exhibit, not default-risk-free instruments.</p><p>Why option C is incorrect: leveraged loans are high-yield instruments and do not satisfy the default-risk-free category.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The default-risk-free category in the module is tied to Treasury instruments from highly creditworthy sovereign issuers. Item I, Treasury bills, qualifies as a Treasury instrument even though it is short term. Item II, leveraged loans, appears in the high-yield area. Item III, mortgage-backed securities, appears under investment-grade long-term instruments, not default-risk-free. One item qualifies, so the answer is Only one.</p><p><strong>Option B is incorrect.</strong> Only two would require either leveraged loans or mortgage-backed securities to be default-risk-free, but the module places them in other credit categories.</p><p><strong>Option C is incorrect.</strong> All three fails because leveraged loans and mortgage-backed securities are not in the default-risk-free category.</p>"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the item is part of the credit rating measure of an issuer's ability to meet debt obligations → item I qualifies → item II qualifies → item III is not described as part of the credit rating assessment → two items qualify → conclude Only two.</p><p>Why option A is incorrect: it omits one of the two stated components of credit rating assessment.</p><p>Why option C is incorrect: common stock dividend history is not listed as one of the components in the definition.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The module says credit ratings measure the ability to meet debt obligations using both probability of default and expected loss if default occurs. Item I qualifies because probability of default is named. Item II qualifies because expected loss under default is named. Item III does not qualify because common stock dividend history is not part of that definition. Two items qualify, so the answer is Only two.</p><p><strong>Option A is incorrect.</strong> Only one misses that the rating idea has two named parts: likelihood of default and loss if default happens.</p><p><strong>Option C is incorrect.</strong> All three incorrectly adds an equity dividend fact that the module does not use in the credit rating definition.</p>"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is whether the item states a module-described difference between fixed-income and equity indexes → item I qualifies because bond issuers may have many securities outstanding → item II does not qualify because fixed-income indexes have more turnover → item III does not qualify because bond indexes are usually weighted by market value of debt outstanding → one item qualifies → conclude Only one.</p><p>Why option B is incorrect: it treats either lower turnover or equal weighting as valid, but both contradict the module.</p><p>Why option C is incorrect: two of the three statements reverse the fixed-income index features described.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The module gives specific bond-index differences. Item I qualifies because one issuer can have many bonds outstanding, which increases index constituents. Item II does not qualify because fixed-income indexes have more, not less, turnover than equity indexes. Item III does not qualify because bond indexes are usually weighted by market value of debt outstanding, not equally weighted. One item qualifies, so the answer is Only one.</p><p><strong>Option B is incorrect.</strong> Only two would require either lower turnover or equal weighting to be true, but both reverse the module's description.</p><p><strong>Option C is incorrect.</strong> All three is impossible because two statements are direct opposites of the module.</p>"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the item causes bonds to be added to or removed from a bond index under the module's rules → item I qualifies as a removal reason → item II qualifies as an addition reason → item III is unrelated to bond index inclusion → two items qualify → conclude Only two.</p><p>Why option A is incorrect: it recognizes only one side of index turnover and misses eligible new issues.</p><p>Why option C is incorrect: common stock voting policy is not an index turnover rule for bonds.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Bond index turnover comes from rule-based additions and removals. Item I qualifies because bonds are removed when they fall below minimum maturity. Item II qualifies because new eligible issues can be added when required information and pricing are available. Item III does not qualify because common stock voting policy is not a bond index inclusion rule. Two items qualify, so the answer is Only two.</p><p><strong>Option A is incorrect.</strong> Only one sees only one side of rebalancing, but the module includes both removals and additions.</p><p><strong>Option C is incorrect.</strong> All three incorrectly treats an equity governance fact as a fixed-income index rule.</p>"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion is whether the bond is excluded by the Global Aggregate rules described → item I qualifies because high-yield debt is excluded → item II does not qualify because eligible investment-grade fixed-coupon securities may be included → item III does not qualify because senior and subordinated issues are eligible if other criteria are met → one item qualifies → conclude Only one.</p><p>Why option B is incorrect: it wrongly treats one eligible category as excluded.</p><p>Why option C is incorrect: both eligible investment-grade securities and otherwise qualifying senior or subordinated issues can be included.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> For the Global Aggregate Index, the module excludes high-yield and unrated debt and instruments below minimum size. Item I qualifies as excluded because it is high yield. Item II does not qualify as excluded because investment-grade fixed-coupon securities that meet size rules may be included. Item III does not qualify as excluded because senior and subordinated issues are eligible if they meet the other rules. One item qualifies, so the answer is Only one.</p><p><strong>Option B is incorrect.</strong> Only two would wrongly exclude one of the eligible categories described by the index rules.</p><p><strong>Option C is incorrect.</strong> All three is wrong because the module allows qualifying investment-grade fixed-coupon bonds and qualifying senior or subordinated issues.</p>"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the feature belongs to the EMBI+ inclusion or calculation rules → item I qualifies under currency → item II qualifies under currency-linked payment exclusions → item III qualifies under rebalancing → three items qualify → conclude All the three.</p><p>Why option A is incorrect: the EMBI+ description includes more than one of these features.</p><p>Why option B is incorrect: it incorrectly excludes one of the stated EMBI+ features.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The EMBI+ rules in the module are narrow and specific. Item I qualifies because the index includes only US dollar-denominated bonds. Item II qualifies because bonds with coupon or redemption payments linked to an exchange rate are not eligible. Item III qualifies because rebalancing occurs on the final US business day of each month. Three items qualify, so the answer is All the three.</p><p><strong>Option A is incorrect.</strong> Only one is too low because all three features are stated in the EMBI+ description.</p><p><strong>Option B is incorrect.</strong> Only two is too low because none of the three listed features conflicts with the module.</p>"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the item is an eligibility feature of the Euro Corporate Sustainable SRI Index → item I qualifies under ESG rules → item II qualifies under controversy exclusions → item III does not qualify because fixed-rate perpetual bonds are excluded → two items qualify → conclude Only two.</p><p>Why option A is incorrect: it misses one of the two ESG-related eligibility features listed.</p><p>Why option C is incorrect: fixed-rate perpetual bonds are excluded rather than included.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The Euro Corporate Sustainable SRI Index uses both normal bond filters and ESG filters. Item I qualifies because the index requires an MSCI ESG rating of BBB or higher. Item II qualifies because issuers with a Red MSCI Controversies score are excluded. Item III does not qualify because fixed-rate perpetual bonds are excluded, not included. Two items qualify, so the answer is Only two.</p><p><strong>Option A is incorrect.</strong> Only one misses that the ESG rating rule and the controversies exclusion are both part of the index rules.</p><p><strong>Option C is incorrect.</strong> All three incorrectly turns an explicit exclusion of fixed-rate perpetual bonds into an inclusion feature.</p>"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
       "C": "All the three"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The defining criterion is whether the issuer is raising financing through new debt issuance → item I qualifies as primary issuance → item II is secondary trading among investors and does not qualify → item III qualifies because sovereign primary issuance usually takes the form of a public auction → two items qualify → conclude Only two.</p><p>Why option A is incorrect: it overlooks sovereign public auctions as primary market issuance.</p><p>Why option C is incorrect: existing-bond trading among investors is secondary, not primary.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Primary market activity means the issuer is raising financing by selling new debt. Item I qualifies because the issuer sells a new bond to raise capital. Item II does not qualify because existing bonds traded among investors are secondary market trades. Item III qualifies because sovereign debt issuance usually occurs through a public auction led by the treasury or finance ministry. Two items qualify, so the answer is Only two.</p><p><strong>Option A is incorrect.</strong> Only one misses that sovereign public auctions are also primary issuance.</p><p><strong>Option C is incorrect.</strong> All three incorrectly counts secondary trading of existing bonds as primary market activity.</p>"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is first-time access to the bond market as a debut issuer → item I qualifies → item II qualifies → item III qualifies → three items qualify → conclude All the three.</p><p>Why option A is incorrect: the module gives multiple debut issuer examples, not one.</p><p>Why option B is incorrect: it incorrectly excludes one of the listed debut issuer examples.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> A debut issuer is an issuer coming to the bond market for the first time. Item I qualifies because the module lists new corporate legal entities after mergers, acquisitions, or divestitures that refinance debt. Item II qualifies because mature companies with more predictable cash flows may begin issuing debt. Item III qualifies because sovereign governments may raise external foreign currency debt for the first time. Three items qualify, so the answer is All the three.</p><p><strong>Option A is incorrect.</strong> Only one ignores two other first-time bond issuer examples stated in the module.</p><p><strong>Option B is incorrect.</strong> Only two is still too low because all three listed cases are debut issuer examples.</p>"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
       "C": "All the three"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The defining criterion for an underwritten offering is that underwriters guarantee the sale at the negotiated offering price → item I qualifies → item II describes a best-efforts offering → item III is not a primary underwriting feature → one item qualifies → conclude Only one.</p><p>Why option B is incorrect: best efforts is specifically different from underwriting because the sale is not guaranteed.</p><p>Why option C is incorrect: delisting of equity is a secondary market issue and does not define an underwritten bond offering.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> An underwritten offering is defined by the underwriter guaranteeing the sale at the negotiated offering price. Item I qualifies because it states that guarantee. Item II does not qualify because selling on commission only if possible is a best-efforts offering. Item III does not qualify because equity delisting is unrelated to primary bond underwriting. One item qualifies, so the answer is Only one.</p><p><strong>Option B is incorrect.</strong> Only two would confuse best efforts with underwriting, but best efforts lacks the sale guarantee.</p><p><strong>Option C is incorrect.</strong> All three wrongly includes a secondary-market distress fact and a best-efforts fact as underwriting features.</p>"
   },
   {
     "id": 14,
@@ -165,6 +165,6 @@
       "C": "All the three"
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement matches the module's bid-offer spread and liquidity descriptions → item I qualifies for on-the-run developed market sovereign bonds → item II qualifies for recent higher-quality frequent corporate issuers → item III qualifies for less frequent or seasoned corporate bonds → three items qualify → conclude All the three.</p><p>Why option A is incorrect: the module supports all three liquidity statements, not just one.</p><p>Why option B is incorrect: it incorrectly excludes one of the stated liquidity relationships.</p>"
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Liquidity in the module is read through bid-offer spreads: tighter spreads mean more liquidity, wider spreads mean less liquidity. Item I qualifies because on-the-run developed market sovereign bonds can have spreads equal to a fraction of a basis point. Item II qualifies because recently issued higher-quality corporate bonds from frequent issuers usually have the greatest corporate liquidity. Item III qualifies because less frequent or seasoned corporate bonds may have spreads of at least 10-20 basis points or more for small sizes. Three items qualify, so the answer is All the three.</p><p><strong>Option A is incorrect.</strong> Only one is too low because each statement matches a different liquidity tier in the module.</p><p><strong>Option B is incorrect.</strong> Only two is too low because none of the three listed liquidity statements is inconsistent with the module.</p>"
   }
 ]

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "topic": "Fixed-Income Market Segments, Issuers, and Investors",
+    "stem": "Assertion (A): A high-yield issuer may be able to issue long-term callable notes even though it lacks access to unsecured commercial paper.\nReason (R): High-yield issuers generally have limited access to secured debt across shorter maturities and may rely on collateral because their operating cash flows are less stable.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: market access boundary</h3><p><strong>B is correct.</strong> The CFA Curriculum distinguishes high-yield issuers from investment-grade issuers by weaker credit quality and less stable cash flows. A high-yield issuer can have long-term callable notes outstanding while lacking access to unsecured commercial paper, so the assertion is true. The reason is also true because such issuers often rely on secured shorter-maturity borrowing and collateral. But that reason explains the need for secured short-term borrowing, not the separate fact that long-term callable notes may exist.</p><p>A is incorrect because it incorrectly treats the secured short-term borrowing profile as the direct explanation for the long-term callable bond access.</p><p>C is incorrect because the reason is consistent with the CFA Curriculum's description of high-yield issuers.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Fixed-Income Market Segments, Issuers, and Investors",
+    "stem": "Assertion (A): A bond fund restricted to investment-grade debt may hold BBB- rated bonds but exclude BB+ rated bonds.\nReason (R): BBB- is the lowest investment-grade rating, whereas BB+ is treated as the highest speculative-grade rating.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: rating cutoff</h3><p><strong>A is correct.</strong> The CFA Curriculum defines investment grade as BBB- or higher and high yield, speculative grade, or junk as BB+ or lower. The assertion correctly applies that boundary: a mandate limited to investment-grade debt can include BBB- but must exclude BB+. The reason states the exact cutoff and therefore directly explains the assertion.</p><p>B is incorrect because the reason is not merely related; it is the governing classification rule.</p><p>D is incorrect because the assertion correctly follows the investment-grade boundary.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Fixed-Income Market Segments, Issuers, and Investors",
+    "stem": "Assertion (A): Pension funds and insurance companies commonly favor fixed-income instruments whose cash-flow and maturity profile can be matched to long-term liabilities.\nReason (R): Investors seeking liquid cash alternatives often meet near-term obligations with money market securities.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: investor horizon matching</h3><p><strong>B is correct.</strong> The CFA Curriculum states that pension funds and insurance companies with long investment time horizons favor instruments with fixed periodic coupon cash flows and maturity profiles matching long-term liabilities. It also states that near-term obligations and liquid cash alternatives are often met with money market securities. Both statements are true, but the reason describes short-term liquidity needs, not why long-horizon liability investors prefer longer maturity cash-flow matching.</p><p>A is incorrect because the reason points to a different investor need on the maturity spectrum.</p><p>C is incorrect because the reason is a true statement about near-term obligations and cash alternatives.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Fixed-Income Indexes",
+    "stem": "Assertion (A): A broad fixed-income index can change composition as public versus private issuer debt, maturity mix, and credit quality in the bond market change.\nReason (R): Bond index constituents are usually weighted by the market value of debt outstanding.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: index composition mechanism</h3><p><strong>A is correct.</strong> The CFA Curriculum states that bond index constituents are usually weighted by market value of debt outstanding. Because bonds are issued by many issuer types, broad bond indexes reflect changes in bond market composition, including public versus private issuer debt, longer maturities, and deterioration in credit quality. The reason identifies the weighting mechanism that causes the index to reflect those market composition changes.</p><p>B is incorrect because the reason is not detached from the assertion; it explains why broad bond indexes move with debt market composition.</p><p>D is incorrect because the assertion matches the stated behavior of broad bond indexes.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Fixed-Income Indexes",
+    "stem": "Assertion (A): A fund tracking a complex broad bond index will typically hold every constituent security to avoid tracking error.\nReason (R): Fixed-income indexes may contain many more securities than equity indexes because one issuer can have many eligible bonds outstanding.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: replication constraint</h3><p><strong>D is correct.</strong> The CFA Curriculum explains that fixed-income indexes often have many constituents because a single issuer may have many outstanding securities that meet eligibility rules. That reason is true. The assertion is false because a bond fund aiming to match a specific index typically holds a representative sample, not every constituent, since the complexity of bond indexes can make full purchase impractical.</p><p>A is incorrect because it accepts a full-replication claim that conflicts with the representative sampling approach described in the CFA Curriculum.</p><p>B is incorrect because the assertion is false even though the reason is true.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Primary and Secondary Fixed-Income Markets",
+    "stem": "Assertion (A): A frequent investment-grade bond issuer may use a shelf registration to issue a new bond quickly when market conditions are favorable.\nReason (R): Repeat fixed-income issuance is often more abbreviated than debut bond issuance and follow-on equity issuance because the issuer usually sells a new security priced at or close to par.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: repeat issuer process</h3><p><strong>A is correct.</strong> The CFA Curriculum states that frequent bond issuers use shelf registration or a broad offering circular updated regularly for future issuance, and they often choose issuance timing opportunistically. The repeat fixed-income process is more abbreviated because issuers usually issue a new security priced at or close to par rather than returning with the identical equity instrument. The reason therefore explains why the shelf-based repeat bond issuance process can be quick and opportunistic.</p><p>B is incorrect because the reason is directly tied to the abbreviated repeat-issuer process.</p><p>C is incorrect because the reason accurately describes repeat fixed-income issuance relative to debut and equity follow-on issuance.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Primary and Secondary Fixed-Income Markets",
+    "stem": "Assertion (A): Distressed corporate bonds usually stop trading before the issuer's equity is delisted.\nReason (R): Distressed debt may trade until the issuer has liquidated its assets or its outstanding bonds have been restructured.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: trading termination order</h3><p><strong>D is correct.</strong> The CFA Curriculum states that distressed debt is traded until the corporate issuer has liquidated its assets or its outstanding bonds have been restructured. It also notes that an equity security may be delisted once exchange listing requirements are no longer met and that, by the time debt is distressed, the equity will likely already have been delisted. The assertion reverses the likely order, while the reason is true.</p><p>A is incorrect because the assertion is false even though the reason accurately describes distressed debt trading.</p><p>C is incorrect because it marks the true reason as false and accepts the reversed trading-order claim.</p>"
+  }
+]

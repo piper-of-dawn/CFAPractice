@@ -10,7 +10,7 @@
       "C": "Dividend policy"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Fixed-income instruments are grouped by sector, credit quality, and time to maturity → maturity helps describe when principal is due → this separates short-, intermediate-, and long-term debt → apply the classification → time to maturity is the missing dimension.</p><p>Why top distractor is wrong: voting rights belong to equity ownership, not ordinary fixed-income market segmentation.</p><p>Why remaining distractor is wrong: dividend policy is an equity concept and is not one of the standard fixed-income categories.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The module says fixed-income markets are usually sorted three ways: issuer type, credit quality, and time to maturity. Think of time to maturity as the bond's remaining life. That is why it separates short-term, intermediate-term, and long-term bonds.</p><p><strong>B is incorrect.</strong> Shareholder voting rights belong to equity ownership. A normal bond classification does not start by asking who can vote.</p><p><strong>C is incorrect.</strong> Dividend policy is also an equity idea. Fixed-income classification in this module is about issuer, credit quality, and maturity, not dividends.</p>"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
       "C": "No need to consider currency of issuance"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A fixed-income issuer can issue many securities → each may differ by maturity, currency, or structure → equities usually involve only one or two instruments → apply the issuer comparison → many debt instruments are likely.</p><p>Why top distractor is wrong: one instrument is more typical of common equity than of fixed-income issuance.</p><p>Why remaining distractor is wrong: currency can be a classification feature and a way to broaden investor access.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The module contrasts equity and debt directly: an equity issuer often has one or two equity instruments, but a fixed-income issuer can have many bonds or loans with different maturities, currencies, and terms.</p><p><strong>A is incorrect.</strong> Only one debt instrument is too narrow. The module gives the opposite pattern for fixed-income issuers.</p><p><strong>C is incorrect.</strong> Currency matters in fixed income because issuers may borrow in different currencies to hedge exposures or reach more investors.</p>"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
       "C": "Common stock"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Commercial paper is a short-term debt instrument → short-term instruments fit working capital needs → seasonal cash needs are near-term → apply the maturity match → commercial paper is most likely.</p><p>Why top distractor is wrong: long-term bonds are more suited to long-lived capital investments than seasonal working capital.</p><p>Why remaining distractor is wrong: common stock is equity, not the short-term fixed-income instrument described.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> Seasonal working capital is a short-term funding need. The module links commercial paper with short-term or seasonal working capital, so the instrument's maturity matches the need.</p><p><strong>B is incorrect.</strong> Long-term bonds are used for long-lived investments, such as equipment or factories, not temporary seasonal needs.</p><p><strong>C is incorrect.</strong> Common stock is equity financing. The stem asks for the fixed-income instrument most tied to short-term working capital.</p>"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "C": "B"
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Investment grade begins at BBB- on the S&P scale → ratings below that are high yield or speculative grade → BBB- is the boundary rating → apply the threshold → BBB- is lowest investment grade.</p><p>Why top distractor is wrong: BB+ is the highest speculative-grade rating, not investment grade.</p><p>Why remaining distractor is wrong: B is further below investment grade and indicates greater vulnerability.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The module draws the investment-grade line at BBB- on the S&P scale. BBB- is still inside investment grade, but it is the lowest rating that remains inside that category.</p><p><strong>A is incorrect.</strong> BB+ is close to BBB-, which makes it tempting, but the module calls BB+ the highest speculative-grade rating.</p><p><strong>C is incorrect.</strong> B is below BB+ and is also speculative grade, so it cannot be the lowest investment-grade rating.</p>"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "C": "Default risk-free issuer"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A fallen angel is an issuer whose credit quality deteriorated from investment grade → the key condition is the downgrade after issuance → the issuer is now high yield → apply the definition → it is a fallen angel.</p><p>Why top distractor is wrong: a developed market sovereign is usually treated as highly creditworthy within its market.</p><p>Why remaining distractor is wrong: default risk-free describes expected full payment, not a downgrade into high yield.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A fallen angel is an issuer that was investment grade but later deteriorated into high yield. The key idea is the fall from a better credit category after issuance.</p><p><strong>B is incorrect.</strong> A developed market sovereign is usually described as highly creditworthy, not as an issuer downgraded from investment grade to high yield.</p><p><strong>C is incorrect.</strong> Default risk free means investors expect promised interest and principal to be paid. It is the opposite of a deteriorated high-yield credit story.</p>"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
       "C": "Are restricted to overnight maturity"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Long-horizon investors often have long-term obligations → fixed periodic coupons and maturity profiles can match those liabilities → pension funds and insurers fit this need → apply the cash flow matching idea → they favor bonds matching long-term liabilities.</p><p>Why top distractor is wrong: the text emphasizes fixed periodic coupon cash flows, not the absence of coupons.</p><p>Why remaining distractor is wrong: overnight maturity does not match long-term obligations.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> Pension funds and insurance companies often have long-term liabilities. The module says they favor fixed-income instruments with coupon cash flows and maturity profiles that match those obligations.</p><p><strong>B is incorrect.</strong> The module emphasizes fixed periodic coupon cash flows for these investors, not the absence of coupons.</p><p><strong>C is incorrect.</strong> Overnight maturity is far too short to match long-term liabilities.</p>"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
       "C": "Avoid all currency fluctuations"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Developed market sovereign issuers are usually highly creditworthy → investors often assume promised debt payments will be made → those payments are interest and principal → apply the default risk-free label → promised payments are expected.</p><p>Why top distractor is wrong: voting rights are associated with equity, not sovereign bonds.</p><p>Why remaining distractor is wrong: default risk-free relates to credit payment expectations, not the absence of currency fluctuation.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The module treats developed market sovereign bonds as default risk free because investors usually assume promised interest and principal will be paid. The label is about expected payment, not about every possible risk disappearing.</p><p><strong>B is incorrect.</strong> Equity voting rights do not come with ordinary sovereign bonds.</p><p><strong>C is incorrect.</strong> Currency fluctuation is a separate risk. A bond can be highly creditworthy and still expose a foreign investor to currency changes.</p>"
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
       "C": "Only new issues sold in primary markets"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> An index tracks a group of securities → fixed-income indexes include bonds that satisfy stated criteria → the index supports performance evaluation and benchmarking → apply the definition → it tracks returns of eligible bonds.</p><p>Why top distractor is wrong: voting control is not the object of a fixed-income index.</p><p>Why remaining distractor is wrong: indexes can include existing bonds, not only new primary market issues.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A fixed-income index is a measuring tool. It tracks the returns of bonds that meet its inclusion rules, just as an equity index tracks selected stocks.</p><p><strong>B is incorrect.</strong> Voting control is an equity ownership idea. A bond index measures bond returns, not control of issuers.</p><p><strong>C is incorrect.</strong> Bond indexes are not limited to new issues. They can include existing bonds as long as those bonds meet the index criteria.</p>"
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
       "C": "Avoid all index eligibility rules"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A single issuer may have many fixed-income securities → eligible bonds are included separately → this increases index constituent count → apply the bond-versus-equity comparison → bond indexes often have more constituents.</p><p>Why top distractor is wrong: issuing only one debt security would reduce, not increase, the number of constituents.</p><p>Why remaining distractor is wrong: index inclusion depends on eligibility rules, not avoidance of them.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The module explains that one issuer may have many bonds outstanding. If many of those bonds meet the index rules, each can become a constituent, making bond indexes large.</p><p><strong>B is incorrect.</strong> If issuers had only one debt security, bond indexes would not get the same constituent-count effect.</p><p><strong>C is incorrect.</strong> Indexes are built from eligibility rules. Bonds are included because they satisfy rules, not because issuers avoid rules.</p>"
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
       "C": "Equal voting rights across all issues"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Bonds mature at finite dates → new bonds are issued frequently → indexes must add new issues and remove aging bonds → apply the turnover driver → finite maturity and new issuance create higher turnover.</p><p>Why top distractor is wrong: permanent maturities and rare issuance describe the opposite of the stated bond index turnover drivers.</p><p>Why remaining distractor is wrong: voting rights are not the cause of fixed-income index turnover.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> Bonds have end dates. As older bonds approach maturity, they may leave an index, while newly issued bonds may enter. That constant aging and replacement creates higher turnover.</p><p><strong>B is incorrect.</strong> Permanent maturities and rare new issuance describe the opposite of the module's explanation.</p><p><strong>C is incorrect.</strong> Voting rights do not explain bond index turnover. The driver is finite maturity plus new issuance.</p>"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
       "C": "Issuer common stock market capitalization"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Equity indexes are often weighted by issuer market capitalization → the bond market analogue is debt outstanding → bond constituents are usually weighted by market value of debt outstanding → apply the weighting rule → option A is correct.</p><p>Why top distractor is wrong: equal weighting is not the usual weighting method described for bond indexes.</p><p>Why remaining distractor is wrong: common stock capitalization is an equity measure, not the usual weight for bond constituents.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The module says bond index constituents are usually weighted by market value of debt outstanding. The larger the eligible debt amount, the larger the weight.</p><p><strong>B is incorrect.</strong> Equal weighting would give every bond the same weight, but that is not the usual method described.</p><p><strong>C is incorrect.</strong> Common stock market capitalization is the equity-index analogue. Bond indexes use debt outstanding, not stock value.</p>"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@
       "C": "Only common stocks from the same country"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A benchmark should correspond to the fund strategy → a short-term investment-grade fund has specific maturity and credit exposure → the comparison index should match those features → apply benchmark selection → similar maturity and credit quality are appropriate.</p><p>Why top distractor is wrong: high-yield long-term bonds differ in both credit quality and maturity.</p><p>Why remaining distractor is wrong: common stocks are not fixed-income instruments and do not match a bond fund strategy.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A fair benchmark should look like the strategy being judged. A short-term investment-grade bond fund should be compared with short-term investment-grade bonds, so maturity and credit quality line up.</p><p><strong>B is incorrect.</strong> High-yield long-term bonds differ on both dimensions: worse credit quality and longer maturity.</p><p><strong>C is incorrect.</strong> Common stocks are not fixed-income instruments, so they are not an appropriate benchmark for this bond fund.</p>"
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@
       "C": "Only the coupon payment date of one issuer"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Broad bond indexes include many issuer types and maturities → their weights follow eligible debt outstanding → market composition can shift across public versus private issuers, maturity, and credit quality → apply the rule → aggregate indexes reflect bond market composition.</p><p>Why top distractor is wrong: equity shares outstanding are not the composition base for a bond index.</p><p>Why remaining distractor is wrong: one issuer's coupon date is too narrow to describe broad index composition.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A broad bond index mirrors the eligible bond market. If debt issuance shifts by issuer type, maturity, or credit quality, the index composition can shift too.</p><p><strong>B is incorrect.</strong> Equity shares outstanding belong to stock indexes, not the composition of a bond index.</p><p><strong>C is incorrect.</strong> One issuer's coupon date is too small and specific. The module discusses broad changes in the bond market, not one payment date.</p>"
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@
       "C": "Private ownership transfer only"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Global bond indexes may include multiple currencies → unhedged returns do not offset currency-based changes → exchange rate movements can create gains or losses → apply the return distinction → currency fluctuations affect unhedged returns.</p><p>Why top distractor is wrong: shareholder votes are unrelated to bond index currency return measurement.</p><p>Why remaining distractor is wrong: private ownership transfer is not the source of unhedged currency gains or losses.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A global bond index can include bonds in many currencies. If returns are unhedged, currency movements are not offset, so exchange rate changes can create gains or losses.</p><p><strong>B is incorrect.</strong> Common shareholder votes do not affect whether bond index returns include currency gains or losses.</p><p><strong>C is incorrect.</strong> Private ownership transfer is not the return source being described. The issue is whether currency changes are hedged or left in the return.</p>"
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@
       "C": "Trades common shares on an exchange"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primary market is where issuers raise financing → the issuer sells new bonds to investors → capital flows to the issuer → apply the market definition → selling a new bond to raise capital is primary issuance.</p><p>Why top distractor is wrong: trading existing bonds among investors is a secondary market activity.</p><p>Why remaining distractor is wrong: common shares are equity instruments, not the bond issuance described.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The primary bond market is where the issuer sells a new bond to raise capital. The simple test is: if money is raised by issuing a new bond, it is primary market activity.</p><p><strong>B is incorrect.</strong> Buying an existing bond from another investor is secondary market trading because the bond already exists.</p><p><strong>C is incorrect.</strong> Trading common shares is equity market activity, not a primary bond market transaction.</p>"
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
       "C": "Secondary market trade"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A private placement limits buyers to a selected investor or group → the defining feature is restricted access → the stem states only selected investors may buy → apply the definition → it is a private placement.</p><p>Why top distractor is wrong: a public offering permits any member of the public to buy the bonds.</p><p>Why remaining distractor is wrong: a secondary trade involves existing bonds traded among investors, not a selected new issue by the issuer.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A private placement is a bond sale limited to one selected investor or a selected group. The defining feature is restricted access.</p><p><strong>B is incorrect.</strong> A public offering is open to any member of the public, which is the opposite of a selected-investor sale.</p><p><strong>C is incorrect.</strong> A secondary market trade is an investor-to-investor trade in an existing bond, not an issuer's selected sale of a new bond.</p>"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
       "C": "Secondary dealer only"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A debut issuer is approaching the bond market for the first time → this gives investors their first opportunity to buy that issuer's bonds → the company is issuing bonds for the first time → apply the label → it is a debut issuer.</p><p>Why top distractor is wrong: an index sponsor manages index rules and values, not first-time bond issuance.</p><p>Why remaining distractor is wrong: a secondary dealer trades existing securities and is not defined by first-time issuance.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A debut issuer is simply an issuer coming to the bond market for the first time. The first-time feature is the key.</p><p><strong>B is incorrect.</strong> An index sponsor creates and maintains index rules and values. That is unrelated to first-time bond issuance.</p><p><strong>C is incorrect.</strong> A secondary dealer helps trade existing bonds. The stem is about a company issuing bonds for the first time.</p>"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
       "C": "Best-efforts offering"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Reopening means increasing the size of an existing bond → the text highlights this when the bond price differs significantly from par → the stem states both conditions → apply the definition → the action is a reopening.</p><p>Why top distractor is wrong: shelf registration supports future issues but does not specifically mean adding to an existing off-par bond.</p><p>Why remaining distractor is wrong: best-efforts describes the intermediary's sale obligation, not increasing an existing issue's size.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> A reopening means the issuer adds more size to an existing bond issue. The module highlights this as less common when the existing bond price is significantly different from par.</p><p><strong>B is incorrect.</strong> Shelf registration is a flexible setup that frequent issuers use for future bond issues. It does not specifically mean increasing the size of an old bond.</p><p><strong>C is incorrect.</strong> Best efforts describes whether the intermediary guarantees the sale. It is not the name for adding more bonds to an existing issue.</p>"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
       "C": "Removes the bond from secondary trading"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A best-efforts offering means the intermediary acts on a commission basis → it tries to sell at the negotiated price only if it can do so → it does not guarantee the sale → apply the sale obligation → option A is correct.</p><p>Why top distractor is wrong: guaranteeing the sale describes an underwritten offering, not best efforts.</p><p>Why remaining distractor is wrong: removing bonds from secondary trading is unrelated to the intermediary's primary offering role.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> In a best-efforts offering, the intermediary only tries to sell the bond issue. It earns commission if it can sell, but it does not guarantee that the full sale will happen.</p><p><strong>B is incorrect.</strong> Guaranteeing the sale is the defining feature of an underwritten offering, not a best-efforts offering.</p><p><strong>C is incorrect.</strong> Removing a bond from secondary trading is not the intermediary's role in a best-efforts primary offering.</p>"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
       "C": "Listed common stock voting markets"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Secondary bond markets trade existing bonds among investors → these markets are mostly quote-driven or over-the-counter → electronic platforms exist but do not change the main characterization → apply the market structure → option A is correct.</p><p>Why top distractor is wrong: public auctions are associated with primary sovereign issuance, not most secondary bond trading.</p><p>Why remaining distractor is wrong: common stock voting markets do not describe fixed-income secondary trading.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The module says secondary fixed-income markets are mostly quote-driven or over-the-counter. That means trading usually happens through dealer quotes rather than only on a centralized exchange.</p><p><strong>B is incorrect.</strong> Public auctions are associated with primary sovereign debt issuance, not most secondary bond trading.</p><p><strong>C is incorrect.</strong> Listed common stock voting markets describe equity ownership and exchange trading, not the main structure of bond trading.</p>"
   },
   {
     "id": 21,
@@ -270,6 +270,6 @@
       "C": "Given common shareholder votes"
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Distressed debt is debt of issuers near or in bankruptcy → it usually trades well below par → trading continues until liquidation or bond restructuring → apply the stopping condition → restructured is correct.</p><p>Why top distractor is wrong: index weighting does not determine when distressed debt stops trading.</p><p>Why remaining distractor is wrong: common shareholder votes are equity rights and are not the endpoint for distressed bond trading.</p>"
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> Distressed debt is debt of issuers believed to be close to or in bankruptcy. The module says it can keep trading until the issuer liquidates assets or the outstanding bonds are restructured.</p><p><strong>B is incorrect.</strong> Index weights do not determine the endpoint for distressed debt trading.</p><p><strong>C is incorrect.</strong> Shareholder votes are equity rights. They are not the condition that stops distressed bond trading.</p>"
   }
 ]

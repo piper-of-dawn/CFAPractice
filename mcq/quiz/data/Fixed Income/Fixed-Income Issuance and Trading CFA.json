@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "topic": "Fixed-income market segments, issuers, and investors",
+    "stem": "A bond fund may hold only investment-grade debt. Which bond is the least likely to violate the mandate?",
+    "options": {
+      "A": "An S&P BBB- rated corporate bond",
+      "B": "An S&P BB+ rated fallen angel",
+      "C": "An unrated bond issued by a new borrower with unstable cash flows"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: rating boundary</h3><p><strong>A is correct.</strong> Think of the mandate as a gate: only investment-grade bonds can pass. The module sets the S&P gate at BBB- or higher, and BBB- is the lowest rating that still passes. So a BBB- corporate bond is allowed by the mandate.</p><p><strong>B is incorrect.</strong> BB+ sits just one step below BBB-, which makes it tempting, but the module calls BB+ the highest speculative-grade rating. A fallen angel may have once been investment grade, but after falling to BB+ it no longer passes the gate.</p><p><strong>C is incorrect.</strong> The module notes that many investors are restricted to rated instruments and that new issuers with less stable cash flows are high-yield-type borrowers. An unrated new borrower does not meet a rule requiring investment-grade debt.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Fixed-income market segments, issuers, and investors",
+    "stem": "A company has predictable cash flows, uses commercial paper for seasonal funding, and issues long-term bonds for factories. Which classification is most accurate?",
+    "options": {
+      "A": "High-yield issuer with limited access to secured short-term debt only",
+      "B": "Investment-grade corporate issuer using maturity-matched financing",
+      "C": "Developed market sovereign issuer using bonds to conduct monetary policy"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: maturity matching</h3><p><strong>B is correct.</strong> The module describes investment-grade corporate issuers as having broad access to debt across maturities. Commercial paper is used for short-term or seasonal working capital, while long-term bonds fit long-lived assets such as factories. The financing maturity is being matched to the use of funds.</p><p><strong>A is incorrect.</strong> High-yield issuers in the module have less stable cash flows and more limited access, often relying on secured facilities rather than easy access to commercial paper and long-term unsecured bonds.</p><p><strong>C is incorrect.</strong> Sovereign issuers and central banks appear in the module in a different role: sovereign bonds support government financing and monetary policy operations. A company funding factories is a corporate issuer, not a sovereign issuer.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Fixed-income market segments, issuers, and investors",
+    "stem": "An investor wants a liquid cash alternative with minimal credit and interest rate risk. Which allocation is most consistent with that objective?",
+    "options": {
+      "A": "Long-term high-yield callable notes",
+      "B": "Intermediate-term distressed bonds",
+      "C": "Short-term investment-grade bonds"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risk matching</h3><p><strong>C is correct.</strong> A liquid cash alternative should stay close to cash in risk. The module links near-term obligations and liquidity needs with money market or short-term investment-grade instruments. Short maturity limits interest rate risk, and investment grade limits credit risk.</p><p><strong>A is incorrect.</strong> Long-term high-yield callable notes are the opposite of the objective: long maturity adds interest rate risk, and high yield adds credit risk.</p><p><strong>B is incorrect.</strong> Distressed bonds are issued by firms believed to be near or in bankruptcy and trade well below par. That is a search for risky price appreciation, not a minimal-credit-risk cash alternative.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Fixed-income indexes",
+    "stem": "A manager tracks a broad bond index but does not buy every constituent. Which reason best explains this approach?",
+    "options": {
+      "A": "Bond index complexity can make full replication impractical",
+      "B": "Broad bond indexes usually contain only a few equally weighted securities",
+      "C": "Bond indexes avoid new issues and therefore rarely rebalance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: replication burden</h3><p><strong>A is correct.</strong> A broad bond index can contain thousands of bonds because one issuer may have many different bonds outstanding. Buying every bond can be impractical, so a manager may hold a representative sample that behaves like the index.</p><p><strong>B is incorrect.</strong> The module says the opposite: fixed-income indexes often have more constituents than equity indexes, and bond constituents are usually weighted by market value of debt outstanding, not equally weighted.</p><p><strong>C is incorrect.</strong> Bond indexes do not avoid new issues. Their turnover is higher because new bonds enter and older bonds leave as they approach minimum maturity limits.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Fixed-income indexes",
+    "stem": "A euro-denominated corporate bond has fixed-rate payments, EUR 300 million outstanding, and an MSCI ESG rating of BBB. It is fixed-rate perpetual. For the Euro Corporate Sustainable SRI Index, the bond is most likely:",
+    "options": {
+      "A": "Eligible because the ESG rating is BBB or higher",
+      "B": "Excluded because fixed-rate perpetual bonds are excluded",
+      "C": "Eligible only if its issuer is a sovereign or securitized issuer"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: every filter must pass</h3><p><strong>B is correct.</strong> Index eligibility works like a checklist: passing one box is not enough if another box fails. The bond meets the euro, corporate, amount, fixed-rate, and BBB ESG facts, but the module states that fixed-rate perpetual bonds are excluded. That single exclusion keeps it out.</p><p><strong>A is incorrect.</strong> BBB or higher ESG rating is necessary for this index, but it is not sufficient. The fixed-rate perpetual exclusion still applies.</p><p><strong>C is incorrect.</strong> The index described is a euro corporate sustainable SRI index. It is not an index that requires sovereign or securitized issuers.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Primary and secondary fixed-income markets",
+    "stem": "A lower-credit-quality secured issuer hires an intermediary that will try to sell bonds on commission but will not guarantee the sale. This arrangement is best described as:",
+    "options": {
+      "A": "An underwritten offering",
+      "B": "A reopening of an existing bond",
+      "C": "A best-efforts offering"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: who bears sale risk</h3><p><strong>C is correct.</strong> In a best-efforts offering, the intermediary is only trying to sell the bonds. If demand is weak, it has not promised to buy or place the whole issue. The module ties this structure to lower-credit-quality situations where the sale is not guaranteed.</p><p><strong>A is incorrect.</strong> An underwritten offering shifts more sale risk to the underwriter because the underwriter guarantees the sale at the negotiated offering price.</p><p><strong>B is incorrect.</strong> A reopening is about increasing the size of an existing bond, often when its price is far from par. The stem describes a sale method, not an increase to an old issue.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Primary and secondary fixed-income markets",
+    "stem": "A firm's equity has already been delisted after severe distress, but its bonds still trade well below par while restructuring is unresolved. Which statement is most accurate?",
+    "options": {
+      "A": "The bond trading pattern is consistent with distressed debt",
+      "B": "The bonds must stop trading before the equity is delisted",
+      "C": "The bonds are now on-the-run developed market sovereign bonds"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: debt can outlive equity trading</h3><p><strong>A is correct.</strong> The module defines distressed debt as bonds of issuers believed to be very close to or in bankruptcy, usually trading well below par. These bonds may keep trading until liquidation or restructuring, even after the equity has already been delisted.</p><p><strong>B is incorrect.</strong> The module says the likely sequence is the reverse: by the time debt is distressed, the equity securities will likely already have been delisted.</p><p><strong>C is incorrect.</strong> On-the-run developed market sovereign bonds are recently issued, highly liquid government bonds. A distressed corporate bond trading well below par is a different category.</p>"
+  }
+]
