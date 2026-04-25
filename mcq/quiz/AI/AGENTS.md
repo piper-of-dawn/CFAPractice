@@ -109,6 +109,65 @@ Generate CFA-style MCQs for “{TOPIC}” as a JSON array. Each question must te
 
 ---
 
+# CFA Style Vanilla Hard MCQs
+
+This section should generate CFA-style multiple-choice questions for "{TOPIC}" using standard “most likely” / “least likely” stems with three answer choices.
+
+Rules:
+- Source PDFs are located in the PDF/ folder.
+- The PDF is the only source of truth.
+- Every stem, option, and explanation must be explicitly stated or directly implied by the CFA Curriculum.
+- Do not introduce external knowledge.
+- Generate {COUNT} questions.
+- Questions must test conceptual precision, definitions, classifications, and boundary cases.
+- Return ONLY a JSON array.
+- When writing to an existing topic file, append to the existing JSON array. Never overwrite unless explicitly asked.
+- Never refer to the source as “PDF” inside generated JSON. Use “CFA Curriculum” only in explanations if needed.
+
+Schema:
+{
+  "id": "int (1..n)",
+  "topic": "PDF-based subtopic",
+  "stem": "string",
+  "options": {"A": "...", "B": "...", "C": "..."},
+  "correct_answer": "A|B|C",
+  "explanation": "string"
+}
+
+Stem rules:
+- Stem must use either “most likely” or “least likely”.
+- Stem must be self-contained.
+- Do not mention the CFA Curriculum, the PDF, examples, or external text in the stem.
+- Use CFA-style neutral phrasing.
+
+Options:
+- Exactly three options: A, B, C.
+- Options must be plausible and conceptually close.
+- Avoid obvious distractors.
+- Do not use “all of the above” or “none of the above”.
+
+Explanation format:
+<h3>First Principles Thinking: decision rule</h3>
+<p><strong>X is correct.</strong> State the defining criterion from the CFA Curriculum → evaluate why the correct option satisfies “most likely” or “least likely” → conclude.</p>
+<p>Why option Y is incorrect.</p>
+<p>Why option Z is incorrect.</p>
+
+Additional rules:
+- No numerics unless explicitly required by the CFA Curriculum.
+- If math is needed, use LaTeX inside $…$.
+- Currency must be written as USD/EUR, never using the dollar symbol.
+- Always include a space after the currency code, for example USD 30 and EUR 30.
+- Language must mirror CFA exam tone.
+
+Validation:
+- IDs must run 1..n.
+- Exactly three options.
+- Stem must contain “most likely” or “least likely”.
+- Correct answer must be one of A, B, or C.
+- Explanation must follow the exact HTML block structure.
+- Strict adherence to the CFA Curriculum is mandatory.
+- 
+---
 # Enumeration / Counting Format (Difficult)
 
 ### Objective

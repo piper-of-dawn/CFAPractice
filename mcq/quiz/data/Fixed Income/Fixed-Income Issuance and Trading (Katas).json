@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Fixed-income market segments",
+    "stem": "Fixed-income markets are most commonly categorized by issuer type, credit quality, and which other dimension?",
+    "options": {
+      "A": "Time to maturity",
+      "B": "Shareholder voting rights",
+      "C": "Dividend policy"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Fixed-income instruments are grouped by sector, credit quality, and time to maturity → maturity helps describe when principal is due → this separates short-, intermediate-, and long-term debt → apply the classification → time to maturity is the missing dimension.</p><p>Why top distractor is wrong: voting rights belong to equity ownership, not ordinary fixed-income market segmentation.</p><p>Why remaining distractor is wrong: dividend policy is an equity concept and is not one of the standard fixed-income categories.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Fixed-income issuers",
+    "stem": "Relative to an equity issuer, a fixed-income issuer most likely has:",
+    "options": {
+      "A": "Only one debt instrument outstanding",
+      "B": "Many fixed-income instruments outstanding",
+      "C": "No need to consider currency of issuance"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A fixed-income issuer can issue many securities → each may differ by maturity, currency, or structure → equities usually involve only one or two instruments → apply the issuer comparison → many debt instruments are likely.</p><p>Why top distractor is wrong: one instrument is more typical of common equity than of fixed-income issuance.</p><p>Why remaining distractor is wrong: currency can be a classification feature and a way to broaden investor access.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Short-term financing",
+    "stem": "A company seeking to finance short-term seasonal working capital needs would most likely use:",
+    "options": {
+      "A": "Commercial paper",
+      "B": "Long-term bonds",
+      "C": "Common stock"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Commercial paper is a short-term debt instrument → short-term instruments fit working capital needs → seasonal cash needs are near-term → apply the maturity match → commercial paper is most likely.</p><p>Why top distractor is wrong: long-term bonds are more suited to long-lived capital investments than seasonal working capital.</p><p>Why remaining distractor is wrong: common stock is equity, not the short-term fixed-income instrument described.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Credit ratings",
+    "stem": "Which S&P rating is considered the lowest investment-grade rating by market participants?",
+    "options": {
+      "A": "BB+",
+      "B": "BBB-",
+      "C": "B"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Investment grade begins at BBB- on the S&P scale → ratings below that are high yield or speculative grade → BBB- is the boundary rating → apply the threshold → BBB- is lowest investment grade.</p><p>Why top distractor is wrong: BB+ is the highest speculative-grade rating, not investment grade.</p><p>Why remaining distractor is wrong: B is further below investment grade and indicates greater vulnerability.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "High-yield issuers",
+    "stem": "An issuer that was investment grade when bonds were issued but later became high yield is best described as a:",
+    "options": {
+      "A": "Fallen angel",
+      "B": "Developed market sovereign",
+      "C": "Default risk-free issuer"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A fallen angel is an issuer whose credit quality deteriorated from investment grade → the key condition is the downgrade after issuance → the issuer is now high yield → apply the definition → it is a fallen angel.</p><p>Why top distractor is wrong: a developed market sovereign is usually treated as highly creditworthy within its market.</p><p>Why remaining distractor is wrong: default risk-free describes expected full payment, not a downgrade into high yield.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Investor maturity matching",
+    "stem": "Pension funds and insurance companies with long investment horizons most likely favor bonds that:",
+    "options": {
+      "A": "Match long-term liabilities",
+      "B": "Have no periodic coupon cash flows",
+      "C": "Are restricted to overnight maturity"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Long-horizon investors often have long-term obligations → fixed periodic coupons and maturity profiles can match those liabilities → pension funds and insurers fit this need → apply the cash flow matching idea → they favor bonds matching long-term liabilities.</p><p>Why top distractor is wrong: the text emphasizes fixed periodic coupon cash flows, not the absence of coupons.</p><p>Why remaining distractor is wrong: overnight maturity does not match long-term obligations.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Sovereign issuers",
+    "stem": "Developed market sovereign bonds are often treated as default risk free because investors usually assume they will:",
+    "options": {
+      "A": "Receive promised interest and principal",
+      "B": "Receive equity voting rights",
+      "C": "Avoid all currency fluctuations"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Developed market sovereign issuers are usually highly creditworthy → investors often assume promised debt payments will be made → those payments are interest and principal → apply the default risk-free label → promised payments are expected.</p><p>Why top distractor is wrong: voting rights are associated with equity, not sovereign bonds.</p><p>Why remaining distractor is wrong: default risk-free relates to credit payment expectations, not the absence of currency fluctuation.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Fixed-income indexes",
+    "stem": "A fixed-income index is most accurately described as a tool that tracks:",
+    "options": {
+      "A": "Returns of bonds meeting inclusion criteria",
+      "B": "Only the voting control of issuers",
+      "C": "Only new issues sold in primary markets"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> An index tracks a group of securities → fixed-income indexes include bonds that satisfy stated criteria → the index supports performance evaluation and benchmarking → apply the definition → it tracks returns of eligible bonds.</p><p>Why top distractor is wrong: voting control is not the object of a fixed-income index.</p><p>Why remaining distractor is wrong: indexes can include existing bonds, not only new primary market issues.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Fixed-income index constituents",
+    "stem": "Fixed-income indexes often have more constituent securities than equity indexes because bond issuers often:",
+    "options": {
+      "A": "Have many individual bonds outstanding",
+      "B": "Issue only one debt security",
+      "C": "Avoid all index eligibility rules"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A single issuer may have many fixed-income securities → eligible bonds are included separately → this increases index constituent count → apply the bond-versus-equity comparison → bond indexes often have more constituents.</p><p>Why top distractor is wrong: issuing only one debt security would reduce, not increase, the number of constituents.</p><p>Why remaining distractor is wrong: index inclusion depends on eligibility rules, not avoidance of them.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Fixed-income index turnover",
+    "stem": "Fixed-income indexes usually have higher turnover than equity indexes mainly because bonds have:",
+    "options": {
+      "A": "Finite maturities and frequent new issuance",
+      "B": "Permanent maturities and rare new issuance",
+      "C": "Equal voting rights across all issues"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Bonds mature at finite dates → new bonds are issued frequently → indexes must add new issues and remove aging bonds → apply the turnover driver → finite maturity and new issuance create higher turnover.</p><p>Why top distractor is wrong: permanent maturities and rare issuance describe the opposite of the stated bond index turnover drivers.</p><p>Why remaining distractor is wrong: voting rights are not the cause of fixed-income index turnover.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Fixed-income index weighting",
+    "stem": "Bond index constituents are usually weighted by:",
+    "options": {
+      "A": "Market value of debt outstanding",
+      "B": "Equal weights for every bond",
+      "C": "Issuer common stock market capitalization"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Equity indexes are often weighted by issuer market capitalization → the bond market analogue is debt outstanding → bond constituents are usually weighted by market value of debt outstanding → apply the weighting rule → option A is correct.</p><p>Why top distractor is wrong: equal weighting is not the usual weighting method described for bond indexes.</p><p>Why remaining distractor is wrong: common stock capitalization is an equity measure, not the usual weight for bond constituents.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Benchmark selection",
+    "stem": "A short-term investment-grade bond fund should most likely be evaluated against an index with:",
+    "options": {
+      "A": "Similar maturity and credit quality",
+      "B": "Only high-yield long-term bonds",
+      "C": "Only common stocks from the same country"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A benchmark should correspond to the fund strategy → a short-term investment-grade fund has specific maturity and credit exposure → the comparison index should match those features → apply benchmark selection → similar maturity and credit quality are appropriate.</p><p>Why top distractor is wrong: high-yield long-term bonds differ in both credit quality and maturity.</p><p>Why remaining distractor is wrong: common stocks are not fixed-income instruments and do not match a bond fund strategy.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Aggregate bond indexes",
+    "stem": "A broad aggregate bond index will most likely reflect changes over time in:",
+    "options": {
+      "A": "Bond market composition",
+      "B": "Only the number of equity shares outstanding",
+      "C": "Only the coupon payment date of one issuer"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Broad bond indexes include many issuer types and maturities → their weights follow eligible debt outstanding → market composition can shift across public versus private issuers, maturity, and credit quality → apply the rule → aggregate indexes reflect bond market composition.</p><p>Why top distractor is wrong: equity shares outstanding are not the composition base for a bond index.</p><p>Why remaining distractor is wrong: one issuer's coupon date is too narrow to describe broad index composition.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Index currency returns",
+    "stem": "In a global bond index, unhedged returns may include gains or losses caused by:",
+    "options": {
+      "A": "Currency fluctuations",
+      "B": "Common shareholder votes",
+      "C": "Private ownership transfer only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Global bond indexes may include multiple currencies → unhedged returns do not offset currency-based changes → exchange rate movements can create gains or losses → apply the return distinction → currency fluctuations affect unhedged returns.</p><p>Why top distractor is wrong: shareholder votes are unrelated to bond index currency return measurement.</p><p>Why remaining distractor is wrong: private ownership transfer is not the source of unhedged currency gains or losses.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Primary fixed-income markets",
+    "stem": "A primary bond market transaction occurs when an issuer:",
+    "options": {
+      "A": "Sells a new bond to raise capital",
+      "B": "Buys an existing bond from another investor",
+      "C": "Trades common shares on an exchange"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primary market is where issuers raise financing → the issuer sells new bonds to investors → capital flows to the issuer → apply the market definition → selling a new bond to raise capital is primary issuance.</p><p>Why top distractor is wrong: trading existing bonds among investors is a secondary market activity.</p><p>Why remaining distractor is wrong: common shares are equity instruments, not the bond issuance described.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Private placement",
+    "stem": "A bond sold only to one selected investor or a small selected group is most likely issued through a:",
+    "options": {
+      "A": "Private placement",
+      "B": "Public offering",
+      "C": "Secondary market trade"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A private placement limits buyers to a selected investor or group → the defining feature is restricted access → the stem states only selected investors may buy → apply the definition → it is a private placement.</p><p>Why top distractor is wrong: a public offering permits any member of the public to buy the bonds.</p><p>Why remaining distractor is wrong: a secondary trade involves existing bonds traded among investors, not a selected new issue by the issuer.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Debut issuers",
+    "stem": "A company issuing bonds for the first time is most accurately described as a:",
+    "options": {
+      "A": "Debut issuer",
+      "B": "Index sponsor",
+      "C": "Secondary dealer only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A debut issuer is approaching the bond market for the first time → this gives investors their first opportunity to buy that issuer's bonds → the company is issuing bonds for the first time → apply the label → it is a debut issuer.</p><p>Why top distractor is wrong: an index sponsor manages index rules and values, not first-time bond issuance.</p><p>Why remaining distractor is wrong: a secondary dealer trades existing securities and is not defined by first-time issuance.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Reopening an existing bond",
+    "stem": "A frequent issuer that increases the size of an existing bond priced far from par is conducting a:",
+    "options": {
+      "A": "Reopening",
+      "B": "Shelf registration",
+      "C": "Best-efforts offering"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Reopening means increasing the size of an existing bond → the text highlights this when the bond price differs significantly from par → the stem states both conditions → apply the definition → the action is a reopening.</p><p>Why top distractor is wrong: shelf registration supports future issues but does not specifically mean adding to an existing off-par bond.</p><p>Why remaining distractor is wrong: best-efforts describes the intermediary's sale obligation, not increasing an existing issue's size.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Best-efforts offerings",
+    "stem": "In a best-efforts bond offering, the financial intermediary most likely:",
+    "options": {
+      "A": "Tries to sell the issue without guaranteeing the sale",
+      "B": "Guarantees the sale at the offering price",
+      "C": "Removes the bond from secondary trading"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A best-efforts offering means the intermediary acts on a commission basis → it tries to sell at the negotiated price only if it can do so → it does not guarantee the sale → apply the sale obligation → option A is correct.</p><p>Why top distractor is wrong: guaranteeing the sale describes an underwritten offering, not best efforts.</p><p>Why remaining distractor is wrong: removing bonds from secondary trading is unrelated to the intermediary's primary offering role.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Secondary fixed-income markets",
+    "stem": "Most secondary fixed-income trading occurs in markets best described as:",
+    "options": {
+      "A": "Quote-driven or over-the-counter",
+      "B": "Primary public auctions only",
+      "C": "Listed common stock voting markets"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Secondary bond markets trade existing bonds among investors → these markets are mostly quote-driven or over-the-counter → electronic platforms exist but do not change the main characterization → apply the market structure → option A is correct.</p><p>Why top distractor is wrong: public auctions are associated with primary sovereign issuance, not most secondary bond trading.</p><p>Why remaining distractor is wrong: common stock voting markets do not describe fixed-income secondary trading.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Distressed debt trading",
+    "stem": "Distressed debt generally continues trading until the issuer has liquidated assets or its bonds have been:",
+    "options": {
+      "A": "Restructured",
+      "B": "Converted into index weights automatically",
+      "C": "Given common shareholder votes"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Distressed debt is debt of issuers near or in bankruptcy → it usually trades well below par → trading continues until liquidation or bond restructuring → apply the stopping condition → restructured is correct.</p><p>Why top distractor is wrong: index weighting does not determine when distressed debt stops trading.</p><p>Why remaining distractor is wrong: common shareholder votes are equity rights and are not the endpoint for distressed bond trading.</p>"
+  }
+]

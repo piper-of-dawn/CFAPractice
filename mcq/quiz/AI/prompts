@@ -8,20 +8,26 @@ Consult the text /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_05_analyzing
 Make sure you explain in a very casual language in Feynman style, speaking directly to the reader. Use real world examples of scandals, interesting events and anecdotes to make the text interesting. And focus on each learning outcome (this is sacrosanct).
 
 Katas format
-Generate 21 easy CFA-style MCQs for Topic: Module 07: Long Term Assets.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FSA/module_07*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. You need to make sure that atleast 7 questions come from edge cases or concepts that students usually ignore while reading the text. Follow AGENTS.md and use the CFA Question Generator — Building-Block Edition.
-Write the output only the JSON array to a dedicated file to "/home/karma/CFAPractice/mcq/quiz/data/Financial Statement Analysis/Long Term Assets (Katas).json". Append the file if it already exists, DO NOT OVERWRITE
+Generate 21 easy CFA-style MCQs for Topic: Module 03.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_03*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. You need to make sure that atleast 7 questions come from edge cases or concepts that students usually ignore while reading the text. Follow AGENTS.md and use the CFA Question Generator — Building-Block Edition.
+Write the output only the JSON array to a dedicated file to "/home/karma/CFAPractice/mcq/quiz/data/Fixed Income/Fixed-Income Issuance and Trading (Katas).json". Append the file if it already exists, DO NOT OVERWRITE
 
 
 Enumeration / counting format
-Generate 14 very hard and confusing CFA-style MCQs for INDUSTRY AND COMPETITIVE ANALYSIS strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/EQUITY/Module6_Industry_and_Competitive_Analysis.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes.
+Generate 14 very hard and confusing CFA-style MCQs for Topic: Module 03.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_03*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. Also make sure the correct answer is evenly distributed among three options.
 Follow AGENTS.md and use the Enumeration / Counting Format Format.
-Write the output only the JSON array to a dedicated file Basics of Industry and Competitive Analysis EC.json. Append the file if it already exists, DO NOT OVERWRITE
+Write the output only the JSON array to a dedicated file /home/karma/CFAPractice/mcq/quiz/data/Fixed Income/Fixed-Income Issuance and Trading EC.json. Append the file if it already exists, DO NOT OVERWRITE
+
+
+CFA Style Vanilla Hard MCQs format
+Generate 7 very hard and confusing CFA-style MCQs for Topic: Module 03.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_03*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outomes. Also make sure the correct answer is evenly distributed among three options.
+Follow AGENTS.md and use the CFA Style Vanilla Hard MCQs Format Format.
+Write the output only the JSON array to a dedicated file /home/karma/CFAPractice/mcq/quiz/data/Fixed Income/Fixed-Income Issuance and Trading CFA.json. Append the file if it already exists, DO NOT OVERWRITE
 
 Assertion–Reason
-Generate 14 very hard and confusing CFA-style MCQs for INDUSTRY AND COMPETITIVE ANALYSIS strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/EQUITY/Module6_Industry_and_Competitive_Analysis.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
+Generate 7 very hard and confusing CFA-style MCQs for Topic: Module 03.  strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_03*. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes.
 Follow AGENTS.md and use the Assertion Reason.
 BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
-Write the output only the JSON array to a dedicated file Basics of Industry and Competitive1 Analysis AR.json.
+Write the output only the JSON array to a dedicated file /home/karma/CFAPractice/mcq/quiz/data/Fixed Income/Fixed-Income Issuance and Trading AR.json. Append the file if it already exists, DO NOT OVERWRITE.
 
 Numerical Questions
 Generate 14 very hard and confusing CFA-style MCQs for INDUSTRY AND COMPETITIVE ANALYSIS strictly using /home/karma/CFAPractice/mcq/quiz/AI/PDF/EQUITY/Module6_Industry_and_Competitive_Analysis.txt. In the text there is a dedicated section called Learning Outcomes. Make sure you distribute questions evenly across all Learning Outcomes. BEFORE YOU BEGIN ANYTHING ALWAYS CREATE A TODO LIST.
