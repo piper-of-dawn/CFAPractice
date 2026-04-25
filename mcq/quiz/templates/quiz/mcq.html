@@ -1552,7 +1552,10 @@
         }
         if (outcomeBody) outcomeBody.textContent = 'Select an answer and press Check.';
         if (outcomeMeta) outcomeMeta.textContent = '';
-        if (seeExplanationBtn) seeExplanationBtn.style.display = 'none';
+        if (seeExplanationBtn) {
+          seeExplanationBtn.hidden = true;
+          seeExplanationBtn.classList.remove('attention');
+        }
       }
 
       function escapeHtml(value) {
@@ -1716,13 +1719,13 @@
         if (!text) return '';
         return /<[a-z][\s\S]*>/i.test(text) ? text : renderMarkdownBasic(text);
       }
-      function setInlineExplainState(sec, show) {
+      function setInlineExplainState(sec, show, attention) {
         if (!sec) return;
         const btn = sec.querySelector('.inline-explain-btn');
         if (!btn) return;
         if (show) {
           btn.hidden = false;
-          btn.classList.add('attention');
+          btn.classList.toggle('attention', !!attention);
         } else {
           btn.hidden = true;
           btn.classList.remove('attention');
@@ -1733,9 +1736,9 @@
       }
       function setExplanationButtonState(ok) {
         if (!seeExplanationBtn) return;
-        if (ok === false) {
+        if (ok === true || ok === false) {
           seeExplanationBtn.hidden = false;
-          seeExplanationBtn.classList.add('attention');
+          seeExplanationBtn.classList.toggle('attention', ok === false);
         } else {
           seeExplanationBtn.hidden = true;
           seeExplanationBtn.classList.remove('attention');
@@ -1848,27 +1851,20 @@
         const explanationHtml = json.explanation_html || '';
         const explanationRaw = json.explanation || json.explanations || '';
         const explanation = renderExplanationContent(explanationHtml || explanationRaw);
+        const explanationBlock = explanation ? `<div>${explanation}</div>` : '';
         const body = ok
-          ? `<div><strong>${chosenText}</strong> is correct.</div>`
-          : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + (explanation ? `<div>${explanation}</div>` : '');
+          ? `<div${explanationBlock ? ' style="margin-bottom:8px;"' : ''}><strong>${chosenText}</strong> is correct.</div>` + explanationBlock
+          : `<div style="margin-bottom:8px;">Your answer: <strong>${chosenText}</strong><br>Correct answer: <strong>${correctText}</strong></div>` + explanationBlock;
         // Build attributes excluding heavy fields
         const meta = {...json};
         delete meta.text; delete meta.choices; delete meta.answer; delete meta.explanation; delete meta.explanations; delete meta.extras;
         setOutcome({title: `Question ${Number((target||'').replace('q',''))+1}`, ok, body, meta});
-        if (!ok) {
-          const stemHtml = ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
-          activeExplanationHtml = body;
-          activeExplanationStemHtml = stemHtml;
-          inlineExplanationBodies.set(target, body);
-          inlineExplanationStems.set(target, stemHtml);
-          setInlineExplainState(sec, true);
-        } else {
-          activeExplanationHtml = '';
-          activeExplanationStemHtml = '';
-          inlineExplanationBodies.delete(target);
-          inlineExplanationStems.delete(target);
-          setInlineExplainState(sec, false);
-        }
+        const stemHtml = ((sec.querySelector('.stem') || {}).innerHTML || '').trim();
+        activeExplanationHtml = body;
+        activeExplanationStemHtml = stemHtml;
+        inlineExplanationBodies.set(target, body);
+        inlineExplanationStems.set(target, stemHtml);
+        setInlineExplainState(sec, true, !ok);
         // Add visual state on the question card
         sec.classList.toggle('correct', ok);
         sec.classList.toggle('incorrect', !ok);
