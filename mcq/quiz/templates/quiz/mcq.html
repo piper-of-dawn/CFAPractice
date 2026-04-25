@@ -1518,48 +1518,41 @@
       const isSessionSubmitted = document.body.dataset.sessionSubmitted === '1';
       const inlineExplanationBodies = new Map();
       const inlineExplanationStems = new Map();
-      const quizStateKey = `quiz-state:${window.location.pathname}`;
-      const shouldSaveState = !isSessionMode;
       let lastActiveQuestion = '';
       let activeExplanationHtml = '';
       let activeExplanationStemHtml = '';
 
-      function saveQuizState() {
+      function discardSavedQuizState() {
         try {
-          const checked = {};
-          document.querySelectorAll('section.question input[type="radio"]:checked').forEach((input) => {
-            checked[input.name] = input.value;
-          });
-          const payload = {
-            checked,
-            lastActiveQuestion: lastActiveQuestion || '',
-            savedAt: Date.now()
-          };
-          sessionStorage.setItem(quizStateKey, JSON.stringify(payload));
-          console.debug('[mcq-state] saved', payload);
+          sessionStorage.removeItem(`quiz-state:${window.location.pathname}`);
         } catch (err) {
-          console.warn('[mcq-state] save failed', err);
+          console.warn('[mcq-state] discard failed', err);
         }
       }
 
-      function restoreQuizState() {
-        try {
-          const raw = sessionStorage.getItem(quizStateKey);
-          if (!raw) {
-            console.debug('[mcq-state] no saved state');
-            return;
-          }
-          const payload = JSON.parse(raw);
-          const checked = payload && payload.checked ? payload.checked : {};
-          Object.entries(checked).forEach(([name, value]) => {
-            const input = document.querySelector(`input[name="${name}"][value="${value}"]`);
-            if (input) input.checked = true;
-          });
-          lastActiveQuestion = payload && payload.lastActiveQuestion ? payload.lastActiveQuestion : '';
-          console.debug('[mcq-state] restored', payload);
-        } catch (err) {
-          console.warn('[mcq-state] restore failed', err);
+      function resetBrowserRestoredAnswers() {
+        if (isSessionSubmitted) return;
+        const form = document.getElementById('quizForm');
+        if (form) form.reset();
+        document.querySelectorAll('section.question input[type="radio"]').forEach((input) => {
+          input.checked = input.defaultChecked;
+        });
+        document.querySelectorAll('li.choice').forEach((choice) => {
+          choice.classList.remove('is-correct', 'is-incorrect');
+        });
+        document.querySelectorAll('section.question').forEach((question) => {
+          question.classList.remove('glow-correct', 'glow-incorrect', 'is-selected');
+          delete question.dataset.reported;
+        });
+        lastActiveQuestion = '';
+        if (outcomeStatus) outcomeStatus.textContent = 'Awaiting answer';
+        if (outcomePill) {
+          outcomePill.className = 'pill';
+          outcomePill.textContent = 'Ready';
         }
+        if (outcomeBody) outcomeBody.textContent = 'Select an answer and press Check.';
+        if (outcomeMeta) outcomeMeta.textContent = '';
+        if (seeExplanationBtn) seeExplanationBtn.style.display = 'none';
       }
 
       function escapeHtml(value) {
@@ -1845,7 +1838,6 @@
           setInlineExplainState(sec, false);
           setOutcome({title: 'No selection', ok: null, body: 'Please choose an option, then press Check.', meta: null});
           recomputeTotals();
-          if (shouldSaveState) saveQuizState();
           return;
         }
         const chosenIdx = parseInt(selected.value);
@@ -1928,7 +1920,6 @@
           } catch(_) {}
         }
         recomputeTotals();
-        if (shouldSaveState) saveQuizState();
       }
 
       document.querySelectorAll('.check-btn').forEach(btn => {
@@ -1962,7 +1953,8 @@
           if (sec) onCheck({ dataset: { target: sec.dataset.qname } });
         }
       });
-      if (shouldSaveState) restoreQuizState();
+      discardSavedQuizState();
+      resetBrowserRestoredAnswers();
       recomputeTotals();
 
       // Run KaTeX over stems/options once loaded, then wrap wide formulas
