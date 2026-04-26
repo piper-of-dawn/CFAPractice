@@ -559,5 +559,96 @@
     },
     "correct_answer": "B",
     "explanation": "Statement (1) is incorrect; deferring maintenance is *real* action (the maintenance didn't happen), not just accounting. Statement (2) is correct; this changes the actual business transaction (price/timing). Statement (3) is correct; this is the definition (e.g., changing bad debt allowances). Therefore, option B is correct."
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "A company reports under GAAP with neutral, complete disclosures, but most profit came from a one-time asset sale and returns are below investors' required return. Which assessment is most accurate?",
+    "options": {
+      "A": "Financial reporting quality may be high while reported results quality is low.",
+      "B": "GAAP compliance alone places the report at the top of the quality spectrum.",
+      "C": "Low reported results quality means the financial reporting quality is necessarily low."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> Financial reporting quality concerns whether information is relevant and faithfully represents economic reality, while reported results quality concerns sustainable earnings, cash flows, and financial condition. A neutral GAAP report can depict weak or non-recurring economics faithfully. Therefore, high reporting quality can coexist with low reported results quality.</p><p>Option B is incorrect because the top of the spectrum also requires decision-useful information and sustainable earnings with adequate returns, not GAAP compliance alone.</p><p>Option C is incorrect because low sustainability or inadequate returns are results-quality problems unless the report itself is misleading, incomplete, or biased.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "Which action is least likely to remain in the 'within GAAP, but biased choices' area of the financial reporting quality spectrum?",
+    "options": {
+      "A": "Using an optimistic but supportable useful life estimate to lower current depreciation expense",
+      "B": "Recording sales to customers that did not place orders and are not expected to accept the goods",
+      "C": "Highlighting adjusted earnings that exclude recurring unfavorable operating costs"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The spectrum distinguishes biased choices within GAAP from non-compliant accounting and fictitious transactions. Recording sales that lack real customer orders or acceptance goes beyond biased presentation or estimation and moves toward fictitious or non-compliant reporting. It is therefore least likely to remain within GAAP.</p><p>Option A is incorrect because estimates can be aggressive yet still fall within GAAP if supportable, even though they reduce reporting quality.</p><p>Option C is incorrect because non-GAAP emphasis can be an aggressive presentation choice; depending on required reconciliation and prominence, it may be misleading but is not automatically a fictitious transaction.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "Management records a large restructuring accrual during a weak year, lowering current income and making future periods easier to report favorably. Which statement is most accurate?",
+    "options": {
+      "A": "The choice is high quality because it is conservative and investors generally prefer positive surprises.",
+      "B": "The choice is aggressive because any decrease in current income must improve financial position.",
+      "C": "The choice may be biased despite looking conservative because intent and future earnings effects matter."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Conservative accounting lowers current reported performance, but applying standards requires judgment and intent matters. A big bath can use apparently conservative accruals to depress current income and create easier future performance comparisons. The issue is biased reporting, not merely the direction of the current-period effect.</p><p>Option A is incorrect because conservatism conflicts with neutrality and can be used to manage earnings rather than faithfully represent performance.</p><p>Option B is incorrect because aggressive choices generally increase current performance or reduce reported debt; a current income decrease is not aggressive by definition.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "A CFO knows a reporting treatment is questionable but obtains board approval, legal advice, and an accounting memo before using it to meet a bonus target. Which fraud-triangle element is most directly reflected by the approvals?",
+    "options": {
+      "A": "Rationalization",
+      "B": "Opportunity",
+      "C": "Pressure or motivation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> Low-quality reporting commonly involves opportunity, pressure or motivation, and rationalization. Seeking approvals and opinions can help a decision maker justify a questionable choice to himself or herself. The approvals therefore most directly reflect rationalization.</p><p>Option B is incorrect because opportunity refers to conditions such as weak controls, ineffective boards, flexible standards, or limited consequences that make misreporting possible.</p><p>Option C is incorrect because the bonus target is the pressure or motivation, but the act of collecting approvals is the justification mechanism.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "An auditor issues a clean opinion on financial statements but an adverse opinion on internal control because a material weakness did not cause a detected misstatement. Which conclusion is most accurate?",
+    "options": {
+      "A": "The clean financial statement opinion proves that no material weakness existed.",
+      "B": "The adverse internal control opinion automatically requires a qualified financial statement opinion.",
+      "C": "The two opinions can differ because control weakness risk and fair presentation are evaluated separately."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Audit opinions discipline reporting quality, but an opinion on financial statements and an opinion on internal control address different questions. A material weakness means a reasonable possibility exists that a material misstatement will not be prevented or detected timely. If audit work still supports fair presentation, the financial statement opinion can remain clean while the internal control opinion is adverse.</p><p>Option A is incorrect because a clean financial statement opinion does not prove internal controls are effective.</p><p>Option B is incorrect because a material weakness in controls does not automatically mean the financial statements are misstated or that the financial statement opinion must be qualified.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "A registrant highlights adjusted EBITDA before GAAP net loss and excludes cash marketing costs incurred in every period shown. Under the non-GAAP guidance discussed, which criticism is most likely strongest?",
+    "options": {
+      "A": "Adjusted EBITDA is prohibited whenever it excludes depreciation and amortization.",
+      "B": "The presentation may distract from GAAP results and improperly excludes recurring costs while lacking equal prominence.",
+      "C": "The measure is acceptable if management states that it should not be viewed in isolation."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> Non-GAAP measures can influence analysts by presenting a more favorable picture. In an SEC filing, the comparable GAAP measure must receive equal prominence and reconciliation must be provided. Excluding items labeled non-recurring is problematic when the costs are very likely to recur, and highlighting the adjusted measure can divert attention from GAAP losses.</p><p>Option A is incorrect because EBIT and EBITDA are recognized non-GAAP forms; the issue is not the mere exclusion of depreciation and amortization.</p><p>Option C is incorrect because cautionary language does not cure unequal prominence, poor reconciliation, or exclusion of recurring operating costs.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Module 10: Financial Reporting Quality",
+    "stem": "A company lowers its allowance for doubtful accounts while days sales outstanding rises and cash from operations repeatedly trails net income. Which analyst response is most appropriate?",
+    "options": {
+      "A": "Treat the lower allowance as conservative because it reduces a contra-asset account.",
+      "B": "Focus on net income because cash from operations is insulated from managerial choices.",
+      "C": "Investigate aggressive accruals and possible premature revenue recognition using the signals together."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Accounting estimates such as doubtful account allowances can manage earnings, and warning signs should be evaluated cohesively. Rising days sales outstanding can signal premature or low-quality revenue, while repeated net income in excess of operating cash flow can indicate aggressive accrual accounting. Taken together, these signals warrant investigation.</p><p>Option A is incorrect because lowering the allowance usually lowers bad debt expense and raises net receivables and income, which is aggressive rather than conservative when collection signals worsen.</p><p>Option B is incorrect because cash from operations can be managed through working-capital choices and classification choices, so it should be analyzed rather than ignored.</p>"
   }
 ]
