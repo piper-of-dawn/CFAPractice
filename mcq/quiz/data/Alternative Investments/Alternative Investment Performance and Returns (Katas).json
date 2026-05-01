@@ -1,0 +1,275 @@
+[
+  {
+    "topic": "Investment life cycle",
+    "stem": "In which phase are returns usually negative because fees and expenses occur before assets produce income?",
+    "options": {
+      "A": "Capital commitment",
+      "B": "Capital deployment",
+      "C": "Capital distribution"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Capital commitment is the early phase when fees and expenses may be incurred before assets generate income. The rule is fee drag before income, so the phase is capital commitment.</p><p>Why option B is incorrect: Capital deployment is the next phase when funds are put to work and cash outflows often still exceed inflows.</p><p>Why option C is incorrect: Capital distribution is the later phase in which successful investments may generate income and gains.</p>",
+    "model": "ChatGPT",
+    "id": 1
+  },
+  {
+    "topic": "Capital distribution",
+    "stem": "Which phase most likely includes gains from exits or asset sales after a successful alternative investment?",
+    "options": {
+      "A": "Capital commitment",
+      "B": "Capital distribution",
+      "C": "Capital deployment"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Capital distribution is when successful assets may generate income in excess of costs and capital gains from exits or sales. Applying that rule gives capital distribution.</p><p>Why option A is incorrect: Capital commitment comes before the assets are generating meaningful returns.</p><p>Why option C is incorrect: Capital deployment is when capital is being invested or used for improvements.</p>",
+    "model": "ChatGPT",
+    "id": 2
+  },
+  {
+    "topic": "J-curve",
+    "stem": "The J-curve effect most accurately starts with what type of return pattern?",
+    "options": {
+      "A": "Immediate high positive return",
+      "B": "No cash outflows",
+      "C": "Initial negative return"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The J-curve starts with initial negative returns because fees and expenses occur before later cash inflows. Then returns accelerate and later level.</p><p>Why option A is incorrect: The curriculum describes early negative returns, not immediate high positive returns.</p><p>Why option B is incorrect: Cash outflows are central to the early life-cycle phases.</p>",
+    "model": "ChatGPT",
+    "id": 3
+  },
+  {
+    "topic": "IRR",
+    "stem": "Which return measure is often used first because it captures timing of cash flows?",
+    "options": {
+      "A": "IRR",
+      "B": "MOIC",
+      "C": "Quoted closing price"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> IRR incorporates the timing and magnitude of cash flows. Long-lived alternative investments depend heavily on when capital is called and returned, so IRR is often used first.</p><p>Why option B is incorrect: MOIC is a shortcut that ignores timing.</p><p>Why option C is incorrect: Quoted closing price is more relevant to public securities.</p>",
+    "model": "ChatGPT",
+    "id": 4
+  },
+  {
+    "topic": "MOIC formula",
+    "stem": "MOIC is calculated using which basic relationship?",
+    "options": {
+      "A": "Annual income divided by volatility",
+      "B": "Realized plus unrealized value divided by invested capital",
+      "C": "Borrowed funds divided by cash position"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> MOIC equals realized value plus unrealized value divided by total invested capital. The primitive idea is value received or still held relative to capital invested.</p><p>Why option A is incorrect: MOIC is not a volatility measure.</p><p>Why option C is incorrect: Borrowed funds divided by cash position relates to leverage.</p>",
+    "model": "ChatGPT",
+    "id": 5
+  },
+  {
+    "topic": "MOIC limitation",
+    "stem": "What does MOIC ignore?",
+    "options": {
+      "A": "Realized value",
+      "B": "Unrealized value",
+      "C": "Timing of cash flows"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> MOIC is easy to calculate but ignores timing of cash flows. That is why the same money multiple can mean different things over different holding periods.</p><p>Why option A is incorrect: Realized value is included in the numerator.</p><p>Why option B is incorrect: Unrealized value is also included in the numerator.</p>",
+    "model": "ChatGPT",
+    "id": 6
+  },
+  {
+    "topic": "Leverage",
+    "stem": "When the asset return is above the borrowing rate, leverage most likely:",
+    "options": {
+      "A": "Raises the investor return",
+      "B": "Leaves the investor return unchanged",
+      "C": "Always creates a loss"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The leverage rule is based on the spread between the asset return and borrowing cost. A positive spread raises the leveraged return.</p><p>Why option B is incorrect: Return is unchanged only when the asset return equals the borrowing rate.</p><p>Why option C is incorrect: Leverage can create larger losses, but not when the spread is favorable.</p>",
+    "model": "ChatGPT",
+    "id": 7
+  },
+  {
+    "topic": "Margin call",
+    "stem": "A margin call asks a hedge fund to provide what?",
+    "options": {
+      "A": "A new benchmark",
+      "B": "More collateral",
+      "C": "A founders share discount"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A margin call occurs when equity or margin falls below a required level. The lender requests more collateral.</p><p>Why option A is incorrect: Benchmark choice is not part of a margin call.</p><p>Why option C is incorrect: Founders shares are fee incentives, not collateral.</p>",
+    "model": "ChatGPT",
+    "id": 8
+  },
+  {
+    "topic": "Fair value Level 1",
+    "stem": "Quoted active-market prices for identical assets are what level of fair value input?",
+    "options": {
+      "A": "Level 1",
+      "B": "Level 2",
+      "C": "Level 3"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Level 1 inputs are quoted prices in active markets for identical assets. The stem states that definition directly.</p><p>Why option B is incorrect: Level 2 uses observable inputs other than Level 1 prices.</p><p>Why option C is incorrect: Level 3 uses unobservable inputs.</p>",
+    "model": "ChatGPT",
+    "id": 9
+  },
+  {
+    "topic": "Fair value Level 3",
+    "stem": "Private equity and real estate interim valuations most likely use which level of fair value inputs?",
+    "options": {
+      "A": "Level 1",
+      "B": "Level 3",
+      "C": "Only public exchange prices"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Private equity and real estate are less frequently traded and may rely on cash-flow projection models with unobservable inputs. That is Level 3.</p><p>Why option A is incorrect: Level 1 requires active-market quoted prices for identical assets.</p><p>Why option C is incorrect: Public exchange prices are not the typical basis for these illiquid interim valuations.</p>",
+    "model": "ChatGPT",
+    "id": 10
+  },
+  {
+    "topic": "Valuation smoothing",
+    "stem": "Mark-to-model valuation of illiquid assets may understate what?",
+    "options": {
+      "A": "Committed capital",
+      "B": "The number of investors",
+      "C": "Volatility of returns"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Model-based estimates may smooth returns and understate volatility. The primitive effect is a smoother return path than economic reality.</p><p>Why option A is incorrect: Committed capital is a fund life-cycle concept, not the smoothed statistic.</p><p>Why option B is incorrect: Investor count is not the valuation-smoothing issue.</p>",
+    "model": "ChatGPT",
+    "id": 11
+  },
+  {
+    "topic": "Valuation procedures",
+    "stem": "For in-house valuation estimates, hedge funds should develop and follow what?",
+    "options": {
+      "A": "Random valuation methods",
+      "B": "Guaranteed liquidation prices",
+      "C": "Consistent valuation procedures"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Potential conflicts arise when values are estimated, so hedge funds should develop procedures, communicate them, and adhere to them consistently. That points to consistent valuation procedures.</p><p>Why option A is incorrect: Random methods contradict the requirement to adhere to procedures consistently.</p><p>Why option B is incorrect: Model values may not equal true liquidation value, so liquidation prices are not guaranteed.</p>",
+    "model": "ChatGPT",
+    "id": 12
+  },
+  {
+    "topic": "Performance fee",
+    "stem": "Alternative investments often add what type of fee to a base management fee?",
+    "options": {
+      "A": "Vintage fee",
+      "B": "Performance fee",
+      "C": "Level 1 fee"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Alternatives often charge performance fees based on a percentage of periodic fund returns in addition to a management fee.</p><p>Why option A is incorrect: Vintage year is a comparison concept, not a fee type.</p><p>Why option C is incorrect: Level 1 is a fair value input level, not a fee.</p>",
+    "model": "ChatGPT",
+    "id": 13
+  },
+  {
+    "topic": "Net fee calculation",
+    "stem": "If a performance fee is calculated net of management fees, what is deducted before applying the performance fee?",
+    "options": {
+      "A": "The fund name",
+      "B": "The vintage year",
+      "C": "The management fee"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Net-of-management-fee performance fee calculation subtracts the management fee effect before calculating the performance fee base.</p><p>Why option A is incorrect: The fund name is irrelevant to fee calculation.</p><p>Why option B is incorrect: Vintage year is used for return comparison, not fee-base deduction.</p>",
+    "model": "ChatGPT",
+    "id": 14
+  },
+  {
+    "topic": "Hard hurdle",
+    "stem": "A hard hurdle charges performance fees on what return portion?",
+    "options": {
+      "A": "Return above the hurdle",
+      "B": "All return below the hurdle",
+      "C": "Only returned capital"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A hard hurdle applies the performance fee only to return in excess of the hurdle. That is the defining rule.</p><p>Why option B is incorrect: Return below the hurdle is not feeable under a hard hurdle.</p><p>Why option C is incorrect: Returned capital is not the performance-fee base.</p>",
+    "model": "ChatGPT",
+    "id": 15
+  },
+  {
+    "topic": "High-water mark",
+    "stem": "A high-water mark mainly prevents performance fees until the fund exceeds what?",
+    "options": {
+      "A": "The notice period",
+      "B": "A prior peak value",
+      "C": "The number of investors"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A high-water mark is the highest previous fund value net of fees. The manager earns performance fees only on gains above that prior peak.</p><p>Why option A is incorrect: Notice period is a redemption term.</p><p>Why option C is incorrect: Investor count is unrelated to the high-water mark.</p>",
+    "model": "ChatGPT",
+    "id": 16
+  },
+  {
+    "topic": "Clawback",
+    "stem": "A clawback provision most likely makes the GP return what after later losses reduce aggregate profit?",
+    "options": {
+      "A": "All management fees",
+      "B": "Investor notice rights",
+      "C": "Excess accrued performance fees"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> A clawback adjusts for early performance fees that prove too high after later losses. The GP returns excess accrued performance fees to LP capital accounts.</p><p>Why option A is incorrect: The example concerns performance fees, not all management fees.</p><p>Why option B is incorrect: Notice rights are a redemption concept, not a clawback item.</p>",
+    "model": "ChatGPT",
+    "id": 17
+  },
+  {
+    "topic": "Redemption fee",
+    "stem": "A redemption fee helps discourage redemptions and offset what?",
+    "options": {
+      "A": "Transaction costs for remaining investors",
+      "B": "The hurdle rate",
+      "C": "The IRR formula"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Redemption fees discourage redemption and offset transaction costs borne by remaining investors.</p><p>Why option B is incorrect: A hurdle rate is a performance-fee threshold.</p><p>Why option C is incorrect: The IRR formula is a return measure, not a redemption cost.</p>",
+    "model": "ChatGPT",
+    "id": 18
+  },
+  {
+    "topic": "Lockup period",
+    "stem": "A lockup period is best described as:",
+    "options": {
+      "A": "A public market price quotation",
+      "B": "A minimum holding period before redemption",
+      "C": "A selective addition of past index returns"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> A lockup period is the minimum holding period before investors can withdraw or redeem.</p><p>Why option A is incorrect: Public market quotes describe valuation inputs, not lockups.</p><p>Why option C is incorrect: Selective addition of past returns describes backfill bias.</p>",
+    "model": "ChatGPT",
+    "id": 19
+  },
+  {
+    "topic": "Survivorship bias",
+    "stem": "Excluding failed hedge funds from an index most likely creates:",
+    "options": {
+      "A": "Hard hurdle bias",
+      "B": "Backfill bias",
+      "C": "Survivorship bias"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Survivorship bias occurs when an index includes current funds and excludes funds that failed or are no longer available.</p><p>Why option A is incorrect: A hard hurdle is a fee provision, not an index bias.</p><p>Why option B is incorrect: Backfill bias is selective addition of prior successful performance.</p>",
+    "model": "ChatGPT",
+    "id": 20
+  },
+  {
+    "topic": "Backfill bias",
+    "stem": "Selectively adding prior successful hedge fund performance to an index most likely creates:",
+    "options": {
+      "A": "Backfill bias",
+      "B": "Lockup period",
+      "C": "Capital distribution"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Backfill bias occurs when prior performance data are selectively included after a fund has shown success.</p><p>Why option B is incorrect: A lockup period restricts redemption timing.</p><p>Why option C is incorrect: Capital distribution is a fund life-cycle phase, not an index bias.</p>",
+    "model": "ChatGPT",
+    "id": 21
+  }
+]

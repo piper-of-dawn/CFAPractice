@@ -1,0 +1,66 @@
+OUTPUT FILES REQUIRED:
+`/home/karma/CFAPractice/mcq/quiz/data/Alternative Investments/Alternative Investment Performance and Returns.json`
+`/home/karma/CFAPractice/mcq/quiz/data/Alternative Investments/Alternative Investment Performance and Returns (Katas).json`
+
+BEFORE YOU BEGIN ANYTHING, ALWAYS CREATE A TODO LIST.
+
+You are given:
+
+SOURCE OF TRUTH:
+`/home/karma/CFAPractice/mcq/quiz/AI/PDF/Alternative Investments/module_02_alternative_investment_performance_and_returns.txt`
+
+AGENTS.md:
+Follow all instructions in `AGENTS.md` strictly.
+
+TOPIC
+
+TASK:
+Generate CFA-style MCQs strictly from the source-of-truth PDFs only. The text contains a dedicated section called “Learning Outcomes”; questions must be distributed evenly across all Learning Outcomes.
+
+In the first JSON file  that has a name without Katas generate exactly 28 questions total in one single JSON array:
+
+1. Enumeration / Counting Format
+   - 7 very hard and confusing CFA-style MCQs
+   - Use the “Enumeration / Counting Format” from AGENTS.md
+
+2. CFA Style Vanilla Hard MCQs Format
+   - 7 very hard and confusing CFA-style MCQs
+   - Use the “CFA Style Vanilla Hard MCQs Format” from AGENTS.md
+
+3. Assertion–Reason Format
+   - 7 very hard and confusing CFA-style MCQs
+   - Use the “Assertion Reason” format from AGENTS.md
+
+4. Numerical Questions
+   - 7 very hard and confusing CFA-style numerical MCQs
+   - Use the numerical-question format from AGENTS.md
+   - Questions must require calculation, interpretation of numerical relationships, or quantitative application
+   - Avoid purely conceptual questionNumerical Questions
+   - 7 very hard and confusing CFA-style numerical MCQs
+   - Use the numerical-question format from AGENTS.md
+   - Questions must require calculation, interpretation of numerical relationships, or quantitative application
+   - Avoid purely conceptual questions in this sections in this section
+
+In the second JSON file that has a name with Katas, generate exactly 21 questions total in one single JSON array. These questions must follow the CFA Question Generator — Building-Block Edition from AGENTS.md.
+    - I am reiterating the fact that these questions should be very easy and any math should be processed inside head without the need for calculator.
+    -  You can also keep some questions easy but confusing, maybe from the margins or edge concepts which students usually gloss over.
+
+ANSWER DISTRIBUTION:
+- Correct answers must be evenly distributed across A, B, and C as much as mathematically possible within each question type.
+- Since 7 is not divisible by 3, use a near-even split for the 7-question sections.
+- Since 14 is not divisible by 3, use a near-even split for the 14-question section.
+
+STRICT RULES:
+- Use only the source-of-truth PDFs.
+- Do not use outside knowledge.
+- Do not invent curriculum statements.
+- Do not overwrite the target file.
+- Output to the target file must be only a valid JSON array.
+- No markdown, no commentary, no explanation inside the output file.
+- Ensure every question is difficult, CFA-like, and tests subtle distinctions.
+- Ensure distractors are plausible and conceptually close.
+- Ensure answer explanations are grounded only in the source PDF.
+- Each question object must include a field identifying its format/type:
+  - "Enumeration / Counting Format"
+  - "CFA Style Vanilla Hard MCQ"
+  - "Assertion–Reason"

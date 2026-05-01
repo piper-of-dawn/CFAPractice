@@ -1,0 +1,373 @@
+[
+  {
+    "topic": "Performance appraisal features",
+    "stem": "Consider the following:\nI. Staggered capital commitments over time\nII. Continuously quoted prices for identical public claims\nIII. Identical claims to periodic cash flows for all holders\nHow many of the above complicate performance appraisal for alternative investments?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The classification rule is to count features the CFA Curriculum identifies as making alternative investment appraisal harder. I qualifies because staggered commitments affect cash-flow timing. II does not qualify because continuous quoted prices make public securities easier to compare. III does not qualify because identical claims to periodic cash flows are a public security comparability feature. Only one item qualifies.</p><p>Why option B is incorrect: It incorrectly counts one public security comparability feature as an alternative investment complication.</p><p>Why option C is incorrect: It incorrectly treats both quoted prices and identical periodic claims as alternative investment complications.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 1
+  },
+  {
+    "topic": "Investment life cycle and J-curve",
+    "stem": "Consider the following:\nI. Fees and expenses may occur before assets generate income.\nII. Cash outflows typically exceed inflows while capital is deployed.\nIII. Returns often level off as capital is distributed and the fund closes.\nHow many of the above fit the alternative investment life cycle?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The classification rule is to match each statement to the commitment, deployment, and distribution phases. I fits capital commitment, II fits capital deployment, and III fits later distribution and closing. All three qualify.</p><p>Why option A is incorrect: It counts only one phase even though all three statements are curriculum-consistent.</p><p>Why option B is incorrect: It leaves out one correct phase description.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 2
+  },
+  {
+    "topic": "IRR and MOIC",
+    "stem": "Consider the following:\nI. IRR considers timing and magnitude of cash flows.\nII. MOIC is easier to understand but ignores timing of cash flows.\nIII. MOIC is the key metric for longer-term private equity and real estate assessment.\nHow many of the above are accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The classification rule is to separate IRR from MOIC. I is accurate because IRR incorporates cash-flow timing. II is accurate because MOIC is a shortcut money multiple that ignores timing. III is not accurate because the CFA Curriculum identifies IRR as the key metric for longer-term private equity and real estate. Two items qualify.</p><p>Why option A is incorrect: It undercounts the two true metric statements.</p><p>Why option C is incorrect: It incorrectly treats MOIC as the key longer-term metric.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 3
+  },
+  {
+    "topic": "Fair value hierarchy",
+    "stem": "Consider the following:\nI. Level 1 uses quoted active-market prices for identical assets.\nII. Level 2 uses observable inputs other than Level 1 prices.\nIII. Level 3 uses unobservable inputs when market activity may be limited.\nHow many of the above correctly describe fair value inputs?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The classification rule is the three-level fair value hierarchy. I, II, and III each match the CFA Curriculum level descriptions. All three qualify.</p><p>Why option A is incorrect: It counts only one correct level even though all are correctly described.</p><p>Why option B is incorrect: It leaves out one accurate level description.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 4
+  },
+  {
+    "topic": "Redemption provisions",
+    "stem": "Consider the following:\nI. A notice period gives the manager advance time to liquidate positions orderly.\nII. A lockup period is the minimum holding period before redemption.\nIII. A gate permanently eliminates investor redemption rights.\nHow many of the above accurately describe redemption provisions?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The classification rule is to count provisions as defined in the CFA Curriculum. I qualifies because notice helps orderly liquidation. II qualifies because a lockup is a minimum holding period. III does not qualify because a gate limits or restricts redemption for a period of time, usually at the manager discretion. Two items qualify.</p><p>Why option A is incorrect: It ignores one of the two accurate redemption provision definitions.</p><p>Why option C is incorrect: It overstates a gate as permanent.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 5
+  },
+  {
+    "topic": "Custom fee arrangements",
+    "stem": "Consider the following:\nI. Founders shares may provide lower fees to early investors.\nII. Either/or fees choose the lower of the management fee and incentive fee.\nIII. Smaller investors with smaller commitments usually receive the novel either/or terms demanded by major institutions.\nHow many of the above are consistent with custom alternative investment fees?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The classification rule is whether each statement matches the custom fee examples. I qualifies because founders shares can offer lower fees to early investors. II does not qualify because either/or fees choose the greater of a lower management fee or a higher incentive fee above a hurdle. III does not qualify because the CFA Curriculum says major investors with larger commitments may negotiate such terms, while smaller investors usually face more traditional fees. Only one item qualifies.</p><p>Why option B is incorrect: It incorrectly includes one of the two reversed or overstated fee statements.</p><p>Why option C is incorrect: It incorrectly treats both false fee statements as curriculum-consistent.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 6
+  },
+  {
+    "topic": "Hedge fund benchmark bias",
+    "stem": "Consider the following:\nI. Excluding failed hedge funds can create survivorship bias.\nII. Including all failed funds creates backfill bias.\nIII. Survivorship and backfill bias usually make hedge fund index returns too pessimistic.\nHow many of the above are accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The classification rule is the index-bias distinction. I is accurate because excluding failed funds creates survivorship bias. II is not accurate because backfill bias is selective inclusion of prior performance for successful funds, not inclusion of all failed funds. III is not accurate because the two biases create overly optimistic, not pessimistic, reported returns. Only one item qualifies.</p><p>Why option B is incorrect: It incorrectly counts one of the false benchmark-bias statements.</p><p>Why option C is incorrect: It incorrectly treats all three statements as accurate.</p>",
+    "format": "Enumeration / Counting Format",
+    "id": 7
+  },
+  {
+    "topic": "Comparability with public securities",
+    "stem": "Which feature most likely makes public debt and equity performance easier to compare than alternative investment performance?",
+    "options": {
+      "A": "Standardized claims with no further required capital commitments",
+      "B": "Investor-specific high-water marks and lockups",
+      "C": "Level 3 mark-to-model valuation"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining comparison is that public securities are standardized claims, usually have no further required capital commitments, are frequently quoted, and have common indexes. That makes option A the clearest feature supporting easier comparison.</p><p>Why option B is incorrect: Investor-specific high-water marks and lockups are alternative investment complications.</p><p>Why option C is incorrect: Level 3 valuation is a challenge for illiquid alternative assets.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 8
+  },
+  {
+    "topic": "Capital distribution phase",
+    "stem": "Positive excess income and substantial gains from asset sales are most likely associated with which phase?",
+    "options": {
+      "A": "Capital commitment",
+      "B": "Capital distribution",
+      "C": "Capital deployment"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The decision rule is to identify the phase in which successful investments generate income above costs and gains from liquidation or exit. That is capital distribution.</p><p>Why option A is incorrect: Capital commitment usually has negative returns because fees and expenses occur before income.</p><p>Why option C is incorrect: Capital deployment usually involves outflows for construction, improvements, turnaround, or startup activity.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 9
+  },
+  {
+    "topic": "J-curve effect",
+    "stem": "The J-curve effect most likely describes which return pattern?",
+    "options": {
+      "A": "Stable returns caused by infrequent valuation",
+      "B": "Immediate positive returns followed by lower distributions",
+      "C": "Initial negative returns, then acceleration, then leveling as capital is distributed"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The CFA Curriculum describes the J-curve as initial negative returns in capital commitment, acceleration through deployment, and leveling as capital is distributed and the fund closes.</p><p>Why option A is incorrect: Stable accounting values may arise from valuation practices but are not the J-curve pattern.</p><p>Why option B is incorrect: It reverses the early negative-return feature.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 10
+  },
+  {
+    "topic": "IRR preference",
+    "stem": "IRR is most likely preferred for long-lived private equity and real estate investments because it:",
+    "options": {
+      "A": "avoids reinvestment and opportunity-cost assumptions.",
+      "B": "incorporates the timing and magnitude of cash flows.",
+      "C": "uses quoted active-market prices as the input."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The key criterion is that private equity and real estate performance depends heavily on cash-flow timing and magnitude. IRR incorporates those features.</p><p>Why option A is incorrect: IRR does involve assumptions about financing and reinvestment rates.</p><p>Why option C is incorrect: Quoted active-market prices are not the basis for long-lived private equity and real estate IRR assessment.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 11
+  },
+  {
+    "topic": "MOIC limitation",
+    "stem": "MOIC is least likely sufficient for comparing two investments with the same money multiple but different holding periods because MOIC:",
+    "options": {
+      "A": "ignores the timing of cash flows.",
+      "B": "includes realized value in its numerator.",
+      "C": "is harder to understand than IRR."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining limitation is that MOIC compares value with invested capital but does not account for how long the value took to realize.</p><p>Why option B is incorrect: Including realized value is part of the MOIC formula, not the holding-period weakness.</p><p>Why option C is incorrect: MOIC is easier to calculate and understand than IRR.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 12
+  },
+  {
+    "topic": "Leverage spread",
+    "stem": "A leveraged alternative investment is most likely to outperform its equivalent cash portfolio when:",
+    "options": {
+      "A": "the asset return exceeds the borrowing rate.",
+      "B": "the borrowing rate exceeds the asset return.",
+      "C": "the margin lender issues a margin call."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The leveraged return relation adds a leverage term multiplied by the spread between asset return and borrowing rate. A positive spread raises the leveraged return above the cash return.</p><p>Why option B is incorrect: A negative spread reduces the leveraged return.</p><p>Why option C is incorrect: A margin call can force liquidation and magnify losses.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 13
+  },
+  {
+    "topic": "Margin call risk",
+    "stem": "If a leveraged hedge fund cannot meet a margin call, the fund most likely faces what risk?",
+    "options": {
+      "A": "Automatic reduction of its borrowing cost",
+      "B": "Forced liquidation that can lock in or magnify losses",
+      "C": "Immediate exemption from investor redemptions"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> Inability to meet margin calls can force liquidation of losing positions, potentially at disadvantageous prices and with market impact.</p><p>Why option A is incorrect: The lender requests more collateral; borrowing cost is not automatically reduced.</p><p>Why option C is incorrect: Redemption restrictions are separate provisions.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 14
+  },
+  {
+    "topic": "Level 3 scrutiny",
+    "stem": "An investment vehicle heavily involved with Level 3 priced assets most likely deserves increased due diligence because:",
+    "options": {
+      "A": "its values are based on quoted active-market prices.",
+      "B": "its model values must equal liquidation value.",
+      "C": "model estimates may smooth or overstate returns and understate volatility."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Level 3 assets rely on unobservable inputs and models. The curriculum warns that estimates may not be true liquidation values and may smooth or overstate returns and understate volatility.</p><p>Why option A is incorrect: Quoted active-market prices describe Level 1.</p><p>Why option B is incorrect: The curriculum warns that model values may not represent true liquidation value.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 15
+  },
+  {
+    "topic": "Investor-specific fee outcomes",
+    "stem": "Two investors in the same alternative fund most likely earn different net returns over the same period because they differ in:",
+    "options": {
+      "A": "entry timing and applicable high-water mark status.",
+      "B": "the public closing price used for every position.",
+      "C": "the definition of Level 1 inputs."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> Investor timing matters: a new investor after a decline may pay performance fees while an earlier investor may still be below a high-water mark.</p><p>Why option B is incorrect: Public closing prices are not the investor-specific fee mechanism.</p><p>Why option C is incorrect: The Level 1 definition does not explain different net returns within the same fund.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 16
+  },
+  {
+    "topic": "Notice period",
+    "stem": "A notice period is most likely designed to:",
+    "options": {
+      "A": "eliminate all future redemption rights.",
+      "B": "give the manager time to liquidate positions in an orderly way.",
+      "C": "raise the investor high-water mark."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> A notice period requires advance notice before redemption so the manager can liquidate positions orderly and avoid magnifying losses.</p><p>Why option A is incorrect: The provision is not defined as permanent elimination of redemptions.</p><p>Why option C is incorrect: High-water marks are fee provisions.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 17
+  },
+  {
+    "topic": "Founders shares",
+    "stem": "Founders shares are most likely offered to:",
+    "options": {
+      "A": "entice early fund participation through lower fee terms.",
+      "B": "guarantee all early investors zero performance fees.",
+      "C": "remove lockups for late investors."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> Founders shares are incentives for early participation and may offer lower management and performance fees than standard terms.</p><p>Why option B is incorrect: Lower performance fees do not mean all performance fees are guaranteed to be zero.</p><p>Why option C is incorrect: Lockup removal for late investors is not the founders share feature.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 18
+  },
+  {
+    "topic": "Either/or fee structure",
+    "stem": "Under an either/or fee agreement, the manager most likely receives:",
+    "options": {
+      "A": "both the management fee and incentive fee every year.",
+      "B": "the greater of a lower management fee or a higher incentive fee above a hurdle.",
+      "C": "only a flat management fee in all profitable years."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> Either/or fees are a choice between a lower management fee and a higher incentive fee above a hurdle, whichever is greater.</p><p>Why option A is incorrect: That is taking both fees, not either/or.</p><p>Why option C is incorrect: The incentive fee can be chosen in up years when it is larger.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 19
+  },
+  {
+    "topic": "Fund of hedge funds",
+    "stem": "Despite double fees, an investor might choose a fund of hedge funds most likely for:",
+    "options": {
+      "A": "automatic elimination of all underlying fund fees.",
+      "B": "guaranteed higher net return than direct hedge fund investing.",
+      "C": "due diligence expertise, diversification, or access to a closed fund."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> A fund of funds may provide due diligence, diversification, and access to hedge funds closed to new direct investors.</p><p>Why option A is incorrect: The fund of funds adds another fee layer rather than eliminating underlying fees.</p><p>Why option B is incorrect: Double fees can reduce net return when underlying returns are the same.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 20
+  },
+  {
+    "topic": "Benchmark biases",
+    "stem": "Hedge fund indexes are least likely to reflect actual average hedge fund performance when they:",
+    "options": {
+      "A": "include failed and current funds without selective history.",
+      "B": "compare private equity funds by the same vintage year.",
+      "C": "exclude failed funds and selectively backfill successful prior returns."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Survivorship bias excludes failed funds and backfill bias selectively adds prior successful performance, both creating optimistic index returns.</p><p>Why option A is incorrect: Including failed funds and avoiding selective history reduces the stated biases.</p><p>Why option B is incorrect: Same-vintage comparison is described as more accurate for private equity or real estate comparisons.</p>",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "id": 21
+  },
+  {
+    "topic": "IRR and timing",
+    "stem": "Assertion (A): IRR is a key metric for longer-term private equity and real estate investments.\nReason (R): The timing and magnitude of cash flows into and out of these investments are central to performance assessment.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>A is correct.</strong> Both statements are true, and the reason explains the assertion. IRR is emphasized because these investments depend heavily on when capital is called and when proceeds are returned.</p><p>Why option B is incorrect: The reason is not merely true but unrelated; it is the direct explanation.</p><p>Why options C and D are incorrect: They reject a true assertion or true reason.</p>",
+    "format": "Assertion–Reason",
+    "id": 22
+  },
+  {
+    "topic": "MOIC simplicity",
+    "stem": "Assertion (A): MOIC can be easier to calculate and understand than IRR.\nReason (R): MOIC compares realized and unrealized value with invested capital and ignores cash-flow timing.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>A is correct.</strong> Both statements are true, and the reason explains the assertion. MOIC is simpler because it is a money multiple rather than a timing-sensitive return measure.</p><p>Why option B is incorrect: The reason explains the source of MOIC simplicity.</p><p>Why options C and D are incorrect: They incorrectly deny a true assertion or true reason.</p>",
+    "format": "Assertion–Reason",
+    "id": 23
+  },
+  {
+    "topic": "Level 3 valuation",
+    "stem": "Assertion (A): Level 3-heavy alternative vehicles may report smoothed returns and understated volatility.\nReason (R): Level 3 values are quoted active-market prices for identical assets.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>C is correct.</strong> The assertion is true because mark-to-model estimates for illiquid assets may smooth or overstate returns and understate volatility. The reason is false because quoted active-market prices for identical assets describe Level 1, not Level 3.</p><p>Why option A is incorrect: It accepts a false reason and an incorrect causal link.</p><p>Why option B is incorrect: It also treats the false Level 3 definition as true.</p>",
+    "format": "Assertion–Reason",
+    "id": 24
+  },
+  {
+    "topic": "Either/or fees",
+    "stem": "Assertion (A): In an either/or fee structure, the manager receives both the management fee and the incentive fee whenever returns are positive.\nReason (R): Either/or structures combine down-year expense coverage with upside incentive compensation above a hurdle.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>D is correct.</strong> The assertion is false because either/or means choosing between the lower management fee and the higher incentive fee, whichever is greater. The reason is true because the structure is designed to cover expenses in down years and reward performance in up years.</p><p>Why option A is incorrect: It incorrectly accepts that both fees are received.</p><p>Why option C is incorrect: It reverses the truth values.</p>",
+    "format": "Assertion–Reason",
+    "id": 25
+  },
+  {
+    "topic": "Benchmark comparison",
+    "stem": "Assertion (A): A composite benchmark can be misleading for private equity or real estate if the investment is in a different life-cycle phase than peers.\nReason (R): Same-vintage annual or since-inception comparisons generally lead to more accurate results.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>B is correct.</strong> Both statements are true. The assertion is true because life-cycle phase affects return comparability, and the reason is true because same-vintage comparison improves accuracy. But the reason gives a remedy rather than the direct cause of the misleading composite benchmark.</p><p>Why option A is incorrect: It overstates the causal link between the remedy and the phase-mismatch problem.</p><p>Why options C and D are incorrect: They deny one of two true curriculum statements.</p>",
+    "format": "Assertion–Reason",
+    "id": 26
+  },
+  {
+    "topic": "Lockups and liquidity",
+    "stem": "Assertion (A): Lockups and illiquidity may prevent investors from reacting to underperformance by selling an investment.\nReason (R): A lockup period is an advance notice period, typically 30 to 90 days, before redemption.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>C is correct.</strong> The assertion is true because lockups and illiquidity may prevent selling in response to underperformance. The reason is false because the 30 to 90 day advance notification describes a notice period, while a lockup is a minimum holding period.</p><p>Why option A is incorrect: It treats an incorrect definition of lockup as true.</p><p>Why option B is incorrect: It also accepts the false reason.</p>",
+    "format": "Assertion–Reason",
+    "id": 27
+  },
+  {
+    "topic": "Fund of funds",
+    "stem": "Assertion (A): A fund of hedge funds can produce a lower net return than direct hedge fund investment when underlying returns are the same.\nReason (R): A fund of funds may still be chosen for due diligence, diversification, or access to closed funds.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causality rule</h3><p><strong>B is correct.</strong> Both statements are true. The first follows from the double-fee example, while the second explains why investors may still choose the structure. The reason does not explain why the net return is lower; the extra fee layer does.</p><p>Why option A is incorrect: The reason is a justification for choosing the structure, not the cause of the lower net return.</p><p>Why options C and D are incorrect: They deny one of two true statements.</p>",
+    "format": "Assertion–Reason",
+    "id": 28
+  }
+]

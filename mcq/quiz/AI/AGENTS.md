@@ -79,8 +79,7 @@ Generate CFA-style MCQs for “{TOPIC}” as a JSON array. Each question must te
 ```html
 <h3>First Principles Thinking: core idea</h3>
 <p><strong>X is correct.</strong> Define the primitive as in PDF → governing rule/relation → intuition → PDF condition → apply → conclude.</p>
-<p>Why top distractor is wrong (PDF-based misconception).</p>
-<p>Why remaining distractor is wrong.</p>
+<p>Why the other options are wrong</p>
 ```
 
 ### Content Rules
