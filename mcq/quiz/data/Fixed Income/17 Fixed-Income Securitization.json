@@ -1,0 +1,373 @@
+[
+  {
+    "id": 1,
+    "type": "Enumeration / Counting Format",
+    "topic": "Benefits to Investors",
+    "stem": "Consider the following:\nI. Securitization allows investors to tailor interest rate and credit risk exposures.\nII. Securitization directly improves the borrowers' creditworthiness.\nIII. Investors usually must originate and service the underlying loans themselves.\nHow many of the above are benefits to investors?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states that securitization benefits investors by allowing them to tailor interest rate and credit risk exposures to their risk, return, and maturity needs. Item I qualifies. Item II does not because securitization does not directly improve borrower creditworthiness. Item III does not because investors can buy ABS without originating or servicing the underlying loans. Therefore, only one item satisfies the condition.</p><p>Why option B is incorrect. Two items would qualify only if securitization either improved borrower credit quality directly or required investors to perform banking functions, neither of which is stated in the CFA Curriculum.</p><p>Why option C is incorrect. All three do not qualify because Items II and III contradict the role of ABS as an investment that redistributes banking skills and servicing functions away from investors.</p>"
+  },
+  {
+    "id": 2,
+    "type": "Enumeration / Counting Format",
+    "topic": "Covered Bonds",
+    "stem": "Consider the following:\nI. The underlying mortgage loans remain on the issuing bank's balance sheet.\nII. Covered bond investors receive payment directly from the bank rather than from the specific pool's cash flows.\nIII. Covered bonds are full securitizations because the assets are transferred to a separate SPE.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum describes covered bonds as the simplest securitization structure in which the collateral pool remains on the bank's balance sheet, so Item I is correct. It also states that covered bond investors receive payment directly from the bank, so Item II is correct. Item III is incorrect because covered bonds are not full securitizations precisely because the assets are not transferred to a separate independent SPE. Therefore, only two statements are correct.</p><p>Why option A is incorrect. One statement is too low because both Items I and II match the CFA Curriculum's description of covered bonds.</p><p>Why option C is incorrect. All three cannot be correct because Item III reverses the defining reason covered bonds are not treated as full securitizations.</p>"
+  },
+  {
+    "id": 3,
+    "type": "Enumeration / Counting Format",
+    "topic": "Legal Documents and Reporting",
+    "stem": "Consider the following:\nI. The purchase agreement sets out the seller's representations and warranties about the assets sold.\nII. The prospectus describes payment priority and the credit enhancements used.\nIII. Trustee cash flow reports are the only source investors use to update the ABS credit standing.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA Curriculum states that the purchase agreement outlines the seller's representations and warranties, so Item I is correct. It also states that the prospectus describes the structure of the securitization, including payment priority and credit enhancements, so Item II is correct. Finally, the trustee provides periodic cash flow reports, and those reports are described as the only source of information investors use to update the ABS credit standing, so Item III is correct. Therefore, all three statements qualify.</p><p>Why option A is incorrect. One statement is too few because each of the three items comes directly from the securitization process discussion in the CFA Curriculum.</p><p>Why option B is incorrect. Two statements are too few because Item III is also explicitly supported by the CFA Curriculum, not an inference beyond it.</p>"
+  },
+  {
+    "id": 4,
+    "type": "Enumeration / Counting Format",
+    "topic": "Benefits to Economies and Markets",
+    "stem": "Consider the following:\nI. Securitization provides an alternative means of funding business operations beyond bonds, preferred equity, and common equity.\nII. Securitization reduces funding costs by forcing companies to keep customer loans on their own balance sheets.\nIII. Securitization decreases secondary-market price discovery by replacing tradable securities with loans.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly identifies securitization as an alternative funding source beyond traditional financing tools, so Item I is correct. Item II is incorrect because the text explains that securitization allows companies to move loans off their balance sheets, not keep them there. Item III is incorrect because tradable ABS improve market efficiency and price discovery rather than reduce them. Therefore, only one statement is correct.</p><p>Why option B is incorrect. Two statements do not qualify because both Items II and III conflict with the stated funding and market-efficiency benefits of securitization.</p><p>Why option C is incorrect. All three cannot be correct because only Item I is supported; the other two reverse the direction of the benefit.</p>"
+  },
+  {
+    "id": 5,
+    "type": "Enumeration / Counting Format",
+    "topic": "Role of the SPE",
+    "stem": "Consider the following:\nI. After the sale, the SPE becomes the ultimate owner of the loans.\nII. If the originator enters bankruptcy, its creditors ordinarily have claims on assets held in the bankruptcy-remote SPE.\nIII. Investors should evaluate the legal framework of the jurisdiction in which they purchase ABS.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum explains that the SPE acquires the loans and becomes their legal owner, so Item I is correct. It also warns that investors should assess jurisdiction-specific legal considerations, so Item III is correct. Item II is incorrect because the bankruptcy-remote structure is designed to prevent the originator's creditors from claiming the securitized assets held by the SPE. Therefore, only two statements are correct.</p><p>Why option A is incorrect. One statement is too low because Items I and III are both directly supported by the text.</p><p>Why option C is incorrect. All three cannot be correct because Item II contradicts the legal purpose of the bankruptcy-remote SPE structure.</p>"
+  },
+  {
+    "id": 6,
+    "type": "Enumeration / Counting Format",
+    "topic": "Pass-Throughs and Structural Enhancements",
+    "stem": "Consider the following:\nI. Pass-through securities are true securitizations.\nII. Bonds with structural enhancements redistribute pool cash flows across specified tranches according to a preset schedule.\nIII. Subordinated tranches assume greater risks of default and repayment-pattern changes than higher tranches.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA Curriculum defines pass-through securities as true securitizations, so Item I is correct. It also explains that bonds with structural enhancements redistribute cash flows across tranches on a preset schedule, making Item II correct. Finally, lower tranches are described as assuming greater risks of defaults and repayment-pattern changes than higher tranches, so Item III is correct. Therefore, all three statements are correct.</p><p>Why option A is incorrect. One statement is far too low because each item matches a core structural feature described in the module.</p><p>Why option B is incorrect. Two statements are too few because there is no false item in the list; all three are directly supported by the CFA Curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "type": "Enumeration / Counting Format",
+    "topic": "Benefits to Issuers",
+    "stem": "Consider the following:\nI. Selling securitized assets can generate fee income for banks.\nII. Securitization requires banks to retain all lending risk in order to expand origination.\nIII. Securitized debt must be illiquid to help long-term investors match liabilities.\nHow many of the above statements are correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states that selling assets generates fee income, so Item I is correct. Item II is incorrect because securitization helps banks remove assets and lending risks from their balance sheets. Item III is incorrect because one of the investor benefits described is that publicly traded securitized debt can be sold quickly and cost-effectively, which is the opposite of illiquidity. Therefore, only one statement is correct.</p><p>Why option B is incorrect. Two statements do not qualify because Items II and III both contradict the stated issuer and investor benefits.</p><p>Why option C is incorrect. All three cannot be correct because the curriculum supports only Item I and rejects the other two premises.</p>"
+  },
+  {
+    "id": 8,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Benefits to Issuers",
+    "stem": "Which of the following statements about the benefits of securitization for issuers is most likely correct?",
+    "options": {
+      "A": "Issuers improve efficiency mainly by retaining loans and the related lending risks on balance sheet.",
+      "B": "Issuers can operate more efficiently on a risk-adjusted basis after removing assets and lending risks from their balance sheets.",
+      "C": "Issuers benefit mainly because securitization eliminates the need for any external investors."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining issuer benefit in the CFA Curriculum is that selling illiquid assets and transferring the related lending risks off balance sheet allows the issuer to operate more efficiently on a risk-adjusted basis. That is the direct criterion for the most likely statement here, so B fits and the other choices do not.</p><p>Why option A is incorrect. The curriculum says the benefit comes from removing assets and lending risks from the balance sheet, not from retaining them there.</p><p>Why option C is incorrect. Securitization works by issuing ABS to investors, so it does not eliminate the role of external investors.</p>"
+  },
+  {
+    "id": 9,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "True Securitization",
+    "stem": "Which of the following statements about a true securitization is most likely correct?",
+    "options": {
+      "A": "The pooled assets remain on the originator's balance sheet and serve only as segregated collateral.",
+      "B": "Investors rely on direct payments from the issuing bank rather than the pooled assets' cash flows.",
+      "C": "The pooled assets are removed from the balance sheet and transferred to a separate independent legal entity."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The CFA Curriculum defines a true securitization by the transfer of the specific pool of assets off the originator's balance sheet into a separate and independent legal entity. That defining criterion is exactly described in C, so C is the most likely correct statement.</p><p>Why option A is incorrect. Keeping the assets on the issuer's balance sheet describes covered bonds, not a true securitization.</p><p>Why option B is incorrect. Payment directly from the bank rather than from the pool's cash flows is also a covered-bond characteristic, not a true securitization feature.</p>"
+  },
+  {
+    "id": 10,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Benefits to Investors",
+    "stem": "Which of the following is least likely to be a benefit of securitization for investors?",
+    "options": {
+      "A": "Avoiding the need to originate, monitor, and collect the underlying loans directly",
+      "B": "Tailoring interest rate and credit risk exposures to specific risk and return needs",
+      "C": "Increasing exposure to a wider range of underlying assets through tradable securities"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The CFA Curriculum says securitization helps investors who do not have the specialized resources and expertise needed to originate, monitor, and collect loans. That means avoiding those banking functions is part of why ABS are useful, but it is not described as a designed risk-return feature in the same way as tailoring exposures or broadening asset access. Under a least-likely test among close choices, A is the weakest match to the stated investor benefits.</p><p>Why option B is incorrect. The curriculum explicitly lists tailoring interest rate and credit risk exposures to suit investor needs as a key investor benefit.</p><p>Why option C is incorrect. The curriculum also states that securitized debt can increase exposure to a wider range of underlying assets and help build more diversified portfolios.</p>"
+  },
+  {
+    "id": 11,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Prospectus",
+    "stem": "Which of the following functions of the prospectus in a securitization is most likely correct?",
+    "options": {
+      "A": "It irrevocably transfers legal ownership of the loans from the seller to the SPE.",
+      "B": "It describes the securitization structure, including payment priority and credit enhancements.",
+      "C": "It replaces the trustee's periodic cash flow reports as the source investors use to update credit standing."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The CFA Curriculum identifies the prospectus as the document that describes the securitization structure, including the priority and amount of payments and the credit enhancements used. That is the direct defining criterion for the prospectus, so B is the most likely correct answer.</p><p>Why option A is incorrect. The transfer terms and seller representations are handled through the asset sale and related purchase agreement, not by the prospectus alone.</p><p>Why option C is incorrect. Trustee reports remain the ongoing source investors use to update the ABS credit standing; the prospectus does not replace them.</p>"
+  },
+  {
+    "id": 12,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Distinct Entities",
+    "stem": "If an originator issues new corporate bonds after having sold receivables to an SPE, which of the following statements is most likely correct?",
+    "options": {
+      "A": "The new corporate bonds are automatically senior to the ABS because the originator created the receivables.",
+      "B": "The ABS are automatically senior to the new corporate bonds because securitized assets always outrank corporate liabilities.",
+      "C": "Seniority between the new corporate bonds and the ABS is least likely to apply because they are issued by distinct entities."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The CFA Curriculum's Ahbaling example makes the decision rule clear: when the corporate bonds are obligations of the originator and the ABS are obligations of the SPE, they are obligations of different legal entities. Because the most likely conclusion depends on entity separation, C is correct.</p><p>Why option A is incorrect. Creating the receivables does not create a seniority ranking between liabilities issued by different legal entities.</p><p>Why option B is incorrect. The curriculum does not state that ABS always outrank corporate liabilities across entities; it states that cross-entity seniority does not apply in that way.</p>"
+  },
+  {
+    "id": 13,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Economies and Financial Markets",
+    "stem": "Which of the following statements about securitization's impact on economies and financial markets is least likely correct?",
+    "options": {
+      "A": "It decreases overall liquidity in the financial system.",
+      "B": "It creates tradable securities that can improve secondary-market price discovery.",
+      "C": "It provides companies with an alternative means of funding business operations."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states the opposite: securitization improves overall liquidity in the financial system and reduces liquidity risk. Because the least-likely statement is the one that directly conflicts with the governing criterion, A is correct.</p><p>Why option B is incorrect. The curriculum expressly links tradable ABS and secondary-market trading to better price discovery and more efficient financial markets.</p><p>Why option C is incorrect. The curriculum also explicitly identifies securitization as an alternative funding tool beyond traditional financing methods.</p>"
+  },
+  {
+    "id": 14,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Investor Risk Focus",
+    "stem": "For an investor evaluating ABS issued by a bankruptcy-remote SPE, which source of risk is most likely to be the primary focus?",
+    "options": {
+      "A": "The short-term profitability of the trustee institution",
+      "B": "The default risk associated with collecting payments from the underlying borrowers",
+      "C": "The future issuance plans of the originator's unsecured bond program"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> Once the assets have been truly sold to a bankruptcy-remote SPE, the CFA Curriculum says the investors' key credit exposure is to the borrowers whose loans or receivables generate the cash flows. That rule directly identifies B as the most likely focus.</p><p>Why option A is incorrect. The trustee performs a safeguarding and reporting role, but the curriculum does not identify the trustee's profitability as the central credit focus for ABS investors.</p><p>Why option C is incorrect. The originator's future unsecured borrowing plans are not the primary driver of cash flows once the SPE owns the securitized assets.</p>"
+  },
+  {
+    "id": 15,
+    "type": "Assertion–Reason",
+    "topic": "Funding Costs and Balance Sheets",
+    "stem": "Assertion (A): Securitization can reduce an issuer's funding cost relative to traditional financing methods.\nReason (R): By pooling securitizable assets and moving customer loans off balance sheet, a company may access funding without increasing its own leverage in the same way.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The CFA Curriculum states that securitization can be a cheaper source of funding and can lower funding costs relative to traditional financing methods. It also explains that companies can move loans off their balance sheets, avoid the same increase in leverage, and preserve overall credit quality more effectively. That mechanism is the reason the funding-cost benefit can arise, so R correctly explains A.</p><p>Why option B is incorrect. R is not merely a related true statement; it is the curriculum's mechanism for why securitization may lower funding costs.</p><p>Why option C is incorrect. R is not false because the curriculum explicitly connects off-balance-sheet funding and leverage effects to the securitization benefit.</p>"
+  },
+  {
+    "id": 16,
+    "type": "Assertion–Reason",
+    "topic": "Covered Bonds versus Pass-Throughs",
+    "stem": "Assertion (A): Pass-through securities are true securitizations.\nReason (R): Covered bonds are not full securitizations because the underlying assets remain on the issuing bank's balance sheet.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The CFA Curriculum explicitly states that pass-through securities are true securitizations, so A is true. It also states that covered bonds are not full securitizations because the assets remain on the issuing bank's balance sheet, so R is true. But R describes why covered bonds are not full securitizations; it does not by itself explain the positive defining feature of pass-throughs, namely transfer to a separate independent legal entity. Therefore, both are true, but R is not the correct explanation of A.</p><p>Why option A is incorrect. R provides a contrast, not the actual defining mechanism that makes pass-throughs true securitizations.</p><p>Why option C is incorrect. R is not false; it is directly stated in the discussion of covered bonds.</p>"
+  },
+  {
+    "id": 17,
+    "type": "Assertion–Reason",
+    "topic": "Trustee Reports",
+    "stem": "Assertion (A): Trustee cash flow reports are central to investors who want to update the credit standing of an ABS.\nReason (R): These reports are optional disclosures prepared mainly for the originator's internal management use.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The CFA Curriculum states that the trustee holds funds due to ABS holders and provides periodic cash flow reports, and those reports are the only source of information investors use to update the ABS credit standing. That makes A true. R is false because the reports are not described as optional internal management disclosures; they are investor-facing reports required by the transaction terms.</p><p>Why option A is incorrect. R is false, so both statements cannot be true.</p><p>Why option B is incorrect. Even though A is true, the reason is not merely an incomplete explanation; it directly contradicts the curriculum's description of trustee reporting.</p>"
+  },
+  {
+    "id": 18,
+    "type": "Assertion–Reason",
+    "topic": "Court Discretion and Seniority",
+    "stem": "Assertion (A): In most jurisdictions, courts can freely change tranche seniority after the originator enters bankruptcy.\nReason (R): In a securitization, the originator's bankruptcy generally does not affect the SPE, so courts in most jurisdictions have no discretion to change seniority on that basis.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>D is correct.</strong> The CFA Curriculum states that, in most jurisdictions, courts have no discretion to change seniority because the originator's bankruptcy does not affect the SPE. That makes R true. A is false because it states the opposite of this rule. Therefore, the correct resolution is that A is false but R is true.</p><p>Why option A is incorrect. A cannot be true when the curriculum explicitly says courts generally lack such discretion in securitization.</p><p>Why option C is incorrect. R is not false; it is the exact legal protection described for bankruptcy-remote securitization structures.</p>"
+  },
+  {
+    "id": 19,
+    "type": "Assertion–Reason",
+    "topic": "Borrower Default Risk",
+    "stem": "Assertion (A): After a true sale to a bankruptcy-remote SPE, ABS investors are primarily exposed to the borrowers' default risk.\nReason (R): If the borrowers continue making interest and principal payments, the SPE's ability to pay security holders remains intact even if the originator fails.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that once the SPE owns the assets and the legal separation is effective, the key remaining credit risk for investors is whether the borrowers default on the underlying loans. It further explains that the SPE can continue paying security holders so long as borrowers keep making the contractual cash payments. R therefore states the mechanism that explains why A is true.</p><p>Why option B is incorrect. R is not just a parallel truth; it is the exact reason the investor's risk focus shifts from the originator to the borrowers.</p><p>Why option C is incorrect. R is not false because the continuity of borrower payments is what preserves the SPE's payment capacity.</p>"
+  },
+  {
+    "id": 20,
+    "type": "Assertion–Reason",
+    "topic": "Liquidity Effects",
+    "stem": "Assertion (A): Securitization can improve overall liquidity in the financial system.\nReason (R): Corporate issuers often extend credit to customers through financing subsidiaries.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The CFA Curriculum clearly states that securitization creates tradable securities, improves market efficiency, and improves overall liquidity in the financial system, so A is true. It is also true that many corporate issuers extend customer credit through financing subsidiaries, as the curriculum explains in discussing product financing. But that fact alone does not explain the liquidity improvement; the explanation comes from converting illiquid loans into tradable securities. Therefore, both statements are true, but R is not the correct explanation of A.</p><p>Why option A is incorrect. The reason given is too indirect and omits the actual liquidity mechanism identified in the curriculum.</p><p>Why option C is incorrect. R is not false because financing subsidiaries are specifically mentioned as part of how companies facilitate product sales and securitize receivables.</p>"
+  },
+  {
+    "id": 21,
+    "type": "Assertion–Reason",
+    "topic": "Purchase Agreement",
+    "stem": "Assertion (A): The purchase agreement is the document that sets out the seller's representations and warranties about the assets sold.\nReason (R): The prospectus is the document that details those representations and warranties.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The CFA Curriculum states that the purchase agreement between the seller and the SPE outlines the seller's representations and warranties, so A is true. R is false because the prospectus describes the securitization structure, payment priorities, and credit enhancements, not the seller's representations and warranties. Therefore, A is true but R is false.</p><p>Why option A is incorrect. Both statements cannot be true because the curriculum assigns these two legal functions to different documents.</p><p>Why option B is incorrect. R does not merely fail as an explanation; it is wrong on the underlying document assignment.</p>"
+  },
+  {
+    "id": 22,
+    "type": "Numerical Questions",
+    "topic": "Pool Size from Loan Count and Average Balance",
+    "stem": "Car Loan Trust holds 45,000 loans with an average balance of EUR 22,222. Before rounding to the nearest million, the pool's outstanding principal balance is most likely closest to:",
+    "options": {
+      "A": "EUR 900 million",
+      "B": "EUR 950 million",
+      "C": "EUR 1,000 million"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>C is correct.</strong> The governing relation is total pool balance = number of loans multiplied by average balance. Using the CFA Curriculum figures, 45,000 × EUR 22,222 = EUR 999,990,000, which is just under EUR 1,000 million. That is closest to option C.</p><p>Why option A is incorrect. EUR 900 million is far too low and would require a much smaller average balance or many fewer loans.</p><p>Why option B is incorrect. EUR 950 million is closer than EUR 900 million but still materially below the computed total of EUR 999.99 million.</p>"
+  },
+  {
+    "id": 23,
+    "type": "Numerical Questions",
+    "topic": "Subordinated Protection",
+    "stem": "Ahbaling Trust has a collateral pool of SGD 400 million and bond classes of SGD 280 million senior plus two subordinated classes of SGD 60 million each. What percentage of the collateral pool can be lost before the senior class begins absorbing losses?",
+    "options": {
+      "A": "30%",
+      "B": "40%",
+      "C": "70%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>A is correct.</strong> Senior bonds are protected by the subordinated amount below them. The subordinated protection equals SGD 60 million + SGD 60 million = SGD 120 million. Relative to the SGD 400 million collateral pool, the protection is 120/400 = 30%, so A is correct.</p><p>Why option B is incorrect. Forty percent would imply SGD 160 million of subordinated protection, which is larger than the two subordinated classes combined.</p><p>Why option C is incorrect. Seventy percent is the size of the senior class, not the loss cushion protecting it.</p>"
+  },
+  {
+    "id": 24,
+    "type": "Numerical Questions",
+    "topic": "Amortizing Cash Flow Composition",
+    "stem": "In the Bright Wheel Automotive cash flow illustration, the first-year investor payment combines EUR 27.9 of principal and EUR 4.8 of interest. The total first-year payment is most likely:",
+    "options": {
+      "A": "EUR 31.7",
+      "B": "EUR 32.7",
+      "C": "EUR 33.7"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>B is correct.</strong> For the fully amortizing stream shown in the CFA Curriculum, the annual payment in the figure is the sum of principal and interest. Adding EUR 27.9 and EUR 4.8 gives EUR 32.7, which matches the stated investor payment.</p><p>Why option A is incorrect. EUR 31.7 understates the payment by EUR 1.0 and does not equal the sum shown in the figure.</p><p>Why option C is incorrect. EUR 33.7 overstates the payment by EUR 1.0 and likewise does not equal the principal-plus-interest total.</p>"
+  },
+  {
+    "id": 25,
+    "type": "Numerical Questions",
+    "topic": "Exact Average Balance",
+    "stem": "If a securitized pool must total exactly EUR 1,000 million and contains 45,000 equal-average loans, the average balance per loan is most likely:",
+    "options": {
+      "A": "EUR 22,000.00",
+      "B": "EUR 22,200.00",
+      "C": "EUR 22,222.22"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>C is correct.</strong> The required average balance equals total pool balance divided by number of loans. EUR 1,000,000,000 / 45,000 = EUR 22,222.22 repeating. Rounded to two decimals, that is EUR 22,222.22, so C is correct.</p><p>Why option A is incorrect. EUR 22,000 multiplied by 45,000 would produce only EUR 990 million, short of the target pool size.</p><p>Why option B is incorrect. EUR 22,200 multiplied by 45,000 would produce EUR 999 million, still below EUR 1,000 million.</p>"
+  },
+  {
+    "id": 26,
+    "type": "Numerical Questions",
+    "topic": "Remaining Subordination",
+    "stem": "Using Ahbaling Trust's structure, suppose cumulative losses on the collateral reach SGD 70 million and all losses are absorbed by subordinated classes before the senior class. The subordinated protection still remaining ahead of the senior class is most likely:",
+    "options": {
+      "A": "SGD 30 million",
+      "B": "SGD 50 million",
+      "C": "SGD 70 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>B is correct.</strong> The total subordinated protection is SGD 120 million from the two SGD 60 million subordinated classes. If cumulative losses consume SGD 70 million of that protection first, the remaining cushion ahead of the senior class is SGD 120 million - SGD 70 million = SGD 50 million. Therefore, B is correct.</p><p>Why option A is incorrect. SGD 30 million would remain only if losses had already reached SGD 90 million.</p><p>Why option C is incorrect. SGD 70 million is the amount of losses absorbed, not the protection still remaining.</p>"
+  },
+  {
+    "id": 27,
+    "type": "Numerical Questions",
+    "topic": "Whole-Business Securitization Example",
+    "stem": "In the SESAC example, the fixed-rate note was USD 530 million and the floating-rate note was USD 30 million. The fixed-rate note's share of the total securitization was closest to:",
+    "options": {
+      "A": "94.6%",
+      "B": "89.3%",
+      "C": "98.2%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>A is correct.</strong> Total notes equal USD 530 million + USD 30 million = USD 560 million. The fixed-rate share is 530/560 = 0.9464, or about 94.6%. That makes option A the closest answer.</p><p>Why option B is incorrect. 89.3% is too low and would correspond to a much smaller fixed-rate share than the example shows.</p><p>Why option C is incorrect. 98.2% is too high and would imply the floating-rate tranche was much smaller than USD 30 million.</p>"
+  },
+  {
+    "id": 28,
+    "type": "Numerical Questions",
+    "topic": "Average Monthly Principal Repayment",
+    "stem": "BRWA's securitized pool has an outstanding principal balance of EUR 1,000 million and the underlying loans are fully amortizing over 48 monthly payments. Ignoring fees and timing differences, the average principal repaid per month is closest to:",
+    "options": {
+      "A": "EUR 18.75 million",
+      "B": "EUR 20.00 million",
+      "C": "EUR 20.83 million"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: numerical relation</h3><p><strong>C is correct.</strong> Average monthly principal repayment is total principal divided by the number of monthly payments. EUR 1,000 million / 48 = EUR 20.8333 million, which rounds to EUR 20.83 million. Therefore, C is correct.</p><p>Why option A is incorrect. EUR 18.75 million would imply either a smaller pool or more payment periods than the 48 months given.</p><p>Why option B is incorrect. EUR 20.00 million is close but still below the computed average principal repayment from the stated figures.</p>"
+  }
+]

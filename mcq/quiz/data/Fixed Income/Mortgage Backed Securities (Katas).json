@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Prepayment risk",
+    "stem": "In an MBS, prepayment risk most accurately means the borrower repays principal:",
+    "options": {
+      "A": "at a pace different from the scheduled payment plan",
+      "B": "only after the legal maturity date",
+      "C": "only if the mortgage is commercial"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The core definition in the CFA Curriculum is that principal, or a portion of principal, is repaid at a different pace from the contractually scheduled plan.</p><p>Why the other options are wrong. B wrongly limits prepayment risk to late payment only, and C wrongly limits it to commercial mortgages even though the concept applies more broadly.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Contraction risk",
+    "stem": "When interest rates decline for fixed-rate mortgages, actual prepayments are most likely to become:",
+    "options": {
+      "A": "lower than forecasted",
+      "B": "higher than forecasted",
+      "C": "unchanged by definition"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum states that falling rates encourage refinancing, so actual prepayments on fixed-rate mortgages tend to rise above forecast.</p><p>Why the other options are wrong. A reverses the direction of the rate effect, and C ignores the refinancing behavior highlighted in the module.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Extension risk",
+    "stem": "Extension risk occurs when the borrower repays principal:",
+    "options": {
+      "A": "faster than scheduled",
+      "B": "exactly on the legal maturity date",
+      "C": "more slowly than planned"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The curriculum defines extension risk as slower-than-expected repayment of principal relative to the scheduled plan.</p><p>Why the other options are wrong. A describes contraction rather than extension, and B does not express the slower-than-expected pattern that defines the risk.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Time tranching",
+    "stem": "Creating bond classes with different expected maturities is called:",
+    "options": {
+      "A": "time tranching",
+      "B": "credit enhancement",
+      "C": "defeasance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The module uses time tranching for structures that create bond classes with different expected maturities so investors can choose maturity exposure.</p><p>Why the other options are wrong. B is a different protection concept, and C is a CMBS loan-level call-protection mechanism.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Sequential-pay CMO",
+    "stem": "In a sequential-pay CMO, principal payments most likely go first to:",
+    "options": {
+      "A": "all tranches in proportion to face value",
+      "B": "the earliest tranche until it is retired",
+      "C": "the residual tranche before all others"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum says principal is directed to the first tranche until its balance reaches zero, then to the next tranche, and so on.</p><p>Why the other options are wrong. A describes a proportional split the module does not use here, and C reverses the payment priority.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Recourse loans",
+    "stem": "If a recourse mortgage is in default and the property sale proceeds are insufficient, the lender can most likely claim:",
+    "options": {
+      "A": "only future prepayment penalties",
+      "B": "only the servicer's fee",
+      "C": "both the property and the borrower's other assets for the shortfall"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> In a recourse loan, the lender may claim the deficiency between the outstanding balance and the property-sale proceeds from the borrower's other assets or income.</p><p>Why the other options are wrong. A and B are unrelated to the deficiency claim that defines recourse treatment.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Prepayment penalties",
+    "stem": "Residential mortgage prepayment penalties are most common in:",
+    "options": {
+      "A": "Europe",
+      "B": "the United States",
+      "C": "neither market because they are prohibited"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The module states that prepayment penalty mortgages are quite common in Europe, while few residential mortgages in the United States have such penalties.</p><p>Why the other options are wrong. B reverses the market pattern, and C contradicts the explicit discussion of European practice.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Underwater mortgages",
+    "stem": "A mortgage is underwater when the property's value is:",
+    "options": {
+      "A": "equal to the mortgage balance",
+      "B": "less than the amount owed on the mortgage",
+      "C": "greater than the amount owed on the mortgage"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The curriculum says a mortgage is underwater, or in negative equity, when the home is valued for less than the amount owed on the loan.</p><p>Why the other options are wrong. A does not create negative equity, and C describes positive equity rather than an underwater position.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Prime mortgages",
+    "stem": "Which of the following is most likely a prime-loan characteristic?",
+    "options": {
+      "A": "high debt-to-income ratio and a second lien",
+      "B": "higher LTV and weaker credit history",
+      "C": "low debt-to-income ratio with substantial equity"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Prime loans are described as having strong borrowers, low DTI, substantial equity, and a first lien on the property.</p><p>Why the other options are wrong. A and B list traits that the module associates with weaker or subprime mortgage quality.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Loan-to-value ratio",
+    "stem": "For a lender, a higher loan-to-value ratio most likely means:",
+    "options": {
+      "A": "less protection in the event of borrower default",
+      "B": "more borrower equity and lower default risk by definition",
+      "C": "the mortgage automatically becomes agency RMBS"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The module uses LTV as a credit measure because higher LTV means the borrower has less equity, which gives the lender less protection if default occurs.</p><p>Why the other options are wrong. B reverses the equity logic, and C confuses a loan metric with RMBS classification.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-agency RMBS",
+    "stem": "An RMBS issued by a private entity without federal-agency or GSE guarantee is most accurately called:",
+    "options": {
+      "A": "agency RMBS",
+      "B": "non-agency RMBS",
+      "C": "CMBS"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum places private-label residential issues without federal-agency or GSE guarantee in the non-agency RMBS sector.</p><p>Why the other options are wrong. A requires agency or GSE backing, and C refers to commercial rather than residential mortgage-backed securities.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Mortgage pass-through securities",
+    "stem": "The coupon rate received by investors on a mortgage pass-through security is most likely:",
+    "options": {
+      "A": "higher than the pool's weighted average mortgage rate",
+      "B": "equal to the pool's weighted average mortgage rate in all cases",
+      "C": "lower than the pool's weighted average mortgage rate"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The pass-through rate is lower because administrative and, when relevant, guarantee fees are deducted from the cash flows generated by the underlying mortgages.</p><p>Why the other options are wrong. A reverses the fee effect, and B ignores the servicing and related charges described in the module.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Weighted average coupon",
+    "stem": "The weighted average coupon of a mortgage pool is based on mortgage rates weighted by each loan's:",
+    "options": {
+      "A": "current outstanding balance",
+      "B": "property tax bill",
+      "C": "servicing fee only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The RMBS section defines WAC by weighting each mortgage rate using the mortgage's outstanding current balance relative to the pool's total current balance.</p><p>Why the other options are wrong. B and C are not the weighting variable used in the curriculum formula.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Interest-only securities",
+    "stem": "An interest-only security pays investors only the:",
+    "options": {
+      "A": "scheduled principal",
+      "B": "interest cash flows",
+      "C": "residual cash flow after all tranches"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The curriculum defines IO securities as instruments that pass through only the interest payments from the mortgage pool.</p><p>Why the other options are wrong. A describes principal-only behavior, and C describes the residual-tranche idea rather than an IO security.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "PAC and support tranches",
+    "stem": "If prepayment stays within the specified range for a PAC structure, the tranche that absorbs the prepayment risk is most likely the:",
+    "options": {
+      "A": "PAC tranche",
+      "B": "Z-tranche",
+      "C": "support tranche"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The module says support tranches absorb the prepayment risk within the specified band so the PAC tranches can receive more stable cash flows.</p><p>Why the other options are wrong. A is the protected tranche, and B is a different structure that accrues interest until a later date.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Z-tranches",
+    "stem": "A Z-tranche is also known as an:",
+    "options": {
+      "A": "accrual bond",
+      "B": "inverse floater",
+      "C": "agency guarantee"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum notes that Z-tranches are also known as accretion bonds or accrual bonds because interest accrues before current payment begins.</p><p>Why the other options are wrong. B is a different floating-rate structure, and C is not a tranche type.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CMBS structural call protection",
+    "stem": "At the structural level, CMBS call protection is most likely provided by:",
+    "options": {
+      "A": "defeasance",
+      "B": "sequential-pay tranches",
+      "C": "servicing fees"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Structural call protection in CMBS comes from sequential-pay tranches because lower-rated tranches cannot be paid down before higher-rated tranches retire.</p><p>Why the other options are wrong. A is individual loan-level call protection, and C is simply a fee item rather than a protective structure.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Balloon risk",
+    "stem": "Balloon risk is most accurately described as a form of:",
+    "options": {
+      "A": "contraction risk",
+      "B": "credit enhancement",
+      "C": "extension risk"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> If the borrower cannot make the balloon payment and the lender extends the loan during a workout period, the life of the loan lengthens. The module therefore treats balloon risk as extension risk.</p><p>Why the other options are wrong. A is tied to faster repayment, and B is a protection mechanism rather than a risk category.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CMBS concentration risk",
+    "stem": "CMBS can have meaningful concentration risk most likely because a pool may contain:",
+    "options": {
+      "A": "only a few underlying commercial mortgages",
+      "B": "only government-guaranteed mortgages",
+      "C": "only mortgages with no property backing"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CMBS section stresses that a pool may include only a few loans, so one default can significantly affect investors.</p><p>Why the other options are wrong. B is not the defining CMBS concentration issue, and C contradicts the idea of mortgage collateral.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Defeasance",
+    "stem": "Under defeasance, a borrower that prepays most likely must purchase:",
+    "options": {
+      "A": "a new equity stake in the property",
+      "B": "a portfolio of government securities that replicates the remaining scheduled cash flows",
+      "C": "a support tranche from the same CMBS"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The curriculum defines defeasance as replacing the loan with a government-securities portfolio that replicates the remaining scheduled principal, interest, and balloon balance cash flows.</p><p>Why the other options are wrong. A is unrelated to the mechanism, and C confuses a loan-level covenant with a tranche purchase.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Debt service coverage ratio",
+    "stem": "A debt service coverage ratio above 1.0x most likely indicates the property's cash flows are:",
+    "options": {
+      "A": "insufficient to cover debt service",
+      "B": "exactly equal to debt service by definition",
+      "C": "sufficient to cover debt service while maintaining the property"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The module states that a DSC ratio above 1.0x means the property's cash flows are sufficient to cover debt service and still maintain the property in its initial state of repair.</p><p>Why the other options are wrong. A reverses the meaning of a ratio above 1.0x, and B mistakes a threshold-exceeding ratio for exact equality.</p>"
+  }
+]

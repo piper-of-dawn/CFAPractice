@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Covered bonds",
+    "stem": "A covered bond most accurately keeps its collateral:",
+    "options": {
+      "A": "in a separate SPE off the issuer's balance sheet",
+      "B": "only in an equity tranche",
+      "C": "on the issuer's balance sheet in a cover pool"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum says covered bond assets remain on the issuer's balance sheet and are ringfenced into a separate cover pool.</p><p>Why the other options are wrong. A describes true securitization instead of covered bonds, and B confuses collateral location with tranche structure.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Covered bonds",
+    "stem": "Covered bond investors have most likely:",
+    "options": {
+      "A": "single recourse only to the cover pool",
+      "B": "no recourse after issuer default",
+      "C": "dual recourse"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Covered bondholders first have recourse to the ringfenced cover pool and then to the issuer's unencumbered assets.</p><p>Why the other options are wrong. A ignores the second source of recourse, and B contradicts the dual-recourse feature.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Covered bonds",
+    "stem": "If missed scheduled payments trigger immediate default and acceleration, the covered bond is most likely:",
+    "options": {
+      "A": "hard-bullet",
+      "B": "soft-bullet",
+      "C": "conditional pass-through"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Hard-bullet covered bonds trigger default and payment acceleration if payments do not occur according to the original schedule.</p><p>Why the other options are wrong. B delays default to a new maturity date, and C converts to pass-through form after the original maturity date.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Credit enhancement",
+    "stem": "Overcollateralization most accurately means:",
+    "options": {
+      "A": "issued bonds exceed collateral value",
+      "B": "coupon on securities exceeds coupon on collateral",
+      "C": "collateral value exceeds issued bond face value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The module defines overcollateralization as collateral value being larger than the face value of the issued bonds.</p><p>Why the other options are wrong. A reverses the definition, and B describes neither collateral value nor bond face value.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Credit enhancement",
+    "stem": "Excess spread is the difference between the coupon on the:",
+    "options": {
+      "A": "issued securities and the issuer's equity",
+      "B": "underlying collateral and the issued securities",
+      "C": "servicer fee and the market reference rate"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines excess spread as the difference between the coupon earned on collateral and the coupon paid on issued securities.</p><p>Why the other options are wrong. A and C describe different quantities not used in the definition.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Credit enhancement",
+    "stem": "Subordination in securitization most likely protects the:",
+    "options": {
+      "A": "more senior bond classes",
+      "B": "equity tranche first",
+      "C": "issuer's common stock"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Subordination or credit tranching protects the more senior bond classes because junior classes absorb losses first.</p><p>Why the other options are wrong. B reverses the loss order, and C is not the security being discussed in the module.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Credit enhancement",
+    "stem": "Which of the following is external rather than internal credit enhancement?",
+    "options": {
+      "A": "Subordination",
+      "B": "Overcollateralization",
+      "C": "Letter of credit"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Letters of credit are listed with external credit enhancements, unlike subordination and overcollateralization.</p><p>Why the other options are wrong. A and B are two of the internal tools emphasized in the module.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-mortgage ABS",
+    "stem": "During the revolving period of a credit card ABS, repaid principal is most likely:",
+    "options": {
+      "A": "distributed immediately to noteholders",
+      "B": "used only to pay servicer fees",
+      "C": "reinvested to acquire additional receivables"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> For non-amortizing credit card ABS, principal repaid during the revolving period replenishes the collateral pool.</p><p>Why the other options are wrong. A happens after amortization begins, and B does not describe the stated revolving-period rule.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-mortgage ABS",
+    "stem": "During the revolving period of a credit card ABS, investors receive only:",
+    "options": {
+      "A": "finance charges and fees",
+      "B": "scheduled principal only",
+      "C": "equity residual cash flows only"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The module says noteholders receive only payments from finance charges and fees during the revolving period.</p><p>Why the other options are wrong. B contradicts the reinvestment of principal, and C is not how the structure is described.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-mortgage ABS",
+    "stem": "Once the amortization period starts in a credit card ABS, repaid principal is most likely:",
+    "options": {
+      "A": "reinvested in new receivables",
+      "B": "distributed to ABS holders",
+      "C": "converted into a covered bond"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> At the end of the lockout or revolving period, principal is no longer reinvested and is distributed to ABS investors.</p><p>Why the other options are wrong. A describes the revolving period, and C is unrelated to the ABS cash-flow transition.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-mortgage ABS",
+    "stem": "A rapid amortization provision in credit card ABS is designed mainly to:",
+    "options": {
+      "A": "accelerate principal return when transaction quality deteriorates",
+      "B": "lengthen the revolving period automatically",
+      "C": "turn the ABS into a covered bond"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Rapid amortization accelerates and alters principal cash flows to protect noteholders when replenishment or collateral quality becomes problematic.</p><p>Why the other options are wrong. B moves in the opposite direction, and C is not part of the credit card ABS structure.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Solar ABS",
+    "stem": "Solar ABS can qualify as green investments most likely because they finance:",
+    "options": {
+      "A": "leveraged bank loan workouts",
+      "B": "renewable-energy and efficiency projects",
+      "C": "public sector tax claims"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Solar ABS proceeds are tied to residential solar systems and related energy-efficiency improvements, which gives them green-investment features.</p><p>Why the other options are wrong. A and C are not the collateral uses described for solar ABS.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Solar ABS",
+    "stem": "A pre-funding period in many solar ABS allows the trust to:",
+    "options": {
+      "A": "acquire additional qualifying assets after closing",
+      "B": "guarantee issuer recourse to equity investors",
+      "C": "stop all collateral management after closing"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The curriculum states that pre-funding allows the trust to add qualifying transactions during a period after the close of the deal.</p><p>Why the other options are wrong. B is not the purpose of pre-funding, and C reverses what the feature allows.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CDO and CLO",
+    "stem": "The prevailing CDO structure is most likely the:",
+    "options": {
+      "A": "CBO",
+      "B": "CLO",
+      "C": "synthetic CDO"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The module explicitly identifies the CLO as the prevailing CDO structure.</p><p>Why the other options are wrong. A and C are valid CDO forms but not the prevailing one emphasized in the curriculum.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CDO and CLO",
+    "stem": "A CLO collateral manager most likely buys and sells assets because the collateral pool is:",
+    "options": {
+      "A": "static by design",
+      "B": "backed only by mortgages",
+      "C": "not static"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Most CDO collateral pools are not static, so the manager actively buys and sells obligations to support the transaction.</p><p>Why the other options are wrong. A is the opposite of the curriculum statement, and B confuses CLOs with mortgage-backed structures.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CDO and CLO",
+    "stem": "The CLO tranche with the highest claim on cash flows is most likely the:",
+    "options": {
+      "A": "AAA tranche",
+      "B": "equity tranche",
+      "C": "first-loss tranche"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The most senior AAA tranche has the highest claim on cash flows and is the most loss-remote.</p><p>Why the other options are wrong. B and C refer to the riskiest position rather than the safest one.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CDO and CLO",
+    "stem": "The CLO tranche with no set coupon and first-loss exposure is most likely the:",
+    "options": {
+      "A": "AAA tranche",
+      "B": "equity tranche",
+      "C": "AA tranche"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The equity tranche is unrated, has no set coupon, and takes first loss while claiming residual excess cash flows.</p><p>Why the other options are wrong. A and C are debt tranches with higher seniority and defined coupon expectations.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "CDO and CLO",
+    "stem": "If a CLO performance test fails, cash is most likely redirected toward the:",
+    "options": {
+      "A": "senior debt tranche",
+      "B": "equity tranche",
+      "C": "issuer's retained earnings"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> A failed performance test can require payoff of the senior bond class, effectively deleveraging the CLO.</p><p>Why the other options are wrong. B loses access to cash in that situation, and C is not the destination described by the module.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Covered bonds",
+    "stem": "Compared with otherwise similar ABS, covered bonds usually offer:",
+    "options": {
+      "A": "higher credit risk and higher yields",
+      "B": "lower credit risk and lower yields",
+      "C": "the same risk and yield by definition"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Because of dual recourse and related protections, covered bonds usually carry lower credit risk and offer lower yields than similar ABS.</p><p>Why the other options are wrong. A reverses the relationship, and C ignores the structural differences highlighted in the module.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Credit enhancement",
+    "stem": "In a waterfall structure, the most junior tranche absorbs losses:",
+    "options": {
+      "A": "last",
+      "B": "first",
+      "C": "only if senior tranches choose to share them"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The module explains that junior tranches absorb losses before more senior classes in a waterfall or subordination structure.</p><p>Why the other options are wrong. A reverses the loss order, and C invents a discretionary sharing rule not found in the text.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "type": "Building-Block Edition",
+    "topic": "Non-mortgage ABS",
+    "stem": "Credit card receivable ABS helps the issuer most directly by removing receivables from the balance sheet and:",
+    "options": {
+      "A": "increasing the cost of default risk",
+      "B": "reducing capital efficiency",
+      "C": "generating additional fee income"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The curriculum states that credit card securitization removes receivables from the balance sheet, improves capital efficiency, reduces default-risk cost, and generates fee income.</p><p>Why the other options are wrong. A and B reverse the issuer benefits described in the module.</p>"
+  }
+]

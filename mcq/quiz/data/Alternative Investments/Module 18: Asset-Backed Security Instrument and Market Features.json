@@ -1,0 +1,373 @@
+[
+  {
+    "id": 1,
+    "type": "Enumeration / Counting Format",
+    "topic": "Covered bonds",
+    "stem": "Consider the following statements about covered bonds: I. The cover pool remains on the issuer's balance sheet. II. Covered bond investors have dual recourse. III. Covered bonds typically remove assets from the issuer's balance sheet in the same way as true securitizations. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum states that covered bond assets remain on the issuer's balance sheet in a segregated cover pool and that investors have dual recourse, first to the pool and then to unencumbered issuer assets. The statement that covered bonds remove assets from the balance sheet confuses them with true securitizations. Therefore, Items I and II are accurate and the count is two.</p><p>Why option A is incorrect. Two statements satisfy the covered-bond criteria, not one.</p><p>Why option C is incorrect. Item III is false because covered bonds do not move the assets off the issuer's balance sheet.</p>"
+  },
+  {
+    "id": 2,
+    "type": "Enumeration / Counting Format",
+    "topic": "Credit enhancement structures",
+    "stem": "Consider the following credit enhancement features: I. Overcollateralization means collateral exceeds the face value of the issued bonds. II. Excess spread can absorb collateral shortfall or build reserves. III. Letters of credit are one of the three main internal credit enhancements emphasized in the module. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The module identifies overcollateralization and excess spread as core internal credit enhancements. Letters of credit are discussed as external, not internal, support. Hence, only Items I and II qualify and the correct count is two.</p><p>Why option A is incorrect. More than one statement is supported because Items I and II both follow the curriculum.</p><p>Why option C is incorrect. Item III fails because letters of credit are external credit enhancement.</p>"
+  },
+  {
+    "id": 3,
+    "type": "Enumeration / Counting Format",
+    "topic": "Non-mortgage ABS",
+    "stem": "Consider the following statements about non-amortizing ABS collateral: I. During the revolving period, principal repayments are reinvested to replenish the pool. II. During the revolving period, noteholders typically receive scheduled principal repayments from the receivables. III. Once the amortization period starts, repaid principal continues to be reinvested in new receivables. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Only one statement is accurate. Item I is correct because revolving-period principal is reinvested to replenish the pool. Item II is false because noteholders receive finance charges and fees rather than scheduled principal during that phase. Item III is false because once amortization starts, repaid principal is distributed to ABS holders rather than reinvested. The accurate count is therefore one.</p><p>Why option B is incorrect. Item II is false because scheduled principal is not distributed during the revolving period.</p><p>Why option C is incorrect. The three statements are not all accurate as written.</p>"
+  },
+  {
+    "id": 4,
+    "type": "Enumeration / Counting Format",
+    "topic": "CDO and CLO structures",
+    "stem": "Consider the following statements about CDOs and CLOs: I. The prevailing CDO structure is the CLO. II. A CLO collateral manager may buy and sell assets to meet transaction obligations. III. Recourse in a CLO is typically limited to the collateral pool, with minimal recourse to the original issuers. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> All three statements match the module. CLOs are the prevailing CDO form, the collateral manager actively buys and sells obligations, and recourse is typically limited to the collateral pool with minimal recourse to original issuers. Therefore, the accurate count is three.</p><p>Why option A is incorrect. More than one statement is correct here.</p><p>Why option B is incorrect. Item III is also accurate, so the count is not limited to two.</p>"
+  },
+  {
+    "id": 5,
+    "type": "Enumeration / Counting Format",
+    "topic": "Covered bond redemption regimes",
+    "stem": "Consider the following redemption-regime statements: I. Hard-bullet covered bonds trigger default and payment acceleration if scheduled payments do not occur. II. Soft-bullet covered bonds delay default until a new final maturity date. III. Conditional pass-through covered bonds convert to pass-through securities after the original maturity date if payments remain outstanding. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Each statement tracks the module's description of hard-bullet, soft-bullet, and conditional pass-through covered bonds. The distinguishing difference is how each structure responds when scheduled payments are not made. All three statements are accurate.</p><p>Why option A is incorrect. More than one statement clearly satisfies the covered-bond redemption rules.</p><p>Why option B is incorrect. The conditional pass-through statement is also correct, so the count reaches three.</p>"
+  },
+  {
+    "id": 6,
+    "type": "Enumeration / Counting Format",
+    "topic": "Internal and external enhancement",
+    "stem": "Consider the following forms of support in securitization: I. Cash collateral accounts. II. Letters of credit. III. Overcollateralization. How many of the above are among the main internal credit enhancements emphasized in the module?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Only one item qualifies. Overcollateralization is one of the three main internal credit enhancements. Cash collateral accounts and letters of credit are both identified as external forms of support. The count is therefore one.</p><p>Why option B is incorrect. Only Item III, not two items, belongs to the internal group here.</p><p>Why option C is incorrect. Items I and II are external enhancements, so all three cannot qualify.</p>"
+  },
+  {
+    "id": 7,
+    "type": "Enumeration / Counting Format",
+    "topic": "CLO cash flow protections",
+    "stem": "Consider the following statements about CLO protections: I. If a performance test fails, principal may be redirected to the senior tranche. II. An overcollateralization test can divert cash away from equity and junior debt toward senior debt investors. III. Equity tranches usually have the lowest claim on CLO cash flow distributions. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Each statement is supported by the CLO discussion. Failed tests can force senior paydown, overcollateralization triggers can divert cash away from junior claims toward senior debt, and equity has the lowest claim on distributions. The count is therefore three.</p><p>Why option A is incorrect. More than one statement is correct here.</p><p>Why option B is incorrect. Item III is also accurate, so the count reaches three.</p>"
+  },
+  {
+    "id": 8,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Covered bonds",
+    "stem": "Relative to otherwise similar ABS, covered bonds most likely offer lower yields because they:",
+    "options": {
+      "A": "use multiple tranches that diversify investor default exposure within the same cover pool",
+      "B": "transfer the collateral off the issuer's balance sheet and eliminate sponsor exposure",
+      "C": "combine dual recourse, dynamic cover pool maintenance, and strict eligibility standards"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The key criterion is the source of investor protection. The CFA Curriculum links lower credit risk and lower yields in covered bonds to dual recourse, strict eligibility criteria, dynamic cover pools, and redemption regimes. Those protections make the combined-protection choice the most accurate.</p><p>Why option A is incorrect. Covered bonds usually consist of one bond class per cover pool rather than a multi-tranche default-exposure structure.</p><p>Why option B is incorrect. That description belongs to true securitization, not covered bonds, and it does not preserve sponsor exposure in the same way.</p>"
+  },
+  {
+    "id": 9,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Credit enhancement structures",
+    "stem": "A securitization structure in which losses first wipe out the lowest tranche before affecting senior notes is most likely an example of:",
+    "options": {
+      "A": "excess spread",
+      "B": "subordination or credit tranching",
+      "C": "cash collateral support"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining feature is differentiated loss allocation across bond classes. The module calls that subordination or credit tranching and describes it through the waterfall structure in which junior classes absorb losses first.</p><p>Why option A is incorrect. Excess spread is the coupon difference between collateral and issued securities and does not itself define the loss-sharing order across tranches.</p><p>Why option C is incorrect. Cash collateral support is external enhancement, not the internal multi-tranche waterfall described here.</p>"
+  },
+  {
+    "id": 10,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Non-mortgage ABS",
+    "stem": "During the revolving period of a credit card receivable ABS, noteholders most likely receive:",
+    "options": {
+      "A": "principal repayments, finance charges, and fees",
+      "B": "only finance charges and fees, while principal is reinvested",
+      "C": "only principal repayments because finance charges remain with the issuer"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The decision rule is whether the collateral is still being replenished. In the revolving period for non-amortizing credit card ABS, principal collections are reinvested into new receivables, so investors receive only finance charges and fees.</p><p>Why option A is incorrect. Principal is not paid out to noteholders during the revolving period under the structure described.</p><p>Why option C is incorrect. Finance charges and fees are exactly what investors receive during that phase.</p>"
+  },
+  {
+    "id": 11,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "CDO and CLO structures",
+    "stem": "Which of the following most accurately distinguishes a CDO from a CMO in the module's discussion?",
+    "options": {
+      "A": "A CDO usually requires an active collateral manager because its collateral pool is not static",
+      "B": "A CDO is always backed by mortgages while a CMO is backed by leveraged bank loans",
+      "C": "A CDO pays investors only from interest income, while a CMO can also use collateral sales"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The module highlights the non-static nature of most CDO collateral pools and the need for a collateral manager who buys and sells obligations to support the transaction. That active management function is the key distinction emphasized.</p><p>Why option B is incorrect. It reverses the collateral types and confuses CDOs with mortgage-backed structures.</p><p>Why option C is incorrect. CDO proceeds can come from interest, maturities, and asset sales, so the statement is too restrictive.</p>"
+  },
+  {
+    "id": 12,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Covered bonds",
+    "stem": "If scheduled payments are missed but the investor's bond does not default until a new final maturity date, the covered bond is most likely:",
+    "options": {
+      "A": "soft-bullet",
+      "B": "hard-bullet",
+      "C": "conditional pass-through"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The criterion is delayed default with a new final maturity date. The curriculum assigns that feature to soft-bullet covered bonds, whereas hard-bullets accelerate default immediately and conditional pass-through structures convert to pass-through form after the original maturity date.</p><p>Why option B is incorrect. Hard-bullet bonds trigger default and acceleration when the original schedule fails.</p><p>Why option C is incorrect. Conditional pass-through changes the form of the security rather than simply delaying default to a new stated maturity date.</p>"
+  },
+  {
+    "id": 13,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Non-mortgage ABS",
+    "stem": "A rapid amortization clause in a credit card ABS is most likely triggered to protect investors when:",
+    "options": {
+      "A": "the collateral pool becomes more diversified than originally expected",
+      "B": "solar borrowers demand a pre-funding period after transaction close",
+      "C": "revolving-period repayments fail to replenish the pool adequately or defaults materially impair the economics"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The module describes early or rapid amortization as a safeguard, especially during the revolving period, when replenishment may prove insufficient or defaults may alter the pool enough to damage the transaction economics. That stress condition is the most accurate trigger description.</p><p>Why option A is incorrect. Greater diversification is not the stress condition the clause is designed to address.</p><p>Why option B is incorrect. Pre-funding is associated with solar ABS and does not define the credit-card ABS rapid amortization trigger.</p>"
+  },
+  {
+    "id": 14,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "CDO and CLO structures",
+    "stem": "A CLO tranche with the lowest claim on cash flows and no set coupon is most likely the:",
+    "options": {
+      "A": "AAA tranche",
+      "B": "mezzanine tranche",
+      "C": "equity tranche"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The module states that the equity tranche is the riskiest, takes first loss, is not rated, and has no set coupon. Instead, it claims the excess cash flows left after all debt tranche obligations are met.</p><p>Why option A is incorrect. The AAA tranche has the highest claim on cash flows and the lowest yield.</p><p>Why option B is incorrect. Mezzanine debt pays a higher coupon than senior debt but still has a defined coupon and ranks above equity.</p>"
+  },
+  {
+    "id": 15,
+    "type": "Assertion–Reason",
+    "topic": "Covered bonds",
+    "stem": "Assertion (A): Covered bonds usually carry lower credit risk and lower yields than otherwise similar ABS.\nReason (R): Covered bonds usually use a single bond class per cover pool.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>B is correct.</strong> The assertion is true. The reason is also true because covered bonds generally have one bond class per cover pool. But that single-class feature is not the curriculum's direct explanation for the lower-risk, lower-yield profile; the stated explanation is dual recourse plus the related structural protections.</p><p>Option A fails because the reason is not the governing explanation. Options C and D fail because neither statement is false.</p>"
+  },
+  {
+    "id": 16,
+    "type": "Assertion–Reason",
+    "topic": "Credit enhancement structures",
+    "stem": "Assertion (A): Overcollateralization provides a cushion against collateral defaults.\nReason (R): Overcollateralization can help make tranches more attractive to investors.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>B is correct.</strong> Both clauses are true. Overcollateralization does cushion defaults, and the module also says the extra cushion can make tranches more attractive to investors. But investor attractiveness is a consequence, not the definition-based reason why the structure absorbs losses.</p><p>Option A fails because the reason is not the direct explanation. Options C and D fail because neither statement is false.</p>"
+  },
+  {
+    "id": 17,
+    "type": "Assertion–Reason",
+    "topic": "Non-mortgage ABS",
+    "stem": "Assertion (A): During the revolving period of a credit card ABS, investors are exposed to prepayment risk from the inception of the pool.\nReason (R): Principal collections during the revolving period are reinvested to replenish the collateral pool.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>D is correct.</strong> The assertion is false because the module contrasts credit card ABS with amortizing structures and states there is no prepayment risk during the lockout or revolving period. The reason is true because principal collections are indeed reinvested to replenish the pool.</p><p>Options A, B, and C fail because the assertion is the part that conflicts with the curriculum, not the reason.</p>"
+  },
+  {
+    "id": 18,
+    "type": "Assertion–Reason",
+    "topic": "CDO and CLO structures",
+    "stem": "Assertion (A): A CDO is a leveraged transaction.\nReason (R): Equity tranche holders use borrowed funds generated by issued bond classes in an effort to earn returns above funding cost.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>A is correct.</strong> The curriculum explains CDO economics in exactly those leveraged terms: the collateral return must exceed the aggregate funding cost, allowing equity holders to earn excess returns on a borrowed-funds base. The reason directly explains why the assertion is true.</p><p>The other choices fail because both clauses are true and the reason is causal rather than merely associated.</p>"
+  },
+  {
+    "id": 19,
+    "type": "Assertion–Reason",
+    "topic": "Covered bonds",
+    "stem": "Assertion (A): Covered bonds usually have several tranches with varying default exposure.\nReason (R): Covered bonds generally use a single bond class per cover pool.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>D is correct.</strong> The assertion is false because the module emphasizes that covered bonds usually consist of one bond class per cover pool. The reason is true and is exactly why covered bonds do not share the multi-tranche default-exposure structure typical of many ABS and CDO deals.</p><p>Options A, B, and C fail because the assertion contradicts the single-class feature described in the curriculum.</p>"
+  },
+  {
+    "id": 20,
+    "type": "Assertion–Reason",
+    "topic": "Credit enhancement structures",
+    "stem": "Assertion (A): Risk ratings on securitization tranches are based on the credit risk of the collateral pool and the tranche's priority in absorbing losses.\nReason (R): Market risk of the collateral pool is the main basis for assigning these ratings in the module's tranching discussion.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>C is correct.</strong> The assertion matches the module's explanation of tranche ratings. The reason is false because the text distinguishes this from market risk and explicitly ties ratings to credit risk and loss-absorption priority.</p><p>Options A and B fail because the reason is incorrect. Option D fails because the assertion itself is correct.</p>"
+  },
+  {
+    "id": 21,
+    "type": "Assertion–Reason",
+    "topic": "Non-mortgage ABS",
+    "stem": "Assertion (A): Solar ABS can appeal to ESG-oriented investors.\nReason (R): The proceeds finance renewable-energy and home-efficiency projects that can qualify as green investments.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>A is correct.</strong> The module states that solar ABS can offer both attractive risk-adjusted yields and sustainable-investment exposure. The reason correctly explains that appeal by tying the transaction proceeds to renewable-energy and efficiency projects.</p><p>The other choices fail because both statements are true and the reason is the direct source of the ESG appeal.</p>"
+  },
+  {
+    "id": 22,
+    "type": "Numerical Questions",
+    "topic": "Covered bonds",
+    "stem": "German rules require covered loan collateral pools to be overcollateralized by at least 2% of the economic value of outstanding covered bonds. If outstanding covered bonds have an economic value of EUR 100 million, the minimum collateral pool economic value is closest to:",
+    "options": {
+      "A": "EUR 100 million",
+      "B": "EUR 102 million",
+      "C": "EUR 104 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>B is correct.</strong> Minimum collateral equals the covered bond economic value plus 2%: $100 \\times 1.02 = 102$. Therefore the minimum required economic value is EUR 102 million.</p><p>Why option A is incorrect. It ignores the stated overcollateralization requirement.</p><p>Why option C is incorrect. It adds 4% instead of the required 2%.</p>"
+  },
+  {
+    "id": 23,
+    "type": "Numerical Questions",
+    "topic": "Credit enhancement structures",
+    "stem": "A securitization has EUR 1,200 million of collateral backing EUR 1,000 million of issued bonds. The amount of overcollateralization is closest to:",
+    "options": {
+      "A": "EUR 200 million",
+      "B": "EUR 100 million",
+      "C": "EUR 1,200 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>A is correct.</strong> Overcollateralization is the excess of collateral value over issued bond face value: $1{,}200 - 1{,}000 = 200$. The cushion is therefore EUR 200 million.</p><p>Why option B is incorrect. It understates the excess collateral by half.</p><p>Why option C is incorrect. That is the total collateral value, not the excess over issued bonds.</p>"
+  },
+  {
+    "id": 24,
+    "type": "Numerical Questions",
+    "topic": "Non-mortgage ABS",
+    "stem": "A solar ABS is backed by collateral with a carrying value of USD 143.9 million and has ABS principal of USD 54.4 million. The collateral-to-ABS multiple is closest to:",
+    "options": {
+      "A": "2.66x",
+      "B": "2.25x",
+      "C": "1.89x"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>A is correct.</strong> Use the collateral multiple from the module example: $143.9 / 54.4 = 2.6452$, which rounds to about 2.66x.</p><p>Why option B is incorrect. It understates the collateral support relative to the bonds.</p><p>Why option C is incorrect. It is even further below the ratio implied by the given figures.</p>"
+  },
+  {
+    "id": 25,
+    "type": "Numerical Questions",
+    "topic": "Credit enhancement structures",
+    "stem": "If the average loan in an ABS pool generates 8% and the securities issued from the pool pay 6%, the excess spread is closest to:",
+    "options": {
+      "A": "1%",
+      "B": "14%",
+      "C": "2%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> Excess spread is the collateral coupon minus the issued-security coupon: $8\\% - 6\\% = 2\\%$.</p><p>Why option A is incorrect. It captures only half of the stated spread difference.</p><p>Why option B is incorrect. It adds the rates instead of measuring the spread between them.</p>"
+  },
+  {
+    "id": 26,
+    "type": "Numerical Questions",
+    "topic": "Credit enhancement structures",
+    "stem": "In the CLT example, an investor holds EUR 3 million of Class B notes at MRR + 1.50% and EUR 2 million of Class C notes at MRR + 2.50%. If MRR is 4.0% and there are no defaults, the investor's total annual interest is closest to:",
+    "options": {
+      "A": "EUR 270 thousand",
+      "B": "EUR 325 thousand",
+      "C": "EUR 295 thousand"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> Class B earns $3{,}000{,}000 \\times 5.5\\% = 165{,}000$. Class C earns $2{,}000{,}000 \\times 6.5\\% = 130{,}000$. Total interest is EUR 295 thousand.</p><p>Why option A is incorrect. It understates the sum of the two tranche coupons applied to the stated holdings.</p><p>Why option B is incorrect. It overstates the combined interest from the two positions.</p>"
+  },
+  {
+    "id": 27,
+    "type": "Numerical Questions",
+    "topic": "Non-mortgage ABS",
+    "stem": "In the credit card ABS example, pool losses must exceed CHF 75 million before Tranche C is affected. Relative to a CHF 900 million ABS issue, that threshold is closest to:",
+    "options": {
+      "A": "6.67%",
+      "B": "8.33%",
+      "C": "10.00%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>B is correct.</strong> Compute the threshold as a percentage of issue size: $75 / 900 = 0.0833$, or 8.33%.</p><p>Why option A is incorrect. It would correspond to a smaller loss threshold than the one stated.</p><p>Why option C is incorrect. It overstates the percentage implied by CHF 75 million on CHF 900 million.</p>"
+  },
+  {
+    "id": 28,
+    "type": "Numerical Questions",
+    "topic": "CDO and CLO structures",
+    "stem": "A hypothetical CLO promises USD 700 million to debt tranche investors and buys USD 840 million of bank loans. The overcollateralization ratio is closest to:",
+    "options": {
+      "A": "1.10",
+      "B": "1.15",
+      "C": "1.20"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> The ratio is collateral value divided by promised debt principal: $840 / 700 = 1.20$.</p><p>Why option A is incorrect. It understates the collateral cushion relative to debt.</p><p>Why option B is incorrect. It is still below the ratio generated by the stated values.</p>"
+  }
+]

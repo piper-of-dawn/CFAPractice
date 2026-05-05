@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Benefits to Issuers",
+    "stem": "A bank sells a pool of loans to an SPE. Which result is most likely an issuer benefit?",
+    "options": {
+      "A": "The bank operates more efficiently on a risk-adjusted basis",
+      "B": "The bank must keep the loans and lending risks on its balance sheet",
+      "C": "The bank loses the ability to originate more loans"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is issuer efficiency. The CFA Curriculum says removing assets and lending risks from the balance sheet lets issuers operate more efficiently on a risk-adjusted basis. Apply that rule here: selling the pool to an SPE removes the loans from the issuer, so A follows.</p><p>Why the other options are wrong. B is the opposite of the curriculum rule because securitization removes the assets rather than keeps them on balance sheet.</p><p>Why the other options are wrong. C is wrong because securitization can expand lending origination beyond the issuer's balance sheet rather than restrict it.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Role of the SPE",
+    "stem": "In a basic securitization, which party purchases the loans or receivables and uses them as collateral to issue ABS?",
+    "options": {
+      "A": "The servicer",
+      "B": "The SPE",
+      "C": "The trustee"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is the SPE's role. The CFA Curriculum defines the SPE as the entity that purchases the loans or receivables, owns them, and issues ABS backed by them. Apply that definition directly and the SPE is the correct answer.</p><p>Why the other options are wrong. A is incorrect because the servicer administers the loans and collects payments; it does not issue the ABS.</p><p>Why the other options are wrong. C is incorrect because the trustee safeguards assets and funds but does not buy the collateral and issue the securities.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Benefits to Investors",
+    "stem": "Which of the following is most likely a direct investor benefit of securitization?",
+    "options": {
+      "A": "Eliminating all borrower default risk",
+      "B": "Increasing the issuer's leverage",
+      "C": "Tailoring interest rate and credit risk exposures"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is investor tailoring of risk. The CFA Curriculum says securitization allows investors to tailor interest rate and credit risk exposures to their own risk, return, and maturity needs. That rule applies directly here, so C is correct.</p><p>Why the other options are wrong. A is incorrect because securitization does not eliminate borrower default risk; investors still face the credit risk of the underlying borrowers.</p><p>Why the other options are wrong. B is incorrect because increasing the issuer's leverage is not an investor benefit and is opposite to the off-balance-sheet benefit described for issuers.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Covered Bonds",
+    "stem": "Which asset-backed structure is the simplest according to the CFA Curriculum?",
+    "options": {
+      "A": "Covered bonds",
+      "B": "Pass-through securities",
+      "C": "Collateralized mortgage obligations"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is relative structure complexity. The CFA Curriculum states that covered bonds are the simplest securitization structure. Apply that direct classification and A is correct.</p><p>Why the other options are wrong. B is incorrect because pass-through securities are more complex than covered bonds and involve a true securitization.</p><p>Why the other options are wrong. C is incorrect because collateralized mortgage obligations are described as more complex structures with redistributive tranching.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Prospectus",
+    "stem": "Which legal document most likely describes payment priority and credit enhancements in a securitization?",
+    "options": {
+      "A": "The purchase agreement",
+      "B": "The prospectus",
+      "C": "The servicer's collection report"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is document function. The CFA Curriculum says the prospectus describes the securitization structure, including the priority and amount of payments and the credit enhancements used. Apply that rule and B is the correct document.</p><p>Why the other options are wrong. A is incorrect because the purchase agreement focuses on the seller's representations and warranties about the assets sold.</p><p>Why the other options are wrong. C is incorrect because a collection report may show cash flow information but is not the legal document that sets out structure and payment priority.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Servicer",
+    "stem": "In a securitization, who most likely collects payments from borrowers and handles delinquent accounts?",
+    "options": {
+      "A": "The depositor",
+      "B": "The SPE",
+      "C": "The servicer"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is servicing. The CFA Curriculum defines loan servicing as administering the loan, including collecting payments, notifying delinquent borrowers, and recovering the underlying asset if needed. That rule points directly to the servicer.</p><p>Why the other options are wrong. A is incorrect because the depositor or seller originally provides and sells the collateral but does not necessarily administer the loans afterward.</p><p>Why the other options are wrong. B is incorrect because the SPE owns the assets and issues ABS, but the loan administration function is assigned to the servicer.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "True Sale",
+    "stem": "When a securitization is recognized as a true sale, the securitized assets are most likely:",
+    "options": {
+      "A": "De-recognized from the seller's balance sheet",
+      "B": "Still shown as ordinary assets of the seller",
+      "C": "Automatically guaranteed by the seller's unsecured creditors"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is true sale. The CFA Curriculum states that in a true sale all rights are fully transferred to the SPE, which has legal ownership, and the assets are de-recognized from the seller's balance sheet. Applying that rule makes A correct.</p><p>Why the other options are wrong. B is incorrect because true sale means the assets are removed from the seller rather than kept there.</p><p>Why the other options are wrong. C is incorrect because the bankruptcy-remote structure is designed to separate the assets from claims of the seller's creditors, not expose them to those claims.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Market Liquidity",
+    "stem": "Which outcome is most likely a benefit of securitization for economies and financial markets?",
+    "options": {
+      "A": "Lower secondary-market trading",
+      "B": "Improved overall liquidity and reduced liquidity risk",
+      "C": "Less efficient equilibrium pricing"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is market liquidity. The CFA Curriculum says securitization creates tradable securities, improves overall liquidity in the financial system, and reduces liquidity risk. That direct rule makes B correct.</p><p>Why the other options are wrong. A is incorrect because the curriculum says securitization creates tradable securities rather than reducing trading.</p><p>Why the other options are wrong. C is incorrect because secondary-market trading helps investors determine equilibrium prices, making markets more efficient, not less.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Purchase Agreement",
+    "stem": "Which legal document most likely contains the seller's representations and warranties about the assets sold to the SPE?",
+    "options": {
+      "A": "The trustee report",
+      "B": "The prospectus",
+      "C": "The purchase agreement"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is document assignment. The CFA Curriculum says the purchase agreement between the seller and the SPE outlines the representations and warranties the seller makes about the assets sold. Applying that exact rule makes C correct.</p><p>Why the other options are wrong. A is incorrect because trustee reports provide periodic cash flow information rather than seller warranties.</p><p>Why the other options are wrong. B is incorrect because the prospectus describes structure, payment priority, and credit enhancements instead of the seller's representations and warranties.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Pool Size",
+    "stem": "A securitized pool contains 45,000 loans with an average balance of EUR 22,222. The total pool balance is closest to:",
+    "options": {
+      "A": "EUR 1,000 million",
+      "B": "EUR 900 million",
+      "C": "EUR 1,100 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is total equals count times average. Multiply 45,000 by EUR 22,222 to get EUR 999,990,000, which is essentially EUR 1,000 million. That is the closest choice, so A is correct.</p><p>Why the other options are wrong. B is incorrect because it is far below the computed total from the stated loan count and average balance.</p><p>Why the other options are wrong. C is incorrect because it is above the computed total and not the closest estimate.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Senior Tranche Share",
+    "stem": "Ahbaling Trust has a senior tranche of SGD 280 million and total issued bonds of SGD 400 million. The senior tranche is what percentage of total issued bonds?",
+    "options": {
+      "A": "60%",
+      "B": "70%",
+      "C": "80%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is part divided by total. The senior tranche share is SGD 280 million / SGD 400 million = 0.70, or 70%. That makes B correct.</p><p>Why the other options are wrong. A is incorrect because 60% would correspond to only SGD 240 million out of SGD 400 million.</p><p>Why the other options are wrong. C is incorrect because 80% would correspond to SGD 320 million, which is larger than the actual senior tranche.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Subordinated Protection",
+    "stem": "Ahbaling Trust has two subordinated tranches of SGD 60 million each and total bonds of SGD 400 million. The subordinated portion is most likely:",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is adding the subordinated classes and dividing by the total. SGD 60 million + SGD 60 million = SGD 120 million, and SGD 120 million / SGD 400 million = 30%. Therefore, C is correct.</p><p>Why the other options are wrong. A is incorrect because 20% would be only SGD 80 million of subordinated bonds.</p><p>Why the other options are wrong. B is incorrect because 25% would be SGD 100 million, still below the actual subordinated total.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Bankruptcy-Remote Structure",
+    "stem": "Why is the SPE's separate legal structure most important in a securitization?",
+    "options": {
+      "A": "It helps protect the securitized assets from claims by the originator's creditors",
+      "B": "It guarantees that borrowers cannot default on the underlying loans",
+      "C": "It makes the prospectus unnecessary"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is bankruptcy remoteness. The CFA Curriculum says the separate legal entity structure is designed to protect the underlying assets from claims by the originator's creditors if the originator becomes financially distressed. Applying that rule makes A correct.</p><p>Why the other options are wrong. B is incorrect because the SPE structure does not remove the borrowers' own default risk.</p><p>Why the other options are wrong. C is incorrect because the prospectus still plays an important role in describing the structure, payment priority, and credit enhancements.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Pass-Through Securities",
+    "stem": "Which statement about pass-through securities is most likely correct?",
+    "options": {
+      "A": "They are not full securitizations because the assets remain with the issuer",
+      "B": "They are true securitizations because the assets are transferred to a separate legal entity",
+      "C": "They pay investors directly from the issuing bank instead of the pool"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is the definition of a pass-through. The CFA Curriculum states that pass-through securities are true securitizations because the specific pool of assets is removed from the balance sheet and transferred into a separate independent legal entity. That matches B exactly.</p><p>Why the other options are wrong. A is incorrect because it describes covered bonds rather than pass-through securities.</p><p>Why the other options are wrong. C is incorrect because pass-through investors receive cash flows from the pooled assets through the separate legal entity, not directly from the bank.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Structural Enhancements",
+    "stem": "Bonds with structural enhancements most likely improve payment predictability by:",
+    "options": {
+      "A": "Removing all need for tranches",
+      "B": "Keeping all investors on the same payment schedule regardless of structure",
+      "C": "Redistributing pool cash flows across specified tranches on a preset schedule"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is scheduled cash flow redistribution. The CFA Curriculum says bonds with structural enhancements improve predictability by redistributing cash flows in the pool across specified tranches according to a preset schedule. Applying that direct rule makes C correct.</p><p>Why the other options are wrong. A is incorrect because these structures rely on tranching rather than eliminating it.</p><p>Why the other options are wrong. B is incorrect because the structure differentiates how tranches receive cash flows instead of treating every investor identically.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Loan Amortization",
+    "stem": "BRWA's customer loans are fully amortizing over four years with monthly payments. How many monthly payments repay principal?",
+    "options": {
+      "A": "48",
+      "B": "36",
+      "C": "60"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is months per year times number of years. The CFA Curriculum states that the loans are fully amortizing with principal repaid in 48 monthly payments, which also follows from 12 months × 4 years = 48. Therefore, A is correct.</p><p>Why the other options are wrong. B is incorrect because 36 months would represent only three years of payments.</p><p>Why the other options are wrong. C is incorrect because 60 months would represent five years, not the four-year term given.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Investor Credit Risk",
+    "stem": "After a true sale to a bankruptcy-remote SPE, ABS investors are primarily exposed to the credit risk of:",
+    "options": {
+      "A": "The originator's future unsecured bondholders",
+      "B": "The underlying borrowers",
+      "C": "The trustee's deposit base"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is who ultimately generates the cash flow. The CFA Curriculum says that once the assets are in the SPE, the investors' key credit risk is that the borrowers whose loans are included in the SPE default on their loans. Applying that rule makes B correct.</p><p>Why the other options are wrong. A is incorrect because the legal separation is designed to decouple the ABS from the originator's own general credit risk.</p><p>Why the other options are wrong. C is incorrect because the trustee performs an administrative and safeguarding role rather than being the primary source of loan cash flow risk.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Covered Bond Payments",
+    "stem": "Covered bond investors receive payment most directly from:",
+    "options": {
+      "A": "Cash flows passed through an independent SPE",
+      "B": "The subordinated tranche of a pass-through",
+      "C": "The issuing bank"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is payment source. The CFA Curriculum states that covered bond investors receive payment directly from the bank and not from the cash flow generated by the specific pool of mortgage loans. Apply that rule and C is correct.</p><p>Why the other options are wrong. A is incorrect because payment through an independent SPE is a true securitization characteristic, not a covered-bond feature.</p><p>Why the other options are wrong. B is incorrect because tranche ranking does not change the fact that covered bond investors look first to the issuing bank for payment.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Alternative Funding",
+    "stem": "Securitization provides companies with an alternative means of funding business operations beyond traditional financing such as:",
+    "options": {
+      "A": "Bonds, preferred equity, and common equity",
+      "B": "Only trade credit and retained earnings",
+      "C": "Only secured bank deposits"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The primitive is alternative funding. The CFA Curriculum explicitly says securitization provides an alternative means of funding business operations beyond traditional financing tools such as bonds, preferred equity, and common equity. That direct list makes A correct.</p><p>Why the other options are wrong. B is incorrect because it narrows the funding comparison to items not used in the curriculum's statement.</p><p>Why the other options are wrong. C is incorrect because the curriculum does not identify secured bank deposits as the relevant traditional funding comparison here.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Trustee Function",
+    "stem": "A disinterested trustee in a securitization most likely safeguards the assets and also:",
+    "options": {
+      "A": "Originates the underlying loans",
+      "B": "Holds funds due to ABS holders until they are paid",
+      "C": "Sets customer credit terms for the originator"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The primitive is trustee duty. The CFA Curriculum says the trustee safeguards the assets, holds the funds due to ABS holders until paid, and provides periodic cash flow reports. That rule maps directly to B.</p><p>Why the other options are wrong. A is incorrect because the trustee is not the lender or originator of the underlying assets.</p><p>Why the other options are wrong. C is incorrect because customer credit terms are set by the originator or its financing arm, not the trustee.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "type": "CFA Question Generator - Building-Block Edition",
+    "topic": "Whole-Business Securitization Example",
+    "stem": "In the SESAC example, fixed-rate notes were USD 530 million and floating-rate notes were USD 30 million. The fixed-rate share of the total is closest to:",
+    "options": {
+      "A": "90.0%",
+      "B": "92.0%",
+      "C": "94.6%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The primitive is part divided by total. Total notes equal USD 560 million, and USD 530 million / USD 560 million = 94.6% approximately. Applying that relation gives C.</p><p>Why the other options are wrong. A is incorrect because 90.0% is below the computed share from the two stated note amounts.</p><p>Why the other options are wrong. B is incorrect because 92.0% is still below the actual fixed-rate portion implied by the example.</p>"
+  }
+]

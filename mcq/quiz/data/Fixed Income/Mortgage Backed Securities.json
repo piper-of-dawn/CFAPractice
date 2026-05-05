@@ -1,0 +1,373 @@
+[
+  {
+    "id": 1,
+    "type": "Enumeration / Counting Format",
+    "topic": "Prepayment risk and time tranching",
+    "stem": "Consider the following: I. When interest rates decline, fixed-rate mortgage prepayments tend to rise. II. Contraction risk can force MBS investors to reinvest at lower rates. III. Extension risk is most directly associated with falling interest rates. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum states that declining rates typically increase refinancing and actual prepayments, which creates contraction risk. That faster principal return forces reinvestment at lower rates. Extension risk is tied to slower-than-expected principal repayment, which is associated with rising rates rather than falling rates. Therefore, Items I and II qualify and the count is two.</p><p>Why option A is incorrect. More than one statement satisfies the criterion because both Items I and II are consistent with the module.</p><p>Why option C is incorrect. Item III fails because extension risk is linked to higher rates and slower refinancing, not lower rates.</p>"
+  },
+  {
+    "id": 2,
+    "type": "Enumeration / Counting Format",
+    "topic": "Residential mortgage loan features",
+    "stem": "Consider the following prime-loan characteristics: I. Low debt-to-income ratio. II. Substantial borrower equity in the property. III. Security by a second lien subordinated to another loan. How many of the above are most likely associated with prime loans?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The module describes prime loans as having strong borrowers, low DTI, substantial equity, and a first lien on the property. A second lien subordinated to another loan is identified with riskier subprime lending. Thus, Items I and II satisfy the prime-loan test while Item III does not, so the count is two.</p><p>Why option A is incorrect. The curriculum gives two qualifying traits here, not one.</p><p>Why option C is incorrect. Item III violates the prime-loan description because subordinated second liens are associated with weaker credit profiles.</p>"
+  },
+  {
+    "id": 3,
+    "type": "Enumeration / Counting Format",
+    "topic": "Agency and non-agency RMBS",
+    "stem": "Consider the following statements about US residential MBS sectors: I. An RMBS guaranteed by a federal agency is agency RMBS. II. An RMBS guaranteed by a GSE carries the full faith and credit of the government. III. A private-label RMBS may use subordination as a credit enhancement. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> Agency RMBS includes the federal-agency sector and the GSE-guaranteed sector, but the module distinguishes the federal government's full faith and credit from the GSE's own guarantee. It also states that private-label or non-agency RMBS may use credit enhancement such as subordination. Therefore, Items I and III are accurate while Item II is not, so the count is two.</p><p>Why option A is incorrect. Two, not one, of the listed statements follow the curriculum definitions.</p><p>Why option C is incorrect. Item II overstates the nature of a GSE guarantee by treating it as full faith and credit.</p>"
+  },
+  {
+    "id": 4,
+    "type": "Enumeration / Counting Format",
+    "topic": "RMBS cash flows and tranche risk",
+    "stem": "Consider the following: I. A mortgage pass-through rate is lower than the weighted average coupon of the underlying pool because of fees. II. Weighted average maturity is based on remaining months to maturity weighted by current outstanding balances. III. Across CMO structures, a more senior tranche has less exposure to default risk. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Each statement is directly supported by the module. Fees reduce the pass-through coupon below the pool's weighted average mortgage rate. WAM uses remaining months weighted by each mortgage's outstanding current balance. Senior tranches are described as having less exposure to prepayment and default risk. The count is therefore three.</p><p>Why option A is incorrect. The curriculum supports more than one statement here.</p><p>Why option B is incorrect. Item III is also accurate, so the total is not limited to two.</p>"
+  },
+  {
+    "id": 5,
+    "type": "Enumeration / Counting Format",
+    "topic": "CMBS call protection",
+    "stem": "Consider the following statements about CMBS call protection: I. Prepayment penalty points are based on 1.00% of the property's fair market value. II. Defeasance leaves excess funds remaining after the final scheduled obligation is paid. III. Sequential-pay tranches provide structural call protection. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Only Item III matches the module. Structural call protection in CMBS comes from sequential-pay tranches. A prepayment penalty point equals 1.00% of the outstanding loan balance, not property value. Under defeasance, the replacement government-securities portfolio is constructed so that its value is zero after the last scheduled payment. The count is one.</p><p>Why option B is incorrect. Item I and Item II both fail the curriculum's definitions, so there are not two accurate statements.</p><p>Why option C is incorrect. All three do not qualify because only the structural-call-protection statement is accurate.</p>"
+  },
+  {
+    "id": 6,
+    "type": "Enumeration / Counting Format",
+    "topic": "Recourse and non-recourse mortgage features",
+    "stem": "Consider the following statements about lender claims after mortgage default: I. In a recourse loan, the lender may claim the borrower's other assets for a deficiency after the property is sold. II. In a non-recourse loan, the lender may recover a deficiency from the borrower's other assets if the collateral sale is insufficient. III. Strategic default is generally less likely under non-recourse loans because the lender can recover the shortfall from other assets. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> Only Item I matches the curriculum. In a recourse loan, the lender may pursue the borrower's other assets or income for the shortfall after the collateral sale. In a non-recourse loan, the lender can look only to the property, and strategic default is less likely under recourse rather than non-recourse treatment. The count is one.</p><p>Why option B is incorrect. Item II and Item III both reverse the recourse versus non-recourse logic in the module.</p><p>Why option C is incorrect. All three cannot qualify because only the first statement is consistent with the curriculum.</p>"
+  },
+  {
+    "id": 7,
+    "type": "Enumeration / Counting Format",
+    "topic": "Prepayment risk and time tranching",
+    "stem": "Consider the following: I. Contraction risk can shorten the life of an MBS. II. Extension risk can lengthen the life of an MBS. III. Time tranching creates bond classes with different expected maturities. How many of the above are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> Each statement is directly supported by the module. Faster-than-expected principal return produces contraction risk and shortens life, slower-than-expected principal return produces extension risk and lengthens life, and time tranching creates classes with different expected maturities. The count is three.</p><p>Why option A is incorrect. The curriculum supports more than one of the statements.</p><p>Why option B is incorrect. Item III is also accurate, so the total reaches three rather than two.</p>"
+  },
+  {
+    "id": 8,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Prepayment risk and time tranching",
+    "stem": "For an investor in a fixed-rate mortgage-backed security, extension risk is most likely to intensify when interest rates:",
+    "options": {
+      "A": "rise and borrowers become less likely to refinance",
+      "B": "fall and borrowers refinance rapidly",
+      "C": "fall and the bond's potential price appreciation is capped"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining criterion is slower-than-expected principal repayment. The CFA Curriculum links that outcome to rising rates because refinancing falls and new home purchases may be delayed, stretching out cash flows. That is extension risk.</p><p>Why option B is incorrect. Faster refinancing when rates fall creates contraction risk, not extension risk.</p><p>Why option C is incorrect. Reduced upside price appreciation is an adverse consequence of contraction risk, but it does not identify the condition that intensifies extension risk.</p>"
+  },
+  {
+    "id": 9,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Residential mortgage loan features",
+    "stem": "A borrower whose mortgage balance exceeds the value of the home is least likely to choose a strategic default when the mortgage is:",
+    "options": {
+      "A": "non-recourse and the borrower has little equity",
+      "B": "recourse and the lender can recover a deficiency from other assets",
+      "C": "non-recourse and home prices have already fallen sharply"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The key criterion is whether default still exposes the borrower to further claims. The module states that strategic default is less likely under recourse loans because the lender can pursue the borrower for the shortfall beyond the collateral. That weakens the incentive to walk away.</p><p>Why option A is incorrect. Non-recourse status can strengthen the incentive to default strategically on an underwater property.</p><p>Why option C is incorrect. Falling home prices and non-recourse treatment point in the opposite direction by making walk-away behavior more plausible.</p>"
+  },
+  {
+    "id": 10,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Agency and non-agency RMBS",
+    "stem": "An RMBS issued by a private financial institution, lacking federal-agency or GSE guarantee, but using pool insurance and subordination is most likely classified as:",
+    "options": {
+      "A": "agency RMBS because credit enhancement substitutes for a guarantee",
+      "B": "agency RMBS because the collateral is residential",
+      "C": "non-agency RMBS because the issuer is private and the guarantee is absent"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The decision rule is the guarantee source, not simply the collateral type or the existence of enhancement. The CFA Curriculum classifies private-label residential MBS without federal-agency or GSE guarantee as non-agency RMBS, even when credit enhancement such as insurance or subordination is present.</p><p>Why option A is incorrect. Credit enhancement reduces credit risk but does not convert a private-label issue into agency RMBS.</p><p>Why option B is incorrect. Residential collateral defines RMBS broadly, but agency status still depends on the federal-agency or GSE guarantee distinction.</p>"
+  },
+  {
+    "id": 11,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Sequential-pay CMO risk allocation",
+    "stem": "In a sequential-pay CMO, an investor most concerned about extension risk would most likely prefer:",
+    "options": {
+      "A": "the earliest tranche, because later tranches provide it extension protection",
+      "B": "the longest tranche, because it benefits most from slower principal repayment",
+      "C": "the residual tranche, because it receives remaining cash flow after all obligations"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The curriculum explains that sequential-pay structures protect the shorter tranche against extension risk because principal is prioritized to that tranche before later tranches receive principal. An investor trying to avoid delayed repayment therefore favors the earliest tranche.</p><p>Why option B is incorrect. The longest tranche is exposed to more extension uncertainty rather than protected from it.</p><p>Why option C is incorrect. A residual tranche collects remaining cash flow and is appropriate for investors willing to assume substantial risk, not for those trying to minimize extension risk.</p>"
+  },
+  {
+    "id": 12,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "CMBS structure",
+    "stem": "Commercial mortgage-backed securities trade more like corporate bonds most likely because they:",
+    "options": {
+      "A": "are usually backed by thousands of homogeneous mortgages",
+      "B": "replace default risk with prepayment risk",
+      "C": "offer investors protection against early prepayments"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The governing criterion is the presence of call protection. The CFA Curriculum explicitly says CMBS offer investors call protection at either the structural or individual-loan level, and for that reason they trade more like corporate bonds than RMBS.</p><p>Why option A is incorrect. The module contrasts CMBS with RMBS by noting CMBS may contain only a few commercial mortgages, not thousands of homogeneous loans.</p><p>Why option B is incorrect. CMBS still carry default and extension-related risks; call protection does not remove default risk.</p>"
+  },
+  {
+    "id": 13,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "CMBS balloon risk",
+    "stem": "For a maturing commercial mortgage loan, balloon risk is most likely increased by:",
+    "options": {
+      "A": "a high debt service coverage ratio",
+      "B": "a low loan-to-value ratio",
+      "C": "a lack of property buyers in the market"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> Balloon risk turns on whether the borrower can refinance or sell the property to meet the large maturity payment. A weak buyer market makes sale proceeds harder to realize and therefore increases the risk that the balloon payment cannot be made.</p><p>Why option A is incorrect. A higher DSCR indicates stronger property cash-flow support and tends to reduce balloon risk.</p><p>Why option B is incorrect. A lower LTV gives the lender more collateral cushion and also tends to reduce balloon risk.</p>"
+  },
+  {
+    "id": 14,
+    "type": "CFA Style Vanilla Hard MCQ",
+    "topic": "Mortgage contingency features",
+    "stem": "A monetary prepayment penalty in a residential mortgage is most likely intended to:",
+    "options": {
+      "A": "increase the borrower's contractual maturity",
+      "B": "compensate the lender when declining rates encourage early repayment",
+      "C": "convert a non-recourse mortgage into a recourse obligation"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The module states that lenders use prepayment penalties to offset the difference between the contract rate and prevailing mortgage rates when a borrower prepays after rates decline. The purpose is to reduce the incentive to refinance and to compensate the lender for that adverse rate environment.</p><p>Why option A is incorrect. A penalty may deter prepayment, but it does not directly rewrite the stated maturity.</p><p>Why option C is incorrect. Recourse is a legal claim feature, not something created by a prepayment fee.</p>"
+  },
+  {
+    "id": 15,
+    "type": "Assertion–Reason",
+    "topic": "Sequential-pay CMO mechanics",
+    "stem": "Assertion (A): In a sequential-pay CMO, the earliest tranche is relatively protected against extension risk.\nReason (R): Principal payments are directed to earlier tranches until they are fully retired before later tranches begin receiving principal.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>A is correct.</strong> The module explains that sequential-pay structures route principal to the first tranche until its balance reaches zero. That payment rule is exactly why the shorter tranche receives protection against extension risk from the longer tranches.</p><p>The other classifications fail because neither statement is false, and the reason is not merely associated with the assertion; it is the mechanism that creates the protection.</p>"
+  },
+  {
+    "id": 16,
+    "type": "Assertion–Reason",
+    "topic": "Prepayment penalties",
+    "stem": "Assertion (A): Prepayment penalty mortgages are more common in Europe than in the United States.\nReason (R): A prepayment penalty reduces the incentive for a borrower to refinance when rates decline.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>B is correct.</strong> Both statements are supported by the module. The reason correctly describes what the penalty does, but it does not by itself explain the cross-market observation that such penalties are more prevalent in Europe than in the United States.</p><p>Option A fails because the reason is useful but not the stated explanation for the geographic prevalence. Options C and D fail because neither statement is false.</p>"
+  },
+  {
+    "id": 17,
+    "type": "Assertion–Reason",
+    "topic": "Recourse versus non-recourse",
+    "stem": "Assertion (A): In a non-recourse mortgage, the lender may claim the borrower's other assets for any deficiency after foreclosure.\nReason (R): Strategic default is less likely under a recourse loan because the lender can recover the shortfall from the borrower's other assets or income.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>D is correct.</strong> The assertion reverses the curriculum's definitions. In a non-recourse mortgage, the lender can look only to the property. The reason is true because recourse status lets the lender pursue other assets or income and therefore weakens the strategic-default incentive.</p><p>Options A, B, and C fail because the assertion is false. Only the reason survives the curriculum test.</p>"
+  },
+  {
+    "id": 18,
+    "type": "Assertion–Reason",
+    "topic": "Weighted average coupon",
+    "stem": "Assertion (A): The weighted average coupon of a mortgage pool is based on current outstanding balances.\nReason (R): The weighted average coupon is determined by weighting each mortgage rate by the mortgage's original balance.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>C is correct.</strong> The RMBS section defines WAC using each mortgage's outstanding current balance as the weight relative to the pool's current total balance. The reason is false because original balance is not the required weighting basis in this module.</p><p>Options A and B fail because the reason is not true. Option D fails because the assertion is directly supported by the curriculum.</p>"
+  },
+  {
+    "id": 19,
+    "type": "Assertion–Reason",
+    "topic": "Contraction risk",
+    "stem": "Assertion (A): When interest rates decline, fixed-rate mortgage-backed securities can experience contraction risk.\nReason (R): Falling rates encourage refinancing, causing principal to be returned earlier than forecasted.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>A is correct.</strong> The module states that falling rates lead homeowners to refinance, which raises actual prepayments above forecast. Earlier-than-expected return of principal is exactly the mechanism of contraction risk, so the reason explains the assertion.</p><p>The other answer choices fail because neither statement is false and the reason is the direct causal chain described in the curriculum.</p>"
+  },
+  {
+    "id": 20,
+    "type": "Assertion–Reason",
+    "topic": "CMBS concentration risk",
+    "stem": "Assertion (A): CMBS loan pools generally exhibit more concentration risk than RMBS loan pools.\nReason (R): CMBS pools typically contain thousands of small, homogeneous mortgages spread broadly across a country.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>C is correct.</strong> The assertion is true because the curriculum says CMBS may consist of only a few commercial mortgages, so one default can matter a lot. The reason is false because that description belongs more closely to diversified RMBS pools, not to concentrated CMBS pools.</p><p>Options A and B fail because the reason is false. Option D fails because the assertion is explicitly supported by the CMBS-risk discussion.</p>"
+  },
+  {
+    "id": 21,
+    "type": "Assertion–Reason",
+    "topic": "European CMBS features",
+    "stem": "Assertion (A): European CMBS often carry floating rates that may be capped.\nReason (R): CMBS analysis requires direct understanding of the legal, financial, and commercial structures underlying each mortgage in the transaction.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: causal test</h3><p><strong>B is correct.</strong> Both statements appear in the CMBS section. However, the need for deep legal and commercial analysis does not explain why European CMBS often carry floating rates that may be capped; it is a separate structural observation.</p><p>Option A fails because the reason is not the stated causal explanation. Options C and D fail because neither statement is false.</p>"
+  },
+  {
+    "id": 22,
+    "type": "Numerical Questions",
+    "topic": "Time tranching",
+    "stem": "An investor buys EUR 3 million of Class B notes scheduled to repay in two years and EUR 2 million of Class C notes scheduled to repay in three years, assuming no prepayments. The investor's weighted average scheduled principal repayment time is closest to:",
+    "options": {
+      "A": "2.20 years",
+      "B": "2.40 years",
+      "C": "2.60 years"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>B is correct.</strong> Use a value-weighted average of scheduled repayment times: $[(3 \\times 2) + (2 \\times 3)] / 5 = 12/5 = 2.4$ years. The calculation uses the face-value weights of the two purchased tranches and the no-prepayment scheduled repayment dates.</p><p>Why option A is incorrect. It understates the weighted average by giving too little weight to the three-year Class C position.</p><p>Why option C is incorrect. It overstates the average as if the later tranche dominated more than its EUR 2 million weight permits.</p>"
+  },
+  {
+    "id": 23,
+    "type": "Numerical Questions",
+    "topic": "Loan-to-value ratio",
+    "stem": "A borrower obtains a JPY 33,165,000 mortgage for a house valued at JPY 36,850,000. The loan-to-value ratio is closest to:",
+    "options": {
+      "A": "85.0%",
+      "B": "88.0%",
+      "C": "90.0%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> Apply the curriculum formula $\\text{LTV} = \\text{loan amount} / \\text{property value}$. Here, $33{,}165{,}000 / 36{,}850{,}000 = 0.90$, or 90.0%.</p><p>Why option A is incorrect. It is below the ratio produced by dividing the mortgage amount by the property value.</p><p>Why option B is incorrect. It is close enough to be tempting, but the exact module example produces 90.0%, not 88.0%.</p>"
+  },
+  {
+    "id": 24,
+    "type": "Numerical Questions",
+    "topic": "Weighted average proceeds from mortgages",
+    "stem": "Three mortgages of USD 27,000,000, USD 44,000,000, and USD 12,000,000 carry coupon rates of 4.00%, 3.00%, and 5.00%, respectively. The weighted average proceeds from the mortgages is closest to:",
+    "options": {
+      "A": "3.47%",
+      "B": "3.50%",
+      "C": "3.61%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> Weight each mortgage coupon by its mortgage amount and divide by total mortgage value: $[(27 \\times 4.00\\%) + (44 \\times 3.00\\%) + (12 \\times 5.00\\%)] / 83 = 3.61\\%$ approximately.</p><p>Why option A is incorrect. That is the weighted average coupon payment for the four CMBS tranches in the practice set, not the weighted proceeds from the mortgages.</p><p>Why option B is incorrect. It is the straight average style distractor rather than the mortgage-amount-weighted result.</p>"
+  },
+  {
+    "id": 25,
+    "type": "Numerical Questions",
+    "topic": "Weighted average coupon of an RMBS pool",
+    "stem": "A mortgage pool has current balances of CAD 83,000, 193,000, 315,000, 357,000, and 548,000 with corresponding mortgage rates of 2.00%, 3.00%, 4.00%, 5.00%, and 6.00%. The pool's weighted average coupon is closest to:",
+    "options": {
+      "A": "4.73%",
+      "B": "4.50%",
+      "C": "5.00%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>A is correct.</strong> Weight each mortgage rate by its current outstanding balance relative to the total current balance of CAD 1,496,000. The weighted result is approximately 4.73%, which is the pool's WAC under the module's definition.</p><p>Why option B is incorrect. It is lower than the balance-weighted result and is closer to an imprecise shortcut than to the required calculation.</p><p>Why option C is incorrect. It is too high and ignores the substantial weight in lower-rate mortgages.</p>"
+  },
+  {
+    "id": 26,
+    "type": "Numerical Questions",
+    "topic": "Weighted average maturity of an RMBS pool",
+    "stem": "Using the same five-mortgage pool, with months to maturity of 140, 192, 240, 144, and 324 weighted by current balances of CAD 83,000, 193,000, 315,000, 357,000, and 548,000, the weighted average maturity is closest to:",
+    "options": {
+      "A": "208 months",
+      "B": "224 months",
+      "C": "236 months"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>C is correct.</strong> Apply the curriculum's WAM rule by weighting each remaining maturity by current balance and dividing by the total balance. The result is about 235.6 months, which rounds to 236 months.</p><p>Why option A is incorrect. It is materially below the weighted result and places too little influence on the large 324-month mortgage.</p><p>Why option B is incorrect. It is closer, but still below the balance-weighted maturity implied by the data.</p>"
+  },
+  {
+    "id": 27,
+    "type": "Numerical Questions",
+    "topic": "Debt service coverage ratio",
+    "stem": "A commercial property has rental income of USD 60,000, cash operating expenses of USD 9,500, and annual debt service of USD 36,110. Assuming no replacement reserve is given, the debt service coverage ratio is closest to:",
+    "options": {
+      "A": "0.72x",
+      "B": "1.40x",
+      "C": "1.61x"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>B is correct.</strong> First compute NOI from the given facts: $60{,}000 - 9{,}500 = 50{,}500$. Then $\\text{DSC} = 50{,}500 / 36{,}110 = 1.3985\\times$, which rounds to 1.40x.</p><p>Why option A is incorrect. It would imply NOI is materially below debt service, which is inconsistent with the numbers given.</p><p>Why option C is incorrect. That value belongs to a different CMBS example with a much larger NOI and debt-service pair.</p>"
+  },
+  {
+    "id": 28,
+    "type": "Numerical Questions",
+    "topic": "CMBS portfolio loan-to-value ratio",
+    "stem": "Three mortgaged properties have fair values of USD 35,000,000, USD 60,000,000, and USD 15,000,000, backed by mortgages of USD 27,000,000, USD 44,000,000, and USD 12,000,000. The associated portfolio loan-to-value ratio is closest to:",
+    "options": {
+      "A": "0.75",
+      "B": "0.77",
+      "C": "0.80"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: calculation rule</h3><p><strong>A is correct.</strong> Sum the mortgages and divide by the sum of property values: $83{,}000{,}000 / 110{,}000{,}000 = 0.7545$, which is closest to 0.75.</p><p>Why option B is incorrect. It is close to the first property's individual mortgage-to-value ratio rather than the portfolio ratio.</p><p>Why option C is incorrect. It is close to the third property's individual ratio, not the combined portfolio calculation.</p>"
+  }
+]
