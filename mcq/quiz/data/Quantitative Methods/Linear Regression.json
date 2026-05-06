@@ -341,5 +341,376 @@
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: convert predicted log value back to level</h3><p><strong>C is correct.</strong> The correct method requires converting the predicted logarithm back to the original level. First compute $\\ln(\\mathrm{NPM}) = 0.5987 + (0.2951 \\times 2) = 1.1889$. Then exponentiate: $\\mathrm{NPM} = e^{1.1889} = 3.2835$ approximately.</p><p>Why A is wrong: 1.1889 is the predicted natural log of NPM, not NPM itself.</p><p>Why B is wrong: 1.8043 reflects an incorrect back-transformation and is not the antilog of 1.1889.</p>"
+  },
+  {
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. In simple linear regression, the dependent variable is the variable whose variation the analyst seeks to explain.\nII. Ordinary least squares estimates the fitted line by minimizing the sum of squared residuals.\nIII. If covariance between X and Y is negative, the estimated slope must still be positive because the denominator is positive.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The classification rule is whether each statement matches the estimation mechanics of simple linear regression. Statement I is accurate because Y is the variable being explained. Statement II is accurate because ordinary least squares selects the intercept and slope that minimize the sum of squared residuals. Statement III is inaccurate because a negative covariance makes the slope negative when the denominator, the variation of X, is positive. Therefore, only two statements satisfy the rule.</p><p>Why option B is incorrect. It is not incorrect because exactly two statements, I and II, are consistent with the governing definitions and slope formula.</p><p>Why option C is incorrect. All three cannot qualify because Statement III reverses the sign implication of covariance for the estimated slope.</p>",
+    "id": 15
+  },
+  {
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. Residuals that look random when plotted against the independent variable are consistent with the linearity assumption.\nII. Residuals clustering into groups with noticeably different spreads indicate a likely violation of homoskedasticity.\nIII. For large sample sizes, concern about non-normal residuals may be reduced because large-sample theory can support the validity of standard test statistics.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement reflects the assumptions and residual diagnostics of simple linear regression. Statement I is accurate because a visible pattern in residuals against X suggests the linear form is misspecified. Statement II is accurate because differing residual spreads across groups indicate heteroskedasticity. Statement III is also accurate because the text notes that for large samples the normality assumption may be relaxed. All three statements satisfy the rule.</p><p>Why option B is incorrect. Restricting the count to two would incorrectly discard one statement even though each one matches the model-diagnostic guidance.</p><p>Why option C is incorrect. It is not incorrect because all three statements are supported by the assumption discussion and residual-plot interpretation.</p>",
+    "id": 16
+  },
+  {
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. The t-statistic for testing whether the slope equals zero in simple linear regression uses $n - 1$ degrees of freedom.\nII. In simple linear regression, the calculated t-statistic for testing whether the slope equals zero is the same value as the calculated t-statistic for testing whether the correlation equals zero.\nIII. The F-statistic for overall fit is left-tailed because the analyst is testing whether explained variation is unusually small.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The decision rule is whether each statement matches the hypothesis-testing framework for simple linear regression. Statement II is accurate because the text shows that the calculated t-statistic for a zero slope and for zero correlation are the same in simple linear regression. Statement I is inaccurate because the relevant degrees of freedom are $n - 2$, not $n - 1$. Statement III is inaccurate because the F-test is right-tailed, not left-tailed. Therefore, only one statement qualifies.</p><p>Why option B is incorrect. Two statements do not qualify because Statements I and III both misstate the degrees of freedom and the rejection region.</p><p>Why option C is incorrect. All three cannot qualify because only Statement II reflects the correct test structure.</p>",
+    "id": 17
+  },
+  {
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. In an ANOVA table for simple linear regression, the total degrees of freedom equal $n - 1$.\nII. In an ANOVA table for simple linear regression, the error degrees of freedom equal $n - 2$.\nIII. Mean square regression equals SSR divided by $n - 2$.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The classification rule is whether each statement matches the ANOVA table structure. Statement I is accurate because total degrees of freedom are based on deviations from the mean, giving $n - 1$. Statement II is accurate because one intercept and one slope are estimated, leaving $n - 2$ error degrees of freedom. Statement III is inaccurate because mean square regression equals SSR divided by 1 in simple linear regression, not SSR divided by $n - 2$. Thus, only two statements satisfy the rule.</p><p>Why option B is incorrect. It is not incorrect because Statements I and II are the only ones that match the ANOVA definitions.</p><p>Why option C is incorrect. All three cannot qualify because Statement III uses the error degrees of freedom in the wrong place.</p>",
+    "id": 18
+  },
+  {
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. The standard error of the estimate is the square root of mean square error.\nII. A smaller standard error of the estimate indicates that observed dependent-variable values lie closer to the regression line.\nIII. The standard error of the estimate is an absolute, not relative, measure of fit.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement correctly describes the standard error of the estimate. Statement I is accurate because the standard error of the estimate equals $\\sqrt{\\text{MSE}}$. Statement II is accurate because a smaller value means the observed Ys are, on average, closer to the fitted line. Statement III is accurate because the standard error of the estimate is an absolute distance measure rather than a relative fit measure like $R^2$. All three qualify.</p><p>Why option B is incorrect. Restricting the count to two would wrongly exclude one of the standard error of estimate properties stated in the curriculum.</p><p>Why option C is incorrect. It is not incorrect because all three statements are accurate descriptions of the statistic.</p>",
+    "id": 19
+  },
+  {
+    "topic": "Functional Forms for Simple Linear Regression",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. In a log-log model, the slope coefficient measures the relative change in the dependent variable for a relative change in the independent variable.\nII. When the dependent variable is transformed in one model but not in another, the raw $R^2$ values are directly comparable.\nIII. Random residuals are evidence that the chosen functional form may fit the data appropriately.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The governing rule is whether each statement matches the functional-form interpretation and model-selection guidance. Statement I is accurate because the log-log slope is an elasticity-type interpretation: a relative change in Y for a relative change in X. Statement II is inaccurate because raw fit statistics such as $R^2$ are not directly comparable when the dependent variable is in different forms. Statement III is accurate in spirit for model selection, but the question asks for statements that are most accurate exactly as framed; the curriculum uses random residuals as supporting evidence after examining a chosen form, not as a standalone proof of appropriateness. Under the strict reading, only Statement I survives without qualification.</p><p>Why option B is incorrect. Two statements do not survive a strict reading because Statement II is clearly wrong and Statement III overstates what residual randomness alone can establish.</p><p>Why option C is incorrect. All three cannot qualify because Statement II violates the comparison rule for transformed dependent variables.</p>",
+    "id": 20
+  },
+  {
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "format": "Enumeration / Counting Format",
+    "stem": "Consider the following:\nI. Independence means the observed X-Y pairs are uncorrelated across observations.\nII. A seasonal pattern in residuals suggests autocorrelation across observations.\nIII. Normality refers to the residuals of the regression rather than requiring the dependent and independent variables themselves to be normally distributed.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement matches the assumptions discussion. Statement I is accurate because independence requires observations, and thus residuals, not to be correlated across time or across the sample sequence. Statement II is accurate because a repeating seasonal residual pattern is a classic sign of autocorrelation. Statement III is accurate because normality is a requirement on residuals, not on X and Y themselves. All three statements meet the rule.</p><p>Why option B is incorrect. Limiting the count to two would ignore one statement even though each one is consistent with the assumptions framework.</p><p>Why option C is incorrect. It is not incorrect because all three statements are accurate.</p>",
+    "id": 21
+  },
+  {
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "The intercept in a simple linear regression is most likely economically meaningful when:",
+    "options": {
+      "A": "the independent variable can realistically take a value of zero in the setting being modeled",
+      "B": "the slope is positive, so the fitted line rises as X increases",
+      "C": "the dependent variable and independent variable are measured in the same units"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> A is correct. The decision rule is whether the fitted value at $X = 0$ has a sensible real-world interpretation. The intercept is the predicted value of the dependent variable when the independent variable equals zero, so it is economically meaningful only when zero is a realistic value for X in the context being studied.</p><p>Why option B is incorrect. A positive slope changes how Y moves with X, but it does not determine whether the value at $X = 0$ is meaningful.</p><p>Why option C is incorrect. Matching units is not the defining criterion for intercept interpretation; realism of $X = 0$ is.</p>",
+    "id": 22
+  },
+  {
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "A residual plot that shows observations clustered into two groups with clearly different spreads is most likely evidence of:",
+    "options": {
+      "A": "normality of residuals",
+      "B": "heteroskedasticity",
+      "C": "a guaranteed positive slope"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> B is correct. The decision rule is whether the residual variance appears constant across observations. Two clusters with very different spreads indicate that the residual variance changes across the sample, which is the hallmark of heteroskedasticity rather than homoskedasticity.</p><p>Why option A is incorrect. The issue is changing variance across groups, not whether the residual distribution is bell-shaped.</p><p>Why option C is incorrect. Residual spread tells the analyst about variance behavior, not the sign of the fitted slope.</p>",
+    "id": 23
+  },
+  {
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "Which of the following statements about simple linear regression hypothesis tests is least likely correct?",
+    "options": {
+      "A": "A t-test on the slope compares the estimated slope with a hypothesized population slope and scales the difference by the slope's standard error.",
+      "B": "In simple linear regression, the overall F-test of fit is equivalent to testing whether the slope coefficient equals zero.",
+      "C": "If the null that the slope equals zero is not rejected, the intercept must also equal zero."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> C is correct. The decision rule is whether the statement follows from the test structure. Failure to reject a zero slope says the sample does not provide enough evidence that the slope differs from zero; it says nothing about whether the intercept must be zero. The intercept is a separate parameter with its own test.</p><p>Why option A is incorrect. That is the correct construction of the slope t-statistic.</p><p>Why option B is incorrect. In simple linear regression, the overall F-test is the fit test tied to whether the slope differs from zero.</p>",
+    "id": 24
+  },
+  {
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "Which of the following statements about the standard error of the estimate is most likely correct?",
+    "options": {
+      "A": "It equals the square root of mean square error and measures the average distance of observed dependent-variable values from the fitted line.",
+      "B": "A larger value indicates a better fit because the regression captures more variation.",
+      "C": "It is the regression sum of squares divided by the total degrees of freedom."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> A is correct. The defining criterion is whether the statement matches the statistic's formula and interpretation. The standard error of the estimate is $\\sqrt{\\text{MSE}}$ and is an absolute measure of how far observed Y values lie from the fitted regression line.</p><p>Why option B is incorrect. A larger standard error of the estimate means observations are farther from the fitted line, so fit is worse, not better.</p><p>Why option C is incorrect. That formula does not describe the standard error of the estimate; it confuses several ANOVA components.</p>",
+    "id": 25
+  },
+  {
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "A prediction interval for the dependent variable is most likely wider when:",
+    "options": {
+      "A": "the number of observations is larger",
+      "B": "the forecasted value of the independent variable is farther from its sample mean",
+      "C": "the standard error of the estimate is smaller"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> B is correct. The decision rule is how each factor enters the standard error of the forecast. The term involving $(X_f - \\bar{X})^2$ increases as the forecasted X moves farther from the sample mean, which increases the standard error of the forecast and therefore widens the prediction interval.</p><p>Why option A is incorrect. More observations reduce the contribution of the $1/n$ term and tend to narrow, not widen, the interval.</p><p>Why option C is incorrect. A smaller standard error of the estimate reduces forecast uncertainty and narrows the interval.</p>",
+    "id": 26
+  },
+  {
+    "topic": "Functional Forms for Simple Linear Regression",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "Which of the following statements about transformed simple linear regressions is least likely correct?",
+    "options": {
+      "A": "In a log-lin model, the predicted level of the dependent variable is obtained by taking the antilog of the predicted logarithmic value.",
+      "B": "In a lin-log model, the slope gives the absolute change in the dependent variable for a relative change in the independent variable.",
+      "C": "Because $R^2$ is a relative measure, it is always directly comparable across models even when the dependent variable is transformed in one model but not the other."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> C is correct. The decision rule is whether the fit comparison respects the variable forms used in each model. Raw $R^2$ values are not directly comparable when the dependent variable differs in form across models, such as comparing a lin-lin model with a log-lin model.</p><p>Why option A is incorrect. That is the required back-transformation step in a log-lin forecast.</p><p>Why option B is incorrect. That is the correct interpretation of the lin-log slope.</p>",
+    "id": 27
+  },
+  {
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "format": "CFA Style Vanilla Hard MCQ",
+    "stem": "Which of the following statements about the relation between slope and correlation in simple linear regression is most likely correct?",
+    "options": {
+      "A": "A negative covariance can still produce a positive slope because the variation of X is always positive.",
+      "B": "The slope equals covariance divided by the standard deviation of X, whereas correlation divides by the variance of X.",
+      "C": "Slope and correlation have the same sign because both are driven by the sign of covariance while their denominators are positive."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> C is correct. The defining criterion is the role of covariance in the two formulas. In both the slope and the correlation formulas, the denominator is positive, so the sign of each statistic is determined by the sign of covariance between X and Y.</p><p>Why option A is incorrect. A negative covariance produces a negative slope when the denominator is positive.</p><p>Why option B is incorrect. The formulas are reversed in that statement; slope uses variance of X, and correlation uses the product of the standard deviations.</p>",
+    "id": 28
+  },
+  {
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): In simple linear regression, the fitted line is chosen by minimizing the sum of squared residuals rather than the unsquared sum of residuals.\nReason (R): Squaring residuals prevents positive and negative residuals from offsetting one another in the fitting criterion.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: fitting criterion</h3><p><strong>A is correct.</strong> Ordinary least squares defines the governing criterion as minimizing the sum of squared residuals. That criterion keeps large misses costly and avoids simple cancellation between positive and negative residuals. Because the reason states exactly why the squared form is used, it correctly explains the assertion.</p><p>Why option B is incorrect. There is no gap between the assertion and the reason: the reason directly supports the choice of least squares.</p><p>Why options C and D are incorrect. Neither statement is false. Both the assertion and the reason are true under the least-squares framework.</p>",
+    "id": 29
+  },
+  {
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): Residuals that form two clusters with clearly different spreads suggest that the homoskedasticity assumption may be violated.\nReason (R): Residuals that look random when plotted against the independent variable are consistent with the linearity assumption.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: assumption hierarchy</h3><p><strong>B is correct.</strong> The assertion is true because different residual spreads across groups indicate changing variance, which points to heteroskedasticity. The reason is also true because randomness in residuals against X is evidence consistent with linearity. But the reason does not explain the assertion because randomness of residuals addresses functional form, not changing variance across regimes.</p><p>Why option A is incorrect. Although both statements are true, the reason does not resolve the variance-based issue raised in the assertion.</p><p>Why options C and D are incorrect. The reason is not false, and the assertion is not false; the problem is lack of explanatory connection.</p>",
+    "id": 30
+  },
+  {
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): In simple linear regression, if the calculated t-statistic for testing whether the slope equals zero is 4, the calculated F-statistic for overall fit is 16.\nReason (R): The F-statistic is computed by subtracting the hypothesized slope from the estimated slope and dividing by the standard error of the slope.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: test-equivalence rule</h3><p><strong>C is correct.</strong> The assertion is true because in simple linear regression the fit test and the zero-slope t-test are linked by $F = t^2$, so a t-statistic of 4 implies an F-statistic of 16. The reason is false because subtracting a hypothesized slope and dividing by the standard error of the slope defines the t-statistic, not the F-statistic.</p><p>Why option A is incorrect. The reason does not correctly describe the F-statistic, so it cannot explain the assertion.</p><p>Why options B and D are incorrect. The assertion itself is true, which eliminates any option that treats it as false.</p>",
+    "id": 31
+  },
+  {
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): The standard error of the estimate is a relative measure of fit in the same sense as the coefficient of determination.\nReason (R): The standard error of the estimate equals the square root of mean square error from the ANOVA table.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: fit-measure classification</h3><p><strong>D is correct.</strong> The assertion is false because the standard error of the estimate is an absolute distance measure, whereas the coefficient of determination is a relative fit measure. The reason is true because the standard error of the estimate is computed as the square root of MSE from the ANOVA table.</p><p>Why option A is incorrect. The assertion fails at the classification step, so even a true reason cannot rescue it.</p><p>Why options B and C are incorrect. The reason is not false, and the assertion is not true, so those combinations do not match the facts.</p>",
+    "id": 32
+  },
+  {
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): For a given regression and significance level, the prediction interval is narrowest when the forecasted value of the independent variable is closest to its sample mean.\nReason (R): The standard error of the forecast contains a term based on $(X_f - \\bar{X})^2$, which is minimized when $X_f = \\bar{X}$.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: forecast-uncertainty mechanism</h3><p><strong>A is correct.</strong> The assertion is true because prediction-interval width is driven by the standard error of the forecast. The reason is also true: the squared distance term in the forecast standard error is smallest at the sample mean, so the interval is narrowest there. The reason therefore correctly explains the assertion.</p><p>Why option B is incorrect. There is a direct mechanical link between the squared-distance term and interval width, so the reason is explanatory rather than merely associated.</p><p>Why options C and D are incorrect. Neither statement is false under the prediction-interval formula.</p>",
+    "id": 33
+  },
+  {
+    "topic": "Functional Forms for Simple Linear Regression",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): When the dependent variable is unchanged across two regressions, the standard error of the estimate can be compared across the two models.\nReason (R): Choosing a functional form also requires examining residual plots for randomness rather than relying only on summary fit statistics.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: model-comparison rule</h3><p><strong>B is correct.</strong> The assertion is true because when the dependent variable is in the same form across models, the standard error of the estimate remains on a comparable scale. The reason is also true because residual plots are part of selecting the appropriate functional form. But the reason does not explain why the standard errors are comparable; comparability comes from the unchanged dependent-variable scale.</p><p>Why option A is incorrect. The truth of the reason does not provide the scale-comparability logic needed for the assertion.</p><p>Why options C and D are incorrect. Both statements are true, so the issue is explanatory disconnect rather than truth value.</p>",
+    "id": 34
+  },
+  {
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "format": "Assertion–Reason",
+    "stem": "Assertion (A): A repeating seasonal pattern in residuals is evidence against the independence assumption.\nReason (R): A seasonal pattern in residuals means the residuals are normally distributed around zero.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: residual-pattern diagnosis</h3><p><strong>C is correct.</strong> The assertion is true because a repeating seasonal pattern means residuals are correlated across observations, which violates independence. The reason is false because seasonality says nothing about residual normality; it points to autocorrelation, not a bell-shaped distribution.</p><p>Why option A is incorrect. The reason does not correctly describe the implication of the pattern, so it cannot explain the assertion.</p><p>Why options B and D are incorrect. The assertion is not false, and the reason is not true, so those truth-value combinations do not fit.</p>",
+    "id": 35
+  },
+  {
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "format": "Numerical Questions",
+    "stem": "A simple linear regression has standard error of the estimate 3.459588 and sum of squared deviations of the independent variable equal to 122.64. The standard error of the slope coefficient is closest to?",
+    "options": {
+      "A": "0.312398",
+      "B": "0.790500",
+      "C": "3.459588"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: slope-test input</h3><p><strong>A is correct.</strong> The standard error of the slope equals $s_e / \\sqrt{\\sum (X_i - \\bar{X})^2}$. Using $3.459588 / \\sqrt{122.64}$ gives 0.312398. That is the quantity used to scale differences between the estimated slope and a hypothesized slope.</p><p>Why B is incorrect. 0.790500 is a t-statistic-style outcome from a different calculation, not the slope's standard error.</p><p>Why C is incorrect. 3.459588 is the standard error of the estimate, which must still be adjusted by the variation in X to obtain the slope's standard error.</p>",
+    "id": 36
+  },
+  {
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "format": "Numerical Questions",
+    "stem": "For an estimated intercept of 4.875, a hypothesized intercept of 3.0, and a standard error of the intercept of 2.37196, the test statistic is closest to?",
+    "options": {
+      "A": "0.3124",
+      "B": "0.7905",
+      "C": "1.8750"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: intercept t-test</h3><p><strong>B is correct.</strong> The intercept t-statistic is $(\\hat{b}_0 - B_0)/s_{\\hat{b}_0}$. Substituting $(4.875 - 3.0)/2.37196$ gives 0.7905 approximately. That value is the correct test statistic for evaluating the intercept against the hypothesized value.</p><p>Why A is incorrect. 0.3124 is close to a slope standard-error value from a different computation, not this intercept t-statistic.</p><p>Why C is incorrect. 1.8750 is only the numerator of the test statistic before scaling by the intercept's standard error.</p>",
+    "id": 37
+  },
+  {
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "format": "Numerical Questions",
+    "stem": "A simple linear regression has SSE = 47.875 and $n = 6$. The mean square error is closest to?",
+    "options": {
+      "A": "7.9792",
+      "B": "15.9583",
+      "C": "11.9688"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: ANOVA denominator</h3><p><strong>C is correct.</strong> Mean square error equals SSE divided by the error degrees of freedom. In simple linear regression, the error degrees of freedom are $n - 2 = 4$, so $47.875/4 = 11.9688$ approximately.</p><p>Why A is incorrect. 7.9792 would divide by 6, not by the correct error degrees of freedom.</p><p>Why B is incorrect. 15.9583 would divide by 3, which does not match the simple linear regression ANOVA structure.</p>",
+    "id": 38
+  },
+  {
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "format": "Numerical Questions",
+    "stem": "A regression has standard error of the estimate 3.459588, sample size 6, mean of X equal to 6.1, sum of squared deviations of X equal to 122.64, and forecasted X equal to 6. The standard error of the forecast is closest to?",
+    "options": {
+      "A": "3.7369",
+      "B": "3.4596",
+      "C": "2.7760"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: forecast-uncertainty calculation</h3><p><strong>A is correct.</strong> The standard error of the forecast is $s_e\\sqrt{1 + 1/n + (X_f-\\bar{X})^2/\\sum (X_i-\\bar{X})^2}$. Substituting the given inputs yields approximately 3.7369. The extra terms make the forecast standard error larger than the regression standard error.</p><p>Why B is incorrect. 3.4596 is the standard error of the estimate before the forecast-adjustment term is applied.</p><p>Why C is incorrect. 2.7760 is a critical t-value, not a forecast standard error.</p>",
+    "id": 39
+  },
+  {
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "format": "Numerical Questions",
+    "stem": "Using a predicted value of 12.375, a standard error of the forecast of 3.7369, and a 95% critical t-value of 2.776, the prediction interval is closest to?",
+    "options": {
+      "A": "USD 8.6381 to USD 16.1119",
+      "B": "USD 2.0013 to USD 22.7487",
+      "C": "USD 1.9865 to USD 22.7635"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: prediction-interval construction</h3><p><strong>B is correct.</strong> The interval is $\\hat{Y}_f \\pm t_{\\alpha/2}s_f$. The half-width is $2.776 \\times 3.7369 \\approx 10.3737$, so the bounds are $12.375 - 10.3737 = 2.0013$ and $12.375 + 10.3737 = 22.7487$.</p><p>Why A is incorrect. That interval uses only one standard error around the forecast rather than the required critical-t multiple.</p><p>Why C is incorrect. Those bounds reflect incorrect multiplication or premature rounding, so they do not match the stated inputs.</p>",
+    "id": 40
+  },
+  {
+    "topic": "Functional Forms for Simple Linear Regression",
+    "format": "Numerical Questions",
+    "stem": "For the log-lin model $\\ln Y = -7 + 2X$, the predicted level of Y when $X = 3$ is closest to?",
+    "options": {
+      "A": "0.135335",
+      "B": "1.000000",
+      "C": "0.367879"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: back-transform the log forecast</h3><p><strong>C is correct.</strong> First compute the predicted logarithm: $\\ln Y = -7 + 2(3) = -1$. Because the model is log-lin, the level forecast is the antilog, so $Y = e^{-1} = 0.367879$ approximately.</p><p>Why A is incorrect. 0.135335 equals $e^{-2}$, which would apply if $X = 2.5$, not $X = 3$.</p><p>Why B is incorrect. 1.000000 would require the predicted logarithm to be zero, which is not the case here.</p>",
+    "id": 41
+  },
+  {
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "format": "Numerical Questions",
+    "stem": "If covariance between X and Y is 30.66, the standard deviation of Y is 6.9210, and the standard deviation of X is 4.9526, the sample correlation is closest to?",
+    "options": {
+      "A": "0.6223",
+      "B": "0.8001",
+      "C": "0.8945"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: normalize covariance</h3><p><strong>C is correct.</strong> Correlation equals covariance divided by the product of the two standard deviations. Using $30.66/(6.9210 \\times 4.9526)$ gives 0.8945 approximately. The positive result also matches the positive covariance.</p><p>Why A is incorrect. That value understates the relationship and does not follow from the stated denominator.</p><p>Why B is incorrect. 0.8001 is close to an $R^2$ value, not the correlation itself in this example.</p>",
+    "id": 42
   }
 ]

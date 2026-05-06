@@ -1,0 +1,275 @@
+[
+  {
+    "model": "ChatGPT",
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "stem": "In simple linear regression, the dependent variable is most accurately described as:",
+    "options": {
+      "A": "the variable whose variation is being explained",
+      "B": "the variable used to explain Y",
+      "C": "the residual from the fitted line"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The core rule is identification of variables. The dependent variable is the variable the analyst is trying to explain, so it is denoted by Y rather than the explanatory variable X or the residual.</p><p>Why B is incorrect. That describes the independent or explanatory variable.</p><p>Why C is incorrect. The residual is the difference between the observed and fitted value, not the variable being explained.</p>",
+    "id": 1
+  },
+  {
+    "model": "Grok",
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "stem": "Ordinary least squares chooses the fitted line by minimizing the:",
+    "options": {
+      "A": "sum of the residuals",
+      "B": "sum of squared residuals",
+      "C": "sum of squared fitted values"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The governing rule is the least-squares criterion. Ordinary least squares picks the intercept and slope that make the sum of squared residuals as small as possible.</p><p>Why A is incorrect. Residuals can offset each other, so the unsquared sum is not the fitting criterion.</p><p>Why C is incorrect. The fitted line is not chosen by shrinking fitted values; it is chosen by shrinking squared residuals.</p>",
+    "id": 2
+  },
+  {
+    "model": "Gemini",
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "stem": "If the estimated slope is 1.25, a one-unit increase in the independent variable is most likely associated with a:",
+    "options": {
+      "A": "1.25-unit decrease in the dependent variable",
+      "B": "1.00-unit increase in the dependent variable",
+      "C": "1.25-unit increase in the dependent variable"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The slope tells how much the dependent variable changes for a one-unit change in the independent variable. A positive slope of 1.25 means Y rises by 1.25 units when X rises by 1 unit.</p><p>Why A is incorrect. A decrease would require a negative slope.</p><p>Why B is incorrect. The slope is 1.25, not 1.00, so the change is larger than one unit.</p>",
+    "id": 3
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Estimation of the Simple Linear Regression Model",
+    "stem": "The intercept is most likely meaningful when:",
+    "options": {
+      "A": "a zero value of the independent variable is realistic in the setting being modeled",
+      "B": "the slope coefficient is positive",
+      "C": "the sample correlation is close to zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The rule is to ask whether the predicted value at X equal to zero makes real-world sense. The intercept is meaningful only when zero is a plausible value for the independent variable.</p><p>Why B is incorrect. The sign of the slope does not decide whether X equal to zero is economically meaningful.</p><p>Why C is incorrect. Correlation strength does not determine whether the intercept can be interpreted.</p>",
+    "id": 4
+  },
+  {
+    "model": "Grok",
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "stem": "A curved pattern in residuals plotted against the independent variable most likely suggests a violation of:",
+    "options": {
+      "A": "independence",
+      "B": "linearity",
+      "C": "normality"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The core diagnostic rule is that residuals should look random if the linear form is appropriate. A curved pattern means the fitted straight line is missing a nonlinear relation, so the linearity assumption is suspect.</p><p>Why A is incorrect. Independence concerns correlation across observations, not curvature against X.</p><p>Why C is incorrect. Normality concerns the distribution of residuals, not a curved residual pattern.</p>",
+    "id": 5
+  },
+  {
+    "model": "Gemini",
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "stem": "The assumption that residual variance is the same for all observations is called:",
+    "options": {
+      "A": "independence",
+      "B": "normality",
+      "C": "homoskedasticity"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The governing definition is constant residual variance across observations. That property is called homoskedasticity.</p><p>Why A is incorrect. Independence means observations or residuals are uncorrelated across observations.</p><p>Why B is incorrect. Normality refers to the shape of the residual distribution, not equality of residual variance.</p>",
+    "id": 6
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "stem": "A repeating seasonal pattern in residuals is most likely evidence against:",
+    "options": {
+      "A": "independence",
+      "B": "linearity",
+      "C": "the existence of an intercept"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The rule is that independent observations should not create correlated residual patterns over time. Seasonality means residuals repeat in a structured way, which signals autocorrelation and therefore a failure of independence.</p><p>Why B is incorrect. Curvature against X is the classic linearity warning; seasonality mainly points to dependence across observations.</p><p>Why C is incorrect. A residual pattern does not tell the analyst that the model must exclude an intercept.</p>",
+    "id": 7
+  },
+  {
+    "model": "Grok",
+    "topic": "Assumptions of the Simple Linear Regression Model",
+    "stem": "For large samples, the normality assumption is most accurately described as:",
+    "options": {
+      "A": "always more important than linearity",
+      "B": "sometimes relaxable because large-sample theory may preserve the validity of standard test statistics",
+      "C": "a requirement that X and Y must each be normally distributed"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The core rule is that normality is about residuals, and the text notes that in large samples the assumption may be relaxed because large-sample theory can support standard tests.</p><p>Why A is incorrect. Linearity remains fundamental; normality does not become automatically more important.</p><p>Why C is incorrect. The assumption is not that X and Y themselves must be normal.</p>",
+    "id": 8
+  },
+  {
+    "model": "Gemini",
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "stem": "In simple linear regression, the coefficient of determination is equal to the:",
+    "options": {
+      "A": "slope squared",
+      "B": "covariance divided by the variance of X",
+      "C": "square of the pairwise correlation"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The key identity in simple linear regression is that the coefficient of determination equals the square of the pairwise correlation between X and Y.</p><p>Why A is incorrect. Squaring the slope does not generally give the proportion of variation explained.</p><p>Why B is incorrect. That expression describes the slope, not the coefficient of determination.</p>",
+    "id": 9
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "stem": "The F-statistic in simple linear regression most likely tests whether:",
+    "options": {
+      "A": "the slope coefficient differs from zero",
+      "B": "the intercept equals the sample mean of Y",
+      "C": "the residuals sum exactly to zero"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The governing rule is the overall fit test. In simple linear regression, the F-statistic tests whether the slope is different from zero, which is equivalent to testing whether the model explains variation in Y.</p><p>Why B is incorrect. That is not the purpose of the regression F-test.</p><p>Why C is incorrect. Residuals summing to zero with an intercept is a construction property, not the F-test hypothesis.</p>",
+    "id": 10
+  },
+  {
+    "model": "Grok",
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "stem": "With n observations in simple linear regression, the t-test for the slope uses how many degrees of freedom?",
+    "options": {
+      "A": "$n - 1$",
+      "B": "$n - 2$",
+      "C": "$n$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The rule is that simple linear regression estimates two parameters, an intercept and a slope. That leaves $n - 2$ degrees of freedom for the slope t-test.</p><p>Why A is incorrect. $n - 1$ is the total degrees of freedom, not the regression error degrees of freedom used here.</p><p>Why C is incorrect. Using n ignores the loss of degrees of freedom from estimating the coefficients.</p>",
+    "id": 11
+  },
+  {
+    "model": "Gemini",
+    "topic": "Hypothesis Tests in the Simple Linear Regression Model",
+    "stem": "If covariance between X and Y is positive, the slope and the correlation are most likely:",
+    "options": {
+      "A": "both negative",
+      "B": "opposite in sign",
+      "C": "both positive"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The core rule is that both formulas have positive denominators, so the sign of each statistic comes from covariance. A positive covariance makes both the slope and the correlation positive.</p><p>Why A is incorrect. Negative signs would require negative covariance.</p><p>Why B is incorrect. Opposite signs are not possible when both denominators are positive.</p>",
+    "id": 12
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "stem": "In simple linear regression, mean square error is most accurately calculated as SSE divided by:",
+    "options": {
+      "A": "$n - 2$",
+      "B": "$n - 1$",
+      "C": "1"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The governing ANOVA rule is that error degrees of freedom equal $n - 2$ in simple linear regression. Mean square error therefore equals SSE divided by $n - 2$.</p><p>Why B is incorrect. $n - 1$ is used for total degrees of freedom, not error degrees of freedom.</p><p>Why C is incorrect. Dividing by 1 is used for regression mean square, not error mean square.</p>",
+    "id": 13
+  },
+  {
+    "model": "Grok",
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "stem": "The standard error of the estimate is equal to the:",
+    "options": {
+      "A": "square of MSE",
+      "B": "square root of MSE",
+      "C": "square root of SSR"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The key formula is direct: the standard error of the estimate is the square root of mean square error.</p><p>Why A is incorrect. Squaring MSE moves in the wrong direction and changes the units improperly.</p><p>Why C is incorrect. The standard error of the estimate is built from MSE, not from SSR.</p>",
+    "id": 14
+  },
+  {
+    "model": "Gemini",
+    "topic": "ANOVA and Standard Error of Estimate in Simple Linear Regression",
+    "stem": "A smaller standard error of the estimate most likely means that observed Y values are:",
+    "options": {
+      "A": "farther from the regression line",
+      "B": "unrelated to the independent variable",
+      "C": "closer to the regression line"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The interpretation rule is distance from the fitted line. A smaller standard error of the estimate means the observed dependent-variable values lie closer to the regression line on average.</p><p>Why A is incorrect. Farther observations would produce a larger, not smaller, standard error of the estimate.</p><p>Why B is incorrect. The statistic measures fit distance, not whether the variables are conceptually unrelated.</p>",
+    "id": 15
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "stem": "The predicted value of the dependent variable at a chosen forecasted X is most accurately found by:",
+    "options": {
+      "A": "substituting the forecasted X into the estimated regression equation",
+      "B": "adding the residual mean to X",
+      "C": "subtracting the sample mean of X from the intercept"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The core forecasting rule is to use the fitted equation. The analyst substitutes the forecasted independent variable into $\\hat{Y}_f = \\hat{b}_0 + \\hat{b}_1 X_f$.</p><p>Why B is incorrect. Residuals are not added to create the fitted prediction.</p><p>Why C is incorrect. The forecast comes from the full estimated line, not from shifting the intercept by the sample mean of X.</p>",
+    "id": 16
+  },
+  {
+    "model": "Grok",
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "stem": "The standard error of the forecast is smallest when the forecasted value of X is:",
+    "options": {
+      "A": "farthest from the sample mean of X",
+      "B": "closest to the sample mean of X",
+      "C": "equal to zero regardless of the sample"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The rule is that the forecast-uncertainty formula contains a squared distance term, $(X_f - \\bar{X})^2$. That term is smallest when the forecasted X is closest to the sample mean of X.</p><p>Why A is incorrect. Moving farther from the sample mean increases forecast uncertainty.</p><p>Why C is incorrect. Zero matters only if zero happens to be the sample mean; otherwise it has no special role.</p>",
+    "id": 17
+  },
+  {
+    "model": "Gemini",
+    "topic": "Prediction in the Simple Linear Regression Model",
+    "stem": "A prediction interval is built around the predicted value by adding and subtracting the:",
+    "options": {
+      "A": "standard error of the estimate only",
+      "B": "sample variance of Y",
+      "C": "critical t-value times the standard error of the forecast"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The interval rule is $\\hat{Y}_f \\pm t \\times s_f$. The critical t-value scales the standard error of the forecast to reflect the desired confidence level.</p><p>Why A is incorrect. The prediction interval uses the standard error of the forecast, not only the regression standard error.</p><p>Why B is incorrect. Sample variance of Y is not the direct interval adjustment term.</p>",
+    "id": 18
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Functional Forms for Simple Linear Regression",
+    "stem": "In a log-lin model, the dependent variable is most accurately described as:",
+    "options": {
+      "A": "logarithmic while the independent variable remains in level form",
+      "B": "linear while the independent variable is logarithmic",
+      "C": "linear together with a logarithmic error term"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>A is correct.</strong> The naming rule is literal. In a log-lin model, Y is in logarithmic form and X stays in level form.</p><p>Why B is incorrect. That describes a lin-log model, not a log-lin model.</p><p>Why C is incorrect. The transformation applies to the dependent variable, not specifically to the error term.</p>",
+    "id": 19
+  },
+  {
+    "model": "Grok",
+    "topic": "Functional Forms for Simple Linear Regression",
+    "stem": "In a lin-log model, the independent variable is most accurately described as:",
+    "options": {
+      "A": "squared",
+      "B": "logarithmic",
+      "C": "unchanged because only Y is transformed"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>B is correct.</strong> The naming rule again guides the answer. In a lin-log model, Y stays in level form while X is transformed by the natural logarithm.</p><p>Why A is incorrect. Squaring is not the defining transformation in a lin-log model.</p><p>Why C is incorrect. In a lin-log model, it is X, not Y, that is log-transformed.</p>",
+    "id": 20
+  },
+  {
+    "model": "Gemini",
+    "topic": "Functional Forms for Simple Linear Regression",
+    "stem": "In a log-log model, the slope coefficient most likely measures the:",
+    "options": {
+      "A": "absolute change in Y for an absolute change in X",
+      "B": "absolute change in Y for a relative change in X",
+      "C": "relative change in Y for a relative change in X"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core concept</h3><p><strong>C is correct.</strong> The core interpretation is elasticity-like. With both variables in logs, the slope measures the relative change in Y for a relative change in X.</p><p>Why A is incorrect. Absolute-for-absolute interpretation belongs to an untransformed lin-lin model.</p><p>Why B is incorrect. Absolute-for-relative interpretation belongs to a lin-log model, not a log-log model.</p>",
+    "id": 21
+  }
+]

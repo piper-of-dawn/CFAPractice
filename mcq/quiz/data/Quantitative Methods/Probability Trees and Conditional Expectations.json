@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Consider the following:\nI. The expected value of a discrete random variable is the probability-weighted average of its possible outcomes.\nII. Variance is measured in the same units as the random variable.\nIII. If variance is zero, the outcome is certain rather than random.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is to test each statement against the definitions of expected value and variance. Statement I is correct because expected value is the probability-weighted average of outcomes. Statement II is incorrect because variance is measured in squared units, not the original units. Statement III is correct because zero variance means there is no dispersion, so the outcome is certain. Therefore, only two statements qualify.</p><p>Why option A is incorrect. Option A would be correct only if either Statement I or Statement III failed, but both match the governing definitions.</p><p>Why option C is incorrect. All three do not qualify because Statement II confuses variance with standard deviation.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Consider the following:\nI. A sample mean is an equally weighted average of observed outcomes.\nII. Expected value is a historical average of realized outcomes rather than a forecast or population mean.\nIII. Standard deviation is the expected value of squared deviations from expected value.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The decision rule is whether each statement matches the curriculum’s distinction between expected value, variance, and standard deviation. Statement I is correct because the sample mean is an equally weighted average of observations. Statement II is incorrect because expected value is described as a forecast or population mean, not a historical average of realized observations. Statement III is incorrect because variance, not standard deviation, is the expected value of squared deviations. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two statements would qualify only if expected value were historical or if standard deviation equaled expected squared deviation, and neither is true.</p><p>Why option C is incorrect. All three cannot qualify because Statements II and III both contradict the definitions.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Consider the following:\nI. In BankCorp’s EPS tree, the unconditional probability of EPS = USD 2.60 equals 0.60 × 0.25.\nII. If interest rates are stable, conditional expected EPS is USD 2.4875.\nIII. The total probability rule for expected value weights each conditional expected value by the probability of its scenario.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is to separate unconditional probabilities, conditional expected values, and total-probability weighting. Statement I is correct because the terminal probability is scenario probability times conditional branch probability, or 0.60 × 0.25 = 0.15. Statement II is incorrect because USD 2.4875 is the conditional expected EPS under declining rates; stable rates imply USD 2.12. Statement III is correct because unconditional expected value is the probability-weighted average of scenario-specific expected values. So exactly two statements qualify.</p><p>Why option A is incorrect. More than one statement is accurate because Statements I and III both follow directly from the tree structure.</p><p>Why option C is incorrect. All three do not qualify because Statement II assigns the wrong scenario-specific expectation.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Consider the following:\nI. A probability tree is described as a means of illustrating the results of two or more independent events.\nII. Conditional expected value uses unconditional outcome probabilities within each scenario.\nIII. Unconditional variance is obtained simply by probability-weighting the conditional variances across scenarios.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The governing rule is to stay with what the module states directly. Statement I is correct because the overview describes a probability tree that way. Statement II is incorrect because conditional expected value uses conditional probabilities given the scenario. Statement III is incorrect because the module explicitly says the relationship between unconditional variance and conditional variance is relatively advanced and does not state that simple weighting alone gives unconditional variance. Therefore, only one statement qualifies.</p><p>Why option B is incorrect. Two statements cannot qualify because Statements II and III both go beyond or against the stated rule.</p><p>Why option C is incorrect. All three are not accurate because only Statement I matches the module’s treatment.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Consider the following:\nI. In the operating-cost tree, the unconditional probability of 125 branches is 0.80 × 0.50.\nII. In the same tree, the unconditional probability of 70 branches is 0.20 × 0.15.\nIII. Expected operating costs under low growth equal 0.85(USD 64.50 million) + 0.15(USD 58.00 million).\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is to read each terminal branch as scenario probability times conditional branch probability, and each scenario expectation as the weighted average of outcomes within that scenario. Statement I is correct because 0.80 × 0.50 = 0.40. Statement II is correct because 0.20 × 0.15 = 0.03. Statement III is correct because low-growth expected operating costs are computed from the two low-growth branch outcomes and their conditional probabilities. All three statements satisfy the rule.</p><p>Why option A is incorrect. More than one statement is accurate, so counting only one would understate the valid relationships in the tree.</p><p>Why option B is incorrect. Exactly two do not qualify because each of the three statements follows directly from the operating-cost example.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Consider the following:\nI. Bayes’ formula reverses the direction of the conditioning information.\nII. A posterior probability reflects beliefs after new information arrives.\nIII. In Bayes’ formula, the denominator is the prior probability of the event being updated.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is to distinguish prior probabilities, posterior probabilities, and the probability that appears in the denominator of Bayes’ formula. Statement I is correct because Bayes works in reverse by inferring the probability of the event from the observed information. Statement II is correct because posterior probabilities are updated beliefs after the information arrives. Statement III is incorrect because the denominator is the unconditional probability of the new information, not the prior probability of the event. Thus, only two statements are accurate.</p><p>Why option A is incorrect. More than one statement qualifies because both Statements I and II are direct descriptions of Bayes’ updating process.</p><p>Why option C is incorrect. All three do not qualify because Statement III misidentifies the denominator.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Consider the following:\nI. In the tech/non-tech example, P(R > 10%) equals 0.60(0.20) + 0.25(0.80).\nII. In the same example, P(tech | R > 10%) must equal the prior probability P(tech) because the return event is already observed.\nIII. When updated probabilities concern a mutually exclusive and exhaustive set of events, they should sum to 1.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The decision rule is to apply total probability first and then Bayes’ updating. Statement I is correct because the unconditional probability of a return greater than 10% is the weighted average across tech and non-tech firms. Statement II is incorrect because observing the return changes the probability of firm type from the prior 0.20 to the posterior 0.375. Statement III is correct because probabilities over a mutually exclusive and exhaustive set must sum to 1 whether they are prior or posterior. Therefore, only two statements qualify.</p><p>Why option A is incorrect. More than one statement is accurate because Statements I and III both follow from the rules for total probability and complete event sets.</p><p>Why option C is incorrect. All three do not qualify because Statement II ignores the effect of new information on the prior.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "An analyst is comparing expected value, variance, and standard deviation for a discrete random variable. Which statement is least likely to be accurate?",
+    "options": {
+      "A": "Expected value is a probability-weighted average of possible outcomes.",
+      "B": "Standard deviation is easier to interpret than variance because it is measured in the same units as the variable.",
+      "C": "Variance can be interpreted directly in the variable’s original units, so it is usually more intuitive than standard deviation."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The defining criterion is whether the statement respects the measurement units of each risk measure. Variance is expressed in squared units, so it is not directly interpreted in the variable’s original units. Standard deviation is the positive square root of variance, which returns the measure to the original units and makes it easier to interpret. Therefore, the claim that variance is usually more intuitive is the least accurate.</p><p>Why option A is incorrect. This statement is accurate because expected value is defined as the probability-weighted average of possible outcomes.</p><p>Why option B is incorrect. This statement is also accurate because standard deviation, unlike variance, is measured in the same units as the variable.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Which statement about expected value versus sample mean is most likely to be accurate?",
+    "options": {
+      "A": "Expected value is an equally weighted average of realized observations from a sample.",
+      "B": "Sample mean summarizes observed data, whereas expected value represents a forecast or population mean.",
+      "C": "Expected value and sample mean differ only when probabilities fail to sum to 1."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The governing distinction is forecast versus historical observation. Expected value summarizes a probability distribution and serves as a forecast or population mean. The sample mean summarizes a particular set of observed outcomes as an equally weighted average. Because these are different objects, option B is the accurate statement.</p><p>Why option A is incorrect. This describes the sample mean, not expected value.</p><p>Why option C is incorrect. The difference is conceptual, not a special case driven only by invalid probabilities.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "If BankCorp learns that interest rates will be stable in the current fiscal year, its EPS estimate is most likely to be revised to:",
+    "options": {
+      "A": "USD 2.12",
+      "B": "USD 2.34",
+      "C": "USD 2.4875"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The decision rule is to replace the unconditional forecast with the conditional expected value once the relevant scenario is known. Under stable interest rates, EPS takes values USD 2.20 and USD 2.00 with conditional probabilities 0.60 and 0.40. The conditional expectation is 0.60(USD 2.20) + 0.40(USD 2.00) = USD 2.12. That becomes the revised EPS estimate.</p><p>Why option B is incorrect. USD 2.34 is the unconditional expected EPS before learning which interest-rate scenario occurs.</p><p>Why option C is incorrect. USD 2.4875 is the conditional expected EPS under declining interest rates, not stable rates.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "An analyst uses mutually exclusive and exhaustive scenarios to forecast operating costs. Which statement is most likely to be accurate?",
+    "options": {
+      "A": "Unconditional expected operating costs must equal the simple average of the scenario-specific expected operating costs.",
+      "B": "Unconditional expected operating costs equal the probability-weighted average of the scenario-specific expected operating costs.",
+      "C": "Once conditional expected values are known, scenario probabilities are no longer needed."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining criterion is the total probability rule for expected value. When scenarios are mutually exclusive and exhaustive, unconditional expected value equals the sum of each conditional expected value multiplied by the probability of its scenario. The scenario probabilities therefore remain essential and the average is weighted, not simple. That makes option B the accurate statement.</p><p>Why option A is incorrect. A simple average ignores that scenarios can have different probabilities.</p><p>Why option C is incorrect. Conditional expectations alone are not enough to recover the unconditional expected value; they must be weighted by scenario probabilities.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "In the tech/non-tech index example, observing that a firm earned a return greater than 10% makes it most likely that the probability the firm is a tech company:",
+    "options": {
+      "A": "falls from 0.20 to 0.05",
+      "B": "remains at 0.20 because the firm's type is fixed",
+      "C": "rises from 0.20 to 0.375"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The criterion is whether the observation changes the prior probability through Bayes’ formula. The prior probability of a tech firm is 100/500 = 0.20. Among the 160 firms with returns greater than 10%, 60 are tech firms, so the updated probability is 60/160 = 0.375. The observation therefore increases the probability of the firm being tech.</p><p>Why option A is incorrect. The update does not lower the probability; it raises it because high returns are relatively more common among tech firms in the example.</p><p>Why option B is incorrect. The firm’s type is fixed, but the analyst’s probability about that type changes when new information is observed.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "In the DriveMed example, the posterior probability that EPS exceeded consensus is most likely higher than the prior probability because:",
+    "options": {
+      "A": "the prior probability of exceeding consensus is the largest of the three priors",
+      "B": "the likelihood of expansion given an EPS beat exceeds the unconditional probability of expansion",
+      "C": "Bayes’ formula always increases the probability of the most favorable outcome"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining criterion is the Bayes multiplier: posterior equals prior times the ratio of likelihood to the unconditional probability of the information. Here, P(expands | EPS exceeded consensus) = 0.75 and P(expands) = 0.41, so the ratio exceeds 1. That pushes the prior probability of 0.45 upward to the posterior 0.823. Option B captures that mechanism.</p><p>Why option A is incorrect. A larger prior alone does not guarantee an increase; the direction of the update depends on the likelihood ratio.</p><p>Why option C is incorrect. Bayes’ formula does not always reward the most favorable outcome; it can raise or lower a prior depending on the information.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Suppose an analyst assigns equal prior probabilities to EPS exceeding, meeting, and falling short of consensus. Conditional on DriveMed expanding, the updated probability that EPS exceeded consensus is least likely to be:",
+    "options": {
+      "A": "0.75",
+      "B": "identical to P(DriveMed expands | EPS exceeded consensus)",
+      "C": "greater than P(DriveMed expands | EPS exceeded consensus)"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The governing rule is the diffuse-prior case in Bayes’ formula. When all priors are equal, the posterior probability of an event given the information equals the probability of the information given the event. Because P(DriveMed expands | EPS exceeded consensus) is 0.75, the updated probability is also 0.75 and cannot be greater than 0.75 on these facts. Therefore, option C is the least accurate statement.</p><p>Why option A is incorrect. This value is exactly the updated probability under equal priors.</p><p>Why option B is incorrect. Under diffuse priors, the posterior equals the corresponding likelihood, so this statement is accurate.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Assertion (A): Standard deviation is the positive square root of variance.\nReason (R): Variance is measured in the same units as the random variable.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: measurement units</h3><p><strong>C is correct.</strong> The assertion is true because standard deviation is defined as the positive square root of variance. The reason is false because variance is measured in squared units of the random variable, not the original units. That is why standard deviation is often easier to interpret.</p><p>Why option A is incorrect. The reason is not true, so it cannot correctly explain the assertion.</p><p>Why option B is incorrect. Both statements are not true because the reason misstates the units of variance.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Assertion (A): If variance of a random variable is zero, the outcome is certain rather than dispersed.\nReason (R): Variance is the probability-weighted average of squared deviations from expected value.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: zero-dispersion rule</h3><p><strong>A is correct.</strong> The assertion is true because zero variance means there is no dispersion around expected value. The reason is also true because variance is built from squared deviations from expected value, weighted by probabilities. If that weighted average is zero, the deviations themselves must be zero, so the outcome is certain. The reason therefore explains the assertion.</p><p>Why option B is incorrect. The reason does more than accompany the assertion; it explains why zero variance implies certainty.</p><p>Why option D is incorrect. The assertion is not false because the absence of dispersion is exactly what variance of zero means.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "Assertion (A): The sample mean and expected value are identical concepts because both summarize a central value.\nReason (R): The sample mean is an equally weighted average of a particular set of observations.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: forecast versus historical summary</h3><p><strong>D is correct.</strong> The assertion is false because the module distinguishes expected value from sample mean as forecast or population mean versus historical or sample average. The reason is true because the sample mean is indeed an equally weighted average of observed outcomes. So the reason is true while the assertion is false.</p><p>Why option A is incorrect. The assertion is not true; the concepts are related but not identical.</p><p>Why option C is incorrect. The reason is not false because it states the defining feature of the sample mean.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Assertion (A): Conditional expected value revises a forecast when new information identifies the relevant scenario.\nReason (R): In the BankCorp EPS example, learning that rates are stable changes the estimate from USD 2.34 to USD 2.12.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: scenario conditioning</h3><p><strong>B is correct.</strong> The assertion is true because conditional expected value is the tool used when the analyst learns which scenario applies. The reason is also true because the BankCorp example revises the unconditional EPS forecast of USD 2.34 to the stable-rate conditional expectation of USD 2.12. But the reason is an illustration of the rule, not the explanation of why the rule is true.</p><p>Why option A is incorrect. The reason supports the assertion with an example, but it does not explain the general principle itself.</p><p>Why option D is incorrect. The assertion is not false; it states the core purpose of conditional expectation.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Assertion (A): The unconditional probability of a terminal outcome in a probability tree is found by multiplying the probability of the scenario by the conditional probability of the outcome within that scenario.\nReason (R): In the operating-cost example, the probability of 80 branches equals 0.20 × 0.85 = 0.17.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: branch-probability rule</h3><p><strong>A is correct.</strong> The assertion is true because a terminal probability combines the chance of reaching the scenario node with the conditional probability of the branch from that node. The reason is also true: low growth has probability 0.20 and, within that scenario, 80 branches has conditional probability 0.85, giving 0.17 unconditionally. This direct calculation demonstrates exactly why the branch-probability rule works.</p><p>Why option B is incorrect. The reason is not merely related; it is a direct application of the stated rule.</p><p>Why option C is incorrect. The reason is numerically correct, so it is not false.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Assertion (A): Bayes’ formula updates the probability of an event after new information arrives.\nReason (R): The denominator in Bayes’ formula is the unconditional probability of the new information.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: updating mechanism</h3><p><strong>B is correct.</strong> The assertion is true because Bayes’ formula is introduced as a rational method for adjusting probabilities when new information appears. The reason is also true because the denominator is the unconditional probability of that information. But naming the denominator alone does not explain the full updating logic, which also requires the likelihood and the prior probability. So both are true, but the reason is not the complete explanation.</p><p>Why option A is incorrect. The reason states one ingredient of Bayes’ formula, not the full causal explanation of the updating rule.</p><p>Why option D is incorrect. The assertion is not false because updating after new information is exactly what Bayes’ formula is for.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Assertion (A): In the tech/non-tech example, observing R > 10% lowers the probability that a firm is a tech company from 0.20 to 0.125.\nReason (R): In that example, P(R > 10%) equals 0.32.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: posterior versus prior</h3><p><strong>D is correct.</strong> The assertion is false because the updated probability of a firm being tech, given a return greater than 10%, is 0.375, not 0.125. The reason is true because the unconditional probability of a return greater than 10% is 0.60(0.20) + 0.25(0.80) = 0.32. Therefore, the reason is true while the assertion is false.</p><p>Why option A is incorrect. The assertion fails numerically, so both statements cannot be true together.</p><p>Why option C is incorrect. The reason is not false; 0.32 is the correct denominator for the update.</p>"
+  },
+  {
+    "id": 22,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "A company’s sales have probabilities 0.05, 0.70, and 0.25 for sales of USD 70 million, USD 40 million, and USD 25 million, respectively. The standard deviation of sales is closest to?",
+    "options": {
+      "A": "USD 9.81 million",
+      "B": "USD 12.20 million",
+      "C": "USD 37.75 million"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: weighted-dispersion calculation</h3><p><strong>A is correct.</strong> First compute expected sales: 0.05(70) + 0.70(40) + 0.25(25) = 37.75. Then compute variance as 0.05(70 - 37.75)^2 + 0.70(40 - 37.75)^2 + 0.25(25 - 37.75)^2 = 96.18. Standard deviation is the positive square root of variance, so the answer is about 9.81 million.</p><p>Why the other options are wrong. USD 12.20 million does not come from the stated probability-weighted variance calculation, and USD 37.75 million is the expected value of sales, not a dispersion measure.</p>"
+  },
+  {
+    "id": 23,
+    "topic": "Expected Value, Variance, and Standard Deviation",
+    "stem": "BankCorp’s EPS takes values USD 2.60, USD 2.45, USD 2.20, and USD 2.00 with probabilities 0.15, 0.45, 0.24, and 0.16, respectively. The standard deviation of EPS is closest to?",
+    "options": {
+      "A": "0.0388",
+      "B": "0.1969",
+      "C": "2.3405"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: expected value before risk</h3><p><strong>B is correct.</strong> The order is expected value, then variance, then standard deviation. Expected EPS is 0.15(2.60) + 0.45(2.45) + 0.24(2.20) + 0.16(2.00) = 2.3405. Variance is the probability-weighted average of squared deviations from 2.3405, which equals about 0.038785. Taking the positive square root gives a standard deviation of about 0.1969.</p><p>Why the other options are wrong. Option A is the variance, not the standard deviation, and Option C is the expected value, not a risk measure.</p>"
+  },
+  {
+    "id": 24,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Scenario 1 has probability 0.75 and recoveries of USD 0.90 and USD 0.80 with conditional probabilities 0.45 and 0.55. Scenario 2 has probability 0.25 and recoveries of USD 0.50 and USD 0.40 with conditional probabilities 0.85 and 0.15. The expected recovery per USD 1 principal is closest to?",
+    "options": {
+      "A": "USD 0.845",
+      "B": "USD 0.755",
+      "C": "USD 0.485"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: conditional-first architecture</h3><p><strong>B is correct.</strong> Compute each scenario-specific expectation first: E(recovery | Scenario 1) = 0.45(0.90) + 0.55(0.80) = 0.845 and E(recovery | Scenario 2) = 0.85(0.50) + 0.15(0.40) = 0.485. Then apply the total probability rule for expected value: 0.75(0.845) + 0.25(0.485) = 0.755. So the expected recovery per USD 1 principal is USD 0.755.</p><p>Why the other options are wrong. Option A is only the conditional expectation under Scenario 1, and Option C is only the conditional expectation under Scenario 2.</p>"
+  },
+  {
+    "id": 25,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "BankCorp’s operating-cost model is Y = 12.5 + 0.65X, where Y is in USD millions and X is the number of branch offices. High growth has probability 0.80 and leads to 125 or 100 branches with conditional probabilities 0.50 and 0.50. Low growth has probability 0.20 and leads to 80 or 70 branches with conditional probabilities 0.85 and 0.15. Expected operating costs are closest to?",
+    "options": {
+      "A": "USD 63.525 million",
+      "B": "USD 81.205 million",
+      "C": "USD 85.625 million"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: tree to unconditional expectation</h3><p><strong>B is correct.</strong> First convert each branch count into operating costs: 125 gives 93.75, 100 gives 77.50, 80 gives 64.50, and 70 gives 58.00. Then compute scenario expectations: high growth gives 0.50(93.75) + 0.50(77.50) = 85.625, and low growth gives 0.85(64.50) + 0.15(58.00) = 63.525. Finally, expected operating costs are 0.80(85.625) + 0.20(63.525) = 81.205 million.</p><p>Why the other options are wrong. Option A is the low-growth conditional expectation, and Option C is the high-growth conditional expectation, not the unconditional expected operating costs.</p>"
+  },
+  {
+    "id": 26,
+    "topic": "Probability Trees and Conditional Expectations",
+    "stem": "Under stable interest rates, BankCorp’s EPS is USD 2.20 with probability 0.60 and USD 2.00 with probability 0.40. The conditional variance of EPS under stable interest rates is closest to?",
+    "options": {
+      "A": "0.004219",
+      "B": "0.0096",
+      "C": "0.038785"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: scenario-specific risk</h3><p><strong>B is correct.</strong> Start with the conditional expectation under stable rates: 0.60(2.20) + 0.40(2.00) = 2.12. Then compute the conditional variance as 0.60(2.20 - 2.12)^2 + 0.40(2.00 - 2.12)^2 = 0.0096. Because the question asks for risk within the stable-rate scenario, the correct measure is the conditional variance, not the unconditional variance.</p><p>Why the other options are wrong. Option A is the conditional variance under declining interest rates, and Option C is the unconditional variance of EPS from the full distribution.</p>"
+  },
+  {
+    "id": 27,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "Jake Bronson estimates P(timely repayment) = 0.90, P(good credit report) = 0.80, and P(good credit report | timely repayment) = 0.85. The probability that an applicant with a good credit report repays in a timely manner is closest to?",
+    "options": {
+      "A": "0.720",
+      "B": "0.944",
+      "C": "0.956"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: inverse probability update</h3><p><strong>C is correct.</strong> Bayes’ formula gives P(timely repayment | good credit report) = [P(good credit report | timely repayment) / P(good credit report)] × P(timely repayment). Substituting the values gives (0.85 / 0.80) × 0.90 = 0.95625. The updated probability is therefore about 0.956.</p><p>Why the other options are wrong. Option A omits the Bayes adjustment and understates the posterior, while Option B is close numerically but does not match the exact calculation from the stated inputs.</p>"
+  },
+  {
+    "id": 28,
+    "topic": "Bayes' Formula and Updating Probabilities",
+    "stem": "A distressed-credit test has P(non-survivor) = 0.40, P(pass test) = 0.55, and P(pass test | survivor) = 0.85. The probability that a company is a survivor given that it passes the test is closest to?",
+    "options": {
+      "A": "0.727",
+      "B": "0.800",
+      "C": "0.927"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: posterior from pass information</h3><p><strong>C is correct.</strong> First convert the prior on non-survivor into a prior on survivor: P(survivor) = 1 - 0.40 = 0.60. Then apply Bayes’ formula: P(survivor | pass test) = [P(pass test | survivor) / P(pass test)] × P(survivor) = (0.85 / 0.55) × 0.60 = 0.927273. So passing the test raises the assessed probability of survival to about 0.927.</p><p>Why the other options are wrong. Option A does not reflect the full Bayes update, and Option B is materially below the posterior implied by the stated pass likelihood and priors.</p>"
+  }
+]

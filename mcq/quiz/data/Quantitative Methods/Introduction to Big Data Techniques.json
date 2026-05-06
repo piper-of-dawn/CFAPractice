@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "topic": "Fintech and Quantitative Investment Analysis",
+    "stem": "Consider the following:\nI. Growing amounts of traditional and alternative data can be integrated into a portfolio manager's investment decision-making process.\nII. AI-based analytical tools may be better suited than traditional methods to identify complex, non-linear relationships in extremely large datasets.\nIII. The module identifies analysis of large datasets and advanced analytical tools as areas of fintech development directly relevant to quantitative analysis.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement matches the module's description of fintech developments that matter for gathering and analyzing financial data. Statement I qualifies because the CFA Curriculum says traditional and alternative data can be integrated into investment decision making. Statement II qualifies because AI tools may identify complex, non-linear relationships in extremely large datasets better than traditional methods. Statement III qualifies because those two areas are the specific developments highlighted as directly relevant to quantitative analysis. All three satisfy the rule.</p><p>Why option A is incorrect. Only one statement would qualify only if two of the listed fintech applications were misstated, and the curriculum supports all three.</p><p>Why option B is incorrect. Two is too low because Statement III accurately summarizes the two directly relevant areas named in the module.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Fintech Evolution",
+    "stem": "Consider the following:\nI. Early forms of fintech included data processing and the automation of routine tasks.\nII. Systems executing decisions according to specified rules and instructions followed those early forms.\nIII. In this module, fintech refers only to companies that develop new technologies and not to the innovation itself.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is whether each statement follows the module's description of fintech and its evolution. Statement I qualifies because the CFA Curriculum says early fintech included data processing and automating routine tasks. Statement II also qualifies because rule-based execution systems followed those early forms. Statement III does not qualify because the module says fintech refers to technology-driven innovation in financial services, and in common usage it can also refer to the companies and business sector, not only to the companies. Exactly two statements satisfy the rule.</p><p>Why option A is incorrect. One is too low because both Statements I and II are stated directly in the module.</p><p>Why option C is incorrect. All three cannot qualify because Statement III narrows fintech too much and excludes the innovation itself.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Big Data Characteristics",
+    "stem": "Consider the following:\nI. Volume refers to datasets containing many millions or even billions of data points.\nII. Variety refers to the use of structured, semistructured, and unstructured formats.\nIII. Velocity refers to the credibility and reliability of data sources when predictions are made.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is whether each statement matches the definitions of the Big Data characteristics. Statement I qualifies because volume concerns very large amounts of data. Statement II qualifies because variety concerns different data formats, including structured, semistructured, and unstructured data. Statement III does not qualify because credibility and reliability belong to veracity, the fourth V relevant when Big Data is used for inference or prediction. Exactly two statements satisfy the rule.</p><p>Why option A is incorrect. One is too low because Statements I and II both use the correct definitions.</p><p>Why option C is incorrect. All three cannot qualify because Statement III confuses veracity with velocity.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Sources of Big Data",
+    "stem": "Consider the following:\nI. Traditional data include trade prices and volumes generated in financial markets.\nII. Alternative data arise only from governments and companies.\nIII. The Internet of Things refers to corporate exhaust produced by supply chains.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The rule is whether each statement reflects the module's classification of data sources. Statement I qualifies because the CFA Curriculum lists market trade prices and volumes as traditional data. Statement II does not qualify because alternative data also arise from individuals, sensors, and electronic information sources, not only governments and companies. Statement III does not qualify because the Internet of Things refers to networks of physical devices, appliances, vehicles, and buildings embedded with sensors and software, not to corporate exhaust. Only one statement satisfies the rule.</p><p>Why option B is incorrect. Two is too high because both Statement II and Statement III misclassify the underlying sources.</p><p>Why option C is incorrect. All three cannot qualify because the reading distinguishes IoT and alternative data much more carefully than Statements II and III do.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Machine Learning Types",
+    "stem": "Consider the following:\nI. In supervised learning, inputs and outputs are labeled for the algorithm.\nII. In unsupervised learning, the algorithm is given data and seeks to describe the data and their structure.\nIII. Deep learning can use supervised or unsupervised machine learning approaches.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement matches the module's distinctions among machine learning classes. Statement I qualifies because supervised learning uses labeled inputs and outputs. Statement II qualifies because unsupervised learning is given only data and seeks to describe structure. Statement III qualifies because the CFA Curriculum states that deep learning can use supervised or unsupervised approaches. All three satisfy the rule.</p><p>Why option A is incorrect. Only one is far too low because each statement follows the module's definitions closely.</p><p>Why option B is incorrect. Two is also too low because Statement III is directly supported by the deep learning discussion.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Data Processing Methods",
+    "stem": "Consider the following:\nI. Low-latency systems are essential for automated trading applications that act on real-time prices and market events.\nII. Search refers to how data move from the source or storage location to the analytical tool.\nIII. Data visualization for non-traditional unstructured data can include heat maps, tree diagrams, and network graphs.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The rule is whether each statement matches the module's definitions of processing and visualization methods. Statement I qualifies because low-latency systems communicate high volumes of data with minimal delay and are essential in automated trading that depends on real-time information. Statement II does not qualify because movement from source or storage to the analytical tool is transfer, not search. Statement III qualifies because the CFA Curriculum lists heat maps, tree diagrams, and network graphs as visualization solutions for complex data. Exactly two statements satisfy the rule.</p><p>Why option A is incorrect. One is too low because Statements I and III are both supported directly by the module.</p><p>Why option C is incorrect. All three cannot qualify because Statement II swaps the meanings of search and transfer.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Text Analytics and NLP",
+    "stem": "Consider the following:\nI. Text analytics includes automated information retrieval from different, unrelated sources to aid decision making.\nII. NLP can detect shifts in analyst sentiment before a recommendation change by evaluating nuanced commentary.\nIII. NLP can analyze policy maker communications to identify trending or waning topics of interest.\nHow many of the above statements are most accurate?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The rule is whether each statement reflects the module's applications of text analytics and NLP. Statement I qualifies because text analytics includes automated retrieval across different sources. Statement II qualifies because the CFA Curriculum explains that NLP can tag shifts in sentiment from nuanced analyst commentary before formal recommendation changes. Statement III qualifies because NLP can analyze communications from policy makers to infer trending or waning topics. All three satisfy the rule.</p><p>Why option A is incorrect. Only one is too low because the module supports each of the three listed NLP and text analytics uses.</p><p>Why option B is incorrect. Two is too low because Statement III is also stated as a valid NLP application.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Fintech and Alternative Data",
+    "stem": "Assertion (A): Fintech is directly relevant to quantitative investment analysis partly because massive alternative datasets can be integrated into the investment decision-making process.\nReason (R): Non-traditional sources such as social media and sensor networks can help generate alpha and reduce losses when analyzed alongside other data.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing relation</h3><p><strong>A is correct.</strong> The governing relation is whether the reason explains why fintech matters for quantitative analysis. The assertion is true because the module says large traditional and alternative datasets can be integrated into portfolio decision making. The reason is also true because non-traditional sources such as social media and sensor networks can provide insights that help generate alpha and reduce losses. That is exactly why the integration of such data makes fintech directly relevant.</p><p>Why option B is incorrect. The reason is not merely adjacent; it is the mechanism that explains the assertion.</p><p>Why options C and D are incorrect. Neither statement is false under the module's description of alternative data and its investment use.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Definition of Fintech",
+    "stem": "Assertion (A): In this module, fintech excludes innovation in the design and delivery of financial services and refers only to the business sector of firms that build financial technology.\nReason (R): In common usage, fintech can also refer to companies involved in developing new technologies and to the business sector that includes such companies.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: definition boundary</h3><p><strong>D is correct.</strong> The governing boundary is the module's definition of fintech. The assertion is false because the CFA Curriculum defines fintech for this reading as technology-driven innovation in the design and delivery of financial services and products. The reason is true because the reading separately says that, in common usage, fintech can also refer to the companies and business sector involved in such technologies.</p><p>Why option A is incorrect. The assertion is not true under the stated definition, so the pair cannot support option A.</p><p>Why options B and C are incorrect. Option B fails because the assertion is false, and option C fails because the reason is not false.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Big Data Veracity",
+    "stem": "Assertion (A): When Big Data is used for inference or prediction, veracity becomes an important consideration.\nReason (R): Veracity refers to the speed and frequency with which data are recorded and transmitted.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The rule is to match each statement to the correct Big Data characteristic. The assertion is true because the CFA Curriculum adds veracity as a fourth V when Big Data is used for inference or prediction. The reason is false because speed and frequency belong to velocity. Veracity instead concerns the credibility and reliability of data sources.</p><p>Why option A is incorrect. The reason misstates the definition of veracity, so it cannot support the assertion.</p><p>Why options B and D are incorrect. Option B fails because the reason is false, and option D fails because the assertion is not false.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Deep Learning",
+    "stem": "Assertion (A): Deep learning can use supervised or unsupervised machine learning approaches.\nReason (R): Neural networks have existed since 1958 and have been used in applications such as forecasting and pattern recognition.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The rule is to determine both truth and explanatory fit. The assertion is true because the module explicitly states that deep learning can use supervised or unsupervised approaches. The reason is also true because the reading notes the long history and applications of neural networks. But that historical fact does not explain why deep learning can operate under either learning approach, so the explanation link is missing.</p><p>Why option A is incorrect. Although both statements are true, the reason does not provide the causal explanation required.</p><p>Why options C and D are incorrect. Option C fails because the reason is not false, and option D fails because the assertion is not false.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Low-Latency Systems",
+    "stem": "Assertion (A): Low-latency systems are essential for automated trading applications that make decisions based on real-time prices and market events.\nReason (R): Low-latency systems operate on networks that communicate high volumes of data with minimal delay.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: governing relation</h3><p><strong>A is correct.</strong> The governing relation is whether the reason explains the operational need described in the assertion. The assertion is true because automated trading acting on real-time prices requires fast access to data. The reason is true because low-latency systems are defined by high-volume communication with minimal delay. That definition directly explains why such systems are essential in real-time trading applications.</p><p>Why option B is incorrect. The reason is not merely related; it is the direct explanation for the assertion.</p><p>Why options C and D are incorrect. Neither statement is false under the module's data capture discussion.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "NLP in Compliance",
+    "stem": "Assertion (A): NLP can be used in compliance functions to review employee voice and electronic communications for adherence to company or regulatory policy.\nReason (R): NLP lies outside text analytics and focuses only on structured numerical data.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: scope rule</h3><p><strong>C is correct.</strong> The rule is to test whether each statement fits the stated scope of NLP. The assertion is true because the module gives compliance review of voice and electronic communications as a direct application of NLP. The reason is false because NLP is described as an important application within the broader field of text analytics and is used on human language, not only structured numerical data.</p><p>Why option A is incorrect. The reason contradicts the reading's definition of NLP, so it cannot explain the assertion.</p><p>Why options B and D are incorrect. Option B fails because the reason is false, and option D fails because the assertion is not false.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Analyst Commentary and NLP",
+    "stem": "Assertion (A): NLP can detect shifts in analyst sentiment before a recommendation change.\nReason (R): NLP includes tasks such as translation, speech recognition, text mining, sentiment analysis, and topic analysis.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: explanatory fit</h3><p><strong>B is correct.</strong> The governing test is whether the reason explains the specific claim in the assertion. The assertion is true because the reading says analysts may change nuanced commentary before they change buy, hold, or sell recommendations, and NLP can tag those sentiment shifts. The reason is also true because those are listed NLP tasks. But that list of tasks does not itself explain the timing advantage described in the assertion, so the explanation is incomplete.</p><p>Why option A is incorrect. Both statements are true, but the reason does not directly resolve why sentiment shifts may be detected before recommendation changes.</p><p>Why options C and D are incorrect. Option C fails because the reason is not false, and option D fails because the assertion is not false.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Directly Relevant Fintech Developments",
+    "stem": "Which of the following is most likely an area of fintech development that the module identifies as directly relevant to quantitative investment analysis?",
+    "options": {
+      "A": "Integrating massive traditional and alternative datasets into investment decision making",
+      "B": "Replacing public securities markets with peer-to-peer consumer lending platforms",
+      "C": "Expanding retail payment apps as a stand-alone end in itself"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining criterion is whether the development is one of the fintech areas the CFA Curriculum says is directly relevant to gathering and analyzing financial data. Analysis of large datasets, including alternative data, is named explicitly as such an area. That makes integrating those datasets into investment decision making the most accurate choice.</p><p>Why option B is incorrect. Peer-to-peer lending may be a fintech activity broadly, but it is not one of the specific areas the module identifies as directly relevant to quantitative data gathering and analysis.</p><p>Why option C is incorrect. Retail payment expansion is outside the reading's narrower list of directly relevant quantitative-analysis developments.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "Meaning of Fintech",
+    "stem": "Which statement about fintech is least likely accurate in this module?",
+    "options": {
+      "A": "Early forms included data processing and automation of routine tasks.",
+      "B": "Later applications advanced into machine-learning logic that can learn how to complete tasks over time.",
+      "C": "For this module, fintech refers only to firms that build the technology and not to the innovation in financial services itself."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: defining criterion</h3><p><strong>C is correct.</strong> The decision rule is whether the statement matches the module's definition of fintech. The CFA Curriculum defines fintech here as technology-driven innovation in the design and delivery of financial services and products. Limiting the term only to the firms that build the technology is therefore the least accurate statement.</p><p>Why option A is incorrect. The reading explicitly says early fintech included data processing and automation of routine tasks.</p><p>Why option B is incorrect. The module also says fintech advanced into machine-learning applications that learn over time, so this statement is accurate rather than least accurate.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "AI-Based Analytical Tools",
+    "stem": "An analyst uses AI to sort through company filings, annual reports, and earnings calls to determine which information is most important. This use of fintech is most likely justified in the module because AI may:",
+    "options": {
+      "A": "identify complex, non-linear relationships in extremely large datasets",
+      "B": "eliminate the need for human judgment about data quality and technique choice",
+      "C": "work best only when the underlying information arrives at quarterly intervals"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: defining criterion</h3><p><strong>A is correct.</strong> The governing criterion is the module's stated advantage of AI-based analytical tools for very large datasets. The CFA Curriculum says AI may be better suited than traditional methods to identify complex, non-linear relationships and to sort through enormous amounts of text-based information. That is the direct justification for the analyst's use case.</p><p>Why option B is incorrect. The reading says ML still requires human judgment about the underlying data and appropriate technique choice.</p><p>Why option C is incorrect. The module does not tie AI's usefulness to slow, quarterly data arrival; it highlights value when dataset size and complexity are extreme.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Alternative Data in Decision Making",
+    "stem": "Massive alternative datasets from sources such as social media and sensor networks are most likely relevant to a portfolio manager because they can:",
+    "options": {
+      "A": "replace all traditional corporate and market data",
+      "B": "help generate alpha and reduce losses when integrated into investment decision making",
+      "C": "be used only after investment decisions are completed"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: defining criterion</h3><p><strong>B is correct.</strong> The decision rule is whether the option matches the stated investment use of alternative data. The CFA Curriculum explains that non-traditional data can be integrated into portfolio decision making to help generate alpha and reduce losses. That makes option B the most accurate statement.</p><p>Why option A is incorrect. The reading presents alternative data as additional inputs, not as a total replacement for traditional data sources.</p><p>Why option C is incorrect. The value of alternative data lies in informing decisions, not in being reviewed only after the decision is already made.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Fintech and Industry Change",
+    "stem": "Which of the following is least likely to describe how fintech changed financial services according to the module?",
+    "options": {
+      "A": "It produced new systems for investment advice and financial planning.",
+      "B": "It remained confined to rule-based execution and did not enter decision-making applications.",
+      "C": "It challenged traditional business models of incumbent providers."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: defining criterion</h3><p><strong>B is correct.</strong> The criterion is whether the statement is consistent with the module's description of fintech's evolution. The CFA Curriculum says fintech advanced beyond routine automation and rule-based execution into decision-making applications based on complex machine-learning logic. So the claim that it remained confined to rule-based execution is the least accurate.</p><p>Why option A is incorrect. The module explicitly lists investment advice and financial planning among the new systems that fintech helped create.</p><p>Why option C is incorrect. Challenging incumbent business models is also stated directly in the reading.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Veracity",
+    "stem": "When Big Data is used for inference or prediction, investment professionals are most likely concerned with veracity because it addresses:",
+    "options": {
+      "A": "the credibility and reliability of data sources",
+      "B": "the speed and frequency of data recording and transmission",
+      "C": "whether the data can be arranged in rows and columns"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining criterion is the meaning of veracity in the Big Data setting. The CFA Curriculum says veracity becomes important in inference or prediction because it concerns the credibility and reliability of different data sources. That is the exact boundary the option captures.</p><p>Why option B is incorrect. Speed and frequency of recording and transmission define velocity, not veracity.</p><p>Why option C is incorrect. The ability to store data in rows and columns concerns structure, not the credibility of the source.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Structured and Unstructured Data",
+    "stem": "Which dataset is least likely to be classified as unstructured in the module?",
+    "options": {
+      "A": "Social media posts",
+      "B": "SQL tables",
+      "C": "Video messages"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The rule is to identify which item fits the module's description of structured rather than unstructured data. Structured data are organized in tables, and the reading gives SQL tables as the example. Social media posts and video messages are instead cited as unstructured forms.</p><p>Why option A is incorrect. Social media posts are specifically identified as unstructured alternative data.</p><p>Why option C is incorrect. Video messages are also used in the module as an example of unstructured data.</p>"
+  },
+  {
+    "id": 22,
+    "topic": "Overfitting and Underfitting",
+    "stem": "An ML model fits the training data extremely precisely, treats noise as true parameters, and predicts poorly on a new dataset. The model is most likely:",
+    "options": {
+      "A": "underfitted",
+      "B": "overfitted",
+      "C": "unsupervised"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The governing rule is the module's distinction between overfitting and underfitting. Overfitting occurs when a model learns the input and target dataset too precisely and treats noise as true parameters, which then hurts prediction on different data. That is exactly the situation described in the stem.</p><p>Why option A is incorrect. Underfitting is the opposite problem: the model is too simplistic and misses true relationships in the training data.</p><p>Why option C is incorrect. Unsupervised describes a class of learning problems, not the specific training error described here.</p>"
+  },
+  {
+    "id": 23,
+    "topic": "Unsupervised Learning",
+    "stem": "Which of the following is most likely an unsupervised learning application described in the module?",
+    "options": {
+      "A": "Forecasting whether local stock market performance will be up, down, or flat the next business day",
+      "B": "Modeling labeled inputs and outputs to forecast future stock returns",
+      "C": "Grouping companies into peer groups based on characteristics rather than standard sector or country groupings"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The criterion is whether the task uses unlabeled data to describe structure rather than labeled inputs and outputs. The CFA Curriculum gives grouping companies into peer groups based on characteristics as the example of unsupervised learning. The forecasting tasks in options A and B instead fit supervised learning.</p><p>Why option A is incorrect. Predicting whether the market will be up, down, or flat is presented as a supervised learning problem.</p><p>Why option B is incorrect. Modeling labeled inputs and outputs to forecast returns is also supervised, not unsupervised.</p>"
+  },
+  {
+    "id": 24,
+    "topic": "Low-Latency Capture",
+    "stem": "For automated trading applications that act on real-time prices and market events, the most likely data-capture requirement is:",
+    "options": {
+      "A": "high-latency systems because they reduce data volume",
+      "B": "low-latency systems because they communicate high volumes of data with minimal delay",
+      "C": "batch systems because real-time access is unnecessary"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining rule is the module's explanation of capture needs for automated trading. Real-time decision systems require networks that move high volumes of data with minimal delay, which is exactly the definition of low-latency systems in the CFA Curriculum. That makes option B the most accurate choice.</p><p>Why option A is incorrect. High latency means more delay, which conflicts with the real-time requirement in automated trading.</p><p>Why option C is incorrect. The module contrasts high-latency settings with applications that do not require real-time data, so batch-style access is the wrong fit here.</p>"
+  },
+  {
+    "id": 25,
+    "topic": "Data Curation",
+    "stem": "Which of the following is least likely part of data curation?",
+    "options": {
+      "A": "Detecting bad or inaccurate data",
+      "B": "Making adjustments for missing data when appropriate",
+      "C": "Deciding how data will be formatted and displayed graphically"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The criterion is whether the activity belongs to curation or to another stage. Curation is the data cleaning exercise that checks quality, accuracy, errors, and missing observations. Deciding how information will be displayed graphically belongs to visualization, not curation.</p><p>Why option A is incorrect. Detecting bad or inaccurate data is one of the core curation tasks listed in the module.</p><p>Why option B is incorrect. Adjusting for missing data when appropriate is also part of the cleaning process described as curation.</p>"
+  },
+  {
+    "id": 26,
+    "topic": "Visualization Techniques",
+    "stem": "Which statement about visualization techniques is most likely accurate?",
+    "options": {
+      "A": "A tag cloud emphasizes words by frequency, whereas a mind map emphasizes relationships among concepts.",
+      "B": "A mind map emphasizes word frequency, whereas a tag cloud maps conceptual relationships.",
+      "C": "Both tag clouds and mind maps are designed only for structured numerical tables."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The governing distinction is what each visualization is intended to show. The CFA Curriculum says a tag cloud sizes words according to how often they appear, whereas a mind map focuses on how concepts are related to one another. Option A matches that distinction exactly.</p><p>Why option B is incorrect. It reverses the functions of the two visualization methods.</p><p>Why option C is incorrect. The module introduces these tools especially for richer and often unstructured or multidimensional data, not only structured numerical tables.</p>"
+  },
+  {
+    "id": 27,
+    "topic": "NLP Applications",
+    "stem": "NLP is most likely a useful application in investment management because it can:",
+    "options": {
+      "A": "convert only structured numerical tables into forecasts",
+      "B": "analyze large volumes of text and audio to identify trends and shifts in sentiment",
+      "C": "replace the need to source, cleanse, and organize data before analysis"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The defining criterion is the module's description of what NLP actually analyzes and why that matters in investing. NLP is used on text- and voice-based information such as filings, call transcripts, news, and commentary to identify trends, sentiment, and short-term indicators that may matter for performance. That makes option B the most accurate use case.</p><p>Why option A is incorrect. NLP is not limited to structured numerical tables; it is designed for human language in text and voice data.</p><p>Why option C is incorrect. The reading says data often must be sourced, cleansed, and organized before analysis, so NLP does not remove that requirement.</p>"
+  },
+  {
+    "id": 28,
+    "topic": "Databases for Data Science",
+    "stem": "Which of the following is least likely a database or language pairing described in the module?",
+    "options": {
+      "A": "NoSQL for unstructured data",
+      "B": "SQLite as an embedded database common in mobile apps",
+      "C": "SQL as a database for unstructured data that cannot be summarized in traditional tables"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The rule is to match each database description to the module's stated data structure. SQL is described in the CFA Curriculum as a query language for structured data stored in tables with rows and columns. Unstructured data that cannot be summarized in traditional tables are instead associated with NoSQL, making option C the least accurate pairing.</p><p>Why option A is incorrect. The module directly links NoSQL to unstructured data.</p><p>Why option B is incorrect. SQLite is described as an embedded structured-data database commonly used in mobile apps.</p>"
+  }
+]
