@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Risk-Free Asset and Risky Portfolio",
+    "stem": "Adding a risk-free asset to a risky portfolio can most likely improve the risk-return trade-off because the risk-free asset has what correlation with the risky portfolio?",
+    "options": {
+      "A": "Perfect positive correlation",
+      "B": "Perfect negative correlation",
+      "C": "Zero correlation"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: diversification with a risk-free asset</h3><p><strong>C is correct.</strong> The CFA Curriculum explains that a risk-free asset has zero risk, so it does not co-vary with the risky asset or risky portfolio. That means its correlation effect supports a better risk-return trade-off when combined with risky assets. The combination creates a capital allocation line and gives investors more attractive choices than holding only one risky asset. Therefore zero correlation is the key property.</p><p><strong>A is incorrect.</strong> Perfect positive correlation would mean the assets move together one-for-one, which is not the property of a risk-free asset in the CFA Curriculum.</p><p><strong>B is incorrect.</strong> Perfect negative correlation is not assumed for the risk-free asset. The CFA Curriculum states the relevant point is that the risk-free asset has zero covariance with risky assets.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Capital Allocation Line",
+    "stem": "A capital allocation line most accurately plots the expected return and total risk of combinations of:",
+    "options": {
+      "A": "Two risky securities only",
+      "B": "A risk-free asset and a risky asset or risky portfolio",
+      "C": "Any assets with the same beta"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: definition of the CAL</h3><p><strong>B is correct.</strong> In the CFA Curriculum, the capital allocation line shows the expected return and total risk for combinations of a risk-free asset with a risky asset or risky portfolio. Because one asset is risk free, the opportunity set becomes a straight line. That line helps investors choose the mix that best fits their risk aversion. So the CAL is specifically about combining a risk-free asset with risky holdings.</p><p><strong>A is incorrect.</strong> Combining two risky securities generally does not produce a straight line in risk-return space, so that is not the defining idea of the CAL.</p><p><strong>C is incorrect.</strong> Having the same beta is not what defines a CAL. The defining feature is mixing a risk-free asset with risky assets.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Capital Market Line",
+    "stem": "On the capital market line, the y-intercept is most likely equal to:",
+    "options": {
+      "A": "The market return",
+      "B": "The risk-free rate",
+      "C": "The market risk premium"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: intercept of the CML</h3><p><strong>B is correct.</strong> The CFA Curriculum states that the CML intersects the y-axis at the risk-free return because that point represents zero total risk. A portfolio with zero standard deviation on the CML must be fully invested in the risk-free asset. That makes the intercept the risk-free rate, not any risky return. Therefore the y-intercept is the risk-free rate.</p><p><strong>A is incorrect.</strong> The market return is the return at the market portfolio point on the CML, not at the intercept.</p><p><strong>C is incorrect.</strong> The market risk premium is the slope component of the CAPM relation, not the y-intercept of the CML.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Capital Market Line",
+    "stem": "Relative to portfolios on the capital market line, a portfolio plotted above the line is most likely:",
+    "options": {
+      "A": "Inferior to any point on the line",
+      "B": "A borrowing portfolio",
+      "C": "Not achievable"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: meaning of positions around the CML</h3><p><strong>C is correct.</strong> The CFA Curriculum says any point above the CML is not achievable, while any point below it is dominated by points on the line. The CML already shows the best available combinations of risk and expected return for passive portfolios. A point above it would promise too much return for that level of risk. So it is not achievable under the theory.</p><p><strong>A is incorrect.</strong> Inferior points are below the CML, not above it.</p><p><strong>B is incorrect.</strong> A borrowing portfolio can lie to the right of the market portfolio on the CML, but it is still on the line, not above it.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Capital Market Line",
+    "stem": "If the risk-free rate is 5%, the market return is 15%, and 25% of wealth is invested in the market, the expected portfolio return is closest to:",
+    "options": {
+      "A": "7.5%",
+      "B": "10.0%",
+      "C": "12.5%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: return of a lending portfolio</h3><p><strong>A is correct.</strong> The CFA Curriculum gives the portfolio return as the weighted average of the risk-free return and the market return: $E(R_p) = w_1R_f + (1-w_1)E(R_m)$. Here 25% is in the market, so 75% is in the risk-free asset. The return is $(0.75 \\times 5\\%) + (0.25 \\times 15\\%) = 7.5\\%$. Therefore the expected portfolio return is 7.5%.</p><p><strong>B is incorrect.</strong> This does not match the weighted-average return from the given 25% market allocation.</p><p><strong>C is incorrect.</strong> This return would correspond to a much larger weight in the market, not 25%.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Capital Market Line",
+    "stem": "If the market standard deviation is 20% and 25% of wealth is invested in the market, the portfolio standard deviation on the CML is closest to:",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "5%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risk of a lending portfolio</h3><p><strong>C is correct.</strong> The CFA Curriculum simplifies the portfolio risk on the CML to $\\sigma_p = (1-w_1)\\sigma_m$, where $(1-w_1)$ is the weight in the market. With 25% in the market and market risk of 20%, portfolio risk is $0.25 \\times 20\\% = 5\\%$. The risk-free asset contributes no volatility. Therefore the portfolio standard deviation is 5%.</p><p><strong>A is incorrect.</strong> This would require a 50% market allocation, not a 25% allocation.</p><p><strong>B is incorrect.</strong> This would also imply a larger market allocation than the one given.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Capital Market Line",
+    "stem": "If the risk-free rate is 5%, the market return is 15%, and 75% of wealth is invested in the market, the expected portfolio return is closest to:",
+    "options": {
+      "A": "7.5%",
+      "B": "12.5%",
+      "C": "15.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: weighted-average return on the CML</h3><p><strong>B is correct.</strong> The CFA Curriculum uses the same linear return formula for any mix of the risk-free asset and the market. With 75% in the market and 25% in the risk-free asset, expected return is $(0.25 \\times 5\\%) + (0.75 \\times 15\\%) = 12.5\\%$. More weight in the market raises both risk and expected return. So the correct return is 12.5%.</p><p><strong>A is incorrect.</strong> This is the return for only 25% in the market, not 75%.</p><p><strong>C is incorrect.</strong> This is the market return and would require 100% invested in the market.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Leveraged Portfolios",
+    "stem": "If an investor borrows 25% of initial wealth at the risk-free rate and invests the full amount plus borrowed funds in the market, the expected return is closest to 17.5% when the risk-free rate is 5% and market return is:",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: return of a leveraged portfolio</h3><p><strong>B is correct.</strong> The CFA Curriculum example uses $w_1 = -0.25$ for borrowing 25% at the risk-free rate, so the market weight becomes $1 - (-0.25) = 1.25$. The return is $(-0.25 \\times 5\\%) + (1.25 \\times E(R_m))$. Setting this equal to 17.5% gives the market return of 15%, which is exactly the example in the reading. Therefore 15% is the correct market return.</p><p><strong>A is incorrect.</strong> Using 10% would produce a lower leveraged portfolio return than 17.5%.</p><p><strong>C is incorrect.</strong> Using 20% would produce a leveraged portfolio return higher than 17.5%.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Leveraged Portfolios",
+    "stem": "If an investor borrows 50% of initial wealth and the market standard deviation is 20%, the leveraged portfolio standard deviation is closest to:",
+    "options": {
+      "A": "20%",
+      "B": "30%",
+      "C": "40%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: leverage magnifies market risk</h3><p><strong>B is correct.</strong> In the CFA Curriculum, borrowing 50% means the weight in the risk-free asset is $w_1 = -0.50$, so the weight in the market is $1 - (-0.50) = 1.50$. Portfolio standard deviation on the leveraged CML is $\\sigma_p = (1-w_1)\\sigma_m = 1.50 \\times 20\\% = 30\\%$. Leverage raises both expected return and total risk in proportion. Therefore the portfolio standard deviation is 30%.</p><p><strong>A is incorrect.</strong> This is just the market's standard deviation and would apply to a 100% market investment without leverage.</p><p><strong>C is incorrect.</strong> This would correspond to a larger leveraged market position, not 150% in the market.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Leveraged Portfolios",
+    "stem": "When borrowing and lending rates differ, the slope of the capital market line to the right of the market portfolio most likely uses:",
+    "options": {
+      "A": "$[E(R_m)-R_f]/\\sigma_m$",
+      "B": "$[E(R_m)-R_b]/\\sigma_m$",
+      "C": "$[R_b-R_f]/\\sigma_m$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: kinked CML with a higher borrowing rate</h3><p><strong>B is correct.</strong> The CFA Curriculum shows that once the investor borrows, the relevant financing rate is the borrowing rate $R_b$, not the risk-free lending rate $R_f$. The line to the right of the market portfolio therefore has slope $[E(R_m)-R_b]/\\sigma_m$, which is smaller if borrowing costs more than lending. That creates the kinked CML. So the borrowing side uses $R_b$ in the slope.</p><p><strong>A is incorrect.</strong> This is the lending-side slope between the risk-free point and the market portfolio, not the borrowing-side slope.</p><p><strong>C is incorrect.</strong> The CML slope is based on expected market return less the relevant financing rate, not the spread between the two financing rates.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Systematic and Nonsystematic Risk",
+    "stem": "Which of the following is most likely an example of systematic risk?",
+    "options": {
+      "A": "A failed drug trial at one company",
+      "B": "An airliner crash affecting one airline",
+      "C": "An unexpected increase in economy-wide inflation"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: market-wide versus local risk</h3><p><strong>C is correct.</strong> The CFA Curriculum defines systematic risk as risk that affects the overall market or economy and cannot be diversified away. Inflation is one of the explicit examples because it affects many assets at once. That makes it a market-wide risk factor rather than a company-specific event. Therefore an unexpected increase in inflation is systematic risk.</p><p><strong>A is incorrect.</strong> A failed drug trial is specific to one company or industry and is given as the kind of event that represents nonsystematic risk.</p><p><strong>B is incorrect.</strong> An airliner crash is also a local event tied to one company or industry, so it is nonsystematic rather than systematic risk.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Systematic and Nonsystematic Risk",
+    "stem": "Nonsystematic risk is most likely best reduced by:",
+    "options": {
+      "A": "Diversifying across assets that are not highly correlated",
+      "B": "Borrowing at the risk-free rate",
+      "C": "Buying only the highest-beta stock"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: why diversification works</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that nonsystematic risk is local to a company or industry and can be diversified away. Holding many assets that are not highly correlated allows poor outcomes in one asset to be offset by better outcomes elsewhere. This process removes diversifiable risk but leaves systematic risk. So diversification is the correct tool.</p><p><strong>B is incorrect.</strong> Borrowing changes portfolio leverage and total risk, but it does not remove company-specific risk by itself.</p><p><strong>C is incorrect.</strong> Buying one high-beta stock concentrates risk rather than diversifying away nonsystematic risk.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Pricing of Risk",
+    "stem": "According to capital market theory, investors should expect additional return for bearing which type of risk?",
+    "options": {
+      "A": "Systematic risk only",
+      "B": "Nonsystematic risk only",
+      "C": "Both systematic and nonsystematic risk equally"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: which risk is priced</h3><p><strong>A is correct.</strong> The CFA Curriculum argues that nonsystematic risk can be diversified away, so no rational investor should earn an extra return for holding it. Systematic risk cannot be eliminated through diversification and therefore is the risk investors must be compensated for. This is the core pricing insight behind the CAPM. So only systematic risk is priced.</p><p><strong>B is incorrect.</strong> Nonsystematic risk is diversifiable, so theory says it should not earn an incremental return.</p><p><strong>C is incorrect.</strong> The two risks are not treated equally. Only systematic risk receives compensation in equilibrium.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Systematic and Nonsystematic Risk",
+    "stem": "A risk-free asset such as a three-month Treasury bill has most likely:",
+    "options": {
+      "A": "Positive systematic risk and zero nonsystematic risk",
+      "B": "Zero systematic risk and positive nonsystematic risk",
+      "C": "Zero systematic risk and zero nonsystematic risk"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risk-free means no risk components</h3><p><strong>C is correct.</strong> The CFA Curriculum states directly that a risk-free asset has no risk. If total risk is zero, both its systematic and nonsystematic components must also be zero. This is why the risk-free asset has beta zero and standard deviation zero. Therefore both components are zero.</p><p><strong>A is incorrect.</strong> A positive systematic component would mean the asset still moves with market risk, which contradicts the definition of a risk-free asset.</p><p><strong>B is incorrect.</strong> A positive nonsystematic component would also contradict the definition of having no risk at all.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Systematic and Nonsystematic Risk",
+    "stem": "A market portfolio such as the S&P 500 most likely contains:",
+    "options": {
+      "A": "Only nonsystematic risk",
+      "B": "No systematic risk",
+      "C": "No nonsystematic risk"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: diversified portfolios and remaining risk</h3><p><strong>C is correct.</strong> The CFA Curriculum describes the market portfolio as fully diversified, meaning no more diversifiable risk remains. That implies nonsystematic risk has been driven to zero, leaving only systematic risk. The market portfolio is therefore the benchmark for non-diversifiable risk exposure. So it contains no nonsystematic risk.</p><p><strong>A is incorrect.</strong> The market portfolio is the opposite of a pure nonsystematic-risk portfolio because diversification removes that component.</p><p><strong>B is incorrect.</strong> Systematic risk remains in the market portfolio and is exactly the risk that cannot be diversified away.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Variance Decomposition",
+    "stem": "The CFA Curriculum states that total variance is most accurately equal to:",
+    "options": {
+      "A": "Systematic variance plus nonsystematic variance",
+      "B": "Systematic risk plus beta",
+      "C": "Nonsystematic risk minus covariance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decomposition of total variance</h3><p><strong>A is correct.</strong> The CFA Curriculum explicitly decomposes total variance into systematic variance and nonsystematic variance. The key word is variance, not standard deviation. This relation is used later to separate market-related risk from company-specific risk. Therefore total variance equals systematic variance plus nonsystematic variance.</p><p><strong>B is incorrect.</strong> Beta is a measure of systematic sensitivity, not a variance component that can simply be added to systematic risk.</p><p><strong>C is incorrect.</strong> The decomposition is an addition of two variance terms, not a subtraction involving covariance.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Market Model",
+    "stem": "The market model is most accurately written as:",
+    "options": {
+      "A": "$R_i = \\alpha_i + \\beta_i R_m + e_i$",
+      "B": "$R_i = R_f + \\sigma_i R_m$",
+      "C": "$R_i = \\beta_i + \\alpha_i R_f + e_i$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: structure of the market model</h3><p><strong>A is correct.</strong> The CFA Curriculum presents the market model as $R_i = \\alpha_i + \\beta_i R_m + e_i$. The intercept $\\alpha_i$ captures the constant term, $\\beta_i$ measures the sensitivity to market return, and $e_i$ is the company-specific error term. This form is used to estimate beta and abnormal returns from historical data. Therefore option A is the correct market model.</p><p><strong>B is incorrect.</strong> This is not the market model from the CFA Curriculum and incorrectly substitutes standard deviation for beta.</p><p><strong>C is incorrect.</strong> This rearranges the terms into a form that does not match the stated model and misuses the risk-free rate.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Market Model",
+    "stem": "In the market model, the slope coefficient $\\beta_i$ is best interpreted as an estimate of an asset's:",
+    "options": {
+      "A": "Systematic risk",
+      "B": "Nonsystematic risk",
+      "C": "Risk-free rate"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: meaning of beta in the market model</h3><p><strong>A is correct.</strong> The CFA Curriculum explains that in the market model, the slope coefficient on market return is beta, and beta measures the asset's systematic or market risk. It tells us how sensitive the asset's return is to movements in the market. That is exactly the part of risk that remains relevant after diversification. So beta is an estimate of systematic risk.</p><p><strong>B is incorrect.</strong> Nonsystematic risk is represented by the error term and its variance, not by the slope coefficient.</p><p><strong>C is incorrect.</strong> The risk-free rate is a separate concept and is not estimated by the slope in the market model.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Abnormal Return",
+    "stem": "Using the market model, if $\\alpha_i = 0.0001$, $\\beta_i = 0.9$, the market return is 1.0%, and the stock return is 2.0%, the stock's abnormal return is closest to:",
+    "options": {
+      "A": "0.09%",
+      "B": "1.09%",
+      "C": "2.90%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: actual return minus model-implied return</h3><p><strong>B is correct.</strong> The CFA Curriculum computes abnormal return as $e_i = R_i - (\\alpha_i + \\beta_i R_m)$. Here the model-implied return is $0.0001 + 0.9 \\times 0.01 = 0.0091$, or 0.91%. The actual return is 2.0%, so abnormal return is $0.0200 - 0.0091 = 0.0109$, or 1.09%. Therefore the stock's abnormal return is 1.09%.</p><p><strong>A is incorrect.</strong> This is too small and does not match the difference between actual and model-implied return.</p><p><strong>C is incorrect.</strong> This overstates the abnormal return and does not follow the CFA Curriculum calculation.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Beta",
+    "stem": "Beta is most accurately calculated as:",
+    "options": {
+      "A": "Asset variance divided by market variance",
+      "B": "Market variance divided by asset covariance",
+      "C": "Covariance of the asset with the market divided by market variance"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: beta measures market sensitivity</h3><p><strong>C is correct.</strong> The CFA Curriculum defines beta as $\\beta_i = \\text{Cov}(R_i,R_m)/\\sigma_m^2$. This measures how strongly the asset moves with the market relative to the market's own variance. Because systematic risk is about market-related movement, covariance with the market is the correct numerator. Therefore beta is covariance divided by market variance.</p><p><strong>A is incorrect.</strong> Asset variance alone includes both systematic and nonsystematic components, so it is not the beta formula.</p><p><strong>B is incorrect.</strong> This does not use covariance with the market and therefore is not the CFA Curriculum definition of beta.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Beta",
+    "stem": "If an asset's correlation with the market is 0.70, the asset standard deviation is 25%, and the market standard deviation is 15%, the asset's beta is closest to:",
+    "options": {
+      "A": "0.70",
+      "B": "1.17",
+      "C": "1.67"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: beta from correlation and volatility</h3><p><strong>B is correct.</strong> The CFA Curriculum gives $\\beta_i = \\rho_{i,m}(\\sigma_i/\\sigma_m)$. Substituting the numbers gives $0.70 \\times (0.25/0.15) = 1.17$ after rounding. This means the asset has systematic risk greater than the market. Therefore the beta is approximately 1.17.</p><p><strong>A is incorrect.</strong> This uses the correlation alone and ignores the ratio of standard deviations.</p><p><strong>C is incorrect.</strong> This overstates the result and does not match the formula from the CFA Curriculum.</p>"
+  },
+  {
+    "id": 22,
+    "model": "ChatGPT",
+    "topic": "Beta",
+    "stem": "The beta of a short-term US Treasury bill is most likely:",
+    "options": {
+      "A": "0.0",
+      "B": "0.5",
+      "C": "1.0"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: beta of a risk-free asset</h3><p><strong>A is correct.</strong> The CFA Curriculum treats a short-term Treasury bill as a risk-free asset. A risk-free asset has zero covariance with the market and zero standard deviation, so its beta is zero. That means its return does not move with market changes. Therefore the Treasury bill's beta is 0.0.</p><p><strong>B is incorrect.</strong> A beta of 0.5 would imply some positive market sensitivity, which a risk-free asset does not have.</p><p><strong>C is incorrect.</strong> A beta of 1.0 is the market's beta, not the beta of a Treasury bill.</p>"
+  },
+  {
+    "id": 23,
+    "model": "ChatGPT",
+    "topic": "Beta",
+    "stem": "If an asset has the same standard deviation as the market but zero correlation with the market, its beta is most likely:",
+    "options": {
+      "A": "0.0",
+      "B": "1.0",
+      "C": "-1.0"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: zero correlation means zero market sensitivity</h3><p><strong>A is correct.</strong> The CFA Curriculum formula is $\\beta_i = \\rho_{i,m}(\\sigma_i/\\sigma_m)$. If the correlation is zero, then beta is zero regardless of whether the asset's standard deviation equals the market's standard deviation. The asset may still be risky in total, but it has no systematic risk relative to the market. Therefore its beta is 0.0.</p><p><strong>B is incorrect.</strong> Equal standard deviations do not automatically make beta equal to 1. Correlation must also matter.</p><p><strong>C is incorrect.</strong> A beta of -1.0 would require strong negative correlation, not zero correlation.</p>"
+  },
+  {
+    "id": 24,
+    "model": "ChatGPT",
+    "topic": "M2",
+    "stem": "If a portfolio has return 14.0%, risk-free rate 4.0%, portfolio standard deviation 25.0%, and market standard deviation 20.0%, the portfolio's M2 is closest to:",
+    "options": {
+      "A": "8.0%",
+      "B": "10.0%",
+      "C": "12.0%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: rescaling excess return to market risk</h3><p><strong>C is correct.</strong> The CFA Curriculum gives $M^2 = [(R_p - R_f) \\times (\\sigma_m/\\sigma_p)] + R_f$. Here the excess return is $14\\% - 4\\% = 10\\%$, and the leverage ratio is $20\\%/25\\% = 0.8$. So $M^2 = 10\\% \\times 0.8 + 4\\% = 12\\%$. Therefore the portfolio's M2 is 12.0%.</p><p><strong>A is incorrect.</strong> This ignores the need to add back the risk-free rate after adjusting excess return.</p><p><strong>B is incorrect.</strong> This equals the unadjusted excess return, not the M2 measure from the CFA Curriculum.</p>"
+  },
+  {
+    "id": 25,
+    "model": "ChatGPT",
+    "topic": "Beta",
+    "stem": "If an asset's correlation with the market is -0.10, its standard deviation is 60%, and the market standard deviation is 25%, the asset's beta is closest to:",
+    "options": {
+      "A": "-0.24",
+      "B": "0.24",
+      "C": "2.40"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: negative correlation produces negative beta</h3><p><strong>A is correct.</strong> Using the CFA Curriculum formula, $\\beta_i = \\rho_{i,m}(\\sigma_i/\\sigma_m) = -0.10 \\times (0.60/0.25) = -0.24$. A negative beta means the asset tends to move opposite the market and can reduce overall portfolio risk. The sign comes directly from the negative correlation. Therefore the beta is -0.24.</p><p><strong>B is incorrect.</strong> This drops the negative sign even though the correlation with the market is negative.</p><p><strong>C is incorrect.</strong> This misapplies the volatility ratio and ignores the small magnitude of the correlation.</p>"
+  },
+  {
+    "id": 26,
+    "model": "ChatGPT",
+    "topic": "CAPM Expected Return",
+    "stem": "Using the CAPM, if the risk-free rate is 3%, the market return is 10%, and an asset's beta is 1.5, the asset's expected return is closest to:",
+    "options": {
+      "A": "10.5%",
+      "B": "13.5%",
+      "C": "15.0%"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: expected return from beta risk</h3><p><strong>B is correct.</strong> The CFA Curriculum gives the CAPM as $E(R_i) = R_f + \\beta_i[E(R_m)-R_f]$. The market risk premium is $10\\% - 3\\% = 7\\%$. Multiplying by beta gives $1.5 \\times 7\\% = 10.5\\%$, and adding the risk-free rate gives $13.5\\%$. Therefore the asset's expected return is 13.5%.</p><p><strong>A is incorrect.</strong> This is only the beta-adjusted premium and forgets to add the risk-free rate back.</p><p><strong>C is incorrect.</strong> This is too high and does not match the CAPM calculation.</p>"
+  },
+  {
+    "id": 27,
+    "model": "ChatGPT",
+    "topic": "CAPM Expected Return",
+    "stem": "Using the CAPM, if the risk-free rate is 3%, the market return is 10%, and an asset's beta is 1.1, the asset's expected return is closest to:",
+    "options": {
+      "A": "10.7%",
+      "B": "11.1%",
+      "C": "13.3%"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: apply the CAPM directly</h3><p><strong>A is correct.</strong> The market risk premium is $10\\% - 3\\% = 7\\%$. With beta of 1.1, the beta-adjusted premium is $1.1 \\times 7\\% = 7.7\\%$. Adding the risk-free rate gives $3\\% + 7.7\\% = 10.7\\%$. Therefore the expected return is 10.7%.</p><p><strong>B is incorrect.</strong> This does not match the direct CAPM calculation from the given beta and market premium.</p><p><strong>C is incorrect.</strong> This overstates the return and would require a much higher beta or market premium.</p>"
+  },
+  {
+    "id": 28,
+    "model": "ChatGPT",
+    "topic": "CAPM Expected Return",
+    "stem": "If an asset has a negative beta, its expected return under the CAPM is most likely:",
+    "options": {
+      "A": "Equal to the market return",
+      "B": "Greater than any positive-beta asset",
+      "C": "Less than the risk-free rate"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: negative beta lowers required return</h3><p><strong>C is correct.</strong> The CFA Curriculum notes that a negative-beta asset helps reduce overall portfolio risk when combined with the market. In the CAPM formula, a negative beta multiplies the market risk premium and subtracts from the risk-free rate. That makes the required return less than the risk-free rate. Therefore a negative-beta asset has an expected return below the risk-free rate.</p><p><strong>A is incorrect.</strong> Equality with the market return would require beta of 1, not a negative beta.</p><p><strong>B is incorrect.</strong> A negative-beta asset is valuable for hedging, but its CAPM expected return is lower, not higher.</p>"
+  },
+  {
+    "id": 29,
+    "model": "ChatGPT",
+    "topic": "Security Market Line",
+    "stem": "The security market line most accurately plots expected return against:",
+    "options": {
+      "A": "Total risk measured by standard deviation",
+      "B": "Systematic risk measured by beta",
+      "C": "Nonsystematic risk measured by alpha"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: what the SML graphs</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the SML as the graphical representation of the CAPM, with beta on the x-axis and expected return on the y-axis. Beta captures systematic risk, which is the only risk priced in the model. This makes the SML different from the CML, which uses total risk. Therefore the SML plots expected return against beta.</p><p><strong>A is incorrect.</strong> Standard deviation is used on the CML, not on the SML.</p><p><strong>C is incorrect.</strong> Alpha is a performance or mispricing measure relative to the SML, not the x-axis variable used to draw the SML.</p>"
+  },
+  {
+    "id": 30,
+    "model": "ChatGPT",
+    "topic": "Security Market Line",
+    "stem": "Unlike the capital market line, the security market line applies most likely to:",
+    "options": {
+      "A": "Any security, whether efficient or not",
+      "B": "Only efficient portfolios",
+      "C": "Only the market portfolio"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: domain of the SML versus the CML</h3><p><strong>A is correct.</strong> The CFA Curriculum distinguishes the two lines clearly. The CML applies only to efficient portfolios formed from the risk-free asset and the market portfolio, while the SML applies to any security or portfolio because it uses systematic risk. This broader scope is why the SML is used for security pricing under the CAPM. Therefore it applies to any security, efficient or not.</p><p><strong>B is incorrect.</strong> This describes the restriction on the CML, not on the SML.</p><p><strong>C is incorrect.</strong> The market portfolio is just one point on the SML, not the only object to which the SML applies.</p>"
+  },
+  {
+    "id": 31,
+    "model": "ChatGPT",
+    "topic": "Portfolio Beta",
+    "stem": "A portfolio invests 20% in the risk-free asset, 30% in the market portfolio, and 50% in a stock with beta 2.0. The portfolio beta is closest to:",
+    "options": {
+      "A": "1.00",
+      "B": "1.30",
+      "C": "1.50"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: portfolio beta is a weighted average</h3><p><strong>B is correct.</strong> The CFA Curriculum states that portfolio beta is the weighted sum of component betas. The risk-free asset has beta 0, the market has beta 1, and the stock has beta 2.0. So $\\beta_p = (0.20 \\times 0.0) + (0.30 \\times 1.0) + (0.50 \\times 2.0) = 1.30$. Therefore the portfolio beta is 1.30.</p><p><strong>A is incorrect.</strong> This understates the contribution from the stock with beta 2.0.</p><p><strong>C is incorrect.</strong> This overstates the weighted-average beta from the stated portfolio weights.</p>"
+  },
+  {
+    "id": 32,
+    "model": "ChatGPT",
+    "topic": "Portfolio Expected Return",
+    "stem": "If a portfolio has beta 1.30, the risk-free rate is 4%, and the market return is 16%, the CAPM expected return for the portfolio is closest to:",
+    "options": {
+      "A": "15.6%",
+      "B": "18.4%",
+      "C": "19.6%"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: CAPM for a portfolio</h3><p><strong>C is correct.</strong> The CFA Curriculum applies the same CAPM formula to portfolios: $E(R_p) = R_f + \\beta_p[E(R_m)-R_f]$. The market risk premium is $16\\% - 4\\% = 12\\%$. Multiplying by portfolio beta gives $1.30 \\times 12\\% = 15.6\\%$, and adding the risk-free rate gives $19.6\\%$. Therefore the portfolio's expected return is 19.6%.</p><p><strong>A is incorrect.</strong> This is only the beta-adjusted premium and omits the risk-free rate.</p><p><strong>B is incorrect.</strong> This does not match the CAPM calculation using the given beta and market premium.</p>"
+  },
+  {
+    "id": 33,
+    "model": "ChatGPT",
+    "topic": "Sharpe Ratio",
+    "stem": "The Sharpe ratio most accurately measures excess return per unit of:",
+    "options": {
+      "A": "Total risk",
+      "B": "Systematic risk",
+      "C": "Nonsystematic variance"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: what the Sharpe ratio uses in the denominator</h3><p><strong>A is correct.</strong> The CFA Curriculum defines the Sharpe ratio as excess return divided by portfolio standard deviation. Standard deviation is a measure of total risk, not just systematic risk. This makes the Sharpe ratio appropriate when the investor cares about total portfolio variability. Therefore it measures excess return per unit of total risk.</p><p><strong>B is incorrect.</strong> Systematic risk in the denominator is the basis for the Treynor ratio, not the Sharpe ratio.</p><p><strong>C is incorrect.</strong> Nonsystematic variance is not the denominator used in the Sharpe ratio formula.</p>"
+  },
+  {
+    "id": 34,
+    "model": "ChatGPT",
+    "topic": "Treynor Ratio",
+    "stem": "The Treynor ratio most accurately measures excess return per unit of:",
+    "options": {
+      "A": "Total risk",
+      "B": "Beta risk",
+      "C": "Alpha"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: systematic-risk performance measure</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the Treynor ratio as excess return divided by beta. Because beta measures systematic risk, the Treynor ratio evaluates return earned per unit of market risk taken. It is most relevant when the portfolio is already well diversified. Therefore it measures excess return per unit of beta risk.</p><p><strong>A is incorrect.</strong> Total risk is used by the Sharpe ratio, not the Treynor ratio.</p><p><strong>C is incorrect.</strong> Alpha is a separate performance measure and is not the denominator in the Treynor ratio.</p>"
+  },
+  {
+    "id": 35,
+    "model": "ChatGPT",
+    "topic": "Jensen's Alpha and SML Applications",
+    "stem": "If a security plots above the security market line, the security is most likely:",
+    "options": {
+      "A": "Overvalued and should have a lower weight",
+      "B": "Fairly priced with zero alpha",
+      "C": "Undervalued with positive alpha"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: actual return above required return</h3><p><strong>C is correct.</strong> In the CFA Curriculum, the SML gives the expected return required for a given beta. If a security lies above the SML, its return is higher than the CAPM-required return for that level of systematic risk. That means it has positive alpha and is attractive relative to the benchmark. Therefore it is undervalued with positive alpha.</p><p><strong>A is incorrect.</strong> A security above the SML is not overvalued. Overvalued securities would lie below the SML because they offer too little return for their beta risk.</p><p><strong>B is incorrect.</strong> Zero alpha means the security lies on the SML, not above it.</p>"
+  }
+]

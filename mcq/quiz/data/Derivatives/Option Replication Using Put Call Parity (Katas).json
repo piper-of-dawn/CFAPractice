@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "model": "ChatGPT",
+    "topic": "Put-call parity",
+    "stem": "For European options on the same underlying with the same exercise price and expiration, put-call parity most likely links a put, a call, the underlying, and which other item?",
+    "options": {
+      "A": "A risk-free asset",
+      "B": "A dividend stream",
+      "C": "A swap payment"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines put-call parity as a no-arbitrage relationship among a put option, a call option, the underlying asset, and a risk-free asset. The governing relation uses the present value of the exercise price as the cash component. That is why the missing building block is the risk-free asset.</p><p>Why the other options are wrong: A dividend stream is excluded in this module because the underlying is assumed to have no income or benefit, and a swap payment is not part of the parity identity.</p>"
+  },
+  {
+    "id": 2,
+    "model": "ChatGPT",
+    "topic": "Protective put",
+    "stem": "A protective put most accurately combines which two positions?",
+    "options": {
+      "A": "Long underlying and long put",
+      "B": "Long underlying and short call",
+      "C": "Long call and long risk-free bond"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum defines a protective put as holding the underlying asset together with a purchased put on that same asset. The put creates downside protection below the exercise price while leaving upside from the underlying. That exact pair is the protective put.</p><p>Why the other options are wrong: Long underlying plus short call is a covered call, and long call plus long risk-free bond is a fiduciary call.</p>"
+  },
+  {
+    "id": 3,
+    "model": "ChatGPT",
+    "topic": "Fiduciary call",
+    "stem": "A fiduciary call most likely consists of:",
+    "options": {
+      "A": "a long call and a long risk-free bond",
+      "B": "a short call and a long underlying",
+      "C": "a long put and a long forward"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The CFA Curriculum states that a fiduciary call is the combination of a purchased call option and a risk-free bond that will pay the exercise price at expiration. The bond supplies the strike cash and the call supplies upside above the strike. That pair defines the fiduciary call.</p><p>Why the other options are wrong: A short call with a long underlying is a covered call, and a long put with a long forward is part of the synthetic protective put, not a fiduciary call.</p>"
+  },
+  {
+    "id": 4,
+    "model": "ChatGPT",
+    "topic": "Put-call parity equation",
+    "stem": "Which expression most likely states put-call parity for this module?",
+    "options": {
+      "A": "$S_0 + p_0 = c_0 + X(1+r)^{-T}$",
+      "B": "$S_0 - p_0 = c_0 + X(1+r)^{-T}$",
+      "C": "$S_0 + c_0 = p_0 + X(1+r)^{-T}$"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> The governing equation in the CFA Curriculum is the equality between the protective put side and the fiduciary call side: $S_0 + p_0 = c_0 + X(1+r)^{-T}$. The signs matter because the underlying and put are both long on the left side. That is the parity statement used throughout the module.</p><p>Why the other options are wrong: Option B changes the sign on the put, and Option C places the call on the wrong side of the identity.</p>"
+  },
+  {
+    "id": 5,
+    "model": "ChatGPT",
+    "topic": "Underlying replication",
+    "stem": "Under put-call parity, a long underlying is most accurately replicated by:",
+    "options": {
+      "A": "short put, long call, and long risk-free bond",
+      "B": "long put, long call, and short risk-free bond",
+      "C": "short put, short call, and long risk-free bond"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Rearranging the CFA Curriculum relation gives $S_0 = -p_0 + c_0 + X(1+r)^{-T}$. The primitive replication is therefore a sold put, a purchased call, and a long risk-free bond. That portfolio matches the underlying under no arbitrage.</p><p>Why the other options are wrong: Option B has the wrong sign on the put, and Option C has the wrong sign on the call.</p>"
+  },
+  {
+    "id": 6,
+    "model": "ChatGPT",
+    "topic": "Put replication",
+    "stem": "A European put can most likely be replicated by which portfolio?",
+    "options": {
+      "A": "long call, long risk-free bond, and short underlying",
+      "B": "short call, long risk-free bond, and long underlying",
+      "C": "long call, short risk-free bond, and short underlying"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Solving the parity equation for the put gives $p_0 = c_0 + X(1+r)^{-T} - S_0$. So the correct building blocks are a long call, a long risk-free bond, and a short underlying. That is the put replication in the module.</p><p>Why the other options are wrong: Option B flips both option and underlying signs, and Option C incorrectly makes the bond short instead of long.</p>"
+  },
+  {
+    "id": 7,
+    "model": "ChatGPT",
+    "topic": "Call replication",
+    "stem": "A European call is most likely equivalent to which portfolio under put-call parity?",
+    "options": {
+      "A": "long underlying, long put, and short risk-free bond",
+      "B": "short underlying, long put, and long risk-free bond",
+      "C": "long underlying, short put, and long risk-free bond"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>A is correct.</strong> Rearranging the parity identity for the call gives $c_0 = S_0 + p_0 - X(1+r)^{-T}$. The call is therefore replicated by a long underlying, a long put, and a short risk-free bond. That is the exact no-arbitrage construction.</p><p>Why the other options are wrong: Option B shortens the underlying incorrectly, and Option C uses a short put and a long bond, which changes the payoff shape.</p>"
+  },
+  {
+    "id": 8,
+    "model": "ChatGPT",
+    "topic": "Mispricing consequence",
+    "stem": "If put-call parity does not hold, investors most likely have access to:",
+    "options": {
+      "A": "guaranteed dividend income",
+      "B": "riskless arbitrage profits",
+      "C": "automatic call exercise"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum states that if two parity-related portfolios trade at different prices despite identical future cash flows, investors can buy the cheaper one and sell the more expensive one for a riskless profit. That is the core no-arbitrage implication. So parity failure creates arbitrage opportunities.</p><p>Why the other options are wrong: Dividend income is outside this module's assumption set, and automatic call exercise is not the consequence of a pricing inconsistency.</p>"
+  },
+  {
+    "id": 9,
+    "model": "ChatGPT",
+    "topic": "Synthetic protective put",
+    "stem": "A synthetic protective put most likely replaces the cash underlying with:",
+    "options": {
+      "A": "a short forward and a risk-free bond",
+      "B": "a long forward and a risk-free bond",
+      "C": "a long call and a short put"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> In the CFA Curriculum, the synthetic underlying is built from a long forward together with a risk-free bond whose maturity value equals the forward price. Adding a long put to that synthetic underlying creates the synthetic protective put. That is the exact substitution used in put-call forward parity.</p><p>Why the other options are wrong: A short forward gives the wrong direction, and a long call with a short put does not replace the cash underlying in this construction.</p>"
+  },
+  {
+    "id": 10,
+    "model": "ChatGPT",
+    "topic": "Put-call forward parity equation",
+    "stem": "Which expression most accurately states put-call forward parity?",
+    "options": {
+      "A": "$F_0(T)(1+r)^{-T} - p_0 = c_0 + X(1+r)^{-T}$",
+      "B": "$F_0(T)(1+r)^{-T} + p_0 = c_0 + X(1+r)^{-T}$",
+      "C": "$F_0(T) + p_0 = c_0 + X(1+r)^{-T}$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum extends basic parity by replacing the underlying with its synthetic forward-plus-bond form. That gives $F_0(T)(1+r)^{-T} + p_0 = c_0 + X(1+r)^{-T}$. The present-value factor is essential because the forward price is converted into a current-value building block.</p><p>Why the other options are wrong: Option A uses the wrong sign on the put, and Option C drops the present-value adjustment on the forward price.</p>"
+  },
+  {
+    "id": 11,
+    "model": "ChatGPT",
+    "topic": "Forward parity rearrangement",
+    "stem": "Under put-call forward parity, $p_0 - c_0$ is most likely equal to:",
+    "options": {
+      "A": "$[F_0(T) - X](1+r)^{-T}$",
+      "B": "$[X - F_0(T)](1+r)^{-T}$",
+      "C": "$X - F_0(T)$"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Rearranging the CFA Curriculum's forward-parity equation yields $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$. The sign order matters because the package represents receiving the strike and paying the forward price at maturity. That exact form is the correct rearrangement.</p><p>Why the other options are wrong: Option A reverses the order inside the bracket, and Option C omits the required present-value factor.</p>"
+  },
+  {
+    "id": 12,
+    "model": "ChatGPT",
+    "topic": "Long put plus short call",
+    "stem": "A long put together with a short call is most likely equivalent to:",
+    "options": {
+      "A": "a short risk-free bond and a long forward",
+      "B": "a long risk-free bond and a short forward",
+      "C": "a long underlying and a short bond"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum interprets $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$ as receiving the strike through a long risk-free bond and paying the forward price through a short forward. That is the building-block meaning of long put plus short call. So the equivalent package is a long bond and a short forward.</p><p>Why the other options are wrong: Option A reverses both positions, and Option C describes the basic put-call parity underlying replication rather than the forward-parity package.</p>"
+  },
+  {
+    "id": 13,
+    "model": "ChatGPT",
+    "topic": "Covered call",
+    "stem": "A covered call is most accurately described as:",
+    "options": {
+      "A": "long underlying and long call",
+      "B": "long underlying and short call",
+      "C": "short underlying and long put"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> The CFA Curriculum defines a covered call as the combination $S_0 - c_0$, which is a long position in the underlying and a short call option. The call generates option premium, but it caps upside above the exercise price. That exact pair is the covered call.</p><p>Why the other options are wrong: Long underlying plus long call increases upside rather than capping it, and short underlying plus long put is a bearish package with a different payoff.</p>"
+  },
+  {
+    "id": 14,
+    "model": "ChatGPT",
+    "topic": "Covered call replication",
+    "stem": "Under put-call parity, a covered call is most likely replicated by:",
+    "options": {
+      "A": "short risk-free bond and long put",
+      "B": "long risk-free bond and short put",
+      "C": "long call and long bond"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>B is correct.</strong> Rearranging parity to isolate $S_0 - c_0$ gives $S_0 - c_0 = X(1+r)^{-T} - p_0$. So the covered call equals a long risk-free bond and a short put. That is the exact replication described in the module.</p><p>Why the other options are wrong: Option A reverses both required signs, and Option C describes a fiduciary call rather than a covered call.</p>"
+  },
+  {
+    "id": 15,
+    "model": "ChatGPT",
+    "topic": "Shareholder payoff",
+    "stem": "At debt maturity, shareholder payoff is most accurately written as:",
+    "options": {
+      "A": "$\\min(V_T, D)$",
+      "B": "$\\max(0, D - V_T)$",
+      "C": "$\\max(0, V_T - D)$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum states that shareholders receive the residual only after debtholders are paid. That makes equity payoff $\\max(0, V_T - D)$ at maturity. The formula captures zero in insolvency and residual upside in solvency.</p><p>Why the other options are wrong: $\\min(V_T, D)$ is the debtholder payoff, and $\\max(0, D - V_T)$ is the put payoff tied to insolvency risk rather than the shareholder residual.</p>"
+  },
+  {
+    "id": 16,
+    "model": "ChatGPT",
+    "topic": "Debtholder payoff",
+    "stem": "At debt maturity, debtholder payoff is most accurately written as:",
+    "options": {
+      "A": "$\\max(0, V_T - D)$",
+      "B": "$V_T - D$",
+      "C": "$\\min(V_T, D)$"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum explains that debtholders receive full debt face value in solvency and the firm value in insolvency. That is exactly $\\min(V_T, D)$. The expression captures both states with one rule.</p><p>Why the other options are wrong: $\\max(0, V_T - D)$ is the shareholder residual, and $V_T - D$ can be negative even though payoff received cannot be negative in this setting.</p>"
+  },
+  {
+    "id": 17,
+    "model": "ChatGPT",
+    "topic": "Equity analogy",
+    "stem": "A shareholder claim on firm value is most likely similar to which option position?",
+    "options": {
+      "A": "A put option on firm value",
+      "B": "A short call on firm value",
+      "C": "A call option on firm value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Because shareholder payoff is $\\max(0, V_T - D)$, the CFA Curriculum says equity resembles a purchased call option on firm value with exercise price equal to debt face value. Shareholders keep upside above the threshold and lose only their residual claim below it. That is call-option behavior.</p><p>Why the other options are wrong: A put gains when firm value falls, and a short call would cap upside instead of preserving it.</p>"
+  },
+  {
+    "id": 18,
+    "model": "ChatGPT",
+    "topic": "Debt analogy",
+    "stem": "A debtholder position is most likely similar to:",
+    "options": {
+      "A": "a direct call option on firm value",
+      "B": "a long underlying plus a long put",
+      "C": "risk-free debt minus a put on firm value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum decomposes risky debt into risk-free debt and a sold put option on firm value. In payoff terms, debtholders receive the debt face value unless insolvency forces them to absorb downside. That is why risk-free debt minus a put is the right description.</p><p>Why the other options are wrong: A direct call describes shareholder-like upside, and long underlying plus long put is a protective put, not risky debt.</p>"
+  },
+  {
+    "id": 19,
+    "model": "ChatGPT",
+    "topic": "Credit spread intuition",
+    "stem": "In the firm-value application, the put component is most likely interpreted as:",
+    "options": {
+      "A": "the dividend yield on firm assets",
+      "B": "the exercise premium on equity",
+      "C": "the credit spread on the firm's debt"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum says the put may be interpreted as the premium above the risk-free rate that the firm must pay debtholders to bear insolvency risk. That is exactly the credit spread intuition. The put grows in value as insolvency risk rises.</p><p>Why the other options are wrong: The module assumes no income or benefit on the underlying, and there is no concept here of an exercise premium on equity.</p>"
+  },
+  {
+    "id": 20,
+    "model": "ChatGPT",
+    "topic": "Simple parity arithmetic",
+    "stem": "A call is priced at USD 7, spot is USD 40, and the present value of the exercise price is USD 45. Under put-call parity, the put price is most likely:",
+    "options": {
+      "A": "USD 2",
+      "B": "USD 8",
+      "C": "USD 12"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> The CFA Curriculum relation gives $p_0 = c_0 + X(1+r)^{-T} - S_0$. Substituting the values gives $7 + 45 - 40 = 12$. So the no-arbitrage put price is USD 12.</p><p>Why the other options are wrong: They come from subtracting the components in the wrong order rather than following the parity equation.</p>"
+  },
+  {
+    "id": 21,
+    "model": "ChatGPT",
+    "topic": "Simple firm-value arithmetic",
+    "stem": "If firm value at debt maturity is USD 65 and debt face value is USD 80, shareholder payoff is most likely:",
+    "options": {
+      "A": "USD 15",
+      "B": "USD 65",
+      "C": "USD 0"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: core idea</h3><p><strong>C is correct.</strong> Shareholder payoff is $\\max(0, V_T - D)$. Here firm value is below debt face value, so $65 - 80$ is negative and the payoff floors at zero. That means shareholders receive nothing in insolvency.</p><p>Why the other options are wrong: USD 15 is the size of the shortfall, not the equity payoff, and USD 65 is the amount debtholders would receive from the remaining firm value.</p>"
+  }
+]

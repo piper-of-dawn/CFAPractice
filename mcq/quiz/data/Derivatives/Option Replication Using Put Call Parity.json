@@ -1,0 +1,373 @@
+[
+  {
+    "id": 1,
+    "format": "Enumeration / Counting Format",
+    "topic": "Put-call parity building blocks",
+    "stem": "Consider the following:\nI. A long underlying, a long put, and a long risk-free bond.\nII. A long call and a long risk-free bond.\nIII. A protective put and a fiduciary call.\nHow many of the above portfolios are guaranteed by put-call parity to have identical payoff profiles at expiration?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum defines put-call parity by equating the payoff of a protective put with the payoff of a fiduciary call. Item I is not one of those equivalent portfolios because adding a risk-free bond to a protective put changes the payoff. Item II is the fiduciary call. Item III states the actual equivalent pair. Therefore, only one statement describes portfolios guaranteed to be identical.</p><p>Why option B is incorrect. Counting two incorrectly treats the extra-bond portfolio in Item I as unchanged, even though the additional bond alters the payoff.</p><p>Why option C is incorrect. All three cannot qualify because Item I does not match the CFA Curriculum parity construction.</p>"
+  },
+  {
+    "id": 2,
+    "format": "Enumeration / Counting Format",
+    "topic": "Put-call parity rearrangements",
+    "stem": "Consider the following:\nI. A long put can be replicated by a long call, a long risk-free bond, and a short underlying.\nII. A long risk-free bond can be replicated by a short underlying, a long call, and a short put.\nIII. A long underlying can be replicated by a short put, a long call, and a short risk-free bond.\nHow many of the above statements are most likely correct under put-call parity?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> From the CFA Curriculum, $p_0 = c_0 + X(1+r)^{-T} - S_0$ and $X(1+r)^{-T} = -S_0 + c_0 - p_0$. So Item I is correct and Item II is correct. Item III is incorrect because the underlying equals $-p_0 + c_0 + X(1+r)^{-T}$, which requires a long, not short, risk-free bond. Therefore, only two statements are correct.</p><p>Why option A is incorrect. Counting only one ignores that both the put and the risk-free bond rearrangements are stated directly by the parity identities.</p><p>Why option C is incorrect. All three cannot qualify because Item III reverses the sign on the bond position.</p>"
+  },
+  {
+    "id": 3,
+    "format": "Enumeration / Counting Format",
+    "topic": "Firm value option analogies",
+    "stem": "Consider the following:\nI. Shareholder payoff at maturity is $\\max(0, V_T - D)$.\nII. Debtholder payoff at maturity is $\\max(0, D - V_T)$.\nIII. Risky debt can be viewed as risk-free debt minus a put sold to shareholders.\nHow many of the above statements are most likely correct according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum states that shareholders receive $\\max(0, V_T - D)$ and debtholders receive $\\min(V_T, D) = D - \\max(0, D - V_T)$. So Item I is correct. Item II is incorrect because $\\max(0, D - V_T)$ is the put payoff, not the full debtholder payoff. Item III is correct because risky debt equals risk-free debt less the sold put on firm value. Therefore, only two statements are correct.</p><p>Why option A is incorrect. Counting one overlooks that the sold-put interpretation of risky debt is an explicit result in the module.</p><p>Why option C is incorrect. All three cannot qualify because Item II confuses the put component with total debtholder payoff.</p>"
+  },
+  {
+    "id": 4,
+    "format": "Enumeration / Counting Format",
+    "topic": "Put-call forward parity construction",
+    "stem": "Consider the following:\nI. A synthetic protective put replaces the cash underlying with a long forward and a risk-free bond tied to the forward price.\nII. Under put-call forward parity, $F_0(T)(1+r)^{-T} + p_0 = c_0 + X(1+r)^{-T}$.\nIII. Under put-call forward parity, a long put and a short call are equivalent to a long forward and a short risk-free bond.\nHow many of the above statements are most likely correct?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> The CFA Curriculum defines the synthetic protective put exactly as in Item I and states the parity relation in Item II. Rearranging that parity gives $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$, which the curriculum interprets as a long put plus short call being equivalent to a long risk-free bond and a short forward. Item III states that same equivalence in position form. Therefore, all three statements are correct.</p><p>Why option A is incorrect. Counting only one ignores that both the equation and the synthetic-protective-put construction are explicitly given in the curriculum.</p><p>Why option B is incorrect. Counting only two misses that the long-put/short-call equivalence is the direct rearrangement of put-call forward parity.</p>"
+  },
+  {
+    "id": 5,
+    "format": "Enumeration / Counting Format",
+    "topic": "Synthetic protective put cash flows",
+    "stem": "Consider the following:\nI. If $S_T < X$, the purchased put contributes $X - S_T$.\nII. If $S_T \\ge X$, the forward purchase contributes $S_T - F_0(T)$.\nIII. In both states, the synthetic protective put totals either $X$ or $S_T$.\nHow many of the above statements are most likely correct for the synthetic protective put at expiration?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>C is correct.</strong> In the CFA Curriculum, the synthetic protective put contains a purchased put, a forward purchase, and a risk-free bond. Item I is correct because the put payoff is $X - S_T$ when exercised. Item II is correct because the long forward payoff is $S_T - F_0(T)$. Item III is correct because the total payoff is $X$ when $S_T < X$ and $S_T$ when $S_T \\ge X$. Therefore, all three statements are correct.</p><p>Why option A is incorrect. Counting one ignores both the correct forward payoff and the correct state-contingent total shown in the curriculum.</p><p>Why option B is incorrect. Counting two still misses one of the three valid pieces of the synthetic protective put payoff construction.</p>"
+  },
+  {
+    "id": 6,
+    "format": "Enumeration / Counting Format",
+    "topic": "Firm insolvency and solvency payoffs",
+    "stem": "Consider the following:\nI. If $V_T > D$, debtholders receive $D$.\nII. If $V_T < D$, shareholders receive $V_T - D$.\nIII. If $V_T < D$, debtholders receive the debt face value $D$.\nHow many of the above statements are most likely correct under the firm-value application?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>A is correct.</strong> The CFA Curriculum states that in solvency, debtholders are repaid in full and receive $D$, so Item I is correct. In insolvency, shareholders receive zero rather than $V_T - D$, so Item II is incorrect. Item III is also incorrect because insolvent debtholders receive the firm value $V_T$, not the full debt face value $D$. Therefore, only one statement is correct.</p><p>Why option B is incorrect. Counting two would wrongly treat either a negative shareholder residual or full debtholder repayment in insolvency as valid.</p><p>Why option C is incorrect. All three cannot qualify because Items II and III both contradict the curriculum's insolvency outcomes.</p>"
+  },
+  {
+    "id": 7,
+    "format": "Enumeration / Counting Format",
+    "topic": "Covered call replication",
+    "stem": "Consider the following:\nI. A covered call equals a long underlying and a short call.\nII. A covered call can be replicated by a long risk-free bond and a short put.\nIII. If the covered call is replicated correctly, the upside above the exercise price remains unlimited.\nHow many of the above statements are most likely correct according to the CFA Curriculum?",
+    "options": {
+      "A": "Only one",
+      "B": "Only two",
+      "C": "All the three"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: classification rule</h3><p><strong>B is correct.</strong> The CFA Curriculum defines the covered call as $S_0 - c_0$, so Item I is correct. Rearranging put-call parity gives $S_0 - c_0 = X(1+r)^{-T} - p_0$, so Item II is correct. Item III is incorrect because the short call caps upside above the exercise price rather than leaving it unlimited. Therefore, only two statements are correct.</p><p>Why option A is incorrect. Counting only one ignores that both the covered-call definition and its bond-minus-put replication are explicit in the curriculum.</p><p>Why option C is incorrect. All three cannot be correct because the covered call does not preserve unlimited upside once the short call is in place.</p>"
+  },
+  {
+    "id": 8,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Put-call parity no-arbitrage condition",
+    "stem": "If a protective put and a fiduciary call have identical expiration cash flows in every state, their values at inception must most likely:",
+    "options": {
+      "A": "be equal under no arbitrage",
+      "B": "differ by the call premium",
+      "C": "differ whenever the put is initially in the money"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The defining criterion in the CFA Curriculum is that two portfolios with identical future cash flows must trade at the same price at inception under no arbitrage. A protective put and a fiduciary call match state by state at expiration, so their time-0 prices must be equal. That is exactly put-call parity.</p><p>Why option B is incorrect. The call premium is only one component of the fiduciary call and does not create an arbitrary pricing wedge when the total future cash flows are identical.</p><p>Why option C is incorrect. Initial moneyness does not override the no-arbitrage requirement once the full payoff profiles are the same.</p>"
+  },
+  {
+    "id": 9,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Put-call parity position synthesis",
+    "stem": "Under put-call parity, the underlying asset is most likely replicated by which combination?",
+    "options": {
+      "A": "long put, short call, and long risk-free bond",
+      "B": "short put, long call, and long risk-free bond",
+      "C": "short put, long call, and short risk-free bond"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> Rearranging the CFA Curriculum relation $S_0 + p_0 = c_0 + X(1+r)^{-T}$ gives $S_0 = -p_0 + c_0 + X(1+r)^{-T}$. So the underlying is replicated by a short put, a long call, and a long risk-free bond. That is the exact underlying synthesis under put-call parity.</p><p>Why option A is incorrect. This combination has the wrong signs on both options and therefore does not isolate the underlying payoff.</p><p>Why option C is incorrect. The short bond reverses the cash component that parity requires to complete the underlying replication.</p>"
+  },
+  {
+    "id": 10,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Put-call parity arbitrage direction",
+    "stem": "If $S_0 + p_0$ is greater than $c_0 + X(1+r)^{-T}$, an arbitrageur seeking a riskless profit would most likely:",
+    "options": {
+      "A": "buy the protective put and sell the fiduciary call",
+      "B": "buy both portfolios because the underlying is rising",
+      "C": "sell the protective put and buy the fiduciary call"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The CFA Curriculum shows that when the protective put side is overpriced relative to the fiduciary call side, the arbitrage is to sell the expensive side and buy the cheap side. Here, $S_0 + p_0$ exceeds $c_0 + X(1+r)^{-T}$, so the investor sells the protective put package and buys the fiduciary call package. The future cash flows offset and the initial positive difference is locked in.</p><p>Why option A is incorrect. That would buy the overpriced side and sell the underpriced side, reversing the arbitrage profit.</p><p>Why option B is incorrect. The trade is driven by relative pricing under parity, not by a directional view on the underlying.</p>"
+  },
+  {
+    "id": 11,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Put-call forward parity equivalence",
+    "stem": "Under put-call forward parity, a long put and a short call are most likely equivalent to:",
+    "options": {
+      "A": "a long risk-free bond and a short forward",
+      "B": "a short risk-free bond and a short forward",
+      "C": "a long risk-free bond and a long forward"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>A is correct.</strong> The CFA Curriculum rearranges put-call forward parity to $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$. That right-hand side is the present value of receiving $X$ and paying $F_0(T)$ at maturity, which is a long risk-free bond and a short forward position. So a long put plus short call matches that package.</p><p>Why option B is incorrect. A short risk-free bond would reverse the receipt of $X$ at maturity and break the parity identity.</p><p>Why option C is incorrect. A long forward gives the wrong exposure because the parity rearrangement requires paying, not receiving, the forward price.</p>"
+  },
+  {
+    "id": 12,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Synthetic protective put",
+    "stem": "A synthetic protective put is most likely formed by combining a purchased put with:",
+    "options": {
+      "A": "a short forward and a short risk-free bond",
+      "B": "a long forward and a risk-free bond tied to the forward price",
+      "C": "a long call and a short risk-free bond"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>B is correct.</strong> The CFA Curriculum replaces the cash underlying with its synthetic form: a long forward plus a risk-free bond whose maturity value equals the forward price. Adding a purchased put to that synthetic underlying creates the synthetic protective put. Its payoff then matches the protective put and the fiduciary call.</p><p>Why option A is incorrect. The short forward and short bond reverse the synthetic underlying and do not reproduce the protective-put payoff.</p><p>Why option C is incorrect. A long call and short bond is the opposite side of the basic parity relation and does not define the synthetic protective put.</p>"
+  },
+  {
+    "id": 13,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Firm value equity analogy",
+    "stem": "From the shareholder perspective, equity in a levered firm is most likely analogous to:",
+    "options": {
+      "A": "a sold put on firm value",
+      "B": "a risk-free bond on firm value",
+      "C": "a call option on firm value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The CFA Curriculum states that shareholder payoff at maturity is $\\max(0, V_T - D)$, which is exactly the payoff shape of a call option on firm value with exercise price equal to debt face value. Shareholders have upside if firm value exceeds debt and limited downside if it does not. That makes equity call-like, not bond-like.</p><p>Why option A is incorrect. The sold put interpretation belongs to debtholders, who absorb downside insolvency risk.</p><p>Why option B is incorrect. Equity does not have fixed upside capped at debt face value; it retains residual upside above debt.</p>"
+  },
+  {
+    "id": 14,
+    "format": "CFA Style Vanilla Hard MCQ",
+    "topic": "Firm value debt analogy",
+    "stem": "A debtholder's payoff in the firm-value application is least likely to be described as:",
+    "options": {
+      "A": "limited upside in solvency",
+      "B": "risk-free debt minus a put on firm value",
+      "C": "a direct call option on firm value"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: decision rule</h3><p><strong>C is correct.</strong> The defining criterion from the CFA Curriculum is that debtholders receive $\\min(V_T, D)$, which is equivalent to risk-free debt minus a put sold to shareholders. That position has limited upside because full repayment is capped at $D$. It is therefore least like a direct call option, which would preserve upside above the strike.</p><p>Why option A is incorrect. Limited upside is exactly how the curriculum characterizes debtholder payoff in solvency.</p><p>Why option B is incorrect. Risk-free debt minus a put on firm value is the curriculum's explicit decomposition of risky debt.</p>"
+  },
+  {
+    "id": 15,
+    "format": "Assertion–Reason",
+    "topic": "Put-call parity state-by-state logic",
+    "stem": "Assertion (A): A protective put and a fiduciary call can differ in price at inception even if they have identical expiration cash flows in every state.\nReason (R): No-arbitrage requires portfolios with identical future cash flows to have the same value at inception.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: no-arbitrage identity</h3><p><strong>D is correct.</strong> The assertion is false because the CFA Curriculum says identical state-contingent cash flows must have the same value at inception. The reason is true and states the governing no-arbitrage rule directly. Because the assertion violates that rule while the reason states it correctly, the correct classification is A false, R true.</p><p>Why option A is incorrect. The assertion is not true, so both statements cannot be true together.</p><p>Why option B is incorrect. Again, the assertion fails first; there is no case in which both statements are true.</p><p>Why option C is incorrect. The reason is true, not false, because it is the curriculum's core parity logic.</p>"
+  },
+  {
+    "id": 16,
+    "format": "Assertion–Reason",
+    "topic": "Underlying replication",
+    "stem": "Assertion (A): Under put-call parity, a long underlying can be replicated by a short put, a long call, and a long risk-free bond.\nReason (R): Rearranging $S_0 + p_0 = c_0 + X(1+r)^{-T}$ for $S_0$ yields $S_0 = -p_0 + c_0 + X(1+r)^{-T}$.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: algebraic replication</h3><p><strong>A is correct.</strong> The assertion matches the rearranged parity identity exactly. The reason correctly derives the replication by isolating $S_0$ from the curriculum equation. Because the algebra in the reason is the direct basis for the assertion, both are true and the reason explains the assertion.</p><p>Why option B is incorrect. The reason is not merely related; it is the exact derivation of the asserted replication.</p><p>Why option C is incorrect. The reason is true because the rearrangement is numerically and conceptually correct.</p><p>Why option D is incorrect. The assertion is true, not false, because it restates the rearranged parity equation.</p>"
+  },
+  {
+    "id": 17,
+    "format": "Assertion–Reason",
+    "topic": "Covered call equivalence",
+    "stem": "Assertion (A): A covered call can be replicated by a long risk-free bond and a short put.\nReason (R): Rearranging put-call parity gives $S_0 - c_0 = X(1+r)^{-T} + p_0$.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: covered-call decomposition</h3><p><strong>C is correct.</strong> The assertion is true because the CFA Curriculum shows that a covered call, $S_0 - c_0$, is equivalent to a long risk-free bond and a short put. The reason is false because the correct rearrangement is $S_0 - c_0 = X(1+r)^{-T} - p_0$, not plus $p_0$. Therefore, A is true but R is false.</p><p>Why option A is incorrect. The reason is not true because it reverses the sign on the put term.</p><p>Why option B is incorrect. Both statements are not true once the sign error in the reason is recognized.</p><p>Why option D is incorrect. The assertion is true, so it cannot be classified as false.</p>"
+  },
+  {
+    "id": 18,
+    "format": "Assertion–Reason",
+    "topic": "Synthetic protective put logic",
+    "stem": "Assertion (A): A synthetic protective put replaces the cash underlying with a long forward and a risk-free bond whose maturity value equals the forward price.\nReason (R): The curriculum's synthetic underlying is used to extend put-call parity into put-call forward parity.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: forward-parity extension</h3><p><strong>B is correct.</strong> The assertion is true because the module defines the synthetic protective put exactly that way. The reason is also true because that synthetic underlying is the bridge from basic put-call parity to put-call forward parity. But the reason explains why the substitution matters conceptually, not the full construction details of the assertion itself, so it is not the direct explanation of every component in the assertion.</p><p>Why option A is incorrect. The reason is related, but it does not fully explain the specific composition of the synthetic protective put.</p><p>Why option C is incorrect. The reason is true; the synthetic underlying is precisely what extends the parity relation to forwards.</p><p>Why option D is incorrect. The assertion is true because it matches the curriculum's stated portfolio construction.</p>"
+  },
+  {
+    "id": 19,
+    "format": "Assertion–Reason",
+    "topic": "Long put versus short call under forward parity",
+    "stem": "Assertion (A): Under put-call forward parity, a long put and a short call are equivalent to a long forward and a short risk-free bond.\nReason (R): Rearranging the parity identity gives $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "D",
+    "explanation": "<h3>First Principles Thinking: sign discipline</h3><p><strong>D is correct.</strong> The reason is true because the curriculum gives that exact rearrangement. But the assertion is false: $[X - F_0(T)](1+r)^{-T}$ corresponds to receiving the strike via a long risk-free bond and paying the forward price via a short forward, not the other way around. The trap is reversing both positions.</p><p>Why option A is incorrect. The assertion is false because it flips the signs of the two non-option positions.</p><p>Why option B is incorrect. Both statements are not true, so this classification cannot hold.</p><p>Why option C is incorrect. The reason is true because it is the exact curriculum identity.</p>"
+  },
+  {
+    "id": 20,
+    "format": "Assertion–Reason",
+    "topic": "Equity as option on firm value",
+    "stem": "Assertion (A): Shareholders have a payoff similar to a call option on firm value.\nReason (R): At maturity, shareholders receive the residual only when firm value exceeds debt face value.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: residual-claim mechanism</h3><p><strong>A is correct.</strong> The assertion is true because equity payoff is $\\max(0, V_T - D)$, the same shape as a call option. The reason is also true and explains why: shareholders get nothing below the debt threshold and keep only residual value above it. That threshold nature is exactly what creates the call-like payoff.</p><p>Why option B is incorrect. The reason is not just related; it is the direct mechanism that generates the call-option shape.</p><p>Why option C is incorrect. The reason is true, not false, because the residual claim exists only after debt is covered.</p><p>Why option D is incorrect. The assertion is true because the module explicitly compares equity to a call on firm value.</p>"
+  },
+  {
+    "id": 21,
+    "format": "Assertion–Reason",
+    "topic": "Credit spread interpretation",
+    "stem": "Assertion (A): The put component in the firm-value application can be interpreted as the credit spread on the firm's debt.\nReason (R): As the likelihood of insolvency rises, the put option on firm value becomes more valuable to shareholders and more costly from the debtholder perspective.",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: credit-risk premium</h3><p><strong>B is correct.</strong> The assertion is true because the curriculum states that the put may be interpreted as the credit spread or premium above the risk-free rate required by debtholders. The reason is also true because higher insolvency risk raises the value of the put-like transfer from debtholders to shareholders. But the reason describes how the component behaves with risk rather than directly defining why the component is called the credit spread.</p><p>Why option A is incorrect. The reason supports the intuition but does not directly establish the naming identity in the way the assertion states it.</p><p>Why option C is incorrect. The reason is true because increasing insolvency risk makes the sold-put exposure more painful for debtholders.</p><p>Why option D is incorrect. The assertion is true because the curriculum explicitly interprets the put as the debt credit spread.</p>"
+  },
+  {
+    "id": 22,
+    "format": "Numerical Questions",
+    "topic": "Put-call parity pricing",
+    "stem": "A European call is priced at USD 14 on a non-income-paying asset with spot price USD 90, exercise price USD 100, and a risk-free present value of the strike of USD 95. Under put-call parity, the European put price is most likely?",
+    "options": {
+      "A": "USD 19",
+      "B": "USD 9",
+      "C": "USD 5"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: parity valuation</h3><p><strong>A is correct.</strong> The CFA Curriculum uses $S_0 + p_0 = c_0 + X(1+r)^{-T}$. Solving for the put gives $p_0 = c_0 + X(1+r)^{-T} - S_0 = 14 + 95 - 90 = 19$. The no-arbitrage put value is therefore USD 19.</p><p>Why option B is incorrect. This subtracts the present value of the strike instead of adding it when isolating the put.</p><p>Why option C is incorrect. This reflects only part of the parity difference and ignores one cash component.</p>"
+  },
+  {
+    "id": 23,
+    "format": "Numerical Questions",
+    "topic": "Arbitrage profit from mispriced put",
+    "stem": "Using the same terms as the prior question, suppose the put actually trades at USD 22 instead of its no-arbitrage price. The immediate arbitrage profit per unit from selling the overpriced protective-put side and buying the fiduciary-call side is most likely:",
+    "options": {
+      "A": "USD 1",
+      "B": "USD 3",
+      "C": "USD 8"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: mispricing gap</h3><p><strong>B is correct.</strong> With the traded put at USD 22, the protective-put side costs $S_0 + p_0 = 90 + 22 = 112$. The fiduciary-call side costs $c_0 + X(1+r)^{-T} = 14 + 95 = 109$. Selling the expensive side and buying the cheap side locks in USD 3 at inception, with offsetting expiration cash flows. That USD 3 is the arbitrage profit per unit.</p><p>Why option A is incorrect. This understates the actual pricing gap between the two parity portfolios.</p><p>Why option C is incorrect. This confuses the arbitrage profit with a larger partial spread that is not supported by the parity arithmetic.</p>"
+  },
+  {
+    "id": 24,
+    "format": "Numerical Questions",
+    "topic": "Covered call no-arbitrage price",
+    "stem": "A stock is priced at USD 70, the present value of the exercise price is USD 64, and the corresponding put is priced at USD 9. Under put-call parity, the no-arbitrage call price is most likely:",
+    "options": {
+      "A": "USD 3",
+      "B": "USD 15",
+      "C": "USD 13"
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: call from parity</h3><p><strong>B is correct.</strong> Rearranging the CFA Curriculum relation gives $c_0 = S_0 + p_0 - X(1+r)^{-T}$. Substituting the values gives $70 + 9 - 64 = 15$. So the no-arbitrage call price is USD 15.</p><p>Why option A is incorrect. This ignores most of the asset value and does not satisfy the parity relation.</p><p>Why option C is incorrect. This is a partial arithmetic error and still does not balance the parity equation.</p>"
+  },
+  {
+    "id": 25,
+    "format": "Numerical Questions",
+    "topic": "Put-call forward parity pricing",
+    "stem": "A European call is priced at USD 8. The exercise price is USD 50, the forward price is USD 46, and the present-value factor for maturity is 1. Under put-call forward parity, the European put price is most likely:",
+    "options": {
+      "A": "USD 2",
+      "B": "USD 4",
+      "C": "USD 12"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: forward-parity valuation</h3><p><strong>C is correct.</strong> The CFA Curriculum gives $p_0 - c_0 = [X - F_0(T)](1+r)^{-T}$. With the present-value factor equal to 1, $p_0 - 8 = 50 - 46 = 4$. So $p_0 = 12$. The no-arbitrage put value is therefore USD 12.</p><p>Why option A is incorrect. This ignores both the call premium and the positive strike-minus-forward spread.</p><p>Why option B is incorrect. This stops at the spread between strike and forward price and does not solve for the put price.</p>"
+  },
+  {
+    "id": 26,
+    "format": "Numerical Questions",
+    "topic": "Synthetic protective put total",
+    "stem": "At expiration, a synthetic protective put consists of a purchased put with exercise price USD 60, a long forward entered at USD 52, and a risk-free bond that pays USD 52. If the underlying settles at USD 48, the total payoff is most likely:",
+    "options": {
+      "A": "USD 60",
+      "B": "USD 48",
+      "C": "USD 64"
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: state payoff aggregation</h3><p><strong>A is correct.</strong> When $S_T = 48$ and the exercise price is USD 60, the put pays $60 - 48 = 12$. The long forward pays $48 - 52 = -4$, and the bond pays 52. Adding them gives $12 - 4 + 52 = 60$. That matches the curriculum result that the synthetic protective put pays the strike when $S_T < X$.</p><p>Why option B is incorrect. This is the underlying price in the no-exercise state, not the total in the exercised-put state.</p><p>Why option C is incorrect. This overcounts the protective floor by adding the strike and forward mismatch incorrectly.</p>"
+  },
+  {
+    "id": 27,
+    "format": "Numerical Questions",
+    "topic": "Equity payoff as call on firm value",
+    "stem": "A firm's asset value at debt maturity is USD 140 and the face value of zero-coupon debt is USD 100. Under the firm's option interpretation, shareholder payoff at maturity is most likely:",
+    "options": {
+      "A": "USD 100",
+      "B": "USD 0",
+      "C": "USD 40"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: residual equity payoff</h3><p><strong>C is correct.</strong> The CFA Curriculum states shareholder payoff is $\\max(0, V_T - D)$. Here that is $\\max(0, 140 - 100) = 40$. Shareholders therefore receive the USD 40 residual after debt is fully paid.</p><p>Why option A is incorrect. USD 100 is the debtholder payment in solvency, not the shareholder residual.</p><p>Why option B is incorrect. Zero applies only in insolvency when firm value falls below debt face value.</p>"
+  },
+  {
+    "id": 28,
+    "format": "Numerical Questions",
+    "topic": "Debtholder payoff in insolvency",
+    "stem": "A firm's asset value at debt maturity is USD 72 and the face value of debt is USD 90. Under the firm's option interpretation, debtholder payoff at maturity is most likely:",
+    "options": {
+      "A": "USD 90",
+      "B": "USD 18",
+      "C": "USD 72"
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: risky-debt payoff</h3><p><strong>C is correct.</strong> The CFA Curriculum states debtholder payoff is $\\min(V_T, D)$. With firm value USD 72 and debt face value USD 90, debtholders receive the lesser amount, USD 72. That is the insolvency outcome because the firm cannot fully cover the debt.</p><p>Why option A is incorrect. Full repayment of USD 90 occurs only in solvency when firm value exceeds debt.</p><p>Why option B is incorrect. USD 18 is the shortfall from full repayment, not the payoff received by debtholders.</p>"
+  }
+]
