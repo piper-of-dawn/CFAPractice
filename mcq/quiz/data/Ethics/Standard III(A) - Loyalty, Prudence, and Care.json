@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A bank manages a corporate pension plan. Company officers urge the manager to buy more employer stock to help defeat a takeover and hint the bank may win more mandates. To whom is the manager's primary duty owed?",
+    "options": {
+      "A": "The company board, because it selected the bank and controls future mandates.",
+      "B": "The plan participants and beneficiaries, because they are the ultimate client for the pension assets.",
+      "C": "The bank's shareholders, because preserving a large corporate relationship protects the advisory business."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: identifying the real client</h3><p><strong>B is correct.</strong> Standard III(A) first asks who the client is. For pension plans and trusts, loyalty is owed to the ultimate beneficiaries, not to the corporation that hired the manager. The company officers and the bank both have interests in the outcome, but the governing relationship is the manager's duty to the plan participants whose assets are being invested.</p><p>A is tempting because the company hired the bank, but the CFA Curriculum draws a sharper line for pension assets: the beneficiaries, not management, are the client whose interests control the investment decision.</p><p>C fails because the manager cannot elevate the bank's commercial interests above the interests of the people for whom the assets are actually being managed.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A pension manager believes an employer's stock is overvalued but buys it anyway because the purchase may help incumbent management resist a takeover and may bring the manager's firm more business. What is the strongest III(A) conclusion?",
+    "options": {
+      "A": "The manager failed to evaluate the purchase solely on the pension plan's merits and instead allowed employer and self-interest to control the trade.",
+      "B": "The manager acted properly if the purchase also supported the employer's strategic goals during the takeover contest.",
+      "C": "The manager may rely on the employer's preference so long as the stock is publicly traded and the trade is fully documented."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: pension assets cannot be used to serve outside interests</h3><p><strong>A is correct.</strong> The governing standard is that a manager of pension assets must act prudently and solely in the interests of plan participants and beneficiaries. Here, the decision was driven by helping management, preserving business goodwill, and seeking new accounts rather than by the appropriateness of the investment for the pension plan. That is the exact conflict Standard III(A) condemns.</p><p>B is tempting because a takeover can affect the employer's future, but the CFA Curriculum says the manager must evaluate the bid and the stock on their own merits for the plan, not on whether management prefers a particular corporate outcome.</p><p>C fails because public trading status and documentation do not cure a loyalty breach when the reason for the trade is misaligned with the beneficiaries' interests.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An adviser is told by a new client to route all trades through Broker S. The client signs a statement acknowledging the adviser will not seek best price and execution and understands the consequences. Which assessment is most accurate?",
+    "options": {
+      "A": "The instruction is ineffective because a client can never alter the adviser's best-execution duty.",
+      "B": "The adviser may follow the instruction only if Broker S also offers the best terms available in the market on every trade.",
+      "C": "The adviser may follow the instruction because the client gave written direction that specifically addressed the execution consequences."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: directed brokerage as a limited exception</h3><p><strong>C is correct.</strong> Standard III(A) makes best execution the default duty, but it also recognizes a narrow exception when the client provides written direction acknowledging that best price and execution will not be sought and understands the consequences. Once that condition is met, the adviser may follow the client's routing instruction.</p><p>A is tempting because best execution is central to loyalty and care, but the CFA Curriculum expressly allows this documented client-directed arrangement.</p><p>B fails because it collapses the exception back into the default rule. If best execution were still required in the same way, the written acknowledgment would serve no function.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A broker promises an adviser new client introductions if the adviser sends more existing client trades through that broker. The adviser does so for several accounts that never gave routing instructions, and the adviser says nothing to them. What detail is most decisive under III(A)?",
+    "options": {
+      "A": "Whether the broker later succeeds in introducing enough new clients to justify the arrangement economically.",
+      "B": "Whether the adviser disclosed the practice to the affected accounts while still seeking best execution for them.",
+      "C": "Whether the adviser had at least one separate client that had already directed trades to that broker."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: undisclosed broker rewards create a loyalty problem</h3><p><strong>B is correct.</strong> Standard III(A) allows considerable flexibility only if the affected clients still receive best execution and the practice is disclosed to those accounts. The conflict in this scenario is not cured by the broker's business-development help alone; the decisive facts are whether the clients' execution remained appropriate and whether they were told that their brokerage was being used in this way.</p><p>A is tempting because the adviser may frame the arrangement as good for the firm, but firm growth is not the controlling standard for client brokerage decisions.</p><p>C fails because one client's directed-brokerage instruction does not authorize the adviser to use other clients' trades for a separate undisclosed purpose.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A trust officer routes most trust trades to a market maker that quietly gives the officer better prices on personal trades than it gives the trust accounts. The trust accounts still receive the dealer's ordinary quotes. Which rationale best fits III(A)?",
+    "options": {
+      "A": "The officer allowed personal trading benefits to influence broker selection for client accounts.",
+      "B": "The officer's only issue is failing to report personal trades to a supervisor before month-end.",
+      "C": "The officer may continue using the dealer because the trust accounts were not charged prices worse than the dealer's normal quotes."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: conflicted broker selection breaches loyalty even without an obvious overcharge</h3><p><strong>A is correct.</strong> Standard III(A) is violated when a member chooses a broker for client accounts because that broker gives the member personal benefits. The key defect is the motivation for the broker selection: the officer's interests came first. The trust accounts are entitled to a broker choice made for their benefit, not one purchased with personal trading favors.</p><p>B is tempting because supervision and reporting matter, but the source text identifies the loyalty breach as the use of client brokerage driven by personal advantage, not as a mere timing issue in reporting.</p><p>C fails because receiving ordinary quotes does not answer the real question. The officer's loyalty is compromised once personal benefits drive the client-broker choice.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An analyst directs client commissions to a research firm that will sponsor a market-briefing trip. She has not confirmed the broker affiliate's execution quality, and she also uses commission dollars for five personal vacation days added to the trip. Which statement is most accurate?",
+    "options": {
+      "A": "Using client commissions is acceptable because market briefings generally support investment research.",
+      "B": "The arrangement is acceptable if the analyst later shares the trip notes with the firm and covers only the vacation meals personally.",
+      "C": "The arrangement is inconsistent with III(A) because execution quality was not vetted and the personal vacation costs do not benefit clients."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: client commissions may not subsidize personal benefits</h3><p><strong>C is correct.</strong> Standard III(A) requires the analyst to determine whether the commission level is reasonable relative to the research benefit and whether best execution can be obtained. It also prohibits using client commission dollars for expenses that do not assist investment decision making. The added vacation days are plainly personal, and the execution question was never resolved.</p><p>A is tempting because research travel can benefit clients, but the CFA Curriculum does not allow that broad label to cover unrelated personal travel or to bypass the best-execution inquiry.</p><p>B fails because partial reimbursement after the fact does not transform personal vacation expenses into client-benefiting research costs, and sharing notes does not answer the unresolved execution issue.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A portfolio manager wants to use a specialized research broker for client trades linked to a company tour. The broker's commissions are higher than peers. Which combination would most strongly support consistency with III(A)?",
+    "options": {
+      "A": "The tour is professionally useful, and the broker has a strong personal friendship with the manager that may help future access.",
+      "B": "The manager determines the research benefit is reasonable relative to the commissions and verifies that execution quality and prices remain competitive.",
+      "C": "The manager believes the trip will improve reputation inside the firm, even though the broker's execution is only average."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: higher commissions require a client-benefit and execution justification</h3><p><strong>B is correct.</strong> Standard III(A) does not ban research-related commission arrangements outright. It asks whether the commissions are reasonable in relation to the client benefit and whether best execution and competitive prices can still be achieved. If both are established, the arrangement can be consistent with loyalty, prudence, and care.</p><p>A is tempting because useful research sounds client-oriented, but personal friendship with the broker is not a valid basis for routing client trades and introduces the wrong incentive.</p><p>C fails because internal career benefit and merely average execution do not satisfy the standard's client-first test.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A manager's compensation depends heavily on trading commissions. She trades suitable securities in client accounts more often than needed to meet the firm's commission targets. What is the best III(A) reading?",
+    "options": {
+      "A": "The manager used client assets to benefit herself or her firm, even though the securities stayed within acceptable asset classes.",
+      "B": "The trading is acceptable because each purchase and sale was individually suitable for the account.",
+      "C": "The conduct is mainly a recordkeeping issue because the strategy can be justified if each trade ticket contains a market rationale."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: suitability of each security does not excuse unnecessary trading</h3><p><strong>A is correct.</strong> Standard III(A) looks beyond whether the securities fit permitted asset classes. The manager must also act loyally and prudently in using the client's assets. Trading more than necessary to meet commission targets uses the account as a tool for the manager's or firm's benefit, which is exactly what the standard forbids.</p><p>B is tempting because every trade may look defensible in isolation, but the curriculum focuses on the aggregate purpose and necessity of the trading, not just the labels on the securities involved.</p><p>C fails because documentation cannot cure a strategy whose underlying purpose is to generate commissions rather than advance client objectives.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A manager receives fewer IPO shares than requested. One suitable account belongs to the manager's fee-paying brother. To avoid seeming biased, the manager excludes the brother's account and allocates the shares only to unrelated clients. Under III(A), the exclusion is:",
+    "options": {
+      "A": "Appropriate because excluding relatives is the safest way to avoid any appearance of favoritism.",
+      "B": "Required unless the brother signs a special acknowledgment consenting to reduced access to new issues.",
+      "C": "Improper if the brother's account is a normal fee-paying account comparable to the others and was otherwise suitable for the IPO."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: avoiding appearance is not the same as serving the client's interest</h3><p><strong>C is correct.</strong> Standard III(A) asks whether the manager acted for the benefit of each client account. If the brother's account is a regular fee-paying account managed under the same structure as other suitable accounts, excluding it solely because of the family relationship disadvantages that client rather than protecting it. The proper approach is proportionate treatment across the suitable accounts.</p><p>A is tempting because the manager is trying to look clean, but the standard does not permit a member to sacrifice one client's legitimate opportunity merely to avoid optics.</p><p>B fails because the curriculum does not create a special waiver mechanism for family accounts in this setting; the controlling question is whether the account is a normal client account and suitable for the investment.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A manager handles several client accounts and also oversees a sibling's account outside the firm's normal fee structure. An oversubscribed IPO is suitable for many accounts. Which allocation approach best fits III(A)?",
+    "options": {
+      "A": "Give the sibling a token allocation so no one can claim the manager completely excluded family.",
+      "B": "Allocate only among the comparable client accounts managed within the firm's normal client structure and leave out the outside family account.",
+      "C": "Reserve the IPO entirely for nonfamily clients because any family participation creates an unavoidable conflict."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: comparable client accounts and outside family accounts are not treated the same</h3><p><strong>B is correct.</strong> Standard III(A) distinguishes between a regular fee-paying family account that is comparable to other client accounts and a family account managed outside the normal client structure. The former should be treated with the others; the latter may properly be excluded from the pro rata client allocation. That is the narrow boundary the curriculum draws.</p><p>A is tempting because it sounds evenhanded, but a token allocation based on optics rather than on the account's status and suitability is not the governing rule.</p><p>C fails because the standard does not impose a blanket ban on family participation. It asks whether the family account is genuinely comparable to the firm's normal client accounts.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A mutual fund manager learns that a wealthy investor in the fund has unusual liquidity needs and asks the manager to tilt trading to reduce volatility for that one investor's position. Which response best matches III(A)?",
+    "options": {
+      "A": "The manager should continue managing to the fund's stated mandate rather than tailoring the portfolio to one investor's personal needs.",
+      "B": "The manager should adjust the fund if the request comes from one of the fund's largest investors.",
+      "C": "The manager should split the difference by making small temporary changes that partly reflect the investor's needs without disclosing them."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: fund managers owe loyalty to the mandate, not to one investor's circumstances</h3><p><strong>A is correct.</strong> Standard III(A) recognizes that where assets are managed to a fund mandate, the manager's duty is to invest consistently with that mandate. The manager does not recalibrate the portfolio around the personal needs of one investor in the fund. Those individualized duties belong to any adviser who has a direct advisory relationship with that investor.</p><p>B is tempting because investor size can feel commercially important, but the curriculum rejects investor-specific influence over a pooled fund mandate.</p><p>C fails because partial accommodation is still accommodation of an individual investor's needs at the expense of the mandate framework governing all fund investors.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A private wealth adviser tells a mutual fund manager, 'Because my client owns your fund, we now share the same duty to that client.' Under the curriculum's III(A) treatment, that statement is:",
+    "options": {
+      "A": "Accurate because all professionals connected to the investment chain owe identical duties to the same end investor.",
+      "B": "Accurate only if the investor's position is large enough to affect the fund manager's trading discretion.",
+      "C": "Incomplete because the wealth adviser owes loyalty to the individual client, while the fund manager's duty is to the fund mandate rather than to that investor personally."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: two professionals can have different clients in the same investment</h3><p><strong>C is correct.</strong> Standard III(A) requires members to identify their actual client. The wealth adviser has a direct advisory relationship with the individual investor and owes duties to that client. The mutual fund manager, by contrast, manages the pooled fund according to its investment policy and must not let one investor's personal needs control fund decisions.</p><p>A is tempting because both professionals are connected to the same capital, but the curriculum does not collapse their roles into one identical duty.</p><p>B fails because investor size does not convert the fund manager's mandate-based duty into a personal advisory relationship with that investor.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "Before a performance report is released, an analyst finds an omitted trade that turns a client's result sharply worse. The client has already warned the firm that another disappointment may end the relationship. What should control the analyst's decision?",
+    "options": {
+      "A": "The firm's near-term retention risk, because preserving the advisory relationship protects all other clients from business disruption.",
+      "B": "The client's right to receive corrected information before release, even if the correction increases the chance of termination.",
+      "C": "The marketing team's judgment about whether the omission is material enough to disclose after the next reporting cycle."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: unpleasant truth still belongs to the client</h3><p><strong>B is correct.</strong> Standard III(A) requires members to act in the client's best interest, which includes providing accurate information rather than withholding a harmful correction to preserve the relationship. The prospect of losing the client does not change whose interest controls the reporting decision.</p><p>A is tempting because business continuity sounds broader and more prudent, but the curriculum rejects using the firm's commercial interest as a reason to hide information from the affected client.</p><p>C fails because delaying the correction means releasing information known to be wrong, which is contrary to loyalty and care to the client receiving the report.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A broker executes only client-directed trades and gives no investment advice. He worries that III(A) makes him a fiduciary in the same way as a discretionary portfolio manager. Which view is most accurate?",
+    "options": {
+      "A": "III(A) does not automatically make him a fiduciary; his duty centers on skillful execution and staying within client instructions.",
+      "B": "III(A) always imposes a full fiduciary duty whenever a member handles any client order for compensation.",
+      "C": "III(A) imposes no duty at all in execution-only roles because the client already made the investment decision."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: III(A) sets a minimum duty that varies with the role</h3><p><strong>A is correct.</strong> The curriculum says Standard III(A) is a minimum benchmark and does not make every member a fiduciary in the legal sense. For an execution-only professional, loyalty, prudence, and care focus on obtaining the most favorable achievable terms and operating within the client's stated parameters. That role-based distinction is explicit.</p><p>B is tempting because fiduciary language appears throughout the standard, but the text carefully says the duty depends on the professional relationship and does not automatically rise to a full fiduciary status in every job function.</p><p>C fails because execution-only professionals still owe meaningful duties of care and loyalty in how they carry out client instructions.</p>"
+  },
+  {
+    "id": 15,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An execution-only broker receives a client order with specific limits on quantity, price, and timing. Which action best fits the broker's III(A) obligation?",
+    "options": {
+      "A": "Ignore the timing limit if waiting for a slightly better price seems prudent from the broker's market view.",
+      "B": "Treat the order as advisory in nature and revise the trade size to better match the broker's preferred risk level.",
+      "C": "Seek the most favorable achievable execution while remaining inside the client's stated trading parameters."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: best execution and client parameters must operate together</h3><p><strong>C is correct.</strong> For an execution-only role, Standard III(A) centers on skill and diligence in obtaining favorable terms while honoring the client's instructions on quantity, price, timing, and similar constraints. The broker is not free to substitute personal market judgment for the client's specified parameters.</p><p>A is tempting because chasing a better price sounds client-friendly, but it violates the second half of the broker's duty if it disregards the trading limits the client set.</p><p>B fails because the broker does not have a mandate to convert an execution order into discretionary advice and re-engineer the client's trade.</p>"
+  },
+  {
+    "id": 16,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A firm can recommend only its proprietary products. At the start of the relationship, the adviser clearly explains the restriction. Later, the adviser recommends one of those products because it fits the client's objectives and risk tolerance better than the firm's other allowable options. Under III(A), this is most likely:",
+    "options": {
+      "A": "Improper because loyalty requires the adviser to compare the firm's products with every product available in the market.",
+      "B": "Proper because the restriction was disclosed at the outset and the recommendation was made within the allowed universe based on the client's needs.",
+      "C": "Improper because a proprietary-product platform is incompatible with acting in a client's best interest under any circumstances."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: a limited product shelf can still be used loyally if the limits are disclosed and the recommendation is client-centered</h3><p><strong>B is correct.</strong> The curriculum recognizes blended environments with limited product sets. Compliance under Standard III(A) requires telling clients at the outset that advice will be restricted and then recommending within that allowable universe based on the client's objectives and risk tolerance rather than on firm or personal motivation.</p><p>A is tempting because a broader market search sounds more protective, but the text expressly contemplates limited-product arrangements as long as clients are informed and recommendations remain client-driven within the agreed scope.</p><p>C fails because the standard does not categorically ban proprietary-only platforms; it regulates how they must be disclosed and used.</p>"
+  },
+  {
+    "id": 17,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An adviser works on a proprietary-only platform but never told the client that outside products would not be considered. The adviser later recommends an in-house product that fits the client's risk tolerance. What is the hardest III(A) problem here?",
+    "options": {
+      "A": "The client was not informed at the outset about the limitation on the adviser's product universe.",
+      "B": "The recommendation is fully protected because suitability alone resolves all III(A) concerns in a limited-product environment.",
+      "C": "There is no issue if the adviser personally believes the in-house product is at least as good as outside alternatives."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: undisclosed scope limits distort the client relationship</h3><p><strong>A is correct.</strong> Standard III(A) allows limited-product advice only if the adviser outlines that limitation at the outset of the relationship so the client can decide whether to engage on that basis. Even a suitable recommendation sits on a flawed foundation when the client was never told the search universe was restricted.</p><p>B is tempting because suitability is important, but the curriculum treats scope disclosure and client understanding as separate requirements from the eventual product fit.</p><p>C fails because the adviser's private confidence cannot substitute for the client's right to know the boundaries of the service being offered.</p>"
+  },
+  {
+    "id": 18,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A trustee manages assets for a charitable trust. The donor's family pressures the trustee to favor investments that would make the family look supportive of a local project, even though the trust's beneficiaries would gain no special advantage. Under III(A), the trustee's client is most accurately described as:",
+    "options": {
+      "A": "The donor's family, because they have the strongest continuing relationship with the trust.",
+      "B": "The local community, because the project could generate reputational value around the trust assets.",
+      "C": "The trust's beneficiaries, whose interests define the loyalty obligation for the managed assets."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: trust loyalty runs to beneficiaries, not to influential surrounding parties</h3><p><strong>C is correct.</strong> Standard III(A) says that for trusts, the duty of loyalty is owed to the ultimate beneficiaries. Family influence, donor preferences, and reputational considerations may create pressure, but they do not change the identity of the client whose interests must control the investment decision.</p><p>A is tempting because the family may feel like the practical principal, but the curriculum draws the line at the beneficiaries for trust assets.</p><p>B fails because broader social or reputational benefits do not displace the trustee's duty to act for the beneficiaries' interests.</p>"
+  },
+  {
+    "id": 19,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An expert witness is hired by a law firm. As testimony develops, the law firm signals that a more favorable framing would better support its case. Which response best aligns with the curriculum's treatment of this role?",
+    "options": {
+      "A": "Adjust the framing because the hiring law firm is the client in the same sense as an investment-advisory client.",
+      "B": "Keep the testimony independent and not let the law firm influence the substance of the expert opinion.",
+      "C": "Split the difference by preserving the core conclusion but softening any points that may hurt the law firm's litigation strategy."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: some roles are governed by independence, not client-pleasing advocacy</h3><p><strong>B is correct.</strong> In the expert-witness setting, the curriculum says the identity of the client is not well defined in the ordinary advisory sense. The member is bound to maintain independence and objectivity in the testimony, much like an independent research analyst. The law firm's preference cannot shape the substance of the opinion.</p><p>A is tempting because the law firm is the contracting party, but the source text specifically rejects treating this as a standard advisory relationship in which loyalty means tailoring substance to the hiring party's desired outcome.</p><p>C fails because even partial substantive influence from the law firm compromises the independent character the curriculum requires in this role.</p>"
+  },
+  {
+    "id": 20,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "A broker offers to help an adviser win new mandates if the adviser routes more current client trades through the broker. Which change would do the most to move the practice toward III(A) compliance for those current clients?",
+    "options": {
+      "A": "Ensure the affected accounts receive best execution and disclose the routing practice to those accounts.",
+      "B": "Keep the arrangement secret but route only the largest accounts through the broker so the business-development effort is efficient.",
+      "C": "Use only oral explanations to the broker and rely on the adviser’s good-faith belief that the extra mandates will eventually help all clients."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: client brokerage cannot be repurposed without client-protective conditions</h3><p><strong>A is correct.</strong> The curriculum allows this sort of routing only if the clients whose trades are being sent through the broker still receive best execution and the practice is disclosed to them. Those two conditions directly address the loyalty and transparency concerns created when client brokerage is tied to the adviser's business-development interests.</p><p>B is tempting because it sounds commercially sensible, but account size has nothing to do with whether the affected clients were treated loyally and informed of the practice.</p><p>C fails because undisclosed oral understandings and hoped-for indirect future benefits do not satisfy the standard's explicit client-facing protections.</p>"
+  },
+  {
+    "id": 21,
+    "topic": "Standard III(A) - Loyalty, Prudence, and Care",
+    "stem": "An investment firm sends most client brokerage to one broker because the broker agrees to absorb part of the firm's rent and other overhead. The broker's research and execution are only average, and commissions are high. Which conclusion best reflects III(A)?",
+    "options": {
+      "A": "The practice is acceptable if the firm discloses the friendship between the executives.",
+      "B": "The practice is acceptable if the broker provides any research at all in addition to execution.",
+      "C": "The practice is inconsistent with III(A) because client brokerage is being used for firm expenses rather than for client benefit, while best execution is not being pursued."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: client commissions are not a pool for firm overhead</h3><p><strong>C is correct.</strong> Standard III(A) is violated when client brokerage is directed to obtain services that benefit the firm rather than the clients, especially where execution and commission quality are inferior or merely average. The arrangement puts the firm's overhead relief ahead of the clients' entitlement to brokerage decisions made for their benefit.</p><p>A is tempting because disclosure often matters, but disclosure of friendship does not transform client brokerage into a valid source of rent support for the firm.</p><p>B fails because the mere presence of some research does not justify high commissions and average execution when the real purpose of the routing is to subsidize firm overhead.</p>"
+  }
+]
