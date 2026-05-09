@@ -3,27 +3,27 @@
     "id": 1,
     "model": "Gemini 3 Pro",
     "topic": "Sufficient Due Diligence (IPO Pricing)",
-    "stem": "Hawke, a corporate finance manager, rushes to price several IPOs to beat a tax loophole deadline. Lacking resources to research each company fully, she prices them based solely on their relative size compared to peers, intending to justify the valuation later. Has Hawke violated Standard V(A)?",
+    "stem": "Hawke, a corporate finance manager, rushes to price several IPOs to beat a tax loophole deadline. Lacking resources to research each company fully, she prices them based solely on their relative size compared to peers, intending to justify the valuation later. Has Hawke violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "No, because the time constraint was an external factor beyond her control.",
-      "B": "Yes, because she failed to exercise diligence and thoroughness in analyzing the specific investments.",
-      "C": "No, because relative valuation is a widely accepted industry standard for pricing new issues."
+      "A": "The time constraint was an external factor beyond her control.",
+      "B": "Relative valuation is a widely accepted industry standard for pricing new issues.",
+      "C": "She failed to exercise diligence and thoroughness in analyzing the specific investments."
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: The Foundation of Advice</h3><p><strong>B is correct.</strong> Start with the definition of 'Reasonable Basis': it requires investigation supported by appropriate research <em>before</em> acting. The governing principle: Professional judgment cannot be bypassed for speed. The mechanism of violation: Hawke substituted a heuristic (size = price) for actual analysis (fundamentals, risk, etc.). By explicitly deciding to 'justify later', she admitted the decision had no basis <em>at the time it was made</em>. The boundary condition: External pressure (deadlines) never excuses the lack of diligence. If you can't do the work, you can't give the advice.</p><p>A is incorrect: Time pressure is a business constraint, not an ethical exemption. The flaw is prioritizing the deal schedule over the integrity of the valuation.</p><p>C is incorrect: Relative valuation requires comparable metrics (margins, growth), not just 'size'. The misconception is that using a valid <em>method</em> (relative value) poorly counts as diligence.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: The Foundation of Advice</h3><p><strong>B is correct.</strong> Start with the definition of 'Reasonable Basis': it requires investigation supported by appropriate research <em>before</em> acting. The governing principle: Professional judgment cannot be bypassed for speed. The mechanism of violation: Hawke substituted a heuristic (size = price) for actual analysis (fundamentals, risk, etc.). By explicitly deciding to 'justify later', she admitted the decision had no basis <em>at the time it was made</em>. The boundary condition: External pressure (deadlines) never excuses the lack of diligence. If you can't do the work, you can't give the advice.</p><p>A is incorrect: Time pressure is a business constraint, not an ethical exemption. The flaw is prioritizing the deal schedule over the integrity of the valuation.</p><p>B is incorrect: Relative valuation requires comparable metrics (margins, growth), not just 'size'. The misconception is that using a valid <em>method</em> (relative value) poorly counts as diligence.</p>"
   },
   {
     "id": 2,
     "model": "Gemini 3 Pro",
     "topic": "Timely Client Updates",
-    "stem": "Chandler selects five US equity managers for a pension client based on a rigorous database screen. Before delivering the report, she learns that one manager's entire investment team has quit. She delivers the original report without the update, reasoning the database was accurate at the time of screening. Has Chandler violated Standard V(A)?",
+    "stem": "Chandler selects five US equity managers for a pension client based on a rigorous database screen. Before delivering the report, she learns that one manager's entire investment team has quit. She delivers the original report without the update, reasoning the database was accurate at the time of screening. Has Chandler violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "Yes, because she failed to exercise diligence by ignoring material new information known before delivery.",
-      "B": "No, because her recommendation was based on a thorough and objective process at the time of analysis.",
-      "C": "No, because the client can be informed of the team departure during the next quarterly review."
+      "A": "The client can be informed of the team departure during the next quarterly review.",
+      "B": "Her recommendation was based on a thorough and objective process at the time of analysis.",
+      "C": "She failed to exercise diligence by ignoring material new information known before delivery."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Currency of Information</h3><p><strong>A is correct.</strong> From first principles, a recommendation is a 'live' instruction to act. The governing relationship: The validity of a recommendation relies on the current reality of the investment. The mechanism of violation: The departure of the team destroys the 'reasonable basis' for the recommendation (the skill is gone). By delivering the report <em>knowing</em> it was obsolete, Chandler knowingly provided baseless advice. The boundary condition: Diligence doesn't stop when the spreadsheet is closed; it stops when the client acts. If facts change before delivery, the advice must change.</p><p>B is incorrect: The 'time of analysis' defense fails if the timeline is short and the change is catastrophic. The flaw is treating the research process as a static snapshot rather than a dynamic duty.</p><p>C is incorrect: The client might hire the empty shell firm <em>now</em> based on the report. Waiting for a quarterly review exposes the client to immediate harm.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Currency of Information</h3><p><strong>A is correct.</strong> From first principles, a recommendation is a 'live' instruction to act. The governing relationship: The validity of a recommendation relies on the current reality of the investment. The mechanism of violation: The departure of the team destroys the 'reasonable basis' for the recommendation (the skill is gone). By delivering the report <em>knowing</em> it was obsolete, Chandler knowingly provided baseless advice. The boundary condition: Diligence doesn't stop when the spreadsheet is closed; it stops when the client acts. If facts change before delivery, the advice must change.</p><p>B is incorrect: The 'time of analysis' defense fails if the timeline is short and the change is catastrophic. The flaw is treating the research process as a static snapshot rather than a dynamic duty.</p><p>A is incorrect: The client might hire the empty shell firm <em>now</em> based on the report. Waiting for a quarterly review exposes the client to immediate harm.</p>"
   },
   {
     "id": 3,
@@ -31,22 +31,22 @@
     "topic": "Group Research Opinions",
     "stem": "Mastakis, a junior analyst, writes a report predicting stable interest rates. The firm's investment committee reviews it and, based on their collective expertise, revises the conclusion to predict rising rates. Mastakis disagrees with the change but acknowledges the committee's view has a reasonable basis. Must she dissociate from the report?",
     "options": {
-      "A": "Yes, because an analyst must never sign a report that contradicts their personal opinion.",
-      "B": "No, because the group consensus has a reasonable basis, even if she disagrees with the conclusion.",
-      "C": "Yes, because the committee's intervention compromises her independence and objectivity."
+      "A": "An analyst must never sign a report that contradicts their personal opinion.",
+      "B": "The committee's intervention compromises her independence and objectivity.",
+      "C": "The group consensus has a reasonable basis, even if she disagrees with the conclusion."
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: Consensus vs. Coercion</h3><p><strong>B is correct.</strong> Start with the nature of institutional research: it is often a collective product. The governing principle: A 'reasonable basis' can exist for multiple conflicting viewpoints. The mechanism: If the committee's view is grounded in fact and logic (reasonable), Mastakis can associate with it as a 'firm' product, even if her personal view differs. The boundary condition: She would only need to dissociate if the committee's view had <em>no</em> reasonable basis (e.g., was forced by banking pressure) or was factually false. Disagreement on judgment calls does not require dissociation.</p><p>A is incorrect: Professional disagreement is normal. The misconception is that 'my name' means 'my sole unadulterated thought'. It often means 'I participated in the rigorous process'.</p><p>C is incorrect: Peer review enhances quality; it doesn't automatically ruin independence. The flaw is viewing all oversight as 'pressure' rather than 'quality control'.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: Consensus vs. Coercion</h3><p><strong>B is correct.</strong> Start with the nature of institutional research: it is often a collective product. The governing principle: A 'reasonable basis' can exist for multiple conflicting viewpoints. The mechanism: If the committee's view is grounded in fact and logic (reasonable), Mastakis can associate with it as a 'firm' product, even if her personal view differs. The boundary condition: She would only need to dissociate if the committee's view had <em>no</em> reasonable basis (e.g., was forced by banking pressure) or was factually false. Disagreement on judgment calls does not require dissociation.</p><p>A is incorrect: Professional disagreement is normal. The misconception is that 'my name' means 'my sole unadulterated thought'. It often means 'I participated in the rigorous process'.</p><p>B is incorrect: Peer review enhances quality; it doesn't automatically ruin independence. The flaw is viewing all oversight as 'pressure' rather than 'quality control'.</p>"
   },
   {
     "id": 4,
     "model": "Gemini 3 Pro",
     "topic": "Subadviser Selection Diligence",
-    "stem": "Ostrowski searches for a subadviser to handle international investments. He receives seven proposals but feels unqualified to judge their investment merit. He selects the firm with the lowest fees to minimize impact on his firm's bottom line. Has Ostrowski violated Standard V(A)?",
+    "stem": "Ostrowski searches for a subadviser to handle international investments. He receives seven proposals but feels unqualified to judge their investment merit. He selects the firm with the lowest fees to minimize impact on his firm's bottom line. Has Ostrowski violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "No, because minimizing costs is a fiduciary duty to the client.",
-      "B": "Yes, because he failed to investigate the qualifications and strategy of the subadviser.",
-      "C": "No, because he used a standardized Request for Proposal (RFP) process."
+      "A": "Minimizing costs is a fiduciary duty to the client.",
+      "B": "He failed to investigate the qualifications and strategy of the subadviser.",
+      "C": "He used a standardized Request for Proposal (RFP) process."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Delegation is Not Abdication</h3><p><strong>B is correct.</strong> From first principles, selecting a subadviser is an investment decision. The governing rule: You must have a reasonable basis for the <em>selection</em>. The mechanism of violation: Ostrowski admitted he couldn't judge quality ('felt unqualified') and substituted a non-investment factor (fees) as the sole decision criteria. This ignores risk, performance, and process. The boundary condition: If you are unqualified to judge the diligence, you are unqualified to hire the manager. You cannot outsource the duty of care.</p><p>A is incorrect: Cost is one factor, not the only factor. Cheap incompetence is not a fiduciary win. The flaw is equating 'low cost' with 'best interest'.</p><p>C is incorrect: The tool (RFP) is irrelevant if the evaluation of it is flawed. The misconception is that <em>collecting</em> data counts as <em>analyzing</em> data.</p>"
@@ -57,9 +57,9 @@
     "topic": "Scenario Testing Limitations",
     "stem": "Thompson runs a stress test on mortgage securities. He insists on including a 'negative housing price' scenario, even though historical data shows prices have never fallen. His manager argues it's too dire. Thompson runs the test, finds high risk, and recommends against purchase. Has Thompson acted appropriately?",
     "options": {
-      "A": "No, because he based his analysis on a scenario that contradicts all available historical data.",
-      "B": "Yes, because diligence requires testing assumptions outside of historical norms (stress testing).",
-      "C": "No, because his model inputs were subjective and not grounded in empirical evidence."
+      "A": "He based his analysis on a scenario that contradicts all available historical data.",
+      "B": "Diligence requires testing assumptions outside of historical norms (stress testing).",
+      "C": "His model inputs were subjective and not grounded in empirical evidence."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: The Inductive Fallacy</h3><p><strong>B is correct.</strong> Start with the purpose of risk management: to anticipate the future, not just record the past. The governing principle: 'Reasonable basis' includes considering what <em>could</em> happen, not just what <em>has</em> happened. The mechanism: Historical data (prices always rise) had a blind spot. Thompson applied first-principles reasoning (prices <em>can</em> fall) to stress-test the asset. The boundary condition: Ignoring a plausible economic risk just because it hasn't happened yet (the 'turkey problem') is a failure of diligence. Thompson's skepticism saved the firm.</p><p>A is incorrect: History is a guide, not a jail. The flaw is assuming the future must look exactly like the past.</p><p>C is incorrect: All forward-looking scenarios are subjective. The misconception is that 'subjective' means 'invalid'. If the economic logic holds, the scenario is valid.</p>"
@@ -68,24 +68,24 @@
     "id": 6,
     "model": "Gemini 3 Pro",
     "topic": "Model Integration Risk",
-    "stem": "Liakos rushes to create a volatility strategy for a client. She outsources components to trusted third parties. Each component is validated individually, but Liakos never tests how they interact as a whole system. The strategy collapses when the components work at cross-purposes during market stress. Has Liakos violated Standard V(A)?",
+    "stem": "Liakos rushes to create a volatility strategy for a client. She outsources components to trusted third parties. Each component is validated individually, but Liakos never tests how they interact as a whole system. The strategy collapses when the components work at cross-purposes during market stress. Has Liakos violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "Yes, because she failed to understand and test the interaction of the model's components.",
-      "B": "No, because she exercised due diligence by validating each individual component.",
-      "C": "No, because she relied on trusted third parties which is permitted under the Standards."
+      "A": "She failed to understand and test the interaction of the model's components.",
+      "B": "She exercised due diligence by validating each individual component.",
+      "C": "She relied on trusted third parties which is permitted under the Standards."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Systemic Validity</h3><p><strong>A is correct.</strong> From first principles, a machine is more than a pile of parts. The governing relationship: The validity of a complex strategy depends on the <em>correlation</em> and <em>interaction</em> of its pieces. The mechanism of violation: Testing parts A, B, and C in isolation tells you nothing about A+B+C. Liakos skipped the 'integration test' due to haste. The boundary condition: When assembling a product, the 'reasonable basis' applies to the <em>final assembly</em>. Failing to test the whole is a diligence failure.</p><p>A is incorrect: The Fallacy of Composition—assuming what is true of the part is true of the whole. The flaw is ignoring the interaction effects.</p><p>C is incorrect: Reliance is allowed, but blind assembly is not. The misconception is that outsourcing the parts outsources the responsibility for the whole.</p>"
+    "explanation": "<h3>First Principles Thinking: Systemic Validity</h3><p><strong>A is correct.</strong> From first principles, a machine is more than a pile of parts. The governing relationship: The validity of a complex strategy depends on the <em>correlation</em> and <em>interaction</em> of its pieces. The mechanism of violation: Testing parts A, B, and C in isolation tells you nothing about A+B+C. Liakos skipped the 'integration test' due to haste. The boundary condition: When assembling a product, the 'reasonable basis' applies to the <em>final assembly</em>. Failing to test the whole is a diligence failure.</p><p>A is incorrect: The Fallacy of Composition\u2014assuming what is true of the part is true of the whole. The flaw is ignoring the interaction effects.</p><p>C is incorrect: Reliance is allowed, but blind assembly is not. The misconception is that outsourcing the parts outsources the responsibility for the whole.</p>"
   },
   {
     "id": 7,
     "model": "Gemini 3 Pro",
     "topic": "Quantitative Model Diligence (Blog inputs)",
-    "stem": "Cannon, a quant analyst, reads a blog post about a new market factor. Under pressure to improve performance, he immediately incorporates this factor into the firm's live trading models without testing it on the firm's specific data or history. Has Cannon violated Standard V(A)?",
+    "stem": "Cannon, a quant analyst, reads a blog post about a new market factor. Under pressure to improve performance, he immediately incorporates this factor into the firm's live trading models without testing it on the firm's specific data or history. Has Cannon violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "No, because the blog was written by a reputable CFA charterholder.",
-      "B": "Yes, because he failed to establish a reasonable basis for the new factor through his own testing.",
-      "C": "No, because continuous improvement of models is required by the Competence standard."
+      "A": "The blog was written by a reputable CFA charterholder.",
+      "B": "He failed to establish a reasonable basis for the new factor through his own testing.",
+      "C": "Continuous improvement of models is required by the Competence standard."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Verification of Inputs</h3><p><strong>B is correct.</strong> Start with the scientific method: Hypothesis -> Test -> Implementation. The governing principle: You cannot adopt external ideas without internal validation. The mechanism of violation: Cannon skipped the 'Test' phase. A factor that works in a blog (generic context) might fail in his specific model (specific context). The boundary condition: 'Reasonable basis' requires that <em>you</em> know it works for <em>you</em>. Relying on an outside authority without verification is negligence.</p><p>A is incorrect: Argument from Authority. Even experts can be wrong, or their advice might not apply to your specific situation.</p><p>C is incorrect: Improvement requires diligence. The flaw is confusing 'change' with 'improvement'. Change without testing is just gambling.</p>"
@@ -94,69 +94,69 @@
     "id": 8,
     "model": "Gemini 3 Pro",
     "topic": "Selecting a Service Provider (Software)",
-    "stem": "Stefansson recommends a complex performance attribution system solely because the sales presentation was impressive. She does not review the other four candidates or test if the calculation methodology aligns with her firm's specific investment strategy. Has Stefansson violated Standard V(A)?",
+    "stem": "Stefansson recommends a complex performance attribution system solely because the sales presentation was impressive. She does not review the other four candidates or test if the calculation methodology aligns with her firm's specific investment strategy. Has Stefansson violated Standard V(A) Diligence and Reasonable Basis?",
     "options": {
-      "A": "Yes, because she lacked a reasonable basis for the recommendation and failed to investigate alternatives.",
-      "B": "No, because software selection is an operational decision, not an investment recommendation.",
-      "C": "No, because relying on vendor representations is standard industry practice."
+      "A": "She lacked a reasonable basis for the recommendation and failed to investigate alternatives.",
+      "B": "Software selection is an operational decision, not an investment recommendation.",
+      "C": "Relying on vendor representations is standard industry practice."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Tools are Investment Decisions</h3><p><strong>A is correct.</strong> From first principles, the tools we use determine the answers we give clients. The governing rule: Diligence applies to the <em>infrastructure</em> of advice, not just stock picking. The mechanism of violation: Stefansson bought the 'sizzle' (sales pitch) without checking the 'steak' (methodology). She failed to check fit (does it handle our currency needs?) or quality (is the math right?). The boundary condition: Recommending a system that reports client performance is a fiduciary act. It demands the same comparison and testing as buying a stock.</p><p>B is incorrect: If the tool measures performance/risk, it is part of the investment process. The flaw is thinking 'back office' means 'no ethics'.</p><p>C is incorrect: Vendor presentations are marketing, not research. The misconception is that a brochure constitutes due diligence.</p>"
   },
   {
-    "id": 1,
+    "id": 9,
     "model": "Gemini 3 Pro",
     "topic": "Performance Reporting - Gross vs. Net & Benchmarks",
     "stem": "Young, a portfolio manager, presents performance data for his firm's managed portfolios in marketing materials. He displays gross-of-fee returns with a footnote disclosing that advisory fees must be deducted to obtain actual performance. He also compares these returns (which include reinvested dividends) against the price appreciation of the S&P 500 Index. Regarding his presentation of performance, Young most likely:",
     "options": {
-      "A": "Violated the Standards by presenting gross-of-fee returns, as net-of-fee returns are mandatory for all retail communications.",
-      "B": "Violated the Standards by using a benchmark that is not comparable to the portfolio's return methodology.",
+      "A": "S by presenting gross-of-fee returns, as net-of-fee returns are mandatory for all retail communications.",
+      "B": "S by using a benchmark that is not comparable to the portfolio's return methodology.",
       "C": "Did not violate the Standards because he included a footnote regarding fees and the S&P 500 is a widely recognized standard."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Fair, Accurate, and Complete Presentation</h3><p><strong>B is correct.</strong> The core principle of Standard III(D) is that performance information must be fair, accurate, and complete. To be fair, a comparison must be &quot;apples-to-apples.&quot; Young's portfolio returns include reinvested dividends (total return), whereas the S&P 500 price appreciation ignores dividends (price return). Comparing total return to price return artificially inflates the manager's relative performance, creating a misleading impression of skill. Therefore, the benchmark selection violates the duty to not misstate performance.</p><p>A is incorrect: Presenting gross-of-fee returns is permitted under the Standards as long as there is prominent disclosure (like the footnote described) that fees must be deducted to determine the actual return to the client.</p><p>C is incorrect: While the S&P 500 is a recognized index, using its price-only return against a total-return portfolio is inherently misleading, regardless of the index's popularity.</p>"
   },
   {
-    "id": 2,
+    "id": 10,
     "model": "Gemini 3 Pro",
     "topic": "Performance Reporting - Expense Allocation",
     "stem": "Smith manages two funds: a mature fund entering its harvesting period and a new fund in its investment period. To improve the reported performance of the new fund and attract investors, Smith's supervisor directs her to reallocate expenses from the new fund to the mature fund. This reallocation does not affect the firm's consolidated results. Smith complies. Smith's action is most likely:",
     "options": {
-      "A": "Acceptable because the firm's overall consolidated performance remains accurate.",
-      "B": "Acceptable if the reallocation is disclosed in the footnotes of the annual report.",
-      "C": "Unacceptable because it misrepresents the specific performance of the individual funds."
+      "A": "The firm's overall consolidated performance remains accurate.",
+      "B": "The reallocation is disclosed in the footnotes of the annual report.",
+      "C": "It misrepresents the specific performance of the individual funds."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: Integrity of Performance Data</h3><p><strong>C is correct.</strong> Standard III(D) requires performance presentation to be fair and accurate. Shifting expenses arbitrarily between entities distorts the economic reality of each specific fund. The new fund appears more profitable than it is, and the mature fund appears less so. Investors rely on track records of specific vehicles to assess risk and return. By manipulating these inputs, Smith is actively participating in a misrepresentation (Standard I(C)) and failing to act with integrity, regardless of the firm-wide net neutral effect.</p><p>A is incorrect: Investors do not buy the &quot;firm's consolidated results&quot;; they buy specific funds. Accuracy at the aggregate level does not excuse fraud at the product level.</p><p>B is incorrect: Disclosure does not cure a fundamental breach of integrity. Deliberately manipulating accounting entries to smooth or boost returns is fraudulent behavior that cannot be rectified simply by noting it occurred.</p>"
   },
   {
-    "id": 3,
+    "id": 11,
     "model": "Gemini 3 Pro",
     "topic": "Performance Reporting - Portability of Records",
-    "stem": "Jergens manages a registered collective investment scheme (CIS) established in 2017. In marketing materials, he presents a continuous performance history from 2010 to 2018. The data from 2010–2016 is accurate but was generated by a composite of separate accounts managed with a similar strategy before the CIS was formed. Jergens does not disclose that the 2010–2016 data represents a different legal entity. Jergens has most likely:",
+    "stem": "Jergens manages a registered collective investment scheme (CIS) established in 2017. In marketing materials, he presents a continuous performance history from 2010 to 2018. The data from 2010\u20132016 is accurate but was generated by a composite of separate accounts managed with a similar strategy before the CIS was formed. Jergens does not disclose that the 2010\u20132016 data represents a different legal entity. Jergens has most likely:",
     "options": {
-      "A": "Violated the Standards by failing to disclose the change in entity status for the historical period.",
-      "B": "Violated the Standards because performance records from separate accounts can never be linked to a pooled fund.",
-      "C": "Complied with the Standards because the investment strategy remained consistent across the entire period."
+      "A": "S by failing to disclose the change in entity status for the historical period.",
+      "B": "S because performance records from separate accounts can never be linked to a pooled fund.",
+      "C": "With the Standards because the investment strategy remained consistent across the entire period."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: Transparency in Performance History</h3><p><strong>A is correct.</strong> Standard III(D) mandates that performance information be complete and not misleading. While performance can be &quot;ported&quot; or linked under specific conditions (same manager, same strategy), presenting the history as if it were always the CIS fund is misleading. Investors may falsely infer the CIS fund has a longer operational track record and asset base than it actually does. The failure to disclose that the 2010–2016 history comes from a composite of separate accounts—not the fund itself—constitutes a misrepresentation by omission.</p><p>B is incorrect: Linking performance is permissible if specific criteria are met; the violation here is the lack of disclosure, not the linkage itself.</p><p>C is incorrect: Strategy consistency is a necessary condition for linking, but it is not sufficient. Transparency regarding the source of the data (separate accounts vs. the fund) is required to prevent the information from being misleading.</p>"
+    "explanation": "<h3>First Principles Thinking: Transparency in Performance History</h3><p><strong>A is correct.</strong> Standard III(D) mandates that performance information be complete and not misleading. While performance can be &quot;ported&quot; or linked under specific conditions (same manager, same strategy), presenting the history as if it were always the CIS fund is misleading. Investors may falsely infer the CIS fund has a longer operational track record and asset base than it actually does. The failure to disclose that the 2010\u20132016 history comes from a composite of separate accounts\u2014not the fund itself\u2014constitutes a misrepresentation by omission.</p><p>B is incorrect: Linking performance is permissible if specific criteria are met; the violation here is the lack of disclosure, not the linkage itself.</p><p>C is incorrect: Strategy consistency is a necessary condition for linking, but it is not sufficient. Transparency regarding the source of the data (separate accounts vs. the fund) is required to prevent the information from being misleading.</p>"
   },
   {
-    "id": 4,
+    "id": 12,
     "model": "Gemini 3 Pro",
     "topic": "Performance Reporting - Calculation Errors",
     "stem": "A platform lender calculates Annualized Net Returns (ANR) for investors using a legacy computer code. An update to the code inadvertently excludes the worst-performing loans from the calculation, artificially inflating reported returns. The firm's compliance officer reviews policies but lacks the technical expertise to audit the code and relies on high-level summaries that fail to detect the error. When investors complain, customer service reps rely on the flawed system to confirm the numbers. The compliance officer has most likely:",
     "options": {
-      "A": "Violated the Standards by failing to ensure the accuracy of the performance calculation system.",
-      "B": "Complied with the Standards as the error was technical and unintentional.",
-      "C": "Complied with the Standards because she is not expected to have technical coding expertise."
+      "A": "S by failing to ensure the accuracy of the performance calculation system.",
+      "B": "With the Standards as the error was technical and unintentional.",
+      "C": "With the Standards because she is not expected to have technical coding expertise."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: Reasonable Basis and Supervision</h3><p><strong>A is correct.</strong> Under Standard V(A) (Diligence and Reasonable Basis) and IV(C) (Responsibilities of Supervisors), a member must ensure that the processes generating information are reliable. While the officer doesn't need to be a coder, she must implement adequate controls (e.g., testing, third-party audits, lower-level verifications) to verify system integrity. Relying on high-level summaries without testing the inputs or outputs against reality constitutes a failure to exercise reasonable care, especially when the metric (ANR) is a primary marketing tool.</p><p>B is incorrect: Lack of intent does not absolve a member of the duty of competence and diligence. Negligence in maintaining a compliance system that allows for systemic error is a violation.</p><p>C is incorrect: While she doesn't need to write code, she is responsible for the <em>output</em> of the system. She failed to delegate the audit to someone competent or to implement checks that would catch such a material deviation.</p>"
   },
   {
-    "id": 5,
+    "id": 13,
     "model": "Gemini 3 Pro",
     "topic": "Performance Reporting - Conflicts of Interest",
     "stem": "Smithson, CEO of an investment firm, hires an accounting firm to audit its financial records. To maximize efficiency, he also hires the same accounting firm to provide consulting services on GIPS compliance and to verify the firm's GIPS performance history. The fees for the consulting work are five times higher than the audit fees. Smithson's engagement of the accounting firm for GIPS verification is most likely:",
@@ -167,6 +167,109 @@
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: Independence and Objectivity</h3><p><strong>B is correct.</strong> Third-party verification (Standard III(D) context) relies entirely on the <em>independence</em> of the verifier. If the verifier is also receiving substantial consulting fees (creating a dependency relationship) or is auditing its own consulting work (self-review threat), its objectivity is compromised. In this case, the firm is effectively paying the auditor to build the compliance framework it is then supposed to independently verify. This conflict destroys the value of the &quot;independent&quot; verification, rendering the claim of third-party verification misleading.</p><p>A is incorrect: While efficiency is a business benefit, it cannot supersede the ethical requirement for independence in an audit or verification role.</p><p>C is incorrect: Disclosure is necessary for conflicts, but some conflicts are so severe they undermine the service itself. You cannot disclose away the lack of independence in an engagement that <em>requires</em> independence by definition.</p>"
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A research director adopts a third-party analyst's buy report because the analyst has a strong reputation. She never reviews the assumptions, data quality, or time horizon behind the report before distributing it to clients. Which conclusion is most accurate?",
+    "options": {
+      "A": "Reliance on outside research still requires some investigation of the report's methodology and basis before it is used.",
+      "B": "A respected source may be relied on without review so long as the recommendation is not changed.",
+      "C": "Due diligence is unnecessary when the outside report comes from a regulated broker-dealer."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: reliance does not eliminate responsibility</h3><p><strong>A is correct.</strong> Standard V(A) permits reliance on third-party research only when the member has a reasonable basis for believing that the research is sound. Reputation alone is not enough. The member must understand the assumptions, the process, and whether the work fits the intended use before passing it on to clients.</p><p>B is tempting because a well-known analyst can appear to substitute for diligence, but the CFA Curriculum requires the user of the research to assess whether the outside work itself has a reasonable basis.</p><p>C fails because regulatory status does not guarantee that a particular report is appropriate, current, or methodologically reliable for the member's recommendation.</p>",
+    "id": 14
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A consultant hires an external subadviser after reviewing only its five-year return record and GIPS compliance. The consultant does not review personnel, process, controls, or whether the stated style actually drove the returns. Under Standard V(A) Diligence and Reasonable Basis, the weakest step is most likely:",
+    "options": {
+      "A": "The consultant's use of GIPS as one input in the review.",
+      "B": "The consultant's assumption that performance and GIPS compliance alone create a reasonable basis for selection.",
+      "C": "The consultant's preference for a manager with an established track record over a newer firm."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: manager selection needs process-level diligence</h3><p><strong>B is correct.</strong> Standard V(A) requires more than performance screens when selecting an external adviser or subadviser. The member should understand the manager's people, philosophy, process, controls, and sources of return. Here, the consultant treated historical performance and GIPS compliance as a substitute for actual due diligence on how the results were produced.</p><p>A is tempting because GIPS matters, but the CFA Curriculum does not criticize using it as one factor; the problem is using it as a near-complete basis for selection.</p><p>C fails because preferring an established record can be reasonable, but it does not answer whether the consultant actually evaluated the manager thoroughly enough to recommend it.</p>",
+    "id": 15
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A quantitative manager uses a proprietary risk model she did not build. She understands the model's assumptions, stress-tests it periodically, and knows the market environments in which it performs poorly. A client later loses money during one of those difficult environments. Which statement best matches Standard V(A) Diligence and Reasonable Basis?",
+    "options": {
+      "A": "The loss itself shows the model never had a reasonable basis.",
+      "B": "A model can satisfy V(A) even if it later underperforms, provided the manager understood and monitored its limitations.",
+      "C": "Quantitative methods satisfy V(A) only if they are designed personally by the recommending manager."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: a failed outcome does not prove a failed process</h3><p><strong>B is correct.</strong> Standard V(A) focuses on whether the recommendation had a reasonable basis when made. A member may rely on a model that is well understood, appropriately tested, and used within its known limits. Losses can occur even when the underlying diligence was sound.</p><p>A is tempting because bad outcomes are emotionally persuasive, but the curriculum separates investment results from the quality of the prior analysis.</p><p>C fails because the standard does not require that the user of a model be the person who originally coded or designed it; it requires that the user understand it well enough to rely on it responsibly.</p>",
+    "id": 16
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "An analyst receives information from company management that supports her investment thesis. She does not seek contrary information because she believes too much skepticism would slow coverage and reduce access. Under Standard V(A) Diligence and Reasonable Basis, the stronger concern is that she most likely:",
+    "options": {
+      "A": "Placed too much weight on management access and failed to investigate information that could challenge her conclusion.",
+      "B": "Used issuer information rather than only third-party sources.",
+      "C": "Spent too little time building a valuation model with more than one output scenario."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: diligence includes looking for disconfirming evidence</h3><p><strong>A is correct.</strong> Standard V(A) requires diligence and thoroughness, not just collecting supportive facts. If an analyst avoids contrary evidence to protect access or save time, the resulting recommendation lacks a genuinely reasonable basis because the inquiry was one-sided.</p><p>B is tempting because company information can be biased, but the curriculum does not prohibit using issuer information; it requires evaluating it critically and in context.</p><p>C fails because scenario analysis may be useful, but the more direct breach here is the deliberate refusal to test the thesis against adverse information.</p>",
+    "id": 17
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A senior analyst asks a junior associate to update a report. The associate changes a key forecast assumption but does not document why. The senior analyst distributes the revised recommendation without reviewing the changed assumption. Which conclusion is most accurate?",
+    "options": {
+      "A": "The senior analyst may rely on the associate's work product without further review because the report was an internal update.",
+      "B": "The report remains supported because a documented reason is unnecessary when the recommendation itself is unchanged.",
+      "C": "A member distributing a recommendation must understand and be able to support material analytical changes in the underlying work."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: you own the recommendation you release</h3><p><strong>C is correct.</strong> Standard V(A) requires the member who issues or adopts a recommendation to have a reasonable basis for it. If a key assumption changed and the distributing analyst never reviewed or understood that change, the recommendation lacks support in the hands of the person releasing it.</p><p>A is tempting because delegation is common, but delegation does not eliminate responsibility for the final recommendation.</p><p>B fails because unchanged bottom-line language does not matter if the analytical support underneath it was materially altered without understanding or documentation.</p>",
+    "id": 18
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A manager attends a brief issuer roadshow, skims the slide deck, and recommends the stock the same day because several well-known funds also appear interested. Which fact most directly weakens the reasonable-basis claim?",
+    "options": {
+      "A": "The issuer's management did not guarantee access after the offering.",
+      "B": "Peer interest was considered before the manager built a discounted cash flow model.",
+      "C": "The recommendation rested more on market enthusiasm than on the manager's own sufficiently diligent analysis."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: crowd conviction is not analytical support</h3><p><strong>C is correct.</strong> Standard V(A) requires the member to form a recommendation on the basis of adequate investigation and analysis. The fact that other respected investors may be interested does not replace the manager's own duty to understand the investment well enough to recommend it.</p><p>A is tempting because continued access can matter commercially, but it does not address whether the recommendation itself was grounded in sufficient work.</p><p>B fails because the problem is not merely the sequencing of peer information and modeling; it is the substitution of market excitement for actual diligence.</p>",
+    "id": 19
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A strategist tells clients that a recommendation was based on a macro model. In fact, the model signaled only a weak preference, and the strategist added a strong conviction call mainly because the trading desk wanted more client activity. What best describes the ethical problem?",
+    "options": {
+      "A": "The recommendation lacked a true analytical basis matching the strength of the conviction presented to clients.",
+      "B": "The model should have been ignored entirely once it gave a weak signal.",
+      "C": "The recommendation is acceptable because trading-related considerations are part of normal market color."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: conviction must track support</h3><p><strong>A is correct.</strong> Standard V(A) is violated when a member presents a recommendation as if it rests on a strong analytical basis when the actual support is weak and the added conviction came from business pressure. The ethical issue is not merely that the model was imperfect, but that the final recommendation overstated what the research actually supported.</p><p>B is tempting because weak models can be frustrating, but the curriculum does not require abandonment of every imperfect signal; it requires honesty and reasonableness in how far the member goes beyond it.</p><p>C fails because trading activity goals are not part of a legitimate analytical basis for the substance of a recommendation.</p>",
+    "id": 20
+  },
+  {
+    "model": "ChatGPT",
+    "topic": "Standard V(A) Diligence and Reasonable Basis",
+    "stem": "A manager recommends a thinly traded security after reviewing only stale research from eighteen months ago because no newer coverage is available. She does not revisit the issuer's capital structure, industry conditions, or management changes. Under Standard V(A) Diligence and Reasonable Basis, the most accurate conclusion is:",
+    "options": {
+      "A": "The recommendation can still be supported because the absence of current coverage makes older research the best available evidence.",
+      "B": "The recommendation is acceptable if the manager discloses that the analysis relied on historical material.",
+      "C": "The age of the available research increases the need for fresh diligence rather than reducing it."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: scarce information raises the diligence burden</h3><p><strong>C is correct.</strong> Standard V(A) does not let a member rely on stale work merely because current coverage is limited. When information is sparse, the member must work harder to establish a reasonable basis through updated investigation rather than simply lowering the standard.</p><p>A is tempting because imperfect information is common in practice, but the curriculum does not equate scarcity with adequacy.</p><p>B fails because disclosure that the research is old does not itself create a reasonable analytical basis for recommending the security today.</p>",
+    "id": 21
   }
 ]
- 

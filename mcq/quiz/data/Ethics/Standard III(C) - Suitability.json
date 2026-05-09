@@ -2,35 +2,35 @@
   {
     "id": 1,
     "topic": "Standard III(C) Suitability",
-    "stem": "Harlow manages a publicly offered small-cap growth fund whose disclosures expressly limit holdings to companies below USD 2 billion market cap. A retail investor, Costa, purchases shares without consulting Harlow. Costa is 68, conservative, and the fund is unsuitable for him. Harlow is aware shares are widely sold to retail channels but has no advisory relationship with Costa. Is Harlow most likely in compliance with Standard III(C)?",
+    "stem": "Harlow manages a publicly offered small-cap growth fund whose disclosures expressly limit holdings to companies below USD 2 billion market cap. A retail investor, Costa, purchases shares without consulting Harlow. Costa is 68, conservative, and the fund is unsuitable for him. Harlow is aware shares are widely sold to retail channels but has no advisory relationship with Costa. Is Harlow most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "No, because members managing pooled vehicles retain a duty to screen end investors whose personal circumstances are clearly mismatched with the fund.",
-      "B": "Yes, because the duty to judge suitability for a particular client attaches only to members in an advisory relationship, not to managers of pooled assets managed to a stated mandate.",
-      "C": "No, because Harlow should have arranged for intermediaries to collect risk-tolerance information before permitting sales to retail investors."
+      "A": "The duty to judge suitability for a particular client attaches only to members in an advisory relationship, not to managers of pooled assets managed to a stated mandate.",
+      "B": "Members managing pooled vehicles retain a duty to screen end investors whose personal circumstances are clearly mismatched with the fund.",
+      "C": "Harlow should have arranged for intermediaries to collect risk-tolerance information before permitting sales to retail investors."
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: advisory relationship as the suitability trigger</h3><p><strong>B is correct.</strong> Under Standard III(C), the responsibility to determine suitability for a particular client falls on members who have an advisory relationship with that client; members and candidates who manage pooled assets to a specific mandate are not responsible for determining the fund's suitability for investors who purchase shares. Harlow's duty is to invest consistently with the fund's stated mandate, which he does.</p><p>A is tempting because Costa is clearly mismatched, but the CFA Curriculum explicitly confines individual-client suitability duties to advisory relationships; visibility of retail distribution does not transform a fund manager into an advisor.</p><p>C fails because the curriculum imposes no obligation on pooled-fund managers to establish investor screening procedures; that duty rests with anyone who ends up in an advisory relationship with Costa.</p>"
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: advisory relationship as the suitability trigger</h3><p><strong>B is correct.</strong> Under Standard III(C), the responsibility to determine suitability for a particular client falls on members who have an advisory relationship with that client; members and candidates who manage pooled assets to a specific mandate are not responsible for determining the fund's suitability for investors who purchase shares. Harlow's duty is to invest consistently with the fund's stated mandate, which he does.</p><p>B is tempting because Costa is clearly mismatched, but the CFA Curriculum explicitly confines individual-client suitability duties to advisory relationships; visibility of retail distribution does not transform a fund manager into an advisor.</p><p>C fails because the curriculum imposes no obligation on pooled-fund managers to establish investor screening procedures; that duty rests with anyone who ends up in an advisory relationship with Costa.</p>"
   },
   {
     "id": 2,
     "topic": "Standard III(C) Suitability",
-    "stem": "Ortega, a sell-side equity analyst, publishes a high-conviction buy recommendation on a volatile biotech. Vance, a retail investor with no relationship to Ortega or her firm, reads the report online and buys the stock as 40% of his retirement savings, subsequently losing most of his capital. Ortega did thorough research and the recommendation met her firm's publication standards. Is Ortega most likely in violation of Standard III(C)?",
+    "stem": "Ortega, a sell-side equity analyst, publishes a high-conviction buy recommendation on a volatile biotech. Vance, a retail investor with no relationship to Ortega or her firm, reads the report online and buys the stock as 40% of his retirement savings, subsequently losing most of his capital. Ortega did thorough research and the recommendation met her firm's publication standards. Is Ortega most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because foreseeable retail readership creates an implied advisory relationship that triggers suitability obligations.",
-      "B": "Yes, because recommending a single volatile position without discussing portfolio diversification is per se unsuitable under Standard III(C).",
-      "C": "No, because a sell-side analyst who does not have an advisory relationship with the ultimate reader is not in a position to judge suitability for that reader."
+      "A": "A sell-side analyst who does not have an advisory relationship with the ultimate reader is not in a position to judge suitability for that reader.",
+      "B": "Recommending a single volatile position without discussing portfolio diversification is per se unsuitable under Standard III(C).",
+      "C": "Foreseeable retail readership creates an implied advisory relationship that triggers suitability obligations."
     },
-    "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: scope of Standard III(C)</h3><p><strong>C is correct.</strong> The CFA Curriculum explicitly notes that sell-side analysts and others who are merely publishing research or executing instructions for retail clients may not have the opportunity to judge suitability for the ultimate client; the suitability duty is owed only where an investment advisory relationship exists.</p><p>A is a classic trap: foreseeability of readership does not constitute an advisory relationship under the standard. The duty is relational, not audience-wide.</p><p>B misapplies the portfolio-context principle, which governs how an advisor evaluates a recommendation for a specific client's portfolio, not how analysts publish research.</p>"
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: scope of Standard III(C)</h3><p><strong>C is correct.</strong> The CFA Curriculum explicitly notes that sell-side analysts and others who are merely publishing research or executing instructions for retail clients may not have the opportunity to judge suitability for the ultimate client; the suitability duty is owed only where an investment advisory relationship exists.</p><p>C is a classic trap: foreseeability of readership does not constitute an advisory relationship under the standard. The duty is relational, not audience-wide.</p><p>B misapplies the portfolio-context principle, which governs how an advisor evaluates a recommendation for a specific client's portfolio, not how analysts publish research.</p>"
   },
   {
     "id": 3,
     "topic": "Standard III(C) Suitability",
-    "stem": "Rivera advises Tan, whose written IPS prohibits speculative holdings. Tan calls insisting on buying a thinly traded biotech on a tip, representing roughly 0.5% of portfolio value. Rivera explains how the trade deviates from the IPS, warns against it, and obtains Tan's written acknowledgement that the trade is against Rivera's advice and against the IPS. Because the position is immaterial, Rivera does not amend the IPS and executes the trade. Has Rivera most likely violated Standard III(C)?",
+    "stem": "Rivera advises Tan, whose written IPS prohibits speculative holdings. Tan calls insisting on buying a thinly traded biotech on a tip, representing roughly 0.5% of portfolio value. Rivera explains how the trade deviates from the IPS, warns against it, and obtains Tan's written acknowledgement that the trade is against Rivera's advice and against the IPS. Because the position is immaterial, Rivera does not amend the IPS and executes the trade. Has Rivera most likely violated Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because the moment Rivera executed a trade inconsistent with the IPS, the IPS had to be formally amended regardless of materiality.",
-      "B": "Yes, because any unsolicited trade requires suspension of the advisory relationship until the client agrees to rewrite the IPS.",
-      "C": "No, because the curriculum permits executing an unsolicited unsuitable trade after educating the client and obtaining acknowledgement, and reserves IPS updating for requests expected to have a material impact on the portfolio."
+      "A": "The moment Rivera executed a trade inconsistent with the IPS, the IPS had to be formally amended regardless of materiality.",
+      "B": "Any unsolicited trade requires suspension of the advisory relationship until the client agrees to rewrite the IPS.",
+      "C": "The curriculum permits executing an unsolicited unsuitable trade after educating the client and obtaining acknowledgement, and reserves IPS updating for requests expected to have a material impact on the portfolio."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: unsolicited-trade protocol</h3><p><strong>C is correct.</strong> The CFA Curriculum directs members to refrain from the trade until concerns are discussed, focus on educating the investor on the deviation, and require the client to acknowledge the discussion; IPS updating is specifically triggered when the unsolicited request is expected to have a material impact on the portfolio. A 0.5% position is below that threshold on its face.</p><p>A invents a blanket IPS-amendment rule that the curriculum does not impose for immaterial trades; the amendment duty is materiality-based.</p><p>B overreads the standard; the curriculum contemplates terminating the advisory relationship only when clients persistently refuse to modify their IPS, not on the first unsolicited trade.</p>"
@@ -38,23 +38,23 @@
   {
     "id": 4,
     "topic": "Standard III(C) Suitability",
-    "stem": "Quon's long-standing client, a 62-year-old widow, inherits a concentrated stake in a profitable family business equal to roughly five times her managed assets. She directs Quon to hold the position and not to hedge. Quon convenes a full IPS review, amends her written objectives and constraints to reflect the new concentration and her willingness to bear it, and documents the change before executing subsequent rebalancing. Is Quon most likely in violation of Standard III(C)?",
+    "stem": "Quon's long-standing client, a 62-year-old widow, inherits a concentrated stake in a profitable family business equal to roughly five times her managed assets. She directs Quon to hold the position and not to hedge. Quon convenes a full IPS review, amends her written objectives and constraints to reflect the new concentration and her willingness to bear it, and documents the change before executing subsequent rebalancing. Is Quon most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because accepting a client-directed concentration in the portfolio is inconsistent with the diversification expectation of the standard.",
-      "B": "No, because the curriculum expects IPS updating in response to material changes and permits suitability to be judged against the client's revised, written objectives and constraints.",
-      "C": "Yes, because Quon must decline to act until an independent risk analysis proves the concentration is objectively appropriate."
+      "A": "The curriculum expects IPS updating in response to material changes and permits suitability to be judged against the client's revised, written objectives and constraints.",
+      "B": "Accepting a client-directed concentration in the portfolio is inconsistent with the diversification expectation of the standard.",
+      "C": "Quon must decline to act until an independent risk analysis proves the concentration is objectively appropriate."
     },
-    "correct_answer": "B",
+    "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: updating the IPS after material changes</h3><p><strong>B is correct.</strong> The CFA Curriculum requires an IPS review prior to material changes to investment decisions and recognizes that changing circumstances (wealth, liquidity, risk tolerance) drive updates. Once the IPS is properly revised, suitability is evaluated against the updated written objectives, mandates, and constraints.</p><p>A misapplies the diversification guidance: the curriculum itself notes that some reasonable amount of diversification is the norm but explicitly allows higher-risk or concentrated positions when consistent with the client's objectives.</p><p>C invents an independent-analysis gatekeeper not imposed by the standard; Quon's duty is a reasonable inquiry and consistency with the updated IPS, not external validation.</p>"
   },
   {
     "id": 5,
     "topic": "Standard III(C) Suitability",
-    "stem": "Bernal advises Ikeda, whose IPS mandates capital preservation. Ikeda repeatedly demands that Bernal purchase a leveraged commodity ETF representing 25% of the portfolio and refuses to consider amending the IPS. After several discussions and written warnings, Bernal declines to execute and resigns the advisory engagement. Ikeda complains that Bernal abandoned him. Is Bernal most likely in violation of Standard III(C)?",
+    "stem": "Bernal advises Ikeda, whose IPS mandates capital preservation. Ikeda repeatedly demands that Bernal purchase a leveraged commodity ETF representing 25% of the portfolio and refuses to consider amending the IPS. After several discussions and written warnings, Bernal declines to execute and resigns the advisory engagement. Ikeda complains that Bernal abandoned him. Is Bernal most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because the member must ultimately execute legal client instructions once the client has been informed of the risks.",
-      "B": "No, because when a client persists with an unsolicited, unsuitable trade and refuses to modify the IPS, the curriculum contemplates that the member may reassess, and potentially terminate, the advisory arrangement.",
-      "C": "Yes, because withdrawing from the relationship constitutes an unreasonable failure to maintain suitability oversight."
+      "A": "The member must ultimately execute legal client instructions once the client has been informed of the risks.",
+      "B": "When a client persists with an unsolicited, unsuitable trade and refuses to modify the IPS, the curriculum contemplates that the member may reassess, and potentially terminate, the advisory arrangement.",
+      "C": "Withdrawing from the relationship constitutes an unreasonable failure to maintain suitability oversight."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: handling persistent unsuitable requests</h3><p><strong>B is correct.</strong> The CFA Curriculum states that when clients decline to modify their policy statements while insisting on unsolicited trades, members should evaluate the effectiveness of their services and determine whether to continue the advisory arrangement. Resignation after genuine attempts to educate the client is an expressly contemplated response.</p><p>A confuses respect for client autonomy with an obligation to execute unsuitable trades; the standard's primary command is consistency with the written objectives, not client deference.</p><p>C inverts the standard: persisting in an engagement the member cannot service suitably would create the violation, not stepping away.</p>"
@@ -62,11 +62,11 @@
   {
     "id": 6,
     "topic": "Standard III(C) Suitability",
-    "stem": "Adeyemi manages the portfolio of a retired client whose IPS targets a moderate risk profile with aggregate beta near 0.9. To capture specific upside, Adeyemi buys a 3% position in a high-beta semiconductor stock. Viewed in isolation, the position is far riskier than the client's stated tolerance, but the portfolio's overall beta remains within the IPS band. Is Adeyemi most likely in violation of Standard III(C)?",
+    "stem": "Adeyemi manages the portfolio of a retired client whose IPS targets a moderate risk profile with aggregate beta near 0.9. To capture specific upside, Adeyemi buys a 3% position in a high-beta semiconductor stock. Viewed in isolation, the position is far riskier than the client's stated tolerance, but the portfolio's overall beta remains within the IPS band. Is Adeyemi most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because every individual holding must independently satisfy the client's risk profile.",
-      "B": "No, because suitability must be judged in the context of the client's total portfolio, and an investment with high individual risk can be suitable when the portfolio remains consistent with the IPS.",
-      "C": "Yes, because any deviation from the client's precise risk tolerance at the security level requires written pre-approval."
+      "A": "Every individual holding must independently satisfy the client's risk profile.",
+      "B": "Suitability must be judged in the context of the client's total portfolio, and an investment with high individual risk can be suitable when the portfolio remains consistent with the IPS.",
+      "C": "Any deviation from the client's precise risk tolerance at the security level requires written pre-approval."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: total-portfolio context</h3><p><strong>B is correct.</strong> Standard III(C) requires members to judge the suitability of investments in the context of the client's total portfolio. The CFA Curriculum explicitly states that an investment with high relative risk on its own may be suitable when viewed within the entire portfolio or where client objectives contemplate it.</p><p>A applies an issue-by-issue test the curriculum expressly rejects, noting that the primary focus should be the characteristics of the entire portfolio rather than single securities.</p><p>C invents a pre-approval requirement not present in the standard; ongoing IPS adherence, not per-trade authorization, is what the curriculum requires.</p>"
@@ -74,11 +74,11 @@
   {
     "id": 7,
     "topic": "Standard III(C) Suitability",
-    "stem": "Van Houten manages an external mandate for a pension fund whose IPS was recently amended to exclude investments in tobacco producers based on a beneficiary survey. Van Houten reviews the new IPS, judges tobacco to offer attractive risk-adjusted returns that would help meet pension payouts, and buys a tobacco holding on the rationale that higher returns best serve the beneficiaries' economic interests. Is Van Houten most likely in compliance with Standard III(C)?",
+    "stem": "Van Houten manages an external mandate for a pension fund whose IPS was recently amended to exclude investments in tobacco producers based on a beneficiary survey. Van Houten reviews the new IPS, judges tobacco to offer attractive risk-adjusted returns that would help meet pension payouts, and buys a tobacco holding on the rationale that higher returns best serve the beneficiaries' economic interests. Is Van Houten most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because a manager may override a non-financial IPS constraint where doing so is reasonably expected to improve the plan's ability to meet its payout goals.",
-      "B": "Yes, because ESG restrictions are aspirational guidance rather than binding IPS constraints.",
-      "C": "No, because suitability must be consistent with the client's written objectives, mandates, and constraints, and the curriculum treats ESG-based prohibitions validly adopted in the IPS as binding investment constraints."
+      "A": "A manager may override a non-financial IPS constraint where doing so is reasonably expected to improve the plan's ability to meet its payout goals.",
+      "B": "ESG restrictions are aspirational guidance rather than binding IPS constraints.",
+      "C": "Suitability must be consistent with the client's written objectives, mandates, and constraints, and the curriculum treats ESG-based prohibitions validly adopted in the IPS as binding investment constraints."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: IPS constraints bind</h3><p><strong>C is correct.</strong> Standard III(C) requires investment actions to be consistent with the client's written objectives, mandates, and constraints. The CFA Curriculum's tobacco example concludes that overriding a validly adopted ESG exclusion, even to seek higher returns for beneficiaries, violates the standard because the investor preference is a mandated constraint.</p><p>A is the intent trap: returns-based rationalizations do not displace explicit IPS constraints; investment return is not the first priority when the IPS directs otherwise.</p><p>B mischaracterizes ESG restrictions; the curriculum treats unique investor preferences and prohibitions, including ESG frameworks, as proper constraints in the IPS.</p>"
@@ -86,11 +86,11 @@
   {
     "id": 8,
     "topic": "Standard III(C) Suitability",
-    "stem": "Palmieri advises Okafor, who refuses to disclose significant assets held at other firms. Palmieri documents the refusal, performs a suitability analysis on only the assets she can see, and recommends a concentrated energy allocation that looks suitable given the portion she advises. It later emerges that Okafor's undisclosed external holdings were heavily energy-weighted, making the overall exposure far riskier than Okafor's stated tolerance. Is Palmieri most likely in violation of Standard III(C)?",
+    "stem": "Palmieri advises Okafor, who refuses to disclose significant assets held at other firms. Palmieri documents the refusal, performs a suitability analysis on only the assets she can see, and recommends a concentrated energy allocation that looks suitable given the portion she advises. It later emerges that Okafor's undisclosed external holdings were heavily energy-weighted, making the overall exposure far riskier than Okafor's stated tolerance. Is Palmieri most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "No, because members are responsible for assessing suitability only on the basis of the information and criteria actually provided by the client.",
-      "B": "Yes, because the member has an affirmative duty to investigate external accounts regardless of client cooperation.",
-      "C": "Yes, because concentrating any portion of a client's portfolio in a single sector is a per se breach of diversification."
+      "A": "Members are responsible for assessing suitability only on the basis of the information and criteria actually provided by the client.",
+      "B": "The member has an affirmative duty to investigate external accounts regardless of client cooperation.",
+      "C": "Concentrating any portion of a client's portfolio in a single sector is a per se breach of diversification."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: analysis based on information provided</h3><p><strong>A is correct.</strong> The CFA Curriculum expressly states that if clients withhold information about their financial portfolios, the suitability analysis must be based on the information provided and cannot be expected to be complete. Palmieri encouraged disclosure, documented the refusal, and analyzed what she could see.</p><p>B invents an investigation duty the curriculum does not impose; the member's obligation is to encourage full disclosure, not to obtain information unilaterally.</p><p>C overstates diversification: the curriculum treats reasonable diversification as a norm, not a per se requirement for every sector allocation when the information provided suggests the decision is consistent with the client's objectives.</p>"
@@ -98,11 +98,11 @@
   {
     "id": 9,
     "topic": "Standard III(C) Suitability",
-    "stem": "Tremblay learns that her client Huang has inherited a sum that quadruples his net worth. Huang tells Tremblay the inheritance will not change his lifestyle, so Tremblay elects not to revisit the IPS, which is scheduled for its annual review in four months, and continues Huang's prior allocation unchanged. Is Tremblay most likely in violation of Standard III(C)?",
+    "stem": "Tremblay learns that her client Huang has inherited a sum that quadruples his net worth. Huang tells Tremblay the inheritance will not change his lifestyle, so Tremblay elects not to revisit the IPS, which is scheduled for its annual review in four months, and continues Huang's prior allocation unchanged. Is Tremblay most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "No, because annual IPS review is the schedule recommended by the curriculum and Huang confirmed no change in his needs.",
-      "B": "No, because a self-reported absence of lifestyle change means no update is warranted.",
-      "C": "Yes, because the standard requires IPS review prior to material changes in investment recommendations or decisions, and a fourfold increase in net worth is a material change in the client's circumstances that may affect his ability and willingness to bear risk."
+      "A": "Annual IPS review is the schedule recommended by the curriculum and Huang confirmed no change in his needs.",
+      "B": "A self-reported absence of lifestyle change means no update is warranted.",
+      "C": "The standard requires IPS review prior to material changes in investment recommendations or decisions, and a fourfold increase in net worth is a material change in the client's circumstances that may affect his ability and willingness to bear risk."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: trigger for IPS review</h3><p><strong>C is correct.</strong> The CFA Curriculum states that an IPS should be reviewed at least annually and also prior to material changes in investment recommendations or decisions on behalf of the client. A fourfold increase in net worth is precisely the kind of material change the curriculum uses as an exemplar, affecting both ability and willingness to bear risk.</p><p>A is the timing trap: annual review is a floor, not a ceiling; material changes trigger an additional, earlier review.</p><p>B confuses lifestyle continuity with risk-capacity continuity; the curriculum treats wealth shifts as suitability-relevant regardless of spending habits.</p>"
@@ -110,11 +110,11 @@
   {
     "id": 10,
     "topic": "Standard III(C) Suitability",
-    "stem": "Kovacs manages a high-income mutual fund whose prospectus describes the strategy as dividend-producing equities and investment-grade debt. Believing a zero-dividend fintech stock is deeply undervalued and will outperform the fund's benchmark, Kovacs allocates 3% of the fund to it. He discloses the position in the next quarterly letter. Is Kovacs most likely in compliance with Standard III(C)?",
+    "stem": "Kovacs manages a high-income mutual fund whose prospectus describes the strategy as dividend-producing equities and investment-grade debt. Believing a zero-dividend fintech stock is deeply undervalued and will outperform the fund's benchmark, Kovacs allocates 3% of the fund to it. He discloses the position in the next quarterly letter. Is Kovacs most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because the position size is immaterial and disclosure was made at the next regular reporting date.",
-      "B": "Yes, because mandate deviations are permitted when the manager reasonably believes the alternative investment will outperform the stated benchmark.",
-      "C": "No, because a manager responsible for a fund with a specific mandate must make only investment decisions consistent with the stated objectives of the portfolio, and a zero-dividend stock does not fit an income mandate unless the fund's disclosures expressly permit it."
+      "A": "The position size is immaterial and disclosure was made at the next regular reporting date.",
+      "B": "Mandate deviations are permitted when the manager reasonably believes the alternative investment will outperform the stated benchmark.",
+      "C": "A manager responsible for a fund with a specific mandate must make only investment decisions consistent with the stated objectives of the portfolio, and a zero-dividend stock does not fit an income mandate unless the fund's disclosures expressly permit it."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: mandate adherence</h3><p><strong>C is correct.</strong> Standard III(C)(2) obligates managers of a specific mandate, strategy, or style to take only investment actions consistent with the stated objectives and constraints. The CFA Curriculum's high-income-fund example treats purchasing a zero-dividend stock as a violation unless the investment falls within the mandate or within the realm of allowable investments made clear in the fund's disclosures.</p><p>A confuses mandate compliance with materiality and disclosure; neither position size nor post-hoc reporting cures a mandate violation.</p><p>B injects a performance-based override the curriculum does not recognize; expected outperformance cannot justify straying from the stated mandate.</p>"
@@ -122,11 +122,11 @@
   {
     "id": 11,
     "topic": "Standard III(C) Suitability",
-    "stem": "Alvarado manages several long-horizon public pension accounts. After her firm introduces a bonus program tied to quarterly performance versus peers, Alvarado shifts the accounts toward high-beta stocks believing the incentive program signals the firm's new risk appetite and without recommending any change to the clients' IPSs. Is Alvarado most likely in compliance with Standard III(C)?",
+    "stem": "Alvarado manages several long-horizon public pension accounts. After her firm introduces a bonus program tied to quarterly performance versus peers, Alvarado shifts the accounts toward high-beta stocks believing the incentive program signals the firm's new risk appetite and without recommending any change to the clients' IPSs. Is Alvarado most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because firm-level risk signals may be integrated into portfolio construction absent a client objection.",
-      "B": "No, because the strategy shift is driven by the manager's compensation arrangement rather than by changes in the clients' written objectives and constraints, making it inconsistent with the long-term risk profile established in the IPSs.",
-      "C": "No, because high-beta equities are intrinsically unsuitable for pension plans regardless of IPS language."
+      "A": "Firm-level risk signals may be integrated into portfolio construction absent a client objection.",
+      "B": "The strategy shift is driven by the manager's compensation arrangement rather than by changes in the clients' written objectives and constraints, making it inconsistent with the long-term risk profile established in the IPSs.",
+      "C": "High-beta equities are intrinsically unsuitable for pension plans regardless of IPS language."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: IPS-driven investment action</h3><p><strong>B is correct.</strong> The CFA Curriculum's pension-fund example treats a shift to high-beta holdings motivated by a manager's bonus system, rather than by changes in the clients' IPSs, as a violation of Standard III(C) because the investment strategy must follow the clients' long-term risk profile.</p><p>A subordinates the client's documented objectives to firm-level signals; the standard requires the opposite priority.</p><p>C overstates a per se rule: high-beta positions may be acceptable when the clients' IPSs so allow. The problem here is cause, not beta.</p>"
@@ -134,11 +134,11 @@
   {
     "id": 12,
     "topic": "Standard III(C) Suitability",
-    "stem": "Bruckner advises Nakamura, 45, who has a high risk tolerance and wants aggressive growth, and Okoye, 45, who wants steady returns with low volatility to fund a child's tuition. Bruckner invests 20% of each client's portfolio in zero-yield, small-cap technology equities, noting that both clients earn similar salaries and are the same age. Is Bruckner most likely in compliance with Standard III(C)?",
+    "stem": "Bruckner advises Nakamura, 45, who has a high risk tolerance and wants aggressive growth, and Okoye, 45, who wants steady returns with low volatility to fund a child's tuition. Bruckner invests 20% of each client's portfolio in zero-yield, small-cap technology equities, noting that both clients earn similar salaries and are the same age. Is Bruckner most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "No, because a single allocation template is inconsistent with the reasonable-inquiry and suitability duties where clients' risk profiles and return objectives clearly differ.",
-      "B": "Yes, because salary and age are the governing suitability factors.",
-      "C": "Yes, because an aggressive allocation can be appropriate for a portion of any growth-seeking client's portfolio."
+      "A": "A single allocation template is inconsistent with the reasonable-inquiry and suitability duties where clients' risk profiles and return objectives clearly differ.",
+      "B": "Salary and age are the governing suitability factors.",
+      "C": "An aggressive allocation can be appropriate for a portion of any growth-seeking client's portfolio."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: client-specific suitability</h3><p><strong>A is correct.</strong> Standard III(C) requires that investment action be suitable to the client's financial situation and consistent with each client's written objectives, mandates, and constraints. Applying one client's aggressive strategy to another client whose objectives are low-volatility, education-oriented returns violates the standard, even where demographics overlap.</p><p>B inverts the curriculum's guidance, which treats age and salary as only a subset of the factors and places risk tolerance and return objectives at the core.</p><p>C generalizes from one client to another; aggressive allocations acceptable for the first client are not necessarily acceptable for the second.</p>"
@@ -146,11 +146,11 @@
   {
     "id": 13,
     "topic": "Standard III(C) Suitability",
-    "stem": "Chen manages a family office whose IPS sets long-term capital preservation and downside-risk mitigation as primary objectives and expressly permits ESG considerations. After financial analysis, Chen finds Park Inc. more attractive on pure financial metrics, but Dong Inc. scores materially higher on ESG factors that Chen believes translate into stronger management quality and reduced regulatory-fine risk. Chen invests in Dong Inc. Is Chen most likely in violation of Standard III(C)?",
+    "stem": "Chen manages a family office whose IPS sets long-term capital preservation and downside-risk mitigation as primary objectives and expressly permits ESG considerations. After financial analysis, Chen finds Park Inc. more attractive on pure financial metrics, but Dong Inc. scores materially higher on ESG factors that Chen believes translate into stronger management quality and reduced regulatory-fine risk. Chen invests in Dong Inc. Is Chen most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because suitability must be judged primarily on financial metrics, with ESG used only as a tiebreaker.",
-      "B": "No, because members are permitted to incorporate criteria beyond financial metrics, including ESG issues, into the investment decision-making process when consistent with the client's IPS objectives.",
-      "C": "Yes, because selecting a financially inferior investment breaches the duty to achieve the client's return objective."
+      "A": "Suitability must be judged primarily on financial metrics, with ESG used only as a tiebreaker.",
+      "B": "Members are permitted to incorporate criteria beyond financial metrics, including ESG issues, into the investment decision-making process when consistent with the client's IPS objectives.",
+      "C": "Selecting a financially inferior investment breaches the duty to achieve the client's return objective."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: ESG within IPS objectives</h3><p><strong>B is correct.</strong> The CFA Curriculum's family-office example concludes that the member may incorporate criteria beyond financial metrics, including ESG issues, into the investment decision-making process where the selected investment is suitable for the IPS objectives. Chen's rationale tracks risk and return characteristics tied to preservation and downside-risk mitigation.</p><p>A creates a hierarchy the standard does not impose; no rule subordinates ESG analysis to a tiebreaker role when the IPS incorporates it.</p><p>C conflates relative financial attractiveness with suitability; the standard focuses on consistency with objectives, not selecting the single highest-expected-return security.</p>"
@@ -158,11 +158,11 @@
   {
     "id": 14,
     "topic": "Standard III(C) Suitability",
-    "stem": "Larsson is a trustee of a pension plan whose IPS, approved by the plan board, forbids investment in tobacco securities. He is informed by compliance that an external manager has added a tobacco position. Larsson notes the IPS change was recent and allows the position to remain pending the next quarterly trustee meeting. Larsson is a CFA charterholder subject to the Code. Is Larsson most likely in compliance with Standard III(C)?",
+    "stem": "Larsson is a trustee of a pension plan whose IPS, approved by the plan board, forbids investment in tobacco securities. He is informed by compliance that an external manager has added a tobacco position. Larsson notes the IPS change was recent and allows the position to remain pending the next quarterly trustee meeting. Larsson is a CFA charterholder subject to the Code. Is Larsson most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "No, because trustees covered by the Code have a duty to ensure that plan assets are invested in accordance with the IPS, which requires ensuring the inappropriate securities are sold.",
-      "B": "Yes, because trustees may rely on external managers to cure IPS breaches during routine review cycles.",
-      "C": "Yes, because a recently amended IPS should be enforced only prospectively, giving managers a transition window."
+      "A": "Trustees covered by the Code have a duty to ensure that plan assets are invested in accordance with the IPS, which requires ensuring the inappropriate securities are sold.",
+      "B": "Trustees may rely on external managers to cure IPS breaches during routine review cycles.",
+      "C": "A recently amended IPS should be enforced only prospectively, giving managers a transition window."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: trustee enforcement duty</h3><p><strong>A is correct.</strong> The CFA Curriculum states that trustees have a duty to ensure that the fund's assets are invested in accordance with the IPS and specifies that a trustee bound by the Code would need to ensure that an external manager sells inappropriate securities, using the tobacco example as the exemplar.</p><p>B shifts the trustee's non-delegable oversight duty back onto the external manager; the trustee's Code obligations are personal.</p><p>C invents a prospective-enforcement doctrine the curriculum does not provide; once an IPS is amended and communicated, non-compliant positions must be addressed, not grandfathered.</p>"
@@ -170,11 +170,11 @@
   {
     "id": 15,
     "topic": "Standard III(C) Suitability",
-    "stem": "Duarte advises Pham, a risk-averse client whose equity portfolio he evaluates in aggregate. Duarte proposes writing covered calls on a portion of the equity holdings to enhance income and partially offset declines, fully explaining the possible outcomes including tax effects and the risk of lost downside protection if prices fall sharply. Pham understands and consents. Is Duarte most likely in violation of Standard III(C)?",
+    "stem": "Duarte advises Pham, a risk-averse client whose equity portfolio he evaluates in aggregate. Duarte proposes writing covered calls on a portion of the equity holdings to enhance income and partially offset declines, fully explaining the possible outcomes including tax effects and the risk of lost downside protection if prices fall sharply. Pham understands and consents. Is Duarte most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because options strategies, by introducing derivative exposure, are inherently unsuitable for risk-averse clients.",
-      "B": "Yes, because any strategy with downside risk is incompatible with risk aversion regardless of portfolio context.",
-      "C": "No, because the suitability of a strategy is judged in the context of the client's entire portfolio, and the curriculum recognizes covered call overlays as appropriate when the manager educates the client about the range of outcomes."
+      "A": "Options strategies, by introducing derivative exposure, are inherently unsuitable for risk-averse clients.",
+      "B": "Any strategy with downside risk is incompatible with risk aversion regardless of portfolio context.",
+      "C": "The suitability of a strategy is judged in the context of the client's entire portfolio, and the curriculum recognizes covered call overlays as appropriate when the manager educates the client about the range of outcomes."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: derivatives and portfolio context</h3><p><strong>C is correct.</strong> The CFA Curriculum's covered-call example concludes that when the member considers the investment in the context of the entire portfolio and thoroughly explains the strategy to the client, using covered calls for a risk-averse client is consistent with Standard III(C).</p><p>A reads the curriculum's caution about synthetic and derivative products as a prohibition; the curriculum requires careful attention to leverage and liquidity, not exclusion.</p><p>B ignores the total-portfolio framework that governs suitability analysis under the standard.</p>"
@@ -182,11 +182,11 @@
   {
     "id": 16,
     "topic": "Standard III(C) Suitability",
-    "stem": "Roussel is CIO of a property and casualty insurer whose IPS limits equity to large-cap listed shares and debt to investment-grade bonds of up to five years' maturity, with all assets to be highly liquid. After extensive analysis, Roussel invests 4% of the portfolio in a private equity seed fund offering strong expected returns but imposing a three-year lockup and a laddered exit schedule thereafter. Total equity remains below the IPS cap. Is Roussel most likely in compliance with Standard III(C)?",
+    "stem": "Roussel is CIO of a property and casualty insurer whose IPS limits equity to large-cap listed shares and debt to investment-grade bonds of up to five years' maturity, with all assets to be highly liquid. After extensive analysis, Roussel invests 4% of the portfolio in a private equity seed fund offering strong expected returns but imposing a three-year lockup and a laddered exit schedule thereafter. Total equity remains below the IPS cap. Is Roussel most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because total equity stays below the IPS cap and improving diversification can justify an otherwise non-conforming position.",
-      "B": "Yes, because the curriculum permits narrow deviations from liquidity constraints when the expected return is meaningfully higher.",
-      "C": "No, because the investment violates the IPS liquidity and permissible-asset-class requirements, and suitability must be consistent with the written constraints regardless of the expected return."
+      "A": "Total equity stays below the IPS cap and improving diversification can justify an otherwise non-conforming position.",
+      "B": "The curriculum permits narrow deviations from liquidity constraints when the expected return is meaningfully higher.",
+      "C": "The investment violates the IPS liquidity and permissible-asset-class requirements, and suitability must be consistent with the written constraints regardless of the expected return."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: IPS asset-class and liquidity constraints</h3><p><strong>C is correct.</strong> The CFA Curriculum's seed-fund example concludes that locking up assets for several years in an illiquid private equity fund breaches an IPS that requires highly liquid investments and specifies permitted asset classes, regardless of how far the equity exposure remains below caps.</p><p>A confuses a single compliant metric (equity cap) with overall IPS compliance, which must be satisfied across all relevant constraints.</p><p>B invents a return-based liquidity override that the curriculum does not recognize.</p>"
@@ -194,11 +194,11 @@
   {
     "id": 17,
     "topic": "Standard III(C) Suitability",
-    "stem": "Osei reviews each client's IPS annually on the anniversary of account opening. For one stable retail client whose circumstances have not changed, Osei completes a documented review, confirms no amendments are required, and continues the existing allocation without issuing a new written document. Is Osei most likely in violation of Standard III(C)?",
+    "stem": "Osei reviews each client's IPS annually on the anniversary of account opening. For one stable retail client whose circumstances have not changed, Osei completes a documented review, confirms no amendments are required, and continues the existing allocation without issuing a new written document. Is Osei most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because a new IPS document must be issued on every annual review regardless of changes in circumstances.",
-      "B": "No, because the curriculum calls for at least annual IPS review and reflection of any changes, but does not require reissuing the IPS where the review confirms no changes are warranted.",
-      "C": "Yes, because absence of change in circumstances does not dispense with the need for a materially new written document each cycle."
+      "A": "A new IPS document must be issued on every annual review regardless of changes in circumstances.",
+      "B": "The curriculum calls for at least annual IPS review and reflection of any changes, but does not require reissuing the IPS where the review confirms no changes are warranted.",
+      "C": "Absence of change in circumstances does not dispense with the need for a materially new written document each cycle."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: review versus reissuance</h3><p><strong>B is correct.</strong> The CFA Curriculum directs members to review each client's IPS annually and to reflect any changes in the client's circumstances in an updated IPS. Where a documented review confirms no changes, there is no separate duty to reissue an identical document; the obligation is to review and to update when warranted.</p><p>A imposes a reissuance rule the standard does not contain.</p><p>C conflates the review and updating obligations; a reviewed and unchanged IPS satisfies the standard.</p>"
@@ -206,11 +206,11 @@
   {
     "id": 18,
     "topic": "Standard III(C) Suitability",
-    "stem": "Ahmadi serves retail clients at a firm whose internal policies treat written IPS documentation as optional for accounts below a certain size. Ahmadi nonetheless prepares a written IPS for each of her retail clients, documenting risk tolerance, return objectives, liquidity needs, and ESG preferences, and bases her recommendations on those documents. Is Ahmadi most likely in violation of Standard III(C)?",
+    "stem": "Ahmadi serves retail clients at a firm whose internal policies treat written IPS documentation as optional for accounts below a certain size. Ahmadi nonetheless prepares a written IPS for each of her retail clients, documenting risk tolerance, return objectives, liquidity needs, and ESG preferences, and bases her recommendations on those documents. Is Ahmadi most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "No, because the curriculum identifies a written IPS as best practice for fulfilling the basic provisions of Standard III(C), and going beyond the firm's minimum policy is consistent with the standard.",
-      "B": "Yes, because imposing documentation beyond the firm's written policy constitutes a failure to comply with the firm's suitability procedures.",
-      "C": "Yes, because a written IPS is required only for institutional clients and is improper for smaller retail accounts."
+      "A": "The curriculum identifies a written IPS as best practice for fulfilling the basic provisions of Standard III(C), and going beyond the firm's minimum policy is consistent with the standard.",
+      "B": "Imposing documentation beyond the firm's written policy constitutes a failure to comply with the firm's suitability procedures.",
+      "C": "A written IPS is required only for institutional clients and is improper for smaller retail accounts."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: written IPS as best practice</h3><p><strong>A is correct.</strong> The CFA Curriculum describes the written IPS as best practice for fulfilling the basic provisions of Standard III(C) and lists client identification, expectations, constraints, and benchmarks as items to be considered. Exceeding a permissive firm minimum is consistent with the standard.</p><p>B inverts the obligation to comply with firm policies, which is a floor, not a cap; doing more is not a violation.</p><p>C invents a retail-versus-institutional distinction the curriculum does not draw.</p>"
@@ -218,11 +218,11 @@
   {
     "id": 19,
     "topic": "Standard III(C) Suitability",
-    "stem": "Sokolov manages a small-cap-value pooled fund whose prospectus permits up to 10% in mid-cap names when small-cap liquidity is strained, to protect existing investors. During a liquidity event, Sokolov rotates 7% of the fund into mid-cap value names that match the fund's valuation discipline, documents the liquidity rationale, and communicates the step in the next shareholder letter. Is Sokolov most likely in violation of Standard III(C)?",
+    "stem": "Sokolov manages a small-cap-value pooled fund whose prospectus permits up to 10% in mid-cap names when small-cap liquidity is strained, to protect existing investors. During a liquidity event, Sokolov rotates 7% of the fund into mid-cap value names that match the fund's valuation discipline, documents the liquidity rationale, and communicates the step in the next shareholder letter. Is Sokolov most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because any allocation outside the core capitalization description misrepresents the mandate.",
-      "B": "No, because the investment falls within the realm of allowable investments that the fund's disclosures have made clear, which the curriculum treats as consistent with mandate adherence.",
-      "C": "Yes, because temporarily stepping outside the small-cap universe violates the mandate regardless of disclosures."
+      "A": "Any allocation outside the core capitalization description misrepresents the mandate.",
+      "B": "The investment falls within the realm of allowable investments that the fund's disclosures have made clear, which the curriculum treats as consistent with mandate adherence.",
+      "C": "Temporarily stepping outside the small-cap universe violates the mandate regardless of disclosures."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: disclosed flexibility within a mandate</h3><p><strong>B is correct.</strong> The CFA Curriculum's zero-dividend-fund example instructs that a position is consistent with Standard III(C) where the investment falls within the mandate or within the realm of allowable investments the fund has made clear in its disclosures. A disclosed liquidity-driven mid-cap band falls inside that safe harbor.</p><p>A reads mandate adherence more narrowly than the curriculum, which expressly contemplates disclosed flexibility.</p><p>C ignores the role of fund disclosures in defining the mandate.</p>"
@@ -230,11 +230,11 @@
   {
     "id": 20,
     "topic": "Standard III(C) Suitability",
-    "stem": "Hayashi manages a pooled large-cap income fund. Its prospectus does not mention small-cap equities or start-up companies. Believing the broader market has become overvalued, Hayashi invests a meaningful portion of the fund in small-cap start-ups whose shares are speculative in nature, documenting the rationale in an internal memo. Is Hayashi most likely in compliance with Standard III(C)?",
+    "stem": "Hayashi manages a pooled large-cap income fund. Its prospectus does not mention small-cap equities or start-up companies. Believing the broader market has become overvalued, Hayashi invests a meaningful portion of the fund in small-cap start-ups whose shares are speculative in nature, documenting the rationale in an internal memo. Is Hayashi most likely in compliance with Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because pooled-fund managers may deviate from the fund's stated style when they reasonably believe the broader market poses excess risk.",
-      "B": "Yes, because internal memorialization of the rationale satisfies the standard's documentation expectations for style shifts.",
-      "C": "No, because a manager responsible for managing a fund to an index or expected mandate must invest consistently with the stated mandate, and small-cap speculative holdings are inconsistent with a large-cap income mandate."
+      "A": "Pooled-fund managers may deviate from the fund's stated style when they reasonably believe the broader market poses excess risk.",
+      "B": "Internal memorialization of the rationale satisfies the standard's documentation expectations for style shifts.",
+      "C": "A manager responsible for managing a fund to an index or expected mandate must invest consistently with the stated mandate, and small-cap speculative holdings are inconsistent with a large-cap income mandate."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: index or mandate adherence</h3><p><strong>C is correct.</strong> The CFA Curriculum's managing-to-an-index example makes clear that a large-cap income fund manager who invests heavily in small-cap or start-up speculative names is not following the fund mandate, which violates Standard III(C)(2).</p><p>A invents a market-outlook override that the curriculum does not recognize as justification for mandate deviation.</p><p>B confuses documentation with authorization; documenting a mandate breach does not cure it.</p>"
@@ -242,11 +242,11 @@
   {
     "id": 21,
     "topic": "Standard III(C) Suitability",
-    "stem": "Barlow advises a sophisticated client whose IPS explicitly permits leveraged and derivative instruments subject to stated leverage and liquidity limits. Before adding a leveraged ETF position, Barlow conducts an analysis of the embedded leverage, the secondary-market liquidity under stress, and the fit with the client's total portfolio and IPS limits, documenting the conclusions. Is Barlow most likely in violation of Standard III(C)?",
+    "stem": "Barlow advises a sophisticated client whose IPS explicitly permits leveraged and derivative instruments subject to stated leverage and liquidity limits. Before adding a leveraged ETF position, Barlow conducts an analysis of the embedded leverage, the secondary-market liquidity under stress, and the fit with the client's total portfolio and IPS limits, documenting the conclusions. Is Barlow most likely in violation of Standard III(C) Suitability?",
     "options": {
-      "A": "Yes, because leveraged ETFs cannot be considered suitable for an advisory client regardless of IPS authorization.",
-      "B": "No, because the curriculum requires careful attention to the leverage inherent in synthetic and derivative products and to their liquidity, and Barlow's analysis within IPS limits satisfies that requirement.",
-      "C": "Yes, because the mere presence of leverage converts any holding into an unsuitable position absent a separate written client consent for each trade."
+      "A": "Leveraged ETFs cannot be considered suitable for an advisory client regardless of IPS authorization.",
+      "B": "The curriculum requires careful attention to the leverage inherent in synthetic and derivative products and to their liquidity, and Barlow's analysis within IPS limits satisfies that requirement.",
+      "C": "The mere presence of leverage converts any holding into an unsuitable position absent a separate written client consent for each trade."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: leverage and liquidity in suitability</h3><p><strong>B is correct.</strong> The CFA Curriculum specifically directs members to pay careful attention to leverage inherent in synthetic and derivative products and to their liquidity when considering them for a client's program, and treats suitability as satisfied when these factors are evaluated within the client's IPS. Barlow's documented analysis and IPS authorization meet that test.</p><p>A imposes a categorical prohibition on leveraged products that the standard does not contain.</p><p>C invents a per-trade consent requirement beyond what the IPS authorization and suitability analysis require.</p>"

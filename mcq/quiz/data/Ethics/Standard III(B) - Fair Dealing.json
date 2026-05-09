@@ -4,21 +4,21 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Powell, an analyst, decides to issue a 'buy' recommendation on a small technology firm. The full research report will take two more weeks to clear compliance review, so Powell first releases a one-page summary of the conclusion and core thesis to every client on the firm's distribution list, with the detailed report to follow. Powell's action is most likely:",
     "options": {
-      "A": "not a violation, because a brief summary released to all clients ahead of a pending detailed report is a recognized fair-dealing practice.",
-      "B": "a violation, because investment recommendations may not be communicated to any client before the detailed research report has been finalized.",
-      "C": "a violation, because the summary creates an information advantage for short-term traders over long-term holders."
+      "A": "A brief summary released to all clients ahead of a pending detailed report is a recognized fair-dealing practice.",
+      "B": "Investment recommendations may not be communicated to any client before the detailed research report has been finalized.",
+      "C": "The summary creates an information advantage for short-term traders over long-term holders."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard III(B) requires that all clients have a fair opportunity to act on a recommendation. The CFA Curriculum expressly notes that when a detailed recommendation could take two or three weeks to publish, a short summary report including the conclusion may be published in advance. The competing instinct — that nothing may be communicated until the full report is cleared — conflates compliance review with fair dealing. Because the summary was sent to every client on the list simultaneously, no client received an informational advantage.</p><p>B is tempting because candidates read that recommendations should only be distributed once fully vetted. The Curriculum, however, explicitly endorses early summary dissemination so long as all clients receive it on the same basis.</p><p>C fails because fair dealing governs relative treatment of clients, not the trading horizon of the audience. A summary released uniformly does not discriminate.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard III(B) requires that all clients have a fair opportunity to act on a recommendation. The CFA Curriculum expressly notes that when a detailed recommendation could take two or three weeks to publish, a short summary report including the conclusion may be published in advance. The competing instinct \u2014 that nothing may be communicated until the full report is cleared \u2014 conflates compliance review with fair dealing. Because the summary was sent to every client on the list simultaneously, no client received an informational advantage.</p><p>B is tempting because candidates read that recommendations should only be distributed once fully vetted. The Curriculum, however, explicitly endorses early summary dissemination so long as all clients receive it on the same basis.</p><p>C fails because fair dealing governs relative treatment of clients, not the trading horizon of the audience. A summary released uniformly does not discriminate.</p>"
   },
   {
     "id": 2,
     "topic": "Standard III(B) Fair Dealing",
     "stem": "After approving a new 'sell' call on a mid-cap issuer, Varga calls her three largest institutional clients to walk through the thesis. Thirty minutes after the last call, she sends the same written recommendation by email to the remainder of the firm's client list. Her conduct is most likely:",
     "options": {
-      "A": "not a violation, because the remaining clients received the recommendation within the same business day.",
-      "B": "a violation, because favored clients received actionable information before the rest of the client base.",
-      "C": "not a violation, because institutional clients pay higher fees that entitle them to advance personal outreach."
+      "A": "The remaining clients received the recommendation within the same business day.",
+      "B": "Favored clients received actionable information before the rest of the client base.",
+      "C": "Institutional clients pay higher fees that entitle them to advance personal outreach."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> Standard III(B) requires that material investment recommendations be disseminated so that no client group is placed at an unfair advantage. The CFA Curriculum permits additional personal service to premium-fee clients only after the recommendation has been widely disseminated; advance private delivery of actionable information violates the Standard regardless of fee level.</p><p>A is tempting because the email follows within the same day, but fair dealing is measured by informational sequencing, not calendar day. The earliest recipients could trade before the rest of the book had seen the call.</p><p>C misreads the Curriculum. Differentiated service levels are permitted, but they cannot take the form of earlier access to recommendations; additional outreach must come after the simultaneous release.</p>"
@@ -28,21 +28,21 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "At 9:00 a.m., Ortiz emails a new 'buy' recommendation to every client of the firm. At 10:00 a.m., Ortiz phones the three institutional clients who pay for the firm's premium advisory package to walk them through the valuation model and answer questions. Ortiz's conduct is most likely:",
     "options": {
-      "A": "a violation, because any private follow-up contact with selected clients after a release creates an unfair informational advantage.",
-      "B": "not a violation, because the recommendation was widely disseminated first and additional personal service is appropriate for clients who pay higher fees.",
-      "C": "a violation, unless the same follow-up call is offered to every client of the firm."
+      "A": "Any private follow-up contact with selected clients after a release creates an unfair informational advantage.",
+      "B": "The recommendation was widely disseminated first and additional personal service is appropriate for clients who pay higher fees.",
+      "C": "The same follow-up call is offered to every client of the firm."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing rule is that clients must have a fair opportunity to act on a recommendation. The competing principle — that premium-fee clients may receive deeper personal service — is resolved by the Curriculum's sequencing rule: wide dissemination first, personalized support afterward. Because the recommendation reached all clients at 9:00 a.m., the premium follow-up at 10:00 a.m. does not disadvantage any other client; it is the kind of additional service higher-fee accounts legitimately receive.</p><p>A is tempting because follow-up contact sounds selective, but the Curriculum expressly permits individualized outreach once the recommendation has been released to everyone.</p><p>C fails because the Curriculum does not require identical follow-up service for all clients. It requires that different service levels be disclosed and available, not uniformly delivered.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The governing rule is that clients must have a fair opportunity to act on a recommendation. The competing principle \u2014 that premium-fee clients may receive deeper personal service \u2014 is resolved by the Curriculum's sequencing rule: wide dissemination first, personalized support afterward. Because the recommendation reached all clients at 9:00 a.m., the premium follow-up at 10:00 a.m. does not disadvantage any other client; it is the kind of additional service higher-fee accounts legitimately receive.</p><p>A is tempting because follow-up contact sounds selective, but the Curriculum expressly permits individualized outreach once the recommendation has been released to everyone.</p><p>C fails because the Curriculum does not require identical follow-up service for all clients. It requires that different service levels be disclosed and available, not uniformly delivered.</p>"
   },
   {
     "id": 4,
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Chen's firm is allocated fewer shares than it requested in an oversubscribed IPO. Chen distributes the shares pro rata on a round-lot basis to clients for whom the issue is suitable. Two discretionary accounts that had expressed interest are excluded because the issue is inconsistent with their stated investment objectives. Chen's allocation is most likely:",
     "options": {
-      "A": "not a violation, because fair dealing requires that an oversubscribed issue be allocated only to accounts for which it is suitable.",
-      "B": "a violation, because every account that indicated interest in an oversubscribed issue must receive a pro-rata allocation.",
-      "C": "a violation, because excluding an interested account requires that client's prior written consent."
+      "A": "Fair dealing requires that an oversubscribed issue be allocated only to accounts for which it is suitable.",
+      "B": "Every account that indicated interest in an oversubscribed issue must receive a pro-rata allocation.",
+      "C": "Excluding an interested account requires that client's prior written consent."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard III(B) requires that new issues be distributed to clients for whom the investment is appropriate, and, when oversubscribed, prorated to suitable accounts on a round-lot basis. Suitability is therefore a gating filter; fairness is measured among eligible accounts, not by forced inclusion of unsuitable accounts.</p><p>B is tempting because candidates memorize 'pro rata to all who indicated interest,' but the Curriculum conditions pro-rata allocation on the trade being appropriate for the account.</p><p>C fails because the Standard does not impose a consent-to-exclude requirement. Exclusion on suitability grounds is driven by the client's mandate, not by case-by-case consent.</p>"
@@ -52,21 +52,21 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Madsen is allocating an oversubscribed IPO among her clients. Her mother maintains a discretionary account at Madsen's firm that is managed under the same investment policy template, fee schedule, and allocation algorithm that govern all of the firm's other retail clients. Madsen includes the account in the pro-rata allocation alongside the other clients. Her conduct is most likely:",
     "options": {
-      "A": "a violation, because immediate-family accounts must be excluded from oversubscribed issues without exception.",
-      "B": "not a violation, because a family account managed on the same basis as other client accounts must not be excluded from the allocation.",
-      "C": "a violation, unless the mother provides written consent before each allocation acknowledging the family relationship."
+      "A": "Immediate-family accounts must be excluded from oversubscribed issues without exception.",
+      "B": "A family account managed on the same basis as other client accounts must not be excluded from the allocation.",
+      "C": "The mother provides written consent before each allocation acknowledging the family relationship."
     },
     "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum requires members to forgo personal and family allocations in oversubscribed issues — but it narrows that obligation for family accounts managed similarly to other client accounts, stating that such accounts must not be excluded from buying the shares. The governing principle is not family status per se; it is whether the account enjoys preferred economics relative to the other clients.</p><p>A is tempting because the blanket 'skip family' rule feels absolute, but the Curriculum explicitly carves out family accounts managed on the same terms as other clients.</p><p>C fails because fair dealing does not impose a recurring written-consent procedure for family accounts. Parity of management, not consent, resolves the conflict.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum requires members to forgo personal and family allocations in oversubscribed issues \u2014 but it narrows that obligation for family accounts managed similarly to other client accounts, stating that such accounts must not be excluded from buying the shares. The governing principle is not family status per se; it is whether the account enjoys preferred economics relative to the other clients.</p><p>A is tempting because the blanket 'skip family' rule feels absolute, but the Curriculum explicitly carves out family accounts managed on the same terms as other clients.</p><p>C fails because fair dealing does not impose a recurring written-consent procedure for family accounts. Parity of management, not consent, resolves the conflict.</p>"
   },
   {
     "id": 6,
     "topic": "Standard III(B) Fair Dealing",
-    "stem": "Ngozi participates in an oversubscribed secondary offering for her clients. Her personal trading account — which she operates separately from client accounts and under a distinct strategy — receives the same pro-rata share assigned to each similarly sized client, and the practice is disclosed on the firm's website. Her conduct is most likely:",
+    "stem": "Ngozi participates in an oversubscribed secondary offering for her clients. Her personal trading account \u2014 which she operates separately from client accounts and under a distinct strategy \u2014 receives the same pro-rata share assigned to each similarly sized client, and the practice is disclosed on the firm's website. Her conduct is most likely:",
     "options": {
-      "A": "a violation, because in an oversubscribed issue she must forgo any allocation to her own account to free up shares for clients.",
-      "B": "not a violation, because her allocation was pro rata and the practice is disclosed publicly.",
-      "C": "not a violation, because disclosure cures any conflict of interest arising from self-allocation."
+      "A": "In an oversubscribed issue she must forgo any allocation to her own account to free up shares for clients.",
+      "B": "Her allocation was pro rata and the practice is disclosed publicly.",
+      "C": "Disclosure cures any conflict of interest arising from self-allocation."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> The Curriculum is explicit that, in an oversubscribed issue, members must forgo sales to themselves in order to free up additional shares for clients. This obligation is not curable by prior disclosure; a duty of fairness to clients cannot be overridden by client notice when allocation procedures are inherently unfair.</p><p>B is tempting because pro-rata plus disclosure sounds like defensible practice, but the self-allocation rule in oversubscribed issues is categorical with respect to the manager's own account.</p><p>C fails because the Curriculum makes clear that even complete disclosure does not neutralize an allocation method that places the manager ahead of clients.</p>"
@@ -76,9 +76,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Sato receives a partial fill on a new ten-year bond issue her firm had requested for five clients. The firm's minimum lot size is USD 5,000. A strict pro-rata split of the partial fill would leave two clients with positions below USD 5,000 each, impairing future liquidity. Sato instead allocates so that every participating client receives at least the minimum lot, keeping the split as close as practicable to the requested amounts. Her allocation is most likely:",
     "options": {
-      "A": "a violation, because fair dealing requires strict pro-rata allocation whenever an issue is oversubscribed.",
-      "B": "a violation, because any deviation from pro-rata allocation requires the prior written consent of every affected client.",
-      "C": "not a violation, because respecting a documented minimum lot size while approximating the requested allocations is permitted."
+      "A": "Fair dealing requires strict pro-rata allocation whenever an issue is oversubscribed.",
+      "B": "Any deviation from pro-rata allocation requires the prior written consent of every affected client.",
+      "C": "Respecting a documented minimum lot size while approximating the requested allocations is permitted."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum's fair-dealing guidance on block and new-issue allocations expressly contemplates that partial fills should not be pushed below an established minimum lot size for some securities, such as bonds. Respecting the minimum lot while keeping allocations close to requested proportions is therefore an explicitly sanctioned deviation from strict pro-rata.</p><p>A is tempting because 'pro-rata to all suitable accounts' is drilled into candidates as the default, but the Curriculum qualifies the rule with an exception for minimum lot size to protect future liquidity.</p><p>B fails because the Standard does not layer a consent requirement onto allocation mechanics; adherence to documented, equitable procedures discharges the duty.</p>"
@@ -88,9 +88,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Under pressure to retain the firm's largest revenue-generating client, Velasquez purchases a block of securities for several accounts without preparing allocation tickets. Several days later, after observing which trades moved favorably and which did not, she allocates the profitable trades to the large client and spreads the losing trades across other accounts. Her conduct is most likely:",
     "options": {
-      "A": "a violation, because trade allocation must occur prior to execution or through a systematic procedure applied as soon as practical thereafter.",
-      "B": "not a violation, provided the large client's investment policy statement is consistent with the trades ultimately assigned to it.",
-      "C": "not a violation, because allocation flexibility is permitted when the continuation of an important client mandate is at risk."
+      "A": "Trade allocation must occur prior to execution or through a systematic procedure applied as soon as practical thereafter.",
+      "B": "Provided the large client's investment policy statement is consistent with the trades ultimately assigned to it.",
+      "C": "Allocation flexibility is permitted when the continuation of an important client mandate is at risk."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Fair dealing requires that trades be allocated before execution or, if that is not practical, via a systematic method such as pro-rata applied as soon as possible after execution. Allocating after observing post-trade outcomes is the paradigmatic violation because it converts client allocations into a favor-exchange mechanism for a preferred account.</p><p>B is tempting because the trades might be individually suitable, but suitability does not rescue an after-the-fact allocation scheme that chooses winners for one client and losers for the rest.</p><p>C fails because the Standard does not recognize a 'retain the revenue' exception; business pressure cannot override a duty of fairness owed to every client.</p>"
@@ -100,9 +100,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Ibrahim, a performance analyst, proposes two internal reports for the CIO: one listing the percentage holdings of common securities across similar client portfolios, and a second comparing the monthly returns of portfolios with similar strategies. Outlier accounts would be flagged for review. Ibrahim's proposal is most likely:",
     "options": {
-      "A": "a violation, because internal surveillance of individual client accounts breaches client confidentiality.",
-      "B": "a violation, because findings should be sent directly to regulators rather than the CIO.",
-      "C": "not a violation, because after-the-fact review of portfolio outliers supports the firm's ability to treat clients fairly."
+      "A": "Internal surveillance of individual client accounts breaches client confidentiality.",
+      "B": "Findings should be sent directly to regulators rather than the CIO.",
+      "C": "After-the-fact review of portfolio outliers supports the firm's ability to treat clients fairly."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum explicitly endorses internal monitoring reports as an oversight tool that helps ensure clients are treated fairly. Systematic review for preferential treatment is a compliance practice recommended under Standard III(B), not a breach of it.</p><p>A is tempting if a candidate conflates internal oversight with confidentiality obligations, but reviewing firm-managed portfolios to detect unfair treatment is an expected supervisory function.</p><p>B fails because there is no requirement to escalate ordinary monitoring results to regulators; the Curriculum identifies internal review as the appropriate channel.</p>"
@@ -112,9 +112,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Rao manages several pension accounts that share access to the same research package funded through brokerage commissions. To reduce the research expense borne by a preferred pension client whose referral he wishes to protect, Rao intentionally increases trading activity in the other pension accounts so the shared research remains funded. His conduct is most likely:",
     "options": {
-      "A": "a violation, because clients sharing the benefit of research should bear their proportionate share of its cost rather than be traded to subsidize a preferred account.",
-      "B": "not a violation, because all pension accounts continue to benefit from the funded research.",
-      "C": "not a violation, provided each additional trade remains within the traded account's stated investment mandate."
+      "A": "Clients sharing the benefit of research should bear their proportionate share of its cost rather than be traded to subsidize a preferred account.",
+      "B": "All pension accounts continue to benefit from the funded research.",
+      "C": "Provided each additional trade remains within the traded account's stated investment mandate."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Fair dealing prohibits taking investment actions that disadvantage one client in order to enhance a relationship with a preferred client. Using the trading activity of non-preferred accounts to subsidize research consumed by a preferred account is precisely the kind of cross-subsidization the Standard forbids.</p><p>B is tempting because shared benefit is real, but benefit sharing does not license cost shifting; trading should occur only as the strategy requires.</p><p>C fails because even nominally within-mandate trades become violations when they are generated for the purpose of subsidizing another client rather than serving the traded account's interest.</p>"
@@ -124,9 +124,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Farooqi aggregates orders from ten client accounts into a single block trade. The executions span several price points during the day. She assigns each participating account the single volume-weighted average execution price and charges an identical commission rate to all participants. Her allocation is most likely:",
     "options": {
-      "A": "a violation, because clients must receive the specific fill prices generated by their individual orders to avoid cross-subsidization.",
-      "B": "not a violation, because giving all block participants the same execution price and commission is an accepted fair-dealing practice.",
-      "C": "a violation, because the use of an average price obscures the true market price and misleads clients."
+      "A": "Clients must receive the specific fill prices generated by their individual orders to avoid cross-subsidization.",
+      "B": "Giving all block participants the same execution price and commission is an accepted fair-dealing practice.",
+      "C": "The use of an average price obscures the true market price and misleads clients."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum's block-trade guidance directs members to give all client accounts participating in a block the same execution price and the same commission. A single volume-weighted execution price applied uniformly satisfies this rule.</p><p>A is tempting because granular fill attribution sounds 'fairer,' but the Curriculum's fair-dealing practice for block orders is precisely the opposite: equalize price and commission across the block.</p><p>C fails because the average price in a block is a recognized execution convention, not a misrepresentation; every block participant receives the same treatment on the same basis.</p>"
@@ -136,21 +136,21 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Following a material change from 'buy' to 'hold' on a core holding, Park distributes the revised recommendation to every current client of record. She additionally telephones the subset of clients whom she knows acted on the earlier 'buy' call to confirm that they have received and understood the update. Her conduct is most likely:",
     "options": {
-      "A": "not a violation, because material changes must reach all current clients, with particular care taken for those known to have acted on the earlier advice.",
-      "B": "a violation, because clients who acted on the earlier recommendation must be notified exclusively and before any other client is informed of the change.",
-      "C": "a violation, because verbal follow-up calls create documentation risk and must be avoided for material recommendation changes."
+      "A": "Material changes must reach all current clients, with particular care taken for those known to have acted on the earlier advice.",
+      "B": "Clients who acted on the earlier recommendation must be notified exclusively and before any other client is informed of the change.",
+      "C": "Verbal follow-up calls create documentation risk and must be avoided for material recommendation changes."
     },
     "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard III(B) requires that material changes to prior recommendations be communicated to all current clients, with particular attention to clients who have acted on or been affected by the earlier advice. Park's dual-track — full dissemination plus targeted follow-up — tracks the Curriculum's guidance precisely.</p><p>B is tempting because candidates sometimes interpret 'particular care' as requiring exclusive prior notice, but the Curriculum describes particular care as additional attention layered on top of full dissemination, not as a carve-out that excludes others first.</p><p>C fails because the Curriculum contemplates multiple dissemination channels and does not prohibit verbal follow-up; in fact, direct outreach to affected clients is encouraged.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Standard III(B) requires that material changes to prior recommendations be communicated to all current clients, with particular attention to clients who have acted on or been affected by the earlier advice. Park's dual-track \u2014 full dissemination plus targeted follow-up \u2014 tracks the Curriculum's guidance precisely.</p><p>B is tempting because candidates sometimes interpret 'particular care' as requiring exclusive prior notice, but the Curriculum describes particular care as additional attention layered on top of full dissemination, not as a carve-out that excludes others first.</p><p>C fails because the Curriculum contemplates multiple dissemination channels and does not prohibit verbal follow-up; in fact, direct outreach to affected clients is encouraged.</p>"
   },
   {
     "id": 13,
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Kowalski, a junior analyst, is asked to build her firm's online presence. Before her first research report on an auto-sector issuer is distributed to the firm's client list, she posts a brief summary of her 'buy' recommendation to the firm's LinkedIn page, which is followed only by a fraction of the firm's clients. Her post is most likely:",
     "options": {
-      "A": "not a violation, because a social media post is inherently a form of general distribution.",
-      "B": "not a violation, because any client who wishes to follow the firm on LinkedIn may do so.",
-      "C": "a violation, because the recommendation reached a selective audience before it was delivered to the full client base."
+      "A": "A social media post is inherently a form of general distribution.",
+      "B": "Any client who wishes to follow the firm on LinkedIn may do so.",
+      "C": "The recommendation reached a selective audience before it was delivered to the full client base."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard III(B) prohibits selective dissemination of investment recommendations. Posting to a channel followed by only part of the client base, before the recommendation reaches the full client list, advantages the social-media audience relative to other clients.</p><p>A is tempting because social media feels 'public,' but reach is not the same as broad client dissemination; followers are a subset, not the client list.</p><p>B fails because theoretical access is not equivalent to actual simultaneous delivery. Fair dealing requires that all clients have a fair opportunity to act, not merely the option to subscribe to an additional channel.</p>"
@@ -160,9 +160,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Delacroix's firm offers two research tiers: a standard tier included with all advisory accounts and a premium tier available for an additional fee that adds deeper proprietary modeling. Every client is informed of both tiers and may enroll in either. Standard-tier clients receive new recommendations on the same initial distribution as premium-tier clients. The firm's program is most likely:",
     "options": {
-      "A": "a violation, because clients paying different fees receive different levels of research.",
-      "B": "not a violation, because the tiers are disclosed, available to all clients, and standard-tier clients are not disadvantaged in the initial dissemination.",
-      "C": "a violation, because standard-tier clients effectively subsidize the proprietary modeling delivered to premium-tier clients."
+      "A": "Clients paying different fees receive different levels of research.",
+      "B": "The tiers are disclosed, available to all clients, and standard-tier clients are not disadvantaged in the initial dissemination.",
+      "C": "Standard-tier clients effectively subsidize the proprietary modeling delivered to premium-tier clients."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum permits differentiated service levels provided they are disclosed to clients, available to every client, and do not disadvantage clients who receive the lower level of service. Because the standard-tier clients still receive the new recommendation on the same initial distribution, the initial informational playing field is level, and the premium work is additive.</p><p>A is tempting because candidates read 'fair dealing' as a bar on any differentiation, but the Curriculum distinguishes permitted differentiation from impermissible discrimination.</p><p>C fails because there is no subsidization: premium-tier fees pay for premium-tier work, while the baseline recommendation flow reaches all clients equally.</p>"
@@ -172,21 +172,21 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Mendez's firm creates a 'Platinum' research tier offering earlier access to new recommendations for a higher fee. To avoid overwhelming the analyst team, the firm invites only its twenty largest accounts into the Platinum program and does not inform smaller clients that the tier exists. The firm's practice is most likely:",
     "options": {
-      "A": "not a violation, because clients in the Platinum tier pay higher fees that justify the earlier access.",
-      "B": "not a violation, because operational constraints justify limiting the program to a manageable subset of accounts.",
-      "C": "a violation, because different service levels must be disclosed to and available to every client, not offered selectively."
+      "A": "Clients in the Platinum tier pay higher fees that justify the earlier access.",
+      "B": "Operational constraints justify limiting the program to a manageable subset of accounts.",
+      "C": "Different service levels must be disclosed to and available to every client, not offered selectively."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum permits different service levels only when they are disclosed and available to all clients. Even if higher fees could justify deeper service, earlier access to recommendations cannot be quietly reserved for a favored subset — that creates an informational advantage that disadvantages non-Platinum clients.</p><p>A is tempting because higher fees and richer service are ordinarily acceptable, but earlier delivery of actionable recommendations crosses from additional service into preferential access.</p><p>B fails because operational capacity does not override the Standard's requirement of universal disclosure and availability; scarce capacity would require a different rationing mechanism that does not privilege specific clients.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum permits different service levels only when they are disclosed and available to all clients. Even if higher fees could justify deeper service, earlier access to recommendations cannot be quietly reserved for a favored subset \u2014 that creates an informational advantage that disadvantages non-Platinum clients.</p><p>A is tempting because higher fees and richer service are ordinarily acceptable, but earlier delivery of actionable recommendations crosses from additional service into preferential access.</p><p>B fails because operational capacity does not override the Standard's requirement of universal disclosure and availability; scarce capacity would require a different rationing mechanism that does not privilege specific clients.</p>"
   },
   {
     "id": 16,
     "topic": "Standard III(B) Fair Dealing",
     "stem": "At 8:00 a.m., Quinones distributes a new research note containing a 'hold' recommendation to the firm's entire client list. At 12:30 p.m., she hosts a previously scheduled lunch with two long-standing clients and discusses the implications of the note for their specific portfolios. No new opinion, target, or catalyst is shared that is not already in the distributed note. Her conduct is most likely:",
     "options": {
-      "A": "not a violation, because the recommendation was disseminated to all clients before the meeting and no new actionable information was shared.",
-      "B": "a violation, because private meetings with selected clients after a release create an appearance of preferential access.",
-      "C": "a violation, unless a transcript of the lunch discussion is circulated to all remaining clients."
+      "A": "The recommendation was disseminated to all clients before the meeting and no new actionable information was shared.",
+      "B": "Private meetings with selected clients after a release create an appearance of preferential access.",
+      "C": "A transcript of the lunch discussion is circulated to all remaining clients."
     },
     "correct_answer": "A",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>A is correct.</strong> Fair dealing does not prohibit individualized discussions of a recommendation after broad dissemination, so long as no new actionable information is provided. Because the note had already gone out to every client, the later lunch is a personal-service discussion of existing public information, not selective disclosure.</p><p>B is tempting because the optics of a lunch with select clients can resemble Ames-type pre-release disclosure, but the key distinction is timing relative to dissemination and whether the content is incremental.</p><p>C fails because the Standard does not require transcripts of after-the-fact client discussions; what matters is that nothing new is being communicated.</p>"
@@ -196,9 +196,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Svensson has drafted a 'buy' research report scheduled for firm-wide distribution next Monday, pending compliance review. On the preceding Thursday, he hosts a lunch with several of his most profitable clients and previews the purchase recommendation and its supporting rationale in detail. His conduct is most likely:",
     "options": {
-      "A": "not a violation, because compliance delays should not prevent analysts from communicating with their clients.",
-      "B": "not a violation, because the preview was delivered only to clients who had previously expressed sector interest.",
-      "C": "a violation, because the recommendation was delivered to a selective group before broad dissemination."
+      "A": "Compliance delays should not prevent analysts from communicating with their clients.",
+      "B": "The preview was delivered only to clients who had previously expressed sector interest.",
+      "C": "The recommendation was delivered to a selective group before broad dissemination."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> Standard III(B) is violated when an analyst communicates a pending recommendation to a select group of clients before the firm-wide release. Svensson's Thursday lunch gives those clients a multi-day head start over the rest of the client base.</p><p>A is tempting because candidates recognize that pending compliance review is a legitimate delay, but delay does not license selective preview; if anything, it extends the period during which predissemination discipline must hold.</p><p>B fails because prior expressed interest does not cure selective disclosure. Suitability determines who is eligible to receive a recommendation once it is released, not who may receive it in advance.</p>"
@@ -208,9 +208,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "At 9:30 a.m., Johansson's firm downgrades a stock from 'buy' to 'sell' and begins distributing the change. At 9:45 a.m., a client calls the desk wishing to add to the position in reliance on the older 'buy' note. Before accepting the purchase order, the broker informs the client that the recommendation has been changed to 'sell.' The client acknowledges the change and still elects to proceed. The broker's conduct is most likely:",
     "options": {
-      "A": "a violation, because the broker must decline any trade that is contrary to the firm's current recommendation.",
-      "B": "a violation, because the broker was required to obtain written confirmation of the new recommendation before executing.",
-      "C": "not a violation, because the client was advised of the changed recommendation before the order was accepted."
+      "A": "The broker must decline any trade that is contrary to the firm's current recommendation.",
+      "B": "The broker was required to obtain written confirmation of the new recommendation before executing.",
+      "C": "The client was advised of the changed recommendation before the order was accepted."
     },
     "correct_answer": "C",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum states that a client placing an order contrary to a current recommendation should be advised of the changed recommendation before the order is accepted. Johansson's broker did exactly that; the client's informed decision to proceed is the client's prerogative.</p><p>A is tempting because candidates confuse fair dealing with a duty to refuse off-thesis trades, but the Standard is about information parity, not order refusal.</p><p>B fails because the Standard does not impose a written-confirmation formality; notification before order acceptance is the operative requirement.</p>"
@@ -220,9 +220,9 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "In a written report distributed to all clients, Alvarez reiterates a company's publicly indicated quarterly earnings estimate of USD 1.16 per share. Informally, over the phone, he tells his three largest clients that he personally expects an upside surprise and considers the stock a strong buy at current levels. His conduct is most likely:",
     "options": {
-      "A": "not a violation, because the written report accurately reflects the issuer's public guidance.",
-      "B": "a violation, because Alvarez's actionable view was shared selectively with favored clients rather than with the full client base.",
-      "C": "not a violation, because a verbal opinion does not constitute a formal investment recommendation."
+      "A": "The written report accurately reflects the issuer's public guidance.",
+      "B": "Alvarez's actionable view was shared selectively with favored clients rather than with the full client base.",
+      "C": "A verbal opinion does not constitute a formal investment recommendation."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum defines an investment recommendation broadly to include any opinion expressed by a member about buying, selling, or holding a security, including verbal communications. By sharing an actionable upside view only with the largest clients, Alvarez deprived the rest of the client base of information material to their investment decisions.</p><p>A is tempting because the written report is technically accurate, but fair dealing governs the totality of communications, not just formal written output.</p><p>C fails because verbal opinions are explicitly recognized as investment recommendations under the Curriculum; the medium does not strip the content of its character.</p>"
@@ -230,11 +230,11 @@
   {
     "id": 20,
     "topic": "Standard III(B) Fair Dealing",
-    "stem": "Tanaka joins a small firm that has no formal procedures for disseminating research recommendations or allocating trades. Observing the gap, she prepares a written proposal for the managing partner outlining a fair-dealing framework — including simultaneous dissemination, documented allocation practices, and periodic account review — and requests approval to adopt it. Her action is most likely:",
+    "stem": "Tanaka joins a small firm that has no formal procedures for disseminating research recommendations or allocating trades. Observing the gap, she prepares a written proposal for the managing partner outlining a fair-dealing framework \u2014 including simultaneous dissemination, documented allocation practices, and periodic account review \u2014 and requests approval to adopt it. Her action is most likely:",
     "options": {
-      "A": "a violation, because in the absence of formal procedures she should decline to participate in distributing any recommendation.",
-      "B": "not a violation, because members should recommend appropriate fair-dealing procedures to management when none are in place.",
-      "C": "a violation, because she should have first escalated the deficiency to the CFA Institute Professional Conduct Program."
+      "A": "In the absence of formal procedures she should decline to participate in distributing any recommendation.",
+      "B": "Members should recommend appropriate fair-dealing procedures to management when none are in place.",
+      "C": "She should have first escalated the deficiency to the CFA Institute Professional Conduct Program."
     },
     "correct_answer": "B",
     "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>B is correct.</strong> The Curriculum specifically states that members should recommend appropriate procedures to management if none are in place, and should make management aware of possible violations of fair-dealing practices. Tanaka's internal proposal is the very action the Standard contemplates.</p><p>A is tempting because absence of procedures sounds disqualifying, but the Standard asks members to improve procedures from within rather than withdraw from work.</p><p>C fails because external escalation to the Professional Conduct Program is not the first-order remedy for a procedural gap; internal recommendation to management is.</p>"
@@ -244,11 +244,11 @@
     "topic": "Standard III(B) Fair Dealing",
     "stem": "Berger's firm distributes research through a primary channel at a pre-announced time each morning. A small group of clients in remote jurisdictions receives the notes a few hours later because they rely on a batch-relay email service with their preferred delivery schedule. The system is applied consistently to every client based on the delivery channel each client selected at onboarding. The firm's practice is most likely:",
     "options": {
-      "A": "a violation, because all clients must receive recommendations at the exact same moment.",
-      "B": "a violation, because any timing differential must be eliminated by withholding dissemination until every channel delivers simultaneously.",
-      "C": "not a violation, because the Standard requires fair — not literally equal — treatment, and an equitable system applied consistently to every client is acceptable."
+      "A": "All clients must receive recommendations at the exact same moment.",
+      "B": "Any timing differential must be eliminated by withholding dissemination until every channel delivers simultaneously.",
+      "C": "The Standard requires fair \u2014 not literally equal \u2014 treatment, and an equitable system applied consistently to every client is acceptable."
     },
     "correct_answer": "C",
-    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum expressly uses the word 'fairly' rather than 'equally' because members cannot realistically reach every client at the same instant. An equitable system — applied consistently to all clients based on the delivery channel each client selected — discharges the duty.</p><p>A is tempting because 'simultaneous dissemination' is drilled as a best practice, but simultaneity is an aspirational target, not a rule that voids any timing differential.</p><p>B fails because lowering every client to the slowest delivery channel would itself disadvantage clients who selected faster channels; the Standard calls for fairness, not lowest-common-denominator delivery.</p>"
+    "explanation": "<h3>First Principles Thinking: governing standard</h3><p><strong>C is correct.</strong> The Curriculum expressly uses the word 'fairly' rather than 'equally' because members cannot realistically reach every client at the same instant. An equitable system \u2014 applied consistently to all clients based on the delivery channel each client selected \u2014 discharges the duty.</p><p>A is tempting because 'simultaneous dissemination' is drilled as a best practice, but simultaneity is an aspirational target, not a rule that voids any timing differential.</p><p>B fails because lowering every client to the slowest delivery channel would itself disadvantage clients who selected faster channels; the Standard calls for fairness, not lowest-common-denominator delivery.</p>"
   }
 ]

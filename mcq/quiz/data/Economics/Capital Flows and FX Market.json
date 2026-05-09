@@ -18,12 +18,12 @@
     "topic": "Capital Flows and FX Market - Forward Position",
     "stem": "An investor enters a long USD/EUR forward contract. The investor is most likely agreeing to:",
     "options": {
-      "A": "buy EUR and sell USD at the forward rate.",
-      "B": "buy USD and sell EUR at the forward rate.",
+      "A": "buy USD and sell EUR at the forward rate.",
+      "B": "buy EUR and sell USD at the forward rate.",
       "C": "buy both USD and EUR at the forward rate."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: long FX forward</h3><p><strong>A is correct.</strong> A long FX forward position means buying the base currency and selling the price currency. In USD/EUR, EUR is the base currency and USD is the price currency, so the long position buys EUR and sells USD.</p><p>Why option B is incorrect. That describes a short position in the USD/EUR forward, not a long one.</p><p>Why option C is incorrect. A forward exchanges one currency for the other; it does not purchase both sides.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: long FX forward</h3><p><strong>B is correct.</strong> A long FX forward position means buying the base currency and selling the price currency. In USD/EUR, EUR is the base currency and USD is the price currency, so the long position buys EUR and sells USD.</p><p>Why option A is incorrect. That describes a short position in the USD/EUR forward, not a long one.</p><p>Why option C is incorrect. A forward exchanges one currency for the other; it does not purchase both sides.</p>"
   },
   {
     "id": 3,
@@ -31,12 +31,12 @@
     "topic": "Capital Flows and FX Market - Appreciation",
     "stem": "If the USD/EUR exchange rate falls, which statement is most likely correct?",
     "options": {
-      "A": "USD appreciates against EUR.",
-      "B": "EUR appreciates against USD.",
-      "C": "Neither currency changes in value."
+      "A": "EUR appreciates against USD.",
+      "B": "Neither currency changes in value.",
+      "C": "USD appreciates against EUR."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: appreciation direction</h3><p><strong>A is correct.</strong> USD/EUR gives the number of USD needed to buy EUR 1. If that number falls, fewer USD are required to buy one euro, so the USD has appreciated against the EUR.</p><p>Why option B is incorrect. If EUR were appreciating, the USD/EUR quote would rise rather than fall.</p><p>Why option C is incorrect. A change in the quote is precisely a change in the relative value of the two currencies.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: appreciation direction</h3><p><strong>C is correct.</strong> USD/EUR gives the number of USD needed to buy EUR 1. If that number falls, fewer USD are required to buy one euro, so the USD has appreciated against the EUR.</p><p>Why option A is incorrect. If EUR were appreciating, the USD/EUR quote would rise rather than fall.</p><p>Why option B is incorrect. A change in the quote is precisely a change in the relative value of the two currencies.</p>"
   },
   {
     "id": 4,
@@ -57,12 +57,12 @@
     "topic": "Capital Flows and FX Market - Forward Premium",
     "stem": "At trade inception, the currency with the lower risk-free rate for the forward period is said to trade at a:",
     "options": {
-      "A": "forward premium.",
-      "B": "forward discount.",
+      "A": "forward discount.",
+      "B": "forward premium.",
       "C": "spot discount."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: forward premium and discount</h3><p><strong>A is correct.</strong> The lower-yielding currency trades at a forward premium. In the forward market, fewer units of that lower-rate currency are required to purchase one unit of the other currency.</p><p>Why option B is incorrect. The forward discount applies to the currency with the higher risk-free rate.</p><p>Why option C is incorrect. The curriculum statement is about forward pricing, not a separate concept called a spot discount.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: forward premium and discount</h3><p><strong>B is correct.</strong> The lower-yielding currency trades at a forward premium. In the forward market, fewer units of that lower-rate currency are required to purchase one unit of the other currency.</p><p>Why option A is incorrect. The forward discount applies to the currency with the higher risk-free rate.</p><p>Why option C is incorrect. The curriculum statement is about forward pricing, not a separate concept called a spot discount.</p>"
   },
   {
     "id": 6,
@@ -96,12 +96,12 @@
     "topic": "Capital Flows and FX Market - MTM Effect",
     "stem": "A long one-year USD/EUR forward is initiated, and immediately afterward the one-year USD risk-free rate rises while other details stay unchanged. From the long position holder's perspective, the mark-to-market effect is most likely a:",
     "options": {
-      "A": "gain.",
+      "A": "zero effect.",
       "B": "loss.",
-      "C": "zero effect."
+      "C": "gain."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: MTM and discounting</h3><p><strong>A is correct.</strong> A rise in the USD rate increases the discounting applied to the contracted forward exchange payment in the FX forward value formula. That raises the current mark-to-market value to the long USD/EUR forward holder.</p><p>Why option B is incorrect. It gets the sign wrong; the higher USD rate improves rather than hurts the long position in the cited example structure.</p><p>Why option C is incorrect. The mark-to-market value changes when the interest-rate differential changes.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: MTM and discounting</h3><p><strong>C is correct.</strong> A rise in the USD rate increases the discounting applied to the contracted forward exchange payment in the FX forward value formula. That raises the current mark-to-market value to the long USD/EUR forward holder.</p><p>Why option A is incorrect. The mark-to-market value changes when the interest-rate differential changes, so the effect is not zero.</p><p>Why option B is incorrect. It gets the sign wrong; the higher USD rate improves rather than hurts the long position in the cited example structure.</p>"
   },
   {
     "id": 9,
@@ -122,12 +122,12 @@
     "topic": "Capital Flows and FX Market - Deficit Financing",
     "stem": "A country runs a current account deficit and the central bank does not change reserves. Which outcome is most likely required by the balance of payments?",
     "options": {
-      "A": "A capital or financial account surplus.",
+      "A": "No offsetting flow is needed.",
       "B": "A capital or financial account deficit.",
-      "C": "No offsetting flow is needed."
+      "C": "A capital or financial account surplus."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: financing a current account deficit</h3><p><strong>A is correct.</strong> If reserves do not change, a current account deficit must be financed by a capital or financial account surplus. The country must receive net capital from abroad to fund the deficit.</p><p>Why option B is incorrect. A simultaneous current account deficit and capital account deficit would worsen rather than finance the external gap.</p><p>Why option C is incorrect. The accounting identity requires an offset.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: financing a current account deficit</h3><p><strong>C is correct.</strong> If reserves do not change, a current account deficit must be financed by a capital or financial account surplus. The country must receive net capital from abroad to fund the deficit.</p><p>Why option A is incorrect. The accounting identity requires an offset.</p><p>Why option B is incorrect. A simultaneous current account deficit and capital account deficit would worsen rather than finance the external gap.</p>"
   },
   {
     "id": 11,
@@ -174,12 +174,12 @@
     "topic": "Capital Flows and FX Market - Reserve Currency Status",
     "stem": "A key distinction for sovereign creditworthiness is whether the domestic currency is a reserve currency. The most likely direct advantage is that foreign investors are more willing to:",
     "options": {
-      "A": "hold assets in that country's currency.",
-      "B": "avoid all securities issued in that currency.",
+      "A": "avoid all securities issued in that currency.",
+      "B": "hold assets in that country's currency.",
       "C": "treat the currency as non-convertible."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: reserve currency advantage</h3><p><strong>A is correct.</strong> Reserve-currency status means foreign central banks and investors are willing to hold cash, bonds, and other assets in that currency. That expands external funding flexibility for the sovereign.</p><p>Why option B is incorrect. Reserve-currency status increases willingness to hold the currency, not avoid it.</p><p>Why option C is incorrect. Reserve currencies are associated with convertibility and broad acceptance, not non-convertibility.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: reserve currency advantage</h3><p><strong>B is correct.</strong> Reserve-currency status means foreign central banks and investors are willing to hold cash, bonds, and other assets in that currency. That expands external funding flexibility for the sovereign.</p><p>Why option A is incorrect. Reserve-currency status increases willingness to hold the currency, not avoid it.</p><p>Why option C is incorrect. Reserve currencies are associated with convertibility and broad acceptance, not non-convertibility.</p>"
   },
   {
     "id": 15,
@@ -188,11 +188,11 @@
     "stem": "When foreign investors are able and willing to hold assets in a country's currency, the government's ability to access foreign investors using domestic-currency debt is most likely:",
     "options": {
       "A": "reduced.",
-      "B": "expanded.",
-      "C": "eliminated."
+      "B": "eliminated.",
+      "C": "expanded."
     },
-    "correct_answer": "B",
-    "explanation": "<h3>First Principles Thinking: domestic-currency funding flexibility</h3><p><strong>B is correct.</strong> If foreign investors willingly hold assets in the domestic currency, the government gains broader access to external investors without having to rely as heavily on foreign-currency debt.</p><p>Why option A is incorrect. Investor willingness to hold the currency increases, rather than reduces, funding flexibility.</p><p>Why option C is incorrect. The effect is the opposite of elimination; it expands borrowing options.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: domestic-currency funding flexibility</h3><p><strong>C is correct.</strong> If foreign investors willingly hold assets in the domestic currency, the government gains broader access to external investors without having to rely as heavily on foreign-currency debt.</p><p>Why option A is incorrect. Investor willingness to hold the currency increases, rather than reduces, funding flexibility.</p><p>Why option B is incorrect. The effect is the opposite of elimination; it expands borrowing options.</p>"
   },
   {
     "id": 16,
@@ -252,12 +252,12 @@
     "topic": "Capital Flows and FX Market - Romania and Moldova",
     "stem": "Relative to Moldova, Romania was described as more likely to maintain access to international capital markets and issue bonds in foreign currencies such as EUR and USD. This most directly reflects Romania's stronger:",
     "options": {
-      "A": "external status.",
+      "A": "reliance on short-term domestic debt only.",
       "B": "dependence on IMF credit facilities.",
-      "C": "reliance on short-term domestic debt only."
+      "C": "external status."
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: external status and market access</h3><p><strong>A is correct.</strong> Romania's ability to access international capital markets and issue EUR- and USD-denominated bonds reflects stronger external status and better access to foreign funding.</p><p>Why option B is incorrect. Dependence on IMF facilities was associated more closely with Moldova, not Romania.</p><p>Why option C is incorrect. The comparison emphasized Romania's broader market access, not confinement to short-term domestic debt only.</p>"
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: external status and market access</h3><p><strong>C is correct.</strong> Romania's ability to access international capital markets and issue EUR- and USD-denominated bonds reflects stronger external status and better access to foreign funding.</p><p>Why option A is incorrect. The comparison emphasized Romania's broader market access, not confinement to short-term domestic debt only.</p><p>Why option B is incorrect. Dependence on IMF facilities was associated more closely with Moldova, not Romania.</p>"
   },
   {
     "id": 21,
@@ -265,11 +265,11 @@
     "topic": "Capital Flows and FX Market - FX Rate Calculation",
     "stem": "The spot rate is AUD/USD 1.3335, the Australian dollar risk-free rate is 0.05%, and the US dollar risk-free rate is 0.20% for six months. The arbitrage-free six-month forward rate is closest to:",
     "options": {
-      "A": "1.3325",
-      "B": "1.3335",
+      "A": "1.3335",
+      "B": "1.3325",
       "C": "1.3360"
     },
-    "correct_answer": "A",
-    "explanation": "<h3>First Principles Thinking: simple FX forward calculation</h3><p><strong>A is correct.</strong> Using $F_{0,f/d}(T) = S_{0,f/d} e^{(r_f-r_d)T}$ with AUD as the price currency and USD as the base currency gives $F \\approx 1.3335 \\times e^{(0.0005-0.0020) \\times 0.5} \\approx 1.3325$. The higher USD rate pushes the forward rate slightly below spot.</p><p>Why option B is incorrect. That would be correct only if the interest-rate differential were zero.</p><p>Why option C is incorrect. It has the direction wrong; the lower Australian dollar rate does not push this quote above spot in the cited setup.</p>"
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: simple FX forward calculation</h3><p><strong>B is correct.</strong> Using $F_{0,f/d}(T) = S_{0,f/d} e^{(r_f-r_d)T}$ with AUD as the price currency and USD as the base currency gives $F \\approx 1.3335 \\times e^{(0.0005-0.0020) \\times 0.5} \\approx 1.3325$. The higher USD rate pushes the forward rate slightly below spot.</p><p>Why option A is incorrect. That would be correct only if the interest-rate differential were zero.</p><p>Why option C is incorrect. It has the direction wrong; the lower Australian dollar rate does not push this quote above spot in the cited setup.</p>"
   }
 ]
