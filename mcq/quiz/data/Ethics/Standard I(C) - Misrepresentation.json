@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A manager advertises a composite return as 'my personal 10-year track record' even though the results were produced by a five-person team at a prior firm. Which issue is most central under Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The manager used old data from a prior employer.",
+      "B": "The manager failed to mention that fees differed across client accounts.",
+      "C": "The manager blurred team performance into an individual claim of authorship."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: credit cannot be claimed beyond one's actual contribution</h3><p><strong>C is correct.</strong> Standard I(C) prohibits statements that mislead others about the source of performance or the member's role in producing it. Team results cannot be recast as one person's success without fair qualification.</p><p>A is tempting because prior-firm data can raise other issues, but the key misrepresentation here is false attribution, not merely the age of the record.</p><p>B fails because fee disclosure may matter in some contexts, but it is not the main defect described in the stem.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "An analyst copies two paragraphs from a trade journal into a report and lightly edits the wording without attribution. What is the strongest Standard I(C) Misrepresentation conclusion?",
+    "options": {
+      "A": "The conduct is acceptable because the analyst changed the wording.",
+      "B": "The conduct is acceptable because the journal was publicly available.",
+      "C": "The conduct is improper because unattributed use of another's expression is plagiarism even with minor edits."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: public availability does not waive attribution</h3><p><strong>C is correct.</strong> Standard I(C) bars plagiarism, including the use of another's work or wording without proper acknowledgment. Small edits do not convert borrowed work into original work.</p><p>A is tempting because paraphrasing can feel transformative, but light rewriting without attribution still misleads the reader about authorship.</p><p>B fails because public access to material does not grant permission to present it as one's own work.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A fund advertisement highlights only the best three sector calls from the prior year and describes them as evidence of the research team's accuracy. Which reading best fits Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "It is acceptable if the highlighted calls were genuinely successful.",
+      "B": "It is acceptable if the ad avoids a direct performance number.",
+      "C": "It may mislead because selective presentation can create a false impression of overall skill."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: truthful fragments can still mislead when selectively framed</h3><p><strong>C is correct.</strong> Standard I(C) looks at whether the communication as a whole is misleading. Cherry-picking only the best examples can distort the audience's impression even if each cited call is factually true.</p><p>A is tempting because the examples are real, but truth of individual examples does not answer whether the overall presentation is fair.</p><p>B fails because misleading impression can arise without an explicit return figure.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A candidate lists 'CFA Level III expected this year' on a biography before registering for the exam. What is the most accurate Standard I(C) Misrepresentation assessment?",
+    "options": {
+      "A": "The phrasing is acceptable because it does not explicitly say the candidate is a charterholder.",
+      "B": "The phrasing is acceptable if the candidate intends to register soon.",
+      "C": "The phrasing is misleading because it implies current status or candidacy not yet earned."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: future intent cannot be presented as present status</h3><p><strong>C is correct.</strong> Standard I(C) prohibits statements that mislead others about credentials or current relationship to the CFA Program. Intending to register later does not justify implying present candidacy.</p><p>A is tempting because the wording avoids the word 'charterholder,' but it still conveys an unsupported status signal.</p><p>B fails because intention does not substitute for actual registration.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A report states that a strategy 'virtually guarantees downside protection in volatile markets' even though the process has occasionally suffered sharp drawdowns. Which issue is most central under Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The statement overstates certainty in a way that misleads investors about risk.",
+      "B": "The statement is acceptable if the manager sincerely believes in the process.",
+      "C": "The statement is acceptable if a past-performance disclaimer appears on the last page."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: members may not describe uncertain outcomes as near-certain</h3><p><strong>A is correct.</strong> Standard I(C) forbids guarantees or near-guarantees about inherently uncertain investment outcomes when such wording misleads investors about actual risk.</p><p>B is tempting because conviction is common in markets, but personal belief does not permit misleading certainty language.</p><p>C fails because a general disclaimer does not neutralize a specific misrepresentation.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A consultant presents benchmark-relative outperformance but omits that the benchmark was changed midway to one easier to beat. Which conclusion best fits Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The omission can mislead because benchmark choice and changes affect how performance claims are understood.",
+      "B": "The omission is irrelevant because the reported returns themselves are numerically correct.",
+      "C": "The omission is acceptable if the new benchmark is widely followed."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: context can be essential to the truth of a performance claim</h3><p><strong>A is correct.</strong> Standard I(C) covers misleading omissions as well as outright falsehoods. Changing a benchmark without fair disclosure can distort how outperformance is interpreted.</p><p>B is tempting because the return arithmetic may be correct, but the comparative framing can still be deceptive.</p><p>C fails because popularity of the new benchmark does not excuse omission of the change.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A manager uses a back-tested model and markets the results beside live account returns without clearly separating the two. Which response is most consistent with Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "Present the results together because both are relevant to the model's merit.",
+      "B": "Clearly distinguish hypothetical back-tested results from actual performance so readers are not misled about what was achieved in practice.",
+      "C": "Use only the back-tested series if it has the longer history."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: simulated and actual results are not interchangeable</h3><p><strong>B is correct.</strong> Standard I(C) requires communications to distinguish between actual achieved performance and hypothetical or simulated results. Blending them without clear separation misleads the audience.</p><p>A is tempting because both data sets may be informative, but they must not be presented as equivalent evidence.</p><p>C fails because a longer history does not justify replacing actual performance with hypothetical results.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A research director republishes an outside consultant's industry map inside the firm's primer and adds the consultant's name in small print on the final slide only. Which assessment best fits Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The attribution is sufficient because the original creator is mentioned somewhere in the deck.",
+      "B": "The use is acceptable because the map was used for educational purposes.",
+      "C": "The presentation can still mislead if the attribution is not clear where the borrowed work appears."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: attribution must be clear enough to avoid false authorship</h3><p><strong>C is correct.</strong> Standard I(C) is concerned with whether the audience is misled about who created the work. A buried or unclear reference may still leave viewers with the false impression that the firm produced it.</p><p>A is tempting because some credit is better than none, but inadequate placement can still be misleading.</p><p>B fails because educational intent does not remove the need for proper attribution.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A portfolio manager uses the title 'the top risk expert in the region' in client materials without any objective basis. Which reading is most accurate under Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The claim is acceptable as ordinary marketing language even if unverifiable.",
+      "B": "The claim is problematic because unsupported superlatives can mislead clients about expertise.",
+      "C": "The claim is acceptable if no competitor objects."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: unsupported expertise claims can mislead even without precise numbers</h3><p><strong>B is correct.</strong> Standard I(C) reaches misleading claims about professional competence and expertise. An unsupported ranking-style statement can create a false impression of verified superiority.</p><p>A is tempting because marketing language is often broad, but members may not use puffery that materially misleads about credentials or skill.</p><p>C fails because absence of objection does not make the claim truthful.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "An adviser distributes an AI-generated market note without checking whether cited statistics and quotations are accurate. Which Standard I(C) Misrepresentation conclusion is strongest?",
+    "options": {
+      "A": "The adviser may rely on the tool because the note was not written manually.",
+      "B": "The adviser is responsible for verifying content before presenting it as part of professional work.",
+      "C": "The adviser is protected if the note includes a statement that technology was used."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: outsourcing drafting does not outsource responsibility</h3><p><strong>B is correct.</strong> Standard I(C) requires members to ensure that material they distribute is not misleading. Using a tool or third-party draft does not remove responsibility for verification.</p><p>A is tempting because the adviser did not personally compose every line, but presenting the work adopts it as professional communication.</p><p>C fails because generic disclosure of tool usage does not cure inaccurate content.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A fund fact sheet shows annualized returns but omits that one period covered less than a full year and was annualized upward. Which assessment best fits Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The omission is harmless because annualization is a standard technique.",
+      "B": "The omission may mislead because readers need to know when a shorter period has been annualized.",
+      "C": "The omission is acceptable if the annualized figure is mathematically correct."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: correct math can still mislead without essential context</h3><p><strong>B is correct.</strong> Standard I(C) requires fair and not misleading presentation. Annualizing a short period without clear disclosure can exaggerate the impression of established performance.</p><p>A is tempting because annualization is common, but common methods still require context to avoid misleading impressions.</p><p>C fails because mathematical correctness alone does not make the communication fair.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A member quotes another analyst's earnings model in a client meeting from memory and explicitly says the framework was developed by that analyst. Which conclusion is most accurate under Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The member likely avoids plagiarism because the source of the framework is clearly identified.",
+      "B": "The member violates the standard because any use of another analyst's work is forbidden.",
+      "C": "The member violates the standard unless the exact spreadsheet is attached."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: proper acknowledgment can permit use of others' ideas</h3><p><strong>A is correct.</strong> Standard I(C) does not ban all reliance on others' work. The problem is misrepresenting authorship or originality. Clear acknowledgment of the source addresses that concern.</p><p>B is tempting because plagiarism rules are strict, but they do not require members to reinvent every framework themselves.</p><p>C fails because attaching the source file is not the governing test when the source has already been properly identified.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A manager says a new strategy has 'never had a losing quarter' based on a sample that excludes a discontinued pilot account with one negative quarter. Which statement best fits Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The claim is acceptable if the pilot account was small.",
+      "B": "The claim is misleading because excluding relevant adverse experience changes the impression conveyed.",
+      "C": "The claim is acceptable if the discontinued account is not currently marketed."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: omitting adverse relevant history can be deceptive</h3><p><strong>B is correct.</strong> Standard I(C) prohibits presenting a selectively sanitized history that misleads investors about the true experience of the strategy.</p><p>A is tempting because size can matter in some analyses, but it does not justify a categorical statement that omits contradictory relevant experience.</p><p>C fails because current marketing status does not erase relevant prior results from a truthfulness analysis.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard I(C) - Misrepresentation",
+    "stem": "A candidate lists 'passed all CFA exams on first attempt' when he actually repeated one level after an absence but ultimately passed every level. Which assessment is most accurate under Standard I(C) Misrepresentation?",
+    "options": {
+      "A": "The statement is misleading because it creates a more favorable history than the facts support.",
+      "B": "The statement is acceptable because the final outcome is true.",
+      "C": "The statement is acceptable if the repeated level was many years ago."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: favorable compression of facts can still mislead</h3><p><strong>A is correct.</strong> Standard I(C) examines the impression created, not only the eventual outcome. Claiming first-attempt success when one level was repeated overstates the member's record.</p><p>B is tempting because all levels were ultimately passed, but the specific claim about first attempts is inaccurate.</p><p>C fails because elapsed time does not convert a false statement into an accurate one.</p>"
+  }
+]

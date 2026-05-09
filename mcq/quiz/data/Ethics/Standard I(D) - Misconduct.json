@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member is arrested at a peaceful political protest unrelated to finance and not involving dishonesty. Which Standard I(D) Misconduct reading is most accurate?",
+    "options": {
+      "A": "The conduct does not automatically fall under Standard I(D) unless it reflects on the member's professional integrity, honesty, or competence.",
+      "B": "The arrest automatically violates Standard I(D) because it generated negative attention.",
+      "C": "Any breach of public order is always misconduct for CFA purposes."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: not every private legal issue is professional misconduct</h3><p><strong>A is correct.</strong> Standard I(D) targets conduct involving dishonesty, fraud, deceit, or behavior that reflects adversely on professional reputation, integrity, or competence. A peaceful protest arrest does not automatically meet that threshold.</p><p>B is tempting because publicity can feel damaging, but embarrassment alone is not the standard's test.</p><p>C fails because Standard I(D) is not a blanket rule covering every private offense.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A senior portfolio manager falsifies expense receipts for small personal reimbursements. The amounts are minor compared with his compensation. What is the strongest Standard I(D) Misconduct conclusion?",
+    "options": {
+      "A": "The conduct is mainly a bookkeeping matter because the amounts are small.",
+      "B": "The conduct matters only if clients were directly charged for the expenses.",
+      "C": "The conduct reflects dishonesty and therefore implicates Standard I(D) despite the small amounts."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: dishonesty does not become trivial because the dollar amount is small</h3><p><strong>C is correct.</strong> Standard I(D) focuses on dishonest conduct that reflects adversely on integrity. Falsifying expense claims is deceitful even when the amounts are small.</p><p>A is tempting because materiality can matter in other contexts, but deceit itself is enough here.</p><p>B fails because misconduct is not limited to cases where clients bear the direct cost.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member enters inaccurate information on a compliance form because he misunderstood an instruction, and he corrects it promptly once notified. Which reading best fits Standard I(D) Misconduct?",
+    "options": {
+      "A": "The error is automatically misconduct because regulatory forms must be exact.",
+      "B": "The issue becomes misconduct only if the correction takes more than 24 hours.",
+      "C": "The issue may reflect carelessness, but without dishonesty or deceit it is not necessarily Standard I(D) misconduct."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: honest mistakes are not the same as deceit</h3><p><strong>C is correct.</strong> Standard I(D) is aimed at dishonest, fraudulent, or deceitful conduct and behavior reflecting adversely on integrity or competence. An honest misunderstanding, promptly corrected, does not automatically fit that category.</p><p>A is tempting because the form is important, but importance alone does not turn every mistake into misconduct.</p><p>B fails because no 24-hour rule determines whether conduct is deceitful.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member helps a romantic partner move assets across accounts to conceal them from tax authorities. Which standard-based rationale is strongest under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The personal relationship makes the conduct private and therefore outside the standard.",
+      "B": "The conduct matters only if the partner is also a client.",
+      "C": "The conduct involves deceit and assistance in wrongdoing, which directly reflects on professional integrity."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: private relationships do not excuse deceitful conduct</h3><p><strong>C is correct.</strong> Standard I(D) applies because the member is engaging in dishonest conduct and helping conceal wrongdoing. The personal nature of the relationship does not remove the integrity problem.</p><p>A is tempting because the context is private, but private conduct can still violate the standard when it is deceitful.</p><p>B fails because client status is not the trigger; dishonesty is.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member repeatedly appears intoxicated at work and mishandles professional responsibilities as a result. Which conclusion is most accurate under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The conduct can violate Standard I(D) because it reflects adversely on professional competence and integrity in the workplace.",
+      "B": "It is outside Standard I(D) because substance use is always a private-health issue.",
+      "C": "It matters only if the member is charged with a crime."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: workplace behavior that undermines professional competence can implicate I(D)</h3><p><strong>A is correct.</strong> Standard I(D) reaches conduct that reflects adversely on a member's professional reputation, integrity, or competence. Repeated intoxication at work that harms job performance fits that concern.</p><p>B is tempting because health issues can be sensitive, but the standard looks at the professional conduct consequences.</p><p>C fails because criminal charges are not a prerequisite for workplace misconduct under the standard.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member spreads knowingly false accusations about a coworker to block the coworker's promotion. Which issue is most central under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The false accusations show deceitful conduct that reflects poorly on professional integrity.",
+      "B": "The issue belongs only under supervisory standards because promotions are internal matters.",
+      "C": "The conduct is acceptable if the coworker is a commercial rival."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: deceit toward colleagues can still be professional misconduct</h3><p><strong>A is correct.</strong> Standard I(D) covers dishonest and deceitful behavior, not only fraud against clients or markets. Knowingly false accusations for personal advantage reflect directly on integrity.</p><p>B is tempting because the dispute is internal, but internal setting does not remove the misconduct problem.</p><p>C fails because rivalry does not justify deceit.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member posts a fabricated charitable résumé to win election to a nonprofit board. The role is unrelated to investments. Which Standard I(D) Misconduct assessment is strongest?",
+    "options": {
+      "A": "No issue exists because the board role is outside finance.",
+      "B": "The issue is too remote from clients to matter.",
+      "C": "The fabrication can violate Standard I(D) because it involves dishonesty reflecting on the member's integrity."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: dishonesty outside portfolio work can still reflect on integrity</h3><p><strong>C is correct.</strong> Standard I(D) is not limited to investment decisions. Fabricating credentials for personal advantage is deceitful conduct that reflects adversely on professional integrity.</p><p>A is tempting because the role is nonfinancial, but the standard examines the character of the conduct, not just the industry label.</p><p>B fails because client proximity is not the decisive test for misconduct.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member receives a traffic citation for a minor speeding offense on vacation. Which reading is most accurate under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The citation automatically violates Standard I(D) because all legal offenses reflect on reputation.",
+      "B": "The citation generally does not implicate Standard I(D) absent dishonesty or conduct reflecting materially on professional integrity or competence.",
+      "C": "The citation violates Standard I(D) if the member does not disclose it to every client."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: ordinary minor personal offenses are not automatically professional misconduct</h3><p><strong>B is correct.</strong> Standard I(D) is not meant to police every private misstep. A routine minor traffic offense generally does not amount to dishonesty or conduct reflecting materially on professional integrity or competence.</p><p>A is tempting because legality and ethics often intersect, but the standard is not that broad.</p><p>C fails because the standard does not require client-by-client disclosure of minor traffic citations.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A rainmaking executive is accused of harassment, and the supervisor limits him from meeting junior staff alone but leaves him free to direct compensation decisions affecting complainants. Which concern best matches the spirit of Standard I(D) Misconduct?",
+    "options": {
+      "A": "The executive's revenue contribution justifies a gradual response.",
+      "B": "Weak restrictions that leave the misconduct risk materially alive are inadequate despite the executive's seniority.",
+      "C": "The matter is purely human resources and outside ethics standards."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: seniority does not soften misconduct standards</h3><p><strong>B is correct.</strong> Standard I(D) is concerned with conduct reflecting adversely on integrity and professional reputation. A senior person's status does not excuse incomplete measures that leave serious misconduct risk in place.</p><p>A is tempting because business dependency is real, but the standard does not permit ethical leniency for high earners.</p><p>C fails because workplace misconduct with integrity implications is not excluded just because HR is involved.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member lies on a mortgage application about personal income. The falsehood is unrelated to clients or the member's employer. Which conclusion best fits Standard I(D) Misconduct?",
+    "options": {
+      "A": "The lie is outside the standard because no investment client was affected.",
+      "B": "The lie can violate Standard I(D) because it is dishonest conduct reflecting adversely on integrity.",
+      "C": "The lie matters only if the mortgage later defaults."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: dishonesty in personal financial dealings still reflects on integrity</h3><p><strong>B is correct.</strong> Standard I(D) reaches deceitful conduct that reflects on a member's integrity, even when the setting is personal rather than client-facing.</p><p>A is tempting because client harm is absent, but the standard is broader than client transactions.</p><p>C fails because the dishonesty exists whether or not later losses occur.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member engages in loud but lawful online criticism of a regulator's policy, using his real name and no false facts. Which reading is most accurate under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The criticism alone is not necessarily misconduct if it is lawful and not deceitful.",
+      "B": "Any public criticism by a CFA member violates professional conduct rules.",
+      "C": "The criticism becomes misconduct unless approved by the employer."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: lawful criticism is not itself deceit or fraud</h3><p><strong>A is correct.</strong> Standard I(D) does not ban strong opinions or lawful public criticism. The key question is whether the conduct involves dishonesty or otherwise reflects adversely on professional integrity or competence.</p><p>B is tempting because public tone can seem risky, but the standard is not a civility code for all disagreement.</p><p>C fails because employer approval is not the test that determines misconduct here.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member backdates a personal document to qualify for a private club membership. No finance activity is involved. Which statement best fits Standard I(D) Misconduct?",
+    "options": {
+      "A": "The conduct is too trivial to matter because no market or client was harmed.",
+      "B": "The conduct may violate Standard I(D) because deliberate falsification reflects on honesty.",
+      "C": "The conduct is acceptable if the private club never discovers it."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: private advantage obtained through falsification still reflects on integrity</h3><p><strong>B is correct.</strong> Standard I(D) focuses on dishonest conduct, not only on market impact. Backdating a document to gain an advantage is deceptive.</p><p>A is tempting because the setting is not financial, but dishonesty itself is the problem.</p><p>C fails because undiscovered deceit is still deceit.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member accidentally sends an email to the wrong recipient and immediately reports the error and seeks mitigation. Which is the best Standard I(D) Misconduct reading?",
+    "options": {
+      "A": "The member committed misconduct because every confidentiality mistake is deceitful.",
+      "B": "The incident is not automatically Standard I(D) misconduct because the facts show error, not dishonesty.",
+      "C": "The incident becomes misconduct only if the recipient reads the email."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: mistake and deceit are different categories</h3><p><strong>B is correct.</strong> Standard I(D) addresses dishonesty, fraud, deceit, and related behavior. An accidental mis-send with prompt remediation is not automatically misconduct under that standard.</p><p>A is tempting because confidentiality lapses are serious, but seriousness alone does not make them deceitful.</p><p>C fails because the recipient's actions do not determine whether the sender acted dishonestly.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard I(D) - Misconduct",
+    "stem": "A member secretly records internal interviews and edits the recordings to make coworkers appear to admit violations they denied. Which conclusion is strongest under Standard I(D) Misconduct?",
+    "options": {
+      "A": "The conduct reflects deceit and manipulation inconsistent with professional integrity.",
+      "B": "The conduct is justified if the member suspected broader problems.",
+      "C": "The conduct is acceptable because recordings preserve evidence."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: fabrication and deceptive editing are misconduct</h3><p><strong>A is correct.</strong> Standard I(D) is directly implicated by deceptive editing and manipulation of evidence. Even if the member suspected problems, falsifying proof reflects poorly on professional integrity.</p><p>B is tempting because genuine concern can exist, but suspicion does not justify deceit.</p><p>C fails because preserving evidence is different from distorting it.</p>"
+  }
+]

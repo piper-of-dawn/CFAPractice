@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A manager buys a stock for her personal account in the morning and then places the same trade for client accounts later that day after research is circulated. Which reading best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "The sequence is problematic because client transactions should have priority over personal trades in securities under consideration for clients.",
+      "B": "The sequence is acceptable because research had already been completed.",
+      "C": "The sequence is acceptable if the manager later allocates enough shares to clients."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: client interests come before personal trading</h3><p><strong>A is correct.</strong> Standard VI(B) requires that client transactions and investment opportunities take precedence over personal transactions when the member is considering action for clients.</p><p>B is tempting because the analysis was done, but the priority issue concerns transaction timing, not research completion.</p><p>C fails because later client participation does not cure earlier personal priority.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A firm recommendation is about to be issued, and an analyst buys the security in a sibling's account she informally manages outside the firm's normal client structure. Which statement best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "The sibling account may still raise a priority problem because the analyst is using a related personal account ahead of firm clients.",
+      "B": "The sibling account is automatically treated as a normal client account.",
+      "C": "No issue exists because the analyst does not own the sibling's assets."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: related accounts can function like personal accounts for priority purposes</h3><p><strong>A is correct.</strong> Standard VI(B) is concerned with members taking advantage of knowledge of pending recommendations or client activity through personal or closely connected accounts.</p><p>B is tempting because the account belongs to someone else, but informal control and family connection can still create the same abuse.</p><p>C fails because beneficial or practical control matters more than formal title alone.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A portfolio manager places trades for a house account before entering identical orders for client accounts because the house account is smaller and easier to complete. Which conclusion best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "The sequence is acceptable because operational ease is a legitimate reason.",
+      "B": "The sequence is acceptable if the execution price is similar.",
+      "C": "The sequence is problematic because client accounts should not be subordinated to firm accounts for convenience."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: convenience does not outrank client priority</h3><p><strong>C is correct.</strong> Standard VI(B) requires client transactions to take precedence over the member's or firm's proprietary interest when the same opportunity is involved.</p><p>A is tempting because logistics matter, but convenience is not a valid reason to put the house account first.</p><p>B fails because similar pricing does not eliminate the priority breach.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member participates in an IPO personally after deciding not to offer the issue to clients because the allocation is small and administrative work would be annoying. Which reading best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "The member may proceed because small allocations are not worth client processing effort.",
+      "B": "The member may proceed if the IPO is unlikely to rise on the first day.",
+      "C": "The member should not take the opportunity personally if it was suitable for clients who were bypassed for the member's convenience."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: members cannot reserve suitable opportunities for themselves by bypassing clients</h3><p><strong>C is correct.</strong> Standard VI(B) requires clients to receive priority in investment opportunities appropriate for them. Administrative inconvenience does not justify diverting the opportunity to the member.</p><p>A is tempting because tiny allocations can be cumbersome, but convenience does not override priority.</p><p>B fails because expected return path does not determine whether client priority was respected.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A firm allows employees to trade in a security only after a waiting period following dissemination of a client recommendation. What principle does this policy primarily support under Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "It helps prevent employees from benefiting ahead of clients from knowledge of pending or fresh recommendations.",
+      "B": "It guarantees employees will never have better execution than clients.",
+      "C": "It removes the need for preclearance."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: waiting periods are a control for client-first sequencing</h3><p><strong>A is correct.</strong> Standard VI(B) often supports waiting-period and preclearance controls to keep employees from exploiting recommendation timing ahead of clients.</p><p>B is tempting because execution comparisons matter, but the policy's primary goal is priority and misuse prevention.</p><p>C fails because waiting periods do not eliminate the usefulness of other controls like preclearance.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A research analyst tells a spouse about an upcoming recommendation, and the spouse trades before clients receive it. Which concern is most central under Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "No issue exists because the analyst did not trade personally.",
+      "B": "The issue belongs only under confidentiality, not transaction priority.",
+      "C": "The priority problem remains because a closely connected person traded ahead of clients using the analyst's information."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: members cannot evade priority duties through related-person trading</h3><p><strong>C is correct.</strong> Standard VI(B) is concerned with members or related parties gaining advantage over clients from advance knowledge of recommendations or trades.</p><p>A is tempting because the analyst's own account stayed untouched, but the abuse can occur indirectly through a spouse.</p><p>B fails because confidentiality may also matter, but client priority is still directly implicated.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member's personal order and a client block order arrive simultaneously at the trading desk. Which handling best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "Enter the personal order first because it was physically smaller and easier to fill.",
+      "B": "Flip a coin because both were ready at the same time.",
+      "C": "Give the client order priority or aggregate appropriately so the personal order does not jump ahead."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: when interests conflict, the client should not be subordinated</h3><p><strong>C is correct.</strong> Standard VI(B) requires that client interests take precedence over personal interests in transaction sequencing.</p><p>A is tempting because execution simplicity matters operationally, but it does not justify personal priority.</p><p>B fails because priority principles, not randomness, should govern the sequencing.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A manager buys a security for clients and then immediately for her own account at the same price later that day after all client orders are completed. Which reading best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "This can be consistent with the standard because the client activity received priority first.",
+      "B": "This always violates the standard because members may never own securities bought for clients.",
+      "C": "This violates the standard unless the member waits 30 calendar days."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: the standard is about priority, not a blanket ownership ban</h3><p><strong>A is correct.</strong> Standard VI(B) does not forbid members from owning the same securities as clients; it requires clients to receive priority in related transactions.</p><p>B is tempting because a strict ban sounds cleaner, but the curriculum focuses on sequencing and misuse, not total separation.</p><p>C fails because no universal 30-day rule defines compliance.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member receives an unusually favorable personal allocation from a broker after routing large client commission business there. Which question is most central under Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "Whether the personal advantage arose from the member's position and use of client-related business relationships.",
+      "B": "Whether the member disclosed the allocation to friends.",
+      "C": "Whether the security later performed well."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: members should not extract personal opportunities from client-related activity</h3><p><strong>A is correct.</strong> Standard VI(B) is implicated when a member takes personal advantage from access created by client transactions or the member's professional position.</p><p>B is tempting because disclosure often matters, but the core issue here is misuse of priority and opportunity.</p><p>C fails because later performance does not determine whether the opportunity was improperly taken.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member says, 'I trade only tiny personal amounts, so my activity cannot meaningfully disadvantage clients.' Which response best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "Correct, because materiality of the amount is the decisive test.",
+      "B": "Incorrect, because even small personal trades can violate the client-first sequencing principle.",
+      "C": "Correct, if the trades are spread across many accounts."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: small size does not erase the priority principle</h3><p><strong>B is correct.</strong> Standard VI(B) is about giving clients priority, not only about the size of the member's personal gain.</p><p>A is tempting because harm may seem small, but the sequencing rule still applies.</p><p>C fails because spreading the trades out does not change their position relative to client activity.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A house account wants to sell into strong demand created partly by the firm's just-released client recommendation. Which action best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "Let the house account sell first because the market demand may fade quickly.",
+      "B": "Ensure client interests are not subordinated to the house account's desire to use demand created by the firm's recommendation.",
+      "C": "Allow the house account to sell if compliance later reviews the trade."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the firm should not harvest value ahead of clients from recommendation-driven demand</h3><p><strong>B is correct.</strong> Standard VI(B) prevents firms and members from placing proprietary interests ahead of clients when recommendations or client-related activity create trading opportunities.</p><p>A is tempting because timing matters in markets, but it does not justify putting the house first.</p><p>C fails because after-the-fact review does not cure a sequencing breach.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member buys call options personally before a positive client recommendation is circulated, arguing that only the equity itself is covered by priority rules. Which conclusion best fits Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "The member is correct because derivatives are outside the standard.",
+      "B": "The member is incorrect because the priority principle extends to related investment opportunities, not just one instrument label.",
+      "C": "The member is correct if the options are cash settled."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: members cannot avoid priority duties by switching instruments</h3><p><strong>B is correct.</strong> Standard VI(B) covers the opportunity created by advance knowledge, not only the exact cash instrument referenced in the recommendation.</p><p>A is tempting because the derivative is technically different, but the economic exposure still exploits the same informational edge.</p><p>C fails because settlement style does not change the underlying priority concern.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member runs a family account inside the firm's normal client system on standard fees. During an oversubscribed allocation, how should that account generally be treated under Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "It may be excluded automatically because any family account is effectively personal.",
+      "B": "It should generally be treated like comparable client accounts rather than subordinated solely because it is a family account.",
+      "C": "It should receive a minimum token allocation before all other clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: a bona fide standard client family account is not automatically second class</h3><p><strong>B is correct.</strong> Standard VI(B), read with the broader client-first framework, does not require automatic exclusion of a regular fee-paying family account that is managed like other clients.</p><p>A is tempting because family ties create suspicion, but the curriculum distinguishes between normal client accounts and informal outside family accounts.</p><p>C fails because token allocations based on optics are not the governing rule.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard VI(B) - Priority of Transactions",
+    "stem": "A member preclears a personal trade before research is drafted, but later that same day the team decides to recommend the same security to clients. What is the most appropriate response under Standard VI(B) Priority of Transactions?",
+    "options": {
+      "A": "Proceed because the preclearance already approved the trade.",
+      "B": "Reassess or stop the personal trade once the security becomes subject to client activity or recommendation timing concerns.",
+      "C": "Proceed if the trade was small and passive."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: preclearance is not a permanent shield against later priority conflicts</h3><p><strong>B is correct.</strong> Standard VI(B) requires members to respect client priority as facts develop. A personal trade that later conflicts with pending client action should be reassessed rather than treated as automatically safe because of earlier approval.</p><p>A is tempting because approvals feel definitive, but they depend on the facts known at the time.</p><p>C fails because size and passive intent do not override the later client-priority conflict.</p>"
+  }
+]

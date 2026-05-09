@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "An analyst leaves a firm and deletes the only copy of a model's working papers from a personal cloud folder used during employment. Which issue is most central under Standard V(C) Record Retention?",
+    "options": {
+      "A": "The analyst should preserve records supporting the analysis because those records belong to the firm's professional work product absent contrary law or agreement.",
+      "B": "The analyst may keep or destroy the files because she built the model.",
+      "C": "The issue matters only if the recommendation later loses money."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: supporting records must be retained</h3><p><strong>A is correct.</strong> Standard V(C) requires members to develop and maintain records supporting their investment analyses, recommendations, actions, and other professional communications. Destroying the only support file undermines that duty.</p><p>B is tempting because the analyst created the model, but work performed for the firm typically requires retention of supporting records.</p><p>C fails because retention duties do not arise only after poor outcomes.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A manager says, 'My memory of why I bought the stock is good enough; the chart and trade ticket tell the rest.' Which reading best fits Standard V(C) Record Retention?",
+    "options": {
+      "A": "Incorrect, because records should support the basis for the action, not merely prove that the action occurred.",
+      "B": "Correct, because the standard does not require support beyond the executed trade.",
+      "C": "Correct if the position was small."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: the record must support the reasoning, not just the fact of the trade</h3><p><strong>A is correct.</strong> Standard V(C) is about maintaining records that substantiate analysis and decision making, not only administrative evidence that an order was placed.</p><p>B is tempting because trade tickets are concrete, but they do not capture the analytical basis by themselves.</p><p>C fails because position size does not determine whether support records are needed.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A firm policy says draft research notes may be discarded after publication, but local regulation requires longer retention. Which rule controls under Standard V(C) Record Retention?",
+    "options": {
+      "A": "The shorter firm policy controls because it is operationally specific.",
+      "B": "The analyst may choose whichever rule is easier to administer.",
+      "C": "The longer local regulatory requirement controls because the stricter applicable retention rule governs."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: stricter applicable retention obligations control</h3><p><strong>C is correct.</strong> Standard V(C) requires members to comply with applicable law and regulation, and where local requirements are stricter than firm practice, the stricter rule must be followed.</p><p>A is tempting because firms operationalize procedures, but internal policy cannot override stricter legal requirements.</p><p>B fails because convenience is not the governing criterion.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "An analyst uses an external financial model in a report but keeps no record of the version, inputs, or adjustments used. Which concern is strongest under Standard V(C) Record Retention?",
+    "options": {
+      "A": "No issue exists because the vendor can recreate the model later.",
+      "B": "The issue matters only if the report is sent to regulators.",
+      "C": "The lack of retained support makes it difficult to substantiate the analysis actually used at the time."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: members must retain enough detail to support the actual analysis used</h3><p><strong>C is correct.</strong> Standard V(C) expects a record trail sufficient to support conclusions and recommendations. Without versioning or inputs, the specific analysis cannot be reconstructed reliably.</p><p>A is tempting because vendors hold data, but vendor access does not guarantee a record of the exact work used by the member.</p><p>B fails because retention is not limited to regulatory-review scenarios.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member keeps voice notes summarizing client calls but deletes them after writing a recommendation memo that omits some assumptions discussed on the call. What is the best Standard V(C) Record Retention reading?",
+    "options": {
+      "A": "The deletion may be problematic if the notes contained material support for the recommendation not preserved elsewhere.",
+      "B": "The deletion is fine because only formal memos count as records.",
+      "C": "The deletion is fine if the client approved the recommendation."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: informal records can still be supporting records</h3><p><strong>A is correct.</strong> Standard V(C) looks to substance. If voice notes contain material support or assumptions underlying a recommendation, deleting them without preserving that support elsewhere can undermine retention obligations.</p><p>B is tempting because formal documents feel more official, but the standard is not limited to one format.</p><p>C fails because client approval does not replace the member's duty to retain support.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A research note cites channel checks but the analyst retained only the final conclusion, not the dated interview notes or source summaries. Which statement best fits Standard V(C) Record Retention?",
+    "options": {
+      "A": "The analyst may rely on reputation instead of retaining source support.",
+      "B": "No issue exists if the channel checks were verbal.",
+      "C": "The analyst should retain records sufficient to support the due diligence described in the note."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: verbal diligence still needs documented support</h3><p><strong>C is correct.</strong> Standard V(C) requires retention of records supporting the analysis and representations made. If a note relies on channel checks, support for those checks should be retained.</p><p>A is tempting because experienced analysts often work quickly, but credibility does not replace records.</p><p>B fails because the original format being verbal does not remove the need to preserve supporting documentation.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member moves firms and takes copies of old research files solely to defend herself if prior recommendations are questioned. Which reading is most accurate under Standard V(C) Record Retention?",
+    "options": {
+      "A": "Taking firm records is automatically required by the standard.",
+      "B": "The member may destroy the old files if she no longer covers the stocks.",
+      "C": "The member should consider firm ownership and applicable rules; Standard V(C) requires retention but does not by itself authorize taking records contrary to law or agreement."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: retention duties coexist with ownership and legal constraints</h3><p><strong>C is correct.</strong> Standard V(C) requires that supporting records be maintained, but it does not independently grant permission to remove records that belong to a former firm or are restricted by law or agreement.</p><p>A is tempting because defense needs are real, but the standard does not override ownership rights.</p><p>B fails because coverage changes do not erase existing retention obligations.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member's recommendation was built partly from spreadsheet assumptions that were never saved because the file autosaved over prior versions. Which concern is most central under Standard V(C) Record Retention?",
+    "options": {
+      "A": "Autosave problems are irrelevant because the final report still exists.",
+      "B": "Failure to preserve the assumptions can leave the member unable to support the recommendation if questioned later.",
+      "C": "The issue matters only for quantitative strategies."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the support behind the recommendation must be recoverable</h3><p><strong>B is correct.</strong> Standard V(C) is concerned with retaining the materials that substantiate the recommendation. If key assumptions disappear, the analysis may no longer be supportable.</p><p>A is tempting because the final report survives, but the report alone may not show the basis for the conclusion.</p><p>C fails because retention duties apply beyond one style of strategy.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A firm keeps detailed client-communication logs but not the research drafts that supported a major recommendation. Which reading best fits Standard V(C) Record Retention?",
+    "options": {
+      "A": "The communication logs alone satisfy the standard.",
+      "B": "The records may still be incomplete because support for the recommendation itself should be retained.",
+      "C": "The omission is irrelevant if the recommendation proved profitable."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: communication records do not replace analytical support records</h3><p><strong>B is correct.</strong> Standard V(C) covers records supporting analyses and recommendations, not just records showing that communication occurred.</p><p>A is tempting because logs are useful evidence, but they do not capture the substantive basis of the recommendation.</p><p>C fails because later profitability does not determine whether adequate support was retained.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member stores research support on a personal device with no firm backup and the device fails. Which statement is most accurate under Standard V(C) Record Retention?",
+    "options": {
+      "A": "The loss can indicate inadequate record-retention practices because the support was not preserved reliably.",
+      "B": "No issue exists because technology failures are unavoidable.",
+      "C": "The issue is excused if the member can roughly recreate the recommendation from memory."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: retention includes maintaining records in a usable, preservable way</h3><p><strong>A is correct.</strong> Standard V(C) is not satisfied by keeping support in a fragile, unbacked location that predictably risks loss.</p><p>B is tempting because failures happen, but reasonable retention practices should address ordinary preservation risk.</p><p>C fails because rough memory reconstruction is not equivalent to actual retained support.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member says only final buy and sell recommendations need support records; abandoned analyses do not. Which reading best fits Standard V(C) Record Retention?",
+    "options": {
+      "A": "Correct, because only published recommendations matter.",
+      "B": "Overstated, because records may be needed for analyses and communications that support actions taken or recommendations communicated, not just final formal labels.",
+      "C": "Correct if abandoned analyses were never sent to clients."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the scope turns on professional use, not just formal publication</h3><p><strong>B is correct.</strong> Standard V(C) is about retaining records that support professional analyses, recommendations, actions, and communications. The duty is broader than only final published labels.</p><p>A is tempting because final recommendations feel most important, but the standard is not that narrow.</p><p>C fails because some internal analyses may still support actions or communications and therefore need retention.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member receives key source documents from a vendor under a short-lived web link and never downloads them, assuming the vendor will host them forever. Which concern best matches Standard V(C) Record Retention?",
+    "options": {
+      "A": "The member may be unable to substantiate the analysis later if the supporting documents disappear.",
+      "B": "No issue exists because vendor hosting transfers the duty.",
+      "C": "No issue exists if the member cites the vendor by name."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: outsourced hosting does not remove the need for reliable support retention</h3><p><strong>A is correct.</strong> Standard V(C) requires members to maintain access to supporting records. Blind reliance on temporary external hosting can leave the analysis unsupported later.</p><p>B is tempting because vendors maintain data, but the member still needs reliable retention of the support actually used.</p><p>C fails because citation is not a substitute for retained support.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A regulator asks for support behind a recommendation from three years ago, but the member retained only a summary slide. Which statement best fits Standard V(C) Record Retention?",
+    "options": {
+      "A": "The summary slide is always enough because it captures the bottom line.",
+      "B": "The member may fall short if the retained record does not substantiate the reasoning, assumptions, and support behind the recommendation.",
+      "C": "The member satisfies the standard if coworkers remember the analysis."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: bottom-line summaries may be insufficient without underlying support</h3><p><strong>B is correct.</strong> Standard V(C) expects enough documentation to substantiate the recommendation. A thin summary that cannot show the underlying reasoning may not satisfy that obligation.</p><p>A is tempting because summaries are concise, but concision is not the same as adequate support.</p><p>C fails because coworker recollection is not the same as retained records.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard V(C) - Record Retention",
+    "stem": "A member keeps all support files but labels them so poorly that no one can tell which recommendation each file supports. Which concern is most central under Standard V(C) Record Retention?",
+    "options": {
+      "A": "No issue exists because the files physically still exist.",
+      "B": "The files may be functionally useless if they cannot be linked to the recommendation they are supposed to support.",
+      "C": "The issue matters only if the member leaves the firm."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: records must be usable, not merely present somewhere</h3><p><strong>B is correct.</strong> Standard V(C) is about maintaining records that actually support professional work. If the records cannot be connected to the relevant recommendation, the support trail is effectively broken.</p><p>A is tempting because existence seems enough, but unusable records do not serve the standard's purpose.</p><p>C fails because usability matters while the member is still at the firm too.</p>"
+  }
+]

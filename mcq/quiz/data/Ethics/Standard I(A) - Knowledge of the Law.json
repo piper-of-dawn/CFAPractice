@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A broker learns her country's market-abuse law bars a trading practice that her employer still allows under old internal policy. What should control her next step under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Follow the firm policy until compliance formally updates the manual.",
+      "B": "Apply the stricter law and stop participating in the practice even if the firm still permits it.",
+      "C": "Continue the practice if clients were already told the firm uses it."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the stricter rule governs</h3><p><strong>B is correct.</strong> Standard I(A) requires members to comply with the stricter of applicable law, regulation, or the Code and Standards. An outdated firm manual cannot override a current legal prohibition, so the member must stop participating.</p><p>A is tempting because firms often centralize policy updates, but the member's duty does not wait for administrative cleanup once she knows the law is stricter.</p><p>C fails because disclosure does not authorize conduct that applicable law prohibits.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A research associate discovers that a performance table prepared by marketing is misleading. She did not create it, but she is asked to include it in her client presentation deck. Which action best fits Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Use the table because the misstatement originated in another department.",
+      "B": "Use the table only for existing clients, not prospects, because they know the firm better.",
+      "C": "Refuse to use the table and dissociate from the presentation unless the material is corrected."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: assisting another's violation still counts</h3><p><strong>C is correct.</strong> Standard I(A) reaches not only primary misconduct but also knowingly assisting it. Once the associate understands the material is misleading, she must avoid participation and dissociate unless it is fixed.</p><p>A is tempting because the bad material came from marketing, but the standard does not allow members to pass along known misconduct under someone else's label.</p><p>B fails because the audience does not change the duty to avoid using material known to be improper.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "An analyst sees unusual trading in a colleague's family account and reasonably suspects insider trading, but local law does not require immediate reporting to regulators. Which first response is most appropriate under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Escalate internally and dissociate from the activity while determining the firm's legal obligations.",
+      "B": "Publicly accuse the colleague so the market can protect itself.",
+      "C": "Stay silent unless regulators first request information."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: dissociation comes before optional whistleblowing</h3><p><strong>A is correct.</strong> Standard I(A) requires dissociation from known or suspected illegal conduct and supports escalation through compliance or legal channels. External reporting is mandatory only when law requires it.</p><p>B is tempting because it seems decisive, but the standard does not create a free-standing duty to make public accusations outside proper legal or compliance channels.</p><p>C fails because doing nothing is inconsistent with the duty to dissociate once red flags are serious.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A portfolio manager covers Japanese equities from London. Her firm also has tax-reporting obligations in Brazil unrelated to her work. Which legal-knowledge expectation is most accurate under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "She must master every law affecting any office of the firm worldwide.",
+      "B": "She must understand laws directly connected to her professional responsibilities and the markets in which she operates.",
+      "C": "She may rely entirely on compliance because she is not a lawyer."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: role-specific knowledge, not omniscience</h3><p><strong>B is correct.</strong> Standard I(A) expects members to know the laws and regulations relevant to their actual professional activities. The duty is demanding but tied to role and market exposure, not to every rule touching the enterprise.</p><p>A is tempting because broad legal awareness sounds safer, but the curriculum frames the duty around laws directly connected to the member's responsibilities.</p><p>C fails because compliance support helps, but it does not eliminate the member's own obligation to understand applicable rules.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A supervisor tells an analyst to ignore a newly issued exchange rule until competitors react because the rule's language may later be softened. What is the strongest Standard I(A) Knowledge of the Law reading?",
+    "options": {
+      "A": "The analyst may wait because ambiguous new rules are not binding until widely enforced.",
+      "B": "The analyst should follow the supervisor unless clients are immediately harmed.",
+      "C": "The analyst should apply the rule as written if it is currently effective and seek clarification without violating it in the meantime."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: uncertainty is not permission to ignore an effective rule</h3><p><strong>C is correct.</strong> Standard I(A) does not let members suspend compliance simply because a rule may later change or because competitors are slow to react. If the rule is effective, the member should comply while seeking guidance.</p><p>A is tempting because enforcement can lag, but delayed enforcement does not erase a current legal duty.</p><p>B fails because employer instruction cannot override applicable law.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member moves to a country where front-running is not expressly banned by statute, but the CFA standards are stricter than local law. Which action best fits Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Use the local-law gap because the stricter CFA standard applies only where recognized in legislation.",
+      "B": "Avoid the practice because Standard I(A) requires following the stricter rule when the Code and Standards exceed local law.",
+      "C": "Use the practice after written client disclosure because no statute forbids it."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the Code can be the stricter rule</h3><p><strong>B is correct.</strong> Standard I(A) tells members to follow the stricter of local law or the Code and Standards. When local law is silent or looser, the CFA rule still governs the member's conduct.</p><p>A is tempting because statutes feel primary, but the standard expressly elevates the stricter ethical rule where applicable law is less demanding.</p><p>C fails because disclosure does not transform a stricter ethical prohibition into permitted conduct.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A junior analyst is asked to summarize court testimony from a fraud case for the sales force. She knows several quoted claims in the draft are false but is told the final investment decision belongs to the brokers, not her. Which response is most consistent with Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Revise or refuse the summary because passing along known falsehoods would assist misconduct.",
+      "B": "Send the draft because the sales force, not the analyst, would decide how to use it.",
+      "C": "Send the draft if she attaches a note that the facts came from public proceedings."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: you cannot launder misconduct through a limited role</h3><p><strong>A is correct.</strong> Standard I(A) prohibits assisting in violations, even indirectly. The analyst's limited title does not excuse forwarding statements she knows are false or misleading.</p><p>B is tempting because decision authority sits elsewhere, but the standard reaches participation at earlier stages too.</p><p>C fails because public sourcing does not cure knowingly false or misleading content.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member discovers that a local regulator allows a marketing claim the CFA standards treat as misleading. Which statement best captures Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "The member may use the claim because local marketing law is the only relevant standard.",
+      "B": "The member should avoid the claim because the stricter CFA standard still applies to members.",
+      "C": "The member may use the claim if competitors commonly use similar language."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: common practice and permissive law do not control</h3><p><strong>B is correct.</strong> Standard I(A) requires application of the stricter rule. If local law permits a statement that the CFA standards would treat as misleading, the member still must follow the stricter CFA requirement.</p><p>A is tempting because legality matters, but legality alone is not enough when the Code imposes a higher bar.</p><p>C fails because widespread market practice cannot relax a stricter governing standard.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member joins a new asset class team and realizes several regulations are unfamiliar. Which preparation step best fits Standard I(A) Knowledge of the Law before she begins making recommendations?",
+    "options": {
+      "A": "Rely on prior general investment experience because ethics standards do not require technical legal refreshers.",
+      "B": "Start work immediately and learn the rules only if a client asks about them.",
+      "C": "Make reasonable efforts to understand the rules governing the new activity before acting in the role."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: the duty attaches when responsibilities change</h3><p><strong>C is correct.</strong> Standard I(A) expects members to understand the legal environment of the activities they undertake. Moving into a new area requires proactive effort before acting, not reactive learning after exposure.</p><p>A is tempting because broad experience helps, but it does not substitute for understanding the rules specific to the new assignment.</p><p>B fails because waiting for a client question is too late; the member must know the rules before acting.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member suspects a client account is being used for money laundering. Applicable law is unclear about whether disclosure to outsiders is permitted. What is the most appropriate near-term step under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Seek legal or compliance guidance while dissociating from the suspicious activity.",
+      "B": "Immediately alert the media so the firm cannot suppress the issue.",
+      "C": "Continue servicing the account until law enforcement gives direct instructions."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: unclear law calls for guided dissociation, not passivity</h3><p><strong>A is correct.</strong> Standard I(A) requires the member to avoid participation in suspected illegal conduct and to seek appropriate guidance when legal duties are uncertain. That combination protects both legal compliance and ethical dissociation.</p><p>B is tempting because it appears decisive, but public disclosure is not the standard default when the law is uncertain.</p><p>C fails because continuing normal participation despite serious suspicion is inconsistent with dissociation.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A local custom allows lavish gifts from issuers to analysts, and the practice is not expressly illegal. The member knows the gifts would compromise independence under the CFA standards. Which factor should govern the member's conduct under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Whether the market widely accepts the custom.",
+      "B": "Whether the gifts are taxable income under local law.",
+      "C": "Whether the stricter ethical rule would treat acceptance as improper."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: custom does not outrank the stricter rule</h3><p><strong>C is correct.</strong> Standard I(A) focuses on the stricter applicable rule. Where accepted custom is looser than the ethical standard, the member must still follow the stricter ethical requirement.</p><p>A is tempting because customs shape business norms, but norms cannot override the stricter governing standard.</p><p>B fails because tax treatment is not the question that resolves the member's ethical obligation.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member has already escalated a suspected violation internally, but the firm continues the conduct. Local law does not compel external reporting. Which action is most defensible under Standard I(A) Knowledge of the Law?",
+    "options": {
+      "A": "Remain involved because internal escalation satisfied the standard.",
+      "B": "Dissociate further, including refusing assignments tied to the conduct or considering resignation if necessary.",
+      "C": "Stay involved if the revenue at risk is material to coworkers' jobs."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: escalation without dissociation is not enough</h3><p><strong>B is correct.</strong> Standard I(A) requires meaningful dissociation from misconduct. If internal reporting fails and the activity continues, the member must avoid participation, and in serious cases resignation may be necessary.</p><p>A is tempting because internal escalation is important, but it does not complete the duty if the member keeps participating.</p><p>C fails because business consequences for the firm do not override the duty to dissociate from misconduct.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A compliance officer summarizes a new rule for the investment team, but the summary omits a restrictive condition found in the regulation itself. A manager notices the omission. Under Standard I(A) Knowledge of the Law, what should the manager do?",
+    "options": {
+      "A": "Follow the compliance memo because internal guidance is the firm's official interpretation.",
+      "B": "Use the omitted condition only if regulators later highlight it.",
+      "C": "Follow the rule as actually written and seek correction of the internal guidance."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: internal summaries do not replace the real rule</h3><p><strong>C is correct.</strong> Standard I(A) requires members to comply with the actual governing law or regulation, not a mistaken internal paraphrase. The manager should seek correction but not rely on the incomplete summary.</p><p>A is tempting because centralized guidance is practical, but the member cannot ignore a known conflict between the memo and the rule.</p><p>B fails because a restrictive condition does not become binding only after regulators call attention to it.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard I(A) - Knowledge of the Law",
+    "stem": "A member receives a lucrative offer to advise a foreign fund using a strategy illegal in her home jurisdiction but lawful where the fund is based. She will execute trades only through the foreign market. What is the strongest Standard I(A) Knowledge of the Law conclusion?",
+    "options": {
+      "A": "She may proceed if the conduct is lawful in the market where it occurs and not prohibited by the stricter applicable rules governing her professional conduct.",
+      "B": "She must refuse automatically because any strategy illegal anywhere is off-limits to CFA members.",
+      "C": "She may proceed only if her employer prefers the arrangement."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: the analysis turns on which rules actually apply and which are stricter</h3><p><strong>A is correct.</strong> Standard I(A) requires members to identify the applicable legal and ethical regimes and follow the stricter one. The mere fact that a strategy is illegal in some other jurisdiction does not by itself decide the case unless that regime governs the member's conduct.</p><p>B is tempting because it sounds maximally cautious, but Standard I(A) is not a rule that the strictest law anywhere in the world automatically governs.</p><p>C fails because employer preference has no controlling force in a legal-compliance analysis.</p>"
+  }
+]

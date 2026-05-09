@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "An analyst overhears that a charismatic founder has a severe medical condition not yet disclosed publicly, and the founder is central to the company. Which response best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Encourage public dissemination of the information and avoid trading or recommending until it becomes public.",
+      "B": "Issue a sell recommendation immediately because the analyst did not obtain the information from management.",
+      "C": "Call the founder's assistant to confirm the rumor before deciding whether to trade."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: material plus nonpublic means no trading or recommendation until public</h3><p><strong>A is correct.</strong> Standard II(A) prohibits acting on material nonpublic information. The member should seek proper public dissemination rather than trade or recommend on it.</p><p>B is tempting because the information came indirectly, but the source path does not make material nonpublic information usable.</p><p>C fails because confirming the rumor would not cleanse the information; it would only confirm possession of MNPI.</p>"
+  },
+  {
+    "id": 2,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A company gives selective earnings guidance to a small group of analysts on a closed call. Which conclusion best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "The information remains nonpublic until broadly disseminated to the marketplace.",
+      "B": "The information is public because several professionals heard it.",
+      "C": "The information becomes public if at least one attendee is not subject to confidentiality duties."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: selective dissemination is not the same as public dissemination</h3><p><strong>A is correct.</strong> Standard II(A) requires broad market dissemination before material information is considered public. A closed analyst call does not satisfy that condition.</p><p>B is tempting because multiple listeners can feel like a public audience, but the curriculum draws a sharper line.</p><p>C fails because the presence of one less-restricted attendee does not make the information public.</p>"
+  },
+  {
+    "id": 3,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A sell-side analyst pieces together a bearish thesis from public filings, supplier checks that reveal no confidential data, and industry-capacity statistics. Which Standard II(A) Material Nonpublic Information conclusion is strongest?",
+    "options": {
+      "A": "The analyst may use the conclusion because mosaic analysis from permissible sources is allowed.",
+      "B": "The analyst must avoid any conclusion that turns out to be correct before management confirms it.",
+      "C": "The analyst must publish every raw source document before acting on the thesis."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: mosaic theory permits conclusions from nonmaterial or public pieces</h3><p><strong>A is correct.</strong> Standard II(A) does not prohibit skilled analysis that combines public information and permissible nonmaterial observations into an investment conclusion.</p><p>B is tempting because the conclusion may anticipate later news, but accuracy alone does not turn permissible research into MNPI.</p><p>C fails because publication of every source is not the condition that determines whether mosaic analysis is allowed.</p>"
+  },
+  {
+    "id": 4,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A consultant on an expert network starts to describe unannounced customer cancellations at a public company and says, 'This is not out yet.' What should the analyst do under Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Let the consultant finish so the analyst can judge materiality more accurately.",
+      "B": "Continue listening but promise not to trade personally.",
+      "C": "Stop the discussion and avoid soliciting or using the potentially material nonpublic information."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: members should not solicit possible MNPI</h3><p><strong>C is correct.</strong> Standard II(A) requires members to avoid seeking or using material nonpublic information. When a source signals that the information is not public and may be material, the analyst should stop the conversation.</p><p>A is tempting because fuller context seems useful, but gathering more possibly improper detail deepens the problem.</p><p>B fails because refraining from personal trading does not make it acceptable to obtain or use MNPI for recommendations or client trades.</p>"
+  },
+  {
+    "id": 5,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A trader receives a draft takeover term sheet mistakenly emailed by opposing counsel. Which response best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Trade quickly because the information was received accidentally rather than solicited.",
+      "B": "Share the file with research so the team can decide whether the market would view it as important.",
+      "C": "Delete the file and treat the information as unusable until it becomes public."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: accidental receipt does not make MNPI usable</h3><p><strong>C is correct.</strong> Standard II(A) focuses on possession and use of material nonpublic information, not only on how elegantly it was acquired. An accidental leak is still MNPI.</p><p>A is tempting because the member did not solicit the document, but lack of solicitation does not authorize trading on it.</p><p>B fails because internal circulation of leaked deal terms only spreads the misuse.</p>"
+  },
+  {
+    "id": 6,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A company posts major earnings guidance on a little-followed page of its website at 2:00 a.m. local time. At 2:05 a.m., an analyst sees it. Which factor is most important under Standard II(A) Material Nonpublic Information before trading on the guidance?",
+    "options": {
+      "A": "Whether the information has had time to be broadly disseminated and absorbed by the market.",
+      "B": "Whether the analyst discovered it without help from an insider.",
+      "C": "Whether the page was technically available to anyone with the URL."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: public availability and broad dissemination are not always simultaneous</h3><p><strong>A is correct.</strong> Standard II(A) asks not only whether information was released but also whether the market has had a fair opportunity to receive and process it.</p><p>B is tempting because non-insider sourcing matters, but it does not answer whether the market has effectively received the information.</p><p>C fails because technical availability alone may not satisfy the broad-dissemination requirement at that moment.</p>"
+  },
+  {
+    "id": 7,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "An analyst hears from a supplier that one customer is 'ordering less than usual,' but the supplier gives no figures and serves many customers. What is the best Standard II(A) Material Nonpublic Information reading?",
+    "options": {
+      "A": "The information is automatically unusable because it is nonpublic.",
+      "B": "The analyst must forward the comment to the issuer before doing any work.",
+      "C": "The analyst may assess whether the observation is nonmaterial and one piece of a broader mosaic before acting."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: not all nonpublic information is material</h3><p><strong>C is correct.</strong> Standard II(A) prohibits use of information only when it is both material and nonpublic. A vague supplier observation may be one nonmaterial piece of a lawful mosaic.</p><p>A is tempting because nonpublic status sounds enough, but materiality is essential.</p><p>B fails because issuer notification is not the standard response to every immaterial channel observation.</p>"
+  },
+  {
+    "id": 8,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A member learns from a friend at a law firm that a merger meeting is happening tonight but is told no details. Which assessment best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "The member may trade because the information is incomplete.",
+      "B": "The member should treat the knowledge as potentially material nonpublic information and avoid acting on it.",
+      "C": "The member may ask research to estimate synergy values and then trade if the valuation is conservative."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: partial deal knowledge can still be material</h3><p><strong>B is correct.</strong> Standard II(A) does not require complete certainty or full documentation before information can be material. Knowledge of a likely merger process can itself be material and nonpublic.</p><p>A is tempting because the details are missing, but incomplete information can still matter to reasonable investors.</p><p>C fails because adding analysis does not cleanse an underlying MNPI source.</p>"
+  },
+  {
+    "id": 9,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A member receives earnings numbers from a corporate contact who says, 'Everyone in the industry already knows this.' No public release has occurred. Which response best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Use the numbers because industry awareness means the information is effectively public.",
+      "B": "Decline to use the numbers until they are publicly disseminated.",
+      "C": "Use the numbers only for client accounts, not the member's own trading."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: market gossip is not the same as public dissemination</h3><p><strong>B is correct.</strong> Standard II(A) requires actual public dissemination, not a vague claim that 'everyone knows.' Without public release, the information remains nonpublic.</p><p>A is tempting because widespread whispers can feel equivalent to public knowledge, but the standard does not treat them that way.</p><p>C fails because the prohibition applies to recommendations and client trades too, not just personal trading.</p>"
+  },
+  {
+    "id": 10,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A portfolio manager is offered a seat on a lender committee for a distressed issuer. Which planning step best aligns with Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Join freely because committee work is for creditor protection, not investment research.",
+      "B": "Set up procedures in advance recognizing that committee participation may expose the firm to MNPI and related trading restrictions.",
+      "C": "Join only if the manager promises not to read committee materials."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: members should anticipate MNPI exposure and control for it</h3><p><strong>B is correct.</strong> Standard II(A) expects firms and members to adopt procedures when roles are likely to expose them to MNPI, including restrictions and information barriers where appropriate.</p><p>A is tempting because the committee has a legitimate purpose, but legitimate purpose does not eliminate MNPI risk.</p><p>C fails because formal participation while pretending not to read materials is not a credible control.</p>"
+  },
+  {
+    "id": 11,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A compliance officer accidentally leaves a confidential issuer memo in a conference room, and an analyst reads enough to see an unannounced dividend cut. Which reading is most accurate under Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "The analyst may trade because the firm, not the analyst, caused the leak.",
+      "B": "The analyst should avoid using the information because accidental internal leakage does not make it public.",
+      "C": "The analyst may trade after telling one colleague about the leak."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: internal leaks do not create public information</h3><p><strong>B is correct.</strong> Standard II(A) is not satisfied by the mere fact that information leaked accidentally within a professional setting. The dividend-cut information remains nonpublic until broadly released.</p><p>A is tempting because the analyst did not cause the mistake, but innocent receipt does not authorize use.</p><p>C fails because spreading leaked information internally only compounds the problem.</p>"
+  },
+  {
+    "id": 12,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A member lawfully receives a public data set and notices an unusual pattern suggesting a company may miss estimates. Which conclusion best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "The member may act on the inference because the conclusion arises from analysis of public information.",
+      "B": "The member must not trade because any nonconsensus conclusion is treated as nonpublic.",
+      "C": "The member may act only after asking management whether the inference is correct."
+    },
+    "correct_answer": "A",
+    "explanation": "<h3>First Principles Thinking: insight from public data remains permissible</h3><p><strong>A is correct.</strong> Standard II(A) allows members to develop valuable nonconsensus conclusions from public information. The originality of the insight does not make it nonpublic information.</p><p>B is tempting because the view is not widely shared, but nonconsensus is not the same as nonpublic.</p><p>C fails because seeking confirmation from management could create or reinforce MNPI rather than cure the issue.</p>"
+  },
+  {
+    "id": 13,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A broker says, 'You did not hear this from me, but the CEO is resigning tomorrow.' Which factor is most decisive under Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Whether the broker is a traditional insider of the company.",
+      "B": "Whether the CEO has already told family members.",
+      "C": "Whether the information would likely affect an investment decision and is not yet public."
+    },
+    "correct_answer": "C",
+    "explanation": "<h3>First Principles Thinking: materiality plus nonpublic status is the governing test</h3><p><strong>C is correct.</strong> Standard II(A) turns on whether the information is both material and nonpublic, not on whether the tipper fits a narrow insider label.</p><p>A is tempting because source identity can matter in legal analysis, but the ethical rule still focuses on the information's nature.</p><p>B fails because private circulation among a few people does not make the information public.</p>"
+  },
+  {
+    "id": 14,
+    "topic": "Standard II(A) - Material Nonpublic Information",
+    "stem": "A member learns that a company will announce a share buyback after the close, but the news has not been released. Which action best fits Standard II(A) Material Nonpublic Information?",
+    "options": {
+      "A": "Place a small trade because size does not change the informational edge.",
+      "B": "Avoid trading or recommending until the announcement is public and the market has had a chance to receive it.",
+      "C": "Trade only in derivatives because the standard focuses on the cash equity."
+    },
+    "correct_answer": "B",
+    "explanation": "<h3>First Principles Thinking: the form or size of the trade does not remove the MNPI problem</h3><p><strong>B is correct.</strong> Standard II(A) bars acting on material nonpublic information regardless of trade size or instrument chosen.</p><p>A is tempting because the trade is small, but small misuse is still misuse.</p><p>C fails because the prohibition is not limited to one instrument type.</p>"
+  }
+]
