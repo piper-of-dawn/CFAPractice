@@ -172,3 +172,21 @@ Use this sequence:
 - Use `jq` for JSON validation whenever available.
 - Keep terminology aligned with the curriculum.
 - If a fact cannot be traced to the curriculum text, do not use it.
+
+## Kata Generation
+
+Use this variation for a Katas file: short, deliberately simple questions that build
+intuition through one isolated idea at a time.
+
+- Read the named learning module from PDF (prefer its existing extracted module text
+  when available) before drafting.
+- Create a separate Katas JSON file unless the user explicitly asks to append to one.
+- Use the schema in AGENTS.md with exactly three distinct choices.
+- Make every stem self-contained and test one primitive only. Use small arithmetic
+  only when every input is stated and the calculation is mental-math friendly.
+- Write explanations in four concise HTML blocks: a first-principles heading, the
+  correct answer with the causal intuition, and one specific misconception for each
+  distractor. Do not rely on the reader having the curriculum open.
+- Cover distinct primitives rather than paraphrasing one rule. Balance answer letters
+  across the complete file and validate the JSON, IDs, option keys, answer letters,
+  and discovery in the Django home view before reporting completion.
