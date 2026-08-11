@@ -1,10 +1,7 @@
 {
   "functions": {
     "api/index.py": {
-      "includeFiles": [
-        "mcq/**",
-        "assets/**"
-      ]
+      "includeFiles": "mcq/**"
     }
   },
   "routes": [
